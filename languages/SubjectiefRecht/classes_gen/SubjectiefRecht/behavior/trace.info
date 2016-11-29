@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="13,0,41,0" name="SubjectiefRecht.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="Casus_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.Casus_BehaviorDescriptor" />
+    </file>
+    <file name="NatuurlijkPersoon_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.NatuurlijkPersoon_BehaviorDescriptor" />
+    </file>
+    <file name="Rechtsbetrekking_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.Rechtsbetrekking_BehaviorDescriptor" />
+    </file>
+    <file name="RechtsgevolgVeroorzaker_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.RechtsgevolgVeroorzaker_BehaviorDescriptor" />
+    </file>
+    <file name="Rechtshandeling_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.Rechtshandeling_BehaviorDescriptor" />
+    </file>
+    <file name="Rechtspersoon_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.Rechtspersoon_BehaviorDescriptor" />
+    </file>
+    <file name="Rechtssubject_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.Rechtssubject_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarNatuurlijkPersoon_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.ReferentieNaarNatuurlijkPersoon_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarRechtsSubject_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.ReferentieNaarRechtsSubject_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarRechtsbetrekking_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.ReferentieNaarRechtsbetrekking_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

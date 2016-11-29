@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="AanspraakNaIngebrekeStellingPlicht_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.AanspraakNaIngebrekeStellingPlicht_BehaviorDescriptor" />
+    </file>
+    <file name="AbstracteDatum_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.AbstracteDatum_BehaviorDescriptor" />
+    </file>
+    <file name="AbstracteVoorwaarde_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.AbstracteVoorwaarde_BehaviorDescriptor" />
+    </file>
+    <file name="Context_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.Context_BehaviorDescriptor" />
+    </file>
+    <file name="Datum_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.Datum_BehaviorDescriptor" />
+    </file>
+    <file name="FeitelijkeHandelingMetRechtsgevolg_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.FeitelijkeHandelingMetRechtsgevolg_BehaviorDescriptor" />
+    </file>
+    <file name="GebeurtenisMetRechtsgevolg_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.GebeurtenisMetRechtsgevolg_BehaviorDescriptor" />
+    </file>
+    <file name="ImmuniteitGeenbevoegdheid_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.ImmuniteitGeenbevoegdheid_BehaviorDescriptor" />
+    </file>
+    <file name="KrachtigeAanspraakFataleVerplichtig_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.KrachtigeAanspraakFataleVerplichtig_BehaviorDescriptor" />
+    </file>
+    <file name="MaterieleVoorwaarde_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.MaterieleVoorwaarde_BehaviorDescriptor" />
+    </file>
+    <file name="Onderwerp_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.Onderwerp_BehaviorDescriptor" />
+    </file>
+    <file name="OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor" />
+    </file>
+    <file name="RechtsSubject_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.RechtsSubject_BehaviorDescriptor" />
+    </file>
+    <file name="Rechtsbetrekking_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.Rechtsbetrekking_BehaviorDescriptor" />
+    </file>
+    <file name="RechtsgevolgVeroorzakers_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.RechtsgevolgVeroorzakers_BehaviorDescriptor" />
+    </file>
+    <file name="Rechtsgevolg_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.Rechtsgevolg_BehaviorDescriptor" />
+    </file>
+    <file name="Rechtshandeling_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.Rechtshandeling_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarDatum_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.ReferentieNaarDatum_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarRechtsbetrekking_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.ReferentieNaarRechtsbetrekking_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarRechtsgevolgVeroorzaker_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.ReferentieNaarRechtsgevolgVeroorzaker_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarRechtsgevolg_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.ReferentieNaarRechtsgevolg_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarRechtssubject_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.ReferentieNaarRechtssubject_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarVoorwaarde_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.ReferentieNaarVoorwaarde_BehaviorDescriptor" />
+    </file>
+    <file name="RegelOverRechtsbetrekking_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.RegelOverRechtsbetrekking_BehaviorDescriptor" />
+    </file>
+    <file name="RegelOverRechtsgevolgVeroorzaker_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.RegelOverRechtsgevolgVeroorzaker_BehaviorDescriptor" />
+    </file>
+    <file name="Regel_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.Regel_BehaviorDescriptor" />
+    </file>
+    <file name="TijdsverloopMetRechtsgevolg_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.TijdsverloopMetRechtsgevolg_BehaviorDescriptor" />
+    </file>
+    <file name="Toestand_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.Toestand_BehaviorDescriptor" />
+    </file>
+    <file name="VerplichteBevoegdheidVerplichteGehoudenheid_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.VerplichteBevoegdheidVerplichteGehoudenheid_BehaviorDescriptor" />
+    </file>
+    <file name="VormVoorwaarde_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.VormVoorwaarde_BehaviorDescriptor" />
+    </file>
+    <file name="VrijheidGeenaanspraak_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.VrijheidGeenaanspraak_BehaviorDescriptor" />
+    </file>
+    <file name="ZwakkeAanspraakPlicht_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="GN.behavior.ZwakkeAanspraakPlicht_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

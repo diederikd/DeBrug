@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="GN.behavior.AanspraakNaIngebrekeStellingPlicht_BehaviorDescriptor" file="AanspraakNaIngebrekeStellingPlicht_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.AbstracteDatum_BehaviorDescriptor" file="AbstracteDatum_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.AbstracteVoorwaarde_BehaviorDescriptor" file="AbstracteVoorwaarde_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.Context_BehaviorDescriptor" file="Context_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.Datum_BehaviorDescriptor" file="Datum_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.FeitelijkeHandelingMetRechtsgevolg_BehaviorDescriptor" file="FeitelijkeHandelingMetRechtsgevolg_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.GebeurtenisMetRechtsgevolg_BehaviorDescriptor" file="GebeurtenisMetRechtsgevolg_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.ImmuniteitGeenbevoegdheid_BehaviorDescriptor" file="ImmuniteitGeenbevoegdheid_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.KrachtigeAanspraakFataleVerplichtig_BehaviorDescriptor" file="KrachtigeAanspraakFataleVerplichtig_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.MaterieleVoorwaarde_BehaviorDescriptor" file="MaterieleVoorwaarde_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.Onderwerp_BehaviorDescriptor" file="Onderwerp_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor" file="OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.RechtsSubject_BehaviorDescriptor" file="RechtsSubject_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.Rechtsbetrekking_BehaviorDescriptor" file="Rechtsbetrekking_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.RechtsgevolgVeroorzakers_BehaviorDescriptor" file="RechtsgevolgVeroorzakers_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.Rechtsgevolg_BehaviorDescriptor" file="Rechtsgevolg_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.Rechtshandeling_BehaviorDescriptor" file="Rechtshandeling_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.ReferentieNaarDatum_BehaviorDescriptor" file="ReferentieNaarDatum_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.ReferentieNaarRechtsbetrekking_BehaviorDescriptor" file="ReferentieNaarRechtsbetrekking_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.ReferentieNaarRechtsgevolgVeroorzaker_BehaviorDescriptor" file="ReferentieNaarRechtsgevolgVeroorzaker_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.ReferentieNaarRechtsgevolg_BehaviorDescriptor" file="ReferentieNaarRechtsgevolg_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.ReferentieNaarRechtssubject_BehaviorDescriptor" file="ReferentieNaarRechtssubject_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.ReferentieNaarVoorwaarde_BehaviorDescriptor" file="ReferentieNaarVoorwaarde_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.RegelOverRechtsbetrekking_BehaviorDescriptor" file="RegelOverRechtsbetrekking_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.RegelOverRechtsgevolgVeroorzaker_BehaviorDescriptor" file="RegelOverRechtsgevolgVeroorzaker_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.Regel_BehaviorDescriptor" file="Regel_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.TijdsverloopMetRechtsgevolg_BehaviorDescriptor" file="TijdsverloopMetRechtsgevolg_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.Toestand_BehaviorDescriptor" file="Toestand_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.VerplichteBevoegdheidVerplichteGehoudenheid_BehaviorDescriptor" file="VerplichteBevoegdheidVerplichteGehoudenheid_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.VormVoorwaarde_BehaviorDescriptor" file="VormVoorwaarde_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.VrijheidGeenaanspraak_BehaviorDescriptor" file="VrijheidGeenaanspraak_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="GN.behavior.ZwakkeAanspraakPlicht_BehaviorDescriptor" file="ZwakkeAanspraakPlicht_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+</dependenciesRoot>
+
