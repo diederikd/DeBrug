@@ -17,7 +17,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
-  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Simulatie", "", true, "Simulatie.editor.Simulatie.Simulatie"));
+  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Simulatie", "", true, "Simulatie.editor.Simulatie.Simulatie"), new ConceptEditorHintImpl("RechtspositieRol1", "", true, "Simulatie.editor.Simulatie.RechtspositieRol1"), new ConceptEditorHintImpl("RechtspositieRol2", "", true, "Simulatie.editor.Simulatie.RechtspositieRol2"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {
@@ -32,7 +32,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 1:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rechtsbetrekking_Simulatie_Editor());
+            return Arrays.asList(new ConceptEditor[]{new Rechtsbetrekking_RechtspositieRol1_Editor(), new Rechtsbetrekking_RechtspositieRol2_Editor(), new Rechtsbetrekking_Simulatie_Editor()});
           }
           break;
         case 2:

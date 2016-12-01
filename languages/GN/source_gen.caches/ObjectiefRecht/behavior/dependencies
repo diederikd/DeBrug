@@ -162,7 +162,7 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.ZwakkeAanspraakPlicht_BehaviorDescriptor" file="ZwakkeAanspraakPlicht_BehaviorDescriptor.java">
+  <dependency className="ObjectiefRecht.behavior.ZwakkeAanspraakZwakkePlicht_BehaviorDescriptor" file="ZwakkeAanspraakZwakkePlicht_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

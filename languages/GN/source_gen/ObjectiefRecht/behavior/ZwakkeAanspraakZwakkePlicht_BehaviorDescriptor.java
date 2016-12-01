@@ -9,7 +9,7 @@ package ObjectiefRecht.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class ZwakkeAanspraakPlicht_BehaviorDescriptor {
+public class ZwakkeAanspraakZwakkePlicht_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

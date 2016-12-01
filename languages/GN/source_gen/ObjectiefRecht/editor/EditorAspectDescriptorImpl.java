@@ -136,15 +136,15 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       switch (switchIndex) {
         case 0:
           if (true) {
-            if ("ObjectiefRecht.editor.Geldigheid".equals(editorComponentId)) {
-              return Collections.<ConceptEditorComponent>singletonList(new Geldigheid());
+            if ("ObjectiefRecht.editor.BronGeldigheid".equals(editorComponentId)) {
+              return Collections.<ConceptEditorComponent>singletonList(new BronGeldigheid());
             }
           }
           break;
         case 1:
           if (true) {
-            if ("ObjectiefRecht.editor.GeldigheidRegel".equals(editorComponentId)) {
-              return Collections.<ConceptEditorComponent>singletonList(new GeldigheidRegel());
+            if ("ObjectiefRecht.editor.BronGeldigheidRegel".equals(editorComponentId)) {
+              return Collections.<ConceptEditorComponent>singletonList(new BronGeldigheidRegel());
             }
           }
           break;

@@ -47,7 +47,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_VerplichteBevoegdheidVerplichteGehoudenheid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_VormVoorwaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_VrijheidGeenaanspraak = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ZwakkeAanspraakPlicht = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ZwakkeAanspraakZwakkePlicht = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -131,7 +131,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 37:
         return props_VrijheidGeenaanspraak;
       case 38:
-        return props_ZwakkeAanspraakPlicht;
+        return props_ZwakkeAanspraakZwakkePlicht;
     }
     throw new IllegalStateException("Unknown concept " + c);
   }

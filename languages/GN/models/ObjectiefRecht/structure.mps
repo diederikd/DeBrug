@@ -3,9 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="0" />
-    <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
-    <use id="61be2dc6-a140-4def-a592-7499aa2bac19" name="Datum" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -335,9 +332,9 @@
   <node concept="1TIwiD" id="64gsXol8CQm">
     <property role="EcuMT" value="6994217584621161878" />
     <property role="3GE5qa" value="Rechtsbetrekking" />
-    <property role="TrG5h" value="ZwakkeAanspraakPlicht" />
+    <property role="TrG5h" value="ZwakkeAanspraakZwakkePlicht" />
     <property role="R4oN_" value="Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten." />
-    <property role="34LRSv" value="zwakke aanspraak - plicht" />
+    <property role="34LRSv" value="zwakke aanspraak - zwakke plicht" />
     <ref role="1TJDcQ" node="64gsXol8COd" resolve="Rechtsbetrekking" />
   </node>
   <node concept="1TIwiD" id="64gsXol8CQn">
@@ -523,14 +520,14 @@
     <node concept="1TJgyj" id="4$mS69sS$iU" role="1TKVEi">
       <property role="IQ2ns" value="5266643527326123194" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="geldigVan" />
+      <property role="20kJfa" value="brongeldigVan" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="jx79:6c9haf45sz3" resolve="Datum" />
     </node>
     <node concept="1TJgyj" id="4$mS69sS$iW" role="1TKVEi">
       <property role="IQ2ns" value="5266643527326123196" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="geldigTot" />
+      <property role="20kJfa" value="brongeldigTot" />
       <ref role="20lvS9" to="jx79:6c9haf45sz3" resolve="Datum" />
     </node>
   </node>

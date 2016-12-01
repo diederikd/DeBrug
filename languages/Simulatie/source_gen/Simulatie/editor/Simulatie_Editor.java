@@ -275,11 +275,11 @@ public class Simulatie_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNode_fapojb_m0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Simulatie_Editor.rechtspositie1SingleRoleHandler_fapojb_m0(node, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcaea0d6fL, "rechtspositie1"), editorContext);
+    SingleRoleCellProvider provider = new Simulatie_Editor.rechtspositieSingleRoleHandler_fapojb_m0(node, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcaea0d6fL, "rechtspositie"), editorContext);
     return provider.createCell();
   }
-  private class rechtspositie1SingleRoleHandler_fapojb_m0 extends SingleRoleCellProvider {
-    public rechtspositie1SingleRoleHandler_fapojb_m0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class rechtspositieSingleRoleHandler_fapojb_m0 extends SingleRoleCellProvider {
+    public rechtspositieSingleRoleHandler_fapojb_m0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -289,28 +289,40 @@ public class Simulatie_Editor extends DefaultNodeEditor {
     }
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcaea0d6fL, "rechtspositie1"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcaea0d6fL, "rechtspositie"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
-        editorCell.setRole("rechtspositie1");
+        editorCell.setRole("rechtspositie");
       }
       Style style = new StyleImpl();
       SNode node = myOwnerNode;
       EditorContext editorContext = myEditorContext;
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+      style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
       style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
       editorCell.getStyle().putAll(style);
     }
     @Override
+    public EditorCell createCell() {
+      try {
+        myEditorContext.getCellFactory().pushCellContext();
+        myEditorContext.getCellFactory().addCellContextHints(new String[]{"Simulatie.editor.Simulatie.RechtspositieRol1"});
+        myEditorContext.getCellFactory().removeCellContextHints();
+        return super.createCell();
+      } finally {
+        myEditorContext.getCellFactory().popCellContext();
+      }
+    }
+    @Override
     protected EditorCell createEmptyCell() {
       EditorCell editorCell = super.createEmptyCell();
-      editorCell.setCellId("empty_rechtspositie1");
+      editorCell.setCellId("empty_rechtspositie");
 
       installCellInfo(null, editorCell);
       return editorCell;
     }
     protected String getNoTargetText() {
-      return "<no rechtspositie1>";
+      return "<no rechtspositie>";
     }
   }
   private EditorCell createConstant_fapojb_n0(EditorContext editorContext, SNode node) {
@@ -395,11 +407,11 @@ public class Simulatie_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNode_fapojb_s0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Simulatie_Editor.rechtspositie2SingleRoleHandler_fapojb_s0(node, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x1ed85b1d6da953f8L, "rechtspositie2"), editorContext);
+    SingleRoleCellProvider provider = new Simulatie_Editor.rechtspositieSingleRoleHandler_fapojb_s0(node, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcaea0d6fL, "rechtspositie"), editorContext);
     return provider.createCell();
   }
-  private class rechtspositie2SingleRoleHandler_fapojb_s0 extends SingleRoleCellProvider {
-    public rechtspositie2SingleRoleHandler_fapojb_s0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class rechtspositieSingleRoleHandler_fapojb_s0 extends SingleRoleCellProvider {
+    public rechtspositieSingleRoleHandler_fapojb_s0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -409,10 +421,10 @@ public class Simulatie_Editor extends DefaultNodeEditor {
     }
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x1ed85b1d6da953f8L, "rechtspositie2"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcaea0d6fL, "rechtspositie"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
-        editorCell.setRole("rechtspositie2");
+        editorCell.setRole("rechtspositie");
       }
       Style style = new StyleImpl();
       SNode node = myOwnerNode;
@@ -423,15 +435,26 @@ public class Simulatie_Editor extends DefaultNodeEditor {
       editorCell.getStyle().putAll(style);
     }
     @Override
+    public EditorCell createCell() {
+      try {
+        myEditorContext.getCellFactory().pushCellContext();
+        myEditorContext.getCellFactory().addCellContextHints(new String[]{"Simulatie.editor.Simulatie.RechtspositieRol2"});
+        myEditorContext.getCellFactory().removeCellContextHints();
+        return super.createCell();
+      } finally {
+        myEditorContext.getCellFactory().popCellContext();
+      }
+    }
+    @Override
     protected EditorCell createEmptyCell() {
       EditorCell editorCell = super.createEmptyCell();
-      editorCell.setCellId("empty_rechtspositie2");
+      editorCell.setCellId("empty_rechtspositie");
 
       installCellInfo(null, editorCell);
       return editorCell;
     }
     protected String getNoTargetText() {
-      return "<no rechtspositie2>";
+      return "<no rechtspositie>";
     }
   }
   private EditorCell createConstant_fapojb_t0(EditorContext editorContext, SNode node) {

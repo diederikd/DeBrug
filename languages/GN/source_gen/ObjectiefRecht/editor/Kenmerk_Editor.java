@@ -36,7 +36,7 @@ public class Kenmerk_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createComponent_wasupv_a(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "ObjectiefRecht.editor.Geldigheid");
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "ObjectiefRecht.editor.BronGeldigheid");
     EditorCell bigCell = BigCellUtil.findBigCell(editorCell, node);
     if (bigCell != null) {
       bigCell.setBig(true);

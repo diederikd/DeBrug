@@ -8,12 +8,11 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import de.slisson.mps.editor.multiline.cellProviders.MultilineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -22,7 +21,9 @@ import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
+import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class Rechtsbetrekking_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -33,7 +34,7 @@ public class Rechtsbetrekking_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_trpnxn_a");
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_trpnxn_a0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_trpnxn_b0(editorContext, node));
+    editorCell.addEditorCell(this.createMultiline_trpnxn_b0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_trpnxn_c0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_trpnxn_d0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_trpnxn_e0(editorContext, node));
@@ -60,11 +61,14 @@ public class Rechtsbetrekking_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_trpnxn_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtsbetrekking");
     editorCell.setCellId("Constant_trpnxn_a0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_trpnxn_b0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+  private EditorCell createMultiline_trpnxn_b0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new MultilineCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
     EditorCell editorCell;
@@ -78,8 +82,7 @@ public class Rechtsbetrekking_Editor extends DefaultNodeEditor {
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
+      return editorContext.getEditorComponent().getUpdater().getCurrentUpdateSession().updateRoleAttributeCell(attributeKind, editorCell, attributeConcept);
     } else
     return editorCell;
   }
@@ -196,6 +199,9 @@ public class Rechtsbetrekking_Editor extends DefaultNodeEditor {
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name_1");
+      Style style = new StyleImpl();
+      GN_StyleSheet.apply_Subject(style, editorCell);
+      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       Class attributeKind = provider.getRoleAttributeClass();
@@ -256,6 +262,9 @@ public class Rechtsbetrekking_Editor extends DefaultNodeEditor {
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name_2");
+      Style style = new StyleImpl();
+      GN_StyleSheet.apply_Subject(style, editorCell);
+      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       Class attributeKind = provider.getRoleAttributeClass();
@@ -313,6 +322,9 @@ public class Rechtsbetrekking_Editor extends DefaultNodeEditor {
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name_3");
+      Style style = new StyleImpl();
+      GN_StyleSheet.apply_Name(style, editorCell);
+      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       Class attributeKind = provider.getRoleAttributeClass();
@@ -373,6 +385,9 @@ public class Rechtsbetrekking_Editor extends DefaultNodeEditor {
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name_4");
+      Style style = new StyleImpl();
+      GN_StyleSheet.apply_Onderwerp(style, editorCell);
+      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       Class attributeKind = provider.getRoleAttributeClass();

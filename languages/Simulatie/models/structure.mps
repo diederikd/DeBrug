@@ -79,14 +79,8 @@
     <node concept="1TJgyj" id="6OHSlZaUwPJ" role="1TKVEi">
       <property role="IQ2ns" value="7867191925628603759" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="rechtspositie1" />
+      <property role="20kJfa" value="rechtspositie" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="6OHSlZaUlix" resolve="Informatiepositie" />
-    </node>
-    <node concept="1TJgyj" id="1VomLPHElfS" role="1TKVEi">
-      <property role="IQ2ns" value="2222626598059332600" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="rechtspositie2" />
       <ref role="20lvS9" node="6OHSlZaUlix" resolve="Informatiepositie" />
     </node>
   </node>
@@ -94,13 +88,6 @@
     <property role="EcuMT" value="7867191925628556449" />
     <property role="TrG5h" value="Informatiepositie" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6OHSlZaUvrd" role="1TKVEi">
-      <property role="IQ2ns" value="7867191925628597965" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="heeftBetrekkingOpRol1" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="gcgs:6c9haf45syc" resolve="NatuurlijkPersoon" />
-    </node>
     <node concept="1TJgyj" id="6LDTi0oocMz" role="1TKVEi">
       <property role="IQ2ns" value="7812026954661547171" />
       <property role="20lmBu" value="aggregation" />
