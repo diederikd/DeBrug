@@ -91,6 +91,9 @@
     <file name="ReferentieNaarRechtssubject_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarRechtssubject_BehaviorDescriptor" />
     </file>
+    <file name="ReferentieNaarVoorwaardeRechtsbetrekking_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarVoorwaardeRechtsbetrekking_BehaviorDescriptor" />
+    </file>
     <file name="ReferentieNaarVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarVoorwaarde_BehaviorDescriptor" />
     </file>

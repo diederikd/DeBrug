@@ -62,6 +62,9 @@
       <concept id="578094811649943787" name="ObjectiefRecht.structure.ReferentieNaarDatum" flags="ng" index="uSur0">
         <reference id="578094811649943788" name="datum" index="uSur7" />
       </concept>
+      <concept id="2455094379071386907" name="ObjectiefRecht.structure.ReferentieNaarVoorwaardeRechtsbetrekking" flags="ng" index="2wyoDf">
+        <reference id="2455094379071386908" name="Rechtsbetrekking" index="2wyoD8" />
+      </concept>
       <concept id="7136310554705257357" name="ObjectiefRecht.structure.RegelOverRechtsgevolgVeroorzaker" flags="ng" index="2B6EsI">
         <reference id="5266643527326639019" name="rechtsgevolgveroorzaker" index="lZcf9" />
         <child id="7136310554705257383" name="geldigOnderVoorwaarden" index="2B6Es4" />
@@ -96,7 +99,6 @@
         <child id="2417641230338881024" name="rechtssubjecten" index="3D8HBz" />
       </concept>
       <concept id="6994217584621161741" name="ObjectiefRecht.structure.Rechtsbetrekking" flags="ng" index="1OcJVr">
-        <reference id="7867191925628773270" name="bijbehorendeRechtshandeling" index="2BKkb9" />
         <reference id="2417641230338881014" name="onderwerp" index="3D8HCl" />
         <reference id="6994217584621161774" name="rechtssubjectMetPlicht" index="1OcJVS" />
         <reference id="6994217584621161773" name="rechtssubjectMetRecht" index="1OcJVV" />
@@ -145,19 +147,11 @@
       </node>
     </node>
     <node concept="3D8HDq" id="4$mS69sWjnv" role="SxSPV">
-      <property role="TrG5h" value="arbeidsovereenkomst naar burgerlijk recht" />
+      <property role="TrG5h" value="arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
       <node concept="2B78Lw" id="4$mS69sWjnw" role="lXajo" />
       <node concept="uSur0" id="4$mS69sWF5i" role="lYmzI">
         <ref role="uSur7" node="4$mS69sW7va" resolve="de latere van datum van ingang wet, of datum van indiensttredingdatum" />
         <node concept="2B78Lw" id="4$mS69sWF5j" role="lXajo" />
-      </node>
-    </node>
-    <node concept="3D8HDq" id="4$mS69sWjnX" role="SxSPV">
-      <property role="TrG5h" value="publieksrechtelijke aanstelling" />
-      <node concept="2B78Lw" id="4$mS69sWjnY" role="lXajo" />
-      <node concept="uSur0" id="4$mS69sWF5G" role="lYmzI">
-        <ref role="uSur7" node="4$mS69sW7va" resolve="de latere van datum van ingang wet, of datum van indiensttredingdatum" />
-        <node concept="2B78Lw" id="4$mS69sWF5J" role="lXajo" />
       </node>
     </node>
     <node concept="3D8HDq" id="J7tdz7EYjC" role="SxSPV">
@@ -200,11 +194,23 @@
       <property role="TrG5h" value="gewenste spreiding van de uren" />
       <node concept="2B78Lw" id="1VomLPHLHJK" role="lXajo" />
     </node>
+    <node concept="1OcJT1" id="28ifPi2Bjwk" role="33wtHG">
+      <property role="TrG5h" value="werknemer heeft een arbeidsovereenkomst bij de werkgever " />
+      <ref role="1OcJVV" node="4ZpB41Rnx4z" resolve="Werkgever" />
+      <ref role="1OcJVS" node="4ZpB41RnoMO" resolve="Werknemer" />
+      <ref role="3D8HCl" node="4$mS69sWjnv" resolve="arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+      <node concept="1OcJVW" id="28ifPi2Bjx9" role="uSuyt">
+        <property role="TrG5h" value="Datum in diensttreding" />
+        <node concept="2B78Lw" id="28ifPi2Bjxc" role="lXajo" />
+      </node>
+      <node concept="lY6iO" id="28ifPi2Bjxh" role="lY6mC">
+        <property role="TrG5h" value="BW 7 artikel 610 lid 1" />
+      </node>
+    </node>
     <node concept="1OcJTe" id="20D4HrzEMbL" role="33wtHG">
       <property role="TrG5h" value="recht om verzoek aanpassing arbeidsduur&#10;bij eigen werkgever in te dienen" />
       <ref role="1OcJVV" node="4ZpB41RnoMO" resolve="Werknemer" />
       <ref role="1OcJVS" node="4ZpB41Rnx4z" resolve="Werkgever" />
-      <ref role="2BKkb9" node="w5NyGmSGUB" resolve="Indienen verzoek aanpassing arbeidsduur" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur op verzoek van de werknemer" />
       <node concept="lY6lb" id="4$mS69sVSxF" role="lY6mC">
         <ref role="lY6l8" node="4$mS69sVJ7O" resolve="2.1" />
@@ -236,7 +242,6 @@
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur op verzoek van de werknemer" />
       <ref role="1OcJVS" node="4ZpB41Rnx4z" resolve="Werkgever" />
       <ref role="1OcJVV" node="4ZpB41RnoMO" resolve="Werknemer" />
-      <ref role="2BKkb9" node="6OHSlZaVog4" resolve="Inwilligen verzoek" />
       <node concept="uSur0" id="6OHSlZaVohh" role="uSuyt">
         <ref role="uSur7" node="4$mS69sW7vk" resolve="datum indienen verzoek" />
         <node concept="2B78Lw" id="6OHSlZaVohk" role="lXajo" />
@@ -321,6 +326,9 @@
     <node concept="2B6EsI" id="4$mS69sUKOo" role="3D8HBx">
       <property role="TrG5h" value="rechtshandeling indienen verzoek" />
       <ref role="lZcf9" node="w5NyGmSGUB" resolve="Indienen verzoek aanpassing arbeidsduur" />
+      <node concept="2wyoDf" id="28ifPi2B2CI" role="2B6Es4">
+        <ref role="2wyoD8" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur&#10;bij eigen werkgever in te dienen" />
+      </node>
       <node concept="1OcJVu" id="4$mS69sUXXl" role="2B6Es4">
         <property role="TrG5h" value="ten minste vier maanden vóór het beoogde tijdstip van ingang &#10;van de aanpassing ingediend." />
       </node>

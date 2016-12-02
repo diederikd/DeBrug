@@ -39,6 +39,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ReferentieNaarRechtsgevolgVeroorzaker = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtssubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarVoorwaarde = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReferentieNaarVoorwaardeRechtsbetrekking = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Regel = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RegelOverRechtsbetrekking = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RegelOverRechtsgevolgVeroorzaker = new ConceptPresentationBuilder().create();
@@ -115,22 +116,24 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 29:
         return props_ReferentieNaarVoorwaarde;
       case 30:
-        return props_Regel;
+        return props_ReferentieNaarVoorwaardeRechtsbetrekking;
       case 31:
-        return props_RegelOverRechtsbetrekking;
+        return props_Regel;
       case 32:
-        return props_RegelOverRechtsgevolgVeroorzaker;
+        return props_RegelOverRechtsbetrekking;
       case 33:
-        return props_TijdsverloopMetRechtsgevolg;
+        return props_RegelOverRechtsgevolgVeroorzaker;
       case 34:
-        return props_Toestand;
+        return props_TijdsverloopMetRechtsgevolg;
       case 35:
-        return props_VerplichteBevoegdheidVerplichteGehoudenheid;
+        return props_Toestand;
       case 36:
-        return props_VormVoorwaarde;
+        return props_VerplichteBevoegdheidVerplichteGehoudenheid;
       case 37:
-        return props_VrijheidGeenaanspraak;
+        return props_VormVoorwaarde;
       case 38:
+        return props_VrijheidGeenaanspraak;
+      case 39:
         return props_ZwakkeAanspraakZwakkePlicht;
     }
     throw new IllegalStateException("Unknown concept " + c);

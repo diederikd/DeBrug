@@ -160,13 +160,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="26dbYf8FZmT" resolve="Onderwerp" />
     </node>
-    <node concept="1TJgyj" id="6OHSlZaVaem" role="1TKVEi">
-      <property role="IQ2ns" value="7867191925628773270" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="bijbehorendeRechtshandeling" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="64gsXol8COX" resolve="Rechtshandeling" />
-    </node>
     <node concept="PrWs8" id="64gsXol8COe" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -589,6 +582,19 @@
       <property role="20kJfa" value="kenmerk" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4$mS69sVSy3" resolve="Kenmerk" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="28ifPi2AVkr">
+    <property role="EcuMT" value="2455094379071386907" />
+    <property role="3GE5qa" value="Voorwaarden" />
+    <property role="TrG5h" value="ReferentieNaarVoorwaardeRechtsbetrekking" />
+    <ref role="1TJDcQ" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
+    <node concept="1TJgyj" id="28ifPi2AVks" role="1TKVEi">
+      <property role="IQ2ns" value="2455094379071386908" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="Rechtsbetrekking" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="64gsXol8COd" resolve="Rechtsbetrekking" />
     </node>
   </node>
 </model>
