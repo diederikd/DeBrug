@@ -16,6 +16,9 @@
     <file name="AbstracteVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstracteVoorwaarde_BehaviorDescriptor" />
     </file>
+    <file name="Afleidingsregel_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Afleidingsregel_BehaviorDescriptor" />
+    </file>
     <file name="Artikel_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Artikel_BehaviorDescriptor" />
     </file>

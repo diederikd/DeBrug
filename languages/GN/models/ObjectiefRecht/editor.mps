@@ -1087,6 +1087,25 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="3F0ifn" id="28ifPi2BIEW" role="3EZMnx">
+          <property role="3F0ifm" value="wijzigende rechtsbetrekkingen" />
+        </node>
+        <node concept="3F0ifn" id="28ifPi2BIFA" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+          <node concept="ljvvj" id="28ifPi2BIFW" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F2HdR" id="28ifPi2BIHr" role="3EZMnx">
+          <ref role="1NtTu8" to="3pw0:28ifPi2BIEy" resolve="WijzigendeRechtsbetrekkingen" />
+          <node concept="l2Vlx" id="28ifPi2BIHt" role="2czzBx" />
+          <node concept="ljvvj" id="28ifPi2BIHP" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="28ifPi2BIHR" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
         <node concept="3F0ifn" id="4ZpB41RnEs_" role="3EZMnx">
           <property role="3F0ifm" value="eindigende rechtsbetrekkingen" />
         </node>
@@ -1203,7 +1222,7 @@
     <node concept="3EZMnI" id="20D4HrzEFXL" role="2wV5jI">
       <node concept="l2Vlx" id="20D4HrzEFXM" role="2iSdaV" />
       <node concept="3F0ifn" id="20D4HrzEFXN" role="3EZMnx">
-        <property role="3F0ifm" value="norm" />
+        <property role="3F0ifm" value="regel over rechtsbetrekking" />
         <node concept="ljvvj" id="1fugvh9A0oz" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1695,7 +1714,10 @@
     <node concept="3EZMnI" id="4$mS69sUeX2" role="2wV5jI">
       <node concept="l2Vlx" id="4$mS69sUeX3" role="2iSdaV" />
       <node concept="3F0ifn" id="4$mS69sUeX4" role="3EZMnx">
-        <property role="3F0ifm" value="regel" />
+        <property role="3F0ifm" value="regel over rechtsgevolgveroorzaker" />
+        <node concept="ljvvj" id="28ifPi2BQbD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0A7n" id="4$mS69sUeX5" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -2149,6 +2171,96 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="28ifPi2C7Kc">
+    <property role="3GE5qa" value="Regel" />
+    <ref role="1XX52x" to="3pw0:28ifPi2C7Kb" resolve="Afleidingsregel" />
+    <node concept="3EZMnI" id="28ifPi2C7Kj" role="2wV5jI">
+      <node concept="l2Vlx" id="28ifPi2C7Kk" role="2iSdaV" />
+      <node concept="3F0ifn" id="28ifPi2C7Kl" role="3EZMnx">
+        <property role="3F0ifm" value="afleidingsregel" />
+        <node concept="ljvvj" id="28ifPi2C7LN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="28ifPi2C7Km" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="28ifPi2C7Nl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="28ifPi2CfY_" role="3EZMnx">
+        <property role="3F0ifm" value="bron" />
+      </node>
+      <node concept="3F0ifn" id="28ifPi2CfZl" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="28ifPi2Cg07" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:28ifPi2Cftu" resolve="bron" />
+        <node concept="ljvvj" id="28ifPi2Cg0x" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="28ifPi2C7Kq" role="3EZMnx">
+        <node concept="l2Vlx" id="28ifPi2C7Kr" role="2iSdaV" />
+        <node concept="lj46D" id="28ifPi2C7Ks" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F1sOY" id="28ifPi2C7Kx" role="3EZMnx">
+          <ref role="1NtTu8" to="3pw0:28ifPi2C7Ke" resolve="resultaat" />
+          <node concept="ljvvj" id="28ifPi2C7Kz" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="28ifPi2C7KA" role="3EZMnx">
+          <property role="3F0ifm" value="is geldig onder de volgende voorwaarden" />
+        </node>
+        <node concept="3F0ifn" id="28ifPi2C7KB" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+          <node concept="11L4FC" id="28ifPi2C7KC" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="28ifPi2C7KD" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F2HdR" id="28ifPi2C7KE" role="3EZMnx">
+          <ref role="1NtTu8" to="3pw0:28ifPi2C7Kg" resolve="voorwaarden" />
+          <node concept="l2Vlx" id="28ifPi2C7KF" role="2czzBx" />
+          <node concept="pj6Ft" id="28ifPi2C7KG" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="28ifPi2C7KH" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="28ifPi2C7KI" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="28ifPi2C7P7" role="3EZMnx">
+          <property role="3F0ifm" value="" />
+        </node>
+      </node>
+    </node>
+    <node concept="PMmxH" id="28ifPi2C7Pm" role="6VMZX">
+      <ref role="PMmxG" node="4$mS69sUfIC" resolve="BronGeldigheidRegel" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="28ifPi2CnWk">
+    <property role="3GE5qa" value="Voorwaarden" />
+    <ref role="1XX52x" to="3pw0:64gsXol8CQd" resolve="ReferentieNaarVoorwaarde" />
+    <node concept="3EZMnI" id="28ifPi2CnWm" role="2wV5jI">
+      <node concept="1iCGBv" id="28ifPi2CnWt" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:64gsXol8CQe" resolve="voorwaarde" />
+        <node concept="1sVBvm" id="28ifPi2CnWv" role="1sWHZn">
+          <node concept="2v7bAL" id="28ifPi2CnWA" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="28ifPi2CnWp" role="2iSdaV" />
     </node>
   </node>
 </model>

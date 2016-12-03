@@ -90,7 +90,7 @@ public class RegelOverRechtsbetrekking_Editor extends DefaultNodeEditor {
     return result;
   }
   private EditorCell createConstant_s0u8fo_a0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "norm");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "regel over rechtsbetrekking");
     editorCell.setCellId("Constant_s0u8fo_a0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);

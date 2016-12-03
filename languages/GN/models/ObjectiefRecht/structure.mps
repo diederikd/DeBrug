@@ -266,6 +266,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="20D4HrzEFWA" resolve="ReferentieNaarRechtsbetrekking" />
     </node>
+    <node concept="1TJgyj" id="28ifPi2BIEy" role="1TKVEi">
+      <property role="IQ2ns" value="2455094379071597218" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="WijzigendeRechtsbetrekkingen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="20D4HrzEFWA" resolve="ReferentieNaarRechtsbetrekking" />
+    </node>
     <node concept="1TJgyj" id="64gsXol8CPU" role="1TKVEi">
       <property role="IQ2ns" value="6994217584621161850" />
       <property role="20lmBu" value="aggregation" />
@@ -595,6 +602,33 @@
       <property role="20kJfa" value="Rechtsbetrekking" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="64gsXol8COd" resolve="Rechtsbetrekking" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="28ifPi2C7Kb">
+    <property role="EcuMT" value="2455094379071699979" />
+    <property role="TrG5h" value="Afleidingsregel" />
+    <property role="3GE5qa" value="Regel" />
+    <ref role="1TJDcQ" node="26dbYf8FZnZ" resolve="Regel" />
+    <node concept="1TJgyj" id="28ifPi2Cftu" role="1TKVEi">
+      <property role="IQ2ns" value="2455094379071731550" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bron" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4$mS69sVCn9" resolve="AbstractArtikel" />
+    </node>
+    <node concept="1TJgyj" id="28ifPi2C7Ke" role="1TKVEi">
+      <property role="IQ2ns" value="2455094379071699982" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="resultaat" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
+    </node>
+    <node concept="1TJgyj" id="28ifPi2C7Kg" role="1TKVEi">
+      <property role="IQ2ns" value="2455094379071699984" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="voorwaarden" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
     </node>
   </node>
 </model>
