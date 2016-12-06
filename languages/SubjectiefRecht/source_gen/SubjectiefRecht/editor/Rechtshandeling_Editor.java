@@ -194,11 +194,11 @@ public class Rechtshandeling_Editor extends DefaultNodeEditor {
       return editorCell;
     }
     private EditorCell createRefNode_2759bf_a0a6a(EditorContext editorContext, SNode node) {
-      SingleRoleCellProvider provider = new Rechtshandeling_Editor._Inline_2759bf_a6a.actorSingleRoleHandler_2759bf_a0a6a(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "actor"), editorContext);
+      SingleRoleCellProvider provider = new Rechtshandeling_Editor._Inline_2759bf_a6a.rechtssubjectSingleRoleHandler_2759bf_a0a6a(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "rechtssubject"), editorContext);
       return provider.createCell();
     }
-    private class actorSingleRoleHandler_2759bf_a0a6a extends SingleRoleCellProvider {
-      public actorSingleRoleHandler_2759bf_a0a6a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    private class rechtssubjectSingleRoleHandler_2759bf_a0a6a extends SingleRoleCellProvider {
+      public rechtssubjectSingleRoleHandler_2759bf_a0a6a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
         super(ownerNode, containmentLink, context);
       }
       protected EditorCell createChildCell(SNode child) {
@@ -208,22 +208,22 @@ public class Rechtshandeling_Editor extends DefaultNodeEditor {
       }
       private void installCellInfo(SNode child, EditorCell editorCell) {
         if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "actor"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+          editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "rechtssubject"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
         }
         if (editorCell.getRole() == null) {
-          editorCell.setRole("actor");
+          editorCell.setRole("rechtssubject");
         }
       }
       @Override
       protected EditorCell createEmptyCell() {
         EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_actor");
+        editorCell.setCellId("empty_rechtssubject");
 
         installCellInfo(null, editorCell);
         return editorCell;
       }
       protected String getNoTargetText() {
-        return "<no actor>";
+        return "<no rechtssubject>";
       }
     }
   }

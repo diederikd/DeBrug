@@ -9,10 +9,14 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
 public class Datum_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
     return this.createProperty_96duim_a(editorContext, node);
+  }
+  public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
+    return this.createComponent_96duim_a(editorContext, node);
   }
   private EditorCell createProperty_96duim_a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
@@ -29,6 +33,14 @@ public class Datum_Editor extends DefaultNodeEditor {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
       return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
     } else
+    return editorCell;
+  }
+  private EditorCell createComponent_96duim_a(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "ObjectiefRecht.editor.BronGeldigheid");
+    EditorCell bigCell = BigCellUtil.findBigCell(editorCell, node);
+    if (bigCell != null) {
+      bigCell.setBig(true);
+    }
     return editorCell;
   }
 }

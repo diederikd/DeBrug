@@ -1195,20 +1195,20 @@
       <node id="7136310554705428076" at="191,98,192,53" concept="1" />
       <node id="7136310554705428076" at="192,53,193,85" concept="1" />
       <node id="7136310554705428076" at="193,85,194,24" concept="5" />
-      <node id="7136310554705428076" at="196,92,197,275" concept="4" />
-      <node id="7136310554705428076" at="197,275,198,35" concept="5" />
-      <node id="7136310554705428076" at="201,124,202,51" concept="7" />
+      <node id="7136310554705428076" at="196,92,197,291" concept="4" />
+      <node id="7136310554705428076" at="197,291,198,35" concept="5" />
+      <node id="7136310554705428076" at="201,132,202,51" concept="7" />
       <node id="7136310554705428076" at="204,57,205,61" concept="4" />
       <node id="7136310554705428076" at="205,61,206,43" concept="1" />
       <node id="7136310554705428076" at="206,43,207,26" concept="5" />
-      <node id="7136310554705428076" at="210,120,211,383" concept="1" />
-      <node id="7136310554705428076" at="213,43,214,38" concept="1" />
+      <node id="7136310554705428076" at="210,120,211,391" concept="1" />
+      <node id="7136310554705428076" at="213,43,214,46" concept="1" />
       <node id="7136310554705428076" at="218,46,219,56" concept="4" />
-      <node id="7136310554705428076" at="219,56,220,44" concept="1" />
-      <node id="7136310554705428076" at="220,44,221,0" concept="6" />
+      <node id="7136310554705428076" at="219,56,220,52" concept="1" />
+      <node id="7136310554705428076" at="220,52,221,0" concept="6" />
       <node id="7136310554705428076" at="221,0,222,42" concept="1" />
       <node id="7136310554705428076" at="222,42,223,26" concept="5" />
-      <node id="7136310554705428076" at="225,42,226,28" concept="5" />
+      <node id="7136310554705428076" at="225,42,226,36" concept="5" />
       <node id="7136310554705428202" at="230,88,231,87" concept="4" />
       <node id="7136310554705428202" at="231,87,232,47" concept="1" />
       <node id="7136310554705428202" at="232,47,233,34" concept="1" />
@@ -1251,7 +1251,7 @@
       <node id="7136310554705428076" at="181,0,184,0" concept="0" trace="_Inline_2759bf_a6a#()V" />
       <node id="7136310554705428076" at="184,0,187,0" concept="3" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="7136310554705428076" at="187,0,190,0" concept="3" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="7136310554705428076" at="201,0,204,0" concept="0" trace="actorSingleRoleHandler_2759bf_a0a6a#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="7136310554705428076" at="201,0,204,0" concept="0" trace="rechtssubjectSingleRoleHandler_2759bf_a0a6a#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="7136310554705428076" at="209,72,212,9" concept="2" />
       <node id="7136310554705428076" at="212,9,215,9" concept="2" />
       <node id="7136310554705428076" at="225,0,228,0" concept="3" trace="getNoTargetText#()Ljava/lang/String;" />
@@ -1299,10 +1299,10 @@
       <scope id="7136310554705428076" at="181,33,182,14" />
       <scope id="7136310554705428076" at="184,69,185,67" />
       <scope id="7136310554705428076" at="187,81,188,68" />
-      <scope id="7136310554705428076" at="201,124,202,51" />
-      <scope id="7136310554705428076" at="210,120,211,383" />
-      <scope id="7136310554705428076" at="213,43,214,38" />
-      <scope id="7136310554705428076" at="225,42,226,28" />
+      <scope id="7136310554705428076" at="201,132,202,51" />
+      <scope id="7136310554705428076" at="210,120,211,391" />
+      <scope id="7136310554705428076" at="213,43,214,46" />
+      <scope id="7136310554705428076" at="225,42,226,36" />
       <scope id="7136310554705419782" at="258,126,259,49" />
       <scope id="7136310554705419782" at="267,118,268,388" />
       <scope id="7136310554705419782" at="270,41,271,43" />
@@ -1520,7 +1520,7 @@
       </scope>
       <unit id="7136310554705419793" at="79,0,106,0" name="SubjectiefRecht.editor.Rechtshandeling_Editor$_Inline_2759bf_a1a" />
       <unit id="7136310554705419782" at="119,0,148,0" name="SubjectiefRecht.editor.Rechtshandeling_Editor$actorSingleRoleHandler_2759bf_d0" />
-      <unit id="7136310554705428076" at="200,0,229,0" name="SubjectiefRecht.editor.Rechtshandeling_Editor$_Inline_2759bf_a6a$actorSingleRoleHandler_2759bf_a0a6a" />
+      <unit id="7136310554705428076" at="200,0,229,0" name="SubjectiefRecht.editor.Rechtshandeling_Editor$_Inline_2759bf_a6a$rechtssubjectSingleRoleHandler_2759bf_a0a6a" />
       <unit id="7136310554705419782" at="257,0,286,0" name="SubjectiefRecht.editor.Rechtshandeling_Editor$uitgevoerdOpSingleRoleHandler_2759bf_k0" />
       <unit id="7136310554705428076" at="180,0,230,0" name="SubjectiefRecht.editor.Rechtshandeling_Editor$_Inline_2759bf_a6a" />
       <unit id="7136310554705419782" at="28,0,287,0" name="SubjectiefRecht.editor.Rechtshandeling_Editor" />

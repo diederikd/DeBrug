@@ -82,6 +82,9 @@
     <file name="ReferentieNaarKenmerk_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarKenmerk_BehaviorDescriptor" />
     </file>
+    <file name="ReferentieNaarOnderwerp_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarOnderwerp_BehaviorDescriptor" />
+    </file>
     <file name="ReferentieNaarRechtsbetrekking_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarRechtsbetrekking_BehaviorDescriptor" />
     </file>

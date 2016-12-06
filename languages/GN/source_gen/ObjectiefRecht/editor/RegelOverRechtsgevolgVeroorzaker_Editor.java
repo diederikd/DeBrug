@@ -18,6 +18,11 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
+import jetbrains.mps.openapi.editor.cells.CellActionType;
+import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import de.slisson.mps.editor.multiline.cellProviders.MultilineCellProvider;
@@ -31,7 +36,6 @@ import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
-import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
@@ -118,7 +122,7 @@ public class RegelOverRechtsgevolgVeroorzaker_Editor extends DefaultNodeEditor {
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(this.createConstant_2jdznl_a2a0(editorContext, node));
+    editorCell.addEditorCell(this.createModelAccess_2jdznl_a2a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_2jdznl_b2a0(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_2jdznl_c2a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_2jdznl_d2a0(editorContext, node));
@@ -130,9 +134,24 @@ public class RegelOverRechtsgevolgVeroorzaker_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_2jdznl_j2a0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_2jdznl_a2a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtsgevolgveroorzaker");
-    editorCell.setCellId("Constant_2jdznl_a2a0");
+  private EditorCell createModelAccess_2jdznl_a2a0(final EditorContext editorContext, final SNode node) {
+    ModelAccessor modelAccessor = new ModelAccessor() {
+      public String getText() {
+        return SConceptOperations.conceptAlias(SNodeOperations.getConcept(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x630944a3c413e38dL, 0x4916e0625cea23abL, "rechtsgevolgveroorzaker"))));
+      }
+      public void setText(String text) {
+      }
+      public boolean isValidText(String text) {
+        return true;
+      }
+    };
+    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, modelAccessor, node);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ModelAccess_2jdznl_a2a0");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Bold(style, editorCell);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }

@@ -37,5 +37,10 @@ public class GN_StyleSheet {
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
     style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.PLAIN);
   }
+  public static void apply_Bold(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);
+  }
 
 }

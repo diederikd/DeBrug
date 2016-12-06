@@ -15,10 +15,14 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
 public class ReferentieNaarDatum_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
     return this.createCollection_alwvro_a(editorContext, node);
+  }
+  public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
+    return this.createComponent_alwvro_a(editorContext, node);
   }
   private EditorCell createCollection_alwvro_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
@@ -77,5 +81,13 @@ public class ReferentieNaarDatum_Editor extends DefaultNodeEditor {
       } else
       return editorCell;
     }
+  }
+  private EditorCell createComponent_alwvro_a(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "ObjectiefRecht.editor.BronGeldigheid");
+    EditorCell bigCell = BigCellUtil.findBigCell(editorCell, node);
+    if (bigCell != null) {
+      bigCell.setBig(true);
+    }
+    return editorCell;
   }
 }
