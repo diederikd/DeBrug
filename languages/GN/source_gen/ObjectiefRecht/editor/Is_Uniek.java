@@ -46,7 +46,7 @@ public class Is_Uniek implements ConceptEditorComponent {
     return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L, 0x5781f93f2e519028L, "uniek"));
   }
   private EditorCell createConstant_1c2om8_a0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "is uniek");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "[ is uniek ]");
     editorCell.setCellId("Constant_1c2om8_a0a");
     editorCell.setDefaultText("");
     return editorCell;

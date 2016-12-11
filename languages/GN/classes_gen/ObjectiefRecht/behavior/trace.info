@@ -7,11 +7,11 @@
     <file name="AbstractArtikel_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstractArtikel_BehaviorDescriptor" />
     </file>
+    <file name="AbstractDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstractDatatype_BehaviorDescriptor" />
+    </file>
     <file name="AbstractKenmerk_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstractKenmerk_BehaviorDescriptor" />
-    </file>
-    <file name="AbstracteDatum_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstracteDatum_BehaviorDescriptor" />
     </file>
     <file name="AbstracteVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstracteVoorwaarde_BehaviorDescriptor" />
@@ -31,8 +31,8 @@
     <file name="Context_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Context_BehaviorDescriptor" />
     </file>
-    <file name="Datum_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Datum_BehaviorDescriptor" />
+    <file name="DatumDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.DatumDatatype_BehaviorDescriptor" />
     </file>
     <file name="FeitelijkeHandelingMetRechtsgevolg_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.FeitelijkeHandelingMetRechtsgevolg_BehaviorDescriptor" />
@@ -40,8 +40,14 @@
     <file name="GebeurtenisMetRechtsgevolg_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.GebeurtenisMetRechtsgevolg_BehaviorDescriptor" />
     </file>
+    <file name="GeheelGetalDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.GeheelGetalDatatype_BehaviorDescriptor" />
+    </file>
     <file name="ImmuniteitGeenbevoegdheid_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ImmuniteitGeenbevoegdheid_BehaviorDescriptor" />
+    </file>
+    <file name="JaNeeDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.JaNeeDatatype_BehaviorDescriptor" />
     </file>
     <file name="Kenmerk_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Kenmerk_BehaviorDescriptor" />
@@ -73,11 +79,11 @@
     <file name="Rechtshandeling_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Rechtshandeling_BehaviorDescriptor" />
     </file>
+    <file name="ReeelGetalDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReeelGetalDatatype_BehaviorDescriptor" />
+    </file>
     <file name="ReferentieNaarArtikel_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarArtikel_BehaviorDescriptor" />
-    </file>
-    <file name="ReferentieNaarDatum_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarDatum_BehaviorDescriptor" />
     </file>
     <file name="ReferentieNaarKenmerk_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarKenmerk_BehaviorDescriptor" />
@@ -111,6 +117,12 @@
     </file>
     <file name="Regel_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Regel_BehaviorDescriptor" />
+    </file>
+    <file name="RijVanKaraktersDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.RijVanKaraktersDatatype_BehaviorDescriptor" />
+    </file>
+    <file name="TijdDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TijdDatatype_BehaviorDescriptor" />
     </file>
     <file name="TijdsverloopMetRechtsgevolg_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TijdsverloopMetRechtsgevolg_BehaviorDescriptor" />

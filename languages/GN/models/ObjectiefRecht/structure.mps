@@ -180,29 +180,20 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="geldigVan" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="w5NyGmT2zs" resolve="AbstracteDatum" />
+      <ref role="20lvS9" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
     </node>
     <node concept="1TJgyj" id="w5NyGmT2qV" role="1TKVEi">
       <property role="IQ2ns" value="578094811649943227" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="geldigTot" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="w5NyGmT2zs" resolve="AbstracteDatum" />
+      <ref role="20lvS9" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
     </node>
     <node concept="1TJgyj" id="4$mS69sVCna" role="1TKVEi">
       <property role="IQ2ns" value="5266643527326926282" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="bron" />
       <ref role="20lvS9" node="4$mS69sVCn9" resolve="AbstractArtikel" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="64gsXol8COE">
-    <property role="EcuMT" value="6994217584621161770" />
-    <property role="TrG5h" value="Datum" />
-    <property role="3GE5qa" value="Datum" />
-    <ref role="1TJDcQ" node="w5NyGmT2zs" resolve="AbstracteDatum" />
-    <node concept="PrWs8" id="64gsXol8COF" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="64gsXol8COU">
@@ -240,6 +231,12 @@
       <property role="20kJfa" value="rechtssubject" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="20D4HrzFFXB" resolve="ReferentieNaarRechtssubject" />
+    </node>
+    <node concept="1TJgyj" id="5qTpXpBoPx_" role="1TKVEi">
+      <property role="IQ2ns" value="6249140128508500069" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="uitgevoerdOp" />
+      <ref role="20lvS9" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
     </node>
   </node>
   <node concept="1TIwiD" id="64gsXol8COY">
@@ -473,27 +470,6 @@
       <ref role="20lvS9" node="64gsXol8COa" resolve="RechtsSubject" />
     </node>
   </node>
-  <node concept="1TIwiD" id="w5NyGmT2zs">
-    <property role="EcuMT" value="578094811649943772" />
-    <property role="3GE5qa" value="Datum" />
-    <property role="TrG5h" value="AbstracteDatum" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
-  </node>
-  <node concept="1TIwiD" id="w5NyGmT2zF">
-    <property role="EcuMT" value="578094811649943787" />
-    <property role="3GE5qa" value="Datum" />
-    <property role="TrG5h" value="ReferentieNaarDatum" />
-    <ref role="1TJDcQ" node="w5NyGmT2zs" resolve="AbstracteDatum" />
-    <node concept="1TJgyj" id="w5NyGmT2zG" role="1TKVEi">
-      <property role="IQ2ns" value="578094811649943788" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="datum" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="64gsXol8COE" resolve="Datum" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6c9haf44Yed">
     <property role="EcuMT" value="7136310554705257357" />
     <property role="3GE5qa" value="Regel" />
@@ -588,6 +564,12 @@
     <property role="TrG5h" value="Kenmerk" />
     <property role="3GE5qa" value="Kenmerk" />
     <ref role="1TJDcQ" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
+    <node concept="1TJgyj" id="5qTpXpBmyqf" role="1TKVEi">
+      <property role="IQ2ns" value="6249140128507897487" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="datatype" />
+      <ref role="20lvS9" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    </node>
     <node concept="PrWs8" id="4$mS69sVSy4" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -673,6 +655,56 @@
     <node concept="PrWs8" id="MvzNsyB_D$" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2xp9_$ucE6q">
+    <property role="EcuMT" value="2907397198644945306" />
+    <property role="TrG5h" value="AbstractDatatype" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="Datatype" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2xp9_$ucE6L">
+    <property role="EcuMT" value="2907397198644945329" />
+    <property role="TrG5h" value="DatumDatatype" />
+    <property role="34LRSv" value="datum" />
+    <property role="3GE5qa" value="Datatype" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+  </node>
+  <node concept="1TIwiD" id="2xp9_$ucE6Z">
+    <property role="EcuMT" value="2907397198644945343" />
+    <property role="TrG5h" value="RijVanKaraktersDatatype" />
+    <property role="34LRSv" value="rij van karakters" />
+    <property role="3GE5qa" value="Datatype" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+  </node>
+  <node concept="1TIwiD" id="2xp9_$ucE7d">
+    <property role="EcuMT" value="2907397198644945357" />
+    <property role="TrG5h" value="GeheelGetalDatatype" />
+    <property role="34LRSv" value="geheel getal" />
+    <property role="3GE5qa" value="Datatype" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+  </node>
+  <node concept="1TIwiD" id="2xp9_$ucE7_">
+    <property role="EcuMT" value="2907397198644945381" />
+    <property role="TrG5h" value="ReeelGetalDatatype" />
+    <property role="34LRSv" value="reëel getal" />
+    <property role="3GE5qa" value="Datatype" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+  </node>
+  <node concept="1TIwiD" id="5qTpXpBo3vZ">
+    <property role="EcuMT" value="6249140128508295167" />
+    <property role="TrG5h" value="TijdDatatype" />
+    <property role="34LRSv" value="tijd" />
+    <property role="3GE5qa" value="Datatype" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+  </node>
+  <node concept="1TIwiD" id="5qTpXpBogQD">
+    <property role="EcuMT" value="6249140128508349865" />
+    <property role="TrG5h" value="JaNeeDatatype" />
+    <property role="34LRSv" value="ja/nee" />
+    <property role="3GE5qa" value="Datatype" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
   </node>
 </model>
 

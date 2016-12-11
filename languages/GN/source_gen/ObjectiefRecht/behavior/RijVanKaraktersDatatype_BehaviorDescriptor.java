@@ -9,7 +9,7 @@ package ObjectiefRecht.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class Datum_BehaviorDescriptor {
+public class RijVanKaraktersDatatype_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }
