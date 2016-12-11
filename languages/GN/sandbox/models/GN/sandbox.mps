@@ -602,7 +602,7 @@
       </node>
     </node>
     <node concept="1OcJTe" id="1VomLPHLHJe" role="33wtHG">
-      <property role="TrG5h" value="recht om de gewenste spreiding van de uren te wijzigen" />
+      <property role="TrG5h" value="het recht om de gewenste spreiding van de uren te wijzigen" />
       <ref role="1OcJVV" node="4ZpB41Rnx4z" resolve="Werkgever" />
       <ref role="1OcJVS" node="4ZpB41RnoMO" resolve="Werknemer" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur op verzoek van de werknemer" />
@@ -620,7 +620,7 @@
       </node>
     </node>
     <node concept="1OcJT1" id="28ifPi2C7HR" role="33wtHG">
-      <property role="TrG5h" value="verplichting tot het mededelen van de beslissing" />
+      <property role="TrG5h" value="verplichting tot het schriftelijk mededelen van de beslissing" />
       <property role="I0$kK" value="uitzoeken of dit een fatale verplichting of verplichting na ingebrekestelling is." />
       <ref role="1OcJVV" node="4ZpB41RnoMO" resolve="Werknemer" />
       <ref role="1OcJVS" node="4ZpB41Rnx4z" resolve="Werkgever" />
@@ -705,7 +705,7 @@
       </node>
     </node>
     <node concept="2B6EsI" id="28ifPi2BQ_b" role="3D8HBx">
-      <property role="TrG5h" value="plicht om een verzoek in te dienen" />
+      <property role="TrG5h" value="Overleg te plegen" />
       <ref role="lZcf9" node="28ifPi2BQ89" resolve="Overleg plegen" />
       <node concept="2B78Lw" id="28ifPi2BQ_e" role="lXajo">
         <property role="2B78LB" value="01" />
@@ -764,7 +764,7 @@
         <property role="2B78LE" value="2000" />
       </node>
       <node concept="2wyoDf" id="28ifPi2BQ$D" role="2B6Es4">
-        <ref role="2wyoD8" node="1VomLPHLHJe" resolve="recht om de gewenste spreiding van de uren te wijzigen" />
+        <ref role="2wyoD8" node="1VomLPHLHJe" resolve="het recht om de gewenste spreiding van de uren te wijzigen" />
       </node>
       <node concept="1OcJVu" id="28ifPi2BQ$$" role="2B6Es4">
         <property role="TrG5h" value="de werkgever heeft een zodanig belang dat de wens van de werknemer&#10;daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken" />
@@ -779,7 +779,7 @@
         <property role="2B78LE" value="2000" />
       </node>
       <node concept="2wyoDf" id="28ifPi2CKkp" role="2B6Es4">
-        <ref role="2wyoD8" node="28ifPi2C7HR" resolve="verplichting tot het mededelen van de beslissing" />
+        <ref role="2wyoD8" node="28ifPi2C7HR" resolve="verplichting tot het schriftelijk mededelen van de beslissing" />
       </node>
     </node>
     <node concept="2B6EsI" id="28ifPi2CKq0" role="3D8HBx">
@@ -884,7 +884,7 @@
           <ref role="33wURL" node="1fugvh9_kgi" resolve="immuniteit voor neutraliseren van de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek" />
         </node>
         <node concept="33wURK" id="28ifPi2yjsr" role="1OcJUI">
-          <ref role="33wURL" node="1VomLPHLHJe" resolve="recht om de gewenste spreiding van de uren te wijzigen" />
+          <ref role="33wURL" node="1VomLPHLHJe" resolve="het recht om de gewenste spreiding van de uren te wijzigen" />
         </node>
       </node>
       <node concept="lY6iO" id="4$mS69sVJ7O" role="lY6mP">
@@ -930,7 +930,7 @@
           <ref role="33wURL" node="MvzNsyB7Rg" resolve="het recht voor het inwilligen van verzoek voor zover&#10;het betreft het tijdstip van ingang en de omvang van de aanpassing" />
         </node>
         <node concept="33wURK" id="28ifPi2BQ6M" role="1OcJUG">
-          <ref role="33wURL" node="1VomLPHLHJe" resolve="recht om de gewenste spreiding van de uren te wijzigen" />
+          <ref role="33wURL" node="1VomLPHLHJe" resolve="het recht om de gewenste spreiding van de uren te wijzigen" />
         </node>
         <node concept="33wURK" id="28ifPi2BQ6U" role="1OcJUG">
           <ref role="33wURL" node="1fugvh9_kgi" resolve="immuniteit voor neutraliseren van de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek" />
@@ -956,7 +956,7 @@
           <ref role="33wURL" node="MvzNsyB7Rg" resolve="het recht voor het inwilligen van verzoek voor zover&#10;het betreft het tijdstip van ingang en de omvang van de aanpassing" />
         </node>
         <node concept="33wURK" id="28ifPi2BQ72" role="1OcJUG">
-          <ref role="33wURL" node="1VomLPHLHJe" resolve="recht om de gewenste spreiding van de uren te wijzigen" />
+          <ref role="33wURL" node="1VomLPHLHJe" resolve="het recht om de gewenste spreiding van de uren te wijzigen" />
         </node>
         <node concept="33wURK" id="28ifPi2BQ7a" role="1OcJUG">
           <ref role="33wURL" node="1fugvh9_kgi" resolve="immuniteit voor neutraliseren van de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek" />
@@ -985,7 +985,7 @@
           <ref role="33wURL" node="5u1YjWIkWvP" resolve="het recht tot het vaststellen van de spreiding van de uren&#10;overeenkomstig de wensen van de werknemer" />
         </node>
         <node concept="33wURK" id="28ifPi2BQzC" role="1OcJUG">
-          <ref role="33wURL" node="1VomLPHLHJe" resolve="recht om de gewenste spreiding van de uren te wijzigen" />
+          <ref role="33wURL" node="1VomLPHLHJe" resolve="het recht om de gewenste spreiding van de uren te wijzigen" />
         </node>
       </node>
       <node concept="2B78Lw" id="MvzNsyAs90" role="lXajo">
@@ -1028,7 +1028,7 @@
       <node concept="1OcJUx" id="28ifPi2C7Hl" role="33xnZK">
         <property role="TrG5h" value="beslissing medegedeeld" />
         <node concept="33wURK" id="28ifPi2C7K1" role="1OcJUG">
-          <ref role="33wURL" node="28ifPi2C7HR" resolve="verplichting tot het mededelen van de beslissing" />
+          <ref role="33wURL" node="28ifPi2C7HR" resolve="verplichting tot het schriftelijk mededelen van de beslissing" />
         </node>
       </node>
       <node concept="2B78Lw" id="MvzNsyAs94" role="lXajo">
@@ -1061,11 +1061,17 @@
       <property role="TrG5h" value="de arbeidsduur wordt aangepast overeenkomstig het verzoek van de werknemer" />
       <node concept="1OcJUx" id="MvzNsy$K5y" role="33xnZK">
         <property role="TrG5h" value="aanpassing overeenkomstig verzoek werknemer" />
+        <node concept="33wURK" id="5u1YjWIlz7L" role="1OcJUG">
+          <ref role="33wURL" node="20D4HrzFibY" resolve="verplichting tot overleg plegen" />
+        </node>
         <node concept="33wURK" id="MvzNsy$K6G" role="1OcJUG">
           <ref role="33wURL" node="5u1YjWIkWvP" resolve="het recht tot het vaststellen van de spreiding van de uren&#10;overeenkomstig de wensen van de werknemer" />
         </node>
+        <node concept="33wURK" id="5u1YjWIlz83" role="1OcJUG">
+          <ref role="33wURL" node="1fugvh9_kgi" resolve="immuniteit voor neutraliseren van de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek" />
+        </node>
         <node concept="33wURK" id="MvzNsy$K6L" role="1OcJUG">
-          <ref role="33wURL" node="1VomLPHLHJe" resolve="recht om de gewenste spreiding van de uren te wijzigen" />
+          <ref role="33wURL" node="1VomLPHLHJe" resolve="het recht om de gewenste spreiding van de uren te wijzigen" />
         </node>
         <node concept="33wURK" id="MvzNsy$K6P" role="2wzdnQ">
           <ref role="33wURL" node="5u1YjWIkWv5" resolve="werknemer is verplicht arbeid te verrichten bij&#10;de werkgever voor een aantal uren per week  " />
