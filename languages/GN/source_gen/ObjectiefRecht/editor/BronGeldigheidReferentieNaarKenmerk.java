@@ -22,8 +22,10 @@ import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.nodeEditor.InlineCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class BronGeldigheidReferentieNaarKenmerk implements ConceptEditorComponent {
   @NotNull
@@ -44,7 +46,10 @@ public class BronGeldigheidReferentieNaarKenmerk implements ConceptEditorCompone
     editorCell.addEditorCell(this.createRefNode_xt4fan_f0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_xt4fan_g0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_xt4fan_h0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_xt4fan_i0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_xt4fan_i0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_xt4fan_j0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_xt4fan_k0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_xt4fan_l0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_xt4fan_a0(EditorContext editorContext, SNode node) {
@@ -143,7 +148,7 @@ public class BronGeldigheidReferentieNaarKenmerk implements ConceptEditorCompone
     }
   }
   private EditorCell createConstant_xt4fan_g0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "uniek");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "datatype");
     editorCell.setCellId("Constant_xt4fan_g0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
@@ -157,7 +162,92 @@ public class BronGeldigheidReferentieNaarKenmerk implements ConceptEditorCompone
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_xt4fan_i0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_xt4fan_i0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("kenmerk");
+    provider.setNoTargetText("<no kenmerk>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new BronGeldigheidReferentieNaarKenmerk._Inline_xt4fan_a8a());
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("kenmerk");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+  public static class _Inline_xt4fan_a8a extends InlineCellProvider {
+    public _Inline_xt4fan_a8a() {
+      super();
+    }
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createCollection_xt4fan_a0i0(editorContext, node);
+    }
+    private EditorCell createCollection_xt4fan_a0i0(EditorContext editorContext, SNode node) {
+      EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+      editorCell.setCellId("Collection_xt4fan_a0i0");
+      editorCell.addEditorCell(this.createRefNode_xt4fan_a0a8a(editorContext, node));
+      return editorCell;
+    }
+    private EditorCell createRefNode_xt4fan_a0a8a(EditorContext editorContext, SNode node) {
+      SingleRoleCellProvider provider = new BronGeldigheidReferentieNaarKenmerk._Inline_xt4fan_a8a.datatypeSingleRoleHandler_xt4fan_a0a8a(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), editorContext);
+      return provider.createCell();
+    }
+    private class datatypeSingleRoleHandler_xt4fan_a0a8a extends SingleRoleCellProvider {
+      public datatypeSingleRoleHandler_xt4fan_a0a8a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+        super(ownerNode, containmentLink, context);
+      }
+      protected EditorCell createChildCell(SNode child) {
+        EditorCell editorCell = super.createChildCell(child);
+        installCellInfo(child, editorCell);
+        return editorCell;
+      }
+      private void installCellInfo(SNode child, EditorCell editorCell) {
+        if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+          editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        }
+        if (editorCell.getRole() == null) {
+          editorCell.setRole("datatype");
+        }
+      }
+      @Override
+      protected EditorCell createEmptyCell() {
+        EditorCell editorCell = super.createEmptyCell();
+        editorCell.setCellId("empty_datatype");
+
+        installCellInfo(null, editorCell);
+        return editorCell;
+      }
+      protected String getNoTargetText() {
+        return "<no datatype>";
+      }
+    }
+  }
+  private EditorCell createConstant_xt4fan_j0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "uniek");
+    editorCell.setCellId("Constant_xt4fan_j0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_xt4fan_k0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_xt4fan_k0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_xt4fan_l0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("uniek");
     provider.setNoTargetText("<no uniek>");

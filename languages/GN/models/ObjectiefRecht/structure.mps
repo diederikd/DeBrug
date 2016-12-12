@@ -67,6 +67,13 @@
     <node concept="PrWs8" id="64gsXol8CO6" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="4pem8DJWnq5" role="1TKVEi">
+      <property role="IQ2ns" value="5066083982445213317" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="datumvaninwerkingstreding" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="jx79:6c9haf45sz3" resolve="Datum" />
+    </node>
     <node concept="1TJgyj" id="4$mS69sSGLz" role="1TKVEi">
       <property role="IQ2ns" value="5266643527326157923" />
       <property role="20lmBu" value="aggregation" />

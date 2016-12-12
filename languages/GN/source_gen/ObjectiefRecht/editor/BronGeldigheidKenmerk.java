@@ -44,7 +44,10 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     editorCell.addEditorCell(this.createRefNode_wh7tcl_f0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_wh7tcl_g0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_wh7tcl_h0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_wh7tcl_i0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_wh7tcl_i0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_wh7tcl_j0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_wh7tcl_k0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_wh7tcl_l0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_wh7tcl_a0(EditorContext editorContext, SNode node) {
@@ -143,7 +146,7 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     }
   }
   private EditorCell createConstant_wh7tcl_g0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "uniek");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "datatype");
     editorCell.setCellId("Constant_wh7tcl_g0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
@@ -157,7 +160,55 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_wh7tcl_i0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_wh7tcl_i0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new BronGeldigheidKenmerk.datatypeSingleRoleHandler_wh7tcl_i0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), editorContext);
+    return provider.createCell();
+  }
+  private class datatypeSingleRoleHandler_wh7tcl_i0 extends SingleRoleCellProvider {
+    public datatypeSingleRoleHandler_wh7tcl_i0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+      super(ownerNode, containmentLink, context);
+    }
+    protected EditorCell createChildCell(SNode child) {
+      EditorCell editorCell = super.createChildCell(child);
+      installCellInfo(child, editorCell);
+      return editorCell;
+    }
+    private void installCellInfo(SNode child, EditorCell editorCell) {
+      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+      }
+      if (editorCell.getRole() == null) {
+        editorCell.setRole("datatype");
+      }
+    }
+    @Override
+    protected EditorCell createEmptyCell() {
+      EditorCell editorCell = super.createEmptyCell();
+      editorCell.setCellId("empty_datatype");
+
+      installCellInfo(null, editorCell);
+      return editorCell;
+    }
+    protected String getNoTargetText() {
+      return "<no datatype>";
+    }
+  }
+  private EditorCell createConstant_wh7tcl_j0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "uniek");
+    editorCell.setCellId("Constant_wh7tcl_j0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_wh7tcl_k0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_wh7tcl_k0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_wh7tcl_l0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("uniek");
     provider.setNoTargetText("<no uniek>");

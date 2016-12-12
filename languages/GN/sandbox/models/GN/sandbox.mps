@@ -119,6 +119,7 @@
       <concept id="6994217584621161730" name="ObjectiefRecht.structure.Context" flags="ng" index="1OcJVk">
         <property id="909603116718868996" name="toonopmerkingen" index="I0$kN" />
         <child id="5266643527326157923" name="zichtdatum" index="lX2K1" />
+        <child id="5066083982445213317" name="datumvaninwerkingstreding" index="DJMSf" />
         <child id="5753801799637012795" name="onderwerpen" index="SxSPV" />
         <child id="2317404197410621882" name="toestanden" index="33wtHG" />
         <child id="2317404197411042820" name="overgangen" index="33xyji" />
@@ -586,7 +587,11 @@
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur op verzoek van de werknemer" />
       <node concept="lYmzE" id="5qTpXpBoOvH" role="uSuyt">
         <ref role="lTN2I" node="5qTpXpBo3vA" resolve="datum acceptatie verzoek" />
-        <node concept="2B78Lw" id="5qTpXpBoOvK" role="lXajo" />
+        <node concept="2B78Lw" id="5qTpXpBoOvK" role="lXajo">
+          <property role="2B78LB" value="01" />
+          <property role="2B78L_" value="07" />
+          <property role="2B78LE" value="2000" />
+        </node>
       </node>
       <node concept="lY6iO" id="4$mS69sVSxI" role="lY6mC">
         <property role="TrG5h" value="2.4" />
@@ -690,7 +695,11 @@
       </node>
       <node concept="lYmzx" id="5qTpXpBpijF" role="uSuyt">
         <property role="TrG5h" value="datum inwilligen of afwijzen verzoek" />
-        <node concept="2B78Lw" id="5qTpXpBpijI" role="lXajo" />
+        <node concept="2B78Lw" id="5qTpXpBpijI" role="lXajo">
+          <property role="2B78LB" value="01" />
+          <property role="2B78L_" value="07" />
+          <property role="2B78LE" value="2000" />
+        </node>
         <node concept="QqSvC" id="5qTpXpBpijN" role="LSO5p" />
       </node>
     </node>
@@ -710,7 +719,11 @@
       </node>
       <node concept="lYmzx" id="5qTpXpBpijT" role="uSuyt">
         <property role="TrG5h" value="datum afwijzen of datum wijzigen van de spreiding" />
-        <node concept="2B78Lw" id="5qTpXpBpijW" role="lXajo" />
+        <node concept="2B78Lw" id="5qTpXpBpijW" role="lXajo">
+          <property role="2B78LB" value="01" />
+          <property role="2B78L_" value="07" />
+          <property role="2B78LE" value="2000" />
+        </node>
         <node concept="QqSvC" id="5qTpXpBpik1" role="LSO5p" />
       </node>
     </node>
@@ -916,7 +929,7 @@
       <property role="TrG5h" value="aanpassing arbeidsduur overeenkomstig het verzoek van de werknemer" />
       <ref role="lZcf9" node="MvzNsy$K4F" resolve="de arbeidsduur wordt aangepast overeenkomstig het verzoek van de werknemer" />
       <node concept="1OcJVu" id="MvzNsy$SeR" role="2B6Es4">
-        <property role="TrG5h" value="de werkgever heeeft niet een maand voor het beoogde tijdstip &#10;van ingang van de aanpassing op het verzoek beslist." />
+        <property role="TrG5h" value="de werkgever heeft niet een maand voor het beoogde tijdstip &#10;van ingang van de aanpassing op het verzoek beslist." />
       </node>
       <node concept="2B78Lw" id="MvzNsy$SdV" role="lXajo">
         <property role="2B78LB" value="01" />
@@ -954,7 +967,11 @@
       </node>
       <node concept="lYmzE" id="5qTpXpBp4RA" role="LQzYN">
         <ref role="lTN2I" node="5qTpXpBo3uX" resolve="datum indienen verzoek" />
-        <node concept="2B78Lw" id="5qTpXpBp4RD" role="lXajo" />
+        <node concept="2B78Lw" id="5qTpXpBp4RD" role="lXajo">
+          <property role="2B78LB" value="01" />
+          <property role="2B78L_" value="07" />
+          <property role="2B78LE" value="2000" />
+        </node>
       </node>
     </node>
     <node concept="1OcJVF" id="28ifPi2BQ89" role="33xyji">
@@ -975,6 +992,15 @@
         <property role="2B78LB" value="01" />
         <property role="2B78L_" value="07" />
         <property role="2B78LE" value="2000" />
+      </node>
+      <node concept="lYmzx" id="4pem8DJVZ8N" role="LQzYN">
+        <property role="TrG5h" value="overleg datum" />
+        <node concept="2B78Lw" id="4pem8DJVZ8O" role="lXajo">
+          <property role="2B78LB" value="01" />
+          <property role="2B78L_" value="07" />
+          <property role="2B78LE" value="2000" />
+        </node>
+        <node concept="QqSvC" id="4pem8DJWem5" role="LSO5p" />
       </node>
     </node>
     <node concept="1OcJVF" id="6OHSlZaVog4" role="33xyji">
@@ -1004,7 +1030,11 @@
       </node>
       <node concept="lYmzx" id="5qTpXpBp4S9" role="LQzYN">
         <property role="TrG5h" value="datum inwilligen verzoek" />
-        <node concept="2B78Lw" id="5qTpXpBp4Sa" role="lXajo" />
+        <node concept="2B78Lw" id="5qTpXpBp4Sa" role="lXajo">
+          <property role="2B78LB" value="01" />
+          <property role="2B78L_" value="07" />
+          <property role="2B78LE" value="2000" />
+        </node>
         <node concept="QqSvC" id="5qTpXpBp4Sd" role="LSO5p" />
       </node>
     </node>
@@ -1165,6 +1195,11 @@
       <property role="2B78LB" value="01" />
       <property role="2B78L_" value="07" />
       <property role="2B78LE" value="2003" />
+    </node>
+    <node concept="2B78Lw" id="4pem8DJWL8g" role="DJMSf">
+      <property role="2B78LB" value="01" />
+      <property role="2B78L_" value="07" />
+      <property role="2B78LE" value="2000" />
     </node>
   </node>
   <node concept="2B78xT" id="6c9haf45x5E">
