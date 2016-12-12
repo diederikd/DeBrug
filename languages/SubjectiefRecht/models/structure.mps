@@ -69,6 +69,13 @@
     <property role="3GE5qa" value="RechtsSubject" />
     <property role="TrG5h" value="NatuurlijkPersoon" />
     <ref role="1TJDcQ" node="6c9haf45syb" resolve="Rechtssubject" />
+    <node concept="1TJgyj" id="4pem8DJZmU1" role="1TKVEi">
+      <property role="IQ2ns" value="5066083982445997697" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="rol" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="3pw0:64gsXol8COa" resolve="RechtsSubject" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6c9haf45syd">
     <property role="EcuMT" value="7136310554705381517" />
@@ -169,12 +176,12 @@
     <property role="TrG5h" value="Casus" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6c9haf45sNr" role="1TKVEi">
-      <property role="IQ2ns" value="7136310554705382619" />
+    <node concept="1TJgyj" id="4pem8DJZkDT" role="1TKVEi">
+      <property role="IQ2ns" value="5066083982445988473" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="rechtssubjecten" />
+      <property role="20kJfa" value="natuurlijkepersonen" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6c9haf45syb" resolve="Rechtssubject" />
+      <ref role="20lvS9" node="6c9haf45syc" resolve="NatuurlijkPersoon" />
     </node>
     <node concept="1TJgyj" id="6c9haf45sNt" role="1TKVEi">
       <property role="IQ2ns" value="7136310554705382621" />
@@ -192,6 +199,13 @@
     </node>
     <node concept="PrWs8" id="6c9haf45x5F" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="4pem8DK0dbA" role="1TKVEi">
+      <property role="IQ2ns" value="5066083982446220006" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="context" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="3pw0:64gsXol8CO2" resolve="Context" />
     </node>
   </node>
   <node concept="1TIwiD" id="6OHSlZaUf8_">

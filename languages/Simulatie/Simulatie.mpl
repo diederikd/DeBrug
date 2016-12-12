@@ -20,6 +20,7 @@
       </usedDevKits>
       <languageVersions>
         <language slang="l:15970de3-8fe7-4b13-81c7-38b38d51c39a:Simulatie" version="-1" />
+        <language slang="l:2c493149-da1d-45e9-8ea2-e0b0cfc3047a:SubjectiefRecht" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
         <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -41,6 +42,7 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+        <module reference="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" version="0" />
         <module reference="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" version="0" />
         <module reference="bfcf1ce2-5fb1-4470-8cb6-9addfbf26415(Simulatie#7812026954661547138)" version="0" />
         <module reference="2c493149-da1d-45e9-8ea2-e0b0cfc3047a(SubjectiefRecht)" version="0" />
@@ -58,7 +60,6 @@
     <dependency reexport="false">760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</dependency>
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
     <dependency reexport="false">86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)</dependency>
-    <dependency reexport="false">8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -125,6 +126,7 @@
     <module reference="2b3d76b7-a9ea-44f6-8a30-283c3ffb5f0a(org.campagnelab.ui.code)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
+    <extendedLanguage>8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)</extendedLanguage>
     <extendedLanguage>2c493149-da1d-45e9-8ea2-e0b0cfc3047a(SubjectiefRecht)</extendedLanguage>
   </extendedLanguages>
 </language>

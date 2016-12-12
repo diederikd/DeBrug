@@ -52,21 +52,21 @@
       <property role="IQ2ns" value="7867191925628437242" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="casus" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="gcgs:6c9haf45sNq" resolve="Casus" />
     </node>
     <node concept="1TJgyj" id="6OHSlZaU2lZ" role="1TKVEi">
       <property role="IQ2ns" value="7867191925628478847" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="rol1" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="gcgs:6c9haf45syc" resolve="NatuurlijkPersoon" />
     </node>
     <node concept="1TJgyj" id="1VomLPHF6gv" role="1TKVEi">
       <property role="IQ2ns" value="2222626598059533343" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="rol2" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="gcgs:6c9haf45syc" resolve="NatuurlijkPersoon" />
     </node>
     <node concept="1TJgyj" id="6OHSlZaTSpu" role="1TKVEi">
@@ -83,6 +83,13 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6OHSlZaUlix" resolve="Informatiepositie" />
     </node>
+    <node concept="1TJgyj" id="4pem8DK4Yi1" role="1TKVEi">
+      <property role="IQ2ns" value="5066083982447469697" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rechtshandelingen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6OHSlZaUlix">
     <property role="EcuMT" value="7867191925628556449" />
@@ -91,7 +98,7 @@
     <node concept="1TJgyj" id="6LDTi0oocMz" role="1TKVEi">
       <property role="IQ2ns" value="7812026954661547171" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="rechtsbetrekking" />
+      <property role="20kJfa" value="rechtsbetrekkingen" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="gcgs:6c9haf45syu" resolve="Rechtsbetrekking" />
     </node>

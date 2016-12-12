@@ -31,6 +31,7 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
@@ -224,7 +225,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="1VomLPHGFfC" role="3EZMnx">
-          <ref role="1NtTu8" to="xhlk:6LDTi0oocMz" resolve="rechtsbetrekking" />
+          <ref role="1NtTu8" to="xhlk:6LDTi0oocMz" resolve="rechtsbetrekkingen" />
           <node concept="l2Vlx" id="1VomLPHGFfE" role="2czzBx" />
           <node concept="2w$q5c" id="1VomLPHHD6o" role="78xua">
             <node concept="2aJ2om" id="1VomLPHHD6p" role="2w$qW5">
@@ -286,7 +287,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6OHSlZaUexV" role="3EZMnx">
-        <property role="3F0ifm" value="Persoon 1" />
+        <property role="3F0ifm" value="persoon 1" />
       </node>
       <node concept="3F0ifn" id="6OHSlZaUkIu" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -333,7 +334,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="1VomLPHElIf" role="3EZMnx">
-        <property role="3F0ifm" value="Persoon 2" />
+        <property role="3F0ifm" value="persoon 2" />
       </node>
       <node concept="3F0ifn" id="1VomLPHHsX9" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -380,8 +381,38 @@
         </node>
       </node>
       <node concept="3F0ifn" id="1VomLPHF6jV" role="3EZMnx">
+        <property role="3F0ifm" value="uitvoerbare rechtshandelingen" />
+      </node>
+      <node concept="3F0ifn" id="4pem8DK4ZSN" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="ljvvj" id="4pem8DK4ZU5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4pem8DK87dv" role="3EZMnx">
         <property role="3F0ifm" value="" />
-        <node concept="ljvvj" id="1VomLPHF6kD" role="3F10Kt">
+        <node concept="ljvvj" id="4pem8DK87eP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="4pem8DK4ZMk" role="3EZMnx">
+        <ref role="1NtTu8" to="xhlk:4pem8DK4Yi1" resolve="rechtshandelingen" />
+        <node concept="l2Vlx" id="4pem8DK4ZMm" role="2czzBx" />
+        <node concept="pj6Ft" id="4pem8DK4ZNC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4pem8DK79kV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2w$q5c" id="4pem8DK79l0" role="78xua">
+          <node concept="2aJ2om" id="4pem8DK79l1" role="2w$qW5">
+            <ref role="2$4xQ3" node="1VomLPHHyP3" resolve="Simulatie" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4pem8DK045g" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="ljvvj" id="4pem8DK046t" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -1555,6 +1586,44 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4ZpB41RnEtI">
+    <property role="3GE5qa" value="RechtsgevolgVeroorzakers" />
+    <ref role="1XX52x" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
+    <node concept="3EZMnI" id="4ZpB41RnEtK" role="2wV5jI">
+      <node concept="l2Vlx" id="4ZpB41RnEtL" role="2iSdaV" />
+      <node concept="3F0A7n" id="4ZpB41RnEtN" role="3EZMnx">
+        <ref role="1k5W1q" to="9nno:6c9haf45jMN" resolve="Name" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="4$mS69sVCoF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4ZpB41RnEtO" role="3EZMnx">
+        <property role="3F0ifm" value="door rechtssubject" />
+        <node concept="pVoyu" id="4ZpB41RnEup" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="20D4HrzFlVq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4$mS69sVCss" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="20D4HrzFG2i" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:20D4HrzFFXI" resolve="rechtssubject" />
+        <node concept="ljvvj" id="20D4HrzFG2N" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4pem8DK8lVO" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+      </node>
+    </node>
+    <node concept="2aJ2om" id="4pem8DK72qA" role="CpUAK">
+      <ref role="2$4xQ3" node="1VomLPHHyP3" resolve="Simulatie" />
     </node>
   </node>
 </model>

@@ -83,14 +83,14 @@ public class Informatiepositie_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNodeList_vdd6o4_e0a(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Informatiepositie_Editor.rechtsbetrekkingListHandler_vdd6o4_e0a(node, "rechtsbetrekking", editorContext);
+    AbstractCellListHandler handler = new Informatiepositie_Editor.rechtsbetrekkingenListHandler_vdd6o4_e0a(node, "rechtsbetrekkingen", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_rechtsbetrekking");
+    editorCell.setCellId("refNodeList_rechtsbetrekkingen");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class rechtsbetrekkingListHandler_vdd6o4_e0a extends RefNodeListHandler {
-    public rechtsbetrekkingListHandler_vdd6o4_e0a(SNode ownerNode, String childRole, EditorContext context) {
+  private static class rechtsbetrekkingenListHandler_vdd6o4_e0a extends RefNodeListHandler {
+    public rechtsbetrekkingenListHandler_vdd6o4_e0a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -116,7 +116,7 @@ public class Informatiepositie_Editor extends DefaultNodeEditor {
           elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
         }
         if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L, 0x6c69e5201860cca3L, "rechtsbetrekking"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
+          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L, 0x6c69e5201860cca3L, "rechtsbetrekkingen"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
         }
       }
     }
