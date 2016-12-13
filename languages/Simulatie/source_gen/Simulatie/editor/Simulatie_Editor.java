@@ -166,11 +166,11 @@ public class Simulatie_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNode_fapojb_g0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Simulatie_Editor.datumSingleRoleHandler_fapojb_g0(node, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae7865eL, "datum"), editorContext);
+    SingleRoleCellProvider provider = new Simulatie_Editor.datumsimulatieSingleRoleHandler_fapojb_g0(node, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae7865eL, "datumsimulatie"), editorContext);
     return provider.createCell();
   }
-  private class datumSingleRoleHandler_fapojb_g0 extends SingleRoleCellProvider {
-    public datumSingleRoleHandler_fapojb_g0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class datumsimulatieSingleRoleHandler_fapojb_g0 extends SingleRoleCellProvider {
+    public datumsimulatieSingleRoleHandler_fapojb_g0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -180,10 +180,10 @@ public class Simulatie_Editor extends DefaultNodeEditor {
     }
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae7865eL, "datum"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae7865eL, "datumsimulatie"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
-        editorCell.setRole("datum");
+        editorCell.setRole("datumsimulatie");
       }
       Style style = new StyleImpl();
       SNode node = myOwnerNode;
@@ -194,13 +194,13 @@ public class Simulatie_Editor extends DefaultNodeEditor {
     @Override
     protected EditorCell createEmptyCell() {
       EditorCell editorCell = super.createEmptyCell();
-      editorCell.setCellId("empty_datum");
+      editorCell.setCellId("empty_datumsimulatie");
 
       installCellInfo(null, editorCell);
       return editorCell;
     }
     protected String getNoTargetText() {
-      return "<no datum>";
+      return "<no datumsimulatie>";
     }
   }
   private EditorCell createConstant_fapojb_h0(EditorContext editorContext, SNode node) {

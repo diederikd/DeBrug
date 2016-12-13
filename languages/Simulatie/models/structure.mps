@@ -72,7 +72,7 @@
     <node concept="1TJgyj" id="6OHSlZaTSpu" role="1TKVEi">
       <property role="IQ2ns" value="7867191925628438110" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="datum" />
+      <property role="20kJfa" value="datumsimulatie" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="jx79:6c9haf45sz3" resolve="Datum" />
     </node>
