@@ -25,6 +25,11 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
             return Collections.<ConceptEditor>singletonList(new Datum_Editor());
           }
           break;
+        case 1:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new Tijd_Editor());
+          }
+          break;
         default:
       }
     }
@@ -41,5 +46,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, "Datum.structure.Datum"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, "Datum.structure.Datum"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, "Datum.structure.Tijd"));
 }

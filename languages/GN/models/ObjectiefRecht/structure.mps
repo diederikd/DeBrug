@@ -293,6 +293,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="20D4HrzEFWA" resolve="ReferentieNaarRechtsbetrekking" />
     </node>
+    <node concept="1TJgyj" id="4pem8DKiZ8R" role="1TKVEi">
+      <property role="IQ2ns" value="5066083982451143223" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="WijzigendeKenmerken" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
+    </node>
     <node concept="1TJgyj" id="64gsXol8CPU" role="1TKVEi">
       <property role="IQ2ns" value="6994217584621161850" />
       <property role="20lmBu" value="aggregation" />
@@ -348,6 +355,13 @@
     <property role="TrG5h" value="ImmuniteitGeenbevoegdheid" />
     <property role="34LRSv" value="immuniteit - geen bevoegdheid" />
     <ref role="1TJDcQ" node="64gsXol8COd" resolve="Rechtsbetrekking" />
+    <node concept="1TJgyj" id="4pem8DKhQm4" role="1TKVEi">
+      <property role="IQ2ns" value="5066083982450845060" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="immuniteitvoor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="64gsXol8COd" resolve="Rechtsbetrekking" />
+    </node>
   </node>
   <node concept="1TIwiD" id="64gsXol8CQm">
     <property role="EcuMT" value="6994217584621161878" />

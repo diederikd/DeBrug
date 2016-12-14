@@ -216,6 +216,7 @@ public class Rechtshandeling_Editor extends DefaultNodeEditor {
         editorCell.setRole("rechtssubject");
       }
       Style style = new StyleImpl();
+      GN_StyleSheet.apply_Subject(style, editorCell);
       SNode node = myOwnerNode;
       EditorContext editorContext = myEditorContext;
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);

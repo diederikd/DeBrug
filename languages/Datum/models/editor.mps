@@ -56,5 +56,26 @@
       <node concept="l2Vlx" id="J7tdz7EYm6" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5riiL_BUfcZ">
+    <ref role="1XX52x" to="jx79:5riiL_BUfcl" resolve="Tijd" />
+    <node concept="3EZMnI" id="5riiL_BUfd1" role="2wV5jI">
+      <node concept="l2Vlx" id="5riiL_BUfd2" role="2iSdaV" />
+      <node concept="3F0A7n" id="5riiL_BUfd7" role="3EZMnx">
+        <ref role="1NtTu8" to="jx79:5riiL_BUfcm" resolve="Uren" />
+      </node>
+      <node concept="3F0ifn" id="5riiL_BUfdd" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="5riiL_BUfdl" role="3EZMnx">
+        <ref role="1NtTu8" to="jx79:5riiL_BUfcC" resolve="Minuten" />
+      </node>
+      <node concept="3F0ifn" id="5riiL_BUfdv" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="5riiL_BUfdF" role="3EZMnx">
+        <ref role="1NtTu8" to="jx79:5riiL_BUfcF" resolve="Seconden" />
+      </node>
+    </node>
+  </node>
 </model>
 

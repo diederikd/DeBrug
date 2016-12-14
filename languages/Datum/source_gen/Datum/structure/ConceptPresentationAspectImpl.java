@@ -10,6 +10,8 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private final ConceptPresentation props_Datum = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_DatumTijd = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Tijd = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -18,6 +20,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     switch (structureDescriptor.internalIndex(c)) {
       case 0:
         return props_Datum;
+      case 1:
+        return props_DatumTijd;
+      case 2:
+        return props_Tijd;
     }
     throw new IllegalStateException("Unknown concept " + c);
   }

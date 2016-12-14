@@ -32,20 +32,6 @@ public class ReferentieNaarKenmerk_Constraints extends BaseConstraintsDescriptor
 
     return result;
   }
-  @Override
-  public boolean hasOwnCanBeParentMethod() {
-    return true;
-  }
-  @Override
-  public boolean canBeParent(SNode node, @Nullable SNode childNode, SNode childConcept, SNode link, IOperationContext operationContext, @Nullable CheckingNodeContext checkingNodeContext) {
-    boolean result = static_canBeAParent(node, childNode, childConcept, link, operationContext);
-
-    if (!(result) && checkingNodeContext != null) {
-      checkingNodeContext.setBreakingNode(canBeParentBreakingPoint);
-    }
-
-    return result;
-  }
   public static boolean static_canBeAChild(SNode node, SNode parentNode, SNode link, SNode childConcept, final IOperationContext operationContext) {
     // Controleer of het een rechtsbetrekking is en of het een datum betreft 
     boolean valid = true;
@@ -56,13 +42,5 @@ public class ReferentieNaarKenmerk_Constraints extends BaseConstraintsDescriptor
     }
     return valid;
   }
-  public static boolean static_canBeAParent(SNode node, SNode childNode, SNode childConcept, SNode link, final IOperationContext operationContext) {
-    boolean valid = true;
-    if (!((SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8888L, 0x4916e0625cf1d0ccL, "kenmerk")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype")), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1b1L, "ObjectiefRecht.structure.DatumDatatype"))))) {
-      valid = false;
-    }
-    return valid;
-  }
   private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)", "8115840370078138248");
-  private static SNodePointer canBeParentBreakingPoint = new SNodePointer("r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)", "5066083982443417044");
 }
