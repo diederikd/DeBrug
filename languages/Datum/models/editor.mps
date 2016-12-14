@@ -3,6 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -27,6 +31,7 @@
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -60,21 +65,38 @@
     <ref role="1XX52x" to="jx79:5riiL_BUfcl" resolve="Tijd" />
     <node concept="3EZMnI" id="5riiL_BUfd1" role="2wV5jI">
       <node concept="l2Vlx" id="5riiL_BUfd2" role="2iSdaV" />
-      <node concept="3F0A7n" id="5riiL_BUfd7" role="3EZMnx">
+      <node concept="3F0A7n" id="5riiL_C1jf_" role="3EZMnx">
         <ref role="1NtTu8" to="jx79:5riiL_BUfcm" resolve="Uren" />
       </node>
-      <node concept="3F0ifn" id="5riiL_BUfdd" role="3EZMnx">
+      <node concept="3F0ifn" id="5riiL_C1l5h" role="3EZMnx">
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0A7n" id="5riiL_BUfdl" role="3EZMnx">
+        <property role="1$x2rV" value="00" />
         <ref role="1NtTu8" to="jx79:5riiL_BUfcC" resolve="Minuten" />
       </node>
       <node concept="3F0ifn" id="5riiL_BUfdv" role="3EZMnx">
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0A7n" id="5riiL_BUfdF" role="3EZMnx">
+        <property role="1$x2rV" value="00" />
         <ref role="1NtTu8" to="jx79:5riiL_BUfcF" resolve="Seconden" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5riiL_BY4El">
+    <ref role="1XX52x" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
+    <node concept="3EZMnI" id="5riiL_BY4En" role="2wV5jI">
+      <node concept="3F1sOY" id="5riiL_BY4Eu" role="3EZMnx">
+        <ref role="1NtTu8" to="jx79:5riiL_BUfcM" resolve="Datum" />
+      </node>
+      <node concept="3F0ifn" id="5riiL_BY4EG" role="3EZMnx">
+        <property role="3F0ifm" value=" " />
+      </node>
+      <node concept="3F1sOY" id="5riiL_BY4E$" role="3EZMnx">
+        <ref role="1NtTu8" to="jx79:5riiL_BUfcO" resolve="Tijd" />
+      </node>
+      <node concept="l2Vlx" id="5riiL_BY4Eq" role="2iSdaV" />
     </node>
   </node>
 </model>

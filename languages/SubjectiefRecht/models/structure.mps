@@ -114,13 +114,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="geldigVan" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="jx79:6c9haf45sz3" resolve="Datum" />
+      <ref role="20lvS9" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
     </node>
     <node concept="1TJgyj" id="6c9haf45szk" role="1TKVEi">
       <property role="IQ2ns" value="7136310554705381588" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="geldigTot" />
-      <ref role="20lvS9" to="jx79:6c9haf45sz3" resolve="Datum" />
+      <ref role="20lvS9" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
     </node>
   </node>
   <node concept="1TIwiD" id="6c9haf45sNj">
@@ -148,7 +148,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="uitgevoerdOp" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="jx79:6c9haf45sz3" resolve="Datum" />
+      <ref role="20lvS9" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
     </node>
     <node concept="1TJgyj" id="6c9haf45_$D" role="1TKVEi">
       <property role="IQ2ns" value="7136310554705418537" />

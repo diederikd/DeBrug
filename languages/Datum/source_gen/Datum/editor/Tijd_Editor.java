@@ -52,7 +52,7 @@ public class Tijd_Editor extends DefaultNodeEditor {
   private EditorCell createProperty_4rhwny_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("Minuten");
-    provider.setNoTargetText("<no Minuten>");
+    provider.setNoTargetText("00");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_Minuten");
@@ -74,7 +74,7 @@ public class Tijd_Editor extends DefaultNodeEditor {
   private EditorCell createProperty_4rhwny_e0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("Seconden");
-    provider.setNoTargetText("<no Seconden>");
+    provider.setNoTargetText("00");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_Seconden");

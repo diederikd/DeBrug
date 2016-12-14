@@ -58,6 +58,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -338,7 +341,47 @@
       </node>
     </node>
     <node concept="13hLZK" id="5riiL_BUAx1" role="13h7CW">
-      <node concept="3clFbS" id="5riiL_BUAx2" role="2VODD2" />
+      <node concept="3clFbS" id="5riiL_BUAx2" role="2VODD2">
+        <node concept="3clFbF" id="5riiL_BY8b8" role="3cqZAp">
+          <node concept="37vLTI" id="5riiL_BYaHF" role="3clFbG">
+            <node concept="3cmrfG" id="5riiL_BYaQt" role="37vLTx">
+              <property role="3cmrfH" value="00" />
+            </node>
+            <node concept="2OqwBi" id="5riiL_BY8ic" role="37vLTJ">
+              <node concept="13iPFW" id="5riiL_BY8b6" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5riiL_BY8ro" role="2OqNvi">
+                <ref role="3TsBF5" to="jx79:5riiL_BUfcm" resolve="Uren" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5riiL_BYaSN" role="3cqZAp">
+          <node concept="37vLTI" id="5riiL_BYdtY" role="3clFbG">
+            <node concept="3cmrfG" id="5riiL_BYdCD" role="37vLTx">
+              <property role="3cmrfH" value="00" />
+            </node>
+            <node concept="2OqwBi" id="5riiL_BYb06" role="37vLTJ">
+              <node concept="13iPFW" id="5riiL_BYaSL" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5riiL_BYbk2" role="2OqNvi">
+                <ref role="3TsBF5" to="jx79:5riiL_BUfcC" resolve="Minuten" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5riiL_BYdHy" role="3cqZAp">
+          <node concept="37vLTI" id="5riiL_BYgop" role="3clFbG">
+            <node concept="3cmrfG" id="5riiL_BYgxa" role="37vLTx">
+              <property role="3cmrfH" value="00" />
+            </node>
+            <node concept="2OqwBi" id="5riiL_BYdR7" role="37vLTJ">
+              <node concept="13iPFW" id="5riiL_BYdHw" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5riiL_BYe0j" role="2OqNvi">
+                <ref role="3TsBF5" to="jx79:5riiL_BUfcF" resolve="Seconden" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="5riiL_BUVyr">

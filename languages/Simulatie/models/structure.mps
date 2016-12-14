@@ -69,13 +69,6 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="gcgs:6c9haf45syc" resolve="NatuurlijkPersoon" />
     </node>
-    <node concept="1TJgyj" id="6OHSlZaTSpu" role="1TKVEi">
-      <property role="IQ2ns" value="7867191925628438110" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="datumsimulatie" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="jx79:6c9haf45sz3" resolve="Datum" />
-    </node>
     <node concept="1TJgyj" id="6OHSlZaUwPJ" role="1TKVEi">
       <property role="IQ2ns" value="7867191925628603759" />
       <property role="20lmBu" value="aggregation" />
