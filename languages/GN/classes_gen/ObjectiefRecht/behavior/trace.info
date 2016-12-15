@@ -34,6 +34,12 @@
     <file name="DatumDatatype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.DatumDatatype_BehaviorDescriptor" />
     </file>
+    <file name="EnumeratieElement_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.EnumeratieElement_BehaviorDescriptor" />
+    </file>
+    <file name="Enumeratie_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Enumeratie_BehaviorDescriptor" />
+    </file>
     <file name="FeitelijkeHandelingMetRechtsgevolg_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.FeitelijkeHandelingMetRechtsgevolg_BehaviorDescriptor" />
     </file>
@@ -84,6 +90,12 @@
     </file>
     <file name="ReferentieNaarArtikel_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarArtikel_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarEnumeratie_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarEnumeratie_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarKenmerkMetOnderwerp_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarKenmerkMetOnderwerp_BehaviorDescriptor" />
     </file>
     <file name="ReferentieNaarKenmerk_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarKenmerk_BehaviorDescriptor" />

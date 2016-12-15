@@ -64,6 +64,16 @@
       </concept>
     </language>
     <language id="8dc4b25f-4c49-400e-ac37-0fd230db702c" name="ObjectiefRecht">
+      <concept id="7431672735423771708" name="ObjectiefRecht.structure.ReferentieNaarKenmerkMetOnderwerp" flags="ng" index="eKiV6">
+        <reference id="7431672735423771709" name="kenmerkMetOnderwerp" index="eKiV7" />
+      </concept>
+      <concept id="7431672735422943416" name="ObjectiefRecht.structure.EnumeratieElement" flags="ng" index="eXoD2" />
+      <concept id="7431672735422943413" name="ObjectiefRecht.structure.Enumeratie" flags="ng" index="eXoDf">
+        <child id="7431672735422943431" name="elementen" index="eXoCX" />
+      </concept>
+      <concept id="7431672735422943494" name="ObjectiefRecht.structure.ReferentieNaarEnumeratie" flags="ng" index="eXoJW">
+        <reference id="7431672735422944459" name="enumeratie" index="eXoSL" />
+      </concept>
       <concept id="5266643527326063520" name="ObjectiefRecht.structure.Concept" flags="ng" index="lXVJ2">
         <property id="909603116718868999" name="opmerkingen" index="I0$kK" />
         <child id="5266643527326123194" name="brongeldigVan" index="lXajo" />
@@ -132,6 +142,7 @@
       </concept>
       <concept id="6994217584621161730" name="ObjectiefRecht.structure.Context" flags="ng" index="1OcJVk">
         <property id="909603116718868996" name="toonopmerkingen" index="I0$kN" />
+        <child id="7431672735422944502" name="enumeraties" index="eXoSc" />
         <child id="5266643527326157923" name="zichtdatum" index="lX2K1" />
         <child id="5066083982445213317" name="datumvaninwerkingstreding" index="DJMSf" />
         <child id="5753801799637012795" name="onderwerpen" index="SxSPV" />
@@ -173,6 +184,42 @@
   <node concept="1OcJVk" id="4ZpB41RnoMN">
     <property role="TrG5h" value="Objectief WFW" />
     <property role="I0$kN" value="true" />
+    <node concept="eXoDf" id="6syAJDDQ44i" role="eXoSc">
+      <property role="TrG5h" value="dag van de week" />
+      <node concept="eXoD2" id="6syAJDDQ44k" role="eXoCX">
+        <property role="TrG5h" value="Maandag" />
+      </node>
+      <node concept="eXoD2" id="6syAJDDQ44m" role="eXoCX">
+        <property role="TrG5h" value="Dinsdag" />
+      </node>
+      <node concept="eXoD2" id="6syAJDDQ44p" role="eXoCX">
+        <property role="TrG5h" value="Woensdag" />
+      </node>
+      <node concept="eXoD2" id="6syAJDDQ44t" role="eXoCX">
+        <property role="TrG5h" value="Donderdag" />
+      </node>
+      <node concept="eXoD2" id="6syAJDDQ44y" role="eXoCX">
+        <property role="TrG5h" value="Vrijdag" />
+      </node>
+      <node concept="eXoD2" id="6syAJDDQ44C" role="eXoCX">
+        <property role="TrG5h" value="Zaterdag" />
+      </node>
+      <node concept="eXoD2" id="6syAJDDQ44J" role="eXoCX">
+        <property role="TrG5h" value="Zondag" />
+      </node>
+    </node>
+    <node concept="eXoDf" id="6syAJDDQmAD" role="eXoSc">
+      <property role="TrG5h" value="burgerlijkestaat" />
+      <node concept="eXoD2" id="6syAJDDQmAN" role="eXoCX">
+        <property role="TrG5h" value="gehuwd" />
+      </node>
+      <node concept="eXoD2" id="6syAJDDQmAP" role="eXoCX">
+        <property role="TrG5h" value="ongehuwd" />
+      </node>
+      <node concept="eXoD2" id="6syAJDDQmAS" role="eXoCX">
+        <property role="TrG5h" value="samenwonend" />
+      </node>
+    </node>
     <node concept="1OcJVs" id="4ZpB41Rnx4z" role="3D8HBz">
       <property role="TrG5h" value="Werkgever" />
       <property role="2B4ky4" value="degene die een ander krachtens arbeidsovereenkomst naar burgerlijk recht of &#10;publiekrechtelijke aanstelling arbeid laat verrichten." />
@@ -305,6 +352,9 @@
           <property role="2B78L_" value="07" />
           <property role="2B78LE" value="2000" />
         </node>
+        <node concept="eXoJW" id="6syAJDDRQb$" role="LSO5p">
+          <ref role="eXoSL" node="6syAJDDQmAD" resolve="burgerlijkestaat" />
+        </node>
       </node>
       <node concept="lYmzx" id="5u1YjWIkWsX" role="1TNFB5">
         <property role="TrG5h" value="nationaliteit" />
@@ -415,9 +465,9 @@
         <ref role="lTN2I" node="5u1YjWIkoYG" resolve="werknemersidentificatie" />
         <node concept="2B78Lw" id="6syAJDDFk_O" role="lXajo" />
       </node>
-      <node concept="lYmzE" id="6syAJDDFAEe" role="ewjD5">
-        <ref role="lTN2I" node="5qTpXpBoOu0" resolve="datum in diensttreding" />
-        <node concept="2B78Lw" id="6syAJDDFAEh" role="lXajo" />
+      <node concept="lYmzE" id="6syAJDDPL2D" role="ewjD5">
+        <ref role="lTN2I" node="5u1YjWIjO3G" resolve="arbeidsovereenkomst getekend op" />
+        <node concept="2B78Lw" id="6syAJDDPL2G" role="lXajo" />
       </node>
     </node>
     <node concept="3D8HDq" id="J7tdz7EYjC" role="SxSPV">
@@ -541,40 +591,25 @@
         <property role="2B78L_" value="07" />
         <property role="2B78LE" value="2000" />
       </node>
+      <node concept="lYmzx" id="6syAJDDRQbU" role="lYmzI">
+        <property role="TrG5h" value="dag" />
+        <node concept="2B78Lw" id="6syAJDDRQbX" role="lXajo" />
+        <node concept="eXoJW" id="6syAJDDRQc4" role="LSO5p">
+          <ref role="eXoSL" node="6syAJDDQ44i" resolve="dag van de week" />
+        </node>
+      </node>
       <node concept="I0tks" id="5u1YjWIjO06" role="lYmzI">
-        <property role="TrG5h" value="maandag" />
+        <property role="TrG5h" value="tijden" />
         <ref role="I0tkr" node="5u1YjWIjNY4" resolve="werktijd" />
         <node concept="2B78Lw" id="5u1YjWIjO09" role="lXajo" />
       </node>
-      <node concept="I0tks" id="5u1YjWIjO0o" role="lYmzI">
-        <property role="TrG5h" value="dinsdag" />
-        <ref role="I0tkr" node="5u1YjWIjNY4" resolve="werktijd" />
-        <node concept="2B78Lw" id="5u1YjWIjO0r" role="lXajo" />
+      <node concept="lYmzE" id="6syAJDDS8EA" role="ewjD5">
+        <ref role="lTN2I" node="6syAJDDRQbU" resolve="dag" />
+        <node concept="2B78Lw" id="6syAJDDS8EB" role="lXajo" />
       </node>
-      <node concept="I0tks" id="5u1YjWIjO0Y" role="lYmzI">
-        <property role="TrG5h" value="woensdag" />
-        <ref role="I0tkr" node="5u1YjWIjNY4" resolve="werktijd" />
-        <node concept="2B78Lw" id="5u1YjWIjO11" role="lXajo" />
-      </node>
-      <node concept="I0tks" id="5u1YjWIjO1o" role="lYmzI">
-        <property role="TrG5h" value="donderdag" />
-        <ref role="I0tkr" node="5u1YjWIjNY4" resolve="werktijd" />
-        <node concept="2B78Lw" id="5u1YjWIjO1r" role="lXajo" />
-      </node>
-      <node concept="I0tks" id="5u1YjWIjO1Q" role="lYmzI">
-        <property role="TrG5h" value="vrijdag" />
-        <ref role="I0tkr" node="5u1YjWIjNY4" resolve="werktijd" />
-        <node concept="2B78Lw" id="5u1YjWIjO1T" role="lXajo" />
-      </node>
-      <node concept="I0tks" id="5u1YjWIjO2o" role="lYmzI">
-        <property role="TrG5h" value="zaterdag" />
-        <ref role="I0tkr" node="5u1YjWIjNY4" resolve="werktijd" />
-        <node concept="2B78Lw" id="5u1YjWIjO2r" role="lXajo" />
-      </node>
-      <node concept="I0tks" id="5u1YjWIjO2Y" role="lYmzI">
-        <property role="TrG5h" value="zondag" />
-        <ref role="I0tkr" node="5u1YjWIjNY4" resolve="werktijd" />
-        <node concept="2B78Lw" id="5u1YjWIjO31" role="lXajo" />
+      <node concept="eKiV6" id="6syAJDDTdQU" role="ewjD5">
+        <ref role="eKiV7" node="5u1YjWIjO06" resolve="tijden" />
+        <node concept="2B78Lw" id="6syAJDDTdQX" role="lXajo" />
       </node>
     </node>
     <node concept="3D8HDq" id="5u1YjWIjNY4" role="SxSPV">
@@ -582,18 +617,30 @@
       <node concept="2B78Lw" id="5u1YjWIjNY5" role="lXajo" />
       <node concept="I0tks" id="6syAJDDCU1J" role="lYmzI">
         <property role="TrG5h" value="werktijdperioden" />
-        <ref role="I0tkr" node="6syAJDDCTZC" resolve="periode" />
+        <ref role="I0tkr" node="6syAJDDCTZC" resolve="werkperiode" />
         <node concept="2B78Lw" id="6syAJDDCU1K" role="lXajo" />
       </node>
       <node concept="I0tks" id="6syAJDDOLSd" role="lYmzI">
         <property role="TrG5h" value="pauzetijdperiode" />
-        <ref role="I0tkr" node="6syAJDDCTZC" resolve="periode" />
+        <ref role="I0tkr" node="6syAJDDCTZC" resolve="werkperiode" />
         <node concept="2B78Lw" id="6syAJDDOLSg" role="lXajo" />
+      </node>
+      <node concept="eKiV6" id="6syAJDDTdR4" role="ewjD5">
+        <ref role="eKiV7" node="6syAJDDCU1J" resolve="werktijdperioden" />
+        <node concept="2B78Lw" id="6syAJDDTdR5" role="lXajo" />
+      </node>
+      <node concept="eKiV6" id="6syAJDDTdRe" role="ewjD5">
+        <ref role="eKiV7" node="6syAJDDOLSd" resolve="pauzetijdperiode" />
+        <node concept="2B78Lw" id="6syAJDDTdRh" role="lXajo" />
       </node>
     </node>
     <node concept="3D8HDq" id="6syAJDDCTZC" role="SxSPV">
-      <property role="TrG5h" value="periode" />
-      <node concept="2B78Lw" id="6syAJDDCTZD" role="lXajo" />
+      <property role="TrG5h" value="werkperiode" />
+      <node concept="2B78Lw" id="6syAJDDCTZD" role="lXajo">
+        <property role="2B78LB" value="01" />
+        <property role="2B78L_" value="07" />
+        <property role="2B78LE" value="2000" />
+      </node>
       <node concept="lYmzx" id="6syAJDDCU12" role="lYmzI">
         <property role="TrG5h" value="aanvangstijd periode" />
         <node concept="2B78Lw" id="6syAJDDCU15" role="lXajo" />
@@ -642,7 +689,7 @@
       <property role="I0$kK" value="Dit is een van de vele rechtsbetrekkingen in een arbeidsovereenkomst&#10;de aanspraak na ingebrekestelling - verplichting na ingebrekestelling &#10;voor wat betreft het aantal te werken uren per week.  " />
       <ref role="1OcJVS" node="4ZpB41RnoMO" resolve="Werknemer" />
       <ref role="1OcJVV" node="4ZpB41Rnx4z" resolve="Werkgever" />
-      <ref role="3D8HCl" node="5u1YjWIljaR" resolve="arbeidsduur" />
+      <ref role="3D8HCl" node="4$mS69sWjnv" resolve="arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
       <node concept="lY6iO" id="28ifPi2Bjxh" role="lY6mC">
         <property role="TrG5h" value="BW 7" />
       </node>
