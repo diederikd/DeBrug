@@ -59,8 +59,6 @@ public class Kenmerk_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_wasupv_b0");
     editorCell.addEditorCell(this.createConstant_wasupv_a1a(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_wasupv_b1a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_wasupv_c1a(editorContext, node));
-    editorCell.addEditorCell(this.createComponent_wasupv_d1a(editorContext, node));
     return editorCell;
   }
   private static boolean renderingCondition_wasupv_a1a(SNode node, EditorContext editorContext) {
@@ -111,16 +109,6 @@ public class Kenmerk_Editor extends DefaultNodeEditor {
     protected String getNoTargetText() {
       return "<no datatype>";
     }
-  }
-  private EditorCell createConstant_wasupv_c1a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " ");
-    editorCell.setCellId("Constant_wasupv_c1a");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createComponent_wasupv_d1a(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "ObjectiefRecht.editor.Is_Uniek");
-    return editorCell;
   }
   private EditorCell createComponent_wasupv_a(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "ObjectiefRecht.editor.BronGeldigheid");

@@ -21,7 +21,6 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
 public class ReferentieNaarKenmerk_Editor extends DefaultNodeEditor {
@@ -94,9 +93,6 @@ public class ReferentieNaarKenmerk_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_mq86k9_b0");
     editorCell.addEditorCell(this.createConstant_mq86k9_a1a(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_mq86k9_b1a(editorContext, node));
-    if (renderingCondition_mq86k9_a2b0(node, editorContext)) {
-      editorCell.addEditorCell(this.createCollection_mq86k9_c1a(editorContext, node));
-    }
     return editorCell;
   }
   private static boolean renderingCondition_mq86k9_a1a(SNode node, EditorContext editorContext) {
@@ -184,21 +180,6 @@ public class ReferentieNaarKenmerk_Editor extends DefaultNodeEditor {
         return "<no datatype>";
       }
     }
-  }
-  private EditorCell createCollection_mq86k9_c1a(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_mq86k9_c1a");
-    editorCell.addEditorCell(this.createConstant_mq86k9_a2b0(editorContext, node));
-    return editorCell;
-  }
-  private static boolean renderingCondition_mq86k9_a2b0(SNode node, EditorContext editorContext) {
-    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L, 0x5781f93f2e519028L, "uniek"));
-  }
-  private EditorCell createConstant_mq86k9_a2b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "[ is uniek ]");
-    editorCell.setCellId("Constant_mq86k9_a2b0");
-    editorCell.setDefaultText("");
-    return editorCell;
   }
   private EditorCell createComponent_mq86k9_a(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "ObjectiefRecht.editor.BronGeldigheid");

@@ -59,9 +59,6 @@
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
-      <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
-        <property id="1238091709220" name="labelName" index="1413C4" />
-      </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -197,48 +194,13 @@
     <ref role="1XX52x" to="xhlk:6OHSlZaUlix" resolve="Informatiepositie" />
     <node concept="3EZMnI" id="6OHSlZaWs6M" role="2wV5jI">
       <node concept="l2Vlx" id="6OHSlZaWs6N" role="2iSdaV" />
-      <node concept="3EZMnI" id="6OHSlZaWs6Z" role="3EZMnx">
-        <node concept="3F0ifn" id="6OHSlZaWt0m" role="3EZMnx">
-          <property role="3F0ifm" value="" />
-          <node concept="ljvvj" id="6OHSlZaWt0y" role="3F10Kt">
-            <property role="VOm3f" value="true" />
+      <node concept="3F2HdR" id="1VomLPHGFfC" role="3EZMnx">
+        <ref role="1NtTu8" to="xhlk:6LDTi0oocMz" resolve="rechtsbetrekkingen" />
+        <node concept="l2Vlx" id="1VomLPHGFfE" role="2czzBx" />
+        <node concept="2w$q5c" id="1VomLPHHD6o" role="78xua">
+          <node concept="2aJ2om" id="1VomLPHHD6p" role="2w$qW5">
+            <ref role="2$4xQ3" node="1VomLPHHyP3" resolve="Simulatie" />
           </node>
-        </node>
-        <node concept="l2Vlx" id="6OHSlZaWs70" role="2iSdaV" />
-        <node concept="lj46D" id="6OHSlZaWs71" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="3F0ifn" id="6OHSlZaWs72" role="3EZMnx">
-          <property role="3F0ifm" value="lijst met rechtsbetrekkingen" />
-        </node>
-        <node concept="3F0ifn" id="6OHSlZaWs73" role="3EZMnx">
-          <property role="3F0ifm" value=":" />
-          <node concept="11L4FC" id="6OHSlZaWs74" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="6OHSlZaWs75" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="28ifPi2_LUP" role="3EZMnx">
-          <property role="3F0ifm" value="" />
-          <node concept="ljvvj" id="28ifPi2_LV3" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F2HdR" id="1VomLPHGFfC" role="3EZMnx">
-          <ref role="1NtTu8" to="xhlk:6LDTi0oocMz" resolve="rechtsbetrekkingen" />
-          <node concept="l2Vlx" id="1VomLPHGFfE" role="2czzBx" />
-          <node concept="2w$q5c" id="1VomLPHHD6o" role="78xua">
-            <node concept="2aJ2om" id="1VomLPHHD6p" role="2w$qW5">
-              <ref role="2$4xQ3" node="1VomLPHHyP3" resolve="Simulatie" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="6OHSlZaWs7b" role="3EZMnx">
-        <node concept="3mYdg7" id="6OHSlZaWs7c" role="3F10Kt">
-          <property role="1413C4" value="body-brace" />
         </node>
       </node>
     </node>
@@ -274,7 +236,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6OHSlZaUexV" role="3EZMnx">
-        <property role="3F0ifm" value="persoon 1" />
+        <property role="3F0ifm" value="lijst van rechtsbetrekkingen persoon 1" />
       </node>
       <node concept="3F0ifn" id="6OHSlZaUkIu" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -321,7 +283,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="1VomLPHElIf" role="3EZMnx">
-        <property role="3F0ifm" value="persoon 2" />
+        <property role="3F0ifm" value="lijst van rechtsbetrekkingen persoon 2" />
       </node>
       <node concept="3F0ifn" id="1VomLPHHsX9" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -428,37 +390,6 @@
                 <node concept="liA8E" id="1VomLPHH7vi" role="2OqNvi">
                   <ref role="37wK5l" to="o661:1VomLPHGTPM" resolve="Initialiseer" />
                   <node concept="1VaYGm" id="1VomLPHH7_n" role="37wK5m" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="ykhUs" id="1VomLPHH7ib" role="3EZMnx">
-        <property role="ykhUg" value="Reset" />
-        <node concept="ykhUf" id="1VomLPHH7ic" role="ynkVX">
-          <node concept="3clFbS" id="1VomLPHH7id" role="2VODD2">
-            <node concept="3cpWs8" id="1VomLPHH1Cx" role="3cqZAp">
-              <node concept="3cpWsn" id="1VomLPHH1Cy" role="3cpWs9">
-                <property role="TrG5h" value="simulatie" />
-                <node concept="3uibUv" id="1VomLPHH1Cz" role="1tU5fm">
-                  <ref role="3uigEE" to="o661:1VomLPHGTO6" resolve="Simulatie" />
-                </node>
-                <node concept="2ShNRf" id="1VomLPHH1C$" role="33vP2m">
-                  <node concept="HV5vD" id="1VomLPHH1C_" role="2ShVmc">
-                    <ref role="HV5vE" to="o661:1VomLPHGTO6" resolve="Simulatie" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="1VomLPHH1CA" role="3cqZAp">
-              <node concept="2OqwBi" id="1VomLPHH1CB" role="3clFbG">
-                <node concept="37vLTw" id="1VomLPHH1CC" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1VomLPHH1Cy" resolve="simulatie" />
-                </node>
-                <node concept="liA8E" id="1VomLPHH1CD" role="2OqNvi">
-                  <ref role="37wK5l" to="o661:1VomLPHGTQg" resolve="Reset" />
-                  <node concept="1VaYGm" id="1VomLPHH7sq" role="37wK5m" />
                 </node>
               </node>
             </node>

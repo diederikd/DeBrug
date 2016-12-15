@@ -7,10 +7,6 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -31,66 +27,18 @@ public class Informatiepositie_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_vdd6o4_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createCollection_vdd6o4_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_vdd6o4_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_vdd6o4_a0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createCollection_vdd6o4_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_vdd6o4_a0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(this.createConstant_vdd6o4_a0a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_vdd6o4_b0a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_vdd6o4_c0a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_vdd6o4_d0a(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_vdd6o4_e0a(editorContext, node));
-    return editorCell;
-  }
-  private EditorCell createConstant_vdd6o4_a0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_vdd6o4_a0a");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_vdd6o4_b0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "lijst met rechtsbetrekkingen");
-    editorCell.setCellId("Constant_vdd6o4_b0a");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_vdd6o4_c0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_vdd6o4_c0a");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_vdd6o4_d0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_vdd6o4_d0a");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefNodeList_vdd6o4_e0a(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Informatiepositie_Editor.rechtsbetrekkingenListHandler_vdd6o4_e0a(node, "rechtsbetrekkingen", editorContext);
+  private EditorCell createRefNodeList_vdd6o4_a0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Informatiepositie_Editor.rechtsbetrekkingenListHandler_vdd6o4_a0(node, "rechtsbetrekkingen", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_rechtsbetrekkingen");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class rechtsbetrekkingenListHandler_vdd6o4_e0a extends RefNodeListHandler {
-    public rechtsbetrekkingenListHandler_vdd6o4_e0a(SNode ownerNode, String childRole, EditorContext context) {
+  private static class rechtsbetrekkingenListHandler_vdd6o4_a0 extends RefNodeListHandler {
+    public rechtsbetrekkingenListHandler_vdd6o4_a0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -131,14 +79,5 @@ public class Informatiepositie_Editor extends DefaultNodeEditor {
         editorContext.getCellFactory().popCellContext();
       }
     }
-  }
-  private EditorCell createConstant_vdd6o4_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_vdd6o4_b0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.MATCHING_LABEL, 0, "body-brace");
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
   }
 }

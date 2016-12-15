@@ -66,7 +66,6 @@ public class Simulatie_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createRefNodeList_fapojb_u0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_fapojb_v0(editorContext, node));
     editorCell.addEditorCell(this.createJComponent_fapojb_w0(editorContext, node));
-    editorCell.addEditorCell(this.createJComponent_fapojb_x0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_fapojb_a0(EditorContext editorContext, SNode node) {
@@ -157,7 +156,7 @@ public class Simulatie_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_fapojb_f0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "persoon 1");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "lijst van rechtsbetrekkingen persoon 1");
     editorCell.setCellId("Constant_fapojb_f0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -289,7 +288,7 @@ public class Simulatie_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_fapojb_l0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "persoon 2");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "lijst van rechtsbetrekkingen persoon 2");
     editorCell.setCellId("Constant_fapojb_l0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -523,24 +522,6 @@ public class Simulatie_Editor extends DefaultNodeEditor {
       }
     };
     return Button.createButton("Initialiseer", editorContext, node, callback);
-
-  }
-  private EditorCell createJComponent_fapojb_x0(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = EditorCell_Component.createComponentCell(editorContext, node, Simulatie_Editor._QueryFunction_JComponent_fapojb_a32a(node, editorContext), "_fapojb_x0");
-    editorCell.setCellId("JComponent_fapojb_x0");
-    return editorCell;
-  }
-  private static JComponent _QueryFunction_JComponent_fapojb_a32a(final SNode node, final EditorContext editorContext) {
-    ButtonCallback callback = new ButtonCallback(node, editorContext) {
-      public void process(final SNode n, final EditorContext editorContext) {
-        {
-          final SNode node = ((SNode) n);
-          Simulatie simulatie = new Simulatie();
-          simulatie.Reset(node);
-        }
-      }
-    };
-    return Button.createButton("Reset", editorContext, node, callback);
 
   }
 }

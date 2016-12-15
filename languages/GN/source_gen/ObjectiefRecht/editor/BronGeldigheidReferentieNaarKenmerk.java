@@ -25,7 +25,6 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class BronGeldigheidReferentieNaarKenmerk implements ConceptEditorComponent {
   @NotNull
@@ -47,9 +46,6 @@ public class BronGeldigheidReferentieNaarKenmerk implements ConceptEditorCompone
     editorCell.addEditorCell(this.createConstant_xt4fan_g0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_xt4fan_h0(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_xt4fan_i0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_xt4fan_j0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_xt4fan_k0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_xt4fan_l0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_xt4fan_a0(EditorContext editorContext, SNode node) {
@@ -231,36 +227,5 @@ public class BronGeldigheidReferentieNaarKenmerk implements ConceptEditorCompone
         return "<no datatype>";
       }
     }
-  }
-  private EditorCell createConstant_xt4fan_j0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "uniek");
-    editorCell.setCellId("Constant_xt4fan_j0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_xt4fan_k0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_xt4fan_k0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createProperty_xt4fan_l0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("uniek");
-    provider.setNoTargetText("<no uniek>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("BGRNK_property_uniek");
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
   }
 }

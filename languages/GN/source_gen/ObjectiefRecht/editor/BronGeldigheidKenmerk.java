@@ -21,9 +21,6 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
-import jetbrains.mps.nodeEditor.EditorManager;
 
 public class BronGeldigheidKenmerk implements ConceptEditorComponent {
   @NotNull
@@ -45,9 +42,6 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     editorCell.addEditorCell(this.createConstant_wh7tcl_g0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_wh7tcl_h0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_wh7tcl_i0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_wh7tcl_j0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_wh7tcl_k0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_wh7tcl_l0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_wh7tcl_a0(EditorContext editorContext, SNode node) {
@@ -192,36 +186,5 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     protected String getNoTargetText() {
       return "<no datatype>";
     }
-  }
-  private EditorCell createConstant_wh7tcl_j0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "uniek");
-    editorCell.setCellId("Constant_wh7tcl_j0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_wh7tcl_k0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_wh7tcl_k0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createProperty_wh7tcl_l0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("uniek");
-    provider.setNoTargetText("<no uniek>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("BGK_property_uniek");
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
   }
 }
