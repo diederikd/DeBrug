@@ -401,6 +401,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
     </node>
+    <node concept="1TJgyj" id="6syAJDDCU2Z" role="1TKVEi">
+      <property role="IQ2ns" value="7431672735419572415" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="uniekIdentificerendeKenmerken" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
+    </node>
   </node>
   <node concept="1TIwiD" id="26dbYf8FZnZ">
     <property role="EcuMT" value="2417641230338881023" />
