@@ -64,6 +64,11 @@
       <property role="TrG5h" value="toonopmerkingen" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="6syAJDE5UiA" role="1TKVEl">
+      <property role="IQ2nx" value="7431672735427175590" />
+      <property role="TrG5h" value="toonnummer" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="64gsXol8CO6" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -568,6 +573,11 @@
     <node concept="1TJgyi" id="MvzNsyBsC7" role="1TKVEl">
       <property role="IQ2nx" value="909603116718868999" />
       <property role="TrG5h" value="opmerkingen" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6syAJDE2ItU" role="1TKVEl">
+      <property role="IQ2nx" value="7431672735426340730" />
+      <property role="TrG5h" value="conceptnummer" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
