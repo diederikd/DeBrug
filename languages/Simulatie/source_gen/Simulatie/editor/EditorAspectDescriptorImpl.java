@@ -17,7 +17,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
-  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Simulatie", "", true, "Simulatie.editor.Simulatie.Simulatie"), new ConceptEditorHintImpl("RechtspositieRol1", "", true, "Simulatie.editor.Simulatie.RechtspositieRol1"), new ConceptEditorHintImpl("RechtspositieRol2", "", true, "Simulatie.editor.Simulatie.RechtspositieRol2"));
+  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Simulatie", "", true, "Simulatie.editor.Simulatie.Simulatie"), new ConceptEditorHintImpl("RechtspositieRol1", "", true, "Simulatie.editor.Simulatie.RechtspositieRol1"), new ConceptEditorHintImpl("RechtspositieRol2", "", true, "Simulatie.editor.Simulatie.RechtspositieRol2"), new ConceptEditorHintImpl("HandelingenRol1", "", true, "Simulatie.editor.Simulatie.HandelingenRol1"), new ConceptEditorHintImpl("HandelingenRol2", "", true, "Simulatie.editor.Simulatie.HandelingenRol2"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {
@@ -37,7 +37,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 2:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rechtshandeling_Simulatie_Editor());
+            return Arrays.asList(new ConceptEditor[]{new Rechtshandeling_HandelingenRol1_Editor(), new Rechtshandeling_HandelingenRol2_Editor()});
           }
           break;
         case 3:

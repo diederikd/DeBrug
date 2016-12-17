@@ -44,6 +44,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -137,6 +138,7 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -314,6 +316,13 @@
   </node>
   <node concept="312cEu" id="1VomLPHGTO6">
     <property role="TrG5h" value="Simulatie" />
+    <node concept="Wx3nA" id="6syAJDEa1Qk" role="jymVt">
+      <property role="TrG5h" value="DatumTijdInitialisatie" />
+      <node concept="3Tm6S6" id="6syAJDEa1Qm" role="1B3o_S" />
+      <node concept="3uibUv" id="6syAJDEa24v" role="1tU5fm">
+        <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+      </node>
+    </node>
     <node concept="3clFb_" id="1VomLPHGTPM" role="jymVt">
       <property role="TrG5h" value="Initialiseer" />
       <node concept="37vLTG" id="1VomLPHGUMy" role="3clF46">
@@ -325,6 +334,17 @@
       <node concept="3cqZAl" id="1VomLPHGTPO" role="3clF45" />
       <node concept="3Tm1VV" id="1VomLPHGTPP" role="1B3o_S" />
       <node concept="3clFbS" id="1VomLPHGTPQ" role="3clF47">
+        <node concept="3clFbF" id="6syAJDEa3Hf" role="3cqZAp">
+          <node concept="37vLTI" id="6syAJDEa5so" role="3clFbG">
+            <node concept="2YIFZM" id="6syAJDEa5QK" role="37vLTx">
+              <ref role="37wK5l" to="28m1:~LocalDateTime.now():java.time.LocalDateTime" resolve="now" />
+              <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+            </node>
+            <node concept="37vLTw" id="6syAJDEa3Hd" role="37vLTJ">
+              <ref role="3cqZAo" node="6syAJDEa1Qk" resolve="DatumTijdInitialisatie" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4$ztVczshrd" role="3cqZAp">
           <node concept="2OqwBi" id="4$ztVczsi8n" role="3clFbG">
             <node concept="Xjq3P" id="4$ztVczshKM" role="2Oq$k0" />
@@ -784,7 +804,7 @@
                           <node concept="2OqwBi" id="4pem8DK1bsx" role="3clFbG">
                             <node concept="2OqwBi" id="4pem8DK0YTh" role="2Oq$k0">
                               <node concept="3Tsc0h" id="4pem8DK0Zbz" role="2OqNvi">
-                                <ref role="3TtcxE" to="xhlk:4pem8DK4Yi1" resolve="rechtshandelingen" />
+                                <ref role="3TtcxE" to="xhlk:4pem8DK4Yi1" resolve="uitvoerbarehandelingen" />
                               </node>
                               <node concept="37vLTw" id="4pem8DK50vh" role="2Oq$k0">
                                 <ref role="3cqZAo" node="1VomLPHGUMy" resolve="simulatie" />
@@ -927,7 +947,7 @@
                 <ref role="3cqZAo" node="1VomLPHGNZ8" resolve="simulatie" />
               </node>
               <node concept="3Tsc0h" id="4pem8DK5vFS" role="2OqNvi">
-                <ref role="3TtcxE" to="xhlk:4pem8DK4Yi1" resolve="rechtshandelingen" />
+                <ref role="3TtcxE" to="xhlk:4pem8DK4Yi1" resolve="uitvoerbarehandelingen" />
               </node>
             </node>
             <node concept="2Kehj3" id="4pem8DK5E$U" role="2OqNvi" />
@@ -1026,7 +1046,7 @@
                 <ref role="3cqZAo" node="4pem8DKjDTN" resolve="simulatie" />
               </node>
               <node concept="3Tsc0h" id="4pem8DKjNix" role="2OqNvi">
-                <ref role="3TtcxE" to="xhlk:4pem8DK4Yi1" resolve="rechtshandelingen" />
+                <ref role="3TtcxE" to="xhlk:4pem8DK4Yi1" resolve="uitvoerbarehandelingen" />
               </node>
             </node>
             <node concept="2Kehj3" id="4pem8DKjNiy" role="2OqNvi" />
@@ -1228,7 +1248,7 @@
                                       <node concept="2OqwBi" id="4pem8DKjQCh" role="3clFbG">
                                         <node concept="2OqwBi" id="4pem8DKjQCi" role="2Oq$k0">
                                           <node concept="3Tsc0h" id="4pem8DKjQCj" role="2OqNvi">
-                                            <ref role="3TtcxE" to="xhlk:4pem8DK4Yi1" resolve="rechtshandelingen" />
+                                            <ref role="3TtcxE" to="xhlk:4pem8DK4Yi1" resolve="uitvoerbarehandelingen" />
                                           </node>
                                           <node concept="37vLTw" id="4pem8DKjQCk" role="2Oq$k0">
                                             <ref role="3cqZAo" node="4pem8DKjDTN" resolve="simulatie" />
@@ -1369,7 +1389,7 @@
                                   <node concept="2OqwBi" id="5riiL_C6zAp" role="3clFbG">
                                     <node concept="2OqwBi" id="5riiL_C6zAq" role="2Oq$k0">
                                       <node concept="3Tsc0h" id="5riiL_C6zAr" role="2OqNvi">
-                                        <ref role="3TtcxE" to="xhlk:4pem8DK4Yi1" resolve="rechtshandelingen" />
+                                        <ref role="3TtcxE" to="xhlk:4pem8DK4Yi1" resolve="uitvoerbarehandelingen" />
                                       </node>
                                       <node concept="37vLTw" id="5riiL_C6zAs" role="2Oq$k0">
                                         <ref role="3cqZAo" node="4pem8DKjDTN" resolve="simulatie" />
@@ -1480,6 +1500,36 @@
         </node>
       </node>
       <node concept="3clFbS" id="5riiL_C3oTA" role="3clF47">
+        <node concept="3SKdUt" id="6syAJDEbN$6" role="3cqZAp">
+          <node concept="3SKdUq" id="6syAJDEbN$8" role="3SKWNk">
+            <property role="3SKdUp" value="Bepalen van het verschil in tijd" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6syAJDEaGay" role="3cqZAp">
+          <node concept="3cpWsn" id="6syAJDEaGau" role="3cpWs9">
+            <property role="TrG5h" value="VerschillenInNanoSeconden" />
+            <node concept="3uibUv" id="6syAJDEaI8R" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Long" resolve="Long" />
+            </node>
+            <node concept="2OqwBi" id="6syAJDEaHvn" role="33vP2m">
+              <node concept="2YIFZM" id="6syAJDEaGPk" role="2Oq$k0">
+                <ref role="37wK5l" to="28m1:~Duration.between(java.time.temporal.Temporal,java.time.temporal.Temporal):java.time.Duration" resolve="between" />
+                <ref role="1Pybhc" to="28m1:~Duration" resolve="Duration" />
+                <node concept="37vLTw" id="6syAJDEbJAN" role="37wK5m">
+                  <ref role="3cqZAo" node="6syAJDEa1Qk" resolve="DatumTijdInitialisatie" />
+                </node>
+                <node concept="2YIFZM" id="6syAJDEaH45" role="37wK5m">
+                  <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+                  <ref role="37wK5l" to="28m1:~LocalDateTime.now():java.time.LocalDateTime" resolve="now" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6syAJDEaHWd" role="2OqNvi">
+                <ref role="37wK5l" to="28m1:~Duration.toNanos():long" resolve="toNanos" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6syAJDEbM0q" role="3cqZAp" />
         <node concept="3SKdUt" id="4pem8DKb_PG" role="3cqZAp">
           <node concept="3SKdUq" id="4pem8DKb_PH" role="3SKWNk">
             <property role="3SKdUp" value="uitzoeken welk rechtsgevolg dit heeft en maak de nieuwe rechtsbetrekkingen" />
@@ -1575,27 +1625,136 @@
                     </node>
                     <node concept="2qgKlT" id="5riiL_C1q25" role="2OqNvi">
                       <ref role="37wK5l" to="rwnv:5riiL_BUXYm" resolve="setdatetime" />
-                      <node concept="2YIFZM" id="5riiL_C1rDz" role="37wK5m">
-                        <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
-                        <ref role="37wK5l" to="28m1:~LocalDateTime.now():java.time.LocalDateTime" resolve="now" />
+                      <node concept="2OqwBi" id="6syAJDEaRys" role="37wK5m">
+                        <node concept="2OqwBi" id="6syAJDEaPzy" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6syAJDEaK79" role="2Oq$k0">
+                            <node concept="Jnkvi" id="6syAJDEaJTL" role="2Oq$k0">
+                              <ref role="1M0zk5" node="4pem8DKbCCw" resolve="simulatie" />
+                            </node>
+                            <node concept="3TrEf2" id="6syAJDEaKZc" role="2OqNvi">
+                              <ref role="3Tt5mk" to="xhlk:6syAJDE8Ve8" resolve="datumtijdvanstartvandeSimulatie" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="6syAJDEaQqC" role="2OqNvi">
+                            <ref role="37wK5l" to="rwnv:5riiL_BUVyA" resolve="getdatetime" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="6syAJDEaTEm" role="2OqNvi">
+                          <ref role="37wK5l" to="28m1:~LocalDateTime.plusNanos(long):java.time.LocalDateTime" resolve="plusNanos" />
+                          <node concept="37vLTw" id="6syAJDEaUQK" role="37wK5m">
+                            <ref role="3cqZAo" node="6syAJDEaGau" resolve="VerschillenInNanoSeconden" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="4$ztVczskiC" role="3cqZAp">
-                  <node concept="2OqwBi" id="4$ztVczskiD" role="3clFbG">
-                    <node concept="10M0yZ" id="4$ztVczskiE" role="2Oq$k0">
-                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <node concept="3SKdUt" id="2K7y4iISCdI" role="3cqZAp">
+                  <node concept="3SKdUq" id="2K7y4iISCdK" role="3SKWNk">
+                    <property role="3SKdUp" value="Zet ook de datum van de laatste handeling voor het tonen van het icoon new" />
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="2K7y4iIVK6o" role="3cqZAp">
+                  <node concept="3clFbS" id="2K7y4iIVK6q" role="3clFbx">
+                    <node concept="3clFbF" id="2K7y4iIWyR8" role="3cqZAp">
+                      <node concept="2OqwBi" id="2K7y4iIW$o3" role="3clFbG">
+                        <node concept="2OqwBi" id="2K7y4iIWyZj" role="2Oq$k0">
+                          <node concept="Jnkvi" id="2K7y4iIWyR6" role="2Oq$k0">
+                            <ref role="1M0zk5" node="4pem8DKbCCw" resolve="simulatie" />
+                          </node>
+                          <node concept="3TrEf2" id="2K7y4iIW$4K" role="2OqNvi">
+                            <ref role="3Tt5mk" to="xhlk:2K7y4iISu19" resolve="datumtijdlaatstehandeling" />
+                          </node>
+                        </node>
+                        <node concept="2DeJnY" id="2K7y4iIW_jo" role="2OqNvi" />
+                      </node>
                     </node>
-                    <node concept="liA8E" id="4$ztVczskiF" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-                      <node concept="2GrUjf" id="4$ztVczskiG" role="37wK5m">
-                        <ref role="2Gs0qQ" node="4pem8DKbB88" resolve="rechtsbetrekking" />
+                    <node concept="3clFbF" id="2K7y4iIW_l5" role="3cqZAp">
+                      <node concept="2OqwBi" id="2K7y4iIWAG8" role="3clFbG">
+                        <node concept="2OqwBi" id="2K7y4iIXiF$" role="2Oq$k0">
+                          <node concept="2OqwBi" id="2K7y4iIW_tm" role="2Oq$k0">
+                            <node concept="Jnkvi" id="2K7y4iIW_l3" role="2Oq$k0">
+                              <ref role="1M0zk5" node="4pem8DKbCCw" resolve="simulatie" />
+                            </node>
+                            <node concept="3TrEf2" id="2K7y4iIWAoP" role="2OqNvi">
+                              <ref role="3Tt5mk" to="xhlk:2K7y4iISu19" resolve="datumtijdlaatstehandeling" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="2K7y4iIXjEm" role="2OqNvi">
+                            <ref role="3Tt5mk" to="jx79:5riiL_BUfcM" resolve="Datum" />
+                          </node>
+                        </node>
+                        <node concept="2DeJnY" id="2K7y4iIWBNd" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="2K7y4iIWBP0" role="3cqZAp">
+                      <node concept="2OqwBi" id="2K7y4iIWDcz" role="3clFbG">
+                        <node concept="2OqwBi" id="2K7y4iIXjZs" role="2Oq$k0">
+                          <node concept="2OqwBi" id="2K7y4iIWBXn" role="2Oq$k0">
+                            <node concept="Jnkvi" id="2K7y4iIWBOY" role="2Oq$k0">
+                              <ref role="1M0zk5" node="4pem8DKbCCw" resolve="simulatie" />
+                            </node>
+                            <node concept="3TrEf2" id="2K7y4iIWCTg" role="2OqNvi">
+                              <ref role="3Tt5mk" to="xhlk:2K7y4iISu19" resolve="datumtijdlaatstehandeling" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="2K7y4iIXl8F" role="2OqNvi">
+                            <ref role="3Tt5mk" to="jx79:5riiL_BUfcO" resolve="Tijd" />
+                          </node>
+                        </node>
+                        <node concept="2DeJnY" id="2K7y4iIXi2Z" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="2K7y4iIWxHE" role="3clFbw">
+                    <node concept="2OqwBi" id="2K7y4iIVKP5" role="2Oq$k0">
+                      <node concept="Jnkvi" id="2K7y4iIVKF4" role="2Oq$k0">
+                        <ref role="1M0zk5" node="4pem8DKbCCw" resolve="simulatie" />
+                      </node>
+                      <node concept="3TrEf2" id="2K7y4iIVLzs" role="2OqNvi">
+                        <ref role="3Tt5mk" to="xhlk:2K7y4iISu19" resolve="datumtijdlaatstehandeling" />
+                      </node>
+                    </node>
+                    <node concept="3w_OXm" id="2K7y4iIWyOa" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="2K7y4iISDjV" role="3cqZAp">
+                  <node concept="2OqwBi" id="2K7y4iISJmW" role="3clFbG">
+                    <node concept="2OqwBi" id="2K7y4iISDYz" role="2Oq$k0">
+                      <node concept="Jnkvi" id="2K7y4iISDjT" role="2Oq$k0">
+                        <ref role="1M0zk5" node="4pem8DKbCCw" resolve="simulatie" />
+                      </node>
+                      <node concept="3TrEf2" id="2K7y4iISF2U" role="2OqNvi">
+                        <ref role="3Tt5mk" to="xhlk:2K7y4iISu19" resolve="datumtijdlaatstehandeling" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="2K7y4iISKig" role="2OqNvi">
+                      <ref role="37wK5l" to="rwnv:5riiL_BUXYm" resolve="setdatetime" />
+                      <node concept="2OqwBi" id="2K7y4iISKou" role="37wK5m">
+                        <node concept="2OqwBi" id="2K7y4iISKov" role="2Oq$k0">
+                          <node concept="2OqwBi" id="2K7y4iISKow" role="2Oq$k0">
+                            <node concept="Jnkvi" id="2K7y4iISKox" role="2Oq$k0">
+                              <ref role="1M0zk5" node="4pem8DKbCCw" resolve="simulatie" />
+                            </node>
+                            <node concept="3TrEf2" id="2K7y4iISKoy" role="2OqNvi">
+                              <ref role="3Tt5mk" to="xhlk:6syAJDE8Ve8" resolve="datumtijdvanstartvandeSimulatie" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="2K7y4iISKoz" role="2OqNvi">
+                            <ref role="37wK5l" to="rwnv:5riiL_BUVyA" resolve="getdatetime" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="2K7y4iISKo$" role="2OqNvi">
+                          <ref role="37wK5l" to="28m1:~LocalDateTime.plusNanos(long):java.time.LocalDateTime" resolve="plusNanos" />
+                          <node concept="37vLTw" id="2K7y4iISKo_" role="37wK5m">
+                            <ref role="3cqZAo" node="6syAJDEaGau" resolve="VerschillenInNanoSeconden" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbH" id="2K7y4iIVFzH" role="3cqZAp" />
                 <node concept="3clFbF" id="4pem8DKcdaA" role="3cqZAp">
                   <node concept="37vLTI" id="4pem8DKcelJ" role="3clFbG">
                     <node concept="2OqwBi" id="4pem8DKfVMG" role="37vLTJ">
@@ -1612,6 +1771,11 @@
                       </node>
                       <node concept="1$rogu" id="4pem8DKgbC0" role="2OqNvi" />
                     </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="4VhV7ipv$U3" role="3cqZAp">
+                  <node concept="3SKdUq" id="4VhV7ipv$U5" role="3SKWNk">
+                    <property role="3SKdUp" value="Deze system.out niet verwijderen" />
                   </node>
                 </node>
                 <node concept="3clFbF" id="4pem8DKkST2" role="3cqZAp">
@@ -1844,9 +2008,26 @@
                             </node>
                             <node concept="2qgKlT" id="5riiL_C4ltz" role="2OqNvi">
                               <ref role="37wK5l" to="rwnv:5riiL_BUXYm" resolve="setdatetime" />
-                              <node concept="2YIFZM" id="5riiL_C4lIW" role="37wK5m">
-                                <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
-                                <ref role="37wK5l" to="28m1:~LocalDateTime.now():java.time.LocalDateTime" resolve="now" />
+                              <node concept="2OqwBi" id="6syAJDEbOpE" role="37wK5m">
+                                <node concept="2OqwBi" id="6syAJDEbOpF" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="6syAJDEbOpG" role="2Oq$k0">
+                                    <node concept="Jnkvi" id="6syAJDEbOpH" role="2Oq$k0">
+                                      <ref role="1M0zk5" node="5riiL_C3XCV" resolve="simulatie" />
+                                    </node>
+                                    <node concept="3TrEf2" id="6syAJDEbOpI" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="xhlk:6syAJDE8Ve8" resolve="datumtijdvanstartvandeSimulatie" />
+                                    </node>
+                                  </node>
+                                  <node concept="2qgKlT" id="6syAJDEbOpJ" role="2OqNvi">
+                                    <ref role="37wK5l" to="rwnv:5riiL_BUVyA" resolve="getdatetime" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="6syAJDEbOpK" role="2OqNvi">
+                                  <ref role="37wK5l" to="28m1:~LocalDateTime.plusNanos(long):java.time.LocalDateTime" resolve="plusNanos" />
+                                  <node concept="37vLTw" id="6syAJDEbOpL" role="37wK5m">
+                                    <ref role="3cqZAo" node="6syAJDEaGau" resolve="VerschillenInNanoSeconden" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>

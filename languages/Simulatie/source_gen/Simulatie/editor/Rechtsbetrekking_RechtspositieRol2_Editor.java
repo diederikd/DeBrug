@@ -10,6 +10,12 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
+import org.jetbrains.mps.openapi.module.SModule;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Image;
+import Datum.behavior.DatumTijd__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
@@ -21,15 +27,12 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor {
   private Collection<String> myContextHints = Arrays.asList(new String[]{"Simulatie.editor.Simulatie.RechtspositieRol2"});
@@ -48,35 +51,70 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_de2l07_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createConstant_de2l07_a0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_de2l07_b0(editorContext, node));
+    if (renderingCondition_de2l07_a0a(node, editorContext)) {
+      editorCell.addEditorCell(this.createImage_de2l07_a0(editorContext, node));
+    }
+    if (renderingCondition_de2l07_a1a(node, editorContext)) {
+      editorCell.addEditorCell(this.createImage_de2l07_b0(editorContext, node));
+    }
     editorCell.addEditorCell(this.createConstant_de2l07_c0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_de2l07_d0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_de2l07_e0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_de2l07_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_e0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_de2l07_f0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_de2l07_g0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_de2l07_h0(editorContext, node));
-    if (renderingCondition_de2l07_a8a(node, editorContext)) {
-      editorCell.addEditorCell(this.createCollection_de2l07_i0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_de2l07_g0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_h0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_i0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_de2l07_j0(editorContext, node));
+    if (renderingCondition_de2l07_a01a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_de2l07_k0(editorContext, node));
     }
-    if (renderingCondition_de2l07_a9a(node, editorContext)) {
-      editorCell.addEditorCell(this.createCollection_de2l07_j0(editorContext, node));
+    if (renderingCondition_de2l07_a11a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_de2l07_l0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createConstant_de2l07_k0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_m0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_de2l07_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createImage_de2l07_a0(final EditorContext editorContext, final SNode node) {
+    SModule imageModule;
+    String imagePath;
+    imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
+    imagePath = "/Users/diederikdulfer/MPSProjects/DeBrug/images/label_new_red.jpeg";
+    EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
+    editorCell.setCellId("Image_de2l07_a0");
+    editorCell.setDescent(0);
+    return editorCell;
+  }
+  private static boolean renderingCondition_de2l07_a0a(SNode node, EditorContext editorContext) {
+    SNode simulatie = (SNode) SNodeOperations.getParent(SNodeOperations.getParent(node));
+    System.out.println(DatumTijd__BehaviorDescriptor.getdatetime_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x2c078844aee1e049L, "datumtijdlaatstehandeling"))));
+    System.out.print(DatumTijd__BehaviorDescriptor.getdatetime_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8cdL, "geldigVan"))));
+    return DatumTijd__BehaviorDescriptor.getdatetime_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8cdL, "geldigVan"))).equals(DatumTijd__BehaviorDescriptor.getdatetime_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x2c078844aee1e049L, "datumtijdlaatstehandeling"))));
+  }
+  private EditorCell createImage_de2l07_b0(final EditorContext editorContext, final SNode node) {
+    SModule imageModule;
+    String imagePath;
+    imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
+    imagePath = "/Users/diederikdulfer/MPSProjects/DeBrug/images/DeletedIcon.jpg";
+    EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
+    editorCell.setCellId("Image_de2l07_b0");
+    editorCell.setDescent(0);
+    return editorCell;
+  }
+  private static boolean renderingCondition_de2l07_a1a(SNode node, EditorContext editorContext) {
+    return (SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot")) != null);
+  }
+  private EditorCell createConstant_de2l07_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtsbetrekking");
-    editorCell.setCellId("Constant_de2l07_a0");
+    editorCell.setCellId("Constant_de2l07_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_de2l07_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_de2l07_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("rechtsbetrekking");
     provider.setNoTargetText("<no rechtsbetrekking>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a1a());
+    provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a3a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
@@ -96,17 +134,17 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     } else
     return editorCell;
   }
-  public static class _Inline_de2l07_a1a extends InlineCellProvider {
-    public _Inline_de2l07_a1a() {
+  public static class _Inline_de2l07_a3a extends InlineCellProvider {
+    public _Inline_de2l07_a3a() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_de2l07_a0b0(editorContext, node);
+      return this.createProperty_de2l07_a0d0(editorContext, node);
     }
-    private EditorCell createProperty_de2l07_a0b0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_de2l07_a0d0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -123,24 +161,24 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
       return editorCell;
     }
   }
-  private EditorCell createConstant_de2l07_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "is geldig van");
-    editorCell.setCellId("Constant_de2l07_c0");
+    editorCell.setCellId("Constant_de2l07_e0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_de2l07_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_de2l07_d0");
+    editorCell.setCellId("Constant_de2l07_f0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_de2l07_e0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Rechtsbetrekking_RechtspositieRol2_Editor.geldigVanSingleRoleHandler_de2l07_e0(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8cdL, "geldigVan"), editorContext);
+  private EditorCell createRefNode_de2l07_g0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Rechtsbetrekking_RechtspositieRol2_Editor.geldigVanSingleRoleHandler_de2l07_g0(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8cdL, "geldigVan"), editorContext);
     return provider.createCell();
   }
-  private class geldigVanSingleRoleHandler_de2l07_e0 extends SingleRoleCellProvider {
-    public geldigVanSingleRoleHandler_de2l07_e0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class geldigVanSingleRoleHandler_de2l07_g0 extends SingleRoleCellProvider {
+    public geldigVanSingleRoleHandler_de2l07_g0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -168,24 +206,24 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
       return "<no geldigVan>";
     }
   }
-  private EditorCell createConstant_de2l07_f0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_h0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " tot");
-    editorCell.setCellId("Constant_de2l07_f0");
+    editorCell.setCellId("Constant_de2l07_h0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_de2l07_g0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_i0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_de2l07_g0");
+    editorCell.setCellId("Constant_de2l07_i0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_de2l07_h0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Rechtsbetrekking_RechtspositieRol2_Editor.geldigTotSingleRoleHandler_de2l07_h0(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot"), editorContext);
+  private EditorCell createRefNode_de2l07_j0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Rechtsbetrekking_RechtspositieRol2_Editor.geldigTotSingleRoleHandler_de2l07_j0(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot"), editorContext);
     return provider.createCell();
   }
-  private class geldigTotSingleRoleHandler_de2l07_h0 extends SingleRoleCellProvider {
-    public geldigTotSingleRoleHandler_de2l07_h0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class geldigTotSingleRoleHandler_de2l07_j0 extends SingleRoleCellProvider {
+    public geldigTotSingleRoleHandler_de2l07_j0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -218,22 +256,22 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
       return "<no geldigTot>";
     }
   }
-  private EditorCell createCollection_de2l07_i0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_de2l07_k0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_de2l07_i0");
+    editorCell.setCellId("Collection_de2l07_k0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(this.createConstant_de2l07_a8a(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_de2l07_b8a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_de2l07_c8a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_de2l07_d8a(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_de2l07_e8a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_de2l07_f8a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_a01a(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_de2l07_b01a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_c01a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_d01a(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_de2l07_e01a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_f01a(editorContext, node));
     return editorCell;
   }
-  private static boolean renderingCondition_de2l07_a8a(SNode node, EditorContext editorContext) {
+  private static boolean renderingCondition_de2l07_a01a(SNode node, EditorContext editorContext) {
     SNode simulatie;
     boolean show = false;
     if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(node)), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"))) {
@@ -244,18 +282,18 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     }
     return show;
   }
-  private EditorCell createConstant_de2l07_a8a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_a01a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "heeft recht");
-    editorCell.setCellId("Constant_de2l07_a8a");
+    editorCell.setCellId("Constant_de2l07_a01a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_de2l07_b8a(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_de2l07_b01a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("rechtssubjectMetRecht");
     provider.setNoTargetText("<no rechtssubjectMetRecht>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a1i0());
+    provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a1k0());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
@@ -270,17 +308,17 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     } else
     return editorCell;
   }
-  public static class _Inline_de2l07_a1i0 extends InlineCellProvider {
-    public _Inline_de2l07_a1i0() {
+  public static class _Inline_de2l07_a1k0 extends InlineCellProvider {
+    public _Inline_de2l07_a1k0() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_de2l07_a0b8a(editorContext, node);
+      return this.createProperty_de2l07_a0b01a(editorContext, node);
     }
-    private EditorCell createProperty_de2l07_a0b8a(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_de2l07_a0b01a(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -297,24 +335,24 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
       return editorCell;
     }
   }
-  private EditorCell createConstant_de2l07_c8a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_c01a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " ");
-    editorCell.setCellId("Constant_de2l07_c8a");
+    editorCell.setCellId("Constant_de2l07_c01a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_de2l07_d8a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_d01a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_de2l07_d8a");
+    editorCell.setCellId("Constant_de2l07_d01a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_de2l07_e8a(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_de2l07_e01a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("rechtsbetrekking");
     provider.setNoTargetText("<no rechtsbetrekking>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a4i0());
+    provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a4k0());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
@@ -329,28 +367,28 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     } else
     return editorCell;
   }
-  public static class _Inline_de2l07_a4i0 extends InlineCellProvider {
-    public _Inline_de2l07_a4i0() {
+  public static class _Inline_de2l07_a4k0 extends InlineCellProvider {
+    public _Inline_de2l07_a4k0() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createCollection_de2l07_a0e8a(editorContext, node);
+      return this.createCollection_de2l07_a0e01a(editorContext, node);
     }
-    private EditorCell createCollection_de2l07_a0e8a(EditorContext editorContext, SNode node) {
+    private EditorCell createCollection_de2l07_a0e01a(EditorContext editorContext, SNode node) {
       EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-      editorCell.setCellId("Collection_de2l07_a0e8a");
-      editorCell.addEditorCell(this.createRefCell_de2l07_a0a4i0(editorContext, node));
+      editorCell.setCellId("Collection_de2l07_a0e01a");
+      editorCell.addEditorCell(this.createRefCell_de2l07_a0a4k0(editorContext, node));
       return editorCell;
     }
-    private EditorCell createRefCell_de2l07_a0a4i0(EditorContext editorContext, SNode node) {
+    private EditorCell createRefCell_de2l07_a0a4k0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
       provider.setRole("rechtssubjectMetRecht");
       provider.setNoTargetText("<no rechtssubjectMetRecht>");
       EditorCell editorCell;
-      provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a4i0._Inline_de2l07_a0a0e8a());
+      provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a4k0._Inline_de2l07_a0a0e01a());
       editorCell = provider.createEditorCell(editorContext);
       if (editorCell.getRole() == null) {
         editorCell.setReferenceCell(true);
@@ -365,17 +403,17 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
       } else
       return editorCell;
     }
-    public static class _Inline_de2l07_a0a0e8a extends InlineCellProvider {
-      public _Inline_de2l07_a0a0e8a() {
+    public static class _Inline_de2l07_a0a0e01a extends InlineCellProvider {
+      public _Inline_de2l07_a0a0e01a() {
         super();
       }
       public EditorCell createEditorCell(EditorContext editorContext) {
         return this.createEditorCell(editorContext, this.getSNode());
       }
       public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-        return this.createProperty_de2l07_a0a0a4i0(editorContext, node);
+        return this.createProperty_de2l07_a0a0a4k0(editorContext, node);
       }
-      private EditorCell createProperty_de2l07_a0a0a4i0(EditorContext editorContext, SNode node) {
+      private EditorCell createProperty_de2l07_a0a0a4k0(EditorContext editorContext, SNode node) {
         CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
         provider.setRole("name");
         provider.setNoTargetText("<no name>");
@@ -397,28 +435,28 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
       }
     }
   }
-  private EditorCell createConstant_de2l07_f8a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_f01a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_de2l07_f8a");
+    editorCell.setCellId("Constant_de2l07_f01a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCollection_de2l07_j0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_de2l07_l0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_de2l07_j0");
+    editorCell.setCellId("Collection_de2l07_l0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(this.createConstant_de2l07_a9a(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_de2l07_b9a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_de2l07_c9a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_de2l07_d9a(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_de2l07_e9a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_de2l07_f9a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_a11a(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_de2l07_b11a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_c11a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_d11a(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_de2l07_e11a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_f11a(editorContext, node));
     return editorCell;
   }
-  private static boolean renderingCondition_de2l07_a9a(SNode node, EditorContext editorContext) {
+  private static boolean renderingCondition_de2l07_a11a(SNode node, EditorContext editorContext) {
     SNode simulatie;
     boolean show = false;
     if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(node)), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"))) {
@@ -429,18 +467,18 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     }
     return show;
   }
-  private EditorCell createConstant_de2l07_a9a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_a11a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "heeft plicht");
-    editorCell.setCellId("Constant_de2l07_a9a");
+    editorCell.setCellId("Constant_de2l07_a11a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_de2l07_b9a(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_de2l07_b11a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("rechtssubjectMetPlicht");
     provider.setNoTargetText("<no rechtssubjectMetPlicht>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a1j0());
+    provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a1l0());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
@@ -455,17 +493,17 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     } else
     return editorCell;
   }
-  public static class _Inline_de2l07_a1j0 extends InlineCellProvider {
-    public _Inline_de2l07_a1j0() {
+  public static class _Inline_de2l07_a1l0 extends InlineCellProvider {
+    public _Inline_de2l07_a1l0() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_de2l07_a0b9a(editorContext, node);
+      return this.createProperty_de2l07_a0b11a(editorContext, node);
     }
-    private EditorCell createProperty_de2l07_a0b9a(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_de2l07_a0b11a(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -482,24 +520,24 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
       return editorCell;
     }
   }
-  private EditorCell createConstant_de2l07_c9a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_c11a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " ");
-    editorCell.setCellId("Constant_de2l07_c9a");
+    editorCell.setCellId("Constant_de2l07_c11a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_de2l07_d9a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_d11a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_de2l07_d9a");
+    editorCell.setCellId("Constant_de2l07_d11a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_de2l07_e9a(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_de2l07_e11a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("rechtsbetrekking");
     provider.setNoTargetText("<no rechtsbetrekking>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a4j0());
+    provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a4l0());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
@@ -514,28 +552,28 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     } else
     return editorCell;
   }
-  public static class _Inline_de2l07_a4j0 extends InlineCellProvider {
-    public _Inline_de2l07_a4j0() {
+  public static class _Inline_de2l07_a4l0 extends InlineCellProvider {
+    public _Inline_de2l07_a4l0() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createCollection_de2l07_a0e9a(editorContext, node);
+      return this.createCollection_de2l07_a0e11a(editorContext, node);
     }
-    private EditorCell createCollection_de2l07_a0e9a(EditorContext editorContext, SNode node) {
+    private EditorCell createCollection_de2l07_a0e11a(EditorContext editorContext, SNode node) {
       EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-      editorCell.setCellId("Collection_de2l07_a0e9a");
-      editorCell.addEditorCell(this.createRefCell_de2l07_a0a4j0(editorContext, node));
+      editorCell.setCellId("Collection_de2l07_a0e11a");
+      editorCell.addEditorCell(this.createRefCell_de2l07_a0a4l0(editorContext, node));
       return editorCell;
     }
-    private EditorCell createRefCell_de2l07_a0a4j0(EditorContext editorContext, SNode node) {
+    private EditorCell createRefCell_de2l07_a0a4l0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
       provider.setRole("rechtssubjectMetPlicht");
       provider.setNoTargetText("<no rechtssubjectMetPlicht>");
       EditorCell editorCell;
-      provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a4j0._Inline_de2l07_a0a0e9a());
+      provider.setAuxiliaryCellProvider(new Rechtsbetrekking_RechtspositieRol2_Editor._Inline_de2l07_a4l0._Inline_de2l07_a0a0e11a());
       editorCell = provider.createEditorCell(editorContext);
       if (editorCell.getRole() == null) {
         editorCell.setReferenceCell(true);
@@ -550,17 +588,17 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
       } else
       return editorCell;
     }
-    public static class _Inline_de2l07_a0a0e9a extends InlineCellProvider {
-      public _Inline_de2l07_a0a0e9a() {
+    public static class _Inline_de2l07_a0a0e11a extends InlineCellProvider {
+      public _Inline_de2l07_a0a0e11a() {
         super();
       }
       public EditorCell createEditorCell(EditorContext editorContext) {
         return this.createEditorCell(editorContext, this.getSNode());
       }
       public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-        return this.createProperty_de2l07_a0a0a4j0(editorContext, node);
+        return this.createProperty_de2l07_a0a0a4l0(editorContext, node);
       }
-      private EditorCell createProperty_de2l07_a0a0a4j0(EditorContext editorContext, SNode node) {
+      private EditorCell createProperty_de2l07_a0a0a4l0(EditorContext editorContext, SNode node) {
         CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
         provider.setRole("name");
         provider.setNoTargetText("<no name>");
@@ -582,15 +620,15 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
       }
     }
   }
-  private EditorCell createConstant_de2l07_f9a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_f11a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_de2l07_f9a");
+    editorCell.setCellId("Constant_de2l07_f11a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_de2l07_k0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_m0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_de2l07_k0");
+    editorCell.setCellId("Constant_de2l07_m0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
@@ -604,17 +642,17 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(this.createConstant_de2l07_a0_0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_de2l07_b0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_de2l07_c0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_de2l07_d0_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_de2l07_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_de2l07_e0_0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_de2l07_f0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_de2l07_a0_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "geldig van");
-    editorCell.setCellId("Constant_de2l07_a0_0");
+    editorCell.setCellId("Constant_de2l07_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -666,15 +704,15 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
       return "<no geldigVan>";
     }
   }
-  private EditorCell createConstant_de2l07_d0_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "geldig tot");
-    editorCell.setCellId("Constant_de2l07_d0_0");
+    editorCell.setCellId("Constant_de2l07_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_de2l07_e0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_de2l07_e0_0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_de2l07_e0");
+    editorCell.setCellId("Constant_de2l07_e0_0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
     editorCell.getStyle().putAll(style);

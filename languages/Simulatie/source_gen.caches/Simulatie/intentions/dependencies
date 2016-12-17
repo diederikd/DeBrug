@@ -52,7 +52,9 @@
   </dependency>
   <dependency className="Simulatie.intentions.Simulatie" file="Simulatie.java">
     <classNode dependClassName="Datum.behavior.DatumTijd__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.time.Duration" />
     <classNode dependClassName="java.time.LocalDateTime" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />

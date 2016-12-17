@@ -185,7 +185,7 @@ public class Context_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_d0e2am_i0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "toon geldige regels");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "toon alle regels");
     editorCell.setCellId("Constant_d0e2am_i0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);

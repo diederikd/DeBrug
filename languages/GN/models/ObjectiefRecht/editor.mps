@@ -290,7 +290,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="4$mS69sSSrG" role="3EZMnx">
-        <property role="3F0ifm" value="toon geldige regels" />
+        <property role="3F0ifm" value="toon alle regels" />
         <node concept="lj46D" id="4$mS69sSSBz" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

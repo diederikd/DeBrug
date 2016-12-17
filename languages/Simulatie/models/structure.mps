@@ -79,9 +79,28 @@
     <node concept="1TJgyj" id="4pem8DK4Yi1" role="1TKVEi">
       <property role="IQ2ns" value="5066083982447469697" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="rechtshandelingen" />
+      <property role="20kJfa" value="uitvoerbarehandelingen" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
+    </node>
+    <node concept="1TJgyj" id="6syAJDEdNDK" role="1TKVEi">
+      <property role="IQ2ns" value="7431672735429245552" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="uitgevoerdehandelingen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="gcgs:6c9haf45sNk" resolve="Rechtshandeling" />
+    </node>
+    <node concept="1TJgyj" id="6syAJDE8Ve8" role="1TKVEi">
+      <property role="IQ2ns" value="7431672735427965832" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="datumtijdvanstartvandeSimulatie" />
+      <ref role="20lvS9" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
+    </node>
+    <node concept="1TJgyj" id="2K7y4iISu19" role="1TKVEi">
+      <property role="IQ2ns" value="3172654291078996041" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="datumtijdlaatstehandeling" />
+      <ref role="20lvS9" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
     </node>
   </node>
   <node concept="1TIwiD" id="6OHSlZaUlix">
