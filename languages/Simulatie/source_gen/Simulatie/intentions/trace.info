@@ -237,6 +237,35 @@
       <node id="5066083982451531523" at="201,42,202,84" concept="2" />
       <node id="5066083982451408999" at="202,84,203,74" concept="2" />
       <node id="5066083982451652654" at="203,74,204,84" concept="2" />
+      <node id="5679580590627284303" at="206,87,207,30" concept="7" />
+      <node id="5679580590627533393" at="207,30,208,51" concept="2" />
+      <node id="5679580590627540199" at="208,51,209,0" concept="10" />
+      <node id="5679580590627212301" at="211,7,212,61" concept="7" />
+      <node id="5679580590628253103" at="213,232,214,200" concept="2" />
+      <node id="5679580590628459747" at="214,200,215,383" concept="2" />
+      <node id="5679580590628478251" at="215,383,216,199" concept="2" />
+      <node id="5679580590628472103" at="216,199,217,0" concept="10" />
+      <node id="5679580590627259623" at="218,541,219,68" concept="9" />
+      <node id="5679580590627259686" at="219,68,220,47" concept="9" />
+      <node id="5679580590628045904" at="220,47,221,229" concept="2" />
+      <node id="5679580590627262599" at="223,15,224,55" concept="7" />
+      <node id="5679580590629818079" at="225,229,226,45" concept="7" />
+      <node id="5679580590629819771" at="227,841,228,49" concept="2" />
+      <node id="5679580590629824725" at="230,846,231,55" concept="2" />
+      <node id="5679580590627274915" at="233,19,234,233" concept="7" />
+      <node id="5679580590627287901" at="235,239,236,69" concept="2" />
+      <node id="5679580590627293409" at="239,19,240,233" concept="7" />
+      <node id="5679580590627293414" at="241,237,242,68" concept="2" />
+      <node id="5679580590629314280" at="245,19,246,233" concept="7" />
+      <node id="5679580590629314285" at="247,223,248,69" concept="2" />
+      <node id="5679580590629318272" at="251,19,252,233" concept="7" />
+      <node id="5679580590629318277" at="253,230,254,69" concept="2" />
+      <node id="5679580590629320535" at="257,19,258,233" concept="7" />
+      <node id="5679580590629320540" at="259,231,260,69" concept="2" />
+      <node id="5679580590629525622" at="263,19,264,233" concept="7" />
+      <node id="5679580590629525627" at="265,221,266,68" concept="2" />
+      <node id="5679580590627850103" at="275,5,276,38" concept="2" />
+      <node id="5679580590627283246" at="276,38,277,25" concept="8" />
       <node id="2222626598059506344" at="34,383,37,5" concept="5" />
       <node id="2222626598059605920" at="37,5,40,5" concept="5" />
       <node id="5066083982445937070" at="44,61,47,7" concept="5" />
@@ -248,10 +277,24 @@
       <node id="5066083982449209862" at="147,0,150,0" concept="6" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="6256145404863175139" at="178,0,181,0" concept="6" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="6256145404863175139" at="182,0,185,0" concept="6" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5679580590629748671" at="226,45,229,19" concept="5" />
+      <node id="5679580590629824723" at="229,19,232,19" concept="5" />
+      <node id="5679580590627274915" at="234,233,237,21" concept="5" />
+      <node id="5679580590627293409" at="240,233,243,21" concept="5" />
+      <node id="5679580590629314280" at="246,233,249,21" concept="5" />
+      <node id="5679580590629318272" at="252,233,255,21" concept="5" />
+      <node id="5679580590629320535" at="258,233,261,21" concept="5" />
+      <node id="5679580590629525622" at="264,233,267,21" concept="5" />
       <node id="5066083982451370500" at="116,293,121,17" concept="5" />
       <node id="6256145404863854988" at="125,208,130,15" concept="5" />
       <node id="3172654291079856536" at="159,88,164,11" concept="5" />
       <node id="6256145404863201404" at="189,416,195,13" concept="5" />
+      <node id="5679580590627274915" at="232,19,238,19" concept="0" />
+      <node id="5679580590627293409" at="238,19,244,19" concept="0" />
+      <node id="5679580590629314280" at="244,19,250,19" concept="0" />
+      <node id="5679580590629318272" at="250,19,256,19" concept="0" />
+      <node id="5679580590629320535" at="256,19,262,19" concept="0" />
+      <node id="5679580590629525622" at="262,19,268,19" concept="0" />
       <node id="7812026954661624759" at="54,39,61,5" concept="4" />
       <node id="6256145404863544600" at="115,208,122,15" concept="5" />
       <node id="6256145404863854984" at="124,68,131,13" concept="5" />
@@ -274,8 +317,16 @@
       <node id="5066083982451370446" at="105,34,135,5" concept="4" />
       <node id="5066083982449209862" at="141,82,175,5" concept="4" />
       <node id="5066083982451316250" at="96,0,137,0" concept="6" trace="RefreshHandelingen#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5679580590627262599" at="224,55,269,17" concept="5" />
+      <node id="5679580590627262599" at="222,272,270,15" concept="0" />
+      <node id="5679580590627259791" at="221,229,271,13" concept="4" />
+      <node id="5679580590627248893" at="217,0,272,11" concept="5" />
       <node id="2222626598060006770" at="27,0,88,0" concept="6" trace="Initialiseer#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5679580590627212301" at="212,61,273,9" concept="5" />
+      <node id="5679580590627212301" at="210,536,274,7" concept="0" />
+      <node id="5679580590627188392" at="209,0,275,5" concept="4" />
       <node id="6256145404863024739" at="137,0,206,0" concept="6" trace="ExecuteHandeling#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5679580590627183125" at="206,0,279,0" concept="6" trace="OpzoekenTypeHandeling#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="2222626598059506344" at="35,39,36,167" />
       <scope id="2222626598059605920" at="38,39,39,62" />
       <scope id="5066083982445937072" at="45,26,46,178" />
@@ -287,6 +338,14 @@
       <scope id="5066083982449209862" at="147,37,148,186" />
       <scope id="6256145404863175139" at="178,39,179,196" />
       <scope id="6256145404863175139" at="182,37,183,186" />
+      <scope id="5679580590629748673" at="227,841,228,49" />
+      <scope id="5679580590629824724" at="230,846,231,55" />
+      <scope id="5679580590627274917" at="235,239,236,69" />
+      <scope id="5679580590627293413" at="241,237,242,68" />
+      <scope id="5679580590629314284" at="247,223,248,69" />
+      <scope id="5679580590629318276" at="253,230,254,69" />
+      <scope id="5679580590629320539" at="259,231,260,69" />
+      <scope id="5679580590629525626" at="265,221,266,68" />
       <scope id="5066083982446418537" at="72,0,75,0">
         <var name="it" id="5066083982446418537" />
       </scope>
@@ -316,6 +375,24 @@
         <var name="it" id="6256145404863175139" />
       </scope>
       <scope id="6256145404863201406" at="190,523,194,555" />
+      <scope id="5679580590627274915" at="233,19,237,21">
+        <var name="rechtsbetrekking" id="5679580590627274915" />
+      </scope>
+      <scope id="5679580590627293409" at="239,19,243,21">
+        <var name="rechtsbetrekking" id="5679580590627293409" />
+      </scope>
+      <scope id="5679580590629314280" at="245,19,249,21">
+        <var name="rechtsbetrekking" id="5679580590629314280" />
+      </scope>
+      <scope id="5679580590629318272" at="251,19,255,21">
+        <var name="rechtsbetrekking" id="5679580590629318272" />
+      </scope>
+      <scope id="5679580590629320535" at="257,19,261,21">
+        <var name="rechtsbetrekking" id="5679580590629320535" />
+      </scope>
+      <scope id="5679580590629525622" at="263,19,267,21">
+        <var name="rechtsbetrekking" id="5679580590629525622" />
+      </scope>
       <scope id="7812026954661624762" at="55,237,60,7">
         <var name="rb1" id="2222626598059845392" />
       </scope>
@@ -396,6 +473,17 @@
       <scope id="5066083982451316250" at="96,0,137,0">
         <var name="simulatie" id="5066083982451318387" />
       </scope>
+      <scope id="5679580590627262601" at="225,229,268,19">
+        <var name="handelingsoort" id="5679580590629818082" />
+      </scope>
+      <scope id="5679580590627262599" at="223,15,269,17">
+        <var name="refvoorwaarde" id="5679580590627262599" />
+      </scope>
+      <scope id="5679580590627259797" at="222,272,270,15" />
+      <scope id="5679580590627259791" at="221,229,271,13">
+        <var name="voorwaarde" id="5679580590627259793" />
+      </scope>
+      <scope id="5679580590627248895" at="218,541,271,13" />
       <scope id="2222626598060006774" at="27,45,86,5">
         <var name="casus" id="2222626598059376870" />
         <var name="iteratie" id="5066083982445936627" />
@@ -403,8 +491,16 @@
         <var name="rechtspositie" id="7812026954661637103" />
         <var name="simulatiemodel" id="2222626598059373643" />
       </scope>
+      <scope id="5679580590627212303" at="213,232,272,11" />
       <scope id="2222626598060006770" at="27,0,88,0">
         <var name="simulatie" id="2222626598060010658" />
+      </scope>
+      <scope id="5679580590627212301" at="211,7,273,9">
+        <var name="regelOverRechtsgevolgVeroorzaker" id="5679580590627212301" />
+      </scope>
+      <scope id="5679580590627188395" at="210,536,274,7" />
+      <scope id="5679580590627188392" at="209,0,275,5">
+        <var name="regel" id="5679580590627188393" />
       </scope>
       <scope id="6256145404863024742" at="137,44,204,84">
         <var name="VerschillenInNanoSeconden" id="7431672735428428446" />
@@ -413,13 +509,20 @@
       <scope id="6256145404863024739" at="137,0,206,0">
         <var name="node" id="6256145404863041563" />
       </scope>
+      <scope id="5679580590627183128" at="206,87,277,25">
+        <var name="typehandeling" id="5679580590627284299" />
+      </scope>
+      <scope id="5679580590627183125" at="206,0,279,0">
+        <var name="rechtsgevolgveroorzaker" id="5679580590627187971" />
+        <var name="simulatie" id="5679580590627187629" />
+      </scope>
       <unit id="5066083982446418537" at="71,235,75,11" name="Simulatie.intentions.Simulatie$1" />
       <unit id="5066083982446418537" at="75,24,79,11" name="Simulatie.intentions.Simulatie$2" />
       <unit id="5066083982449209862" at="142,420,146,5" name="Simulatie.intentions.Simulatie$3" />
       <unit id="5066083982449209862" at="146,18,150,5" name="Simulatie.intentions.Simulatie$4" />
       <unit id="6256145404863175139" at="177,434,181,5" name="Simulatie.intentions.Simulatie$5" />
       <unit id="6256145404863175139" at="181,18,185,5" name="Simulatie.intentions.Simulatie$6" />
-      <unit id="2222626598060006662" at="24,0,207,0" name="Simulatie.intentions.Simulatie" />
+      <unit id="2222626598060006662" at="24,0,280,0" name="Simulatie.intentions.Simulatie" />
     </file>
   </root>
 </debug-info>

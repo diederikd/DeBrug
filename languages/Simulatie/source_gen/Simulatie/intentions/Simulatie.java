@@ -203,4 +203,77 @@ public class Simulatie {
     simulatie.RefreshHandelingen((SNode) SNodeOperations.getParent(node));
     System.out.println(SNodeOperations.getConcept(SNodeOperations.getParent(node)));
   }
+  public String OpzoekenTypeHandeling(SNode simulatie, SNode rechtsgevolgveroorzaker) {
+    String typehandeling = "";
+    System.out.println("Uitzoeken type handeling");
+
+    for (SNode regel : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae782faL, "casus")), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, 0x464e588a7000d2e6L, "context")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, 0x218d2fe3c8aff602L, "regels")))) {
+      {
+        final SNode regelOverRechtsgevolgVeroorzaker = regel;
+        if (SNodeOperations.isInstanceOf(regelOverRechtsgevolgVeroorzaker, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x630944a3c413e38dL, "ObjectiefRecht.structure.RegelOverRechtsgevolgVeroorzaker"))) {
+          System.out.println(SPropertyOperations.getString(regel, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, 0x67229afa6a0ae77aL, "conceptnummer")));
+          System.out.println(SPropertyOperations.getString(SLinkOperations.getTarget(regelOverRechtsgevolgVeroorzaker, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x630944a3c413e38dL, 0x4916e0625cea23abL, "rechtsgevolgveroorzaker")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          System.out.println(SPropertyOperations.getString(rechtsgevolgveroorzaker, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+
+          if (SPropertyOperations.getString(SLinkOperations.getTarget(regelOverRechtsgevolgVeroorzaker, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x630944a3c413e38dL, 0x4916e0625cea23abL, "rechtsgevolgveroorzaker")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) == SPropertyOperations.getString(rechtsgevolgveroorzaker, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"))) {
+            // De regel gaat over de desbetreffende rechtshandeling 
+            // Nu de rechtsbetrekking opzoeken 
+            System.out.println(SPropertyOperations.getString(regelOverRechtsgevolgVeroorzaker, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, 0x67229afa6a0ae77aL, "conceptnummer")));
+            for (SNode voorwaarde : ListSequence.fromList(SLinkOperations.getChildren(regelOverRechtsgevolgVeroorzaker, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x630944a3c413e38dL, 0x630944a3c413e3a7L, "geldigOnderVoorwaarden")))) {
+              {
+                final SNode refvoorwaarde = voorwaarde;
+                if (SNodeOperations.isInstanceOf(refvoorwaarde, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f54829bb51bL, "ObjectiefRecht.structure.ReferentieNaarVoorwaardeRechtsbetrekking"))) {
+                  String handelingsoort = "";
+                  if (ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(rechtsgevolgveroorzaker, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x202912d6e3ac6d26L, "heeftAlsGevolg")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d77L, 0x611073d615228d78L, "NieuweRechtsbetrekkingen"))).isEmpty() && ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(rechtsgevolgveroorzaker, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x202912d6e3ac6d26L, "heeftAlsGevolg")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d77L, 0x22123f54829eeaa2L, "WijzigendeRechtsbetrekkingen"))).isEmpty()) {
+                    handelingsoort = "handeling";
+                  }
+                  if (!((ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(rechtsgevolgveroorzaker, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x202912d6e3ac6d26L, "heeftAlsGevolg")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d77L, 0x611073d615228d78L, "NieuweRechtsbetrekkingen"))).isEmpty() && ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(rechtsgevolgveroorzaker, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x202912d6e3ac6d26L, "heeftAlsGevolg")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d77L, 0x22123f54829eeaa2L, "WijzigendeRechtsbetrekkingen"))).isEmpty()))) {
+                    handelingsoort = "rechtshandeling";
+                  }
+                  {
+                    final SNode rechtsbetrekking = SLinkOperations.getTarget(refvoorwaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f54829bb51bL, 0x22123f54829bb51cL, "Rechtsbetrekking"));
+                    if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L, "ObjectiefRecht.structure.VerplichteBevoegdheidVerplichteGehoudenheid"))) {
+                      typehandeling = "verplichte " + handelingsoort;
+                    }
+                  }
+                  {
+                    final SNode rechtsbetrekking = SLinkOperations.getTarget(refvoorwaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f54829bb51bL, 0x22123f54829bb51cL, "Rechtsbetrekking"));
+                    if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d98L, "ObjectiefRecht.structure.OptioneleBevoegdheidOptioneleGehoudenheid"))) {
+                      typehandeling = "Optionele " + handelingsoort;
+                    }
+                  }
+                  {
+                    final SNode rechtsbetrekking = SLinkOperations.getTarget(refvoorwaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f54829bb51bL, 0x22123f54829bb51cL, "Rechtsbetrekking"));
+                    if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d96L, "ObjectiefRecht.structure.ZwakkeAanspraakZwakkePlicht"))) {
+                      typehandeling = "verplichte " + handelingsoort;
+                    }
+                  }
+                  {
+                    final SNode rechtsbetrekking = SLinkOperations.getTarget(refvoorwaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f54829bb51bL, 0x22123f54829bb51cL, "Rechtsbetrekking"));
+                    if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d93L, "ObjectiefRecht.structure.AanspraakNaIngebrekeStellingPlicht"))) {
+                      typehandeling = "verplichte " + handelingsoort;
+                    }
+                  }
+                  {
+                    final SNode rechtsbetrekking = SLinkOperations.getTarget(refvoorwaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f54829bb51bL, 0x22123f54829bb51cL, "Rechtsbetrekking"));
+                    if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d97L, "ObjectiefRecht.structure.KrachtigeAanspraakFataleVerplichtig"))) {
+                      typehandeling = "verplichte " + handelingsoort;
+                    }
+                  }
+                  {
+                    final SNode rechtsbetrekking = SLinkOperations.getTarget(refvoorwaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f54829bb51bL, 0x22123f54829bb51cL, "Rechtsbetrekking"));
+                    if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, "ObjectiefRecht.structure.ImmuniteitGeenbevoegdheid"))) {
+                      typehandeling = "optionele " + handelingsoort;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    System.out.println(typehandeling);
+    return typehandeling;
+  }
 }
