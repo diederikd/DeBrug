@@ -152,6 +152,7 @@
   </dependency>
   <dependency className="Simulatie.editor.Rechtshandeling_HandelingenRol1_Editor" file="Rechtshandeling_HandelingenRol1_Editor.java">
     <classNode dependClassName="ObjectiefRecht.editor.GN_StyleSheet" />
+    <classNode dependClassName="Simulatie.editor.Simulatie_StyleSheet" />
     <classNode dependClassName="Simulatie.intentions.Simulatie" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Integer" />
@@ -195,6 +196,7 @@
   </dependency>
   <dependency className="Simulatie.editor.Rechtshandeling_HandelingenRol2_Editor" file="Rechtshandeling_HandelingenRol2_Editor.java">
     <classNode dependClassName="ObjectiefRecht.editor.GN_StyleSheet" />
+    <classNode dependClassName="Simulatie.editor.Simulatie_StyleSheet" />
     <classNode dependClassName="Simulatie.intentions.Simulatie" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Integer" />
@@ -272,6 +274,15 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="Simulatie.editor.Simulatie_StyleSheet" file="Simulatie_StyleSheet.java">
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.MPSColors" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.StyleRegistry" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
 </dependenciesRoot>
 

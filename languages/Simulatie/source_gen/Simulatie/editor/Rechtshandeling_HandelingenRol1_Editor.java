@@ -72,7 +72,8 @@ public class Rechtshandeling_HandelingenRol1_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createRefNode_v04zjj_e0a(editorContext, node));
     editorCell.addEditorCell(this.createConstant_v04zjj_f0a(editorContext, node));
     editorCell.addEditorCell(this.createJComponent_v04zjj_g0a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_v04zjj_h0a(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_v04zjj_h0a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_v04zjj_i0a(editorContext, node));
     return editorCell;
   }
   private static boolean renderingCondition_v04zjj_a0a(SNode node, EditorContext editorContext) {
@@ -200,9 +201,30 @@ public class Rechtshandeling_HandelingenRol1_Editor extends DefaultNodeEditor {
     return Button.createButton("Uitvoeren", editorContext, node, callback);
 
   }
-  private EditorCell createConstant_v04zjj_h0a(EditorContext editorContext, SNode node) {
+  private EditorCell createReadOnlyModelAccessor_v04zjj_h0a(final EditorContext editorContext, final SNode node) {
+    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
+      public String getText() {
+        Simulatie simulatieklasse = new Simulatie();
+        return simulatieklasse.OpzoekenUitzonderingen((SNode) SNodeOperations.getParent(node), node);
+      }
+      public void setText(String s) {
+      }
+      public boolean isValidText(String s) {
+        return EqualUtil.equals(s, getText());
+      }
+    }, node);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_v04zjj_h0a");
+    Style style = new StyleImpl();
+    Simulatie_StyleSheet.apply_uitzondering(style, editorCell);
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+  private EditorCell createConstant_v04zjj_i0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_v04zjj_h0a");
+    editorCell.setCellId("Constant_v04zjj_i0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
