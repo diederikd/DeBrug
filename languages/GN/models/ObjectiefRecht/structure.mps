@@ -804,5 +804,34 @@
       <ref role="20lvS9" node="MvzNsyB_CF" resolve="ReferentieNaarOnderwerp" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2xDgDlj6owz">
+    <property role="EcuMT" value="2911931843183478819" />
+    <property role="3GE5qa" value="Kenmerk" />
+    <property role="TrG5h" value="ReferentieNaarKenmerkMetSubject" />
+    <ref role="1TJDcQ" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
+    <node concept="1TJgyj" id="2xDgDlj6ow$" role="1TKVEi">
+      <property role="IQ2ns" value="2911931843183478820" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="kenmerkMetSubject" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2xDgDlj6HAL" resolve="ReferentieNaarSubject" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2xDgDlj6HAL">
+    <property role="EcuMT" value="2911931843183565233" />
+    <property role="3GE5qa" value="Kenmerk" />
+    <property role="TrG5h" value="ReferentieNaarSubject" />
+    <ref role="1TJDcQ" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
+    <node concept="PrWs8" id="2xDgDlj6HAM" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2xDgDlj6HAO" role="1TKVEi">
+      <property role="IQ2ns" value="2911931843183565236" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="subject" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="64gsXol8COa" resolve="RechtsSubject" />
+    </node>
+  </node>
 </model>
 

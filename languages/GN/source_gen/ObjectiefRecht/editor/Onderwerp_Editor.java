@@ -216,7 +216,7 @@ public class Onderwerp_Editor extends DefaultNodeEditor {
     return index > 1;
   }
   private EditorCell createConstant_5e6yc7_a0e0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "heeft de volgende identificerende kenmerken ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "heeft het volgende identificerende kenmerk ");
     editorCell.setCellId("Constant_5e6yc7_a0e0a");
     editorCell.setDefaultText("");
     return editorCell;

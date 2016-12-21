@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="ObjectiefRecht.Language" file="Language.java">
+    <classNode dependClassName="ObjectiefRecht.actions.ActionAspectDescriptorImpl" />
     <classNode dependClassName="ObjectiefRecht.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="ObjectiefRecht.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="ObjectiefRecht.editor.EditorAspectDescriptorImpl" />
@@ -18,6 +19,7 @@
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
     <classNode dependClassName="jetbrains.mps.intentions.IntentionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.Language" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />

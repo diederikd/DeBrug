@@ -272,19 +272,15 @@ public class Simulatie {
   }
   public String OpzoekenUitzonderingen(SNode simulatie, SNode rechtsgevolgveroorzaker) {
     String uitzonderinghandeling = "";
-    System.out.println("-------------------------------------");
-    System.out.println("Uitzoeken uitzonderingen op handeling");
 
     for (SNode regel1 : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae782faL, "casus")), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, 0x464e588a7000d2e6L, "context")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, 0x218d2fe3c8aff602L, "regels")))) {
       {
         final SNode regelOverRechtsgevolgVeroorzaker = regel1;
         if (SNodeOperations.isInstanceOf(regelOverRechtsgevolgVeroorzaker, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x630944a3c413e38dL, "ObjectiefRecht.structure.RegelOverRechtsgevolgVeroorzaker"))) {
-          System.out.println(SPropertyOperations.getString(rechtsgevolgveroorzaker, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
 
           if (SPropertyOperations.getString(SLinkOperations.getTarget(regelOverRechtsgevolgVeroorzaker, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x630944a3c413e38dL, 0x4916e0625cea23abL, "rechtsgevolgveroorzaker")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) == SPropertyOperations.getString(rechtsgevolgveroorzaker, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"))) {
             // De regel gaat over de desbetreffende rechtshandeling 
             // Nu de rechtsbetrekking opzoeken 
-            System.out.println("Zelfde handeling");
             for (SNode voorwaarde1 : ListSequence.fromList(SLinkOperations.getChildren(regelOverRechtsgevolgVeroorzaker, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x630944a3c413e38dL, 0x630944a3c413e3a7L, "geldigOnderVoorwaarden")))) {
               {
                 final SNode refvoorwaarde = voorwaarde1;
@@ -294,7 +290,6 @@ public class Simulatie {
                     if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L, "ObjectiefRecht.structure.VerplichteBevoegdheidVerplichteGehoudenheid"))) {
                       // Nu uitzoeken of er een immuniteit bestaat voor deze rechtsbetrekking 
                       // en daarmee voor deze handeling 
-                      System.out.println("Het is een verplichte bevoegdheid");
 
                       for (SNode rechtsbetrekkingInContext : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae782faL, "casus")), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, 0x464e588a7000d2e6L, "context")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, 0x202912d6e3a8c9baL, "toestanden")))) {
                         {
@@ -317,10 +312,6 @@ public class Simulatie {
                                           {
                                             final SNode rechtsbetrekkingmetImmuniteit = SLinkOperations.getTarget(refnaarrechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f54829bb51bL, 0x22123f54829bb51cL, "Rechtsbetrekking"));
                                             if (SNodeOperations.isInstanceOf(rechtsbetrekkingmetImmuniteit, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, "ObjectiefRecht.structure.ImmuniteitGeenbevoegdheid"))) {
-                                              System.out.println(SPropertyOperations.getString(SLinkOperations.getTarget(refnaarrechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f54829bb51bL, 0x22123f54829bb51cL, "Rechtsbetrekking")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-                                              System.out.println(SPropertyOperations.getString(SLinkOperations.getTarget(RechtsbetrekkingImmuniteitGeenBevoegdheid, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, 0x464e588a70476584L, "immuniteitvoor")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-                                              System.out.println("Er is een voowaarden met een referentie naar rechtsbetrekking met immuniteit");
-                                              System.out.println(SPropertyOperations.getString(regel2, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, 0x67229afa6a0ae77aL, "conceptnummer")));
                                               SNode rechtshandeling = (SNode) SLinkOperations.getTarget(regeloverimmuniteit, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x630944a3c413e38dL, 0x4916e0625cea23abL, "rechtsgevolgveroorzaker"));
                                               uitzonderinghandeling = "Onder bepaalde voorwaarden bent u vrijsteld van deze verplichting en kunt de volgende handeling uitvoeren :" + SPropertyOperations.getString(rechtshandeling, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
                                             }

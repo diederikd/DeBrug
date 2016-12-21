@@ -13,7 +13,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,75,0" name="ObjectiefRecht.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,80,0" name="ObjectiefRecht.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/5066083982443985550">
@@ -224,6 +224,45 @@
         <var name="parentNode" id="6249140128508723272" />
       </scope>
       <unit id="6249140128508723272" at="16,0,47,0" name="ObjectiefRecht.constraints.Kenmerk_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7366216351236656416">
+    <file name="Concept_Constraints.java">
+      <node id="7366216351236656416" at="17,32,18,140" concept="10" />
+      <node id="7366216351236656416" at="22,84,23,119" concept="4" />
+      <node id="7366216351236656416" at="26,37,27,20" concept="5" />
+      <node id="7366216351236656416" at="30,42,31,46" concept="4" />
+      <node id="7366216351236669675" at="33,9,34,184" concept="5" />
+      <node id="7366216351236656416" at="36,7,37,22" concept="5" />
+      <node id="7366216351236668339" at="39,52,40,44" concept="5" />
+      <node id="7366216351236656956" at="31,46,33,9" concept="2" />
+      <node id="7366216351236656416" at="17,0,20,0" concept="0" trace="Concept_Constraints#()V" />
+      <node id="7366216351236668339" at="39,0,42,0" concept="9" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="7366216351236656416" at="25,0,29,0" concept="3" trace="hasOwnGetter#()Z" />
+      <node id="7366216351236656416" at="29,0,36,0" concept="3" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="7366216351236656416" at="23,119,36,7" concept="1" />
+      <node id="7366216351236656416" at="21,0,39,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7366216351236656958" at="32,198,32,198" />
+      <scope id="7366216351236656416" at="17,32,18,140" />
+      <scope id="7366216351236656416" at="26,37,27,20" />
+      <scope id="7366216351236668339" at="39,52,40,44" />
+      <scope id="7366216351236656416" at="17,0,20,0" />
+      <scope id="7366216351236668339" at="39,0,42,0">
+        <var name="str" id="7366216351236668339" />
+      </scope>
+      <scope id="7366216351236656416" at="25,0,29,0" />
+      <scope id="7366216351236656416" at="30,42,34,184">
+        <var name="propertyName" id="7366216351236656416" />
+      </scope>
+      <scope id="7366216351236656416" at="29,0,36,0">
+        <var name="node" id="7366216351236656416" />
+      </scope>
+      <scope id="7366216351236656416" at="22,84,37,22">
+        <var name="properties" id="7366216351236656416" />
+      </scope>
+      <scope id="7366216351236656416" at="21,0,39,0" />
+      <unit id="7366216351236656416" at="24,156,36,5" name="ObjectiefRecht.constraints.Concept_Constraints$1" />
+      <unit id="7366216351236656416" at="16,0,43,0" name="ObjectiefRecht.constraints.Concept_Constraints" />
     </file>
   </root>
   <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/8115840370078138210">

@@ -2758,30 +2758,38 @@
             <node concept="Xl_RD" id="4VhV7ipI_ta" role="33vP2m" />
           </node>
         </node>
-        <node concept="3clFbF" id="4VhV7ipI_tb" role="3cqZAp">
-          <node concept="2OqwBi" id="4VhV7ipI_tc" role="3clFbG">
-            <node concept="10M0yZ" id="4VhV7ipI_td" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="4VhV7ipI_te" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="4VhV7ipI_tf" role="37wK5m">
-                <property role="Xl_RC" value="-------------------------------------" />
+        <node concept="1X3_iC" id="6oU3FTq2aGX" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="4VhV7ipI_tb" role="8Wnug">
+            <node concept="2OqwBi" id="4VhV7ipI_tc" role="3clFbG">
+              <node concept="10M0yZ" id="4VhV7ipI_td" role="2Oq$k0">
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="4VhV7ipI_te" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="Xl_RD" id="4VhV7ipI_tf" role="37wK5m">
+                  <property role="Xl_RC" value="-------------------------------------" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4VhV7iq4Qlo" role="3cqZAp">
-          <node concept="2OqwBi" id="4VhV7iq4Qlp" role="3clFbG">
-            <node concept="10M0yZ" id="4VhV7iq4Qlq" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="4VhV7iq4Qlr" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="4VhV7iq4Qls" role="37wK5m">
-                <property role="Xl_RC" value="Uitzoeken uitzonderingen op handeling" />
+        <node concept="1X3_iC" id="6oU3FTq2bg1" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="4VhV7iq4Qlo" role="8Wnug">
+            <node concept="2OqwBi" id="4VhV7iq4Qlp" role="3clFbG">
+              <node concept="10M0yZ" id="4VhV7iq4Qlq" role="2Oq$k0">
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              </node>
+              <node concept="liA8E" id="4VhV7iq4Qlr" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="Xl_RD" id="4VhV7iq4Qls" role="37wK5m">
+                  <property role="Xl_RC" value="Uitzoeken uitzonderingen op handeling" />
+                </node>
               </node>
             </node>
           </node>
@@ -2844,20 +2852,24 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="4VhV7ipI_tI" role="3cqZAp">
-                  <node concept="2OqwBi" id="4VhV7ipI_tJ" role="3clFbG">
-                    <node concept="10M0yZ" id="4VhV7ipI_tK" role="2Oq$k0">
-                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                    </node>
-                    <node concept="liA8E" id="4VhV7ipI_tL" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                      <node concept="2OqwBi" id="4VhV7ipI_tM" role="37wK5m">
-                        <node concept="37vLTw" id="4VhV7ipI_tN" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4VhV7ipI_t4" resolve="rechtsgevolgveroorzaker" />
-                        </node>
-                        <node concept="3TrcHB" id="4VhV7ipI_tO" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                <node concept="1X3_iC" id="6oU3FTq1lgL" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="3clFbF" id="4VhV7ipI_tI" role="8Wnug">
+                    <node concept="2OqwBi" id="4VhV7ipI_tJ" role="3clFbG">
+                      <node concept="10M0yZ" id="4VhV7ipI_tK" role="2Oq$k0">
+                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                      </node>
+                      <node concept="liA8E" id="4VhV7ipI_tL" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                        <node concept="2OqwBi" id="4VhV7ipI_tM" role="37wK5m">
+                          <node concept="37vLTw" id="4VhV7ipI_tN" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4VhV7ipI_t4" resolve="rechtsgevolgveroorzaker" />
+                          </node>
+                          <node concept="3TrcHB" id="4VhV7ipI_tO" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -2876,16 +2888,20 @@
                         <property role="3SKdUp" value="Nu de rechtsbetrekking opzoeken" />
                       </node>
                     </node>
-                    <node concept="3clFbF" id="4VhV7ipI_tW" role="3cqZAp">
-                      <node concept="2OqwBi" id="4VhV7ipI_tX" role="3clFbG">
-                        <node concept="10M0yZ" id="4VhV7ipI_tY" role="2Oq$k0">
-                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                        </node>
-                        <node concept="liA8E" id="4VhV7ipI_tZ" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                          <node concept="Xl_RD" id="4VhV7ipOqi0" role="37wK5m">
-                            <property role="Xl_RC" value="Zelfde handeling" />
+                    <node concept="1X3_iC" id="6oU3FTq2bML" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3clFbF" id="4VhV7ipI_tW" role="8Wnug">
+                        <node concept="2OqwBi" id="4VhV7ipI_tX" role="3clFbG">
+                          <node concept="10M0yZ" id="4VhV7ipI_tY" role="2Oq$k0">
+                            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                            <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                          </node>
+                          <node concept="liA8E" id="4VhV7ipI_tZ" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <node concept="Xl_RD" id="4VhV7ipOqi0" role="37wK5m">
+                              <property role="Xl_RC" value="Zelfde handeling" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -2930,16 +2946,20 @@
                                     <property role="3SKdUp" value="en daarmee voor deze handeling" />
                                   </node>
                                 </node>
-                                <node concept="3clFbF" id="4VhV7ipOrBO" role="3cqZAp">
-                                  <node concept="2OqwBi" id="4VhV7ipOrBP" role="3clFbG">
-                                    <node concept="10M0yZ" id="4VhV7ipOrBQ" role="2Oq$k0">
-                                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                    </node>
-                                    <node concept="liA8E" id="4VhV7ipOrBR" role="2OqNvi">
-                                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                                      <node concept="Xl_RD" id="4VhV7ipOrBS" role="37wK5m">
-                                        <property role="Xl_RC" value="Het is een verplichte bevoegdheid" />
+                                <node concept="1X3_iC" id="6oU3FTq1lu0" role="lGtFl">
+                                  <property role="3V$3am" value="statement" />
+                                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                  <node concept="3clFbF" id="4VhV7ipOrBO" role="8Wnug">
+                                    <node concept="2OqwBi" id="4VhV7ipOrBP" role="3clFbG">
+                                      <node concept="10M0yZ" id="4VhV7ipOrBQ" role="2Oq$k0">
+                                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                      </node>
+                                      <node concept="liA8E" id="4VhV7ipOrBR" role="2OqNvi">
+                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                        <node concept="Xl_RD" id="4VhV7ipOrBS" role="37wK5m">
+                                          <property role="Xl_RC" value="Het is een verplichte bevoegdheid" />
+                                        </node>
                                       </node>
                                     </node>
                                   </node>
@@ -3074,82 +3094,98 @@
                                                                 </node>
                                                               </node>
                                                               <node concept="3clFbS" id="4VhV7iq4BSr" role="Jncv$">
-                                                                <node concept="3clFbF" id="4VhV7ipR4fh" role="3cqZAp">
-                                                                  <node concept="2OqwBi" id="4VhV7ipR4fi" role="3clFbG">
-                                                                    <node concept="10M0yZ" id="4VhV7ipR4fj" role="2Oq$k0">
-                                                                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                                                                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                                                    </node>
-                                                                    <node concept="liA8E" id="4VhV7ipR4fk" role="2OqNvi">
-                                                                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                                                                      <node concept="2OqwBi" id="4VhV7iq2QRQ" role="37wK5m">
-                                                                        <node concept="2OqwBi" id="4VhV7iq2QRR" role="2Oq$k0">
-                                                                          <node concept="Jnkvi" id="4VhV7iq2QRS" role="2Oq$k0">
-                                                                            <ref role="1M0zk5" node="4VhV7ipIXYO" resolve="refnaarrechtsbetrekking" />
+                                                                <node concept="1X3_iC" id="6oU3FTq1lB7" role="lGtFl">
+                                                                  <property role="3V$3am" value="statement" />
+                                                                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                                                  <node concept="3clFbF" id="4VhV7ipR4fh" role="8Wnug">
+                                                                    <node concept="2OqwBi" id="4VhV7ipR4fi" role="3clFbG">
+                                                                      <node concept="10M0yZ" id="4VhV7ipR4fj" role="2Oq$k0">
+                                                                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                                                                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                                                      </node>
+                                                                      <node concept="liA8E" id="4VhV7ipR4fk" role="2OqNvi">
+                                                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                                                        <node concept="2OqwBi" id="4VhV7iq2QRQ" role="37wK5m">
+                                                                          <node concept="2OqwBi" id="4VhV7iq2QRR" role="2Oq$k0">
+                                                                            <node concept="Jnkvi" id="4VhV7iq2QRS" role="2Oq$k0">
+                                                                              <ref role="1M0zk5" node="4VhV7ipIXYO" resolve="refnaarrechtsbetrekking" />
+                                                                            </node>
+                                                                            <node concept="3TrEf2" id="4VhV7iq2QRT" role="2OqNvi">
+                                                                              <ref role="3Tt5mk" to="3pw0:28ifPi2AVks" resolve="Rechtsbetrekking" />
+                                                                            </node>
                                                                           </node>
-                                                                          <node concept="3TrEf2" id="4VhV7iq2QRT" role="2OqNvi">
-                                                                            <ref role="3Tt5mk" to="3pw0:28ifPi2AVks" resolve="Rechtsbetrekking" />
+                                                                          <node concept="3TrcHB" id="4VhV7iq2QRU" role="2OqNvi">
+                                                                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                                                           </node>
-                                                                        </node>
-                                                                        <node concept="3TrcHB" id="4VhV7iq2QRU" role="2OqNvi">
-                                                                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                                                         </node>
                                                                       </node>
                                                                     </node>
                                                                   </node>
                                                                 </node>
-                                                                <node concept="3clFbF" id="4VhV7ipR6ID" role="3cqZAp">
-                                                                  <node concept="2OqwBi" id="4VhV7ipR6IE" role="3clFbG">
-                                                                    <node concept="10M0yZ" id="4VhV7ipR6IF" role="2Oq$k0">
-                                                                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                                                                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                                                    </node>
-                                                                    <node concept="liA8E" id="4VhV7ipR6IG" role="2OqNvi">
-                                                                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                                                                      <node concept="2OqwBi" id="4VhV7ipRctn" role="37wK5m">
-                                                                        <node concept="2OqwBi" id="4VhV7ipRaIG" role="2Oq$k0">
-                                                                          <node concept="Jnkvi" id="4VhV7ipR9CM" role="2Oq$k0">
-                                                                            <ref role="1M0zk5" node="4VhV7ipIKDR" resolve="RechtsbetrekkingImmuniteitGeenBevoegdheid" />
+                                                                <node concept="1X3_iC" id="6oU3FTq1lPz" role="lGtFl">
+                                                                  <property role="3V$3am" value="statement" />
+                                                                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                                                  <node concept="3clFbF" id="4VhV7ipR6ID" role="8Wnug">
+                                                                    <node concept="2OqwBi" id="4VhV7ipR6IE" role="3clFbG">
+                                                                      <node concept="10M0yZ" id="4VhV7ipR6IF" role="2Oq$k0">
+                                                                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                                                                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                                                      </node>
+                                                                      <node concept="liA8E" id="4VhV7ipR6IG" role="2OqNvi">
+                                                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                                                        <node concept="2OqwBi" id="4VhV7ipRctn" role="37wK5m">
+                                                                          <node concept="2OqwBi" id="4VhV7ipRaIG" role="2Oq$k0">
+                                                                            <node concept="Jnkvi" id="4VhV7ipR9CM" role="2Oq$k0">
+                                                                              <ref role="1M0zk5" node="4VhV7ipIKDR" resolve="RechtsbetrekkingImmuniteitGeenBevoegdheid" />
+                                                                            </node>
+                                                                            <node concept="3TrEf2" id="4VhV7ipRbxT" role="2OqNvi">
+                                                                              <ref role="3Tt5mk" to="3pw0:4pem8DKhQm4" resolve="immuniteitvoor" />
+                                                                            </node>
                                                                           </node>
-                                                                          <node concept="3TrEf2" id="4VhV7ipRbxT" role="2OqNvi">
-                                                                            <ref role="3Tt5mk" to="3pw0:4pem8DKhQm4" resolve="immuniteitvoor" />
+                                                                          <node concept="3TrcHB" id="4VhV7ipRI0j" role="2OqNvi">
+                                                                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                                                           </node>
-                                                                        </node>
-                                                                        <node concept="3TrcHB" id="4VhV7ipRI0j" role="2OqNvi">
-                                                                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                                                         </node>
                                                                       </node>
                                                                     </node>
                                                                   </node>
                                                                 </node>
-                                                                <node concept="3clFbF" id="4VhV7ipMQIU" role="3cqZAp">
-                                                                  <node concept="2OqwBi" id="4VhV7ipMQIV" role="3clFbG">
-                                                                    <node concept="10M0yZ" id="4VhV7ipMQIW" role="2Oq$k0">
-                                                                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                                                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                                                                    </node>
-                                                                    <node concept="liA8E" id="4VhV7ipMQIX" role="2OqNvi">
-                                                                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                                                                      <node concept="Xl_RD" id="4VhV7ipMQIY" role="37wK5m">
-                                                                        <property role="Xl_RC" value="Er is een voowaarden met een referentie naar rechtsbetrekking met immuniteit" />
+                                                                <node concept="1X3_iC" id="6oU3FTq1m4M" role="lGtFl">
+                                                                  <property role="3V$3am" value="statement" />
+                                                                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                                                  <node concept="3clFbF" id="4VhV7ipMQIU" role="8Wnug">
+                                                                    <node concept="2OqwBi" id="4VhV7ipMQIV" role="3clFbG">
+                                                                      <node concept="10M0yZ" id="4VhV7ipMQIW" role="2Oq$k0">
+                                                                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                                                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                                                                      </node>
+                                                                      <node concept="liA8E" id="4VhV7ipMQIX" role="2OqNvi">
+                                                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                                                        <node concept="Xl_RD" id="4VhV7ipMQIY" role="37wK5m">
+                                                                          <property role="Xl_RC" value="Er is een voowaarden met een referentie naar rechtsbetrekking met immuniteit" />
+                                                                        </node>
                                                                       </node>
                                                                     </node>
                                                                   </node>
                                                                 </node>
-                                                                <node concept="3clFbF" id="4VhV7iq18_h" role="3cqZAp">
-                                                                  <node concept="2OqwBi" id="4VhV7iq18_i" role="3clFbG">
-                                                                    <node concept="10M0yZ" id="4VhV7iq18_j" role="2Oq$k0">
-                                                                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                                                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                                                                    </node>
-                                                                    <node concept="liA8E" id="4VhV7iq18_k" role="2OqNvi">
-                                                                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                                                                      <node concept="2OqwBi" id="4VhV7iq19jb" role="37wK5m">
-                                                                        <node concept="2GrUjf" id="4VhV7iq18O4" role="2Oq$k0">
-                                                                          <ref role="2Gs0qQ" node="4VhV7ipIU0L" resolve="regel2" />
-                                                                        </node>
-                                                                        <node concept="3TrcHB" id="4VhV7iq1agI" role="2OqNvi">
-                                                                          <ref role="3TsBF5" to="3pw0:6syAJDE2ItU" resolve="conceptnummer" />
+                                                                <node concept="1X3_iC" id="6oU3FTq1m9t" role="lGtFl">
+                                                                  <property role="3V$3am" value="statement" />
+                                                                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                                                  <node concept="3clFbF" id="4VhV7iq18_h" role="8Wnug">
+                                                                    <node concept="2OqwBi" id="4VhV7iq18_i" role="3clFbG">
+                                                                      <node concept="10M0yZ" id="4VhV7iq18_j" role="2Oq$k0">
+                                                                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                                                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                                                                      </node>
+                                                                      <node concept="liA8E" id="4VhV7iq18_k" role="2OqNvi">
+                                                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                                                        <node concept="2OqwBi" id="4VhV7iq19jb" role="37wK5m">
+                                                                          <node concept="2GrUjf" id="4VhV7iq18O4" role="2Oq$k0">
+                                                                            <ref role="2Gs0qQ" node="4VhV7ipIU0L" resolve="regel2" />
+                                                                          </node>
+                                                                          <node concept="3TrcHB" id="4VhV7iq1agI" role="2OqNvi">
+                                                                            <ref role="3TsBF5" to="3pw0:6syAJDE2ItU" resolve="conceptnummer" />
+                                                                          </node>
                                                                         </node>
                                                                       </node>
                                                                     </node>
