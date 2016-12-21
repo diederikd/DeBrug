@@ -46,6 +46,7 @@
         <reference id="7136310554705381542" name="rechtsbetrekking" index="2B78K5" />
         <reference id="7136310554705381535" name="rechtssubjectMetRecht" index="2B78KW" />
         <child id="7136310554705381581" name="geldigVan" index="2B78LI" />
+        <child id="7136310554705381588" name="geldigTot" index="2B78LR" />
       </concept>
     </language>
     <language id="61be2dc6-a140-4def-a592-7499aa2bac19" name="Datum">
@@ -1660,89 +1661,296 @@
       </node>
       <node concept="LeFwc" id="2K7y4iIY0zd" role="LeFwH">
         <property role="LeFwf" value="0" />
-        <property role="LeFwL" value="0" />
-        <property role="LeFwM" value="15" />
+        <property role="LeFwL" value="1" />
+        <property role="LeFwM" value="13" />
       </node>
     </node>
-    <node concept="2BLbnY" id="6aQIqXTfKUw" role="2BLYKK">
-      <node concept="2B78KX" id="6aQIqXTfKUz" role="1O2iA3">
+    <node concept="2BLbnY" id="6aQIqXTj$OI" role="2BLYKK">
+      <node concept="2B78KX" id="6aQIqXTj$OL" role="1O2iA3">
         <ref role="2B78K5" node="5u1YjWIkWv5" resolve="werknemer is verplicht arbeid te verrichten bij&#10;de werkgever voor een aantal uren per week  " />
         <ref role="2B78KW" node="4pem8DJZpq9" resolve="Jan" />
         <ref role="2B78K2" node="4pem8DJZpq7" resolve="Kees" />
-        <node concept="LeFwQ" id="6aQIqXTfKU$" role="2B78LI">
-          <node concept="2B78Lw" id="6aQIqXTfKU_" role="LeFwF">
+        <node concept="LeFwQ" id="6aQIqXTj$OM" role="2B78LI">
+          <node concept="2B78Lw" id="6aQIqXTj$ON" role="LeFwF">
             <property role="2B78LB" value="01" />
             <property role="2B78L_" value="01" />
             <property role="2B78LE" value="2003" />
           </node>
-          <node concept="LeFwc" id="6aQIqXTfKUA" role="LeFwH">
+          <node concept="LeFwc" id="6aQIqXTj$OO" role="LeFwH">
             <property role="LeFwf" value="19" />
             <property role="LeFwL" value="02" />
             <property role="LeFwM" value="03" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="6aQIqXTfKUB" role="1O2iA3">
+      <node concept="2B78KX" id="6aQIqXTj$OP" role="1O2iA3">
         <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur&#10;bij eigen werkgever in te dienen" />
         <ref role="2B78KW" node="4pem8DJZpq7" resolve="Kees" />
         <ref role="2B78K2" node="4pem8DJZpq9" resolve="Jan" />
-        <node concept="LeFwQ" id="6aQIqXTfKUC" role="2B78LI">
-          <node concept="2B78Lw" id="6aQIqXTfKUD" role="LeFwF">
+        <node concept="LeFwQ" id="6aQIqXTj$OQ" role="2B78LI">
+          <node concept="2B78Lw" id="6aQIqXTj$OR" role="LeFwF">
             <property role="2B78LB" value="01" />
             <property role="2B78L_" value="01" />
             <property role="2B78LE" value="2003" />
           </node>
-          <node concept="LeFwc" id="6aQIqXTfKUE" role="LeFwH">
+          <node concept="LeFwc" id="6aQIqXTj$OS" role="LeFwH">
             <property role="LeFwf" value="00" />
             <property role="LeFwL" value="00" />
             <property role="LeFwM" value="00" />
           </node>
         </node>
       </node>
+      <node concept="2B78KX" id="6aQIqXTj$P$" role="1O2iA3">
+        <ref role="2B78K2" node="4pem8DJZpq7" resolve="Kees" />
+        <ref role="2B78KW" node="4pem8DJZpq9" resolve="Jan" />
+        <ref role="2B78K5" node="20D4HrzFibY" resolve="verplichting tot overleg plegen" />
+        <node concept="LeFwQ" id="6aQIqXTj$P_" role="2B78LI">
+          <node concept="2B78Lw" id="6aQIqXTj$PC" role="LeFwF">
+            <property role="2B78LE" value="2003" />
+            <property role="2B78L_" value="7" />
+            <property role="2B78LB" value="1" />
+          </node>
+          <node concept="LeFwc" id="6aQIqXTj$PE" role="LeFwH">
+            <property role="LeFwf" value="0" />
+            <property role="LeFwL" value="1" />
+            <property role="LeFwM" value="13" />
+          </node>
+        </node>
+        <node concept="LeFwQ" id="6aQIqXTj$TA" role="2B78LR">
+          <node concept="2B78Lw" id="6aQIqXTj$TD" role="LeFwF">
+            <property role="2B78LE" value="2003" />
+            <property role="2B78L_" value="7" />
+            <property role="2B78LB" value="1" />
+          </node>
+          <node concept="LeFwc" id="6aQIqXTj$TF" role="LeFwH">
+            <property role="LeFwf" value="0" />
+            <property role="LeFwL" value="14" />
+            <property role="LeFwM" value="47" />
+          </node>
+        </node>
+      </node>
+      <node concept="2B78KX" id="6aQIqXTj$PO" role="1O2iA3">
+        <ref role="2B78K2" node="4pem8DJZpq7" resolve="Kees" />
+        <ref role="2B78KW" node="4pem8DJZpq9" resolve="Jan" />
+        <ref role="2B78K5" node="MvzNsyB7Rg" resolve="de verplichte bevoegdheid (recht) tot het inwilligen van verzoek &#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing" />
+        <node concept="LeFwQ" id="6aQIqXTj$PP" role="2B78LI">
+          <node concept="2B78Lw" id="6aQIqXTj$PS" role="LeFwF">
+            <property role="2B78LE" value="2003" />
+            <property role="2B78L_" value="7" />
+            <property role="2B78LB" value="1" />
+          </node>
+          <node concept="LeFwc" id="6aQIqXTj$PU" role="LeFwH">
+            <property role="LeFwf" value="0" />
+            <property role="LeFwL" value="1" />
+            <property role="LeFwM" value="13" />
+          </node>
+        </node>
+        <node concept="LeFwQ" id="6aQIqXTj$VL" role="2B78LR">
+          <node concept="2B78Lw" id="6aQIqXTj$VO" role="LeFwF">
+            <property role="2B78LE" value="2003" />
+            <property role="2B78L_" value="7" />
+            <property role="2B78LB" value="1" />
+          </node>
+          <node concept="LeFwc" id="6aQIqXTj$VQ" role="LeFwH">
+            <property role="LeFwf" value="0" />
+            <property role="LeFwL" value="15" />
+            <property role="LeFwM" value="12" />
+          </node>
+        </node>
+      </node>
+      <node concept="2B78KX" id="6aQIqXTj$Q1" role="1O2iA3">
+        <ref role="2B78K2" node="4pem8DJZpq7" resolve="Kees" />
+        <ref role="2B78KW" node="4pem8DJZpq9" resolve="Jan" />
+        <ref role="2B78K5" node="5u1YjWIkWvP" resolve="de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren&#10;overeenkomstig de wensen van de werknemer" />
+        <node concept="LeFwQ" id="6aQIqXTj$Q2" role="2B78LI">
+          <node concept="2B78Lw" id="6aQIqXTj$Q5" role="LeFwF">
+            <property role="2B78LE" value="2003" />
+            <property role="2B78L_" value="7" />
+            <property role="2B78LB" value="1" />
+          </node>
+          <node concept="LeFwc" id="6aQIqXTj$Q7" role="LeFwH">
+            <property role="LeFwf" value="0" />
+            <property role="LeFwL" value="1" />
+            <property role="LeFwM" value="13" />
+          </node>
+        </node>
+      </node>
+      <node concept="2B78KX" id="6aQIqXTj$Qe" role="1O2iA3">
+        <ref role="2B78K2" node="4pem8DJZpq7" resolve="Kees" />
+        <ref role="2B78KW" node="4pem8DJZpq9" resolve="Jan" />
+        <ref role="2B78K5" node="1fugvh9_kgi" resolve="immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren" />
+        <node concept="LeFwQ" id="6aQIqXTj$Qf" role="2B78LI">
+          <node concept="2B78Lw" id="6aQIqXTj$Qi" role="LeFwF">
+            <property role="2B78LE" value="2003" />
+            <property role="2B78L_" value="7" />
+            <property role="2B78LB" value="1" />
+          </node>
+          <node concept="LeFwc" id="6aQIqXTj$Qk" role="LeFwH">
+            <property role="LeFwf" value="0" />
+            <property role="LeFwL" value="1" />
+            <property role="LeFwM" value="13" />
+          </node>
+        </node>
+        <node concept="LeFwQ" id="6aQIqXTj$VS" role="2B78LR">
+          <node concept="2B78Lw" id="6aQIqXTj$VV" role="LeFwF">
+            <property role="2B78LE" value="2003" />
+            <property role="2B78L_" value="7" />
+            <property role="2B78LB" value="1" />
+          </node>
+          <node concept="LeFwc" id="6aQIqXTj$VX" role="LeFwH">
+            <property role="LeFwf" value="0" />
+            <property role="LeFwL" value="15" />
+            <property role="LeFwM" value="12" />
+          </node>
+        </node>
+      </node>
+      <node concept="2B78KX" id="6aQIqXTj$Qr" role="1O2iA3">
+        <ref role="2B78K2" node="4pem8DJZpq7" resolve="Kees" />
+        <ref role="2B78KW" node="4pem8DJZpq9" resolve="Jan" />
+        <ref role="2B78K5" node="2xDgDlj72l7" resolve="immuniteit (recht) om de verplichte bevoegdheid tot het&#10;vaststellen van de spreiding van de uren overeenkomstige de wensen&#10;van de werknemer te neutraliseren." />
+        <node concept="LeFwQ" id="6aQIqXTj$Qs" role="2B78LI">
+          <node concept="2B78Lw" id="6aQIqXTj$Qv" role="LeFwF">
+            <property role="2B78LE" value="2003" />
+            <property role="2B78L_" value="7" />
+            <property role="2B78LB" value="1" />
+          </node>
+          <node concept="LeFwc" id="6aQIqXTj$Qx" role="LeFwH">
+            <property role="LeFwf" value="0" />
+            <property role="LeFwL" value="1" />
+            <property role="LeFwM" value="13" />
+          </node>
+        </node>
+      </node>
+      <node concept="2B78KX" id="6aQIqXTj$QC" role="1O2iA3">
+        <ref role="2B78K2" node="4pem8DJZpq7" resolve="Kees" />
+        <ref role="2B78KW" node="4pem8DJZpq9" resolve="Jan" />
+        <ref role="2B78K5" node="1VomLPHLHJe" resolve="de bevoegheid om de gewenste spreiding van de uren te wijzigen" />
+        <node concept="LeFwQ" id="6aQIqXTj$QD" role="2B78LI">
+          <node concept="2B78Lw" id="6aQIqXTj$QG" role="LeFwF">
+            <property role="2B78LE" value="2003" />
+            <property role="2B78L_" value="7" />
+            <property role="2B78LB" value="1" />
+          </node>
+          <node concept="LeFwc" id="6aQIqXTj$QI" role="LeFwH">
+            <property role="LeFwf" value="0" />
+            <property role="LeFwL" value="1" />
+            <property role="LeFwM" value="13" />
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="1OcJVF" id="6aQIqXTfKUF" role="QnrKb">
+    <node concept="1OcJVF" id="6aQIqXTj$VZ" role="QnrKb">
       <property role="TrG5h" value="Indienen verzoek aanpassing arbeidsduur" />
       <property role="da7Q0" value="101" />
-      <node concept="33xUQL" id="6aQIqXTfKUG" role="33xUQS">
+      <node concept="33xUQL" id="6aQIqXTj$W0" role="33xUQS">
         <ref role="33xUQY" node="4ZpB41RnoMO" resolve="Werknemer" />
       </node>
-      <node concept="1OcJUx" id="6aQIqXTfKUH" role="33xnZK">
+      <node concept="1OcJUx" id="6aQIqXTj$W1" role="33xnZK">
         <property role="TrG5h" value="verzoek ingediend" />
-        <node concept="33wURK" id="6aQIqXTfKUI" role="1OcJUI">
+        <node concept="33wURK" id="6aQIqXTj$W2" role="1OcJUI">
           <ref role="33wURL" node="20D4HrzFibY" resolve="verplichting tot overleg plegen" />
         </node>
-        <node concept="33wURK" id="6aQIqXTfKUJ" role="1OcJUI">
+        <node concept="33wURK" id="6aQIqXTj$W3" role="1OcJUI">
           <ref role="33wURL" node="MvzNsyB7Rg" resolve="de verplichte bevoegdheid (recht) tot het inwilligen van verzoek &#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing" />
         </node>
-        <node concept="33wURK" id="6aQIqXTfKUK" role="1OcJUI">
+        <node concept="33wURK" id="6aQIqXTj$W4" role="1OcJUI">
           <ref role="33wURL" node="5u1YjWIkWvP" resolve="de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren&#10;overeenkomstig de wensen van de werknemer" />
         </node>
-        <node concept="33wURK" id="6aQIqXTfKUL" role="1OcJUI">
+        <node concept="33wURK" id="6aQIqXTj$W5" role="1OcJUI">
           <ref role="33wURL" node="1fugvh9_kgi" resolve="immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren" />
         </node>
-        <node concept="33wURK" id="6aQIqXTfKUM" role="1OcJUI">
+        <node concept="33wURK" id="6aQIqXTj$W6" role="1OcJUI">
           <ref role="33wURL" node="2xDgDlj72l7" resolve="immuniteit (recht) om de verplichte bevoegdheid tot het&#10;vaststellen van de spreiding van de uren overeenkomstige de wensen&#10;van de werknemer te neutraliseren." />
         </node>
-        <node concept="33wURK" id="6aQIqXTfKUN" role="1OcJUI">
+        <node concept="33wURK" id="6aQIqXTj$W7" role="1OcJUI">
           <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegheid om de gewenste spreiding van de uren te wijzigen" />
         </node>
       </node>
-      <node concept="lY6iO" id="6aQIqXTfKUO" role="lY6mP">
+      <node concept="lY6iO" id="6aQIqXTj$W8" role="lY6mP">
         <property role="TrG5h" value="2.1" />
       </node>
-      <node concept="2B78Lw" id="6aQIqXTfKUP" role="lXajo">
+      <node concept="2B78Lw" id="6aQIqXTj$W9" role="lXajo">
         <property role="2B78LB" value="01" />
         <property role="2B78L_" value="07" />
         <property role="2B78LE" value="2000" />
       </node>
-      <node concept="lYmzE" id="6aQIqXTfKUQ" role="LQzYN">
+      <node concept="lYmzE" id="6aQIqXTj$Wa" role="LQzYN">
         <property role="da7Q0" value="102" />
         <ref role="lTN2I" node="5qTpXpBo3uX" resolve="datum indienen verzoek" />
-        <node concept="2B78Lw" id="6aQIqXTfKUR" role="lXajo">
+        <node concept="2B78Lw" id="6aQIqXTj$Wb" role="lXajo">
           <property role="2B78LB" value="01" />
           <property role="2B78L_" value="07" />
           <property role="2B78LE" value="2000" />
         </node>
+      </node>
+    </node>
+    <node concept="1OcJVF" id="6aQIqXTj$Wc" role="QnrKb">
+      <property role="TrG5h" value="Vaststellen van de spreiding van de uren" />
+      <property role="da7Q0" value="112" />
+      <node concept="33xUQL" id="6aQIqXTj$Wd" role="33xUQS">
+        <ref role="33xUQY" node="4ZpB41Rnx4z" resolve="Werkgever" />
+      </node>
+      <node concept="lY6lb" id="6aQIqXTj$We" role="lY6mP">
+        <ref role="lY6l8" node="1VomLPHLmUr" resolve="2.6" />
+      </node>
+      <node concept="1OcJUx" id="6aQIqXTj$Wf" role="33xnZK">
+        <property role="TrG5h" value="spreiding vastgesteld" />
+        <node concept="33wURK" id="6aQIqXTj$Wg" role="1OcJUG">
+          <ref role="33wURL" node="5u1YjWIkWvP" resolve="de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren&#10;overeenkomstig de wensen van de werknemer" />
+        </node>
+        <node concept="33wURK" id="6aQIqXTj$Wh" role="1OcJUG">
+          <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegheid om de gewenste spreiding van de uren te wijzigen" />
+        </node>
+        <node concept="33wURK" id="6aQIqXTj$Wi" role="1OcJUG">
+          <ref role="33wURL" node="2xDgDlj72l7" resolve="immuniteit (recht) om de verplichte bevoegdheid tot het&#10;vaststellen van de spreiding van de uren overeenkomstige de wensen&#10;van de werknemer te neutraliseren." />
+        </node>
+        <node concept="33wURK" id="6aQIqXTj$Wj" role="2wzdnQ">
+          <ref role="33wURL" node="5u1YjWIkWv5" resolve="werknemer is verplicht arbeid te verrichten bij&#10;de werkgever voor een aantal uren per week  " />
+        </node>
+        <node concept="I0tks" id="6aQIqXTj$Wk" role="Q1qEX">
+          <property role="TrG5h" value="rooster" />
+          <property role="da7Q0" value="113" />
+          <ref role="I0tkr" node="MvzNsyB_Cb" resolve="rooster" />
+          <node concept="2B78Lw" id="6aQIqXTj$Wl" role="lXajo" />
+        </node>
+        <node concept="33wURK" id="6aQIqXTj$Wm" role="1OcJUI">
+          <ref role="33wURL" node="28ifPi2C7Jc" resolve="verplichting tot het mededelen van de redenen" />
+        </node>
+      </node>
+      <node concept="2B78Lw" id="6aQIqXTj$Wn" role="lXajo">
+        <property role="2B78LB" value="01" />
+        <property role="2B78L_" value="07" />
+        <property role="2B78LE" value="2000" />
+      </node>
+    </node>
+    <node concept="1OcJVF" id="6aQIqXTj$Wo" role="QnrKb">
+      <property role="TrG5h" value="Wijzigen van de spreiding van de uren" />
+      <property role="da7Q0" value="114" />
+      <node concept="33xUQL" id="6aQIqXTj$Wp" role="33xUQS">
+        <ref role="33xUQY" node="4ZpB41Rnx4z" resolve="Werkgever" />
+      </node>
+      <node concept="lY6lb" id="6aQIqXTj$Wq" role="lY6mP">
+        <ref role="lY6l8" node="1VomLPHLmUr" resolve="2.6" />
+      </node>
+      <node concept="1OcJUx" id="6aQIqXTj$Wr" role="33xnZK">
+        <property role="TrG5h" value="spreiding gewijzigd" />
+        <node concept="33wURK" id="6aQIqXTj$Ws" role="2wzdnQ">
+          <ref role="33wURL" node="5u1YjWIkWv5" resolve="werknemer is verplicht arbeid te verrichten bij&#10;de werkgever voor een aantal uren per week  " />
+        </node>
+        <node concept="33wURK" id="6aQIqXTj$Wt" role="1OcJUI">
+          <ref role="33wURL" node="28ifPi2C7Jc" resolve="verplichting tot het mededelen van de redenen" />
+        </node>
+        <node concept="33wURK" id="6aQIqXTj$Wu" role="1OcJUG">
+          <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegheid om de gewenste spreiding van de uren te wijzigen" />
+        </node>
+        <node concept="33wURK" id="6aQIqXTj$Wv" role="1OcJUG">
+          <ref role="33wURL" node="2xDgDlj72l7" resolve="immuniteit (recht) om de verplichte bevoegdheid tot het&#10;vaststellen van de spreiding van de uren overeenkomstige de wensen&#10;van de werknemer te neutraliseren." />
+        </node>
+      </node>
+      <node concept="2B78Lw" id="6aQIqXTj$Ww" role="lXajo">
+        <property role="2B78LB" value="01" />
+        <property role="2B78L_" value="07" />
+        <property role="2B78LE" value="2000" />
       </node>
     </node>
   </node>
