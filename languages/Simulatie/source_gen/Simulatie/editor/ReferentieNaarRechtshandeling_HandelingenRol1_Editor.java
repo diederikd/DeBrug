@@ -265,7 +265,7 @@ public class ReferentieNaarRechtshandeling_HandelingenRol1_Editor extends Defaul
         {
           final SNode node = ((SNode) n);
           Simulatie simulatie = new Simulatie();
-          simulatie.ExecuteHandeling(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")));
+          simulatie.ExecuteHandeling(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")), node);
         }
       }
     };

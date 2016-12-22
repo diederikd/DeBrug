@@ -193,8 +193,6 @@ public class Rechtshandeling_HandelingenRol2_Editor extends DefaultNodeEditor {
       public void process(final SNode n, final EditorContext editorContext) {
         {
           final SNode node = ((SNode) n);
-          Simulatie simulatie = new Simulatie();
-          simulatie.ExecuteHandeling(node);
         }
       }
     };
