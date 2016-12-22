@@ -490,5 +490,21 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7$WBeOqRlYR">
+    <property role="3GE5qa" value="RechtsSubject" />
+    <ref role="1XX52x" to="gcgs:6OHSlZaUf8_" resolve="ReferentieNaarNatuurlijkPersoon" />
+    <node concept="3EZMnI" id="7$WBeOqRlYT" role="2wV5jI">
+      <node concept="1iCGBv" id="7$WBeOqRlZ0" role="3EZMnx">
+        <ref role="1NtTu8" to="gcgs:6OHSlZaUf8A" resolve="natuurlijkpersoon" />
+        <node concept="1sVBvm" id="7$WBeOqRlZ2" role="1sWHZn">
+          <node concept="3F0A7n" id="7$WBeOqRlZ9" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7$WBeOqRlYW" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

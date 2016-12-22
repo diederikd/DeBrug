@@ -249,7 +249,7 @@
     <property role="EcuMT" value="6994217584621161789" />
     <property role="TrG5h" value="Rechtshandeling" />
     <property role="3GE5qa" value="RechtsgevolgVeroorzakers" />
-    <property role="34LRSv" value="rechtshandeling" />
+    <property role="34LRSv" value="rechtshandeling objectief recht" />
     <ref role="1TJDcQ" node="64gsXol8COU" resolve="RechtsgevolgVeroorzakers" />
     <node concept="1TJgyj" id="20D4HrzFFXI" role="1TKVEi">
       <property role="IQ2ns" value="2317404197411012462" />

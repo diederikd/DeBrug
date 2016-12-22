@@ -7,6 +7,9 @@
     <file name="Informatiepositie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Simulatie.behavior.Informatiepositie_BehaviorDescriptor" />
     </file>
+    <file name="ReferentieNaarRechtshandeling_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Simulatie.behavior.ReferentieNaarRechtshandeling_BehaviorDescriptor" />
+    </file>
     <file name="Simulatie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Simulatie.behavior.Simulatie_BehaviorDescriptor" />
     </file>

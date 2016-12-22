@@ -10,6 +10,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private final ConceptPresentation props_Informatiepositie = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReferentieNaarRechtshandeling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Simulatie = new ConceptPresentationBuilder().create();
 
   @Override
@@ -20,6 +21,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 0:
         return props_Informatiepositie;
       case 1:
+        return props_ReferentieNaarRechtshandeling;
+      case 2:
         return props_Simulatie;
     }
     throw new IllegalStateException("Unknown concept " + c);

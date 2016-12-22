@@ -16,6 +16,7 @@
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -135,13 +136,14 @@
     <property role="EcuMT" value="7136310554705382612" />
     <property role="3GE5qa" value="RechtsgevolgVeroorzaker" />
     <property role="TrG5h" value="Rechtshandeling" />
+    <property role="34LRSv" value="rechtshandeling subjectief recht" />
     <ref role="1TJDcQ" node="6c9haf45sNj" resolve="RechtsgevolgVeroorzaker" />
     <node concept="1TJgyj" id="6c9haf45sNo" role="1TKVEi">
       <property role="IQ2ns" value="7136310554705382616" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actor" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6c9haf45sNl" resolve="ReferentieNaarRechtsSubject" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6OHSlZaUf8_" resolve="ReferentieNaarNatuurlijkPersoon" />
     </node>
     <node concept="1TJgyj" id="6c9haf45_U3" role="1TKVEi">
       <property role="IQ2ns" value="7136310554705419907" />

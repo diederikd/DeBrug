@@ -21,6 +21,7 @@
     <classNode dependClassName="ObjectiefRecht.constraints.GeheelGetalDatatype_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.Kenmerk_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.Rechtsbetrekking_Constraints" />
+    <classNode dependClassName="ObjectiefRecht.constraints.Rechtshandeling_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.ReferentieNaarKenmerk_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.ReferentieNaarOnderwerp_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.RijVanKaraktersDatatype_Constraints" />
@@ -70,6 +71,10 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="ObjectiefRecht.constraints.Rechtshandeling_Constraints" file="Rechtshandeling_Constraints.java">
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="ObjectiefRecht.constraints.ReferentieNaarKenmerk_Constraints" file="ReferentieNaarKenmerk_Constraints.java">
