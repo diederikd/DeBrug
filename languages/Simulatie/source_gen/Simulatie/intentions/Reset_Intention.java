@@ -13,6 +13,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.IntentionExecutableBase;
+import Simulatie.behavior.Simulatie__BehaviorDescriptor;
 import jetbrains.mps.intentions.IntentionDescriptor;
 
 public final class Reset_Intention extends IntentionDescriptorBase implements IntentionFactory {
@@ -43,12 +44,11 @@ public final class Reset_Intention extends IntentionDescriptorBase implements In
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Reset Simulatie";
+      return "Ververs Uitvoerbare Handelingen";
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      Simulatie simulatie = new Simulatie();
-      simulatie.Reset(node);
+      Simulatie__BehaviorDescriptor.RefreshHandelingen_id3d6QfrgN326.invoke(node);
     }
     @Override
     public IntentionDescriptor getDescriptor() {

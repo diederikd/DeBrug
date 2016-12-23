@@ -104,6 +104,12 @@
       <property role="20kJfa" value="datumtijdvanstartvandeSimulatie" />
       <ref role="20lvS9" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
     </node>
+    <node concept="1TJgyj" id="3d6QfrgxRyu" role="1TKVEi">
+      <property role="IQ2ns" value="3694879098876164254" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="datumtijdvaninitialisatie" />
+      <ref role="20lvS9" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
+    </node>
     <node concept="1TJgyj" id="2K7y4iISu19" role="1TKVEi">
       <property role="IQ2ns" value="3172654291078996041" />
       <property role="20lmBu" value="aggregation" />

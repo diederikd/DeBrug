@@ -298,6 +298,18 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="3d6QfrgxR$R" role="3EZMnx">
+        <property role="3F0ifm" value="moment van initialisatie" />
+      </node>
+      <node concept="3F0ifn" id="3d6QfrgxRC9" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="3d6QfrgxRFt" role="3EZMnx">
+        <ref role="1NtTu8" to="xhlk:3d6QfrgxRyu" resolve="datumtijdvaninitialisatie" />
+        <node concept="ljvvj" id="3d6QfrgxRH8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="2K7y4iITYZK" role="3EZMnx">
         <property role="3F0ifm" value="laatste handeling" />
       </node>
