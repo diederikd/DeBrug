@@ -44,9 +44,6 @@
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -174,7 +171,6 @@
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
@@ -3135,78 +3131,16 @@
             <node concept="2jxLKc" id="3d6QfrgVOhc" role="1tU5fm" />
           </node>
         </node>
-        <node concept="3clFbH" id="3d6Qfrgw4uf" role="3cqZAp" />
-        <node concept="3cpWs8" id="4pem8DKk01y" role="3cqZAp">
-          <node concept="3cpWsn" id="4pem8DKk01z" role="3cpWs9">
-            <property role="TrG5h" value="simulatie" />
-            <node concept="3uibUv" id="4pem8DKk01$" role="1tU5fm">
-              <ref role="3uigEE" to="o661:1VomLPHGTO6" resolve="Simulatie" />
-            </node>
-            <node concept="2ShNRf" id="4pem8DKk01_" role="33vP2m">
-              <node concept="HV5vD" id="4pem8DKk01A" role="2ShVmc">
-                <ref role="HV5vE" to="o661:1VomLPHGTO6" resolve="Simulatie" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4pem8DKktW3" role="3cqZAp">
-          <node concept="2OqwBi" id="4pem8DKktW4" role="3clFbG">
-            <node concept="10M0yZ" id="4pem8DKktW5" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="4pem8DKktW6" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-              <node concept="2OqwBi" id="4pem8DKktW7" role="37wK5m">
-                <node concept="2OqwBi" id="4pem8DKktW8" role="2Oq$k0">
-                  <node concept="37vLTw" id="5riiL_C3tWp" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5riiL_C3t0r" resolve="node" />
-                  </node>
-                  <node concept="1mfA1w" id="4pem8DKktWa" role="2OqNvi" />
-                </node>
-                <node concept="2yIwOk" id="4pem8DKktWb" role="2OqNvi" />
-              </node>
-            </node>
+        <node concept="3SKdUt" id="3d6QfrheEWn" role="3cqZAp">
+          <node concept="3SKdUq" id="3d6QfrheEWp" role="3SKWNk">
+            <property role="3SKdUp" value="Nieuwe lijst van uitvoerbare handelingen opbouwen" />
           </node>
         </node>
         <node concept="3clFbF" id="4pem8DKk01B" role="3cqZAp">
-          <node concept="2OqwBi" id="4pem8DKk01C" role="3clFbG">
-            <node concept="37vLTw" id="4pem8DKk01D" role="2Oq$k0">
-              <ref role="3cqZAo" node="4pem8DKk01z" resolve="simulatie" />
-            </node>
-            <node concept="liA8E" id="4pem8DKk01E" role="2OqNvi">
-              <ref role="37wK5l" to="o661:4pem8DKjDoq" resolve="RefreshHandelingen" />
-              <node concept="10QFUN" id="4pem8DKk17$" role="37wK5m">
-                <node concept="2OqwBi" id="4pem8DKk0Ku" role="10QFUP">
-                  <node concept="37vLTw" id="3d6Qfrgqlrs" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3d6Qfrgo2by" resolve="refnode" />
-                  </node>
-                  <node concept="1mfA1w" id="4pem8DKk10Q" role="2OqNvi" />
-                </node>
-                <node concept="3Tqbb2" id="4pem8DKk17_" role="10QFUM">
-                  <ref role="ehGHo" to="xhlk:6OHSlZaTjYP" resolve="Simulatie" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4pem8DKkVwI" role="3cqZAp">
-          <node concept="2OqwBi" id="4pem8DKkVwJ" role="3clFbG">
-            <node concept="10M0yZ" id="4pem8DKkVwK" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="4pem8DKkVwL" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-              <node concept="2OqwBi" id="4pem8DKkVwM" role="37wK5m">
-                <node concept="2OqwBi" id="4pem8DKkVwN" role="2Oq$k0">
-                  <node concept="37vLTw" id="5riiL_C3u0u" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5riiL_C3t0r" resolve="node" />
-                  </node>
-                  <node concept="1mfA1w" id="4pem8DKkVwP" role="2OqNvi" />
-                </node>
-                <node concept="2yIwOk" id="4pem8DKkVwQ" role="2OqNvi" />
-              </node>
+          <node concept="2OqwBi" id="3d6QfrhcjNt" role="3clFbG">
+            <node concept="13iPFW" id="3d6Qfrhcj_9" role="2Oq$k0" />
+            <node concept="2qgKlT" id="3d6Qfrhck1r" role="2OqNvi">
+              <ref role="37wK5l" node="3d6QfrgN326" resolve="RefreshHandelingen" />
             </node>
           </node>
         </node>
