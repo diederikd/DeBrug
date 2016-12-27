@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin version="2">
+  <id>de.slisson.mps.editor.multiline</id>
+  <name>MPS Multiline Property Editor Component</name>
+  <version>2.0.2</version>
+  <vendor url="http://github.com/slisson/mps-multiline">Sascha Lisson</vendor>
+  <depends>jetbrains.mps.core</depends>
+  <depends>jetbrains.mps.build</depends>
+  <depends>de.itemis.mps.selection</depends>
+  <depends>de.itemis.mps.celllayout</depends>
+  <description>An editor component for properties that supports wrapping of long lines and new lines by pressing ENTER.</description>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

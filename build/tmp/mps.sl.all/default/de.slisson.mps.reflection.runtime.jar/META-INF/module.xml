@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module namespace="de.slisson.mps.reflection.runtime" type="solution" uuid="7037b32c-9607-4f8e-81bd-1f028a4c117b">
+  <dependencies>
+    <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+  </dependencies>
+  <sources descriptor="de.slisson.mps.reflection.runtime.msd" jar="de.slisson.mps.reflection.runtime-src.jar" />
+</module>

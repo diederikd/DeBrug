@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin version="2">
+  <id>de.slisson.mps.richtext</id>
+  <name>MPS Richtext Editor Component</name>
+  <version>2.0.0</version>
+  <vendor url="https://github.com/slisson/mps-richtext">Sascha Lisson</vendor>
+  <depends>jetbrains.mps.build</depends>
+  <depends>jetbrains.mps.core</depends>
+  <depends>de.slisson.mps.editor.multiline</depends>
+  <depends>org.apache.commons</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

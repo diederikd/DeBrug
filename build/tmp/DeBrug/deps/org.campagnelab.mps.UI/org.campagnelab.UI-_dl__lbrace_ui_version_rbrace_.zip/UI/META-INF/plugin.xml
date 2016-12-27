@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin version="2">
+  <id>org.campagnelab.mps.UI</id>
+  <name>org.campagnelab.mps.UI</name>
+  <description>User Interface language to create buttons and file selection button in an MPS editor. Build number: 0</description>
+  <version>1.1.0</version>
+  <vendor url="http://books.campagnelab.org">Campagne Laboratory</vendor>
+  <depends>jetbrains.mps.core</depends>
+  <depends>jetbrains.mps.build</depends>
+  <idea-version since-build="143.1" until-build="144.1" />
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>
