@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="Gegevens.behavior.AbstractDatatype_BehaviorDescriptor" file="AbstractDatatype_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.Attribuut_BehaviorDescriptor" file="Attribuut_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="Gegevens.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.util.HashMap" />
@@ -14,11 +22,39 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="Gegevens.behavior.DatumDatatype_BehaviorDescriptor" file="DatumDatatype_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.GegevensModel_BehaviorDescriptor" file="GegevensModel_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.GeheelGetalDatatype_BehaviorDescriptor" file="GeheelGetalDatatype_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.JaNeeDatatype_BehaviorDescriptor" file="JaNeeDatatype_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="Gegevens.behavior.Object_BehaviorDescriptor" file="Object_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="Gegevens.behavior.ReeelGetalDatatype_BehaviorDescriptor" file="ReeelGetalDatatype_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="Gegevens.behavior.ReferentieNaarOnderwerp_BehaviorDescriptor" file="ReferentieNaarOnderwerp_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.RijVanKaraktersDatatype_BehaviorDescriptor" file="RijVanKaraktersDatatype_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.TijdDatatype_BehaviorDescriptor" file="TijdDatatype_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

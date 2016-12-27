@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
   <root>
+    <file name="AbstractDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.AbstractDatatype_BehaviorDescriptor" />
+    </file>
+    <file name="Attribuut_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.Attribuut_BehaviorDescriptor" />
+    </file>
     <file name="BehaviorAspectDescriptor.java">
       <unit at="13,0,41,0" name="Gegevens.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="Concept_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.Concept_BehaviorDescriptor" />
     </file>
+    <file name="DatumDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.DatumDatatype_BehaviorDescriptor" />
+    </file>
+    <file name="GegevensModel_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.GegevensModel_BehaviorDescriptor" />
+    </file>
+    <file name="GeheelGetalDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.GeheelGetalDatatype_BehaviorDescriptor" />
+    </file>
+    <file name="JaNeeDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.JaNeeDatatype_BehaviorDescriptor" />
+    </file>
     <file name="Object_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.Object_BehaviorDescriptor" />
     </file>
+    <file name="ReeelGetalDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.ReeelGetalDatatype_BehaviorDescriptor" />
+    </file>
     <file name="ReferentieNaarOnderwerp_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.ReferentieNaarOnderwerp_BehaviorDescriptor" />
+    </file>
+    <file name="RijVanKaraktersDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.RijVanKaraktersDatatype_BehaviorDescriptor" />
+    </file>
+    <file name="TijdDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.TijdDatatype_BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

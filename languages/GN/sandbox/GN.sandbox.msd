@@ -13,6 +13,7 @@
   </dependencies>
   <languageVersions>
     <language slang="l:61be2dc6-a140-4def-a592-7499aa2bac19:Datum" version="0" />
+    <language slang="l:30ef095a-d489-45ff-a80f-456a798ac125:Gegevens" version="0" />
     <language slang="l:8dc4b25f-4c49-400e-ac37-0fd230db702c:ObjectiefRecht" version="0" />
     <language slang="l:15970de3-8fe7-4b13-81c7-38b38d51c39a:Simulatie" version="-1" />
     <language slang="l:2c493149-da1d-45e9-8ea2-e0b0cfc3047a:SubjectiefRecht" version="0" />

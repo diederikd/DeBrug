@@ -9,9 +9,18 @@ import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private final ConceptPresentation props_AbstractDatatype = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Attribuut = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Concept = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_DatumDatatype = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_GegevensModel = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_GeheelGetalDatatype = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_JaNeeDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Object = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReeelGetalDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_RijVanKaraktersDatatype = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TijdDatatype = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -19,11 +28,29 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case 0:
-        return props_Concept;
+        return props_AbstractDatatype;
       case 1:
-        return props_Object;
+        return props_Attribuut;
       case 2:
+        return props_Concept;
+      case 3:
+        return props_DatumDatatype;
+      case 4:
+        return props_GegevensModel;
+      case 5:
+        return props_GeheelGetalDatatype;
+      case 6:
+        return props_JaNeeDatatype;
+      case 7:
+        return props_Object;
+      case 8:
+        return props_ReeelGetalDatatype;
+      case 9:
         return props_ReferentieNaarOnderwerp;
+      case 10:
+        return props_RijVanKaraktersDatatype;
+      case 11:
+        return props_TijdDatatype;
     }
     throw new IllegalStateException("Unknown concept " + c);
   }
