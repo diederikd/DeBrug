@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.sandbox)">
+<model ref="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)">
   <persistence version="9" />
   <languages>
     <use id="8dc4b25f-4c49-400e-ac37-0fd230db702c" name="ObjectiefRecht" version="-1" />
@@ -8,7 +8,7 @@
     <use id="15970de3-8fe7-4b13-81c7-38b38d51c39a" name="Simulatie" version="-1" />
   </languages>
   <imports>
-    <import index="zznl" ref="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.sandbox)" />
+    <import index="zznl" ref="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)" />
   </imports>
   <registry>
     <language id="15970de3-8fe7-4b13-81c7-38b38d51c39a" name="Simulatie">

@@ -12,6 +12,8 @@
       <modulePath path="$PROJECT_DIR$/languages/Simulatie/Simulatie.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/SubjectiefRecht/SubjectiefRecht.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" folder="" />
+      <modulePath path="$mbeddr.github.core.home$/code/plugins/sl-all/mps-apache-commons/solutions/mps-apache-commons.build/mps-apache-commons.build.msd" folder="" />
+      <modulePath path="$mbeddr.github.core.home$/code/plugins/sl-all/mps-apache-commons/solutions/org.apache.commons/org.apache.commons.msd" folder="" />
     </projectModules>
   </component>
 </project>

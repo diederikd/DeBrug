@@ -10,6 +10,8 @@
     <dependency reexport="false">8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)</dependency>
     <dependency reexport="false">2c493149-da1d-45e9-8ea2-e0b0cfc3047a(SubjectiefRecht)</dependency>
     <dependency reexport="false">15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)</dependency>
+    <dependency reexport="false">9d8ad609-a15a-4817-b9ae-ec9cbb0c2c49(mps-apache-commons.build)</dependency>
+    <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:61be2dc6-a140-4def-a592-7499aa2bac19:Datum" version="0" />
@@ -31,6 +33,8 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
+    <module reference="9d8ad609-a15a-4817-b9ae-ec9cbb0c2c49(mps-apache-commons.build)" version="0" />
+    <module reference="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" version="0" />
   </dependencyVersions>
 </solution>
 
