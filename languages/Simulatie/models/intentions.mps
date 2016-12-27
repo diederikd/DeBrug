@@ -280,27 +280,11 @@
     </node>
     <node concept="2Sbjvc" id="1VomLPHD10m" role="2ZfgGD">
       <node concept="3clFbS" id="1VomLPHD10n" role="2VODD2">
-        <node concept="3cpWs8" id="1VomLPHGZt_" role="3cqZAp">
-          <node concept="3cpWsn" id="1VomLPHGZtz" role="3cpWs9">
-            <property role="TrG5h" value="simulatie" />
-            <node concept="3uibUv" id="1VomLPHGZtK" role="1tU5fm">
-              <ref role="3uigEE" node="1VomLPHGTO6" resolve="Simulatie" />
-            </node>
-            <node concept="2ShNRf" id="1VomLPHGZub" role="33vP2m">
-              <node concept="HV5vD" id="1VomLPHH17W" role="2ShVmc">
-                <ref role="HV5vE" node="1VomLPHGTO6" resolve="Simulatie" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1VomLPHH18P" role="3cqZAp">
-          <node concept="2OqwBi" id="1VomLPHH1eE" role="3clFbG">
-            <node concept="37vLTw" id="1VomLPHH18N" role="2Oq$k0">
-              <ref role="3cqZAo" node="1VomLPHGZtz" resolve="simulatie" />
-            </node>
-            <node concept="liA8E" id="1VomLPHH1mK" role="2OqNvi">
-              <ref role="37wK5l" node="1VomLPHGTPM" resolve="Initialiseer" />
-              <node concept="2Sf5sV" id="1VomLPHH1nE" role="37wK5m" />
+        <node concept="3clFbF" id="3d6Qfrh58iN" role="3cqZAp">
+          <node concept="2OqwBi" id="3d6Qfrh58sT" role="3clFbG">
+            <node concept="2Sf5sV" id="3d6Qfrh7CTw" role="2Oq$k0" />
+            <node concept="2qgKlT" id="3d6Qfrh7CPc" role="2OqNvi">
+              <ref role="37wK5l" to="ln8d:3d6QfrgQgbG" resolve="Initialiseer" />
             </node>
           </node>
         </node>
@@ -308,7 +292,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="1VomLPHGN9i">
-    <property role="TrG5h" value="Reset" />
+    <property role="TrG5h" value="VerversUitvoerbareHandelingen" />
     <ref role="2ZfgGC" to="xhlk:6OHSlZaTjYP" resolve="Simulatie" />
     <node concept="2S6ZIM" id="1VomLPHGN9j" role="2ZfVej">
       <node concept="3clFbS" id="1VomLPHGN9k" role="2VODD2">

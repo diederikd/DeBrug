@@ -714,7 +714,7 @@ public class Context_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_d0e2am_z71a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "regels");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "voorwaarden bij toestanden en overgangen");
     editorCell.setCellId("Constant_d0e2am_z71a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);

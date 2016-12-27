@@ -37,7 +37,7 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
             // Concept: Simulatie 
             intentions = new IntentionFactory[2];
             intentions[0] = new Initialiseer_Intention();
-            intentions[1] = new Reset_Intention();
+            intentions[1] = new VerversUitvoerbareHandelingen_Intention();
           }
           break;
         default:
@@ -53,7 +53,7 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
   public Collection<IntentionFactory> getAllIntentions() {
     IntentionFactory[] rv = new IntentionFactory[2];
     rv[0] = new Initialiseer_Intention();
-    rv[1] = new Reset_Intention();
+    rv[1] = new VerversUitvoerbareHandelingen_Intention();
     return Arrays.asList(rv);
   }
   private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {

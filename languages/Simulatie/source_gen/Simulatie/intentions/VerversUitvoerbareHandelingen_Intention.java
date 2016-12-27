@@ -16,14 +16,14 @@ import jetbrains.mps.intentions.IntentionExecutableBase;
 import Simulatie.behavior.Simulatie__BehaviorDescriptor;
 import jetbrains.mps.intentions.IntentionDescriptor;
 
-public final class Reset_Intention extends IntentionDescriptorBase implements IntentionFactory {
+public final class VerversUitvoerbareHandelingen_Intention extends IntentionDescriptorBase implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
-  public Reset_Intention() {
+  public VerversUitvoerbareHandelingen_Intention() {
     super(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"), IntentionType.NORMAL, false, new SNodePointer("r:6497b91a-d9b6-415a-8653-94aa85e58bd3(Simulatie.intentions)", "2222626598059979346"));
   }
   @Override
   public String getPresentation() {
-    return "Reset";
+    return "VerversUitvoerbareHandelingen";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -35,7 +35,7 @@ public final class Reset_Intention extends IntentionDescriptorBase implements In
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new Reset_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new VerversUitvoerbareHandelingen_Intention.IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -52,7 +52,7 @@ public final class Reset_Intention extends IntentionDescriptorBase implements In
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return Reset_Intention.this;
+      return VerversUitvoerbareHandelingen_Intention.this;
     }
   }
 }

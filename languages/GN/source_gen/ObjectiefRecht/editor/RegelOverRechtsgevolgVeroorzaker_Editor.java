@@ -89,7 +89,7 @@ public class RegelOverRechtsgevolgVeroorzaker_Editor extends DefaultNodeEditor {
     return result;
   }
   private EditorCell createConstant_2jdznl_a0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "regel over rechtsgevolgveroorzaker");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "voorwaarden bij een rechtsgevolgveroorzaker");
     editorCell.setCellId("Constant_2jdznl_a0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);

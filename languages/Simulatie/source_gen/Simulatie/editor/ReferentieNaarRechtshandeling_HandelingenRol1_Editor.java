@@ -20,7 +20,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
-import Simulatie.intentions.Simulatie;
+import Simulatie.behavior.Simulatie__BehaviorDescriptor;
 import jetbrains.mps.util.EqualUtil;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
@@ -98,8 +98,8 @@ public class ReferentieNaarRechtshandeling_HandelingenRol1_Editor extends Defaul
   private EditorCell createReadOnlyModelAccessor_ljvns5_a0a(final EditorContext editorContext, final SNode node) {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
       public String getText() {
-        Simulatie simulatieklasse = new Simulatie();
-        return simulatieklasse.OpzoekenTypeHandeling((SNode) SNodeOperations.getParent(node), SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")));
+        SNode simulatie = (SNode) SNodeOperations.getParent(node);
+        return Simulatie__BehaviorDescriptor.OpzoekenTypeHandeling_id3d6QfrgWko$.invoke(simulatie, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")));
       }
       public void setText(String s) {
       }
@@ -264,8 +264,8 @@ public class ReferentieNaarRechtshandeling_HandelingenRol1_Editor extends Defaul
       public void process(final SNode n, final EditorContext editorContext) {
         {
           final SNode node = ((SNode) n);
-          Simulatie simulatie = new Simulatie();
-          simulatie.ExecuteHandeling(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")), node);
+          SNode simulatie = (SNode) SNodeOperations.getParent(node);
+          Simulatie__BehaviorDescriptor.ExecuteHandeling_id3d6QfrgVOeu.invoke(simulatie, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")), node);
         }
       }
     };
@@ -275,8 +275,8 @@ public class ReferentieNaarRechtshandeling_HandelingenRol1_Editor extends Defaul
   private EditorCell createReadOnlyModelAccessor_ljvns5_h0a(final EditorContext editorContext, final SNode node) {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
       public String getText() {
-        Simulatie simulatieklasse = new Simulatie();
-        return simulatieklasse.OpzoekenUitzonderingen((SNode) SNodeOperations.getParent(node), SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")));
+        SNode simulatie = (SNode) SNodeOperations.getParent(node);
+        return Simulatie__BehaviorDescriptor.OpzoekenUitzonderingen_id3d6Qfrh1abK.invoke(simulatie, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")));
       }
       public void setText(String s) {
       }

@@ -32,7 +32,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
 import javax.swing.JComponent;
 import org.campagnelab.ui.code.Swing.ButtonCallback;
-import Simulatie.intentions.Simulatie;
+import Simulatie.behavior.Simulatie__BehaviorDescriptor;
 import org.campagnelab.ui.code.Swing.Button;
 
 public class Simulatie_Editor extends DefaultNodeEditor {
@@ -868,8 +868,7 @@ public class Simulatie_Editor extends DefaultNodeEditor {
       public void process(final SNode n, final EditorContext editorContext) {
         {
           final SNode node = ((SNode) n);
-          Simulatie simulatie = new Simulatie();
-          simulatie.Initialiseer(node);
+          Simulatie__BehaviorDescriptor.Initialiseer_id3d6QfrgQgbG.invoke(node);
         }
       }
     };

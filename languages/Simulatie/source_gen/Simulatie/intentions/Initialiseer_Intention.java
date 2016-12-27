@@ -13,6 +13,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.IntentionExecutableBase;
+import Simulatie.behavior.Simulatie__BehaviorDescriptor;
 import jetbrains.mps.intentions.IntentionDescriptor;
 
 public final class Initialiseer_Intention extends IntentionDescriptorBase implements IntentionFactory {
@@ -47,8 +48,7 @@ public final class Initialiseer_Intention extends IntentionDescriptorBase implem
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      Simulatie simulatie = new Simulatie();
-      simulatie.Initialiseer(node);
+      Simulatie__BehaviorDescriptor.Initialiseer_id3d6QfrgQgbG.invoke(node);
     }
     @Override
     public IntentionDescriptor getDescriptor() {

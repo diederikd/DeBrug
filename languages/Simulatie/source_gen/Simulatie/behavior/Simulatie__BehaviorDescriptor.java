@@ -31,7 +31,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.time.Duration;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.ISelector;
-import Simulatie.intentions.Simulatie;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -321,11 +320,8 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
         System.out.println(handeling);
       }
     }
-
-    Simulatie simulatie = new Simulatie();
-    System.out.println(SNodeOperations.getConcept(SNodeOperations.getParent(node)));
-    simulatie.RefreshHandelingen((SNode) SNodeOperations.getParent(refnode));
-    System.out.println(SNodeOperations.getConcept(SNodeOperations.getParent(node)));
+    // Nieuwe lijst van uitvoerbare handelingen opbouwen 
+    Simulatie__BehaviorDescriptor.RefreshHandelingen_id3d6QfrgN326.invoke(__thisNode__);
   }
   /*package*/ static String OpzoekenTypeHandeling_id3d6QfrgWko$(@NotNull SNode __thisNode__, SNode rechtsgevolgveroorzaker) {
     String typehandeling = "";
