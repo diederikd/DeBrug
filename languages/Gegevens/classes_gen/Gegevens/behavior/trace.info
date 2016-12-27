@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="13,0,41,0" name="Gegevens.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="Concept_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.Concept_BehaviorDescriptor" />
+    </file>
+    <file name="Object_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.Object_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarOnderwerp_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.ReferentieNaarOnderwerp_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+
