@@ -9,14 +9,23 @@
   <property name="build.number" value="DeBrug-162.SNAPSHOT" />
   <property name="mps_home" location="${basedir}/../../../../Applications/MPS 3.4.app/Contents" />
   <property name="mbeddr_core" location="${basedir}/../mbeddr.core" />
+  <property name="mbeddr.core.home" location="${basedir}/../mbeddr.core/code/languages/com.mbeddr.core" />
+  <property name="mbeddr.mpsutil.home" location="${basedir}/../mbeddr.core/code/languages/com.mbeddr.mpsutil" />
+  <property name="mbeddr.files" location="${basedir}/com.mbeddr.allInOne/mbeddr.core" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mps" location="${mps_home}" />
+  <property name="artifacts.mpsBuild" location="${mps_home}" />
+  <property name="artifacts.mpsBuildUI" location="${mps_home}" />
+  <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}" />
+  <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
   <property name="artifacts.com.mbeddr.allInOne" location="${mbeddr_core}/artifacts/mbeddr" />
-  <property name="artifacts.mps-sl-all" location="${mbeddr_core}/artifacts/mps-sl-all" />
-  <property name="artifacts.org.campagnelab.mps.UI" location="${build.dir}/artifacts/org.campagnelab.mps.UI" />
+  <property name="artifacts.com.mbeddr.allScripts.build" location="../mbeddr.core/build/com.mbeddr.allScripts/build/artifacts/com.mbeddr.allScripts.build" />
+  <property name="artifacts.mps-apache-commons" location="${mbeddr_core}/artifacts/mps-sl-all/null" />
+  <property name="artifacts.org.campagnelab.mps.UI" location="${basedir}/org.campagnelab.UI" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.allInOne}/build.properties" prefix="import.com.mbeddr.allInOne" />
+  <property file="${artifacts.com.mbeddr.allScripts.build}/build.properties" prefix="import.com.mbeddr.allScripts.build" />
   <property file="${artifacts.org.campagnelab.mps.UI}/build.properties" prefix="import.org.campagnelab.mps.UI" />
   <property name="mpsBootstrapCore.version" value="${import.mpsStandalone.mpsBootstrapCore.version}" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -34,6 +43,10 @@
   <property name="spawner.minor.version" value="${import.com.mbeddr.allInOne.spawner.minor.version}" />
   <property name="spawner.build" value="${import.com.mbeddr.allInOne.spawner.build}" />
   <property name="spawner.mbeddr.version" value="${import.com.mbeddr.allInOne.spawner.mbeddr.version}" />
+  <property name="com.mbeddr.allScripts.build.major.version" value="${import.com.mbeddr.allScripts.build.com.mbeddr.allScripts.build.major.version}" />
+  <property name="com.mbeddr.allScripts.build.minor.version" value="${import.com.mbeddr.allScripts.build.com.mbeddr.allScripts.build.minor.version}" />
+  <property name="com.mbeddr.allScripts.build.build" value="${import.com.mbeddr.allScripts.build.com.mbeddr.allScripts.build.build}" />
+  <property name="com.mbeddr.allScripts.build.mbeddr.version" value="${import.com.mbeddr.allScripts.build.com.mbeddr.allScripts.build.mbeddr.version}" />
   <property name="org.campagnelab.mps.UI.ui_version" value="${import.org.campagnelab.mps.UI.org.campagnelab.mps.UI.ui_version}" />
   <property name="org.campagnelab.mps.UI.build_number" value="${import.org.campagnelab.mps.UI.org.campagnelab.mps.UI.build_number}" />
   <property name="environment" value="env" />
@@ -51,15 +64,45 @@
     <copy todir="${build.layout}/languages">
       <fileset dir="${artifacts.mpsStandalone}/languages" />
     </copy>
+    <mkdir dir="${build.layout}/workbench" />
+    <copy todir="${build.layout}/workbench">
+      <fileset dir="${artifacts.mpsStandalone}/languages/workbench" />
+    </copy>
     <mkdir dir="${build.layout}/license" />
     <copy todir="${build.layout}/license">
       <fileset dir="${artifacts.mpsStandalone}/license" />
     </copy>
-    <copy file="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" todir="${build.layout}" />
-    <mkdir dir="${build.layout}/UI" />
-    <copy todir="${build.layout}/UI">
-      <fileset dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI" />
+    <mkdir dir="${build.layout}/plugins" />
+    <copy todir="${build.layout}/plugins">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins" />
     </copy>
+    <mkdir dir="${build.layout}/de.slisson.mps.all" />
+    <copy todir="${build.layout}/de.slisson.mps.all">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all" />
+    </copy>
+    <jar destfile="${build.layout}/org.campagnelab.mps.UI.jar" duplicate="preserve">
+      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.jar" />
+      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui-generator.jar" />
+      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui-src.jar" />
+      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.code-src.jar" />
+      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.code.jar" />
+    </jar>
+    <mkdir dir="${build.layout}/languages" />
+    <jar destfile="${build.layout}/languages/org.campagnelab.mps.ui.jar" duplicate="preserve">
+      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.jar" />
+    </jar>
+    <jar destfile="${build.layout}/languages/org.campagnelab.mps.ui-generator.jar" duplicate="preserve">
+      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui-generator.jar" />
+    </jar>
+    <jar destfile="${build.layout}/languages/org.campagnelab.mps.ui-src.jar" duplicate="preserve">
+      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui-src.jar" />
+    </jar>
+    <jar destfile="${build.layout}/languages/org.campagnelab.mps.ui.code-src.jar" duplicate="preserve">
+      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.code-src.jar" />
+    </jar>
+    <jar destfile="${build.layout}/languages/org.campagnelab.mps.ui.code.jar" duplicate="preserve">
+      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.code.jar" />
+    </jar>
     <mkdir dir="${build.layout}/bin" />
     <copy todir="${build.layout}/bin">
       <fileset dir="${artifacts.mpsStandalone}/bin">
@@ -76,6 +119,7 @@
       </filterchain>
     </copy>
     <mkdir dir="${build.layout}/lib" />
+    <copy file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" todir="${build.layout}/lib" />
     <copy todir="${build.layout}/lib">
       <fileset dir="${artifacts.mpsStandalone}/lib">
         <exclude name="MPS-src.zip" />
@@ -131,21 +175,385 @@
     <copy todir="${build.layout}/plugins/mps-core">
       <fileset dir="${artifacts.mpsStandalone}/plugins/mps-core" />
     </copy>
-    <mkdir dir="${build.layout}/plugins/plugins" />
-    <copy todir="${build.layout}/plugins/plugins">
-      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins" />
+    <mkdir dir="${build.layout}/plugins/mps-debugger-java" />
+    <copy todir="${build.layout}/plugins/mps-debugger-java">
+      <fileset dir="${artifacts.mps}/plugins/mps-debugger-java" />
     </copy>
-    <mkdir dir="${build.layout}/plugins/UI" />
-    <copy todir="${build.layout}/plugins/UI">
-      <fileset dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI" />
+    <mkdir dir="${build.layout}/plugins/mps-java" />
+    <copy todir="${build.layout}/plugins/mps-java">
+      <fileset dir="${artifacts.mps}/plugins/mps-java" />
     </copy>
-    <copy file="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" todir="${build.layout}/plugins" />
+    <mkdir dir="${build.layout}/plugins/mps-devkit" />
+    <copy todir="${build.layout}/plugins/mps-devkit">
+      <fileset dir="${artifacts.mps}/plugins/mps-devkit" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-make" />
+    <copy todir="${build.layout}/plugins/mps-make">
+      <fileset dir="${artifacts.mps}/plugins/mps-make" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-build" />
+    <copy todir="${build.layout}/plugins/mps-build">
+      <fileset dir="${artifacts.mps}/plugins/mps-build" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-testing" />
+    <copy todir="${build.layout}/plugins/mps-testing">
+      <fileset dir="${artifacts.mps}/plugins/mps-testing" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-debugger-api" />
+    <copy todir="${build.layout}/plugins/mps-debugger-api">
+      <fileset dir="${artifacts.mps}/plugins/mps-debugger-api" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-execution-api" />
+    <copy todir="${build.layout}/plugins/mps-execution-api">
+      <fileset dir="${artifacts.mps}/plugins/mps-execution-api" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-execution-configurations" />
+    <copy todir="${build.layout}/plugins/mps-execution-configurations">
+      <fileset dir="${artifacts.mps}/plugins/mps-execution-configurations" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-execution-languages" />
+    <copy todir="${build.layout}/plugins/mps-execution-languages">
+      <fileset dir="${artifacts.mps}/plugins/mps-execution-languages" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-vcs" />
+    <copy todir="${build.layout}/plugins/mps-vcs">
+      <fileset dir="${artifacts.mps}/plugins/mps-vcs" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/DeBrug" />
+    <mkdir dir="${build.layout}/plugins/DeBrug/META-INF" />
+    <echoxml file="${build.layout}/plugins/DeBrug/META-INF/plugin.xml">
+      <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>DeBrug</id>
+        <name>DeBrug</name>
+        <version>0.1</version>
+        <depends>jetbrains.mps.core</depends>
+        <depends>jetbrains.mps.ide.devkit</depends>
+        <depends>jetbrains.mps.ide.make</depends>
+        <depends>com.intellij.modules.mps</depends>
+        <depends>org.campagnelab.mps.UI</depends>
+        <depends>com.mbeddr.platform</depends>
+        <depends>com.mbeddr.mpsutil</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <mkdir dir="${build.layout}/plugins/DeBrug/languages" />
+    <mkdir dir="${build.layout}/plugins/DeBrug/languages/DeBrug" />
+    <mkdir dir="${build.tmp}/default/Datum.jar" />
+    <mkdir dir="${build.tmp}/default/Datum.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/Datum.jar/META-INF/module.xml">
+      <module namespace="Datum" type="language" uuid="61be2dc6-a140-4def-a592-7499aa2bac19">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="Datum-src.jar" descriptor="Datum.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Datum.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/Datum" />
+      <fileset dir="${basedir}/languages/Datum" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/Datum/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/Datum.jar" />
+    </jar>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Datum-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/Datum#848775529194317175" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-Datum-generator-template">
+      <fileset dir="${basedir}/languages/Datum/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-Datum-models">
+      <fileset dir="${basedir}/languages/Datum/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Datum-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/Datum/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/Datum/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/Datum/Datum.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-Datum-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-Datum-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/Gegevens.jar" />
+    <mkdir dir="${build.tmp}/default/Gegevens.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/Gegevens.jar/META-INF/module.xml">
+      <module namespace="Gegevens" type="language" uuid="30ef095a-d489-45ff-a80f-456a798ac125">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="Gegevens-src.jar" descriptor="Gegevens.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Gegevens.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/Gegevens" />
+      <fileset dir="${basedir}/languages/Gegevens" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/Gegevens/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/Gegevens.jar" />
+    </jar>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Gegevens-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/Gegevens#6166301676793402228" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-Gegevens-generator-template">
+      <fileset dir="${basedir}/languages/Gegevens/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-Gegevens-models">
+      <fileset dir="${basedir}/languages/Gegevens/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Gegevens-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/Gegevens/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/Gegevens/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/Gegevens/Gegevens.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-Gegevens-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-Gegevens-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/SubjectiefRecht.jar" />
+    <mkdir dir="${build.tmp}/default/SubjectiefRecht.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/SubjectiefRecht.jar/META-INF/module.xml">
+      <module namespace="SubjectiefRecht" type="language" uuid="2c493149-da1d-45e9-8ea2-e0b0cfc3047a">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="SubjectiefRecht-src.jar" descriptor="SubjectiefRecht.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/SubjectiefRecht.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/SubjectiefRecht" />
+      <fileset dir="${basedir}/languages/SubjectiefRecht" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/SubjectiefRecht/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/SubjectiefRecht.jar" />
+    </jar>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/SubjectiefRecht-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/SubjectiefRecht#7136310554705381513" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-SubjectiefRecht-generator-template">
+      <fileset dir="${basedir}/languages/SubjectiefRecht/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-SubjectiefRecht-models">
+      <fileset dir="${basedir}/languages/SubjectiefRecht/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/SubjectiefRecht-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/SubjectiefRecht/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/SubjectiefRecht/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/SubjectiefRecht/SubjectiefRecht.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-SubjectiefRecht-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-SubjectiefRecht-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/ObjectiefRecht.jar" />
+    <mkdir dir="${build.tmp}/default/ObjectiefRecht.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/ObjectiefRecht.jar/META-INF/module.xml">
+      <module namespace="ObjectiefRecht" type="language" uuid="8dc4b25f-4c49-400e-ac37-0fd230db702c">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="ObjectiefRecht-src.jar" descriptor="ObjectiefRecht.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/ObjectiefRecht.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ObjectiefRecht" />
+      <fileset dir="${basedir}/languages/GN" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/GN/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/ObjectiefRecht.jar" />
+    </jar>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/ObjectiefRecht-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ObjectiefRecht#6994217584621125733" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-GN-generator-template">
+      <fileset dir="${basedir}/languages/GN/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-GN-models">
+      <fileset dir="${basedir}/languages/GN/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/ObjectiefRecht-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/GN/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/GN/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/GN/ObjectiefRecht.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-GN-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-GN-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/GN.sandbox.jar" />
+    <mkdir dir="${build.tmp}/default/GN.sandbox.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/GN.sandbox.jar/META-INF/module.xml">
+      <module namespace="GN.sandbox" type="solution" uuid="fa88bb76-c276-483e-842a-c99ad2cbb026">
+        <dependencies />
+        <sources jar="GN.sandbox-src.jar" descriptor="GN.sandbox.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/GN.sandbox.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/GN.sandbox" />
+      <fileset dir="${basedir}/languages/GN/sandbox" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/GN/sandbox/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/GN.sandbox.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-GN-sandbox-models">
+      <fileset dir="${basedir}/languages/GN/sandbox/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/GN.sandbox-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/GN/sandbox/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/GN/sandbox/GN.sandbox.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-GN-sandbox-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/Simulatie.jar" />
+    <mkdir dir="${build.tmp}/default/Simulatie.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/Simulatie.jar/META-INF/module.xml">
+      <module namespace="Simulatie" type="language" uuid="15970de3-8fe7-4b13-81c7-38b38d51c39a">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="Simulatie-src.jar" descriptor="Simulatie.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Simulatie.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/Simulatie" />
+      <fileset dir="${basedir}/languages/Simulatie" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/Simulatie/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/Simulatie.jar" />
+    </jar>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Simulatie-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/Simulatie#7812026954661547138" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-Simulatie-generator-template">
+      <fileset dir="${basedir}/languages/Simulatie/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-Simulatie-models">
+      <fileset dir="${basedir}/languages/Simulatie/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Simulatie-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/Simulatie/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/Simulatie/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/Simulatie/Simulatie.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-Simulatie-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-Simulatie-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.layout}/plugins/mbeddr.core" />
+    <copy todir="${build.layout}/plugins/mbeddr.core">
+      <fileset dir="${mbeddr.files}" />
+    </copy>
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
-    <echo file="${build.layout}/build.properties">DeBrug.date=${date}${line.separator}DeBrug.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}${line.separator}org.campagnelab.mps.UI.ui_version=${org.campagnelab.mps.UI.ui_version}${line.separator}org.campagnelab.mps.UI.build_number=${org.campagnelab.mps.UI.build_number}</echo>
+    <echo file="${build.layout}/build.properties">DeBrug.date=${date}${line.separator}DeBrug.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}${line.separator}com.mbeddr.allScripts.build.major.version=${com.mbeddr.allScripts.build.major.version}${line.separator}com.mbeddr.allScripts.build.minor.version=${com.mbeddr.allScripts.build.minor.version}${line.separator}com.mbeddr.allScripts.build.build=${com.mbeddr.allScripts.build.build}${line.separator}com.mbeddr.allScripts.build.mbeddr.version=${com.mbeddr.allScripts.build.mbeddr.version}${line.separator}org.campagnelab.mps.UI.ui_version=${org.campagnelab.mps.UI.ui_version}${line.separator}org.campagnelab.mps.UI.build_number=${org.campagnelab.mps.UI.build_number}</echo>
   </target>
   
   <target name="buildDependents">
-    <ant antfile="ui.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../mbeddr.core/build/com.mbeddr.allScripts/build.xml" inheritAll="false" useNativeBasedir="true" />
   </target>
   
   <target name="fetchDependencies">
@@ -168,10 +576,7 @@
       <plugin path="${artifacts.mpsStandalone}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
-      <plugin path="${artifacts.mps}/plugins/mps-debugger-java" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
-      <plugin path="${artifacts.mps}/plugins/mps-execution-configurations" />
-      <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
       <plugin path="${artifacts.mps}/plugins/mps-make" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection" />
@@ -180,35 +585,13 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.layout" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.tooltips" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.conditionalEditor" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr-build" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.SmInComp" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.allInOne" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.analysesbase" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.cbmc" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.components" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.concurrency" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.debugger" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.doc" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.math" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform.build" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.ple" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.req" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.req.c" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.sat4j" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.spawner" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.statemachine" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.units" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-math-editor" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables" />
       <plugin path="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -284,17 +667,11 @@
       <library file="${artifacts.mpsStandalone}/lib/mps-tool.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
-      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.preset.jar" />
-      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr-build/languages/com.mbeddr.build/com.mbeddr.build.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.allInOne/languages/com.mbeddr.allInOne.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform.build/languages/com.mbeddr.platform.build/com.mbeddr.platform.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       <library file="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI/languages/org.campagnelab.ui.code.jar" />
@@ -314,6 +691,9 @@
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
       <macro name="mbeddr_core" path="${mbeddr_core}" />
+      <macro name="mbeddr.core.home" path="${mbeddr.core.home}" />
+      <macro name="mbeddr.mpsutil.home" path="${mbeddr.mpsutil.home}" />
+      <macro name="mbeddr.files" path="${mbeddr.files}" />
     </generate>
   </target>
   
@@ -322,7 +702,7 @@
   </target>
   
   <target name="makeDependents">
-    <ant antfile="ui.xml" inheritAll="false" useNativeBasedir="true">
+    <ant antfile="../mbeddr.core/build/com.mbeddr.allScripts/build.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
@@ -733,7 +1113,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.allInOne/languages/com.mbeddr.allInOne.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
@@ -780,7 +1159,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.allInOne/languages/com.mbeddr.allInOne.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />

@@ -14,10 +14,11 @@
     <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
     <dependency reexport="false">31c91def-a131-41a1-9018-102874f49a12(de.slisson.mps.editor.multiline)</dependency>
     <dependency reexport="false">442d3b7d-fe4a-4293-a7c1-6744d440ecaa(com.mbeddr.mpsutil.richstring)</dependency>
-    <dependency reexport="false">cbbb9e79-84e5-4c2e-b1a2-11a381c7baf9(com.mbeddr.allInOne)</dependency>
     <dependency reexport="false">7ac0dfb8-7d5f-4573-ab80-81af2106ce03(com.mbeddr.build)</dependency>
     <dependency reexport="false">f1fb7b1c-ce0d-423c-9369-4a661d600029(de.slisson.mps.all.build)</dependency>
-    <dependency reexport="false">cc89bf25-e3f9-4bb2-85ef-4fe4b67a0564(com.mbeddr.platform.build.templates)</dependency>
+    <dependency reexport="false">cbbb9e79-84e5-4c2e-b1a2-11a381c7baf9(com.mbeddr.allInOne)</dependency>
+    <dependency reexport="false">752496a0-da43-4b5e-bd15-ea1a5aa211f6(com.mbeddr.allScripts)</dependency>
+    <dependency reexport="false">3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:31c91def-a131-41a1-9018-102874f49a12:de.slisson.mps.editor.multiline" version="0" />
@@ -50,9 +51,10 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="cbbb9e79-84e5-4c2e-b1a2-11a381c7baf9(com.mbeddr.allInOne)" version="0" />
+    <module reference="752496a0-da43-4b5e-bd15-ea1a5aa211f6(com.mbeddr.allScripts)" version="0" />
     <module reference="7ac0dfb8-7d5f-4573-ab80-81af2106ce03(com.mbeddr.build)" version="0" />
     <module reference="442d3b7d-fe4a-4293-a7c1-6744d440ecaa(com.mbeddr.mpsutil.richstring)" version="0" />
-    <module reference="cc89bf25-e3f9-4bb2-85ef-4fe4b67a0564(com.mbeddr.platform.build.templates)" version="0" />
+    <module reference="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
     <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.slisson.mps.all.build)" version="0" />

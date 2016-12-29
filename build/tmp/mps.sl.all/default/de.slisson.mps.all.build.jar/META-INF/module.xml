@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module namespace="de.slisson.mps.all.build" type="solution" uuid="f1fb7b1c-ce0d-423c-9369-4a661d600029">
-  <dependencies />
-  <sources descriptor="de.slisson.mps.all.build.msd" jar="de.slisson.mps.all.build-src.jar" />
-</module>

@@ -12,6 +12,11 @@
     <import index="8x72" ref="r:34ee2a0e-8918-4f4b-acf5-81a2eb8727e9(DeBrug.buildmpsui)" />
     <import index="xsd6" ref="r:ca2b582e-fdcb-4767-9d74-cf61b47911f2(com.mbeddr.allInOne)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
+    <import index="rnv7" ref="r:25d73da3-059c-464e-8c7d-e2854813a3fb(mps-apache-commons.build)" />
+    <import index="3fk" ref="r:caa661d5-e529-469c-bb25-dfa7a83b768e(com.mbeddr.allScripts.build)" />
+    <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
+    <import index="fq0c" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#3ae9cfda-f938-4524-b4ca-fbcba3b0525b(jetbrains.mps.lang.project.modules/module.com.mbeddr.platform@project_stub)" />
+    <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" implicit="true" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -137,6 +142,9 @@
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
+      </concept>
+      <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
+        <reference id="6592112598314801433" name="plugin" index="m_rDy" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
@@ -374,6 +382,57 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="3fK9Qf5Eig3" role="1l3spd">
+      <property role="TrG5h" value="mbeddr.core.home" />
+      <node concept="55IIr" id="3fK9Qf5EipL" role="398pKh">
+        <node concept="2Ry0Ak" id="3fK9Qf5Eiro" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3fK9Qf5Eiwk" role="2Ry0An">
+            <property role="2Ry0Am" value="mbeddr.core" />
+            <node concept="2Ry0Ak" id="3fK9Qf5Eizx" role="2Ry0An">
+              <property role="2Ry0Am" value="code" />
+              <node concept="2Ry0Ak" id="3fK9Qf5Ei_a" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3fK9Qf5EiC0" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.core" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="3fK9Qf5EiCO" role="1l3spd">
+      <property role="TrG5h" value="mbeddr.mpsutil.home" />
+      <node concept="55IIr" id="3fK9Qf5EiVf" role="398pKh">
+        <node concept="2Ry0Ak" id="3fK9Qf5EiVi" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3fK9Qf5EiXH" role="2Ry0An">
+            <property role="2Ry0Am" value="mbeddr.core" />
+            <node concept="2Ry0Ak" id="3fK9Qf5EiZm" role="2Ry0An">
+              <property role="2Ry0Am" value="code" />
+              <node concept="2Ry0Ak" id="3fK9Qf5Ej0Z" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3fK9Qf5Ej2C" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="3fK9Qf5EE_6" role="1l3spd">
+      <property role="TrG5h" value="mbeddr.files" />
+      <node concept="55IIr" id="3fK9Qf5EELG" role="398pKh">
+        <node concept="2Ry0Ak" id="3fK9Qf5EEOT" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.allInOne" />
+          <node concept="2Ry0Ak" id="3fK9Qf5EEQy" role="2Ry0An">
+            <property role="2Ry0Am" value="mbeddr.core" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2sgV4H" id="6oU3FTq8dbK" role="1l3spa">
       <ref role="1l3spb" to="ffeo:1diLdO26mQ6" resolve="mpsStandalone" />
       <node concept="398BVA" id="6oU3FTq8dbL" role="2JcizS">
@@ -383,6 +442,30 @@
     <node concept="2sgV4H" id="5mj6FhvaVPj" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="5mj6FhvaVQ4" role="2JcizS">
+        <ref role="398BVh" node="6oU3FTq8dbJ" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="12YmGDUop1c" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:7pdFgzxlDme" resolve="mpsBuild" />
+      <node concept="398BVA" id="12YmGDUop2j" role="2JcizS">
+        <ref role="398BVh" node="6oU3FTq8dbJ" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="12YmGDUop4f" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:78GwwOvE66s" resolve="mpsBuildUI" />
+      <node concept="398BVA" id="12YmGDUop5o" role="2JcizS">
+        <ref role="398BVh" node="6oU3FTq8dbJ" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="1_LvcTQCMhm" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:5mc7nVumjii" resolve="mpsDebuggerPlugin" />
+      <node concept="398BVA" id="1_LvcTQCMiv" role="2JcizS">
+        <ref role="398BVh" node="6oU3FTq8dbJ" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="1_LvcTQCMkt" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:5xa9wY2vh7j" resolve="mpsExecutionPlugin" />
+      <node concept="398BVA" id="1_LvcTQCMlC" role="2JcizS">
         <ref role="398BVh" node="6oU3FTq8dbJ" resolve="mps_home" />
       </node>
     </node>
@@ -398,33 +481,314 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="6LCrFJ4kNZc" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="6LCrFJ4l5yY" role="2JcizS">
+    <node concept="2sgV4H" id="fWIJonDCrj" role="1l3spa">
+      <ref role="1l3spb" to="3fk:7uZw0yZ43Jk" resolve="com.mbeddr.allScripts.build" />
+    </node>
+    <node concept="2sgV4H" id="6JjBh8P8pjS" role="1l3spa">
+      <ref role="1l3spb" to="rnv7:4nVhWYPmNY9" resolve="mps-apache-commons" />
+      <node concept="398BVA" id="6JjBh8P8pkY" role="2JcizS">
         <ref role="398BVh" node="6ydj2wXyUdy" resolve="mbeddr_core" />
-        <node concept="2Ry0Ak" id="6LCrFJ4l5zV" role="iGT6I">
+        <node concept="2Ry0Ak" id="6JjBh8P8plP" role="iGT6I">
           <property role="2Ry0Am" value="artifacts" />
-          <node concept="2Ry0Ak" id="6LCrFJ4l5$0" role="2Ry0An">
+          <node concept="2Ry0Ak" id="6JjBh8P8plU" role="2Ry0An">
             <property role="2Ry0Am" value="mps-sl-all" />
+            <node concept="2Ry0Ak" id="6JjBh8P8plX" role="2Ry0An" />
           </node>
         </node>
       </node>
     </node>
     <node concept="2sgV4H" id="2E_FCJvvzDH" role="1l3spa">
       <ref role="1l3spb" to="8x72:5KK2jWpWo00" resolve="org.campagnelab.mps.UI" />
+      <node concept="55IIr" id="4qdElOPXeTu" role="2JcizS">
+        <node concept="2Ry0Ak" id="6rZyroMSUlQ" role="iGT6I">
+          <property role="2Ry0Am" value="org.campagnelab.UI" />
+        </node>
+      </node>
     </node>
     <node concept="1l3spV" id="6oU3FTq8ddf" role="1l3spN">
       <node concept="3_I8Xc" id="6oU3FTq8ddn" role="39821P">
         <ref role="3_I8Xa" to="ffeo:1diLdO26H79" resolve="languages" />
       </node>
+      <node concept="3_I8Xc" id="2z0gM00AIHV" role="39821P">
+        <ref role="3_I8Xa" to="ffeo:1diLdO27pJE" resolve="workbench" />
+      </node>
       <node concept="3_I8Xc" id="6oU3FTq8ddo" role="39821P">
         <ref role="3_I8Xa" to="ffeo:1aRUp2KiMC$" resolve="license" />
       </node>
-      <node concept="3_I8Xc" id="15mV2eOBO$w" role="39821P">
-        <ref role="3_I8Xa" to="8x72:5KK2jWpWo0w" resolve="org.campagnelab.UI-3.0.0.zip" />
+      <node concept="3_I8Xc" id="fWIJonDC8P" role="39821P">
+        <ref role="3_I8Xa" to="xsd6:6xkorKj3Uwa" resolve="plugins" />
       </node>
-      <node concept="3_I8Xc" id="15mV2eOBOEr" role="39821P">
-        <ref role="3_I8Xa" to="8x72:5KK2jWpWo0z" resolve="UI" />
+      <node concept="3_I8Xc" id="5IgeSosN8gV" role="39821P">
+        <ref role="3_I8Xa" to="90a9:4hvHh3QWqH0" resolve="de.slisson.mps.all" />
+      </node>
+      <node concept="3981dx" id="7Gdv2L4uZkw" role="39821P">
+        <node concept="3_J27D" id="7Gdv2L4uZky" role="Nbhlr">
+          <node concept="3Mxwew" id="7Gdv2L4uZm8" role="3MwsjC">
+            <property role="3MwjfP" value="org.campagnelab.mps.UI.jar" />
+          </node>
+        </node>
+        <node concept="28jJK3" id="7Gdv2L4vo5K" role="39821P">
+          <node concept="55IIr" id="7Gdv2L4vo5L" role="28jJRO">
+            <node concept="2Ry0Ak" id="7Gdv2L4vo5M" role="iGT6I">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="7Gdv2L4vo5N" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="7Gdv2L4vo5O" role="2Ry0An">
+                  <property role="2Ry0Am" value="Downloads" />
+                  <node concept="2Ry0Ak" id="7Gdv2L4vo5P" role="2Ry0An">
+                    <property role="2Ry0Am" value="UI" />
+                    <node concept="2Ry0Ak" id="7Gdv2L4vo5Q" role="2Ry0An">
+                      <property role="2Ry0Am" value="languages" />
+                      <node concept="2Ry0Ak" id="7Gdv2L4vo7j" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.campagnelab.ui.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="28jJK3" id="7Gdv2L4vo1S" role="39821P">
+          <node concept="55IIr" id="7Gdv2L4vo1T" role="28jJRO">
+            <node concept="2Ry0Ak" id="7Gdv2L4vo1U" role="iGT6I">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="7Gdv2L4vo1V" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="7Gdv2L4vo1W" role="2Ry0An">
+                  <property role="2Ry0Am" value="Downloads" />
+                  <node concept="2Ry0Ak" id="7Gdv2L4vo1X" role="2Ry0An">
+                    <property role="2Ry0Am" value="UI" />
+                    <node concept="2Ry0Ak" id="7Gdv2L4vo1Y" role="2Ry0An">
+                      <property role="2Ry0Am" value="languages" />
+                      <node concept="2Ry0Ak" id="7Gdv2L4vo3k" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.campagnelab.ui-generator.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="28jJK3" id="7Gdv2L4vfBg" role="39821P">
+          <node concept="55IIr" id="7Gdv2L4uZpr" role="28jJRO">
+            <node concept="2Ry0Ak" id="7Gdv2L4uZqj" role="iGT6I">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="7Gdv2L4uZqo" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="7Gdv2L4uZqt" role="2Ry0An">
+                  <property role="2Ry0Am" value="Downloads" />
+                  <node concept="2Ry0Ak" id="7Gdv2L4uZqy" role="2Ry0An">
+                    <property role="2Ry0Am" value="UI" />
+                    <node concept="2Ry0Ak" id="7Gdv2L4uZqB" role="2Ry0An">
+                      <property role="2Ry0Am" value="languages" />
+                      <node concept="2Ry0Ak" id="7Gdv2L4vo48" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.campagnelab.ui-src.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="28jJK3" id="7Gdv2L4vnIy" role="39821P">
+          <node concept="55IIr" id="7Gdv2L4vnKc" role="28jJRO">
+            <node concept="2Ry0Ak" id="7Gdv2L4vnKd" role="iGT6I">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="7Gdv2L4vnKe" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="7Gdv2L4vnKf" role="2Ry0An">
+                  <property role="2Ry0Am" value="Downloads" />
+                  <node concept="2Ry0Ak" id="7Gdv2L4vnKg" role="2Ry0An">
+                    <property role="2Ry0Am" value="UI" />
+                    <node concept="2Ry0Ak" id="7Gdv2L4vnKh" role="2Ry0An">
+                      <property role="2Ry0Am" value="languages" />
+                      <node concept="2Ry0Ak" id="7Gdv2L4vo4W" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.campagnelab.ui.code-src.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="28jJK3" id="7Gdv2L4vnM0" role="39821P">
+          <node concept="55IIr" id="7Gdv2L4vnM1" role="28jJRO">
+            <node concept="2Ry0Ak" id="7Gdv2L4vnM2" role="iGT6I">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="7Gdv2L4vnM3" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="7Gdv2L4vnM4" role="2Ry0An">
+                  <property role="2Ry0Am" value="Downloads" />
+                  <node concept="2Ry0Ak" id="7Gdv2L4vnM5" role="2Ry0An">
+                    <property role="2Ry0Am" value="UI" />
+                    <node concept="2Ry0Ak" id="7Gdv2L4vnM6" role="2Ry0An">
+                      <property role="2Ry0Am" value="languages" />
+                      <node concept="2Ry0Ak" id="7Gdv2L4vnM7" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.campagnelab.ui.code.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="398223" id="4EmuLL95uhY" role="39821P">
+        <node concept="3981dx" id="4EmuLL95Aud" role="39821P">
+          <node concept="3_J27D" id="4EmuLL95Aue" role="Nbhlr">
+            <node concept="3Mxwew" id="4EmuLL95Auf" role="3MwsjC">
+              <property role="3MwjfP" value="org.campagnelab.mps.ui.jar" />
+            </node>
+          </node>
+          <node concept="28jJK3" id="4EmuLL95Aug" role="39821P">
+            <node concept="55IIr" id="4EmuLL95Auh" role="28jJRO">
+              <node concept="2Ry0Ak" id="4EmuLL95Aui" role="iGT6I">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="4EmuLL95Auj" role="2Ry0An">
+                  <property role="2Ry0Am" value=".." />
+                  <node concept="2Ry0Ak" id="4EmuLL95Auk" role="2Ry0An">
+                    <property role="2Ry0Am" value="Downloads" />
+                    <node concept="2Ry0Ak" id="4EmuLL95Aul" role="2Ry0An">
+                      <property role="2Ry0Am" value="UI" />
+                      <node concept="2Ry0Ak" id="4EmuLL95Aum" role="2Ry0An">
+                        <property role="2Ry0Am" value="languages" />
+                        <node concept="2Ry0Ak" id="4EmuLL95J7v" role="2Ry0An">
+                          <property role="2Ry0Am" value="org.campagnelab.ui.jar" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3981dx" id="4EmuLL95A_a" role="39821P">
+          <node concept="3_J27D" id="4EmuLL95A_b" role="Nbhlr">
+            <node concept="3Mxwew" id="4EmuLL95A_c" role="3MwsjC">
+              <property role="3MwjfP" value="org.campagnelab.mps.ui-generator.jar" />
+            </node>
+          </node>
+          <node concept="28jJK3" id="4EmuLL95A_l" role="39821P">
+            <node concept="55IIr" id="4EmuLL95A_m" role="28jJRO">
+              <node concept="2Ry0Ak" id="4EmuLL95A_n" role="iGT6I">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="4EmuLL95A_o" role="2Ry0An">
+                  <property role="2Ry0Am" value=".." />
+                  <node concept="2Ry0Ak" id="4EmuLL95A_p" role="2Ry0An">
+                    <property role="2Ry0Am" value="Downloads" />
+                    <node concept="2Ry0Ak" id="4EmuLL95A_q" role="2Ry0An">
+                      <property role="2Ry0Am" value="UI" />
+                      <node concept="2Ry0Ak" id="4EmuLL95A_r" role="2Ry0An">
+                        <property role="2Ry0Am" value="languages" />
+                        <node concept="2Ry0Ak" id="4EmuLL95A_s" role="2Ry0An">
+                          <property role="2Ry0Am" value="org.campagnelab.ui-generator.jar" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3981dx" id="4EmuLL95ukh" role="39821P">
+          <node concept="3_J27D" id="4EmuLL95uki" role="Nbhlr">
+            <node concept="3Mxwew" id="4EmuLL95ukj" role="3MwsjC">
+              <property role="3MwjfP" value="org.campagnelab.mps.ui-src.jar" />
+            </node>
+          </node>
+          <node concept="28jJK3" id="4EmuLL95uk$" role="39821P">
+            <node concept="55IIr" id="4EmuLL95uk_" role="28jJRO">
+              <node concept="2Ry0Ak" id="4EmuLL95ukA" role="iGT6I">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="4EmuLL95ukB" role="2Ry0An">
+                  <property role="2Ry0Am" value=".." />
+                  <node concept="2Ry0Ak" id="4EmuLL95ukC" role="2Ry0An">
+                    <property role="2Ry0Am" value="Downloads" />
+                    <node concept="2Ry0Ak" id="4EmuLL95ukD" role="2Ry0An">
+                      <property role="2Ry0Am" value="UI" />
+                      <node concept="2Ry0Ak" id="4EmuLL95ukE" role="2Ry0An">
+                        <property role="2Ry0Am" value="languages" />
+                        <node concept="2Ry0Ak" id="4EmuLL95ukF" role="2Ry0An">
+                          <property role="2Ry0Am" value="org.campagnelab.ui-src.jar" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3981dx" id="4EmuLL95AIW" role="39821P">
+          <node concept="3_J27D" id="4EmuLL95AIX" role="Nbhlr">
+            <node concept="3Mxwew" id="4EmuLL95AIY" role="3MwsjC">
+              <property role="3MwjfP" value="org.campagnelab.mps.ui.code-src.jar" />
+            </node>
+          </node>
+          <node concept="28jJK3" id="4EmuLL95ALw" role="39821P">
+            <node concept="55IIr" id="4EmuLL95ALx" role="28jJRO">
+              <node concept="2Ry0Ak" id="4EmuLL95ALy" role="iGT6I">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="4EmuLL95ALz" role="2Ry0An">
+                  <property role="2Ry0Am" value=".." />
+                  <node concept="2Ry0Ak" id="4EmuLL95AL$" role="2Ry0An">
+                    <property role="2Ry0Am" value="Downloads" />
+                    <node concept="2Ry0Ak" id="4EmuLL95AL_" role="2Ry0An">
+                      <property role="2Ry0Am" value="UI" />
+                      <node concept="2Ry0Ak" id="4EmuLL95ALA" role="2Ry0An">
+                        <property role="2Ry0Am" value="languages" />
+                        <node concept="2Ry0Ak" id="4EmuLL95ALB" role="2Ry0An">
+                          <property role="2Ry0Am" value="org.campagnelab.ui.code-src.jar" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3981dx" id="4EmuLL95ALl" role="39821P">
+          <node concept="3_J27D" id="4EmuLL95ALm" role="Nbhlr">
+            <node concept="3Mxwew" id="4EmuLL95ALn" role="3MwsjC">
+              <property role="3MwjfP" value="org.campagnelab.mps.ui.code.jar" />
+            </node>
+          </node>
+          <node concept="28jJK3" id="4EmuLL95ALC" role="39821P">
+            <node concept="55IIr" id="4EmuLL95ALD" role="28jJRO">
+              <node concept="2Ry0Ak" id="4EmuLL95ALE" role="iGT6I">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="4EmuLL95ALF" role="2Ry0An">
+                  <property role="2Ry0Am" value=".." />
+                  <node concept="2Ry0Ak" id="4EmuLL95ALG" role="2Ry0An">
+                    <property role="2Ry0Am" value="Downloads" />
+                    <node concept="2Ry0Ak" id="4EmuLL95ALH" role="2Ry0An">
+                      <property role="2Ry0Am" value="UI" />
+                      <node concept="2Ry0Ak" id="4EmuLL95ALI" role="2Ry0An">
+                        <property role="2Ry0Am" value="languages" />
+                        <node concept="2Ry0Ak" id="4EmuLL95ALJ" role="2Ry0An">
+                          <property role="2Ry0Am" value="org.campagnelab.ui.code.jar" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3_J27D" id="4EmuLL95ui0" role="Nbhlr">
+          <node concept="3Mxwew" id="4EmuLL95ukf" role="3MwsjC">
+            <property role="3MwjfP" value="languages" />
+          </node>
+        </node>
       </node>
       <node concept="398223" id="6oU3FTq8ddp" role="39821P">
         <node concept="3_J27D" id="6oU3FTq8ddq" role="Nbhlr">
@@ -466,6 +830,9 @@
         </node>
       </node>
       <node concept="398223" id="6oU3FTq8dd$" role="39821P">
+        <node concept="3_I8Xc" id="2z0gM00AIMN" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5xa9wY2ujzt" resolve="mps-workbench.jar" />
+        </node>
         <node concept="3_J27D" id="6oU3FTq8dd_" role="Nbhlr">
           <node concept="3Mxwew" id="6oU3FTq8ddA" role="3MwsjC">
             <property role="3MwjfP" value="lib" />
@@ -504,18 +871,57 @@
         <node concept="3_I8Xc" id="6oU3FTq8ddM" role="39821P">
           <ref role="3_I8Xa" to="ffeo:ymnOULBdbM" resolve="mps-core" />
         </node>
-        <node concept="3_I8Xc" id="Ps6tifYYjC" role="39821P">
-          <ref role="3_I8Xa" to="xsd6:6xkorKj3Uwa" resolve="plugins" />
+        <node concept="3_I8Xc" id="44OjF0G3_ur" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5CFKsRWS5yu" resolve="mps-debugger-java" />
         </node>
-        <node concept="3_I8Xc" id="Ps6tifYYpg" role="39821P">
-          <ref role="3_I8Xa" to="8x72:5KK2jWpWo0z" resolve="UI" />
+        <node concept="3_I8Xc" id="44OjF0G3_xj" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:1CY6j2K5DAF" resolve="mps-java" />
         </node>
-        <node concept="3_I8Xc" id="6jbewT4Sm4_" role="39821P">
-          <ref role="3_I8Xa" to="8x72:5KK2jWpWo0w" resolve="org.campagnelab.UI-3.0.0.zip" />
+        <node concept="3_I8Xc" id="2z0gM00AIwP" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:4O0hKJpjIVy" resolve="mps-devkit" />
+        </node>
+        <node concept="3_I8Xc" id="2z0gM00AIzt" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
+        </node>
+        <node concept="3_I8Xc" id="5moPWwr8lbP" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:6b4RkXS7XdG" resolve="mps-build" />
+        </node>
+        <node concept="3_I8Xc" id="2R632D3dUfs" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:ymnOULAZ8H" resolve="mps-testing" />
+        </node>
+        <node concept="3_I8Xc" id="2R632D3dUi8" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5CFKsRWS5pU" resolve="mps-debugger-api" />
+        </node>
+        <node concept="3_I8Xc" id="1_LvcTQCMek" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5CFKsRWRsZ0" resolve="mps-execution-api" />
+        </node>
+        <node concept="3_I8Xc" id="5xutho7G6u2" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:35y4BF72kxA" resolve="mps-execution-configurations" />
+        </node>
+        <node concept="3_I8Xc" id="5xutho7G6wQ" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:35y4BF72i$D" resolve="mps-execution-languages" />
+        </node>
+        <node concept="3_I8Xc" id="2R632D3dUkQ" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:RJsmGEig2V" resolve="mps-vcs" />
+        </node>
+        <node concept="m$_wl" id="5fHjEpz$5EG" role="39821P">
+          <ref role="m_rDy" node="6oU3FTq8dd6" resolve="DeBrug" />
         </node>
         <node concept="3_J27D" id="6oU3FTq8ddO" role="Nbhlr">
           <node concept="3Mxwew" id="6oU3FTq8ddP" role="3MwsjC">
             <property role="3MwjfP" value="plugins" />
+          </node>
+        </node>
+      </node>
+      <node concept="398223" id="3fK9Qf5EErD" role="39821P">
+        <node concept="3_J27D" id="3fK9Qf5EErF" role="Nbhlr">
+          <node concept="3Mxwew" id="3fK9Qf5EEuZ" role="3MwsjC">
+            <property role="3MwjfP" value="plugins/mbeddr.core" />
+          </node>
+        </node>
+        <node concept="2HvfSZ" id="3fK9Qf5EGVD" role="39821P">
+          <node concept="398BVA" id="3fK9Qf5EGWv" role="2HvfZ0">
+            <ref role="398BVh" node="3fK9Qf5EE_6" resolve="mbeddr.files" />
           </node>
         </node>
       </node>
@@ -563,9 +969,6 @@
           <property role="3MwjfP" value="0.1" />
         </node>
       </node>
-      <node concept="m$f5U" id="6oU3FTq8ddb" role="m$_yh">
-        <ref role="m$f5T" node="6oU3FTq8dd5" resolve="DeBrug" />
-      </node>
       <node concept="m$_yC" id="6oU3FTq8ddc" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
@@ -578,19 +981,22 @@
       <node concept="m$_yC" id="2xDgDlj6nXj" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
-      <node concept="m$_yC" id="6LCrFJ4nQhp" role="m$_yJ">
-        <ref role="m$_y1" to="xsd6:3Cx6vuJncJb" resolve="com.mbeddr.allInOne.build" />
-      </node>
-      <node concept="m$_yC" id="6LCrFJ4kO8S" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
-      </node>
       <node concept="m$_yC" id="2E_FCJvvzFV" role="m$_yJ">
         <ref role="m$_y1" to="8x72:5KK2jWpWo0m" resolve="org.campagnelab.mps.UI" />
+      </node>
+      <node concept="m$_yC" id="1IjZ0o_kZ$0" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
+      </node>
+      <node concept="m$_yC" id="1IjZ0o_kZxd" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
       </node>
       <node concept="3_J27D" id="6oU3FTq8ddd" role="m_cZH">
         <node concept="3Mxwew" id="6oU3FTq8dde" role="3MwsjC">
           <property role="3MwjfP" value="DeBrug" />
         </node>
+      </node>
+      <node concept="m$f5U" id="fWIJon_chx" role="m$_yh">
+        <ref role="m$f5T" node="6oU3FTq8dd5" resolve="DeBrug" />
       </node>
     </node>
     <node concept="2G$12M" id="6oU3FTq8dd5" role="3989C9">
@@ -772,11 +1178,6 @@
             <ref role="3bR37D" node="6oU3FTq8dcX" resolve="ObjectiefRecht" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2V2Tn1mJp8v" role="3bR37C">
-          <node concept="3bR9La" id="2V2Tn1mJp9A" role="1SiIV1">
-            <ref role="3bR37D" to="xsd6:IW6Povi5V3" resolve="com.mbeddr.allInOne" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="2xDgDlj6eM6" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -838,11 +1239,6 @@
           <node concept="3bR9La" id="5ccjybLCk2H" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="8x72:5KK2jWpWo0k" resolve="org.campagnelab.ui.code" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2V2Tn1mJp2n" role="3bR37C">
-          <node concept="3bR9La" id="2V2Tn1mJp3A" role="1SiIV1">
-            <ref role="3bR37D" to="xsd6:IW6Povi5V3" resolve="com.mbeddr.allInOne" />
           </node>
         </node>
         <node concept="1yeLz9" id="5RhAgJkdF7e" role="1TViLv">
