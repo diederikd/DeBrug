@@ -92,7 +92,7 @@
         <build number="${build.number}" date="${date}" />
         <logo url="/splash.png" textcolor="002387" />
         <about url="/about.png" />
-        <icon size32="/MPS32.png" size16="/MPS16.png" size32opaque="/MPS32.png" />
+        <icon size32="/legal32.png" size16="/legal16.png" size32opaque="/legal32.png" size128="/legal128.png" />
         <dialogs-image url="/dialogImage.png" />
         <package code="code" />
         <names product="DeBrug" fullname="DeBrug" />
@@ -105,12 +105,13 @@
       </component>
     </echoxml>
     <jar destfile="${build.layout}/lib/branding.jar" duplicate="preserve">
-      <fileset file="${basedir}/icons/MPS16.png" />
-      <fileset file="${basedir}/icons/MPS32.png" />
-      <fileset file="${basedir}/icons/logo.png" />
-      <fileset file="${basedir}/icons/splash.png" />
-      <fileset file="${basedir}/icons/about.png" />
-      <fileset file="${basedir}/icons/dialogImage.png" />
+      <fileset file="${basedir}/images/legal16.png" />
+      <fileset file="${basedir}/images/legal32.png" />
+      <fileset file="${basedir}/images/legal128.png" />
+      <fileset file="${basedir}/images/logo.png" />
+      <fileset file="${basedir}/images/splash.png" />
+      <fileset file="${basedir}/images/about.png" />
+      <fileset file="${basedir}/images/dialogImage.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
     </jar>
     <jar destfile="${build.layout}/lib/org.apache.commons.jar" duplicate="preserve">
@@ -147,10 +148,10 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
     <unzip src="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" dest="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip" />
-    <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip" />
     <mkdir dir="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip" />
     <unzip src="${artifacts.mps-apache-commons}/mps-plugin-org.apache.commons.zip" dest="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip" />
+    <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip" />
   </target>
   
   <target name="build" depends="assemble" />

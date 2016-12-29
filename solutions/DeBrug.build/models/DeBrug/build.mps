@@ -175,6 +175,7 @@
         <child id="6108265972537372848" name="fullName" index="2EtHGT" />
         <child id="8795525031433238889" name="textColor" index="HFo83" />
         <child id="781140262677914381" name="company" index="IuKBz" />
+        <child id="781140262677761022" name="icon128" index="IvI4g" />
         <child id="781140262677761833" name="plugins" index="IvIn7" />
         <child id="3497141547781549827" name="codename" index="2OjNyQ" />
         <child id="1462305029084462472" name="buildDate" index="R$TG_" />
@@ -212,7 +213,7 @@
       <property role="2OjLBL" value="0" />
       <node concept="55IIr" id="6oU3FTq8dbQ" role="3vi$VU">
         <node concept="2Ry0Ak" id="6oU3FTq8dbR" role="iGT6I">
-          <property role="2Ry0Am" value="icons" />
+          <property role="2Ry0Am" value="images" />
           <node concept="2Ry0Ak" id="6oU3FTq8dbS" role="2Ry0An">
             <property role="2Ry0Am" value="logo.png" />
           </node>
@@ -225,9 +226,9 @@
       </node>
       <node concept="55IIr" id="6oU3FTq8dbV" role="2EteIi">
         <node concept="2Ry0Ak" id="6oU3FTq8dbW" role="iGT6I">
-          <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="6oU3FTq8dbX" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS16.png" />
+          <property role="2Ry0Am" value="images" />
+          <node concept="2Ry0Ak" id="2E_FCJvvP0d" role="2Ry0An">
+            <property role="2Ry0Am" value="legal16.png" />
           </node>
         </node>
       </node>
@@ -253,9 +254,9 @@
       </node>
       <node concept="55IIr" id="6oU3FTq8dc6" role="2EteIj">
         <node concept="2Ry0Ak" id="6oU3FTq8dc7" role="iGT6I">
-          <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="6oU3FTq8dc8" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS32.png" />
+          <property role="2Ry0Am" value="images" />
+          <node concept="2Ry0Ak" id="2E_FCJvvP1X" role="2Ry0An">
+            <property role="2Ry0Am" value="legal32.png" />
           </node>
         </node>
       </node>
@@ -266,31 +267,31 @@
       </node>
       <node concept="55IIr" id="6oU3FTq8dcb" role="2EteIl">
         <node concept="2Ry0Ak" id="6oU3FTq8dcc" role="iGT6I">
-          <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="6oU3FTq8dcd" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS32.png" />
+          <property role="2Ry0Am" value="images" />
+          <node concept="2Ry0Ak" id="2E_FCJvvP3Q" role="2Ry0An">
+            <property role="2Ry0Am" value="legal32.png" />
           </node>
         </node>
       </node>
       <node concept="55IIr" id="6oU3FTq8dce" role="2EqU2t">
         <node concept="2Ry0Ak" id="6oU3FTq8dcf" role="iGT6I">
-          <property role="2Ry0Am" value="icons" />
+          <property role="2Ry0Am" value="images" />
           <node concept="2Ry0Ak" id="6oU3FTq8dcg" role="2Ry0An">
             <property role="2Ry0Am" value="splash.png" />
           </node>
         </node>
       </node>
-      <node concept="55IIr" id="6oU3FTq8dch" role="2EqU2s">
-        <node concept="2Ry0Ak" id="6oU3FTq8dci" role="iGT6I">
-          <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="6oU3FTq8dcj" role="2Ry0An">
+      <node concept="55IIr" id="2E_FCJvvOTZ" role="2EqU2s">
+        <node concept="2Ry0Ak" id="2E_FCJvvOVN" role="iGT6I">
+          <property role="2Ry0Am" value="images" />
+          <node concept="2Ry0Ak" id="2E_FCJvvOWJ" role="2Ry0An">
             <property role="2Ry0Am" value="about.png" />
           </node>
         </node>
       </node>
       <node concept="55IIr" id="6oU3FTq8dck" role="2t3ecf">
         <node concept="2Ry0Ak" id="6oU3FTq8dcl" role="iGT6I">
-          <property role="2Ry0Am" value="icons" />
+          <property role="2Ry0Am" value="images" />
           <node concept="2Ry0Ak" id="6oU3FTq8dcm" role="2Ry0An">
             <property role="2Ry0Am" value="dialogImage.png" />
           </node>
@@ -306,6 +307,14 @@
         <node concept="3_J27D" id="2Y1N7hkHY_I" role="IuM$c">
           <node concept="3Mxwew" id="2Y1N7hkHYAF" role="3MwsjC">
             <property role="3MwjfP" value="http://deblauwekamer.nu" />
+          </node>
+        </node>
+      </node>
+      <node concept="55IIr" id="2E_FCJvvP4J" role="IvI4g">
+        <node concept="2Ry0Ak" id="2E_FCJvvP6y" role="iGT6I">
+          <property role="2Ry0Am" value="images" />
+          <node concept="2Ry0Ak" id="2E_FCJvvP7u" role="2Ry0An">
+            <property role="2Ry0Am" value="legal128.png" />
           </node>
         </node>
       </node>

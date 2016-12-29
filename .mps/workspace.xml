@@ -12,205 +12,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f9a1364-78d3-4826-8144-af78ce41dd34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/buildslisson/mps-sl-all.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/buildslisson/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/models/DeBrug/buildslisson.mps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen.caches/DeBrug/buildslisson/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen.caches/DeBrug/buildslisson/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/buildslisson/mps.sl.all.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/buildslisson/trace.info" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/artifacts/mps.sl.all/mps-sl-all.zip" afterPath="$PROJECT_DIR$/build/artifacts/mps.sl.all/mps-sl-all.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.runtime-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.runtime-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.shapes-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.shapes-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.shapes.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.shapes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/jgraphx.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/jgraphx.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/klay-emf_2014-05.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/klay-emf_2014-05.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/libavoid/win64/adaptagrams.dll" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/libavoid/win64/adaptagrams.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/libavoid/win64/libavoid.dll" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/libavoid/win64/libavoid.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.nativelibs.loader/lib/de.itemis.mps.nativelibs.loader.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.nativelibs.loader/lib/de.itemis.mps.nativelibs.loader.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.intentions.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.intentions.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.runtime-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.runtime-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.shapes-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.shapes-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.shapes.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.shapes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.slisson.mps.structurecheck.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.slisson.mps.structurecheck.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.slisson.mps.structurecheck.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.slisson.mps.structurecheck.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/jgraphx.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/jgraphx.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/klay-emf_2014-05.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/klay-emf_2014-05.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/libavoid/win64/adaptagrams.dll" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/libavoid/win64/adaptagrams.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/libavoid/win64/libavoid.dll" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/lib/libavoid/win64/libavoid.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.layout/languages/de.itemis.mps.editor.miglayout/de.itemis.mps.editor.layout.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.layout/languages/de.itemis.mps.editor.miglayout/de.itemis.mps.editor.layout.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.layout/languages/de.itemis.mps.editor.miglayout/de.itemis.mps.editor.layout.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.layout/languages/de.itemis.mps.editor.miglayout/de.itemis.mps.editor.layout.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.dropdown.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.dropdown.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.dropdown.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.dropdown.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.mouselistener.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.mouselistener.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.nativelibs.loader/lib/de.itemis.mps.nativelibs.loader.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.nativelibs.loader/lib/de.itemis.mps.nativelibs.loader.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.hints.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.hints.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.pluginrepo/languages/de.slisson.mps.pluginrepo/de.slisson.mps.pluginrepo.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.pluginrepo/languages/de.slisson.mps.pluginrepo/de.slisson.mps.pluginrepo.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell-generator.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell-generator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell-src.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell-src.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages/org.campagnelab.ui.code.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages/org.campagnelab.ui.code.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages/org.campagnelab.ui.jar" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/org.campagnelab.mps.UI/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages/org.campagnelab.ui.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.intentions.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.intentions.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.shapes.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.shapes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.slisson.mps.structurecheck.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.slisson.mps.structurecheck.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.slisson.mps.structurecheck.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.slisson.mps.structurecheck.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.layout/languages/de.itemis.mps.editor.miglayout/de.itemis.mps.editor.layout.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.layout/languages/de.itemis.mps.editor.miglayout/de.itemis.mps.editor.layout.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.layout/languages/de.itemis.mps.editor.miglayout/de.itemis.mps.editor.layout.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.layout/languages/de.itemis.mps.editor.miglayout/de.itemis.mps.editor.layout.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.dropdown.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.dropdown.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.dropdown.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.dropdown.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.mouselistener.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.mouselistener.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.nativelibs/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.hints.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.hints.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.pluginrepo/languages/de.slisson.mps.pluginrepo/de.slisson.mps.pluginrepo.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/de.slisson.mps.pluginrepo/languages/de.slisson.mps.pluginrepo/de.slisson.mps.pluginrepo.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" afterPath="$PROJECT_DIR$/build/tmp/mps.sl.all/default/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/modules.xml" afterPath="$PROJECT_DIR$/.mps/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/about.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dialogImage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/legal128.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/legal16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/legal32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/splash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ImmuniteitGeenbevoegdheid_Editor$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ImmuniteitGeenbevoegdheid_Editor$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ImmuniteitGeenbevoegdheid_Editor$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ImmuniteitGeenbevoegdheid_Editor$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ImmuniteitGeenbevoegdheid_Editor$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/RechtsSubject_Editor$uniekIdentificerendeKenmerkenListHandler_feb60b_c8a0.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtsbetrekking_Editor$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtsbetrekking_Editor$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtsbetrekking_Editor$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtsbetrekking_Editor$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtsbetrekking_Editor$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.editor.diagram/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.nativelibs/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.itemis.mps.nativelibs/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.all/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/de.slisson.mps.hacks/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-apache-commons/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.editor.diagram/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.nativelibs/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.itemis.mps.nativelibs/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.all/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.all/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.conditionalEditor/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/de.slisson.mps.hacks/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-apache-commons/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-apache-commons/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-multiline/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-multiline/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/build/tmp/DeBrug/deps/mps.sl.all/mps-sl-all.zip/mps-richtext/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildDistribution.xml" afterPath="$PROJECT_DIR$/buildDistribution.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/models/editor.mps" afterPath="$PROJECT_DIR$/languages/Simulatie/models/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/build/DeBrug.xml" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/build/DeBrug.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/build/DeBrugDistribution.xml" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/build/DeBrugDistribution.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/build/trace.info" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/build/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/buildmpsui/org.campagnelab.mps.UI.xml" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/buildmpsui/org.campagnelab.mps.UI.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/buildmpsui/trace.info" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/buildmpsui/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/models/DeBrug/build.mps" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/models/DeBrug/build.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/models/DeBrug/buildmpsui.mps" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/models/DeBrug/buildmpsui.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen.caches/DeBrug/build/generated" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen.caches/DeBrug/build/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen.caches/DeBrug/buildmpsui/generated" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen.caches/DeBrug/buildmpsui/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/build/DeBrug.xml" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/build/DeBrug.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/build/DeBrugDistribution.xml" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/build/DeBrugDistribution.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/build/trace.info" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/build/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/buildmpsui/org.campagnelab.mps.UI.xml" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/buildmpsui/org.campagnelab.mps.UI.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/buildmpsui/trace.info" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/buildmpsui/trace.info" />
     </list>
     <ignored path="ProjectDeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -300,16 +127,16 @@
       <file leaf-file-name="DeBrug" pinned="false" current-in-tab="true">
         <entry file="mps://node://DeBrug.build/DeBrug.build/DeBrug">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="80">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="820">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="63" />
+                    <property name="caretX" value="143" />
                     <property name="caretXRelative" value="0" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_hdw7mg_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7533761487375678009" />
+                    <cellInfo cellId="empty_thirdparty" cellNumber="0" isInList="false">
+                      <node node_reference="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543221" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -324,7 +151,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7533761487375678009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543221" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -361,7 +188,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7533761487375678009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543221" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -417,7 +244,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="729" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -702,7 +529,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/runtime/GN.runtime.msd" />
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeBrug" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -736,6 +567,20 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/runtime/GN.runtime.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GN" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -747,6 +592,16 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -774,53 +629,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DeBrug" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:34ee2a0e-8918-4f4b-acf5-81a2eb8727e9(DeBrug.buildmpsui) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/solutions/DeBrug.build/models/DeBrug/buildmpsui.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DeBrug" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="$PROJECT_DIR$/languages/GN/runtime/GN.runtime.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -1052,8 +861,8 @@
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="729" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="728" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Visualization" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1073,10 +882,10 @@
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41428572" sideWeight="0.40387723" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4063492" sideWeight="0.47253636" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4054054" sideWeight="0.47253636" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32012677" sideWeight="0.41858616" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31955484" sideWeight="0.41858616" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.49676898" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32502493" sideWeight="0.3117932" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
@@ -1360,7 +1169,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="In de simulatie handelingsbuttons toegevoegd." />
     <MESSAGE value="Handeling verwijderd uit rechtsbetrekking &#10;en simulatie en opgenomen in de voorwaarden.&#10;" />
     <MESSAGE value="Eerste aanpassingen n.a.v. opmerkingen Sjir" />
     <MESSAGE value="Nieuwe versie van de README" />
@@ -1385,7 +1193,8 @@
     <MESSAGE value="Alles gemigreerd naar simulatie.behaviour" />
     <MESSAGE value="Interactie taal toegevoegd" />
     <MESSAGE value="Gegevens taal toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gegevens taal toegevoegd" />
+    <MESSAGE value="Build van standalone oplossing succesvol" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build van standalone oplossing succesvol" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://DeBrug.build/DeBrug.buildother/org.campagnelab.mps.UI" />
