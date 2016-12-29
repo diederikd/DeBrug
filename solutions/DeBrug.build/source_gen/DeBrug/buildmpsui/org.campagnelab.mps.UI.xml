@@ -4,7 +4,8 @@
   <property name="build.tmp" location="${build.dir}/tmp/org.campagnelab.mps.UI" />
   <property name="build.layout" location="${build.dir}/artifacts/org.campagnelab.mps.UI" />
   <property name="mps_home" location="" />
-  <property name="ui_version" value="1.1.0" />
+  <property name="NYOSH" location="${basedir}/../NYoSh" />
+  <property name="ui_version" value="3.0.0" />
   <property name="build_number" value="0" />
   <property name="artifacts.mpsCore" location="${mps_home}" />
   <property name="artifacts.mps" location="${mps_home}" />
@@ -29,10 +30,10 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/default/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI" />
-    <mkdir dir="${build.tmp}/default/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/META-INF" />
-    <echoxml file="${build.tmp}/default/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/org.campagnelab.UI-3.0.0.zip" />
+    <mkdir dir="${build.tmp}/default/org.campagnelab.UI-3.0.0.zip/UI" />
+    <mkdir dir="${build.tmp}/default/org.campagnelab.UI-3.0.0.zip/UI/META-INF" />
+    <echoxml file="${build.tmp}/default/org.campagnelab.UI-3.0.0.zip/UI/META-INF/plugin.xml">
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>org.campagnelab.mps.UI</id>
         <name>org.campagnelab.mps.UI</name>
@@ -48,7 +49,7 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages" />
+    <mkdir dir="${build.tmp}/default/org.campagnelab.UI-3.0.0.zip/UI/languages" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.ui.jar" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.ui.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.campagnelab.ui.jar/META-INF/module.xml">
@@ -72,39 +73,39 @@
         <sources jar="org.campagnelab.ui-src.jar" descriptor="org.campagnelab.ui.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages/org.campagnelab.ui.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/org.campagnelab.UI-3.0.0.zip/UI/languages/org.campagnelab.ui.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.ui" />
-      <fileset dir="${basedir}/languages/org.campagnelab.ui" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/languages/org.campagnelab.ui/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${NYOSH}/languages/org.campagnelab.ui" includes="icons/**, resources/**" />
+      <fileset dir="${NYOSH}/languages/org.campagnelab.ui/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.campagnelab.ui.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages/org.campagnelab.ui-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/org.campagnelab.UI-3.0.0.zip/UI/languages/org.campagnelab.ui-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.ui#2954990197977593747" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ui-generator-template">
-      <fileset dir="${basedir}/languages/org.campagnelab.ui/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${NYOSH}/languages/org.campagnelab.ui/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ui-languageModels">
-      <fileset dir="${basedir}/languages/org.campagnelab.ui/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${NYOSH}/languages/org.campagnelab.ui/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages/org.campagnelab.ui-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/languages/org.campagnelab.ui/generator/source_gen">
+    <jar destfile="${build.tmp}/default/org.campagnelab.UI-3.0.0.zip/UI/languages/org.campagnelab.ui-src.jar" duplicate="preserve">
+      <fileset dir="${NYOSH}/languages/org.campagnelab.ui/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <fileset dir="${basedir}/languages/org.campagnelab.ui/source_gen">
+      <fileset dir="${NYOSH}/languages/org.campagnelab.ui/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${basedir}/languages/org.campagnelab.ui/org.campagnelab.ui.mpl" prefix="module" />
+      <zipfileset file="${NYOSH}/languages/org.campagnelab.ui/org.campagnelab.ui.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ui-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ui-languageModels" prefix="module/languageModels" />
     </jar>
-    <mkdir dir="${build.tmp}/default/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages" />
+    <mkdir dir="${build.tmp}/default/org.campagnelab.UI-3.0.0.zip/UI/languages" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.ui.code.jar" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.ui.code.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.campagnelab.ui.code.jar/META-INF/module.xml">
@@ -122,27 +123,27 @@
         <sources jar="org.campagnelab.ui.code-src.jar" descriptor="org.campagnelab.ui.code.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages/org.campagnelab.ui.code.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/org.campagnelab.UI-3.0.0.zip/UI/languages/org.campagnelab.ui.code.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.ui.code" />
-      <fileset dir="${basedir}/solutions/org.campagnelab.ui.code" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/org.campagnelab.ui.code/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${NYOSH}/solutions/org.campagnelab.ui.code" includes="icons/**, resources/**" />
+      <fileset dir="${NYOSH}/solutions/org.campagnelab.ui.code/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.campagnelab.ui.code.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.ui.code-models">
-      <fileset dir="${basedir}/solutions/org.campagnelab.ui.code/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${NYOSH}/solutions/org.campagnelab.ui.code/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip/UI/languages/org.campagnelab.ui.code-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/org.campagnelab.ui.code/source_gen">
+    <jar destfile="${build.tmp}/default/org.campagnelab.UI-3.0.0.zip/UI/languages/org.campagnelab.ui.code-src.jar" duplicate="preserve">
+      <fileset dir="${NYOSH}/solutions/org.campagnelab.ui.code/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${basedir}/solutions/org.campagnelab.ui.code/org.campagnelab.ui.code.msd" prefix="module" />
+      <zipfileset file="${NYOSH}/solutions/org.campagnelab.ui.code/org.campagnelab.ui.code.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.ui.code-models" prefix="module/models" />
     </jar>
-    <zip destfile="${build.layout}/org.campagnelab.UI-${ui_version}.zip">
-      <fileset dir="${build.tmp}/default/org.campagnelab.UI-_dl__lbrace_ui_version_rbrace_.zip" />
+    <zip destfile="${build.layout}/org.campagnelab.UI-3.0.0.zip">
+      <fileset dir="${build.tmp}/default/org.campagnelab.UI-3.0.0.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">org.campagnelab.mps.UI.ui_version=${ui_version}${line.separator}org.campagnelab.mps.UI.build_number=${build_number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}</echo>
   </target>
@@ -238,14 +239,15 @@
       <library file="${artifacts.mps}/lib/mps-platform.jar" />
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
       <chunk>
-        <module file="${basedir}/languages/org.campagnelab.ui/org.campagnelab.ui.mpl" />
-        <module file="${basedir}/solutions/org.campagnelab.ui.code/org.campagnelab.ui.code.msd" />
+        <module file="${NYOSH}/languages/org.campagnelab.ui/org.campagnelab.ui.mpl" />
+        <module file="${NYOSH}/solutions/org.campagnelab.ui.code/org.campagnelab.ui.code.msd" />
       </chunk>
       <chunk />
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
+      <macro name="NYOSH" path="${NYOSH}" />
     </generate>
   </target>
   
@@ -256,12 +258,12 @@
   <target name="makeDependents" />
   
   <target name="java.compile.org.campagnelab.ui" depends="java.compile.org.campagnelab.ui.code, fetchDependencies">
-    <mkdir dir="${basedir}/languages/org.campagnelab.ui/source_gen" />
+    <mkdir dir="${NYOSH}/languages/org.campagnelab.ui/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.ui" />
     <javac destdir="${build.tmp}/java/out/org.campagnelab.ui" fork="true" encoding="utf8" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/languages/org.campagnelab.ui/source_gen" />
+        <path location="${NYOSH}/languages/org.campagnelab.ui/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -307,17 +309,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.campagnelab.ui">
-      <fileset dir="${basedir}/languages/org.campagnelab.ui/source_gen" excludes="**/*.java" />
+      <fileset dir="${NYOSH}/languages/org.campagnelab.ui/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.org.campagnelab.ui#2954990197977593747" depends="java.compile.org.campagnelab.ui, java.compile.org.campagnelab.ui.code, fetchDependencies">
-    <mkdir dir="${basedir}/languages/org.campagnelab.ui/generator/source_gen" />
+    <mkdir dir="${NYOSH}/languages/org.campagnelab.ui/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.ui#2954990197977593747" />
     <javac destdir="${build.tmp}/java/out/org.campagnelab.ui#2954990197977593747" fork="true" encoding="utf8" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/languages/org.campagnelab.ui/generator/source_gen" />
+        <path location="${NYOSH}/languages/org.campagnelab.ui/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -364,17 +366,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.campagnelab.ui#2954990197977593747">
-      <fileset dir="${basedir}/languages/org.campagnelab.ui/generator/source_gen" excludes="**/*.java" />
+      <fileset dir="${NYOSH}/languages/org.campagnelab.ui/generator/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.org.campagnelab.ui.code" depends="fetchDependencies">
-    <mkdir dir="${basedir}/solutions/org.campagnelab.ui.code/source_gen" />
+    <mkdir dir="${NYOSH}/solutions/org.campagnelab.ui.code/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.ui.code" />
     <javac destdir="${build.tmp}/java/out/org.campagnelab.ui.code" fork="true" encoding="utf8" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/solutions/org.campagnelab.ui.code/source_gen" />
+        <path location="${NYOSH}/solutions/org.campagnelab.ui.code/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -405,13 +407,13 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.campagnelab.ui.code">
-      <fileset dir="${basedir}/solutions/org.campagnelab.ui.code/source_gen" excludes="**/*.java" />
+      <fileset dir="${NYOSH}/solutions/org.campagnelab.ui.code/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="cleanSources">
-    <delete dir="${basedir}/languages/org.campagnelab.ui/source_gen" />
-    <delete dir="${basedir}/solutions/org.campagnelab.ui.code/source_gen" />
-    <delete dir="${basedir}/languages/org.campagnelab.ui/generator/source_gen" />
+    <delete dir="${NYOSH}/languages/org.campagnelab.ui/source_gen" />
+    <delete dir="${NYOSH}/solutions/org.campagnelab.ui.code/source_gen" />
+    <delete dir="${NYOSH}/languages/org.campagnelab.ui/generator/source_gen" />
   </target>
 </project>
