@@ -3,7 +3,6 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/Datum/Datum.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/GN/GN.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GN/ObjectiefRecht.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GN/runtime/GN.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" folder="" />
@@ -12,7 +11,7 @@
       <modulePath path="$PROJECT_DIR$/languages/Simulatie/Simulatie.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/SubjectiefRecht/SubjectiefRecht.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" folder="" />
-      <modulePath path="$mbeddr.github.core.home$/code/plugins/sl-all/mps-apache-commons/solutions/org.apache.commons/org.apache.commons.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/DeBrug.buildStandAlone/DeBrug.buildStandAlone.msd" folder="" />
     </projectModules>
   </component>
 </project>

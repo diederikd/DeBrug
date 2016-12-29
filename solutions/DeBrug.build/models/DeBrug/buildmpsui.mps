@@ -9,7 +9,6 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="m9s9" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#b0f8641f-bd77-4421-8425-30d9088a82f7(jetbrains.mps.lang.project.modules/module.org.apache.commons@project_stub)" />
     <import index="rnv7" ref="r:25d73da3-059c-464e-8c7d-e2854813a3fb(mps-apache-commons.build)" />
   </imports>
   <registry>

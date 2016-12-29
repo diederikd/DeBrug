@@ -7,9 +7,6 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language slang="l:61be2dc6-a140-4def-a592-7499aa2bac19:Datum" version="0" />
-    <language slang="l:8dc4b25f-4c49-400e-ac37-0fd230db702c:ObjectiefRecht" version="0" />
-    <language slang="l:2c493149-da1d-45e9-8ea2-e0b0cfc3047a:SubjectiefRecht" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>

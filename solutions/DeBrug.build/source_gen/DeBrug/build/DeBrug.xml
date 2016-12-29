@@ -11,7 +11,6 @@
   <property name="mbeddr_core" location="${basedir}/../mbeddr.core" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mps" location="${mps_home}" />
-  <property name="artifacts.mps-apache-commons" location="${mbeddr_core}/code/plugins/sl-all/mps-apache-commons/build/artifacts/mps-apache-commons" />
   <property name="artifacts.com.mbeddr.allInOne" location="${mbeddr_core}/artifacts/mbeddr" />
   <property name="artifacts.mps-sl-all" location="${mbeddr_core}/artifacts/mps-sl-all" />
   <property name="artifacts.org.campagnelab.mps.UI" location="${build.dir}/artifacts/org.campagnelab.mps.UI" />
@@ -56,10 +55,10 @@
     <copy todir="${build.layout}/license">
       <fileset dir="${artifacts.mpsStandalone}/license" />
     </copy>
-    <copy file="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" todir="${build.layout}" />
-    <mkdir dir="${build.layout}/de.slisson.mps.all" />
-    <copy todir="${build.layout}/de.slisson.mps.all">
-      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all" />
+    <copy file="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" todir="${build.layout}" />
+    <mkdir dir="${build.layout}/UI" />
+    <copy todir="${build.layout}/UI">
+      <fileset dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI" />
     </copy>
     <mkdir dir="${build.layout}/bin" />
     <copy todir="${build.layout}/bin">
@@ -90,9 +89,9 @@
         <version codename="DeBrug" major="0" minor="1" eap="false" />
         <company name="de blauwe kamer" url="http://deblauwekamer.nu" />
         <build number="${build.number}" date="${date}" />
-        <logo url="/splash.png" textcolor="002387" />
+        <logo url="/splashDeBrug.png" textcolor="002387" />
         <about url="/about.png" />
-        <icon size32="/legal32.png" size16="/legal16.png" size32opaque="/legal32.png" size128="/legal128.png" />
+        <icon size32="/legal32.png" size16="/legal16.png" size32opaque="/legal32.png" size128="/legal128.png" ico="/legal32.png" />
         <dialogs-image url="/dialogImage.png" />
         <package code="code" />
         <names product="DeBrug" fullname="DeBrug" />
@@ -108,17 +107,12 @@
       <fileset file="${basedir}/images/legal16.png" />
       <fileset file="${basedir}/images/legal32.png" />
       <fileset file="${basedir}/images/legal128.png" />
+      <fileset file="${basedir}/images/legal32.png" />
       <fileset file="${basedir}/images/logo.png" />
-      <fileset file="${basedir}/images/splash.png" />
+      <fileset file="${basedir}/images/splashDeBrug.png" />
       <fileset file="${basedir}/images/about.png" />
       <fileset file="${basedir}/images/dialogImage.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
-    </jar>
-    <jar destfile="${build.layout}/lib/org.apache.commons.jar" duplicate="preserve">
-      <fileset file="${basedir}/commons-io-2.5/commons-io-2.5.jar" />
-    </jar>
-    <jar destfile="${build.layout}/lib/diff_match_patch.jar" duplicate="preserve">
-      <fileset file="${mbeddr_core}/code/plugins/sl-all/mps-multiline/solutions/de.slisson.mps.editor.multiline.runtime/lib/diff_match_patch.jar" />
     </jar>
     <mkdir dir="${build.layout}/plugins" />
     <mkdir dir="${build.layout}/plugins/svn4idea" />
@@ -137,6 +131,15 @@
     <copy todir="${build.layout}/plugins/mps-core">
       <fileset dir="${artifacts.mpsStandalone}/plugins/mps-core" />
     </copy>
+    <mkdir dir="${build.layout}/plugins/plugins" />
+    <copy todir="${build.layout}/plugins/plugins">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/UI" />
+    <copy todir="${build.layout}/plugins/UI">
+      <fileset dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI" />
+    </copy>
+    <copy file="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" todir="${build.layout}/plugins" />
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
     <echo file="${build.layout}/build.properties">DeBrug.date=${date}${line.separator}DeBrug.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}${line.separator}org.campagnelab.mps.UI.ui_version=${org.campagnelab.mps.UI.ui_version}${line.separator}org.campagnelab.mps.UI.build_number=${org.campagnelab.mps.UI.build_number}</echo>
   </target>
@@ -146,12 +149,10 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
-    <unzip src="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" dest="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip" />
-    <unzip src="${artifacts.mps-apache-commons}/mps-plugin-org.apache.commons.zip" dest="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip" />
     <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip" />
     <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
+    <unzip src="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" dest="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -171,6 +172,7 @@
       <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-configurations" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
+      <plugin path="${artifacts.mps}/plugins/mps-make" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout" />
@@ -207,7 +209,6 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables" />
-      <plugin path="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip/org.apache.commons" />
       <plugin path="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -283,16 +284,19 @@
       <library file="${artifacts.mpsStandalone}/lib/mps-tool.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
+      <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.preset.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr-build/languages/com.mbeddr.build/com.mbeddr.build.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.allInOne/languages/com.mbeddr.allInOne.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform.build/languages/com.mbeddr.platform.build/com.mbeddr.platform.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-      <library file="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip/org.apache.commons/languages/mps-apache-commons/mps-apache-commons.build.jar" />
       <library file="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI/languages/org.campagnelab.ui.code.jar" />
       <library file="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI/languages/org.campagnelab.ui.jar" />
       <chunk>
@@ -303,7 +307,6 @@
         <module file="${basedir}/languages/SubjectiefRecht/SubjectiefRecht.mpl" />
       </chunk>
       <chunk>
-        <module file="${basedir}/languages/GN/runtime/GN.runtime.msd" />
         <module file="${basedir}/languages/GN/sandbox/GN.sandbox.msd" />
       </chunk>
       <jvmargs>
@@ -325,7 +328,7 @@
     </ant>
   </target>
   
-  <target name="compileJava" depends="java.compile.Datum, java.compile.Datum#848775529194317175, java.compile.GN.runtime, java.compile.Gegevens, java.compile.Gegevens#6166301676793402228, java.compile.SubjectiefRecht, java.compile.SubjectiefRecht#7136310554705381513, java.compile.ObjectiefRecht, java.compile.ObjectiefRecht#6994217584621125733, java.compile.GN.sandbox, java.compile.Simulatie, java.compile.Simulatie#7812026954661547138" />
+  <target name="compileJava" depends="java.compile.Datum, java.compile.Datum#848775529194317175, java.compile.Gegevens, java.compile.Gegevens#6166301676793402228, java.compile.SubjectiefRecht, java.compile.SubjectiefRecht#7136310554705381513, java.compile.ObjectiefRecht, java.compile.ObjectiefRecht#6994217584621125733, java.compile.GN.sandbox, java.compile.Simulatie, java.compile.Simulatie#7812026954661547138" />
   
   <target name="processResources" />
   
@@ -420,18 +423,6 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.GN.runtime">
-    <mkdir dir="${basedir}/languages/GN/runtime/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/GN.runtime" />
-    <javac destdir="${build.tmp}/java/out/GN.runtime" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/languages/GN/runtime/source_gen" />
-      </src>
-      <classpath />
     </javac>
   </target>
   
@@ -661,7 +652,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.ObjectiefRecht#6994217584621125733" depends="java.compile.GN.runtime, java.compile.ObjectiefRecht, fetchDependencies">
+  <target name="java.compile.ObjectiefRecht#6994217584621125733" depends="java.compile.ObjectiefRecht, fetchDependencies">
     <mkdir dir="${basedir}/languages/GN/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ObjectiefRecht#6994217584621125733" />
     <javac destdir="${build.tmp}/java/out/ObjectiefRecht#6994217584621125733" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -670,7 +661,6 @@
         <path location="${basedir}/languages/GN/generator/source_gen" />
       </src>
       <classpath>
-        <pathelement path="${build.tmp}/java/out/GN.runtime" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
@@ -704,7 +694,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.GN.sandbox" depends="java.compile.GN.runtime, java.compile.ObjectiefRecht, java.compile.Simulatie, java.compile.SubjectiefRecht, fetchDependencies">
+  <target name="java.compile.GN.sandbox" depends="java.compile.ObjectiefRecht, java.compile.Simulatie, java.compile.SubjectiefRecht, fetchDependencies">
     <mkdir dir="${basedir}/languages/GN/sandbox/source_gen" />
     <mkdir dir="${build.tmp}/java/out/GN.sandbox" />
     <javac destdir="${build.tmp}/java/out/GN.sandbox" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -713,7 +703,6 @@
         <path location="${basedir}/languages/GN/sandbox/source_gen" />
       </src>
       <classpath>
-        <pathelement path="${build.tmp}/java/out/GN.runtime" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
@@ -735,11 +724,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/Simulatie" />
         <pathelement path="${build.tmp}/java/out/SubjectiefRecht" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/lib/commons-io-2.4.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/lib/commons-lang3-3.3.2.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/lib/commons-math3-3.3.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/lib/commons-primitives-1.0.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/lib/commons-csv-1.0.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -749,11 +733,10 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.allInOne/languages/com.mbeddr.allInOne.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip/org.apache.commons/languages/mps-apache-commons/mps-apache-commons.build.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
       </classpath>
     </javac>
   </target>
@@ -788,11 +771,6 @@
         <pathelement path="${build.tmp}/java/out/SubjectiefRecht" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/lib/commons-io-2.4.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/lib/commons-lang3-3.3.2.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/lib/commons-math3-3.3.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/lib/commons-primitives-1.0.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/lib/commons-csv-1.0.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
@@ -802,16 +780,16 @@
         <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.allInOne/languages/com.mbeddr.allInOne.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
         <fileset file="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI/languages/org.campagnelab.ui.code.jar" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.Simulatie#7812026954661547138" depends="java.compile.GN.runtime, java.compile.ObjectiefRecht, java.compile.Simulatie, java.compile.SubjectiefRecht, fetchDependencies">
+  <target name="java.compile.Simulatie#7812026954661547138" depends="java.compile.ObjectiefRecht, java.compile.Simulatie, java.compile.SubjectiefRecht, fetchDependencies">
     <mkdir dir="${basedir}/languages/Simulatie/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/Simulatie#7812026954661547138" />
     <javac destdir="${build.tmp}/java/out/Simulatie#7812026954661547138" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -820,7 +798,6 @@
         <path location="${basedir}/languages/Simulatie/generator/source_gen" />
       </src>
       <classpath>
-        <pathelement path="${build.tmp}/java/out/GN.runtime" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
@@ -865,7 +842,6 @@
     <delete dir="${basedir}/languages/Simulatie/source_gen" />
     <delete dir="${basedir}/languages/SubjectiefRecht/source_gen" />
     <delete dir="${basedir}/languages/Datum/generator/source_gen" />
-    <delete dir="${basedir}/languages/GN/runtime/source_gen" />
     <delete dir="${basedir}/languages/GN/sandbox/source_gen" />
     <delete dir="${basedir}/languages/Gegevens/generator/source_gen" />
     <delete dir="${basedir}/languages/GN/generator/source_gen" />

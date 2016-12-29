@@ -10,8 +10,6 @@
     <dependency reexport="false">8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)</dependency>
     <dependency reexport="false">2c493149-da1d-45e9-8ea2-e0b0cfc3047a(SubjectiefRecht)</dependency>
     <dependency reexport="false">15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)</dependency>
-    <dependency reexport="false">9d8ad609-a15a-4817-b9ae-ec9cbb0c2c49(mps-apache-commons.build)</dependency>
-    <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:61be2dc6-a140-4def-a592-7499aa2bac19:Datum" version="0" />
