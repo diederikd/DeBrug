@@ -868,7 +868,7 @@ public class Simulatie_Editor extends DefaultNodeEditor {
       public void process(final SNode n, final EditorContext editorContext) {
         {
           final SNode node = ((SNode) n);
-          Simulatie__BehaviorDescriptor.Initialiseer_id3d6QfrgQgbG.invoke(node);
+          Simulatie__BehaviorDescriptor.InitialiseerSimulatie_id5FFw3Y4c4n0.invoke(node, node);
         }
       }
     };

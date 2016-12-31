@@ -4857,7 +4857,7 @@
       <node id="7867191925628438121" at="862,182,863,50" concept="2" />
       <node id="7867191925628438121" at="863,50,864,22" concept="8" />
       <node id="7867191925628438121" at="869,9,870,41" concept="7" />
-      <node id="3694879098886058558" at="870,41,871,80" concept="2" />
+      <node id="3694879098886058558" at="870,41,871,95" concept="2" />
       <node id="7867191925628438121" at="874,6,875,78" concept="8" />
       <node id="7867191925628438121" at="875,78,876,0" concept="9" />
       <node id="7867191925628438121" at="39,0,42,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -5092,7 +5092,7 @@
         <var name="listOwner" id="7867191925628438121" />
       </scope>
       <scope id="7867191925628438121" at="831,34,833,146" />
-      <scope id="7867191925628438121" at="869,9,871,80">
+      <scope id="7867191925628438121" at="869,9,871,95">
         <var name="node" id="7867191925628438121" />
       </scope>
       <scope id="7867191925628438121" at="39,0,42,0">

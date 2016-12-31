@@ -40,6 +40,7 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<Void> Initialiseer_id3d6QfrgQgbG = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("Initialiseer").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3d6QfrgQgbG").registry(REGISTRY).build();
+  public static final SMethod<Void> InitialiseerSimulatie_id5FFw3Y4c4n0 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("InitialiseerSimulatie").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5FFw3Y4c4n0").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> ToevoegenUitgevoerdeHandeling_id3d6QfrgxoSL = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ToevoegenUitgevoerdeHandeling").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3d6QfrgxoSL").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> Reset_id3d6QfrgEDkp = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("Reset").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3d6QfrgEDkp").registry(REGISTRY).build();
   public static final SMethod<Void> RefreshHandelingen_id3d6QfrgN326 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("RefreshHandelingen").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3d6QfrgN326").registry(REGISTRY).build();
@@ -47,7 +48,7 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> OpzoekenTypeHandeling_id3d6QfrgWko$ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("OpzoekenTypeHandeling").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3d6QfrgWko$").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> OpzoekenUitzonderingen_id3d6Qfrh1abK = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("OpzoekenUitzonderingen").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3d6Qfrh1abK").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(Initialiseer_id3d6QfrgQgbG, ToevoegenUitgevoerdeHandeling_id3d6QfrgxoSL, Reset_id3d6QfrgEDkp, RefreshHandelingen_id3d6QfrgN326, ExecuteHandeling_id3d6QfrgVOeu, OpzoekenTypeHandeling_id3d6QfrgWko$, OpzoekenUitzonderingen_id3d6Qfrh1abK);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(Initialiseer_id3d6QfrgQgbG, InitialiseerSimulatie_id5FFw3Y4c4n0, ToevoegenUitgevoerdeHandeling_id3d6QfrgxoSL, Reset_id3d6QfrgEDkp, RefreshHandelingen_id3d6QfrgN326, ExecuteHandeling_id3d6QfrgVOeu, OpzoekenTypeHandeling_id3d6QfrgWko$, OpzoekenUitzonderingen_id3d6Qfrh1abK);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -75,7 +76,9 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
       }
       iteratie++;
     }
-
+    System.out.println("Initialiseer Simulatie");
+    System.out.println(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae8257fL, "rol1")));
+    System.out.print(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x1ed85b1d6dac641fL, "rol2")));
     // Initialiseer rechtsbetrekkingen 
     for (SNode rechtbetrekking : ListSequence.fromList(SModelOperations.nodes(simulatiemodel, MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking")))) {
       SNode rb1 = SNodeOperations.copyNode(rechtbetrekking);
@@ -85,6 +88,46 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
       }
     }
     Simulatie__BehaviorDescriptor.RefreshHandelingen_id3d6QfrgN326.invoke(__thisNode__);
+
+  }
+  /*package*/ static void InitialiseerSimulatie_id5FFw3Y4c4n0(@NotNull SNode __thisNode__, SNode simulatie) {
+    SNodeFactoryOperations.setNewChild(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6d087789eL, "datumtijdvaninitialisatie"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f32fL, "Datum.structure.DatumTijd")));
+    SNodeFactoryOperations.setNewChild(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6d087789eL, "datumtijdvaninitialisatie")), MetaAdapterFactory.getContainmentLink(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f332L, "Datum"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, "Datum.structure.Datum")));
+    SNodeFactoryOperations.setNewChild(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6d087789eL, "datumtijdvaninitialisatie")), MetaAdapterFactory.getContainmentLink(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f32fL, 0x56d24b1967e8f334L, "Tijd"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, "Datum.structure.Tijd")));
+    DatumTijd__BehaviorDescriptor.setdatetime_id5riiL_BUXYm.invoke(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6d087789eL, "datumtijdvaninitialisatie")), LocalDateTime.now());
+
+    Simulatie__BehaviorDescriptor.Reset_id3d6QfrgEDkp.invoke(simulatie);
+    SModel simulatiemodel = SNodeOperations.getModel(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae782faL, "casus")));
+    SNode rechtspositie = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L, "Simulatie.structure.Informatiepositie"));
+    SLinkOperations.setTarget(ListSequence.fromList(SModelOperations.roots(simulatiemodel, MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"))).first(), MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcaea0d6fL, "rechtspositie"), rechtspositie);
+    // Initialiseer rollen 
+    int iteratie = 1;
+    System.out.println(SModelOperations.nodes(simulatiemodel, MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88cL, "SubjectiefRecht.structure.NatuurlijkPersoon")));
+    for (SNode natuurlijkpersoon : ListSequence.fromList(SModelOperations.nodes(simulatiemodel, MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88cL, "SubjectiefRecht.structure.NatuurlijkPersoon")))) {
+      SNode np = natuurlijkpersoon;
+      System.out.println(np);
+      if (iteratie == 1) {
+        SLinkOperations.setTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae8257fL, "rol1"), np);
+        System.out.println(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae8257fL, "rol1")));
+      }
+      if (iteratie == 2) {
+        SLinkOperations.setTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x1ed85b1d6dac641fL, "rol2"), np);
+        System.out.println(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x1ed85b1d6dac641fL, "rol2")));
+      }
+      iteratie++;
+    }
+    System.out.println("Initialiseer Simulatie");
+    System.out.println(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae8257fL, "rol1")));
+    System.out.print(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x1ed85b1d6dac641fL, "rol2")));
+    // Initialiseer rechtsbetrekkingen 
+    for (SNode rechtbetrekking : ListSequence.fromList(SModelOperations.nodes(simulatiemodel, MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking")))) {
+      SNode rb1 = SNodeOperations.copyNode(rechtbetrekking);
+      ListSequence.fromList(SLinkOperations.getChildren(rechtspositie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L, 0x6c69e5201860cca3L, "rechtsbetrekkingen"))).addElement(rb1);
+      if (LOG.isInfoEnabled()) {
+        LOG.info(SPropertyOperations.getString(SLinkOperations.getTarget(rechtbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "rechtsbetrekking")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+      }
+    }
+    Simulatie__BehaviorDescriptor.RefreshHandelingen_id3d6QfrgN326.invoke(simulatie);
 
   }
   /*package*/ static void ToevoegenUitgevoerdeHandeling_id3d6QfrgxoSL(@NotNull SNode __thisNode__, final SNode refnode) {
@@ -250,7 +293,7 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
           }
           DatumTijd__BehaviorDescriptor.setdatetime_id5riiL_BUXYm.invoke(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x2c078844aee1e049L, "datumtijdlaatstehandeling")), DatumTijd__BehaviorDescriptor.getdatetime_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x67229afa6a23b388L, "datumtijdvanstartvandeSimulatie"))).plusNanos(VerschillenInNanoSeconden));
 
-          SLinkOperations.setTarget(rbsubjectief, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "rechtsbetrekking"), SNodeOperations.copyNode(rechtsbetrekking));
+          SLinkOperations.setTarget(rbsubjectief, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "rechtsbetrekking"), rechtsbetrekking);
           // Deze system.out niet verwijderen 
           System.out.println(SLinkOperations.getTarget(rbsubjectief, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "rechtsbetrekking")));
           SLinkOperations.setTarget(rbsubjectief, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a1L, "rechtssubjectMetPlicht"), SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae8257fL, "rol1")));
@@ -484,20 +527,23 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
         Initialiseer_id3d6QfrgQgbG(node);
         return null;
       case 1:
-        ToevoegenUitgevoerdeHandeling_id3d6QfrgxoSL(node, (SNode) parameters[0]);
+        InitialiseerSimulatie_id5FFw3Y4c4n0(node, (SNode) parameters[0]);
         return null;
       case 2:
-        Reset_id3d6QfrgEDkp(node);
+        ToevoegenUitgevoerdeHandeling_id3d6QfrgxoSL(node, (SNode) parameters[0]);
         return null;
       case 3:
-        RefreshHandelingen_id3d6QfrgN326(node);
+        Reset_id3d6QfrgEDkp(node);
         return null;
       case 4:
-        ExecuteHandeling_id3d6QfrgVOeu(node, (SNode) parameters[0], (SNode) parameters[1]);
+        RefreshHandelingen_id3d6QfrgN326(node);
         return null;
       case 5:
-        return (T) ((String) OpzoekenTypeHandeling_id3d6QfrgWko$(node, (SNode) parameters[0]));
+        ExecuteHandeling_id3d6QfrgVOeu(node, (SNode) parameters[0], (SNode) parameters[1]);
+        return null;
       case 6:
+        return (T) ((String) OpzoekenTypeHandeling_id3d6QfrgWko$(node, (SNode) parameters[0]));
+      case 7:
         return (T) ((String) OpzoekenUitzonderingen_id3d6Qfrh1abK(node, (SNode) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
