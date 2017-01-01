@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/DeBrugDistribution" />
   <property name="build.layout" location="${build.dir}/artifacts/DeBrugDistribution" />
   <property name="mps_home" location="" />
-  <property name="version" value="3.4.1" />
+  <property name="version" value="0.1.1" />
   <property name="artifacts.DeBrug" location="${build.dir}/artifacts/DeBrug" />
   <property file="${artifacts.DeBrug}/build.properties" prefix="import.DeBrug" />
   <property name="DeBrug.date" value="${import.DeBrug.DeBrug.date}" />

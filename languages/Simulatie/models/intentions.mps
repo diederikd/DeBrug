@@ -281,8 +281,9 @@
         <node concept="3clFbF" id="3d6Qfrh58iN" role="3cqZAp">
           <node concept="2OqwBi" id="3d6Qfrh58sT" role="3clFbG">
             <node concept="2Sf5sV" id="3d6Qfrh7CTw" role="2Oq$k0" />
-            <node concept="2qgKlT" id="3d6Qfrh7CPc" role="2OqNvi">
-              <ref role="37wK5l" to="ln8d:3d6QfrgQgbG" resolve="Initialiseer" />
+            <node concept="2qgKlT" id="7rcH1JNk7Fv" role="2OqNvi">
+              <ref role="37wK5l" to="ln8d:5FFw3Y4c4n0" resolve="InitialiseerSimulatie" />
+              <node concept="2Sf5sV" id="7rcH1JNk7NI" role="37wK5m" />
             </node>
           </node>
         </node>
