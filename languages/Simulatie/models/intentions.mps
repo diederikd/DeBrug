@@ -308,7 +308,8 @@
           <node concept="2OqwBi" id="3d6QfrgPYi8" role="3clFbG">
             <node concept="2Sf5sV" id="3d6QfrgPYat" role="2Oq$k0" />
             <node concept="2qgKlT" id="3d6QfrgPYsX" role="2OqNvi">
-              <ref role="37wK5l" to="ln8d:3d6QfrgN326" resolve="RefreshHandelingen" />
+              <ref role="37wK5l" to="ln8d:2rhLMRp46el" resolve="RefreshHandelingenSimulatie" />
+              <node concept="2Sf5sV" id="7rcH1JNm8Jq" role="37wK5m" />
             </node>
           </node>
         </node>
