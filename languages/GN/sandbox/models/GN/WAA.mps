@@ -383,7 +383,7 @@
       <node concept="I0tks" id="3DwVXk8WuYp" role="1TNFB5">
         <property role="da7Q0" value="0000" />
         <property role="TrG5h" value="burgerservicenummer" />
-        <ref role="I0tkr" node="3DwVXk8WuU4" resolve="Burgerservicenummer" />
+        <ref role="I0tkr" node="5u1YjWIkWnX" resolve="burgerservicenummer" />
         <node concept="2B78Lw" id="3DwVXk8WuYs" role="lXajo" />
       </node>
       <node concept="lYmzx" id="5u1YjWIkoYQ" role="1TNFB5">
@@ -624,7 +624,12 @@
         <property role="da7Q0" value="0000" />
         <property role="TrG5h" value="spreiding" />
         <ref role="I0tkr" node="MvzNsyB_Cb" resolve="rooster" />
-        <node concept="2B78Lw" id="3DwVXk8VFSm" role="lXajo" />
+        <node concept="2B78Lw" id="3DwVXk8VFSm" role="lXajo">
+          <property role="2B78LB" value="01" />
+          <property role="2B78L_" value="07" />
+          <property role="2B78LE" value="2000" />
+        </node>
+        <node concept="2mcr8I" id="3p2I40$Kuri" role="2mdQX7" />
       </node>
       <node concept="lYmzE" id="6syAJDDFk_B" role="ewjD5">
         <property role="da7Q0" value="36" />
@@ -935,26 +940,6 @@
         <property role="da7Q0" value="74" />
         <ref role="lTN2I" node="3d6QfrhlNlL" resolve="PostcodeLetters" />
         <node concept="2B78Lw" id="3d6QfrhlNmb" role="lXajo" />
-      </node>
-    </node>
-    <node concept="3D8HDq" id="3DwVXk8WuU4" role="SxSPV">
-      <property role="da7Q0" value="0000" />
-      <property role="TrG5h" value="Burgerservicenummer" />
-      <node concept="2B78Lw" id="3DwVXk8WuU5" role="lXajo">
-        <property role="2B78LB" value="01" />
-        <property role="2B78L_" value="07" />
-        <property role="2B78LE" value="2000" />
-      </node>
-      <node concept="lYmzx" id="3DwVXk8WuWd" role="lYmzI">
-        <property role="da7Q0" value="0000" />
-        <property role="TrG5h" value="burgerservicenummer" />
-        <node concept="2B78Lw" id="3DwVXk8WuWe" role="lXajo" />
-        <node concept="QqSvA" id="3DwVXk8WuWh" role="LSO5p" />
-      </node>
-      <node concept="lYmzE" id="3DwVXk8WuWj" role="ewjD5">
-        <property role="da7Q0" value="0000" />
-        <ref role="lTN2I" node="3DwVXk8WuWd" resolve="burgerservicenummer" />
-        <node concept="2B78Lw" id="3DwVXk8WuWk" role="lXajo" />
       </node>
     </node>
     <node concept="3D8HDq" id="5u1YjWIkWnX" role="SxSPV">

@@ -337,13 +337,14 @@
       <node id="8115840370078607782" at="30,0,31,18" concept="5" />
       <node id="8115840370078609475" at="33,148,34,25" concept="4" />
       <node id="8115840370078614694" at="35,190,36,20" concept="1" />
-      <node id="8115840370078609525" at="37,5,38,17" concept="5" />
-      <node id="8115840370078607782" at="40,0,41,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="3909890012144484883" at="37,5,38,0" concept="7" />
+      <node id="8115840370078609525" at="38,0,39,17" concept="5" />
+      <node id="8115840370078607782" at="41,0,42,0" concept="8" trace="canBeChildBreakingPoint" />
       <node id="8115840370078607782" at="15,0,18,0" concept="0" trace="ReferentieNaarOnderwerp_Constraints#()V" />
       <node id="8115840370078607782" at="26,0,29,5" concept="2" />
       <node id="8115840370078609479" at="34,25,37,5" concept="2" />
       <node id="8115840370078607782" at="19,0,23,0" concept="3" trace="hasOwnCanBeChildMethod#()Z" />
-      <node id="8115840370078607782" at="33,0,40,0" concept="9" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="8115840370078607782" at="33,0,41,0" concept="9" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
       <node id="8115840370078607782" at="23,0,33,0" concept="3" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
       <scope id="8115840370078607782" at="15,48,16,155" />
       <scope id="8115840370078607782" at="20,43,21,16" />
@@ -351,13 +352,13 @@
       <scope id="8115840370078609480" at="35,190,36,20" />
       <scope id="8115840370078607782" at="15,0,18,0" />
       <scope id="8115840370078607782" at="19,0,23,0" />
-      <scope id="8115840370078607784" at="33,148,38,17">
+      <scope id="8115840370078607784" at="33,148,39,17">
         <var name="valid" id="8115840370078609476" />
       </scope>
       <scope id="8115840370078607782" at="24,200,31,18">
         <var name="result" id="8115840370078607782" />
       </scope>
-      <scope id="8115840370078607782" at="33,0,40,0">
+      <scope id="8115840370078607782" at="33,0,41,0">
         <var name="childConcept" id="8115840370078607782" />
         <var name="link" id="8115840370078607782" />
         <var name="node" id="8115840370078607782" />
@@ -372,7 +373,7 @@
         <var name="operationContext" id="8115840370078607782" />
         <var name="parentNode" id="8115840370078607782" />
       </scope>
-      <unit id="8115840370078607782" at="14,0,42,0" name="ObjectiefRecht.constraints.ReferentieNaarOnderwerp_Constraints" />
+      <unit id="8115840370078607782" at="14,0,43,0" name="ObjectiefRecht.constraints.ReferentieNaarOnderwerp_Constraints" />
     </file>
   </root>
 </debug-info>

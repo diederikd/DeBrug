@@ -35,6 +35,7 @@ public class ReferentieNaarOnderwerp_Constraints extends BaseConstraintsDescript
     if (SNodeOperations.isInstanceOf(parentNode, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"))) {
       valid = false;
     }
+
     return valid;
   }
   private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)", "8115840370078607783");

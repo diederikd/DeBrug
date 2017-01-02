@@ -19,10 +19,16 @@ import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 public class ReferentieNaarReferentieNaarOnderwerp_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
     return this.createCollection_rc7ski_a(editorContext, node);
+  }
+  public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
+    return this.createCollection_rc7ski_a_0(editorContext, node);
   }
   private EditorCell createCollection_rc7ski_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
@@ -185,6 +191,101 @@ public class ReferentieNaarReferentieNaarOnderwerp_Editor extends DefaultNodeEdi
         return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
       } else
       return editorCell;
+    }
+  }
+  private EditorCell createCollection_rc7ski_a_0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_rc7ski_a_0");
+    editorCell.setBig(true);
+    editorCell.addEditorCell(this.createRefCell_rc7ski_a0_0(editorContext, node));
+    return editorCell;
+  }
+  private EditorCell createRefCell_rc7ski_a0_0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("onderwerp");
+    provider.setNoTargetText("<no onderwerp>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new ReferentieNaarReferentieNaarOnderwerp_Editor._Inline_rc7ski_a0a_0());
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("onderwerp");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+  public static class _Inline_rc7ski_a0a_0 extends InlineCellProvider {
+    public _Inline_rc7ski_a0a_0() {
+      super();
+    }
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createCollection_rc7ski_a0a0_0(editorContext, node);
+    }
+    private EditorCell createCollection_rc7ski_a0a0_0(EditorContext editorContext, SNode node) {
+      EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+      editorCell.setCellId("Collection_rc7ski_a0a0_0");
+      editorCell.addEditorCell(this.createRefCell_rc7ski_a0a0a_0(editorContext, node));
+      return editorCell;
+    }
+    private EditorCell createRefCell_rc7ski_a0a0a_0(EditorContext editorContext, SNode node) {
+      CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+      provider.setRole("onderwerp");
+      provider.setNoTargetText("<no onderwerp>");
+      EditorCell editorCell;
+      provider.setAuxiliaryCellProvider(new ReferentieNaarReferentieNaarOnderwerp_Editor._Inline_rc7ski_a0a_0._Inline_rc7ski_a0a0a0_0());
+      editorCell = provider.createEditorCell(editorContext);
+      if (editorCell.getRole() == null) {
+        editorCell.setReferenceCell(true);
+        editorCell.setRole("onderwerp");
+      }
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      SNode attributeConcept = provider.getRoleAttribute();
+      Class attributeKind = provider.getRoleAttributeClass();
+      if (attributeConcept != null) {
+        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+        return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
+      } else
+      return editorCell;
+    }
+    public static class _Inline_rc7ski_a0a0a0_0 extends InlineCellProvider {
+      public _Inline_rc7ski_a0a0a0_0() {
+        super();
+      }
+      public EditorCell createEditorCell(EditorContext editorContext) {
+        return this.createEditorCell(editorContext, this.getSNode());
+      }
+      public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+        return this.createProperty_rc7ski_a0a0a0a(editorContext, node);
+      }
+      private EditorCell createProperty_rc7ski_a0a0a0a(EditorContext editorContext, SNode node) {
+        CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+        provider.setRole("name");
+        provider.setNoTargetText("<no name>");
+        provider.setReadOnly(true);
+        EditorCell editorCell;
+        editorCell = provider.createEditorCell(editorContext);
+        editorCell.setCellId("property_name_1");
+        Style style = new StyleImpl();
+        style.set(StyleAttributes.AUTO_DELETABLE, 0, true);
+        editorCell.getStyle().putAll(style);
+        editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+        SNode attributeConcept = provider.getRoleAttribute();
+        Class attributeKind = provider.getRoleAttributeClass();
+        if (attributeConcept != null) {
+          EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+          return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
+        } else
+        return editorCell;
+      }
     }
   }
 }
