@@ -496,9 +496,6 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="fWIJonDCrj" role="1l3spa">
-      <ref role="1l3spb" to="3fk:7uZw0yZ43Jk" resolve="com.mbeddr.allScripts.build" />
-    </node>
     <node concept="2sgV4H" id="6JjBh8P8pjS" role="1l3spa">
       <ref role="1l3spb" to="rnv7:4nVhWYPmNY9" resolve="mps-apache-commons" />
       <node concept="398BVA" id="6JjBh8P8pkY" role="2JcizS">
@@ -1035,8 +1032,11 @@
       <node concept="m$_yC" id="2E_FCJvvzFV" role="m$_yJ">
         <ref role="m$_y1" to="8x72:5KK2jWpWo0m" resolve="org.campagnelab.mps.UI" />
       </node>
-      <node concept="m$_yC" id="2rhLMRp3fXU" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
+      <node concept="m$_yC" id="3CWBE7EXkb_" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:31bAEZ0srEa" resolve="de.slisson.mps.editor.multiline" />
+      </node>
+      <node concept="m$_yC" id="3CWBE7EXkdl" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
       </node>
       <node concept="m$_yC" id="1IjZ0o_kZ$0" role="m$_yJ">
         <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />

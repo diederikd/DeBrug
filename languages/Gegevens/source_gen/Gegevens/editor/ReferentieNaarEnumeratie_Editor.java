@@ -17,27 +17,27 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import ObjectiefRecht.editor.GN_StyleSheet;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
-public class ObjectDatatype_Editor extends DefaultNodeEditor {
+public class ReferentieNaarEnumeratie_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_f7r04_a(editorContext, node);
+    return this.createCollection_oro7o2_a(editorContext, node);
   }
-  private EditorCell createCollection_f7r04_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_oro7o2_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_f7r04_a");
+    editorCell.setCellId("Collection_oro7o2_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createRefCell_f7r04_a0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_oro7o2_a0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createRefCell_f7r04_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_oro7o2_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("object");
-    provider.setNoTargetText("<no object>");
+    provider.setRole("enumeratie");
+    provider.setNoTargetText("<no enumeratie>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new ObjectDatatype_Editor._Inline_f7r04_a0a());
+    provider.setAuxiliaryCellProvider(new ReferentieNaarEnumeratie_Editor._Inline_oro7o2_a0a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("object");
+      editorCell.setRole("enumeratie");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -48,17 +48,17 @@ public class ObjectDatatype_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  public static class _Inline_f7r04_a0a extends InlineCellProvider {
-    public _Inline_f7r04_a0a() {
+  public static class _Inline_oro7o2_a0a extends InlineCellProvider {
+    public _Inline_oro7o2_a0a() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_f7r04_a0a0(editorContext, node);
+      return this.createProperty_oro7o2_a0a0(editorContext, node);
     }
-    private EditorCell createProperty_f7r04_a0a0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_oro7o2_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");

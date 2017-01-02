@@ -2,12 +2,12 @@
 <debug-info version="2">
   <root nodeRef="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543206">
     <file name="DeBrug.xml">
-      <unit id="7366216351236543206" at="1,0,1171,10" name="DeBrug.build.DeBrug" />
+      <unit id="7366216351236543206" at="1,0,1158,10" name="DeBrug.build.DeBrug" />
     </file>
   </root>
   <root nodeRef="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543388">
     <file name="DeBrugDistribution.xml">
-      <unit id="7366216351236543388" at="1,0,161,10" name="DeBrug.build.DeBrugDistribution" />
+      <unit id="7366216351236543388" at="1,0,156,10" name="DeBrug.build.DeBrugDistribution" />
     </file>
   </root>
 </debug-info>

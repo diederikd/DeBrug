@@ -15,6 +15,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Attribuut = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Concept = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DatumDatatype = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Enumeratie = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_EnumeratieElement = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_GegevensModel = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_GeheelGetalDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Identificatie = new ConceptPresentationBuilder().create();
@@ -25,6 +27,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_OnderwerpDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReeelGetalDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarAbstractKenmerk = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReferentieNaarEnumeratie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarSubject = new ConceptPresentationBuilder().create();
@@ -49,34 +52,40 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 5:
         return props_DatumDatatype;
       case 6:
-        return props_GegevensModel;
+        return props_Enumeratie;
       case 7:
-        return props_GeheelGetalDatatype;
+        return props_EnumeratieElement;
       case 8:
-        return props_Identificatie;
+        return props_GegevensModel;
       case 9:
-        return props_JaNeeDatatype;
+        return props_GeheelGetalDatatype;
       case 10:
-        return props_KenmerkReferentieNaarOnderwerp;
+        return props_Identificatie;
       case 11:
-        return props_Object;
+        return props_JaNeeDatatype;
       case 12:
-        return props_ObjectDatatype;
+        return props_KenmerkReferentieNaarOnderwerp;
       case 13:
-        return props_OnderwerpDatatype;
+        return props_Object;
       case 14:
-        return props_ReeelGetalDatatype;
+        return props_ObjectDatatype;
       case 15:
-        return props_ReferentieNaarAbstractKenmerk;
+        return props_OnderwerpDatatype;
       case 16:
-        return props_ReferentieNaarKenmerk;
+        return props_ReeelGetalDatatype;
       case 17:
-        return props_ReferentieNaarOnderwerp;
+        return props_ReferentieNaarAbstractKenmerk;
       case 18:
-        return props_ReferentieNaarSubject;
+        return props_ReferentieNaarEnumeratie;
       case 19:
-        return props_RijVanKaraktersDatatype;
+        return props_ReferentieNaarKenmerk;
       case 20:
+        return props_ReferentieNaarOnderwerp;
+      case 21:
+        return props_ReferentieNaarSubject;
+      case 22:
+        return props_RijVanKaraktersDatatype;
+      case 23:
         return props_TijdDatatype;
     }
     throw new IllegalStateException("Unknown concept " + c);

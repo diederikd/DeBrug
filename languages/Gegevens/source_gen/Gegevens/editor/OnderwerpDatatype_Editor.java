@@ -14,6 +14,7 @@ import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
+import ObjectiefRecht.editor.GN_StyleSheet;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 public class OnderwerpDatatype_Editor extends DefaultNodeEditor {
@@ -102,6 +103,7 @@ public class OnderwerpDatatype_Editor extends DefaultNodeEditor {
         editorCell = provider.createEditorCell(editorContext);
         editorCell.setCellId("property_name");
         Style style = new StyleImpl();
+        GN_StyleSheet.apply_Onderwerp(style, editorCell);
         style.set(StyleAttributes.AUTO_DELETABLE, 0, true);
         editorCell.getStyle().putAll(style);
         editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());

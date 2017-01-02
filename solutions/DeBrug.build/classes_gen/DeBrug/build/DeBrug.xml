@@ -21,13 +21,11 @@
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
   <property name="artifacts.com.mbeddr.allInOne" location="${mbeddr_core}/artifacts/mbeddr" />
-  <property name="artifacts.com.mbeddr.allScripts.build" location="../mbeddr.core/build/com.mbeddr.allScripts/build/artifacts/com.mbeddr.allScripts.build" />
   <property name="artifacts.mps-apache-commons" location="${mbeddr_core}/artifacts/mps-sl-all/null" />
   <property name="artifacts.org.campagnelab.mps.UI" location="${basedir}/org.campagnelab.UI" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.allInOne}/build.properties" prefix="import.com.mbeddr.allInOne" />
-  <property file="${artifacts.com.mbeddr.allScripts.build}/build.properties" prefix="import.com.mbeddr.allScripts.build" />
   <property file="${artifacts.org.campagnelab.mps.UI}/build.properties" prefix="import.org.campagnelab.mps.UI" />
   <property name="mpsBootstrapCore.version" value="${import.mpsStandalone.mpsBootstrapCore.version}" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -45,10 +43,6 @@
   <property name="spawner.minor.version" value="${import.com.mbeddr.allInOne.spawner.minor.version}" />
   <property name="spawner.build" value="${import.com.mbeddr.allInOne.spawner.build}" />
   <property name="spawner.mbeddr.version" value="${import.com.mbeddr.allInOne.spawner.mbeddr.version}" />
-  <property name="com.mbeddr.allScripts.build.major.version" value="${import.com.mbeddr.allScripts.build.com.mbeddr.allScripts.build.major.version}" />
-  <property name="com.mbeddr.allScripts.build.minor.version" value="${import.com.mbeddr.allScripts.build.com.mbeddr.allScripts.build.minor.version}" />
-  <property name="com.mbeddr.allScripts.build.build" value="${import.com.mbeddr.allScripts.build.com.mbeddr.allScripts.build.build}" />
-  <property name="com.mbeddr.allScripts.build.mbeddr.version" value="${import.com.mbeddr.allScripts.build.com.mbeddr.allScripts.build.mbeddr.version}" />
   <property name="org.campagnelab.mps.UI.ui_version" value="${import.org.campagnelab.mps.UI.org.campagnelab.mps.UI.ui_version}" />
   <property name="org.campagnelab.mps.UI.build_number" value="${import.org.campagnelab.mps.UI.org.campagnelab.mps.UI.build_number}" />
   <property name="environment" value="env" />
@@ -233,7 +227,8 @@
         <depends>jetbrains.mps.ide.make</depends>
         <depends>com.intellij.modules.mps</depends>
         <depends>org.campagnelab.mps.UI</depends>
-        <depends>de.slisson.mps.all</depends>
+        <depends>de.slisson.mps.editor.multiline</depends>
+        <depends>de.slisson.mps.richtext</depends>
         <depends>com.mbeddr.platform</depends>
         <depends>com.mbeddr.mpsutil</depends>
         
@@ -537,12 +532,10 @@
     <copy todir="${build.layout}/icons">
       <fileset dir="${icon.files}" />
     </copy>
-    <echo file="${build.layout}/build.properties">DeBrug.date=${date}${line.separator}DeBrug.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}${line.separator}com.mbeddr.allScripts.build.major.version=${com.mbeddr.allScripts.build.major.version}${line.separator}com.mbeddr.allScripts.build.minor.version=${com.mbeddr.allScripts.build.minor.version}${line.separator}com.mbeddr.allScripts.build.build=${com.mbeddr.allScripts.build.build}${line.separator}com.mbeddr.allScripts.build.mbeddr.version=${com.mbeddr.allScripts.build.mbeddr.version}${line.separator}org.campagnelab.mps.UI.ui_version=${org.campagnelab.mps.UI.ui_version}${line.separator}org.campagnelab.mps.UI.build_number=${org.campagnelab.mps.UI.build_number}</echo>
+    <echo file="${build.layout}/build.properties">DeBrug.date=${date}${line.separator}DeBrug.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}${line.separator}org.campagnelab.mps.UI.ui_version=${org.campagnelab.mps.UI.ui_version}${line.separator}org.campagnelab.mps.UI.build_number=${org.campagnelab.mps.UI.build_number}</echo>
   </target>
   
-  <target name="buildDependents">
-    <ant antfile="../mbeddr.core/build/com.mbeddr.allScripts/build.xml" inheritAll="false" useNativeBasedir="true" />
-  </target>
+  <target name="buildDependents" />
   
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
@@ -573,7 +566,6 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.layout" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.tooltips" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.conditionalEditor" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil" />
@@ -690,12 +682,7 @@
     <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
   </target>
   
-  <target name="makeDependents">
-    <ant antfile="../mbeddr.core/build/com.mbeddr.allScripts/build.xml" inheritAll="false" useNativeBasedir="true">
-      <target name="generate" />
-      <target name="assemble" />
-    </ant>
-  </target>
+  <target name="makeDependents" />
   
   <target name="compileJava" depends="java.compile.Datum, java.compile.Datum#848775529194317175, java.compile.Gegevens, java.compile.Gegevens#6166301676793402228, java.compile.SubjectiefRecht, java.compile.SubjectiefRecht#7136310554705381513, java.compile.ObjectiefRecht, java.compile.ObjectiefRecht#6994217584621125733, java.compile.Simulatie, java.compile.Simulatie#7812026954661547138" />
   
