@@ -36,7 +36,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_LidwoordDe = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LidwoordHet = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_MaterieleVoorwaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Onderwerp = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Onderwerp = new ConceptPresentationBuilder().deprecated().create();
   private final ConceptPresentation props_OptioneleBevoegdheidOptioneleGehoudenheid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RechtsSubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rechtsbetrekking = new ConceptPresentationBuilder().create();
@@ -47,7 +47,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ReferentieNaarArtikel = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarEnumeratie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarKenmerkMetOnderwerp = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarKenmerkMetSubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtsbetrekking = new ConceptPresentationBuilder().create();
@@ -55,6 +54,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ReferentieNaarRechtsgevolgVeroorzaker = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtssubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReferentieNaarReferentieNaarSubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarSubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarVoorwaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarVoorwaardeRechtsbetrekking = new ConceptPresentationBuilder().create();
@@ -153,21 +153,21 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 37:
         return props_ReferentieNaarKenmerk;
       case 38:
-        return props_ReferentieNaarKenmerkMetOnderwerp;
-      case 39:
         return props_ReferentieNaarKenmerkMetSubject;
-      case 40:
+      case 39:
         return props_ReferentieNaarOnderwerp;
-      case 41:
+      case 40:
         return props_ReferentieNaarRechtsbetrekking;
-      case 42:
+      case 41:
         return props_ReferentieNaarRechtsgevolg;
-      case 43:
+      case 42:
         return props_ReferentieNaarRechtsgevolgVeroorzaker;
-      case 44:
+      case 43:
         return props_ReferentieNaarRechtssubject;
-      case 45:
+      case 44:
         return props_ReferentieNaarReferentieNaarOnderwerp;
+      case 45:
+        return props_ReferentieNaarReferentieNaarSubject;
       case 46:
         return props_ReferentieNaarSubject;
       case 47:

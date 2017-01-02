@@ -244,14 +244,14 @@ public class Onderwerp_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNodeList_5e6yc7_c4a0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Onderwerp_Editor.uniekIdentificerendeKenmerkenListHandler_5e6yc7_c4a0(node, "uniekIdentificerendeKenmerken", editorContext);
+    AbstractCellListHandler handler = new Onderwerp_Editor.uniekIdentificerendeKenmerken2ListHandler_5e6yc7_c4a0(node, "uniekIdentificerendeKenmerken2", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_uniekIdentificerendeKenmerken");
+    editorCell.setCellId("refNodeList_uniekIdentificerendeKenmerken2");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class uniekIdentificerendeKenmerkenListHandler_5e6yc7_c4a0 extends RefNodeListHandler {
-    public uniekIdentificerendeKenmerkenListHandler_5e6yc7_c4a0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class uniekIdentificerendeKenmerken2ListHandler_5e6yc7_c4a0 extends RefNodeListHandler {
+    public uniekIdentificerendeKenmerken2ListHandler_5e6yc7_c4a0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -278,7 +278,7 @@ public class Onderwerp_Editor extends DefaultNodeEditor {
           elementCell.addKeyMap(new RefNodeListHandlerElementKeyMap(this, ","));
         }
         if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, 0x67229afa69a3a0bfL, "uniekIdentificerendeKenmerken"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
+          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, 0x3642b84024d34ec1L, "uniekIdentificerendeKenmerken2"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
         }
       }
     }

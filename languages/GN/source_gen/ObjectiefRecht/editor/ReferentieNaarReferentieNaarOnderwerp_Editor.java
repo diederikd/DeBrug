@@ -71,77 +71,40 @@ public class ReferentieNaarReferentieNaarOnderwerp_Editor extends DefaultNodeEdi
     private EditorCell createCollection_rc7ski_a0a0(EditorContext editorContext, SNode node) {
       EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
       editorCell.setCellId("Collection_rc7ski_a0a0");
-      editorCell.addEditorCell(this.createRefCell_rc7ski_a0a0a(editorContext, node));
+      editorCell.addEditorCell(this.createRefNode_rc7ski_a0a0a(editorContext, node));
       return editorCell;
     }
-    private EditorCell createRefCell_rc7ski_a0a0a(EditorContext editorContext, SNode node) {
-      CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-      provider.setRole("onderwerp");
-      provider.setNoTargetText("<no onderwerp>");
-      EditorCell editorCell;
-      provider.setAuxiliaryCellProvider(new ReferentieNaarReferentieNaarOnderwerp_Editor._Inline_rc7ski_a0a._Inline_rc7ski_a0a0a0());
-      editorCell = provider.createEditorCell(editorContext);
-      if (editorCell.getRole() == null) {
-        editorCell.setReferenceCell(true);
-        editorCell.setRole("onderwerp");
-      }
-      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-      SNode attributeConcept = provider.getRoleAttribute();
-      Class attributeKind = provider.getRoleAttributeClass();
-      if (attributeConcept != null) {
-        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-        return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
-      } else
-      return editorCell;
+    private EditorCell createRefNode_rc7ski_a0a0a(EditorContext editorContext, SNode node) {
+      SingleRoleCellProvider provider = new ReferentieNaarReferentieNaarOnderwerp_Editor._Inline_rc7ski_a0a.lidwoordSingleRoleHandler_rc7ski_a0a0a(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL, 0x6e43a734f874c873L, "lidwoord"), editorContext);
+      return provider.createCell();
     }
-    public static class _Inline_rc7ski_a0a0a0 extends InlineCellProvider {
-      public _Inline_rc7ski_a0a0a0() {
-        super();
+    private class lidwoordSingleRoleHandler_rc7ski_a0a0a extends SingleRoleCellProvider {
+      public lidwoordSingleRoleHandler_rc7ski_a0a0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+        super(ownerNode, containmentLink, context);
       }
-      public EditorCell createEditorCell(EditorContext editorContext) {
-        return this.createEditorCell(editorContext, this.getSNode());
-      }
-      public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-        return this.createCollection_rc7ski_a0a0a0a(editorContext, node);
-      }
-      private EditorCell createCollection_rc7ski_a0a0a0a(EditorContext editorContext, SNode node) {
-        EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-        editorCell.setCellId("Collection_rc7ski_a0a0a0a");
-        editorCell.addEditorCell(this.createRefNode_rc7ski_a0a0a0a0(editorContext, node));
+      protected EditorCell createChildCell(SNode child) {
+        EditorCell editorCell = super.createChildCell(child);
+        installCellInfo(child, editorCell);
         return editorCell;
       }
-      private EditorCell createRefNode_rc7ski_a0a0a0a0(EditorContext editorContext, SNode node) {
-        SingleRoleCellProvider provider = new ReferentieNaarReferentieNaarOnderwerp_Editor._Inline_rc7ski_a0a._Inline_rc7ski_a0a0a0.lidwoordSingleRoleHandler_rc7ski_a0a0a0a0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, 0x6e43a734f877eacbL, "lidwoord"), editorContext);
-        return provider.createCell();
+      private void installCellInfo(SNode child, EditorCell editorCell) {
+        if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+          editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL, 0x6e43a734f874c873L, "lidwoord"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        }
+        if (editorCell.getRole() == null) {
+          editorCell.setRole("lidwoord");
+        }
       }
-      private class lidwoordSingleRoleHandler_rc7ski_a0a0a0a0 extends SingleRoleCellProvider {
-        public lidwoordSingleRoleHandler_rc7ski_a0a0a0a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
-          super(ownerNode, containmentLink, context);
-        }
-        protected EditorCell createChildCell(SNode child) {
-          EditorCell editorCell = super.createChildCell(child);
-          installCellInfo(child, editorCell);
-          return editorCell;
-        }
-        private void installCellInfo(SNode child, EditorCell editorCell) {
-          if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-            editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, 0x6e43a734f877eacbL, "lidwoord"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
-          }
-          if (editorCell.getRole() == null) {
-            editorCell.setRole("lidwoord");
-          }
-        }
-        @Override
-        protected EditorCell createEmptyCell() {
-          EditorCell editorCell = super.createEmptyCell();
-          editorCell.setCellId("empty_lidwoord");
+      @Override
+      protected EditorCell createEmptyCell() {
+        EditorCell editorCell = super.createEmptyCell();
+        editorCell.setCellId("empty_lidwoord");
 
-          installCellInfo(null, editorCell);
-          return editorCell;
-        }
-        protected String getNoTargetText() {
-          return "<no lidwoord>";
-        }
+        installCellInfo(null, editorCell);
+        return editorCell;
+      }
+      protected String getNoTargetText() {
+        return "<no lidwoord>";
       }
     }
   }
@@ -233,15 +196,15 @@ public class ReferentieNaarReferentieNaarOnderwerp_Editor extends DefaultNodeEdi
     private EditorCell createCollection_rc7ski_a0a0_0(EditorContext editorContext, SNode node) {
       EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
       editorCell.setCellId("Collection_rc7ski_a0a0_0");
-      editorCell.addEditorCell(this.createRefCell_rc7ski_a0a0a_0(editorContext, node));
+      editorCell.addEditorCell(this.createRefCell_rc7ski_a0a0a(editorContext, node));
       return editorCell;
     }
-    private EditorCell createRefCell_rc7ski_a0a0a_0(EditorContext editorContext, SNode node) {
+    private EditorCell createRefCell_rc7ski_a0a0a(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
       provider.setRole("onderwerp");
       provider.setNoTargetText("<no onderwerp>");
       EditorCell editorCell;
-      provider.setAuxiliaryCellProvider(new ReferentieNaarReferentieNaarOnderwerp_Editor._Inline_rc7ski_a0a_0._Inline_rc7ski_a0a0a0_0());
+      provider.setAuxiliaryCellProvider(new ReferentieNaarReferentieNaarOnderwerp_Editor._Inline_rc7ski_a0a_0._Inline_rc7ski_a0a0a0());
       editorCell = provider.createEditorCell(editorContext);
       if (editorCell.getRole() == null) {
         editorCell.setReferenceCell(true);
@@ -256,8 +219,8 @@ public class ReferentieNaarReferentieNaarOnderwerp_Editor extends DefaultNodeEdi
       } else
       return editorCell;
     }
-    public static class _Inline_rc7ski_a0a0a0_0 extends InlineCellProvider {
-      public _Inline_rc7ski_a0a0a0_0() {
+    public static class _Inline_rc7ski_a0a0a0 extends InlineCellProvider {
+      public _Inline_rc7ski_a0a0a0() {
         super();
       }
       public EditorCell createEditorCell(EditorContext editorContext) {

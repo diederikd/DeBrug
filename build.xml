@@ -20,7 +20,7 @@
   <property name="artifacts.mpsBuildUI" location="${mps_home}" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
-  <property name="artifacts.com.mbeddr.allInOne" location="${mbeddr_core}/artifacts/mbeddr" />
+  <property name="artifacts.com.mbeddr.allInOne" location="${basedir}/com.mbeddr.allInOne" />
   <property name="artifacts.mps-apache-commons" location="${mbeddr_core}/artifacts/mps-sl-all/null" />
   <property name="artifacts.org.campagnelab.mps.UI" location="${basedir}/org.campagnelab.UI" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
@@ -68,35 +68,37 @@
     <copy todir="${build.layout}/license">
       <fileset dir="${artifacts.mpsStandalone}/license" />
     </copy>
-    <mkdir dir="${build.layout}/plugins" />
-    <copy todir="${build.layout}/plugins">
-      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins" />
+    <copy file="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" todir="${build.layout}" />
+    <mkdir dir="${build.layout}/UI" />
+    <copy todir="${build.layout}/UI">
+      <fileset dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI" />
     </copy>
     <mkdir dir="${build.layout}/de.slisson.mps.all" />
     <copy todir="${build.layout}/de.slisson.mps.all">
       <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all" />
     </copy>
-    <jar destfile="${build.layout}/org.campagnelab.mps.UI.jar" duplicate="preserve">
+    <mkdir dir="${build.layout}/mbeddr.mpsutil" />
+    <copy todir="${build.layout}/mbeddr.mpsutil">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil" />
+    </copy>
+    <mkdir dir="${build.layout}/mbeddr.platform" />
+    <copy todir="${build.layout}/mbeddr.platform">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform" />
+    </copy>
+    <mkdir dir="${build.layout}/languages/UI" />
+    <jar destfile="${build.layout}/languages/UI/org.campagnelab.mps.ui.jar" duplicate="preserve">
       <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.jar" />
-      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui-generator.jar" />
-      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui-src.jar" />
-      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.code-src.jar" />
-      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.code.jar" />
     </jar>
-    <mkdir dir="${build.layout}/languages" />
-    <jar destfile="${build.layout}/languages/org.campagnelab.mps.ui.jar" duplicate="preserve">
-      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.jar" />
-    </jar>
-    <jar destfile="${build.layout}/languages/org.campagnelab.mps.ui-generator.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/languages/UI/org.campagnelab.mps.ui-generator.jar" duplicate="preserve">
       <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui-generator.jar" />
     </jar>
-    <jar destfile="${build.layout}/languages/org.campagnelab.mps.ui-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/languages/UI/org.campagnelab.mps.ui-src.jar" duplicate="preserve">
       <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui-src.jar" />
     </jar>
-    <jar destfile="${build.layout}/languages/org.campagnelab.mps.ui.code-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/languages/UI/org.campagnelab.mps.ui.code-src.jar" duplicate="preserve">
       <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.code-src.jar" />
     </jar>
-    <jar destfile="${build.layout}/languages/org.campagnelab.mps.ui.code.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/languages/UI/org.campagnelab.mps.ui.code.jar" duplicate="preserve">
       <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.code.jar" />
     </jar>
     <mkdir dir="${build.layout}/bin" />
@@ -519,10 +521,7 @@
     <copy todir="${build.layout}/plugins/mbeddr.core">
       <fileset dir="${mbeddr.files}" />
     </copy>
-    <mkdir dir="${build.layout}/images" />
-    <copy todir="${build.layout}/images">
-      <fileset dir="${image.files}" />
-    </copy>
+    <mkdir dir="${build.layout}/plugins" />
     <mkdir dir="${build.layout}/icons" />
     <copy todir="${build.layout}/icons">
       <fileset dir="${icon.files}" />
@@ -538,10 +537,10 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
-    <unzip src="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" dest="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
     <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip" />
     <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
+    <unzip src="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" dest="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
   </target>
   
   <target name="build" depends="assemble" />

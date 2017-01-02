@@ -11,6 +11,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -43,6 +44,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -159,6 +161,12 @@
       <property role="20kJfa" value="uniekIdentificerendeKenmerken" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
+    </node>
+    <node concept="1TJgyj" id="3p2I40$QiaX" role="1TKVEi">
+      <property role="IQ2ns" value="3909890012146639549" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lidwoord" />
+      <ref role="20lvS9" node="6T3DNjSsxkp" resolve="Lidwoord" />
     </node>
     <node concept="PrWs8" id="64gsXol8COb" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -426,6 +434,14 @@
       <property role="20kJfa" value="uniekIdentificerendeKenmerken" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
+      <node concept="asaX9" id="3p2I40$QEAw" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="3p2I40$OOV1" role="1TKVEi">
+      <property role="IQ2ns" value="3909890012146257601" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="uniekIdentificerendeKenmerken2" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6T3DNjSpxTt" resolve="AbstractReferentieNaarKenmerk" />
     </node>
     <node concept="1TJgyj" id="6T3DNjStYFb" role="1TKVEi">
       <property role="IQ2ns" value="7945378013560433355" />
@@ -809,24 +825,17 @@
       <ref role="20lvS9" node="6syAJDDPL2P" resolve="Enumeratie" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6syAJDDSVgW">
-    <property role="EcuMT" value="7431672735423771708" />
-    <property role="3GE5qa" value="Kenmerk" />
-    <property role="TrG5h" value="ReferentieNaarKenmerkMetOnderwerp" />
-    <ref role="1TJDcQ" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
-    <node concept="1TJgyj" id="6syAJDDSVgX" role="1TKVEi">
-      <property role="IQ2ns" value="7431672735423771709" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="kenmerkMetOnderwerp" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="MvzNsyB_CF" resolve="ReferentieNaarOnderwerp" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2xDgDlj6owz">
     <property role="EcuMT" value="2911931843183478819" />
     <property role="3GE5qa" value="Kenmerk" />
     <property role="TrG5h" value="ReferentieNaarKenmerkMetSubject" />
     <ref role="1TJDcQ" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
+    <node concept="1TJgyj" id="3p2I40$PD_L" role="1TKVEi">
+      <property role="IQ2ns" value="3909890012146473329" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lidwoord" />
+      <ref role="20lvS9" node="6T3DNjSsxkp" resolve="Lidwoord" />
+    </node>
     <node concept="1TJgyj" id="2xDgDlj6ow$" role="1TKVEi">
       <property role="IQ2ns" value="2911931843183478820" />
       <property role="20lmBu" value="reference" />
@@ -954,6 +963,19 @@
     <property role="TrG5h" value="LidwoordHet" />
     <property role="34LRSv" value="het" />
     <ref role="1TJDcQ" node="6T3DNjSsxkp" resolve="Lidwoord" />
+  </node>
+  <node concept="1TIwiD" id="3p2I40$PzZ0">
+    <property role="EcuMT" value="3909890012146450368" />
+    <property role="3GE5qa" value="ReferentieNaarKenmerk" />
+    <property role="TrG5h" value="ReferentieNaarReferentieNaarSubject" />
+    <ref role="1TJDcQ" node="6T3DNjSpxTt" resolve="AbstractReferentieNaarKenmerk" />
+    <node concept="1TJgyj" id="3p2I40$PzZ1" role="1TKVEi">
+      <property role="IQ2ns" value="3909890012146450369" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="subject" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2xDgDlj6HAL" resolve="ReferentieNaarSubject" />
+    </node>
   </node>
 </model>
 

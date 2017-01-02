@@ -127,9 +127,6 @@
     <file name="ReferentieNaarEnumeratie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarEnumeratie_BehaviorDescriptor" />
     </file>
-    <file name="ReferentieNaarKenmerkMetOnderwerp_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarKenmerkMetOnderwerp_BehaviorDescriptor" />
-    </file>
     <file name="ReferentieNaarKenmerkMetSubject_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarKenmerkMetSubject_BehaviorDescriptor" />
     </file>
@@ -153,6 +150,9 @@
     </file>
     <file name="ReferentieNaarReferentieNaarOnderwerp_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarReferentieNaarOnderwerp_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarReferentieNaarSubject_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarReferentieNaarSubject_BehaviorDescriptor" />
     </file>
     <file name="ReferentieNaarSubject_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarSubject_BehaviorDescriptor" />
