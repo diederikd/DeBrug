@@ -18,38 +18,56 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(12);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(21);
+  /*package*/ final ConceptDescriptor myConceptAbstractAttribuut = createDescriptorForAbstractAttribuut();
   /*package*/ final ConceptDescriptor myConceptAbstractDatatype = createDescriptorForAbstractDatatype();
+  /*package*/ final ConceptDescriptor myConceptAbstractObject = createDescriptorForAbstractObject();
   /*package*/ final ConceptDescriptor myConceptAttribuut = createDescriptorForAttribuut();
   /*package*/ final ConceptDescriptor myConceptConcept = createDescriptorForConcept();
   /*package*/ final ConceptDescriptor myConceptDatumDatatype = createDescriptorForDatumDatatype();
   /*package*/ final ConceptDescriptor myConceptGegevensModel = createDescriptorForGegevensModel();
   /*package*/ final ConceptDescriptor myConceptGeheelGetalDatatype = createDescriptorForGeheelGetalDatatype();
+  /*package*/ final ConceptDescriptor myConceptIdentificatie = createDescriptorForIdentificatie();
   /*package*/ final ConceptDescriptor myConceptJaNeeDatatype = createDescriptorForJaNeeDatatype();
+  /*package*/ final ConceptDescriptor myConceptKenmerkReferentieNaarOnderwerp = createDescriptorForKenmerkReferentieNaarOnderwerp();
   /*package*/ final ConceptDescriptor myConceptObject = createDescriptorForObject();
+  /*package*/ final ConceptDescriptor myConceptObjectDatatype = createDescriptorForObjectDatatype();
+  /*package*/ final ConceptDescriptor myConceptOnderwerpDatatype = createDescriptorForOnderwerpDatatype();
   /*package*/ final ConceptDescriptor myConceptReeelGetalDatatype = createDescriptorForReeelGetalDatatype();
+  /*package*/ final ConceptDescriptor myConceptReferentieNaarAbstractKenmerk = createDescriptorForReferentieNaarAbstractKenmerk();
+  /*package*/ final ConceptDescriptor myConceptReferentieNaarKenmerk = createDescriptorForReferentieNaarKenmerk();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarOnderwerp = createDescriptorForReferentieNaarOnderwerp();
+  /*package*/ final ConceptDescriptor myConceptReferentieNaarSubject = createDescriptorForReferentieNaarSubject();
   /*package*/ final ConceptDescriptor myConceptRijVanKaraktersDatatype = createDescriptorForRijVanKaraktersDatatype();
   /*package*/ final ConceptDescriptor myConceptTijdDatatype = createDescriptorForTijdDatatype();
 
   public StructureAspectDescriptor() {
-    myIndexMap.put(myConceptAbstractDatatype.getId(), 0);
-    myIndexMap.put(myConceptAttribuut.getId(), 1);
-    myIndexMap.put(myConceptConcept.getId(), 2);
-    myIndexMap.put(myConceptDatumDatatype.getId(), 3);
-    myIndexMap.put(myConceptGegevensModel.getId(), 4);
-    myIndexMap.put(myConceptGeheelGetalDatatype.getId(), 5);
-    myIndexMap.put(myConceptJaNeeDatatype.getId(), 6);
-    myIndexMap.put(myConceptObject.getId(), 7);
-    myIndexMap.put(myConceptReeelGetalDatatype.getId(), 8);
-    myIndexMap.put(myConceptReferentieNaarOnderwerp.getId(), 9);
-    myIndexMap.put(myConceptRijVanKaraktersDatatype.getId(), 10);
-    myIndexMap.put(myConceptTijdDatatype.getId(), 11);
+    myIndexMap.put(myConceptAbstractAttribuut.getId(), 0);
+    myIndexMap.put(myConceptAbstractDatatype.getId(), 1);
+    myIndexMap.put(myConceptAbstractObject.getId(), 2);
+    myIndexMap.put(myConceptAttribuut.getId(), 3);
+    myIndexMap.put(myConceptConcept.getId(), 4);
+    myIndexMap.put(myConceptDatumDatatype.getId(), 5);
+    myIndexMap.put(myConceptGegevensModel.getId(), 6);
+    myIndexMap.put(myConceptGeheelGetalDatatype.getId(), 7);
+    myIndexMap.put(myConceptIdentificatie.getId(), 8);
+    myIndexMap.put(myConceptJaNeeDatatype.getId(), 9);
+    myIndexMap.put(myConceptKenmerkReferentieNaarOnderwerp.getId(), 10);
+    myIndexMap.put(myConceptObject.getId(), 11);
+    myIndexMap.put(myConceptObjectDatatype.getId(), 12);
+    myIndexMap.put(myConceptOnderwerpDatatype.getId(), 13);
+    myIndexMap.put(myConceptReeelGetalDatatype.getId(), 14);
+    myIndexMap.put(myConceptReferentieNaarAbstractKenmerk.getId(), 15);
+    myIndexMap.put(myConceptReferentieNaarKenmerk.getId(), 16);
+    myIndexMap.put(myConceptReferentieNaarOnderwerp.getId(), 17);
+    myIndexMap.put(myConceptReferentieNaarSubject.getId(), 18);
+    myIndexMap.put(myConceptRijVanKaraktersDatatype.getId(), 19);
+    myIndexMap.put(myConceptTijdDatatype.getId(), 20);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAbstractDatatype, myConceptAttribuut, myConceptConcept, myConceptDatumDatatype, myConceptGegevensModel, myConceptGeheelGetalDatatype, myConceptJaNeeDatatype, myConceptObject, myConceptReeelGetalDatatype, myConceptReferentieNaarOnderwerp, myConceptRijVanKaraktersDatatype, myConceptTijdDatatype);
+    return Arrays.asList(myConceptAbstractAttribuut, myConceptAbstractDatatype, myConceptAbstractObject, myConceptAttribuut, myConceptConcept, myConceptDatumDatatype, myConceptGegevensModel, myConceptGeheelGetalDatatype, myConceptIdentificatie, myConceptJaNeeDatatype, myConceptKenmerkReferentieNaarOnderwerp, myConceptObject, myConceptObjectDatatype, myConceptOnderwerpDatatype, myConceptReeelGetalDatatype, myConceptReferentieNaarAbstractKenmerk, myConceptReferentieNaarKenmerk, myConceptReferentieNaarOnderwerp, myConceptReferentieNaarSubject, myConceptRijVanKaraktersDatatype, myConceptTijdDatatype);
   }
 
   @Override
@@ -61,28 +79,46 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     }
     switch (((int) index)) {
       case 0:
-        return myConceptAbstractDatatype;
+        return myConceptAbstractAttribuut;
       case 1:
-        return myConceptAttribuut;
+        return myConceptAbstractDatatype;
       case 2:
-        return myConceptConcept;
+        return myConceptAbstractObject;
       case 3:
-        return myConceptDatumDatatype;
+        return myConceptAttribuut;
       case 4:
-        return myConceptGegevensModel;
+        return myConceptConcept;
       case 5:
-        return myConceptGeheelGetalDatatype;
+        return myConceptDatumDatatype;
       case 6:
-        return myConceptJaNeeDatatype;
+        return myConceptGegevensModel;
       case 7:
-        return myConceptObject;
+        return myConceptGeheelGetalDatatype;
       case 8:
-        return myConceptReeelGetalDatatype;
+        return myConceptIdentificatie;
       case 9:
-        return myConceptReferentieNaarOnderwerp;
+        return myConceptJaNeeDatatype;
       case 10:
-        return myConceptRijVanKaraktersDatatype;
+        return myConceptKenmerkReferentieNaarOnderwerp;
       case 11:
+        return myConceptObject;
+      case 12:
+        return myConceptObjectDatatype;
+      case 13:
+        return myConceptOnderwerpDatatype;
+      case 14:
+        return myConceptReeelGetalDatatype;
+      case 15:
+        return myConceptReferentieNaarAbstractKenmerk;
+      case 16:
+        return myConceptReferentieNaarKenmerk;
+      case 17:
+        return myConceptReferentieNaarOnderwerp;
+      case 18:
+        return myConceptReferentieNaarSubject;
+      case 19:
+        return myConceptRijVanKaraktersDatatype;
+      case 20:
         return myConceptTijdDatatype;
       default:
         throw new IllegalStateException();
@@ -99,11 +135,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return (res == null ? -1 : res);
   }
 
+  private static ConceptDescriptor createDescriptorForAbstractAttribuut() {
+    return new ConceptDescriptorBuilder("Gegevens.structure.AbstractAttribuut", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6dbaL)).super_("Gegevens.structure.Concept").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL)).parents("Gegevens.structure.Concept").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x688d4c283dbb8ba4L, "datatype", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL), true, false, false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "7533761487378811812"))).children(new String[]{"datatype"}, new boolean[]{false}).abstract_().sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023866670522")).create();
+  }
   private static ConceptDescriptor createDescriptorForAbstractDatatype() {
     return new ConceptDescriptorBuilder("Gegevens.structure.AbstractDatatype", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "2907397198644945306")).create();
   }
+  private static ConceptDescriptor createDescriptorForAbstractObject() {
+    return new ConceptDescriptorBuilder("Gegevens.structure.AbstractObject", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L)).super_("Gegevens.structure.Concept").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL)).parents("Gegevens.structure.Concept").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x55931ab45f2b651bL, "attributen", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6dbaL), true, true, false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793455899")), new ConceptDescriptorBuilder.Link(0x76ccb41bf385762cL, "identificaties", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf3857614L), true, true, false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023867196972"))).children(new String[]{"attributen", "identificaties"}, new boolean[]{true, true}).abstract_().sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023866670519")).create();
+  }
   private static ConceptDescriptor createDescriptorForAttribuut() {
-    return new ConceptDescriptorBuilder("Gegevens.structure.Attribuut", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2b64e4L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x688d4c283dbb8ba4L, "datatype", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL), true, false, false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "7533761487378811812"))).children(new String[]{"datatype"}, new boolean[]{false}).sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793455844")).create();
+    return new ConceptDescriptorBuilder("Gegevens.structure.Attribuut", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2b64e4L)).super_("Gegevens.structure.AbstractAttribuut").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6dbaL)).parents("Gegevens.structure.AbstractAttribuut", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6dbaL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793455844")).create();
   }
   private static ConceptDescriptor createDescriptorForConcept() {
     return new ConceptDescriptorBuilder("Gegevens.structure.Concept", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793402284")).create();
@@ -112,22 +154,43 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return new ConceptDescriptorBuilder("Gegevens.structure.DatumDatatype", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a1b1L)).super_("Gegevens.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).parents("Gegevens.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).alias("datum", "").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "2907397198644945329")).create();
   }
   private static ConceptDescriptor createDescriptorForGegevensModel() {
-    return new ConceptDescriptorBuilder("Gegevens.structure.GegevensModel", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2afbb2L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x55931ab45f2afbb3L, "objecten", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL), true, true, false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793428915"))).children(new String[]{"objecten"}, new boolean[]{true}).rootable().sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793428914")).create();
+    return new ConceptDescriptorBuilder("Gegevens.structure.GegevensModel", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2afbb2L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x55931ab45f2afbb3L, "objecten", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L), true, true, false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793428915"))).children(new String[]{"objecten"}, new boolean[]{true}).rootable().sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793428914")).create();
   }
   private static ConceptDescriptor createDescriptorForGeheelGetalDatatype() {
     return new ConceptDescriptorBuilder("Gegevens.structure.GeheelGetalDatatype", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a1cdL)).super_("Gegevens.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).parents("Gegevens.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).alias("geheel getal", "").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "2907397198644945357")).create();
   }
+  private static ConceptDescriptor createDescriptorForIdentificatie() {
+    return new ConceptDescriptorBuilder("Gegevens.structure.Identificatie", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf3857614L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x76ccb41bf3857617L, "attributen", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6dbaL), true, true, false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023867196951"))).children(new String[]{"attributen"}, new boolean[]{true}).sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023867196948")).create();
+  }
   private static ConceptDescriptor createDescriptorForJaNeeDatatype() {
     return new ConceptDescriptorBuilder("Gegevens.structure.JaNeeDatatype", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x56b967d667610da9L)).super_("Gegevens.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).parents("Gegevens.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).alias("ja/nee", "").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6249140128508349865")).create();
   }
+  private static ConceptDescriptor createDescriptorForKenmerkReferentieNaarOnderwerp() {
+    return new ConceptDescriptorBuilder("Gegevens.structure.KenmerkReferentieNaarOnderwerp", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf381795fL)).super_("Gegevens.structure.ReferentieNaarAbstractKenmerk").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf38023a8L)).parents("Gegevens.structure.ReferentieNaarAbstractKenmerk").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf38023a8L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x76ccb41bf3817960L, "kenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL), false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023866935648"))).references("kenmerk").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023866935647")).create();
+  }
   private static ConceptDescriptor createDescriptorForObject() {
-    return new ConceptDescriptorBuilder("Gegevens.structure.Object", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93bdL)).super_("Gegevens.structure.Concept").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL)).parents("Gegevens.structure.Concept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x55931ab45f2b651bL, "attributen", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2b64e4L), true, true, false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793455899"))).children(new String[]{"attributen"}, new boolean[]{true}).sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793402301")).create();
+    return new ConceptDescriptorBuilder("Gegevens.structure.Object", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93bdL)).super_("Gegevens.structure.AbstractObject").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L)).parents("Gegevens.structure.AbstractObject", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793402301")).create();
+  }
+  private static ConceptDescriptor createDescriptorForObjectDatatype() {
+    return new ConceptDescriptorBuilder("Gegevens.structure.ObjectDatatype", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf382feeaL)).super_("Gegevens.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).parents("Gegevens.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x76ccb41bf382feebL, "object", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93bdL), false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023867035371"))).references("object").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023867035370")).create();
+  }
+  private static ConceptDescriptor createDescriptorForOnderwerpDatatype() {
+    return new ConceptDescriptorBuilder("Gegevens.structure.OnderwerpDatatype", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383394aL)).super_("Gegevens.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).parents("Gegevens.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x76ccb41bf383394bL, "onderwerp", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L), false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023867050315"))).references("onderwerp").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023867050314")).create();
   }
   private static ConceptDescriptor createDescriptorForReeelGetalDatatype() {
     return new ConceptDescriptorBuilder("Gegevens.structure.ReeelGetalDatatype", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a1e5L)).super_("Gegevens.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).parents("Gegevens.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).alias("reëel getal", "").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "2907397198644945381")).create();
   }
+  private static ConceptDescriptor createDescriptorForReferentieNaarAbstractKenmerk() {
+    return new ConceptDescriptorBuilder("Gegevens.structure.ReferentieNaarAbstractKenmerk", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf38023a8L)).super_("Gegevens.structure.AbstractAttribuut").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6dbaL)).parents("Gegevens.structure.AbstractAttribuut").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6dbaL)).abstract_().sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023866848168")).create();
+  }
+  private static ConceptDescriptor createDescriptorForReferentieNaarKenmerk() {
+    return new ConceptDescriptorBuilder("Gegevens.structure.ReferentieNaarKenmerk", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db6L)).super_("Gegevens.structure.ReferentieNaarAbstractKenmerk").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf38023a8L)).parents("Gegevens.structure.ReferentieNaarAbstractKenmerk").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf38023a8L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x76ccb41bf37dbf07L, "kenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L), false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023866691335"))).references("kenmerk").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023866670518")).create();
+  }
   private static ConceptDescriptor createDescriptorForReferentieNaarOnderwerp() {
-    return new ConceptDescriptorBuilder("Gegevens.structure.ReferentieNaarOnderwerp", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L)).super_("Gegevens.structure.Concept").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL)).parents("Gegevens.structure.Concept").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x55931ab45f2a93c1L, "onderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L), false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793402305"))).references("onderwerp").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793402304")).create();
+    return new ConceptDescriptorBuilder("Gegevens.structure.ReferentieNaarOnderwerp", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L)).super_("Gegevens.structure.AbstractObject").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L)).parents("Gegevens.structure.AbstractObject").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x55931ab45f2a93c1L, "onderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L), false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793402305"))).references("onderwerp").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "6166301676793402304")).create();
+  }
+  private static ConceptDescriptor createDescriptorForReferentieNaarSubject() {
+    return new ConceptDescriptorBuilder("Gegevens.structure.ReferentieNaarSubject", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383bc1aL)).super_("Gegevens.structure.AbstractObject").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L)).parents("Gegevens.structure.AbstractObject").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x76ccb41bf383bc1bL, "subject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023867083803"))).references("subject").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "8560415023867083802")).create();
   }
   private static ConceptDescriptor createDescriptorForRijVanKaraktersDatatype() {
     return new ConceptDescriptorBuilder("Gegevens.structure.RijVanKaraktersDatatype", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a1bfL)).super_("Gegevens.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).parents("Gegevens.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).alias("rij van karakters", "").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "2907397198644945343")).create();

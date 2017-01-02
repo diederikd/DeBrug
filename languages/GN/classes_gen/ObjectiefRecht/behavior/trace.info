@@ -25,8 +25,14 @@
     <file name="AbstractKenmerk_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstractKenmerk_BehaviorDescriptor" />
     </file>
+    <file name="AbstractReferentieNaarKenmerk_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstractReferentieNaarKenmerk_BehaviorDescriptor" />
+    </file>
     <file name="AbstracteVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstracteVoorwaarde_BehaviorDescriptor" />
+    </file>
+    <file name="Actie_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Actie_BehaviorDescriptor" />
     </file>
     <file name="Afleidingsregel_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Afleidingsregel_BehaviorDescriptor" />
@@ -61,17 +67,32 @@
     <file name="GeheelGetalDatatype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.GeheelGetalDatatype_BehaviorDescriptor" />
     </file>
+    <file name="Gelijkstelling_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Gelijkstelling_BehaviorDescriptor" />
+    </file>
     <file name="ImmuniteitGeenbevoegdheid_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ImmuniteitGeenbevoegdheid_BehaviorDescriptor" />
     </file>
     <file name="JaNeeDatatype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.JaNeeDatatype_BehaviorDescriptor" />
     </file>
+    <file name="KenmerkReferentie_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.KenmerkReferentie_BehaviorDescriptor" />
+    </file>
     <file name="Kenmerk_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Kenmerk_BehaviorDescriptor" />
     </file>
     <file name="KrachtigeAanspraakFataleVerplichtig_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.KrachtigeAanspraakFataleVerplichtig_BehaviorDescriptor" />
+    </file>
+    <file name="LidwoordDe_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.LidwoordDe_BehaviorDescriptor" />
+    </file>
+    <file name="LidwoordHet_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.LidwoordHet_BehaviorDescriptor" />
+    </file>
+    <file name="Lidwoord_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Lidwoord_BehaviorDescriptor" />
     </file>
     <file name="MaterieleVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.MaterieleVoorwaarde_BehaviorDescriptor" />
@@ -130,6 +151,9 @@
     <file name="ReferentieNaarRechtssubject_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarRechtssubject_BehaviorDescriptor" />
     </file>
+    <file name="ReferentieNaarReferentieNaarOnderwerp_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarReferentieNaarOnderwerp_BehaviorDescriptor" />
+    </file>
     <file name="ReferentieNaarSubject_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarSubject_BehaviorDescriptor" />
     </file>
@@ -159,6 +183,9 @@
     </file>
     <file name="Toestand_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Toestand_BehaviorDescriptor" />
+    </file>
+    <file name="Variabele_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Variabele_BehaviorDescriptor" />
     </file>
     <file name="VerplichteBevoegdheidVerplichteGehoudenheid_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VerplichteBevoegdheidVerplichteGehoudenheid_BehaviorDescriptor" />

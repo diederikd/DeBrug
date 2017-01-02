@@ -9,16 +9,25 @@ import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private final ConceptPresentation props_AbstractAttribuut = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AbstractDatatype = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_AbstractObject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Attribuut = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Concept = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DatumDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_GegevensModel = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_GeheelGetalDatatype = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Identificatie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_JaNeeDatatype = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_KenmerkReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Object = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ObjectDatatype = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_OnderwerpDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReeelGetalDatatype = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReferentieNaarAbstractKenmerk = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReferentieNaarSubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RijVanKaraktersDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TijdDatatype = new ConceptPresentationBuilder().create();
 
@@ -28,28 +37,46 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case 0:
-        return props_AbstractDatatype;
+        return props_AbstractAttribuut;
       case 1:
-        return props_Attribuut;
+        return props_AbstractDatatype;
       case 2:
-        return props_Concept;
+        return props_AbstractObject;
       case 3:
-        return props_DatumDatatype;
+        return props_Attribuut;
       case 4:
-        return props_GegevensModel;
+        return props_Concept;
       case 5:
-        return props_GeheelGetalDatatype;
+        return props_DatumDatatype;
       case 6:
-        return props_JaNeeDatatype;
+        return props_GegevensModel;
       case 7:
-        return props_Object;
+        return props_GeheelGetalDatatype;
       case 8:
-        return props_ReeelGetalDatatype;
+        return props_Identificatie;
       case 9:
-        return props_ReferentieNaarOnderwerp;
+        return props_JaNeeDatatype;
       case 10:
-        return props_RijVanKaraktersDatatype;
+        return props_KenmerkReferentieNaarOnderwerp;
       case 11:
+        return props_Object;
+      case 12:
+        return props_ObjectDatatype;
+      case 13:
+        return props_OnderwerpDatatype;
+      case 14:
+        return props_ReeelGetalDatatype;
+      case 15:
+        return props_ReferentieNaarAbstractKenmerk;
+      case 16:
+        return props_ReferentieNaarKenmerk;
+      case 17:
+        return props_ReferentieNaarOnderwerp;
+      case 18:
+        return props_ReferentieNaarSubject;
+      case 19:
+        return props_RijVanKaraktersDatatype;
+      case 20:
         return props_TijdDatatype;
     }
     throw new IllegalStateException("Unknown concept " + c);

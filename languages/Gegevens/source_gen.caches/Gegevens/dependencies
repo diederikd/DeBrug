@@ -4,6 +4,7 @@
     <classNode dependClassName="Gegevens.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="Gegevens.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="Gegevens.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="Gegevens.intentions.IntentionsDescriptor" />
     <classNode dependClassName="Gegevens.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="Gegevens.structure.StructureAspectDescriptor" />
     <classNode dependClassName="Gegevens.typesystem.TypesystemDescriptor" />
@@ -15,6 +16,7 @@
     <classNode dependClassName="java.util.UUID" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.Language" />

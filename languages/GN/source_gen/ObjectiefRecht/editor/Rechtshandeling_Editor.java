@@ -263,7 +263,13 @@ public class Rechtshandeling_Editor extends DefaultNodeEditor {
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(this.createRefNode_2759bf_a31a(editorContext, node));
+    try {
+      editorContext.getCellFactory().pushCellContext();
+      editorContext.getCellFactory().addCellContextHints(new String[]{});
+      editorCell.addEditorCell(this.createRefNode_2759bf_a31a(editorContext, node));
+    } finally {
+      editorContext.getCellFactory().popCellContext();
+    }
     return editorCell;
   }
   private EditorCell createRefNode_2759bf_a31a(EditorContext editorContext, SNode node) {

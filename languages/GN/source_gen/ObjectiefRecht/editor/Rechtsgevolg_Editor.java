@@ -8,11 +8,11 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
@@ -44,6 +44,9 @@ public class Rechtsgevolg_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_g12lkx_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtsgevolg");
     editorCell.setCellId("Constant_g12lkx_a0");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Bold(style, editorCell);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -221,7 +224,7 @@ public class Rechtsgevolg_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_g12lkx_a6d0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "wijzigende kenmerken");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "wijzigingen");
     editorCell.setCellId("Constant_g12lkx_a6d0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -236,19 +239,18 @@ public class Rechtsgevolg_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNodeList_g12lkx_c6d0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Rechtsgevolg_Editor.WijzigendeKenmerkenListHandler_g12lkx_c6d0(node, "WijzigendeKenmerken", editorContext);
+    AbstractCellListHandler handler = new Rechtsgevolg_Editor.WijzigingenListHandler_g12lkx_c6d0(node, "Wijzigingen", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_WijzigendeKenmerken");
+    editorCell.setCellId("refNodeList_Wijzigingen");
     Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class WijzigendeKenmerkenListHandler_g12lkx_c6d0 extends RefNodeListHandler {
-    public WijzigendeKenmerkenListHandler_g12lkx_c6d0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class WijzigingenListHandler_g12lkx_c6d0 extends RefNodeListHandler {
+    public WijzigingenListHandler_g12lkx_c6d0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -274,7 +276,7 @@ public class Rechtsgevolg_Editor extends DefaultNodeEditor {
           elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
         }
         if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d77L, 0x464e588a704bf237L, "WijzigendeKenmerken"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
+          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d77L, 0x76ccb41bf386dde6L, "Wijzigingen"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
         }
       }
     }

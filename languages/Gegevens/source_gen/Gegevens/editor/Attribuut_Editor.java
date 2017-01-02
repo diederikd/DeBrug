@@ -55,7 +55,7 @@ public class Attribuut_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNode_agwwv5_c0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Attribuut_Editor.datatypeSingleRoleHandler_agwwv5_c0(node, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2b64e4L, 0x688d4c283dbb8ba4L, "datatype"), editorContext);
+    SingleRoleCellProvider provider = new Attribuut_Editor.datatypeSingleRoleHandler_agwwv5_c0(node, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6dbaL, 0x688d4c283dbb8ba4L, "datatype"), editorContext);
     return provider.createCell();
   }
   private class datatypeSingleRoleHandler_agwwv5_c0 extends SingleRoleCellProvider {
@@ -69,7 +69,7 @@ public class Attribuut_Editor extends DefaultNodeEditor {
     }
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2b64e4L, 0x688d4c283dbb8ba4L, "datatype"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6dbaL, 0x688d4c283dbb8ba4L, "datatype"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
         editorCell.setRole("datatype");

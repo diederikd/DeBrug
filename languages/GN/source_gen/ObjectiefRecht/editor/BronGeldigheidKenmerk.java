@@ -48,6 +48,9 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     editorCell.addEditorCell(this.createConstant_wh7tcl_j0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_wh7tcl_k0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_wh7tcl_l0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_wh7tcl_m0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_wh7tcl_n0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_wh7tcl_o0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_wh7tcl_a0(EditorContext editorContext, SNode node) {
@@ -177,7 +180,7 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     }
   }
   private EditorCell createConstant_wh7tcl_j0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "datatype");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Datatype");
     editorCell.setCellId("Constant_wh7tcl_j0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
@@ -211,6 +214,11 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
       if (editorCell.getRole() == null) {
         editorCell.setRole("datatype");
       }
+      Style style = new StyleImpl();
+      SNode node = myOwnerNode;
+      EditorContext editorContext = myEditorContext;
+      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+      editorCell.getStyle().putAll(style);
     }
     @Override
     protected EditorCell createEmptyCell() {
@@ -222,6 +230,51 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     }
     protected String getNoTargetText() {
       return "<no datatype>";
+    }
+  }
+  private EditorCell createConstant_wh7tcl_m0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Lidwoord");
+    editorCell.setCellId("Constant_wh7tcl_m0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_wh7tcl_n0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_wh7tcl_n0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNode_wh7tcl_o0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new BronGeldigheidKenmerk.lidwoordSingleRoleHandler_wh7tcl_o0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x6e43a734f872153dL, "lidwoord"), editorContext);
+    return provider.createCell();
+  }
+  private class lidwoordSingleRoleHandler_wh7tcl_o0 extends SingleRoleCellProvider {
+    public lidwoordSingleRoleHandler_wh7tcl_o0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+      super(ownerNode, containmentLink, context);
+    }
+    protected EditorCell createChildCell(SNode child) {
+      EditorCell editorCell = super.createChildCell(child);
+      installCellInfo(child, editorCell);
+      return editorCell;
+    }
+    private void installCellInfo(SNode child, EditorCell editorCell) {
+      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x6e43a734f872153dL, "lidwoord"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+      }
+      if (editorCell.getRole() == null) {
+        editorCell.setRole("lidwoord");
+      }
+    }
+    @Override
+    protected EditorCell createEmptyCell() {
+      EditorCell editorCell = super.createEmptyCell();
+      editorCell.setCellId("empty_lidwoord");
+
+      installCellInfo(null, editorCell);
+      return editorCell;
+    }
+    protected String getNoTargetText() {
+      return "<no lidwoord>";
     }
   }
 }
