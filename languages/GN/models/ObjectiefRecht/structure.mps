@@ -11,7 +11,6 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -44,7 +43,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -428,18 +426,10 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
     </node>
-    <node concept="1TJgyj" id="6syAJDDCU2Z" role="1TKVEi">
-      <property role="IQ2ns" value="7431672735419572415" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="uniekIdentificerendeKenmerken" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
-      <node concept="asaX9" id="3p2I40$QEAw" role="lGtFl" />
-    </node>
     <node concept="1TJgyj" id="3p2I40$OOV1" role="1TKVEi">
       <property role="IQ2ns" value="3909890012146257601" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="uniekIdentificerendeKenmerken2" />
+      <property role="20kJfa" value="uniekIdentificerendeKenmerken" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6T3DNjSpxTt" resolve="AbstractReferentieNaarKenmerk" />
     </node>

@@ -532,6 +532,12 @@
       <node concept="3_I8Xc" id="BpKAd9B0F$" role="39821P">
         <ref role="3_I8Xa" to="90a9:4hvHh3QWqH0" resolve="de.slisson.mps.all" />
       </node>
+      <node concept="3_I8Xc" id="MBTOFWRs3v" role="39821P">
+        <ref role="3_I8Xa" to="xsd6:5qO$P$PtiTF" resolve="com.mbeddr.allInOne.zip" />
+      </node>
+      <node concept="3_I8Xc" id="MBTOFWRsa4" role="39821P">
+        <ref role="3_I8Xa" to="xsd6:6xkorKj3Uwa" resolve="plugins" />
+      </node>
       <node concept="3_I8Xc" id="BpKAd9B0M3" role="39821P">
         <ref role="3_I8Xa" to="al5i:6ucYLjol21$" resolve="mbeddr.mpsutil" />
       </node>
@@ -911,6 +917,12 @@
       </node>
       <node concept="m$_yC" id="2xDgDlj6nXj" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
+      </node>
+      <node concept="m$_yC" id="MBTOFWRrXS" role="m$_yJ">
+        <ref role="m$_y1" to="xsd6:3Cx6vuJncJb" resolve="com.mbeddr.allInOne.build" />
+      </node>
+      <node concept="m$_yC" id="MBTOFWRrZE" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
       </node>
       <node concept="m$_yC" id="2E_FCJvvzFV" role="m$_yJ">
         <ref role="m$_y1" to="8x72:5KK2jWpWo0m" resolve="org.campagnelab.mps.UI" />
