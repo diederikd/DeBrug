@@ -40,7 +40,6 @@ public class Tijd_Editor extends DefaultNodeEditor {
       public void setText(String text) {
         try {
           Integer uren = Integer.parseInt(text);
-          System.out.println(text);
           if (uren < 24) {
             SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"), "" + (uren));
           }
@@ -86,7 +85,6 @@ public class Tijd_Editor extends DefaultNodeEditor {
       public void setText(String text) {
         try {
           Integer minuten = Integer.parseInt(text);
-          System.out.println(text);
           if (minuten < 60) {
             SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"), "" + (minuten));
           }
@@ -132,7 +130,6 @@ public class Tijd_Editor extends DefaultNodeEditor {
       public void setText(String text) {
         try {
           Integer seconden = Integer.parseInt(text);
-          System.out.println(text);
           if (seconden < 60) {
             SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"), "" + (seconden));
           }

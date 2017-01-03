@@ -664,5 +664,52 @@
       <node concept="l2Vlx" id="6syAJDDPLj4" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="1YFKb5ts1QS">
+    <property role="3GE5qa" value="Attribuut" />
+    <ref role="1XX52x" to="uwhu:1YFKb5trITX" resolve="KenmerkReferentieNaarSubject" />
+    <node concept="3EZMnI" id="1YFKb5ts1QU" role="2wV5jI">
+      <node concept="l2Vlx" id="1YFKb5ts1QV" role="2iSdaV" />
+      <node concept="1iCGBv" id="1YFKb5ts1QW" role="3EZMnx">
+        <ref role="1NtTu8" to="uwhu:1YFKb5trITY" resolve="kenmerk" />
+        <node concept="1sVBvm" id="1YFKb5ts1QX" role="1sWHZn">
+          <node concept="3F0A7n" id="1YFKb5ts1QY" role="2wV5jI">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1YFKb5ts1QZ" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="1YFKb5ts1R0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1YFKb5ts1R1" role="3EZMnx">
+        <ref role="1NtTu8" to="uwhu:6ydj2wXISI$" resolve="datatype" />
+        <ref role="1k5W1q" to="9nno:MvzNsy_Dd_" resolve="Bold" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1YFKb5tshe2">
+    <property role="3GE5qa" value="Datatype" />
+    <ref role="1XX52x" to="uwhu:1YFKb5tsapD" resolve="SubjectDatatype" />
+    <node concept="3EZMnI" id="1YFKb5tshe4" role="2wV5jI">
+      <node concept="1iCGBv" id="1YFKb5tsheb" role="3EZMnx">
+        <ref role="1NtTu8" to="uwhu:1YFKb5tsapE" resolve="subject" />
+        <node concept="1sVBvm" id="1YFKb5tshed" role="1sWHZn">
+          <node concept="1iCGBv" id="1YFKb5tshek" role="2wV5jI">
+            <ref role="1NtTu8" to="uwhu:7rcH1JNwVKr" resolve="subject" />
+            <node concept="1sVBvm" id="1YFKb5tshem" role="1sWHZn">
+              <node concept="3F0A7n" id="1YFKb5tshew" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                <ref role="1k5W1q" to="9nno:28ifPi2_$n1" resolve="Onderwerp" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1YFKb5tshe7" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

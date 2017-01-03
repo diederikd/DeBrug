@@ -47,7 +47,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ReferentieNaarArtikel = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarEnumeratie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarKenmerkMetSubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtsbetrekking = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtsgevolg = new ConceptPresentationBuilder().create();
@@ -153,50 +152,48 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 37:
         return props_ReferentieNaarKenmerk;
       case 38:
-        return props_ReferentieNaarKenmerkMetSubject;
-      case 39:
         return props_ReferentieNaarOnderwerp;
-      case 40:
+      case 39:
         return props_ReferentieNaarRechtsbetrekking;
-      case 41:
+      case 40:
         return props_ReferentieNaarRechtsgevolg;
-      case 42:
+      case 41:
         return props_ReferentieNaarRechtsgevolgVeroorzaker;
-      case 43:
+      case 42:
         return props_ReferentieNaarRechtssubject;
-      case 44:
+      case 43:
         return props_ReferentieNaarReferentieNaarOnderwerp;
-      case 45:
+      case 44:
         return props_ReferentieNaarReferentieNaarSubject;
-      case 46:
+      case 45:
         return props_ReferentieNaarSubject;
-      case 47:
+      case 46:
         return props_ReferentieNaarVoorwaarde;
-      case 48:
+      case 47:
         return props_ReferentieNaarVoorwaardeRechtsbetrekking;
-      case 49:
+      case 48:
         return props_Regel;
-      case 50:
+      case 49:
         return props_RegelOverRechtsbetrekking;
-      case 51:
+      case 50:
         return props_RegelOverRechtsgevolgVeroorzaker;
-      case 52:
+      case 51:
         return props_RijVanKaraktersDatatype;
-      case 53:
+      case 52:
         return props_TijdDatatype;
-      case 54:
+      case 53:
         return props_TijdsverloopMetRechtsgevolg;
-      case 55:
+      case 54:
         return props_Toestand;
-      case 56:
+      case 55:
         return props_Variabele;
-      case 57:
+      case 56:
         return props_VerplichteBevoegdheidVerplichteGehoudenheid;
-      case 58:
+      case 57:
         return props_VormVoorwaarde;
-      case 59:
+      case 58:
         return props_VrijheidGeenaanspraak;
-      case 60:
+      case 59:
         return props_ZwakkeAanspraakZwakkePlicht;
     }
     throw new IllegalStateException("Unknown concept " + c);

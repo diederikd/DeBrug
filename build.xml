@@ -77,6 +77,11 @@
     <copy todir="${build.layout}/de.slisson.mps.all">
       <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all" />
     </copy>
+    <copy file="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" todir="${build.layout}" />
+    <mkdir dir="${build.layout}/plugins" />
+    <copy todir="${build.layout}/plugins">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins" />
+    </copy>
     <mkdir dir="${build.layout}/mbeddr.mpsutil" />
     <copy todir="${build.layout}/mbeddr.mpsutil">
       <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil" />
@@ -228,6 +233,8 @@
         <depends>jetbrains.mps.ide.devkit</depends>
         <depends>jetbrains.mps.ide.make</depends>
         <depends>com.intellij.modules.mps</depends>
+        <depends>com.mbeddr.allInOne.build</depends>
+        <depends>de.slisson.mps.all</depends>
         <depends>org.campagnelab.mps.UI</depends>
         <depends>de.slisson.mps.editor.multiline</depends>
         <depends>de.slisson.mps.richtext</depends>
@@ -537,10 +544,10 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip" />
-    <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
     <unzip src="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" dest="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
+    <mkdir dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip" />
+    <unzip src="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" dest="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -556,7 +563,10 @@
       <plugin path="${artifacts.mpsStandalone}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-debugger-java" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-configurations" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
       <plugin path="${artifacts.mps}/plugins/mps-make" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection" />
@@ -565,13 +575,35 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.layout" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.tooltips" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.conditionalEditor" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr-build" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.SmInComp" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.allInOne" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.analysesbase" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.cbmc" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.components" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.concurrency" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.debugger" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.doc" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.math" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform.build" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.ple" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.req" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.req.c" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.sat4j" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.spawner" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.statemachine" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.units" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-math-editor" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables" />
       <plugin path="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />

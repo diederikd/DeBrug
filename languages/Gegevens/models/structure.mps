@@ -316,5 +316,31 @@
       <ref role="20lvS9" node="6syAJDDPL2P" resolve="Enumeratie" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1YFKb5trITX">
+    <property role="EcuMT" value="2282129504202583677" />
+    <property role="3GE5qa" value="Attribuut" />
+    <property role="TrG5h" value="KenmerkReferentieNaarSubject" />
+    <ref role="1TJDcQ" node="7rcH1JNvmQU" resolve="AbstractAttribuut" />
+    <node concept="1TJgyj" id="1YFKb5trITY" role="1TKVEi">
+      <property role="IQ2ns" value="2282129504202583678" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="kenmerk" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="3pw0:2xDgDlj6HAL" resolve="ReferentieNaarSubject" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1YFKb5tsapD">
+    <property role="EcuMT" value="2282129504202696297" />
+    <property role="3GE5qa" value="Datatype" />
+    <property role="TrG5h" value="SubjectDatatype" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    <node concept="1TJgyj" id="1YFKb5tsapE" role="1TKVEi">
+      <property role="IQ2ns" value="2282129504202696298" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="subject" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7rcH1JNwVKq" resolve="ReferentieNaarSubject" />
+    </node>
+  </node>
 </model>
 

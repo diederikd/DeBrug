@@ -56,6 +56,12 @@
       <concept id="2907397198644945381" name="Gegevens.structure.ReeelGetalDatatype" flags="ng" index="QqSuW" />
       <concept id="2907397198644945343" name="Gegevens.structure.RijVanKaraktersDatatype" flags="ng" index="QqSvA" />
       <concept id="2907397198644945329" name="Gegevens.structure.DatumDatatype" flags="ng" index="QqSvC" />
+      <concept id="2282129504202583677" name="Gegevens.structure.KenmerkReferentieNaarSubject" flags="ng" index="12LiVc">
+        <reference id="2282129504202583678" name="kenmerk" index="12LiVf" />
+      </concept>
+      <concept id="2282129504202696297" name="Gegevens.structure.SubjectDatatype" flags="ng" index="12QQro">
+        <reference id="2282129504202696298" name="subject" index="12QQrr" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -187,11 +193,11 @@
         <node concept="QqSvA" id="3DwVXk8WuTI" role="1ldGuc" />
       </node>
       <node concept="25GtAH" id="7rcH1JNxeB_" role="aI7YJ">
-        <ref role="25GgGs" to="zznl:5u1YjWIkWlh" resolve="adres" />
+        <ref role="25GgGs" to="zznl:5u1YjWIkWlh" resolve="adres werknemer" />
         <node concept="QqSvA" id="3DwVXk8WuTK" role="1ldGuc" />
       </node>
       <node concept="25GtAH" id="7rcH1JNxeBA" role="aI7YJ">
-        <ref role="25GgGs" to="zznl:5u1YjWIkWlR" resolve="huisnummer" />
+        <ref role="25GgGs" to="zznl:5u1YjWIkWlR" resolve="huisnummer werknemer" />
         <node concept="QqSvA" id="3DwVXk8WuTM" role="1ldGuc" />
       </node>
       <node concept="25jsP4" id="7rcH1JNxeBB" role="aI7YJ">
@@ -235,6 +241,27 @@
     </node>
     <node concept="aIo_O" id="3DwVXk8VFXq" role="aIu47">
       <ref role="aIo_P" to="zznl:4$mS69sWjnv" resolve="arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+      <node concept="12LiVc" id="1YFKb5ts1QA" role="aI7YJ">
+        <ref role="12LiVf" to="zznl:3p2I40$QcrU" resolve="werknemersidentificatie" />
+        <node concept="12QQro" id="1YFKb5tshdQ" role="1ldGuc">
+          <ref role="12QQrr" node="7rcH1JNxeBk" />
+        </node>
+      </node>
+      <node concept="12LiVc" id="1YFKb5ts1QB" role="aI7YJ">
+        <ref role="12LiVf" to="zznl:3p2I40$Qctu" resolve="werkgeversidentificatie" />
+        <node concept="12QQro" id="1YFKb5tshdS" role="1ldGuc">
+          <ref role="12QQrr" node="7rcH1JNwZJu" />
+        </node>
+      </node>
+      <node concept="25GtAH" id="1YFKb5ts1QC" role="aI7YJ">
+        <ref role="25GgGs" to="zznl:5qTpXpBoOu0" resolve="datum indiensttreding" />
+      </node>
+      <node concept="25GtAH" id="1YFKb5ts1QD" role="aI7YJ">
+        <ref role="25GgGs" to="zznl:5u1YjWIjO3G" resolve="arbeidsovereenkomst getekend op" />
+      </node>
+      <node concept="25jsP4" id="1YFKb5ts1QE" role="aI7YJ">
+        <ref role="25jsPV" to="zznl:3d6QfrhlN9H" resolve="arbeidsduur in arbeidsovereenkomst" />
+      </node>
     </node>
     <node concept="aIo_O" id="3DwVXk8VFYQ" role="aIu47">
       <ref role="aIo_P" to="zznl:J7tdz7EYjC" resolve="aanpassing van de arbeidsduur op verzoek van de werknemer" />
@@ -274,7 +301,7 @@
           <ref role="25GgGs" to="zznl:5qTpXpBoOuZ" resolve="arbeidsduur geldig tot datum" />
         </node>
         <node concept="25jsP4" id="3DwVXk8WuSr" role="25is8c">
-          <ref role="25jsPV" to="zznl:3d6QfrhlN9H" resolve="arbeidsduur" />
+          <ref role="25jsPV" to="zznl:3d6QfrhlN9H" resolve="arbeidsduur in arbeidsovereenkomst" />
         </node>
       </node>
       <node concept="25GtAH" id="7rcH1JNxno0" role="aI7YJ">
