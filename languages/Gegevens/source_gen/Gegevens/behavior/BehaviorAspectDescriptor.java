@@ -12,6 +12,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
+  private final BHDescriptor myConcept__BehaviorDescriptor = new Concept__BehaviorDescriptor();
   private final BHDescriptor myObject__BehaviorDescriptor = new Object__BehaviorDescriptor();
   private final BHDescriptor myReferentieNaarOnderwerp__BehaviorDescriptor = new ReferentieNaarOnderwerp__BehaviorDescriptor();
   private final BHDescriptor myAbstractObject__BehaviorDescriptor = new AbstractObject__BehaviorDescriptor();
@@ -24,7 +25,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     {
       SAbstractConcept cncpt = concept;
-      Integer preIndex = indices_846f5o_a0h.get(cncpt);
+      Integer preIndex = indices_846f5o_a0i.get(cncpt);
       int switchIndex = (preIndex == null ? -1 : preIndex);
       switch (switchIndex) {
         case 0:
@@ -34,15 +35,20 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
           break;
         case 1:
           if (true) {
-            return myObject__BehaviorDescriptor;
+            return myConcept__BehaviorDescriptor;
           }
           break;
         case 2:
           if (true) {
-            return myReferentieNaarOnderwerp__BehaviorDescriptor;
+            return myObject__BehaviorDescriptor;
           }
           break;
         case 3:
+          if (true) {
+            return myReferentieNaarOnderwerp__BehaviorDescriptor;
+          }
+          break;
+        case 4:
           if (true) {
             return myReferentieNaarSubject__BehaviorDescriptor;
           }
@@ -61,5 +67,5 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0h = buildConceptIndices(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L, "Gegevens.structure.AbstractObject"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93bdL, "Gegevens.structure.Object"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L, "Gegevens.structure.ReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383bc1aL, "Gegevens.structure.ReferentieNaarSubject"));
+  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0i = buildConceptIndices(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L, "Gegevens.structure.AbstractObject"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL, "Gegevens.structure.Concept"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93bdL, "Gegevens.structure.Object"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L, "Gegevens.structure.ReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383bc1aL, "Gegevens.structure.ReferentieNaarSubject"));
 }

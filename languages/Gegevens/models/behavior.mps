@@ -18,8 +18,13 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz" />
+      <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -34,6 +39,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -41,6 +49,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -86,6 +95,9 @@
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -222,7 +234,7 @@
               </node>
             </node>
             <node concept="Jncv_" id="7rcH1JNwill" role="3cqZAp">
-              <ref role="JncvD" to="3pw0:MvzNsyB_CF" resolve="ReferentieNaarOnderwerp" />
+              <ref role="JncvD" to="3pw0:MvzNsyB_CF" resolve="KenmerkMetReferentieNaarOnderwerp" />
               <node concept="2GrUjf" id="7rcH1JNwilm" role="JncvB">
                 <ref role="2Gs0qQ" node="7rcH1JNvxK$" resolve="kenmerk" />
               </node>
@@ -283,7 +295,7 @@
               </node>
             </node>
             <node concept="Jncv_" id="1YFKb5trGZT" role="3cqZAp">
-              <ref role="JncvD" to="3pw0:2xDgDlj6HAL" resolve="ReferentieNaarSubject" />
+              <ref role="JncvD" to="3pw0:2xDgDlj6HAL" resolve="KenmerkReferentieNaarSubject" />
               <node concept="2GrUjf" id="1YFKb5trGZU" role="JncvB">
                 <ref role="2Gs0qQ" node="7rcH1JNvxK$" resolve="kenmerk" />
               </node>
@@ -445,7 +457,7 @@
               </node>
             </node>
             <node concept="Jncv_" id="7rcH1JNx2oh" role="3cqZAp">
-              <ref role="JncvD" to="3pw0:MvzNsyB_CF" resolve="ReferentieNaarOnderwerp" />
+              <ref role="JncvD" to="3pw0:MvzNsyB_CF" resolve="KenmerkMetReferentieNaarOnderwerp" />
               <node concept="2GrUjf" id="7rcH1JNx2oi" role="JncvB">
                 <ref role="2Gs0qQ" node="7rcH1JNx2nL" resolve="kenmerk" />
               </node>
@@ -513,6 +525,26 @@
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="7rcH1JNx2oF" role="1tU5fm">
           <ref role="ehGHo" to="uwhu:7rcH1JNwVKq" resolve="ReferentieNaarSubject" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="1YFKb5tB01_">
+    <ref role="13h7C2" to="uwhu:5mj6FhvaDeG" resolve="Concept" />
+    <node concept="13hLZK" id="1YFKb5tB01A" role="13h7CW">
+      <node concept="3clFbS" id="1YFKb5tB01B" role="2VODD2">
+        <node concept="3clFbF" id="1YFKb5tB01G" role="3cqZAp">
+          <node concept="37vLTI" id="1YFKb5tB0Y4" role="3clFbG">
+            <node concept="Xl_RD" id="1YFKb5tB10f" role="37vLTx">
+              <property role="Xl_RC" value="0000" />
+            </node>
+            <node concept="2OqwBi" id="1YFKb5tB08C" role="37vLTJ">
+              <node concept="13iPFW" id="1YFKb5tB01E" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1YFKb5tB0hM" role="2OqNvi">
+                <ref role="3TsBF5" to="uwhu:1YFKb5tB01z" resolve="conceptnummer" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

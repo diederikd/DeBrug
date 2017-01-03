@@ -36,6 +36,9 @@
       </concept>
       <concept id="6166301676793455844" name="Gegevens.structure.Attribuut" flags="ng" index="aI7Tg" />
       <concept id="6166301676793402301" name="Gegevens.structure.Object" flags="ng" index="aIo$9" />
+      <concept id="6166301676793402284" name="Gegevens.structure.Concept" flags="ng" index="aIo$o">
+        <property id="2282129504205537379" name="conceptnummer" index="12dW3i" />
+      </concept>
       <concept id="6166301676793402304" name="Gegevens.structure.ReferentieNaarOnderwerp" flags="ng" index="aIo_O">
         <reference id="6166301676793402305" name="onderwerp" index="aIo_P" />
       </concept>
@@ -56,6 +59,20 @@
       <concept id="2907397198644945381" name="Gegevens.structure.ReeelGetalDatatype" flags="ng" index="QqSuW" />
       <concept id="2907397198644945343" name="Gegevens.structure.RijVanKaraktersDatatype" flags="ng" index="QqSvA" />
       <concept id="2907397198644945329" name="Gegevens.structure.DatumDatatype" flags="ng" index="QqSvC" />
+      <concept id="2282129504205176986" name="Gegevens.structure.InstantiesVanGegevens" flags="ng" index="12fk0F">
+        <child id="2282129504205176987" name="instanties" index="12fk0E" />
+      </concept>
+      <concept id="2282129504205176806" name="Gegevens.structure.GeheelGetalWaarde" flags="ng" index="12frXn">
+        <property id="2282129504205176807" name="waarde" index="12frXm" />
+      </concept>
+      <concept id="2282129504205176790" name="Gegevens.structure.ObjectInstantie" flags="ng" index="12frXB">
+        <child id="2282129504205276756" name="object" index="12cWr_" />
+        <child id="2282129504205176801" name="waardenVanAttributen" index="12frXg" />
+      </concept>
+      <concept id="2282129504205176794" name="Gegevens.structure.WaardeVanAttribuut" flags="ng" index="12frXF">
+        <child id="2282129504205391669" name="attribuut" index="12cwu4" />
+        <child id="2282129504205176798" name="waarde" index="12frXJ" />
+      </concept>
       <concept id="2282129504202583677" name="Gegevens.structure.KenmerkReferentieNaarSubject" flags="ng" index="12LiVc">
         <reference id="2282129504202583678" name="kenmerk" index="12LiVf" />
       </concept>
@@ -407,6 +424,31 @@
         <node concept="25jsP4" id="3DwVXk8Wv2U" role="25is8c">
           <ref role="25jsPV" to="zznl:3DwVXk8WuYp" resolve="burgerservicenummer" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="12fk0F" id="1YFKb5t_Jzv">
+    <node concept="12frXB" id="1YFKb5tB9$g" role="12fk0E">
+      <property role="TrG5h" value="Klaas" />
+      <node concept="25jKw1" id="1YFKb5tB9$p" role="12cWr_">
+        <property role="12dW3i" value="0000" />
+        <ref role="25jKw0" to="zznl:4ZpB41RnoMO" resolve="Werknemer" />
+      </node>
+    </node>
+    <node concept="12frXB" id="1YFKb5tB9zX" role="12fk0E">
+      <property role="TrG5h" value="Jan" />
+      <node concept="12frXF" id="1YFKb5tB9$4" role="12frXg">
+        <node concept="25GtAH" id="1YFKb5tB9$a" role="12cwu4">
+          <property role="12dW3i" value="0000" />
+          <ref role="25GgGs" to="zznl:3d6QfrhlNlL" resolve="PostcodeLetters" />
+        </node>
+        <node concept="12frXn" id="1YFKb5tB9$d" role="12frXJ">
+          <property role="12frXm" value="11" />
+        </node>
+      </node>
+      <node concept="25jKw1" id="1YFKb5tB9$1" role="12cWr_">
+        <property role="12dW3i" value="0000" />
+        <ref role="25jKw0" to="zznl:4ZpB41Rnx4z" resolve="Werkgever" />
       </node>
     </node>
   </node>

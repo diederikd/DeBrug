@@ -29,12 +29,17 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
+  <dependency className="Gegevens.behavior.AbstracteWaarde_BehaviorDescriptor" file="AbstracteWaarde_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="Gegevens.behavior.Attribuut_BehaviorDescriptor" file="Attribuut_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Gegevens.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
     <classNode dependClassName="Gegevens.behavior.AbstractObject__BehaviorDescriptor" />
+    <classNode dependClassName="Gegevens.behavior.Concept__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.Object__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.ReferentieNaarOnderwerp__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.ReferentieNaarSubject__BehaviorDescriptor" />
@@ -52,7 +57,29 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="Gegevens.behavior.Concept__BehaviorDescriptor" file="Concept__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
+  </dependency>
   <dependency className="Gegevens.behavior.DatumDatatype_BehaviorDescriptor" file="DatumDatatype_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.DatumWaarde_BehaviorDescriptor" file="DatumWaarde_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -72,11 +99,27 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="Gegevens.behavior.GeheelGetalWaarde_BehaviorDescriptor" file="GeheelGetalWaarde_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="Gegevens.behavior.Identificatie_BehaviorDescriptor" file="Identificatie_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="Gegevens.behavior.Instantie_BehaviorDescriptor" file="Instantie_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.InstantiesVanGegevens_BehaviorDescriptor" file="InstantiesVanGegevens_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="Gegevens.behavior.JaNeeDatatype_BehaviorDescriptor" file="JaNeeDatatype_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.JaNeeWaarde_BehaviorDescriptor" file="JaNeeWaarde_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -89,6 +132,14 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Gegevens.behavior.ObjectDatatype_BehaviorDescriptor" file="ObjectDatatype_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.ObjectInstantie_BehaviorDescriptor" file="ObjectInstantie_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.ObjectWaarde_BehaviorDescriptor" file="ObjectWaarde_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -121,6 +172,10 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="Gegevens.behavior.ReeelGetalWaarde_BehaviorDescriptor" file="ReeelGetalWaarde_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="Gegevens.behavior.ReferentieNaarAbstractKenmerk_BehaviorDescriptor" file="ReferentieNaarAbstractKenmerk_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -130,6 +185,10 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Gegevens.behavior.ReferentieNaarKenmerk_BehaviorDescriptor" file="ReferentieNaarKenmerk_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.ReferentieNaarOnderwerpOfSubject_BehaviorDescriptor" file="ReferentieNaarOnderwerpOfSubject_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -199,11 +258,19 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="Gegevens.behavior.RijVanKaraktersWaarde_BehaviorDescriptor" file="RijVanKaraktersWaarde_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="Gegevens.behavior.SubjectDatatype_BehaviorDescriptor" file="SubjectDatatype_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Gegevens.behavior.TijdDatatype_BehaviorDescriptor" file="TijdDatatype_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.WaardeVanAttribuut_BehaviorDescriptor" file="WaardeVanAttribuut_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
