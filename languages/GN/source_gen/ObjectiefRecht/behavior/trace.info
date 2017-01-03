@@ -88,6 +88,15 @@
     <file name="JaNeeDatatype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.JaNeeDatatype_BehaviorDescriptor" />
     </file>
+    <file name="KenmerkMetReferentieNaarKenmerk_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.KenmerkMetReferentieNaarKenmerk_BehaviorDescriptor" />
+    </file>
+    <file name="KenmerkMetReferentieNaarOnderwerp_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.KenmerkMetReferentieNaarOnderwerp_BehaviorDescriptor" />
+    </file>
+    <file name="KenmerkReferentieNaarSubject_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.KenmerkReferentieNaarSubject_BehaviorDescriptor" />
+    </file>
     <file name="KenmerkReferentie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.KenmerkReferentie_BehaviorDescriptor" />
     </file>
@@ -139,9 +148,6 @@
     <file name="ReferentieNaarEnumeratie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarEnumeratie_BehaviorDescriptor" />
     </file>
-    <file name="ReferentieNaarKenmerk_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarKenmerk_BehaviorDescriptor" />
-    </file>
     <file name="ReferentieNaarOnderwerp_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarOnderwerp_BehaviorDescriptor" />
     </file>
@@ -162,9 +168,6 @@
     </file>
     <file name="ReferentieNaarReferentieNaarSubject_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarReferentieNaarSubject_BehaviorDescriptor" />
-    </file>
-    <file name="ReferentieNaarSubject_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarSubject_BehaviorDescriptor" />
     </file>
     <file name="ReferentieNaarVoorwaardeRechtsbetrekking_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarVoorwaardeRechtsbetrekking_BehaviorDescriptor" />

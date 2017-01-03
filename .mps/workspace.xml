@@ -12,7 +12,149 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f9a1364-78d3-4826-8144-af78ce41dd34" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/AbstracteExpressie_BehaviorDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/ExpressieVoorwaarde_BehaviorDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/IsGroterDan_BehaviorDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/IsKleinerDan_BehaviorDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/KenmerkMetReferentieNaarKenmerk_BehaviorDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/KenmerkMetReferentieNaarOnderwerp_BehaviorDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/KenmerkReferentieNaarSubject_BehaviorDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/KenmerkMetReferentieNaarKenmerk_Constraints.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/KenmerkMetReferentieNaarOnderwerp_Constraints.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ExpressieVoorwaarde_Editor$expressieSingleRoleHandler_vqw804_b0.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ExpressieVoorwaarde_Editor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/IsGroterDan_Editor$isGroterDanSingleRoleHandler_11zxmp_c0.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/IsGroterDan_Editor$variabeleSingleRoleHandler_11zxmp_a0.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/IsGroterDan_Editor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/IsKleinerDan_Editor$isKleinerDanSingleRoleHandler_gylfkj_c0.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/IsKleinerDan_Editor$variabeleSingleRoleHandler_gylfkj_a0.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/IsKleinerDan_Editor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/KenmerkMetReferentieNaarKenmerk_Editor$_Inline_zhlmf8_a0a.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/KenmerkMetReferentieNaarKenmerk_Editor$_Inline_zhlmf8_a1b0$datatypeSingleRoleHandler_zhlmf8_a0a1b0.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/KenmerkMetReferentieNaarKenmerk_Editor$_Inline_zhlmf8_a1b0.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/KenmerkMetReferentieNaarKenmerk_Editor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/KenmerkMetReferentieNaarKenmerk_Kort_Editor$_Inline_6kd6xh_a0a.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/KenmerkMetReferentieNaarKenmerk_Kort_Editor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/KenmerkMetReferentieNaarOnderwerp_Editor$_Inline_fkc5eg_a2a.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/KenmerkMetReferentieNaarOnderwerp_Editor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/KenmerkReferentieNaarSubject_Editor$_Inline_kuegi0_a2a.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/KenmerkReferentieNaarSubject_Editor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarOnderwerp_Editor$_Inline_5oh7zg_a0a.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/Language.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/behavior/BehaviorAspectDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/constraints/ConstraintsAspectDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/editor/EditorAspectDescriptorImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/structure/ConceptPresentationAspectImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/structure/StructureAspectDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/typesystem/TypesystemDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/generator/classes_gen/Integriteit/generator/template/main/QueriesGenerated.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/KenmerkMetReferentieNaarOnderwerp_BehaviorDescriptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/KenmerkMetReferentieNaarOnderwerp_Editor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/behavior/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/constraints/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/editor/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/structure/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/classes_gen/Integriteit/typesystem/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/generator/classes_gen/Integriteit/generator/template/main/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/generator/source_gen.caches/Integriteit/generator/template/main/dependencies" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/generator/source_gen.caches/Integriteit/generator/template/main/generated" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/generator/source_gen/Integriteit/generator/template/main/QueriesGenerated.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/generator/source_gen/Integriteit/generator/template/main/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/behavior/dependencies" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/behavior/generated" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/constraints/dependencies" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/constraints/generated" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/dependencies" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/editor/dependencies" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/editor/generated" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/generated" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/structure/dependencies" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/structure/generated" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/typesystem/dependencies" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/typesystem/generated" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/Language.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/behavior/BehaviorAspectDescriptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/behavior/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/constraints/ConstraintsAspectDescriptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/constraints/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/editor/EditorAspectDescriptorImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/editor/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/structure/ConceptPresentationAspectImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/structure/StructureAspectDescriptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/structure/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/typesystem/TypesystemDescriptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/typesystem/trace.info" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/ReferentieNaarKenmerk_BehaviorDescriptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/ReferentieNaarSubject_BehaviorDescriptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/ReferentieNaarKenmerk_Constraints$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/ReferentieNaarKenmerk_Constraints$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/ReferentieNaarKenmerk_Constraints.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/ReferentieNaarOnderwerp_Constraints.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarKenmerk_Editor$_Inline_mq86k9_a0a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarKenmerk_Editor$_Inline_mq86k9_a1b0$datatypeSingleRoleHandler_mq86k9_a0a1b0.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarKenmerk_Editor$_Inline_mq86k9_a1b0.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarKenmerk_Editor$_Inline_mq86k9_a2a$datatypeSingleRoleHandler_mq86k9_a0a2a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarKenmerk_Editor$_Inline_mq86k9_a2a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarKenmerk_Editor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarKenmerk_Kort_Editor$_Inline_heds4w_a0a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarKenmerk_Kort_Editor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarOnderwerp_Editor$_Inline_5oh7zg_a2a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarSubject_Editor$_Inline_ghks79_a2a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarSubject_Editor.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/ReferentieNaarKenmerk_BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/KenmerkReferentieNaarSubject_BehaviorDescriptor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/ReferentieNaarSubject_BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/KenmerkMetReferentieNaarKenmerk_BehaviorDescriptor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/ReferentieNaarKenmerk_Constraints.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/KenmerkMetReferentieNaarKenmerk_Constraints.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/ReferentieNaarOnderwerp_Constraints.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/KenmerkMetReferentieNaarOnderwerp_Constraints.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/ReferentieNaarKenmerk_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/KenmerkMetReferentieNaarKenmerk_Editor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/ReferentieNaarKenmerk_Kort_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/KenmerkMetReferentieNaarKenmerk_Kort_Editor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/ReferentieNaarSubject_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/KenmerkReferentieNaarSubject_Editor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/ConstraintsAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/ConstraintsAspectDescriptor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarOnderwerp_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/ReferentieNaarOnderwerp_Editor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor$1.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor$_Inline_643dx4_a3a$lidwoordSingleRoleHandler_643dx4_a0a3a.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor$_Inline_643dx4_a3a$lidwoordSingleRoleHandler_643dx4_a0a3a.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor$_Inline_643dx4_a3a.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor$_Inline_643dx4_a3a.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor$_Inline_643dx4_a4a.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor$_Inline_643dx4_a4a.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor$kenmerkSingleRoleHandler_643dx4_a0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor$kenmerkSingleRoleHandler_643dx4_a0.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor$onderwerpSingleRoleHandler_643dx4_c0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor$onderwerpSingleRoleHandler_643dx4_c0.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Variabele_Editor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/StructureAspectDescriptor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/ReferentieNaarOnderwerp__BehaviorDescriptor.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/ReferentieNaarOnderwerp__BehaviorDescriptor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/ReferentieNaarSubject__BehaviorDescriptor.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/ReferentieNaarSubject__BehaviorDescriptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/editor.mps" afterPath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/editor.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/structure.mps" afterPath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/structure.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/constraints/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/constraints/dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/structure/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/structure/dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/structure/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/structure/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/ConstraintsAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/ConstraintsAspectDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/ReferentieNaarOnderwerp_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/ReferentieNaarOnderwerp_Editor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/Variabele_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/Variabele_Editor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/StructureAspectDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/ReferentieNaarOnderwerp__BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/ReferentieNaarOnderwerp__BehaviorDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/ReferentieNaarSubject__BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/ReferentieNaarSubject__BehaviorDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/trace.info" />
     </list>
     <ignored path="ProjectDeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -120,15 +262,15 @@
         <entry file="mps://node://GN.sandbox/GN.WAA/Objectief WAA2000">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="20" viewPositionY="11526">
+              <memento saveSessionState="false" viewPositionX="20" viewPositionY="11554">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="303" />
-                    <property name="caretXRelative" value="16" />
+                    <property name="caretX" value="719" />
+                    <property name="caretXRelative" value="456" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ihvrpw_a0" cellNumber="0" isInList="false">
-                      <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/4206625750220979777" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/2282129504204609437" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -137,7 +279,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/4206625750220979777" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/2282129504204609437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -149,6 +291,82 @@
                   <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
                 </enabledHints>
               </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Variabele" pinned="false" current-in-tab="false">
+        <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/Variabele">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="311" />
+                    <property name="caretXRelative" value="184" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2282129504204181506" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/2282129504204609437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+              <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/8560415023867288958" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractKenmerk" pinned="false" current-in-tab="false">
+        <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/AbstractKenmerk">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="199" />
+                    <property name="caretXRelative" value="52" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="name" cellNumber="0" isInList="false">
+                      <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5266643527326992519" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/2282129504204609437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+              <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5266643527326992519" />
             </state>
           </provider>
         </entry>
@@ -479,67 +697,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" />
+              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/sandbox/models/GN/WAA.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Datum/models/behavior.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Datum/models/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
+              <option name="myItemId" value="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Simulatie/models/editor.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -556,6 +718,30 @@
               <option name="myItemId" value="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/models/ObjectiefRecht/structure.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReferentieNaarKenmerk" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/runtime/GN.runtime.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GN" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -567,7 +753,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/models/ObjectiefRecht/editor.mps}" />
+              <option name="myItemId" value="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/models/ObjectiefRecht/structure.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -586,46 +772,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/models/ObjectiefRecht/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Voorwaarden" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/models/ObjectiefRecht/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acties" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/models/ObjectiefRecht/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Expressies" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -649,131 +795,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="30ef095a-d489-45ff-a80f-456a798ac125(Gegevens)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Gegevens/models/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/runtime/GN.runtime.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:332da657-10e2-4391-8eef-6afa8da3b0de(GN.runtime.runtime) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/runtime/models/GN/runtime/runtime.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/runtime/GN.runtime.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/models/ObjectiefRecht/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Artikel" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DeBrug" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/solutions/DeBrug.build/models/DeBrug/build.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DeBrug" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:f808c76e-b477-4254-9f1a-68f8ea5fa0fe(GN.TestGegevensmodel) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/sandbox/models/GN/TestGegevensmodel.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -787,61 +809,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Simulatie/models/behavior.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/runtime/GN.runtime.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:2bf88224-c5d5-4102-a25e-253897154108(Datum.constraints) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Datum/models/constraints.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/models/ObjectiefRecht/editor.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="30ef095a-d489-45ff-a80f-456a798ac125(Gegevens)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="r:516f69e8-d332-4ecb-b3a2-f14c7ad25337(Simulatie.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Simulatie/models/structure.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -869,7 +837,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
+              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/runtime/GN.runtime.msd" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -883,13 +851,99 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeBrug" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Simulatie/models/behavior.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeBrug" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/solutions/DeBrug.build/models/DeBrug/build.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/runtime/GN.runtime.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GN" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:332da657-10e2-4391-8eef-6afa8da3b0de(GN.runtime.runtime) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/runtime/models/GN/runtime/runtime.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
           <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeBrug" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/solutions/DeBrug.build/models/DeBrug/build.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7366216351236543206" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -1092,9 +1146,9 @@
       <window_info id="Visualization" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Diagram Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35598227" sideWeight="0.30234376" order="26" side_tool="false" content_ui="tabs" />
+      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35598227" sideWeight="0.3" order="26" side_tool="false" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3353028" sideWeight="0.59375" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35598227" sideWeight="0.7" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30078125" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1102,16 +1156,16 @@
       <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53028065" sideWeight="0.4484375" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3958641" sideWeight="0.57890624" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3353028" sideWeight="0.46796876" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29098967" sideWeight="0.428125" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3958641" sideWeight="0.42109376" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3958641" sideWeight="0.41640624" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3353028" sideWeight="0.53515625" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3353028" sideWeight="0.53203124" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31905466" sideWeight="0.44453126" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.49676898" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32496306" sideWeight="0.3515625" order="20" side_tool="false" content_ui="tabs" />
@@ -1670,7 +1724,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Eerste stap in simulatie gereed" />
     <MESSAGE value="de uniciteitsregels over een of meer attribuut," />
     <MESSAGE value="Na gesprek sjir" />
     <MESSAGE value="Enumeraties toegevoegd, inclusief de aanpassing van de dagen van de week" />
@@ -1695,153 +1748,10 @@
     <MESSAGE value="Onderwerpen en kenmerken aangepast" />
     <MESSAGE value="Migratie naar behaviour voltooid." />
     <MESSAGE value="Variabelen aangepast en definitie integriteitstaal toegevoegd." />
-    <option name="LAST_COMMIT_MESSAGE" value="Variabelen aangepast en definitie integriteitstaal toegevoegd." />
+    <MESSAGE value="Expressies toegevoegd in voorwaarden" />
+    <option name="LAST_COMMIT_MESSAGE" value="Expressies toegevoegd in voorwaarden" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/KenmerkReferentie">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="383" />
-                <property name="caretXRelative" value="140" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/7945378013559875930" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/7945378013559875930" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/7945378013559875930" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/ReferentieNaarArtikel">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="415" />
-                <property name="caretXRelative" value="172" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/5266643527326926133" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/5266643527326926133" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/5266643527326926133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/Artikel">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="303" />
-                <property name="caretXRelative" value="60" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/5266643527326926050" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/5266643527326926050" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/5266643527326926050" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/DatumDatatype">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="351" />
-                <property name="caretXRelative" value="108" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/2907397198644945338" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/6249140128508295192" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/2907397198644945338" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/GeheelGetalDatatype">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -2130,150 +2040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/Variabele">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="87" />
-                <property name="caretXRelative" value="72" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_cth9w3_a0a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/8560415023867288972" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/8560415023867288972" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/8560415023867288972" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/ReferentieNaarKenmerk">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="431" />
-                <property name="caretXRelative" value="284" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/6305595003050810451" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/5266643527326563240" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/6305595003050810451" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/ReferentieNaarOnderwerp">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="447" />
-                <property name="caretXRelative" value="300" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/7945378013560227958" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/5753801799637012807" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/7945378013560227958" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/ReferentieNaarSubject">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="431" />
-                <property name="caretXRelative" value="284" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/3909890012146473332" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/5753801799637012807" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/3909890012146473332" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/RechtsSubject">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -2379,42 +2145,6 @@
             </enabledHints>
           </inspectorMemento>
           <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/5266643527326563240" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/Kenmerk">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="319" />
-                <property name="caretXRelative" value="172" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/6305595003050758186" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/6305595003050758186" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/6305595003050758186" />
         </state>
       </provider>
     </entry>
@@ -3606,18 +3336,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://GN.sandbox/GN.WAA/Objectief WAA2000">
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/Kenmerk">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="20" viewPositionY="11526">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="303" />
-                <property name="caretXRelative" value="16" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ihvrpw_a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/4206625750220979777" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5266643527326992515" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -3627,6 +3357,352 @@
             <restoreAlways />
           </memento>
           <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/4206625750220979777" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5266643527326992515" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/ReferentieNaarOnderwerp">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="167" />
+                <property name="caretXRelative" value="92" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/909603116718905899" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5066083982446741315" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/909603116718905899" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/ReferentieNaarKenmerk">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="159" />
+                <property name="caretXRelative" value="84" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5266643527326992520" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2911931843183565233" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5266643527326992520" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/ReferentieNaarSubject">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="135" />
+                <property name="caretXRelative" value="60" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2911931843183565233" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties>
+              <transactionalProperty uncommittedValue="KenmerkReferentieNaarSubject" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2911931843183565233" />
+              </transactionalProperty>
+            </transactionalProperties>
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2911931843183565233" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2911931843183565233" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/&lt;no name&gt;[ConceptDeclaration]">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="79" />
+                <property name="caretXRelative" value="4" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2282129504204396300" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2282129504204396300" />
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2282129504204396300" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2282129504204396300" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/&lt;no name&gt;[ConceptDeclaration]">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="79" />
+                <property name="caretXRelative" value="4" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2282129504204396300" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2282129504204396300" />
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2282129504204396300" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2282129504204396300" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/ReferentieNaarOnderwerp">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="276" />
+                <property name="caretXRelative" value="36" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/2282129504204396335" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/2282129504204396335" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="87" />
+                <property name="caretXRelative" value="72" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="CSC_property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/2282129504204396335" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/2282129504204396311" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/AbstractKenmerk">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="199" />
+                <property name="caretXRelative" value="52" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5266643527326992519" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/2282129504204609437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5266643527326992519" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/Variabele">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="311" />
+                <property name="caretXRelative" value="184" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/2282129504204181506" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/2282129504204609437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/8560415023867288958" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.sandbox/GN.WAA/Objectief WAA2000">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="20" viewPositionY="11554">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="719" />
+                <property name="caretXRelative" value="456" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/2282129504204609437" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/2282129504204609437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />

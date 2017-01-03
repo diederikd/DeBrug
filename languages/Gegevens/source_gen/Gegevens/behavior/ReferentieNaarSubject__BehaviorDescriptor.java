@@ -47,7 +47,7 @@ public final class ReferentieNaarSubject__BehaviorDescriptor extends BaseBHDescr
       }
       {
         final SNode kenmerkVanTypeReferentieNaarOnderwerp = kenmerk;
-        if (SNodeOperations.isInstanceOf(kenmerkVanTypeReferentieNaarOnderwerp, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL, "ObjectiefRecht.structure.ReferentieNaarOnderwerp"))) {
+        if (SNodeOperations.isInstanceOf(kenmerkVanTypeReferentieNaarOnderwerp, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL, "ObjectiefRecht.structure.KenmerkMetReferentieNaarOnderwerp"))) {
           SNode refkenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf381795fL, "Gegevens.structure.KenmerkReferentieNaarOnderwerp"));
           SLinkOperations.setTarget(refkenmerk, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf381795fL, 0x76ccb41bf3817960L, "kenmerk"), kenmerkVanTypeReferentieNaarOnderwerp);
           ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L, 0x55931ab45f2b651bL, "attributen"))).addElement(refkenmerk);

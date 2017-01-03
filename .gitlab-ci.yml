@@ -1,0 +1,7 @@
+tages:
+- build
+
+deploy to build:
+  stage: build
+  script:
+  - ant build
