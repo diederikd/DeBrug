@@ -131,6 +131,17 @@
       <concept id="2907397198644945357" name="ObjectiefRecht.structure.GeheelGetalDatatype" flags="ng" index="QqSuk" />
       <concept id="2907397198644945343" name="ObjectiefRecht.structure.RijVanKaraktersDatatype" flags="ng" index="QqSvA" />
       <concept id="2907397198644945329" name="ObjectiefRecht.structure.DatumDatatype" flags="ng" index="QqSvC" />
+      <concept id="2282129504203216587" name="ObjectiefRecht.structure.ExpressieVoorwaarde" flags="ng" index="12OPpU">
+        <child id="2282129504203436463" name="expressie" index="12O34u" />
+      </concept>
+      <concept id="2282129504202781035" name="ObjectiefRecht.structure.IsGroterDan" flags="ng" index="12Qz7q">
+        <child id="2282129504202781037" name="variabele" index="12Qz7s" />
+        <child id="2282129504202781038" name="isGroterDan" index="12Qz7v" />
+      </concept>
+      <concept id="2282129504203107211" name="ObjectiefRecht.structure.IsKleinerDan" flags="ng" index="12RiGU">
+        <child id="2282129504203107213" name="isKleinerDan" index="12RiGW" />
+        <child id="2282129504203107212" name="variabele" index="12RiGX" />
+      </concept>
       <concept id="2317404197410750303" name="ObjectiefRecht.structure.RegelOverRechtsbetrekking" flags="ng" index="33wUQ9">
         <child id="2317404197410750308" name="rechtsbetrekking" index="33wUQM" />
         <child id="6994217584621161887" name="geldigOnderVoorwaarden" index="1OcJT9" />
@@ -1396,6 +1407,24 @@
       <node concept="1OcJVu" id="28ifPi2D12g" role="2wG$d4">
         <property role="TrG5h" value="nieuwe arbeidsduur is kleiner dan de bestaande arbeidsduur" />
       </node>
+      <node concept="12OPpU" id="1YFKb5tvpOD" role="2wG$d4">
+        <node concept="12RiGU" id="1YFKb5tvpPb" role="12O34u">
+          <property role="da7Q0" value="0000" />
+          <node concept="25iA__" id="1YFKb5tvpPe" role="12RiGX">
+            <property role="da7Q0" value="0000" />
+            <ref role="12Xwn1" node="3d6QfrhlNao" resolve="nieuwe arbeidsduur" />
+            <ref role="12Xwnv" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur op verzoek van de werknemer" />
+            <node concept="2B78Lw" id="1YFKb5tvpPh" role="lXajo" />
+          </node>
+          <node concept="25iA__" id="1YFKb5tvpPk" role="12RiGW">
+            <property role="da7Q0" value="0000" />
+            <ref role="12Xwn1" node="28ifPi2D117" resolve="arbeidsduur" />
+            <ref role="12Xwnv" node="4$mS69sWjnv" resolve="arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+            <node concept="2B78Lw" id="1YFKb5tvpPn" role="lXajo" />
+          </node>
+          <node concept="2B78Lw" id="1YFKb5tvpPq" role="lXajo" />
+        </node>
+      </node>
       <node concept="1OcJVu" id="28ifPi2CnJl" role="2wG$d4">
         <property role="TrG5h" value="voor de bedrijfsvoering bij de herbezetting van de vrijgekomen uren." />
       </node>
@@ -1414,6 +1443,24 @@
       <property role="da7Q0" value="116" />
       <node concept="1OcJVu" id="28ifPi2D12r" role="2wG$d4">
         <property role="TrG5h" value="nieuwe arbeidsduur is groter dan de bestaande arbeidsduur" />
+      </node>
+      <node concept="12OPpU" id="1YFKb5twfx_" role="2wG$d4">
+        <node concept="12Qz7q" id="1YFKb5twfxN" role="12O34u">
+          <property role="da7Q0" value="0000" />
+          <node concept="25iA__" id="1YFKb5twfxQ" role="12Qz7s">
+            <property role="da7Q0" value="0000" />
+            <ref role="12Xwn1" node="3d6QfrhlNao" resolve="nieuwe arbeidsduur" />
+            <ref role="12Xwnv" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur op verzoek van de werknemer" />
+            <node concept="2B78Lw" id="1YFKb5twfxT" role="lXajo" />
+          </node>
+          <node concept="25iA__" id="1YFKb5twfxW" role="12Qz7v">
+            <property role="da7Q0" value="0000" />
+            <ref role="12Xwn1" node="28ifPi2D117" resolve="arbeidsduur" />
+            <ref role="12Xwnv" node="4$mS69sWjnv" resolve="arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+            <node concept="2B78Lw" id="1YFKb5twfxZ" role="lXajo" />
+          </node>
+          <node concept="2B78Lw" id="1YFKb5twfy2" role="lXajo" />
+        </node>
       </node>
       <node concept="1OcJVu" id="28ifPi2CnWf" role="2wG$d4">
         <property role="TrG5h" value="van financiële of organisatorische aard," />

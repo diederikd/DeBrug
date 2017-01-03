@@ -28,6 +28,9 @@
     <file name="AbstractReferentieNaarKenmerk_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstractReferentieNaarKenmerk_BehaviorDescriptor" />
     </file>
+    <file name="AbstracteExpressie_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstracteExpressie_BehaviorDescriptor" />
+    </file>
     <file name="AbstracteVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstracteVoorwaarde_BehaviorDescriptor" />
     </file>
@@ -58,6 +61,9 @@
     <file name="Enumeratie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Enumeratie_BehaviorDescriptor" />
     </file>
+    <file name="ExpressieVoorwaarde_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ExpressieVoorwaarde_BehaviorDescriptor" />
+    </file>
     <file name="FeitelijkeHandelingMetRechtsgevolg_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.FeitelijkeHandelingMetRechtsgevolg_BehaviorDescriptor" />
     </file>
@@ -72,6 +78,12 @@
     </file>
     <file name="ImmuniteitGeenbevoegdheid_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ImmuniteitGeenbevoegdheid_BehaviorDescriptor" />
+    </file>
+    <file name="IsGroterDan_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsGroterDan_BehaviorDescriptor" />
+    </file>
+    <file name="IsKleinerDan_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsKleinerDan_BehaviorDescriptor" />
     </file>
     <file name="JaNeeDatatype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.JaNeeDatatype_BehaviorDescriptor" />

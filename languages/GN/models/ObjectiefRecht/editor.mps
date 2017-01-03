@@ -3795,7 +3795,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7rcH1JNxHR1">
-    <property role="3GE5qa" value="Expressies" />
+    <property role="3GE5qa" value="Acties" />
     <ref role="1XX52x" to="3pw0:7rcH1JNxHQL" resolve="Gelijkstelling" />
     <node concept="3EZMnI" id="7rcH1JNxHR3" role="2wV5jI">
       <node concept="l2Vlx" id="7rcH1JNxHR6" role="2iSdaV" />
@@ -4454,6 +4454,51 @@
     </node>
     <node concept="1PE4EZ" id="3p2I40$Qibi" role="1PM95z">
       <ref role="1PE7su" node="4$mS69sS$kF" resolve="BronGeldigheid" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1YFKb5tsv5L">
+    <property role="3GE5qa" value="Expressies" />
+    <ref role="1XX52x" to="3pw0:1YFKb5tsv5F" resolve="IsGroterDan" />
+    <node concept="3EZMnI" id="1YFKb5tsv5N" role="2wV5jI">
+      <node concept="3F1sOY" id="1YFKb5tsv5U" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:1YFKb5tsv5H" resolve="variabele" />
+      </node>
+      <node concept="3F0ifn" id="1YFKb5tsv60" role="3EZMnx">
+        <property role="3F0ifm" value="is groter dan" />
+      </node>
+      <node concept="3F1sOY" id="1YFKb5tsv68" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:1YFKb5tsv5I" resolve="isGroterDan" />
+      </node>
+      <node concept="l2Vlx" id="1YFKb5tsv5Q" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1YFKb5ttIIo">
+    <property role="3GE5qa" value="Expressies" />
+    <ref role="1XX52x" to="3pw0:1YFKb5ttIIb" resolve="IsKleinerDan" />
+    <node concept="3EZMnI" id="1YFKb5ttIIq" role="2wV5jI">
+      <node concept="3F1sOY" id="1YFKb5ttIIx" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:1YFKb5ttIIc" resolve="variabele" />
+      </node>
+      <node concept="3F0ifn" id="1YFKb5ttIIB" role="3EZMnx">
+        <property role="3F0ifm" value="is kleiner dan" />
+      </node>
+      <node concept="3F1sOY" id="1YFKb5ttIJ0" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:1YFKb5ttIId" resolve="isKleinerDan" />
+      </node>
+      <node concept="l2Vlx" id="1YFKb5ttIIt" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1YFKb5tvpOZ">
+    <property role="3GE5qa" value="Voorwaarden" />
+    <ref role="1XX52x" to="3pw0:1YFKb5tu9rb" resolve="ExpressieVoorwaarde" />
+    <node concept="3EZMnI" id="1YFKb5tvpP1" role="2wV5jI">
+      <node concept="3F0ifn" id="1YFKb5tvpPA" role="3EZMnx">
+        <property role="3F0ifm" value="-  " />
+      </node>
+      <node concept="3F1sOY" id="1YFKb5tvpP8" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:1YFKb5tuZ6J" resolve="expressie" />
+      </node>
+      <node concept="l2Vlx" id="1YFKb5tvpP4" role="2iSdaV" />
     </node>
   </node>
 </model>

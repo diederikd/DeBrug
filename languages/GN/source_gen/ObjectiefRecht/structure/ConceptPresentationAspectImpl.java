@@ -14,6 +14,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_AbstractDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AbstractKenmerk = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AbstractReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_AbstracteExpressie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AbstracteVoorwaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Actie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Afleidingsregel = new ConceptPresentationBuilder().create();
@@ -23,11 +24,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_DatumDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Enumeratie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_EnumeratieElement = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ExpressieVoorwaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FeitelijkeHandelingMetRechtsgevolg = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_GebeurtenisMetRechtsgevolg = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_GeheelGetalDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Gelijkstelling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImmuniteitGeenbevoegdheid = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_IsGroterDan = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_IsKleinerDan = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_JaNeeDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Kenmerk = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_KenmerkReferentie = new ConceptPresentationBuilder().create();
@@ -86,114 +90,122 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 4:
         return props_AbstractReferentieNaarKenmerk;
       case 5:
-        return props_AbstracteVoorwaarde;
+        return props_AbstracteExpressie;
       case 6:
-        return props_Actie;
+        return props_AbstracteVoorwaarde;
       case 7:
-        return props_Afleidingsregel;
+        return props_Actie;
       case 8:
-        return props_Artikel;
+        return props_Afleidingsregel;
       case 9:
-        return props_Concept;
+        return props_Artikel;
       case 10:
-        return props_Context;
+        return props_Concept;
       case 11:
-        return props_DatumDatatype;
+        return props_Context;
       case 12:
-        return props_Enumeratie;
+        return props_DatumDatatype;
       case 13:
-        return props_EnumeratieElement;
+        return props_Enumeratie;
       case 14:
-        return props_FeitelijkeHandelingMetRechtsgevolg;
+        return props_EnumeratieElement;
       case 15:
-        return props_GebeurtenisMetRechtsgevolg;
+        return props_ExpressieVoorwaarde;
       case 16:
-        return props_GeheelGetalDatatype;
+        return props_FeitelijkeHandelingMetRechtsgevolg;
       case 17:
-        return props_Gelijkstelling;
+        return props_GebeurtenisMetRechtsgevolg;
       case 18:
-        return props_ImmuniteitGeenbevoegdheid;
+        return props_GeheelGetalDatatype;
       case 19:
-        return props_JaNeeDatatype;
+        return props_Gelijkstelling;
       case 20:
-        return props_Kenmerk;
+        return props_ImmuniteitGeenbevoegdheid;
       case 21:
-        return props_KenmerkReferentie;
+        return props_IsGroterDan;
       case 22:
-        return props_KrachtigeAanspraakFataleVerplichtig;
+        return props_IsKleinerDan;
       case 23:
-        return props_Lidwoord;
+        return props_JaNeeDatatype;
       case 24:
-        return props_LidwoordDe;
+        return props_Kenmerk;
       case 25:
-        return props_LidwoordHet;
+        return props_KenmerkReferentie;
       case 26:
-        return props_MaterieleVoorwaarde;
+        return props_KrachtigeAanspraakFataleVerplichtig;
       case 27:
-        return props_Onderwerp;
+        return props_Lidwoord;
       case 28:
-        return props_OptioneleBevoegdheidOptioneleGehoudenheid;
+        return props_LidwoordDe;
       case 29:
-        return props_RechtsSubject;
+        return props_LidwoordHet;
       case 30:
-        return props_Rechtsbetrekking;
+        return props_MaterieleVoorwaarde;
       case 31:
-        return props_Rechtsgevolg;
+        return props_Onderwerp;
       case 32:
-        return props_RechtsgevolgVeroorzakers;
+        return props_OptioneleBevoegdheidOptioneleGehoudenheid;
       case 33:
-        return props_Rechtshandeling;
+        return props_RechtsSubject;
       case 34:
-        return props_ReeelGetalDatatype;
+        return props_Rechtsbetrekking;
       case 35:
-        return props_ReferentieNaarArtikel;
+        return props_Rechtsgevolg;
       case 36:
-        return props_ReferentieNaarEnumeratie;
+        return props_RechtsgevolgVeroorzakers;
       case 37:
-        return props_ReferentieNaarKenmerk;
+        return props_Rechtshandeling;
       case 38:
-        return props_ReferentieNaarOnderwerp;
+        return props_ReeelGetalDatatype;
       case 39:
-        return props_ReferentieNaarRechtsbetrekking;
+        return props_ReferentieNaarArtikel;
       case 40:
-        return props_ReferentieNaarRechtsgevolg;
+        return props_ReferentieNaarEnumeratie;
       case 41:
-        return props_ReferentieNaarRechtsgevolgVeroorzaker;
+        return props_ReferentieNaarKenmerk;
       case 42:
-        return props_ReferentieNaarRechtssubject;
+        return props_ReferentieNaarOnderwerp;
       case 43:
-        return props_ReferentieNaarReferentieNaarOnderwerp;
+        return props_ReferentieNaarRechtsbetrekking;
       case 44:
-        return props_ReferentieNaarReferentieNaarSubject;
+        return props_ReferentieNaarRechtsgevolg;
       case 45:
-        return props_ReferentieNaarSubject;
+        return props_ReferentieNaarRechtsgevolgVeroorzaker;
       case 46:
-        return props_ReferentieNaarVoorwaarde;
+        return props_ReferentieNaarRechtssubject;
       case 47:
-        return props_ReferentieNaarVoorwaardeRechtsbetrekking;
+        return props_ReferentieNaarReferentieNaarOnderwerp;
       case 48:
-        return props_Regel;
+        return props_ReferentieNaarReferentieNaarSubject;
       case 49:
-        return props_RegelOverRechtsbetrekking;
+        return props_ReferentieNaarSubject;
       case 50:
-        return props_RegelOverRechtsgevolgVeroorzaker;
+        return props_ReferentieNaarVoorwaarde;
       case 51:
-        return props_RijVanKaraktersDatatype;
+        return props_ReferentieNaarVoorwaardeRechtsbetrekking;
       case 52:
-        return props_TijdDatatype;
+        return props_Regel;
       case 53:
-        return props_TijdsverloopMetRechtsgevolg;
+        return props_RegelOverRechtsbetrekking;
       case 54:
-        return props_Toestand;
+        return props_RegelOverRechtsgevolgVeroorzaker;
       case 55:
-        return props_Variabele;
+        return props_RijVanKaraktersDatatype;
       case 56:
-        return props_VerplichteBevoegdheidVerplichteGehoudenheid;
+        return props_TijdDatatype;
       case 57:
-        return props_VormVoorwaarde;
+        return props_TijdsverloopMetRechtsgevolg;
       case 58:
-        return props_VrijheidGeenaanspraak;
+        return props_Toestand;
       case 59:
+        return props_Variabele;
+      case 60:
+        return props_VerplichteBevoegdheidVerplichteGehoudenheid;
+      case 61:
+        return props_VormVoorwaarde;
+      case 62:
+        return props_VrijheidGeenaanspraak;
+      case 63:
         return props_ZwakkeAanspraakZwakkePlicht;
     }
     throw new IllegalStateException("Unknown concept " + c);
