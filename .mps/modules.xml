@@ -12,6 +12,12 @@
       <modulePath path="$PROJECT_DIR$/languages/Simulatie/Simulatie.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/SubjectiefRecht/SubjectiefRecht.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" folder="" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.allInOne/allInOne.msd" folder="" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.build/com.mbeddr.build.msd" folder="" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform.build.templates/com.mbeddr.platform.build.templates.msd" folder="" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" folder="" />
+      <modulePath path="$mbeddr.github.core.home$/code/plugins/sl-all/mps-apache-commons/solutions/mps-apache-commons.build/mps-apache-commons.build.msd" folder="" />
+      <modulePath path="$mbeddr.github.core.home$/code/plugins/sl-all/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" folder="" />
     </projectModules>
   </component>
 </project>

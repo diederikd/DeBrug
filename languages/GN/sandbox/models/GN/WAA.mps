@@ -180,7 +180,6 @@
       </concept>
       <concept id="6994217584621161730" name="ObjectiefRecht.structure.Context" flags="ng" index="1OcJVk">
         <property id="7431672735427175590" name="toonnummer" index="ddjTs" />
-        <property id="5266643527326211211" name="toonalles" index="lXnND" />
         <property id="909603116718868996" name="toonopmerkingen" index="I0$kN" />
         <child id="7431672735422944502" name="enumeraties" index="eXoSc" />
         <child id="5266643527326157923" name="zichtdatum" index="lX2K1" />
@@ -229,7 +228,6 @@
     <property role="TrG5h" value="Objectief WAA2000" />
     <property role="I0$kN" value="true" />
     <property role="ddjTs" value="true" />
-    <property role="lXnND" value="true" />
     <node concept="eXoDf" id="6syAJDDQ44i" role="eXoSc">
       <property role="TrG5h" value="dag van de week" />
       <node concept="eXoD2" id="6syAJDDQ44k" role="eXoCX">
@@ -394,7 +392,11 @@
         <property role="da7Q0" value="0000" />
         <property role="TrG5h" value="burgerservicenummer" />
         <ref role="I0tkr" node="5u1YjWIkWnX" resolve="burgerservicenummer" />
-        <node concept="2B78Lw" id="3DwVXk8WuYs" role="lXajo" />
+        <node concept="2B78Lw" id="3DwVXk8WuYs" role="lXajo">
+          <property role="2B78LB" value="01" />
+          <property role="2B78L_" value="07" />
+          <property role="2B78LE" value="2007" />
+        </node>
       </node>
       <node concept="lYmzx" id="5u1YjWIkoYQ" role="1TNFB5">
         <property role="TrG5h" value="voornamen" />

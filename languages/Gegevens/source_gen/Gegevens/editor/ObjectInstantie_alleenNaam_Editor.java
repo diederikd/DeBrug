@@ -68,12 +68,12 @@ public class ObjectInstantie_alleenNaam_Editor extends DefaultNodeEditor {
     }
     private EditorCell createProperty_mrgu7_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-      provider.setRole("conceptnummer");
-      provider.setNoTargetText("<no conceptnummer>");
+      provider.setRole("name");
+      provider.setNoTargetText("<no name>");
       provider.setReadOnly(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
-      editorCell.setCellId("property_conceptnummer");
+      editorCell.setCellId("property_name");
       Style style = new StyleImpl();
       style.set(StyleAttributes.AUTO_DELETABLE, 0, true);
       editorCell.getStyle().putAll(style);

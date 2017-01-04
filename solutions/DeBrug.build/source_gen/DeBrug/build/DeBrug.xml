@@ -12,6 +12,7 @@
   <property name="mbeddr.core.home" location="${basedir}/../mbeddr.core/code/languages/com.mbeddr.core" />
   <property name="mbeddr.mpsutil.home" location="${basedir}/../mbeddr.core/code/languages/com.mbeddr.mpsutil" />
   <property name="mbeddr.files" location="${basedir}/com.mbeddr.allInOne/mbeddr.core" />
+  <property name="com.mbeddr.platform" location="${mbeddr_core}/artifacts/com.mbeddr.platform" />
   <property name="icon.files" location="${basedir}/icons" />
   <property name="image.files" location="${basedir}/images" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
@@ -20,13 +21,14 @@
   <property name="artifacts.mpsBuildUI" location="${mps_home}" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
-  <property name="artifacts.com.mbeddr.allInOne" location="${basedir}/com.mbeddr.allInOne" />
-  <property name="artifacts.mps-apache-commons" location="${mbeddr_core}/artifacts/mps-sl-all/null" />
   <property name="artifacts.org.campagnelab.mps.UI" location="${basedir}/org.campagnelab.UI" />
+  <property name="artifacts.com.mbeddr.allInOne" location="${basedir}/com.mbeddr.allInOne" />
+  <property name="artifacts.mps-sl-all" location="${basedir}/com.mbeddr.allInOne" />
+  <property name="artifacts.resources" location="${com.mbeddr.platform}" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
-  <property file="${artifacts.com.mbeddr.allInOne}/build.properties" prefix="import.com.mbeddr.allInOne" />
   <property file="${artifacts.org.campagnelab.mps.UI}/build.properties" prefix="import.org.campagnelab.mps.UI" />
+  <property file="${artifacts.com.mbeddr.allInOne}/build.properties" prefix="import.com.mbeddr.allInOne" />
   <property name="mpsBootstrapCore.version" value="${import.mpsStandalone.mpsBootstrapCore.version}" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -34,6 +36,8 @@
   <property name="mps.teamcity.buildConfName" value="${import.mps.mps.teamcity.buildConfName}" />
   <property name="mps.idea.platform.build.number" value="${import.mps.mps.idea.platform.build.number}" />
   <property name="mps.mps.build.counter" value="${import.mps.mps.mps.build.counter}" />
+  <property name="org.campagnelab.mps.UI.ui_version" value="${import.org.campagnelab.mps.UI.org.campagnelab.mps.UI.ui_version}" />
+  <property name="org.campagnelab.mps.UI.build_number" value="${import.org.campagnelab.mps.UI.org.campagnelab.mps.UI.build_number}" />
   <property name="mps-sl-all.versionNumber" value="${import.com.mbeddr.allInOne.mps-sl-all.versionNumber}" />
   <property name="com.mbeddr.platform.major.version" value="${import.com.mbeddr.allInOne.com.mbeddr.platform.major.version}" />
   <property name="com.mbeddr.platform.minor.version" value="${import.com.mbeddr.allInOne.com.mbeddr.platform.minor.version}" />
@@ -43,8 +47,6 @@
   <property name="spawner.minor.version" value="${import.com.mbeddr.allInOne.spawner.minor.version}" />
   <property name="spawner.build" value="${import.com.mbeddr.allInOne.spawner.build}" />
   <property name="spawner.mbeddr.version" value="${import.com.mbeddr.allInOne.spawner.mbeddr.version}" />
-  <property name="org.campagnelab.mps.UI.ui_version" value="${import.org.campagnelab.mps.UI.org.campagnelab.mps.UI.ui_version}" />
-  <property name="org.campagnelab.mps.UI.build_number" value="${import.org.campagnelab.mps.UI.org.campagnelab.mps.UI.build_number}" />
   <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
   <property name="jdk.home" value="${env.JAVA_HOME}" />
@@ -68,6 +70,14 @@
     <copy todir="${build.layout}/license">
       <fileset dir="${artifacts.mpsStandalone}/license" />
     </copy>
+    <mkdir dir="${build.layout}/mbeddr.core" />
+    <copy todir="${build.layout}/mbeddr.core">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core" />
+    </copy>
+    <mkdir dir="${build.layout}/mbeddr.platform" />
+    <copy todir="${build.layout}/mbeddr.platform">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform" />
+    </copy>
     <copy file="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" todir="${build.layout}" />
     <mkdir dir="${build.layout}/UI" />
     <copy todir="${build.layout}/UI">
@@ -76,19 +86,6 @@
     <mkdir dir="${build.layout}/de.slisson.mps.all" />
     <copy todir="${build.layout}/de.slisson.mps.all">
       <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all" />
-    </copy>
-    <copy file="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" todir="${build.layout}" />
-    <mkdir dir="${build.layout}/plugins" />
-    <copy todir="${build.layout}/plugins">
-      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins" />
-    </copy>
-    <mkdir dir="${build.layout}/mbeddr.mpsutil" />
-    <copy todir="${build.layout}/mbeddr.mpsutil">
-      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil" />
-    </copy>
-    <mkdir dir="${build.layout}/mbeddr.platform" />
-    <copy todir="${build.layout}/mbeddr.platform">
-      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform" />
     </copy>
     <mkdir dir="${build.layout}/languages/UI" />
     <jar destfile="${build.layout}/languages/UI/org.campagnelab.mps.ui.jar" duplicate="preserve">
@@ -222,6 +219,62 @@
     <copy todir="${build.layout}/plugins/mps-vcs">
       <fileset dir="${artifacts.mps}/plugins/mps-vcs" />
     </copy>
+    <mkdir dir="${build.layout}/plugins/mbeddr.platform" />
+    <copy todir="${build.layout}/plugins/mbeddr.platform">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mbeddr.mpsutil" />
+    <copy todir="${build.layout}/plugins/mbeddr.mpsutil">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-multiline" />
+    <copy todir="${build.layout}/plugins/mps-multiline">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-richtext" />
+    <copy todir="${build.layout}/plugins/mps-richtext">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/de.slisson.mps.all" />
+    <copy todir="${build.layout}/plugins/de.slisson.mps.all">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/de.itemis.mps.tooltips" />
+    <copy todir="${build.layout}/plugins/de.itemis.mps.tooltips">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.tooltips" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/de-itemis-mps-selection" />
+    <copy todir="${build.layout}/plugins/de-itemis-mps-selection">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/de.slisson.mps.hacks" />
+    <copy todir="${build.layout}/plugins/de.slisson.mps.hacks">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/de.itemis.mps.editor.diagram" />
+    <copy todir="${build.layout}/plugins/de.itemis.mps.editor.diagram">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/de.itemis.mps.celllayout" />
+    <copy todir="${build.layout}/plugins/de.itemis.mps.celllayout">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/de.itemis.mps.editor.layout" />
+    <copy todir="${build.layout}/plugins/de.itemis.mps.editor.layout">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.layout" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/de.itemis.mps.editor.widgets" />
+    <copy todir="${build.layout}/plugins/de.itemis.mps.editor.widgets">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/de.slisson.mps.conditionalEditor" />
+    <copy todir="${build.layout}/plugins/de.slisson.mps.conditionalEditor">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.conditionalEditor" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-apache-commons" />
+    <copy todir="${build.layout}/plugins/mps-apache-commons">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons" />
+    </copy>
     <mkdir dir="${build.layout}/plugins/DeBrug" />
     <mkdir dir="${build.layout}/plugins/DeBrug/META-INF" />
     <echoxml file="${build.layout}/plugins/DeBrug/META-INF/plugin.xml">
@@ -233,13 +286,14 @@
         <depends>jetbrains.mps.ide.devkit</depends>
         <depends>jetbrains.mps.ide.make</depends>
         <depends>com.intellij.modules.mps</depends>
-        <depends>com.mbeddr.allInOne.build</depends>
-        <depends>de.slisson.mps.all</depends>
         <depends>org.campagnelab.mps.UI</depends>
-        <depends>de.slisson.mps.editor.multiline</depends>
+        <depends>de.slisson.mps.all</depends>
         <depends>de.slisson.mps.richtext</depends>
-        <depends>com.mbeddr.platform</depends>
+        <depends>de.slisson.mps.editor.multiline</depends>
         <depends>com.mbeddr.mpsutil</depends>
+        <depends>com.mbeddr.platform</depends>
+        <depends>com.mbeddr.core</depends>
+        <depends>org.apache.commons</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -538,7 +592,7 @@
     <copy todir="${build.layout}/icons">
       <fileset dir="${icon.files}" />
     </copy>
-    <echo file="${build.layout}/build.properties">DeBrug.date=${date}${line.separator}DeBrug.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}${line.separator}org.campagnelab.mps.UI.ui_version=${org.campagnelab.mps.UI.ui_version}${line.separator}org.campagnelab.mps.UI.build_number=${org.campagnelab.mps.UI.build_number}</echo>
+    <echo file="${build.layout}/build.properties">DeBrug.date=${date}${line.separator}DeBrug.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}org.campagnelab.mps.UI.ui_version=${org.campagnelab.mps.UI.ui_version}${line.separator}org.campagnelab.mps.UI.build_number=${org.campagnelab.mps.UI.build_number}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -565,7 +619,6 @@
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-java" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
-      <plugin path="${artifacts.mps}/plugins/mps-execution-configurations" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
       <plugin path="${artifacts.mps}/plugins/mps-make" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
@@ -578,32 +631,14 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.conditionalEditor" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr-build" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.SmInComp" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.allInOne" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.analysesbase" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.cbmc" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.components" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.concurrency" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.debugger" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.doc" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.math" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform.build" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.ple" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.req" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.req.c" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.sat4j" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.spawner" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.statemachine" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.units" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-math-editor" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables" />
       <plugin path="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -678,7 +713,6 @@
       <library file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-tool.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-      <library file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
@@ -704,6 +738,7 @@
       <macro name="mbeddr.core.home" path="${mbeddr.core.home}" />
       <macro name="mbeddr.mpsutil.home" path="${mbeddr.mpsutil.home}" />
       <macro name="mbeddr.files" path="${mbeddr.files}" />
+      <macro name="com.mbeddr.platform" path="${com.mbeddr.platform}" />
       <macro name="icon.files" path="${icon.files}" />
       <macro name="image.files" path="${image.files}" />
     </generate>
@@ -759,14 +794,9 @@
         <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk8.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
   </target>
@@ -813,7 +843,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.Gegevens" depends="java.compile.ObjectiefRecht, fetchDependencies">
+  <target name="java.compile.Gegevens" depends="java.compile.Datum, java.compile.ObjectiefRecht, fetchDependencies">
     <mkdir dir="${basedir}/languages/Gegevens/source_gen" />
     <mkdir dir="${build.tmp}/java/out/Gegevens" />
     <javac destdir="${build.tmp}/java/out/Gegevens" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -838,6 +868,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/Datum" />
         <pathelement path="${build.tmp}/java/out/ObjectiefRecht" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
@@ -848,9 +879,14 @@
         <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk8.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
   </target>
@@ -1109,8 +1145,6 @@
         <pathelement path="${build.tmp}/java/out/Datum" />
         <pathelement path="${build.tmp}/java/out/ObjectiefRecht" />
         <pathelement path="${build.tmp}/java/out/SubjectiefRecht" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
@@ -1154,8 +1188,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/ObjectiefRecht" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/Simulatie" />
         <pathelement path="${build.tmp}/java/out/SubjectiefRecht" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />

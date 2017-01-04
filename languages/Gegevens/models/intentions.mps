@@ -107,5 +107,31 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="1YFKb5tBLIW">
+    <property role="TrG5h" value="AttributenToevoegenObjectInstantie" />
+    <ref role="2ZfgGC" to="uwhu:1YFKb5t_BZm" resolve="ObjectInstantie" />
+    <node concept="2S6ZIM" id="1YFKb5tBLIX" role="2ZfVej">
+      <node concept="3clFbS" id="1YFKb5tBLIY" role="2VODD2">
+        <node concept="3cpWs6" id="1YFKb5tBLTK" role="3cqZAp">
+          <node concept="Xl_RD" id="1YFKb5tBMa$" role="3cqZAk">
+            <property role="Xl_RC" value="Attributen Toevoegen" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1YFKb5tBLIZ" role="2ZfgGD">
+      <node concept="3clFbS" id="1YFKb5tBLJ0" role="2VODD2">
+        <node concept="3clFbF" id="1YFKb5tBNXO" role="3cqZAp">
+          <node concept="2OqwBi" id="1YFKb5tBO68" role="3clFbG">
+            <node concept="2Sf5sV" id="1YFKb5tBNXN" role="2Oq$k0" />
+            <node concept="2qgKlT" id="1YFKb5tBOiJ" role="2OqNvi">
+              <ref role="37wK5l" to="fcw4:Y6bm6Uwy_b" resolve="attributenToevoegen" />
+              <node concept="2Sf5sV" id="1YFKb5tBOne" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

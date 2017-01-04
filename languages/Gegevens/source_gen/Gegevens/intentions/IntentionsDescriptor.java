@@ -34,12 +34,19 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
       switch (switchIndex) {
         case 0:
           if (true) {
+            // Concept: ObjectInstantie 
+            intentions = new IntentionFactory[1];
+            intentions[0] = new AttributenToevoegenObjectInstantie_Intention();
+          }
+          break;
+        case 1:
+          if (true) {
             // Concept: ReferentieNaarOnderwerp 
             intentions = new IntentionFactory[1];
             intentions[0] = new KenmerkenToevoegenOnderwerp_Intention();
           }
           break;
-        case 1:
+        case 2:
           if (true) {
             // Concept: ReferentieNaarSubject 
             intentions = new IntentionFactory[1];
@@ -57,9 +64,10 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[2];
+    IntentionFactory[] rv = new IntentionFactory[3];
     rv[0] = new KenmerkenToevoegenOnderwerp_Intention();
     rv[1] = new KenmerkenToevoegenSubject_Intention();
+    rv[2] = new AttributenToevoegenObjectInstantie_Intention();
     return Arrays.asList(rv);
   }
   private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
@@ -70,5 +78,5 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_hphjzv_d0f = buildConceptIndices(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L, "Gegevens.structure.ReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383bc1aL, "Gegevens.structure.ReferentieNaarSubject"));
+  private static final Map<SAbstractConcept, Integer> indices_hphjzv_d0f = buildConceptIndices(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L, "Gegevens.structure.ObjectInstantie"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L, "Gegevens.structure.ReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383bc1aL, "Gegevens.structure.ReferentieNaarSubject"));
 }

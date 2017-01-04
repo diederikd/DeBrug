@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="Gegevens.intentions.AttributenToevoegenObjectInstantie_Intention" file="AttributenToevoegenObjectInstantie_Intention.java">
+    <classNode dependClassName="Gegevens.behavior.ObjectInstantie__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionDescriptor" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionExecutable" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionExecutableBase" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionType" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.intentions.IntentionDescriptorBase" />
+    <classNode extendsClassName="jetbrains.mps.intentions.IntentionFactory" />
+  </dependency>
   <dependency className="Gegevens.intentions.IntentionsDescriptor" file="IntentionsDescriptor.java">
+    <classNode dependClassName="Gegevens.intentions.AttributenToevoegenObjectInstantie_Intention" />
     <classNode dependClassName="Gegevens.intentions.KenmerkenToevoegenOnderwerp_Intention" />
     <classNode dependClassName="Gegevens.intentions.KenmerkenToevoegenSubject_Intention" />
     <classNode dependClassName="java.lang.Integer" />
