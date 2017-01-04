@@ -9,10 +9,7 @@
   <property name="build.number" value="DeBrug-162.SNAPSHOT" />
   <property name="mps_home" location="${basedir}/../../../../Applications/MPS 3.4.app/Contents" />
   <property name="mbeddr_core" location="${basedir}/../mbeddr.core" />
-  <property name="mbeddr.core.home" location="${basedir}/../mbeddr.core/code/languages/com.mbeddr.core" />
-  <property name="mbeddr.mpsutil.home" location="${basedir}/../mbeddr.core/code/languages/com.mbeddr.mpsutil" />
   <property name="mbeddr.files" location="${basedir}/com.mbeddr.allInOne/mbeddr.core" />
-  <property name="com.mbeddr.platform" location="${mbeddr_core}/artifacts/com.mbeddr.platform" />
   <property name="icon.files" location="${basedir}/icons" />
   <property name="image.files" location="${basedir}/images" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
@@ -24,7 +21,6 @@
   <property name="artifacts.org.campagnelab.mps.UI" location="${basedir}/org.campagnelab.UI" />
   <property name="artifacts.com.mbeddr.allInOne" location="${basedir}/com.mbeddr.allInOne" />
   <property name="artifacts.mps-sl-all" location="${basedir}/com.mbeddr.allInOne" />
-  <property name="artifacts.resources" location="${com.mbeddr.platform}" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.org.campagnelab.mps.UI}/build.properties" prefix="import.org.campagnelab.mps.UI" />
@@ -70,22 +66,10 @@
     <copy todir="${build.layout}/license">
       <fileset dir="${artifacts.mpsStandalone}/license" />
     </copy>
-    <mkdir dir="${build.layout}/mbeddr.core" />
-    <copy todir="${build.layout}/mbeddr.core">
-      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core" />
-    </copy>
-    <mkdir dir="${build.layout}/mbeddr.platform" />
-    <copy todir="${build.layout}/mbeddr.platform">
-      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform" />
-    </copy>
     <copy file="${artifacts.org.campagnelab.mps.UI}/org.campagnelab.UI-3.0.0.zip" todir="${build.layout}" />
     <mkdir dir="${build.layout}/UI" />
     <copy todir="${build.layout}/UI">
       <fileset dir="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI" />
-    </copy>
-    <mkdir dir="${build.layout}/de.slisson.mps.all" />
-    <copy todir="${build.layout}/de.slisson.mps.all">
-      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all" />
     </copy>
     <mkdir dir="${build.layout}/languages/UI" />
     <jar destfile="${build.layout}/languages/UI/org.campagnelab.mps.ui.jar" duplicate="preserve">
@@ -219,9 +203,21 @@
     <copy todir="${build.layout}/plugins/mps-vcs">
       <fileset dir="${artifacts.mps}/plugins/mps-vcs" />
     </copy>
+    <mkdir dir="${build.layout}/plugins/mbeddr.core" />
+    <copy todir="${build.layout}/plugins/mbeddr.core">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core" />
+    </copy>
     <mkdir dir="${build.layout}/plugins/mbeddr.platform" />
     <copy todir="${build.layout}/plugins/mbeddr.platform">
       <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mbeddr.spawner" />
+    <copy todir="${build.layout}/plugins/mbeddr.spawner">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.spawner" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mbeddr.debugger" />
+    <copy todir="${build.layout}/plugins/mbeddr.debugger">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.debugger" />
     </copy>
     <mkdir dir="${build.layout}/plugins/mbeddr.mpsutil" />
     <copy todir="${build.layout}/plugins/mbeddr.mpsutil">
@@ -271,6 +267,14 @@
     <copy todir="${build.layout}/plugins/de.slisson.mps.conditionalEditor">
       <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.conditionalEditor" />
     </copy>
+    <mkdir dir="${build.layout}/plugins/mps-tables" />
+    <copy todir="${build.layout}/plugins/mps-tables">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/de.itemis.mps.nativelibs" />
+    <copy todir="${build.layout}/plugins/de.itemis.mps.nativelibs">
+      <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.nativelibs" />
+    </copy>
     <mkdir dir="${build.layout}/plugins/mps-apache-commons" />
     <copy todir="${build.layout}/plugins/mps-apache-commons">
       <fileset dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons" />
@@ -283,17 +287,9 @@
         <name>DeBrug</name>
         <version>0.1</version>
         <depends>jetbrains.mps.core</depends>
-        <depends>jetbrains.mps.ide.devkit</depends>
-        <depends>jetbrains.mps.ide.make</depends>
-        <depends>com.intellij.modules.mps</depends>
         <depends>org.campagnelab.mps.UI</depends>
         <depends>de.slisson.mps.all</depends>
-        <depends>de.slisson.mps.richtext</depends>
-        <depends>de.slisson.mps.editor.multiline</depends>
         <depends>com.mbeddr.mpsutil</depends>
-        <depends>com.mbeddr.platform</depends>
-        <depends>com.mbeddr.core</depends>
-        <depends>org.apache.commons</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -578,6 +574,143 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-Simulatie-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-Simulatie-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/Interactie.jar" />
+    <mkdir dir="${build.tmp}/default/Interactie.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/Interactie.jar/META-INF/module.xml">
+      <module namespace="Interactie" type="language" uuid="c4c9a68e-ce24-4c5b-9241-c819e554f07c">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="Interactie-src.jar" descriptor="Interactie.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Interactie.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/Interactie" />
+      <fileset dir="${basedir}/languages/Interactie" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/Interactie/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/Interactie.jar" />
+    </jar>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Interactie-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/Interactie#6166301676793402226" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-Interactie-generator-template">
+      <fileset dir="${basedir}/languages/Interactie/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-Interactie-models">
+      <fileset dir="${basedir}/languages/Interactie/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Interactie-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/Interactie/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/Interactie/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/Interactie/Interactie.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-Interactie-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-Interactie-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/Integriteit.jar" />
+    <mkdir dir="${build.tmp}/default/Integriteit.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/Integriteit.jar/META-INF/module.xml">
+      <module namespace="Integriteit" type="language" uuid="48310930-4911-4b53-b011-afe49cb8818e">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="Integriteit-src.jar" descriptor="Integriteit.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Integriteit.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/Integriteit" />
+      <fileset dir="${basedir}/languages/Integriteit" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/Integriteit/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/Integriteit.jar" />
+    </jar>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Integriteit-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/Integriteit#2282129504202752671" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-Integriteit-generator-template">
+      <fileset dir="${basedir}/languages/Integriteit/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-Integriteit-models">
+      <fileset dir="${basedir}/languages/Integriteit/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/Integriteit-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/Integriteit/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/Integriteit/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/Integriteit/Integriteit.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-Integriteit-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-Integriteit-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/GN.sandbox.jar" />
+    <mkdir dir="${build.tmp}/default/GN.sandbox.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/GN.sandbox.jar/META-INF/module.xml">
+      <module namespace="GN.sandbox" type="solution" uuid="fa88bb76-c276-483e-842a-c99ad2cbb026">
+        <dependencies />
+        <sources jar="GN.sandbox-src.jar" descriptor="GN.sandbox.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/GN.sandbox.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/GN.sandbox" />
+      <fileset dir="${basedir}/languages/GN/sandbox" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/GN/sandbox/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/GN.sandbox.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-GN-sandbox-models">
+      <fileset dir="${basedir}/languages/GN/sandbox/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/DeBrug/languages/DeBrug/GN.sandbox-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/GN/sandbox/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/GN/sandbox/GN.sandbox.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-GN-sandbox-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.layout}/plugins/mbeddr.core" />
     <copy todir="${build.layout}/plugins/mbeddr.core">
       <fileset dir="${mbeddr.files}" />
@@ -617,10 +750,7 @@
       <plugin path="${artifacts.mpsStandalone}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
-      <plugin path="${artifacts.mps}/plugins/mps-debugger-java" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
-      <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
-      <plugin path="${artifacts.mps}/plugins/mps-make" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout" />
@@ -631,11 +761,7 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.conditionalEditor" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.debugger" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.spawner" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext" />
@@ -725,20 +851,21 @@
       <chunk>
         <module file="${basedir}/languages/Datum/Datum.mpl" />
         <module file="${basedir}/languages/Gegevens/Gegevens.mpl" />
+        <module file="${basedir}/languages/Integriteit/Integriteit.mpl" />
+        <module file="${basedir}/languages/Interactie/Interactie.mpl" />
         <module file="${basedir}/languages/GN/ObjectiefRecht.mpl" />
         <module file="${basedir}/languages/Simulatie/Simulatie.mpl" />
         <module file="${basedir}/languages/SubjectiefRecht/SubjectiefRecht.mpl" />
       </chunk>
-      <chunk />
+      <chunk>
+        <module file="${basedir}/languages/GN/sandbox/GN.sandbox.msd" />
+      </chunk>
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
       <macro name="mbeddr_core" path="${mbeddr_core}" />
-      <macro name="mbeddr.core.home" path="${mbeddr.core.home}" />
-      <macro name="mbeddr.mpsutil.home" path="${mbeddr.mpsutil.home}" />
       <macro name="mbeddr.files" path="${mbeddr.files}" />
-      <macro name="com.mbeddr.platform" path="${com.mbeddr.platform}" />
       <macro name="icon.files" path="${icon.files}" />
       <macro name="image.files" path="${image.files}" />
     </generate>
@@ -750,7 +877,7 @@
   
   <target name="makeDependents" />
   
-  <target name="compileJava" depends="java.compile.Datum, java.compile.Datum#848775529194317175, java.compile.Gegevens, java.compile.Gegevens#6166301676793402228, java.compile.SubjectiefRecht, java.compile.SubjectiefRecht#7136310554705381513, java.compile.ObjectiefRecht, java.compile.ObjectiefRecht#6994217584621125733, java.compile.Simulatie, java.compile.Simulatie#7812026954661547138" />
+  <target name="compileJava" depends="java.compile.Datum, java.compile.Datum#848775529194317175, java.compile.Gegevens, java.compile.Gegevens#6166301676793402228, java.compile.SubjectiefRecht, java.compile.SubjectiefRecht#7136310554705381513, java.compile.ObjectiefRecht, java.compile.ObjectiefRecht#6994217584621125733, java.compile.Simulatie, java.compile.Simulatie#7812026954661547138, java.compile.Interactie, java.compile.Interactie#6166301676793402226, java.compile.Integriteit, java.compile.Integriteit#2282129504202752671, java.compile.GN.sandbox" />
   
   <target name="processResources" />
   
@@ -1206,14 +1333,230 @@
     </javac>
   </target>
   
+  <target name="java.compile.Interactie" depends="fetchDependencies">
+    <mkdir dir="${basedir}/languages/Interactie/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/Interactie" />
+    <javac destdir="${build.tmp}/java/out/Interactie" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/Interactie/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.8.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.Interactie#6166301676793402226" depends="java.compile.Interactie, fetchDependencies">
+    <mkdir dir="${basedir}/languages/Interactie/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/Interactie#6166301676793402226" />
+    <javac destdir="${build.tmp}/java/out/Interactie#6166301676793402226" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/Interactie/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/Interactie" />
+        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.8.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.Integriteit" depends="fetchDependencies">
+    <mkdir dir="${basedir}/languages/Integriteit/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/Integriteit" />
+    <javac destdir="${build.tmp}/java/out/Integriteit" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/Integriteit/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.8.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.Integriteit#2282129504202752671" depends="java.compile.Integriteit, fetchDependencies">
+    <mkdir dir="${basedir}/languages/Integriteit/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/Integriteit#2282129504202752671" />
+    <javac destdir="${build.tmp}/java/out/Integriteit#2282129504202752671" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/Integriteit/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/Integriteit" />
+        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.8.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.GN.sandbox" depends="java.compile.Datum, java.compile.ObjectiefRecht, java.compile.Simulatie, java.compile.SubjectiefRecht, fetchDependencies">
+    <mkdir dir="${basedir}/languages/GN/sandbox/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/GN.sandbox" />
+    <javac destdir="${build.tmp}/java/out/GN.sandbox" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/GN/sandbox/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/Datum" />
+        <pathelement path="${build.tmp}/java/out/ObjectiefRecht" />
+        <pathelement path="${build.tmp}/java/out/Simulatie" />
+        <pathelement path="${build.tmp}/java/out/SubjectiefRecht" />
+        <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.8.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
   <target name="cleanSources">
     <delete dir="${basedir}/languages/Datum/source_gen" />
     <delete dir="${basedir}/languages/Gegevens/source_gen" />
+    <delete dir="${basedir}/languages/Integriteit/source_gen" />
+    <delete dir="${basedir}/languages/Interactie/source_gen" />
     <delete dir="${basedir}/languages/GN/source_gen" />
     <delete dir="${basedir}/languages/Simulatie/source_gen" />
     <delete dir="${basedir}/languages/SubjectiefRecht/source_gen" />
     <delete dir="${basedir}/languages/Datum/generator/source_gen" />
+    <delete dir="${basedir}/languages/GN/sandbox/source_gen" />
     <delete dir="${basedir}/languages/Gegevens/generator/source_gen" />
+    <delete dir="${basedir}/languages/Integriteit/generator/source_gen" />
+    <delete dir="${basedir}/languages/Interactie/generator/source_gen" />
     <delete dir="${basedir}/languages/GN/generator/source_gen" />
     <delete dir="${basedir}/languages/Simulatie/generator/source_gen" />
     <delete dir="${basedir}/languages/SubjectiefRecht/generator/source_gen" />

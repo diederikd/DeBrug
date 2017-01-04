@@ -14,30 +14,29 @@ import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
-import ObjectiefRecht.editor.GN_StyleSheet;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
-public class ReferentieNaarEnumeratie_Editor extends DefaultNodeEditor {
+public class EnumeratieWaarde_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_oro7o2_a(editorContext, node);
+    return this.createCollection_ry17xl_a(editorContext, node);
   }
-  private EditorCell createCollection_oro7o2_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_ry17xl_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_oro7o2_a");
+    editorCell.setCellId("Collection_ry17xl_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createRefCell_oro7o2_a0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_ry17xl_a0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createRefCell_oro7o2_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_ry17xl_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("enumeratie");
-    provider.setNoTargetText("<no enumeratie>");
+    provider.setRole("waarde");
+    provider.setNoTargetText("<no waarde>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new ReferentieNaarEnumeratie_Editor._Inline_oro7o2_a0a());
+    provider.setAuxiliaryCellProvider(new EnumeratieWaarde_Editor._Inline_ry17xl_a0a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("enumeratie");
+      editorCell.setRole("waarde");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -48,17 +47,17 @@ public class ReferentieNaarEnumeratie_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  public static class _Inline_oro7o2_a0a extends InlineCellProvider {
-    public _Inline_oro7o2_a0a() {
+  public static class _Inline_ry17xl_a0a extends InlineCellProvider {
+    public _Inline_ry17xl_a0a() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_oro7o2_a0a0(editorContext, node);
+      return this.createProperty_ry17xl_a0a0(editorContext, node);
     }
-    private EditorCell createProperty_oro7o2_a0a0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_ry17xl_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -67,7 +66,6 @@ public class ReferentieNaarEnumeratie_Editor extends DefaultNodeEditor {
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name");
       Style style = new StyleImpl();
-      GN_StyleSheet.apply_Onderwerp(style, editorCell);
       style.set(StyleAttributes.AUTO_DELETABLE, 0, true);
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());

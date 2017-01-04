@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="zznl" ref="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)" />
-    <import index="vpuk" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#61be2dc6-a140-4def-a592-7499aa2bac19(jetbrains.mps.lang.project.modules/module.Datum@project_stub)" />
   </imports>
   <registry>
     <language id="30ef095a-d489-45ff-a80f-456a798ac125" name="Gegevens">
@@ -52,7 +51,7 @@
       <concept id="7431672735422943413" name="Gegevens.structure.Enumeratie" flags="ng" index="eXoDf">
         <child id="7431672735422943431" name="elementen" index="eXoCX" />
       </concept>
-      <concept id="7431672735422943494" name="Gegevens.structure.ReferentieNaarEnumeratie" flags="ng" index="eXoJW">
+      <concept id="7431672735422943494" name="Gegevens.structure.EnumeratieDatatype" flags="ng" index="eXoJW">
         <reference id="7431672735422944459" name="enumeratie" index="eXoSL" />
       </concept>
       <concept id="5837360469958775734" name="Gegevens.structure.ReferentieNaarAttribuutMetReferentieNaarOnderwerp" flags="ng" index="$NEJt">
@@ -99,6 +98,9 @@
       </concept>
       <concept id="3899694242258122155" name="Gegevens.structure.ReferentieNaarAttribuutMetReferentieNaarKenmerk" flags="ng" index="1cs0FF">
         <reference id="3899694242258122156" name="attribuut" index="1cs0FG" />
+      </concept>
+      <concept id="7668643553874542695" name="Gegevens.structure.EnumeratieWaarde" flags="ng" index="3ND7V9">
+        <reference id="7668643553874893439" name="waarde" index="3NCijh" />
       </concept>
     </language>
     <language id="61be2dc6-a140-4def-a592-7499aa2bac19" name="Datum">
@@ -319,12 +321,15 @@
       </node>
       <node concept="25GtAH" id="1YFKb5ts1QC" role="aI7YJ">
         <ref role="25GgGs" to="zznl:5qTpXpBoOu0" resolve="datum indiensttreding" />
+        <node concept="QqSvC" id="6DGvEUpMOYX" role="1ldGuc" />
       </node>
       <node concept="25GtAH" id="1YFKb5ts1QD" role="aI7YJ">
         <ref role="25GgGs" to="zznl:5u1YjWIjO3G" resolve="arbeidsovereenkomst getekend op" />
+        <node concept="QqSvC" id="6DGvEUpMOYZ" role="1ldGuc" />
       </node>
       <node concept="25jsP4" id="1YFKb5ts1QE" role="aI7YJ">
         <ref role="25jsPV" to="zznl:3d6QfrhlN9H" resolve="arbeidsduur in arbeidsovereenkomst" />
+        <node concept="QqSvC" id="6DGvEUpMOZ1" role="1ldGuc" />
       </node>
     </node>
     <node concept="aIo_O" id="3DwVXk8VFYQ" role="aIu47">
@@ -686,6 +691,18 @@
           <ref role="1cs0FG" node="7rcH1JNxeBI" />
         </node>
         <node concept="12cgnX" id="542u6HPOcJb" role="12frXJ" />
+      </node>
+    </node>
+    <node concept="12frXB" id="6DGvEUpNlE1" role="12fk0E">
+      <property role="TrG5h" value="5 x 8" />
+      <ref role="1cty5Y" node="7rcH1JNxeEd" resolve="rooster" />
+      <node concept="12frXF" id="6DGvEUpNlFl" role="12frXg">
+        <node concept="1cs0FF" id="6DGvEUpNlFm" role="12cwu4">
+          <ref role="1cs0FG" node="7rcH1JNxnmJ" />
+        </node>
+        <node concept="3ND7V9" id="6DGvEUpNlFx" role="12frXJ">
+          <ref role="3NCijh" node="3DwVXk8W7KK" resolve="Dinsdag" />
+        </node>
       </node>
     </node>
     <node concept="12frXB" id="542u6HPOcH1" role="12fk0E">

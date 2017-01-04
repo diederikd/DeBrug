@@ -226,6 +226,12 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="6DGvEUpOn_z" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="ljvvj" id="6DGvEUpOnA1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3EZMnI" id="7rcH1JNxsNg" role="3EZMnx">
         <node concept="VPM3Z" id="7rcH1JNxsNh" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -256,9 +262,6 @@
           </node>
         </node>
         <node concept="l2Vlx" id="7rcH1JNxsNr" role="2iSdaV" />
-        <node concept="lj46D" id="7rcH1JNxsNs" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
       <node concept="3F0ifn" id="7rcH1JNxsNt" role="3EZMnx">
         <property role="3F0ifm" value="" />
@@ -331,9 +334,6 @@
           </node>
         </node>
         <node concept="l2Vlx" id="7rcH1JNxnpN" role="2iSdaV" />
-        <node concept="lj46D" id="7rcH1JNxnqJ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
       <node concept="3F0ifn" id="7rcH1JNxnqr" role="3EZMnx">
         <property role="3F0ifm" value="" />
@@ -680,8 +680,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="6syAJDDPL47">
-    <property role="3GE5qa" value="Enumeratie" />
-    <ref role="1XX52x" to="uwhu:6syAJDDPL46" resolve="ReferentieNaarEnumeratie" />
+    <property role="3GE5qa" value="Datatype" />
+    <ref role="1XX52x" to="uwhu:6syAJDDPL46" resolve="EnumeratieDatatype" />
     <node concept="3EZMnI" id="6syAJDDPLj1" role="2wV5jI">
       <node concept="1iCGBv" id="6syAJDDPLjd" role="3EZMnx">
         <ref role="1NtTu8" to="uwhu:6syAJDDPLjb" resolve="enumeratie" />
@@ -1112,6 +1112,22 @@
         </node>
       </node>
       <node concept="l2Vlx" id="542u6HPNdf9" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6DGvEUpNQOn">
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="1XX52x" to="uwhu:6DGvEUpM01B" resolve="EnumeratieWaarde" />
+    <node concept="3EZMnI" id="6DGvEUpNQOp" role="2wV5jI">
+      <node concept="1iCGBv" id="6DGvEUpNQOw" role="3EZMnx">
+        <ref role="1NtTu8" to="uwhu:6DGvEUpNlDZ" resolve="waarde" />
+        <node concept="1sVBvm" id="6DGvEUpNQOy" role="1sWHZn">
+          <node concept="3F0A7n" id="6DGvEUpNQOD" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6DGvEUpNQOs" role="2iSdaV" />
     </node>
   </node>
 </model>

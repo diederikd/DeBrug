@@ -319,8 +319,8 @@
   </node>
   <node concept="1TIwiD" id="6syAJDDPL46">
     <property role="EcuMT" value="7431672735422943494" />
-    <property role="TrG5h" value="ReferentieNaarEnumeratie" />
-    <property role="3GE5qa" value="Enumeratie" />
+    <property role="TrG5h" value="EnumeratieDatatype" />
+    <property role="3GE5qa" value="Datatype" />
     <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
     <node concept="1TJgyj" id="6syAJDDPLjb" role="1TKVEi">
       <property role="IQ2ns" value="7431672735422944459" />
@@ -568,12 +568,18 @@
       <ref role="20lvS9" node="7rcH1JNwn_v" resolve="AttribuutMetReferentieNaarOnderwerp" />
     </node>
   </node>
-  <node concept="1TIwiD" id="542u6HPOdEH">
-    <property role="EcuMT" value="5837360469959039661" />
-    <property role="3GE5qa" value="Datatype" />
-    <property role="TrG5h" value="EnumeratieDatatyoe" />
-    <property role="34LRSv" value="enumeratie" />
-    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+  <node concept="1TIwiD" id="6DGvEUpM01B">
+    <property role="EcuMT" value="7668643553874542695" />
+    <property role="3GE5qa" value="Waarden" />
+    <property role="TrG5h" value="EnumeratieWaarde" />
+    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="AbstracteWaarde" />
+    <node concept="1TJgyj" id="6DGvEUpNlDZ" role="1TKVEi">
+      <property role="IQ2ns" value="7668643553874893439" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="waarde" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6syAJDDPL2S" resolve="EnumeratieElement" />
+    </node>
   </node>
 </model>
 

@@ -57,8 +57,14 @@
     <file name="DatumWaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.DatumWaarde_BehaviorDescriptor" />
     </file>
+    <file name="EnumeratieDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.EnumeratieDatatype_BehaviorDescriptor" />
+    </file>
     <file name="EnumeratieElement_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.EnumeratieElement_BehaviorDescriptor" />
+    </file>
+    <file name="EnumeratieWaarde_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.EnumeratieWaarde_BehaviorDescriptor" />
     </file>
     <file name="Enumeratie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.Enumeratie_BehaviorDescriptor" />
@@ -119,9 +125,6 @@
     </file>
     <file name="ReferentieNaarAttribuut_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.ReferentieNaarAttribuut_BehaviorDescriptor" />
-    </file>
-    <file name="ReferentieNaarEnumeratie_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="Gegevens.behavior.ReferentieNaarEnumeratie_BehaviorDescriptor" />
     </file>
     <file name="ReferentieNaarOnderwerpOfSubject_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.ReferentieNaarOnderwerpOfSubject_BehaviorDescriptor" />

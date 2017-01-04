@@ -126,7 +126,6 @@ public class Object_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_3ja71y_e0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, 0, false);
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createConstant_3ja71y_a4a(editorContext, node));
     editorCell.addEditorCell(this.createConstant_3ja71y_b4a(editorContext, node));
