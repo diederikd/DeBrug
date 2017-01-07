@@ -11,43 +11,13 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f9a1364-78d3-4826-8144-af78ce41dd34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/GebeurtenisMetRechtsgevolg_Editor$bronSingleRoleHandler_1zehi0_f0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/GebeurtenisMetRechtsgevolg_Editor$heeftAlsGevolgSingleRoleHandler_1zehi0_a7a.class" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum#848775529194317175/Datum/generator/template/main/QueriesGenerated.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/Language.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/behavior/BehaviorAspectDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/behavior/DatumTijd_BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/behavior/DatumTijd__BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/behavior/Datum_BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/behavior/Datum__BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/behavior/Tijd_BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/behavior/Tijd__BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/constraints/ConstraintsAspectDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/editor/DatumTijd_Editor$DatumSingleRoleHandler_pu5g3r_a0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/editor/DatumTijd_Editor$TijdSingleRoleHandler_pu5g3r_c0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/editor/DatumTijd_Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/editor/Datum_Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/editor/EditorAspectDescriptorImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/editor/Tijd_Editor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/editor/Tijd_Editor$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/editor/Tijd_Editor$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/editor/Tijd_Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/structure/ConceptPresentationAspectImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/structure/StructureAspectDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/DeBrug/java/out/Datum/Datum/typesystem/TypesystemDescriptor.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/GebeurtenisMetRechtsgevolg_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/GebeurtenisMetRechtsgevolg_Editor.class" />
+    <list default="true" id="7f9a1364-78d3-4826-8144-af78ce41dd34" name="Default" comment="Director">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/editor.mps" afterPath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/AWB.mps" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/AWB.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/AWB/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/AWB/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/TestGegevensmodel/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/TestGegevensmodel/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/GebeurtenisMetRechtsgevolg_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/GebeurtenisMetRechtsgevolg_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/build/DeBrug.xml" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/classes_gen/DeBrug/build/DeBrug.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/models/DeBrug/build.mps" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/models/DeBrug/build.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen.caches/DeBrug/build/generated" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen.caches/DeBrug/build/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/build/DeBrug.xml" afterPath="$PROJECT_DIR$/solutions/DeBrug.build/source_gen/DeBrug/build/DeBrug.xml" />
     </list>
     <ignored path="ProjectDeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -154,7 +124,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:e7587d87-b85a-4398-ab1f-a87a9ee8f6d3(GN.AWB)/8316879955948253757" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543214" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -170,7 +140,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Objectief AWB" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Objectief AWB" pinned="false" current-in-tab="false">
         <entry file="mps://node://GN.sandbox/GN.AWB/Objectief AWB">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -191,7 +161,50 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:e7587d87-b85a-4398-ab1f-a87a9ee8f6d3(GN.AWB)/8316879955948253757" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543214" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeBrug" pinned="false" current-in-tab="true">
+        <entry file="mps://node://DeBrug.build/DeBrug.build/DeBrug">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="2100">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="335" />
+                    <property name="caretXRelative" value="152" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_text_3" cellNumber="0" isInList="false">
+                      <node node_reference="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543214" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_pilq2t_c0" cellNumber="0" isInList="false">
+                      <node node_reference="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543301" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543214" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -228,7 +241,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:e7587d87-b85a-4398-ab1f-a87a9ee8f6d3(GN.AWB)/8316879955948253757" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543214" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -578,6 +591,86 @@
               <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/models/ObjectiefRecht/structure.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RechtsgevolgVeroorzakers" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeBrug" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/solutions/DeBrug.build/models/DeBrug/build.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Simulatie/models/behavior.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeBrug" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -617,105 +710,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/models/ObjectiefRecht/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RechtsgevolgVeroorzakers" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:e7587d87-b85a-4398-ab1f-a87a9ee8f6d3(GN.AWB) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/sandbox/models/GN/AWB.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/sandbox/models/GN/WAA.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Simulatie/models/behavior.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -725,7 +720,19 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" />
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeBrug" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/solutions/DeBrug.build/models/DeBrug/build.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7366216351236543388" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -939,19 +946,21 @@
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29098967" sideWeight="0.428125" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18639053" sideWeight="0.45625" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18611522" sideWeight="0.45625" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CBMC Lifted Results" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3353028" sideWeight="0.52265626" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3353028" sideWeight="0.52265626" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31757754" sideWeight="0.5882813" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.49676898" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32496306" sideWeight="0.3412829" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29140624" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29140624" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CBMC Raw Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="27" side_tool="false" content_ui="tabs" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="24" side_tool="false" content_ui="tabs" />
@@ -961,9 +970,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31804734" sideWeight="0.5882813" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1250,7 +1257,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Uitvoerbare handelingen gesplitst in twee rollen." />
     <MESSAGE value="Type handelingen toegevoegd." />
     <MESSAGE value="Immuniteit in simulatie ingebouwd" />
     <MESSAGE value="Aanpassingen o.b.v. opmerkingen Sjir" />
@@ -1275,12 +1281,10 @@
     <MESSAGE value="Basic invullen van gegevens" />
     <MESSAGE value="Stappen gemaakt met de gegevenstaal" />
     <MESSAGE value="Met volledig werkende build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Met volledig werkende build" />
+    <MESSAGE value="Eerste commit op Github, met AWB regels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eerste commit op Github, met AWB regels" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://Gegevens/Gegevens.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://Gegevens/Gegevens.structure/KenmerkReferentieNaarOnderwerp" />
-    <entry file="mps://node://Gegevens/Gegevens.structure/KenmerkReferentieNaarSubject" />
     <entry file="mps://node://Gegevens/Gegevens.structure/ReferentieNaarAbstractKenmerk" />
     <entry file="mps://node://Gegevens/Gegevens.structure/AbstractAttribuut">
       <provider selected="true" editor-type-id="MPSFileEditor">
@@ -2664,6 +2668,88 @@
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
             </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.sandbox/GN.AWB/Objectief AWB">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="2720">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="143" />
+                <property name="caretXRelative" value="80" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_trpnxn_i0" cellNumber="0" isInList="false">
+                  <node node_reference="r:e7587d87-b85a-4398-ab1f-a87a9ee8f6d3(GN.AWB)/8316879955948253757" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://DeBrug.build/DeBrug.build/DeBrug">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_pilq2t_c0" cellNumber="0" isInList="false">
+                  <node node_reference="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543301" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://DeBrug.build/DeBrug.build/DeBrug">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_pilq2t_c0" cellNumber="0" isInList="false">
+                  <node node_reference="r:0e3bea8c-f956-4474-a20a-f79e26b50cc1(DeBrug.build)/7366216351236543301" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
           </inspectorMemento>
         </state>
       </provider>

@@ -491,20 +491,14 @@
           </node>
           <node concept="28jJK3" id="4EmuLL95Aug" role="39821P">
             <node concept="55IIr" id="4EmuLL95Auh" role="28jJRO">
-              <node concept="2Ry0Ak" id="4EmuLL95Aui" role="iGT6I">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="4EmuLL95Auj" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="4EmuLL95Auk" role="2Ry0An">
-                    <property role="2Ry0Am" value="Downloads" />
-                    <node concept="2Ry0Ak" id="4EmuLL95Aul" role="2Ry0An">
-                      <property role="2Ry0Am" value="UI" />
-                      <node concept="2Ry0Ak" id="4EmuLL95Aum" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="4EmuLL95J7v" role="2Ry0An">
-                          <property role="2Ry0Am" value="org.campagnelab.ui.jar" />
-                        </node>
-                      </node>
+              <node concept="2Ry0Ak" id="4EmuLL95Auk" role="iGT6I">
+                <property role="2Ry0Am" value="org.campagnelab.UI" />
+                <node concept="2Ry0Ak" id="4EmuLL95Aul" role="2Ry0An">
+                  <property role="2Ry0Am" value="UI" />
+                  <node concept="2Ry0Ak" id="4EmuLL95Aum" role="2Ry0An">
+                    <property role="2Ry0Am" value="languages" />
+                    <node concept="2Ry0Ak" id="4EmuLL95J7v" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.campagnelab.ui.jar" />
                     </node>
                   </node>
                 </node>
@@ -520,20 +514,14 @@
           </node>
           <node concept="28jJK3" id="4EmuLL95A_l" role="39821P">
             <node concept="55IIr" id="4EmuLL95A_m" role="28jJRO">
-              <node concept="2Ry0Ak" id="4EmuLL95A_n" role="iGT6I">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="4EmuLL95A_o" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="4EmuLL95A_p" role="2Ry0An">
-                    <property role="2Ry0Am" value="Downloads" />
-                    <node concept="2Ry0Ak" id="4EmuLL95A_q" role="2Ry0An">
-                      <property role="2Ry0Am" value="UI" />
-                      <node concept="2Ry0Ak" id="4EmuLL95A_r" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="4EmuLL95A_s" role="2Ry0An">
-                          <property role="2Ry0Am" value="org.campagnelab.ui-generator.jar" />
-                        </node>
-                      </node>
+              <node concept="2Ry0Ak" id="4EmuLL95A_o" role="iGT6I">
+                <property role="2Ry0Am" value="org.campagnelab.UI" />
+                <node concept="2Ry0Ak" id="4EmuLL95A_q" role="2Ry0An">
+                  <property role="2Ry0Am" value="UI" />
+                  <node concept="2Ry0Ak" id="4EmuLL95A_r" role="2Ry0An">
+                    <property role="2Ry0Am" value="languages" />
+                    <node concept="2Ry0Ak" id="4EmuLL95A_s" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.campagnelab.ui-generator.jar" />
                     </node>
                   </node>
                 </node>
@@ -550,19 +538,13 @@
           <node concept="28jJK3" id="4EmuLL95uk$" role="39821P">
             <node concept="55IIr" id="4EmuLL95uk_" role="28jJRO">
               <node concept="2Ry0Ak" id="4EmuLL95ukA" role="iGT6I">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="4EmuLL95ukB" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="4EmuLL95ukC" role="2Ry0An">
-                    <property role="2Ry0Am" value="Downloads" />
-                    <node concept="2Ry0Ak" id="4EmuLL95ukD" role="2Ry0An">
-                      <property role="2Ry0Am" value="UI" />
-                      <node concept="2Ry0Ak" id="4EmuLL95ukE" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="4EmuLL95ukF" role="2Ry0An">
-                          <property role="2Ry0Am" value="org.campagnelab.ui-src.jar" />
-                        </node>
-                      </node>
+                <property role="2Ry0Am" value="org.campagnelab.UI" />
+                <node concept="2Ry0Ak" id="4EmuLL95ukD" role="2Ry0An">
+                  <property role="2Ry0Am" value="UI" />
+                  <node concept="2Ry0Ak" id="4EmuLL95ukE" role="2Ry0An">
+                    <property role="2Ry0Am" value="languages" />
+                    <node concept="2Ry0Ak" id="4EmuLL95ukF" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.campagnelab.ui-src.jar" />
                     </node>
                   </node>
                 </node>
@@ -578,20 +560,14 @@
           </node>
           <node concept="28jJK3" id="4EmuLL95ALw" role="39821P">
             <node concept="55IIr" id="4EmuLL95ALx" role="28jJRO">
-              <node concept="2Ry0Ak" id="4EmuLL95ALy" role="iGT6I">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="4EmuLL95ALz" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="4EmuLL95AL$" role="2Ry0An">
-                    <property role="2Ry0Am" value="Downloads" />
-                    <node concept="2Ry0Ak" id="4EmuLL95AL_" role="2Ry0An">
-                      <property role="2Ry0Am" value="UI" />
-                      <node concept="2Ry0Ak" id="4EmuLL95ALA" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="4EmuLL95ALB" role="2Ry0An">
-                          <property role="2Ry0Am" value="org.campagnelab.ui.code-src.jar" />
-                        </node>
-                      </node>
+              <node concept="2Ry0Ak" id="4EmuLL95AL$" role="iGT6I">
+                <property role="2Ry0Am" value="org.campagnelab.UI" />
+                <node concept="2Ry0Ak" id="4EmuLL95AL_" role="2Ry0An">
+                  <property role="2Ry0Am" value="UI" />
+                  <node concept="2Ry0Ak" id="4EmuLL95ALA" role="2Ry0An">
+                    <property role="2Ry0Am" value="languages" />
+                    <node concept="2Ry0Ak" id="4EmuLL95ALB" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.campagnelab.ui.code-src.jar" />
                     </node>
                   </node>
                 </node>
@@ -607,20 +583,14 @@
           </node>
           <node concept="28jJK3" id="4EmuLL95ALC" role="39821P">
             <node concept="55IIr" id="4EmuLL95ALD" role="28jJRO">
-              <node concept="2Ry0Ak" id="4EmuLL95ALE" role="iGT6I">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="4EmuLL95ALF" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="4EmuLL95ALG" role="2Ry0An">
-                    <property role="2Ry0Am" value="Downloads" />
-                    <node concept="2Ry0Ak" id="4EmuLL95ALH" role="2Ry0An">
-                      <property role="2Ry0Am" value="UI" />
-                      <node concept="2Ry0Ak" id="4EmuLL95ALI" role="2Ry0An">
-                        <property role="2Ry0Am" value="languages" />
-                        <node concept="2Ry0Ak" id="4EmuLL95ALJ" role="2Ry0An">
-                          <property role="2Ry0Am" value="org.campagnelab.ui.code.jar" />
-                        </node>
-                      </node>
+              <node concept="2Ry0Ak" id="4EmuLL95ALG" role="iGT6I">
+                <property role="2Ry0Am" value="org.campagnelab.UI" />
+                <node concept="2Ry0Ak" id="4EmuLL95ALH" role="2Ry0An">
+                  <property role="2Ry0Am" value="UI" />
+                  <node concept="2Ry0Ak" id="4EmuLL95ALI" role="2Ry0An">
+                    <property role="2Ry0Am" value="languages" />
+                    <node concept="2Ry0Ak" id="4EmuLL95ALJ" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.campagnelab.ui.code.jar" />
                     </node>
                   </node>
                 </node>

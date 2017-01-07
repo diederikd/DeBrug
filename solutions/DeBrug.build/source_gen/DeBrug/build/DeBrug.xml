@@ -73,19 +73,19 @@
     </copy>
     <mkdir dir="${build.layout}/languages/UI" />
     <jar destfile="${build.layout}/languages/UI/org.campagnelab.mps.ui.jar" duplicate="preserve">
-      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.jar" />
+      <fileset file="${basedir}/org.campagnelab.UI/UI/languages/org.campagnelab.ui.jar" />
     </jar>
     <jar destfile="${build.layout}/languages/UI/org.campagnelab.mps.ui-generator.jar" duplicate="preserve">
-      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui-generator.jar" />
+      <fileset file="${basedir}/org.campagnelab.UI/UI/languages/org.campagnelab.ui-generator.jar" />
     </jar>
     <jar destfile="${build.layout}/languages/UI/org.campagnelab.mps.ui-src.jar" duplicate="preserve">
-      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui-src.jar" />
+      <fileset file="${basedir}/org.campagnelab.UI/UI/languages/org.campagnelab.ui-src.jar" />
     </jar>
     <jar destfile="${build.layout}/languages/UI/org.campagnelab.mps.ui.code-src.jar" duplicate="preserve">
-      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.code-src.jar" />
+      <fileset file="${basedir}/org.campagnelab.UI/UI/languages/org.campagnelab.ui.code-src.jar" />
     </jar>
     <jar destfile="${build.layout}/languages/UI/org.campagnelab.mps.ui.code.jar" duplicate="preserve">
-      <fileset file="${basedir}/../../Downloads/UI/languages/org.campagnelab.ui.code.jar" />
+      <fileset file="${basedir}/org.campagnelab.UI/UI/languages/org.campagnelab.ui.code.jar" />
     </jar>
     <mkdir dir="${build.layout}/bin" />
     <copy todir="${build.layout}/bin">
