@@ -7,7 +7,7 @@
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
   <property name="build.number" value="DeBrug-162.SNAPSHOT" />
-  <property name="mps_home" location="${basedir}/../../../../Applications/MPS 3.4.1.app/Contents" />
+  <property name="mps_home" location="${basedir}/../../../../Applications/MPS 3.4.3.app/Contents" />
   <property name="mbeddr_core" location="${basedir}/../mbeddr.core" />
   <property name="mbeddr.files" location="${basedir}/com.mbeddr.allInOne/mbeddr.core" />
   <property name="icon.files" location="${basedir}/icons" />

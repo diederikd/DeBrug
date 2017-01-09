@@ -356,7 +356,7 @@
                 <node concept="2Ry0Ak" id="6ydj2wXyS5N" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="6ydj2wXyS7k" role="2Ry0An">
-                    <property role="2Ry0Am" value="MPS 3.4.1.app" />
+                    <property role="2Ry0Am" value="MPS 3.4.3.app" />
                     <node concept="2Ry0Ak" id="6ydj2wXyS8P" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>

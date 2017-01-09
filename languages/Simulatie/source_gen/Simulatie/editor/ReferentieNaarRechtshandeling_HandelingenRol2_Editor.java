@@ -33,6 +33,8 @@ import ObjectiefRecht.editor.GN_StyleSheet;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
+import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
@@ -125,10 +127,9 @@ public class ReferentieNaarRechtshandeling_HandelingenRol2_Editor extends Defaul
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
     } else
     return editorCell;
   }
@@ -155,10 +156,9 @@ public class ReferentieNaarRechtshandeling_HandelingenRol2_Editor extends Defaul
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
-      Class attributeKind = provider.getRoleAttributeClass();
       if (attributeConcept != null) {
         EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-        return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
+        return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
       } else
       return editorCell;
     }
@@ -191,10 +191,9 @@ public class ReferentieNaarRechtshandeling_HandelingenRol2_Editor extends Defaul
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
     } else
     return editorCell;
   }
@@ -223,10 +222,23 @@ public class ReferentieNaarRechtshandeling_HandelingenRol2_Editor extends Defaul
         super(ownerNode, containmentLink, context);
       }
       protected EditorCell createChildCell(SNode child) {
-        EditorCell editorCell = super.createChildCell(child);
-        installCellInfo(child, editorCell);
-        return editorCell;
+        myEditorContext.getCellFactory().pushCellContext();
+        myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
+        try {
+          EditorCell editorCell = super.createChildCell(child);
+          editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "rechtssubject"), child));
+          editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "rechtssubject"), child));
+          installCellInfo(child, editorCell);
+          return editorCell;
+        } finally {
+          myEditorContext.getCellFactory().popCellContext();
+        }
       }
+
+      protected boolean isCompatibilityMode() {
+        return false;
+      }
+
       private void installCellInfo(SNode child, EditorCell editorCell) {
         if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
           editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "rechtssubject"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
@@ -237,11 +249,16 @@ public class ReferentieNaarRechtshandeling_HandelingenRol2_Editor extends Defaul
       }
       @Override
       protected EditorCell createEmptyCell() {
-        EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_rechtssubject");
-
-        installCellInfo(null, editorCell);
-        return editorCell;
+        myEditorContext.getCellFactory().pushCellContext();
+        myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "rechtssubject")));
+        try {
+          EditorCell editorCell = super.createEmptyCell();
+          editorCell.setCellId("empty_rechtssubject");
+          installCellInfo(null, editorCell);
+          return editorCell;
+        } finally {
+          myEditorContext.getCellFactory().popCellContext();
+        }
       }
       protected String getNoTargetText() {
         return "<no rechtssubject>";
