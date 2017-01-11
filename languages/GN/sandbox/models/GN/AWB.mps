@@ -10,47 +10,24 @@
   <imports />
   <registry>
     <language id="15970de3-8fe7-4b13-81c7-38b38d51c39a" name="Simulatie">
-      <concept id="7867191925628556449" name="Simulatie.structure.Informatiepositie" flags="ng" index="2BLbnY">
-        <child id="7812026954661547171" name="rechtsbetrekkingen" index="1O2iA3" />
-      </concept>
+      <concept id="7867191925628556449" name="Simulatie.structure.Informatiepositie" flags="ng" index="2BLbnY" />
       <concept id="7867191925628288949" name="Simulatie.structure.Simulatie" flags="ng" index="2BMdVE">
         <reference id="7867191925628478847" name="rol1" index="2BLsgw" />
         <reference id="7867191925628437242" name="casus" index="2BMAe_" />
         <reference id="2222626598059533343" name="rol2" index="1Nt3W2" />
         <child id="3172654291078996041" name="datumtijdlaatstehandeling" index="22TAwd" />
         <child id="7431672735427965832" name="datumtijdvanstartvandeSimulatie" index="d0i_M" />
-        <child id="7431672735429245552" name="uitgevoerdehandelingen" index="d5q2a" />
         <child id="7867191925628603759" name="rechtspositie" index="2BLYKK" />
         <child id="3694879098876164254" name="datumtijdvaninitialisatie" index="3zKq1C" />
-        <child id="3694879098862050847" name="uitvoerbarehandelingen2" index="3WXGrD" />
-      </concept>
-      <concept id="3694879098862050844" name="Simulatie.structure.ReferentieNaarRechtshandeling" flags="ng" index="3WXGrE">
-        <reference id="3694879098862050845" name="rechtshandeling" index="3WXGrF" />
       </concept>
     </language>
     <language id="2c493149-da1d-45e9-8ea2-e0b0cfc3047a" name="SubjectiefRecht">
-      <concept id="7136310554705382612" name="SubjectiefRecht.structure.Rechtshandeling" flags="ng" index="2B78xR">
-        <reference id="7136310554705418537" name="rechtshandeling" index="2B7LQa" />
-        <child id="7136310554705382616" name="actor" index="2B78xV" />
-        <child id="7136310554705419907" name="uitgevoerdOp" index="2B7LCw" />
-      </concept>
       <concept id="7136310554705382618" name="SubjectiefRecht.structure.Casus" flags="ng" index="2B78xT">
         <reference id="5066083982446220006" name="context" index="QjCDG" />
-        <child id="7136310554705382621" name="rechtsbetrekkingen" index="2B78xY" />
         <child id="5066083982445988473" name="natuurlijkepersonen" index="DGLbN" />
       </concept>
       <concept id="7136310554705381516" name="SubjectiefRecht.structure.NatuurlijkPersoon" flags="ng" index="2B78KJ">
         <reference id="5066083982445997697" name="rol" index="DGNob" />
-      </concept>
-      <concept id="7136310554705381534" name="SubjectiefRecht.structure.Rechtsbetrekking" flags="ng" index="2B78KX">
-        <reference id="7136310554705381537" name="rechtssubjectMetPlicht" index="2B78K2" />
-        <reference id="7136310554705381542" name="rechtsbetrekking" index="2B78K5" />
-        <reference id="7136310554705381535" name="rechtssubjectMetRecht" index="2B78KW" />
-        <child id="7136310554705381581" name="geldigVan" index="2B78LI" />
-        <child id="7136310554705381588" name="geldigTot" index="2B78LR" />
-      </concept>
-      <concept id="7867191925628531237" name="SubjectiefRecht.structure.ReferentieNaarNatuurlijkPersoon" flags="ng" index="2BLhdU">
-        <reference id="7867191925628531238" name="natuurlijkpersoon" index="2BLhdT" />
       </concept>
     </language>
     <language id="61be2dc6-a140-4def-a592-7499aa2bac19" name="Datum">
@@ -86,13 +63,6 @@
       <concept id="5266643527326992520" name="ObjectiefRecht.structure.KenmerkMetReferentieNaarKenmerk" flags="ng" index="lYmzE">
         <reference id="5266643527327142092" name="kenmerk" index="lTN2I" />
       </concept>
-      <concept id="2455094379071386907" name="ObjectiefRecht.structure.ReferentieNaarVoorwaardeRechtsbetrekking" flags="ng" index="2wyoDf">
-        <reference id="2455094379071386908" name="Rechtsbetrekking" index="2wyoD8" />
-      </concept>
-      <concept id="7136310554705257357" name="ObjectiefRecht.structure.RegelOverRechtsgevolgVeroorzaker" flags="ng" index="2B6EsI">
-        <reference id="5266643527326639019" name="rechtsgevolgveroorzaker" index="lZcf9" />
-        <child id="7136310554705257383" name="geldigOnderVoorwaarden" index="2B6Es4" />
-      </concept>
       <concept id="2907397198644945343" name="ObjectiefRecht.structure.RijVanKaraktersDatatype" flags="ng" index="QqSvA" />
       <concept id="2907397198644945329" name="ObjectiefRecht.structure.DatumDatatype" flags="ng" index="QqSvC" />
       <concept id="2317404197410750246" name="ObjectiefRecht.structure.ReferentieNaarRechtsbetrekking" flags="ng" index="33wURK">
@@ -104,10 +74,15 @@
       <concept id="2417641230338880953" name="ObjectiefRecht.structure.Onderwerp" flags="ng" index="3D8HDq">
         <child id="5266643527326992524" name="kenmerk" index="lYmzI" />
       </concept>
-      <concept id="6994217584621161879" name="ObjectiefRecht.structure.KrachtigeAanspraakFataleVerplichtig" flags="ng" index="1OcJT1" />
-      <concept id="6994217584621161876" name="ObjectiefRecht.structure.VerplichteBevoegdheidVerplichteGehoudenheid" flags="ng" index="1OcJT2" />
-      <concept id="6994217584621161875" name="ObjectiefRecht.structure.AanspraakNaIngebrekeStellingPlicht" flags="ng" index="1OcJT5" />
-      <concept id="6994217584621161880" name="ObjectiefRecht.structure.OptioneleBevoegdheidOptioneleGehoudenheid" flags="ng" index="1OcJTe" />
+      <concept id="6994217584621161876" name="ObjectiefRecht.structure.VerplichteBevoegdheidVerplichteGehoudenheid" flags="ng" index="1OcJT2">
+        <reference id="4322810351015246537" name="bevoegdheidTot" index="1gm8Zl" />
+      </concept>
+      <concept id="6994217584621161875" name="ObjectiefRecht.structure.AanspraakNaIngebrekeStellingPlicht" flags="ng" index="1OcJT5">
+        <reference id="4322810351015232151" name="verplichtingTot" index="1gmbub" />
+      </concept>
+      <concept id="6994217584621161880" name="ObjectiefRecht.structure.OptioneleBevoegdheidOptioneleGehoudenheid" flags="ng" index="1OcJTe">
+        <reference id="4322810351015239382" name="bevoegdheidTot" index="1gmaJa" />
+      </concept>
       <concept id="6994217584621161792" name="ObjectiefRecht.structure.TijdsverloopMetRechtsgevolg" flags="ng" index="1OcJUm" />
       <concept id="6994217584621161847" name="ObjectiefRecht.structure.Rechtsgevolg" flags="ng" index="1OcJUx">
         <child id="6994217584621161850" name="EindigendeRechtsbetrekkingen" index="1OcJUG" />
@@ -121,10 +96,10 @@
         <child id="5753801799637012795" name="onderwerpen" index="SxSPV" />
         <child id="2317404197410621882" name="toestanden" index="33wtHG" />
         <child id="2317404197411042820" name="overgangen" index="33xyji" />
-        <child id="2417641230338881026" name="regels" index="3D8HBx" />
         <child id="2417641230338881024" name="rechtssubjecten" index="3D8HBz" />
       </concept>
       <concept id="6994217584621161741" name="ObjectiefRecht.structure.Rechtsbetrekking" flags="ng" index="1OcJVr">
+        <property id="2719671791665186840" name="initieel" index="3ypbWd" />
         <reference id="2417641230338881014" name="onderwerp" index="3D8HCl" />
         <reference id="6994217584621161774" name="rechtssubjectMetPlicht" index="1OcJVS" />
         <reference id="6994217584621161773" name="rechtssubjectMetRecht" index="1OcJVV" />
@@ -144,6 +119,7 @@
       <concept id="6994217584621161786" name="ObjectiefRecht.structure.RechtsgevolgVeroorzakers" flags="ng" index="1OcJVG">
         <child id="5266643527326926295" name="bron" index="lY6mP" />
         <child id="2317404197410860326" name="heeftAlsGevolg" index="33xnZK" />
+        <child id="2719671791662335135" name="geldigOnderVoorwaarden" index="3y4jea" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -212,33 +188,19 @@
       <property role="2B78L_" value="12" />
       <property role="2B78LE" value="2016" />
     </node>
-    <node concept="1OcJT1" id="5b3WIC8IS2L" role="33wtHG">
-      <property role="da7Q0" value="11" />
-      <property role="TrG5h" value="Er is een beschikking afgegegeven" />
-      <ref role="1OcJVV" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
-      <ref role="1OcJVS" node="3d6QfrhoinX" resolve="Belanghebbende" />
-      <ref role="3D8HCl" node="5b3WIC8IS4n" resolve="Beschikking" />
-      <node concept="lYmzx" id="5b3WIC8IS4D" role="uSuyt">
-        <property role="da7Q0" value="12" />
-        <property role="TrG5h" value="datum beschikking" />
-        <node concept="2B78Lw" id="5b3WIC8IS4G" role="lXajo" />
-        <node concept="QqSvC" id="5b3WIC8IS4N" role="LSO5p" />
-      </node>
-      <node concept="2B78Lw" id="5b3WIC8IS2U" role="lXajo" />
-      <node concept="lY6iO" id="5b3WIC8IS3P" role="lY6mC">
-        <property role="TrG5h" value="Fictief" />
-      </node>
-    </node>
     <node concept="1OcJTe" id="5b3WIC8JvMu" role="33wtHG">
       <property role="da7Q0" value="13" />
       <property role="TrG5h" value="Optionele bevoegheid tot het indienen van een bezwaar" />
+      <property role="3ypbWd" value="true" />
       <ref role="1OcJVV" node="3d6QfrhoinX" resolve="Belanghebbende" />
       <ref role="1OcJVS" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
       <ref role="3D8HCl" node="3d6QfrhoinT" resolve="Bezwaar of beroep" />
-      <node concept="lYmzE" id="5b3WIC8JvNE" role="uSuyt">
-        <property role="da7Q0" value="14" />
-        <ref role="lTN2I" node="5b3WIC8IS4D" resolve="datum beschikking" />
-        <node concept="2B78Lw" id="5b3WIC8JvNH" role="lXajo" />
+      <ref role="1gmaJa" node="5RhAgJkmcEA" resolve="Indienen bezwaar of beroep" />
+      <node concept="lYmzx" id="3JXHhLFC6Rt" role="uSuyt">
+        <property role="da7Q0" value="0000" />
+        <property role="TrG5h" value="datum waarop de beschikking is afgegeven" />
+        <node concept="2B78Lw" id="3JXHhLFC6Rw" role="lXajo" />
+        <node concept="QqSvC" id="3JXHhLFC6R_" role="LSO5p" />
       </node>
       <node concept="2B78Lw" id="5b3WIC8JvMB" role="lXajo" />
       <node concept="lY6iO" id="5b3WIC8JvNC" role="lY6mC">
@@ -251,6 +213,7 @@
       <ref role="1OcJVV" node="3d6QfrhoinX" resolve="Belanghebbende" />
       <ref role="1OcJVS" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
       <ref role="3D8HCl" node="3d6QfrhoinT" resolve="Bezwaar of beroep" />
+      <ref role="1gmbub" node="5b3WIC8Jwdq" resolve="Bezwaar behandelen" />
       <node concept="2B78Lw" id="5Bacij9tPjg" role="lXajo" />
       <node concept="lYmzx" id="5Bacij9tPjB" role="uSuyt">
         <property role="da7Q0" value="16" />
@@ -268,6 +231,7 @@
       <ref role="1OcJVV" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
       <ref role="1OcJVS" node="3d6QfrhoinX" resolve="Belanghebbende" />
       <ref role="3D8HCl" node="3d6QfrhoinT" resolve="Bezwaar of beroep" />
+      <ref role="1gm8Zl" node="5b3WIC8IS6T" resolve="Schriftelijk bevestigen van de ontvangst van het bezwaar of beroep" />
       <node concept="lYmzE" id="5Bacij9tPkt" role="uSuyt">
         <property role="da7Q0" value="18" />
         <ref role="lTN2I" node="5Bacij9tPjB" resolve="datum van het indienen van het bezwaar of beroep " />
@@ -290,6 +254,7 @@
       <ref role="1OcJVV" node="3d6QfrhoinX" resolve="Belanghebbende" />
       <ref role="1OcJVS" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
       <ref role="3D8HCl" node="3d6QfrhoinT" resolve="Bezwaar of beroep" />
+      <ref role="1gmaJa" node="5Bacij9tPnh" resolve="Schriftelijk intrekken van het bezwaar of beroep" />
       <node concept="lYmzE" id="5Bacij9tPlh" role="uSuyt">
         <property role="da7Q0" value="21" />
         <ref role="lTN2I" node="5Bacij9tPjB" resolve="datum van het indienen van het bezwaar of beroep " />
@@ -306,6 +271,7 @@
       <ref role="1OcJVV" node="3d6QfrhoinX" resolve="Belanghebbende" />
       <ref role="1OcJVS" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
       <ref role="3D8HCl" node="3d6QfrhoinT" resolve="Bezwaar of beroep" />
+      <ref role="1gmaJa" node="5Bacij9tPmt" resolve="Mondeling intrekken van het bezwaar of beroep " />
       <node concept="lYmzE" id="5Bacij9tPmb" role="uSuyt">
         <property role="da7Q0" value="23" />
         <ref role="lTN2I" node="5Bacij9tPjB" resolve="datum van het indienen van het bezwaar of beroep " />
@@ -322,6 +288,7 @@
       <ref role="1OcJVS" node="3d6QfrhoinX" resolve="Belanghebbende" />
       <ref role="3D8HCl" node="3d6QfrhoinT" resolve="Bezwaar of beroep" />
       <ref role="1OcJVV" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
+      <ref role="1gmaJa" node="5b3WIC8Jw2_" resolve="Bellen bij bezwaar" />
       <node concept="lYmzE" id="5b3WIC8IRSi" role="uSuyt">
         <property role="da7Q0" value="25" />
         <ref role="lTN2I" node="5Bacij9tPjB" resolve="datum van het indienen van het bezwaar of beroep " />
@@ -342,6 +309,7 @@
       <ref role="3D8HCl" node="3d6QfrhoinT" resolve="Bezwaar of beroep" />
       <ref role="1OcJVV" node="3d6QfrhoinX" resolve="Belanghebbende" />
       <ref role="1OcJVS" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
+      <ref role="1gmaJa" node="5b3WIC8IRXH" resolve="Intrekken bezwaar bij bellen" />
       <node concept="lYmzx" id="5b3WIC8IRTC" role="uSuyt">
         <property role="da7Q0" value="27" />
         <property role="TrG5h" value="datum waarop wordt gebeld" />
@@ -364,6 +332,7 @@
       <ref role="1OcJVV" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
       <ref role="1OcJVS" node="3d6QfrhoinX" resolve="Belanghebbende" />
       <ref role="3D8HCl" node="3d6QfrhoinT" resolve="Bezwaar of beroep" />
+      <ref role="1gm8Zl" node="7dFv$5lRbbP" resolve="Schriftelijk bevestigen van het intrekken van het bezwaar" />
       <node concept="lYmzE" id="7dFv$5lRbaf" role="uSuyt">
         <property role="da7Q0" value="0000" />
         <ref role="lTN2I" node="5b3WIC8IRTC" resolve="datum waarop wordt gebeld" />
@@ -389,6 +358,7 @@
       <ref role="1OcJVV" node="3d6QfrhoinX" resolve="Belanghebbende" />
       <ref role="1OcJVS" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
       <ref role="3D8HCl" node="3d6QfrhoinT" resolve="Bezwaar of beroep" />
+      <ref role="1gmaJa" node="7dFv$5lS2zZ" resolve="Reageren op de schriftelijk bevestiging van het intrekken van het bezwaar" />
       <node concept="lYmzE" id="7dFv$5lS2dL" role="uSuyt">
         <property role="da7Q0" value="0000" />
         <ref role="lTN2I" node="5b3WIC8IRTC" resolve="datum waarop wordt gebeld" />
@@ -417,6 +387,7 @@
       <ref role="1OcJVV" node="3d6QfrhoinX" resolve="Belanghebbende" />
       <ref role="3D8HCl" node="3d6QfrhoinT" resolve="Bezwaar of beroep" />
       <ref role="1OcJVS" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
+      <ref role="1gmaJa" node="5b3WIC8IRYX" resolve="Gedeeltelijk intrekken bezwaar bij bellen" />
       <node concept="lYmzx" id="5b3WIC8IRTN" role="uSuyt">
         <property role="da7Q0" value="29" />
         <property role="TrG5h" value="datum waarop wordt gebeld" />
@@ -438,6 +409,7 @@
       <ref role="3D8HCl" node="3d6QfrhoinT" resolve="Bezwaar of beroep" />
       <ref role="1OcJVV" node="3d6QfrhoinX" resolve="Belanghebbende" />
       <ref role="1OcJVS" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
+      <ref role="1gmaJa" node="5b3WIC8Jw6c" resolve="Doorzetten bezwaar" />
       <node concept="lYmzx" id="5b3WIC8IRUv" role="uSuyt">
         <property role="da7Q0" value="31" />
         <property role="TrG5h" value="datum waarop wordt gebeld" />
@@ -455,10 +427,11 @@
     </node>
     <node concept="1OcJT2" id="5b3WIC8IRW9" role="33wtHG">
       <property role="da7Q0" value="32" />
-      <property role="TrG5h" value="Verplichting tot het behandelen van het bezwaar" />
+      <property role="TrG5h" value="Verplichte bevoegdheid tot het behandelen van het bezwaar" />
       <ref role="1OcJVS" node="3d6QfrhoinX" resolve="Belanghebbende" />
       <ref role="3D8HCl" node="3d6QfrhoinT" resolve="Bezwaar of beroep" />
       <ref role="1OcJVV" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
+      <ref role="1gm8Zl" node="5b3WIC8Jwdq" resolve="Bezwaar behandelen" />
       <node concept="lYmzx" id="5b3WIC8IRX8" role="uSuyt">
         <property role="da7Q0" value="33" />
         <property role="TrG5h" value="datum waarop bezwaar wordt doorgezet" />
@@ -551,6 +524,9 @@
     <node concept="1OcJVF" id="5Bacij9tPmt" role="33xyji">
       <property role="da7Q0" value="38" />
       <property role="TrG5h" value="Mondeling intrekken van het bezwaar of beroep " />
+      <node concept="1OcJVv" id="3JXHhLFC6T5" role="3y4jea">
+        <property role="TrG5h" value="er is sprake van horen." />
+      </node>
       <node concept="33xUQL" id="5Bacij9tPm_" role="33xUQS">
         <ref role="33xUQY" node="3d6QfrhoinX" resolve="Belanghebbende" />
       </node>
@@ -691,6 +667,9 @@
     <node concept="1OcJUm" id="7dFv$5lS1Ug" role="33xyji">
       <property role="da7Q0" value="0000" />
       <property role="TrG5h" value="Geen reactie op de bevestiging van het intrekken binnen de reactietermijn" />
+      <node concept="1OcJVu" id="2mYdLn7Kwpk" role="3y4jea">
+        <property role="TrG5h" value="Reactietermijn is verstreken." />
+      </node>
       <node concept="2B78Lw" id="7dFv$5lS1Uj" role="lXajo" />
       <node concept="lY6lb" id="7dFv$5lS1VZ" role="lY6mP">
         <ref role="lY6l8" node="5b3WIC8IRSg" resolve="Werkinstructie bellen bij bezwaar" />
@@ -751,7 +730,7 @@
       <node concept="1OcJUx" id="5b3WIC8Jw7$" role="33xnZK">
         <property role="TrG5h" value="bezwaar doorgezet" />
         <node concept="33wURK" id="5b3WIC8Jw7A" role="1OcJUI">
-          <ref role="33wURL" node="5b3WIC8IRW9" resolve="Verplichting tot het behandelen van het bezwaar" />
+          <ref role="33wURL" node="5b3WIC8IRW9" resolve="Verplichte bevoegdheid tot het behandelen van het bezwaar" />
         </node>
         <node concept="33wURK" id="5b3WIC8Jw7C" role="1OcJUG">
           <ref role="33wURL" node="5b3WIC8IRUu" resolve="Optionele bevoegheid om het bezwaar door te zetten" />
@@ -785,122 +764,11 @@
       <node concept="1OcJUx" id="5b3WIC8JweV" role="33xnZK">
         <property role="TrG5h" value="bezwaar behandeld" />
         <node concept="33wURK" id="5b3WIC8JweX" role="1OcJUG">
-          <ref role="33wURL" node="5b3WIC8IRW9" resolve="Verplichting tot het behandelen van het bezwaar" />
+          <ref role="33wURL" node="5b3WIC8IRW9" resolve="Verplichte bevoegdheid tot het behandelen van het bezwaar" />
         </node>
         <node concept="33wURK" id="5b3WIC8Jwf2" role="1OcJUG">
           <ref role="33wURL" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
         </node>
-      </node>
-    </node>
-    <node concept="2B6EsI" id="5RhAgJkmcFU" role="3D8HBx">
-      <property role="da7Q0" value="46" />
-      <property role="TrG5h" value="Indienen bezwaar of beroep" />
-      <ref role="lZcf9" node="5RhAgJkmcEA" resolve="Indienen bezwaar of beroep" />
-      <node concept="2B78Lw" id="5RhAgJkmcFX" role="lXajo" />
-      <node concept="2wyoDf" id="5b3WIC8JvNP" role="2B6Es4">
-        <ref role="2wyoD8" node="5b3WIC8JvMu" resolve="Optionele bevoegheid tot het indienen van een bezwaar" />
-      </node>
-      <node concept="2wyoDf" id="5b3WIC8IS4Q" role="2B6Es4">
-        <ref role="2wyoD8" node="5b3WIC8IS2L" resolve="Er is een beschikking afgegegeven" />
-      </node>
-    </node>
-    <node concept="2B6EsI" id="5b3WIC8IS8s" role="3D8HBx">
-      <property role="da7Q0" value="47" />
-      <property role="TrG5h" value="Bevestigen van ontvangst van het bezwaar of beroep" />
-      <ref role="lZcf9" node="5b3WIC8IS6T" resolve="Schriftelijk bevestigen van de ontvangst van het bezwaar of beroep" />
-      <node concept="2B78Lw" id="5b3WIC8IS8v" role="lXajo" />
-      <node concept="2wyoDf" id="5b3WIC8Jnrv" role="2B6Es4">
-        <ref role="2wyoD8" node="5Bacij9tPk7" resolve="Verplichte bevoegdheid tot het schriftelijk bevestigen van &#10;de ontvangst van het bezwaar of beroep" />
-      </node>
-    </node>
-    <node concept="2B6EsI" id="5Bacij9tPo9" role="3D8HBx">
-      <property role="da7Q0" value="48" />
-      <property role="TrG5h" value="Schriftelijk intrekken van het bezwaar of beroep" />
-      <ref role="lZcf9" node="5Bacij9tPnh" resolve="Schriftelijk intrekken van het bezwaar of beroep" />
-      <node concept="2wyoDf" id="5b3WIC8Jw$x" role="2B6Es4">
-        <ref role="2wyoD8" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
-      </node>
-      <node concept="2B78Lw" id="5Bacij9tPoa" role="lXajo" />
-      <node concept="2wyoDf" id="5b3WIC8JvNW" role="2B6Es4">
-        <ref role="2wyoD8" node="5Bacij9tPkQ" resolve="Optionele bevoegheid tot het schiftelijk intrekken &#10;van het bezwaar of beroep" />
-      </node>
-    </node>
-    <node concept="2B6EsI" id="5Bacij9tPpP" role="3D8HBx">
-      <property role="da7Q0" value="49" />
-      <property role="TrG5h" value="Mondeling intrekken van het bezwaar of beroep" />
-      <ref role="lZcf9" node="5Bacij9tPmt" resolve="Mondeling intrekken van het bezwaar of beroep " />
-      <node concept="2wyoDf" id="5b3WIC8Jw$D" role="2B6Es4">
-        <ref role="2wyoD8" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
-      </node>
-      <node concept="2B78Lw" id="5Bacij9tPpS" role="lXajo" />
-      <node concept="2wyoDf" id="5b3WIC8JvO4" role="2B6Es4">
-        <ref role="2wyoD8" node="5Bacij9tPlG" resolve="Optionele bevoegheid tot het mondeling intrekken van het bezwaar of beroep" />
-      </node>
-      <node concept="1OcJVv" id="5Bacij9tPpZ" role="2B6Es4">
-        <property role="TrG5h" value="er is sprake van horen." />
-      </node>
-    </node>
-    <node concept="2B6EsI" id="5b3WIC8Jw7Y" role="3D8HBx">
-      <property role="da7Q0" value="0000" />
-      <property role="TrG5h" value="Bellen bij bezwaar" />
-      <ref role="lZcf9" node="5b3WIC8Jw2_" resolve="Bellen bij bezwaar" />
-      <node concept="2B78Lw" id="5b3WIC8Jw81" role="lXajo" />
-      <node concept="2wyoDf" id="5b3WIC8Jw8m" role="2B6Es4">
-        <ref role="2wyoD8" node="5b3WIC8IRRC" resolve="Optionele bevoegheid om te bellen bij bezwaar, door selecteur" />
-      </node>
-    </node>
-    <node concept="2B6EsI" id="5b3WIC8Jw8N" role="3D8HBx">
-      <property role="da7Q0" value="0000" />
-      <property role="TrG5h" value="Gedeeltelijk intrekken bezwaar" />
-      <ref role="lZcf9" node="5b3WIC8IRYX" resolve="Gedeeltelijk intrekken bezwaar bij bellen" />
-      <node concept="2B78Lw" id="5b3WIC8Jw8Q" role="lXajo" />
-      <node concept="2wyoDf" id="5b3WIC8Jw9e" role="2B6Es4">
-        <ref role="2wyoD8" node="5b3WIC8IRTM" resolve="Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken" />
-      </node>
-    </node>
-    <node concept="2B6EsI" id="5b3WIC8Jw9E" role="3D8HBx">
-      <property role="da7Q0" value="0000" />
-      <property role="TrG5h" value="Intrekken bezwaar" />
-      <ref role="lZcf9" node="5b3WIC8IRXH" resolve="Intrekken bezwaar bij bellen" />
-      <node concept="2B78Lw" id="5b3WIC8Jw9H" role="lXajo" />
-      <node concept="2wyoDf" id="5b3WIC8Jwa8" role="2B6Es4">
-        <ref role="2wyoD8" node="5b3WIC8IRSV" resolve="Optionele bevoegheid bij bellen om het bezwaar in te trekken" />
-      </node>
-    </node>
-    <node concept="2B6EsI" id="7dFv$5lRbed" role="3D8HBx">
-      <property role="da7Q0" value="0000" />
-      <property role="TrG5h" value="Schriftelijk bevestigen van het intrekken van het bezwaar" />
-      <ref role="lZcf9" node="7dFv$5lRbbP" resolve="Schriftelijk bevestigen van het intrekken van het bezwaar" />
-      <node concept="2B78Lw" id="7dFv$5lRbeg" role="lXajo" />
-      <node concept="2wyoDf" id="7dFv$5lRbeO" role="2B6Es4">
-        <ref role="2wyoD8" node="7dFv$5lRb8X" resolve="Verplichting tot het schriftelijk bevestigen van het intrekken van het bezwaar" />
-      </node>
-    </node>
-    <node concept="2B6EsI" id="7dFv$5lRbl4" role="3D8HBx">
-      <property role="da7Q0" value="0000" />
-      <property role="TrG5h" value="Geen reactie op de bevestiging van het intrekken van het bezwaar" />
-      <ref role="lZcf9" node="7dFv$5lS1Ug" resolve="Geen reactie op de bevestiging van het intrekken binnen de reactietermijn" />
-      <node concept="2B78Lw" id="7dFv$5lRbl7" role="lXajo" />
-      <node concept="1OcJVu" id="7dFv$5lRbmW" role="2B6Es4">
-        <property role="TrG5h" value="Reactietermijn is verstreken." />
-      </node>
-    </node>
-    <node concept="2B6EsI" id="5b3WIC8JwaB" role="3D8HBx">
-      <property role="da7Q0" value="0000" />
-      <property role="TrG5h" value="Doorzetten bezwaar" />
-      <ref role="lZcf9" node="5b3WIC8Jw6c" resolve="Doorzetten bezwaar" />
-      <node concept="2B78Lw" id="5b3WIC8JwaE" role="lXajo" />
-      <node concept="2wyoDf" id="5b3WIC8Jwb8" role="2B6Es4">
-        <ref role="2wyoD8" node="5b3WIC8IRUu" resolve="Optionele bevoegheid om het bezwaar door te zetten" />
-      </node>
-    </node>
-    <node concept="2B6EsI" id="7dFv$5lRa97" role="3D8HBx">
-      <property role="da7Q0" value="0000" />
-      <property role="TrG5h" value="Behandelen bezwaar" />
-      <ref role="lZcf9" node="5b3WIC8Jwdq" resolve="Bezwaar behandelen" />
-      <node concept="2B78Lw" id="7dFv$5lRa9a" role="lXajo" />
-      <node concept="2wyoDf" id="7dFv$5lRa9F" role="2B6Es4">
-        <ref role="2wyoD8" node="5b3WIC8IRW9" resolve="Verplichting tot het behandelen van het bezwaar" />
       </node>
     </node>
   </node>
@@ -933,316 +801,19 @@
         <property role="LeFwM" value="37" />
       </node>
     </node>
-    <node concept="LeFwQ" id="7dFv$5lS2e8" role="3zKq1C">
-      <node concept="2B78Lw" id="7dFv$5lS2ek" role="LeFwF">
+    <node concept="LeFwQ" id="2N$PylwOxpA" role="3zKq1C">
+      <node concept="2B78Lw" id="2N$PylwOxpM" role="LeFwF">
         <property role="2B78LE" value="2017" />
         <property role="2B78L_" value="1" />
-        <property role="2B78LB" value="5" />
+        <property role="2B78LB" value="11" />
       </node>
-      <node concept="LeFwc" id="7dFv$5lS2em" role="LeFwH">
-        <property role="LeFwf" value="10" />
-        <property role="LeFwL" value="11" />
-        <property role="LeFwM" value="43" />
-      </node>
-    </node>
-    <node concept="2BLbnY" id="7dFv$5lS2ep" role="2BLYKK">
-      <node concept="2B78KX" id="7dFv$5lS2er" role="1O2iA3">
-        <ref role="2B78K5" node="5b3WIC8IS2L" resolve="Er is een beschikking afgegegeven" />
-        <ref role="2B78KW" node="5Bacij9tPqp" resolve="Belastingdienst" />
-        <ref role="2B78K2" node="5Bacij9tPqn" resolve="Diederik" />
-        <node concept="LeFwQ" id="7dFv$5lS2es" role="2B78LI">
-          <node concept="2B78Lw" id="7dFv$5lS2et" role="LeFwF">
-            <property role="2B78LB" value="01" />
-            <property role="2B78L_" value="01" />
-            <property role="2B78LE" value="2016" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2eu" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="0" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="7dFv$5lS2eT" role="1O2iA3">
-        <ref role="2B78K5" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
-        <ref role="2B78K2" node="5Bacij9tPqn" resolve="Diederik" />
-        <ref role="2B78KW" node="5Bacij9tPqp" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7dFv$5lS2eU" role="2B78LI">
-          <node concept="2B78Lw" id="7dFv$5lS2eX" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2eZ" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="2" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="7dFv$5lS2f1" role="1O2iA3">
-        <ref role="2B78K5" node="5Bacij9tPk7" resolve="Verplichte bevoegdheid tot het schriftelijk bevestigen van &#10;de ontvangst van het bezwaar of beroep" />
-        <ref role="2B78K2" node="5Bacij9tPqn" resolve="Diederik" />
-        <ref role="2B78KW" node="5Bacij9tPqp" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7dFv$5lS2f2" role="2B78LI">
-          <node concept="2B78Lw" id="7dFv$5lS2f5" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2f7" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="2" />
-          </node>
-        </node>
-        <node concept="LeFwQ" id="7dFv$5lS2hO" role="2B78LR">
-          <node concept="2B78Lw" id="7dFv$5lS2hR" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2hT" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="9" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="7dFv$5lS2f9" role="1O2iA3">
-        <ref role="2B78K5" node="5Bacij9tPlG" resolve="Optionele bevoegheid tot het mondeling intrekken van het bezwaar of beroep" />
-        <ref role="2B78K2" node="5Bacij9tPqn" resolve="Diederik" />
-        <ref role="2B78KW" node="5Bacij9tPqp" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7dFv$5lS2fa" role="2B78LI">
-          <node concept="2B78Lw" id="7dFv$5lS2fd" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2ff" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="2" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="7dFv$5lS2fh" role="1O2iA3">
-        <ref role="2B78K5" node="5Bacij9tPkQ" resolve="Optionele bevoegheid tot het schiftelijk intrekken &#10;van het bezwaar of beroep" />
-        <ref role="2B78K2" node="5Bacij9tPqn" resolve="Diederik" />
-        <ref role="2B78KW" node="5Bacij9tPqp" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7dFv$5lS2fi" role="2B78LI">
-          <node concept="2B78Lw" id="7dFv$5lS2fl" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2fn" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="2" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="7dFv$5lS2fp" role="1O2iA3">
-        <ref role="2B78K5" node="5b3WIC8IRRC" resolve="Optionele bevoegheid om te bellen bij bezwaar, door selecteur" />
-        <ref role="2B78K2" node="5Bacij9tPqn" resolve="Diederik" />
-        <ref role="2B78KW" node="5Bacij9tPqp" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7dFv$5lS2fq" role="2B78LI">
-          <node concept="2B78Lw" id="7dFv$5lS2ft" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2fv" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="2" />
-          </node>
-        </node>
-        <node concept="LeFwQ" id="7dFv$5lS2hH" role="2B78LR">
-          <node concept="2B78Lw" id="7dFv$5lS2hK" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2hM" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="9" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="7dFv$5lS2hl" role="1O2iA3">
-        <ref role="2B78K5" node="5b3WIC8IRUu" resolve="Optionele bevoegheid om het bezwaar door te zetten" />
-        <ref role="2B78K2" node="5Bacij9tPqn" resolve="Diederik" />
-        <ref role="2B78KW" node="5Bacij9tPqp" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7dFv$5lS2hm" role="2B78LI">
-          <node concept="2B78Lw" id="7dFv$5lS2hp" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2hr" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="9" />
-          </node>
-        </node>
-        <node concept="LeFwQ" id="7dFv$5lS2qI" role="2B78LR">
-          <node concept="2B78Lw" id="7dFv$5lS2qL" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2qN" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="37" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="7dFv$5lS2ht" role="1O2iA3">
-        <ref role="2B78K5" node="5b3WIC8IRTM" resolve="Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken" />
-        <ref role="2B78K2" node="5Bacij9tPqn" resolve="Diederik" />
-        <ref role="2B78KW" node="5Bacij9tPqp" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7dFv$5lS2hu" role="2B78LI">
-          <node concept="2B78Lw" id="7dFv$5lS2hx" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2hz" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="9" />
-          </node>
-        </node>
-        <node concept="LeFwQ" id="7dFv$5lS2qB" role="2B78LR">
-          <node concept="2B78Lw" id="7dFv$5lS2qE" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2qG" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="37" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="7dFv$5lS2h_" role="1O2iA3">
-        <ref role="2B78K5" node="5b3WIC8IRSV" resolve="Optionele bevoegheid bij bellen om het bezwaar in te trekken" />
-        <ref role="2B78K2" node="5Bacij9tPqn" resolve="Diederik" />
-        <ref role="2B78KW" node="5Bacij9tPqp" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7dFv$5lS2hA" role="2B78LI">
-          <node concept="2B78Lw" id="7dFv$5lS2hD" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2hF" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="9" />
-          </node>
-        </node>
-        <node concept="LeFwQ" id="7dFv$5lS2qw" role="2B78LR">
-          <node concept="2B78Lw" id="7dFv$5lS2qz" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2q_" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="37" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="7dFv$5lS2qo" role="1O2iA3">
-        <ref role="2B78K5" node="7dFv$5lRb8X" resolve="Verplichting tot het schriftelijk bevestigen van het intrekken van het bezwaar" />
-        <ref role="2B78K2" node="5Bacij9tPqn" resolve="Diederik" />
-        <ref role="2B78KW" node="5Bacij9tPqp" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7dFv$5lS2qp" role="2B78LI">
-          <node concept="2B78Lw" id="7dFv$5lS2qs" role="LeFwF">
-            <property role="2B78LE" value="2016" />
-            <property role="2B78L_" value="12" />
-            <property role="2B78LB" value="24" />
-          </node>
-          <node concept="LeFwc" id="7dFv$5lS2qu" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="37" />
-          </node>
-        </node>
+      <node concept="LeFwc" id="2N$PylwOxpO" role="LeFwH">
+        <property role="LeFwf" value="19" />
+        <property role="LeFwL" value="21" />
+        <property role="LeFwM" value="51" />
       </node>
     </node>
-    <node concept="2B78xR" id="7dFv$5lS2fx" role="d5q2a">
-      <ref role="2B7LQa" node="5RhAgJkmcEA" resolve="Indienen bezwaar of beroep" />
-      <node concept="2BLhdU" id="7dFv$5lS2fy" role="2B78xV">
-        <ref role="2BLhdT" node="5Bacij9tPqn" resolve="Diederik" />
-      </node>
-      <node concept="LeFwQ" id="7dFv$5lS2fz" role="2B7LCw">
-        <node concept="2B78Lw" id="7dFv$5lS2fA" role="LeFwF">
-          <property role="2B78LE" value="2016" />
-          <property role="2B78L_" value="12" />
-          <property role="2B78LB" value="24" />
-        </node>
-        <node concept="LeFwc" id="7dFv$5lS2fC" role="LeFwH">
-          <property role="LeFwf" value="0" />
-          <property role="LeFwL" value="0" />
-          <property role="LeFwM" value="2" />
-        </node>
-      </node>
-    </node>
-    <node concept="2B78xR" id="7dFv$5lS2hV" role="d5q2a">
-      <ref role="2B7LQa" node="5b3WIC8Jw2_" resolve="Bellen bij bezwaar" />
-      <node concept="2BLhdU" id="7dFv$5lS2hW" role="2B78xV">
-        <ref role="2BLhdT" node="5Bacij9tPqp" resolve="Belastingdienst" />
-      </node>
-      <node concept="LeFwQ" id="7dFv$5lS2hX" role="2B7LCw">
-        <node concept="2B78Lw" id="7dFv$5lS2i0" role="LeFwF">
-          <property role="2B78LE" value="2016" />
-          <property role="2B78L_" value="12" />
-          <property role="2B78LB" value="24" />
-        </node>
-        <node concept="LeFwc" id="7dFv$5lS2i2" role="LeFwH">
-          <property role="LeFwf" value="0" />
-          <property role="LeFwL" value="0" />
-          <property role="LeFwM" value="9" />
-        </node>
-      </node>
-    </node>
-    <node concept="2B78xR" id="7dFv$5lS2qP" role="d5q2a">
-      <ref role="2B7LQa" node="5b3WIC8IRXH" resolve="Intrekken bezwaar bij bellen" />
-      <node concept="2BLhdU" id="7dFv$5lS2qQ" role="2B78xV">
-        <ref role="2BLhdT" node="5Bacij9tPqn" resolve="Diederik" />
-      </node>
-      <node concept="LeFwQ" id="7dFv$5lS2qR" role="2B7LCw">
-        <node concept="2B78Lw" id="7dFv$5lS2qU" role="LeFwF">
-          <property role="2B78LE" value="2016" />
-          <property role="2B78L_" value="12" />
-          <property role="2B78LB" value="24" />
-        </node>
-        <node concept="LeFwc" id="7dFv$5lS2qW" role="LeFwH">
-          <property role="LeFwf" value="0" />
-          <property role="LeFwL" value="0" />
-          <property role="LeFwM" value="37" />
-        </node>
-      </node>
-    </node>
-    <node concept="3WXGrE" id="7dFv$5lS2r8" role="3WXGrD">
-      <ref role="3WXGrF" node="5RhAgJkmcEA" resolve="Indienen bezwaar of beroep" />
-    </node>
-    <node concept="3WXGrE" id="7dFv$5lS2rh" role="3WXGrD">
-      <ref role="3WXGrF" node="5Bacij9tPnh" resolve="Schriftelijk intrekken van het bezwaar of beroep" />
-    </node>
-    <node concept="3WXGrE" id="7dFv$5lS2r_" role="3WXGrD">
-      <ref role="3WXGrF" node="5Bacij9tPmt" resolve="Mondeling intrekken van het bezwaar of beroep " />
-    </node>
-    <node concept="3WXGrE" id="7dFv$5lS2rU" role="3WXGrD">
-      <ref role="3WXGrF" node="7dFv$5lRbbP" resolve="Schriftelijk bevestigen van het intrekken van het bezwaar" />
-    </node>
+    <node concept="2BLbnY" id="2N$PylwOxpR" role="2BLYKK" />
   </node>
   <node concept="2B78xT" id="5Bacij9tPqm">
     <property role="TrG5h" value="Subjectief AWB" />
@@ -1254,23 +825,6 @@
     <node concept="2B78KJ" id="5Bacij9tPqp" role="DGLbN">
       <property role="TrG5h" value="Belastingdienst" />
       <ref role="DGNob" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
-    </node>
-    <node concept="2B78KX" id="5b3WIC8ISa_" role="2B78xY">
-      <ref role="2B78K5" node="5b3WIC8IS2L" resolve="Er is een beschikking afgegegeven" />
-      <ref role="2B78KW" node="5Bacij9tPqp" resolve="Belastingdienst" />
-      <ref role="2B78K2" node="5Bacij9tPqn" resolve="Diederik" />
-      <node concept="LeFwQ" id="5b3WIC8ISaA" role="2B78LI">
-        <node concept="2B78Lw" id="5b3WIC8ISaB" role="LeFwF">
-          <property role="2B78LB" value="01" />
-          <property role="2B78L_" value="01" />
-          <property role="2B78LE" value="2016" />
-        </node>
-        <node concept="LeFwc" id="5b3WIC8ISaC" role="LeFwH">
-          <property role="LeFwf" value="0" />
-          <property role="LeFwL" value="0" />
-          <property role="LeFwM" value="0" />
-        </node>
-      </node>
     </node>
   </node>
 </model>

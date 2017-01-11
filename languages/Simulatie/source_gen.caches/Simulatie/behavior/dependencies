@@ -26,6 +26,8 @@
   </dependency>
   <dependency className="Simulatie.behavior.Simulatie__BehaviorDescriptor" file="Simulatie__BehaviorDescriptor.java">
     <classNode dependClassName="Datum.behavior.DatumTijd__BehaviorDescriptor" />
+    <classNode dependClassName="ObjectiefRecht.behavior.Concept__BehaviorDescriptor" />
+    <classNode dependClassName="SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
@@ -34,6 +36,7 @@
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.time.Duration" />
+    <classNode dependClassName="java.time.LocalDate" />
     <classNode dependClassName="java.time.LocalDateTime" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />

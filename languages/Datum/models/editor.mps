@@ -23,7 +23,6 @@
         <child id="1176718152741" name="modelAcessor" index="3TRxkO" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
-        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -155,21 +154,18 @@
     <ref role="1XX52x" to="jx79:6c9haf45sz3" resolve="Datum" />
     <node concept="3EZMnI" id="J7tdz7EYm3" role="2wV5jI">
       <node concept="3F0A7n" id="J7tdz7EYma" role="3EZMnx">
-        <property role="1$x2rV" value=".." />
         <ref role="1NtTu8" to="jx79:6c9haf45sz4" resolve="dag" />
       </node>
       <node concept="3F0ifn" id="J7tdz7EYmg" role="3EZMnx">
         <property role="3F0ifm" value="-" />
       </node>
       <node concept="3F0A7n" id="J7tdz7EYmo" role="3EZMnx">
-        <property role="1$x2rV" value=".." />
         <ref role="1NtTu8" to="jx79:6c9haf45sz6" resolve="maand" />
       </node>
       <node concept="3F0ifn" id="J7tdz7EYmy" role="3EZMnx">
         <property role="3F0ifm" value="-" />
       </node>
       <node concept="3F0A7n" id="J7tdz7EYmI" role="3EZMnx">
-        <property role="1$x2rV" value="...." />
         <ref role="1NtTu8" to="jx79:6c9haf45sz9" resolve="jaar" />
       </node>
       <node concept="l2Vlx" id="J7tdz7EYm6" role="2iSdaV" />

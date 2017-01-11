@@ -1,8 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="12,0,39,0" name="Datum.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,45,0" name="Datum.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:2bf88224-c5d5-4102-a25e-253897154108(Datum.constraints)/6995162615681112075">
+    <file name="Datum_Constraints.java">
+      <node id="6995162615681112075" at="17,30,18,129" concept="6" />
+      <node id="6995162615681112075" at="22,84,23,119" concept="4" />
+      <node id="6995162615681112075" at="26,37,27,20" concept="5" />
+      <node id="6995162615681112075" at="30,42,31,36" concept="4" />
+      <node id="6995162615681459461" at="31,36,32,175" concept="5" />
+      <node id="6995162615681112075" at="35,37,36,20" concept="5" />
+      <node id="6995162615681112075" at="39,62,40,36" concept="4" />
+      <node id="6995162615681466875" at="40,36,41,217" concept="1" />
+      <node id="6995162615681112075" at="44,40,45,20" concept="5" />
+      <node id="6995162615681112075" at="48,70,49,36" concept="4" />
+      <node id="6995162615681567564" at="50,67,51,22" concept="5" />
+      <node id="6995162615681142698" at="53,124,54,22" concept="5" />
+      <node id="6995162615681146455" at="55,9,56,21" concept="5" />
+      <node id="6995162615681112075" at="61,37,62,20" concept="5" />
+      <node id="6995162615681112075" at="65,42,66,38" concept="4" />
+      <node id="6995162615681577910" at="66,38,67,177" concept="5" />
+      <node id="6995162615681112075" at="70,37,71,20" concept="5" />
+      <node id="6995162615681112075" at="74,62,75,38" concept="4" />
+      <node id="6995162615681587245" at="75,38,76,219" concept="1" />
+      <node id="6995162615681112075" at="79,40,80,20" concept="5" />
+      <node id="6995162615681112075" at="83,70,84,38" concept="4" />
+      <node id="6995162615681681380" at="85,67,86,22" concept="5" />
+      <node id="6995162615681151694" at="88,124,89,22" concept="5" />
+      <node id="6995162615681151696" at="90,9,91,21" concept="5" />
+      <node id="6995162615681112075" at="96,37,97,20" concept="5" />
+      <node id="6995162615681112075" at="100,42,101,37" concept="4" />
+      <node id="6995162615681599036" at="101,37,102,176" concept="5" />
+      <node id="6995162615681112075" at="105,37,106,20" concept="5" />
+      <node id="6995162615681112075" at="109,62,110,37" concept="4" />
+      <node id="6995162615681606452" at="110,37,111,218" concept="1" />
+      <node id="6995162615681112075" at="114,40,115,20" concept="5" />
+      <node id="6995162615681112075" at="118,70,119,37" concept="4" />
+      <node id="6995162615681663618" at="120,67,121,22" concept="5" />
+      <node id="6995162615681159254" at="123,129,124,22" concept="5" />
+      <node id="6995162615681159256" at="125,9,126,21" concept="5" />
+      <node id="6995162615681112075" at="128,7,129,22" concept="5" />
+      <node id="6995162615681112075" at="17,0,20,0" concept="0" trace="Datum_Constraints#()V" />
+      <node id="6995162615681556384" at="49,36,52,9" concept="2" />
+      <node id="6995162615681112551" at="52,9,55,9" concept="2" />
+      <node id="6995162615681674800" at="84,38,87,9" concept="2" />
+      <node id="6995162615681151681" at="87,9,90,9" concept="2" />
+      <node id="6995162615681657038" at="119,37,122,9" concept="2" />
+      <node id="6995162615681159241" at="122,9,125,9" concept="2" />
+      <node id="6995162615681112075" at="25,0,29,0" concept="3" trace="hasOwnGetter#()Z" />
+      <node id="6995162615681112075" at="34,0,38,0" concept="3" trace="hasOwnSetter#()Z" />
+      <node id="6995162615681112075" at="43,0,47,0" concept="3" trace="hasOwnValidator#()Z" />
+      <node id="6995162615681112075" at="60,0,64,0" concept="3" trace="hasOwnGetter#()Z" />
+      <node id="6995162615681112075" at="69,0,73,0" concept="3" trace="hasOwnSetter#()Z" />
+      <node id="6995162615681112075" at="78,0,82,0" concept="3" trace="hasOwnValidator#()Z" />
+      <node id="6995162615681112075" at="95,0,99,0" concept="3" trace="hasOwnGetter#()Z" />
+      <node id="6995162615681112075" at="104,0,108,0" concept="3" trace="hasOwnSetter#()Z" />
+      <node id="6995162615681112075" at="113,0,117,0" concept="3" trace="hasOwnValidator#()Z" />
+      <node id="6995162615681112075" at="29,0,34,0" concept="3" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="6995162615681112075" at="38,0,43,0" concept="3" trace="setValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="6995162615681112075" at="64,0,69,0" concept="3" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="6995162615681112075" at="73,0,78,0" concept="3" trace="setValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="6995162615681112075" at="99,0,104,0" concept="3" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="6995162615681112075" at="108,0,113,0" concept="3" trace="setValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="6995162615681112075" at="47,0,58,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="6995162615681112075" at="82,0,93,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="6995162615681112075" at="117,0,128,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="6995162615681112075" at="23,119,58,7" concept="1" />
+      <node id="6995162615681112075" at="58,7,93,7" concept="1" />
+      <node id="6995162615681112075" at="93,7,128,7" concept="1" />
+      <node id="6995162615681112075" at="21,0,131,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="6995162615681112075" at="17,30,18,129" />
+      <scope id="6995162615681112075" at="26,37,27,20" />
+      <scope id="6995162615681112075" at="35,37,36,20" />
+      <scope id="6995162615681112075" at="44,40,45,20" />
+      <scope id="6995162615681556386" at="50,67,51,22" />
+      <scope id="6995162615681112553" at="53,124,54,22" />
+      <scope id="6995162615681112075" at="61,37,62,20" />
+      <scope id="6995162615681112075" at="70,37,71,20" />
+      <scope id="6995162615681112075" at="79,40,80,20" />
+      <scope id="6995162615681674802" at="85,67,86,22" />
+      <scope id="6995162615681151693" at="88,124,89,22" />
+      <scope id="6995162615681112075" at="96,37,97,20" />
+      <scope id="6995162615681112075" at="105,37,106,20" />
+      <scope id="6995162615681112075" at="114,40,115,20" />
+      <scope id="6995162615681657040" at="120,67,121,22" />
+      <scope id="6995162615681159253" at="123,129,124,22" />
+      <scope id="6995162615681112075" at="30,42,32,175">
+        <var name="propertyName" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="39,62,41,217">
+        <var name="propertyName" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="65,42,67,177">
+        <var name="propertyName" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="74,62,76,219">
+        <var name="propertyName" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="100,42,102,176">
+        <var name="propertyName" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="109,62,111,218">
+        <var name="propertyName" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="17,0,20,0" />
+      <scope id="6995162615681112075" at="25,0,29,0" />
+      <scope id="6995162615681112075" at="34,0,38,0" />
+      <scope id="6995162615681112075" at="43,0,47,0" />
+      <scope id="6995162615681112075" at="60,0,64,0" />
+      <scope id="6995162615681112075" at="69,0,73,0" />
+      <scope id="6995162615681112075" at="78,0,82,0" />
+      <scope id="6995162615681112075" at="95,0,99,0" />
+      <scope id="6995162615681112075" at="104,0,108,0" />
+      <scope id="6995162615681112075" at="113,0,117,0" />
+      <scope id="6995162615681112075" at="29,0,34,0">
+        <var name="node" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="38,0,43,0">
+        <var name="node" id="6995162615681112075" />
+        <var name="propertyValue" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="64,0,69,0">
+        <var name="node" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="73,0,78,0">
+        <var name="node" id="6995162615681112075" />
+        <var name="propertyValue" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="99,0,104,0">
+        <var name="node" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="108,0,113,0">
+        <var name="node" id="6995162615681112075" />
+        <var name="propertyValue" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="48,70,56,21">
+        <var name="propertyName" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="83,70,91,21">
+        <var name="propertyName" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="118,70,126,21">
+        <var name="propertyName" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="47,0,58,0">
+        <var name="node" id="6995162615681112075" />
+        <var name="propertyValue" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="82,0,93,0">
+        <var name="node" id="6995162615681112075" />
+        <var name="propertyValue" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="117,0,128,0">
+        <var name="node" id="6995162615681112075" />
+        <var name="propertyValue" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="22,84,129,22">
+        <var name="properties" id="6995162615681112075" />
+      </scope>
+      <scope id="6995162615681112075" at="21,0,131,0" />
+      <unit id="6995162615681112075" at="24,146,58,5" name="Datum.constraints.Datum_Constraints$1" />
+      <unit id="6995162615681112075" at="59,148,93,5" name="Datum.constraints.Datum_Constraints$2" />
+      <unit id="6995162615681112075" at="94,147,128,5" name="Datum.constraints.Datum_Constraints$3" />
+      <unit id="6995162615681112075" at="16,0,132,0" name="Datum.constraints.Datum_Constraints" />
     </file>
   </root>
 </debug-info>

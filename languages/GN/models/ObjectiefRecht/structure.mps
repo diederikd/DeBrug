@@ -229,6 +229,18 @@
       <property role="20kJfa" value="bron" />
       <ref role="20lvS9" node="4$mS69sVCn9" resolve="AbstractArtikel" />
     </node>
+    <node concept="1TJgyj" id="2mYdLn7GMoT" role="1TKVEi">
+      <property role="IQ2ns" value="2719671791662605881" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="geldigOnderVoorwaarden" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
+    </node>
+    <node concept="1TJgyi" id="2mYdLn7QCwo" role="1TKVEl">
+      <property role="IQ2nx" value="2719671791665186840" />
+      <property role="TrG5h" value="initieel" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="64gsXol8COU">
     <property role="EcuMT" value="6994217584621161786" />
@@ -252,11 +264,18 @@
       <property role="20kJfa" value="bron" />
       <ref role="20lvS9" node="4$mS69sVCn9" resolve="AbstractArtikel" />
     </node>
+    <node concept="1TJgyj" id="2mYdLn7FKiv" role="1TKVEi">
+      <property role="IQ2ns" value="2719671791662335135" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="geldigOnderVoorwaarden" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
+    </node>
   </node>
   <node concept="1TIwiD" id="64gsXol8COX">
     <property role="EcuMT" value="6994217584621161789" />
     <property role="TrG5h" value="Rechtshandeling" />
-    <property role="3GE5qa" value="RechtsgevolgVeroorzakers" />
+    <property role="3GE5qa" value="RechtsgevolgVeroorzakers.Rechtshandeling" />
     <property role="34LRSv" value="rechtshandeling objectief recht" />
     <ref role="1TJDcQ" node="64gsXol8COU" resolve="RechtsgevolgVeroorzakers" />
     <node concept="1TJgyj" id="20D4HrzFFXI" role="1TKVEi">
@@ -342,7 +361,7 @@
     <property role="EcuMT" value="6994217584621161869" />
     <property role="3GE5qa" value="Voorwaarden" />
     <property role="TrG5h" value="ReferentieNaarVoorwaarde" />
-    <ref role="1TJDcQ" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="64gsXol8CQe" role="1TKVEi">
       <property role="IQ2ns" value="6994217584621161870" />
       <property role="20lmBu" value="reference" />
@@ -366,6 +385,21 @@
     <property role="R4oN_" value="Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten." />
     <property role="34LRSv" value="aanspraak na in gebreke stelling - plicht" />
     <ref role="1TJDcQ" node="64gsXol8COd" resolve="Rechtsbetrekking" />
+    <node concept="1TJgyj" id="2mYdLn7NVbc" role="1TKVEi">
+      <property role="IQ2ns" value="2719671791664476876" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="verplichtingVoor" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2mYdLn7C1jx" resolve="ReferentieNaarRechtsHandeling" />
+      <node concept="asaX9" id="3JXHhLFDh2d" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="3JXHhLFDgan" role="1TKVEi">
+      <property role="IQ2ns" value="4322810351015232151" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="verplichtingTot" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="64gsXol8COX" resolve="Rechtshandeling" />
+    </node>
   </node>
   <node concept="1TIwiD" id="64gsXol8CQk">
     <property role="EcuMT" value="6994217584621161876" />
@@ -374,6 +408,21 @@
     <property role="R4oN_" value="Een {bevoegdheid-gehoudenheid} is een [rechtsbetrekking] waarbij het [rechtssubject] dat de bevoegdheidskant heeft, de keuze heeft, zijn macht uit te oefenen en een of meer nieuwe [rechtsbetrekkingen] van welk soort ook tot stand te brengen tussen de gehoudenheid houdende [partij] en een andere [partij], en/of een of meer bestaande [rechtsbetrekkingen] de gehoudenheid houdende [partij] en een andere [partij] te beëindigen." />
     <property role="34LRSv" value="verplichte bevoegdheid - verplichte gehoudenheid" />
     <ref role="1TJDcQ" node="64gsXol8COd" resolve="Rechtsbetrekking" />
+    <node concept="1TJgyj" id="2mYdLn7Dlhy" role="1TKVEi">
+      <property role="IQ2ns" value="2719671791661700194" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bevoegdheidVoor" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2mYdLn7C1jx" resolve="ReferentieNaarRechtsHandeling" />
+      <node concept="asaX9" id="3JXHhLFDk5A" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="3JXHhLFDjF9" role="1TKVEi">
+      <property role="IQ2ns" value="4322810351015246537" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="bevoegdheidTot" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="64gsXol8COX" resolve="Rechtshandeling" />
+    </node>
   </node>
   <node concept="1TIwiD" id="64gsXol8CQl">
     <property role="EcuMT" value="6994217584621161877" />
@@ -386,8 +435,30 @@
       <property role="IQ2ns" value="5066083982450845060" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="immuniteitvoor" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="64gsXol8COd" resolve="Rechtsbetrekking" />
+    </node>
+    <node concept="1TJgyj" id="3JXHhLFDh2f" role="1TKVEi">
+      <property role="IQ2ns" value="4322810351015235727" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="uittevoeren" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="64gsXol8COX" resolve="Rechtshandeling" />
+    </node>
+    <node concept="1TJgyj" id="2mYdLn7EOsa" role="1TKVEi">
+      <property role="IQ2ns" value="2719671791662089994" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="uittevoerenRechtsHandeling" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2mYdLn7C1jx" resolve="ReferentieNaarRechtsHandeling" />
+      <node concept="asaX9" id="3JXHhLFDh2k" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="2mYdLn7L0G5" role="1TKVEi">
+      <property role="IQ2ns" value="2719671791663713029" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="teNeutraliserenVoorwaarden" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
     </node>
   </node>
   <node concept="1TIwiD" id="64gsXol8CQm">
@@ -397,6 +468,21 @@
     <property role="R4oN_" value="Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten." />
     <property role="34LRSv" value="zwakke aanspraak - zwakke plicht" />
     <ref role="1TJDcQ" node="64gsXol8COd" resolve="Rechtsbetrekking" />
+    <node concept="1TJgyj" id="2mYdLn7NVbe" role="1TKVEi">
+      <property role="IQ2ns" value="2719671791664476878" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="verplichtingVoor" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2mYdLn7C1jx" resolve="ReferentieNaarRechtsHandeling" />
+      <node concept="asaX9" id="3JXHhLFDlBu" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="3JXHhLFDkJ_" role="1TKVEi">
+      <property role="IQ2ns" value="4322810351015250917" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="verplichtingTot" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="64gsXol8COX" resolve="Rechtshandeling" />
+    </node>
   </node>
   <node concept="1TIwiD" id="64gsXol8CQn">
     <property role="EcuMT" value="6994217584621161879" />
@@ -405,6 +491,21 @@
     <property role="R4oN_" value="Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten." />
     <property role="34LRSv" value="krachtige aanspraak - fatale verplichting" />
     <ref role="1TJDcQ" node="64gsXol8COd" resolve="Rechtsbetrekking" />
+    <node concept="1TJgyj" id="2mYdLn7NVb8" role="1TKVEi">
+      <property role="IQ2ns" value="2719671791664476872" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="verplichtingVoor" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2mYdLn7C1jx" resolve="ReferentieNaarRechtsHandeling" />
+      <node concept="asaX9" id="3JXHhLFDhVk" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="3JXHhLFDhVh" role="1TKVEi">
+      <property role="IQ2ns" value="4322810351015239377" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="verplichtingTot" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="64gsXol8COX" resolve="Rechtshandeling" />
+    </node>
   </node>
   <node concept="1TIwiD" id="64gsXol8CQo">
     <property role="EcuMT" value="6994217584621161880" />
@@ -413,6 +514,21 @@
     <property role="R4oN_" value="Een {bevoegdheid-gehoudenheid} is een [rechtsbetrekking] waarbij het [rechtssubject] dat de bevoegdheidskant heeft, de keuze heeft, zijn macht uit te oefenen en een of meer nieuwe [rechtsbetrekkingen] van welk soort ook tot stand te brengen tussen de gehoudenheid houdende [partij] en een andere [partij], en/of een of meer bestaande [rechtsbetrekkingen] de gehoudenheid houdende [partij] en een andere [partij] te beëindigen." />
     <property role="34LRSv" value="optionele bevoegdheid - optionele gehoudenheid" />
     <ref role="1TJDcQ" node="64gsXol8COd" resolve="Rechtsbetrekking" />
+    <node concept="1TJgyj" id="2mYdLn7Dlhw" role="1TKVEi">
+      <property role="IQ2ns" value="2719671791661700192" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bevoegdheidVoor" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2mYdLn7C1jx" resolve="ReferentieNaarRechtsHandeling" />
+      <node concept="asaX9" id="3JXHhLFDhVp" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="3JXHhLFDhVm" role="1TKVEi">
+      <property role="IQ2ns" value="4322810351015239382" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="bevoegdheidTot" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="64gsXol8COX" resolve="Rechtshandeling" />
+    </node>
   </node>
   <node concept="1TIwiD" id="26dbYf8FZmT">
     <property role="EcuMT" value="2417641230338880953" />
@@ -506,6 +622,7 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
     </node>
+    <node concept="asaX9" id="2mYdLn7GMoG" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="20D4HrzEWvY">
     <property role="EcuMT" value="2317404197410818046" />
@@ -550,6 +667,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="64gsXol8COU" resolve="RechtsgevolgVeroorzakers" />
     </node>
+    <node concept="asaX9" id="2mYdLn7GiTR" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="6c9haf44Yev">
     <property role="EcuMT" value="7136310554705257375" />
@@ -679,6 +797,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="64gsXol8COd" resolve="Rechtsbetrekking" />
     </node>
+    <node concept="asaX9" id="3JXHhLFC6Tf" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="28ifPi2C7Kb">
     <property role="EcuMT" value="2455094379071699979" />
@@ -697,7 +816,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="resultaat" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
+      <ref role="20lvS9" node="64gsXol8CQd" resolve="ReferentieNaarVoorwaarde" />
     </node>
     <node concept="1TJgyj" id="28ifPi2C7Kg" role="1TKVEi">
       <property role="IQ2ns" value="2455094379071699984" />
@@ -816,6 +935,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6syAJDDPL2P" resolve="Enumeratie" />
     </node>
+    <node concept="asaX9" id="2mYdLn7JWYZ" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="2xDgDlj6HAL">
     <property role="EcuMT" value="2911931843183565233" />
@@ -1037,6 +1157,41 @@
       <property role="20kJfa" value="onderwerp" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="26dbYf8FZmT" resolve="Onderwerp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2mYdLn7C1j4">
+    <property role="EcuMT" value="2719671791661356228" />
+    <property role="3GE5qa" value="RechtsgevolgVeroorzakers.Rechtshandeling" />
+    <property role="TrG5h" value="AbstracteRechtshandeling" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="64gsXol8COU" resolve="RechtsgevolgVeroorzakers" />
+    <node concept="asaX9" id="3JXHhLFC6PH" role="lGtFl" />
+  </node>
+  <node concept="1TIwiD" id="2mYdLn7C1jx">
+    <property role="EcuMT" value="2719671791661356257" />
+    <property role="3GE5qa" value="RechtsgevolgVeroorzakers.Rechtshandeling" />
+    <property role="TrG5h" value="ReferentieNaarRechtsHandeling" />
+    <ref role="1TJDcQ" node="4$mS69sSlIw" resolve="Concept" />
+    <node concept="1TJgyj" id="2mYdLn7C1jy" role="1TKVEi">
+      <property role="IQ2ns" value="2719671791661356258" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="rechtshandeling" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="64gsXol8COX" resolve="Rechtshandeling" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2mYdLn7IVsj">
+    <property role="EcuMT" value="2719671791663167251" />
+    <property role="3GE5qa" value="Datatype" />
+    <property role="TrG5h" value="EnumeratieDatatype" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    <node concept="1TJgyj" id="2mYdLn7IVsk" role="1TKVEi">
+      <property role="IQ2ns" value="2719671791663167252" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="enumeratie" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6syAJDDPL2P" resolve="Enumeratie" />
     </node>
   </node>
 </model>

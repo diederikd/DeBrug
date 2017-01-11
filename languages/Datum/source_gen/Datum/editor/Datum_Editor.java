@@ -30,7 +30,7 @@ public class Datum_Editor extends DefaultNodeEditor {
   private EditorCell createProperty_96duim_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("dag");
-    provider.setNoTargetText("..");
+    provider.setNoTargetText("<no dag>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_dag");
@@ -51,7 +51,7 @@ public class Datum_Editor extends DefaultNodeEditor {
   private EditorCell createProperty_96duim_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("maand");
-    provider.setNoTargetText("..");
+    provider.setNoTargetText("<no maand>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_maand");
@@ -72,7 +72,7 @@ public class Datum_Editor extends DefaultNodeEditor {
   private EditorCell createProperty_96duim_e0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("jaar");
-    provider.setNoTargetText("....");
+    provider.setNoTargetText("<no jaar>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_jaar");

@@ -255,7 +255,7 @@
   </node>
   <node concept="1M2fIO" id="72xgt4Ci3Xy">
     <property role="3GE5qa" value="Kenmerk" />
-    <ref role="1M2myG" to="3pw0:4$mS69sVSy8" resolve="ReferentieNaarKenmerk" />
+    <ref role="1M2myG" to="3pw0:4$mS69sVSy8" resolve="KenmerkMetReferentieNaarKenmerk" />
     <node concept="nKS2y" id="72xgt4Ci3Y8" role="1MLUbF">
       <node concept="3clFbS" id="72xgt4Ci3Y9" role="2VODD2">
         <node concept="3SKdUt" id="72xgt4Ci45h" role="3cqZAp">
@@ -340,7 +340,7 @@
   </node>
   <node concept="1M2fIO" id="72xgt4CjQAA">
     <property role="3GE5qa" value="Kenmerk" />
-    <ref role="1M2myG" to="3pw0:MvzNsyB_CF" resolve="ReferentieNaarOnderwerp" />
+    <ref role="1M2myG" to="3pw0:MvzNsyB_CF" resolve="KenmerkMetReferentieNaarOnderwerp" />
     <node concept="nKS2y" id="72xgt4CjQAB" role="1MLUbF">
       <node concept="3clFbS" id="72xgt4CjQAC" role="2VODD2">
         <node concept="3cpWs8" id="72xgt4CjR13" role="3cqZAp">
@@ -413,7 +413,7 @@
                   </node>
                   <node concept="1mIQ4w" id="4pem8DJUaes" role="2OqNvi">
                     <node concept="chp4Y" id="4pem8DJUaKv" role="cj9EA">
-                      <ref role="cht4Q" to="3pw0:4$mS69sVSy8" resolve="ReferentieNaarKenmerk" />
+                      <ref role="cht4Q" to="3pw0:4$mS69sVSy8" resolve="KenmerkMetReferentieNaarKenmerk" />
                     </node>
                   </node>
                 </node>
@@ -443,7 +443,7 @@
                 <node concept="3cpWsn" id="4pem8DJTFwb" role="3cpWs9">
                   <property role="TrG5h" value="refnaarkenmerk" />
                   <node concept="3Tqbb2" id="4pem8DJTFB$" role="1tU5fm">
-                    <ref role="ehGHo" to="3pw0:4$mS69sVSy8" resolve="ReferentieNaarKenmerk" />
+                    <ref role="ehGHo" to="3pw0:4$mS69sVSy8" resolve="KenmerkMetReferentieNaarKenmerk" />
                   </node>
                   <node concept="10QFUN" id="4pem8DJTMOP" role="33vP2m">
                     <node concept="2OqwBi" id="4pem8DJTLvS" role="10QFUP">
@@ -453,7 +453,7 @@
                       </node>
                     </node>
                     <node concept="3Tqbb2" id="4pem8DJTMOQ" role="10QFUM">
-                      <ref role="ehGHo" to="3pw0:4$mS69sVSy8" resolve="ReferentieNaarKenmerk" />
+                      <ref role="ehGHo" to="3pw0:4$mS69sVSy8" resolve="KenmerkMetReferentieNaarKenmerk" />
                     </node>
                   </node>
                 </node>
@@ -537,7 +537,7 @@
               </node>
               <node concept="1mIQ4w" id="4pem8DJTEov" role="2OqNvi">
                 <node concept="chp4Y" id="4pem8DJTEsP" role="cj9EA">
-                  <ref role="cht4Q" to="3pw0:4$mS69sVSy8" resolve="ReferentieNaarKenmerk" />
+                  <ref role="cht4Q" to="3pw0:4$mS69sVSy8" resolve="KenmerkMetReferentieNaarKenmerk" />
                 </node>
               </node>
             </node>
@@ -563,7 +563,7 @@
                   </node>
                   <node concept="1mIQ4w" id="4pem8DJUx6d" role="2OqNvi">
                     <node concept="chp4Y" id="4pem8DJUx6e" role="cj9EA">
-                      <ref role="cht4Q" to="3pw0:4$mS69sVSy8" resolve="ReferentieNaarKenmerk" />
+                      <ref role="cht4Q" to="3pw0:4$mS69sVSy8" resolve="KenmerkMetReferentieNaarKenmerk" />
                     </node>
                   </node>
                 </node>
@@ -580,7 +580,7 @@
                 <node concept="3cpWsn" id="4pem8DJUx6m" role="3cpWs9">
                   <property role="TrG5h" value="refnaarkenmerk" />
                   <node concept="3Tqbb2" id="4pem8DJUx6n" role="1tU5fm">
-                    <ref role="ehGHo" to="3pw0:4$mS69sVSy8" resolve="ReferentieNaarKenmerk" />
+                    <ref role="ehGHo" to="3pw0:4$mS69sVSy8" resolve="KenmerkMetReferentieNaarKenmerk" />
                   </node>
                   <node concept="10QFUN" id="4pem8DJUx6o" role="33vP2m">
                     <node concept="2OqwBi" id="4pem8DJUx6p" role="10QFUP">
@@ -590,7 +590,7 @@
                       </node>
                     </node>
                     <node concept="3Tqbb2" id="4pem8DJUx6s" role="10QFUM">
-                      <ref role="ehGHo" to="3pw0:4$mS69sVSy8" resolve="ReferentieNaarKenmerk" />
+                      <ref role="ehGHo" to="3pw0:4$mS69sVSy8" resolve="KenmerkMetReferentieNaarKenmerk" />
                     </node>
                   </node>
                 </node>
@@ -674,7 +674,7 @@
               </node>
               <node concept="1mIQ4w" id="4pem8DJUx6X" role="2OqNvi">
                 <node concept="chp4Y" id="4pem8DJUx6Y" role="cj9EA">
-                  <ref role="cht4Q" to="3pw0:4$mS69sVSy8" resolve="ReferentieNaarKenmerk" />
+                  <ref role="cht4Q" to="3pw0:4$mS69sVSy8" resolve="KenmerkMetReferentieNaarKenmerk" />
                 </node>
               </node>
             </node>
@@ -906,6 +906,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="3d6QfrfCmPf">
+    <property role="3GE5qa" value="RechtsgevolgVeroorzakers.Rechtshandeling" />
     <ref role="1M2myG" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
   </node>
   <node concept="1M2fIO" id="MBTOFWSmlM">
