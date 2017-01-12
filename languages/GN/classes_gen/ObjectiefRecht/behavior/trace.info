@@ -30,9 +30,6 @@
     <file name="AbstracteExpressie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstracteExpressie_BehaviorDescriptor" />
     </file>
-    <file name="AbstracteRechtshandeling_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstracteRechtshandeling_BehaviorDescriptor" />
-    </file>
     <file name="AbstracteVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.AbstracteVoorwaarde_BehaviorDescriptor" />
     </file>
@@ -177,17 +174,8 @@
     <file name="ReferentieNaarReferentieNaarSubject_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarReferentieNaarSubject_BehaviorDescriptor" />
     </file>
-    <file name="ReferentieNaarVoorwaardeRechtsbetrekking_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarVoorwaardeRechtsbetrekking_BehaviorDescriptor" />
-    </file>
     <file name="ReferentieNaarVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarVoorwaarde_BehaviorDescriptor" />
-    </file>
-    <file name="RegelOverRechtsbetrekking_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.RegelOverRechtsbetrekking_BehaviorDescriptor" />
-    </file>
-    <file name="RegelOverRechtsgevolgVeroorzaker_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.RegelOverRechtsgevolgVeroorzaker_BehaviorDescriptor" />
     </file>
     <file name="Regel_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Regel_BehaviorDescriptor" />

@@ -35,9 +35,8 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
         case 0:
           if (true) {
             // Concept: Context 
-            intentions = new IntentionFactory[2];
+            intentions = new IntentionFactory[1];
             intentions[0] = new Hernummer_Intention();
-            intentions[1] = new DeleteOudeReferenties_Intention();
           }
           break;
         case 1:
@@ -64,7 +63,7 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[9];
+    IntentionFactory[] rv = new IntentionFactory[8];
     rv[0] = new VerplichteBevoegdheidVerplichteGehoudenheid_Intention();
     rv[1] = new AanspraakNaIngebrekeStellingPlicht_Intention();
     rv[2] = new KrachtigeAanspraakFataleVerplichtig_Intention();
@@ -73,7 +72,6 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
     rv[5] = new VrijheidGeenaanspraak_Intention();
     rv[6] = new ZwakkeAanspraakZwakkePlicht_Intention();
     rv[7] = new Hernummer_Intention();
-    rv[8] = new DeleteOudeReferenties_Intention();
     return Arrays.asList(rv);
   }
   private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
