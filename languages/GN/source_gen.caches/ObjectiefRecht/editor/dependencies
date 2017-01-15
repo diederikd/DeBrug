@@ -467,6 +467,7 @@
     <classNode dependClassName="ObjectiefRecht.editor.Variabele_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.VormVoorwaarde_Editor" />
+    <classNode dependClassName="ObjectiefRecht.editor.VrijeTekst_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_Editor" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.String" />
@@ -1446,6 +1447,16 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="ObjectiefRecht.editor.VrijeTekst_Editor" file="VrijeTekst_Editor.java">
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />

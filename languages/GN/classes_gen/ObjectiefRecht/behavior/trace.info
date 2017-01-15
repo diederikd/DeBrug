@@ -120,6 +120,9 @@
     <file name="MaterieleVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.MaterieleVoorwaarde_BehaviorDescriptor" />
     </file>
+    <file name="OnderwerpDatatype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.OnderwerpDatatype_BehaviorDescriptor" />
+    </file>
     <file name="Onderwerp_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Onderwerp_BehaviorDescriptor" />
     </file>
@@ -183,6 +186,9 @@
     <file name="RijVanKaraktersDatatype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.RijVanKaraktersDatatype_BehaviorDescriptor" />
     </file>
+    <file name="SubjectDataType_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.SubjectDataType_BehaviorDescriptor" />
+    </file>
     <file name="TijdDatatype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TijdDatatype_BehaviorDescriptor" />
     </file>
@@ -200,6 +206,9 @@
     </file>
     <file name="VormVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VormVoorwaarde_BehaviorDescriptor" />
+    </file>
+    <file name="VrijeTekst_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VrijeTekst_BehaviorDescriptor" />
     </file>
     <file name="VrijheidGeenaanspraak_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VrijheidGeenaanspraak_BehaviorDescriptor" />

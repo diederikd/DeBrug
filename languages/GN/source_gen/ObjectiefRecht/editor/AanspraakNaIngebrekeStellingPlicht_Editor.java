@@ -587,11 +587,11 @@ public class AanspraakNaIngebrekeStellingPlicht_Editor extends DefaultNodeEditor
     return editorCell;
   }
   private EditorCell createRefNode_puiv9n_cb0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new AanspraakNaIngebrekeStellingPlicht_Editor.geldigVanSingleRoleHandler_puiv9n_cb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426b6L, "geldigVan"), editorContext);
+    SingleRoleCellProvider provider = new AanspraakNaIngebrekeStellingPlicht_Editor.GeldigVanSingleRoleHandler_puiv9n_cb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c109781917eL, "GeldigVan"), editorContext);
     return provider.createCell();
   }
-  private class geldigVanSingleRoleHandler_puiv9n_cb0 extends SingleRoleCellProvider {
-    public geldigVanSingleRoleHandler_puiv9n_cb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class GeldigVanSingleRoleHandler_puiv9n_cb0 extends SingleRoleCellProvider {
+    public GeldigVanSingleRoleHandler_puiv9n_cb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -599,8 +599,8 @@ public class AanspraakNaIngebrekeStellingPlicht_Editor extends DefaultNodeEditor
       myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
       try {
         EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426b6L, "geldigVan"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426b6L, "geldigVan"), child));
+        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c109781917eL, "GeldigVan"), child));
+        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c109781917eL, "GeldigVan"), child));
         installCellInfo(child, editorCell);
         return editorCell;
       } finally {
@@ -614,10 +614,10 @@ public class AanspraakNaIngebrekeStellingPlicht_Editor extends DefaultNodeEditor
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426b6L, "geldigVan"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c109781917eL, "GeldigVan"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
-        editorCell.setRole("geldigVan");
+        editorCell.setRole("GeldigVan");
       }
       Style style = new StyleImpl();
       SNode node = myOwnerNode;
@@ -628,10 +628,10 @@ public class AanspraakNaIngebrekeStellingPlicht_Editor extends DefaultNodeEditor
     @Override
     protected EditorCell createEmptyCell() {
       myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426b6L, "geldigVan")));
+      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c109781917eL, "GeldigVan")));
       try {
         EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_geldigVan");
+        editorCell.setCellId("empty_GeldigVan");
         installCellInfo(null, editorCell);
         return editorCell;
       } finally {
@@ -639,7 +639,7 @@ public class AanspraakNaIngebrekeStellingPlicht_Editor extends DefaultNodeEditor
       }
     }
     protected String getNoTargetText() {
-      return "<no geldigVan>";
+      return "<no GeldigVan>";
     }
   }
   private EditorCell createConstant_puiv9n_db0(EditorContext editorContext, SNode node) {
@@ -658,11 +658,11 @@ public class AanspraakNaIngebrekeStellingPlicht_Editor extends DefaultNodeEditor
     return editorCell;
   }
   private EditorCell createRefNode_puiv9n_fb0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new AanspraakNaIngebrekeStellingPlicht_Editor.geldigTotSingleRoleHandler_puiv9n_fb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426bbL, "geldigTot"), editorContext);
+    SingleRoleCellProvider provider = new AanspraakNaIngebrekeStellingPlicht_Editor.GeldigTotSingleRoleHandler_puiv9n_fb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c1097819187L, "GeldigTot"), editorContext);
     return provider.createCell();
   }
-  private class geldigTotSingleRoleHandler_puiv9n_fb0 extends SingleRoleCellProvider {
-    public geldigTotSingleRoleHandler_puiv9n_fb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class GeldigTotSingleRoleHandler_puiv9n_fb0 extends SingleRoleCellProvider {
+    public GeldigTotSingleRoleHandler_puiv9n_fb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -670,8 +670,8 @@ public class AanspraakNaIngebrekeStellingPlicht_Editor extends DefaultNodeEditor
       myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
       try {
         EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426bbL, "geldigTot"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426bbL, "geldigTot"), child));
+        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c1097819187L, "GeldigTot"), child));
+        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c1097819187L, "GeldigTot"), child));
         installCellInfo(child, editorCell);
         return editorCell;
       } finally {
@@ -685,10 +685,10 @@ public class AanspraakNaIngebrekeStellingPlicht_Editor extends DefaultNodeEditor
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426bbL, "geldigTot"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c1097819187L, "GeldigTot"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
-        editorCell.setRole("geldigTot");
+        editorCell.setRole("GeldigTot");
       }
       Style style = new StyleImpl();
       SNode node = myOwnerNode;
@@ -699,10 +699,10 @@ public class AanspraakNaIngebrekeStellingPlicht_Editor extends DefaultNodeEditor
     @Override
     protected EditorCell createEmptyCell() {
       myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426bbL, "geldigTot")));
+      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c1097819187L, "GeldigTot")));
       try {
         EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_geldigTot");
+        editorCell.setCellId("empty_GeldigTot");
         installCellInfo(null, editorCell);
         return editorCell;
       } finally {
@@ -710,7 +710,7 @@ public class AanspraakNaIngebrekeStellingPlicht_Editor extends DefaultNodeEditor
       }
     }
     protected String getNoTargetText() {
-      return "<no geldigTot>";
+      return "<no GeldigTot>";
     }
   }
   private EditorCell createConstant_puiv9n_gb0(EditorContext editorContext, SNode node) {
