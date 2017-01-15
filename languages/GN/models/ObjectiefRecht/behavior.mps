@@ -7,8 +7,8 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="uz8b" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#fdcdc48f-bfd8-4831-aa76-5abac2ffa010(jetbrains.mps.lang.project.modules/module.jetbrains.mps.baseLanguage.jdk8@project_stub)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
+    <import index="2d9w" ref="r:85a486e3-1a35-4e9a-80ab-af84f2d8bd49(jetbrains.mps.baseLanguage.jdk8.behavior)" />
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" implicit="true" />
     <import index="rwnv" ref="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)" implicit="true" />
   </imports>
