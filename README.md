@@ -3,15 +3,15 @@ Specificaties van de wet aanpassing arbeidsduur in MPS
 
 # Installatie
 ## Installatie van MPS
-Deze broncode werkt met Jetbrains MPS versie 3.4.1. 
+Deze broncode werkt met Jetbrains MPS versie 3.4.3. 
 Jetbrains MPS is te downloaden op: https://www.jetbrains.com/mps/download/
 Kijk indien nodig bij de "previous versions"
 
 ## Installatie van mbedrr
 Om de code te bewerken zijn ook de mbedrr plugins noodzakelijk. 
 Ga naar https://github.com/mbeddr/mbeddr.core/releases om deze plugins te downloaden.
-Download wel een compatible set. Bijvoorbeeld voor MPS versie 3.4.1 de volgende build: nightly-290-MPS-3.4.1
-Download vervolgens het bestand platform-distribution-290-MPS-3.4.1.zip
+Download wel een compatible set.
+Download vervolgens het bestand platform-distribution-xxx-MPS-3.4.3.zip
 Pak dit bestand uit en kopieer de directory plugins naar de directory plugins in de aplicatie directory van MPS. Op een Mac is dat bijvoorbeeld de directory:
 /Applications/MPS 3.4.app/Contents/Plugins
 

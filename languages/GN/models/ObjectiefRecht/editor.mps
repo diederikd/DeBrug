@@ -240,6 +240,21 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="pj4I3ZVqFw" role="3EZMnx">
+        <property role="3F0ifm" value="versietijdstip" />
+        <node concept="lj46D" id="pj4I3ZVqOc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="pj4I3ZVqIW" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="pj4I3ZVqMq" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:pj4I3ZVqDD" resolve="versietijdstip" />
+        <node concept="ljvvj" id="pj4I3ZVqOa" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="4pem8DJWnr$" role="3EZMnx">
         <property role="3F0ifm" value="datum van inwerkingtreding" />
         <node concept="lj46D" id="4pem8DJWnyz" role="3F10Kt">
@@ -3327,6 +3342,7 @@
     <node concept="3EZMnI" id="6T3DNjSsxk_" role="2wV5jI">
       <node concept="3F0ifn" id="6T3DNjSsxkG" role="3EZMnx">
         <property role="3F0ifm" value="de" />
+        <ref role="1k5W1q" node="4$mS69sUKPR" resolve="Regular" />
       </node>
       <node concept="l2Vlx" id="6T3DNjSsxkC" role="2iSdaV" />
     </node>
@@ -3336,6 +3352,7 @@
     <ref role="1XX52x" to="3pw0:6T3DNjSsxkJ" resolve="LidwoordHet" />
     <node concept="3F0ifn" id="6T3DNjSsxkU" role="2wV5jI">
       <property role="3F0ifm" value="het" />
+      <ref role="1k5W1q" node="4$mS69sUKPR" resolve="Regular" />
     </node>
   </node>
   <node concept="PKFIW" id="5u1YjWIk_Lj">

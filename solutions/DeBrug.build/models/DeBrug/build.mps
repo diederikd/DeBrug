@@ -995,6 +995,12 @@
           <property role="3LESm3" value="a0f3090e-bd18-4144-abf4-df36420d5522" />
           <property role="2GAjPV" value="false" />
         </node>
+        <node concept="1SiIV0" id="pj4I3ZUYVm" role="3bR37C">
+          <node concept="3bR9La" id="pj4I3ZUYVn" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6oU3FTq8dcX" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1045,6 +1051,18 @@
           <node concept="3bR9La" id="6LCrFJ4kO5f" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="90a9:4p3FRivDLPL" resolve="de.slisson.mps.editor.multiline.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="pj4I3ZUYTR" role="3bR37C">
+          <node concept="3bR9La" id="pj4I3ZUYTS" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7iiyGQ7dLQL" resolve="jetbrains.mps.baseLanguage.jdk8" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="pj4I3ZUYTT" role="3bR37C">
+          <node concept="3bR9La" id="pj4I3ZUYTU" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
       </node>

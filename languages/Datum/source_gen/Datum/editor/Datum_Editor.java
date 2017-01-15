@@ -7,10 +7,15 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 public class Datum_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -20,14 +25,43 @@ public class Datum_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_96duim_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createProperty_96duim_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_96duim_b0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_96duim_c0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_96duim_d0(editorContext, node));
+    if (renderingCondition_96duim_a0a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_96duim_a0(editorContext, node));
+    }
+    editorCell.addEditorCell(this.createProperty_96duim_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_96duim_c0(editorContext, node));
+    if (renderingCondition_96duim_a3a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_96duim_d0(editorContext, node));
+    }
     editorCell.addEditorCell(this.createProperty_96duim_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_96duim_f0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_96duim_g0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createProperty_96duim_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_96duim_a0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_96duim_a0");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_96duim_a0a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_96duim_a0a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag")) < 10;
+  }
+  private EditorCell createConstant_96duim_a0a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "0");
+    editorCell.setCellId("Constant_96duim_a0a");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_96duim_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("dag");
     provider.setNoTargetText("<no dag>");
@@ -42,13 +76,36 @@ public class Datum_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_96duim_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_96duim_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "-");
-    editorCell.setCellId("Constant_96duim_b0");
+    editorCell.setCellId("Constant_96duim_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_96duim_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_96duim_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_96duim_d0");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_96duim_a3a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_96duim_a3a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand")) < 10;
+  }
+  private EditorCell createConstant_96duim_a3a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "0");
+    editorCell.setCellId("Constant_96duim_a3a");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_96duim_e0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("maand");
     provider.setNoTargetText("<no maand>");
@@ -63,13 +120,13 @@ public class Datum_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_96duim_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_96duim_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "-");
-    editorCell.setCellId("Constant_96duim_d0");
+    editorCell.setCellId("Constant_96duim_f0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_96duim_e0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_96duim_g0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("jaar");
     provider.setNoTargetText("<no jaar>");

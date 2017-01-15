@@ -7,13 +7,16 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 public class Tijd_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -23,18 +26,50 @@ public class Tijd_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_4rhwny_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createModelAccess_4rhwny_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_4rhwny_b0(editorContext, node));
-    editorCell.addEditorCell(this.createModelAccess_4rhwny_c0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_4rhwny_d0(editorContext, node));
+    if (renderingCondition_4rhwny_a0a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_4rhwny_a0(editorContext, node));
+    }
+    editorCell.addEditorCell(this.createModelAccess_4rhwny_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_4rhwny_c0(editorContext, node));
+    if (renderingCondition_4rhwny_a3a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_4rhwny_d0(editorContext, node));
+    }
     editorCell.addEditorCell(this.createModelAccess_4rhwny_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_4rhwny_f0(editorContext, node));
+    if (renderingCondition_4rhwny_a6a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_4rhwny_g0(editorContext, node));
+    }
+    editorCell.addEditorCell(this.createModelAccess_4rhwny_h0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createModelAccess_4rhwny_a0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCollection_4rhwny_a0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_4rhwny_a0");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_4rhwny_a0a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_4rhwny_a0a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren")) < 10;
+  }
+  private EditorCell createConstant_4rhwny_a0a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "0");
+    editorCell.setCellId("Constant_4rhwny_a0a");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createModelAccess_4rhwny_b0(final EditorContext editorContext, final SNode node) {
     ModelAccessor modelAccessor = new ModelAccessor() {
       public String getText() {
         Integer uren = SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren"));
-        String result = ("00" + uren.toString()).substring(uren.toString().length());
+        String result = uren.toString();
         return result;
       }
       public void setText(String text) {
@@ -65,21 +100,44 @@ public class Tijd_Editor extends DefaultNodeEditor {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, modelAccessor, node);
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
     editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
-    editorCell.setCellId("ModelAccess_4rhwny_a0");
+    editorCell.setCellId("ModelAccess_4rhwny_b0");
     editorCell.setDefaultText("00");
     return editorCell;
   }
-  private EditorCell createConstant_4rhwny_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_4rhwny_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_4rhwny_b0");
+    editorCell.setCellId("Constant_4rhwny_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createModelAccess_4rhwny_c0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCollection_4rhwny_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_4rhwny_d0");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_4rhwny_a3a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_4rhwny_a3a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten")) < 10;
+  }
+  private EditorCell createConstant_4rhwny_a3a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "0");
+    editorCell.setCellId("Constant_4rhwny_a3a");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createModelAccess_4rhwny_e0(final EditorContext editorContext, final SNode node) {
     ModelAccessor modelAccessor = new ModelAccessor() {
       public String getText() {
         Integer minuten = SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten"));
-        String result = ("00" + minuten.toString()).substring(minuten.toString().length());
+        String result = minuten.toString();
         return result;
       }
       public void setText(String text) {
@@ -110,21 +168,44 @@ public class Tijd_Editor extends DefaultNodeEditor {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, modelAccessor, node);
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
     editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
-    editorCell.setCellId("ModelAccess_4rhwny_c0");
+    editorCell.setCellId("ModelAccess_4rhwny_e0");
     editorCell.setDefaultText("00");
     return editorCell;
   }
-  private EditorCell createConstant_4rhwny_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_4rhwny_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_4rhwny_d0");
+    editorCell.setCellId("Constant_4rhwny_f0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createModelAccess_4rhwny_e0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCollection_4rhwny_g0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_4rhwny_g0");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_4rhwny_a6a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_4rhwny_a6a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden")) < 10;
+  }
+  private EditorCell createConstant_4rhwny_a6a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "0");
+    editorCell.setCellId("Constant_4rhwny_a6a");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createModelAccess_4rhwny_h0(final EditorContext editorContext, final SNode node) {
     ModelAccessor modelAccessor = new ModelAccessor() {
       public String getText() {
         Integer seconden = SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f32bL, "Seconden"));
-        String result = ("00" + seconden.toString()).substring(seconden.toString().length());
+        String result = seconden.toString();
         return result;
       }
       public void setText(String text) {
@@ -155,7 +236,7 @@ public class Tijd_Editor extends DefaultNodeEditor {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, modelAccessor, node);
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
     editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
-    editorCell.setCellId("ModelAccess_4rhwny_e0");
+    editorCell.setCellId("ModelAccess_4rhwny_h0");
     editorCell.setDefaultText("00");
     return editorCell;
   }
