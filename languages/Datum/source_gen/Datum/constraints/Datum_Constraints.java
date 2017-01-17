@@ -120,10 +120,10 @@ public class Datum_Constraints extends BaseConstraintsDescriptor {
         if ((SPropertyOperations.getInteger(propertyValue)) == 0) {
           return true;
         }
-        if ((SPropertyOperations.getInteger(propertyValue)) >= 1000 && (SPropertyOperations.getInteger(propertyValue)) <= 9999) {
-          return true;
+        if ((SPropertyOperations.getInteger(propertyValue)) > 9999) {
+          return false;
         }
-        return false;
+        return true;
       }
     });
     return properties;
