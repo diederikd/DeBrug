@@ -113,7 +113,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 17:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new KenmerkMetReferentieNaarKenmerk_Editor(), new KenmerkMetReferentieNaarKenmerk_Kort_Editor()});
+            return Collections.<ConceptEditor>singletonList(new Kenmerk2_Editor());
           }
           break;
         case 18:
@@ -153,120 +153,135 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 25:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Onderwerp_Editor());
+            return Collections.<ConceptEditor>singletonList(new ObjectDataType_Editor());
           }
           break;
         case 26:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new OptioneleBevoegdheidOptioneleGehoudenheid_Editor());
+            return Collections.<ConceptEditor>singletonList(new Onderwerp_Editor());
           }
           break;
         case 27:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new RechtsSubject_Editor());
+            return Collections.<ConceptEditor>singletonList(new OnderwerpDatatype_Editor());
           }
           break;
         case 28:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rechtsbetrekking_Editor());
+            return Collections.<ConceptEditor>singletonList(new OptioneleBevoegdheidOptioneleGehoudenheid_Editor());
           }
           break;
         case 29:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rechtsgevolg_Editor());
+            return Collections.<ConceptEditor>singletonList(new RechtsSubject_Editor());
           }
           break;
         case 30:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rechtshandeling_Editor());
+            return Collections.<ConceptEditor>singletonList(new Rechtsbetrekking_Editor());
           }
           break;
         case 31:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new ReeelGetalDatatype_Editor());
+            return Collections.<ConceptEditor>singletonList(new Rechtsgevolg_Editor());
           }
           break;
         case 32:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new ReferentieNaarArtikel_Editor());
+            return Collections.<ConceptEditor>singletonList(new Rechtshandeling_Editor());
           }
           break;
         case 33:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new ReferentieNaarEnumeratie_Editor());
+            return Collections.<ConceptEditor>singletonList(new ReeelGetalDatatype_Editor());
           }
           break;
         case 34:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new ReferentieNaarOnderwerp_Editor());
+            return Collections.<ConceptEditor>singletonList(new ReferentieNaarArtikel_Editor());
           }
           break;
         case 35:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new ReferentieNaarRechtsHandeling_Editor());
+            return Collections.<ConceptEditor>singletonList(new ReferentieNaarEnumeratie_Editor());
           }
           break;
         case 36:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new ReferentieNaarRechtsbetrekking_Editor());
+            return Collections.<ConceptEditor>singletonList(new ReferentieNaarOnderwerp_Editor());
           }
           break;
         case 37:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new ReferentieNaarRechtssubject_Editor());
+            return Collections.<ConceptEditor>singletonList(new ReferentieNaarRechtsHandeling_Editor());
           }
           break;
         case 38:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new ReferentieNaarReferentieNaarOnderwerp_Editor());
+            return Collections.<ConceptEditor>singletonList(new ReferentieNaarRechtsbetrekking_Editor());
           }
           break;
         case 39:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new ReferentieNaarReferentieNaarSubject_Editor());
+            return Collections.<ConceptEditor>singletonList(new ReferentieNaarRechtssubject_Editor());
           }
           break;
         case 40:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new ReferentieNaarVoorwaarde_Editor());
+            return Collections.<ConceptEditor>singletonList(new ReferentieNaarReferentieNaarOnderwerp_Editor());
           }
           break;
         case 41:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new RijVanKaraktersDatatype_Editor());
+            return Collections.<ConceptEditor>singletonList(new ReferentieNaarReferentieNaarSubject_Editor());
           }
           break;
         case 42:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new TijdDatatype_Editor());
+            return Collections.<ConceptEditor>singletonList(new ReferentieNaarVoorwaarde_Editor());
           }
           break;
         case 43:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new TijdsverloopMetRechtsgevolg_Editor());
+            return Collections.<ConceptEditor>singletonList(new RijVanKaraktersDatatype_Editor());
           }
           break;
         case 44:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Variabele_Editor());
+            return Collections.<ConceptEditor>singletonList(new SubjectDataType_Editor());
           }
           break;
         case 45:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new VerplichteBevoegdheidVerplichteGehoudenheid_Editor());
+            return Collections.<ConceptEditor>singletonList(new TijdDatatype_Editor());
           }
           break;
         case 46:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new VormVoorwaarde_Editor());
+            return Collections.<ConceptEditor>singletonList(new TijdsverloopMetRechtsgevolg_Editor());
           }
           break;
         case 47:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new VrijeTekst_Editor());
+            return Collections.<ConceptEditor>singletonList(new Variabele_Editor());
           }
           break;
         case 48:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new VerplichteBevoegdheidVerplichteGehoudenheid_Editor());
+          }
+          break;
+        case 49:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new VormVoorwaarde_Editor());
+          }
+          break;
+        case 50:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new VrijeTekst_Editor());
+          }
+          break;
+        case 51:
           if (true) {
             return Collections.<ConceptEditor>singletonList(new ZwakkeAanspraakZwakkePlicht_Editor());
           }
@@ -298,15 +313,15 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 1:
           if (true) {
-            if ("ObjectiefRecht.editor.BronGeldigheid".equals(editorComponentId)) {
-              return Collections.<ConceptEditorComponent>singletonList(new BronGeldigheidKenmerk());
+            if ("ObjectiefRecht.editor.Object".equals(editorComponentId)) {
+              return Collections.<ConceptEditorComponent>singletonList(new Enumeratie());
             }
           }
           break;
         case 2:
           if (true) {
             if ("ObjectiefRecht.editor.BronGeldigheid".equals(editorComponentId)) {
-              return Collections.<ConceptEditorComponent>singletonList(new BronGeldigheidReferentieNaarKenmerk());
+              return Collections.<ConceptEditorComponent>singletonList(new BronGeldigheidKenmerk());
             }
           }
           break;
@@ -326,29 +341,53 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 5:
           if (true) {
-            if ("ObjectiefRecht.editor.BronGeldigheid".equals(editorComponentId)) {
-              return Collections.<ConceptEditorComponent>singletonList(new BronGeldigheidOnderwerp());
+            if ("ObjectiefRecht.editor.Object".equals(editorComponentId)) {
+              return Collections.<ConceptEditorComponent>singletonList(new Object());
             }
           }
           break;
         case 6:
           if (true) {
-            if ("ObjectiefRecht.editor.BronGeldigheid".equals(editorComponentId)) {
-              return Collections.<ConceptEditorComponent>singletonList(new BronGeldigheidSubject());
+            switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0a0g3a0a3, editorComponentId)) {
+              case 0:
+                return Collections.<ConceptEditorComponent>singletonList(new BronGeldigheidOnderwerp());
+              case 1:
+                return Collections.<ConceptEditorComponent>singletonList(new Onderwerp());
+              default:
+                return Collections.<ConceptEditorComponent>emptyList();
             }
           }
           break;
         case 7:
+          if (true) {
+            switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0a0h3a0a3, editorComponentId)) {
+              case 0:
+                return Collections.<ConceptEditorComponent>singletonList(new BronGeldigheidSubject());
+              case 1:
+                return Collections.<ConceptEditorComponent>singletonList(new RechtsSubject());
+              default:
+                return Collections.<ConceptEditorComponent>emptyList();
+            }
+          }
+          break;
+        case 8:
           if (true) {
             if ("ObjectiefRecht.editor.BronGeldigheid".equals(editorComponentId)) {
               return Collections.<ConceptEditorComponent>singletonList(new BronGeldigheidRechtsbetrekking());
             }
           }
           break;
-        case 8:
+        case 9:
           if (true) {
             if ("ObjectiefRecht.editor.BronGeldigheidRegel".equals(editorComponentId)) {
               return Collections.<ConceptEditorComponent>singletonList(new BronGeldigheidRegel());
+            }
+          }
+          break;
+        case 10:
+          if (true) {
+            if ("ObjectiefRecht.editor.SubjectDataType".equals(editorComponentId)) {
+              return Collections.<ConceptEditorComponent>singletonList(new SubjectDataType());
             }
           }
           break;
@@ -370,7 +409,9 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d93L, "ObjectiefRecht.structure.AanspraakNaIngebrekeStellingPlicht"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f5482a07c0bL, "ObjectiefRecht.structure.Afleidingsregel"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cee84d6L, "ObjectiefRecht.structure.Artikel"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, "ObjectiefRecht.structure.Context"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1b1L, "ObjectiefRecht.structure.DatumDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L, "ObjectiefRecht.structure.Enumeratie"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25be3715c7bbb713L, "ObjectiefRecht.structure.EnumeratieDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b8L, "ObjectiefRecht.structure.EnumeratieElement"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, "ObjectiefRecht.structure.ExpressieVoorwaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3fL, "ObjectiefRecht.structure.GebeurtenisMetRechtsgevolg"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1cdL, "ObjectiefRecht.structure.GeheelGetalDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386ddb1L, "ObjectiefRecht.structure.Gelijkstelling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, "ObjectiefRecht.structure.ImmuniteitGeenbevoegdheid"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL, "ObjectiefRecht.structure.IsGroterDan"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d76eb8bL, "ObjectiefRecht.structure.IsKleinerDan"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x56b967d667610da9L, "ObjectiefRecht.structure.JaNeeDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, "ObjectiefRecht.structure.Kenmerk"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8888L, "ObjectiefRecht.structure.KenmerkMetReferentieNaarKenmerk"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL, "ObjectiefRecht.structure.KenmerkMetReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, "ObjectiefRecht.structure.KenmerkReferentie"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x28694295531ad9b1L, "ObjectiefRecht.structure.KenmerkReferentieNaarSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d97L, "ObjectiefRecht.structure.KrachtigeAanspraakFataleVerplichtig"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f872151aL, "ObjectiefRecht.structure.LidwoordDe"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f872152fL, "ObjectiefRecht.structure.LidwoordHet"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d08L, "ObjectiefRecht.structure.MaterieleVoorwaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d98L, "ObjectiefRecht.structure.OptioneleBevoegdheidOptioneleGehoudenheid"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d77L, "ObjectiefRecht.structure.Rechtsgevolg"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1e5L, "ObjectiefRecht.structure.ReeelGetalDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cee8529L, "ObjectiefRecht.structure.ReferentieNaarArtikel"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d71106L, "ObjectiefRecht.structure.ReferentieNaarEnumeratie"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d8a970cL, "ObjectiefRecht.structure.ReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25be3715c7a014e1L, "ObjectiefRecht.structure.ReferentieNaarRechtsHandeling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aabf26L, "ObjectiefRecht.structure.ReferentieNaarRechtsbetrekking"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aebf67L, "ObjectiefRecht.structure.ReferentieNaarRechtssubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86a122eL, "ObjectiefRecht.structure.ReferentieNaarReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3642b84024d63fc0L, "ObjectiefRecht.structure.ReferentieNaarReferentieNaarSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d8dL, "ObjectiefRecht.structure.ReferentieNaarVoorwaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1bfL, "ObjectiefRecht.structure.RijVanKaraktersDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x56b967d6676037ffL, "ObjectiefRecht.structure.TijdDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d40L, "ObjectiefRecht.structure.TijdsverloopMetRechtsgevolg"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, "ObjectiefRecht.structure.Variabele"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L, "ObjectiefRecht.structure.VerplichteBevoegdheidVerplichteGehoudenheid"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d09L, "ObjectiefRecht.structure.VormVoorwaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b480c109781913dL, "ObjectiefRecht.structure.VrijeTekst"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d96L, "ObjectiefRecht.structure.ZwakkeAanspraakZwakkePlicht"));
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0d = buildConceptIndices(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, "ObjectiefRecht.structure.Concept"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, "ObjectiefRecht.structure.Kenmerk"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8888L, "ObjectiefRecht.structure.KenmerkMetReferentieNaarKenmerk"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL, "ObjectiefRecht.structure.KenmerkMetReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x28694295531ad9b1L, "ObjectiefRecht.structure.KenmerkReferentieNaarSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5ffL, "ObjectiefRecht.structure.Regel"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d93L, "ObjectiefRecht.structure.AanspraakNaIngebrekeStellingPlicht"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f5482a07c0bL, "ObjectiefRecht.structure.Afleidingsregel"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cee84d6L, "ObjectiefRecht.structure.Artikel"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, "ObjectiefRecht.structure.Context"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1b1L, "ObjectiefRecht.structure.DatumDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L, "ObjectiefRecht.structure.Enumeratie"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25be3715c7bbb713L, "ObjectiefRecht.structure.EnumeratieDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b8L, "ObjectiefRecht.structure.EnumeratieElement"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, "ObjectiefRecht.structure.ExpressieVoorwaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3fL, "ObjectiefRecht.structure.GebeurtenisMetRechtsgevolg"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1cdL, "ObjectiefRecht.structure.GeheelGetalDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386ddb1L, "ObjectiefRecht.structure.Gelijkstelling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, "ObjectiefRecht.structure.ImmuniteitGeenbevoegdheid"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL, "ObjectiefRecht.structure.IsGroterDan"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d76eb8bL, "ObjectiefRecht.structure.IsKleinerDan"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x56b967d667610da9L, "ObjectiefRecht.structure.JaNeeDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, "ObjectiefRecht.structure.Kenmerk"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3c0e42171c44928bL, "ObjectiefRecht.structure.Kenmerk2"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL, "ObjectiefRecht.structure.KenmerkMetReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, "ObjectiefRecht.structure.KenmerkReferentie"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x28694295531ad9b1L, "ObjectiefRecht.structure.KenmerkReferentieNaarSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d97L, "ObjectiefRecht.structure.KrachtigeAanspraakFataleVerplichtig"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f872151aL, "ObjectiefRecht.structure.LidwoordDe"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f872152fL, "ObjectiefRecht.structure.LidwoordHet"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d08L, "ObjectiefRecht.structure.MaterieleVoorwaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60ac64b8L, "ObjectiefRecht.structure.ObjectDataType"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3c0e42171c23d5b5L, "ObjectiefRecht.structure.OnderwerpDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d98L, "ObjectiefRecht.structure.OptioneleBevoegdheidOptioneleGehoudenheid"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d77L, "ObjectiefRecht.structure.Rechtsgevolg"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1e5L, "ObjectiefRecht.structure.ReeelGetalDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cee8529L, "ObjectiefRecht.structure.ReferentieNaarArtikel"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d71106L, "ObjectiefRecht.structure.ReferentieNaarEnumeratie"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d8a970cL, "ObjectiefRecht.structure.ReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25be3715c7a014e1L, "ObjectiefRecht.structure.ReferentieNaarRechtsHandeling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aabf26L, "ObjectiefRecht.structure.ReferentieNaarRechtsbetrekking"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aebf67L, "ObjectiefRecht.structure.ReferentieNaarRechtssubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86a122eL, "ObjectiefRecht.structure.ReferentieNaarReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3642b84024d63fc0L, "ObjectiefRecht.structure.ReferentieNaarReferentieNaarSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d8dL, "ObjectiefRecht.structure.ReferentieNaarVoorwaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1bfL, "ObjectiefRecht.structure.RijVanKaraktersDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3c0e42171c23d5b8L, "ObjectiefRecht.structure.SubjectDataType"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x56b967d6676037ffL, "ObjectiefRecht.structure.TijdDatatype"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d40L, "ObjectiefRecht.structure.TijdsverloopMetRechtsgevolg"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, "ObjectiefRecht.structure.Variabele"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L, "ObjectiefRecht.structure.VerplichteBevoegdheidVerplichteGehoudenheid"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d09L, "ObjectiefRecht.structure.VormVoorwaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b480c109781913dL, "ObjectiefRecht.structure.VrijeTekst"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d96L, "ObjectiefRecht.structure.ZwakkeAanspraakZwakkePlicht"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0d = buildConceptIndices(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, "ObjectiefRecht.structure.Concept"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L, "ObjectiefRecht.structure.Enumeratie"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, "ObjectiefRecht.structure.Kenmerk"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL, "ObjectiefRecht.structure.KenmerkMetReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x28694295531ad9b1L, "ObjectiefRecht.structure.KenmerkReferentieNaarSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L, "ObjectiefRecht.structure.Object"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5ffL, "ObjectiefRecht.structure.Regel"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3c0e42171c23d5b8L, "ObjectiefRecht.structure.SubjectDataType"));
   private static String[] stringSwitchCases_xbvbvu_a0a0a0a3a0a3 = new String[]{"ObjectiefRecht.editor.BronGeldigheid", "ObjectiefRecht.editor.ConceptNummer"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a0g3a0a3 = new String[]{"ObjectiefRecht.editor.BronGeldigheid", "ObjectiefRecht.editor.Object"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a0h3a0a3 = new String[]{"ObjectiefRecht.editor.BronGeldigheid", "ObjectiefRecht.editor.Object"};
 }

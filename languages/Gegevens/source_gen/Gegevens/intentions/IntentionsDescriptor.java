@@ -43,14 +43,14 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
           if (true) {
             // Concept: ReferentieNaarOnderwerp 
             intentions = new IntentionFactory[1];
-            intentions[0] = new KenmerkenToevoegenOnderwerp_Intention();
+            intentions[0] = new AttributenToevoegenOnderwerp_Intention();
           }
           break;
         case 2:
           if (true) {
             // Concept: ReferentieNaarSubject 
             intentions = new IntentionFactory[1];
-            intentions[0] = new KenmerkenToevoegenSubject_Intention();
+            intentions[0] = new AttributenToevoegenSubject_Intention();
           }
           break;
         default:
@@ -65,8 +65,8 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
     IntentionFactory[] rv = new IntentionFactory[3];
-    rv[0] = new KenmerkenToevoegenOnderwerp_Intention();
-    rv[1] = new KenmerkenToevoegenSubject_Intention();
+    rv[0] = new AttributenToevoegenOnderwerp_Intention();
+    rv[1] = new AttributenToevoegenSubject_Intention();
     rv[2] = new AttributenToevoegenObjectInstantie_Intention();
     return Arrays.asList(rv);
   }

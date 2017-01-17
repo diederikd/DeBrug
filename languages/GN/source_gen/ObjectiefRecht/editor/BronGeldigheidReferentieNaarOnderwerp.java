@@ -27,8 +27,6 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
-import jetbrains.mps.nodeEditor.InlineCellProvider;
 
 public class BronGeldigheidReferentieNaarOnderwerp implements ConceptEditorComponent {
   @NotNull
@@ -52,10 +50,7 @@ public class BronGeldigheidReferentieNaarOnderwerp implements ConceptEditorCompo
     editorCell.addEditorCell(this.createRefNode_o16nnw_i0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_o16nnw_j0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_o16nnw_k0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_o16nnw_l0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_o16nnw_m0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_o16nnw_n0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_o16nnw_o0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_o16nnw_l0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_o16nnw_a0(EditorContext editorContext, SNode node) {
@@ -201,6 +196,11 @@ public class BronGeldigheidReferentieNaarOnderwerp implements ConceptEditorCompo
       if (editorCell.getRole() == null) {
         editorCell.setRole("brongeldigTot");
       }
+      Style style = new StyleImpl();
+      SNode node = myOwnerNode;
+      EditorContext editorContext = myEditorContext;
+      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+      editorCell.getStyle().putAll(style);
     }
     @Override
     protected EditorCell createEmptyCell() {
@@ -220,11 +220,8 @@ public class BronGeldigheidReferentieNaarOnderwerp implements ConceptEditorCompo
     }
   }
   private EditorCell createConstant_o16nnw_j0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Datatype");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Lidwoord");
     editorCell.setCellId("Constant_o16nnw_j0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -234,73 +231,12 @@ public class BronGeldigheidReferentieNaarOnderwerp implements ConceptEditorCompo
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_o16nnw_l0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("onderwerp");
-    provider.setNoTargetText("<no onderwerp>");
-    EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new BronGeldigheidReferentieNaarOnderwerp._Inline_o16nnw_a11a());
-    editorCell = provider.createEditorCell(editorContext);
-    if (editorCell.getRole() == null) {
-      editorCell.setReferenceCell(true);
-      editorCell.setRole("onderwerp");
-    }
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
-    return editorCell;
-  }
-  public static class _Inline_o16nnw_a11a extends InlineCellProvider {
-    public _Inline_o16nnw_a11a() {
-      super();
-    }
-    public EditorCell createEditorCell(EditorContext editorContext) {
-      return this.createEditorCell(editorContext, this.getSNode());
-    }
-    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_o16nnw_a0l0(editorContext, node);
-    }
-    private EditorCell createProperty_o16nnw_a0l0(EditorContext editorContext, SNode node) {
-      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-      provider.setRole("name");
-      provider.setNoTargetText("<no name>");
-      provider.setReadOnly(true);
-      EditorCell editorCell;
-      editorCell = provider.createEditorCell(editorContext);
-      editorCell.setCellId("BGRNO_property_name");
-      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-      SNode attributeConcept = provider.getRoleAttribute();
-      if (attributeConcept != null) {
-        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-        return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-      } else
-      return editorCell;
-    }
-  }
-  private EditorCell createConstant_o16nnw_m0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Lidwoord");
-    editorCell.setCellId("Constant_o16nnw_m0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_o16nnw_n0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_o16nnw_n0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefNode_o16nnw_o0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new BronGeldigheidReferentieNaarOnderwerp.lidwoordSingleRoleHandler_o16nnw_o0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL, 0x6e43a734f874c873L, "lidwoord"), editorContext);
+  private EditorCell createRefNode_o16nnw_l0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new BronGeldigheidReferentieNaarOnderwerp.lidwoordSingleRoleHandler_o16nnw_l0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL, 0x6e43a734f874c873L, "lidwoord"), editorContext);
     return provider.createCell();
   }
-  private class lidwoordSingleRoleHandler_o16nnw_o0 extends SingleRoleCellProvider {
-    public lidwoordSingleRoleHandler_o16nnw_o0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class lidwoordSingleRoleHandler_o16nnw_l0 extends SingleRoleCellProvider {
+    public lidwoordSingleRoleHandler_o16nnw_l0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {

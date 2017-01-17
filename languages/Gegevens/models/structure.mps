@@ -12,6 +12,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
         <property id="1083066089218" name="constraint" index="FLfZY" />
       </concept>
@@ -46,6 +47,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -169,7 +171,7 @@
     <property role="EcuMT" value="8560415023866670518" />
     <property role="TrG5h" value="AttribuutMetReferentieNaarKenmerk" />
     <property role="3GE5qa" value="Attribuut" />
-    <ref role="1TJDcQ" node="7rcH1JNw2eC" resolve="AbstractAttribuutMetReferentieNaarKenmerk" />
+    <ref role="1TJDcQ" node="7rcH1JNvmQU" resolve="AbstractAttribuut" />
     <node concept="1TJgyj" id="7rcH1JNvrW7" role="1TKVEi">
       <property role="IQ2ns" value="8560415023866691335" />
       <property role="20lmBu" value="reference" />
@@ -224,6 +226,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="Attribuut" />
     <ref role="1TJDcQ" node="7rcH1JNvmQU" resolve="AbstractAttribuut" />
+    <node concept="asaX9" id="GhrpPwQNEe" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="7rcH1JNwn_v">
     <property role="EcuMT" value="8560415023866935647" />
@@ -237,6 +240,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="3pw0:MvzNsyB_CF" resolve="KenmerkMetReferentieNaarOnderwerp" />
     </node>
+    <node concept="asaX9" id="GhrpPwQNEg" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="7rcH1JNwJVE">
     <property role="EcuMT" value="8560415023867035370" />
@@ -342,6 +346,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="3pw0:2xDgDlj6HAL" resolve="KenmerkReferentieNaarSubject" />
     </node>
+    <node concept="asaX9" id="GhrpPwQNEi" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="1YFKb5tsapD">
     <property role="EcuMT" value="2282129504202696297" />
@@ -567,6 +572,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7rcH1JNwn_v" resolve="AttribuutMetReferentieNaarOnderwerp" />
     </node>
+    <node concept="asaX9" id="GhrpPwQSoN" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="6DGvEUpM01B">
     <property role="EcuMT" value="7668643553874542695" />

@@ -90,8 +90,8 @@
     <file name="JaNeeDatatype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.JaNeeDatatype_BehaviorDescriptor" />
     </file>
-    <file name="KenmerkMetReferentieNaarKenmerk_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.KenmerkMetReferentieNaarKenmerk_BehaviorDescriptor" />
+    <file name="Kenmerk2_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Kenmerk2_BehaviorDescriptor" />
     </file>
     <file name="KenmerkMetReferentieNaarOnderwerp_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.KenmerkMetReferentieNaarOnderwerp_BehaviorDescriptor" />
@@ -119,6 +119,12 @@
     </file>
     <file name="MaterieleVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.MaterieleVoorwaarde_BehaviorDescriptor" />
+    </file>
+    <file name="ObjectDataType_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ObjectDataType_BehaviorDescriptor" />
+    </file>
+    <file name="Object_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Object_BehaviorDescriptor" />
     </file>
     <file name="OnderwerpDatatype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.OnderwerpDatatype_BehaviorDescriptor" />

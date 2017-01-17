@@ -54,9 +54,6 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     editorCell.addEditorCell(this.createConstant_wh7tcl_m0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_wh7tcl_n0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_wh7tcl_o0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_wh7tcl_p0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_wh7tcl_q0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_wh7tcl_r0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_wh7tcl_a0(EditorContext editorContext, SNode node) {
@@ -292,11 +289,8 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     }
   }
   private EditorCell createConstant_wh7tcl_m0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Datatype");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Lidwoord");
     editorCell.setCellId("Constant_wh7tcl_m0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -307,79 +301,11 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     return editorCell;
   }
   private EditorCell createRefNode_wh7tcl_o0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new BronGeldigheidKenmerk.datatypeSingleRoleHandler_wh7tcl_o0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), editorContext);
+    SingleRoleCellProvider provider = new BronGeldigheidKenmerk.lidwoordSingleRoleHandler_wh7tcl_o0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x6e43a734f872153dL, "lidwoord"), editorContext);
     return provider.createCell();
   }
-  private class datatypeSingleRoleHandler_wh7tcl_o0 extends SingleRoleCellProvider {
-    public datatypeSingleRoleHandler_wh7tcl_o0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
-      super(ownerNode, containmentLink, context);
-    }
-    protected EditorCell createChildCell(SNode child) {
-      myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
-      try {
-        EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), child));
-        installCellInfo(child, editorCell);
-        return editorCell;
-      } finally {
-        myEditorContext.getCellFactory().popCellContext();
-      }
-    }
-
-    protected boolean isCompatibilityMode() {
-      return false;
-    }
-
-    private void installCellInfo(SNode child, EditorCell editorCell) {
-      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
-      }
-      if (editorCell.getRole() == null) {
-        editorCell.setRole("datatype");
-      }
-      Style style = new StyleImpl();
-      SNode node = myOwnerNode;
-      EditorContext editorContext = myEditorContext;
-      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-      editorCell.getStyle().putAll(style);
-    }
-    @Override
-    protected EditorCell createEmptyCell() {
-      myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype")));
-      try {
-        EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_datatype");
-        installCellInfo(null, editorCell);
-        return editorCell;
-      } finally {
-        myEditorContext.getCellFactory().popCellContext();
-      }
-    }
-    protected String getNoTargetText() {
-      return "<no datatype>";
-    }
-  }
-  private EditorCell createConstant_wh7tcl_p0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Lidwoord");
-    editorCell.setCellId("Constant_wh7tcl_p0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_wh7tcl_q0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_wh7tcl_q0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefNode_wh7tcl_r0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new BronGeldigheidKenmerk.lidwoordSingleRoleHandler_wh7tcl_r0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x6e43a734f872153dL, "lidwoord"), editorContext);
-    return provider.createCell();
-  }
-  private class lidwoordSingleRoleHandler_wh7tcl_r0 extends SingleRoleCellProvider {
-    public lidwoordSingleRoleHandler_wh7tcl_r0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class lidwoordSingleRoleHandler_wh7tcl_o0 extends SingleRoleCellProvider {
+    public lidwoordSingleRoleHandler_wh7tcl_o0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {

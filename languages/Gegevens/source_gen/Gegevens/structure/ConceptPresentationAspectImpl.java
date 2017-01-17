@@ -10,15 +10,15 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private final ConceptPresentation props_AbstractAttribuut = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AbstractAttribuutMetReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_AbstractAttribuutMetReferentieNaarKenmerk = new ConceptPresentationBuilder().deprecated().create();
   private final ConceptPresentation props_AbstractDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AbstractObject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AbstractReferentieNaarAttribuut = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AbstracteWaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Attribuut = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AttribuutMetReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AttribuutMetReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AttribuutMetReferentieNaarSubject = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_AttribuutMetReferentieNaarOnderwerp = new ConceptPresentationBuilder().deprecated().create();
+  private final ConceptPresentation props_AttribuutMetReferentieNaarSubject = new ConceptPresentationBuilder().deprecated().create();
   private final ConceptPresentation props_Concept = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DatumDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DatumWaarde = new ConceptPresentationBuilder().create();
@@ -44,7 +44,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ReferentieNaarAbstractObject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarAttribuut = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarAttribuutMetReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarAttribuutMetReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReferentieNaarAttribuutMetReferentieNaarOnderwerp = new ConceptPresentationBuilder().deprecated().create();
   private final ConceptPresentation props_ReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarOnderwerpOfSubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarSubject = new ConceptPresentationBuilder().create();

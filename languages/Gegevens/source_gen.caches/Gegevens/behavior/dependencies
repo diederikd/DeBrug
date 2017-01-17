@@ -16,23 +16,6 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="Gegevens.behavior.AbstractObject__BehaviorDescriptor" file="AbstractObject__BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.util.Arrays" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
-  </dependency>
   <dependency className="Gegevens.behavior.AbstractReferentieNaarAttribuut_BehaviorDescriptor" file="AbstractReferentieNaarAttribuut_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -58,10 +41,8 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Gegevens.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
-    <classNode dependClassName="Gegevens.behavior.AbstractObject__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.Concept__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.ObjectInstantie__BehaviorDescriptor" />
-    <classNode dependClassName="Gegevens.behavior.Object__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.ReferentieNaarOnderwerp__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.ReferentieNaarSubject__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Integer" />
@@ -195,23 +176,6 @@
   <dependency className="Gegevens.behavior.Object_BehaviorDescriptor" file="Object_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="Gegevens.behavior.Object__BehaviorDescriptor" file="Object__BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.util.Arrays" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="Gegevens.behavior.OnderwerpDatatype_BehaviorDescriptor" file="OnderwerpDatatype_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />

@@ -28,14 +28,14 @@ public final class ObjectInstantie__BehaviorDescriptor extends BaseBHDescriptor 
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L, "Gegevens.structure.ObjectInstantie");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<Void> attributenToevoegen_idY6bm6Uwy_b = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("attributenToevoegen").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("Y6bm6Uwy_b").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> attributenToevoegenObjectInstantie_idY6bm6Uwy_b = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("attributenToevoegenObjectInstantie").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("Y6bm6Uwy_b").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(attributenToevoegen_idY6bm6Uwy_b);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(attributenToevoegenObjectInstantie_idY6bm6Uwy_b);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static void attributenToevoegen_idY6bm6Uwy_b(@NotNull SNode __thisNode__, SNode objectinstantie) {
+  /*package*/ static void attributenToevoegenObjectInstantie_idY6bm6Uwy_b(@NotNull SNode __thisNode__, SNode objectinstantie) {
     System.out.println(objectinstantie);
     System.out.println("object " + SLinkOperations.getTarget(objectinstantie, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L, 0x361e7f407a685e3eL, "object")));
     System.out.println("attributen" + SLinkOperations.getChildren(SLinkOperations.getTarget(objectinstantie, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L, 0x361e7f407a685e3eL, "object")), MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L, 0x55931ab45f2b651bL, "attributen")));
@@ -152,9 +152,9 @@ public final class ObjectInstantie__BehaviorDescriptor extends BaseBHDescriptor 
             final SNode attribuutVanTypeOnderwerp = SLinkOperations.getTarget(attribuut, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6dbaL, 0x688d4c283dbb8ba4L, "datatype"));
             if (SNodeOperations.isInstanceOf(attribuutVanTypeOnderwerp, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383394aL, "Gegevens.structure.OnderwerpDatatype"))) {
               SNode waardeAttribuut = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fdaL, "Gegevens.structure.WaardeVanAttribuut"));
-              SNode referentieNaarAttribuutMetReferentieNaarOnderwerp = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x5102786b75ccd3b6L, "Gegevens.structure.ReferentieNaarAttribuutMetReferentieNaarOnderwerp"));
-              SLinkOperations.setTarget(referentieNaarAttribuutMetReferentieNaarOnderwerp, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x5102786b75ccd3b6L, 0x5102786b75ccd3b7L, "attribuut"), attribuut);
-              SLinkOperations.setTarget(waardeAttribuut, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fdaL, 0x1fabc0b15d99c735L, "attribuut"), referentieNaarAttribuutMetReferentieNaarOnderwerp);
+              SNode referentieNaarAttribuut = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a6e758bL, "Gegevens.structure.ReferentieNaarAttribuut"));
+              SLinkOperations.setTarget(referentieNaarAttribuut, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a6e758bL, 0x361e7f407a6e758cL, "attribuut"), attribuut);
+              SLinkOperations.setTarget(waardeAttribuut, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fdaL, 0x1fabc0b15d99c735L, "attribuut"), referentieNaarAttribuut);
               SNode waardeObject = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6289L, "Gegevens.structure.ObjectWaarde"));
               SLinkOperations.setTarget(waardeAttribuut, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fdaL, 0x1fabc0b15d967fdeL, "waarde"), waardeObject);
               ListSequence.fromList(SLinkOperations.getChildren(objectinstantie, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L, 0x1fabc0b15d967fe1L, "waardenVanAttributen"))).addElement(waardeAttribuut);
@@ -194,7 +194,7 @@ public final class ObjectInstantie__BehaviorDescriptor extends BaseBHDescriptor 
     }
     switch (methodIndex) {
       case 0:
-        attributenToevoegen_idY6bm6Uwy_b(node, (SNode) parameters[0]);
+        attributenToevoegenObjectInstantie_idY6bm6Uwy_b(node, (SNode) parameters[0]);
         return null;
       default:
         throw new BHMethodNotFoundException(this, method);

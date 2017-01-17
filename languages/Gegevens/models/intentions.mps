@@ -56,7 +56,7 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="7rcH1JNvJZ2">
-    <property role="TrG5h" value="KenmerkenToevoegenOnderwerp" />
+    <property role="TrG5h" value="AttributenToevoegenOnderwerp" />
     <ref role="2ZfgGC" to="uwhu:5mj6FhvaDf0" resolve="ReferentieNaarOnderwerp" />
     <node concept="2S6ZIM" id="7rcH1JNvJZ3" role="2ZfVej">
       <node concept="3clFbS" id="7rcH1JNvJZ4" role="2VODD2">
@@ -73,7 +73,7 @@
           <node concept="2OqwBi" id="7rcH1JNvLBq" role="3clFbG">
             <node concept="2Sf5sV" id="7rcH1JNvLur" role="2Oq$k0" />
             <node concept="2qgKlT" id="7rcH1JNvMfa" role="2OqNvi">
-              <ref role="37wK5l" to="fcw4:7rcH1JNvxIN" resolve="KenmerkenToevoegenOnderwerp" />
+              <ref role="37wK5l" to="fcw4:7rcH1JNvxIN" resolve="AttributenToevoegenOnderwerp" />
               <node concept="2Sf5sV" id="7rcH1JNvMjs" role="37wK5m" />
             </node>
           </node>
@@ -82,7 +82,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7rcH1JNwZWo">
-    <property role="TrG5h" value="KenmerkenToevoegenSubject" />
+    <property role="TrG5h" value="AttributenToevoegenSubject" />
     <ref role="2ZfgGC" to="uwhu:7rcH1JNwVKq" resolve="ReferentieNaarSubject" />
     <node concept="2S6ZIM" id="7rcH1JNwZWp" role="2ZfVej">
       <node concept="3clFbS" id="7rcH1JNwZWq" role="2VODD2">
@@ -99,7 +99,7 @@
           <node concept="2OqwBi" id="7rcH1JNx0jq" role="3clFbG">
             <node concept="2Sf5sV" id="7rcH1JNx0jr" role="2Oq$k0" />
             <node concept="2qgKlT" id="7rcH1JNx0js" role="2OqNvi">
-              <ref role="37wK5l" to="fcw4:7rcH1JNx2nG" resolve="KenmerkenToevoegenSubject" />
+              <ref role="37wK5l" to="fcw4:7rcH1JNx2nG" resolve="AttributenToevoegenSubject" />
               <node concept="2Sf5sV" id="7rcH1JNx0jt" role="37wK5m" />
             </node>
           </node>
@@ -125,7 +125,7 @@
           <node concept="2OqwBi" id="1YFKb5tBO68" role="3clFbG">
             <node concept="2Sf5sV" id="1YFKb5tBNXN" role="2Oq$k0" />
             <node concept="2qgKlT" id="1YFKb5tBOiJ" role="2OqNvi">
-              <ref role="37wK5l" to="fcw4:Y6bm6Uwy_b" resolve="attributenToevoegen" />
+              <ref role="37wK5l" to="fcw4:Y6bm6Uwy_b" resolve="attributenToevoegenObjectInstantie" />
               <node concept="2Sf5sV" id="1YFKb5tBOne" role="37wK5m" />
             </node>
           </node>

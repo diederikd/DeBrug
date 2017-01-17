@@ -28,36 +28,20 @@ public final class ReferentieNaarOnderwerp__BehaviorDescriptor extends BaseBHDes
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L, "Gegevens.structure.ReferentieNaarOnderwerp");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<Void> KenmerkenToevoegenOnderwerp_id7rcH1JNvxIN = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("KenmerkenToevoegenOnderwerp").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("7rcH1JNvxIN").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> AttributenToevoegenOnderwerp_id7rcH1JNvxIN = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("AttributenToevoegenOnderwerp").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("7rcH1JNvxIN").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(KenmerkenToevoegenOnderwerp_id7rcH1JNvxIN);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AttributenToevoegenOnderwerp_id7rcH1JNvxIN);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static void KenmerkenToevoegenOnderwerp_id7rcH1JNvxIN(@NotNull SNode __thisNode__, SNode node) {
+  /*package*/ static void AttributenToevoegenOnderwerp_id7rcH1JNvxIN(@NotNull SNode __thisNode__, SNode node) {
     for (SNode kenmerk : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L, 0x55931ab45f2a93c1L, "onderwerp")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, 0x4916e0625cef888cL, "kenmerk")))) {
       {
         final SNode kenmerkVanTypeKenmerk = kenmerk;
         if (SNodeOperations.isInstanceOf(kenmerkVanTypeKenmerk, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, "ObjectiefRecht.structure.Kenmerk"))) {
           SNode refkenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db6L, "Gegevens.structure.AttribuutMetReferentieNaarKenmerk"));
           SLinkOperations.setTarget(refkenmerk, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db6L, 0x76ccb41bf37dbf07L, "kenmerk"), kenmerkVanTypeKenmerk);
-          ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L, 0x55931ab45f2b651bL, "attributen"))).addElement(refkenmerk);
-        }
-      }
-      {
-        final SNode kenmerkVanTypeReferentieNaarOnderwerp = kenmerk;
-        if (SNodeOperations.isInstanceOf(kenmerkVanTypeReferentieNaarOnderwerp, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL, "ObjectiefRecht.structure.KenmerkMetReferentieNaarOnderwerp"))) {
-          SNode refkenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf381795fL, "Gegevens.structure.AttribuutMetReferentieNaarOnderwerp"));
-          SLinkOperations.setTarget(refkenmerk, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf381795fL, 0x76ccb41bf3817960L, "kenmerk"), kenmerkVanTypeReferentieNaarOnderwerp);
-          ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L, 0x55931ab45f2b651bL, "attributen"))).addElement(refkenmerk);
-        }
-      }
-      {
-        final SNode kenmerkVanTypeReferentieNaarSubject = kenmerk;
-        if (SNodeOperations.isInstanceOf(kenmerkVanTypeReferentieNaarSubject, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x28694295531ad9b1L, "ObjectiefRecht.structure.KenmerkReferentieNaarSubject"))) {
-          SNode refkenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d6eee7dL, "Gegevens.structure.AttribuutMetReferentieNaarSubject"));
-          SLinkOperations.setTarget(refkenmerk, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d6eee7dL, 0x1fabc0b15d6eee7eL, "kenmerk"), kenmerkVanTypeReferentieNaarSubject);
           ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db7L, 0x55931ab45f2b651bL, "attributen"))).addElement(refkenmerk);
         }
       }
@@ -81,7 +65,7 @@ public final class ReferentieNaarOnderwerp__BehaviorDescriptor extends BaseBHDes
     }
     switch (methodIndex) {
       case 0:
-        KenmerkenToevoegenOnderwerp_id7rcH1JNvxIN(node, (SNode) parameters[0]);
+        AttributenToevoegenOnderwerp_id7rcH1JNvxIN(node, (SNode) parameters[0]);
         return null;
       default:
         throw new BHMethodNotFoundException(this, method);

@@ -48,7 +48,7 @@ public final class AttributenToevoegenObjectInstantie_Intention extends Intentio
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      ObjectInstantie__BehaviorDescriptor.attributenToevoegen_idY6bm6Uwy_b.invoke(node, node);
+      ObjectInstantie__BehaviorDescriptor.attributenToevoegenObjectInstantie_idY6bm6Uwy_b.invoke(node, node);
     }
     @Override
     public IntentionDescriptor getDescriptor() {

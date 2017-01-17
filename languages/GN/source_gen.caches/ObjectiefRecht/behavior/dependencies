@@ -139,7 +139,7 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.KenmerkMetReferentieNaarKenmerk_BehaviorDescriptor" file="KenmerkMetReferentieNaarKenmerk_BehaviorDescriptor.java">
+  <dependency className="ObjectiefRecht.behavior.Kenmerk2_BehaviorDescriptor" file="Kenmerk2_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -176,6 +176,14 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.MaterieleVoorwaarde_BehaviorDescriptor" file="MaterieleVoorwaarde_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ObjectiefRecht.behavior.ObjectDataType_BehaviorDescriptor" file="ObjectDataType_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ObjectiefRecht.behavior.Object_BehaviorDescriptor" file="Object_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

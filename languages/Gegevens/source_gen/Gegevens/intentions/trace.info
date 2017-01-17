@@ -22,7 +22,7 @@
       <node id="2282129504205740988" at="37,37,38,150" concept="1" />
       <node id="2282129504205740988" at="39,5,40,30" concept="5" />
       <node id="2282129504205741680" at="46,87,47,36" concept="5" />
-      <node id="2282129504205750132" at="50,78,51,94" concept="1" />
+      <node id="2282129504205750132" at="50,78,51,109" concept="1" />
       <node id="2282129504205740988" at="54,48,55,63" concept="5" />
       <node id="2282129504205740988" at="43,0,45,0" concept="0" trace="IntentionImplementation#()V" />
       <node id="2282129504205740988" at="21,0,24,0" concept="0" trace="AttributenToevoegenObjectInstantie_Intention#()V" />
@@ -41,7 +41,7 @@
       <scope id="2282129504205740988" at="33,35,34,17" />
       <scope id="2282129504205740988" at="37,37,38,150" />
       <scope id="2282129504205740990" at="46,87,47,36" />
-      <scope id="2282129504205740992" at="50,78,51,94" />
+      <scope id="2282129504205740992" at="50,78,51,109" />
       <scope id="2282129504205740988" at="54,48,55,63" />
       <scope id="2282129504205740988" at="43,0,45,0" />
       <scope id="2282129504205740988" at="21,0,24,0" />
@@ -70,19 +70,19 @@
     </file>
   </root>
   <root nodeRef="r:af3dbb91-21e2-4f89-a9e9-3dd45116bec0(Gegevens.intentions)/8560415023866773442">
-    <file name="KenmerkenToevoegenOnderwerp_Intention.java">
+    <file name="AttributenToevoegenOnderwerp_Intention.java">
       <node id="8560415023866773442" at="20,0,21,0" concept="2" trace="myCachedExecutable" />
-      <node id="8560415023866773442" at="21,50,22,283" concept="6" />
-      <node id="8560415023866773442" at="25,35,26,41" concept="5" />
+      <node id="8560415023866773442" at="21,51,22,283" concept="6" />
+      <node id="8560415023866773442" at="25,35,26,42" concept="5" />
       <node id="8560415023866773442" at="29,84,30,16" concept="5" />
       <node id="8560415023866773442" at="33,35,34,17" concept="5" />
-      <node id="8560415023866773442" at="37,37,38,143" concept="1" />
+      <node id="8560415023866773442" at="37,37,38,144" concept="1" />
       <node id="8560415023866773442" at="39,5,40,30" concept="5" />
       <node id="8560415023866774130" at="46,87,47,35" concept="5" />
-      <node id="8560415023866779548" at="50,78,51,111" concept="1" />
-      <node id="8560415023866773442" at="54,48,55,56" concept="5" />
+      <node id="8560415023866779548" at="50,78,51,112" concept="1" />
+      <node id="8560415023866773442" at="54,48,55,57" concept="5" />
       <node id="8560415023866773442" at="43,0,45,0" concept="0" trace="IntentionImplementation#()V" />
-      <node id="8560415023866773442" at="21,0,24,0" concept="0" trace="KenmerkenToevoegenOnderwerp_Intention#()V" />
+      <node id="8560415023866773442" at="21,0,24,0" concept="0" trace="AttributenToevoegenOnderwerp_Intention#()V" />
       <node id="8560415023866773442" at="36,99,39,5" concept="3" />
       <node id="8560415023866773442" at="24,0,28,0" concept="4" trace="getPresentation#()Ljava/lang/String;" />
       <node id="8560415023866773442" at="28,0,32,0" concept="4" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
@@ -92,14 +92,14 @@
       <node id="8560415023866773442" at="53,0,57,0" concept="4" trace="getDescriptor#()Ljetbrains/mps/intentions/IntentionDescriptor;" />
       <node id="8560415023866773442" at="36,0,42,0" concept="4" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
       <scope id="8560415023866773442" at="43,38,43,38" />
-      <scope id="8560415023866773442" at="21,50,22,283" />
-      <scope id="8560415023866773442" at="25,35,26,41" />
+      <scope id="8560415023866773442" at="21,51,22,283" />
+      <scope id="8560415023866773442" at="25,35,26,42" />
       <scope id="8560415023866773442" at="29,84,30,16" />
       <scope id="8560415023866773442" at="33,35,34,17" />
-      <scope id="8560415023866773442" at="37,37,38,143" />
+      <scope id="8560415023866773442" at="37,37,38,144" />
       <scope id="8560415023866773444" at="46,87,47,35" />
-      <scope id="8560415023866773446" at="50,78,51,111" />
-      <scope id="8560415023866773442" at="54,48,55,56" />
+      <scope id="8560415023866773446" at="50,78,51,112" />
+      <scope id="8560415023866773442" at="54,48,55,57" />
       <scope id="8560415023866773442" at="43,0,45,0" />
       <scope id="8560415023866773442" at="21,0,24,0" />
       <scope id="8560415023866773442" at="24,0,28,0" />
@@ -122,24 +122,24 @@
         <var name="context" id="8560415023866773442" />
         <var name="node" id="8560415023866773442" />
       </scope>
-      <unit id="8560415023866773442" at="42,0,58,0" name="Gegevens.intentions.KenmerkenToevoegenOnderwerp_Intention$IntentionImplementation" />
-      <unit id="8560415023866773442" at="19,0,59,0" name="Gegevens.intentions.KenmerkenToevoegenOnderwerp_Intention" />
+      <unit id="8560415023866773442" at="42,0,58,0" name="Gegevens.intentions.AttributenToevoegenOnderwerp_Intention$IntentionImplementation" />
+      <unit id="8560415023866773442" at="19,0,59,0" name="Gegevens.intentions.AttributenToevoegenOnderwerp_Intention" />
     </file>
   </root>
   <root nodeRef="r:af3dbb91-21e2-4f89-a9e9-3dd45116bec0(Gegevens.intentions)/8560415023867100952">
-    <file name="KenmerkenToevoegenSubject_Intention.java">
+    <file name="AttributenToevoegenSubject_Intention.java">
       <node id="8560415023867100952" at="20,0,21,0" concept="2" trace="myCachedExecutable" />
-      <node id="8560415023867100952" at="21,48,22,281" concept="6" />
-      <node id="8560415023867100952" at="25,35,26,39" concept="5" />
+      <node id="8560415023867100952" at="21,49,22,281" concept="6" />
+      <node id="8560415023867100952" at="25,35,26,40" concept="5" />
       <node id="8560415023867100952" at="29,84,30,16" concept="5" />
       <node id="8560415023867100952" at="33,35,34,17" concept="5" />
-      <node id="8560415023867100952" at="37,37,38,141" concept="1" />
+      <node id="8560415023867100952" at="37,37,38,142" concept="1" />
       <node id="8560415023867100952" at="39,5,40,30" concept="5" />
       <node id="8560415023867101524" at="46,87,47,35" concept="5" />
-      <node id="8560415023867102425" at="50,78,51,107" concept="1" />
-      <node id="8560415023867100952" at="54,48,55,54" concept="5" />
+      <node id="8560415023867102425" at="50,78,51,108" concept="1" />
+      <node id="8560415023867100952" at="54,48,55,55" concept="5" />
       <node id="8560415023867100952" at="43,0,45,0" concept="0" trace="IntentionImplementation#()V" />
-      <node id="8560415023867100952" at="21,0,24,0" concept="0" trace="KenmerkenToevoegenSubject_Intention#()V" />
+      <node id="8560415023867100952" at="21,0,24,0" concept="0" trace="AttributenToevoegenSubject_Intention#()V" />
       <node id="8560415023867100952" at="36,99,39,5" concept="3" />
       <node id="8560415023867100952" at="24,0,28,0" concept="4" trace="getPresentation#()Ljava/lang/String;" />
       <node id="8560415023867100952" at="28,0,32,0" concept="4" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
@@ -149,14 +149,14 @@
       <node id="8560415023867100952" at="53,0,57,0" concept="4" trace="getDescriptor#()Ljetbrains/mps/intentions/IntentionDescriptor;" />
       <node id="8560415023867100952" at="36,0,42,0" concept="4" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
       <scope id="8560415023867100952" at="43,38,43,38" />
-      <scope id="8560415023867100952" at="21,48,22,281" />
-      <scope id="8560415023867100952" at="25,35,26,39" />
+      <scope id="8560415023867100952" at="21,49,22,281" />
+      <scope id="8560415023867100952" at="25,35,26,40" />
       <scope id="8560415023867100952" at="29,84,30,16" />
       <scope id="8560415023867100952" at="33,35,34,17" />
-      <scope id="8560415023867100952" at="37,37,38,141" />
+      <scope id="8560415023867100952" at="37,37,38,142" />
       <scope id="8560415023867100954" at="46,87,47,35" />
-      <scope id="8560415023867100956" at="50,78,51,107" />
-      <scope id="8560415023867100952" at="54,48,55,54" />
+      <scope id="8560415023867100956" at="50,78,51,108" />
+      <scope id="8560415023867100952" at="54,48,55,55" />
       <scope id="8560415023867100952" at="43,0,45,0" />
       <scope id="8560415023867100952" at="21,0,24,0" />
       <scope id="8560415023867100952" at="24,0,28,0" />
@@ -179,8 +179,8 @@
         <var name="context" id="8560415023867100952" />
         <var name="node" id="8560415023867100952" />
       </scope>
-      <unit id="8560415023867100952" at="42,0,58,0" name="Gegevens.intentions.KenmerkenToevoegenSubject_Intention$IntentionImplementation" />
-      <unit id="8560415023867100952" at="19,0,59,0" name="Gegevens.intentions.KenmerkenToevoegenSubject_Intention" />
+      <unit id="8560415023867100952" at="42,0,58,0" name="Gegevens.intentions.AttributenToevoegenSubject_Intention$IntentionImplementation" />
+      <unit id="8560415023867100952" at="19,0,59,0" name="Gegevens.intentions.AttributenToevoegenSubject_Intention" />
     </file>
   </root>
 </debug-info>
