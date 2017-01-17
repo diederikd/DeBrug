@@ -1485,7 +1485,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Interactie taal toegevoegd" />
     <MESSAGE value="Gegevens taal toegevoegd" />
     <MESSAGE value="Build van standalone oplossing succesvol" />
     <MESSAGE value="Icons en plaatjes toegevoegd." />
@@ -1510,7 +1509,8 @@
     <MESSAGE value="Datum verfraaid" />
     <MESSAGE value="Verbeteren kenmerken in objectiefrecht" />
     <MESSAGE value="MPS 3.4.3 in de master gemerged." />
-    <option name="LAST_COMMIT_MESSAGE" value="MPS 3.4.3 in de master gemerged." />
+    <MESSAGE value="Tabellen toegevoegd bij de gegevens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tabellen toegevoegd bij de gegevens" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://Gegevens/Gegevens.structure/Tabel">
