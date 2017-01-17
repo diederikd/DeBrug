@@ -51,6 +51,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_RijVanKaraktersDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RijVanKaraktersWaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SubjectDatatype = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Tabel = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TijdDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_WaardeVanAttribuut = new ConceptPresentationBuilder().create();
 
@@ -144,8 +145,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 41:
         return props_SubjectDatatype;
       case 42:
-        return props_TijdDatatype;
+        return props_Tabel;
       case 43:
+        return props_TijdDatatype;
+      case 44:
         return props_WaardeVanAttribuut;
     }
     throw new IllegalStateException("Unknown concept " + c);

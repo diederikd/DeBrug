@@ -11,8 +11,11 @@ import jetbrains.mps.intentions.IntentionType;
 import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Collections;
 import jetbrains.mps.intentions.IntentionExecutableBase;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import Gegevens.behavior.ObjectInstantie__BehaviorDescriptor;
 import jetbrains.mps.intentions.IntentionDescriptor;
 
@@ -27,6 +30,18 @@ public final class AttributenToevoegenObjectInstantie_Intention extends Intentio
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
+    if (!(isApplicableToNode(node, editorContext))) {
+      return false;
+    }
+    return true;
+  }
+  private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
+    {
+      final SNode huidigenode = SNodeOperations.getParent(node);
+      if (SNodeOperations.isInstanceOf(huidigenode, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xb116d9d60df9be7L, "Gegevens.structure.Tabel"))) {
+        return false;
+      }
+    }
     return true;
   }
   @Override
@@ -48,7 +63,10 @@ public final class AttributenToevoegenObjectInstantie_Intention extends Intentio
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      ObjectInstantie__BehaviorDescriptor.attributenToevoegenObjectInstantie_idY6bm6Uwy_b.invoke(node, node);
+      System.out.print("Aantal attributen" + ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L, 0x1fabc0b15d967fe1L, "waardenVanAttributen"))).count());
+      if (ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L, 0x1fabc0b15d967fe1L, "waardenVanAttributen"))).count() < 1) {
+        ObjectInstantie__BehaviorDescriptor.attributenToevoegenObjectInstantie_idY6bm6Uwy_b.invoke(node, node);
+      }
     }
     @Override
     public IntentionDescriptor getDescriptor() {

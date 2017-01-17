@@ -18,6 +18,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -440,6 +441,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1YFKb5t_BZm" resolve="ObjectInstantie" />
     </node>
+    <node concept="1TJgyj" id="GhrpPwT4y0" role="1TKVEi">
+      <property role="IQ2ns" value="797539131724155008" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tabellen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="GhrpPwRTJB" resolve="Tabel" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1YFKb5tA0pi">
     <property role="EcuMT" value="2282129504205276754" />
@@ -585,6 +593,26 @@
       <property role="20kJfa" value="waarde" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6syAJDDPL2S" resolve="EnumeratieElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="GhrpPwRTJB">
+    <property role="EcuMT" value="797539131723848679" />
+    <property role="TrG5h" value="Tabel" />
+    <property role="R4oN_" value="lijst met objectinstanties" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="GhrpPwRTJC" role="1TKVEi">
+      <property role="IQ2ns" value="797539131723848680" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="objectinstanties" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1YFKb5t_BZm" resolve="ObjectInstantie" />
+    </node>
+    <node concept="1TJgyj" id="GhrpPwRTK3" role="1TKVEi">
+      <property role="IQ2ns" value="797539131723848707" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="object" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7rcH1JNvmQR" resolve="AbstractObject" />
     </node>
   </node>
 </model>

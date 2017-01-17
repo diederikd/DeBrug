@@ -35,7 +35,16 @@ public class Datum_Editor extends DefaultNodeEditor {
     }
     editorCell.addEditorCell(this.createProperty_96duim_e0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_96duim_f0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_96duim_g0(editorContext, node));
+    if (renderingCondition_96duim_a6a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_96duim_g0(editorContext, node));
+    }
+    if (renderingCondition_96duim_a7a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_96duim_h0(editorContext, node));
+    }
+    if (renderingCondition_96duim_a8a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_96duim_i0(editorContext, node));
+    }
+    editorCell.addEditorCell(this.createProperty_96duim_j0(editorContext, node));
     return editorCell;
   }
   private EditorCell createCollection_96duim_a0(EditorContext editorContext, SNode node) {
@@ -57,6 +66,7 @@ public class Datum_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Constant_96duim_a0a");
     Style style = new StyleImpl();
     GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, 0, false);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
@@ -101,6 +111,7 @@ public class Datum_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Constant_96duim_a3a");
     Style style = new StyleImpl();
     GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, 0, false);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
@@ -126,7 +137,79 @@ public class Datum_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_96duim_g0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_96duim_g0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_96duim_g0");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_96duim_a6a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_96duim_a6a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) < 10;
+  }
+  private EditorCell createConstant_96duim_a6a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "000");
+    editorCell.setCellId("Constant_96duim_a6a");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, 0, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createCollection_96duim_h0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_96duim_h0");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_96duim_a7a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_96duim_a7a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) < 100 && SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) != 0 && SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) > 9;
+  }
+  private EditorCell createConstant_96duim_a7a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "00");
+    editorCell.setCellId("Constant_96duim_a7a");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, 0, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createCollection_96duim_i0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_96duim_i0");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_96duim_a8a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_96duim_a8a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) < 1000 && SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) > 99 && SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar")) != 0;
+  }
+  private EditorCell createConstant_96duim_a8a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "0");
+    editorCell.setCellId("Constant_96duim_a8a");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Regular(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, 0, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_96duim_j0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("jaar");
     provider.setNoTargetText("<no jaar>");
