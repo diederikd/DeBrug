@@ -877,6 +877,9 @@
       <node concept="m$_yC" id="2E_FCJvvzFV" role="m$_yJ">
         <ref role="m$_y1" to="8x72:5KK2jWpWo0m" resolve="org.campagnelab.mps.UI" />
       </node>
+      <node concept="m$_yC" id="1vhcdaBCf8F" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
+      </node>
       <node concept="m$_yC" id="4$LNqHoXbAL" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
       </node>
@@ -959,6 +962,18 @@
           <node concept="3bR9La" id="3lgxACw3plz" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="6oU3FTq8dcE" resolve="Datum" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1vhcdaBCf4N" role="3bR37C">
+          <node concept="3bR9La" id="1vhcdaBCf4O" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:29so9Vb$6T5" resolve="de.slisson.mps.tables.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1vhcdaBCf4P" role="3bR37C">
+          <node concept="3bR9La" id="1vhcdaBCf4Q" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:29so9Vb$6Th" resolve="de.slisson.mps.tables" />
           </node>
         </node>
       </node>

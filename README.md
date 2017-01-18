@@ -15,6 +15,9 @@ Download vervolgens het bestand platform-distribution-xxx-MPS-3.4.3.zip
 Pak dit bestand uit en kopieer de directory plugins naar de directory plugins in de aplicatie directory van MPS. Op een Mac is dat bijvoorbeeld de directory:
 /Applications/MPS 3.4.app/Contents/Plugins
 
+## Installatie van org.campagnelab.mps.UI for MPS plugin
+Ga naar https://plugins.jetbrains.com/mps/plugin/7519-org-campagnelab-mps-ui om versie 3.0.0 te downloaden van de plugin. Installeer deze plugin met de functionaliteit om plugins te installeren. 
+
 ## Installatie van 'DeBrug'
 Kijk voor een stap voor stap beschrijving in:
 "Installatie van ‘De Brug’.docx" 

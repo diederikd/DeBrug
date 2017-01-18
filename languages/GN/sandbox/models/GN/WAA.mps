@@ -1561,6 +1561,15 @@
       </node>
       <node concept="1OcJUx" id="28ifPi2BQ5c" role="33xnZK">
         <property role="TrG5h" value="afgewezen verzoek" />
+        <node concept="33wURK" id="1vhcdaBCewS" role="1OcJUG">
+          <ref role="33wURL" node="20D4HrzFibY" resolve="verplichting tot overleg plegen" />
+        </node>
+        <node concept="33wURK" id="1vhcdaBCeqw" role="1OcJUG">
+          <ref role="33wURL" node="5u1YjWIkWvP" resolve="de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren&#10;overeenkomstig de wensen van de werknemer" />
+        </node>
+        <node concept="33wURK" id="1vhcdaBCeqG" role="1OcJUG">
+          <ref role="33wURL" node="2xDgDlj72l7" resolve="immuniteit (recht) om de verplichte bevoegdheid tot het&#10;vaststellen van de spreiding van de uren overeenkomstige de wensen&#10;van de werknemer te neutraliseren." />
+        </node>
         <node concept="33wURK" id="28ifPi2BQ6H" role="1OcJUG">
           <ref role="33wURL" node="MvzNsyB7Rg" resolve="de verplichte bevoegdheid (recht) tot het inwilligen van verzoek &#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing" />
         </node>
@@ -1809,24 +1818,24 @@
       </node>
       <node concept="LeFwc" id="2K7y4iIY0zd" role="LeFwH">
         <property role="LeFwf" value="0" />
-        <property role="LeFwL" value="0" />
-        <property role="LeFwM" value="16" />
+        <property role="LeFwL" value="1" />
+        <property role="LeFwM" value="26" />
       </node>
     </node>
-    <node concept="LeFwQ" id="GhrpPwRxXi" role="3zKq1C">
-      <node concept="2B78Lw" id="GhrpPwRxXu" role="LeFwF">
+    <node concept="LeFwQ" id="1vhcdaBCf23" role="3zKq1C">
+      <node concept="2B78Lw" id="1vhcdaBCf2f" role="LeFwF">
         <property role="2B78LE" value="2017" />
         <property role="2B78L_" value="1" />
-        <property role="2B78LB" value="17" />
+        <property role="2B78LB" value="18" />
       </node>
-      <node concept="LeFwc" id="GhrpPwRxXw" role="LeFwH">
-        <property role="LeFwf" value="6" />
-        <property role="LeFwL" value="48" />
-        <property role="LeFwM" value="49" />
+      <node concept="LeFwc" id="1vhcdaBCf2h" role="LeFwH">
+        <property role="LeFwf" value="18" />
+        <property role="LeFwL" value="19" />
+        <property role="LeFwM" value="48" />
       </node>
     </node>
-    <node concept="2BLbnY" id="GhrpPwRxXz" role="2BLYKK" />
-    <node concept="3WXGrE" id="GhrpPwRxX_" role="3WXGrD">
+    <node concept="2BLbnY" id="1vhcdaBCf2k" role="2BLYKK" />
+    <node concept="3WXGrE" id="1vhcdaBCf2m" role="3WXGrD">
       <ref role="3WXGrF" node="4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
     </node>
   </node>
