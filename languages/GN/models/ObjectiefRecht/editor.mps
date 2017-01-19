@@ -396,7 +396,7 @@
           </node>
         </node>
         <node concept="3F0ifn" id="4ZpB41Rn$Gs" role="3EZMnx">
-          <property role="3F0ifm" value="feiten over onderwerpen" />
+          <property role="3F0ifm" value="feiten over onderwerpen van belang voor de dienstverlening" />
         </node>
         <node concept="3F0ifn" id="4ZpB41Rn$Ha" role="3EZMnx">
           <property role="3F0ifm" value=":" />

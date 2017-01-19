@@ -532,7 +532,7 @@ public class Context_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_d0e2am_f02a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "feiten over onderwerpen");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "feiten over onderwerpen van belang voor de dienstverlening");
     editorCell.setCellId("Constant_d0e2am_f02a");
     editorCell.setDefaultText("");
     return editorCell;

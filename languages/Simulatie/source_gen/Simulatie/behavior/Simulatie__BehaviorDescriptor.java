@@ -470,7 +470,7 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
           }
         }).first();
         if ((immuniteitGeenbevoegdheid != null)) {
-          typehandeling = "Verplichte " + handelingsoort;
+          typehandeling = "Optionele " + handelingsoort;
         }
       }
     }

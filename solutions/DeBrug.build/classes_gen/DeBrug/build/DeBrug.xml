@@ -288,6 +288,7 @@
         <version>0.1</version>
         <depends>jetbrains.mps.core</depends>
         <depends>org.campagnelab.mps.UI</depends>
+        <depends>de.slisson.mps.tables</depends>
         <depends>de.slisson.mps.all</depends>
         <depends>com.mbeddr.mpsutil</depends>
         
@@ -364,6 +365,8 @@
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" />
+          <module ref="da21218f-a674-474d-8b4e-d59e33007003(de.slisson.mps.tables.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
@@ -765,6 +768,7 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables" />
       <plugin path="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -846,6 +850,8 @@
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables/languages/mps-tables/de.slisson.mps.tables.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
       <library file="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI/languages/org.campagnelab.ui.code.jar" />
       <library file="${build.tmp}/deps/org.campagnelab.mps.UI/org.campagnelab.UI-3.0.0.zip/UI/languages/org.campagnelab.ui.jar" />
       <chunk>
@@ -1006,12 +1012,24 @@
         <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables/languages/mps-tables/de.slisson.mps.tables.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk8.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
