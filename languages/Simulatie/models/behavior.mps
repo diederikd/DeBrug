@@ -4280,7 +4280,7 @@
                         <ref role="3cqZAo" node="4VhV7ipGoVy" resolve="handelingsoort" />
                       </node>
                       <node concept="Xl_RD" id="2N$PylwYOCY" role="3uHU7B">
-                        <property role="Xl_RC" value="Verplichte " />
+                        <property role="Xl_RC" value="Optionele " />
                       </node>
                     </node>
                     <node concept="37vLTw" id="2N$PylwYOCZ" role="37vLTJ">
