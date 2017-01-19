@@ -33,7 +33,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 1:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Afleidingsregel_Editor());
+            return Arrays.asList(new ConceptEditor[]{new Afleidingsregel_EN_Editor(), new Afleidingsregel_Editor()});
           }
           break;
         case 2:
@@ -188,12 +188,12 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 32:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rechtsgevolg_Editor());
+            return Arrays.asList(new ConceptEditor[]{new Rechtsgevolg_EN_Editor(), new Rechtsgevolg_Editor()});
           }
           break;
         case 33:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rechtshandeling_Editor());
+            return Arrays.asList(new ConceptEditor[]{new Rechtshandeling_EN_Editor(), new Rechtshandeling_Editor()});
           }
           break;
         case 34:
@@ -263,7 +263,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 47:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new TijdsverloopMetRechtsgevolg_Editor());
+            return Arrays.asList(new ConceptEditor[]{new TijdsverloopMetRechtsgevolg_EN_Editor(), new TijdsverloopMetRechtsgevolg_Editor()});
           }
           break;
         case 48:

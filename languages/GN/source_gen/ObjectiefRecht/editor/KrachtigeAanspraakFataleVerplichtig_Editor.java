@@ -80,17 +80,10 @@ public class KrachtigeAanspraakFataleVerplichtig_Editor extends DefaultNodeEdito
     editorCell.addEditorCell(this.createConstant_6x61xa_eb0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_6x61xa_fb0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_6x61xa_gb0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_6x61xa_hb0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_6x61xa_ib0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_6x61xa_jb0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_6x61xa_kb0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_6x61xa_lb0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_6x61xa_mb0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_6x61xa_nb0(editorContext, node));
-    if (renderingCondition_6x61xa_a04a(node, editorContext)) {
-      editorCell.addEditorCell(this.createCollection_6x61xa_ob0(editorContext, node));
+    if (renderingCondition_6x61xa_a33a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_6x61xa_hb0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createConstant_6x61xa_pb0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_6x61xa_ib0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_6x61xa_a0(EditorContext editorContext, SNode node) {
@@ -594,163 +587,11 @@ public class KrachtigeAanspraakFataleVerplichtig_Editor extends DefaultNodeEdito
     return editorCell;
   }
   private EditorCell createRefNode_6x61xa_cb0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new KrachtigeAanspraakFataleVerplichtig_Editor.geldigVanSingleRoleHandler_6x61xa_cb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426b6L, "geldigVan"), editorContext);
+    SingleRoleCellProvider provider = new KrachtigeAanspraakFataleVerplichtig_Editor.GeldigVanSingleRoleHandler_6x61xa_cb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c109781917eL, "GeldigVan"), editorContext);
     return provider.createCell();
   }
-  private class geldigVanSingleRoleHandler_6x61xa_cb0 extends SingleRoleCellProvider {
-    public geldigVanSingleRoleHandler_6x61xa_cb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
-      super(ownerNode, containmentLink, context);
-    }
-    protected EditorCell createChildCell(SNode child) {
-      myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
-      try {
-        EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426b6L, "geldigVan"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426b6L, "geldigVan"), child));
-        installCellInfo(child, editorCell);
-        return editorCell;
-      } finally {
-        myEditorContext.getCellFactory().popCellContext();
-      }
-    }
-
-    protected boolean isCompatibilityMode() {
-      return false;
-    }
-
-    private void installCellInfo(SNode child, EditorCell editorCell) {
-      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426b6L, "geldigVan"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
-      }
-      if (editorCell.getRole() == null) {
-        editorCell.setRole("geldigVan");
-      }
-      Style style = new StyleImpl();
-      SNode node = myOwnerNode;
-      EditorContext editorContext = myEditorContext;
-      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-      editorCell.getStyle().putAll(style);
-    }
-    @Override
-    protected EditorCell createEmptyCell() {
-      myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426b6L, "geldigVan")));
-      try {
-        EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_geldigVan");
-        installCellInfo(null, editorCell);
-        return editorCell;
-      } finally {
-        myEditorContext.getCellFactory().popCellContext();
-      }
-    }
-    protected String getNoTargetText() {
-      return "<no geldigVan>";
-    }
-  }
-  private EditorCell createConstant_6x61xa_db0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "geldig tot");
-    editorCell.setCellId("Constant_6x61xa_db0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_6x61xa_eb0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_6x61xa_eb0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefNode_6x61xa_fb0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new KrachtigeAanspraakFataleVerplichtig_Editor.geldigTotSingleRoleHandler_6x61xa_fb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426bbL, "geldigTot"), editorContext);
-    return provider.createCell();
-  }
-  private class geldigTotSingleRoleHandler_6x61xa_fb0 extends SingleRoleCellProvider {
-    public geldigTotSingleRoleHandler_6x61xa_fb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
-      super(ownerNode, containmentLink, context);
-    }
-    protected EditorCell createChildCell(SNode child) {
-      myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
-      try {
-        EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426bbL, "geldigTot"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426bbL, "geldigTot"), child));
-        installCellInfo(child, editorCell);
-        return editorCell;
-      } finally {
-        myEditorContext.getCellFactory().popCellContext();
-      }
-    }
-
-    protected boolean isCompatibilityMode() {
-      return false;
-    }
-
-    private void installCellInfo(SNode child, EditorCell editorCell) {
-      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426bbL, "geldigTot"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
-      }
-      if (editorCell.getRole() == null) {
-        editorCell.setRole("geldigTot");
-      }
-      Style style = new StyleImpl();
-      SNode node = myOwnerNode;
-      EditorContext editorContext = myEditorContext;
-      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-      editorCell.getStyle().putAll(style);
-    }
-    @Override
-    protected EditorCell createEmptyCell() {
-      myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x805ce2b16e426bbL, "geldigTot")));
-      try {
-        EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_geldigTot");
-        installCellInfo(null, editorCell);
-        return editorCell;
-      } finally {
-        myEditorContext.getCellFactory().popCellContext();
-      }
-    }
-    protected String getNoTargetText() {
-      return "<no geldigTot>";
-    }
-  }
-  private EditorCell createConstant_6x61xa_gb0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_6x61xa_gb0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_6x61xa_hb0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "geldig van");
-    editorCell.setCellId("Constant_6x61xa_hb0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_6x61xa_ib0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_6x61xa_ib0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefNode_6x61xa_jb0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new KrachtigeAanspraakFataleVerplichtig_Editor.GeldigVanSingleRoleHandler_6x61xa_jb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c109781917eL, "GeldigVan"), editorContext);
-    return provider.createCell();
-  }
-  private class GeldigVanSingleRoleHandler_6x61xa_jb0 extends SingleRoleCellProvider {
-    public GeldigVanSingleRoleHandler_6x61xa_jb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class GeldigVanSingleRoleHandler_6x61xa_cb0 extends SingleRoleCellProvider {
+    public GeldigVanSingleRoleHandler_6x61xa_cb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -801,27 +642,27 @@ public class KrachtigeAanspraakFataleVerplichtig_Editor extends DefaultNodeEdito
       return "<no GeldigVan>";
     }
   }
-  private EditorCell createConstant_6x61xa_kb0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_6x61xa_db0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "geldig tot");
-    editorCell.setCellId("Constant_6x61xa_kb0");
+    editorCell.setCellId("Constant_6x61xa_db0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_6x61xa_lb0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_6x61xa_eb0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_6x61xa_lb0");
+    editorCell.setCellId("Constant_6x61xa_eb0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_6x61xa_mb0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new KrachtigeAanspraakFataleVerplichtig_Editor.GeldigTotSingleRoleHandler_6x61xa_mb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c1097819187L, "GeldigTot"), editorContext);
+  private EditorCell createRefNode_6x61xa_fb0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new KrachtigeAanspraakFataleVerplichtig_Editor.GeldigTotSingleRoleHandler_6x61xa_fb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c1097819187L, "GeldigTot"), editorContext);
     return provider.createCell();
   }
-  private class GeldigTotSingleRoleHandler_6x61xa_mb0 extends SingleRoleCellProvider {
-    public GeldigTotSingleRoleHandler_6x61xa_mb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class GeldigTotSingleRoleHandler_6x61xa_fb0 extends SingleRoleCellProvider {
+    public GeldigTotSingleRoleHandler_6x61xa_fb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -872,44 +713,44 @@ public class KrachtigeAanspraakFataleVerplichtig_Editor extends DefaultNodeEdito
       return "<no GeldigTot>";
     }
   }
-  private EditorCell createConstant_6x61xa_nb0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_6x61xa_gb0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_6x61xa_nb0");
+    editorCell.setCellId("Constant_6x61xa_gb0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCollection_6x61xa_ob0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_6x61xa_hb0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_6x61xa_ob0");
-    editorCell.addEditorCell(this.createConstant_6x61xa_a04a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_6x61xa_b04a(editorContext, node));
-    editorCell.addEditorCell(this.createMultiline_6x61xa_c04a(editorContext, node));
+    editorCell.setCellId("Collection_6x61xa_hb0");
+    editorCell.addEditorCell(this.createConstant_6x61xa_a33a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_6x61xa_b33a(editorContext, node));
+    editorCell.addEditorCell(this.createMultiline_6x61xa_c33a(editorContext, node));
     return editorCell;
   }
-  private static boolean renderingCondition_6x61xa_a04a(SNode node, EditorContext editorContext) {
+  private static boolean renderingCondition_6x61xa_a33a(SNode node, EditorContext editorContext) {
     SNode context;
     context = (SNode) SNodeOperations.getParent(node);
     return SPropertyOperations.getBoolean(context, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, 0xc9f8f37229dca04L, "toonopmerkingen"));
   }
-  private EditorCell createConstant_6x61xa_a04a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_6x61xa_a33a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "opmerkingen");
-    editorCell.setCellId("Constant_6x61xa_a04a");
+    editorCell.setCellId("Constant_6x61xa_a33a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_6x61xa_b04a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_6x61xa_b33a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_6x61xa_b04a");
+    editorCell.setCellId("Constant_6x61xa_b33a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createMultiline_6x61xa_c04a(EditorContext editorContext, SNode node) {
+  private EditorCell createMultiline_6x61xa_c33a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new MultilineCellProvider(node, editorContext);
     provider.setRole("opmerkingen");
     provider.setNoTargetText("<no opmerkingen>");
@@ -928,9 +769,9 @@ public class KrachtigeAanspraakFataleVerplichtig_Editor extends DefaultNodeEdito
     } else
     return editorCell;
   }
-  private EditorCell createConstant_6x61xa_pb0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_6x61xa_ib0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_6x61xa_pb0");
+    editorCell.setCellId("Constant_6x61xa_ib0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
