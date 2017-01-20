@@ -105,11 +105,14 @@
         <child id="2455094379071731550" name="bron" index="2wGGwa" />
       </concept>
       <concept id="4271677511961776445" name="ObjectiefRecht.structure.VrijeTekst" flags="ng" index="2GMpOH" />
-      <concept id="3294000250416426724" name="ObjectiefRecht.structure.IsBekend" flags="ng" index="2HEcOy">
+      <concept id="3294000250416426724" name="ObjectiefRecht.structure.IsOpgegeven" flags="ng" index="2HEcOy">
         <child id="3294000250416426725" name="variabele" index="2HEcOz" />
       </concept>
       <concept id="6249140128508349865" name="ObjectiefRecht.structure.JaNeeDatatype" flags="ng" index="LQ6DZ" />
       <concept id="6249140128508295167" name="ObjectiefRecht.structure.TijdDatatype" flags="ng" index="LQl0D" />
+      <concept id="31726144782562323" name="ObjectiefRecht.structure.IsWaar" flags="ng" index="2PEWbh">
+        <child id="31726144782562341" name="variabele" index="2PEWbB" />
+      </concept>
       <concept id="2907397198644945357" name="ObjectiefRecht.structure.GeheelGetalDatatype" flags="ng" index="QqSuk" />
       <concept id="2907397198644945343" name="ObjectiefRecht.structure.RijVanKaraktersDatatype" flags="ng" index="QqSvA" />
       <concept id="2907397198644945329" name="ObjectiefRecht.structure.DatumDatatype" flags="ng" index="QqSvC" />
@@ -742,6 +745,12 @@
         </node>
         <node concept="2mcr8I" id="5EElNFns3eW" role="2mcr89" />
       </node>
+      <node concept="lYmzx" id="1KHGaPR$on" role="lYmzI">
+        <property role="da7Q0" value="0000" />
+        <property role="TrG5h" value="schriftelijk ingediend" />
+        <node concept="2B78Lw" id="1KHGaPR$oq" role="lXajo" />
+        <node concept="LQ6DZ" id="1KHGaPR$oY" role="LSO5p" />
+      </node>
       <node concept="2mcr8I" id="6T3DNjSuU2b" role="2md4RZ" />
       <node concept="2mbrj6" id="GhrpPwK$gu" role="i$vq1">
         <ref role="2mbrj7" node="GhrpPwK$c7" resolve="werknemer indiener van het verzoek" />
@@ -1371,6 +1380,24 @@
             <node concept="2B78Lw" id="2QQCWq08nas" role="lXajo" />
           </node>
           <node concept="2B78Lw" id="2QQCWq08nav" role="lXajo" />
+        </node>
+      </node>
+      <node concept="12OPpU" id="1KHGaPR$mR" role="3y4jea">
+        <node concept="2PEWbh" id="1KHGaPR$nj" role="12O34u">
+          <property role="da7Q0" value="0000" />
+          <node concept="25iA__" id="1KHGaPR$nm" role="2PEWbB">
+            <property role="da7Q0" value="0000" />
+            <node concept="2mbrj6" id="1KHGaPR$oV" role="12b92R">
+              <ref role="2mbrj7" node="1KHGaPR$on" resolve="schriftelijk ingediend" />
+            </node>
+            <node concept="128luX" id="1KHGaPR$nJ" role="12b92N">
+              <property role="da7Q0" value="0000" />
+              <ref role="128luW" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
+              <node concept="2B78Lw" id="1KHGaPR$nM" role="lXajo" />
+            </node>
+            <node concept="2B78Lw" id="1KHGaPR$ny" role="lXajo" />
+          </node>
+          <node concept="2B78Lw" id="1KHGaPR$n_" role="lXajo" />
         </node>
       </node>
       <node concept="1OcJVv" id="2mYdLn7GMnN" role="3y4jea">

@@ -15,9 +15,12 @@ import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import Interactie.editor.EditorAspectDescriptorImpl;
+import jetbrains.mps.lang.migration.runtime.base.MigrationAspectDescriptor;
+import Interactie.migration.MigrationDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import Interactie.structure.ConceptPresentationAspectImpl;
+import jetbrains.mps.text.rt.TextGenAspectDescriptor;
 import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
 import Interactie.typesystem.TypesystemDescriptor;
 
@@ -65,6 +68,11 @@ public class Language extends LanguageRuntime {
           return (T) new EditorAspectDescriptorImpl();
         }
       }
+      if (aspectClass.getName().equals("jetbrains.mps.lang.migration.runtime.base.MigrationAspectDescriptor")) {
+        if (aspectClass == MigrationAspectDescriptor.class) {
+          return (T) new MigrationDescriptor();
+        }
+      }
       if (aspectClass.getName().equals("jetbrains.mps.smodel.runtime.StructureAspectDescriptor")) {
         if (aspectClass == StructureAspectDescriptor.class) {
           return (T) new Interactie.structure.StructureAspectDescriptor();
@@ -73,6 +81,11 @@ public class Language extends LanguageRuntime {
       if (aspectClass.getName().equals("jetbrains.mps.smodel.runtime.ConceptPresentationAspect")) {
         if (aspectClass == ConceptPresentationAspect.class) {
           return (T) new ConceptPresentationAspectImpl();
+        }
+      }
+      if (aspectClass.getName().equals("jetbrains.mps.text.rt.TextGenAspectDescriptor")) {
+        if (aspectClass == TextGenAspectDescriptor.class) {
+          return (T) new Interactie.textGen.TextGenAspectDescriptor();
         }
       }
       if (aspectClass.getName().equals("jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor")) {

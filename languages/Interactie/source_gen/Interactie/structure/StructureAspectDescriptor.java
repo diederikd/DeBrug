@@ -6,23 +6,30 @@ import jetbrains.mps.smodel.runtime.BaseStructureAspectDescriptor;
 import java.util.Map;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import java.util.HashMap;
-import java.util.Collection;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
+import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.concept.SConceptAdapterById;
 import jetbrains.mps.smodel.adapter.structure.concept.SInterfaceConceptAdapterById;
+import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
+import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(0);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(2);
+  /*package*/ final ConceptDescriptor myConceptFormulier = createDescriptorForFormulier();
+  /*package*/ final ConceptDescriptor myConceptFormulierVeld = createDescriptorForFormulierVeld();
 
   public StructureAspectDescriptor() {
+    myIndexMap.put(myConceptFormulier.getId(), 0);
+    myIndexMap.put(myConceptFormulierVeld.getId(), 1);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList();
+    return Arrays.asList(myConceptFormulier, myConceptFormulierVeld);
   }
 
   @Override
@@ -33,6 +40,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       return null;
     }
     switch (((int) index)) {
+      case 0:
+        return myConceptFormulier;
+      case 1:
+        return myConceptFormulierVeld;
       default:
         throw new IllegalStateException();
     }
@@ -48,4 +59,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return (res == null ? -1 : res);
   }
 
+  private static ConceptDescriptor createDescriptorForFormulier() {
+    return new ConceptDescriptorBuilder("Interactie.structure.Formulier", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x70b6c2b5eaa1f1L, "velden", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL), true, true, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "31726144783557105"))).children(new String[]{"velden"}, new boolean[]{true}).rootable().sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "31726144783349621")).create();
+  }
+  private static ConceptDescriptor createDescriptorForFormulierVeld() {
+    return new ConceptDescriptorBuilder("Interactie.structure.FormulierVeld", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0xfdfefdf8693968fL, "referentieNaarAttribuut", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db6L), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "1143896573689960079"))).references("referentieNaarAttribuut").sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "31726144783350478")).create();
+  }
 }

@@ -81,14 +81,17 @@
     <file name="ImmuniteitGeenbevoegdheid_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ImmuniteitGeenbevoegdheid_BehaviorDescriptor" />
     </file>
-    <file name="IsBekend_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsBekend_BehaviorDescriptor" />
-    </file>
     <file name="IsGroterDan_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsGroterDan_BehaviorDescriptor" />
     </file>
     <file name="IsKleinerDan_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsKleinerDan_BehaviorDescriptor" />
+    </file>
+    <file name="IsOpgegeven_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsOpgegeven_BehaviorDescriptor" />
+    </file>
+    <file name="IsWaar_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsWaar_BehaviorDescriptor" />
     </file>
     <file name="JaNeeDatatype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.JaNeeDatatype_BehaviorDescriptor" />

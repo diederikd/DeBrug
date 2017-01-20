@@ -20,6 +20,7 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
@@ -43,7 +44,9 @@ public class Kenmerk_MetLidwoord_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_sn0itw_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createRefNode_sn0itw_a0(editorContext, node));
+    if (renderingCondition_sn0itw_a0a(node, editorContext)) {
+      editorCell.addEditorCell(this.createRefNode_sn0itw_a0(editorContext, node));
+    }
     editorCell.addEditorCell(this.createConstant_sn0itw_b0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_sn0itw_c0(editorContext, node));
     return editorCell;
@@ -98,6 +101,9 @@ public class Kenmerk_MetLidwoord_Editor extends DefaultNodeEditor {
     protected String getNoTargetText() {
       return "<no lidwoord>";
     }
+  }
+  private static boolean renderingCondition_sn0itw_a0a(SNode node, EditorContext editorContext) {
+    return (SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x6e43a734f872153dL, "lidwoord")) != null);
   }
   private EditorCell createConstant_sn0itw_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " ");

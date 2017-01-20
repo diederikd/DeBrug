@@ -4,6 +4,12 @@
     <file name="BehaviorAspectDescriptor.java">
       <unit at="13,0,41,0" name="Interactie.behavior.BehaviorAspectDescriptor" />
     </file>
+    <file name="FormulierVeld_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.FormulierVeld_BehaviorDescriptor" />
+    </file>
+    <file name="Formulier_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.Formulier_BehaviorDescriptor" />
+    </file>
   </root>
 </debug-info>
 

@@ -1,0 +1,31 @@
+/**
+ * screen_main.css
+ *
+ * Declaraties gemaakt voor de website van de Belastintgdienst t.o.v. de Rijksbrede huisstijl
+ *
+ * @version			0.0.1
+ * @date			2010-06-01
+ * @lastmodified	2010-04-13 17:21
+ * @author			B/CKC (Fred Krauweel)
+ * @link			//www.belastingdienst.nl
+ * @cssdoc			version 1.0-pre
+ *
+ * @colordef		#f3f5f6; background (light grey)
+ * @colordef		#535353; text links on background (dark grey) layer
+ * @colordef		#154273; text links (blue)
+ *
+ */
+
+
+/**
+ * Import
+ *
+ * @section			Import of individual stylesheets
+ */
+
+@import url("screen.css");
+@import url("forms.css");
+@import url("toevoegingen.css"); /* Laatste */
+
+
+
