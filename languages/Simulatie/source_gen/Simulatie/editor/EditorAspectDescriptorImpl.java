@@ -17,7 +17,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
-  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Simulatie", "", true, "Simulatie.editor.Simulatie.Simulatie"), new ConceptEditorHintImpl("RechtspositieRol1", "", true, "Simulatie.editor.Simulatie.RechtspositieRol1"), new ConceptEditorHintImpl("RechtspositieRol2", "", true, "Simulatie.editor.Simulatie.RechtspositieRol2"), new ConceptEditorHintImpl("HandelingenRol1", "", true, "Simulatie.editor.Simulatie.HandelingenRol1"), new ConceptEditorHintImpl("HandelingenRol2", "", true, "Simulatie.editor.Simulatie.HandelingenRol2"), new ConceptEditorHintImpl("UitgevoerdeHandeling", "", true, "Simulatie.editor.Simulatie.UitgevoerdeHandeling"));
+  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Simulatie", "", false, "Simulatie.editor.Simulatie.Simulatie"), new ConceptEditorHintImpl("RechtspositieRol1", "", false, "Simulatie.editor.Simulatie.RechtspositieRol1"), new ConceptEditorHintImpl("RechtspositieRol2", "", false, "Simulatie.editor.Simulatie.RechtspositieRol2"), new ConceptEditorHintImpl("HandelingenRol1", "", false, "Simulatie.editor.Simulatie.HandelingenRol1"), new ConceptEditorHintImpl("HandelingenRol2", "", false, "Simulatie.editor.Simulatie.HandelingenRol2"), new ConceptEditorHintImpl("UitgevoerdeHandeling", "", false, "Simulatie.editor.Simulatie.UitgevoerdeHandeling"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {

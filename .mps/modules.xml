@@ -2,8 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$APPLICATION_HOME_DIR$/plugins/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar!/META-INF/module.xml" folder="" />
-      <modulePath path="$APPLICATION_HOME_DIR$/plugins/mbeddr.platform.build/languages/com.mbeddr.platform.build/com.mbeddr.platform.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$APPLICATION_HOME_DIR$/plugins/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar!/META-INF/module.xml" folder="Libraries" />
+      <modulePath path="$APPLICATION_HOME_DIR$/plugins/mbeddr.platform.build/languages/com.mbeddr.platform.build/com.mbeddr.platform.jar!/META-INF/module.xml" folder="Libraries" />
       <modulePath path="$PROJECT_DIR$/languages/Datum/Datum.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GN/ObjectiefRecht.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GN/runtime/GN.runtime.msd" folder="" />
@@ -14,11 +14,11 @@
       <modulePath path="$PROJECT_DIR$/languages/Simulatie/Simulatie.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/SubjectiefRecht/SubjectiefRecht.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DeBrug.build/DeBrug.build.msd" folder="" />
-      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.allInOne/allInOne.msd" folder="" />
-      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.build/com.mbeddr.build.msd" folder="" />
-      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform.build.templates/com.mbeddr.platform.build.templates.msd" folder="" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.allInOne/allInOne.msd" folder="Libraries" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.build/com.mbeddr.build.msd" folder="Libraries" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform.build.templates/com.mbeddr.platform.build.templates.msd" folder="Libraries" />
       <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" folder="" />
-      <modulePath path="$mbeddr.github.core.home$/code/plugins/sl-all/mps-apache-commons/solutions/mps-apache-commons.build/mps-apache-commons.build.msd" folder="" />
+      <modulePath path="$mbeddr.github.core.home$/code/plugins/sl-all/mps-apache-commons/solutions/mps-apache-commons.build/mps-apache-commons.build.msd" folder="Libraries" />
       <modulePath path="$mbeddr.github.core.home$/code/plugins/sl-all/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" folder="" />
     </projectModules>
   </component>

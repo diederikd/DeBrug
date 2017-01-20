@@ -17,7 +17,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
-  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("identificatie", "", true, "Gegevens.editor.Gegevens.identificatie"), new ConceptEditorHintImpl("alleenNaam", "", true, "Gegevens.editor.Gegevens.alleenNaam"), new ConceptEditorHintImpl("tabel", "", true, "Gegevens.editor.Gegevens.tabel"));
+  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("identificatie", "", false, "Gegevens.editor.Gegevens.identificatie"), new ConceptEditorHintImpl("alleenNaam", "", false, "Gegevens.editor.Gegevens.alleenNaam"), new ConceptEditorHintImpl("tabel", "", false, "Gegevens.editor.Gegevens.tabel"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {

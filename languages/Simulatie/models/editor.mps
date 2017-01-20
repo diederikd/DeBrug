@@ -48,9 +48,7 @@
       <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
         <child id="5944657839000877563" name="hints" index="2ABdcP" />
       </concept>
-      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
-        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
-      </concept>
+      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg" />
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styleClass" index="V601i" />
       </concept>
@@ -959,27 +957,21 @@
   <node concept="2ABfQD" id="1VomLPHHyP2">
     <property role="TrG5h" value="Simulatie" />
     <node concept="2BsEeg" id="1VomLPHHyP3" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="Simulatie" />
     </node>
     <node concept="2BsEeg" id="1VomLPHKDm1" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="RechtspositieRol1" />
     </node>
     <node concept="2BsEeg" id="1VomLPHKDm4" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="RechtspositieRol2" />
     </node>
     <node concept="2BsEeg" id="i63cmf5LJ1" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="HandelingenRol1" />
     </node>
     <node concept="2BsEeg" id="i63cmf5LJ6" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="HandelingenRol2" />
     </node>
     <node concept="2BsEeg" id="7$WBeOqHg2c" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="UitgevoerdeHandeling" />
     </node>
   </node>

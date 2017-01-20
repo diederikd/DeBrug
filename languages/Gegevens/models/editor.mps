@@ -50,9 +50,7 @@
       <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
         <child id="5944657839000877563" name="hints" index="2ABdcP" />
       </concept>
-      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
-        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
-      </concept>
+      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -687,15 +685,12 @@
   <node concept="2ABfQD" id="7rcH1JNxypy">
     <property role="TrG5h" value="Gegevens" />
     <node concept="2BsEeg" id="7rcH1JNxypz" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="identificatie" />
     </node>
     <node concept="2BsEeg" id="1YFKb5tAb6c" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="alleenNaam" />
     </node>
     <node concept="2BsEeg" id="GhrpPwTD1t" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="tabel" />
     </node>
   </node>
