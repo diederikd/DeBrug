@@ -1023,7 +1023,7 @@
     </node>
     <node concept="1OcJT2" id="3d6QfrhlNs0" role="33wtHG">
       <property role="da7Q0" value="65" />
-      <property role="TrG5h" value="bevoegdheid (recht) om verzoek aanpassing arbeidsduur&#10;te accepteren voor een juridische beslissing." />
+      <property role="TrG5h" value="bevoegdheid (recht) van de werkgever om verzoek aanpassing arbeidsduur&#10;te accepteren voor een juridische beslissing, te kiezen uit inwilliging of afwijzing, &#10;of 2.10 zijn werk laten doen; werknemer heeft de gehoudenheid." />
       <property role="I0$kK" value="Deze rechtsbetrekking staat met geen woord aangegeven in de Waa/Wfw; &#10;Deze rechtsbetrekking heeft dus het karakter van een meta rechtsbetrekking." />
       <ref role="1OcJVV" node="4ZpB41Rnx4z" resolve="Werkgever" />
       <ref role="1OcJVS" node="4ZpB41RnoMO" resolve="Werknemer" />
@@ -1047,11 +1047,38 @@
     <node concept="1OcJT3" id="3d6QfrhlNup" role="33wtHG">
       <property role="da7Q0" value="66" />
       <property role="TrG5h" value="immuniteit (recht) om de verplichte bevoegdheid tot het accepteren te kunnen neutraliseren" />
-      <ref role="Q2jOe" node="3d6QfrhlNs0" resolve="bevoegdheid (recht) om verzoek aanpassing arbeidsduur&#10;te accepteren voor een juridische beslissing." />
+      <ref role="Q2jOe" node="3d6QfrhlNs0" resolve="bevoegdheid (recht) van de werkgever om verzoek aanpassing arbeidsduur&#10;te accepteren voor een juridische beslissing, te kiezen uit inwilliging of afwijzing, &#10;of 2.10 zijn werk laten doen; werknemer heeft de gehoudenheid." />
       <ref role="1OcJVV" node="4ZpB41Rnx4z" resolve="Werkgever" />
       <ref role="1OcJVS" node="4ZpB41RnoMO" resolve="Werknemer" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
       <ref role="1gmamj" node="3d6QfrhlNxv" resolve="Niet voor een juridische beslissing in behandeling nemen van het verzoek" />
+      <node concept="1OcJVu" id="gIBqGO2sfr" role="3y3h4G">
+        <property role="TrG5h" value="het verschil tussen het beoogde tijdstip van ingang van de aanpassing &#10;van het verzoek om aanpassing arbeidsduur en het van indienen van het verzoek &#10;om aanpassing arbeidsduur is ten minsten 4 maanden" />
+      </node>
+      <node concept="12OPpU" id="gIBqGO2sf_" role="3y3h4G">
+        <node concept="2PEWbh" id="gIBqGO2sgf" role="12O34u">
+          <property role="da7Q0" value="0000" />
+          <node concept="25iA__" id="gIBqGO2sgi" role="2PEWbB">
+            <property role="da7Q0" value="0000" />
+            <node concept="2mbrj6" id="gIBqGO2sgN" role="12b92R">
+              <ref role="2mbrj7" node="1KHGaPR$on" resolve="schriftelijk ingediend" />
+            </node>
+            <node concept="128luX" id="gIBqGO2sgF" role="12b92N">
+              <property role="da7Q0" value="0000" />
+              <ref role="128luW" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
+              <node concept="2B78Lw" id="gIBqGO2sgI" role="lXajo" />
+            </node>
+            <node concept="2B78Lw" id="gIBqGO2sgu" role="lXajo" />
+          </node>
+          <node concept="2B78Lw" id="gIBqGO2sgx" role="lXajo" />
+        </node>
+      </node>
+      <node concept="1OcJVu" id="gIBqGO2sfj" role="3y3h4G">
+        <property role="TrG5h" value="de werknemer heeft in de twee jaren voorafgaand aan de datum van indien &#10;van het verzoek tot aanpassing arbeidsduur geen inwilliging of afwijzing gehad." />
+      </node>
+      <node concept="1OcJVu" id="gIBqGO2sfd" role="3y3h4G">
+        <property role="TrG5h" value="werknemer ten minste een jaar voorafgaand aan het beoogd tijdstip van ingang &#10;van het verzoek om aanpassing in dienst bij die werkgever.&#10;" />
+      </node>
       <node concept="2B78Lw" id="3d6QfrhlNuy" role="lXajo">
         <property role="2B78LB" value="1" />
         <property role="2B78L_" value="7" />
@@ -1425,9 +1452,9 @@
         <ref role="33xUQY" node="4ZpB41RnoMO" resolve="Werknemer" />
       </node>
       <node concept="1OcJUx" id="4pem8DK24rv" role="33xnZK">
-        <property role="TrG5h" value="verzoek ingediend" />
+        <property role="TrG5h" value="verzoek is ingediend bij eigen werkgever" />
         <node concept="33wURK" id="3d6QfrhlNvK" role="1OcJUI">
-          <ref role="33wURL" node="3d6QfrhlNs0" resolve="bevoegdheid (recht) om verzoek aanpassing arbeidsduur&#10;te accepteren voor een juridische beslissing." />
+          <ref role="33wURL" node="3d6QfrhlNs0" resolve="bevoegdheid (recht) van de werkgever om verzoek aanpassing arbeidsduur&#10;te accepteren voor een juridische beslissing, te kiezen uit inwilliging of afwijzing, &#10;of 2.10 zijn werk laten doen; werknemer heeft de gehoudenheid." />
         </node>
         <node concept="33wURK" id="3d6QfrhlNvP" role="1OcJUI">
           <ref role="33wURL" node="3d6QfrhlNup" resolve="immuniteit (recht) om de verplichte bevoegdheid tot het accepteren te kunnen neutraliseren" />
@@ -1483,7 +1510,7 @@
           <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegdheid om de gewenste spreiding van de uren te wijzigen" />
         </node>
         <node concept="33wURK" id="5RhAgJkmIOq" role="1OcJUG">
-          <ref role="33wURL" node="3d6QfrhlNs0" resolve="bevoegdheid (recht) om verzoek aanpassing arbeidsduur&#10;te accepteren voor een juridische beslissing." />
+          <ref role="33wURL" node="3d6QfrhlNs0" resolve="bevoegdheid (recht) van de werkgever om verzoek aanpassing arbeidsduur&#10;te accepteren voor een juridische beslissing, te kiezen uit inwilliging of afwijzing, &#10;of 2.10 zijn werk laten doen; werknemer heeft de gehoudenheid." />
         </node>
         <node concept="33wURK" id="5RhAgJkmIOv" role="1OcJUG">
           <ref role="33wURL" node="3d6QfrhlNup" resolve="immuniteit (recht) om de verplichte bevoegdheid tot het accepteren te kunnen neutraliseren" />
@@ -1513,7 +1540,7 @@
       <node concept="1OcJUx" id="3d6QfrhlNzo" role="33xnZK">
         <property role="TrG5h" value="Verzoek wordt niet geaccepteerd voor juridische besluitvorming van inwilliging of afwijzing" />
         <node concept="33wURK" id="3d6QfrhlNzq" role="1OcJUG">
-          <ref role="33wURL" node="3d6QfrhlNs0" resolve="bevoegdheid (recht) om verzoek aanpassing arbeidsduur&#10;te accepteren voor een juridische beslissing." />
+          <ref role="33wURL" node="3d6QfrhlNs0" resolve="bevoegdheid (recht) van de werkgever om verzoek aanpassing arbeidsduur&#10;te accepteren voor een juridische beslissing, te kiezen uit inwilliging of afwijzing, &#10;of 2.10 zijn werk laten doen; werknemer heeft de gehoudenheid." />
         </node>
         <node concept="33wURK" id="3d6QfrhlNKh" role="1OcJUG">
           <ref role="33wURL" node="3d6QfrhlNup" resolve="immuniteit (recht) om de verplichte bevoegdheid tot het accepteren te kunnen neutraliseren" />
@@ -1917,7 +1944,7 @@
     </node>
     <node concept="2BLbnY" id="5EElNFntr5x" role="2BLYKK">
       <node concept="2B78KX" id="5EElNFntr5F" role="1O2iA3">
-        <ref role="2B78K5" node="3d6QfrhlNs0" resolve="bevoegdheid (recht) om verzoek aanpassing arbeidsduur&#10;te accepteren voor een juridische beslissing." />
+        <ref role="2B78K5" node="3d6QfrhlNs0" resolve="bevoegdheid (recht) van de werkgever om verzoek aanpassing arbeidsduur&#10;te accepteren voor een juridische beslissing, te kiezen uit inwilliging of afwijzing, &#10;of 2.10 zijn werk laten doen; werknemer heeft de gehoudenheid." />
         <ref role="2B78K2" node="4pem8DJZpq7" resolve="Kees" />
         <ref role="2B78KW" node="4pem8DJZpq9" resolve="Jan" />
         <node concept="LeFwQ" id="5EElNFntr5G" role="2B78LI">

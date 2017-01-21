@@ -86,6 +86,7 @@
         <child id="6994217584621161848" name="NieuweRechtsbetrekkingen" index="1OcJUI" />
       </concept>
       <concept id="6994217584621161730" name="ObjectiefRecht.structure.Context" flags="ng" index="1OcJVk">
+        <property id="7431672735427175590" name="toonnummer" index="ddjTs" />
         <property id="5266643527326211211" name="toonalles" index="lXnND" />
         <property id="909603116718868996" name="toonopmerkingen" index="I0$kN" />
         <child id="5266643527326157923" name="zichtdatum" index="lX2K1" />
@@ -130,6 +131,7 @@
     <property role="TrG5h" value="Objectief AWB" />
     <property role="lXnND" value="true" />
     <property role="I0$kN" value="true" />
+    <property role="ddjTs" value="true" />
     <node concept="3D8HDq" id="3d6QfrhoinT" role="SxSPV">
       <property role="da7Q0" value="1" />
       <property role="TrG5h" value="Bezwaar of beroep" />
