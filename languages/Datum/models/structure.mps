@@ -31,6 +31,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -93,6 +96,26 @@
       <property role="20kJfa" value="Tijd" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5riiL_BUfcl" resolve="Tijd" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1KpaLv9ASFO">
+    <property role="EcuMT" value="2024696888646404852" />
+    <property role="TrG5h" value="VerschilTussen" />
+    <property role="3GE5qa" value="Functies" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1KpaLv9ASG7" role="1TKVEi">
+      <property role="IQ2ns" value="2024696888646404871" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="datum1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6c9haf45sz3" resolve="Datum" />
+    </node>
+    <node concept="1TJgyj" id="1KpaLv9ASG9" role="1TKVEi">
+      <property role="IQ2ns" value="2024696888646404873" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="datum2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6c9haf45sz3" resolve="Datum" />
     </node>
   </node>
 </model>

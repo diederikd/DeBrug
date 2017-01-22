@@ -18,20 +18,22 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(3);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(4);
   /*package*/ final ConceptDescriptor myConceptDatum = createDescriptorForDatum();
   /*package*/ final ConceptDescriptor myConceptDatumTijd = createDescriptorForDatumTijd();
   /*package*/ final ConceptDescriptor myConceptTijd = createDescriptorForTijd();
+  /*package*/ final ConceptDescriptor myConceptVerschilTussen = createDescriptorForVerschilTussen();
 
   public StructureAspectDescriptor() {
     myIndexMap.put(myConceptDatum.getId(), 0);
     myIndexMap.put(myConceptDatumTijd.getId(), 1);
     myIndexMap.put(myConceptTijd.getId(), 2);
+    myIndexMap.put(myConceptVerschilTussen.getId(), 3);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptDatum, myConceptDatumTijd, myConceptTijd);
+    return Arrays.asList(myConceptDatum, myConceptDatumTijd, myConceptTijd, myConceptVerschilTussen);
   }
 
   @Override
@@ -48,6 +50,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDatumTijd;
       case 2:
         return myConceptTijd;
+      case 3:
+        return myConceptVerschilTussen;
       default:
         throw new IllegalStateException();
     }
@@ -71,5 +75,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForTijd() {
     return new ConceptDescriptorBuilder("Datum.structure.Tijd", MetaIdFactory.conceptId(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x56d24b1967e8f316L, "Uren", new SNodePointer("r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)", "6256145404860625686")), new ConceptDescriptorBuilder.Prop(0x56d24b1967e8f328L, "Minuten", new SNodePointer("r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)", "6256145404860625704")), new ConceptDescriptorBuilder.Prop(0x56d24b1967e8f32bL, "Seconden", new SNodePointer("r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)", "6256145404860625707"))).properties("Uren", "Minuten", "Seconden").sourceNode(new SNodePointer("r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)", "6256145404860625685")).create();
+  }
+  private static ConceptDescriptor createDescriptorForVerschilTussen() {
+    return new ConceptDescriptorBuilder("Datum.structure.VerschilTussen", MetaIdFactory.conceptId(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x1c192b17c99b8af4L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x1c192b17c99b8b07L, "datum1", MetaIdFactory.conceptId(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L), false, false, false, new SNodePointer("r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)", "2024696888646404871")), new ConceptDescriptorBuilder.Link(0x1c192b17c99b8b09L, "datum2", MetaIdFactory.conceptId(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L), false, false, false, new SNodePointer("r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)", "2024696888646404873"))).children(new String[]{"datum1", "datum2"}, new boolean[]{false, false}).sourceNode(new SNodePointer("r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)", "2024696888646404852")).create();
   }
 }

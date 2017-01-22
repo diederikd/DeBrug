@@ -18,6 +18,9 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 public class ExpressieVoorwaarde_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -29,6 +32,7 @@ public class ExpressieVoorwaarde_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_vqw804_a0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_vqw804_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_vqw804_c0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_vqw804_a0(EditorContext editorContext, SNode node) {
@@ -87,5 +91,14 @@ public class ExpressieVoorwaarde_Editor extends DefaultNodeEditor {
     protected String getNoTargetText() {
       return "<no expressie>";
     }
+  }
+  private EditorCell createConstant_vqw804_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ".");
+    editorCell.setCellId("Constant_vqw804_c0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 }

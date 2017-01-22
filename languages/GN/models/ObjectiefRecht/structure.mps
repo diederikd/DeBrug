@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="30ef095a-d489-45ff-a80f-456a798ac125" name="Gegevens" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -1011,6 +1012,7 @@
     <property role="EcuMT" value="2282129504202781035" />
     <property role="3GE5qa" value="Expressies" />
     <property role="TrG5h" value="IsGroterDan" />
+    <property role="34LRSv" value="is groter dan" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
     <node concept="1TJgyj" id="1YFKb5tsv5H" role="1TKVEi">
       <property role="IQ2ns" value="2282129504202781037" />
@@ -1039,6 +1041,7 @@
     <property role="EcuMT" value="2282129504203107211" />
     <property role="3GE5qa" value="Expressies" />
     <property role="TrG5h" value="IsKleinerDan" />
+    <property role="34LRSv" value="is kleiner dan" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
     <node concept="1TJgyj" id="1YFKb5ttIIc" role="1TKVEi">
       <property role="IQ2ns" value="2282129504203107212" />
@@ -1192,6 +1195,7 @@
     <property role="EcuMT" value="3294000250416426724" />
     <property role="3GE5qa" value="Expressies" />
     <property role="TrG5h" value="IsOpgegeven" />
+    <property role="34LRSv" value="is opgegeven" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
     <node concept="1TJgyj" id="2QQCWq07AV_" role="1TKVEi">
       <property role="IQ2ns" value="3294000250416426725" />
@@ -1205,6 +1209,7 @@
     <property role="EcuMT" value="31726144782562323" />
     <property role="3GE5qa" value="Expressies" />
     <property role="TrG5h" value="IsWaar" />
+    <property role="34LRSv" value="is waar" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
     <node concept="1TJgyj" id="1KHGaPQRg_" role="1TKVEi">
       <property role="IQ2ns" value="31726144782562341" />
@@ -1212,6 +1217,156 @@
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="variabele" />
       <ref role="20lvS9" node="7rcH1JNxHPY" resolve="Variabele" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="gIBqGO45PU">
+    <property role="EcuMT" value="301351583718858106" />
+    <property role="3GE5qa" value="Expressies.Rekenen" />
+    <property role="TrG5h" value="RekenExpressie" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+  </node>
+  <node concept="1TIwiD" id="gIBqGO45PV">
+    <property role="EcuMT" value="301351583718858107" />
+    <property role="3GE5qa" value="Expressies.Rekenen" />
+    <property role="TrG5h" value="PlusExpressie" />
+    <property role="34LRSv" value="plus" />
+    <property role="R4oN_" value="optellen" />
+    <ref role="1TJDcQ" node="gIBqGO45PU" resolve="RekenExpressie" />
+  </node>
+  <node concept="1TIwiD" id="gIBqGO45PW">
+    <property role="EcuMT" value="301351583718858108" />
+    <property role="3GE5qa" value="Expressies.Rekenen" />
+    <property role="TrG5h" value="MinExpressie" />
+    <property role="34LRSv" value="min" />
+    <property role="R4oN_" value="aftrekken" />
+    <ref role="1TJDcQ" node="gIBqGO45PU" resolve="RekenExpressie" />
+  </node>
+  <node concept="1TIwiD" id="gIBqGO45Qt">
+    <property role="EcuMT" value="301351583718858141" />
+    <property role="3GE5qa" value="Expressies.Rekenen" />
+    <property role="TrG5h" value="DelenExpressie" />
+    <property role="34LRSv" value="delen" />
+    <property role="R4oN_" value="Delen" />
+    <ref role="1TJDcQ" node="gIBqGO45PU" resolve="RekenExpressie" />
+  </node>
+  <node concept="1TIwiD" id="gIBqGO45Qu">
+    <property role="EcuMT" value="301351583718858142" />
+    <property role="3GE5qa" value="Expressies.Rekenen" />
+    <property role="TrG5h" value="VermenigvuldigenExpressie" />
+    <property role="34LRSv" value="maal" />
+    <property role="R4oN_" value="Vermenigvuldigen" />
+    <ref role="1TJDcQ" node="gIBqGO45PU" resolve="RekenExpressie" />
+  </node>
+  <node concept="1TIwiD" id="gIBqGO4fNC">
+    <property role="EcuMT" value="301351583718898920" />
+    <property role="3GE5qa" value="Voorwaarden" />
+    <property role="TrG5h" value="SamengesteldeVoorwaarde" />
+    <ref role="1TJDcQ" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
+    <node concept="1TJgyj" id="1KpaLv9zXKH" role="1TKVEi">
+      <property role="IQ2ns" value="2024696888645639213" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conditie" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1KpaLv9zVxq" resolve="Conditie" />
+    </node>
+    <node concept="1TJgyj" id="gIBqGO4fOc" role="1TKVEi">
+      <property role="IQ2ns" value="301351583718898956" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="voorwaarden" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="gIBqGO4fO9">
+    <property role="EcuMT" value="301351583718898953" />
+    <property role="3GE5qa" value="Voorwaarden" />
+    <property role="TrG5h" value="EnkeleVoorwaarde" />
+    <ref role="1TJDcQ" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
+    <node concept="1TJgyj" id="gIBqGO4fOa" role="1TKVEi">
+      <property role="IQ2ns" value="301351583718898954" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="voorwaarde" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1KpaLv9zVxq">
+    <property role="EcuMT" value="2024696888645630042" />
+    <property role="TrG5h" value="Conditie" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="Conditie" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1KpaLv9zVxr">
+    <property role="EcuMT" value="2024696888645630043" />
+    <property role="3GE5qa" value="Conditie" />
+    <property role="TrG5h" value="ConditieEen" />
+    <property role="34LRSv" value="één van de" />
+    <ref role="1TJDcQ" node="1KpaLv9zVxq" resolve="Conditie" />
+  </node>
+  <node concept="1TIwiD" id="1KpaLv9zVxx">
+    <property role="EcuMT" value="2024696888645630049" />
+    <property role="3GE5qa" value="Conditie" />
+    <property role="TrG5h" value="ConditieAlle" />
+    <property role="34LRSv" value="alle" />
+    <ref role="1TJDcQ" node="1KpaLv9zVxq" resolve="Conditie" />
+  </node>
+  <node concept="1TIwiD" id="1KpaLv9zXJK">
+    <property role="EcuMT" value="2024696888645639152" />
+    <property role="3GE5qa" value="Conditie" />
+    <property role="TrG5h" value="ConditieGeen" />
+    <property role="34LRSv" value="geen van de" />
+    <ref role="1TJDcQ" node="1KpaLv9zVxq" resolve="Conditie" />
+  </node>
+  <node concept="1TIwiD" id="1KpaLv9Aahg">
+    <property role="EcuMT" value="2024696888646214736" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="IsGelijk" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="1TJgyj" id="1KpaLv9Aahh" role="1TKVEi">
+      <property role="IQ2ns" value="2024696888646214737" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    </node>
+    <node concept="1TJgyj" id="1KpaLv9AahN" role="1TKVEi">
+      <property role="IQ2ns" value="2024696888646214771" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1KpaLv9ASFN">
+    <property role="EcuMT" value="2024696888646404851" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="TenMinste" />
+    <property role="34LRSv" value="is ten minste" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+  </node>
+  <node concept="1TIwiD" id="1KpaLv9ASGV">
+    <property role="EcuMT" value="2024696888646404923" />
+    <property role="3GE5qa" value="Expressies.Functies" />
+    <property role="TrG5h" value="VerschilTussen" />
+    <property role="34LRSv" value="verschil tussen" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="1TJgyj" id="1KpaLv9ASGW" role="1TKVEi">
+      <property role="IQ2ns" value="2024696888646404924" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    </node>
+    <node concept="1TJgyj" id="1KpaLv9ASGX" role="1TKVEi">
+      <property role="IQ2ns" value="2024696888646404925" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
     </node>
   </node>
 </model>

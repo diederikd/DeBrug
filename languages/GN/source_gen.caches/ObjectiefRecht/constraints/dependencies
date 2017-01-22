@@ -29,6 +29,7 @@
     <classNode dependClassName="ObjectiefRecht.constraints.Onderwerp_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.Rechtshandeling_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.RijVanKaraktersDatatype_Constraints" />
+    <classNode dependClassName="ObjectiefRecht.constraints.Variabele_Constraints" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
@@ -99,6 +100,10 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="ObjectiefRecht.constraints.Variabele_Constraints" file="Variabele_Constraints.java">
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
 </dependenciesRoot>

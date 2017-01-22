@@ -654,5 +654,9 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="gIBqGO4XEz">
+    <property role="3GE5qa" value="Expressies" />
+    <ref role="1M2myG" to="3pw0:7rcH1JNxHPY" resolve="Variabele" />
+  </node>
 </model>
 

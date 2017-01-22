@@ -24,6 +24,9 @@
     <file name="Tijd_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Datum.behavior.Tijd_BehaviorDescriptor" />
     </file>
+    <file name="VerschilTussen_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Datum.behavior.VerschilTussen_BehaviorDescriptor" />
+    </file>
   </root>
   <root nodeRef="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)/6256145404860627950">
     <file name="Datum__BehaviorDescriptor.java">

@@ -407,22 +407,22 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="waarde" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1YFKb5t_BZt" resolve="AbstracteWaarde" />
+      <ref role="20lvS9" node="1YFKb5t_BZt" resolve="Waarde" />
     </node>
   </node>
   <node concept="1TIwiD" id="1YFKb5t_BZt">
     <property role="EcuMT" value="2282129504205176797" />
-    <property role="TrG5h" value="AbstracteWaarde" />
+    <property role="TrG5h" value="Waarde" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="Waarden" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4rrm763g8LU" resolve="AbstracteWaarde" />
   </node>
   <node concept="1TIwiD" id="1YFKb5t_BZA">
     <property role="EcuMT" value="2282129504205176806" />
     <property role="TrG5h" value="GeheelGetalWaarde" />
     <property role="3GE5qa" value="Waarden" />
-    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="AbstracteWaarde" />
+    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
     <node concept="1TJgyi" id="1YFKb5t_BZB" role="1TKVEl">
       <property role="IQ2nx" value="2282129504205176807" />
       <property role="TrG5h" value="waarde" />
@@ -461,7 +461,7 @@
     <property role="EcuMT" value="2282129504205456716" />
     <property role="3GE5qa" value="Waarden" />
     <property role="TrG5h" value="JaNeeWaarde" />
-    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="AbstracteWaarde" />
+    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
     <node concept="1TJgyi" id="1YFKb5tAGld" role="1TKVEl">
       <property role="IQ2nx" value="2282129504205456717" />
       <property role="TrG5h" value="waarde" />
@@ -472,7 +472,7 @@
     <property role="EcuMT" value="2282129504205456739" />
     <property role="3GE5qa" value="Waarden" />
     <property role="TrG5h" value="RijVanKaraktersWaarde" />
-    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="AbstracteWaarde" />
+    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
     <node concept="1TJgyi" id="1YFKb5tAGl$" role="1TKVEl">
       <property role="IQ2nx" value="2282129504205456740" />
       <property role="TrG5h" value="waarde" />
@@ -483,7 +483,7 @@
     <property role="EcuMT" value="2282129504205456769" />
     <property role="3GE5qa" value="Waarden" />
     <property role="TrG5h" value="ReeelGetalWaarde" />
-    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="AbstracteWaarde" />
+    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
     <node concept="1TJgyi" id="1YFKb5tAQ8V" role="1TKVEl">
       <property role="IQ2nx" value="2282129504205496891" />
       <property role="TrG5h" value="waarde" />
@@ -499,7 +499,7 @@
     <property role="EcuMT" value="2282129504205496947" />
     <property role="3GE5qa" value="Waarden" />
     <property role="TrG5h" value="DatumWaarde" />
-    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="AbstracteWaarde" />
+    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
     <node concept="1TJgyj" id="1YFKb5tAQ9O" role="1TKVEi">
       <property role="IQ2ns" value="2282129504205496948" />
       <property role="20lmBu" value="aggregation" />
@@ -512,7 +512,7 @@
     <property role="EcuMT" value="2282129504205496969" />
     <property role="3GE5qa" value="Waarden" />
     <property role="TrG5h" value="ObjectWaarde" />
-    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="AbstracteWaarde" />
+    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
     <node concept="1TJgyj" id="1YFKb5tAQae" role="1TKVEi">
       <property role="IQ2ns" value="2282129504205496974" />
       <property role="20lmBu" value="reference" />
@@ -586,7 +586,7 @@
     <property role="EcuMT" value="7668643553874542695" />
     <property role="3GE5qa" value="Waarden" />
     <property role="TrG5h" value="EnumeratieWaarde" />
-    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="AbstracteWaarde" />
+    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
     <node concept="1TJgyj" id="6DGvEUpNlDZ" role="1TKVEi">
       <property role="IQ2ns" value="7668643553874893439" />
       <property role="20lmBu" value="reference" />
@@ -614,6 +614,14 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7rcH1JNvmQR" resolve="AbstractObject" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4rrm763g8LU">
+    <property role="EcuMT" value="5105771847111183482" />
+    <property role="3GE5qa" value="Waarden" />
+    <property role="TrG5h" value="AbstracteWaarde" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

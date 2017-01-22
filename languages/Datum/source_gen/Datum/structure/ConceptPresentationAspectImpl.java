@@ -12,6 +12,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Datum = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DatumTijd = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Tijd = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_VerschilTussen = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -24,6 +25,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_DatumTijd;
       case 2:
         return props_Tijd;
+      case 3:
+        return props_VerschilTussen;
     }
     throw new IllegalStateException("Unknown concept " + c);
   }

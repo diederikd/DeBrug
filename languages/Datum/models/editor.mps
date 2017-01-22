@@ -165,6 +165,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -1230,6 +1231,25 @@
       </node>
       <node concept="VQ3r3" id="6syAJDDTuJg" role="3F10Kt">
         <property role="2USNnj" value="2" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1KpaLv9ASGk">
+    <property role="3GE5qa" value="Functies" />
+    <ref role="1XX52x" to="jx79:1KpaLv9ASFO" resolve="VerschilTussen" />
+    <node concept="3EZMnI" id="1KpaLv9ASGm" role="2wV5jI">
+      <node concept="3F0ifn" id="1KpaLv9ASGt" role="3EZMnx">
+        <property role="3F0ifm" value="het verschil tussen" />
+      </node>
+      <node concept="3F1sOY" id="1KpaLv9ASGz" role="3EZMnx">
+        <ref role="1NtTu8" to="jx79:1KpaLv9ASG7" resolve="datum1" />
+      </node>
+      <node concept="l2Vlx" id="1KpaLv9ASGp" role="2iSdaV" />
+      <node concept="3F0ifn" id="1KpaLv9ASGF" role="3EZMnx">
+        <property role="3F0ifm" value="en" />
+      </node>
+      <node concept="3F1sOY" id="1KpaLv9ASGP" role="3EZMnx">
+        <ref role="1NtTu8" to="jx79:1KpaLv9ASG9" resolve="datum2" />
       </node>
     </node>
   </node>
