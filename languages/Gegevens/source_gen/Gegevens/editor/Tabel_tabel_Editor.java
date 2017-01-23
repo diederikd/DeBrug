@@ -265,7 +265,7 @@ public class Tabel_tabel_Editor extends DefaultNodeEditor {
             for (int yi = 0; yi < sizeY; yi++) {
               final int x = xi;
               final int y = yi;
-              // node<AbstracteWaarde> 
+              // node<Waarde> 
               Object queryResult_ = queryCellsSafely(node, x, y);
               grid.setElement(x, y, new GridElementFactory(editorContext, node, true, true, grid).create(queryResult_));
 

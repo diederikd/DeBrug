@@ -153,6 +153,9 @@
     <file name="WaardeVanAttribuut_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.WaardeVanAttribuut_BehaviorDescriptor" />
     </file>
+    <file name="Waarde_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.Waarde_BehaviorDescriptor" />
+    </file>
   </root>
   <root nodeRef="r:b2ebef81-e61c-40e2-978f-31da984640bd(Gegevens.behavior)/2282129504205537381">
     <file name="Concept__BehaviorDescriptor.java">
