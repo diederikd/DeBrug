@@ -751,6 +751,24 @@
         <node concept="2B78Lw" id="1KHGaPR$oq" role="lXajo" />
         <node concept="LQ6DZ" id="1KHGaPR$oY" role="LSO5p" />
       </node>
+      <node concept="lYmzx" id="4rrm763mT9K" role="lYmzI">
+        <property role="da7Q0" value="0000" />
+        <property role="TrG5h" value="samentelling volgens werknemer" />
+        <node concept="2B78Lw" id="4rrm763mT9N" role="lXajo" />
+      </node>
+      <node concept="lYmzx" id="4rrm763mTaW" role="lYmzI">
+        <property role="da7Q0" value="0000" />
+        <property role="TrG5h" value="samentelling volgens werkgever" />
+        <node concept="2B78Lw" id="4rrm763mTaZ" role="lXajo" />
+      </node>
+      <node concept="lYmzx" id="4rrm763mTgf" role="lYmzI">
+        <property role="da7Q0" value="0000" />
+        <property role="TrG5h" value="redenen voor afwijzing" />
+        <node concept="2B78Lw" id="4rrm763mTgi" role="lXajo" />
+        <node concept="1FJg$_" id="4rrm763mTgU" role="LSO5p">
+          <ref role="1FE7Yo" node="4rrm763mTb_" resolve="Reden" />
+        </node>
+      </node>
       <node concept="2mcr8I" id="6T3DNjSuU2b" role="2md4RZ" />
       <node concept="2mbrj6" id="GhrpPwK$gu" role="i$vq1">
         <ref role="2mbrj7" node="GhrpPwK$c7" resolve="werknemer indiener van het verzoek" />
@@ -760,6 +778,16 @@
       </node>
       <node concept="2mbrj6" id="3p2I40$QEz7" role="i$vq1">
         <ref role="2mbrj7" node="5qTpXpBo3uX" resolve="datum indienen verzoek" />
+      </node>
+    </node>
+    <node concept="3D8HDq" id="4rrm763mTb_" role="SxSPV">
+      <property role="da7Q0" value="0000" />
+      <property role="TrG5h" value="Reden" />
+      <node concept="2B78Lw" id="4rrm763mTbA" role="lXajo" />
+      <node concept="lYmzx" id="4rrm763mTgW" role="lYmzI">
+        <property role="da7Q0" value="0000" />
+        <property role="TrG5h" value="omschrijving van de reden" />
+        <node concept="2B78Lw" id="4rrm763mTgX" role="lXajo" />
       </node>
     </node>
     <node concept="3D8HDq" id="5u1YjWIljaR" role="SxSPV">
@@ -1064,9 +1092,10 @@
               <ref role="2mbrj7" node="1KHGaPR$on" resolve="schriftelijk ingediend" />
             </node>
             <node concept="128luX" id="gIBqGO2sgF" role="12b92N">
-              <property role="da7Q0" value="0000" />
               <ref role="128luW" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
-              <node concept="2B78Lw" id="gIBqGO2sgI" role="lXajo" />
+              <node concept="2B78Lw" id="gIBqGO2sgI" role="lXajo">
+                <property role="2B78LE" value="0" />
+              </node>
             </node>
             <node concept="2B78Lw" id="gIBqGO2sgu" role="lXajo" />
           </node>
