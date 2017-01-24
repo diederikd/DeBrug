@@ -41,6 +41,14 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
           break;
         case 1:
           if (true) {
+            // Concept: Kenmerk 
+            intentions = new IntentionFactory[2];
+            intentions[0] = new MaakKenmerkMeervoudig_Intention();
+            intentions[1] = new MaakKenmerkEnkelvoudig_Intention();
+          }
+          break;
+        case 2:
+          if (true) {
             // Concept: Rechtsbetrekking 
             intentions = new IntentionFactory[7];
             intentions[0] = new VerplichteBevoegdheidVerplichteGehoudenheid_Intention();
@@ -63,7 +71,7 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[8];
+    IntentionFactory[] rv = new IntentionFactory[10];
     rv[0] = new VerplichteBevoegdheidVerplichteGehoudenheid_Intention();
     rv[1] = new AanspraakNaIngebrekeStellingPlicht_Intention();
     rv[2] = new KrachtigeAanspraakFataleVerplichtig_Intention();
@@ -72,6 +80,8 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
     rv[5] = new VrijheidGeenaanspraak_Intention();
     rv[6] = new ZwakkeAanspraakZwakkePlicht_Intention();
     rv[7] = new Hernummer_Intention();
+    rv[8] = new MaakKenmerkMeervoudig_Intention();
+    rv[9] = new MaakKenmerkEnkelvoudig_Intention();
     return Arrays.asList(rv);
   }
   private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
@@ -82,5 +92,5 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_hphjzv_d0f = buildConceptIndices(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, "ObjectiefRecht.structure.Context"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"));
+  private static final Map<SAbstractConcept, Integer> indices_hphjzv_d0f = buildConceptIndices(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, "ObjectiefRecht.structure.Context"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, "ObjectiefRecht.structure.Kenmerk"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"));
 }

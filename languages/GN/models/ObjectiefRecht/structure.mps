@@ -9,6 +9,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="jx79" ref="r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)" implicit="true" />
+    <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -22,6 +23,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -174,9 +176,6 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="lidwoord" />
       <ref role="20lvS9" node="6T3DNjSsxkp" resolve="Lidwoord" />
-    </node>
-    <node concept="PrWs8" id="64gsXol8COb" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="1TJgyi" id="6c9haf460KB" role="1TKVEl">
       <property role="IQ2nx" value="7136310554705529895" />
@@ -514,24 +513,14 @@
   <node concept="1TIwiD" id="26dbYf8FZmT">
     <property role="EcuMT" value="2417641230338880953" />
     <property role="TrG5h" value="Onderwerp" />
+    <property role="3GE5qa" value="Onderwerp" />
     <ref role="1TJDcQ" node="GhrpPwHHWz" resolve="Object" />
-    <node concept="PrWs8" id="26dbYf8FZnO" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyj" id="4$mS69sVSyc" role="1TKVEi">
       <property role="IQ2ns" value="5266643527326992524" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="kenmerk" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
-    </node>
-    <node concept="1TJgyj" id="3Kegxssh9cF" role="1TKVEi">
-      <property role="IQ2ns" value="4327468958975562539" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="kenmerken" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3Kegxssh9ab" resolve="Kenmerk2" />
-      <node concept="asaX9" id="GhrpPwNsM_" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="3p2I40$OOV1" role="1TKVEi">
       <property role="IQ2ns" value="3909890012146257601" />
@@ -698,8 +687,8 @@
     <node concept="1TJgyj" id="5qTpXpBmyqf" role="1TKVEi">
       <property role="IQ2ns" value="6249140128507897487" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="datatype" />
-      <ref role="20lvS9" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
     </node>
     <node concept="1TJgyj" id="6T3DNjSsxkX" role="1TKVEi">
       <property role="IQ2ns" value="7945378013560051005" />
@@ -707,8 +696,10 @@
       <property role="20kJfa" value="lidwoord" />
       <ref role="20lvS9" node="6T3DNjSsxkp" resolve="Lidwoord" />
     </node>
-    <node concept="PrWs8" id="4$mS69sVSy4" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="1TJgyi" id="4rrm763Eiau" role="1TKVEl">
+      <property role="IQ2nx" value="5105771847118037662" />
+      <property role="TrG5h" value="meervoudig" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="4$mS69sVSy7">
@@ -718,6 +709,9 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="Kenmerk" />
     <ref role="1TJDcQ" node="4$mS69sSlIw" resolve="Concept" />
+    <node concept="PrWs8" id="4rrm763xYGl" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="28ifPi2C7Kb">
     <property role="EcuMT" value="2455094379071699979" />
@@ -746,87 +740,61 @@
       <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
     </node>
   </node>
-  <node concept="1TIwiD" id="MvzNsyB_CF">
-    <property role="EcuMT" value="909603116718905899" />
-    <property role="3GE5qa" value="Kenmerk" />
-    <property role="TrG5h" value="KenmerkMetReferentieNaarOnderwerp" />
-    <ref role="1TJDcQ" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
-    <node concept="1TJgyj" id="6T3DNjStcxN" role="1TKVEi">
-      <property role="IQ2ns" value="7945378013560227955" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="lidwoord" />
-      <ref role="20lvS9" node="6T3DNjSsxkp" resolve="Lidwoord" />
-    </node>
-    <node concept="1TJgyj" id="MvzNsyB_CG" role="1TKVEi">
-      <property role="IQ2ns" value="909603116718905900" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="onderwerp" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="26dbYf8FZmT" resolve="Onderwerp" />
-    </node>
-    <node concept="PrWs8" id="MvzNsyB_D$" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="asaX9" id="3KegxssfSsw" role="lGtFl" />
-  </node>
   <node concept="1TIwiD" id="2xp9_$ucE6q">
     <property role="EcuMT" value="2907397198644945306" />
-    <property role="TrG5h" value="AbstractDatatype" />
+    <property role="TrG5h" value="AbstractKenmerkType" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="3GE5qa" value="Datatype" />
+    <property role="3GE5qa" value="KenmerkType" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2xp9_$ucE6L">
     <property role="EcuMT" value="2907397198644945329" />
-    <property role="TrG5h" value="DatumDatatype" />
+    <property role="TrG5h" value="DatumType" />
     <property role="34LRSv" value="datum" />
-    <property role="3GE5qa" value="Datatype" />
-    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
   </node>
   <node concept="1TIwiD" id="2xp9_$ucE6Z">
     <property role="EcuMT" value="2907397198644945343" />
-    <property role="TrG5h" value="RijVanKaraktersDatatype" />
+    <property role="TrG5h" value="RijVanKaraktersType" />
     <property role="34LRSv" value="rij van karakters" />
-    <property role="3GE5qa" value="Datatype" />
-    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
   </node>
   <node concept="1TIwiD" id="2xp9_$ucE7d">
     <property role="EcuMT" value="2907397198644945357" />
-    <property role="TrG5h" value="GeheelGetalDatatype" />
+    <property role="TrG5h" value="GeheelGetalType" />
     <property role="34LRSv" value="geheel getal" />
-    <property role="3GE5qa" value="Datatype" />
-    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
   </node>
   <node concept="1TIwiD" id="2xp9_$ucE7_">
     <property role="EcuMT" value="2907397198644945381" />
-    <property role="TrG5h" value="ReeelGetalDatatype" />
+    <property role="TrG5h" value="ReeelGetalType" />
     <property role="34LRSv" value="reëel getal" />
-    <property role="3GE5qa" value="Datatype" />
-    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
   </node>
   <node concept="1TIwiD" id="5qTpXpBo3vZ">
     <property role="EcuMT" value="6249140128508295167" />
-    <property role="TrG5h" value="TijdDatatype" />
+    <property role="TrG5h" value="TijdType" />
     <property role="34LRSv" value="tijd" />
-    <property role="3GE5qa" value="Datatype" />
-    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
   </node>
   <node concept="1TIwiD" id="5qTpXpBogQD">
     <property role="EcuMT" value="6249140128508349865" />
-    <property role="TrG5h" value="JaNeeDatatype" />
+    <property role="TrG5h" value="JaNeeType" />
     <property role="34LRSv" value="ja/nee" />
-    <property role="3GE5qa" value="Datatype" />
-    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
   </node>
   <node concept="1TIwiD" id="6syAJDDPL2P">
     <property role="EcuMT" value="7431672735422943413" />
     <property role="TrG5h" value="Enumeratie" />
     <property role="3GE5qa" value="Enumeratie" />
     <ref role="1TJDcQ" node="GhrpPwHHWz" resolve="Object" />
-    <node concept="PrWs8" id="6syAJDDPL2Q" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyj" id="6syAJDDPL37" role="1TKVEi">
       <property role="IQ2ns" value="7431672735422943431" />
       <property role="20lmBu" value="aggregation" />
@@ -858,28 +826,11 @@
     </node>
     <node concept="asaX9" id="2mYdLn7JWYZ" role="lGtFl" />
   </node>
-  <node concept="1TIwiD" id="2xDgDlj6HAL">
-    <property role="EcuMT" value="2911931843183565233" />
-    <property role="3GE5qa" value="Kenmerk" />
-    <property role="TrG5h" value="KenmerkReferentieNaarSubject" />
-    <ref role="1TJDcQ" node="4$mS69sVSy7" resolve="AbstractKenmerk" />
-    <node concept="PrWs8" id="2xDgDlj6HAM" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="2xDgDlj6HAO" role="1TKVEi">
-      <property role="IQ2ns" value="2911931843183565236" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="subject" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="64gsXol8COa" resolve="RechtsSubject" />
-    </node>
-    <node concept="asaX9" id="3KegxssfSsy" role="lGtFl" />
-  </node>
   <node concept="1TIwiD" id="7rcH1JNxHPY">
     <property role="EcuMT" value="8560415023867288958" />
     <property role="TrG5h" value="Variabele" />
     <property role="3GE5qa" value="Expressies" />
-    <ref role="1TJDcQ" node="4$mS69sSlIw" resolve="Concept" />
+    <ref role="1TJDcQ" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
     <node concept="1TJgyj" id="1YFKb5tnslI" role="1TKVEi">
       <property role="IQ2ns" value="2282129504201459054" />
       <property role="20lmBu" value="reference" />
@@ -901,14 +852,15 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="kenmerk" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6T3DNjSpxTt" resolve="AbstractReferentieNaarKenmerk" />
+      <ref role="20lvS9" node="6T3DNjSrxfM" resolve="ReferentieNaarKenmerk" />
     </node>
     <node concept="1TJgyj" id="1YFKb5txP02" role="1TKVEi">
       <property role="IQ2ns" value="2282129504204181506" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="onderwerp" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1YFKb5tyDsc" resolve="ReferentieNaarOnderwerp" />
+      <property role="20kJfa" value="object" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="4rrm763pTCc" resolve="ReferentieNaarObject" />
+      <node concept="asaX9" id="4rrm763BqYr" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="7rcH1JNxHQL">
@@ -947,23 +899,10 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-  <node concept="1TIwiD" id="6T3DNjSqx8I">
-    <property role="EcuMT" value="7945378013559525934" />
-    <property role="3GE5qa" value="ReferentieNaarKenmerk" />
-    <property role="TrG5h" value="ReferentieNaarReferentieNaarOnderwerp" />
-    <ref role="1TJDcQ" node="6T3DNjSpxTt" resolve="AbstractReferentieNaarKenmerk" />
-    <node concept="1TJgyj" id="6T3DNjSqx8J" role="1TKVEi">
-      <property role="IQ2ns" value="7945378013559525935" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="onderwerp" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="MvzNsyB_CF" resolve="KenmerkMetReferentieNaarOnderwerp" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6T3DNjSrxfM">
     <property role="EcuMT" value="7945378013559788530" />
     <property role="3GE5qa" value="ReferentieNaarKenmerk" />
-    <property role="TrG5h" value="KenmerkReferentie" />
+    <property role="TrG5h" value="ReferentieNaarKenmerk" />
     <ref role="1TJDcQ" node="6T3DNjSpxTt" resolve="AbstractReferentieNaarKenmerk" />
     <node concept="1TJgyj" id="6T3DNjSrxfN" role="1TKVEi">
       <property role="IQ2ns" value="7945378013559788531" />
@@ -995,38 +934,14 @@
     <property role="34LRSv" value="het" />
     <ref role="1TJDcQ" node="6T3DNjSsxkp" resolve="Lidwoord" />
   </node>
-  <node concept="1TIwiD" id="3p2I40$PzZ0">
-    <property role="EcuMT" value="3909890012146450368" />
-    <property role="3GE5qa" value="ReferentieNaarKenmerk" />
-    <property role="TrG5h" value="ReferentieNaarReferentieNaarSubject" />
-    <ref role="1TJDcQ" node="6T3DNjSpxTt" resolve="AbstractReferentieNaarKenmerk" />
-    <node concept="1TJgyj" id="3p2I40$PzZ1" role="1TKVEi">
-      <property role="IQ2ns" value="3909890012146450369" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="subject" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2xDgDlj6HAL" resolve="KenmerkReferentieNaarSubject" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1YFKb5tsv5F">
     <property role="EcuMT" value="2282129504202781035" />
     <property role="3GE5qa" value="Expressies" />
     <property role="TrG5h" value="IsGroterDan" />
     <property role="34LRSv" value="is groter dan" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
-    <node concept="1TJgyj" id="1YFKb5tsv5H" role="1TKVEi">
-      <property role="IQ2ns" value="2282129504202781037" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="variabele" />
-      <ref role="20lvS9" node="7rcH1JNxHPY" resolve="Variabele" />
-    </node>
-    <node concept="1TJgyj" id="1YFKb5tsv5I" role="1TKVEi">
-      <property role="IQ2ns" value="2282129504202781038" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="isGroterDan" />
-      <ref role="20lvS9" node="7rcH1JNxHPY" resolve="Variabele" />
+    <node concept="PrWs8" id="4rrm763or61" role="PzmwI">
+      <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
     </node>
   </node>
   <node concept="1TIwiD" id="1YFKb5tsv5G">
@@ -1035,7 +950,7 @@
     <property role="TrG5h" value="AbstracteExpressie" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="4$mS69sSlIw" resolve="Concept" />
+    <ref role="1TJDcQ" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
   </node>
   <node concept="1TIwiD" id="1YFKb5ttIIb">
     <property role="EcuMT" value="2282129504203107211" />
@@ -1043,19 +958,8 @@
     <property role="TrG5h" value="IsKleinerDan" />
     <property role="34LRSv" value="is kleiner dan" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
-    <node concept="1TJgyj" id="1YFKb5ttIIc" role="1TKVEi">
-      <property role="IQ2ns" value="2282129504203107212" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="variabele" />
-      <ref role="20lvS9" node="7rcH1JNxHPY" resolve="Variabele" />
-    </node>
-    <node concept="1TJgyj" id="1YFKb5ttIId" role="1TKVEi">
-      <property role="IQ2ns" value="2282129504203107213" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="isKleinerDan" />
-      <ref role="20lvS9" node="7rcH1JNxHPY" resolve="Variabele" />
+    <node concept="PrWs8" id="4rrm763or6E" role="PzmwI">
+      <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
     </node>
   </node>
   <node concept="1TIwiD" id="1YFKb5tu9rb">
@@ -1074,6 +978,7 @@
   <node concept="1TIwiD" id="1YFKb5tyDsc">
     <property role="EcuMT" value="2282129504204396300" />
     <property role="TrG5h" value="ReferentieNaarOnderwerp" />
+    <property role="3GE5qa" value="Onderwerp" />
     <ref role="1TJDcQ" node="4$mS69sSlIw" resolve="Concept" />
     <node concept="1TJgyj" id="1YFKb5tyDsd" role="1TKVEi">
       <property role="IQ2ns" value="2282129504204396301" />
@@ -1098,10 +1003,10 @@
   </node>
   <node concept="1TIwiD" id="2mYdLn7IVsj">
     <property role="EcuMT" value="2719671791663167251" />
-    <property role="3GE5qa" value="Datatype" />
-    <property role="TrG5h" value="EnumeratieDatatype" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <property role="TrG5h" value="EnumeratieType" />
     <property role="34LRSv" value="enumeratie" />
-    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
     <node concept="1TJgyj" id="2mYdLn7IVsk" role="1TKVEi">
       <property role="IQ2ns" value="2719671791663167252" />
       <property role="20lmBu" value="reference" />
@@ -1120,10 +1025,10 @@
   </node>
   <node concept="1TIwiD" id="3Kegxss8XmP">
     <property role="EcuMT" value="4327468958973416885" />
-    <property role="3GE5qa" value="Datatype" />
-    <property role="TrG5h" value="OnderwerpDatatype" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <property role="TrG5h" value="OnderwerpType" />
     <property role="34LRSv" value="onderwerp" />
-    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
     <node concept="1TJgyj" id="3Kegxss8XmQ" role="1TKVEi">
       <property role="IQ2ns" value="4327468958973416886" />
       <property role="20lmBu" value="reference" />
@@ -1134,10 +1039,10 @@
   </node>
   <node concept="1TIwiD" id="3Kegxss8XmS">
     <property role="EcuMT" value="4327468958973416888" />
-    <property role="3GE5qa" value="Datatype" />
-    <property role="TrG5h" value="SubjectDataType" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <property role="TrG5h" value="SubjectType" />
     <property role="34LRSv" value="subject" />
-    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
     <node concept="1TJgyj" id="3Kegxss8XmT" role="1TKVEi">
       <property role="IQ2ns" value="4327468958973416889" />
       <property role="20lmBu" value="reference" />
@@ -1146,36 +1051,13 @@
       <ref role="20lvS9" node="64gsXol8COa" resolve="RechtsSubject" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3Kegxssh9ab">
-    <property role="EcuMT" value="4327468958975562379" />
-    <property role="3GE5qa" value="Kenmerk" />
-    <property role="TrG5h" value="Kenmerk2" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3Kegxssh9aL" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="3Kegxssh9cr" role="1TKVEi">
-      <property role="IQ2ns" value="4327468958975562523" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="lidwoord" />
-      <ref role="20lvS9" node="6T3DNjSsxkp" resolve="Lidwoord" />
-    </node>
-    <node concept="1TJgyj" id="3Kegxssh9ct" role="1TKVEi">
-      <property role="IQ2ns" value="4327468958975562525" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="datatype" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
-    </node>
-    <node concept="asaX9" id="GhrpPwNsMz" role="lGtFl" />
-  </node>
   <node concept="1TIwiD" id="GhrpPwF6iS">
     <property role="EcuMT" value="797539131720492216" />
-    <property role="3GE5qa" value="Datatype" />
-    <property role="TrG5h" value="ObjectDataType" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <property role="TrG5h" value="ObjectType" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractDatatype" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
     <node concept="1TJgyj" id="GhrpPwIh85" role="1TKVEi">
       <property role="IQ2ns" value="797539131721323013" />
       <property role="20lmBu" value="reference" />
@@ -1189,7 +1071,11 @@
     <property role="TrG5h" value="Object" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="Object" />
     <ref role="1TJDcQ" node="4$mS69sSlIw" resolve="Concept" />
+    <node concept="PrWs8" id="4rrm763s5I1" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2QQCWq07AV$">
     <property role="EcuMT" value="3294000250416426724" />
@@ -1325,6 +1211,7 @@
     <property role="EcuMT" value="2024696888646214736" />
     <property role="3GE5qa" value="Expressies" />
     <property role="TrG5h" value="IsGelijk" />
+    <property role="34LRSv" value="is gelijk aan" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
     <node concept="1TJgyj" id="1KpaLv9Aahh" role="1TKVEi">
       <property role="IQ2ns" value="2024696888646214737" />
@@ -1354,19 +1241,64 @@
     <property role="TrG5h" value="VerschilTussen" />
     <property role="34LRSv" value="verschil tussen" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
-    <node concept="1TJgyj" id="1KpaLv9ASGW" role="1TKVEi">
-      <property role="IQ2ns" value="2024696888646404924" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr1" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="PrWs8" id="4rrm763H9U0" role="PzmwI">
+      <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
     </node>
-    <node concept="1TJgyj" id="1KpaLv9ASGX" role="1TKVEi">
-      <property role="IQ2ns" value="2024696888646404925" />
+  </node>
+  <node concept="PlHQZ" id="4rrm763or4O">
+    <property role="EcuMT" value="5105771847113355572" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="IBinaireExpressie" />
+    <node concept="1TJgyj" id="4rrm763or4P" role="1TKVEi">
+      <property role="IQ2ns" value="5105771847113355573" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr2" />
+      <property role="20kJfa" value="expressie1" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
+    </node>
+    <node concept="1TJgyj" id="4rrm763or4R" role="1TKVEi">
+      <property role="IQ2ns" value="5105771847113355575" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressie2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4rrm763pTCc">
+    <property role="EcuMT" value="5105771847113742860" />
+    <property role="3GE5qa" value="Object" />
+    <property role="TrG5h" value="ReferentieNaarObject" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4rrm763pTCd" role="1TKVEi">
+      <property role="IQ2ns" value="5105771847113742861" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="object" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="GhrpPwHHWz" resolve="Object" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4rrm763v10F">
+    <property role="EcuMT" value="5105771847115083819" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="IsGeen" />
+    <property role="34LRSv" value="is niet waar" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="1TJgyj" id="4rrm763v10H" role="1TKVEi">
+      <property role="IQ2ns" value="5105771847115083821" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="variabele" />
+      <ref role="20lvS9" node="7rcH1JNxHPY" resolve="Variabele" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4rrm763C8QA">
+    <property role="EcuMT" value="5105771847117475238" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="IsGroterOfGelijk" />
+    <property role="34LRSv" value="is groter of gelijk aan" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="PrWs8" id="4rrm763C8QB" role="PzmwI">
+      <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
     </node>
   </node>
 </model>

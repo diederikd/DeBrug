@@ -33,11 +33,11 @@ public class IsGroterDan_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNode_11zxmp_a0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new IsGroterDan_Editor.variabeleSingleRoleHandler_11zxmp_a0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL, 0x1fabc0b15d71f16dL, "variabele"), editorContext);
+    SingleRoleCellProvider provider = new IsGroterDan_Editor.expressie1SingleRoleHandler_11zxmp_a0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"), editorContext);
     return provider.createCell();
   }
-  private class variabeleSingleRoleHandler_11zxmp_a0 extends SingleRoleCellProvider {
-    public variabeleSingleRoleHandler_11zxmp_a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class expressie1SingleRoleHandler_11zxmp_a0 extends SingleRoleCellProvider {
+    public expressie1SingleRoleHandler_11zxmp_a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -45,8 +45,8 @@ public class IsGroterDan_Editor extends DefaultNodeEditor {
       myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
       try {
         EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL, 0x1fabc0b15d71f16dL, "variabele"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL, 0x1fabc0b15d71f16dL, "variabele"), child));
+        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"), child));
+        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"), child));
         installCellInfo(child, editorCell);
         return editorCell;
       } finally {
@@ -60,19 +60,19 @@ public class IsGroterDan_Editor extends DefaultNodeEditor {
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL, 0x1fabc0b15d71f16dL, "variabele"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
-        editorCell.setRole("variabele");
+        editorCell.setRole("expressie1");
       }
     }
     @Override
     protected EditorCell createEmptyCell() {
       myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL, 0x1fabc0b15d71f16dL, "variabele")));
+      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")));
       try {
         EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_variabele");
+        editorCell.setCellId("empty_expressie1");
         installCellInfo(null, editorCell);
         return editorCell;
       } finally {
@@ -80,7 +80,7 @@ public class IsGroterDan_Editor extends DefaultNodeEditor {
       }
     }
     protected String getNoTargetText() {
-      return "<no variabele>";
+      return "<no expressie1>";
     }
   }
   private EditorCell createConstant_11zxmp_b0(EditorContext editorContext, SNode node) {
@@ -90,11 +90,11 @@ public class IsGroterDan_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNode_11zxmp_c0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new IsGroterDan_Editor.isGroterDanSingleRoleHandler_11zxmp_c0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL, 0x1fabc0b15d71f16eL, "isGroterDan"), editorContext);
+    SingleRoleCellProvider provider = new IsGroterDan_Editor.expressie2SingleRoleHandler_11zxmp_c0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"), editorContext);
     return provider.createCell();
   }
-  private class isGroterDanSingleRoleHandler_11zxmp_c0 extends SingleRoleCellProvider {
-    public isGroterDanSingleRoleHandler_11zxmp_c0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class expressie2SingleRoleHandler_11zxmp_c0 extends SingleRoleCellProvider {
+    public expressie2SingleRoleHandler_11zxmp_c0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -102,8 +102,8 @@ public class IsGroterDan_Editor extends DefaultNodeEditor {
       myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
       try {
         EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL, 0x1fabc0b15d71f16eL, "isGroterDan"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL, 0x1fabc0b15d71f16eL, "isGroterDan"), child));
+        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"), child));
+        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"), child));
         installCellInfo(child, editorCell);
         return editorCell;
       } finally {
@@ -117,19 +117,19 @@ public class IsGroterDan_Editor extends DefaultNodeEditor {
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL, 0x1fabc0b15d71f16eL, "isGroterDan"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
-        editorCell.setRole("isGroterDan");
+        editorCell.setRole("expressie2");
       }
     }
     @Override
     protected EditorCell createEmptyCell() {
       myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL, 0x1fabc0b15d71f16eL, "isGroterDan")));
+      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")));
       try {
         EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_isGroterDan");
+        editorCell.setCellId("empty_expressie2");
         installCellInfo(null, editorCell);
         return editorCell;
       } finally {
@@ -137,7 +137,7 @@ public class IsGroterDan_Editor extends DefaultNodeEditor {
       }
     }
     protected String getNoTargetText() {
-      return "<no isGroterDan>";
+      return "<no expressie2>";
     }
   }
 }

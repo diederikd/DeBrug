@@ -18,6 +18,15 @@ import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.util.EqualUtil;
+import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
 
 public class Variabele_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -29,7 +38,7 @@ public class Variabele_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createRefNode_643dx4_a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_643dx4_b0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_643dx4_c0(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_643dx4_c0(editorContext, node));
     return editorCell;
   }
   private EditorCell createRefNode_643dx4_a0(EditorContext editorContext, SNode node) {
@@ -89,55 +98,24 @@ public class Variabele_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_643dx4_c0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Variabele_Editor.onderwerpSingleRoleHandler_643dx4_c0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875002L, "onderwerp"), editorContext);
-    return provider.createCell();
-  }
-  private class onderwerpSingleRoleHandler_643dx4_c0 extends SingleRoleCellProvider {
-    public onderwerpSingleRoleHandler_643dx4_c0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
-      super(ownerNode, containmentLink, context);
-    }
-    protected EditorCell createChildCell(SNode child) {
-      myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
-      try {
-        EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875002L, "onderwerp"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875002L, "onderwerp"), child));
-        installCellInfo(child, editorCell);
-        return editorCell;
-      } finally {
-        myEditorContext.getCellFactory().popCellContext();
+  private EditorCell createReadOnlyModelAccessor_643dx4_c0(final EditorContext editorContext, final SNode node) {
+    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
+      public String getText() {
+        SNode object = (SNode) SNodeOperations.getParent(SLinkOperations.getTarget(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+        return SPropertyOperations.getString(object, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
       }
-    }
-
-    protected boolean isCompatibilityMode() {
-      return false;
-    }
-
-    private void installCellInfo(SNode child, EditorCell editorCell) {
-      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875002L, "onderwerp"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+      public void setText(String s) {
       }
-      if (editorCell.getRole() == null) {
-        editorCell.setRole("onderwerp");
+      public boolean isValidText(String s) {
+        return EqualUtil.equals(s, getText());
       }
-    }
-    @Override
-    protected EditorCell createEmptyCell() {
-      myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875002L, "onderwerp")));
-      try {
-        EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_onderwerp");
-        installCellInfo(null, editorCell);
-        return editorCell;
-      } finally {
-        myEditorContext.getCellFactory().popCellContext();
-      }
-    }
-    protected String getNoTargetText() {
-      return "<no onderwerp>";
-    }
+    }, node);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_643dx4_c0");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Onderwerp(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
   }
 }

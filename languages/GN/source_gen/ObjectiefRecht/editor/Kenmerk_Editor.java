@@ -23,6 +23,10 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
 public class Kenmerk_Editor extends DefaultNodeEditor {
@@ -39,6 +43,9 @@ public class Kenmerk_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createProperty_wasupv_a0(editorContext, node));
     if (renderingCondition_wasupv_a1a(node, editorContext)) {
       editorCell.addEditorCell(this.createCollection_wasupv_b0(editorContext, node));
+    }
+    if (renderingCondition_wasupv_a2a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_wasupv_c0(editorContext, node));
     }
     return editorCell;
   }
@@ -66,7 +73,7 @@ public class Kenmerk_Editor extends DefaultNodeEditor {
   }
   private static boolean renderingCondition_wasupv_a1a(SNode node, EditorContext editorContext) {
     boolean show = false;
-    if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype")), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25be3715c7bbb713L, "ObjectiefRecht.structure.EnumeratieDatatype"))) {
+    if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type")), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25be3715c7bbb713L, "ObjectiefRecht.structure.EnumeratieType"))) {
       if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"))) {
         show = true;
       }
@@ -83,11 +90,11 @@ public class Kenmerk_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNode_wasupv_b1a(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Kenmerk_Editor.datatypeSingleRoleHandler_wasupv_b1a(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), editorContext);
+    SingleRoleCellProvider provider = new Kenmerk_Editor.typeSingleRoleHandler_wasupv_b1a(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"), editorContext);
     return provider.createCell();
   }
-  private class datatypeSingleRoleHandler_wasupv_b1a extends SingleRoleCellProvider {
-    public datatypeSingleRoleHandler_wasupv_b1a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class typeSingleRoleHandler_wasupv_b1a extends SingleRoleCellProvider {
+    public typeSingleRoleHandler_wasupv_b1a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -95,8 +102,8 @@ public class Kenmerk_Editor extends DefaultNodeEditor {
       myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
       try {
         EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), child));
+        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"), child));
+        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"), child));
         installCellInfo(child, editorCell);
         return editorCell;
       } finally {
@@ -110,19 +117,19 @@ public class Kenmerk_Editor extends DefaultNodeEditor {
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
-        editorCell.setRole("datatype");
+        editorCell.setRole("type");
       }
     }
     @Override
     protected EditorCell createEmptyCell() {
       myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype")));
+      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type")));
       try {
         EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_datatype");
+        editorCell.setCellId("empty_type");
         installCellInfo(null, editorCell);
         return editorCell;
       } finally {
@@ -130,8 +137,33 @@ public class Kenmerk_Editor extends DefaultNodeEditor {
       }
     }
     protected String getNoTargetText() {
-      return "<no datatype>";
+      return "<no type>";
     }
+  }
+  private EditorCell createCollection_wasupv_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_wasupv_c0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_wasupv_a2a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_wasupv_b2a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_wasupv_a2a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x46db587183a9229eL, "meervoudig"));
+  }
+  private EditorCell createConstant_wasupv_a2a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_wasupv_a2a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_wasupv_b2a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "meervoudig");
+    editorCell.setCellId("Constant_wasupv_b2a");
+    editorCell.setDefaultText("");
+    return editorCell;
   }
   private EditorCell createComponent_wasupv_a(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "ObjectiefRecht.editor.BronGeldigheid");

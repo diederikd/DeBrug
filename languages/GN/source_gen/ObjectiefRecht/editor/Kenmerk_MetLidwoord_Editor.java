@@ -25,6 +25,10 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
 public class Kenmerk_MetLidwoord_Editor extends DefaultNodeEditor {
@@ -49,6 +53,9 @@ public class Kenmerk_MetLidwoord_Editor extends DefaultNodeEditor {
     }
     editorCell.addEditorCell(this.createConstant_sn0itw_b0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_sn0itw_c0(editorContext, node));
+    if (renderingCondition_sn0itw_a3a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_sn0itw_d0(editorContext, node));
+    }
     return editorCell;
   }
   private EditorCell createRefNode_sn0itw_a0(EditorContext editorContext, SNode node) {
@@ -124,6 +131,31 @@ public class Kenmerk_MetLidwoord_Editor extends DefaultNodeEditor {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
       return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
     } else
+    return editorCell;
+  }
+  private EditorCell createCollection_sn0itw_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_sn0itw_d0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_sn0itw_a3a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_sn0itw_b3a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_sn0itw_a3a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x46db587183a9229eL, "meervoudig"));
+  }
+  private EditorCell createConstant_sn0itw_a3a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_sn0itw_a3a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_sn0itw_b3a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "meervoudig");
+    editorCell.setCellId("Constant_sn0itw_b3a");
+    editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createComponent_sn0itw_a(EditorContext editorContext, SNode node) {

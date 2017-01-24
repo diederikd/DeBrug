@@ -7,9 +7,13 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -116,6 +120,83 @@
       <property role="20kJfa" value="datum2" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6c9haf45sz3" resolve="Datum" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4rrm763GGIw">
+    <property role="EcuMT" value="5105771847118670752" />
+    <property role="TrG5h" value="Duur" />
+    <property role="3GE5qa" value="Duur" />
+    <ref role="1TJDcQ" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
+  </node>
+  <node concept="1TIwiD" id="4rrm763GGIx">
+    <property role="EcuMT" value="5105771847118670753" />
+    <property role="3GE5qa" value="Duur" />
+    <property role="TrG5h" value="Uren" />
+    <ref role="1TJDcQ" node="4rrm763GGIw" resolve="Duur" />
+    <node concept="1TJgyi" id="4rrm763GGIy" role="1TKVEl">
+      <property role="IQ2nx" value="5105771847118670754" />
+      <property role="TrG5h" value="uren" />
+      <ref role="AX2Wp" node="1YFKb5tAQ8U" resolve="reeelGetal" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4rrm763GGQC">
+    <property role="EcuMT" value="5105771847118671272" />
+    <property role="3GE5qa" value="Duur" />
+    <property role="TrG5h" value="Dagen" />
+    <ref role="1TJDcQ" node="4rrm763GGIw" resolve="Duur" />
+    <node concept="1TJgyi" id="4rrm763GGQD" role="1TKVEl">
+      <property role="IQ2nx" value="5105771847118671273" />
+      <property role="TrG5h" value="dagen" />
+      <ref role="AX2Wp" node="1YFKb5tAQ8U" resolve="reeelGetal" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="1YFKb5tAQ8U">
+    <property role="3GE5qa" value="" />
+    <property role="FLfZY" value="-?[0-9]+((\\.|,)[0-9]+)?" />
+    <property role="TrG5h" value="reeelGetal" />
+  </node>
+  <node concept="1TIwiD" id="4rrm763GGR8">
+    <property role="EcuMT" value="5105771847118671304" />
+    <property role="3GE5qa" value="Duur" />
+    <property role="TrG5h" value="Minuten" />
+    <ref role="1TJDcQ" node="4rrm763GGIw" resolve="Duur" />
+    <node concept="1TJgyi" id="4rrm763GGR9" role="1TKVEl">
+      <property role="IQ2nx" value="5105771847118671305" />
+      <property role="TrG5h" value="minuten" />
+      <ref role="AX2Wp" node="1YFKb5tAQ8U" resolve="reeelGetal" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4rrm763GGRb">
+    <property role="EcuMT" value="5105771847118671307" />
+    <property role="3GE5qa" value="Duur" />
+    <property role="TrG5h" value="Maanden" />
+    <ref role="1TJDcQ" node="4rrm763GGIw" resolve="Duur" />
+    <node concept="1TJgyi" id="4rrm763GGRc" role="1TKVEl">
+      <property role="IQ2nx" value="5105771847118671308" />
+      <property role="TrG5h" value="maanden" />
+      <ref role="AX2Wp" node="1YFKb5tAQ8U" resolve="reeelGetal" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4rrm763GMbA">
+    <property role="EcuMT" value="5105771847118693094" />
+    <property role="3GE5qa" value="Duur" />
+    <property role="TrG5h" value="Jaren" />
+    <ref role="1TJDcQ" node="4rrm763GGIw" resolve="Duur" />
+    <node concept="1TJgyi" id="4rrm763GMbE" role="1TKVEl">
+      <property role="IQ2nx" value="5105771847118693098" />
+      <property role="TrG5h" value="jaren" />
+      <ref role="AX2Wp" node="1YFKb5tAQ8U" resolve="reeelGetal" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4rrm763GMcy">
+    <property role="EcuMT" value="5105771847118693154" />
+    <property role="3GE5qa" value="Duur" />
+    <property role="TrG5h" value="Seconden" />
+    <ref role="1TJDcQ" node="4rrm763GGIw" resolve="Duur" />
+    <node concept="1TJgyi" id="4rrm763GMcz" role="1TKVEl">
+      <property role="IQ2nx" value="5105771847118693155" />
+      <property role="TrG5h" value="seconden" />
+      <ref role="AX2Wp" node="1YFKb5tAQ8U" resolve="reeelGetal" />
     </node>
   </node>
 </model>

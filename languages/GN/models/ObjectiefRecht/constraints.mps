@@ -163,12 +163,12 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="4pem8DJRFEe">
-    <property role="3GE5qa" value="Datatype" />
-    <ref role="1M2myG" to="3pw0:2xp9_$ucE6L" resolve="DatumDatatype" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <ref role="1M2myG" to="3pw0:2xp9_$ucE6L" resolve="DatumType" />
   </node>
   <node concept="1M2fIO" id="4pem8DJVmG5">
-    <property role="3GE5qa" value="Datatype" />
-    <ref role="1M2myG" to="3pw0:2xp9_$ucE7d" resolve="GeheelGetalDatatype" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <ref role="1M2myG" to="3pw0:2xp9_$ucE7d" resolve="GeheelGetalType" />
     <node concept="nKS2y" id="4pem8DJVmG6" role="1MLUbF">
       <node concept="3clFbS" id="4pem8DJVmG7" role="2VODD2">
         <node concept="3cpWs8" id="4pem8DJRIPD" role="3cqZAp">
@@ -239,8 +239,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4pem8DJVn3e">
-    <property role="3GE5qa" value="Datatype" />
-    <ref role="1M2myG" to="3pw0:2xp9_$ucE6Z" resolve="RijVanKaraktersDatatype" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <ref role="1M2myG" to="3pw0:2xp9_$ucE6Z" resolve="RijVanKaraktersType" />
     <node concept="nKS2y" id="4pem8DJVn3f" role="1MLUbF">
       <node concept="3clFbS" id="4pem8DJVn3g" role="2VODD2">
         <node concept="3cpWs8" id="4pem8DJVnao" role="3cqZAp">
@@ -383,7 +383,7 @@
   </node>
   <node concept="1M2fIO" id="MBTOFWSnOC">
     <property role="3GE5qa" value="ReferentieNaarKenmerk" />
-    <ref role="1M2myG" to="3pw0:6T3DNjSrxfM" resolve="KenmerkReferentie" />
+    <ref role="1M2myG" to="3pw0:6T3DNjSrxfM" resolve="ReferentieNaarKenmerk" />
     <node concept="nKS2y" id="1YFKb5tkXk$" role="1MLUbF">
       <node concept="3clFbS" id="1YFKb5tkXk_" role="2VODD2">
         <node concept="3cpWs8" id="1YFKb5tl4fS" role="3cqZAp">
@@ -573,6 +573,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="MBTOFWT3cg">
+    <property role="3GE5qa" value="Onderwerp" />
     <ref role="1M2myG" to="3pw0:26dbYf8FZmT" resolve="Onderwerp" />
   </node>
   <node concept="1M2fIO" id="5qTpXpBpG18">
@@ -628,7 +629,7 @@
                       </node>
                       <node concept="3O6GUB" id="72xgt4ChOv$" role="2OqNvi">
                         <node concept="chp4Y" id="72xgt4ChOv_" role="3QVz_e">
-                          <ref role="cht4Q" to="3pw0:2xp9_$ucE6L" resolve="DatumDatatype" />
+                          <ref role="cht4Q" to="3pw0:2xp9_$ucE6L" resolve="DatumType" />
                         </node>
                       </node>
                     </node>

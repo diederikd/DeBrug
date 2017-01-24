@@ -22,13 +22,13 @@
   <dependency className="ObjectiefRecht.constraints.ConstraintsAspectDescriptor" file="ConstraintsAspectDescriptor.java">
     <classNode dependClassName="ObjectiefRecht.constraints.AbstractReferentieNaarKenmerk_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.Concept_Constraints" />
-    <classNode dependClassName="ObjectiefRecht.constraints.DatumDatatype_Constraints" />
-    <classNode dependClassName="ObjectiefRecht.constraints.GeheelGetalDatatype_Constraints" />
-    <classNode dependClassName="ObjectiefRecht.constraints.KenmerkReferentie_Constraints" />
+    <classNode dependClassName="ObjectiefRecht.constraints.DatumType_Constraints" />
+    <classNode dependClassName="ObjectiefRecht.constraints.GeheelGetalType_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.Kenmerk_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.Onderwerp_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.Rechtshandeling_Constraints" />
-    <classNode dependClassName="ObjectiefRecht.constraints.RijVanKaraktersDatatype_Constraints" />
+    <classNode dependClassName="ObjectiefRecht.constraints.ReferentieNaarKenmerk_Constraints" />
+    <classNode dependClassName="ObjectiefRecht.constraints.RijVanKaraktersType_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.Variabele_Constraints" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Override" />
@@ -40,27 +40,12 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BaseConstraintsAspectDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.constraints.DatumDatatype_Constraints" file="DatumDatatype_Constraints.java">
+  <dependency className="ObjectiefRecht.constraints.DatumType_Constraints" file="DatumType_Constraints.java">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.constraints.GeheelGetalDatatype_Constraints" file="GeheelGetalDatatype_Constraints.java">
+  <dependency className="ObjectiefRecht.constraints.GeheelGetalType_Constraints" file="GeheelGetalType_Constraints.java">
     <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
-    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
-  </dependency>
-  <dependency className="ObjectiefRecht.constraints.KenmerkReferentie_Constraints" file="KenmerkReferentie_Constraints.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
@@ -91,7 +76,22 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.constraints.RijVanKaraktersDatatype_Constraints" file="RijVanKaraktersDatatype_Constraints.java">
+  <dependency className="ObjectiefRecht.constraints.ReferentieNaarKenmerk_Constraints" file="ReferentieNaarKenmerk_Constraints.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="ObjectiefRecht.constraints.RijVanKaraktersType_Constraints" file="RijVanKaraktersType_Constraints.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />

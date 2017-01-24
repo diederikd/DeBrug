@@ -15,14 +15,35 @@
     <file name="BehaviorAspectDescriptor.java">
       <unit at="14,0,60,0" name="Datum.behavior.BehaviorAspectDescriptor" />
     </file>
+    <file name="Dagen_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Datum.behavior.Dagen_BehaviorDescriptor" />
+    </file>
     <file name="DatumTijd_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Datum.behavior.DatumTijd_BehaviorDescriptor" />
     </file>
     <file name="Datum_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Datum.behavior.Datum_BehaviorDescriptor" />
     </file>
+    <file name="Duur_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Datum.behavior.Duur_BehaviorDescriptor" />
+    </file>
+    <file name="Jaren_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Datum.behavior.Jaren_BehaviorDescriptor" />
+    </file>
+    <file name="Maanden_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Datum.behavior.Maanden_BehaviorDescriptor" />
+    </file>
+    <file name="Minuten_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Datum.behavior.Minuten_BehaviorDescriptor" />
+    </file>
+    <file name="Seconden_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Datum.behavior.Seconden_BehaviorDescriptor" />
+    </file>
     <file name="Tijd_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Datum.behavior.Tijd_BehaviorDescriptor" />
+    </file>
+    <file name="Uren_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Datum.behavior.Uren_BehaviorDescriptor" />
     </file>
     <file name="VerschilTussen_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Datum.behavior.VerschilTussen_BehaviorDescriptor" />

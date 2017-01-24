@@ -9,9 +9,16 @@ import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private final ConceptPresentation props_Dagen = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Datum = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DatumTijd = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Duur = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Jaren = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Maanden = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Minuten = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Seconden = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Tijd = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Uren = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_VerschilTussen = new ConceptPresentationBuilder().create();
 
   @Override
@@ -20,12 +27,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case 0:
-        return props_Datum;
+        return props_Dagen;
       case 1:
-        return props_DatumTijd;
+        return props_Datum;
       case 2:
-        return props_Tijd;
+        return props_DatumTijd;
       case 3:
+        return props_Duur;
+      case 4:
+        return props_Jaren;
+      case 5:
+        return props_Maanden;
+      case 6:
+        return props_Minuten;
+      case 7:
+        return props_Seconden;
+      case 8:
+        return props_Tijd;
+      case 9:
+        return props_Uren;
+      case 10:
         return props_VerschilTussen;
     }
     throw new IllegalStateException("Unknown concept " + c);

@@ -18,11 +18,11 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(85);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(84);
   /*package*/ final ConceptDescriptor myConceptAanspraakNaIngebrekeStellingPlicht = createDescriptorForAanspraakNaIngebrekeStellingPlicht();
   /*package*/ final ConceptDescriptor myConceptAbstractArtikel = createDescriptorForAbstractArtikel();
-  /*package*/ final ConceptDescriptor myConceptAbstractDatatype = createDescriptorForAbstractDatatype();
   /*package*/ final ConceptDescriptor myConceptAbstractKenmerk = createDescriptorForAbstractKenmerk();
+  /*package*/ final ConceptDescriptor myConceptAbstractKenmerkType = createDescriptorForAbstractKenmerkType();
   /*package*/ final ConceptDescriptor myConceptAbstractReferentieNaarKenmerk = createDescriptorForAbstractReferentieNaarKenmerk();
   /*package*/ final ConceptDescriptor myConceptAbstracteExpressie = createDescriptorForAbstracteExpressie();
   /*package*/ final ConceptDescriptor myConceptAbstracteVoorwaarde = createDescriptorForAbstracteVoorwaarde();
@@ -35,29 +35,28 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptConditieEen = createDescriptorForConditieEen();
   /*package*/ final ConceptDescriptor myConceptConditieGeen = createDescriptorForConditieGeen();
   /*package*/ final ConceptDescriptor myConceptContext = createDescriptorForContext();
-  /*package*/ final ConceptDescriptor myConceptDatumDatatype = createDescriptorForDatumDatatype();
+  /*package*/ final ConceptDescriptor myConceptDatumType = createDescriptorForDatumType();
   /*package*/ final ConceptDescriptor myConceptDelenExpressie = createDescriptorForDelenExpressie();
   /*package*/ final ConceptDescriptor myConceptEnkeleVoorwaarde = createDescriptorForEnkeleVoorwaarde();
   /*package*/ final ConceptDescriptor myConceptEnumeratie = createDescriptorForEnumeratie();
-  /*package*/ final ConceptDescriptor myConceptEnumeratieDatatype = createDescriptorForEnumeratieDatatype();
   /*package*/ final ConceptDescriptor myConceptEnumeratieElement = createDescriptorForEnumeratieElement();
+  /*package*/ final ConceptDescriptor myConceptEnumeratieType = createDescriptorForEnumeratieType();
   /*package*/ final ConceptDescriptor myConceptExpressieVoorwaarde = createDescriptorForExpressieVoorwaarde();
   /*package*/ final ConceptDescriptor myConceptFeitelijkeHandelingMetRechtsgevolg = createDescriptorForFeitelijkeHandelingMetRechtsgevolg();
   /*package*/ final ConceptDescriptor myConceptGebeurtenisMetRechtsgevolg = createDescriptorForGebeurtenisMetRechtsgevolg();
-  /*package*/ final ConceptDescriptor myConceptGeheelGetalDatatype = createDescriptorForGeheelGetalDatatype();
+  /*package*/ final ConceptDescriptor myConceptGeheelGetalType = createDescriptorForGeheelGetalType();
   /*package*/ final ConceptDescriptor myConceptGelijkstelling = createDescriptorForGelijkstelling();
+  /*package*/ final ConceptDescriptor myConceptIBinaireExpressie = createDescriptorForIBinaireExpressie();
   /*package*/ final ConceptDescriptor myConceptImmuniteitGeenbevoegdheid = createDescriptorForImmuniteitGeenbevoegdheid();
+  /*package*/ final ConceptDescriptor myConceptIsGeen = createDescriptorForIsGeen();
   /*package*/ final ConceptDescriptor myConceptIsGelijk = createDescriptorForIsGelijk();
   /*package*/ final ConceptDescriptor myConceptIsGroterDan = createDescriptorForIsGroterDan();
+  /*package*/ final ConceptDescriptor myConceptIsGroterOfGelijk = createDescriptorForIsGroterOfGelijk();
   /*package*/ final ConceptDescriptor myConceptIsKleinerDan = createDescriptorForIsKleinerDan();
   /*package*/ final ConceptDescriptor myConceptIsOpgegeven = createDescriptorForIsOpgegeven();
   /*package*/ final ConceptDescriptor myConceptIsWaar = createDescriptorForIsWaar();
-  /*package*/ final ConceptDescriptor myConceptJaNeeDatatype = createDescriptorForJaNeeDatatype();
+  /*package*/ final ConceptDescriptor myConceptJaNeeType = createDescriptorForJaNeeType();
   /*package*/ final ConceptDescriptor myConceptKenmerk = createDescriptorForKenmerk();
-  /*package*/ final ConceptDescriptor myConceptKenmerk2 = createDescriptorForKenmerk2();
-  /*package*/ final ConceptDescriptor myConceptKenmerkMetReferentieNaarOnderwerp = createDescriptorForKenmerkMetReferentieNaarOnderwerp();
-  /*package*/ final ConceptDescriptor myConceptKenmerkReferentie = createDescriptorForKenmerkReferentie();
-  /*package*/ final ConceptDescriptor myConceptKenmerkReferentieNaarSubject = createDescriptorForKenmerkReferentieNaarSubject();
   /*package*/ final ConceptDescriptor myConceptKrachtigeAanspraakFataleVerplichtig = createDescriptorForKrachtigeAanspraakFataleVerplichtig();
   /*package*/ final ConceptDescriptor myConceptLidwoord = createDescriptorForLidwoord();
   /*package*/ final ConceptDescriptor myConceptLidwoordDe = createDescriptorForLidwoordDe();
@@ -65,9 +64,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptMaterieleVoorwaarde = createDescriptorForMaterieleVoorwaarde();
   /*package*/ final ConceptDescriptor myConceptMinExpressie = createDescriptorForMinExpressie();
   /*package*/ final ConceptDescriptor myConceptObject = createDescriptorForObject();
-  /*package*/ final ConceptDescriptor myConceptObjectDataType = createDescriptorForObjectDataType();
+  /*package*/ final ConceptDescriptor myConceptObjectType = createDescriptorForObjectType();
   /*package*/ final ConceptDescriptor myConceptOnderwerp = createDescriptorForOnderwerp();
-  /*package*/ final ConceptDescriptor myConceptOnderwerpDatatype = createDescriptorForOnderwerpDatatype();
+  /*package*/ final ConceptDescriptor myConceptOnderwerpType = createDescriptorForOnderwerpType();
   /*package*/ final ConceptDescriptor myConceptOptioneleBevoegdheidOptioneleGehoudenheid = createDescriptorForOptioneleBevoegdheidOptioneleGehoudenheid();
   /*package*/ final ConceptDescriptor myConceptPlusExpressie = createDescriptorForPlusExpressie();
   /*package*/ final ConceptDescriptor myConceptRechtsSubject = createDescriptorForRechtsSubject();
@@ -75,25 +74,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptRechtsgevolg = createDescriptorForRechtsgevolg();
   /*package*/ final ConceptDescriptor myConceptRechtsgevolgVeroorzakers = createDescriptorForRechtsgevolgVeroorzakers();
   /*package*/ final ConceptDescriptor myConceptRechtshandeling = createDescriptorForRechtshandeling();
-  /*package*/ final ConceptDescriptor myConceptReeelGetalDatatype = createDescriptorForReeelGetalDatatype();
+  /*package*/ final ConceptDescriptor myConceptReeelGetalType = createDescriptorForReeelGetalType();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarArtikel = createDescriptorForReferentieNaarArtikel();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarEnumeratie = createDescriptorForReferentieNaarEnumeratie();
+  /*package*/ final ConceptDescriptor myConceptReferentieNaarKenmerk = createDescriptorForReferentieNaarKenmerk();
+  /*package*/ final ConceptDescriptor myConceptReferentieNaarObject = createDescriptorForReferentieNaarObject();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarOnderwerp = createDescriptorForReferentieNaarOnderwerp();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarRechtsHandeling = createDescriptorForReferentieNaarRechtsHandeling();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarRechtsbetrekking = createDescriptorForReferentieNaarRechtsbetrekking();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarRechtsgevolg = createDescriptorForReferentieNaarRechtsgevolg();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarRechtsgevolgVeroorzaker = createDescriptorForReferentieNaarRechtsgevolgVeroorzaker();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarRechtssubject = createDescriptorForReferentieNaarRechtssubject();
-  /*package*/ final ConceptDescriptor myConceptReferentieNaarReferentieNaarOnderwerp = createDescriptorForReferentieNaarReferentieNaarOnderwerp();
-  /*package*/ final ConceptDescriptor myConceptReferentieNaarReferentieNaarSubject = createDescriptorForReferentieNaarReferentieNaarSubject();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarVoorwaarde = createDescriptorForReferentieNaarVoorwaarde();
   /*package*/ final ConceptDescriptor myConceptRegel = createDescriptorForRegel();
   /*package*/ final ConceptDescriptor myConceptRekenExpressie = createDescriptorForRekenExpressie();
-  /*package*/ final ConceptDescriptor myConceptRijVanKaraktersDatatype = createDescriptorForRijVanKaraktersDatatype();
+  /*package*/ final ConceptDescriptor myConceptRijVanKaraktersType = createDescriptorForRijVanKaraktersType();
   /*package*/ final ConceptDescriptor myConceptSamengesteldeVoorwaarde = createDescriptorForSamengesteldeVoorwaarde();
-  /*package*/ final ConceptDescriptor myConceptSubjectDataType = createDescriptorForSubjectDataType();
+  /*package*/ final ConceptDescriptor myConceptSubjectType = createDescriptorForSubjectType();
   /*package*/ final ConceptDescriptor myConceptTenMinste = createDescriptorForTenMinste();
-  /*package*/ final ConceptDescriptor myConceptTijdDatatype = createDescriptorForTijdDatatype();
+  /*package*/ final ConceptDescriptor myConceptTijdType = createDescriptorForTijdType();
   /*package*/ final ConceptDescriptor myConceptTijdsverloopMetRechtsgevolg = createDescriptorForTijdsverloopMetRechtsgevolg();
   /*package*/ final ConceptDescriptor myConceptToestand = createDescriptorForToestand();
   /*package*/ final ConceptDescriptor myConceptVariabele = createDescriptorForVariabele();
@@ -108,8 +107,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   public StructureAspectDescriptor() {
     myIndexMap.put(myConceptAanspraakNaIngebrekeStellingPlicht.getId(), 0);
     myIndexMap.put(myConceptAbstractArtikel.getId(), 1);
-    myIndexMap.put(myConceptAbstractDatatype.getId(), 2);
-    myIndexMap.put(myConceptAbstractKenmerk.getId(), 3);
+    myIndexMap.put(myConceptAbstractKenmerk.getId(), 2);
+    myIndexMap.put(myConceptAbstractKenmerkType.getId(), 3);
     myIndexMap.put(myConceptAbstractReferentieNaarKenmerk.getId(), 4);
     myIndexMap.put(myConceptAbstracteExpressie.getId(), 5);
     myIndexMap.put(myConceptAbstracteVoorwaarde.getId(), 6);
@@ -122,80 +121,79 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     myIndexMap.put(myConceptConditieEen.getId(), 13);
     myIndexMap.put(myConceptConditieGeen.getId(), 14);
     myIndexMap.put(myConceptContext.getId(), 15);
-    myIndexMap.put(myConceptDatumDatatype.getId(), 16);
+    myIndexMap.put(myConceptDatumType.getId(), 16);
     myIndexMap.put(myConceptDelenExpressie.getId(), 17);
     myIndexMap.put(myConceptEnkeleVoorwaarde.getId(), 18);
     myIndexMap.put(myConceptEnumeratie.getId(), 19);
-    myIndexMap.put(myConceptEnumeratieDatatype.getId(), 20);
-    myIndexMap.put(myConceptEnumeratieElement.getId(), 21);
+    myIndexMap.put(myConceptEnumeratieElement.getId(), 20);
+    myIndexMap.put(myConceptEnumeratieType.getId(), 21);
     myIndexMap.put(myConceptExpressieVoorwaarde.getId(), 22);
     myIndexMap.put(myConceptFeitelijkeHandelingMetRechtsgevolg.getId(), 23);
     myIndexMap.put(myConceptGebeurtenisMetRechtsgevolg.getId(), 24);
-    myIndexMap.put(myConceptGeheelGetalDatatype.getId(), 25);
+    myIndexMap.put(myConceptGeheelGetalType.getId(), 25);
     myIndexMap.put(myConceptGelijkstelling.getId(), 26);
-    myIndexMap.put(myConceptImmuniteitGeenbevoegdheid.getId(), 27);
-    myIndexMap.put(myConceptIsGelijk.getId(), 28);
-    myIndexMap.put(myConceptIsGroterDan.getId(), 29);
-    myIndexMap.put(myConceptIsKleinerDan.getId(), 30);
-    myIndexMap.put(myConceptIsOpgegeven.getId(), 31);
-    myIndexMap.put(myConceptIsWaar.getId(), 32);
-    myIndexMap.put(myConceptJaNeeDatatype.getId(), 33);
-    myIndexMap.put(myConceptKenmerk.getId(), 34);
-    myIndexMap.put(myConceptKenmerk2.getId(), 35);
-    myIndexMap.put(myConceptKenmerkMetReferentieNaarOnderwerp.getId(), 36);
-    myIndexMap.put(myConceptKenmerkReferentie.getId(), 37);
-    myIndexMap.put(myConceptKenmerkReferentieNaarSubject.getId(), 38);
-    myIndexMap.put(myConceptKrachtigeAanspraakFataleVerplichtig.getId(), 39);
-    myIndexMap.put(myConceptLidwoord.getId(), 40);
-    myIndexMap.put(myConceptLidwoordDe.getId(), 41);
-    myIndexMap.put(myConceptLidwoordHet.getId(), 42);
-    myIndexMap.put(myConceptMaterieleVoorwaarde.getId(), 43);
-    myIndexMap.put(myConceptMinExpressie.getId(), 44);
-    myIndexMap.put(myConceptObject.getId(), 45);
-    myIndexMap.put(myConceptObjectDataType.getId(), 46);
-    myIndexMap.put(myConceptOnderwerp.getId(), 47);
-    myIndexMap.put(myConceptOnderwerpDatatype.getId(), 48);
-    myIndexMap.put(myConceptOptioneleBevoegdheidOptioneleGehoudenheid.getId(), 49);
-    myIndexMap.put(myConceptPlusExpressie.getId(), 50);
-    myIndexMap.put(myConceptRechtsSubject.getId(), 51);
-    myIndexMap.put(myConceptRechtsbetrekking.getId(), 52);
-    myIndexMap.put(myConceptRechtsgevolg.getId(), 53);
-    myIndexMap.put(myConceptRechtsgevolgVeroorzakers.getId(), 54);
-    myIndexMap.put(myConceptRechtshandeling.getId(), 55);
-    myIndexMap.put(myConceptReeelGetalDatatype.getId(), 56);
-    myIndexMap.put(myConceptReferentieNaarArtikel.getId(), 57);
-    myIndexMap.put(myConceptReferentieNaarEnumeratie.getId(), 58);
-    myIndexMap.put(myConceptReferentieNaarOnderwerp.getId(), 59);
-    myIndexMap.put(myConceptReferentieNaarRechtsHandeling.getId(), 60);
-    myIndexMap.put(myConceptReferentieNaarRechtsbetrekking.getId(), 61);
-    myIndexMap.put(myConceptReferentieNaarRechtsgevolg.getId(), 62);
-    myIndexMap.put(myConceptReferentieNaarRechtsgevolgVeroorzaker.getId(), 63);
-    myIndexMap.put(myConceptReferentieNaarRechtssubject.getId(), 64);
-    myIndexMap.put(myConceptReferentieNaarReferentieNaarOnderwerp.getId(), 65);
-    myIndexMap.put(myConceptReferentieNaarReferentieNaarSubject.getId(), 66);
-    myIndexMap.put(myConceptReferentieNaarVoorwaarde.getId(), 67);
-    myIndexMap.put(myConceptRegel.getId(), 68);
-    myIndexMap.put(myConceptRekenExpressie.getId(), 69);
-    myIndexMap.put(myConceptRijVanKaraktersDatatype.getId(), 70);
-    myIndexMap.put(myConceptSamengesteldeVoorwaarde.getId(), 71);
-    myIndexMap.put(myConceptSubjectDataType.getId(), 72);
-    myIndexMap.put(myConceptTenMinste.getId(), 73);
-    myIndexMap.put(myConceptTijdDatatype.getId(), 74);
-    myIndexMap.put(myConceptTijdsverloopMetRechtsgevolg.getId(), 75);
-    myIndexMap.put(myConceptToestand.getId(), 76);
-    myIndexMap.put(myConceptVariabele.getId(), 77);
-    myIndexMap.put(myConceptVermenigvuldigenExpressie.getId(), 78);
-    myIndexMap.put(myConceptVerplichteBevoegdheidVerplichteGehoudenheid.getId(), 79);
-    myIndexMap.put(myConceptVerschilTussen.getId(), 80);
-    myIndexMap.put(myConceptVormVoorwaarde.getId(), 81);
-    myIndexMap.put(myConceptVrijeTekst.getId(), 82);
-    myIndexMap.put(myConceptVrijheidGeenaanspraak.getId(), 83);
-    myIndexMap.put(myConceptZwakkeAanspraakZwakkePlicht.getId(), 84);
+    myIndexMap.put(myConceptIBinaireExpressie.getId(), 27);
+    myIndexMap.put(myConceptImmuniteitGeenbevoegdheid.getId(), 28);
+    myIndexMap.put(myConceptIsGeen.getId(), 29);
+    myIndexMap.put(myConceptIsGelijk.getId(), 30);
+    myIndexMap.put(myConceptIsGroterDan.getId(), 31);
+    myIndexMap.put(myConceptIsGroterOfGelijk.getId(), 32);
+    myIndexMap.put(myConceptIsKleinerDan.getId(), 33);
+    myIndexMap.put(myConceptIsOpgegeven.getId(), 34);
+    myIndexMap.put(myConceptIsWaar.getId(), 35);
+    myIndexMap.put(myConceptJaNeeType.getId(), 36);
+    myIndexMap.put(myConceptKenmerk.getId(), 37);
+    myIndexMap.put(myConceptKrachtigeAanspraakFataleVerplichtig.getId(), 38);
+    myIndexMap.put(myConceptLidwoord.getId(), 39);
+    myIndexMap.put(myConceptLidwoordDe.getId(), 40);
+    myIndexMap.put(myConceptLidwoordHet.getId(), 41);
+    myIndexMap.put(myConceptMaterieleVoorwaarde.getId(), 42);
+    myIndexMap.put(myConceptMinExpressie.getId(), 43);
+    myIndexMap.put(myConceptObject.getId(), 44);
+    myIndexMap.put(myConceptObjectType.getId(), 45);
+    myIndexMap.put(myConceptOnderwerp.getId(), 46);
+    myIndexMap.put(myConceptOnderwerpType.getId(), 47);
+    myIndexMap.put(myConceptOptioneleBevoegdheidOptioneleGehoudenheid.getId(), 48);
+    myIndexMap.put(myConceptPlusExpressie.getId(), 49);
+    myIndexMap.put(myConceptRechtsSubject.getId(), 50);
+    myIndexMap.put(myConceptRechtsbetrekking.getId(), 51);
+    myIndexMap.put(myConceptRechtsgevolg.getId(), 52);
+    myIndexMap.put(myConceptRechtsgevolgVeroorzakers.getId(), 53);
+    myIndexMap.put(myConceptRechtshandeling.getId(), 54);
+    myIndexMap.put(myConceptReeelGetalType.getId(), 55);
+    myIndexMap.put(myConceptReferentieNaarArtikel.getId(), 56);
+    myIndexMap.put(myConceptReferentieNaarEnumeratie.getId(), 57);
+    myIndexMap.put(myConceptReferentieNaarKenmerk.getId(), 58);
+    myIndexMap.put(myConceptReferentieNaarObject.getId(), 59);
+    myIndexMap.put(myConceptReferentieNaarOnderwerp.getId(), 60);
+    myIndexMap.put(myConceptReferentieNaarRechtsHandeling.getId(), 61);
+    myIndexMap.put(myConceptReferentieNaarRechtsbetrekking.getId(), 62);
+    myIndexMap.put(myConceptReferentieNaarRechtsgevolg.getId(), 63);
+    myIndexMap.put(myConceptReferentieNaarRechtsgevolgVeroorzaker.getId(), 64);
+    myIndexMap.put(myConceptReferentieNaarRechtssubject.getId(), 65);
+    myIndexMap.put(myConceptReferentieNaarVoorwaarde.getId(), 66);
+    myIndexMap.put(myConceptRegel.getId(), 67);
+    myIndexMap.put(myConceptRekenExpressie.getId(), 68);
+    myIndexMap.put(myConceptRijVanKaraktersType.getId(), 69);
+    myIndexMap.put(myConceptSamengesteldeVoorwaarde.getId(), 70);
+    myIndexMap.put(myConceptSubjectType.getId(), 71);
+    myIndexMap.put(myConceptTenMinste.getId(), 72);
+    myIndexMap.put(myConceptTijdType.getId(), 73);
+    myIndexMap.put(myConceptTijdsverloopMetRechtsgevolg.getId(), 74);
+    myIndexMap.put(myConceptToestand.getId(), 75);
+    myIndexMap.put(myConceptVariabele.getId(), 76);
+    myIndexMap.put(myConceptVermenigvuldigenExpressie.getId(), 77);
+    myIndexMap.put(myConceptVerplichteBevoegdheidVerplichteGehoudenheid.getId(), 78);
+    myIndexMap.put(myConceptVerschilTussen.getId(), 79);
+    myIndexMap.put(myConceptVormVoorwaarde.getId(), 80);
+    myIndexMap.put(myConceptVrijeTekst.getId(), 81);
+    myIndexMap.put(myConceptVrijheidGeenaanspraak.getId(), 82);
+    myIndexMap.put(myConceptZwakkeAanspraakZwakkePlicht.getId(), 83);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAanspraakNaIngebrekeStellingPlicht, myConceptAbstractArtikel, myConceptAbstractDatatype, myConceptAbstractKenmerk, myConceptAbstractReferentieNaarKenmerk, myConceptAbstracteExpressie, myConceptAbstracteVoorwaarde, myConceptActie, myConceptAfleidingsregel, myConceptArtikel, myConceptConcept, myConceptConditie, myConceptConditieAlle, myConceptConditieEen, myConceptConditieGeen, myConceptContext, myConceptDatumDatatype, myConceptDelenExpressie, myConceptEnkeleVoorwaarde, myConceptEnumeratie, myConceptEnumeratieDatatype, myConceptEnumeratieElement, myConceptExpressieVoorwaarde, myConceptFeitelijkeHandelingMetRechtsgevolg, myConceptGebeurtenisMetRechtsgevolg, myConceptGeheelGetalDatatype, myConceptGelijkstelling, myConceptImmuniteitGeenbevoegdheid, myConceptIsGelijk, myConceptIsGroterDan, myConceptIsKleinerDan, myConceptIsOpgegeven, myConceptIsWaar, myConceptJaNeeDatatype, myConceptKenmerk, myConceptKenmerk2, myConceptKenmerkMetReferentieNaarOnderwerp, myConceptKenmerkReferentie, myConceptKenmerkReferentieNaarSubject, myConceptKrachtigeAanspraakFataleVerplichtig, myConceptLidwoord, myConceptLidwoordDe, myConceptLidwoordHet, myConceptMaterieleVoorwaarde, myConceptMinExpressie, myConceptObject, myConceptObjectDataType, myConceptOnderwerp, myConceptOnderwerpDatatype, myConceptOptioneleBevoegdheidOptioneleGehoudenheid, myConceptPlusExpressie, myConceptRechtsSubject, myConceptRechtsbetrekking, myConceptRechtsgevolg, myConceptRechtsgevolgVeroorzakers, myConceptRechtshandeling, myConceptReeelGetalDatatype, myConceptReferentieNaarArtikel, myConceptReferentieNaarEnumeratie, myConceptReferentieNaarOnderwerp, myConceptReferentieNaarRechtsHandeling, myConceptReferentieNaarRechtsbetrekking, myConceptReferentieNaarRechtsgevolg, myConceptReferentieNaarRechtsgevolgVeroorzaker, myConceptReferentieNaarRechtssubject, myConceptReferentieNaarReferentieNaarOnderwerp, myConceptReferentieNaarReferentieNaarSubject, myConceptReferentieNaarVoorwaarde, myConceptRegel, myConceptRekenExpressie, myConceptRijVanKaraktersDatatype, myConceptSamengesteldeVoorwaarde, myConceptSubjectDataType, myConceptTenMinste, myConceptTijdDatatype, myConceptTijdsverloopMetRechtsgevolg, myConceptToestand, myConceptVariabele, myConceptVermenigvuldigenExpressie, myConceptVerplichteBevoegdheidVerplichteGehoudenheid, myConceptVerschilTussen, myConceptVormVoorwaarde, myConceptVrijeTekst, myConceptVrijheidGeenaanspraak, myConceptZwakkeAanspraakZwakkePlicht);
+    return Arrays.asList(myConceptAanspraakNaIngebrekeStellingPlicht, myConceptAbstractArtikel, myConceptAbstractKenmerk, myConceptAbstractKenmerkType, myConceptAbstractReferentieNaarKenmerk, myConceptAbstracteExpressie, myConceptAbstracteVoorwaarde, myConceptActie, myConceptAfleidingsregel, myConceptArtikel, myConceptConcept, myConceptConditie, myConceptConditieAlle, myConceptConditieEen, myConceptConditieGeen, myConceptContext, myConceptDatumType, myConceptDelenExpressie, myConceptEnkeleVoorwaarde, myConceptEnumeratie, myConceptEnumeratieElement, myConceptEnumeratieType, myConceptExpressieVoorwaarde, myConceptFeitelijkeHandelingMetRechtsgevolg, myConceptGebeurtenisMetRechtsgevolg, myConceptGeheelGetalType, myConceptGelijkstelling, myConceptIBinaireExpressie, myConceptImmuniteitGeenbevoegdheid, myConceptIsGeen, myConceptIsGelijk, myConceptIsGroterDan, myConceptIsGroterOfGelijk, myConceptIsKleinerDan, myConceptIsOpgegeven, myConceptIsWaar, myConceptJaNeeType, myConceptKenmerk, myConceptKrachtigeAanspraakFataleVerplichtig, myConceptLidwoord, myConceptLidwoordDe, myConceptLidwoordHet, myConceptMaterieleVoorwaarde, myConceptMinExpressie, myConceptObject, myConceptObjectType, myConceptOnderwerp, myConceptOnderwerpType, myConceptOptioneleBevoegdheidOptioneleGehoudenheid, myConceptPlusExpressie, myConceptRechtsSubject, myConceptRechtsbetrekking, myConceptRechtsgevolg, myConceptRechtsgevolgVeroorzakers, myConceptRechtshandeling, myConceptReeelGetalType, myConceptReferentieNaarArtikel, myConceptReferentieNaarEnumeratie, myConceptReferentieNaarKenmerk, myConceptReferentieNaarObject, myConceptReferentieNaarOnderwerp, myConceptReferentieNaarRechtsHandeling, myConceptReferentieNaarRechtsbetrekking, myConceptReferentieNaarRechtsgevolg, myConceptReferentieNaarRechtsgevolgVeroorzaker, myConceptReferentieNaarRechtssubject, myConceptReferentieNaarVoorwaarde, myConceptRegel, myConceptRekenExpressie, myConceptRijVanKaraktersType, myConceptSamengesteldeVoorwaarde, myConceptSubjectType, myConceptTenMinste, myConceptTijdType, myConceptTijdsverloopMetRechtsgevolg, myConceptToestand, myConceptVariabele, myConceptVermenigvuldigenExpressie, myConceptVerplichteBevoegdheidVerplichteGehoudenheid, myConceptVerschilTussen, myConceptVormVoorwaarde, myConceptVrijeTekst, myConceptVrijheidGeenaanspraak, myConceptZwakkeAanspraakZwakkePlicht);
   }
 
   @Override
@@ -211,9 +209,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 1:
         return myConceptAbstractArtikel;
       case 2:
-        return myConceptAbstractDatatype;
-      case 3:
         return myConceptAbstractKenmerk;
+      case 3:
+        return myConceptAbstractKenmerkType;
       case 4:
         return myConceptAbstractReferentieNaarKenmerk;
       case 5:
@@ -239,7 +237,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 15:
         return myConceptContext;
       case 16:
-        return myConceptDatumDatatype;
+        return myConceptDatumType;
       case 17:
         return myConceptDelenExpressie;
       case 18:
@@ -247,9 +245,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 19:
         return myConceptEnumeratie;
       case 20:
-        return myConceptEnumeratieDatatype;
-      case 21:
         return myConceptEnumeratieElement;
+      case 21:
+        return myConceptEnumeratieType;
       case 22:
         return myConceptExpressieVoorwaarde;
       case 23:
@@ -257,124 +255,122 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 24:
         return myConceptGebeurtenisMetRechtsgevolg;
       case 25:
-        return myConceptGeheelGetalDatatype;
+        return myConceptGeheelGetalType;
       case 26:
         return myConceptGelijkstelling;
       case 27:
-        return myConceptImmuniteitGeenbevoegdheid;
+        return myConceptIBinaireExpressie;
       case 28:
-        return myConceptIsGelijk;
+        return myConceptImmuniteitGeenbevoegdheid;
       case 29:
-        return myConceptIsGroterDan;
+        return myConceptIsGeen;
       case 30:
-        return myConceptIsKleinerDan;
+        return myConceptIsGelijk;
       case 31:
-        return myConceptIsOpgegeven;
+        return myConceptIsGroterDan;
       case 32:
-        return myConceptIsWaar;
+        return myConceptIsGroterOfGelijk;
       case 33:
-        return myConceptJaNeeDatatype;
+        return myConceptIsKleinerDan;
       case 34:
-        return myConceptKenmerk;
+        return myConceptIsOpgegeven;
       case 35:
-        return myConceptKenmerk2;
+        return myConceptIsWaar;
       case 36:
-        return myConceptKenmerkMetReferentieNaarOnderwerp;
+        return myConceptJaNeeType;
       case 37:
-        return myConceptKenmerkReferentie;
+        return myConceptKenmerk;
       case 38:
-        return myConceptKenmerkReferentieNaarSubject;
-      case 39:
         return myConceptKrachtigeAanspraakFataleVerplichtig;
-      case 40:
+      case 39:
         return myConceptLidwoord;
-      case 41:
+      case 40:
         return myConceptLidwoordDe;
-      case 42:
+      case 41:
         return myConceptLidwoordHet;
-      case 43:
+      case 42:
         return myConceptMaterieleVoorwaarde;
-      case 44:
+      case 43:
         return myConceptMinExpressie;
-      case 45:
+      case 44:
         return myConceptObject;
+      case 45:
+        return myConceptObjectType;
       case 46:
-        return myConceptObjectDataType;
-      case 47:
         return myConceptOnderwerp;
+      case 47:
+        return myConceptOnderwerpType;
       case 48:
-        return myConceptOnderwerpDatatype;
-      case 49:
         return myConceptOptioneleBevoegdheidOptioneleGehoudenheid;
-      case 50:
+      case 49:
         return myConceptPlusExpressie;
-      case 51:
+      case 50:
         return myConceptRechtsSubject;
-      case 52:
+      case 51:
         return myConceptRechtsbetrekking;
-      case 53:
+      case 52:
         return myConceptRechtsgevolg;
-      case 54:
+      case 53:
         return myConceptRechtsgevolgVeroorzakers;
-      case 55:
+      case 54:
         return myConceptRechtshandeling;
+      case 55:
+        return myConceptReeelGetalType;
       case 56:
-        return myConceptReeelGetalDatatype;
-      case 57:
         return myConceptReferentieNaarArtikel;
-      case 58:
+      case 57:
         return myConceptReferentieNaarEnumeratie;
+      case 58:
+        return myConceptReferentieNaarKenmerk;
       case 59:
-        return myConceptReferentieNaarOnderwerp;
+        return myConceptReferentieNaarObject;
       case 60:
-        return myConceptReferentieNaarRechtsHandeling;
+        return myConceptReferentieNaarOnderwerp;
       case 61:
-        return myConceptReferentieNaarRechtsbetrekking;
+        return myConceptReferentieNaarRechtsHandeling;
       case 62:
-        return myConceptReferentieNaarRechtsgevolg;
+        return myConceptReferentieNaarRechtsbetrekking;
       case 63:
-        return myConceptReferentieNaarRechtsgevolgVeroorzaker;
+        return myConceptReferentieNaarRechtsgevolg;
       case 64:
-        return myConceptReferentieNaarRechtssubject;
+        return myConceptReferentieNaarRechtsgevolgVeroorzaker;
       case 65:
-        return myConceptReferentieNaarReferentieNaarOnderwerp;
+        return myConceptReferentieNaarRechtssubject;
       case 66:
-        return myConceptReferentieNaarReferentieNaarSubject;
-      case 67:
         return myConceptReferentieNaarVoorwaarde;
-      case 68:
+      case 67:
         return myConceptRegel;
-      case 69:
+      case 68:
         return myConceptRekenExpressie;
+      case 69:
+        return myConceptRijVanKaraktersType;
       case 70:
-        return myConceptRijVanKaraktersDatatype;
-      case 71:
         return myConceptSamengesteldeVoorwaarde;
+      case 71:
+        return myConceptSubjectType;
       case 72:
-        return myConceptSubjectDataType;
-      case 73:
         return myConceptTenMinste;
+      case 73:
+        return myConceptTijdType;
       case 74:
-        return myConceptTijdDatatype;
-      case 75:
         return myConceptTijdsverloopMetRechtsgevolg;
-      case 76:
+      case 75:
         return myConceptToestand;
-      case 77:
+      case 76:
         return myConceptVariabele;
-      case 78:
+      case 77:
         return myConceptVermenigvuldigenExpressie;
-      case 79:
+      case 78:
         return myConceptVerplichteBevoegdheidVerplichteGehoudenheid;
-      case 80:
+      case 79:
         return myConceptVerschilTussen;
-      case 81:
+      case 80:
         return myConceptVormVoorwaarde;
-      case 82:
+      case 81:
         return myConceptVrijeTekst;
-      case 83:
+      case 82:
         return myConceptVrijheidGeenaanspraak;
-      case 84:
+      case 83:
         return myConceptZwakkeAanspraakZwakkePlicht;
       default:
         throw new IllegalStateException();
@@ -397,17 +393,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForAbstractArtikel() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.AbstractArtikel", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cee85c9L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5266643527326926281")).create();
   }
-  private static ConceptDescriptor createDescriptorForAbstractDatatype() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.AbstractDatatype", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2907397198644945306")).create();
-  }
   private static ConceptDescriptor createDescriptorForAbstractKenmerk() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.AbstractKenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L)).super_("ObjectiefRecht.structure.Concept").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).parents("ObjectiefRecht.structure.Concept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5266643527326992519")).create();
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.AbstractKenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L)).super_("ObjectiefRecht.structure.Concept").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).parents("ObjectiefRecht.structure.Concept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5266643527326992519")).create();
+  }
+  private static ConceptDescriptor createDescriptorForAbstractKenmerkType() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.AbstractKenmerkType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2907397198644945306")).create();
   }
   private static ConceptDescriptor createDescriptorForAbstractReferentieNaarKenmerk() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.AbstractReferentieNaarKenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7945378013559266909")).create();
   }
   private static ConceptDescriptor createDescriptorForAbstracteExpressie() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.AbstracteExpressie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).super_("ObjectiefRecht.structure.Concept").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).parents("ObjectiefRecht.structure.Concept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504202781036")).create();
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.AbstracteExpressie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).super_("Gegevens.structure.AbstracteWaarde").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x46db587183408c7aL)).parents("Gegevens.structure.AbstracteWaarde").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x46db587183408c7aL)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504202781036")).create();
   }
   private static ConceptDescriptor createDescriptorForAbstracteVoorwaarde() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.AbstracteVoorwaarde", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2317404197410818046")).create();
@@ -439,8 +435,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForContext() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Context", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x4916e0625ce39c8bL, "toonalles", new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5266643527326211211")), new ConceptDescriptorBuilder.Prop(0xc9f8f37229dca04L, "toonopmerkingen", new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "909603116718868996")), new ConceptDescriptorBuilder.Prop(0x67229afa6a17a4a6L, "toonnummer", new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7431672735427175590"))).properties("toonalles", "toonopmerkingen", "toonnummer").childDescriptors(new ConceptDescriptorBuilder.Link(0x65312e0ffedaa69L, "versietijdstip", MetaIdFactory.conceptId(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f32fL), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "455728744870292073")), new ConceptDescriptorBuilder.Link(0x464e588a6ff17685L, "datumvaninwerkingstreding", MetaIdFactory.conceptId(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5066083982445213317")), new ConceptDescriptorBuilder.Link(0x4916e0625ce2cc63L, "zichtdatum", MetaIdFactory.conceptId(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5266643527326157923")), new ConceptDescriptorBuilder.Link(0x218d2fe3c8aff600L, "rechtssubjecten", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2417641230338881024")), new ConceptDescriptorBuilder.Link(0x4fd99c40775e113bL, "onderwerpen", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5753801799637012795")), new ConceptDescriptorBuilder.Link(0x67229afa69d714f6L, "enumeraties", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7431672735422944502")), new ConceptDescriptorBuilder.Link(0x202912d6e3a8c9baL, "toestanden", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3a8c9b9L), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2317404197410621882")), new ConceptDescriptorBuilder.Link(0x202912d6e3af3604L, "overgangen", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2317404197411042820")), new ConceptDescriptorBuilder.Link(0x218d2fe3c8aff602L, "regels", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5ffL), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2417641230338881026"))).children(new String[]{"versietijdstip", "datumvaninwerkingstreding", "zichtdatum", "rechtssubjecten", "onderwerpen", "enumeraties", "toestanden", "overgangen", "regels"}, new boolean[]{false, false, false, true, true, true, true, true, true}).rootable().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161730")).create();
   }
-  private static ConceptDescriptor createDescriptorForDatumDatatype() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.DatumDatatype", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1b1L)).super_("ObjectiefRecht.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).alias("datum", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2907397198644945329")).create();
+  private static ConceptDescriptor createDescriptorForDatumType() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.DatumType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1b1L)).super_("ObjectiefRecht.structure.AbstractKenmerkType").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractKenmerkType").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).alias("datum", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2907397198644945329")).create();
   }
   private static ConceptDescriptor createDescriptorForDelenExpressie() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.DelenExpressie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d9dL)).super_("ObjectiefRecht.structure.RekenExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7aL)).parents("ObjectiefRecht.structure.RekenExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7aL)).alias("delen", "Delen").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "301351583718858141")).create();
@@ -449,13 +445,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.EnkeleVoorwaarde", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fd09L)).super_("ObjectiefRecht.structure.AbstracteVoorwaarde").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL)).parents("ObjectiefRecht.structure.AbstracteVoorwaarde").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x42e9dab3410fd0aL, "voorwaarde", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "301351583718898954"))).children(new String[]{"voorwaarde"}, new boolean[]{false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "301351583718898953")).create();
   }
   private static ConceptDescriptor createDescriptorForEnumeratie() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Enumeratie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L)).super_("ObjectiefRecht.structure.Object").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L)).parents("ObjectiefRecht.structure.Object", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x67229afa69d710c7L, "elementen", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b8L), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7431672735422943431"))).children(new String[]{"elementen"}, new boolean[]{true}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7431672735422943413")).create();
-  }
-  private static ConceptDescriptor createDescriptorForEnumeratieDatatype() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.EnumeratieDatatype", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25be3715c7bbb713L)).super_("ObjectiefRecht.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x25be3715c7bbb714L, "enumeratie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2719671791663167252"))).references("enumeratie").alias("enumeratie", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2719671791663167251")).create();
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Enumeratie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L)).super_("ObjectiefRecht.structure.Object").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L)).parents("ObjectiefRecht.structure.Object").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x67229afa69d710c7L, "elementen", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b8L), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7431672735422943431"))).children(new String[]{"elementen"}, new boolean[]{true}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7431672735422943413")).create();
   }
   private static ConceptDescriptor createDescriptorForEnumeratieElement() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.EnumeratieElement", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b8L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7431672735422943416")).create();
+  }
+  private static ConceptDescriptor createDescriptorForEnumeratieType() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.EnumeratieType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25be3715c7bbb713L)).super_("ObjectiefRecht.structure.AbstractKenmerkType").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractKenmerkType").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x25be3715c7bbb714L, "enumeratie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2719671791663167252"))).references("enumeratie").alias("enumeratie", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2719671791663167251")).create();
   }
   private static ConceptDescriptor createDescriptorForExpressieVoorwaarde() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ExpressieVoorwaarde", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL)).super_("ObjectiefRecht.structure.AbstracteVoorwaarde").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL)).parents("ObjectiefRecht.structure.AbstracteVoorwaarde").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x1fabc0b15d7bf1afL, "expressie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504203436463"))).children(new String[]{"expressie"}, new boolean[]{false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504203216587")).create();
@@ -466,23 +462,32 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForGebeurtenisMetRechtsgevolg() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.GebeurtenisMetRechtsgevolg", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3fL)).super_("ObjectiefRecht.structure.RechtsgevolgVeroorzakers").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL)).parents("ObjectiefRecht.structure.RechtsgevolgVeroorzakers").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL)).alias("gebeurtenis met rechtsgevolg", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161791")).create();
   }
-  private static ConceptDescriptor createDescriptorForGeheelGetalDatatype() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.GeheelGetalDatatype", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1cdL)).super_("ObjectiefRecht.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).alias("geheel getal", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2907397198644945357")).create();
+  private static ConceptDescriptor createDescriptorForGeheelGetalType() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.GeheelGetalType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1cdL)).super_("ObjectiefRecht.structure.AbstractKenmerkType").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractKenmerkType").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).alias("geheel getal", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2907397198644945357")).create();
   }
   private static ConceptDescriptor createDescriptorForGelijkstelling() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Gelijkstelling", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386ddb1L)).super_("ObjectiefRecht.structure.Actie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dde5L)).parents("ObjectiefRecht.structure.Actie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dde5L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x76ccb41bf386ddb4L, "variabele", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "8560415023867289012")), new ConceptDescriptorBuilder.Link(0x76ccb41bf386ddb6L, "gelijkTeStellenAan", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "8560415023867289014"))).children(new String[]{"variabele", "gelijkTeStellenAan"}, new boolean[]{false, false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "8560415023867289009")).create();
   }
+  private static ConceptDescriptor createDescriptorForIBinaireExpressie() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.IBinaireExpressie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L)).version(1).interface_().childDescriptors(new ConceptDescriptorBuilder.Link(0x46db58718361b135L, "expressie1", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x46db587183408c7aL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5105771847113355573")), new ConceptDescriptorBuilder.Link(0x46db58718361b137L, "expressie2", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x46db587183408c7aL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5105771847113355575"))).children(new String[]{"expressie1", "expressie2"}, new boolean[]{false, false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5105771847113355572")).create();
+  }
   private static ConceptDescriptor createDescriptorForImmuniteitGeenbevoegdheid() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ImmuniteitGeenbevoegdheid", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L)).super_("ObjectiefRecht.structure.Rechtsbetrekking").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL)).parents("ObjectiefRecht.structure.Rechtsbetrekking").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x464e588a70476584L, "immuniteitvoor", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL), true, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5066083982450845060")), new ConceptDescriptorBuilder.Ref(0x3bfdb51c6ba5108fL, "uittevoeren", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4322810351015235727"))).references("immuniteitvoor", "uittevoeren").childDescriptors(new ConceptDescriptorBuilder.Link(0x25be3715c7c40b05L, "teNeutraliserenVoorwaarden", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2719671791663713029"))).children(new String[]{"teNeutraliserenVoorwaarden"}, new boolean[]{true}).alias("immuniteit - geen bevoegdheid", "Een {immuniteit-geenbevoegdheid} is een [rechtsbetrekking] waarbij de immuniteit houder de macht heeft een of meer [rechtsbetrekkingen] buiten werking te stellen, of een of meer [voorwaarden] van een [rechtshandeling] of [feitelijke handeling] buiten werking te stellen. De geenbevoegdheid houdende [partij] heeft de resultaten van het uitoefenen van de immuniteit maar te accepteren, uiteraard mits voldaan is aan de [voorwaarden] van geldigheid van de [rechtshandeling] van immuniteit.").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161877")).create();
   }
+  private static ConceptDescriptor createDescriptorForIsGeen() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.IsGeen", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db5871837c102bL)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x46db5871837c102dL, "variabele", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5105771847115083821"))).children(new String[]{"variabele"}, new boolean[]{false}).alias("is niet waar", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5105771847115083819")).create();
+  }
   private static ConceptDescriptor createDescriptorForIsGelijk() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.IsGelijk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x1c192b17c998a451L, "expr1", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2024696888646214737")), new ConceptDescriptorBuilder.Link(0x1c192b17c998a473L, "expr2", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2024696888646214771"))).children(new String[]{"expr1", "expr2"}, new boolean[]{false, false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2024696888646214736")).create();
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.IsGelijk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x1c192b17c998a451L, "expr1", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2024696888646214737")), new ConceptDescriptorBuilder.Link(0x1c192b17c998a473L, "expr2", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2024696888646214771"))).children(new String[]{"expr1", "expr2"}, new boolean[]{false, false}).alias("is gelijk aan", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2024696888646214736")).create();
   }
   private static ConceptDescriptor createDescriptorForIsGroterDan() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.IsGroterDan", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x1fabc0b15d71f16dL, "variabele", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504202781037")), new ConceptDescriptorBuilder.Link(0x1fabc0b15d71f16eL, "isGroterDan", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504202781038"))).children(new String[]{"variabele", "isGroterDan"}, new boolean[]{false, false}).alias("is groter dan", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504202781035")).create();
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.IsGroterDan", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16bL)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie", "ObjectiefRecht.structure.IBinaireExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L)).alias("is groter dan", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504202781035")).create();
+  }
+  private static ConceptDescriptor createDescriptorForIsGroterOfGelijk() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.IsGroterOfGelijk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db587183a08da6L)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie", "ObjectiefRecht.structure.IBinaireExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L)).alias("is groter of gelijk aan", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5105771847117475238")).create();
   }
   private static ConceptDescriptor createDescriptorForIsKleinerDan() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.IsKleinerDan", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d76eb8bL)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x1fabc0b15d76eb8cL, "variabele", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504203107212")), new ConceptDescriptorBuilder.Link(0x1fabc0b15d76eb8dL, "isKleinerDan", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504203107213"))).children(new String[]{"variabele", "isKleinerDan"}, new boolean[]{false, false}).alias("is kleiner dan", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504203107211")).create();
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.IsKleinerDan", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d76eb8bL)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie", "ObjectiefRecht.structure.IBinaireExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L)).alias("is kleiner dan", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504203107211")).create();
   }
   private static ConceptDescriptor createDescriptorForIsOpgegeven() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.IsOpgegeven", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x2db6a3c6801e6ee4L)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x2db6a3c6801e6ee5L, "variabele", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "3294000250416426725"))).children(new String[]{"variabele"}, new boolean[]{false}).alias("is opgegeven", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "3294000250416426724")).create();
@@ -490,23 +495,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForIsWaar() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.IsWaar", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x70b6c2b5db7413L)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x70b6c2b5db7425L, "variabele", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "31726144782562341"))).children(new String[]{"variabele"}, new boolean[]{false}).alias("is waar", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "31726144782562323")).create();
   }
-  private static ConceptDescriptor createDescriptorForJaNeeDatatype() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.JaNeeDatatype", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x56b967d667610da9L)).super_("ObjectiefRecht.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).alias("ja/nee", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6249140128508349865")).create();
+  private static ConceptDescriptor createDescriptorForJaNeeType() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.JaNeeType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x56b967d667610da9L)).super_("ObjectiefRecht.structure.AbstractKenmerkType").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractKenmerkType").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).alias("ja/nee", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6249140128508349865")).create();
   }
   private static ConceptDescriptor createDescriptorForKenmerk() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Kenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L)).super_("ObjectiefRecht.structure.AbstractKenmerk").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L)).parents("ObjectiefRecht.structure.AbstractKenmerk", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x56b967d6675a268fL, "datatype", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6249140128507897487")), new ConceptDescriptorBuilder.Link(0x6e43a734f872153dL, "lidwoord", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8721519L), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7945378013560051005"))).children(new String[]{"datatype", "lidwoord"}, new boolean[]{false, false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5266643527326992515")).create();
-  }
-  private static ConceptDescriptor createDescriptorForKenmerk2() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Kenmerk2", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3c0e42171c44928bL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x3c0e42171c44931bL, "lidwoord", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8721519L), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4327468958975562523")), new ConceptDescriptorBuilder.Link(0x3c0e42171c44931dL, "datatype", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4327468958975562525"))).children(new String[]{"lidwoord", "datatype"}, new boolean[]{false, false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4327468958975562379")).create();
-  }
-  private static ConceptDescriptor createDescriptorForKenmerkMetReferentieNaarOnderwerp() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.KenmerkMetReferentieNaarOnderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL)).super_("ObjectiefRecht.structure.AbstractKenmerk").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L)).parents("ObjectiefRecht.structure.AbstractKenmerk", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0xc9f8f37229e5a2cL, "onderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "909603116718905900"))).references("onderwerp").childDescriptors(new ConceptDescriptorBuilder.Link(0x6e43a734f874c873L, "lidwoord", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8721519L), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7945378013560227955"))).children(new String[]{"lidwoord"}, new boolean[]{false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "909603116718905899")).create();
-  }
-  private static ConceptDescriptor createDescriptorForKenmerkReferentie() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.KenmerkReferentie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L)).super_("ObjectiefRecht.structure.AbstractReferentieNaarKenmerk").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL)).parents("ObjectiefRecht.structure.AbstractReferentieNaarKenmerk").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x6e43a734f86e13f3L, "kenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7945378013559788531"))).references("kenmerk").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7945378013559788530")).create();
-  }
-  private static ConceptDescriptor createDescriptorForKenmerkReferentieNaarSubject() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.KenmerkReferentieNaarSubject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x28694295531ad9b1L)).super_("ObjectiefRecht.structure.AbstractKenmerk").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L)).parents("ObjectiefRecht.structure.AbstractKenmerk", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x28694295531ad9b4L, "subject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2911931843183565236"))).references("subject").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2911931843183565233")).create();
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Kenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L)).super_("ObjectiefRecht.structure.AbstractKenmerk").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L)).parents("ObjectiefRecht.structure.AbstractKenmerk").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x46db587183a9229eL, "meervoudig", new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5105771847118037662"))).properties("meervoudig").childDescriptors(new ConceptDescriptorBuilder.Link(0x56b967d6675a268fL, "type", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6249140128507897487")), new ConceptDescriptorBuilder.Link(0x6e43a734f872153dL, "lidwoord", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8721519L), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7945378013560051005"))).children(new String[]{"type", "lidwoord"}, new boolean[]{false, false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5266643527326992515")).create();
   }
   private static ConceptDescriptor createDescriptorForKrachtigeAanspraakFataleVerplichtig() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.KrachtigeAanspraakFataleVerplichtig", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d97L)).super_("ObjectiefRecht.structure.Rechtsbetrekking").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL)).parents("ObjectiefRecht.structure.Rechtsbetrekking").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x3bfdb51c6ba51ed1L, "verplichtingTot", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4322810351015239377"))).references("verplichtingTot").alias("krachtige aanspraak - fatale verplichting", "Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten.").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161879")).create();
@@ -527,16 +520,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.MinExpressie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7cL)).super_("ObjectiefRecht.structure.RekenExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7aL)).parents("ObjectiefRecht.structure.RekenExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7aL)).alias("min", "aftrekken").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "301351583718858108")).create();
   }
   private static ConceptDescriptor createDescriptorForObject() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Object", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L)).super_("ObjectiefRecht.structure.Concept").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).parents("ObjectiefRecht.structure.Concept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "797539131721178915")).create();
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Object", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L)).super_("ObjectiefRecht.structure.Concept").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).parents("ObjectiefRecht.structure.Concept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "797539131721178915")).create();
   }
-  private static ConceptDescriptor createDescriptorForObjectDataType() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ObjectDataType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60ac64b8L)).super_("ObjectiefRecht.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0xb116d9d60b91205L, "object", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "797539131721323013"))).references("object").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "797539131720492216")).create();
+  private static ConceptDescriptor createDescriptorForObjectType() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ObjectType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60ac64b8L)).super_("ObjectiefRecht.structure.AbstractKenmerkType").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractKenmerkType").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0xb116d9d60b91205L, "object", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "797539131721323013"))).references("object").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "797539131720492216")).create();
   }
   private static ConceptDescriptor createDescriptorForOnderwerp() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Onderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L)).super_("ObjectiefRecht.structure.Object").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L)).parents("ObjectiefRecht.structure.Object", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x4916e0625cef888cL, "kenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5266643527326992524")), new ConceptDescriptorBuilder.Link(0x3c0e42171c44932bL, "kenmerken", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3c0e42171c44928bL), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4327468958975562539")), new ConceptDescriptorBuilder.Link(0x3642b84024d34ec1L, "uniekIdentificerendeKenmerken", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "3909890012146257601")), new ConceptDescriptorBuilder.Link(0x6e43a734f877eacbL, "lidwoord", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8721519L), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7945378013560433355"))).children(new String[]{"kenmerk", "kenmerken", "uniekIdentificerendeKenmerken", "lidwoord"}, new boolean[]{true, true, true, false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2417641230338880953")).create();
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Onderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L)).super_("ObjectiefRecht.structure.Object").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L)).parents("ObjectiefRecht.structure.Object").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x4916e0625cef888cL, "kenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5266643527326992524")), new ConceptDescriptorBuilder.Link(0x3642b84024d34ec1L, "uniekIdentificerendeKenmerken", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "3909890012146257601")), new ConceptDescriptorBuilder.Link(0x6e43a734f877eacbL, "lidwoord", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8721519L), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7945378013560433355"))).children(new String[]{"kenmerk", "uniekIdentificerendeKenmerken", "lidwoord"}, new boolean[]{true, true, false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2417641230338880953")).create();
   }
-  private static ConceptDescriptor createDescriptorForOnderwerpDatatype() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.OnderwerpDatatype", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3c0e42171c23d5b5L)).super_("ObjectiefRecht.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x3c0e42171c23d5b6L, "onderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4327468958973416886"))).references("onderwerp").alias("onderwerp", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4327468958973416885")).create();
+  private static ConceptDescriptor createDescriptorForOnderwerpType() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.OnderwerpType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3c0e42171c23d5b5L)).super_("ObjectiefRecht.structure.AbstractKenmerkType").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractKenmerkType").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x3c0e42171c23d5b6L, "onderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4327468958973416886"))).references("onderwerp").alias("onderwerp", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4327468958973416885")).create();
   }
   private static ConceptDescriptor createDescriptorForOptioneleBevoegdheidOptioneleGehoudenheid() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.OptioneleBevoegdheidOptioneleGehoudenheid", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d98L)).super_("ObjectiefRecht.structure.Rechtsbetrekking").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL)).parents("ObjectiefRecht.structure.Rechtsbetrekking").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x3bfdb51c6ba51ed6L, "bevoegdheidTot", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4322810351015239382"))).references("bevoegdheidTot").alias("optionele bevoegdheid - optionele gehoudenheid", "Een {bevoegdheid-gehoudenheid} is een [rechtsbetrekking] waarbij het [rechtssubject] dat de bevoegdheidskant heeft, de keuze heeft, zijn macht uit te oefenen en een of meer nieuwe [rechtsbetrekkingen] van welk soort ook tot stand te brengen tussen de gehoudenheid houdende [partij] en een andere [partij], en/of een of meer bestaande [rechtsbetrekkingen] de gehoudenheid houdende [partij] en een andere [partij] te beëindigen.").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161880")).create();
@@ -545,7 +538,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.PlusExpressie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7bL)).super_("ObjectiefRecht.structure.RekenExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7aL)).parents("ObjectiefRecht.structure.RekenExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7aL)).alias("plus", "optellen").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "301351583718858107")).create();
   }
   private static ConceptDescriptor createDescriptorForRechtsSubject() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.RechtsSubject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL)).super_("ObjectiefRecht.structure.Object").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L)).parents("ObjectiefRecht.structure.Object", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x630944a3c4180c27L, "definitie", new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7136310554705529895"))).properties("definitie").childDescriptors(new ConceptDescriptorBuilder.Link(0x5781f93f2e4f40faL, "kenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6305595003050606842")), new ConceptDescriptorBuilder.Link(0x67229afa69bc26cfL, "uniekIdentificerendeKenmerken", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7431672735421179599")), new ConceptDescriptorBuilder.Link(0x3642b84024d922bdL, "lidwoord", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8721519L), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "3909890012146639549"))).children(new String[]{"kenmerk", "uniekIdentificerendeKenmerken", "lidwoord"}, new boolean[]{true, true, false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161738")).create();
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.RechtsSubject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL)).super_("ObjectiefRecht.structure.Object").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L)).parents("ObjectiefRecht.structure.Object").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x630944a3c4180c27L, "definitie", new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7136310554705529895"))).properties("definitie").childDescriptors(new ConceptDescriptorBuilder.Link(0x5781f93f2e4f40faL, "kenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6305595003050606842")), new ConceptDescriptorBuilder.Link(0x67229afa69bc26cfL, "uniekIdentificerendeKenmerken", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7431672735421179599")), new ConceptDescriptorBuilder.Link(0x3642b84024d922bdL, "lidwoord", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8721519L), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "3909890012146639549"))).children(new String[]{"kenmerk", "uniekIdentificerendeKenmerken", "lidwoord"}, new boolean[]{true, true, false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161738")).create();
   }
   private static ConceptDescriptor createDescriptorForRechtsbetrekking() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Rechtsbetrekking", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL)).super_("ObjectiefRecht.structure.Toestand").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3a8c9b9L)).parents("ObjectiefRecht.structure.Toestand", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3a8c9b9L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x25be3715c7da8818L, "initieel", new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2719671791665186840"))).properties("initieel").referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x611073d615228d2dL, "rechtssubjectMetRecht", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161773")), new ConceptDescriptorBuilder.Ref(0x611073d615228d2eL, "rechtssubjectMetPlicht", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161774")), new ConceptDescriptorBuilder.Ref(0x218d2fe3c8aff5f6L, "onderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2417641230338881014"))).references("rechtssubjectMetRecht", "rechtssubjectMetPlicht", "onderwerp").childDescriptors(new ConceptDescriptorBuilder.Link(0x805ce2b16e426b6L, "geldigVan", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "578094811649943222")), new ConceptDescriptorBuilder.Link(0x805ce2b16e426bbL, "geldigTot", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "578094811649943227")), new ConceptDescriptorBuilder.Link(0x3b480c109781917eL, "GeldigVan", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b480c109781913dL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4271677511961776510")), new ConceptDescriptorBuilder.Link(0x3b480c1097819187L, "GeldigTot", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b480c109781913dL), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4271677511961776519")), new ConceptDescriptorBuilder.Link(0x4916e0625cee85caL, "bron", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cee85c9L), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5266643527326926282")), new ConceptDescriptorBuilder.Link(0x25be3715c7b32639L, "geldigOnderVoorwaarden", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2719671791662605881"))).children(new String[]{"geldigVan", "geldigTot", "GeldigVan", "GeldigTot", "bron", "geldigOnderVoorwaarden"}, new boolean[]{false, false, false, false, false, true}).abstract_().alias("", "Synoniemen zijn rechtsrelatie en rechtsverhouding").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161741")).create();
@@ -559,14 +552,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForRechtshandeling() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Rechtshandeling", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL)).super_("ObjectiefRecht.structure.RechtsgevolgVeroorzakers").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL)).parents("ObjectiefRecht.structure.RechtsgevolgVeroorzakers").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x202912d6e3aebf6eL, "rechtssubject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aebf67L), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2317404197411012462")), new ConceptDescriptorBuilder.Link(0x3b480c1097819b1bL, "UitgevoerdOp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b480c109781913dL), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4271677511961778971")), new ConceptDescriptorBuilder.Link(0x56b967d667635865L, "uitgevoerdOp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6249140128508500069"))).children(new String[]{"rechtssubject", "UitgevoerdOp", "uitgevoerdOp"}, new boolean[]{false, false, false}).alias("rechtshandeling objectief recht", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161789")).create();
   }
-  private static ConceptDescriptor createDescriptorForReeelGetalDatatype() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ReeelGetalDatatype", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1e5L)).super_("ObjectiefRecht.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).alias("reëel getal", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2907397198644945381")).create();
+  private static ConceptDescriptor createDescriptorForReeelGetalType() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ReeelGetalType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1e5L)).super_("ObjectiefRecht.structure.AbstractKenmerkType").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractKenmerkType").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).alias("reëel getal", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2907397198644945381")).create();
   }
   private static ConceptDescriptor createDescriptorForReferentieNaarArtikel() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ReferentieNaarArtikel", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cee8529L)).super_("ObjectiefRecht.structure.AbstractArtikel").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cee85c9L)).parents("ObjectiefRecht.structure.AbstractArtikel").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cee85c9L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x4916e0625cee852aL, "artikel", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cee84d6L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5266643527326926122"))).references("artikel").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5266643527326926121")).create();
   }
   private static ConceptDescriptor createDescriptorForReferentieNaarEnumeratie() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ReferentieNaarEnumeratie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d71106L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x67229afa69d714cbL, "enumeratie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7431672735422944459"))).references("enumeratie").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7431672735422943494")).create();
+  }
+  private static ConceptDescriptor createDescriptorForReferentieNaarKenmerk() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ReferentieNaarKenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L)).super_("ObjectiefRecht.structure.AbstractReferentieNaarKenmerk").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL)).parents("ObjectiefRecht.structure.AbstractReferentieNaarKenmerk").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x6e43a734f86e13f3L, "kenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7945378013559788531"))).references("kenmerk").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7945378013559788530")).create();
+  }
+  private static ConceptDescriptor createDescriptorForReferentieNaarObject() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ReferentieNaarObject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db587183679a0cL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x46db587183679a0dL, "object", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5105771847113742861"))).references("object").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "5105771847113742860")).create();
   }
   private static ConceptDescriptor createDescriptorForReferentieNaarOnderwerp() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ReferentieNaarOnderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d8a970cL)).super_("ObjectiefRecht.structure.Concept").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).parents("ObjectiefRecht.structure.Concept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x1fabc0b15d8a970dL, "onderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504204396301"))).references("onderwerp").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504204396300")).create();
@@ -586,12 +585,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForReferentieNaarRechtssubject() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ReferentieNaarRechtssubject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aebf67L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x202912d6e3aebf68L, "rechtssubject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2317404197411012456"))).references("rechtssubject").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2317404197411012455")).create();
   }
-  private static ConceptDescriptor createDescriptorForReferentieNaarReferentieNaarOnderwerp() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ReferentieNaarReferentieNaarOnderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86a122eL)).super_("ObjectiefRecht.structure.AbstractReferentieNaarKenmerk").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL)).parents("ObjectiefRecht.structure.AbstractReferentieNaarKenmerk").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x6e43a734f86a122fL, "onderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xc9f8f37229e5a2bL), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7945378013559525935"))).references("onderwerp").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "7945378013559525934")).create();
-  }
-  private static ConceptDescriptor createDescriptorForReferentieNaarReferentieNaarSubject() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ReferentieNaarReferentieNaarSubject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3642b84024d63fc0L)).super_("ObjectiefRecht.structure.AbstractReferentieNaarKenmerk").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL)).parents("ObjectiefRecht.structure.AbstractReferentieNaarKenmerk").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x3642b84024d63fc1L, "subject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x28694295531ad9b1L), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "3909890012146450369"))).references("subject").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "3909890012146450368")).create();
-  }
   private static ConceptDescriptor createDescriptorForReferentieNaarVoorwaarde() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.ReferentieNaarVoorwaarde", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d8dL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x611073d615228d8eL, "voorwaarde", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161870"))).references("voorwaarde").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161869")).create();
   }
@@ -601,20 +594,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForRekenExpressie() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.RekenExpressie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7aL)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "301351583718858106")).create();
   }
-  private static ConceptDescriptor createDescriptorForRijVanKaraktersDatatype() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.RijVanKaraktersDatatype", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1bfL)).super_("ObjectiefRecht.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).alias("rij van karakters", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2907397198644945343")).create();
+  private static ConceptDescriptor createDescriptorForRijVanKaraktersType() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.RijVanKaraktersType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a1bfL)).super_("ObjectiefRecht.structure.AbstractKenmerkType").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractKenmerkType").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).alias("rij van karakters", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2907397198644945343")).create();
   }
   private static ConceptDescriptor createDescriptorForSamengesteldeVoorwaarde() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.SamengesteldeVoorwaarde", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fce8L)).super_("ObjectiefRecht.structure.AbstracteVoorwaarde").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL)).parents("ObjectiefRecht.structure.AbstracteVoorwaarde").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x1c192b17c98fdc2dL, "conditie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c98fb85aL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2024696888645639213")), new ConceptDescriptorBuilder.Link(0x42e9dab3410fd0cL, "voorwaarden", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL), true, true, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "301351583718898956"))).children(new String[]{"conditie", "voorwaarden"}, new boolean[]{false, true}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "301351583718898920")).create();
   }
-  private static ConceptDescriptor createDescriptorForSubjectDataType() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.SubjectDataType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3c0e42171c23d5b8L)).super_("ObjectiefRecht.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x3c0e42171c23d5b9L, "subject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4327468958973416889"))).references("subject").alias("subject", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4327468958973416888")).create();
+  private static ConceptDescriptor createDescriptorForSubjectType() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.SubjectType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3c0e42171c23d5b8L)).super_("ObjectiefRecht.structure.AbstractKenmerkType").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractKenmerkType").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x3c0e42171c23d5b9L, "subject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4327468958973416889"))).references("subject").alias("subject", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4327468958973416888")).create();
   }
   private static ConceptDescriptor createDescriptorForTenMinste() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.TenMinste", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c99b8af3L)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).alias("is ten minste", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2024696888646404851")).create();
   }
-  private static ConceptDescriptor createDescriptorForTijdDatatype() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.TijdDatatype", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x56b967d6676037ffL)).super_("ObjectiefRecht.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).alias("tijd", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6249140128508295167")).create();
+  private static ConceptDescriptor createDescriptorForTijdType() {
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.TijdType", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x56b967d6676037ffL)).super_("ObjectiefRecht.structure.AbstractKenmerkType").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).parents("ObjectiefRecht.structure.AbstractKenmerkType").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x285926591e32a19aL)).alias("tijd", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6249140128508295167")).create();
   }
   private static ConceptDescriptor createDescriptorForTijdsverloopMetRechtsgevolg() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.TijdsverloopMetRechtsgevolg", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d40L)).super_("ObjectiefRecht.structure.RechtsgevolgVeroorzakers").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL)).parents("ObjectiefRecht.structure.RechtsgevolgVeroorzakers").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL)).alias("tijdsverloop met rechtsgevolg", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161792")).create();
@@ -623,7 +616,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Toestand", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3a8c9b9L)).super_("ObjectiefRecht.structure.Concept").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).parents("ObjectiefRecht.structure.Concept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).abstract_().sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2317404197410621881")).create();
   }
   private static ConceptDescriptor createDescriptorForVariabele() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Variabele", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL)).super_("ObjectiefRecht.structure.Concept").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).parents("ObjectiefRecht.structure.Concept").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x1fabc0b15d5dc56eL, "onderwerp2", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L), true, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504201459054")), new ConceptDescriptorBuilder.Ref(0x1fabc0b15d5dc570L, "kenmerk2", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L), true, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504201459056"))).references("onderwerp2", "kenmerk2").childDescriptors(new ConceptDescriptorBuilder.Link(0x1fabc0b15d875006L, "kenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f8661e5dL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504204181510")), new ConceptDescriptorBuilder.Link(0x1fabc0b15d875002L, "onderwerp", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d8a970cL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504204181506"))).children(new String[]{"kenmerk", "onderwerp"}, new boolean[]{false, false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "8560415023867288958")).create();
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.Variabele", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL)).super_("Gegevens.structure.AbstracteWaarde").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x46db587183408c7aL)).parents("Gegevens.structure.AbstracteWaarde").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x46db587183408c7aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x1fabc0b15d5dc56eL, "onderwerp2", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L), true, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504201459054")), new ConceptDescriptorBuilder.Ref(0x1fabc0b15d5dc570L, "kenmerk2", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8887L), true, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504201459056"))).references("onderwerp2", "kenmerk2").childDescriptors(new ConceptDescriptorBuilder.Link(0x1fabc0b15d875006L, "kenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504204181510")), new ConceptDescriptorBuilder.Link(0x1fabc0b15d875002L, "object", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db587183679a0cL), true, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2282129504204181506"))).children(new String[]{"kenmerk", "object"}, new boolean[]{false, false}).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "8560415023867288958")).create();
   }
   private static ConceptDescriptor createDescriptorForVermenigvuldigenExpressie() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.VermenigvuldigenExpressie", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d9eL)).super_("ObjectiefRecht.structure.RekenExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7aL)).parents("ObjectiefRecht.structure.RekenExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7aL)).alias("maal", "Vermenigvuldigen").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "301351583718858142")).create();
@@ -632,7 +625,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.VerplichteBevoegdheidVerplichteGehoudenheid", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L)).super_("ObjectiefRecht.structure.Rechtsbetrekking").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL)).parents("ObjectiefRecht.structure.Rechtsbetrekking").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x3bfdb51c6ba53ac9L, "bevoegdheidTot", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL), false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "4322810351015246537"))).references("bevoegdheidTot").alias("verplichte bevoegdheid - verplichte gehoudenheid", "Een {bevoegdheid-gehoudenheid} is een [rechtsbetrekking] waarbij het [rechtssubject] dat de bevoegdheidskant heeft, de keuze heeft, zijn macht uit te oefenen en een of meer nieuwe [rechtsbetrekkingen] van welk soort ook tot stand te brengen tussen de gehoudenheid houdende [partij] en een andere [partij], en/of een of meer bestaande [rechtsbetrekkingen] de gehoudenheid houdende [partij] en een andere [partij] te beëindigen.").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161876")).create();
   }
   private static ConceptDescriptor createDescriptorForVerschilTussen() {
-    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.VerschilTussen", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c99b8b3bL)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x1c192b17c99b8b3cL, "expr1", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2024696888646404924")), new ConceptDescriptorBuilder.Link(0x1c192b17c99b8b3dL, "expr2", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL), false, false, false, new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2024696888646404925"))).children(new String[]{"expr1", "expr2"}, new boolean[]{false, false}).alias("verschil tussen", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2024696888646404923")).create();
+    return new ConceptDescriptorBuilder("ObjectiefRecht.structure.VerschilTussen", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c99b8b3bL)).super_("ObjectiefRecht.structure.AbstracteExpressie").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL)).parents("ObjectiefRecht.structure.AbstracteExpressie", "ObjectiefRecht.structure.IBinaireExpressie").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L)).alias("verschil tussen", "").sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "2024696888646404923")).create();
   }
   private static ConceptDescriptor createDescriptorForVormVoorwaarde() {
     return new ConceptDescriptorBuilder("ObjectiefRecht.structure.VormVoorwaarde", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d09L)).super_("ObjectiefRecht.structure.AbstracteVoorwaarde").version(1).super_(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL)).parents("ObjectiefRecht.structure.AbstracteVoorwaarde").parentIds(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3abc7feL)).sourceNode(new SNodePointer("r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)", "6994217584621161737")).create();

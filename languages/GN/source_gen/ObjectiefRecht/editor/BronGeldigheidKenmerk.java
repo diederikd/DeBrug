@@ -233,11 +233,11 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     return editorCell;
   }
   private EditorCell createRefNode_wh7tcl_l0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new BronGeldigheidKenmerk.datatypeSingleRoleHandler_wh7tcl_l0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), editorContext);
+    SingleRoleCellProvider provider = new BronGeldigheidKenmerk.typeSingleRoleHandler_wh7tcl_l0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"), editorContext);
     return provider.createCell();
   }
-  private class datatypeSingleRoleHandler_wh7tcl_l0 extends SingleRoleCellProvider {
-    public datatypeSingleRoleHandler_wh7tcl_l0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class typeSingleRoleHandler_wh7tcl_l0 extends SingleRoleCellProvider {
+    public typeSingleRoleHandler_wh7tcl_l0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -245,8 +245,8 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
       myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
       try {
         EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), child));
+        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"), child));
+        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"), child));
         installCellInfo(child, editorCell);
         return editorCell;
       } finally {
@@ -260,10 +260,10 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
-        editorCell.setRole("datatype");
+        editorCell.setRole("type");
       }
       Style style = new StyleImpl();
       SNode node = myOwnerNode;
@@ -274,10 +274,10 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
     @Override
     protected EditorCell createEmptyCell() {
       myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "datatype")));
+      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type")));
       try {
         EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_datatype");
+        editorCell.setCellId("empty_type");
         installCellInfo(null, editorCell);
         return editorCell;
       } finally {
@@ -285,7 +285,7 @@ public class BronGeldigheidKenmerk implements ConceptEditorComponent {
       }
     }
     protected String getNoTargetText() {
-      return "<no datatype>";
+      return "<no type>";
     }
   }
   private EditorCell createConstant_wh7tcl_m0(EditorContext editorContext, SNode node) {
