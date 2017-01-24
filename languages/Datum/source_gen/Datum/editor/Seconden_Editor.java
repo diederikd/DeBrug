@@ -11,8 +11,7 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import Datum.behavior.Seconden__BehaviorDescriptor;
 
 public class Seconden_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -53,7 +52,7 @@ public class Seconden_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_ghyq5j_a1a(SNode node, EditorContext editorContext) {
-    return (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b32322L, 0x46db587183b32323L, "seconden")) == "1");
+    return ((double) Seconden__BehaviorDescriptor.AantalSeconden_idbTj1CmnFyp.invoke(node) == 1);
   }
   private EditorCell createConstant_ghyq5j_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "seconden");
@@ -62,6 +61,6 @@ public class Seconden_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_ghyq5j_a2a(SNode node, EditorContext editorContext) {
-    return (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b32322L, 0x46db587183b32323L, "seconden")) != "1");
+    return ((double) Seconden__BehaviorDescriptor.AantalSeconden_idbTj1CmnFyp.invoke(node) != 1);
   }
 }

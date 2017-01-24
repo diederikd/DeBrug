@@ -147,7 +147,9 @@
       <concept id="5105771847113742860" name="ObjectiefRecht.structure.ReferentieNaarObject" flags="ng" index="35Jc9X">
         <reference id="5105771847113742861" name="object" index="35Jc9W" />
       </concept>
-      <concept id="2024696888646404923" name="ObjectiefRecht.structure.VerschilTussen" flags="ng" index="3lwE0G" />
+      <concept id="2024696888646404851" name="ObjectiefRecht.structure.TenMinsteNa" flags="ng" index="3lwE7$">
+        <child id="4054885329584216706" name="duur" index="2yC8V" />
+      </concept>
       <concept id="2719671791663167251" name="ObjectiefRecht.structure.EnumeratieType" flags="ng" index="3y1o06">
         <reference id="2719671791663167252" name="enumeratie" index="3y1o01" />
       </concept>
@@ -1476,22 +1478,20 @@
       <node concept="1OcJVu" id="2mYdLn7HkXb" role="3y4jea">
         <property role="TrG5h" value="Werknemer ten minste een jaar in dienst bij &#10;werkgever op beoogd tijdstip van ingang van die aanpassing." />
       </node>
-      <node concept="12OPpU" id="4rrm763I1p4" role="3y4jea">
-        <node concept="12Qz7q" id="4rrm763I1pw" role="12O34u">
-          <node concept="3lwE0G" id="4rrm763I1qB" role="35II_4">
-            <node concept="25iA__" id="4rrm763I1qK" role="35II_4">
-              <node concept="2mbrj6" id="4rrm763I1qQ" role="12b92R">
-                <ref role="2mbrj7" node="5qTpXpBoOu0" resolve="datum indiensttreding" />
-              </node>
-            </node>
-            <node concept="25iA__" id="4rrm763I1qT" role="35II_6">
-              <node concept="2mbrj6" id="4rrm763I1qZ" role="12b92R">
-                <ref role="2mbrj7" node="4$mS69sWF6g" resolve="beoogde ingangsdatum van de aanpassing" />
-              </node>
+      <node concept="12OPpU" id="3x5Qb$UORT4" role="3y4jea">
+        <node concept="3lwE7$" id="3x5Qb$UORTC" role="12O34u">
+          <node concept="35q7En" id="3x5Qb$UORTS" role="2yC8V">
+            <property role="35q7Er" value="1" />
+          </node>
+          <node concept="25iA__" id="3x5Qb$UORU4" role="35II_4">
+            <node concept="2mbrj6" id="3x5Qb$UORUa" role="12b92R">
+              <ref role="2mbrj7" node="5qTpXpBoOu0" resolve="datum indiensttreding" />
             </node>
           </node>
-          <node concept="35q7En" id="4rrm763I1pI" role="35II_6">
-            <property role="35q7Er" value="1" />
+          <node concept="25iA__" id="3x5Qb$UORTV" role="35II_6">
+            <node concept="2mbrj6" id="3x5Qb$UORU1" role="12b92R">
+              <ref role="2mbrj7" node="4$mS69sWF6g" resolve="beoogde ingangsdatum van de aanpassing" />
+            </node>
           </node>
         </node>
       </node>

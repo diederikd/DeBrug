@@ -11,6 +11,7 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import Datum.behavior.Uren__BehaviorDescriptor;
 
 public class Uren_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -21,7 +22,12 @@ public class Uren_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_gjow6b_a");
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createProperty_gjow6b_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_gjow6b_b0(editorContext, node));
+    if (renderingCondition_gjow6b_a1a(node, editorContext)) {
+      editorCell.addEditorCell(this.createConstant_gjow6b_b0(editorContext, node));
+    }
+    if (renderingCondition_gjow6b_a2a(node, editorContext)) {
+      editorCell.addEditorCell(this.createConstant_gjow6b_c0(editorContext, node));
+    }
     return editorCell;
   }
   private EditorCell createProperty_gjow6b_a0(EditorContext editorContext, SNode node) {
@@ -44,5 +50,17 @@ public class Uren_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Constant_gjow6b_b0");
     editorCell.setDefaultText("");
     return editorCell;
+  }
+  private static boolean renderingCondition_gjow6b_a1a(SNode node, EditorContext editorContext) {
+    return ((double) Uren__BehaviorDescriptor.AantalUren_idbTj1CmnFSe.invoke(node) == 1);
+  }
+  private EditorCell createConstant_gjow6b_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "uren");
+    editorCell.setCellId("Constant_gjow6b_c0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private static boolean renderingCondition_gjow6b_a2a(SNode node, EditorContext editorContext) {
+    return ((double) Uren__BehaviorDescriptor.AantalUren_idbTj1CmnFSe.invoke(node) != 1);
   }
 }

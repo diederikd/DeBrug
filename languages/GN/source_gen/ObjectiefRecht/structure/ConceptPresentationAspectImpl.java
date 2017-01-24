@@ -82,7 +82,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_RijVanKaraktersType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SamengesteldeVoorwaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SubjectType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TenMinste = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TenMinsteNa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TijdType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TijdsverloopMetRechtsgevolg = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Toestand = new ConceptPresentationBuilder().create();
@@ -245,7 +245,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 71:
         return props_SubjectType;
       case 72:
-        return props_TenMinste;
+        return props_TenMinsteNa;
       case 73:
         return props_TijdType;
       case 74:

@@ -344,7 +344,7 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.TenMinste_BehaviorDescriptor" file="TenMinste_BehaviorDescriptor.java">
+  <dependency className="ObjectiefRecht.behavior.TenMinsteNa_BehaviorDescriptor" file="TenMinsteNa_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

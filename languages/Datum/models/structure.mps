@@ -16,6 +16,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -126,12 +127,14 @@
     <property role="EcuMT" value="5105771847118670752" />
     <property role="TrG5h" value="Duur" />
     <property role="3GE5qa" value="Duur" />
+    <property role="34LRSv" value="duur" />
     <ref role="1TJDcQ" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
   </node>
   <node concept="1TIwiD" id="4rrm763GGIx">
     <property role="EcuMT" value="5105771847118670753" />
     <property role="3GE5qa" value="Duur" />
     <property role="TrG5h" value="Uren" />
+    <property role="34LRSv" value="duur in uren" />
     <ref role="1TJDcQ" node="4rrm763GGIw" resolve="Duur" />
     <node concept="1TJgyi" id="4rrm763GGIy" role="1TKVEl">
       <property role="IQ2nx" value="5105771847118670754" />
@@ -143,6 +146,7 @@
     <property role="EcuMT" value="5105771847118671272" />
     <property role="3GE5qa" value="Duur" />
     <property role="TrG5h" value="Dagen" />
+    <property role="34LRSv" value="duur in dagen" />
     <ref role="1TJDcQ" node="4rrm763GGIw" resolve="Duur" />
     <node concept="1TJgyi" id="4rrm763GGQD" role="1TKVEl">
       <property role="IQ2nx" value="5105771847118671273" />
@@ -159,6 +163,7 @@
     <property role="EcuMT" value="5105771847118671304" />
     <property role="3GE5qa" value="Duur" />
     <property role="TrG5h" value="Minuten" />
+    <property role="34LRSv" value="duur in minuten" />
     <ref role="1TJDcQ" node="4rrm763GGIw" resolve="Duur" />
     <node concept="1TJgyi" id="4rrm763GGR9" role="1TKVEl">
       <property role="IQ2nx" value="5105771847118671305" />
@@ -170,6 +175,7 @@
     <property role="EcuMT" value="5105771847118671307" />
     <property role="3GE5qa" value="Duur" />
     <property role="TrG5h" value="Maanden" />
+    <property role="34LRSv" value="duur in maanden" />
     <ref role="1TJDcQ" node="4rrm763GGIw" resolve="Duur" />
     <node concept="1TJgyi" id="4rrm763GGRc" role="1TKVEl">
       <property role="IQ2nx" value="5105771847118671308" />
@@ -181,6 +187,7 @@
     <property role="EcuMT" value="5105771847118693094" />
     <property role="3GE5qa" value="Duur" />
     <property role="TrG5h" value="Jaren" />
+    <property role="34LRSv" value="duur in jaren" />
     <ref role="1TJDcQ" node="4rrm763GGIw" resolve="Duur" />
     <node concept="1TJgyi" id="4rrm763GMbE" role="1TKVEl">
       <property role="IQ2nx" value="5105771847118693098" />
@@ -192,6 +199,7 @@
     <property role="EcuMT" value="5105771847118693154" />
     <property role="3GE5qa" value="Duur" />
     <property role="TrG5h" value="Seconden" />
+    <property role="34LRSv" value="duur in seconden" />
     <ref role="1TJDcQ" node="4rrm763GGIw" resolve="Duur" />
     <node concept="1TJgyi" id="4rrm763GMcz" role="1TKVEl">
       <property role="IQ2nx" value="5105771847118693155" />

@@ -8393,9 +8393,24 @@
   </node>
   <node concept="24kQdi" id="1KpaLv9EygW">
     <property role="3GE5qa" value="Expressies" />
-    <ref role="1XX52x" to="3pw0:1KpaLv9ASFN" resolve="TenMinste" />
-    <node concept="3F0ifn" id="1KpaLv9EygY" role="2wV5jI">
-      <property role="3F0ifm" value="is ten minste" />
+    <ref role="1XX52x" to="3pw0:1KpaLv9ASFN" resolve="TenMinsteNa" />
+    <node concept="3EZMnI" id="3x5Qb$UNPDO" role="2wV5jI">
+      <node concept="3F1sOY" id="3x5Qb$UNPDY" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4rrm763or4P" resolve="expressie1" />
+      </node>
+      <node concept="3F0ifn" id="3x5Qb$UNPDQ" role="3EZMnx">
+        <property role="3F0ifm" value="ligt ten minste" />
+      </node>
+      <node concept="3F1sOY" id="3x5Qb$UNPE8" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:3x5Qb$UNPE2" resolve="duur" />
+      </node>
+      <node concept="3F0ifn" id="3x5Qb$UNPEi" role="3EZMnx">
+        <property role="3F0ifm" value="na" />
+      </node>
+      <node concept="3F1sOY" id="3x5Qb$UNPEu" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4rrm763or4R" resolve="expressie2" />
+      </node>
+      <node concept="l2Vlx" id="3x5Qb$UNPDR" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4rrm763s5Gz">

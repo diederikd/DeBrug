@@ -8,6 +8,7 @@
   <imports>
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="jx79" ref="r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -36,6 +37,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -88,6 +90,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -477,6 +482,162 @@
     </node>
     <node concept="13hLZK" id="5riiL_BUVys" role="13h7CW">
       <node concept="3clFbS" id="5riiL_BUVyt" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="bTj1CmnvAh">
+    <property role="3GE5qa" value="Duur" />
+    <ref role="13h7C2" to="jx79:4rrm763GMbA" resolve="Jaren" />
+    <node concept="13i0hz" id="bTj1CmnvAs" role="13h7CS">
+      <property role="TrG5h" value="AantalJaren" />
+      <node concept="3Tm1VV" id="bTj1CmnvAt" role="1B3o_S" />
+      <node concept="10P55v" id="bTj1CmnvAG" role="3clF45" />
+      <node concept="3clFbS" id="bTj1CmnvAv" role="3clF47">
+        <node concept="3cpWs6" id="bTj1CmnvCF" role="3cqZAp">
+          <node concept="2YIFZM" id="bTj1Cmnx3X" role="3cqZAk">
+            <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String):java.lang.Double" resolve="valueOf" />
+            <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
+            <node concept="2OqwBi" id="bTj1CmnvPi" role="37wK5m">
+              <node concept="13iPFW" id="bTj1CmnvD8" role="2Oq$k0" />
+              <node concept="3TrcHB" id="bTj1Cmnw1E" role="2OqNvi">
+                <ref role="3TsBF5" to="jx79:4rrm763GMbE" resolve="jaren" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="bTj1CmnvAi" role="13h7CW">
+      <node concept="3clFbS" id="bTj1CmnvAj" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="bTj1CmnEPO">
+    <property role="3GE5qa" value="Duur" />
+    <ref role="13h7C2" to="jx79:4rrm763GGR8" resolve="Minuten" />
+    <node concept="13i0hz" id="bTj1CmnEPZ" role="13h7CS">
+      <property role="TrG5h" value="AantalMinuten" />
+      <node concept="3Tm1VV" id="bTj1CmnEQ0" role="1B3o_S" />
+      <node concept="10P55v" id="bTj1CmnEQ1" role="3clF45" />
+      <node concept="3clFbS" id="bTj1CmnEQ2" role="3clF47">
+        <node concept="3cpWs6" id="bTj1CmnEQ3" role="3cqZAp">
+          <node concept="2YIFZM" id="bTj1CmnEQ4" role="3cqZAk">
+            <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String):java.lang.Double" resolve="valueOf" />
+            <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
+            <node concept="2OqwBi" id="bTj1CmnEQ5" role="37wK5m">
+              <node concept="13iPFW" id="bTj1CmnEQ6" role="2Oq$k0" />
+              <node concept="3TrcHB" id="bTj1CmnFby" role="2OqNvi">
+                <ref role="3TsBF5" to="jx79:4rrm763GGR9" resolve="minuten" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="bTj1CmnEPP" role="13h7CW">
+      <node concept="3clFbS" id="bTj1CmnEPQ" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="bTj1CmnFye">
+    <property role="3GE5qa" value="Duur" />
+    <ref role="13h7C2" to="jx79:4rrm763GMcy" resolve="Seconden" />
+    <node concept="13i0hz" id="bTj1CmnFyp" role="13h7CS">
+      <property role="TrG5h" value="AantalSeconden" />
+      <node concept="3Tm1VV" id="bTj1CmnFyq" role="1B3o_S" />
+      <node concept="10P55v" id="bTj1CmnFyr" role="3clF45" />
+      <node concept="3clFbS" id="bTj1CmnFys" role="3clF47">
+        <node concept="3cpWs6" id="bTj1CmnFyt" role="3cqZAp">
+          <node concept="2YIFZM" id="bTj1CmnFyu" role="3cqZAk">
+            <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String):java.lang.Double" resolve="valueOf" />
+            <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
+            <node concept="2OqwBi" id="bTj1CmnFyv" role="37wK5m">
+              <node concept="13iPFW" id="bTj1CmnFyw" role="2Oq$k0" />
+              <node concept="3TrcHB" id="bTj1CmnFN$" role="2OqNvi">
+                <ref role="3TsBF5" to="jx79:4rrm763GMcz" resolve="seconden" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="bTj1CmnFyf" role="13h7CW">
+      <node concept="3clFbS" id="bTj1CmnFyg" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="bTj1CmnFS3">
+    <property role="3GE5qa" value="Duur" />
+    <ref role="13h7C2" to="jx79:4rrm763GGIx" resolve="Uren" />
+    <node concept="13i0hz" id="bTj1CmnFSe" role="13h7CS">
+      <property role="TrG5h" value="AantalUren" />
+      <node concept="3Tm1VV" id="bTj1CmnFSf" role="1B3o_S" />
+      <node concept="10P55v" id="bTj1CmnFSg" role="3clF45" />
+      <node concept="3clFbS" id="bTj1CmnFSh" role="3clF47">
+        <node concept="3cpWs6" id="bTj1CmnFSi" role="3cqZAp">
+          <node concept="2YIFZM" id="bTj1CmnFSj" role="3cqZAk">
+            <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String):java.lang.Double" resolve="valueOf" />
+            <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
+            <node concept="2OqwBi" id="bTj1CmnFSk" role="37wK5m">
+              <node concept="13iPFW" id="bTj1CmnFSl" role="2Oq$k0" />
+              <node concept="3TrcHB" id="bTj1CmnGdq" role="2OqNvi">
+                <ref role="3TsBF5" to="jx79:4rrm763GGIy" resolve="uren" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="bTj1CmnFS4" role="13h7CW">
+      <node concept="3clFbS" id="bTj1CmnFS5" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="bTj1CmnGhT">
+    <property role="3GE5qa" value="Duur" />
+    <ref role="13h7C2" to="jx79:4rrm763GGRb" resolve="Maanden" />
+    <node concept="13i0hz" id="bTj1CmnGi4" role="13h7CS">
+      <property role="TrG5h" value="AantalMaanden" />
+      <node concept="3Tm1VV" id="bTj1CmnGi5" role="1B3o_S" />
+      <node concept="10P55v" id="bTj1CmnGi6" role="3clF45" />
+      <node concept="3clFbS" id="bTj1CmnGi7" role="3clF47">
+        <node concept="3cpWs6" id="bTj1CmnGi8" role="3cqZAp">
+          <node concept="2YIFZM" id="bTj1CmnGi9" role="3cqZAk">
+            <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String):java.lang.Double" resolve="valueOf" />
+            <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
+            <node concept="2OqwBi" id="bTj1CmnGia" role="37wK5m">
+              <node concept="13iPFW" id="bTj1CmnGib" role="2Oq$k0" />
+              <node concept="3TrcHB" id="bTj1CmnGPT" role="2OqNvi">
+                <ref role="3TsBF5" to="jx79:4rrm763GGRc" resolve="maanden" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="bTj1CmnGhU" role="13h7CW">
+      <node concept="3clFbS" id="bTj1CmnGhV" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="bTj1CmnGUo">
+    <property role="3GE5qa" value="Duur" />
+    <ref role="13h7C2" to="jx79:4rrm763GGQC" resolve="Dagen" />
+    <node concept="13i0hz" id="bTj1CmnGUz" role="13h7CS">
+      <property role="TrG5h" value="AantalDagen" />
+      <node concept="3Tm1VV" id="bTj1CmnGU$" role="1B3o_S" />
+      <node concept="10P55v" id="bTj1CmnGU_" role="3clF45" />
+      <node concept="3clFbS" id="bTj1CmnGUA" role="3clF47">
+        <node concept="3cpWs6" id="bTj1CmnGUB" role="3cqZAp">
+          <node concept="2YIFZM" id="bTj1CmnGUC" role="3cqZAk">
+            <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String):java.lang.Double" resolve="valueOf" />
+            <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
+            <node concept="2OqwBi" id="bTj1CmnGUD" role="37wK5m">
+              <node concept="13iPFW" id="bTj1CmnGUE" role="2Oq$k0" />
+              <node concept="3TrcHB" id="bTj1CmnHku" role="2OqNvi">
+                <ref role="3TsBF5" to="jx79:4rrm763GGQD" resolve="dagen" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="bTj1CmnGUp" role="13h7CW">
+      <node concept="3clFbS" id="bTj1CmnGUq" role="2VODD2" />
     </node>
   </node>
 </model>

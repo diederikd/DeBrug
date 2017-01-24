@@ -11,8 +11,7 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import Datum.behavior.Minuten__BehaviorDescriptor;
 
 public class Minuten_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -53,7 +52,7 @@ public class Minuten_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_1z03fd_a1a(SNode node, EditorContext editorContext) {
-    return (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cdc8L, 0x46db587183b2cdc9L, "minuten")) == "1");
+    return ((double) Minuten__BehaviorDescriptor.AantalMinuten_idbTj1CmnEPZ.invoke(node) == 1);
   }
   private EditorCell createConstant_1z03fd_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "minuten");
@@ -62,6 +61,6 @@ public class Minuten_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_1z03fd_a2a(SNode node, EditorContext editorContext) {
-    return (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cdc8L, 0x46db587183b2cdc9L, "minuten")) != "1");
+    return ((double) Minuten__BehaviorDescriptor.AantalMinuten_idbTj1CmnEPZ.invoke(node) != 1);
   }
 }

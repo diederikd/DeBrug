@@ -1231,9 +1231,19 @@
   <node concept="1TIwiD" id="1KpaLv9ASFN">
     <property role="EcuMT" value="2024696888646404851" />
     <property role="3GE5qa" value="Expressies" />
-    <property role="TrG5h" value="TenMinste" />
-    <property role="34LRSv" value="is ten minste" />
+    <property role="TrG5h" value="TenMinsteNa" />
+    <property role="34LRSv" value="ligt ten minste &lt;duur&gt; na" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="PrWs8" id="3x5Qb$UNPDh" role="PzmwI">
+      <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
+    </node>
+    <node concept="1TJgyj" id="3x5Qb$UNPE2" role="1TKVEi">
+      <property role="IQ2ns" value="4054885329584216706" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="duur" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="jx79:4rrm763GGIw" resolve="Duur" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1KpaLv9ASGV">
     <property role="EcuMT" value="2024696888646404923" />

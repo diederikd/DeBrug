@@ -11,6 +11,7 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import Datum.behavior.Jaren__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -53,8 +54,7 @@ public class Jaren_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_nrr3tw_a1a(SNode node, EditorContext editorContext) {
-    System.out.println(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b322e6L, 0x46db587183b322eaL, "jaren")));
-    return (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b322e6L, 0x46db587183b322eaL, "jaren")) == "1");
+    return ((double) Jaren__BehaviorDescriptor.AantalJaren_idbTj1CmnvAs.invoke(node) == 1);
   }
   private EditorCell createConstant_nrr3tw_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "jaren");
@@ -64,6 +64,6 @@ public class Jaren_Editor extends DefaultNodeEditor {
   }
   private static boolean renderingCondition_nrr3tw_a2a(SNode node, EditorContext editorContext) {
     System.out.println(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b322e6L, 0x46db587183b322eaL, "jaren")));
-    return (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b322e6L, 0x46db587183b322eaL, "jaren")) != "1");
+    return ((double) Jaren__BehaviorDescriptor.AantalJaren_idbTj1CmnvAs.invoke(node) != 1);
   }
 }
