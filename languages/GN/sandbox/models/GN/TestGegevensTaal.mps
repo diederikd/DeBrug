@@ -211,7 +211,7 @@
       </node>
       <node concept="25GtAH" id="3ouvO1Urmvi" role="aI7YJ">
         <property role="12dW3i" value="0000" />
-        <ref role="25GgGs" to="zznl:5u1YjWIkWuP" resolve="militair" />
+        <ref role="25GgGs" to="zznl:5u1YjWIkWuP" resolve="militairen in dienst" />
         <node concept="LQ6DZ" id="3ouvO1Urmwz" role="1ldGuc" />
       </node>
     </node>
@@ -292,7 +292,7 @@
         <node concept="QqSvC" id="3DwVXk8WuU0" role="1ldGuc" />
       </node>
       <node concept="25GtAH" id="7rcH1JNxeBI" role="aI7YJ">
-        <ref role="25GgGs" to="zznl:5u1YjWIkWu3" resolve="militairen in dienst" />
+        <ref role="25GgGs" to="zznl:5u1YjWIkWu3" resolve="militair ambtenaar" />
         <node concept="LQ6DZ" id="3DwVXk8WuU2" role="1ldGuc" />
       </node>
       <node concept="25is8f" id="7rcH1JNxC77" role="25is8R">
@@ -498,6 +498,43 @@
           <property role="12dW3i" value="0000" />
           <ref role="25GgGs" to="zznl:GhrpPwO1R2" resolve="burgerservicenummer" />
         </node>
+      </node>
+    </node>
+    <node concept="25jKw1" id="3OGX4Dbycgv" role="aIu47">
+      <property role="12dW3i" value="0000" />
+      <property role="TrG5h" value="Werkgever" />
+      <ref role="25jKw0" to="zznl:4ZpB41Rnx4z" resolve="Werkgever" />
+      <node concept="25GtAH" id="3OGX4Dbyciv" role="aI7YJ">
+        <property role="12dW3i" value="0000" />
+        <ref role="25GgGs" to="zznl:5u1YjWIkoYi" resolve="werkgeversidentificatie" />
+      </node>
+      <node concept="25GtAH" id="3OGX4Dbyciw" role="aI7YJ">
+        <property role="12dW3i" value="0000" />
+        <ref role="25GgGs" to="zznl:5u1YjWIkoZM" resolve="naam" />
+      </node>
+      <node concept="25GtAH" id="3OGX4Dbycix" role="aI7YJ">
+        <property role="12dW3i" value="0000" />
+        <ref role="25GgGs" to="zznl:3YoOrWqc$sd" resolve="adres werkgever" />
+      </node>
+      <node concept="25GtAH" id="3OGX4Dbyciy" role="aI7YJ">
+        <property role="12dW3i" value="0000" />
+        <ref role="25GgGs" to="zznl:3YoOrWqc$t2" resolve="huisnummer werkgever" />
+      </node>
+      <node concept="25GtAH" id="3OGX4Dbyciz" role="aI7YJ">
+        <property role="12dW3i" value="0000" />
+        <ref role="25GgGs" to="zznl:GhrpPwO1KO" resolve="postcode van de werkgever" />
+      </node>
+      <node concept="25GtAH" id="3OGX4Dbyci$" role="aI7YJ">
+        <property role="12dW3i" value="0000" />
+        <ref role="25GgGs" to="zznl:5u1YjWIkp04" resolve="aantal werknemers" />
+      </node>
+      <node concept="25GtAH" id="3OGX4Dbyci_" role="aI7YJ">
+        <property role="12dW3i" value="0000" />
+        <ref role="25GgGs" to="zznl:5qTpXpBpiiG" resolve="peildatum aantal werknemers" />
+      </node>
+      <node concept="25GtAH" id="3OGX4DbyciA" role="aI7YJ">
+        <property role="12dW3i" value="0000" />
+        <ref role="25GgGs" to="zznl:5u1YjWIkWuP" resolve="militairen in dienst" />
       </node>
     </node>
   </node>

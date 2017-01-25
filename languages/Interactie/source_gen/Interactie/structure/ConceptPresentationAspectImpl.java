@@ -11,6 +11,9 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private final ConceptPresentation props_Formulier = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FormulierVeld = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TypeRadioJaNee = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TypeText = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TypeVeld = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -21,6 +24,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Formulier;
       case 1:
         return props_FormulierVeld;
+      case 2:
+        return props_TypeRadioJaNee;
+      case 3:
+        return props_TypeText;
+      case 4:
+        return props_TypeVeld;
     }
     throw new IllegalStateException("Unknown concept " + c);
   }

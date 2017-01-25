@@ -10,6 +10,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class Formulier_TextGen extends TextGenDescriptorBase {
   @Override
@@ -31,9 +32,26 @@ public class Formulier_TextGen extends TextGenDescriptorBase {
       tgs.append("</label>");
       tgs.append(":<br>");
       tgs.newLine();
-      tgs.append("    <input type=\"text\" name=\"");
-      tgs.append(SPropertyOperations.getString(veld, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-      tgs.append("\"> </br>");
+      {
+        final SNode typeText = SLinkOperations.getTarget(veld, MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL, 0x3d2cf44a4b890826L, "type"));
+        if (SNodeOperations.isInstanceOf(typeText, MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907d4L, "Interactie.structure.TypeText"))) {
+          tgs.append("    <input type=\"text\" name=\"");
+          tgs.append(SPropertyOperations.getString(veld, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          tgs.append("\">");
+        }
+      }
+      {
+        final SNode typeRadioJaNee = SLinkOperations.getTarget(veld, MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL, 0x3d2cf44a4b890826L, "type"));
+        if (SNodeOperations.isInstanceOf(typeRadioJaNee, MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907e2L, "Interactie.structure.TypeRadioJaNee"))) {
+          tgs.append("<br>    <input type=\"radio\" name=\"");
+          tgs.append(SPropertyOperations.getString(veld, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          tgs.append("\" value=\"Ja\"> Ja<br>");
+          tgs.append("    <input type=\"radio\" name=\"");
+          tgs.append(SPropertyOperations.getString(veld, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          tgs.append("\" value=\"Nee\"> Nee <br>");
+        }
+      }
+      tgs.append("</br>");
       tgs.newLine();
     }
     tgs.append("  </form>");

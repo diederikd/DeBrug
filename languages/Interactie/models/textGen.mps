@@ -11,6 +11,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -23,6 +24,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -54,8 +58,18 @@
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -171,26 +185,109 @@
             <node concept="lc7rE" id="ZvVXY6_ctJ" role="3cqZAp">
               <node concept="l8MVK" id="ZvVXY6_ctK" role="lcghm" />
             </node>
-            <node concept="lc7rE" id="ZvVXY6$WKd" role="3cqZAp">
-              <node concept="la8eA" id="ZvVXY6$WL8" role="lcghm">
-                <property role="lacIc" value="    &lt;input type=&quot;text&quot; name=&quot;" />
+            <node concept="Jncv_" id="3OGX4Dby$$R" role="3cqZAp">
+              <ref role="JncvD" to="1jct:3OGX4Dbygvk" resolve="TypeText" />
+              <node concept="2OqwBi" id="3OGX4Dby$IF" role="JncvB">
+                <node concept="2GrUjf" id="3OGX4Dby$_T" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="ZvVXY6$W19" resolve="veld" />
+                </node>
+                <node concept="3TrEf2" id="3OGX4Dby$YI" role="2OqNvi">
+                  <ref role="3Tt5mk" to="1jct:3OGX4DbygwA" resolve="type" />
+                </node>
               </node>
-            </node>
-            <node concept="lc7rE" id="ZvVXY6$WQH" role="3cqZAp">
-              <node concept="l9hG8" id="ZvVXY6$WR7" role="lcghm">
-                <node concept="2OqwBi" id="ZvVXY6$X1W" role="lb14g">
-                  <node concept="2GrUjf" id="ZvVXY6$WRZ" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="ZvVXY6$W19" resolve="veld" />
-                  </node>
-                  <node concept="3TrcHB" id="ZvVXY6$XfH" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="3clFbS" id="3OGX4Dby$$V" role="Jncv$">
+                <node concept="lc7rE" id="ZvVXY6$WKd" role="3cqZAp">
+                  <node concept="la8eA" id="ZvVXY6$WL8" role="lcghm">
+                    <property role="lacIc" value="    &lt;input type=&quot;text&quot; name=&quot;" />
                   </node>
                 </node>
+                <node concept="lc7rE" id="3OGX4DbyMQ7" role="3cqZAp">
+                  <node concept="l9hG8" id="3OGX4DbyMQ8" role="lcghm">
+                    <node concept="2OqwBi" id="3OGX4DbyMQ9" role="lb14g">
+                      <node concept="2GrUjf" id="3OGX4DbyMQa" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="ZvVXY6$W19" resolve="veld" />
+                      </node>
+                      <node concept="3TrcHB" id="3OGX4DbyMQb" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="lc7rE" id="3OGX4DbyMWG" role="3cqZAp">
+                  <node concept="la8eA" id="3OGX4DbyMWH" role="lcghm">
+                    <property role="lacIc" value="&quot;&gt;" />
+                  </node>
+                </node>
+              </node>
+              <node concept="JncvC" id="3OGX4Dby$$X" role="JncvA">
+                <property role="TrG5h" value="typeText" />
+                <node concept="2jxLKc" id="3OGX4Dby$$Y" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="Jncv_" id="3OGX4Dby_mJ" role="3cqZAp">
+              <ref role="JncvD" to="1jct:3OGX4Dbygvy" resolve="TypeRadioJaNee" />
+              <node concept="2OqwBi" id="3OGX4Dby_mK" role="JncvB">
+                <node concept="2GrUjf" id="3OGX4Dby_mL" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="ZvVXY6$W19" resolve="veld" />
+                </node>
+                <node concept="3TrEf2" id="3OGX4Dby_mM" role="2OqNvi">
+                  <ref role="3Tt5mk" to="1jct:3OGX4DbygwA" resolve="type" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="3OGX4Dby_mN" role="Jncv$">
+                <node concept="lc7rE" id="3OGX4Dby_mO" role="3cqZAp">
+                  <node concept="la8eA" id="3OGX4Dby_mP" role="lcghm">
+                    <property role="lacIc" value="&lt;br&gt;    &lt;input type=&quot;radio&quot; name=&quot;" />
+                  </node>
+                </node>
+                <node concept="lc7rE" id="3OGX4DbyC6i" role="3cqZAp">
+                  <node concept="l9hG8" id="3OGX4DbyC6K" role="lcghm">
+                    <node concept="2OqwBi" id="3OGX4DbyCGE" role="lb14g">
+                      <node concept="2GrUjf" id="3OGX4DbyCxQ" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="ZvVXY6$W19" resolve="veld" />
+                      </node>
+                      <node concept="3TrcHB" id="3OGX4DbyCYn" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="lc7rE" id="3OGX4DbyC4V" role="3cqZAp">
+                  <node concept="la8eA" id="3OGX4DbyC5n" role="lcghm">
+                    <property role="lacIc" value="&quot; value=&quot;Ja&quot;&gt; Ja&lt;br&gt;" />
+                  </node>
+                </node>
+                <node concept="lc7rE" id="3OGX4DbyBYK" role="3cqZAp">
+                  <node concept="la8eA" id="3OGX4DbyBYL" role="lcghm">
+                    <property role="lacIc" value="    &lt;input type=&quot;radio&quot; name=&quot;" />
+                  </node>
+                </node>
+                <node concept="lc7rE" id="3OGX4DbyDr8" role="3cqZAp">
+                  <node concept="l9hG8" id="3OGX4DbyDyg" role="lcghm">
+                    <node concept="2OqwBi" id="3OGX4DbyDHK" role="lb14g">
+                      <node concept="2GrUjf" id="3OGX4DbyDz8" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="ZvVXY6$W19" resolve="veld" />
+                      </node>
+                      <node concept="3TrcHB" id="3OGX4DbyDZN" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="lc7rE" id="3OGX4DbyDce" role="3cqZAp">
+                  <node concept="la8eA" id="3OGX4DbyDjk" role="lcghm">
+                    <property role="lacIc" value="&quot; value=&quot;Nee&quot;&gt; Nee &lt;br&gt;" />
+                  </node>
+                </node>
+              </node>
+              <node concept="JncvC" id="3OGX4Dby_mQ" role="JncvA">
+                <property role="TrG5h" value="typeRadioJaNee" />
+                <node concept="2jxLKc" id="3OGX4Dby_mR" role="1tU5fm" />
               </node>
             </node>
             <node concept="lc7rE" id="ZvVXY6$Xvd" role="3cqZAp">
               <node concept="la8eA" id="ZvVXY6$XvG" role="lcghm">
-                <property role="lacIc" value="&quot;&gt; &lt;/br&gt;" />
+                <property role="lacIc" value="&lt;/br&gt;" />
               </node>
             </node>
             <node concept="lc7rE" id="ZvVXY6$ZLi" role="3cqZAp">

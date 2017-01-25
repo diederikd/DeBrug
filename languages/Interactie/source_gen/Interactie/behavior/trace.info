@@ -10,6 +10,15 @@
     <file name="Formulier_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Interactie.behavior.Formulier_BehaviorDescriptor" />
     </file>
+    <file name="TypeRadioJaNee_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.TypeRadioJaNee_BehaviorDescriptor" />
+    </file>
+    <file name="TypeText_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.TypeText_BehaviorDescriptor" />
+    </file>
+    <file name="TypeVeld_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.TypeVeld_BehaviorDescriptor" />
+    </file>
   </root>
 </debug-info>
 
