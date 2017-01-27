@@ -99,7 +99,6 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="1KHGaPUEzv" role="3EZMnx">
-        <property role="3F0ifm" value="{" />
         <node concept="3mYdg7" id="1KHGaPUEzw" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
@@ -139,7 +138,6 @@
         </node>
       </node>
       <node concept="3F0ifn" id="1KHGaPUEzI" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
         <node concept="3mYdg7" id="1KHGaPUEzJ" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
@@ -153,7 +151,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3OGX4DbygvF">
-    <ref role="1XX52x" to="1jct:3OGX4Dbygvy" resolve="TypeRadio" />
+    <ref role="1XX52x" to="1jct:3OGX4Dbygvy" resolve="TypeRadioJaNee" />
     <node concept="3F0ifn" id="3OGX4DbygvH" role="2wV5jI">
       <property role="3F0ifm" value="radiobutton" />
     </node>
