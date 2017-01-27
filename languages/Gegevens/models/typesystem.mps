@@ -180,7 +180,7 @@
         <node concept="3clFbS" id="7uA$dfkHnTV" role="3clFbx">
           <node concept="a7r0C" id="7uA$dfkHoDW" role="3cqZAp">
             <node concept="Xl_RD" id="7uA$dfkHpg9" role="a7wSD">
-              <property role="Xl_RC" value="Maak niet meer dan een instantie van een type." />
+              <property role="Xl_RC" value="Maak niet meer dan een instantie van een type, gebruik liever een tabel." />
             </node>
             <node concept="1YBJjd" id="7uA$dfkHoEh" role="2OEOjV">
               <ref role="1YBMHb" node="7uA$dfkH3ST" resolve="objectInstantie" />

@@ -96,9 +96,6 @@
         <reference id="797539131723848707" name="object" index="1FNJ6u" />
         <child id="797539131723848680" name="objectinstanties" index="1FNJpP" />
       </concept>
-      <concept id="7668643553874542695" name="Gegevens.structure.EnumeratieWaarde" flags="ng" index="3ND7V9">
-        <reference id="7668643553874893439" name="waarde" index="3NCijh" />
-      </concept>
     </language>
     <language id="61be2dc6-a140-4def-a592-7499aa2bac19" name="Datum">
       <concept id="7136310554705381571" name="Datum.structure.Datum" flags="ng" index="2B78Lw">
@@ -329,7 +326,7 @@
       </node>
       <node concept="25GtAH" id="GhrpPwPGm3" role="aI7YJ">
         <property role="12dW3i" value="0000" />
-        <ref role="25GgGs" to="zznl:GhrpPwO1ee" resolve="arbeidsduur in arbeidsovereenkomst" />
+        <ref role="25GgGs" to="zznl:GhrpPwO1ee" resolve="arbeidsduurperiode in arbeidsovereenkomst" />
         <node concept="QqSuW" id="GhrpPwPGmg" role="1ldGuc" />
       </node>
     </node>
@@ -358,9 +355,6 @@
       <node concept="25GtAH" id="GhrpPwPGn2" role="aI7YJ">
         <property role="12dW3i" value="0000" />
         <ref role="25GgGs" to="zznl:GhrpPwK$fm" resolve="gewenste spreiding" />
-        <node concept="25jSPh" id="GhrpPwPGng" role="1ldGuc">
-          <ref role="25jSPg" node="7rcH1JNxeEd" resolve="rooster" />
-        </node>
       </node>
       <node concept="25is8f" id="3ouvO1Urmy4" role="25is8R">
         <property role="TrG5h" value="1" />
@@ -372,7 +366,7 @@
     </node>
     <node concept="aIo_O" id="7rcH1JNxnns" role="aIu47">
       <property role="TrG5h" value="arbeidsduurperiode" />
-      <ref role="aIo_P" to="zznl:5u1YjWIljaR" resolve="arbeidsduurperiode" />
+      <ref role="aIo_P" to="zznl:5u1YjWIljaR" resolve="arbeidsduurperiode van arbeidsovereenkomst" />
       <node concept="25GtAH" id="7rcH1JNxno0" role="aI7YJ">
         <ref role="25GgGs" to="zznl:5qTpXpBoOus" resolve="arbeidsduur geldig van datum" />
         <node concept="QqSvC" id="3DwVXk8WuS8" role="1ldGuc" />
@@ -395,52 +389,7 @@
         </node>
         <node concept="25GtAH" id="GhrpPwPGnu" role="25is8c">
           <property role="12dW3i" value="0000" />
-          <ref role="25GgGs" to="zznl:GhrpPwO1ee" resolve="arbeidsduur in arbeidsovereenkomst" />
-        </node>
-      </node>
-    </node>
-    <node concept="aIo_O" id="7rcH1JNxeEd" role="aIu47">
-      <property role="TrG5h" value="rooster" />
-      <ref role="aIo_P" to="zznl:MvzNsyB_Cb" resolve="rooster" />
-      <node concept="25is8f" id="3DwVXk8WuOJ" role="25is8R">
-        <property role="TrG5h" value="1" />
-        <node concept="25GtAH" id="3DwVXk8WuOL" role="25is8c">
-          <ref role="25GgGs" to="zznl:6syAJDDRQbU" resolve="dag" />
-        </node>
-        <node concept="25GtAH" id="GhrpPwPGo9" role="25is8c">
-          <property role="12dW3i" value="0000" />
-          <ref role="25GgGs" to="zznl:GhrpPwO1M9" resolve="tijden" />
-        </node>
-      </node>
-      <node concept="25GtAH" id="7rcH1JNxnmJ" role="aI7YJ">
-        <ref role="25GgGs" to="zznl:6syAJDDRQbU" resolve="dag" />
-        <node concept="eXoJW" id="3DwVXk8Wown" role="1ldGuc">
-          <ref role="eXoSL" node="3DwVXk8W7KG" resolve="Dag van de week" />
-        </node>
-      </node>
-      <node concept="25GtAH" id="GhrpPwPGnD" role="aI7YJ">
-        <property role="12dW3i" value="0000" />
-        <ref role="25GgGs" to="zznl:GhrpPwO1M9" resolve="tijden" />
-        <node concept="25jSPh" id="GhrpPwPGnM" role="1ldGuc">
-          <ref role="25jSPg" node="7rcH1JNxeCr" resolve="werktijd" />
-        </node>
-      </node>
-    </node>
-    <node concept="aIo_O" id="7rcH1JNxeCr" role="aIu47">
-      <property role="TrG5h" value="werktijd" />
-      <ref role="aIo_P" to="zznl:5u1YjWIjNY4" resolve="werktijd" />
-      <node concept="25is8f" id="3DwVXk8WuRR" role="25is8R">
-        <property role="TrG5h" value="1" />
-        <node concept="25GtAH" id="GhrpPwPGo6" role="25is8c">
-          <property role="12dW3i" value="0000" />
-          <ref role="25GgGs" to="zznl:GhrpPwL7ob" resolve="werktijdperioden" />
-        </node>
-      </node>
-      <node concept="25GtAH" id="GhrpPwPGnX" role="aI7YJ">
-        <property role="12dW3i" value="0000" />
-        <ref role="25GgGs" to="zznl:GhrpPwL7ob" resolve="werktijdperioden" />
-        <node concept="25jSPh" id="GhrpPwPGo2" role="1ldGuc">
-          <ref role="25jSPg" node="7rcH1JNxeDj" resolve="werkperiode" />
+          <ref role="25GgGs" to="zznl:GhrpPwO1ee" resolve="arbeidsduurperiode in arbeidsovereenkomst" />
         </node>
       </node>
     </node>
@@ -950,18 +899,6 @@
           <ref role="1cs0FG" node="7rcH1JNxeBI" />
         </node>
         <node concept="12cgnX" id="542u6HPOcJb" role="12frXJ" />
-      </node>
-    </node>
-    <node concept="12frXB" id="6DGvEUpNlE1" role="12fk0E">
-      <property role="TrG5h" value="5 x 8" />
-      <ref role="1cty5Y" node="7rcH1JNxeEd" resolve="rooster" />
-      <node concept="12frXF" id="6DGvEUpNlFl" role="12frXg">
-        <node concept="1cs0FF" id="6DGvEUpNlFm" role="12cwu4">
-          <ref role="1cs0FG" node="7rcH1JNxnmJ" />
-        </node>
-        <node concept="3ND7V9" id="6DGvEUpNlFx" role="12frXJ">
-          <ref role="3NCijh" node="3DwVXk8W7KK" resolve="Dinsdag" />
-        </node>
       </node>
     </node>
     <node concept="12frXB" id="542u6HPOcH1" role="12fk0E">

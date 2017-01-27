@@ -30,7 +30,7 @@ public class EnkeleObjectinstantie_NonTypesystemRule extends AbstractNonTypesyst
     if ((andereInstantie != null)) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(objectInstantie, "Maak niet meer dan een instantie van een type.", "r:02e581ff-21d9-4923-9cdf-912415d4ebc9(Gegevens.typesystem)", "8621737776128559740", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(objectInstantie, "Maak niet meer dan een instantie van een type, gebruik liever een tabel.", "r:02e581ff-21d9-4923-9cdf-912415d4ebc9(Gegevens.typesystem)", "8621737776128559740", null, errorTarget);
       }
     }
   }
