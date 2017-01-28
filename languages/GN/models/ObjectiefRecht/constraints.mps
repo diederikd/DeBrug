@@ -6,9 +6,6 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
-    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" implicit="true" />
   </imports>
   <registry>
@@ -622,7 +619,7 @@
                         <node concept="2OqwBi" id="72xgt4ChOvw" role="2Oq$k0">
                           <node concept="EsrRn" id="72xgt4ChOvx" role="2Oq$k0" />
                           <node concept="3TrEf2" id="72xgt4ChOvy" role="2OqNvi">
-                            <ref role="3Tt5mk" to="3pw0:5qTpXpBmyqf" resolve="datatype" />
+                            <ref role="3Tt5mk" to="3pw0:5qTpXpBmyqf" resolve="type" />
                           </node>
                         </node>
                         <node concept="2yIwOk" id="72xgt4ChOvz" role="2OqNvi" />
