@@ -144,6 +144,9 @@
     <file name="MaterieleVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.MaterieleVoorwaarde_BehaviorDescriptor" />
     </file>
+    <file name="Methode_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Methode_BehaviorDescriptor" />
+    </file>
     <file name="MinExpressie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.MinExpressie_BehaviorDescriptor" />
     </file>
@@ -234,6 +237,9 @@
     <file name="TenMinsteNa_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TenMinsteNa_BehaviorDescriptor" />
     </file>
+    <file name="TenMinsteVoor_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TenMinsteVoor_BehaviorDescriptor" />
+    </file>
     <file name="TijdType_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TijdType_BehaviorDescriptor" />
     </file>
@@ -245,6 +251,18 @@
     </file>
     <file name="Variabele_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Variabele_BehaviorDescriptor" />
+    </file>
+    <file name="VeranderingsTypeAanpassen_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VeranderingsTypeAanpassen_BehaviorDescriptor" />
+    </file>
+    <file name="VeranderingsTypeBeeindigen_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VeranderingsTypeBeeindigen_BehaviorDescriptor" />
+    </file>
+    <file name="VeranderingsTypeNieuw_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VeranderingsTypeNieuw_BehaviorDescriptor" />
+    </file>
+    <file name="VeranderingsType_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VeranderingsType_BehaviorDescriptor" />
     </file>
     <file name="VermenigvuldigenExpressie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VermenigvuldigenExpressie_BehaviorDescriptor" />
