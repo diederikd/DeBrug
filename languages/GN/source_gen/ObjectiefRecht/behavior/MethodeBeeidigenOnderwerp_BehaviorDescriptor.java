@@ -9,7 +9,7 @@ package ObjectiefRecht.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class Methode_BehaviorDescriptor {
+public class MethodeBeeidigenOnderwerp_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }
