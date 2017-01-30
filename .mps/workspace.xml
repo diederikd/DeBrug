@@ -12,145 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f9a1364-78d3-4826-8144-af78ce41dd34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/DatumUitvoerenHandeling_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/IUnaireExpressie_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/IsPositief_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/MethodeAanpassenFeiten_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/MethodeBeeidigenOnderwerp_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/MethodeNieuweFeiten_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/isNegatief_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/DatumUitvoerenHandeling_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/IsPositief_Editor$expressieSingleRoleHandler_axe57f_a0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/IsPositief_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/MethodeAanpassenFeiten_Editor$_Inline_ffjt3u_a0a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/MethodeAanpassenFeiten_Editor$wijzigingenListHandler_ffjt3u_a2c0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/MethodeAanpassenFeiten_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/MethodeBeeidigenOnderwerp_Editor$_Inline_td88xj_a0a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/MethodeBeeidigenOnderwerp_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/MethodeNieuweFeiten_Editor$_Inline_r23f2_a0a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/MethodeNieuweFeiten_Editor$kenmerkenListHandler_r23f2_a2c0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/MethodeNieuweFeiten_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$beindigenOnderwerpenListHandler_tm5zcc_a2q0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$geldigOnderVoorwaardenListHandler_tm5zcc_u0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$heeftAlsGevolgSingleRoleHandler_tm5zcc_a42a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$nieuweFeitenListHandler_tm5zcc_a2o0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$nieuweFeitenListHandler_tm5zcc_a41a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$wijzigingenFeitenListHandler_tm5zcc_a2p0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$beindigenOnderwerpenListHandler_2759bf_a2q0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$geldigOnderVoorwaardenListHandler_2759bf_t0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$geldigOnderVoorwaardenListHandler_2759bf_u0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$heeftAlsGevolgSingleRoleHandler_2759bf_a32a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$heeftAlsGevolgSingleRoleHandler_2759bf_a42a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$nieuweFeitenListHandler_2759bf_a2o0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$wijzigingenFeitenListHandler_2759bf_a2p0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/isNegatief_Editor$expressieSingleRoleHandler_ft08i5_a0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/isNegatief_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/waardeJaNee_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/waardeJa_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/waardeNee_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/JaNeeWaarde_Editor$waardeSingleRoleHandler_um83b0_a0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/waardeJa_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/waardeNee_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/DatumUitvoerenHandeling_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/IUnaireExpressie_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/IsPositief_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/isNegatief_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/DatumUitvoerenHandeling_Editor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/IsPositief_Editor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/isNegatief_Editor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/waardeJaNee_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/waardeJa_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/waardeNee_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/waardeJa_Editor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/waardeNee_Editor.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/Methode_BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/VeranderingsTypeAanpassen_BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/VeranderingsTypeBeeindigen_BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/VeranderingsTypeNieuw_BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/VeranderingsType_BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Methode_Editor$_Inline_xl52l0_a0a.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Methode_Editor$_Inline_xl52l0_a2a.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Methode_Editor$kenmerkenListHandler_xl52l0_a2e0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Methode_Editor$kenmerkenListHandler_xl52l0_c4a.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Methode_Editor$kenmerkenListHandler_xl52l0_c6a.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Methode_Editor$kenmerkenListHandler_xl52l0_e0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Methode_Editor$veranderingSingleRoleHandler_xl52l0_c0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Methode_Editor$veranderingSingleRoleHandler_xl52l0_e0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Methode_Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VeranderingsTypeAanpassen_Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VeranderingsTypeBeeindigen_Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VeranderingsTypeNieuw_Editor.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Gelijkstelling_Editor$gelijkTeStellenAanSingleRoleHandler_mjh121_d0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Gelijkstelling_Editor$gelijkTeStellenAanSingleRoleHandler_mjh121_d0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Gelijkstelling_Editor$variabeleSingleRoleHandler_mjh121_b0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Gelijkstelling_Editor$variabeleSingleRoleHandler_mjh121_b0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Gelijkstelling_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Gelijkstelling_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/IsWaar_Editor$variabeleSingleRoleHandler_6hptlf_a0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/IsWaar_Editor$variabeleSingleRoleHandler_6hptlf_a0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/IsWaar_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/IsWaar_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Kenmerk_Editor$typeSingleRoleHandler_wasupv_b1a.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Kenmerk_Editor$typeSingleRoleHandler_wasupv_b1a.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Kenmerk_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Kenmerk_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$bronSingleRoleHandler_tm5zcc_f0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$bronSingleRoleHandler_tm5zcc_f0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$rechtssubjectSingleRoleHandler_tm5zcc_l0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$rechtssubjectSingleRoleHandler_tm5zcc_l0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$uitgevoerdOpSingleRoleHandler_tm5zcc_i0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$uitgevoerdOpSingleRoleHandler_tm5zcc_i0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$bronSingleRoleHandler_2759bf_f0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$bronSingleRoleHandler_2759bf_f0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$rechtssubjectSingleRoleHandler_2759bf_l0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$rechtssubjectSingleRoleHandler_2759bf_l0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$uitgevoerdOpSingleRoleHandler_2759bf_i0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$uitgevoerdOpSingleRoleHandler_2759bf_i0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/StructureAspectDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/Language.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/Language.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/EditorAspectDescriptorImpl.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/EditorAspectDescriptorImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/JaNeeWaarde_Editor.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/JaNeeWaarde_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/structure/ConceptPresentationAspectImpl.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/structure/ConceptPresentationAspectImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/structure/StructureAspectDescriptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/editor.mps" afterPath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/structure.mps" afterPath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/TestGegevensTaal.mps" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/TestGegevensTaal.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/TestGegevensTaal/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/TestGegevensTaal/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/structure/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/Gelijkstelling_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/Gelijkstelling_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/IsWaar_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/IsWaar_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/Kenmerk_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/Kenmerk_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/MethodeAanpassenFeiten_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/MethodeAanpassenFeiten_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/MethodeBeeidigenOnderwerp_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/MethodeBeeidigenOnderwerp_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/MethodeNieuweFeiten_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/MethodeNieuweFeiten_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/structure/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/models/editor.mps" afterPath="$PROJECT_DIR$/languages/Gegevens/models/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/models/structure.mps" afterPath="$PROJECT_DIR$/languages/Gegevens/models/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/dependencies" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/editor/dependencies" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/editor/generated" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/generated" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/structure/generated" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/Language.java" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/Language.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/EditorAspectDescriptorImpl.java" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/EditorAspectDescriptorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/JaNeeWaarde_Editor.java" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/JaNeeWaarde_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/ConceptPresentationAspectImpl.java" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/ConceptPresentationAspectImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/trace.info" />
     </list>
     <ignored path="ProjectDeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -1297,7 +1159,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="folders aangepast voor MPS343" />
     <MESSAGE value="Complete refactoring model" />
     <MESSAGE value="opruiming deprecated objects" />
     <MESSAGE value="Build build weer" />
@@ -1322,7 +1183,8 @@
     <MESSAGE value="Build in build project weer succesvol." />
     <MESSAGE value="Onderwerpen toegevoegd bij handelingen" />
     <MESSAGE value="Bij handeling feiten over onderwerpen geclassificeerd in nieuw/aanpassen/beeindigen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bij handeling feiten over onderwerpen geclassificeerd in nieuw/aanpassen/beeindigen" />
+    <MESSAGE value="Types weer terug bij kenmerken" />
+    <option name="LAST_COMMIT_MESSAGE" value="Types weer terug bij kenmerken" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/Rechtshandeling">
