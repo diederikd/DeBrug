@@ -423,10 +423,12 @@
     <property role="3GE5qa" value="Waarden" />
     <property role="TrG5h" value="JaNeeWaarde" />
     <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
-    <node concept="1TJgyi" id="1YFKb5tAGld" role="1TKVEl">
-      <property role="IQ2nx" value="2282129504205456717" />
-      <property role="TrG5h" value="waarde" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    <node concept="1TJgyj" id="4NzHub3zR3W" role="1TKVEi">
+      <property role="IQ2ns" value="5540471952144036092" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="waarde" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4NzHub3zR3h" resolve="waardeJaNee" />
     </node>
   </node>
   <node concept="1TIwiD" id="1YFKb5tAGlz">
@@ -568,6 +570,28 @@
     <property role="TrG5h" value="AbstracteWaarde" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4NzHub3zR32">
+    <property role="EcuMT" value="5540471952144036034" />
+    <property role="TrG5h" value="waardeJa" />
+    <property role="34LRSv" value="ja" />
+    <property role="3GE5qa" value="waardeJaNee" />
+    <ref role="1TJDcQ" node="4NzHub3zR3h" resolve="waardeJaNee" />
+  </node>
+  <node concept="1TIwiD" id="4NzHub3zR3g">
+    <property role="EcuMT" value="5540471952144036048" />
+    <property role="TrG5h" value="waardeNee" />
+    <property role="3GE5qa" value="waardeJaNee" />
+    <property role="34LRSv" value="nee" />
+    <ref role="1TJDcQ" node="4NzHub3zR3h" resolve="waardeJaNee" />
+  </node>
+  <node concept="1TIwiD" id="4NzHub3zR3h">
+    <property role="EcuMT" value="5540471952144036049" />
+    <property role="TrG5h" value="waardeJaNee" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="waardeJaNee" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

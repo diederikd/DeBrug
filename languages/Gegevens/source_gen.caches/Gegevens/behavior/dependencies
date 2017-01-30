@@ -284,5 +284,17 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="Gegevens.behavior.waardeJaNee_BehaviorDescriptor" file="waardeJaNee_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.waardeJa_BehaviorDescriptor" file="waardeJa_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.waardeNee_BehaviorDescriptor" file="waardeNee_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
 </dependenciesRoot>
 

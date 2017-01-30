@@ -750,7 +750,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="resultaat" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="64gsXol8CQd" resolve="ReferentieNaarVoorwaarde" />
+      <ref role="20lvS9" node="7rcH1JNxHR_" resolve="Actie" />
     </node>
     <node concept="1TJgyj" id="28ifPi2C7Kg" role="1TKVEi">
       <property role="IQ2ns" value="2455094379071699984" />
@@ -850,6 +850,7 @@
     <property role="EcuMT" value="8560415023867288958" />
     <property role="TrG5h" value="Variabele" />
     <property role="3GE5qa" value="Expressies" />
+    <property role="34LRSv" value="variabele" />
     <ref role="1TJDcQ" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
     <node concept="1TJgyj" id="1YFKb5tnslI" role="1TKVEi">
       <property role="IQ2ns" value="2282129504201459054" />
@@ -900,7 +901,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="gelijkTeStellenAan" />
-      <ref role="20lvS9" node="7rcH1JNxHPY" resolve="Variabele" />
+      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
     </node>
   </node>
   <node concept="1TIwiD" id="7rcH1JNxHR_">
@@ -1396,6 +1397,45 @@
       <property role="20kJfa" value="refObject" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="GhrpPwHHWz" resolve="Object" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4NzHub3wOMq">
+    <property role="EcuMT" value="5540471952143240346" />
+    <property role="3GE5qa" value="Expressies.Functies" />
+    <property role="TrG5h" value="DatumUitvoerenHandeling" />
+    <property role="34LRSv" value="datum uitvoeren handeling" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+  </node>
+  <node concept="PlHQZ" id="4NzHub3_orp">
+    <property role="EcuMT" value="5540471952144434905" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="IUnaireExpressie" />
+    <node concept="1TJgyj" id="4NzHub3_orq" role="1TKVEi">
+      <property role="IQ2ns" value="5540471952144434906" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressie" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4NzHub3_ors">
+    <property role="EcuMT" value="5540471952144434908" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="IsPositief" />
+    <property role="34LRSv" value="is positief" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="PrWs8" id="4NzHub3_ort" role="PzmwI">
+      <ref role="PrY4T" node="4NzHub3_orp" resolve="IUnaireExpressie" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4NzHub3_orY">
+    <property role="EcuMT" value="5540471952144434942" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="isNegatief" />
+    <property role="34LRSv" value="is negatief" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="PrWs8" id="4NzHub3_orZ" role="PzmwI">
+      <ref role="PrY4T" node="4NzHub3_orp" resolve="IUnaireExpressie" />
     </node>
   </node>
 </model>

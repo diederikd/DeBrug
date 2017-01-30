@@ -47,7 +47,7 @@ public class MethodeNieuweFeiten_Editor extends DefaultNodeEditor {
   private EditorCell createRefCell_r23f2_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("refObject");
-    provider.setNoTargetText("<no refObject>");
+    provider.setNoTargetText("<nieuw onderwerp>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new MethodeNieuweFeiten_Editor._Inline_r23f2_a0a());
     editorCell = provider.createEditorCell(editorContext);

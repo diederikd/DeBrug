@@ -59,6 +59,7 @@
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -1016,8 +1017,8 @@
     <property role="3GE5qa" value="Waarden" />
     <ref role="1XX52x" to="uwhu:1YFKb5tAGlc" resolve="JaNeeWaarde" />
     <node concept="3EZMnI" id="1YFKb5tAGlp" role="2wV5jI">
-      <node concept="3F0A7n" id="1YFKb5tAGlw" role="3EZMnx">
-        <ref role="1NtTu8" to="uwhu:1YFKb5tAGld" resolve="waarde" />
+      <node concept="3F1sOY" id="4NzHub3$5WF" role="3EZMnx">
+        <ref role="1NtTu8" to="uwhu:4NzHub3zR3W" resolve="waarde" />
       </node>
       <node concept="l2Vlx" id="1YFKb5tAGls" role="2iSdaV" />
     </node>
@@ -1420,6 +1421,26 @@
       <node concept="l2Vlx" id="GhrpPx54c1" role="2iSdaV" />
       <node concept="3F0A7n" id="GhrpPx54c6" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4NzHub3zR3b">
+    <property role="3GE5qa" value="waardeJaNee" />
+    <ref role="1XX52x" to="uwhu:4NzHub3zR32" resolve="waardeJa" />
+    <node concept="3F0ifn" id="4NzHub3zR3d" role="2wV5jI">
+      <property role="3F0ifm" value="ja" />
+      <node concept="11LMrY" id="4NzHub3$SCH" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4NzHub3zR3R">
+    <property role="3GE5qa" value="waardeJaNee" />
+    <ref role="1XX52x" to="uwhu:4NzHub3zR3g" resolve="waardeNee" />
+    <node concept="3F0ifn" id="4NzHub3zR3T" role="2wV5jI">
+      <property role="3F0ifm" value="nee" />
+      <node concept="11LMrY" id="4NzHub3$SBp" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
   </node>

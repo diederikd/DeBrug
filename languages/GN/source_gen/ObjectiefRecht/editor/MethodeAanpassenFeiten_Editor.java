@@ -75,7 +75,7 @@ public class MethodeAanpassenFeiten_Editor extends DefaultNodeEditor {
     private EditorCell createProperty_ffjt3u_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
-      provider.setNoTargetText("<no name>");
+      provider.setNoTargetText("<te wijzigen onderwerp>");
       provider.setReadOnly(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);

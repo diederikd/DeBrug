@@ -107,6 +107,10 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="ObjectiefRecht.behavior.DatumUitvoerenHandeling_BehaviorDescriptor" file="DatumUitvoerenHandeling_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="ObjectiefRecht.behavior.DelenExpressie_BehaviorDescriptor" file="DelenExpressie_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -150,6 +154,9 @@
   <dependency className="ObjectiefRecht.behavior.IBinaireExpressie_BehaviorDescriptor" file="IBinaireExpressie_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
   </dependency>
+  <dependency className="ObjectiefRecht.behavior.IUnaireExpressie_BehaviorDescriptor" file="IUnaireExpressie_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
   <dependency className="ObjectiefRecht.behavior.ImmuniteitGeenbevoegdheid_BehaviorDescriptor" file="ImmuniteitGeenbevoegdheid_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -175,6 +182,10 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.IsOpgegeven_BehaviorDescriptor" file="IsOpgegeven_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ObjectiefRecht.behavior.IsPositief_BehaviorDescriptor" file="IsPositief_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -405,6 +416,10 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.ZwakkeAanspraakZwakkePlicht_BehaviorDescriptor" file="ZwakkeAanspraakZwakkePlicht_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ObjectiefRecht.behavior.isNegatief_BehaviorDescriptor" file="isNegatief_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

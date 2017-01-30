@@ -30,7 +30,7 @@ public class MethodeBeeidigenOnderwerp_Editor extends DefaultNodeEditor {
   private EditorCell createRefCell_td88xj_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("refObject");
-    provider.setNoTargetText("<no refObject>");
+    provider.setNoTargetText("<te wijzigen onderwerp>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new MethodeBeeidigenOnderwerp_Editor._Inline_td88xj_a0a());
     editorCell = provider.createEditorCell(editorContext);

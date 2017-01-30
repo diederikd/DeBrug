@@ -66,6 +66,9 @@
     <file name="DatumType_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.DatumType_BehaviorDescriptor" />
     </file>
+    <file name="DatumUitvoerenHandeling_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.DatumUitvoerenHandeling_BehaviorDescriptor" />
+    </file>
     <file name="DelenExpressie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.DelenExpressie_BehaviorDescriptor" />
     </file>
@@ -99,6 +102,9 @@
     <file name="IBinaireExpressie_BehaviorDescriptor.java">
       <unit at="11,0,14,0" name="ObjectiefRecht.behavior.IBinaireExpressie_BehaviorDescriptor" />
     </file>
+    <file name="IUnaireExpressie_BehaviorDescriptor.java">
+      <unit at="11,0,14,0" name="ObjectiefRecht.behavior.IUnaireExpressie_BehaviorDescriptor" />
+    </file>
     <file name="ImmuniteitGeenbevoegdheid_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ImmuniteitGeenbevoegdheid_BehaviorDescriptor" />
     </file>
@@ -119,6 +125,9 @@
     </file>
     <file name="IsOpgegeven_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsOpgegeven_BehaviorDescriptor" />
+    </file>
+    <file name="IsPositief_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsPositief_BehaviorDescriptor" />
     </file>
     <file name="IsWaar_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsWaar_BehaviorDescriptor" />
@@ -278,6 +287,9 @@
     </file>
     <file name="ZwakkeAanspraakZwakkePlicht_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ZwakkeAanspraakZwakkePlicht_BehaviorDescriptor" />
+    </file>
+    <file name="isNegatief_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.isNegatief_BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)/2719671791665187730">
