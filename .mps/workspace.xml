@@ -12,162 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f9a1364-78d3-4826-8144-af78ce41dd34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/InstantieVanObject_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/Object__BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/OnderwerpWaarde_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/RechtsSubjectWaarde_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/VoorbeeldenMetInstanties_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/VoorbeeldenMetInstanties__BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/WaardeVanKenmerk_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/VoorbeeldenMetInstanties_Constraints.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Onderwerp_Editor$VoorbeeldenSingleRoleHandler_5e6yc7_h0a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Onderwerp_Editor$VoorbeeldenSingleRoleHandler_5e6yc7_i0a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/RechtsSubject_Editor$VoorbeeldenSingleRoleHandler_feb60b_k0a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$geldigOnderVoorwaardenListHandler_tm5zcc_v0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$heeftAlsGevolgSingleRoleHandler_tm5zcc_a52a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$teBeindigenOnderwerpenListHandler_tm5zcc_a2q0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$teBeindigenOnderwerpenListHandler_tm5zcc_a2r0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$teWijzigingenFeitenListHandler_tm5zcc_a2p0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$geldigOnderVoorwaardenListHandler_2759bf_v0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$heeftAlsGevolgSingleRoleHandler_2759bf_a52a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$teBeindigenOnderwerpenListHandler_2759bf_a2q0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$teBeindigenOnderwerpenListHandler_2759bf_a2r0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$teWijzigingenFeitenListHandler_2759bf_a2p0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$1$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$2$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$2$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$9$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$9$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$9$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$9$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$9$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$9$6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor$9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/intentions/InitialiseerDatums_Intention$IntentionImplementation.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/intentions/InitialiseerDatums_Intention.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/intentions/ToevoegenInstantie_Intention$IntentionImplementation.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/intentions/ToevoegenInstantie_Intention.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/intentions/ToevoegenKenmerken_Intention$IntentionImplementation.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/intentions/ToevoegenKenmerken_Intention.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/sandbox/classes_gen/GN/AWR/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/AWR.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/AWR/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/AWR/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/AWR/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/InstantieVanObject_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/Object__BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/OnderwerpWaarde_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/RechtsSubjectWaarde_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/VoorbeeldenMetInstanties_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/VoorbeeldenMetInstanties__BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/WaardeVanKenmerk_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/VoorbeeldenMetInstanties_Constraints.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Editor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/intentions/InitialiseerDatums_Intention.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/intentions/ToevoegenInstantie_Intention.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/intentions/ToevoegenKenmerken_Intention.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/classes_gen/Datum/behavior/Datum__BehaviorDescriptor.class" afterPath="$PROJECT_DIR$/languages/Datum/classes_gen/Datum/behavior/Datum__BehaviorDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/classes_gen/Datum/constraints/Datum_Constraints$1.class" afterPath="$PROJECT_DIR$/languages/Datum/classes_gen/Datum/constraints/Datum_Constraints$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/classes_gen/Datum/constraints/Datum_Constraints$2.class" afterPath="$PROJECT_DIR$/languages/Datum/classes_gen/Datum/constraints/Datum_Constraints$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/classes_gen/Datum/constraints/Datum_Constraints$3.class" afterPath="$PROJECT_DIR$/languages/Datum/classes_gen/Datum/constraints/Datum_Constraints$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/BehaviorAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/BehaviorAspectDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/ConstraintsAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/ConstraintsAspectDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Onderwerp_Editor$kenmerkListHandler_5e6yc7_a3a0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Onderwerp_Editor$kenmerkListHandler_5e6yc7_a3a0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Onderwerp_Editor$uniekIdentificerendeKenmerkenListHandler_5e6yc7_b5a0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Onderwerp_Editor$uniekIdentificerendeKenmerkenListHandler_5e6yc7_b5a0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Onderwerp_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Onderwerp_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/RechtsSubject_Editor$kenmerkListHandler_feb60b_a4a0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/RechtsSubject_Editor$kenmerkListHandler_feb60b_a4a0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/RechtsSubject_Editor$uniekIdentificerendeKenmerkenListHandler_feb60b_c7a0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/RechtsSubject_Editor$uniekIdentificerendeKenmerkenListHandler_feb60b_c7a0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/RechtsSubject_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/RechtsSubject_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$bronSingleRoleHandler_tm5zcc_f0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$bronSingleRoleHandler_tm5zcc_f0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$nieuweFeitenListHandler_tm5zcc_a2o0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$nieuweFeitenListHandler_tm5zcc_a2o0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$rechtssubjectSingleRoleHandler_tm5zcc_l0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$rechtssubjectSingleRoleHandler_tm5zcc_l0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$uitgevoerdOpSingleRoleHandler_tm5zcc_i0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor$uitgevoerdOpSingleRoleHandler_tm5zcc_i0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$bronSingleRoleHandler_2759bf_f0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$bronSingleRoleHandler_2759bf_f0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$nieuweFeitenListHandler_2759bf_a2o0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$nieuweFeitenListHandler_2759bf_a2o0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$rechtssubjectSingleRoleHandler_2759bf_l0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$rechtssubjectSingleRoleHandler_2759bf_l0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$uitgevoerdOpSingleRoleHandler_2759bf_i0.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor$uitgevoerdOpSingleRoleHandler_2759bf_i0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/Rechtshandeling_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/intentions/IntentionsDescriptor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/intentions/IntentionsDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/StructureAspectDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor$_Inline_qsh53x_a3a.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor$_Inline_qsh53x_a3a.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor$_Inline_qsh53x_a8a$rechtssubjectSingleRoleHandler_qsh53x_a0a8a.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor$_Inline_qsh53x_a8a$rechtssubjectSingleRoleHandler_qsh53x_a0a8a.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor$_Inline_qsh53x_a8a.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor$_Inline_qsh53x_a8a.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor$actorSingleRoleHandler_qsh53x_f0.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor$actorSingleRoleHandler_qsh53x_f0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor$uitgevoerdOpSingleRoleHandler_qsh53x_b0.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor$uitgevoerdOpSingleRoleHandler_qsh53x_b0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/classes_gen/Datum/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Datum/classes_gen/Datum/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/classes_gen/Datum/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/Datum/classes_gen/Datum/constraints/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/models/behavior.mps" afterPath="$PROJECT_DIR$/languages/Datum/models/behavior.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/models/constraints.mps" afterPath="$PROJECT_DIR$/languages/Datum/models/constraints.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/source_gen.caches/Datum/behavior/generated" afterPath="$PROJECT_DIR$/languages/Datum/source_gen.caches/Datum/behavior/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/source_gen.caches/Datum/constraints/generated" afterPath="$PROJECT_DIR$/languages/Datum/source_gen.caches/Datum/constraints/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/source_gen.caches/Datum/generated" afterPath="$PROJECT_DIR$/languages/Datum/source_gen.caches/Datum/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/behavior/Datum__BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/behavior/Datum__BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/constraints/Datum_Constraints.java" afterPath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/constraints/Datum_Constraints.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/constraints/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/ObjectiefRecht.mpl" afterPath="$PROJECT_DIR$/languages/GN/ObjectiefRecht.mpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/constraints/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/intentions/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/intentions/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/behavior.mps" afterPath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/behavior.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/constraints.mps" afterPath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/constraints.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/editor.mps" afterPath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/structure.mps" afterPath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/intentions.mps" afterPath="$PROJECT_DIR$/languages/GN/models/intentions.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/TestGegevensTaal.mps" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/TestGegevensTaal.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/AWB/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/AWB/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/TestGegevensTaal/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/TestGegevensTaal/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/constraints/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/constraints/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/constraints/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/constraints/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/intentions/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/intentions/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/intentions/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/intentions/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/structure/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/BehaviorAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/BehaviorAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/ConstraintsAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/ConstraintsAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/constraints/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/Onderwerp_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/Onderwerp_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/RechtsSubject_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/RechtsSubject_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/Rechtshandeling_EN_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/Rechtshandeling_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/Rechtshandeling_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/intentions/IntentionsDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/intentions/IntentionsDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/intentions/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/intentions/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/models/editor.mps" afterPath="$PROJECT_DIR$/languages/Simulatie/models/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Rechtshandeling_UitgevoerdeHandeling_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/trace.info" />
     </list>
     <ignored path="ProjectDeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -261,15 +108,15 @@
         <entry file="mps://node://GN.sandbox/GN.WAA/Objectief WAA2000">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="13977">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="6615">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="655" />
-                    <property name="caretXRelative" value="256" />
+                    <property name="caretX" value="47" />
+                    <property name="caretXRelative" value="0" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/3955365814688948200" />
+                    <cellInfo cellId="Constant_2759bf_cb0" cellNumber="0" isInList="false">
+                      <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5066083982446708445" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -278,7 +125,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:e7587d87-b85a-4398-ab1f-a87a9ee8f6d3(GN.AWB)/6470037848739763308" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5270187600231036901" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -294,19 +141,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Objectief AWB" pinned="false" current-in-tab="true">
-        <entry file="mps://node://GN.sandbox/GN.AWB/Objectief AWB">
+      <file leaf-file-name="Simulatie WAA2000" pinned="false" current-in-tab="true">
+        <entry file="mps://node://GN.sandbox/GN.WAA/Simulatie WAA2000">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="820">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="79" />
-                    <property name="caretXRelative" value="0" />
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                    <property name="caretX" value="0" />
+                    <property name="caretXRelative" value="-15" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:e7587d87-b85a-4398-ab1f-a87a9ee8f6d3(GN.AWB)/6470037848739763308" />
+                    <cellInfo cellId="JComponent_fapojb_qb0" cellNumber="0" isInList="false">
+                      <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5270187600231036901" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -315,7 +161,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:e7587d87-b85a-4398-ab1f-a87a9ee8f6d3(GN.AWB)/6470037848739763308" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5270187600231036901" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -663,13 +509,13 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="Modules Pool" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -1407,7 +1253,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="opruiming deprecated objects" />
     <MESSAGE value="Build build weer" />
     <MESSAGE value="Datum verfraaid" />
     <MESSAGE value="Verbeteren kenmerken in objectiefrecht" />
@@ -1432,7 +1277,8 @@
     <MESSAGE value="Bij handeling feiten over onderwerpen geclassificeerd in nieuw/aanpassen/beeindigen" />
     <MESSAGE value="Types weer terug bij kenmerken" />
     <MESSAGE value="Minimale AWR simulatie werkt ook" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minimale AWR simulatie werkt ook" />
+    <MESSAGE value="Eerste stap met voorbeelden bij subjecten en onderwerpen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eerste stap met voorbeelden bij subjecten en onderwerpen" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://GN.sandbox/GN.AWR/AWR">
@@ -3446,77 +3292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://GN.sandbox/GN.WAA/Simulatie WAA2000">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1499">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="383" />
-                <property name="caretXRelative" value="352" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_g4vbo_h0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/3955365814688418406" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/3955365814688418406" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="Simulatie.editor.Simulatie.HandelingenRol2" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.sandbox/GN.WAA/Objectief WAA2000">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="13977">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="655" />
-                <property name="caretXRelative" value="256" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/3955365814688948200" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:e7587d87-b85a-4398-ab1f-a87a9ee8f6d3(GN.AWB)/6470037848739763308" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://GN.sandbox/GN.AWB/Objectief AWB">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -3538,6 +3313,75 @@
             <restoreAlways />
           </memento>
           <inspectorMemento currentlyEditedNode="r:e7587d87-b85a-4398-ab1f-a87a9ee8f6d3(GN.AWB)/6470037848739763308" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.sandbox/GN.WAA/Objectief WAA2000">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="6615">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="47" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_2759bf_cb0" cellNumber="0" isInList="false">
+                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5066083982446708445" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5270187600231036901" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.sandbox/GN.WAA/Simulatie WAA2000">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="JComponent_fapojb_qb0" cellNumber="0" isInList="false">
+                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5270187600231036901" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5270187600231036901" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
