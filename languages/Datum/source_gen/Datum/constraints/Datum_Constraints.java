@@ -48,7 +48,7 @@ public class Datum_Constraints extends BaseConstraintsDescriptor {
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "dag";
         if ((SPropertyOperations.getInteger(propertyValue)) == 0) {
-          return true;
+          return false;
         }
         if ((SPropertyOperations.getInteger(propertyValue)) >= 1 && (SPropertyOperations.getInteger(propertyValue)) <= 31) {
           return true;
@@ -83,7 +83,7 @@ public class Datum_Constraints extends BaseConstraintsDescriptor {
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "maand";
         if ((SPropertyOperations.getInteger(propertyValue)) == 0) {
-          return true;
+          return false;
         }
         if ((SPropertyOperations.getInteger(propertyValue)) >= 1 && (SPropertyOperations.getInteger(propertyValue)) <= 12) {
           return true;
@@ -118,7 +118,7 @@ public class Datum_Constraints extends BaseConstraintsDescriptor {
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "jaar";
         if ((SPropertyOperations.getInteger(propertyValue)) == 0) {
-          return true;
+          return false;
         }
         if ((SPropertyOperations.getInteger(propertyValue)) > 9999) {
           return false;

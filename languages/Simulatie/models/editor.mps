@@ -2061,6 +2061,9 @@
       <node concept="3F0ifn" id="6c9haf45BVE" role="3EZMnx">
         <property role="3F0ifm" value=")" />
       </node>
+      <node concept="3F0ifn" id="3r$i425ewF$" role="3EZMnx">
+        <property role="3F0ifm" value="waarbij volgens andere partij is voldaan aan alle voorwaarden." />
+      </node>
       <node concept="l2Vlx" id="7$WBeOqLHka" role="2iSdaV" />
     </node>
   </node>

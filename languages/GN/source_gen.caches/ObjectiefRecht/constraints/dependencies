@@ -30,6 +30,7 @@
     <classNode dependClassName="ObjectiefRecht.constraints.ReferentieNaarKenmerk_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.RijVanKaraktersType_Constraints" />
     <classNode dependClassName="ObjectiefRecht.constraints.Variabele_Constraints" />
+    <classNode dependClassName="ObjectiefRecht.constraints.VoorbeeldenMetInstanties_Constraints" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
@@ -103,6 +104,10 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="ObjectiefRecht.constraints.Variabele_Constraints" file="Variabele_Constraints.java">
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="ObjectiefRecht.constraints.VoorbeeldenMetInstanties_Constraints" file="VoorbeeldenMetInstanties_Constraints.java">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>

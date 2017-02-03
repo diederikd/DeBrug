@@ -656,5 +656,9 @@
     <property role="3GE5qa" value="Expressies" />
     <ref role="1M2myG" to="3pw0:7rcH1JNxHPY" resolve="Variabele" />
   </node>
+  <node concept="1M2fIO" id="3r$i4252pL0">
+    <property role="3GE5qa" value="ObjectInstantie" />
+    <ref role="1M2myG" to="3pw0:3r$i424SGCq" resolve="VoorbeeldenMetInstanties" />
+  </node>
 </model>
 

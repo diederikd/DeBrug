@@ -55,6 +55,7 @@ public class Rechtshandeling_UitgevoerdeHandeling_Editor extends DefaultNodeEdit
     editorCell.addEditorCell(this.createConstant_qsh53x_h0(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_qsh53x_i0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_qsh53x_j0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_qsh53x_k0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_qsh53x_a0(EditorContext editorContext, SNode node) {
@@ -335,6 +336,12 @@ public class Rechtshandeling_UitgevoerdeHandeling_Editor extends DefaultNodeEdit
   private EditorCell createConstant_qsh53x_j0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
     editorCell.setCellId("Constant_qsh53x_j0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_qsh53x_k0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "waarbij volgens andere partij is voldaan aan alle voorwaarden.");
+    editorCell.setCellId("Constant_qsh53x_k0");
     editorCell.setDefaultText("");
     return editorCell;
   }
