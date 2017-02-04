@@ -783,28 +783,6 @@
         </node>
         <node concept="QqSvC" id="3r$i425evna" role="LSO5p" />
       </node>
-      <node concept="lYmzx" id="5qTpXpBo3vA" role="lYmzI">
-        <property role="TrG5h" value="datum acceptatie verzoek door werkgever voor juridische beslissing" />
-        <property role="da7Q0" value="41" />
-        <node concept="2B78Lw" id="5qTpXpBo3vD" role="lXajo">
-          <property role="2B78LB" value="01" />
-          <property role="2B78L_" value="07" />
-          <property role="2B78LE" value="2000" />
-        </node>
-        <node concept="QqSvC" id="5qTpXpBo3vX" role="LSO5p" />
-        <node concept="2mcr8I" id="6T3DNjStC3k" role="2mcr89" />
-      </node>
-      <node concept="lYmzx" id="7k4OuKun8f" role="lYmzI">
-        <property role="da7Q0" value="0000" />
-        <property role="TrG5h" value="datum verzoek niet in behandeling nemen" />
-        <node concept="2B78Lw" id="7k4OuKun8i" role="lXajo">
-          <property role="2B78LB" value="1" />
-          <property role="2B78L_" value="1" />
-          <property role="2B78LE" value="1000" />
-        </node>
-        <node concept="QqSvC" id="7k4OuKun9e" role="LSO5p" />
-        <node concept="2mcr8I" id="7k4OuKun9g" role="2mcr89" />
-      </node>
       <node concept="lYmzx" id="7k4OuKunaq" role="lYmzI">
         <property role="da7Q0" value="0000" />
         <property role="TrG5h" value="datum overleg plegen" />

@@ -341,10 +341,6 @@
         <ref role="25GgGs" to="zznl:5qTpXpBo3uX" resolve="datum indienen verzoek" />
         <node concept="QqSvC" id="3DwVXk8WuSE" role="1ldGuc" />
       </node>
-      <node concept="25GtAH" id="3DwVXk8WuSx" role="aI7YJ">
-        <ref role="25GgGs" to="zznl:5qTpXpBo3vA" resolve="datum acceptatie verzoek door werkgever voor juridische beslissing" />
-        <node concept="QqSvC" id="3DwVXk8WuSG" role="1ldGuc" />
-      </node>
       <node concept="25GtAH" id="3DwVXk8WuSy" role="aI7YJ">
         <ref role="25GgGs" to="zznl:4$mS69sWF6g" resolve="beoogde ingangsdatum van de aanpassing" />
         <node concept="QqSvC" id="3DwVXk8WuSY" role="1ldGuc" />
