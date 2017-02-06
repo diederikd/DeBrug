@@ -19,25 +19,25 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
-public class IsGelijk_Editor extends DefaultNodeEditor {
+public class LigtVoor_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_7ai7v7_a(editorContext, node);
+    return this.createCollection_d0jxqr_a(editorContext, node);
   }
-  private EditorCell createCollection_7ai7v7_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_d0jxqr_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_7ai7v7_a");
+    editorCell.setCellId("Collection_d0jxqr_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createRefNode_7ai7v7_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_7ai7v7_b0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_7ai7v7_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_d0jxqr_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_d0jxqr_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_d0jxqr_c0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createRefNode_7ai7v7_a0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new IsGelijk_Editor.expressie1SingleRoleHandler_7ai7v7_a0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1"), editorContext);
+  private EditorCell createRefNode_d0jxqr_a0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new LigtVoor_Editor.expressie1SingleRoleHandler_d0jxqr_a0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"), editorContext);
     return provider.createCell();
   }
-  private class expressie1SingleRoleHandler_7ai7v7_a0 extends SingleRoleCellProvider {
-    public expressie1SingleRoleHandler_7ai7v7_a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class expressie1SingleRoleHandler_d0jxqr_a0 extends SingleRoleCellProvider {
+    public expressie1SingleRoleHandler_d0jxqr_a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -45,8 +45,8 @@ public class IsGelijk_Editor extends DefaultNodeEditor {
       myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
       try {
         EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1"), child));
+        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"), child));
+        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"), child));
         installCellInfo(child, editorCell);
         return editorCell;
       } finally {
@@ -60,7 +60,7 @@ public class IsGelijk_Editor extends DefaultNodeEditor {
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
         editorCell.setRole("expressie1");
@@ -69,7 +69,7 @@ public class IsGelijk_Editor extends DefaultNodeEditor {
     @Override
     protected EditorCell createEmptyCell() {
       myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1")));
+      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")));
       try {
         EditorCell editorCell = super.createEmptyCell();
         editorCell.setCellId("empty_expressie1");
@@ -83,18 +83,18 @@ public class IsGelijk_Editor extends DefaultNodeEditor {
       return "<no expressie1>";
     }
   }
-  private EditorCell createConstant_7ai7v7_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "is gelijk aan");
-    editorCell.setCellId("Constant_7ai7v7_b0");
+  private EditorCell createConstant_d0jxqr_b0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "ligt voor");
+    editorCell.setCellId("Constant_d0jxqr_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_7ai7v7_c0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new IsGelijk_Editor.expressie2SingleRoleHandler_7ai7v7_c0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2"), editorContext);
+  private EditorCell createRefNode_d0jxqr_c0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new LigtVoor_Editor.expressie2SingleRoleHandler_d0jxqr_c0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"), editorContext);
     return provider.createCell();
   }
-  private class expressie2SingleRoleHandler_7ai7v7_c0 extends SingleRoleCellProvider {
-    public expressie2SingleRoleHandler_7ai7v7_c0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class expressie2SingleRoleHandler_d0jxqr_c0 extends SingleRoleCellProvider {
+    public expressie2SingleRoleHandler_d0jxqr_c0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -102,8 +102,8 @@ public class IsGelijk_Editor extends DefaultNodeEditor {
       myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
       try {
         EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2"), child));
+        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"), child));
+        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"), child));
         installCellInfo(child, editorCell);
         return editorCell;
       } finally {
@@ -117,7 +117,7 @@ public class IsGelijk_Editor extends DefaultNodeEditor {
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
         editorCell.setRole("expressie2");
@@ -126,7 +126,7 @@ public class IsGelijk_Editor extends DefaultNodeEditor {
     @Override
     protected EditorCell createEmptyCell() {
       myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2")));
+      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")));
       try {
         EditorCell editorCell = super.createEmptyCell();
         editorCell.setCellId("empty_expressie2");

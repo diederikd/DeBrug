@@ -1255,21 +1255,21 @@
     <node concept="1TJgyj" id="1KpaLv9Aahh" role="1TKVEi">
       <property role="IQ2ns" value="2024696888646214737" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr1" />
+      <property role="20kJfa" value="expressie1" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
     </node>
     <node concept="1TJgyj" id="1KpaLv9AahN" role="1TKVEi">
       <property role="IQ2ns" value="2024696888646214771" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr2" />
+      <property role="20kJfa" value="expressie2" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
     </node>
   </node>
   <node concept="1TIwiD" id="1KpaLv9ASFN">
     <property role="EcuMT" value="2024696888646404851" />
-    <property role="3GE5qa" value="Expressies" />
+    <property role="3GE5qa" value="Expressies.Functies.Datum" />
     <property role="TrG5h" value="TenMinsteNa" />
     <property role="34LRSv" value="ligt ten minste &lt;duur&gt; na" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
@@ -1372,7 +1372,7 @@
   </node>
   <node concept="1TIwiD" id="4NzHub3qXWy">
     <property role="EcuMT" value="5540471952141704994" />
-    <property role="3GE5qa" value="Expressies" />
+    <property role="3GE5qa" value="Expressies.Functies.Datum" />
     <property role="TrG5h" value="TenMinsteVoor" />
     <property role="34LRSv" value="ligt ten minste &lt;duur&gt; voor" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
@@ -1422,7 +1422,7 @@
   </node>
   <node concept="1TIwiD" id="4NzHub3wOMq">
     <property role="EcuMT" value="5540471952143240346" />
-    <property role="3GE5qa" value="Expressies.Functies" />
+    <property role="3GE5qa" value="Expressies.Parameters" />
     <property role="TrG5h" value="DatumUitvoerenHandeling" />
     <property role="34LRSv" value="datum uitvoeren handeling" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
@@ -1534,6 +1534,79 @@
       <property role="20kJfa" value="onderwerp" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3r$i424SGCk" resolve="InstantieVanObject" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7QVfFLFlZB6">
+    <property role="EcuMT" value="9059904054361586118" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="ErIsEen" />
+    <property role="34LRSv" value="er is een &lt;object&gt; waarbij &lt;voorwaarden&gt;" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="1TJgyj" id="7QVfFLFlZBu" role="1TKVEi">
+      <property role="IQ2ns" value="9059904054361586142" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="object" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="GhrpPwHHWz" resolve="Object" />
+    </node>
+    <node concept="1TJgyj" id="7QVfFLFlZBI" role="1TKVEi">
+      <property role="IQ2ns" value="9059904054361586158" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="voorwaarden" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7QVfFLFlZBw">
+    <property role="EcuMT" value="9059904054361586144" />
+    <property role="3GE5qa" value="Expressies.Parameters" />
+    <property role="TrG5h" value="Nu" />
+    <property role="34LRSv" value="nu" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+  </node>
+  <node concept="1TIwiD" id="7QVfFLFqR9U">
+    <property role="EcuMT" value="9059904054362862202" />
+    <property role="3GE5qa" value="Expressies.Parameters" />
+    <property role="TrG5h" value="RechtsSubjectMetRecht" />
+    <property role="34LRSv" value="rechtssubject met recht" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+  </node>
+  <node concept="1TIwiD" id="7QVfFLFqRa8">
+    <property role="EcuMT" value="9059904054362862216" />
+    <property role="3GE5qa" value="Expressies.Parameters" />
+    <property role="TrG5h" value="RechtsSubjectMetPlicht" />
+    <property role="34LRSv" value="rechtssubject met plicht" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+  </node>
+  <node concept="1TIwiD" id="7QVfFLFuc8H">
+    <property role="EcuMT" value="9059904054363734573" />
+    <property role="3GE5qa" value="Expressies.Functies.Datum" />
+    <property role="TrG5h" value="LigtVoor" />
+    <property role="34LRSv" value="ligt voor" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="PrWs8" id="7QVfFLFuc8I" role="PzmwI">
+      <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7QVfFLFvjdf">
+    <property role="EcuMT" value="9059904054364025679" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="ErIsGeen" />
+    <property role="34LRSv" value="er is geen &lt;object&gt; waarbij &lt;voorwaarden&gt;" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="1TJgyj" id="7QVfFLFvjdi" role="1TKVEi">
+      <property role="IQ2ns" value="9059904054364025682" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="object" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="GhrpPwHHWz" resolve="Object" />
+    </node>
+    <node concept="1TJgyj" id="7QVfFLFvjdg" role="1TKVEi">
+      <property role="IQ2ns" value="9059904054364025680" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="voorwaarden" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
     </node>
   </node>
 </model>

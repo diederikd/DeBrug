@@ -87,6 +87,12 @@
     <file name="Enumeratie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Enumeratie_BehaviorDescriptor" />
     </file>
+    <file name="ErIsEen_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ErIsEen_BehaviorDescriptor" />
+    </file>
+    <file name="ErIsGeen_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ErIsGeen_BehaviorDescriptor" />
+    </file>
     <file name="ExpressieVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ExpressieVoorwaarde_BehaviorDescriptor" />
     </file>
@@ -156,6 +162,9 @@
     <file name="Lidwoord_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Lidwoord_BehaviorDescriptor" />
     </file>
+    <file name="LigtVoor_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.LigtVoor_BehaviorDescriptor" />
+    </file>
     <file name="MaterieleVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.MaterieleVoorwaarde_BehaviorDescriptor" />
     </file>
@@ -170,6 +179,9 @@
     </file>
     <file name="MinExpressie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.MinExpressie_BehaviorDescriptor" />
+    </file>
+    <file name="Nu_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Nu_BehaviorDescriptor" />
     </file>
     <file name="ObjectType_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ObjectType_BehaviorDescriptor" />
@@ -191,6 +203,12 @@
     </file>
     <file name="PlusExpressie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.PlusExpressie_BehaviorDescriptor" />
+    </file>
+    <file name="RechtsSubjectMetPlicht_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.RechtsSubjectMetPlicht_BehaviorDescriptor" />
+    </file>
+    <file name="RechtsSubjectMetRecht_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.RechtsSubjectMetRecht_BehaviorDescriptor" />
     </file>
     <file name="RechtsSubjectWaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.RechtsSubjectWaarde_BehaviorDescriptor" />
