@@ -134,6 +134,10 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="ObjectiefRecht.behavior.EnumeratieWaarde_BehaviorDescriptor" file="EnumeratieWaarde_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="ObjectiefRecht.behavior.Enumeratie_BehaviorDescriptor" file="Enumeratie_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -309,6 +313,10 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="ObjectiefRecht.behavior.ObjectWaarde_BehaviorDescriptor" file="ObjectWaarde_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="ObjectiefRecht.behavior.Object_BehaviorDescriptor" file="Object_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -342,10 +350,6 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.OnderwerpWaarde_BehaviorDescriptor" file="OnderwerpWaarde_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.Onderwerp_BehaviorDescriptor" file="Onderwerp_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -363,10 +367,6 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.RechtsSubjectMetRecht_BehaviorDescriptor" file="RechtsSubjectMetRecht_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.RechtsSubjectWaarde_BehaviorDescriptor" file="RechtsSubjectWaarde_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

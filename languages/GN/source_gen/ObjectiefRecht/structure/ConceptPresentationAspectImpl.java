@@ -34,6 +34,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Enumeratie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_EnumeratieElement = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_EnumeratieType = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_EnumeratieWaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ErIsEen = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ErIsGeen = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ExpressieVoorwaarde = new ConceptPresentationBuilder().create();
@@ -71,15 +72,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Nu = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Object = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ObjectType = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ObjectWaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Onderwerp = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_OnderwerpType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OnderwerpWaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_OptioneleBevoegdheidOptioneleGehoudenheid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PlusExpressie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RechtsSubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RechtsSubjectMetPlicht = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RechtsSubjectMetRecht = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_RechtsSubjectWaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rechtsbetrekking = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7da8818L, "initieel"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2dL, "rechtssubjectMetRecht"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2eL, "rechtssubjectMetPlicht"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x218d2fe3c8aff5f6L, "onderwerp")).create();
   private final ConceptPresentation props_Rechtsgevolg = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RechtsgevolgVeroorzakers = new ConceptPresentationBuilder().create();
@@ -173,97 +173,97 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 23:
         return props_EnumeratieType;
       case 24:
-        return props_ErIsEen;
+        return props_EnumeratieWaarde;
       case 25:
-        return props_ErIsGeen;
+        return props_ErIsEen;
       case 26:
-        return props_ExpressieVoorwaarde;
+        return props_ErIsGeen;
       case 27:
-        return props_FeitelijkeHandelingMetRechtsgevolg;
+        return props_ExpressieVoorwaarde;
       case 28:
-        return props_GebeurtenisMetRechtsgevolg;
+        return props_FeitelijkeHandelingMetRechtsgevolg;
       case 29:
-        return props_GeheelGetalType;
+        return props_GebeurtenisMetRechtsgevolg;
       case 30:
-        return props_Gelijkstelling;
+        return props_GeheelGetalType;
       case 31:
-        return props_IBinaireExpressie;
+        return props_Gelijkstelling;
       case 32:
-        return props_IUnaireExpressie;
+        return props_IBinaireExpressie;
       case 33:
-        return props_ImmuniteitGeenbevoegdheid;
+        return props_IUnaireExpressie;
       case 34:
-        return props_InstantieVanObject;
+        return props_ImmuniteitGeenbevoegdheid;
       case 35:
-        return props_IsGeen;
+        return props_InstantieVanObject;
       case 36:
-        return props_IsGelijk;
+        return props_IsGeen;
       case 37:
-        return props_IsGroterDan;
+        return props_IsGelijk;
       case 38:
-        return props_IsGroterOfGelijk;
+        return props_IsGroterDan;
       case 39:
-        return props_IsKleinerDan;
+        return props_IsGroterOfGelijk;
       case 40:
-        return props_IsNietBekend;
+        return props_IsKleinerDan;
       case 41:
-        return props_IsOpgegeven;
+        return props_IsNietBekend;
       case 42:
-        return props_IsPositief;
+        return props_IsOpgegeven;
       case 43:
-        return props_IsWaar;
+        return props_IsPositief;
       case 44:
-        return props_JaNeeType;
+        return props_IsWaar;
       case 45:
-        return props_Kenmerk;
+        return props_JaNeeType;
       case 46:
-        return props_KrachtigeAanspraakFataleVerplichtig;
+        return props_Kenmerk;
       case 47:
-        return props_Lidwoord;
+        return props_KrachtigeAanspraakFataleVerplichtig;
       case 48:
-        return props_LidwoordDe;
+        return props_Lidwoord;
       case 49:
-        return props_LidwoordHet;
+        return props_LidwoordDe;
       case 50:
-        return props_LigtNa;
+        return props_LidwoordHet;
       case 51:
-        return props_LigtVoor;
+        return props_LigtNa;
       case 52:
-        return props_MaterieleVoorwaarde;
+        return props_LigtVoor;
       case 53:
-        return props_MethodeAanpassenFeiten;
+        return props_MaterieleVoorwaarde;
       case 54:
-        return props_MethodeBeeidigenOnderwerp;
+        return props_MethodeAanpassenFeiten;
       case 55:
-        return props_MethodeNieuweFeiten;
+        return props_MethodeBeeidigenOnderwerp;
       case 56:
-        return props_MinExpressie;
+        return props_MethodeNieuweFeiten;
       case 57:
-        return props_Na;
+        return props_MinExpressie;
       case 58:
-        return props_Nu;
+        return props_Na;
       case 59:
-        return props_Object;
+        return props_Nu;
       case 60:
-        return props_ObjectType;
+        return props_Object;
       case 61:
-        return props_Onderwerp;
+        return props_ObjectType;
       case 62:
-        return props_OnderwerpType;
+        return props_ObjectWaarde;
       case 63:
-        return props_OnderwerpWaarde;
+        return props_Onderwerp;
       case 64:
-        return props_OptioneleBevoegdheidOptioneleGehoudenheid;
+        return props_OnderwerpType;
       case 65:
-        return props_PlusExpressie;
+        return props_OptioneleBevoegdheidOptioneleGehoudenheid;
       case 66:
-        return props_RechtsSubject;
+        return props_PlusExpressie;
       case 67:
-        return props_RechtsSubjectMetPlicht;
+        return props_RechtsSubject;
       case 68:
-        return props_RechtsSubjectMetRecht;
+        return props_RechtsSubjectMetPlicht;
       case 69:
-        return props_RechtsSubjectWaarde;
+        return props_RechtsSubjectMetRecht;
       case 70:
         return props_Rechtsbetrekking;
       case 71:

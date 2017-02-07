@@ -1500,6 +1500,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="GhrpPwHHWz" resolve="Object" />
     </node>
+    <node concept="PrWs8" id="jcJoZ9VDj3" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3r$i424SGCq">
     <property role="EcuMT" value="3955365814682700314" />
@@ -1511,30 +1514,6 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="instanties" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3r$i424SGCk" resolve="InstantieVanObject" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3r$i4259Y6V">
-    <property role="EcuMT" value="3955365814687228347" />
-    <property role="TrG5h" value="RechtsSubjectWaarde" />
-    <ref role="1TJDcQ" to="uwhu:1YFKb5t_BZt" resolve="Waarde" />
-    <node concept="1TJgyj" id="3r$i4259YOK" role="1TKVEi">
-      <property role="IQ2ns" value="3955365814687231280" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="waarde" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3r$i424SGCk" resolve="InstantieVanObject" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3r$i4259YOM">
-    <property role="EcuMT" value="3955365814687231282" />
-    <property role="TrG5h" value="OnderwerpWaarde" />
-    <ref role="1TJDcQ" to="uwhu:1YFKb5t_BZt" resolve="Waarde" />
-    <node concept="1TJgyj" id="3r$i4259YON" role="1TKVEi">
-      <property role="IQ2ns" value="3955365814687231283" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="onderwerp" />
-      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3r$i424SGCk" resolve="InstantieVanObject" />
     </node>
   </node>
@@ -1659,6 +1638,30 @@
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
     <node concept="PrWs8" id="jcJoZ9O50r" role="PzmwI">
       <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="jcJoZ9T6vo">
+    <property role="EcuMT" value="345859696665847768" />
+    <property role="TrG5h" value="ObjectWaarde" />
+    <ref role="1TJDcQ" to="uwhu:1YFKb5t_BZt" resolve="Waarde" />
+    <node concept="1TJgyj" id="jcJoZ9T6vp" role="1TKVEi">
+      <property role="IQ2ns" value="345859696665847769" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="object" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3r$i424SGCk" resolve="InstantieVanObject" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="vqB$L$kRTC">
+    <property role="EcuMT" value="565938754126315112" />
+    <property role="TrG5h" value="EnumeratieWaarde" />
+    <ref role="1TJDcQ" to="uwhu:1YFKb5t_BZt" resolve="Waarde" />
+    <node concept="1TJgyj" id="vqB$L$kRTD" role="1TKVEi">
+      <property role="IQ2ns" value="565938754126315113" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="element" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6syAJDDPL2S" resolve="EnumeratieElement" />
     </node>
   </node>
 </model>
