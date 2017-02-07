@@ -45,7 +45,7 @@ public class ErIsEen_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_95czai_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Er is een");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Er is een instantie van");
     editorCell.setCellId("Constant_95czai_a0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -100,7 +100,7 @@ public class ErIsEen_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_95czai_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "waarbij");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "waarbij geldt");
     editorCell.setCellId("Constant_95czai_c0");
     editorCell.setDefaultText("");
     return editorCell;

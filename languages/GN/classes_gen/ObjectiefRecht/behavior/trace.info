@@ -72,6 +72,9 @@
     <file name="DatumUitvoerenHandeling_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.DatumUitvoerenHandeling_BehaviorDescriptor" />
     </file>
+    <file name="DeSom_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.DeSom_BehaviorDescriptor" />
+    </file>
     <file name="DelenExpressie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.DelenExpressie_BehaviorDescriptor" />
     </file>
@@ -135,6 +138,9 @@
     <file name="IsKleinerDan_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsKleinerDan_BehaviorDescriptor" />
     </file>
+    <file name="IsNietBekend_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsNietBekend_BehaviorDescriptor" />
+    </file>
     <file name="IsOpgegeven_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.IsOpgegeven_BehaviorDescriptor" />
     </file>
@@ -162,6 +168,9 @@
     <file name="Lidwoord_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Lidwoord_BehaviorDescriptor" />
     </file>
+    <file name="LigtNa_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.LigtNa_BehaviorDescriptor" />
+    </file>
     <file name="LigtVoor_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.LigtVoor_BehaviorDescriptor" />
     </file>
@@ -179,6 +188,9 @@
     </file>
     <file name="MinExpressie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.MinExpressie_BehaviorDescriptor" />
+    </file>
+    <file name="Na_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Na_BehaviorDescriptor" />
     </file>
     <file name="Nu_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Nu_BehaviorDescriptor" />
@@ -305,6 +317,9 @@
     </file>
     <file name="VerschilTussen_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VerschilTussen_BehaviorDescriptor" />
+    </file>
+    <file name="Voor_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Voor_BehaviorDescriptor" />
     </file>
     <file name="VoorbeeldenMetInstanties_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VoorbeeldenMetInstanties_BehaviorDescriptor" />

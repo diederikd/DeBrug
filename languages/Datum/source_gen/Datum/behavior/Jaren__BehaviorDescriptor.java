@@ -33,7 +33,10 @@ public final class Jaren__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static double AantalJaren_idbTj1CmnvAs(@NotNull SNode __thisNode__) {
-    return Double.valueOf(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b322e6L, 0x46db587183b322eaL, "jaren")));
+    if (isNotEmptyString(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b322e6L, 0x46db587183b322eaL, "jaren")))) {
+      return Double.valueOf(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b322e6L, 0x46db587183b322eaL, "jaren")));
+    }
+    return 0;
   }
 
   /*package*/ Jaren__BehaviorDescriptor() {
@@ -81,5 +84,8 @@ public final class Jaren__BehaviorDescriptor extends BaseBHDescriptor {
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
+  }
+  private static boolean isNotEmptyString(String str) {
+    return str != null && str.length() > 0;
   }
 }

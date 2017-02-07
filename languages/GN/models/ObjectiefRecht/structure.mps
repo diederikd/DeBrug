@@ -144,12 +144,14 @@
     <property role="TrG5h" value="MaterieleVoorwaarde" />
     <property role="3GE5qa" value="Voorwaarden" />
     <ref role="1TJDcQ" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
+    <node concept="asaX9" id="jcJoZ9JaUQ" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="64gsXol8CO9">
     <property role="EcuMT" value="6994217584621161737" />
     <property role="TrG5h" value="VormVoorwaarde" />
     <property role="3GE5qa" value="Voorwaarden" />
     <ref role="1TJDcQ" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
+    <node concept="asaX9" id="jcJoZ9JaUS" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="64gsXol8COa">
     <property role="EcuMT" value="6994217584621161738" />
@@ -1607,6 +1609,56 @@
       <property role="20kJfa" value="voorwaarden" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="jcJoZ9JaUU">
+    <property role="EcuMT" value="345859696663244474" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="DeSom" />
+    <property role="34LRSv" value="de som van" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="PrWs8" id="jcJoZ9JaUV" role="PzmwI">
+      <ref role="PrY4T" node="4NzHub3_orp" resolve="IUnaireExpressie" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="jcJoZ9LTgl">
+    <property role="EcuMT" value="345859696663958549" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="IsNietBekend" />
+    <property role="34LRSv" value="is niet bekend" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="PrWs8" id="jcJoZ9LTgm" role="PzmwI">
+      <ref role="PrY4T" node="4NzHub3_orp" resolve="IUnaireExpressie" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="jcJoZ9MYJt">
+    <property role="EcuMT" value="345859696664243165" />
+    <property role="3GE5qa" value="Expressies.Functies.Datum" />
+    <property role="TrG5h" value="Voor" />
+    <property role="34LRSv" value="&lt;duur&gt; voor" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="PrWs8" id="jcJoZ9MYJu" role="PzmwI">
+      <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="jcJoZ9MYJw">
+    <property role="EcuMT" value="345859696664243168" />
+    <property role="3GE5qa" value="Expressies.Functies.Datum" />
+    <property role="TrG5h" value="Na" />
+    <property role="34LRSv" value="&lt;duur&gt; na" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="PrWs8" id="jcJoZ9MYJ_" role="PzmwI">
+      <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="jcJoZ9O509">
+    <property role="EcuMT" value="345859696664530953" />
+    <property role="3GE5qa" value="Expressies.Functies.Datum" />
+    <property role="TrG5h" value="LigtNa" />
+    <property role="34LRSv" value="ligt na" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="PrWs8" id="jcJoZ9O50r" role="PzmwI">
+      <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
     </node>
   </node>
 </model>

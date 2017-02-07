@@ -33,7 +33,10 @@ public final class Uren__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static double AantalUren_idbTj1CmnFSe(@NotNull SNode __thisNode__) {
-    return Double.valueOf(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cba1L, 0x46db587183b2cba2L, "uren")));
+    if (isNotEmptyString(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cba1L, 0x46db587183b2cba2L, "uren")))) {
+      return Double.valueOf(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cba1L, 0x46db587183b2cba2L, "uren")));
+    }
+    return 0;
   }
 
   /*package*/ Uren__BehaviorDescriptor() {
@@ -81,5 +84,8 @@ public final class Uren__BehaviorDescriptor extends BaseBHDescriptor {
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
+  }
+  private static boolean isNotEmptyString(String str) {
+    return str != null && str.length() > 0;
   }
 }

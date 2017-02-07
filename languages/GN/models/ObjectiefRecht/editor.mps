@@ -9252,7 +9252,7 @@
     <ref role="1XX52x" to="3pw0:7QVfFLFlZB6" resolve="ErIsEen" />
     <node concept="3EZMnI" id="7QVfFLFlZBV" role="2wV5jI">
       <node concept="3F0ifn" id="7QVfFLFlZC2" role="3EZMnx">
-        <property role="3F0ifm" value="Er is een" />
+        <property role="3F0ifm" value="Er is een instantie van" />
       </node>
       <node concept="1iCGBv" id="7QVfFLFlZC8" role="3EZMnx">
         <ref role="1NtTu8" to="3pw0:7QVfFLFlZBu" resolve="object" />
@@ -9265,7 +9265,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7QVfFLFlZCr" role="3EZMnx">
-        <property role="3F0ifm" value="waarbij" />
+        <property role="3F0ifm" value="waarbij geldt" />
       </node>
       <node concept="3F0ifn" id="7QVfFLFlZCD" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -9371,6 +9371,83 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7QVfFLFvjdJ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="jcJoZ9JaVf">
+    <property role="3GE5qa" value="Expressies" />
+    <ref role="1XX52x" to="3pw0:jcJoZ9JaUU" resolve="DeSom" />
+    <node concept="3EZMnI" id="jcJoZ9JaVh" role="2wV5jI">
+      <node concept="3F0ifn" id="jcJoZ9JaVo" role="3EZMnx">
+        <property role="3F0ifm" value="de som van (" />
+      </node>
+      <node concept="3F1sOY" id="jcJoZ9JaVu" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4NzHub3_orq" resolve="expressie" />
+      </node>
+      <node concept="3F0ifn" id="jcJoZ9JaVA" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="jcJoZ9JaVk" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="jcJoZ9LTgw">
+    <property role="3GE5qa" value="Expressies" />
+    <ref role="1XX52x" to="3pw0:jcJoZ9LTgl" resolve="IsNietBekend" />
+    <node concept="3EZMnI" id="jcJoZ9LTgA" role="2wV5jI">
+      <node concept="3F1sOY" id="jcJoZ9LTgH" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4NzHub3_orq" resolve="expressie" />
+      </node>
+      <node concept="3F0ifn" id="jcJoZ9LTgN" role="3EZMnx">
+        <property role="3F0ifm" value="is niet bekend" />
+      </node>
+      <node concept="l2Vlx" id="jcJoZ9LTgD" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="jcJoZ9MYJJ">
+    <property role="3GE5qa" value="Expressies.Functies.Datum" />
+    <ref role="1XX52x" to="3pw0:jcJoZ9MYJw" resolve="Na" />
+    <node concept="3EZMnI" id="jcJoZ9MYJL" role="2wV5jI">
+      <node concept="3F1sOY" id="jcJoZ9MYJS" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4rrm763or4P" resolve="expressie1" />
+      </node>
+      <node concept="3F0ifn" id="jcJoZ9MYJY" role="3EZMnx">
+        <property role="3F0ifm" value="na" />
+      </node>
+      <node concept="3F1sOY" id="jcJoZ9MYK6" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4rrm763or4R" resolve="expressie2" />
+      </node>
+      <node concept="l2Vlx" id="jcJoZ9MYJO" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="jcJoZ9MYKj">
+    <property role="3GE5qa" value="Expressies.Functies.Datum" />
+    <ref role="1XX52x" to="3pw0:jcJoZ9MYJt" resolve="Voor" />
+    <node concept="3EZMnI" id="jcJoZ9MYKl" role="2wV5jI">
+      <node concept="3F1sOY" id="jcJoZ9MYKs" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4rrm763or4P" resolve="expressie1" />
+      </node>
+      <node concept="3F0ifn" id="jcJoZ9MYKy" role="3EZMnx">
+        <property role="3F0ifm" value="voor" />
+      </node>
+      <node concept="3F1sOY" id="jcJoZ9MYKE" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4rrm763or4R" resolve="expressie2" />
+      </node>
+      <node concept="l2Vlx" id="jcJoZ9MYKo" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="jcJoZ9O50i">
+    <property role="3GE5qa" value="Expressies.Functies.Datum" />
+    <ref role="1XX52x" to="3pw0:jcJoZ9O509" resolve="LigtNa" />
+    <node concept="3EZMnI" id="jcJoZ9O50k" role="2wV5jI">
+      <node concept="3F1sOY" id="jcJoZ9O50t" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4rrm763or4P" resolve="expressie1" />
+      </node>
+      <node concept="3F0ifn" id="jcJoZ9O50z" role="3EZMnx">
+        <property role="3F0ifm" value="ligt na" />
+      </node>
+      <node concept="3F1sOY" id="jcJoZ9O511" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4rrm763or4R" resolve="expressie2" />
+      </node>
+      <node concept="l2Vlx" id="jcJoZ9O50n" role="2iSdaV" />
     </node>
   </node>
 </model>
