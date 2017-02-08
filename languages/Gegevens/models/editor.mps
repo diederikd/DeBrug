@@ -1444,5 +1444,15 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="vqB$L$qd2q">
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="1XX52x" to="uwhu:vqB$L$qd2f" resolve="TijdWaarde" />
+    <node concept="3EZMnI" id="vqB$L$qd2s" role="2wV5jI">
+      <node concept="3F1sOY" id="vqB$L$qd2z" role="3EZMnx">
+        <ref role="1NtTu8" to="uwhu:vqB$L$qd2g" resolve="waarde" />
+      </node>
+      <node concept="l2Vlx" id="vqB$L$qd2v" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

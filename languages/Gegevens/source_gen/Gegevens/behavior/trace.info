@@ -138,6 +138,9 @@
     <file name="TijdDatatype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.TijdDatatype_BehaviorDescriptor" />
     </file>
+    <file name="TijdWaarde_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.TijdWaarde_BehaviorDescriptor" />
+    </file>
     <file name="WaardeVanAttribuut_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.WaardeVanAttribuut_BehaviorDescriptor" />
     </file>

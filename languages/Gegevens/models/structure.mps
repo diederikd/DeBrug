@@ -594,5 +594,18 @@
     <property role="3GE5qa" value="waardeJaNee" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="vqB$L$qd2f">
+    <property role="EcuMT" value="565938754127712399" />
+    <property role="3GE5qa" value="Waarden" />
+    <property role="TrG5h" value="TijdWaarde" />
+    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
+    <node concept="1TJgyj" id="vqB$L$qd2g" role="1TKVEi">
+      <property role="IQ2ns" value="565938754127712400" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="waarde" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="jx79:5riiL_BUfcl" resolve="Tijd" />
+    </node>
+  </node>
 </model>
 

@@ -1078,6 +1078,55 @@
                     </node>
                   </node>
                 </node>
+                <node concept="Jncv_" id="5Jf4KAPIsy5" role="3cqZAp">
+                  <ref role="JncvD" to="3pw0:6syAJDDPL2P" resolve="Enumeratie" />
+                  <node concept="2OqwBi" id="5Jf4KAPIsy6" role="JncvB">
+                    <node concept="Jnkvi" id="5Jf4KAPIvgz" role="2Oq$k0">
+                      <ref role="1M0zk5" node="3r$i425b6oR" resolve="objectType" />
+                    </node>
+                    <node concept="3TrEf2" id="5Jf4KAPIvKU" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3pw0:GhrpPwIh85" resolve="object" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="5Jf4KAPIsy9" role="Jncv$">
+                    <node concept="3cpWs8" id="5Jf4KAPIsya" role="3cqZAp">
+                      <node concept="3cpWsn" id="5Jf4KAPIsyb" role="3cpWs9">
+                        <property role="TrG5h" value="enumeratieWaarde" />
+                        <node concept="3Tqbb2" id="5Jf4KAPIsyc" role="1tU5fm">
+                          <ref role="ehGHo" to="3pw0:vqB$L$kRTC" resolve="EnumeratieWaarde" />
+                        </node>
+                        <node concept="2ShNRf" id="5Jf4KAPIsyd" role="33vP2m">
+                          <node concept="3zrR0B" id="5Jf4KAPIsye" role="2ShVmc">
+                            <node concept="3Tqbb2" id="5Jf4KAPIsyf" role="3zrR0E">
+                              <ref role="ehGHo" to="3pw0:vqB$L$kRTC" resolve="EnumeratieWaarde" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="5Jf4KAPIsyg" role="3cqZAp">
+                      <node concept="2OqwBi" id="5Jf4KAPIsyh" role="3clFbG">
+                        <node concept="2OqwBi" id="5Jf4KAPIsyi" role="2Oq$k0">
+                          <node concept="37vLTw" id="5Jf4KAPIsyj" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3r$i4253ACn" resolve="waardeVanKenmerk" />
+                          </node>
+                          <node concept="3TrEf2" id="5Jf4KAPIsyk" role="2OqNvi">
+                            <ref role="3Tt5mk" to="3pw0:3r$i424SGCh" resolve="waarde" />
+                          </node>
+                        </node>
+                        <node concept="2oxUTD" id="5Jf4KAPIsyl" role="2OqNvi">
+                          <node concept="37vLTw" id="5Jf4KAPIsym" role="2oxUTC">
+                            <ref role="3cqZAo" node="5Jf4KAPIsyb" resolve="enumeratieWaarde" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="JncvC" id="5Jf4KAPIsyn" role="JncvA">
+                    <property role="TrG5h" value="enumeratie" />
+                    <node concept="2jxLKc" id="5Jf4KAPIsyo" role="1tU5fm" />
+                  </node>
+                </node>
               </node>
               <node concept="JncvC" id="3r$i425b6oR" role="JncvA">
                 <property role="TrG5h" value="objectType" />
@@ -1291,6 +1340,68 @@
               <node concept="JncvC" id="3r$i4253AE5" role="JncvA">
                 <property role="TrG5h" value="TypeDatum" />
                 <node concept="2jxLKc" id="3r$i4253AE6" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="Jncv_" id="vqB$L$qbCr" role="3cqZAp">
+              <ref role="JncvD" to="3pw0:5qTpXpBo3vZ" resolve="TijdType" />
+              <node concept="2OqwBi" id="vqB$L$qbCs" role="JncvB">
+                <node concept="2GrUjf" id="vqB$L$qbCt" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="3r$i4253ACh" resolve="kenmerk" />
+                </node>
+                <node concept="3TrEf2" id="vqB$L$qbCu" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3pw0:5qTpXpBmyqf" resolve="type" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="vqB$L$qbCv" role="Jncv$">
+                <node concept="3cpWs8" id="vqB$L$qbCw" role="3cqZAp">
+                  <node concept="3cpWsn" id="vqB$L$qbCx" role="3cpWs9">
+                    <property role="TrG5h" value="tijdWaarde" />
+                    <node concept="3Tqbb2" id="vqB$L$qbCy" role="1tU5fm">
+                      <ref role="ehGHo" to="uwhu:vqB$L$qd2f" resolve="TijdWaarde" />
+                    </node>
+                    <node concept="2ShNRf" id="vqB$L$qbCz" role="33vP2m">
+                      <node concept="3zrR0B" id="vqB$L$qbC$" role="2ShVmc">
+                        <node concept="3Tqbb2" id="vqB$L$qbC_" role="3zrR0E">
+                          <ref role="ehGHo" to="uwhu:vqB$L$qd2f" resolve="TijdWaarde" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="vqB$L$qbCA" role="3cqZAp">
+                  <node concept="2OqwBi" id="vqB$L$qbCB" role="3clFbG">
+                    <node concept="2OqwBi" id="vqB$L$qbCC" role="2Oq$k0">
+                      <node concept="37vLTw" id="vqB$L$qbCD" role="2Oq$k0">
+                        <ref role="3cqZAo" node="vqB$L$qbCx" resolve="tijdWaarde" />
+                      </node>
+                      <node concept="3TrEf2" id="vqB$L$qJ2i" role="2OqNvi">
+                        <ref role="3Tt5mk" to="uwhu:vqB$L$qd2g" resolve="waarde" />
+                      </node>
+                    </node>
+                    <node concept="2DeJnY" id="vqB$L$qbCF" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="vqB$L$qbCG" role="3cqZAp">
+                  <node concept="2OqwBi" id="vqB$L$qbCH" role="3clFbG">
+                    <node concept="2OqwBi" id="vqB$L$qbCI" role="2Oq$k0">
+                      <node concept="37vLTw" id="vqB$L$qbCJ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3r$i4253ACn" resolve="waardeVanKenmerk" />
+                      </node>
+                      <node concept="3TrEf2" id="vqB$L$qbCK" role="2OqNvi">
+                        <ref role="3Tt5mk" to="3pw0:3r$i424SGCh" resolve="waarde" />
+                      </node>
+                    </node>
+                    <node concept="2oxUTD" id="vqB$L$qbCL" role="2OqNvi">
+                      <node concept="37vLTw" id="vqB$L$qbCM" role="2oxUTC">
+                        <ref role="3cqZAo" node="vqB$L$qbCx" resolve="tijdWaarde" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="JncvC" id="vqB$L$qbCN" role="JncvA">
+                <property role="TrG5h" value="tijdType" />
+                <node concept="2jxLKc" id="vqB$L$qbCO" role="1tU5fm" />
               </node>
             </node>
             <node concept="Jncv_" id="3r$i4253AE7" role="3cqZAp">
