@@ -12,40 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f9a1364-78d3-4826-8144-af78ce41dd34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/TijdWaarde_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/TijdWaarde_Editor$waardeSingleRoleHandler_llmq8g_a0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/TijdWaarde_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/TijdWaarde_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/TijdWaarde_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/EditorAspectDescriptorImpl.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/EditorAspectDescriptorImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/structure/ConceptPresentationAspectImpl.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/structure/ConceptPresentationAspectImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/structure/StructureAspectDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pdf/WAA in MPS EN.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pdf/WAA in MPS NL.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/behavior.mps" afterPath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/behavior.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/structure/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/models/editor.mps" afterPath="$PROJECT_DIR$/languages/Gegevens/models/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/models/structure.mps" afterPath="$PROJECT_DIR$/languages/Gegevens/models/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/editor/dependencies" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/editor/generated" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/generated" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/structure/generated" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/EditorAspectDescriptorImpl.java" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/EditorAspectDescriptorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/ConceptPresentationAspectImpl.java" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/ConceptPresentationAspectImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/trace.info" />
     </list>
     <ignored path="ProjectDeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -63,6 +32,7 @@
     <option name="enabledHints">
       <set>
         <option value="com.mbeddr.core.base.editor.codereview.showReviewState" />
+        <option value="com.mbeddr.core.base.editor.presentationMode.presentationMode" />
         <option value="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
         <option value="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
       </set>
@@ -74,7 +44,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="0ee2da28-a755-4f96-ade8-09383f5e9b12/r:9a48595d-2b54-4c72-803c-14578a171c10(TempModule0ee2da28-a755-4f96-ade8-09383f5e9b12/TempModel_2724790557774)">
+            <model ref="b0b5af16-65ae-48a5-a84b-b6c6bde2cd48/r:e74e20c2-6ffd-4aea-871c-bbaf20d7c4d1(TempModuleb0b5af16-65ae-48a5-a84b-b6c6bde2cd48/TempModel_38592307625544)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -104,9 +74,9 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="5Jf4KAPIgGE">
-                <node concept="3balQm" id="5Jf4KAPIgGF" role="aymYE" />
-                <node concept="2Clz$F" id="5Jf4KAPIgGG" role="aymYO">
+              <node concept="aymSD" id="3pq2asIWYtF">
+                <node concept="3balQm" id="3pq2asIWYtG" role="aymYE" />
+                <node concept="2Clz$F" id="3pq2asIWYtH" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
               </node>
@@ -138,16 +108,18 @@
       <file leaf-file-name="Objectief WAA2000" pinned="false" current-in-tab="true">
         <entry file="mps://node://GN.sandbox/GN.WAA/Objectief WAA2000">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="1099">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="103" />
-                    <property name="caretXRelative" value="40" />
+                    <property name="selectionStart" value="0" />
+                    <property name="hasNonTrivialSelection" value="true" />
+                    <property name="caretX" value="159" />
+                    <property name="selectionEnd" value="23" />
+                    <property name="caretXRelative" value="96" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6305595003050606828" />
+                      <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/797539131722830659" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -155,17 +127,18 @@
                 <transactionalProperties />
                 <foldable />
                 <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="ObjectiefRecht.editor.GN.EN" />
+                </enabledHints>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6305595003050606828" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/797539131722830659" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
                 <foldable />
                 <restoreAlways />
                 <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                  <enabledHintsElement enabledHintsAttribute="ObjectiefRecht.editor.GN.EN" />
                 </enabledHints>
               </inspectorMemento>
             </state>
@@ -225,16 +198,14 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6305595003050606828" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/797539131722830659" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
                 <foldable />
                 <restoreAlways />
                 <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                  <enabledHintsElement enabledHintsAttribute="ObjectiefRecht.editor.GN.EN" />
                 </enabledHints>
               </inspectorMemento>
               <node node_ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)/3955365814683229350" />
@@ -274,16 +245,14 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6305595003050606828" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/797539131722830659" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
                 <foldable />
                 <restoreAlways />
                 <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                  <enabledHintsElement enabledHintsAttribute="ObjectiefRecht.editor.GN.EN" />
                 </enabledHints>
               </inspectorMemento>
               <node node_ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)/3955365814685554590" />
@@ -338,7 +307,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="717" />
+    <option name="height" value="725" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -615,17 +584,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="Modules Pool" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -641,11 +611,10 @@
           </SELECTED>
         </subPane>
       </pane>
+      <pane id="FileSystem" />
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
         <subPane />
       </pane>
-      <pane id="Favorites" />
-      <pane id="FileSystem" />
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
         <subPane />
       </pane>
@@ -832,8 +801,8 @@
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="717" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1280" height="725" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Visualization" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -848,17 +817,15 @@
       <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5288035" sideWeight="0.42734376" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33682635" sideWeight="0.60859376" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33579883" sideWeight="0.6109375" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27844313" sideWeight="0.4" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26796407" sideWeight="0.36953124" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33682635" sideWeight="0.39140624" order="18" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31757754" sideWeight="0.5882813" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33579883" sideWeight="0.3890625" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.49676898" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3203593" sideWeight="0.37265626" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
@@ -875,8 +842,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Variabiity Consistency Verification" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="CBMC Lifted Results" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31757754" sideWeight="0.5882813" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CBMC Raw Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="27" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1094,7 +1063,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Build gerepareerd en README aangepast." />
     <MESSAGE value="Aanpassingen van Sjir doorgevoerd" />
     <MESSAGE value="Legal relations translated to english" />
     <MESSAGE value="Context, legal relations, legal actions and derivation rules translated." />
@@ -1119,7 +1087,8 @@
     <MESSAGE value="Formaliseren kenmerken" />
     <MESSAGE value="Alle voorwaarden geformaliseerd en duur probleem opgelost." />
     <MESSAGE value="Eerste stappen in opnemen voorbeelden" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eerste stappen in opnemen voorbeelden" />
+    <MESSAGE value="Alle voorbeelden klaar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alle voorbeelden klaar" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/&lt;no name&gt;[ConceptDeclaration]" />
@@ -2558,16 +2527,14 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6305595003050606828" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/797539131722830659" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
             <foldable />
             <restoreAlways />
             <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+              <enabledHintsElement enabledHintsAttribute="ObjectiefRecht.editor.GN.EN" />
             </enabledHints>
           </inspectorMemento>
           <node node_ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)/3955365814685554590" />
@@ -2626,16 +2593,14 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6305595003050606828" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/797539131722830659" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
             <foldable />
             <restoreAlways />
             <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="com.mbeddr.core.base.editor.codereview.showReviewState" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+              <enabledHintsElement enabledHintsAttribute="ObjectiefRecht.editor.GN.EN" />
             </enabledHints>
           </inspectorMemento>
           <node node_ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)/3955365814683229350" />
