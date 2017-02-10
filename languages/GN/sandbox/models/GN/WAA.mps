@@ -2245,6 +2245,62 @@
             </node>
           </node>
         </node>
+        <node concept="2M1C9k" id="6a$JffhzvIW" role="2M1C9r">
+          <property role="TrG5h" value="maandag tot vrijdag 5x8" />
+          <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+          <node concept="2M1C6R" id="6a$JffhzvIX" role="2M1C9l">
+            <node concept="2mbrj6" id="6a$JffhzvIY" role="2M1C6S">
+              <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+            </node>
+            <node concept="12cgni" id="6a$JffhzvIZ" role="2M1C9h">
+              <property role="12cgnl" value="maandag tot vrijdag 5x8" />
+            </node>
+          </node>
+          <node concept="2M1C6R" id="6a$JffhzvJ0" role="2M1C9l">
+            <node concept="2mbrj6" id="6a$JffhzvJ1" role="2M1C6S">
+              <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+            </node>
+            <node concept="1zyu0$" id="6a$JffhzvMw" role="2M1C9h">
+              <ref role="1zyu0_" node="6syAJDDQ44y" resolve="Vrijdag" />
+            </node>
+          </node>
+          <node concept="2M1C6R" id="6a$JffhzvJ3" role="2M1C9l">
+            <node concept="2mbrj6" id="6a$JffhzvJ4" role="2M1C6S">
+              <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+            </node>
+            <node concept="3dadDn" id="6a$JffhzvMA" role="2M1C9h">
+              <ref role="3dadDm" node="5Jf4KAPIoFr" resolve="'s ochtends 08:00-12:00" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C9k" id="6a$JffhzvKD" role="2M1C9r">
+          <property role="TrG5h" value="maandag tot vrijdag 5x8" />
+          <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+          <node concept="2M1C6R" id="6a$JffhzvKE" role="2M1C9l">
+            <node concept="2mbrj6" id="6a$JffhzvKF" role="2M1C6S">
+              <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+            </node>
+            <node concept="12cgni" id="6a$JffhzvKG" role="2M1C9h">
+              <property role="12cgnl" value="maandag tot vrijdag 5x8" />
+            </node>
+          </node>
+          <node concept="2M1C6R" id="6a$JffhzvKH" role="2M1C9l">
+            <node concept="2mbrj6" id="6a$JffhzvKI" role="2M1C6S">
+              <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+            </node>
+            <node concept="1zyu0$" id="6a$JffhzvMz" role="2M1C9h">
+              <ref role="1zyu0_" node="6syAJDDQ44y" resolve="Vrijdag" />
+            </node>
+          </node>
+          <node concept="2M1C6R" id="6a$JffhzvKK" role="2M1C9l">
+            <node concept="2mbrj6" id="6a$JffhzvKL" role="2M1C6S">
+              <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+            </node>
+            <node concept="3dadDn" id="6a$JffhzvMD" role="2M1C9h">
+              <ref role="3dadDm" node="5Jf4KAPIoFH" resolve="'s middags  12:30-16:30" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3D8HDq" id="6syAJDDCTZC" role="SxSPV">
