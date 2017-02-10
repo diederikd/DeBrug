@@ -18,7 +18,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
-  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Kort", "", false, "ObjectiefRecht.editor.GN.Kort"), new ConceptEditorHintImpl("MetLidwoord", "", false, "ObjectiefRecht.editor.GN.MetLidwoord"), new ConceptEditorHintImpl("ZonderLidwoord", "", true, "ObjectiefRecht.editor.GN.ZonderLidwoord"), new ConceptEditorHintImpl("EN", "English", true, "ObjectiefRecht.editor.GN.EN"), new ConceptEditorHintImpl("Tabel", "", true, "ObjectiefRecht.editor.GN.Tabel"));
+  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Kort", "", false, "ObjectiefRecht.editor.GN.Kort"), new ConceptEditorHintImpl("MetLidwoord", "", false, "ObjectiefRecht.editor.GN.MetLidwoord"), new ConceptEditorHintImpl("ZonderLidwoord", "", false, "ObjectiefRecht.editor.GN.ZonderLidwoord"), new ConceptEditorHintImpl("EN", "English", true, "ObjectiefRecht.editor.GN.EN"), new ConceptEditorHintImpl("Tabel", "", false, "ObjectiefRecht.editor.GN.Tabel"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {
@@ -198,7 +198,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 34:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new Kenmerk_Editor(), new Kenmerk_MetLidwoord_Editor(), new Kenmerk_ZonderLidwoord_Editor()});
+            return Arrays.asList(new ConceptEditor[]{new Kenmerk_Editor(), new Kenmerk_MetLidwoord_Editor(), new Kenmerk_Tabel_Editor(), new Kenmerk_ZonderLidwoord_Editor()});
           }
           break;
         case 35:

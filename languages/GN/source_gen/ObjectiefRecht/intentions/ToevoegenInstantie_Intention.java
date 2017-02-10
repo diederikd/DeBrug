@@ -13,7 +13,11 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.IntentionExecutableBase;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import ObjectiefRecht.behavior.VoorbeeldenMetInstanties__BehaviorDescriptor;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
 import jetbrains.mps.intentions.IntentionDescriptor;
 
 public final class ToevoegenInstantie_Intention extends IntentionDescriptorBase implements IntentionFactory {
@@ -44,11 +48,15 @@ public final class ToevoegenInstantie_Intention extends IntentionDescriptorBase 
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Toevoegen Instantie";
+      return "Toevoegen Instantie En Kenmerken";
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      VoorbeeldenMetInstanties__BehaviorDescriptor.ToevoegenInstantie_id3r$i4252qKC.invoke(node);
+      SNode instantie = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"));
+      SLinkOperations.setTarget(instantie, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "referentieNaarObject"), VoorbeeldenMetInstanties__BehaviorDescriptor.BetreffendeObject_id3r$i424UHML.invoke(node));
+      ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca1aL, 0x36e4484084e2ca1bL, "instanties"))).addElement(instantie);
+      InstantieVanObject__BehaviorDescriptor.ToevoegenVanKenmerkenAanInstantie_id3r$i4253ACb.invoke(instantie);
+
     }
     @Override
     public IntentionDescriptor getDescriptor() {

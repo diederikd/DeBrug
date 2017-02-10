@@ -20,8 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -33,9 +31,8 @@ public final class VoorbeeldenMetInstanties__BehaviorDescriptor extends BaseBHDe
   public static final SMethod<SNode> BetreffendeObject_id3r$i424UHML = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("BetreffendeObject").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3r$i424UHML").registry(REGISTRY).build();
   public static final SMethod<Iterable<SNode>> ObjectKenmerken_id3r$i424UUVJ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("ObjectKenmerken").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3r$i424UUVJ").registry(REGISTRY).build();
   public static final SMethod<Void> ToevoegenInstantie_id3r$i4252qKC = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ToevoegenInstantie").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3r$i4252qKC").registry(REGISTRY).build();
-  public static final SMethod<Void> ToevoegenVanKenmerkenAanInstantie_id3r$i424ULRA = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ToevoegenVanKenmerkenAanInstantie").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3r$i424ULRA").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(BetreffendeObject_id3r$i424UHML, ObjectKenmerken_id3r$i424UUVJ, ToevoegenInstantie_id3r$i4252qKC, ToevoegenVanKenmerkenAanInstantie_id3r$i424ULRA);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(BetreffendeObject_id3r$i424UHML, ObjectKenmerken_id3r$i424UUVJ, ToevoegenInstantie_id3r$i4252qKC);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -71,52 +68,6 @@ public final class VoorbeeldenMetInstanties__BehaviorDescriptor extends BaseBHDe
     SLinkOperations.setTarget(instantieVanObject, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "referentieNaarObject"), VoorbeeldenMetInstanties__BehaviorDescriptor.BetreffendeObject_id3r$i424UHML.invoke(__thisNode__));
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca1aL, 0x36e4484084e2ca1bL, "instanties"))).addElement(instantieVanObject);
   }
-  /*package*/ static void ToevoegenVanKenmerkenAanInstantie_id3r$i424ULRA(@NotNull SNode __thisNode__, SNode instantieVanObject) {
-    for (SNode kenmerk : Sequence.fromIterable(VoorbeeldenMetInstanties__BehaviorDescriptor.ObjectKenmerken_id3r$i424UUVJ.invoke(__thisNode__))) {
-      SNode waardeVanKenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, "ObjectiefRecht.structure.WaardeVanKenmerk"));
-      SNode referentieNaarAttribuutMetReferentieNaarKenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a6e75abL, "Gegevens.structure.ReferentieNaarAttribuutMetReferentieNaarKenmerk"));
-      SLinkOperations.setTarget(referentieNaarAttribuutMetReferentieNaarKenmerk, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a6e75abL, 0x361e7f407a6e75acL, "attribuut"), kenmerk);
-      SLinkOperations.setTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk"), referentieNaarAttribuutMetReferentieNaarKenmerk);
-
-      {
-        final SNode attribuutOnderwerpDatatype = SLinkOperations.getTarget(kenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"));
-        if (SNodeOperations.isInstanceOf(attribuutOnderwerpDatatype, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383394aL, "Gegevens.structure.OnderwerpDatatype"))) {
-          SNode objectWaarde = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6289L, "Gegevens.structure.ObjectWaarde"));
-          SLinkOperations.setTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde"), objectWaarde);
-        }
-      }
-      {
-        final SNode attribuutVanTypeRijVanKarakters = SLinkOperations.getTarget(kenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"));
-        if (SNodeOperations.isInstanceOf(attribuutVanTypeRijVanKarakters, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a1bfL, "Gegevens.structure.RijVanKaraktersDatatype"))) {
-          SNode waardeRijVanKarakters = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac563L, "Gegevens.structure.RijVanKaraktersWaarde"));
-          SLinkOperations.setTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde"), waardeRijVanKarakters);
-        }
-      }
-      {
-        final SNode attribuutVanTypeGeheelGetal = SLinkOperations.getTarget(kenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"));
-        if (SNodeOperations.isInstanceOf(attribuutVanTypeGeheelGetal, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a1cdL, "Gegevens.structure.GeheelGetalDatatype"))) {
-          SNode waardeGeheelGetal = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fe6L, "Gegevens.structure.GeheelGetalWaarde"));
-          SLinkOperations.setTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde"), waardeGeheelGetal);
-        }
-      }
-      {
-        final SNode attribuutVanTypeDatum = SLinkOperations.getTarget(kenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"));
-        if (SNodeOperations.isInstanceOf(attribuutVanTypeDatum, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a1b1L, "Gegevens.structure.DatumDatatype"))) {
-          SNode waardeDatum = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, "Gegevens.structure.DatumWaarde"));
-          SNodeFactoryOperations.setNewChild(waardeDatum, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, 0x1fabc0b15d9b6274L, "waarde"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, "Datum.structure.Datum")));
-          SLinkOperations.setTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde"), waardeDatum);
-        }
-      }
-      {
-        final SNode attribuutVanTypeDatum = SLinkOperations.getTarget(kenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"));
-        if (SNodeOperations.isInstanceOf(attribuutVanTypeDatum, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x56b967d667610da9L, "Gegevens.structure.JaNeeDatatype"))) {
-          SNode waardeJaNee = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac54cL, "Gegevens.structure.JaNeeWaarde"));
-          SLinkOperations.setTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde"), waardeJaNee);
-        }
-      }
-      ListSequence.fromList(SLinkOperations.getChildren(instantieVanObject, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca15L, "waardeVanKenmerken"))).addElement(waardeVanKenmerk);
-    }
-  }
 
   /*package*/ VoorbeeldenMetInstanties__BehaviorDescriptor() {
     super(REGISTRY);
@@ -140,9 +91,6 @@ public final class VoorbeeldenMetInstanties__BehaviorDescriptor extends BaseBHDe
         return (T) ((Iterable<SNode>) ObjectKenmerken_id3r$i424UUVJ(node));
       case 2:
         ToevoegenInstantie_id3r$i4252qKC(node);
-        return null;
-      case 3:
-        ToevoegenVanKenmerkenAanInstantie_id3r$i424ULRA(node, (SNode) parameters[0]);
         return null;
       default:
         throw new BHMethodNotFoundException(this, method);

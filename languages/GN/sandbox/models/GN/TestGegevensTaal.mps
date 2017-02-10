@@ -66,6 +66,9 @@
       <concept id="2282129504205496947" name="Gegevens.structure.DatumWaarde" flags="ng" index="12cab2">
         <child id="2282129504205496948" name="waarde" index="12cab5" />
       </concept>
+      <concept id="2282129504205456769" name="Gegevens.structure.ReeelGetalWaarde" flags="ng" index="12cgkK">
+        <property id="2282129504205496891" name="waarde" index="12caaa" />
+      </concept>
       <concept id="2282129504205456739" name="Gegevens.structure.RijVanKaraktersWaarde" flags="ng" index="12cgni">
         <property id="2282129504205456740" name="waarde" index="12cgnl" />
       </concept>
@@ -1038,8 +1041,8 @@
         <node concept="1cs0FF" id="GhrpPwVW$H" role="12cwu4">
           <ref role="1cs0FG" node="7rcH1JNxno2" />
         </node>
-        <node concept="12ca8S" id="GhrpPwXeuO" role="12frXJ">
-          <ref role="12ca8Z" node="542u6HPOcH1" resolve="1075 TK" />
+        <node concept="12cgkK" id="6gOPTeWMRov" role="12frXJ">
+          <property role="12caaa" value="-2.3" />
         </node>
       </node>
     </node>
