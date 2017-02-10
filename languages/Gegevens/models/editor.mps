@@ -780,10 +780,10 @@
     <property role="3GE5qa" value="Waarden" />
     <ref role="1XX52x" to="uwhu:1YFKb5t_BZA" resolve="GeheelGetalWaarde" />
     <node concept="3EZMnI" id="1YFKb5t_BZN" role="2wV5jI">
-      <node concept="3F0A7n" id="1YFKb5t_BZU" role="3EZMnx">
-        <ref role="1NtTu8" to="uwhu:1YFKb5t_BZB" resolve="waarde" />
-      </node>
       <node concept="l2Vlx" id="1YFKb5t_BZQ" role="2iSdaV" />
+      <node concept="3F1sOY" id="6a$JffhNDwR" role="3EZMnx">
+        <ref role="1NtTu8" to="uwhu:6a$JffhN9KX" resolve="waarde" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1YFKb5t_C05">
@@ -1452,6 +1452,16 @@
         <ref role="1NtTu8" to="uwhu:vqB$L$qd2g" resolve="waarde" />
       </node>
       <node concept="l2Vlx" id="vqB$L$qd2v" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6a$JffhN9KL">
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="1XX52x" to="uwhu:6a$JffhN9KB" resolve="GeheelGetal" />
+    <node concept="3EZMnI" id="6a$JffhN9KN" role="2wV5jI">
+      <node concept="l2Vlx" id="6a$JffhN9KQ" role="2iSdaV" />
+      <node concept="3F0A7n" id="6a$JffhNTmY" role="3EZMnx">
+        <ref role="1NtTu8" to="uwhu:6a$JffhNDwP" resolve="waarde" />
+      </node>
     </node>
   </node>
 </model>

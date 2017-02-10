@@ -24,6 +24,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_EnumeratieElement = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_EnumeratieWaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_GegevensModel = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_GeheelGetal = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_GeheelGetalDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_GeheelGetalWaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Identificatie = new ConceptPresentationBuilder().create();
@@ -92,66 +93,68 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 14:
         return props_GegevensModel;
       case 15:
-        return props_GeheelGetalDatatype;
+        return props_GeheelGetal;
       case 16:
-        return props_GeheelGetalWaarde;
+        return props_GeheelGetalDatatype;
       case 17:
-        return props_Identificatie;
+        return props_GeheelGetalWaarde;
       case 18:
-        return props_Instantie;
+        return props_Identificatie;
       case 19:
-        return props_InstantiesVanGegevens;
+        return props_Instantie;
       case 20:
-        return props_JaNeeDatatype;
+        return props_InstantiesVanGegevens;
       case 21:
-        return props_JaNeeWaarde;
+        return props_JaNeeDatatype;
       case 22:
-        return props_Object;
+        return props_JaNeeWaarde;
       case 23:
-        return props_ObjectDatatype;
+        return props_Object;
       case 24:
-        return props_ObjectInstantie;
+        return props_ObjectDatatype;
       case 25:
-        return props_ObjectWaarde;
+        return props_ObjectInstantie;
       case 26:
-        return props_OnderwerpDatatype;
+        return props_ObjectWaarde;
       case 27:
-        return props_ReeelGetalDatatype;
+        return props_OnderwerpDatatype;
       case 28:
-        return props_ReeelGetalWaarde;
+        return props_ReeelGetalDatatype;
       case 29:
-        return props_ReferentieNaarAbstractObject;
+        return props_ReeelGetalWaarde;
       case 30:
-        return props_ReferentieNaarAttribuut;
+        return props_ReferentieNaarAbstractObject;
       case 31:
-        return props_ReferentieNaarAttribuutMetReferentieNaarKenmerk;
+        return props_ReferentieNaarAttribuut;
       case 32:
-        return props_ReferentieNaarOnderwerp;
+        return props_ReferentieNaarAttribuutMetReferentieNaarKenmerk;
       case 33:
-        return props_ReferentieNaarOnderwerpOfSubject;
+        return props_ReferentieNaarOnderwerp;
       case 34:
-        return props_ReferentieNaarSubject;
+        return props_ReferentieNaarOnderwerpOfSubject;
       case 35:
-        return props_RijVanKaraktersDatatype;
+        return props_ReferentieNaarSubject;
       case 36:
-        return props_RijVanKaraktersWaarde;
+        return props_RijVanKaraktersDatatype;
       case 37:
-        return props_SubjectDatatype;
+        return props_RijVanKaraktersWaarde;
       case 38:
-        return props_Tabel;
+        return props_SubjectDatatype;
       case 39:
-        return props_TijdDatatype;
+        return props_Tabel;
       case 40:
-        return props_TijdWaarde;
+        return props_TijdDatatype;
       case 41:
-        return props_Waarde;
+        return props_TijdWaarde;
       case 42:
-        return props_WaardeVanAttribuut;
+        return props_Waarde;
       case 43:
-        return props_waardeJa;
+        return props_WaardeVanAttribuut;
       case 44:
-        return props_waardeJaNee;
+        return props_waardeJa;
       case 45:
+        return props_waardeJaNee;
+      case 46:
         return props_waardeNee;
     }
     throw new IllegalStateException("Unknown concept " + c);

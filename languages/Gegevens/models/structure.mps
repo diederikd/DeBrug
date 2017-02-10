@@ -384,10 +384,11 @@
     <property role="TrG5h" value="GeheelGetalWaarde" />
     <property role="3GE5qa" value="Waarden" />
     <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
-    <node concept="1TJgyi" id="1YFKb5t_BZB" role="1TKVEl">
-      <property role="IQ2nx" value="2282129504205176807" />
-      <property role="TrG5h" value="waarde" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyj" id="6a$JffhN9KX" role="1TKVEi">
+      <property role="IQ2ns" value="7108013867280407613" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="waarde" />
+      <ref role="20lvS9" node="6a$JffhN9KB" resolve="GeheelGetal" />
     </node>
   </node>
   <node concept="1TIwiD" id="1YFKb5t_C2q">
@@ -605,6 +606,17 @@
       <property role="20kJfa" value="waarde" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="jx79:5riiL_BUfcl" resolve="Tijd" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6a$JffhN9KB">
+    <property role="EcuMT" value="7108013867280407591" />
+    <property role="3GE5qa" value="Waarden" />
+    <property role="TrG5h" value="GeheelGetal" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6a$JffhNDwP" role="1TKVEl">
+      <property role="IQ2nx" value="7108013867280537653" />
+      <property role="TrG5h" value="waarde" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>
