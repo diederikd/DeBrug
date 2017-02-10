@@ -427,7 +427,7 @@
       <property role="IQ2ns" value="5540471952144036092" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="waarde" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="4NzHub3zR3h" resolve="waardeJaNee" />
     </node>
   </node>
@@ -467,7 +467,7 @@
       <property role="IQ2ns" value="2282129504205496948" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="waarde" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="jx79:6c9haf45sz3" resolve="Datum" />
     </node>
   </node>
@@ -603,7 +603,7 @@
       <property role="IQ2ns" value="565938754127712400" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="waarde" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="jx79:5riiL_BUfcl" resolve="Tijd" />
     </node>
   </node>

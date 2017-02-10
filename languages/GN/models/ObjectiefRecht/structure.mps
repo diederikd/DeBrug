@@ -1643,6 +1643,7 @@
   <node concept="1TIwiD" id="jcJoZ9T6vo">
     <property role="EcuMT" value="345859696665847768" />
     <property role="TrG5h" value="ObjectWaarde" />
+    <property role="3GE5qa" value="Waarden" />
     <ref role="1TJDcQ" to="uwhu:1YFKb5t_BZt" resolve="Waarde" />
     <node concept="1TJgyj" id="jcJoZ9T6vp" role="1TKVEi">
       <property role="IQ2ns" value="345859696665847769" />
@@ -1655,6 +1656,7 @@
   <node concept="1TIwiD" id="vqB$L$kRTC">
     <property role="EcuMT" value="565938754126315112" />
     <property role="TrG5h" value="EnumeratieWaarde" />
+    <property role="3GE5qa" value="Waarden" />
     <ref role="1TJDcQ" to="uwhu:1YFKb5t_BZt" resolve="Waarde" />
     <node concept="1TJgyj" id="vqB$L$kRTD" role="1TKVEi">
       <property role="IQ2ns" value="565938754126315113" />

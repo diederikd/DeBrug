@@ -10164,6 +10164,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="jcJoZ9T6wi">
+    <property role="3GE5qa" value="Waarden" />
     <ref role="1XX52x" to="3pw0:jcJoZ9T6vo" resolve="ObjectWaarde" />
     <node concept="3EZMnI" id="jcJoZ9T6wk" role="2wV5jI">
       <node concept="1iCGBv" id="jcJoZ9T6wr" role="3EZMnx">
@@ -10192,6 +10193,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="vqB$L$kRTX">
+    <property role="3GE5qa" value="Waarden" />
     <ref role="1XX52x" to="3pw0:vqB$L$kRTC" resolve="EnumeratieWaarde" />
     <node concept="3EZMnI" id="vqB$L$kRTZ" role="2wV5jI">
       <node concept="1iCGBv" id="vqB$L$kRU6" role="3EZMnx">
