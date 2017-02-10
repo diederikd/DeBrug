@@ -52,7 +52,7 @@ public class Datum_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_96duim_a0");
     Style style = new StyleImpl();
     GN_StyleSheet.apply_Regular(style, editorCell);
-    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.SELECTABLE, 0, true);
     style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createConstant_96duim_a0a(editorContext, node));
@@ -97,7 +97,7 @@ public class Datum_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_96duim_d0");
     Style style = new StyleImpl();
     GN_StyleSheet.apply_Regular(style, editorCell);
-    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.SELECTABLE, 0, true);
     style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createConstant_96duim_a3a(editorContext, node));
@@ -142,7 +142,7 @@ public class Datum_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_96duim_g0");
     Style style = new StyleImpl();
     GN_StyleSheet.apply_Regular(style, editorCell);
-    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.SELECTABLE, 0, true);
     style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createConstant_96duim_a6a(editorContext, node));
@@ -166,7 +166,7 @@ public class Datum_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_96duim_h0");
     Style style = new StyleImpl();
     GN_StyleSheet.apply_Regular(style, editorCell);
-    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.SELECTABLE, 0, true);
     style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createConstant_96duim_a7a(editorContext, node));
@@ -190,7 +190,7 @@ public class Datum_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_96duim_i0");
     Style style = new StyleImpl();
     GN_StyleSheet.apply_Regular(style, editorCell);
-    style.set(StyleAttributes.SELECTABLE, 0, false);
+    style.set(StyleAttributes.SELECTABLE, 0, true);
     style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createConstant_96duim_a8a(editorContext, node));

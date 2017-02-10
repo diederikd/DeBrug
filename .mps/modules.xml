@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/Algemeen/Algemeen.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Datum/Datum.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GN/ObjectiefRecht.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GN/runtime/GN.runtime.msd" folder="" />
