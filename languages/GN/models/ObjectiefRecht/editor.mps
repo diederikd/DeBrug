@@ -10058,7 +10058,35 @@
                         <node concept="2jxLKc" id="3r$i4253AEq" role="1tU5fm" />
                       </node>
                     </node>
-                    <node concept="3clFbH" id="6a$JffhR3JX" role="3cqZAp" />
+                    <node concept="3clFbF" id="389nFa6mvws" role="3cqZAp">
+                      <node concept="37vLTI" id="389nFa6mws6" role="3clFbG">
+                        <node concept="37vLTw" id="389nFa6mxCK" role="37vLTx">
+                          <ref role="3cqZAo" node="Vpbluy9nlh" resolve="waarde" />
+                        </node>
+                        <node concept="2OqwBi" id="389nFa6mvwu" role="37vLTJ">
+                          <node concept="1y4W85" id="389nFa6mvwv" role="2Oq$k0">
+                            <node concept="2rSBBp" id="389nFa6mvww" role="1y58nS" />
+                            <node concept="2OqwBi" id="389nFa6mvwx" role="1y566C">
+                              <node concept="1y4W85" id="389nFa6mvwy" role="2Oq$k0">
+                                <node concept="2rSAsx" id="389nFa6mvwz" role="1y58nS" />
+                                <node concept="2OqwBi" id="389nFa6mvw$" role="1y566C">
+                                  <node concept="2r2w_c" id="389nFa6mvw_" role="2Oq$k0" />
+                                  <node concept="3Tsc0h" id="389nFa6mvwA" role="2OqNvi">
+                                    <ref role="3TtcxE" to="3pw0:3r$i424SGCr" resolve="instanties" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3Tsc0h" id="389nFa6mvwB" role="2OqNvi">
+                                <ref role="3TtcxE" to="3pw0:3r$i424SGCl" resolve="waardeVanKenmerken" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="389nFa6mvwC" role="2OqNvi">
+                            <ref role="3Tt5mk" to="3pw0:3r$i424SGCh" resolve="waarde" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                   <node concept="2OqwBi" id="6a$JffhOHXn" role="3clFbw">
                     <node concept="2OqwBi" id="6a$JffhOHXo" role="2Oq$k0">
