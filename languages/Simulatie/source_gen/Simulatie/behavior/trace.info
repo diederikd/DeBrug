@@ -19,6 +19,9 @@
     <file name="BehaviorAspectDescriptor.java">
       <unit at="14,0,48,0" name="Simulatie.behavior.BehaviorAspectDescriptor" />
     </file>
+    <file name="Gegevenshuishouding_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Simulatie.behavior.Gegevenshuishouding_BehaviorDescriptor" />
+    </file>
     <file name="Informatiepositie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Simulatie.behavior.Informatiepositie_BehaviorDescriptor" />
     </file>

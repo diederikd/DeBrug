@@ -58,6 +58,7 @@
     <dependency reexport="false">61be2dc6-a140-4def-a592-7499aa2bac19(Datum)</dependency>
     <dependency reexport="false">7e450f4e-1ac3-41ef-a851-4598161bdb94(de.slisson.mps.tables)</dependency>
     <dependency reexport="false">da21218f-a674-474d-8b4e-d59e33007003(de.slisson.mps.tables.runtime)</dependency>
+    <dependency reexport="false">f856d46f-3338-47a8-8a48-11e26bc535e0(Algemeen)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -98,6 +99,7 @@
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="f856d46f-3338-47a8-8a48-11e26bc535e0(Algemeen)" version="0" />
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" version="0" />
     <module reference="30ef095a-d489-45ff-a80f-456a798ac125(Gegevens)" version="0" />

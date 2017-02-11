@@ -25,7 +25,7 @@ public final class Concept__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL, 0x1fabc0b15d9c0063L, "conceptnummer"), "0000");
+    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL, 0x40304c407dcbb87cL, "conceptnummer"), "0000");
   }
 
 

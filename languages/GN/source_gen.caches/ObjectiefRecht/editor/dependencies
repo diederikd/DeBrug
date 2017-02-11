@@ -199,35 +199,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent" />
   </dependency>
-  <dependency className="ObjectiefRecht.editor.BronGeldigheidKenmerk" file="BronGeldigheidKenmerk.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.Collection" />
-    <classNode dependClassName="java.util.Collections" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent" />
-  </dependency>
   <dependency className="ObjectiefRecht.editor.BronGeldigheidOnderwerp" file="BronGeldigheidOnderwerp.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -257,65 +228,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent" />
   </dependency>
-  <dependency className="ObjectiefRecht.editor.BronGeldigheidRechtsbetrekking" file="BronGeldigheidRechtsbetrekking.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.Collection" />
-    <classNode dependClassName="java.util.Collections" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent" />
-  </dependency>
   <dependency className="ObjectiefRecht.editor.BronGeldigheidRegel" file="BronGeldigheidRegel.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.Collection" />
-    <classNode dependClassName="java.util.Collections" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent" />
-  </dependency>
-  <dependency className="ObjectiefRecht.editor.BronGeldigheidSubject" file="BronGeldigheidSubject.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
@@ -495,11 +408,8 @@
     <classNode dependClassName="ObjectiefRecht.editor.Afleidingsregel_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.Artikel_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.BronGeldigheid" />
-    <classNode dependClassName="ObjectiefRecht.editor.BronGeldigheidKenmerk" />
     <classNode dependClassName="ObjectiefRecht.editor.BronGeldigheidOnderwerp" />
-    <classNode dependClassName="ObjectiefRecht.editor.BronGeldigheidRechtsbetrekking" />
     <classNode dependClassName="ObjectiefRecht.editor.BronGeldigheidRegel" />
-    <classNode dependClassName="ObjectiefRecht.editor.BronGeldigheidSubject" />
     <classNode dependClassName="ObjectiefRecht.editor.ConceptNummer" />
     <classNode dependClassName="ObjectiefRecht.editor.ConditieAlle_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.ConditieEen_Editor" />
@@ -583,6 +493,7 @@
     <classNode dependClassName="ObjectiefRecht.editor.SamengesteldeVoorwaarde_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.SubjectDataType" />
     <classNode dependClassName="ObjectiefRecht.editor.SubjectType_Editor" />
+    <classNode dependClassName="ObjectiefRecht.editor.TabelMetInstanties_Tabel_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.TenMinsteNa_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.TenMinsteVoor_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.TijdType_Editor" />
@@ -2232,6 +2143,63 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="ObjectiefRecht.editor.TabelMetInstanties_Tabel_Editor" file="TabelMetInstanties_Tabel_Editor.java">
+    <classNode dependClassName="ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor" />
+    <classNode dependClassName="ObjectiefRecht.behavior.Object__BehaviorDescriptor" />
+    <classNode dependClassName="de.slisson.mps.hacks.editor.EditorCacheHacks" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.cells.ChildsTracker" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.cells.PartialTableExtractor" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.cells.TableEditor" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.cells.TableUtils" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.Grid" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.GridAdapter" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.GridElementFactory" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.HeaderGrid" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.HeaderGridFactory" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.IGridElement" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeDeleteAction" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeInsertAction" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.StringHeaderReference" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.style.ITableStyleFactory" />
+    <classNode dependClassName="de.slisson.mps.tables.runtime.substitute.CellQuerySubstituteInfo" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Math" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime.Wrappers" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.cells.AbstractCellAction" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ITranslator2" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.MPSFonts" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Error" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellAction" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.smodel.action.SNodeFactoryOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>

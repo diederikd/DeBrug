@@ -18,20 +18,22 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(3);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(4);
+  /*package*/ final ConceptDescriptor myConceptGegevenshuishouding = createDescriptorForGegevenshuishouding();
   /*package*/ final ConceptDescriptor myConceptInformatiepositie = createDescriptorForInformatiepositie();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarRechtshandeling = createDescriptorForReferentieNaarRechtshandeling();
   /*package*/ final ConceptDescriptor myConceptSimulatie = createDescriptorForSimulatie();
 
   public StructureAspectDescriptor() {
-    myIndexMap.put(myConceptInformatiepositie.getId(), 0);
-    myIndexMap.put(myConceptReferentieNaarRechtshandeling.getId(), 1);
-    myIndexMap.put(myConceptSimulatie.getId(), 2);
+    myIndexMap.put(myConceptGegevenshuishouding.getId(), 0);
+    myIndexMap.put(myConceptInformatiepositie.getId(), 1);
+    myIndexMap.put(myConceptReferentieNaarRechtshandeling.getId(), 2);
+    myIndexMap.put(myConceptSimulatie.getId(), 3);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptInformatiepositie, myConceptReferentieNaarRechtshandeling, myConceptSimulatie);
+    return Arrays.asList(myConceptGegevenshuishouding, myConceptInformatiepositie, myConceptReferentieNaarRechtshandeling, myConceptSimulatie);
   }
 
   @Override
@@ -43,10 +45,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     }
     switch (((int) index)) {
       case 0:
-        return myConceptInformatiepositie;
+        return myConceptGegevenshuishouding;
       case 1:
-        return myConceptReferentieNaarRechtshandeling;
+        return myConceptInformatiepositie;
       case 2:
+        return myConceptReferentieNaarRechtshandeling;
+      case 3:
         return myConceptSimulatie;
       default:
         throw new IllegalStateException();
@@ -63,6 +67,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return (res == null ? -1 : res);
   }
 
+  private static ConceptDescriptor createDescriptorForGegevenshuishouding() {
+    return new ConceptDescriptorBuilder("Simulatie.structure.Gegevenshuishouding", MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x6807b3aa0b72d4dfL, "tabellen", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L), true, true, false, new SNodePointer("r:516f69e8-d332-4ecb-b3a2-f14c7ad25337(Simulatie.structure)", "7496157647699367135"))).children(new String[]{"tabellen"}, new boolean[]{true}).rootable().sourceNode(new SNodePointer("r:516f69e8-d332-4ecb-b3a2-f14c7ad25337(Simulatie.structure)", "7496157647699367134")).create();
+  }
   private static ConceptDescriptor createDescriptorForInformatiepositie() {
     return new ConceptDescriptorBuilder("Simulatie.structure.Informatiepositie", MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x6c69e5201860cca3L, "rechtsbetrekkingen", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL), true, true, false, new SNodePointer("r:516f69e8-d332-4ecb-b3a2-f14c7ad25337(Simulatie.structure)", "7812026954661547171"))).children(new String[]{"rechtsbetrekkingen"}, new boolean[]{true}).sourceNode(new SNodePointer("r:516f69e8-d332-4ecb-b3a2-f14c7ad25337(Simulatie.structure)", "7867191925628556449")).create();
   }

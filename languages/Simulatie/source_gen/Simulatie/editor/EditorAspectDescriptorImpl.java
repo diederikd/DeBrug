@@ -27,25 +27,30 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       switch (switchIndex) {
         case 0:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Informatiepositie_Editor());
+            return Collections.<ConceptEditor>singletonList(new Gegevenshuishouding_Editor());
           }
           break;
         case 1:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new Rechtsbetrekking_RechtspositieRol1_Editor(), new Rechtsbetrekking_RechtspositieRol2_Editor(), new Rechtsbetrekking_Simulatie_Editor()});
+            return Collections.<ConceptEditor>singletonList(new Informatiepositie_Editor());
           }
           break;
         case 2:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rechtshandeling_UitgevoerdeHandeling_Editor());
+            return Arrays.asList(new ConceptEditor[]{new Rechtsbetrekking_RechtspositieRol1_Editor(), new Rechtsbetrekking_RechtspositieRol2_Editor(), new Rechtsbetrekking_Simulatie_Editor()});
           }
           break;
         case 3:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new ReferentieNaarRechtshandeling_HandelingenRol1_Editor(), new ReferentieNaarRechtshandeling_HandelingenRol2_Editor()});
+            return Collections.<ConceptEditor>singletonList(new Rechtshandeling_UitgevoerdeHandeling_Editor());
           }
           break;
         case 4:
+          if (true) {
+            return Arrays.asList(new ConceptEditor[]{new ReferentieNaarRechtshandeling_HandelingenRol1_Editor(), new ReferentieNaarRechtshandeling_HandelingenRol2_Editor()});
+          }
+          break;
+        case 5:
           if (true) {
             return Collections.<ConceptEditor>singletonList(new Simulatie_Editor());
           }
@@ -69,5 +74,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L, "Simulatie.structure.Informatiepositie"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL, "Simulatie.structure.Gegevenshuishouding"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L, "Simulatie.structure.Informatiepositie"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"));
 }

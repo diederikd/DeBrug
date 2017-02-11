@@ -146,5 +146,21 @@
       <ref role="20lvS9" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6w7GUCbsHju">
+    <property role="EcuMT" value="7496157647699367134" />
+    <property role="TrG5h" value="Gegevenshuishouding" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6w7GUCbsHjv" role="1TKVEi">
+      <property role="IQ2ns" value="7496157647699367135" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tabellen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="3pw0:6w7GUCbs7K9" resolve="TabelMetInstanties" />
+    </node>
+    <node concept="PrWs8" id="6w7GUCbsHkT" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
