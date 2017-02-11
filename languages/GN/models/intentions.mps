@@ -10,8 +10,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="jx79" ref="r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)" implicit="true" />
-    <import index="ll8w" ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)" implicit="true" />
     <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" implicit="true" />
+    <import index="ll8w" ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1985,132 +1985,6 @@
       </node>
     </node>
   </node>
-  <node concept="2S6QgY" id="3r$i424YPuv">
-    <property role="TrG5h" value="ToevoegenKenmerken" />
-    <property role="3GE5qa" value="ObjectInstantie" />
-    <ref role="2ZfgGC" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
-    <node concept="2S6ZIM" id="3r$i424YPuw" role="2ZfVej">
-      <node concept="3clFbS" id="3r$i424YPux" role="2VODD2">
-        <node concept="3cpWs6" id="3r$i424YPBx" role="3cqZAp">
-          <node concept="Xl_RD" id="3r$i424YPSl" role="3cqZAk">
-            <property role="Xl_RC" value="Toevoegen Van Kenmerken" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="3r$i424YPuy" role="2ZfgGD">
-      <node concept="3clFbS" id="3r$i424YPuz" role="2VODD2">
-        <node concept="3clFbF" id="3r$i4255wSY" role="3cqZAp">
-          <node concept="2OqwBi" id="3r$i4255x0f" role="3clFbG">
-            <node concept="2Sf5sV" id="3r$i4255wSX" role="2Oq$k0" />
-            <node concept="2qgKlT" id="3r$i4255x9H" role="2OqNvi">
-              <ref role="37wK5l" to="ll8w:3r$i4253ACb" resolve="ToevoegenVanKenmerkenAanInstantie" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="3pq2asJ4U15" role="2ZfVeh">
-      <node concept="3clFbS" id="3pq2asJ4U16" role="2VODD2">
-        <node concept="3cpWs6" id="3pq2asJ4Ucf" role="3cqZAp">
-          <node concept="3clFbT" id="3pq2asJ4Uqz" role="3cqZAk">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="3r$i4252$xH">
-    <property role="3GE5qa" value="ObjectInstantie" />
-    <property role="TrG5h" value="ToevoegenInstantie" />
-    <ref role="2ZfgGC" to="3pw0:3r$i424SGCq" resolve="VoorbeeldenMetInstanties" />
-    <node concept="2S6ZIM" id="3r$i4252$xI" role="2ZfVej">
-      <node concept="3clFbS" id="3r$i4252$xJ" role="2VODD2">
-        <node concept="3cpWs6" id="3r$i4252$E_" role="3cqZAp">
-          <node concept="Xl_RD" id="3r$i4252$Vp" role="3cqZAk">
-            <property role="Xl_RC" value="Toevoegen Instantie En Kenmerken" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="3r$i4252$xK" role="2ZfgGD">
-      <node concept="3clFbS" id="3r$i4252$xL" role="2VODD2">
-        <node concept="1X3_iC" id="3pq2asJ3Boq" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="3r$i4255wrQ" role="8Wnug">
-            <node concept="2OqwBi" id="3r$i4255wyQ" role="3clFbG">
-              <node concept="2Sf5sV" id="3r$i4255wrP" role="2Oq$k0" />
-              <node concept="2qgKlT" id="3r$i4255wGo" role="2OqNvi">
-                <ref role="37wK5l" to="ll8w:3r$i4252qKC" resolve="ToevoegenInstantie" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="vqB$L$gPgX" role="3cqZAp">
-          <node concept="3cpWsn" id="vqB$L$gPgV" role="3cpWs9">
-            <property role="TrG5h" value="instantie" />
-            <node concept="3Tqbb2" id="vqB$L$gPhz" role="1tU5fm">
-              <ref role="ehGHo" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
-            </node>
-            <node concept="2ShNRf" id="vqB$L$gPkd" role="33vP2m">
-              <node concept="3zrR0B" id="vqB$L$gPkb" role="2ShVmc">
-                <node concept="3Tqbb2" id="vqB$L$gPkc" role="3zrR0E">
-                  <ref role="ehGHo" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="vqB$L$gPlw" role="3cqZAp">
-          <node concept="2OqwBi" id="vqB$L$gQ3V" role="3clFbG">
-            <node concept="2OqwBi" id="vqB$L$gPtY" role="2Oq$k0">
-              <node concept="37vLTw" id="vqB$L$gPlu" role="2Oq$k0">
-                <ref role="3cqZAo" node="vqB$L$gPgV" resolve="instantie" />
-              </node>
-              <node concept="3TrEf2" id="vqB$L$gPEU" role="2OqNvi">
-                <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="referentieNaarObject" />
-              </node>
-            </node>
-            <node concept="2oxUTD" id="vqB$L$gQjW" role="2OqNvi">
-              <node concept="2OqwBi" id="vqB$L$gQHy" role="2oxUTC">
-                <node concept="2Sf5sV" id="3pq2asJ3BMb" role="2Oq$k0" />
-                <node concept="2qgKlT" id="vqB$L$gSKA" role="2OqNvi">
-                  <ref role="37wK5l" to="ll8w:3r$i424UHML" resolve="BetreffendeObject" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="vqB$L$gTdS" role="3cqZAp">
-          <node concept="2OqwBi" id="vqB$L$gVjp" role="3clFbG">
-            <node concept="2OqwBi" id="vqB$L$gTlR" role="2Oq$k0">
-              <node concept="2Sf5sV" id="3pq2asJ3Ckl" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="vqB$L$gT_v" role="2OqNvi">
-                <ref role="3TtcxE" to="3pw0:3r$i424SGCr" resolve="instanties" />
-              </node>
-            </node>
-            <node concept="TSZUe" id="vqB$L$h6Mb" role="2OqNvi">
-              <node concept="37vLTw" id="vqB$L$h6Ya" role="25WWJ7">
-                <ref role="3cqZAo" node="vqB$L$gPgV" resolve="instantie" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="vqB$L$im8p" role="3cqZAp">
-          <node concept="2OqwBi" id="vqB$L$imuQ" role="3clFbG">
-            <node concept="37vLTw" id="vqB$L$im8n" role="2Oq$k0">
-              <ref role="3cqZAo" node="vqB$L$gPgV" resolve="instantie" />
-            </node>
-            <node concept="2qgKlT" id="vqB$L$imJN" role="2OqNvi">
-              <ref role="37wK5l" to="ll8w:3r$i4253ACb" resolve="ToevoegenVanKenmerkenAanInstantie" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="3pq2asJ3Bt2" role="3cqZAp" />
-      </node>
-    </node>
-  </node>
   <node concept="2S6QgY" id="6a$JffhB2mZ">
     <property role="TrG5h" value="DatumMigreren" />
     <ref role="2ZfgGC" to="3pw0:64gsXol8CO2" resolve="Context" />
@@ -2233,6 +2107,241 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3r$i4252$xH">
+    <property role="3GE5qa" value="ObjectInstantie" />
+    <property role="TrG5h" value="ToevoegenInstantie" />
+    <ref role="2ZfgGC" to="3pw0:3r$i424SGCq" resolve="VoorbeeldenMetInstanties" />
+    <node concept="2S6ZIM" id="3r$i4252$xI" role="2ZfVej">
+      <node concept="3clFbS" id="3r$i4252$xJ" role="2VODD2">
+        <node concept="3cpWs6" id="3r$i4252$E_" role="3cqZAp">
+          <node concept="Xl_RD" id="3r$i4252$Vp" role="3cqZAk">
+            <property role="Xl_RC" value="Toevoegen Instantie En Kenmerken" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3r$i4252$xK" role="2ZfgGD">
+      <node concept="3clFbS" id="3r$i4252$xL" role="2VODD2">
+        <node concept="1X3_iC" id="3pq2asJ3Boq" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="3r$i4255wrQ" role="8Wnug">
+            <node concept="2OqwBi" id="3r$i4255wyQ" role="3clFbG">
+              <node concept="2Sf5sV" id="3r$i4255wrP" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3r$i4255wGo" role="2OqNvi">
+                <ref role="37wK5l" to="ll8w:3r$i4252qKC" resolve="ToevoegenInstantie" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="vqB$L$gPgX" role="3cqZAp">
+          <node concept="3cpWsn" id="vqB$L$gPgV" role="3cpWs9">
+            <property role="TrG5h" value="instantie" />
+            <node concept="3Tqbb2" id="vqB$L$gPhz" role="1tU5fm">
+              <ref role="ehGHo" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+            </node>
+            <node concept="2ShNRf" id="vqB$L$gPkd" role="33vP2m">
+              <node concept="3zrR0B" id="vqB$L$gPkb" role="2ShVmc">
+                <node concept="3Tqbb2" id="vqB$L$gPkc" role="3zrR0E">
+                  <ref role="ehGHo" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="vqB$L$gPlw" role="3cqZAp">
+          <node concept="2OqwBi" id="vqB$L$gQ3V" role="3clFbG">
+            <node concept="2OqwBi" id="vqB$L$gPtY" role="2Oq$k0">
+              <node concept="37vLTw" id="vqB$L$gPlu" role="2Oq$k0">
+                <ref role="3cqZAo" node="vqB$L$gPgV" resolve="instantie" />
+              </node>
+              <node concept="3TrEf2" id="vqB$L$gPEU" role="2OqNvi">
+                <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="referentieNaarObject" />
+              </node>
+            </node>
+            <node concept="2oxUTD" id="vqB$L$gQjW" role="2OqNvi">
+              <node concept="2OqwBi" id="vqB$L$gQHy" role="2oxUTC">
+                <node concept="2Sf5sV" id="3pq2asJ3BMb" role="2Oq$k0" />
+                <node concept="2qgKlT" id="vqB$L$gSKA" role="2OqNvi">
+                  <ref role="37wK5l" to="ll8w:3r$i424UHML" resolve="BetreffendeObject" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="vqB$L$gTdS" role="3cqZAp">
+          <node concept="2OqwBi" id="vqB$L$gVjp" role="3clFbG">
+            <node concept="2OqwBi" id="vqB$L$gTlR" role="2Oq$k0">
+              <node concept="2Sf5sV" id="3pq2asJ3Ckl" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="vqB$L$gT_v" role="2OqNvi">
+                <ref role="3TtcxE" to="3pw0:3r$i424SGCr" resolve="instanties" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="vqB$L$h6Mb" role="2OqNvi">
+              <node concept="37vLTw" id="vqB$L$h6Ya" role="25WWJ7">
+                <ref role="3cqZAo" node="vqB$L$gPgV" resolve="instantie" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="vqB$L$im8p" role="3cqZAp">
+          <node concept="2OqwBi" id="vqB$L$imuQ" role="3clFbG">
+            <node concept="37vLTw" id="vqB$L$im8n" role="2Oq$k0">
+              <ref role="3cqZAo" node="vqB$L$gPgV" resolve="instantie" />
+            </node>
+            <node concept="2qgKlT" id="vqB$L$imJN" role="2OqNvi">
+              <ref role="37wK5l" to="ll8w:3r$i4253ACb" resolve="ToevoegenVanKenmerkenAanInstantie" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3pq2asJ3Bt2" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3r$i424YPuv">
+    <property role="TrG5h" value="ToevoegenKenmerken" />
+    <property role="3GE5qa" value="ObjectInstantie" />
+    <ref role="2ZfgGC" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+    <node concept="2S6ZIM" id="3r$i424YPuw" role="2ZfVej">
+      <node concept="3clFbS" id="3r$i424YPux" role="2VODD2">
+        <node concept="3cpWs6" id="3r$i424YPBx" role="3cqZAp">
+          <node concept="Xl_RD" id="3r$i424YPSl" role="3cqZAk">
+            <property role="Xl_RC" value="Toevoegen Van Kenmerken" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3r$i424YPuy" role="2ZfgGD">
+      <node concept="3clFbS" id="3r$i424YPuz" role="2VODD2">
+        <node concept="3clFbF" id="3r$i4255wSY" role="3cqZAp">
+          <node concept="2OqwBi" id="3r$i4255x0f" role="3clFbG">
+            <node concept="2Sf5sV" id="3r$i4255wSX" role="2Oq$k0" />
+            <node concept="2qgKlT" id="3r$i4255x9H" role="2OqNvi">
+              <ref role="37wK5l" to="ll8w:3r$i4253ACb" resolve="ToevoegenVanKenmerkenAanInstantie" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6EEavymu0xg">
+    <property role="3GE5qa" value="ObjectInstantie" />
+    <property role="TrG5h" value="ToevoegenInstantieAanTabel" />
+    <ref role="2ZfgGC" to="3pw0:6w7GUCbs7K9" resolve="TabelMetInstanties" />
+    <node concept="2S6ZIM" id="6EEavymu0xh" role="2ZfVej">
+      <node concept="3clFbS" id="6EEavymu0xi" role="2VODD2">
+        <node concept="3cpWs6" id="6EEavymu0xj" role="3cqZAp">
+          <node concept="Xl_RD" id="6EEavymu0xk" role="3cqZAk">
+            <property role="Xl_RC" value="Toevoegen Instantie En Kenmerken" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6EEavymu0xl" role="2ZfgGD">
+      <node concept="3clFbS" id="6EEavymu0xm" role="2VODD2">
+        <node concept="1X3_iC" id="6EEavymu0xn" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="6EEavymu0xo" role="8Wnug">
+            <node concept="2OqwBi" id="6EEavymu0xp" role="3clFbG">
+              <node concept="2Sf5sV" id="6EEavymu0xq" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6EEavymu0xr" role="2OqNvi">
+                <ref role="37wK5l" to="ll8w:3r$i4252qKC" resolve="ToevoegenInstantie" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6EEavymu0xs" role="3cqZAp">
+          <node concept="3cpWsn" id="6EEavymu0xt" role="3cpWs9">
+            <property role="TrG5h" value="instantie" />
+            <node concept="3Tqbb2" id="6EEavymu0xu" role="1tU5fm">
+              <ref role="ehGHo" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+            </node>
+            <node concept="2ShNRf" id="6EEavymu0xv" role="33vP2m">
+              <node concept="3zrR0B" id="6EEavymu0xw" role="2ShVmc">
+                <node concept="3Tqbb2" id="6EEavymu0xx" role="3zrR0E">
+                  <ref role="ehGHo" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6EEavymu0xy" role="3cqZAp">
+          <node concept="2OqwBi" id="6EEavymu0xz" role="3clFbG">
+            <node concept="2OqwBi" id="6EEavymu0x$" role="2Oq$k0">
+              <node concept="37vLTw" id="6EEavymu0x_" role="2Oq$k0">
+                <ref role="3cqZAo" node="6EEavymu0xt" resolve="instantie" />
+              </node>
+              <node concept="3TrEf2" id="6EEavymu0xA" role="2OqNvi">
+                <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="referentieNaarObject" />
+              </node>
+            </node>
+            <node concept="2oxUTD" id="6EEavymu0xB" role="2OqNvi">
+              <node concept="2OqwBi" id="6EEavymu0xC" role="2oxUTC">
+                <node concept="2Sf5sV" id="6EEavymu0xD" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6EEavymuv21" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3pw0:6w7GUCbsbmS" resolve="object" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6EEavymu0xF" role="3cqZAp">
+          <node concept="2OqwBi" id="6EEavymu0xG" role="3clFbG">
+            <node concept="2OqwBi" id="6EEavymu0xH" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6EEavymu0xI" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="6EEavymu1jQ" role="2OqNvi">
+                <ref role="3TtcxE" to="3pw0:6w7GUCbsbmv" resolve="instanties" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="6EEavymu0xK" role="2OqNvi">
+              <node concept="37vLTw" id="6EEavymu0xL" role="25WWJ7">
+                <ref role="3cqZAo" node="6EEavymu0xt" resolve="instantie" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6EEavymu0xM" role="3cqZAp">
+          <node concept="2OqwBi" id="6EEavymu0xN" role="3clFbG">
+            <node concept="37vLTw" id="6EEavymu0xO" role="2Oq$k0">
+              <ref role="3cqZAo" node="6EEavymu0xt" resolve="instantie" />
+            </node>
+            <node concept="2qgKlT" id="6EEavymu0xP" role="2OqNvi">
+              <ref role="37wK5l" to="ll8w:3r$i4253ACb" resolve="ToevoegenVanKenmerkenAanInstantie" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6EEavymu0xQ" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="2SaL7w" id="2IjnF__$LHt" role="2ZfVeh">
+      <node concept="3clFbS" id="2IjnF__$LHu" role="2VODD2">
+        <node concept="3clFbJ" id="2IjnF__$MIW" role="3cqZAp">
+          <node concept="2OqwBi" id="2IjnF__$NIw" role="3clFbw">
+            <node concept="2OqwBi" id="2IjnF__$N2k" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2IjnF__$MQd" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2IjnF__$NiB" role="2OqNvi">
+                <ref role="3Tt5mk" to="3pw0:6w7GUCbsbmS" resolve="object" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2IjnF__$O5f" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="2IjnF__$MIY" role="3clFbx">
+            <node concept="3cpWs6" id="2IjnF__$Ogf" role="3cqZAp">
+              <node concept="3clFbT" id="2IjnF__$Orm" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2IjnF__$OLJ" role="3cqZAp">
+          <node concept="3clFbT" id="2IjnF__$P8k" role="3cqZAk">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>

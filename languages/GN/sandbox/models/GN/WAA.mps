@@ -24,6 +24,7 @@
         <child id="3694879098876164254" name="datumtijdvaninitialisatie" index="3zKq1C" />
         <child id="3694879098862050847" name="uitvoerbarehandelingen2" index="3WXGrD" />
       </concept>
+      <concept id="7496157647699367134" name="Simulatie.structure.Gegevenshuishouding" flags="ng" index="1ztmtO" />
       <concept id="3694879098862050844" name="Simulatie.structure.ReferentieNaarRechtshandeling" flags="ng" index="3WXGrE">
         <reference id="3694879098862050845" name="rechtshandeling" index="3WXGrF" />
       </concept>
@@ -3787,6 +3788,9 @@
     <node concept="3WXGrE" id="6a$JffhMMN6" role="3WXGrD">
       <ref role="3WXGrF" node="1VomLPHLX4J" resolve="Wijzigen van de spreiding van de uren" />
     </node>
+  </node>
+  <node concept="1ztmtO" id="6EEavyms9IX">
+    <property role="TrG5h" value="Gegevenshuishouding WAA2000" />
   </node>
 </model>
 

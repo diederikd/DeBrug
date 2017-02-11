@@ -9,6 +9,16 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
+import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.nodeEditor.InlineCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import Datum.editor.GN_StyleSheet;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import de.slisson.mps.tables.runtime.cells.TableEditor;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
@@ -33,8 +43,6 @@ import de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeDeleteAction;
 import de.slisson.mps.tables.runtime.gridmodel.HeaderGridFactory;
 import de.slisson.mps.tables.runtime.gridmodel.StringHeaderReference;
 import de.slisson.mps.tables.runtime.style.ITableStyleFactory;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
@@ -59,9 +67,80 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createTable_d9mrgs_a(editorContext, node);
+    return this.createCollection_d9mrgs_a(editorContext, node);
   }
-  private EditorCell createTable_d9mrgs_a(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCollection_d9mrgs_a(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_d9mrgs_a");
+    editorCell.setBig(true);
+    editorCell.addEditorCell(this.createConstant_d9mrgs_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_d9mrgs_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_d9mrgs_c0(editorContext, node));
+    editorCell.addEditorCell(this.createTable_d9mrgs_d0(editorContext, node));
+    return editorCell;
+  }
+  private EditorCell createConstant_d9mrgs_a0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "object");
+    editorCell.setCellId("Constant_d9mrgs_a0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_d9mrgs_b0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_d9mrgs_b0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefCell_d9mrgs_c0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("object");
+    provider.setNoTargetText("<no object>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new TabelMetInstanties_Tabel_Editor._Inline_d9mrgs_a2a());
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("object");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  public static class _Inline_d9mrgs_a2a extends InlineCellProvider {
+    public _Inline_d9mrgs_a2a() {
+      super();
+    }
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createProperty_d9mrgs_a0c0(editorContext, node);
+    }
+    private EditorCell createProperty_d9mrgs_a0c0(EditorContext editorContext, SNode node) {
+      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+      provider.setRole("name");
+      provider.setNoTargetText("<no name>");
+      provider.setReadOnly(true);
+      EditorCell editorCell;
+      editorCell = provider.createEditorCell(editorContext);
+      editorCell.setCellId("property_name");
+      Style style = new StyleImpl();
+      GN_StyleSheet.apply_Onderwerp(style, editorCell);
+      editorCell.getStyle().putAll(style);
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      SNode attributeConcept = provider.getRoleAttribute();
+      if (attributeConcept != null) {
+        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+        return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+      } else
+      return editorCell;
+    }
+  }
+  private EditorCell createTable_d9mrgs_d0(final EditorContext editorContext, final SNode node) {
 
     final Wrappers._T<TableEditor> editorCell = new Wrappers._T<TableEditor>(null);
     _FunctionTypes._void_P0_E0 creator = new _FunctionTypes._void_P0_E0() {
@@ -77,24 +156,23 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
               // column headers 
               {
                 List<HeaderGrid> headerGrids = new ArrayList<HeaderGrid>(1);
-                headerGrids.add(createHeadQuery_d9mrgs_a0(editorContext, node));
+                headerGrids.add(createHeadQuery_d9mrgs_a3a(editorContext, node));
                 grid.setColumnHeaders(headerGrids);
               }
 
               // row headers 
               {
                 List<HeaderGrid> headerGrids = new ArrayList<HeaderGrid>(1);
-                headerGrids.add(createHeadQuery_d9mrgs_a0_0(editorContext, node));
+                headerGrids.add(createHeadQuery_d9mrgs_a3a_0(editorContext, node));
                 grid.setRowHeaders(headerGrids);
               }
-              final Grid childGrid = createTableCellQuery_d9mrgs_a0(editorContext, node);
+              final Grid childGrid = createTableCellQuery_d9mrgs_a3a(editorContext, node);
               childGrid.setSpanX(Math.max(1, grid.getColumnHeadersSizeX()));
               childGrid.setSpanY(Math.max(1, grid.getRowHeadersSizeY()));
               grid.setElement(0, 0, childGrid);
 
               editorCell.value = new TableEditor(editorContext, node, grid);
-              editorCell.value.setCellId("Table_d9mrgs_a");
-              editorCell.value.setBig(true);
+              editorCell.value.setCellId("Table_d9mrgs_d0");
 
               editorCell.value.init();
             } finally {
@@ -111,7 +189,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
     return editorCell.value;
 
   }
-  public HeaderGrid createHeadQuery_d9mrgs_a0(final EditorContext editorContext, final SNode node) {
+  public HeaderGrid createHeadQuery_d9mrgs_a3a(final EditorContext editorContext, final SNode node) {
     Object queryResult = new Object() {
       public Object query() {
         System.out.println("Node " + SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties")));
@@ -155,7 +233,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
 
     return grid;
   }
-  public HeaderGrid createHeadQuery_d9mrgs_a0_0(final EditorContext editorContext, final SNode node) {
+  public HeaderGrid createHeadQuery_d9mrgs_a3a_0(final EditorContext editorContext, final SNode node) {
     Object queryResult = new Object() {
       public Object query() {
         if (ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties"))).isNotEmpty()) {
@@ -188,7 +266,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
 
     return grid;
   }
-  public Grid createTableCellQuery_d9mrgs_a0(final EditorContext editorContext, final SNode node) {
+  public Grid createTableCellQuery_d9mrgs_a3a(final EditorContext editorContext, final SNode node) {
     final Grid grid = new Grid();
     final GridAdapter gridAdapter = new GridAdapter(grid, editorContext, node);
 
@@ -240,7 +318,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
 
                     listElement.setSubstituteInfo(new CellQuerySubstituteInfo(editorContext, node, (queryResult_ instanceof SNode ? ((SNode) queryResult_) : SNodeOperations.cast(TableUtils.getSNode(listElement, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept")), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"))), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"), null) {
                       public SNode substituteNode(SNode currentNode, SNode newValue) {
-                        return doSubstituteNode_d9mrgs_a0(node, x, y, index, editorContext, currentNode, newValue);
+                        return doSubstituteNode_d9mrgs_a3a(node, x, y, index, editorContext, currentNode, newValue);
                       }
                     });
 
@@ -263,7 +341,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
               } else {
                 gridAdapter.setSubstituteInfo(x, y, new CellQuerySubstituteInfo(editorContext, node, (queryResult_ instanceof SNode ? ((SNode) queryResult_) : SNodeOperations.cast(TableUtils.getSNode(currentGridElement, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept")), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"))), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"), null) {
                   public SNode substituteNode(SNode currentNode, SNode newValue) {
-                    return doSubstituteNode_d9mrgs_a0(node, x, y, 0, editorContext, currentNode, newValue);
+                    return doSubstituteNode_d9mrgs_a3a(node, x, y, 0, editorContext, currentNode, newValue);
                   }
                 });
                 if (canCreate(x, y, 0)) {
@@ -294,7 +372,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
           return columnIndex == 0;
         }
         public SNode createNode(int columnIndex, int rowIndex, int listIndex) {
-          return doSubstituteNode_d9mrgs_a0(node, columnIndex, rowIndex, listIndex, editorContext, null, null);
+          return doSubstituteNode_d9mrgs_a3a(node, columnIndex, rowIndex, listIndex, editorContext, null, null);
         }
 
         public Object queryCellsSafely(final SNode node, final int columnIndex, final int rowIndex) {
@@ -402,7 +480,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
 
     return grid;
   }
-  public SNode doSubstituteNode_d9mrgs_a0(SNode node, int columnIndex, int rowIndex, int listIndex, EditorContext editorContext, SNode currentNode, SNode newValue) {
+  public SNode doSubstituteNode_d9mrgs_a3a(SNode node, int columnIndex, int rowIndex, int listIndex, EditorContext editorContext, SNode currentNode, SNode newValue) {
     currentNode = SNodeOperations.cast(currentNode, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"));
     newValue = SNodeOperations.cast(newValue, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"));
     if ((newValue == null)) {

@@ -27,13 +27,7 @@ public final class ToevoegenKenmerken_Intention extends IntentionDescriptorBase 
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
-    if (!(isApplicableToNode(node, editorContext))) {
-      return false;
-    }
     return true;
-  }
-  private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return false;
   }
   @Override
   public boolean isSurroundWith() {
