@@ -18,7 +18,7 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(47);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(48);
   /*package*/ final ConceptDescriptor myConceptAbstractAttribuut = createDescriptorForAbstractAttribuut();
   /*package*/ final ConceptDescriptor myConceptAbstractDatatype = createDescriptorForAbstractDatatype();
   /*package*/ final ConceptDescriptor myConceptAbstractObject = createDescriptorForAbstractObject();
@@ -28,6 +28,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAttribuutMetReferentieNaarKenmerk = createDescriptorForAttribuutMetReferentieNaarKenmerk();
   /*package*/ final ConceptDescriptor myConceptConcept = createDescriptorForConcept();
   /*package*/ final ConceptDescriptor myConceptDatumDatatype = createDescriptorForDatumDatatype();
+  /*package*/ final ConceptDescriptor myConceptDatumTijdWaarde = createDescriptorForDatumTijdWaarde();
   /*package*/ final ConceptDescriptor myConceptDatumWaarde = createDescriptorForDatumWaarde();
   /*package*/ final ConceptDescriptor myConceptEnumeratie = createDescriptorForEnumeratie();
   /*package*/ final ConceptDescriptor myConceptEnumeratieDatatype = createDescriptorForEnumeratieDatatype();
@@ -77,49 +78,50 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     myIndexMap.put(myConceptAttribuutMetReferentieNaarKenmerk.getId(), 6);
     myIndexMap.put(myConceptConcept.getId(), 7);
     myIndexMap.put(myConceptDatumDatatype.getId(), 8);
-    myIndexMap.put(myConceptDatumWaarde.getId(), 9);
-    myIndexMap.put(myConceptEnumeratie.getId(), 10);
-    myIndexMap.put(myConceptEnumeratieDatatype.getId(), 11);
-    myIndexMap.put(myConceptEnumeratieElement.getId(), 12);
-    myIndexMap.put(myConceptEnumeratieWaarde.getId(), 13);
-    myIndexMap.put(myConceptGegevensModel.getId(), 14);
-    myIndexMap.put(myConceptGeheelGetal.getId(), 15);
-    myIndexMap.put(myConceptGeheelGetalDatatype.getId(), 16);
-    myIndexMap.put(myConceptGeheelGetalWaarde.getId(), 17);
-    myIndexMap.put(myConceptIdentificatie.getId(), 18);
-    myIndexMap.put(myConceptInstantie.getId(), 19);
-    myIndexMap.put(myConceptInstantiesVanGegevens.getId(), 20);
-    myIndexMap.put(myConceptJaNeeDatatype.getId(), 21);
-    myIndexMap.put(myConceptJaNeeWaarde.getId(), 22);
-    myIndexMap.put(myConceptObject.getId(), 23);
-    myIndexMap.put(myConceptObjectDatatype.getId(), 24);
-    myIndexMap.put(myConceptObjectInstantie.getId(), 25);
-    myIndexMap.put(myConceptObjectWaarde.getId(), 26);
-    myIndexMap.put(myConceptOnderwerpDatatype.getId(), 27);
-    myIndexMap.put(myConceptReeelGetalDatatype.getId(), 28);
-    myIndexMap.put(myConceptReeelGetalWaarde.getId(), 29);
-    myIndexMap.put(myConceptReferentieNaarAbstractObject.getId(), 30);
-    myIndexMap.put(myConceptReferentieNaarAttribuut.getId(), 31);
-    myIndexMap.put(myConceptReferentieNaarAttribuutMetReferentieNaarKenmerk.getId(), 32);
-    myIndexMap.put(myConceptReferentieNaarOnderwerp.getId(), 33);
-    myIndexMap.put(myConceptReferentieNaarOnderwerpOfSubject.getId(), 34);
-    myIndexMap.put(myConceptReferentieNaarSubject.getId(), 35);
-    myIndexMap.put(myConceptRijVanKaraktersDatatype.getId(), 36);
-    myIndexMap.put(myConceptRijVanKaraktersWaarde.getId(), 37);
-    myIndexMap.put(myConceptSubjectDatatype.getId(), 38);
-    myIndexMap.put(myConceptTabel.getId(), 39);
-    myIndexMap.put(myConceptTijdDatatype.getId(), 40);
-    myIndexMap.put(myConceptTijdWaarde.getId(), 41);
-    myIndexMap.put(myConceptWaarde.getId(), 42);
-    myIndexMap.put(myConceptWaardeVanAttribuut.getId(), 43);
-    myIndexMap.put(myConceptwaardeJa.getId(), 44);
-    myIndexMap.put(myConceptwaardeJaNee.getId(), 45);
-    myIndexMap.put(myConceptwaardeNee.getId(), 46);
+    myIndexMap.put(myConceptDatumTijdWaarde.getId(), 9);
+    myIndexMap.put(myConceptDatumWaarde.getId(), 10);
+    myIndexMap.put(myConceptEnumeratie.getId(), 11);
+    myIndexMap.put(myConceptEnumeratieDatatype.getId(), 12);
+    myIndexMap.put(myConceptEnumeratieElement.getId(), 13);
+    myIndexMap.put(myConceptEnumeratieWaarde.getId(), 14);
+    myIndexMap.put(myConceptGegevensModel.getId(), 15);
+    myIndexMap.put(myConceptGeheelGetal.getId(), 16);
+    myIndexMap.put(myConceptGeheelGetalDatatype.getId(), 17);
+    myIndexMap.put(myConceptGeheelGetalWaarde.getId(), 18);
+    myIndexMap.put(myConceptIdentificatie.getId(), 19);
+    myIndexMap.put(myConceptInstantie.getId(), 20);
+    myIndexMap.put(myConceptInstantiesVanGegevens.getId(), 21);
+    myIndexMap.put(myConceptJaNeeDatatype.getId(), 22);
+    myIndexMap.put(myConceptJaNeeWaarde.getId(), 23);
+    myIndexMap.put(myConceptObject.getId(), 24);
+    myIndexMap.put(myConceptObjectDatatype.getId(), 25);
+    myIndexMap.put(myConceptObjectInstantie.getId(), 26);
+    myIndexMap.put(myConceptObjectWaarde.getId(), 27);
+    myIndexMap.put(myConceptOnderwerpDatatype.getId(), 28);
+    myIndexMap.put(myConceptReeelGetalDatatype.getId(), 29);
+    myIndexMap.put(myConceptReeelGetalWaarde.getId(), 30);
+    myIndexMap.put(myConceptReferentieNaarAbstractObject.getId(), 31);
+    myIndexMap.put(myConceptReferentieNaarAttribuut.getId(), 32);
+    myIndexMap.put(myConceptReferentieNaarAttribuutMetReferentieNaarKenmerk.getId(), 33);
+    myIndexMap.put(myConceptReferentieNaarOnderwerp.getId(), 34);
+    myIndexMap.put(myConceptReferentieNaarOnderwerpOfSubject.getId(), 35);
+    myIndexMap.put(myConceptReferentieNaarSubject.getId(), 36);
+    myIndexMap.put(myConceptRijVanKaraktersDatatype.getId(), 37);
+    myIndexMap.put(myConceptRijVanKaraktersWaarde.getId(), 38);
+    myIndexMap.put(myConceptSubjectDatatype.getId(), 39);
+    myIndexMap.put(myConceptTabel.getId(), 40);
+    myIndexMap.put(myConceptTijdDatatype.getId(), 41);
+    myIndexMap.put(myConceptTijdWaarde.getId(), 42);
+    myIndexMap.put(myConceptWaarde.getId(), 43);
+    myIndexMap.put(myConceptWaardeVanAttribuut.getId(), 44);
+    myIndexMap.put(myConceptwaardeJa.getId(), 45);
+    myIndexMap.put(myConceptwaardeJaNee.getId(), 46);
+    myIndexMap.put(myConceptwaardeNee.getId(), 47);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAbstractAttribuut, myConceptAbstractDatatype, myConceptAbstractObject, myConceptAbstractReferentieNaarAttribuut, myConceptAbstracteWaarde, myConceptAttribuut, myConceptAttribuutMetReferentieNaarKenmerk, myConceptConcept, myConceptDatumDatatype, myConceptDatumWaarde, myConceptEnumeratie, myConceptEnumeratieDatatype, myConceptEnumeratieElement, myConceptEnumeratieWaarde, myConceptGegevensModel, myConceptGeheelGetal, myConceptGeheelGetalDatatype, myConceptGeheelGetalWaarde, myConceptIdentificatie, myConceptInstantie, myConceptInstantiesVanGegevens, myConceptJaNeeDatatype, myConceptJaNeeWaarde, myConceptObject, myConceptObjectDatatype, myConceptObjectInstantie, myConceptObjectWaarde, myConceptOnderwerpDatatype, myConceptReeelGetalDatatype, myConceptReeelGetalWaarde, myConceptReferentieNaarAbstractObject, myConceptReferentieNaarAttribuut, myConceptReferentieNaarAttribuutMetReferentieNaarKenmerk, myConceptReferentieNaarOnderwerp, myConceptReferentieNaarOnderwerpOfSubject, myConceptReferentieNaarSubject, myConceptRijVanKaraktersDatatype, myConceptRijVanKaraktersWaarde, myConceptSubjectDatatype, myConceptTabel, myConceptTijdDatatype, myConceptTijdWaarde, myConceptWaarde, myConceptWaardeVanAttribuut, myConceptwaardeJa, myConceptwaardeJaNee, myConceptwaardeNee);
+    return Arrays.asList(myConceptAbstractAttribuut, myConceptAbstractDatatype, myConceptAbstractObject, myConceptAbstractReferentieNaarAttribuut, myConceptAbstracteWaarde, myConceptAttribuut, myConceptAttribuutMetReferentieNaarKenmerk, myConceptConcept, myConceptDatumDatatype, myConceptDatumTijdWaarde, myConceptDatumWaarde, myConceptEnumeratie, myConceptEnumeratieDatatype, myConceptEnumeratieElement, myConceptEnumeratieWaarde, myConceptGegevensModel, myConceptGeheelGetal, myConceptGeheelGetalDatatype, myConceptGeheelGetalWaarde, myConceptIdentificatie, myConceptInstantie, myConceptInstantiesVanGegevens, myConceptJaNeeDatatype, myConceptJaNeeWaarde, myConceptObject, myConceptObjectDatatype, myConceptObjectInstantie, myConceptObjectWaarde, myConceptOnderwerpDatatype, myConceptReeelGetalDatatype, myConceptReeelGetalWaarde, myConceptReferentieNaarAbstractObject, myConceptReferentieNaarAttribuut, myConceptReferentieNaarAttribuutMetReferentieNaarKenmerk, myConceptReferentieNaarOnderwerp, myConceptReferentieNaarOnderwerpOfSubject, myConceptReferentieNaarSubject, myConceptRijVanKaraktersDatatype, myConceptRijVanKaraktersWaarde, myConceptSubjectDatatype, myConceptTabel, myConceptTijdDatatype, myConceptTijdWaarde, myConceptWaarde, myConceptWaardeVanAttribuut, myConceptwaardeJa, myConceptwaardeJaNee, myConceptwaardeNee);
   }
 
   @Override
@@ -149,80 +151,82 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 8:
         return myConceptDatumDatatype;
       case 9:
-        return myConceptDatumWaarde;
+        return myConceptDatumTijdWaarde;
       case 10:
-        return myConceptEnumeratie;
+        return myConceptDatumWaarde;
       case 11:
-        return myConceptEnumeratieDatatype;
+        return myConceptEnumeratie;
       case 12:
-        return myConceptEnumeratieElement;
+        return myConceptEnumeratieDatatype;
       case 13:
-        return myConceptEnumeratieWaarde;
+        return myConceptEnumeratieElement;
       case 14:
-        return myConceptGegevensModel;
+        return myConceptEnumeratieWaarde;
       case 15:
-        return myConceptGeheelGetal;
+        return myConceptGegevensModel;
       case 16:
-        return myConceptGeheelGetalDatatype;
+        return myConceptGeheelGetal;
       case 17:
-        return myConceptGeheelGetalWaarde;
+        return myConceptGeheelGetalDatatype;
       case 18:
-        return myConceptIdentificatie;
+        return myConceptGeheelGetalWaarde;
       case 19:
-        return myConceptInstantie;
+        return myConceptIdentificatie;
       case 20:
-        return myConceptInstantiesVanGegevens;
+        return myConceptInstantie;
       case 21:
-        return myConceptJaNeeDatatype;
+        return myConceptInstantiesVanGegevens;
       case 22:
-        return myConceptJaNeeWaarde;
+        return myConceptJaNeeDatatype;
       case 23:
-        return myConceptObject;
+        return myConceptJaNeeWaarde;
       case 24:
-        return myConceptObjectDatatype;
+        return myConceptObject;
       case 25:
-        return myConceptObjectInstantie;
+        return myConceptObjectDatatype;
       case 26:
-        return myConceptObjectWaarde;
+        return myConceptObjectInstantie;
       case 27:
-        return myConceptOnderwerpDatatype;
+        return myConceptObjectWaarde;
       case 28:
-        return myConceptReeelGetalDatatype;
+        return myConceptOnderwerpDatatype;
       case 29:
-        return myConceptReeelGetalWaarde;
+        return myConceptReeelGetalDatatype;
       case 30:
-        return myConceptReferentieNaarAbstractObject;
+        return myConceptReeelGetalWaarde;
       case 31:
-        return myConceptReferentieNaarAttribuut;
+        return myConceptReferentieNaarAbstractObject;
       case 32:
-        return myConceptReferentieNaarAttribuutMetReferentieNaarKenmerk;
+        return myConceptReferentieNaarAttribuut;
       case 33:
-        return myConceptReferentieNaarOnderwerp;
+        return myConceptReferentieNaarAttribuutMetReferentieNaarKenmerk;
       case 34:
-        return myConceptReferentieNaarOnderwerpOfSubject;
+        return myConceptReferentieNaarOnderwerp;
       case 35:
-        return myConceptReferentieNaarSubject;
+        return myConceptReferentieNaarOnderwerpOfSubject;
       case 36:
-        return myConceptRijVanKaraktersDatatype;
+        return myConceptReferentieNaarSubject;
       case 37:
-        return myConceptRijVanKaraktersWaarde;
+        return myConceptRijVanKaraktersDatatype;
       case 38:
-        return myConceptSubjectDatatype;
+        return myConceptRijVanKaraktersWaarde;
       case 39:
-        return myConceptTabel;
+        return myConceptSubjectDatatype;
       case 40:
-        return myConceptTijdDatatype;
+        return myConceptTabel;
       case 41:
-        return myConceptTijdWaarde;
+        return myConceptTijdDatatype;
       case 42:
-        return myConceptWaarde;
+        return myConceptTijdWaarde;
       case 43:
-        return myConceptWaardeVanAttribuut;
+        return myConceptWaarde;
       case 44:
-        return myConceptwaardeJa;
+        return myConceptWaardeVanAttribuut;
       case 45:
-        return myConceptwaardeJaNee;
+        return myConceptwaardeJa;
       case 46:
+        return myConceptwaardeJaNee;
+      case 47:
         return myConceptwaardeNee;
       default:
         throw new IllegalStateException();
@@ -265,6 +269,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForDatumDatatype() {
     return new ConceptDescriptorBuilder("Gegevens.structure.DatumDatatype", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a1b1L)).super_("Gegevens.structure.AbstractDatatype").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).parents("Gegevens.structure.AbstractDatatype").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x285926591e32a19aL)).alias("datum", "").sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "2907397198644945329")).create();
+  }
+  private static ConceptDescriptor createDescriptorForDatumTijdWaarde() {
+    return new ConceptDescriptorBuilder("Gegevens.structure.DatumTijdWaarde", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x2b935eb966136db4L)).super_("Gegevens.structure.Waarde").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fddL)).parents("Gegevens.structure.Waarde").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fddL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x2b935eb966136db5L, "waarde", MetaIdFactory.conceptId(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f32fL), true, false, false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "3139957515581877685"))).children(new String[]{"waarde"}, new boolean[]{false}).sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "3139957515581877684")).create();
   }
   private static ConceptDescriptor createDescriptorForDatumWaarde() {
     return new ConceptDescriptorBuilder("Gegevens.structure.DatumWaarde", MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L)).super_("Gegevens.structure.Waarde").version(1).super_(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fddL)).parents("Gegevens.structure.Waarde").parentIds(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fddL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x1fabc0b15d9b6274L, "waarde", MetaIdFactory.conceptId(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L), true, false, false, new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "2282129504205496948"))).children(new String[]{"waarde"}, new boolean[]{false}).sourceNode(new SNodePointer("r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)", "2282129504205496947")).create();

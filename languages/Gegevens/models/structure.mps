@@ -619,5 +619,17 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2IjnF_A4QQO">
+    <property role="EcuMT" value="3139957515581877684" />
+    <property role="3GE5qa" value="Waarden" />
+    <property role="TrG5h" value="DatumTijdWaarde" />
+    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
+    <node concept="1TJgyj" id="2IjnF_A4QQP" role="1TKVEi">
+      <property role="IQ2ns" value="3139957515581877685" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="waarde" />
+      <ref role="20lvS9" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
+    </node>
+  </node>
 </model>
 

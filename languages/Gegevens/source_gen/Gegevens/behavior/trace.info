@@ -45,6 +45,9 @@
     <file name="DatumDatatype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.DatumDatatype_BehaviorDescriptor" />
     </file>
+    <file name="DatumTijdWaarde_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Gegevens.behavior.DatumTijdWaarde_BehaviorDescriptor" />
+    </file>
     <file name="DatumWaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Gegevens.behavior.DatumWaarde_BehaviorDescriptor" />
     </file>
