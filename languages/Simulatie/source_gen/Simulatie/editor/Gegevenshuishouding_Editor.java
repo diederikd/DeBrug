@@ -161,6 +161,17 @@ public class Gegevenshuishouding_Editor extends DefaultNodeEditor {
         }
       }
     }
+    @Override
+    protected void createInnerCells(SNode node, EditorContext editorContext) {
+      try {
+        editorContext.getCellFactory().pushCellContext();
+        editorContext.getCellFactory().addCellContextHints(new String[]{"ObjectiefRecht.editor.GN.Tabel"});
+        editorContext.getCellFactory().removeCellContextHints();
+        super.createInnerCells(node, editorContext);
+      } finally {
+        editorContext.getCellFactory().popCellContext();
+      }
+    }
   }
   private EditorCell createConstant_hnwz83_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");

@@ -24,7 +24,9 @@
         <child id="3694879098876164254" name="datumtijdvaninitialisatie" index="3zKq1C" />
         <child id="3694879098862050847" name="uitvoerbarehandelingen2" index="3WXGrD" />
       </concept>
-      <concept id="7496157647699367134" name="Simulatie.structure.Gegevenshuishouding" flags="ng" index="1ztmtO" />
+      <concept id="7496157647699367134" name="Simulatie.structure.Gegevenshuishouding" flags="ng" index="1ztmtO">
+        <child id="7496157647699367135" name="tabellen" index="1ztmtP" />
+      </concept>
       <concept id="3694879098862050844" name="Simulatie.structure.ReferentieNaarRechtshandeling" flags="ng" index="3WXGrE">
         <reference id="3694879098862050845" name="rechtshandeling" index="3WXGrF" />
       </concept>
@@ -228,6 +230,10 @@
       </concept>
       <concept id="2719671791663167251" name="ObjectiefRecht.structure.EnumeratieType" flags="ng" index="3y1o06">
         <reference id="2719671791663167252" name="enumeratie" index="3y1o01" />
+      </concept>
+      <concept id="7496157647699213321" name="ObjectiefRecht.structure.TabelMetInstanties" flags="ng" index="1ztWYz">
+        <reference id="7496157647699228088" name="object" index="1ztKoi" />
+        <child id="7496157647699228063" name="instanties" index="1ztKoP" />
       </concept>
       <concept id="565938754126315112" name="ObjectiefRecht.structure.EnumeratieWaarde" flags="ng" index="1zyu0$">
         <reference id="565938754126315113" name="element" index="1zyu0_" />
@@ -3791,6 +3797,332 @@
   </node>
   <node concept="1ztmtO" id="6EEavyms9IX">
     <property role="TrG5h" value="Gegevenshuishouding WAA2000" />
+    <node concept="1ztWYz" id="2IjnF__Icnq" role="1ztmtP">
+      <ref role="1ztKoi" node="4ZpB41RnoMO" resolve="Werknemer" />
+      <node concept="2M1C9k" id="2IjnF__Ico$" role="1ztKoP">
+        <property role="TrG5h" value="Jan" />
+        <ref role="2M1C9n" node="4ZpB41RnoMO" resolve="Werknemer" />
+        <node concept="2M1C6R" id="2IjnF__Ico_" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__IcoA" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkoYG" resolve="werknemersidentificatie" />
+          </node>
+          <node concept="12frXn" id="2IjnF__IcoB" role="2M1C9h">
+            <node concept="2Nq23k" id="2IjnF__K53$" role="2Nq23e">
+              <property role="2Nqyj6" value="5" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__IcoC" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__IcoD" role="2M1C6S">
+            <ref role="2mbrj7" node="GhrpPwO1R2" resolve="burgerservicenummer" />
+          </node>
+          <node concept="3dadDn" id="2IjnF__K53g" role="2M1C9h">
+            <ref role="3dadDm" node="2IjnF__K53b" resolve="333333333" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__IcoF" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__IcoG" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkoYQ" resolve="voornamen" />
+          </node>
+          <node concept="12cgni" id="2IjnF__IcoH" role="2M1C9h">
+            <property role="12cgnl" value="Jan" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__IcoI" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__IcoJ" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkWkh" resolve="roepnaam" />
+          </node>
+          <node concept="12cgni" id="2IjnF__IcoK" role="2M1C9h">
+            <property role="12cgnl" value="Jan" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__IcoL" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__IcoM" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkoZ8" resolve="achternaam" />
+          </node>
+          <node concept="12cgni" id="2IjnF__IcoN" role="2M1C9h">
+            <property role="12cgnl" value="Janssen" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__IcoO" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__IcoP" role="2M1C6S">
+            <ref role="2mbrj7" node="5qTpXpBpigT" resolve="geboortedatum" />
+          </node>
+          <node concept="12cab2" id="2IjnF__IcoQ" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="2IjnF__IcoR" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__IcoS" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkWkJ" resolve="geboorteplaats" />
+          </node>
+          <node concept="12cgni" id="2IjnF__IcoT" role="2M1C9h">
+            <property role="12cgnl" value="Amsterdam" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__IcoU" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__IcoV" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkWlh" resolve="adres werknemer" />
+          </node>
+          <node concept="12cgni" id="2IjnF__IcoW" role="2M1C9h">
+            <property role="12cgnl" value="De weg" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__IcoX" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__IcoY" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkWlR" resolve="huisnummer werknemer" />
+          </node>
+          <node concept="12cgni" id="2IjnF__IcoZ" role="2M1C9h">
+            <property role="12cgnl" value="19" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__Icp0" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__Icp1" role="2M1C6S">
+            <ref role="2mbrj7" node="GhrpPwO1NH" resolve="postcode van de werknemer" />
+          </node>
+          <node concept="3dadDn" id="2IjnF__LB_h" role="2M1C9h">
+            <ref role="3dadDm" node="2IjnF__LBzK" resolve="1095 AA" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__Icp3" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__Icp4" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkWnf" resolve="woonplaats" />
+          </node>
+          <node concept="12cgni" id="2IjnF__Icp5" role="2M1C9h">
+            <property role="12cgnl" value="Groningen" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__Icp6" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__Icp7" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkWq3" resolve="paspoortnummer" />
+          </node>
+          <node concept="12cgni" id="2IjnF__Icp8" role="2M1C9h">
+            <property role="12cgnl" value="12345" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__Icp9" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__Icpa" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkWqX" resolve="identiteitskaartnummer" />
+          </node>
+          <node concept="12cgni" id="2IjnF__Icpb" role="2M1C9h">
+            <property role="12cgnl" value="12345" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__Icpc" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__Icpd" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkWrV" resolve="burgerlijke staat" />
+          </node>
+          <node concept="1zyu0$" id="2IjnF__LDkD" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQmAP" resolve="ongehuwd" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__Icpf" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__Icpg" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkWsX" resolve="nationaliteit" />
+          </node>
+          <node concept="1zyu0$" id="2IjnF__ZXvV" role="2M1C9h">
+            <ref role="1zyu0_" node="2xDgDlj6o0f" resolve="NL" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__Icpi" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__Icpj" role="2M1C6S">
+            <ref role="2mbrj7" node="2xDgDlj6o2P" resolve="nationaliteit datum sinds" />
+          </node>
+          <node concept="12cab2" id="2IjnF__Icpk" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="2IjnF__Icpl" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__Icpm" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkWu3" resolve="militair ambtenaar" />
+          </node>
+          <node concept="12cgnX" id="2IjnF__Icpn" role="2M1C9h">
+            <node concept="2frckM" id="2IjnF__K53R" role="2frcku" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1ztWYz" id="2IjnF__B4w4" role="1ztmtP">
+      <ref role="1ztKoi" node="4ZpB41Rnx4z" resolve="Werkgever" />
+      <node concept="2M1C9k" id="2IjnF__C6lN" role="1ztKoP">
+        <property role="TrG5h" value="Essent" />
+        <ref role="2M1C9n" node="4ZpB41Rnx4z" resolve="Werkgever" />
+        <node concept="2M1C6R" id="2IjnF__C6lO" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__C6lP" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkoYi" resolve="werkgeversidentificatie" />
+          </node>
+          <node concept="12frXn" id="2IjnF__C6lQ" role="2M1C9h">
+            <node concept="2Nq23k" id="2IjnF__IckH" role="2Nq23e">
+              <property role="2Nqyj6" value="3" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__C6lR" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__C6lS" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkoZM" resolve="naam" />
+          </node>
+          <node concept="12cgni" id="2IjnF__C6lT" role="2M1C9h">
+            <property role="12cgnl" value="Essent" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__C6lU" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__C6lV" role="2M1C6S">
+            <ref role="2mbrj7" node="3YoOrWqc$sd" resolve="adres werkgever" />
+          </node>
+          <node concept="12cgni" id="2IjnF__C6lW" role="2M1C9h">
+            <property role="12cgnl" value="J.F. Kennedylaan " />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__C6lX" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__C6lY" role="2M1C6S">
+            <ref role="2mbrj7" node="3YoOrWqc$t2" resolve="huisnummer werkgever" />
+          </node>
+          <node concept="12cgni" id="2IjnF__C6lZ" role="2M1C9h">
+            <property role="12cgnl" value="109" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__C6m0" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__C6m1" role="2M1C6S">
+            <ref role="2mbrj7" node="GhrpPwO1KO" resolve="postcode van de werkgever" />
+          </node>
+          <node concept="3dadDn" id="2IjnF__LB$F" role="2M1C9h">
+            <ref role="3dadDm" node="2IjnF__LBzK" resolve="1095 AA" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__C6m3" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__C6m4" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkp04" resolve="aantal werknemers" />
+          </node>
+          <node concept="12frXn" id="2IjnF__C6m5" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="2IjnF__C6m6" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__C6m7" role="2M1C6S">
+            <ref role="2mbrj7" node="5qTpXpBpiiG" resolve="peildatum aantal werknemers" />
+          </node>
+          <node concept="12cab2" id="2IjnF__C6m8" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="2IjnF__C6m9" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__C6ma" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkWuP" resolve="militairen in dienst" />
+          </node>
+          <node concept="12cgnX" id="2IjnF__C6mb" role="2M1C9h" />
+        </node>
+      </node>
+      <node concept="2M1C9k" id="2IjnF__D$7i" role="1ztKoP">
+        <property role="TrG5h" value="Eneco" />
+        <ref role="2M1C9n" node="4ZpB41Rnx4z" resolve="Werkgever" />
+        <node concept="2M1C6R" id="2IjnF__D$7j" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__D$7k" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkoYi" resolve="werkgeversidentificatie" />
+          </node>
+          <node concept="12frXn" id="2IjnF__D$7l" role="2M1C9h">
+            <node concept="2Nq23k" id="2IjnF__Icl0" role="2Nq23e">
+              <property role="2Nqyj6" value="4" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__D$7m" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__D$7n" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkoZM" resolve="naam" />
+          </node>
+          <node concept="12cgni" id="2IjnF__D$7o" role="2M1C9h">
+            <property role="12cgnl" value="Eneco" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__D$7p" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__D$7q" role="2M1C6S">
+            <ref role="2mbrj7" node="3YoOrWqc$sd" resolve="adres werkgever" />
+          </node>
+          <node concept="12cgni" id="2IjnF__D$7r" role="2M1C9h">
+            <property role="12cgnl" value="Wegenerstraat " />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__D$7s" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__D$7t" role="2M1C6S">
+            <ref role="2mbrj7" node="3YoOrWqc$t2" resolve="huisnummer werkgever" />
+          </node>
+          <node concept="12cgni" id="2IjnF__D$7u" role="2M1C9h">
+            <property role="12cgnl" value="140" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__D$7v" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__D$7w" role="2M1C6S">
+            <ref role="2mbrj7" node="GhrpPwO1KO" resolve="postcode van de werkgever" />
+          </node>
+          <node concept="3dadDn" id="2IjnF__LB$Y" role="2M1C9h">
+            <ref role="3dadDm" node="2IjnF__K55V" resolve="1073 RR" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__D$7y" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__D$7z" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkp04" resolve="aantal werknemers" />
+          </node>
+          <node concept="12frXn" id="2IjnF__D$7$" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="2IjnF__D$7_" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__D$7A" role="2M1C6S">
+            <ref role="2mbrj7" node="5qTpXpBpiiG" resolve="peildatum aantal werknemers" />
+          </node>
+          <node concept="12cab2" id="2IjnF__D$7B" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="2IjnF__D$7C" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__D$7D" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIkWuP" resolve="militairen in dienst" />
+          </node>
+          <node concept="12cgnX" id="2IjnF__D$7E" role="2M1C9h" />
+        </node>
+      </node>
+    </node>
+    <node concept="1ztWYz" id="2IjnF__K54a" role="1ztmtP">
+      <ref role="1ztKoi" node="3d6QfrhlNk0" resolve="NL-postcode" />
+      <node concept="2M1C9k" id="2IjnF__K55V" role="1ztKoP">
+        <property role="TrG5h" value="1073 RR" />
+        <ref role="2M1C9n" node="3d6QfrhlNk0" resolve="NL-postcode" />
+        <node concept="2M1C6R" id="2IjnF__K55W" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__K55X" role="2M1C6S">
+            <ref role="2mbrj7" node="3d6QfrhlNl$" resolve="PostcodeNummer" />
+          </node>
+          <node concept="12cgni" id="2IjnF__K55Y" role="2M1C9h">
+            <property role="12cgnl" value="1073" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__K55Z" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__K560" role="2M1C6S">
+            <ref role="2mbrj7" node="3d6QfrhlNlL" resolve="PostcodeLetters" />
+          </node>
+          <node concept="12cgni" id="2IjnF__K561" role="2M1C9h">
+            <property role="12cgnl" value="RR" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="2IjnF__LBzK" role="1ztKoP">
+        <property role="TrG5h" value="1095 AA" />
+        <ref role="2M1C9n" node="3d6QfrhlNk0" resolve="NL-postcode" />
+        <node concept="2M1C6R" id="2IjnF__LBzL" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__LBzM" role="2M1C6S">
+            <ref role="2mbrj7" node="3d6QfrhlNl$" resolve="PostcodeNummer" />
+          </node>
+          <node concept="12cgni" id="2IjnF__LBzN" role="2M1C9h">
+            <property role="12cgnl" value="1095" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="2IjnF__LBzO" role="2M1C9l">
+          <node concept="2mbrj6" id="2IjnF__LBzP" role="2M1C6S">
+            <ref role="2mbrj7" node="3d6QfrhlNlL" resolve="PostcodeLetters" />
+          </node>
+          <node concept="12cgni" id="2IjnF__LBzQ" role="2M1C9h">
+            <property role="12cgnl" value="AA" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1ztWYz" id="2IjnF__Icmy" role="1ztmtP">
+      <ref role="1ztKoi" node="5u1YjWIkWnX" resolve="burgerservicenummer" />
+      <node concept="2M1C9k" id="2IjnF__K53b" role="1ztKoP">
+        <property role="TrG5h" value="333333333" />
+        <ref role="2M1C9n" node="5u1YjWIkWnX" resolve="burgerservicenummer" />
+      </node>
+      <node concept="2M1C9k" id="2IjnF__K53d" role="1ztKoP">
+        <property role="TrG5h" value="444444444" />
+        <ref role="2M1C9n" node="5u1YjWIkWnX" resolve="burgerservicenummer" />
+      </node>
+    </node>
   </node>
 </model>
 

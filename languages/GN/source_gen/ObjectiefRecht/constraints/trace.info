@@ -13,7 +13,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,95,0" name="ObjectiefRecht.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,100,0" name="ObjectiefRecht.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/301351583719086755">
@@ -23,6 +23,48 @@
       <scope id="301351583719086755" at="9,34,10,142" />
       <scope id="301351583719086755" at="9,0,12,0" />
       <unit id="301351583719086755" at="8,0,14,0" name="ObjectiefRecht.constraints.Variabele_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/3139957515576430993">
+    <file name="TabelMetInstanties_Constraints.java">
+      <node id="3139957515576430993" at="19,43,20,151" concept="10" />
+      <node id="3139957515576430993" at="24,90,25,131" concept="4" />
+      <node id="3139957515576430993" at="28,52,29,20" concept="5" />
+      <node id="3139957515576430993" at="32,116,33,20" concept="5" />
+      <node id="3139957515576430993" at="40,56,41,42" concept="5" />
+      <node id="3139957515576430993" at="43,7,44,22" concept="5" />
+      <node id="3139957515576430993" at="19,0,22,0" concept="0" trace="TabelMetInstanties_Constraints#()V" />
+      <node id="3139957515576430993" at="35,0,38,0" concept="3" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3139957515576430993" at="27,0,31,0" concept="3" trace="hasOwnOnReferenceSetHandler#()Z" />
+      <node id="3139957515576430993" at="31,0,35,0" concept="3" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3139957515576430993" at="38,0,43,0" concept="3" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="3139957515576430993" at="25,131,43,7" concept="1" />
+      <node id="3139957515576430993" at="23,0,46,0" concept="3" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="3139957515576430997" at="36,119,36,119" />
+      <scope id="3139957515576430993" at="19,43,20,151" />
+      <scope id="3139957515576430993" at="28,52,29,20" />
+      <scope id="3139957515576430993" at="32,116,33,20" />
+      <scope id="3139957515576430993" at="40,56,41,42" />
+      <scope id="3139957515576430993" at="19,0,22,0" />
+      <scope id="3139957515576430993" at="35,0,38,0">
+        <var name="newReferentNode" id="3139957515576430993" />
+        <var name="oldReferentNode" id="3139957515576430993" />
+        <var name="referenceNode" id="3139957515576430993" />
+      </scope>
+      <scope id="3139957515576430993" at="27,0,31,0" />
+      <scope id="3139957515576430993" at="31,0,35,0">
+        <var name="newReferentNode" id="3139957515576430993" />
+        <var name="oldReferentNode" id="3139957515576430993" />
+        <var name="referenceNode" id="3139957515576430993" />
+      </scope>
+      <scope id="3139957515576430993" at="38,0,43,0" />
+      <scope id="3139957515576430993" at="24,90,44,22">
+        <var name="references" id="3139957515576430993" />
+      </scope>
+      <scope id="3139957515576430993" at="23,0,46,0" />
+      <unit id="3139957515576430993" at="41,19,41,41" name="ObjectiefRecht.constraints.TabelMetInstanties_Constraints$2" />
+      <unit id="3139957515576430993" at="26,154,43,5" name="ObjectiefRecht.constraints.TabelMetInstanties_Constraints$1" />
+      <unit id="3139957515576430993" at="18,0,47,0" name="ObjectiefRecht.constraints.TabelMetInstanties_Constraints" />
     </file>
   </root>
   <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/3694879098861088079">

@@ -11,13 +11,14 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
 import Datum.editor.GN_StyleSheet;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import de.slisson.mps.tables.runtime.cells.TableEditor;
@@ -36,15 +37,14 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.ITranslator2;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.ISelector;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import ObjectiefRecht.behavior.Object__BehaviorDescriptor;
 import de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeInsertAction;
 import de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeDeleteAction;
 import de.slisson.mps.tables.runtime.gridmodel.HeaderGridFactory;
 import de.slisson.mps.tables.runtime.gridmodel.StringHeaderReference;
 import de.slisson.mps.tables.runtime.style.ITableStyleFactory;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.MPSFonts;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
 import de.slisson.mps.tables.runtime.gridmodel.GridAdapter;
@@ -75,33 +75,49 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_d9mrgs_a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_d9mrgs_b0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_d9mrgs_c0(editorContext, node));
-    editorCell.addEditorCell(this.createTable_d9mrgs_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_d9mrgs_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_d9mrgs_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_d9mrgs_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_d9mrgs_f0(editorContext, node));
+    editorCell.addEditorCell(this.createTable_d9mrgs_g0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_d9mrgs_h0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_d9mrgs_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "object");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
     editorCell.setCellId("Constant_d9mrgs_a0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createConstant_d9mrgs_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "tabel met object");
     editorCell.setCellId("Constant_d9mrgs_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_d9mrgs_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_d9mrgs_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_d9mrgs_c0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefCell_d9mrgs_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("object");
     provider.setNoTargetText("<no object>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new TabelMetInstanties_Tabel_Editor._Inline_d9mrgs_a2a());
+    provider.setAuxiliaryCellProvider(new TabelMetInstanties_Tabel_Editor._Inline_d9mrgs_a3a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
       editorCell.setRole("object");
     }
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
@@ -110,17 +126,17 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  public static class _Inline_d9mrgs_a2a extends InlineCellProvider {
-    public _Inline_d9mrgs_a2a() {
+  public static class _Inline_d9mrgs_a3a extends InlineCellProvider {
+    public _Inline_d9mrgs_a3a() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_d9mrgs_a0c0(editorContext, node);
+      return this.createProperty_d9mrgs_a0d0(editorContext, node);
     }
-    private EditorCell createProperty_d9mrgs_a0c0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_d9mrgs_a0d0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -140,7 +156,25 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
       return editorCell;
     }
   }
-  private EditorCell createTable_d9mrgs_d0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createConstant_d9mrgs_e0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    editorCell.setCellId("Constant_d9mrgs_e0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_d9mrgs_f0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    editorCell.setCellId("Constant_d9mrgs_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createTable_d9mrgs_g0(final EditorContext editorContext, final SNode node) {
 
     final Wrappers._T<TableEditor> editorCell = new Wrappers._T<TableEditor>(null);
     _FunctionTypes._void_P0_E0 creator = new _FunctionTypes._void_P0_E0() {
@@ -156,23 +190,23 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
               // column headers 
               {
                 List<HeaderGrid> headerGrids = new ArrayList<HeaderGrid>(1);
-                headerGrids.add(createHeadQuery_d9mrgs_a3a(editorContext, node));
+                headerGrids.add(createHeadQuery_d9mrgs_a6a(editorContext, node));
                 grid.setColumnHeaders(headerGrids);
               }
 
               // row headers 
               {
                 List<HeaderGrid> headerGrids = new ArrayList<HeaderGrid>(1);
-                headerGrids.add(createHeadQuery_d9mrgs_a3a_0(editorContext, node));
+                headerGrids.add(createHeadQuery_d9mrgs_a6a_0(editorContext, node));
                 grid.setRowHeaders(headerGrids);
               }
-              final Grid childGrid = createTableCellQuery_d9mrgs_a3a(editorContext, node);
+              final Grid childGrid = createTableCellQuery_d9mrgs_a6a(editorContext, node);
               childGrid.setSpanX(Math.max(1, grid.getColumnHeadersSizeX()));
               childGrid.setSpanY(Math.max(1, grid.getRowHeadersSizeY()));
               grid.setElement(0, 0, childGrid);
 
               editorCell.value = new TableEditor(editorContext, node, grid);
-              editorCell.value.setCellId("Table_d9mrgs_d0");
+              editorCell.value.setCellId("Table_d9mrgs_g0");
 
               editorCell.value.init();
             } finally {
@@ -189,7 +223,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
     return editorCell.value;
 
   }
-  public HeaderGrid createHeadQuery_d9mrgs_a3a(final EditorContext editorContext, final SNode node) {
+  public HeaderGrid createHeadQuery_d9mrgs_a6a(final EditorContext editorContext, final SNode node) {
     Object queryResult = new Object() {
       public Object query() {
         System.out.println("Node " + SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties")));
@@ -207,12 +241,12 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
           }
         }));
         if (ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties"))).isNotEmpty()) {
-          SNode object = (SNode) SNodeOperations.getParent(node);
+          SNode object = SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object"));
           return Object__BehaviorDescriptor.ObjectKenmerken_id3r$i4253HG8.invoke(object);
-        }
-        SNode object = (SNode) SNodeOperations.getParent(node);
-        return Object__BehaviorDescriptor.ObjectKenmerken_id3r$i4253HG8.invoke(object);
 
+        }
+        SNode object = SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object"));
+        return Object__BehaviorDescriptor.ObjectKenmerken_id3r$i4253HG8.invoke(object);
       }
     }.query();
     IHeaderNodeInsertAction insertAction = new IHeaderNodeInsertAction() {
@@ -229,14 +263,21 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
         style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);
         return style;
       }
-    }, "attributen");
+    }, "kenmerken");
 
     return grid;
   }
-  public HeaderGrid createHeadQuery_d9mrgs_a3a_0(final EditorContext editorContext, final SNode node) {
+  public HeaderGrid createHeadQuery_d9mrgs_a6a_0(final EditorContext editorContext, final SNode node) {
     Object queryResult = new Object() {
       public Object query() {
         if (ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties"))).isNotEmpty()) {
+          {
+            final SNode enumeratie = SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object"));
+            if (SNodeOperations.isInstanceOf(enumeratie, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L, "ObjectiefRecht.structure.Enumeratie"))) {
+              SNode enumeri = (SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object"));
+              return SLinkOperations.getChildren(enumeri, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L, 0x67229afa69d710c7L, "elementen"));
+            }
+          }
           return SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties"));
         }
         return null;
@@ -266,7 +307,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
 
     return grid;
   }
-  public Grid createTableCellQuery_d9mrgs_a3a(final EditorContext editorContext, final SNode node) {
+  public Grid createTableCellQuery_d9mrgs_a6a(final EditorContext editorContext, final SNode node) {
     final Grid grid = new Grid();
     final GridAdapter gridAdapter = new GridAdapter(grid, editorContext, node);
 
@@ -278,13 +319,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
         {
         }
         public int getSizeX() {
-          if (ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties"))).isNotEmpty()) {
-            SNode object = (SNode) SNodeOperations.getParent(node);
-            return Sequence.fromIterable(Object__BehaviorDescriptor.ObjectKenmerken_id3r$i4253HG8.invoke(object)).count();
-
-          }
-          SNode object = (SNode) SNodeOperations.getParent(node);
-          return Sequence.fromIterable(Object__BehaviorDescriptor.ObjectKenmerken_id3r$i4253HG8.invoke(object)).count();
+          return Sequence.fromIterable(Object__BehaviorDescriptor.ObjectKenmerken_id3r$i4253HG8.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object")))).count();
         }
         public int getSizeY() {
           if (ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties"))).isNotEmpty()) {
@@ -318,7 +353,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
 
                     listElement.setSubstituteInfo(new CellQuerySubstituteInfo(editorContext, node, (queryResult_ instanceof SNode ? ((SNode) queryResult_) : SNodeOperations.cast(TableUtils.getSNode(listElement, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept")), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"))), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"), null) {
                       public SNode substituteNode(SNode currentNode, SNode newValue) {
-                        return doSubstituteNode_d9mrgs_a3a(node, x, y, index, editorContext, currentNode, newValue);
+                        return doSubstituteNode_d9mrgs_a6a(node, x, y, index, editorContext, currentNode, newValue);
                       }
                     });
 
@@ -341,7 +376,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
               } else {
                 gridAdapter.setSubstituteInfo(x, y, new CellQuerySubstituteInfo(editorContext, node, (queryResult_ instanceof SNode ? ((SNode) queryResult_) : SNodeOperations.cast(TableUtils.getSNode(currentGridElement, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept")), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"))), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"), null) {
                   public SNode substituteNode(SNode currentNode, SNode newValue) {
-                    return doSubstituteNode_d9mrgs_a3a(node, x, y, 0, editorContext, currentNode, newValue);
+                    return doSubstituteNode_d9mrgs_a6a(node, x, y, 0, editorContext, currentNode, newValue);
                   }
                 });
                 if (canCreate(x, y, 0)) {
@@ -372,7 +407,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
           return columnIndex == 0;
         }
         public SNode createNode(int columnIndex, int rowIndex, int listIndex) {
-          return doSubstituteNode_d9mrgs_a3a(node, columnIndex, rowIndex, listIndex, editorContext, null, null);
+          return doSubstituteNode_d9mrgs_a6a(node, columnIndex, rowIndex, listIndex, editorContext, null, null);
         }
 
         public Object queryCellsSafely(final SNode node, final int columnIndex, final int rowIndex) {
@@ -394,7 +429,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
               waarde = SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties"))).getElement(rowIndex), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca15L, "waardeVanKenmerken"))).getElement(columnIndex), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde"));
             }
             if ((SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties"))).getElement(rowIndex), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca15L, "waardeVanKenmerken"))).getElement(columnIndex), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde")) == null)) {
-              SNode kenmerk = ListSequence.fromList(Sequence.fromIterable(Object__BehaviorDescriptor.ObjectKenmerken_id3r$i4253HG8.invoke(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties"))).getElement(rowIndex), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "referentieNaarObject")))).toListSequence()).getElement(columnIndex);
+              SNode kenmerk = ListSequence.fromList(Sequence.fromIterable(Object__BehaviorDescriptor.ObjectKenmerken_id3r$i4253HG8.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object")))).toListSequence()).getElement(columnIndex);
 
               {
                 final SNode objectType = SLinkOperations.getTarget(kenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"));
@@ -480,13 +515,15 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
 
     return grid;
   }
-  public SNode doSubstituteNode_d9mrgs_a3a(SNode node, int columnIndex, int rowIndex, int listIndex, EditorContext editorContext, SNode currentNode, SNode newValue) {
+  public SNode doSubstituteNode_d9mrgs_a6a(SNode node, int columnIndex, int rowIndex, int listIndex, EditorContext editorContext, SNode currentNode, SNode newValue) {
     currentNode = SNodeOperations.cast(currentNode, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"));
     newValue = SNodeOperations.cast(newValue, MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"));
-    if ((newValue == null)) {
-      SNode waarde = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fddL, "Gegevens.structure.Waarde"));
-      return waarde;
-    }
     return newValue;
+  }
+  private EditorCell createConstant_d9mrgs_h0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    editorCell.setCellId("Constant_d9mrgs_h0");
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 }
