@@ -10559,7 +10559,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6EEavymsmrO" role="3EZMnx">
-        <property role="3F0ifm" value="tabel met object" />
+        <property role="3F0ifm" value="gegevens van object" />
       </node>
       <node concept="3F0ifn" id="6EEavymsrUo" role="3EZMnx">
         <property role="3F0ifm" value=":" />

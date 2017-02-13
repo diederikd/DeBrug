@@ -93,7 +93,7 @@ public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_d9mrgs_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "tabel met object");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "gegevens van object");
     editorCell.setCellId("Constant_d9mrgs_b0");
     editorCell.setDefaultText("");
     return editorCell;
