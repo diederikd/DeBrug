@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="Simulatie.plugin.ExtensionDescriptor" file="ExtensionDescriptor.java">
+    <classNode dependClassName="Simulatie.plugin.ObjectiefRecht_extension" />
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="jetbrains.mps.smodel.structure.Extension" />
+    <classNode extendsClassName="jetbrains.mps.smodel.structure.DefaultExtensionDescriptor" />
+  </dependency>
+  <dependency className="Simulatie.plugin.Interpreter" file="Interpreter.java">
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ContextImpl" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IEnvironment" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IInterpreter" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.INodeValueCache" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterRegistry" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.NullCoverageAnalyzer" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="Simulatie.plugin.InterpreterObjectiefRecht" file="InterpreterObjectiefRecht.java">
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IEvaluator" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IRelationship" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ITypeMapper" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.RuntimeException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterBase" />
+  </dependency>
+  <dependency className="Simulatie.plugin.ObjectiefRecht_extension" file="ObjectiefRecht_extension.java">
+    <classNode dependClassName="Simulatie.plugin.InterpreterObjectiefRecht" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.CachedInterpreterFinder" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IInterpreter" />
+    <classNode dependClassName="jetbrains.mps.smodel.structure.Extension" />
+    <classNode extendsClassName="jetbrains.mps.smodel.structure.Default" />
+  </dependency>
+</dependenciesRoot>
+

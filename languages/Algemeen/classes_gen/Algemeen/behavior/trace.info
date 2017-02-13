@@ -15,6 +15,9 @@
     <file name="BehaviorAspectDescriptor.java">
       <unit at="14,0,48,0" name="Algemeen.behavior.BehaviorAspectDescriptor" />
     </file>
+    <file name="Bericht_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Algemeen.behavior.Bericht_BehaviorDescriptor" />
+    </file>
     <file name="IBronGeldigheid_BehaviorDescriptor.java">
       <unit at="11,0,14,0" name="Algemeen.behavior.IBronGeldigheid_BehaviorDescriptor" />
     </file>
@@ -23,6 +26,9 @@
     </file>
     <file name="IOpmerking_BehaviorDescriptor.java">
       <unit at="11,0,14,0" name="Algemeen.behavior.IOpmerking_BehaviorDescriptor" />
+    </file>
+    <file name="LijstMetBerichten_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Algemeen.behavior.LijstMetBerichten_BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:47f70a36-2d19-4ed4-99ab-02ae4af48125(Algemeen.behavior)/7108013867276421466">

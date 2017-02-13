@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67/3751132065236767060:jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164879751025:jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="9,0,18,0" name="Simulatie.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)/3139957515582036208">
+    <file name="InterpreterObjectiefRecht.java">
+      <node id="3139957515582036208" at="23,38,24,11" concept="2" />
+      <node id="3139957515582036208" at="30,13,31,42" concept="2" />
+      <node id="3139957515582036208" at="31,42,32,48" concept="2" />
+      <node id="3139957515582230827" at="32,48,33,340" concept="6" />
+      <node id="3139957515582036208" at="34,49,35,19" concept="10" />
+      <node id="3139957515582036208" at="36,39,37,81" concept="10" />
+      <node id="3139957515582036208" at="40,38,41,54" concept="6" />
+      <node id="3139957515582036208" at="45,32,46,35" concept="6" />
+      <node id="3139957515582036208" at="51,13,52,42" concept="2" />
+      <node id="3139957515582036208" at="52,42,53,48" concept="2" />
+      <node id="3139957515582408189" at="53,48,54,276" concept="6" />
+      <node id="3139957515582036208" at="55,49,56,19" concept="10" />
+      <node id="3139957515582036208" at="57,39,58,83" concept="10" />
+      <node id="3139957515582036208" at="61,38,62,56" concept="6" />
+      <node id="3139957515582036208" at="66,32,67,37" concept="6" />
+      <node id="3139957515582036208" at="72,13,73,42" concept="2" />
+      <node id="3139957515582036208" at="73,42,74,48" concept="2" />
+      <node id="3139957515582618935" at="74,48,75,22" concept="6" />
+      <node id="3139957515582036208" at="76,49,77,19" concept="10" />
+      <node id="3139957515582036208" at="78,39,79,68" concept="10" />
+      <node id="3139957515582036208" at="82,38,83,50" concept="6" />
+      <node id="3139957515582036208" at="87,32,88,31" concept="6" />
+      <node id="3139957515582036208" at="94,0,96,0" concept="4" trace="populateTypeMappers#(Ljava/util/List;)V" />
+      <node id="3139957515582036208" at="99,0,101,0" concept="4" trace="populateRelationships#(Ljava/util/List;)V" />
+      <node id="3139957515582036208" at="23,0,26,0" concept="1" trace="InterpreterObjectiefRecht#()V" />
+      <node id="3139957515582036208" at="40,0,43,0" concept="4" trace="getInfo#()Lcom/mbeddr/mpsutil/interpreter/rt/EvaluatorInfo;" />
+      <node id="3139957515582036208" at="61,0,64,0" concept="4" trace="getInfo#()Lcom/mbeddr/mpsutil/interpreter/rt/EvaluatorInfo;" />
+      <node id="3139957515582036208" at="82,0,85,0" concept="4" trace="getInfo#()Lcom/mbeddr/mpsutil/interpreter/rt/EvaluatorInfo;" />
+      <node id="3139957515582036208" at="44,0,48,0" concept="4" trace="toString#()Ljava/lang/String;" />
+      <node id="3139957515582036208" at="65,0,69,0" concept="4" trace="toString#()Ljava/lang/String;" />
+      <node id="3139957515582036208" at="86,0,90,0" concept="4" trace="toString#()Ljava/lang/String;" />
+      <node id="3139957515582036208" at="29,97,38,9" concept="11" />
+      <node id="3139957515582036208" at="50,97,59,9" concept="11" />
+      <node id="3139957515582036208" at="71,97,80,9" concept="11" />
+      <node id="3139957515582036208" at="29,0,40,0" concept="4" trace="evaluateEvaluator#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;)Ljava/lang/Object;" />
+      <node id="3139957515582036208" at="50,0,61,0" concept="4" trace="evaluateEvaluator#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;)Ljava/lang/Object;" />
+      <node id="3139957515582036208" at="71,0,82,0" concept="4" trace="evaluateEvaluator#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;)Ljava/lang/Object;" />
+      <node id="3139957515582036208" at="27,76,48,7" concept="2" />
+      <node id="3139957515582036208" at="48,7,69,7" concept="2" />
+      <node id="3139957515582036208" at="69,7,90,7" concept="2" />
+      <node id="3139957515582036208" at="27,0,92,0" concept="4" trace="populateEvaluators#(Ljava/util/List;)V" />
+      <scope id="3139957515582036208" at="94,79,94,79" />
+      <scope id="3139957515582036208" at="99,85,99,85" />
+      <scope id="3139957515582036208" at="23,38,24,11" />
+      <scope id="3139957515582036208" at="34,0,35,19">
+        <var name="ex" id="3139957515582036208" />
+      </scope>
+      <scope id="3139957515582036208" at="34,49,35,19" />
+      <scope id="3139957515582036208" at="36,0,37,81">
+        <var name="ex" id="3139957515582036208" />
+      </scope>
+      <scope id="3139957515582036208" at="36,39,37,81" />
+      <scope id="3139957515582036208" at="40,38,41,54" />
+      <scope id="3139957515582036208" at="45,32,46,35" />
+      <scope id="3139957515582036208" at="55,0,56,19">
+        <var name="ex" id="3139957515582036208" />
+      </scope>
+      <scope id="3139957515582036208" at="55,49,56,19" />
+      <scope id="3139957515582036208" at="57,0,58,83">
+        <var name="ex" id="3139957515582036208" />
+      </scope>
+      <scope id="3139957515582036208" at="57,39,58,83" />
+      <scope id="3139957515582036208" at="61,38,62,56" />
+      <scope id="3139957515582036208" at="66,32,67,37" />
+      <scope id="3139957515582036208" at="76,0,77,19">
+        <var name="ex" id="3139957515582036208" />
+      </scope>
+      <scope id="3139957515582036208" at="76,49,77,19" />
+      <scope id="3139957515582036208" at="78,0,79,68">
+        <var name="ex" id="3139957515582036208" />
+      </scope>
+      <scope id="3139957515582036208" at="78,39,79,68" />
+      <scope id="3139957515582036208" at="82,38,83,50" />
+      <scope id="3139957515582036208" at="87,32,88,31" />
+      <scope id="3139957515582036208" at="94,0,96,0">
+        <var name="typeMappers" id="3139957515582036208" />
+      </scope>
+      <scope id="3139957515582036208" at="99,0,101,0">
+        <var name="relationships" id="3139957515582036208" />
+      </scope>
+      <scope id="3139957515582036208" at="23,0,26,0" />
+      <scope id="3139957515582036208" at="30,13,33,340" />
+      <scope id="3139957515582036208" at="40,0,43,0" />
+      <scope id="3139957515582036208" at="51,13,54,276" />
+      <scope id="3139957515582036208" at="61,0,64,0" />
+      <scope id="3139957515582036208" at="72,13,75,22" />
+      <scope id="3139957515582036208" at="82,0,85,0" />
+      <scope id="3139957515582036208" at="44,0,48,0" />
+      <scope id="3139957515582036208" at="65,0,69,0" />
+      <scope id="3139957515582036208" at="86,0,90,0" />
+      <scope id="3139957515582036208" at="29,97,38,9" />
+      <scope id="3139957515582036208" at="50,97,59,9" />
+      <scope id="3139957515582036208" at="71,97,80,9" />
+      <scope id="3139957515582036208" at="29,0,40,0">
+        <var name="context" id="3139957515582036208" />
+        <var name="coverage" id="3139957515582036208" />
+        <var name="node" id="3139957515582036208" />
+      </scope>
+      <scope id="3139957515582036208" at="50,0,61,0">
+        <var name="context" id="3139957515582036208" />
+        <var name="coverage" id="3139957515582036208" />
+        <var name="node" id="3139957515582036208" />
+      </scope>
+      <scope id="3139957515582036208" at="71,0,82,0">
+        <var name="context" id="3139957515582036208" />
+        <var name="coverage" id="3139957515582036208" />
+        <var name="node" id="3139957515582036208" />
+      </scope>
+      <scope id="3139957515582036208" at="27,76,90,7" />
+      <scope id="3139957515582036208" at="27,0,92,0">
+        <var name="evaluators" id="3139957515582036208" />
+      </scope>
+      <unit id="3139957515582036208" at="28,74,48,5" name="Simulatie.plugin.InterpreterObjectiefRecht$1" />
+      <unit id="3139957515582036208" at="49,74,69,5" name="Simulatie.plugin.InterpreterObjectiefRecht$2" />
+      <unit id="3139957515582036208" at="70,74,90,5" name="Simulatie.plugin.InterpreterObjectiefRecht$3" />
+      <unit id="3139957515582036208" at="22,0,102,0" name="Simulatie.plugin.InterpreterObjectiefRecht" />
+    </file>
+    <file name="ObjectiefRecht_extension.java">
+      <node id="3139957515582036208" at="10,37,11,70" concept="9" />
+      <node id="3139957515582036208" at="14,26,15,55" concept="2" />
+      <node id="3139957515582036208" at="17,28,18,55" concept="2" />
+      <node id="3139957515582036208" at="21,29,22,43" concept="6" />
+      <node id="3139957515582036208" at="10,0,13,0" concept="1" trace="ObjectiefRecht_extension#()V" />
+      <node id="3139957515582036208" at="14,0,17,0" concept="0" trace="activate#()V" />
+      <node id="3139957515582036208" at="17,0,20,0" concept="0" trace="deactivate#()V" />
+      <node id="3139957515582036208" at="21,0,24,0" concept="0" trace="get#()Lcom/mbeddr/mpsutil/interpreter/rt/IInterpreter;" />
+      <scope id="3139957515582036208" at="10,37,11,70" />
+      <scope id="3139957515582036208" at="14,26,15,55" />
+      <scope id="3139957515582036208" at="17,28,18,55" />
+      <scope id="3139957515582036208" at="21,29,22,43" />
+      <scope id="3139957515582036208" at="10,0,13,0" />
+      <scope id="3139957515582036208" at="14,0,17,0" />
+      <scope id="3139957515582036208" at="17,0,20,0" />
+      <scope id="3139957515582036208" at="21,0,24,0" />
+      <unit id="3139957515582036208" at="9,0,25,0" name="Simulatie.plugin.ObjectiefRecht_extension" />
+    </file>
+  </root>
+  <root nodeRef="r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)/3139957515582417695">
+    <file name="Interpreter.java">
+      <node id="4065005624681052873" at="19,0,20,0" concept="7" trace="interpreter" />
+      <node id="4065005624681057620" at="20,0,21,0" concept="7" trace="context" />
+      <node id="8286181731523264451" at="22,45,23,33" concept="5" />
+      <node id="8286181731523270885" at="24,26,25,18" concept="6" />
+      <node id="5917060184178573243" at="26,5,27,88" concept="5" />
+      <node id="5917060184178578093" at="28,26,29,25" concept="6" />
+      <node id="7760345304273981256" at="30,5,31,45" concept="5" />
+      <node id="7760345304273593359" at="32,29,33,18" concept="6" />
+      <node id="7760345304273273715" at="34,5,35,32" concept="6" />
+      <node id="5917060184178583719" at="39,30,40,173" concept="2" />
+      <node id="5917060184178583723" at="41,5,42,43" concept="2" />
+      <node id="3139957515582454446" at="42,43,43,60" concept="5" />
+      <node id="5917060184178583776" at="43,60,44,89" concept="5" />
+      <node id="5917060184178870233" at="44,89,45,177" concept="5" />
+      <node id="5917060184178583782" at="45,177,46,18" concept="6" />
+      <node id="8286181731523268508" at="23,33,26,5" concept="3" />
+      <node id="7760345304273128048" at="27,88,30,5" concept="3" />
+      <node id="7760345304273591389" at="31,45,34,5" concept="3" />
+      <node id="5917060184178583717" at="38,84,41,5" concept="3" />
+      <node id="5917060184178583416" at="38,0,48,0" concept="8" trace="eval#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/baseLanguage/tuples/runtime/Tuples/_3;" />
+      <node id="4065005624681055957" at="22,0,37,0" concept="8" trace="evaluate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="8286181731523268510" at="24,26,25,18" />
+      <scope id="7760345304273128050" at="28,26,29,25" />
+      <scope id="7760345304273591391" at="32,29,33,18" />
+      <scope id="5917060184178583718" at="39,30,40,173" />
+      <scope id="5917060184178583419" at="38,84,46,18">
+        <var name="coverage" id="3139957515582454449" />
+        <var name="result" id="5917060184178870234" />
+        <var name="value" id="5917060184178583777" />
+      </scope>
+      <scope id="5917060184178583416" at="38,0,48,0">
+        <var name="node" id="5917060184178583700" />
+      </scope>
+      <scope id="4065005624681055960" at="22,45,35,32">
+        <var name="context" id="8286181731523264452" />
+        <var name="nodeValues" id="7760345304273981257" />
+        <var name="result" id="5917060184178573244" />
+      </scope>
+      <scope id="4065005624681055957" at="22,0,37,0">
+        <var name="node" id="4065005624681055990" />
+      </scope>
+      <unit id="3139957515582417695" at="18,0,50,0" name="Simulatie.plugin.Interpreter" />
+    </file>
+  </root>
+</debug-info>
+

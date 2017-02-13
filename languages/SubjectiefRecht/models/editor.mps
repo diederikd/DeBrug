@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -13,7 +14,12 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="2597348684684069742" name="contextHints" index="CpUAK" />
+      </concept>
+      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
+        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
@@ -25,6 +31,10 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
+        <child id="5944657839000877563" name="hints" index="2ABdcP" />
+      </concept>
+      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -60,9 +70,32 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables">
+      <concept id="1397920687865593407" name="de.slisson.mps.tables.structure.PartialTable" flags="ng" index="2r0Tta">
+        <child id="1397920687865593523" name="cells" index="2r0Tv6" />
+      </concept>
+      <concept id="1397920687864997197" name="de.slisson.mps.tables.structure.ChildsHorizontal" flags="ng" index="2reCKS" />
+      <concept id="1397920687864997170" name="de.slisson.mps.tables.structure.TableNodeCollection" flags="ng" index="2reCL7">
+        <child id="1397920687864997171" name="childTableNodes" index="2reCL6" />
+      </concept>
+      <concept id="1397920687864997153" name="de.slisson.mps.tables.structure.StaticHorizontal" flags="ng" index="2reCLk" />
+      <concept id="1397920687864997143" name="de.slisson.mps.tables.structure.TableCell" flags="ng" index="2reCLy">
+        <child id="1397920687865111420" name="columnHeader" index="2recC9" />
+        <child id="1397920687865064647" name="editorCell" index="2reSmM" />
+      </concept>
+      <concept id="1397920687865064509" name="de.slisson.mps.tables.structure.ChildCollection" flags="ng" index="2reSl8">
+        <reference id="1397920687864997201" name="linkDeclaration" index="2reCK$" />
+      </concept>
+      <concept id="1397920687864864270" name="de.slisson.mps.tables.structure.StaticHeader" flags="ng" index="2rfbtV">
+        <property id="1397920687864864274" name="text" index="2rfbtB" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
@@ -504,6 +537,71 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7$WBeOqRlYW" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2IjnF_A7FPi">
+    <property role="3GE5qa" value="RechtsgevolgVeroorzaker" />
+    <ref role="1XX52x" to="gcgs:2IjnF_A3JGk" resolve="LijstMetRechtshandelingen" />
+    <node concept="2r0Tta" id="2IjnF_A7FPk" role="2wV5jI">
+      <node concept="2reCKS" id="2IjnF_A7FPW" role="2r0Tv6">
+        <ref role="2reCK$" to="gcgs:2IjnF_A3JGl" resolve="rechtshandelingen" />
+      </node>
+    </node>
+    <node concept="2aJ2om" id="2IjnF_A7FSe" role="CpUAK">
+      <ref role="2$4xQ3" node="2IjnF_A7FQr" resolve="tabel" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2IjnF_A7FPY">
+    <property role="3GE5qa" value="RechtsgevolgVeroorzaker" />
+    <ref role="1XX52x" to="gcgs:6c9haf45sNk" resolve="Rechtshandeling" />
+    <node concept="2aJ2om" id="2IjnF_A7FQB" role="CpUAK">
+      <ref role="2$4xQ3" node="2IjnF_A7FQr" resolve="tabel" />
+    </node>
+    <node concept="2r0Tta" id="2IjnF_A7FQF" role="2wV5jI">
+      <node concept="2reCLk" id="2IjnF_A7FQI" role="2r0Tv6">
+        <node concept="2reCLy" id="2IjnF_A7FQK" role="2reCL6">
+          <node concept="1iCGBv" id="2IjnF_A7FQO" role="2reSmM">
+            <ref role="1NtTu8" to="gcgs:6c9haf45sNo" resolve="actor" />
+            <node concept="1sVBvm" id="2IjnF_A7FQQ" role="1sWHZn">
+              <node concept="3F0A7n" id="2IjnF_A7FQX" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="2rfbtV" id="2IjnF_A7FR0" role="2recC9">
+            <property role="2rfbtB" value="Actor" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="2IjnF_A7FR9" role="2reCL6">
+          <node concept="1iCGBv" id="2IjnF_A7FRk" role="2reSmM">
+            <ref role="1NtTu8" to="gcgs:6c9haf45_$D" resolve="rechtshandeling" />
+            <node concept="1sVBvm" id="2IjnF_A7FRm" role="1sWHZn">
+              <node concept="3F0A7n" id="2IjnF_A7FRt" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="2rfbtV" id="2IjnF_A7FRw" role="2recC9">
+            <property role="2rfbtB" value="Handeling" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="2IjnF_A7FRI" role="2reCL6">
+          <node concept="3F1sOY" id="2IjnF_A7FS9" role="2reSmM">
+            <ref role="1NtTu8" to="gcgs:6c9haf45_U3" resolve="uitgevoerdOp" />
+          </node>
+          <node concept="2rfbtV" id="2IjnF_A7FSc" role="2recC9">
+            <property role="2rfbtB" value="Uitgevoerd op" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2ABfQD" id="2IjnF_A7FQq">
+    <property role="TrG5h" value="GN" />
+    <node concept="2BsEeg" id="2IjnF_A7FQr" role="2ABdcP">
+      <property role="TrG5h" value="tabel" />
     </node>
   </node>
 </model>

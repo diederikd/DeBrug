@@ -1,8 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="7,0,12,0" name="Algemeen.editor.EditorAspectDescriptorImpl" />
+      <unit at="15,0,46,0" name="Algemeen.editor.EditorAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:c0fbe437-7961-47ac-abdf-e7530e5fd9ab(Algemeen.editor)/3139957515582237938">
+    <file name="Bericht_Editor.java">
+      <node id="3139957515582237938" at="15,79,16,63" concept="4" />
+      <node id="3139957515582237938" at="18,89,19,96" concept="3" />
+      <node id="3139957515582237938" at="19,96,20,48" concept="0" />
+      <node id="3139957515582237938" at="20,48,21,28" concept="0" />
+      <node id="3139957515582237938" at="21,28,22,81" concept="0" />
+      <node id="3139957515582237938" at="22,81,23,22" concept="4" />
+      <node id="3139957515582237947" at="25,88,26,82" concept="3" />
+      <node id="3139957515582237947" at="26,82,27,37" concept="0" />
+      <node id="3139957515582237947" at="27,37,28,50" concept="0" />
+      <node id="3139957515582237947" at="28,50,29,26" concept="3" />
+      <node id="3139957515582237947" at="29,26,30,58" concept="0" />
+      <node id="3139957515582237947" at="30,58,31,50" concept="0" />
+      <node id="3139957515582237947" at="31,50,32,73" concept="0" />
+      <node id="3139957515582237947" at="32,73,33,57" concept="3" />
+      <node id="3139957515582237947" at="34,35,35,82" concept="3" />
+      <node id="3139957515582237947" at="35,82,36,112" concept="4" />
+      <node id="3139957515582237947" at="37,10,38,22" concept="4" />
+      <node id="3139957515582237938" at="15,0,18,0" concept="2" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="3139957515582237947" at="33,57,38,22" concept="1" />
+      <node id="3139957515582237938" at="18,0,25,0" concept="2" trace="createCollection_pdge2j_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="3139957515582237947" at="25,0,40,0" concept="2" trace="createProperty_pdge2j_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="3139957515582237938" at="15,79,16,63" />
+      <scope id="3139957515582237947" at="34,35,36,112">
+        <var name="manager" id="3139957515582237947" />
+      </scope>
+      <scope id="3139957515582237938" at="15,0,18,0">
+        <var name="editorContext" id="3139957515582237938" />
+        <var name="node" id="3139957515582237938" />
+      </scope>
+      <scope id="3139957515582237938" at="18,89,23,22">
+        <var name="editorCell" id="3139957515582237938" />
+      </scope>
+      <scope id="3139957515582237938" at="18,0,25,0">
+        <var name="editorContext" id="3139957515582237938" />
+        <var name="node" id="3139957515582237938" />
+      </scope>
+      <scope id="3139957515582237947" at="25,88,38,22">
+        <var name="attributeConcept" id="3139957515582237947" />
+        <var name="editorCell" id="3139957515582237947" />
+        <var name="provider" id="3139957515582237947" />
+      </scope>
+      <scope id="3139957515582237947" at="25,0,40,0">
+        <var name="editorContext" id="3139957515582237947" />
+        <var name="node" id="3139957515582237947" />
+      </scope>
+      <unit id="3139957515582237938" at="14,0,41,0" name="Algemeen.editor.Bericht_Editor" />
     </file>
   </root>
 </debug-info>

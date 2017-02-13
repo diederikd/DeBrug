@@ -95,7 +95,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ReferentieNaarRechtsgevolg = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtsgevolgVeroorzaker = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtssubject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarVoorwaarde = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReferentieNaarVoorwaarde = new ConceptPresentationBuilder().deprecated().create();
   private final ConceptPresentation props_Regel = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RekenExpressie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RijVanKaraktersType = new ConceptPresentationBuilder().create();

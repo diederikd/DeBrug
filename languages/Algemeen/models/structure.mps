@@ -17,6 +17,9 @@
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <reference id="1071489389519" name="extends" index="1TJDcQ" />
+      </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
@@ -68,6 +71,28 @@
       <property role="IQ2nx" value="7108013867276306285" />
       <property role="TrG5h" value="opmerkingen" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2IjnF_A6eNj">
+    <property role="EcuMT" value="3139957515582237907" />
+    <property role="TrG5h" value="Bericht" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2IjnF_A6eNk" role="1TKVEl">
+      <property role="IQ2nx" value="3139957515582237908" />
+      <property role="TrG5h" value="berichttekst" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2IjnF_A6eNY">
+    <property role="EcuMT" value="3139957515582237950" />
+    <property role="TrG5h" value="LijstMetBerichten" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2IjnF_A6eNZ" role="1TKVEi">
+      <property role="IQ2ns" value="3139957515582237951" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="berichten" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2IjnF_A6eNj" resolve="Bericht" />
     </node>
   </node>
 </model>
