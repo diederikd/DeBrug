@@ -18,6 +18,12 @@
     <file name="Casus_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="SubjectiefRecht.behavior.Casus_BehaviorDescriptor" />
     </file>
+    <file name="LijstMetRechtsbetrekkingen_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.LijstMetRechtsbetrekkingen_BehaviorDescriptor" />
+    </file>
+    <file name="LijstMetRechtshandelingen_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.LijstMetRechtshandelingen_BehaviorDescriptor" />
+    </file>
     <file name="NatuurlijkPersoon_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="SubjectiefRecht.behavior.NatuurlijkPersoon_BehaviorDescriptor" />
     </file>

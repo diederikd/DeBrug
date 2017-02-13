@@ -16,6 +16,14 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="SubjectiefRecht.behavior.LijstMetRechtsbetrekkingen_BehaviorDescriptor" file="LijstMetRechtsbetrekkingen_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="SubjectiefRecht.behavior.LijstMetRechtshandelingen_BehaviorDescriptor" file="LijstMetRechtshandelingen_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="SubjectiefRecht.behavior.NatuurlijkPersoon_BehaviorDescriptor" file="NatuurlijkPersoon_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />

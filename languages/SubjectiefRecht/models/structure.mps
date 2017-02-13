@@ -236,5 +236,31 @@
       <ref role="20lvS9" node="6c9haf45syu" resolve="Rechtsbetrekking" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2IjnF_A3JGk">
+    <property role="EcuMT" value="3139957515581586196" />
+    <property role="3GE5qa" value="RechtsgevolgVeroorzaker" />
+    <property role="TrG5h" value="LijstMetRechtshandelingen" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2IjnF_A3JGl" role="1TKVEi">
+      <property role="IQ2ns" value="3139957515581586197" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rechtshandelingen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6c9haf45sNk" resolve="Rechtshandeling" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2IjnF_A3JGI">
+    <property role="EcuMT" value="3139957515581586222" />
+    <property role="3GE5qa" value="Rechtsbetrekking" />
+    <property role="TrG5h" value="LijstMetRechtsbetrekkingen" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2IjnF_A3JGJ" role="1TKVEi">
+      <property role="IQ2ns" value="3139957515581586223" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rechtsbetrekkingen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6c9haf45syu" resolve="Rechtsbetrekking" />
+    </node>
+  </node>
 </model>
 

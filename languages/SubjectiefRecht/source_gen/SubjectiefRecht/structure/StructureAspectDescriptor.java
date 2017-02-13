@@ -18,8 +18,10 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(10);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(12);
   /*package*/ final ConceptDescriptor myConceptCasus = createDescriptorForCasus();
+  /*package*/ final ConceptDescriptor myConceptLijstMetRechtsbetrekkingen = createDescriptorForLijstMetRechtsbetrekkingen();
+  /*package*/ final ConceptDescriptor myConceptLijstMetRechtshandelingen = createDescriptorForLijstMetRechtshandelingen();
   /*package*/ final ConceptDescriptor myConceptNatuurlijkPersoon = createDescriptorForNatuurlijkPersoon();
   /*package*/ final ConceptDescriptor myConceptRechtsbetrekking = createDescriptorForRechtsbetrekking();
   /*package*/ final ConceptDescriptor myConceptRechtsgevolgVeroorzaker = createDescriptorForRechtsgevolgVeroorzaker();
@@ -32,20 +34,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   public StructureAspectDescriptor() {
     myIndexMap.put(myConceptCasus.getId(), 0);
-    myIndexMap.put(myConceptNatuurlijkPersoon.getId(), 1);
-    myIndexMap.put(myConceptRechtsbetrekking.getId(), 2);
-    myIndexMap.put(myConceptRechtsgevolgVeroorzaker.getId(), 3);
-    myIndexMap.put(myConceptRechtshandeling.getId(), 4);
-    myIndexMap.put(myConceptRechtspersoon.getId(), 5);
-    myIndexMap.put(myConceptRechtssubject.getId(), 6);
-    myIndexMap.put(myConceptReferentieNaarNatuurlijkPersoon.getId(), 7);
-    myIndexMap.put(myConceptReferentieNaarRechtsSubject.getId(), 8);
-    myIndexMap.put(myConceptReferentieNaarRechtsbetrekking.getId(), 9);
+    myIndexMap.put(myConceptLijstMetRechtsbetrekkingen.getId(), 1);
+    myIndexMap.put(myConceptLijstMetRechtshandelingen.getId(), 2);
+    myIndexMap.put(myConceptNatuurlijkPersoon.getId(), 3);
+    myIndexMap.put(myConceptRechtsbetrekking.getId(), 4);
+    myIndexMap.put(myConceptRechtsgevolgVeroorzaker.getId(), 5);
+    myIndexMap.put(myConceptRechtshandeling.getId(), 6);
+    myIndexMap.put(myConceptRechtspersoon.getId(), 7);
+    myIndexMap.put(myConceptRechtssubject.getId(), 8);
+    myIndexMap.put(myConceptReferentieNaarNatuurlijkPersoon.getId(), 9);
+    myIndexMap.put(myConceptReferentieNaarRechtsSubject.getId(), 10);
+    myIndexMap.put(myConceptReferentieNaarRechtsbetrekking.getId(), 11);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptCasus, myConceptNatuurlijkPersoon, myConceptRechtsbetrekking, myConceptRechtsgevolgVeroorzaker, myConceptRechtshandeling, myConceptRechtspersoon, myConceptRechtssubject, myConceptReferentieNaarNatuurlijkPersoon, myConceptReferentieNaarRechtsSubject, myConceptReferentieNaarRechtsbetrekking);
+    return Arrays.asList(myConceptCasus, myConceptLijstMetRechtsbetrekkingen, myConceptLijstMetRechtshandelingen, myConceptNatuurlijkPersoon, myConceptRechtsbetrekking, myConceptRechtsgevolgVeroorzaker, myConceptRechtshandeling, myConceptRechtspersoon, myConceptRechtssubject, myConceptReferentieNaarNatuurlijkPersoon, myConceptReferentieNaarRechtsSubject, myConceptReferentieNaarRechtsbetrekking);
   }
 
   @Override
@@ -59,22 +63,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 0:
         return myConceptCasus;
       case 1:
-        return myConceptNatuurlijkPersoon;
+        return myConceptLijstMetRechtsbetrekkingen;
       case 2:
-        return myConceptRechtsbetrekking;
+        return myConceptLijstMetRechtshandelingen;
       case 3:
-        return myConceptRechtsgevolgVeroorzaker;
+        return myConceptNatuurlijkPersoon;
       case 4:
-        return myConceptRechtshandeling;
+        return myConceptRechtsbetrekking;
       case 5:
-        return myConceptRechtspersoon;
+        return myConceptRechtsgevolgVeroorzaker;
       case 6:
-        return myConceptRechtssubject;
+        return myConceptRechtshandeling;
       case 7:
-        return myConceptReferentieNaarNatuurlijkPersoon;
+        return myConceptRechtspersoon;
       case 8:
-        return myConceptReferentieNaarRechtsSubject;
+        return myConceptRechtssubject;
       case 9:
+        return myConceptReferentieNaarNatuurlijkPersoon;
+      case 10:
+        return myConceptReferentieNaarRechtsSubject;
+      case 11:
         return myConceptReferentieNaarRechtsbetrekking;
       default:
         throw new IllegalStateException();
@@ -93,6 +101,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   private static ConceptDescriptor createDescriptorForCasus() {
     return new ConceptDescriptorBuilder("SubjectiefRecht.structure.Casus", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x464e588a7000d2e6L, "context", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L), true, new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "5066083982446220006"))).references("context").childDescriptors(new ConceptDescriptorBuilder.Link(0x464e588a6ffd4a79L, "natuurlijkepersonen", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88cL), true, true, false, new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "5066083982445988473")), new ConceptDescriptorBuilder.Link(0x630944a3c415ccddL, "rechtsbetrekkingen", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL), true, true, false, new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "7136310554705382621")), new ConceptDescriptorBuilder.Link(0x630944a3c415cce0L, "rechtsgevolgveroorzakers", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd3L), true, true, false, new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "7136310554705382624"))).children(new String[]{"natuurlijkepersonen", "rechtsbetrekkingen", "rechtsgevolgveroorzakers"}, new boolean[]{true, true, true}).rootable().sourceNode(new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "7136310554705382618")).create();
+  }
+  private static ConceptDescriptor createDescriptorForLijstMetRechtsbetrekkingen() {
+    return new ConceptDescriptorBuilder("SubjectiefRecht.structure.LijstMetRechtsbetrekkingen", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb2eL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x2b935eb9660efb2fL, "rechtsbetrekkingen", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL), true, true, false, new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "3139957515581586223"))).children(new String[]{"rechtsbetrekkingen"}, new boolean[]{true}).sourceNode(new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "3139957515581586222")).create();
+  }
+  private static ConceptDescriptor createDescriptorForLijstMetRechtshandelingen() {
+    return new ConceptDescriptorBuilder("SubjectiefRecht.structure.LijstMetRechtshandelingen", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x2b935eb9660efb15L, "rechtshandelingen", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L), true, true, false, new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "3139957515581586197"))).children(new String[]{"rechtshandelingen"}, new boolean[]{true}).sourceNode(new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "3139957515581586196")).create();
   }
   private static ConceptDescriptor createDescriptorForNatuurlijkPersoon() {
     return new ConceptDescriptorBuilder("SubjectiefRecht.structure.NatuurlijkPersoon", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88cL)).super_("SubjectiefRecht.structure.Rechtssubject").version(1).super_(MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88bL)).parents("SubjectiefRecht.structure.Rechtssubject").parentIds(MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88bL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x464e588a6ffd6e81L, "rol", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), false, new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "5066083982445997697"))).references("rol").sourceNode(new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "7136310554705381516")).create();

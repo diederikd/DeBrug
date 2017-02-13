@@ -10,6 +10,8 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private final ConceptPresentation props_Casus = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_LijstMetRechtsbetrekkingen = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_LijstMetRechtshandelingen = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_NatuurlijkPersoon = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rechtsbetrekking = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RechtsgevolgVeroorzaker = new ConceptPresentationBuilder().create();
@@ -28,22 +30,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 0:
         return props_Casus;
       case 1:
-        return props_NatuurlijkPersoon;
+        return props_LijstMetRechtsbetrekkingen;
       case 2:
-        return props_Rechtsbetrekking;
+        return props_LijstMetRechtshandelingen;
       case 3:
-        return props_RechtsgevolgVeroorzaker;
+        return props_NatuurlijkPersoon;
       case 4:
-        return props_Rechtshandeling;
+        return props_Rechtsbetrekking;
       case 5:
-        return props_Rechtspersoon;
+        return props_RechtsgevolgVeroorzaker;
       case 6:
-        return props_Rechtssubject;
+        return props_Rechtshandeling;
       case 7:
-        return props_ReferentieNaarNatuurlijkPersoon;
+        return props_Rechtspersoon;
       case 8:
-        return props_ReferentieNaarRechtsSubject;
+        return props_Rechtssubject;
       case 9:
+        return props_ReferentieNaarNatuurlijkPersoon;
+      case 10:
+        return props_ReferentieNaarRechtsSubject;
+      case 11:
         return props_ReferentieNaarRechtsbetrekking;
     }
     throw new IllegalStateException("Unknown concept " + c);
