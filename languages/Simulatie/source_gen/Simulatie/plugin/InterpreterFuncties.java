@@ -5,9 +5,44 @@ package Simulatie.plugin;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.model.SModel;
+import java.util.ArrayList;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class InterpreterFuncties {
-  /*package*/ List<SNode> ZoekInstantiesVanObject(SModel model, SNode object, List<SNode> LijstMetKenmerkWaarden) {
+  /*package*/ List<SNode> ZoekInstantiesVanObject(SModel model, final SNode object, List<SNode> LijstMetKenmerkWaarden) {
+    // Validatie of object wel beschikbaar is in het model 
+
+    // validatie of het wel de kenmerken betreffen van het object 
+    List<SNode> returninstantieVanObjects = new ArrayList<SNode>();
+    List<SNode> instantieVanObjects = (List<SNode>) ListSequence.fromList(SModelOperations.nodes(model, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"))).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "referentieNaarObject")) == object;
+      }
+    });
+    // Kijk vervolgens voor elke instantie van het object of deze kenmerken bevat met dezelfde waarden als de opgegeven parameters 
+    for (SNode instantieVanObject : ListSequence.fromList(instantieVanObjects)) {
+      boolean valide = false;
+      for (SNode waardeVanKenmerk : ListSequence.fromList(LijstMetKenmerkWaarden)) {
+        for (SNode waardeVanKenmerkInstantie : ListSequence.fromList(SLinkOperations.getChildren(instantieVanObject, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca15L, "waardeVanKenmerken")))) {
+          // Zelfde kenmerk en zelfde waarde? 
+          if (SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")) == SLinkOperations.getTarget(waardeVanKenmerkInstantie, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")) && SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde")) == SLinkOperations.getTarget(waardeVanKenmerkInstantie, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde"))) {
+            valide = true;
+          }
+          if (SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")) == SLinkOperations.getTarget(waardeVanKenmerkInstantie, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")) && SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde")) != SLinkOperations.getTarget(waardeVanKenmerkInstantie, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde"))) {
+            valide = false;
+          }
+
+        }
+      }
+      if (valide == true) {
+        ListSequence.fromList(returninstantieVanObjects).addElement(instantieVanObject);
+      }
+    }
+
 
     return null;
   }
