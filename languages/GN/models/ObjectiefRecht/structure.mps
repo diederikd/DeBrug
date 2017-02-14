@@ -6,9 +6,9 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="jx79" ref="r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)" implicit="true" />
-    <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -1154,8 +1154,8 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
-    <node concept="PrWs8" id="2IjnF_A5AMT" role="PzmwI">
-      <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
+    <node concept="PrWs8" id="XSBwowgVAj" role="PzmwI">
+      <ref role="PrY4T" node="XSBwowgV_S" resolve="IRekenWaarde" />
     </node>
   </node>
   <node concept="1TIwiD" id="gIBqGO45PV">
@@ -1688,6 +1688,25 @@
       <property role="20kJfa" value="object" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="GhrpPwHHWz" resolve="Object" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="XSBwowgV_S">
+    <property role="EcuMT" value="1114814656922499448" />
+    <property role="TrG5h" value="IRekenWaarde" />
+    <property role="3GE5qa" value="Expressies.Rekenen" />
+    <node concept="1TJgyj" id="XSBwowgVAh" role="1TKVEi">
+      <property role="IQ2ns" value="1114814656922499473" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressie1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="uwhu:XSBwowcV4J" resolve="RekenWaarde" />
+    </node>
+    <node concept="1TJgyj" id="XSBwowgVAi" role="1TKVEi">
+      <property role="IQ2ns" value="1114814656922499474" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressie2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="uwhu:XSBwowcV4J" resolve="RekenWaarde" />
     </node>
   </node>
 </model>

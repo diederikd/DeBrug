@@ -18,6 +18,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Rechtshandeling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rechtspersoon = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rechtssubject = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReferentieNaarInstantieVanObject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarNatuurlijkPersoon = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtsSubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtsbetrekking = new ConceptPresentationBuilder().create();
@@ -46,10 +47,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 8:
         return props_Rechtssubject;
       case 9:
-        return props_ReferentieNaarNatuurlijkPersoon;
+        return props_ReferentieNaarInstantieVanObject;
       case 10:
-        return props_ReferentieNaarRechtsSubject;
+        return props_ReferentieNaarNatuurlijkPersoon;
       case 11:
+        return props_ReferentieNaarRechtsSubject;
+      case 12:
         return props_ReferentieNaarRechtsbetrekking;
     }
     throw new IllegalStateException("Unknown concept " + c);

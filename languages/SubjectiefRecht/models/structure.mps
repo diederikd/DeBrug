@@ -262,5 +262,18 @@
       <ref role="20lvS9" node="6c9haf45syu" resolve="Rechtsbetrekking" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2IjnF_AlRv5">
+    <property role="EcuMT" value="3139957515586336709" />
+    <property role="3GE5qa" value="RechtsSubject" />
+    <property role="TrG5h" value="ReferentieNaarInstantieVanObject" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2IjnF_AlRv6" role="1TKVEi">
+      <property role="IQ2ns" value="3139957515586336710" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instantieVanObject" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+    </node>
+  </node>
 </model>
 

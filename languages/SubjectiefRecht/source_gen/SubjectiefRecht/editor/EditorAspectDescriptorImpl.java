@@ -17,7 +17,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
-  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("tabel", "", false, "SubjectiefRecht.editor.GN.tabel"));
+  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Lijst", "", false, "SubjectiefRecht.editor.SubjectiefRecht.Lijst"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {
@@ -32,35 +32,40 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 1:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new LijstMetRechtshandelingen_tabel_Editor());
+            return Collections.<ConceptEditor>singletonList(new LijstMetRechtsbetrekkingen_Lijst_Editor());
           }
           break;
         case 2:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new NatuurlijkPersoon_Editor());
+            return Collections.<ConceptEditor>singletonList(new LijstMetRechtshandelingen_Lijst_Editor());
           }
           break;
         case 3:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rechtsbetrekking_Editor());
+            return Collections.<ConceptEditor>singletonList(new NatuurlijkPersoon_Editor());
           }
           break;
         case 4:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new Rechtshandeling_Editor(), new Rechtshandeling_tabel_Editor()});
+            return Arrays.asList(new ConceptEditor[]{new Rechtsbetrekking_Editor(), new Rechtsbetrekking_Lijst_Editor()});
           }
           break;
         case 5:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rechtspersoon_Editor());
+            return Arrays.asList(new ConceptEditor[]{new Rechtshandeling_Editor(), new Rechtshandeling_Lijst_Editor()});
           }
           break;
         case 6:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new ReferentieNaarNatuurlijkPersoon_Editor());
+            return Collections.<ConceptEditor>singletonList(new Rechtspersoon_Editor());
           }
           break;
         case 7:
+          if (true) {
+            return Arrays.asList(new ConceptEditor[]{new ReferentieNaarNatuurlijkPersoon_Editor(), new ReferentieNaarNatuurlijkPersoon_Lijst_Editor()});
+          }
+          break;
+        case 8:
           if (true) {
             return Collections.<ConceptEditor>singletonList(new ReferentieNaarRechtsSubject_Editor());
           }
@@ -84,5 +89,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, "SubjectiefRecht.structure.Casus"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L, "SubjectiefRecht.structure.LijstMetRechtshandelingen"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88cL, "SubjectiefRecht.structure.NatuurlijkPersoon"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88dL, "SubjectiefRecht.structure.Rechtspersoon"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x6d2de15fcae8f225L, "SubjectiefRecht.structure.ReferentieNaarNatuurlijkPersoon"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd5L, "SubjectiefRecht.structure.ReferentieNaarRechtsSubject"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, "SubjectiefRecht.structure.Casus"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb2eL, "SubjectiefRecht.structure.LijstMetRechtsbetrekkingen"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L, "SubjectiefRecht.structure.LijstMetRechtshandelingen"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88cL, "SubjectiefRecht.structure.NatuurlijkPersoon"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88dL, "SubjectiefRecht.structure.Rechtspersoon"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x6d2de15fcae8f225L, "SubjectiefRecht.structure.ReferentieNaarNatuurlijkPersoon"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd5L, "SubjectiefRecht.structure.ReferentieNaarRechtsSubject"));
 }

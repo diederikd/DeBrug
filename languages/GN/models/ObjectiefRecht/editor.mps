@@ -3245,7 +3245,7 @@
     </node>
   </node>
   <node concept="2ABfQD" id="6syAJDDFkAc">
-    <property role="TrG5h" value="GN" />
+    <property role="TrG5h" value="ObjectiefRecht" />
     <node concept="2BsEeg" id="6syAJDDFkAd" role="2ABdcP">
       <property role="TrG5h" value="Kort" />
     </node>

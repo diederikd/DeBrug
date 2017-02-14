@@ -18,7 +18,7 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(12);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(13);
   /*package*/ final ConceptDescriptor myConceptCasus = createDescriptorForCasus();
   /*package*/ final ConceptDescriptor myConceptLijstMetRechtsbetrekkingen = createDescriptorForLijstMetRechtsbetrekkingen();
   /*package*/ final ConceptDescriptor myConceptLijstMetRechtshandelingen = createDescriptorForLijstMetRechtshandelingen();
@@ -28,6 +28,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptRechtshandeling = createDescriptorForRechtshandeling();
   /*package*/ final ConceptDescriptor myConceptRechtspersoon = createDescriptorForRechtspersoon();
   /*package*/ final ConceptDescriptor myConceptRechtssubject = createDescriptorForRechtssubject();
+  /*package*/ final ConceptDescriptor myConceptReferentieNaarInstantieVanObject = createDescriptorForReferentieNaarInstantieVanObject();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarNatuurlijkPersoon = createDescriptorForReferentieNaarNatuurlijkPersoon();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarRechtsSubject = createDescriptorForReferentieNaarRechtsSubject();
   /*package*/ final ConceptDescriptor myConceptReferentieNaarRechtsbetrekking = createDescriptorForReferentieNaarRechtsbetrekking();
@@ -42,14 +43,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     myIndexMap.put(myConceptRechtshandeling.getId(), 6);
     myIndexMap.put(myConceptRechtspersoon.getId(), 7);
     myIndexMap.put(myConceptRechtssubject.getId(), 8);
-    myIndexMap.put(myConceptReferentieNaarNatuurlijkPersoon.getId(), 9);
-    myIndexMap.put(myConceptReferentieNaarRechtsSubject.getId(), 10);
-    myIndexMap.put(myConceptReferentieNaarRechtsbetrekking.getId(), 11);
+    myIndexMap.put(myConceptReferentieNaarInstantieVanObject.getId(), 9);
+    myIndexMap.put(myConceptReferentieNaarNatuurlijkPersoon.getId(), 10);
+    myIndexMap.put(myConceptReferentieNaarRechtsSubject.getId(), 11);
+    myIndexMap.put(myConceptReferentieNaarRechtsbetrekking.getId(), 12);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptCasus, myConceptLijstMetRechtsbetrekkingen, myConceptLijstMetRechtshandelingen, myConceptNatuurlijkPersoon, myConceptRechtsbetrekking, myConceptRechtsgevolgVeroorzaker, myConceptRechtshandeling, myConceptRechtspersoon, myConceptRechtssubject, myConceptReferentieNaarNatuurlijkPersoon, myConceptReferentieNaarRechtsSubject, myConceptReferentieNaarRechtsbetrekking);
+    return Arrays.asList(myConceptCasus, myConceptLijstMetRechtsbetrekkingen, myConceptLijstMetRechtshandelingen, myConceptNatuurlijkPersoon, myConceptRechtsbetrekking, myConceptRechtsgevolgVeroorzaker, myConceptRechtshandeling, myConceptRechtspersoon, myConceptRechtssubject, myConceptReferentieNaarInstantieVanObject, myConceptReferentieNaarNatuurlijkPersoon, myConceptReferentieNaarRechtsSubject, myConceptReferentieNaarRechtsbetrekking);
   }
 
   @Override
@@ -79,10 +81,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 8:
         return myConceptRechtssubject;
       case 9:
-        return myConceptReferentieNaarNatuurlijkPersoon;
+        return myConceptReferentieNaarInstantieVanObject;
       case 10:
-        return myConceptReferentieNaarRechtsSubject;
+        return myConceptReferentieNaarNatuurlijkPersoon;
       case 11:
+        return myConceptReferentieNaarRechtsSubject;
+      case 12:
         return myConceptReferentieNaarRechtsbetrekking;
       default:
         throw new IllegalStateException();
@@ -125,6 +129,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForRechtssubject() {
     return new ConceptDescriptorBuilder("SubjectiefRecht.structure.Rechtssubject", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88bL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x630944a3c4180c1aL, "definitie", new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "7136310554705529882"))).properties("definitie").abstract_().sourceNode(new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "7136310554705381515")).create();
+  }
+  private static ConceptDescriptor createDescriptorForReferentieNaarInstantieVanObject() {
+    return new ConceptDescriptorBuilder("SubjectiefRecht.structure.ReferentieNaarInstantieVanObject", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9665777c5L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x2b935eb9665777c6L, "instantieVanObject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L), false, new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "3139957515586336710"))).references("instantieVanObject").sourceNode(new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "3139957515586336709")).create();
   }
   private static ConceptDescriptor createDescriptorForReferentieNaarNatuurlijkPersoon() {
     return new ConceptDescriptorBuilder("SubjectiefRecht.structure.ReferentieNaarNatuurlijkPersoon", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x6d2de15fcae8f225L)).super_("SubjectiefRecht.structure.Rechtssubject").version(1).super_(MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88bL)).parents("SubjectiefRecht.structure.Rechtssubject").parentIds(MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88bL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x6d2de15fcae8f226L, "natuurlijkpersoon", MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88cL), false, new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "7867191925628531238"))).references("natuurlijkpersoon").sourceNode(new SNodePointer("r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)", "7867191925628531237")).create();

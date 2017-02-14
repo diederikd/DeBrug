@@ -158,6 +158,20 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="3pw0:6w7GUCbs7K9" resolve="TabelMetInstanties" />
     </node>
+    <node concept="1TJgyj" id="2IjnF_AarD$" role="1TKVEi">
+      <property role="IQ2ns" value="3139957515583339108" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rechtshandelingen" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="gcgs:2IjnF_A3JGk" resolve="LijstMetRechtshandelingen" />
+    </node>
+    <node concept="1TJgyj" id="2IjnF_AnsZ2" role="1TKVEi">
+      <property role="IQ2ns" value="3139957515586752450" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rechtsbetrekkingen" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="gcgs:2IjnF_A3JGI" resolve="LijstMetRechtsbetrekkingen" />
+    </node>
     <node concept="PrWs8" id="6w7GUCbsHkT" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

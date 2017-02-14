@@ -38,7 +38,7 @@ import de.slisson.mps.editor.multiline.cellProviders.MultilineCellProvider;
 import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
 public class Rechtshandeling_EN_Editor extends DefaultNodeEditor {
-  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.GN.EN"});
+  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.EN"});
   @Override
   @NotNull
   public Collection<String> getContextHints() {

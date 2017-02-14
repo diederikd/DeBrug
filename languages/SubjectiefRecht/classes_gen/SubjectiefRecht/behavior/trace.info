@@ -42,6 +42,9 @@
     <file name="Rechtssubject_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="SubjectiefRecht.behavior.Rechtssubject_BehaviorDescriptor" />
     </file>
+    <file name="ReferentieNaarInstantieVanObject_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.ReferentieNaarInstantieVanObject_BehaviorDescriptor" />
+    </file>
     <file name="ReferentieNaarNatuurlijkPersoon_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="SubjectiefRecht.behavior.ReferentieNaarNatuurlijkPersoon_BehaviorDescriptor" />
     </file>

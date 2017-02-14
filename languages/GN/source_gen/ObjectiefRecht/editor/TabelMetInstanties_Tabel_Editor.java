@@ -60,7 +60,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Error;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 
 public class TabelMetInstanties_Tabel_Editor extends DefaultNodeEditor {
-  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.GN.Tabel"});
+  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.Tabel"});
   @Override
   @NotNull
   public Collection<String> getContextHints() {

@@ -32,9 +32,6 @@ public final class Datum__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getdate_id5riiL_BUg0c, setdate_id5riiL_BUmpQ);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, 0x630944a3c415c8c4L, "dag"), "" + (1));
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, 0x630944a3c415c8c6L, "maand"), "" + (1));
-    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, 0x630944a3c415c8c9L, "jaar"), "" + (1000));
   }
 
   /*package*/ static LocalDate getdate_id5riiL_BUg0c(@NotNull SNode __thisNode__) {

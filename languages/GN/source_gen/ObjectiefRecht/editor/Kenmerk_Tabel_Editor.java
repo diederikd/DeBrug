@@ -16,7 +16,7 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
 public class Kenmerk_Tabel_Editor extends DefaultNodeEditor {
-  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.GN.Tabel"});
+  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.Tabel"});
   @Override
   @NotNull
   public Collection<String> getContextHints() {

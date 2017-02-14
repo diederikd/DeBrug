@@ -9,7 +9,45 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,20,0" name="Simulatie.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,24,0" name="Simulatie.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3dd51f75-adac-4e35-acc9-1b9b4a751694(Simulatie.typesystem)/1114814656923626131">
+    <file name="EenGegevenshuishouding_NonTypesystemRule.java">
+      <node id="1114814656923657239" at="24,7,25,60" concept="5" />
+      <node id="1114814656923657239" at="25,60,26,258" concept="5" />
+      <node id="1114814656923626131" at="30,50,31,147" concept="6" />
+      <node id="1114814656923626131" at="33,68,34,102" concept="6" />
+      <node id="1114814656923626131" at="36,30,37,17" concept="6" />
+      <node id="1114814656923626131" at="20,0,22,0" concept="1" trace="EenGegevenshuishouding_NonTypesystemRule#()V" />
+      <node id="1114814656923626131" at="30,0,33,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1114814656923626131" at="33,0,36,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1114814656923626131" at="36,0,39,0" concept="4" trace="overrides#()Z" />
+      <node id="1114814656923657239" at="23,252,27,7" concept="0" />
+      <node id="1114814656923644846" at="22,132,28,5" concept="3" />
+      <node id="1114814656923626131" at="22,0,30,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1114814656923626131" at="20,53,20,53" />
+      <scope id="1114814656923626131" at="30,50,31,147" />
+      <scope id="1114814656923626131" at="33,68,34,102" />
+      <scope id="1114814656923626131" at="36,30,37,17" />
+      <scope id="1114814656923626131" at="20,0,22,0" />
+      <scope id="1114814656923657239" at="24,7,26,258">
+        <var name="_reporter_2309309498" id="1114814656923657239" />
+        <var name="errorTarget" id="1114814656923657239" />
+      </scope>
+      <scope id="1114814656923626131" at="30,0,33,0" />
+      <scope id="1114814656923626131" at="33,0,36,0">
+        <var name="argument" id="1114814656923626131" />
+      </scope>
+      <scope id="1114814656923626131" at="36,0,39,0" />
+      <scope id="1114814656923644848" at="23,252,27,7" />
+      <scope id="1114814656923626132" at="22,132,28,5" />
+      <scope id="1114814656923626131" at="22,0,30,0">
+        <var name="gegevenshuishouding" id="1114814656923626131" />
+        <var name="status" id="1114814656923626131" />
+        <var name="typeCheckingContext" id="1114814656923626131" />
+      </scope>
+      <unit id="1114814656923626131" at="19,0,40,0" name="Simulatie.typesystem.EenGegevenshuishouding_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:3dd51f75-adac-4e35-acc9-1b9b4a751694(Simulatie.typesystem)/3139957515580595044">

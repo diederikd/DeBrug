@@ -22,7 +22,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
 public class Kenmerk_ZonderLidwoord_Editor extends DefaultNodeEditor {
-  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.GN.ZonderLidwoord"});
+  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.ZonderLidwoord"});
   @Override
   @NotNull
   public Collection<String> getContextHints() {

@@ -42,10 +42,14 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -124,6 +128,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
@@ -281,6 +286,48 @@
       </node>
     </node>
     <node concept="1YaCAy" id="2IjnF_A1dKW" role="1YuTPh">
+      <property role="TrG5h" value="gegevenshuishouding" />
+      <ref role="1YaFvo" to="xhlk:6w7GUCbsHju" resolve="Gegevenshuishouding" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="XSBwowleEj">
+    <property role="TrG5h" value="EenGegevenshuishouding" />
+    <node concept="3clFbS" id="XSBwowleEk" role="18ibNy">
+      <node concept="3clFbJ" id="XSBwowljeI" role="3cqZAp">
+        <node concept="3clFbS" id="XSBwowljeK" role="3clFbx">
+          <node concept="2MkqsV" id="XSBwowlmgn" role="3cqZAp">
+            <node concept="Xl_RD" id="XSBwowlmgo" role="2MkJ7o">
+              <property role="Xl_RC" value="Maak maar één gegevenshuishouding per module." />
+            </node>
+            <node concept="1YBJjd" id="XSBwowlmHb" role="2OEOjV">
+              <ref role="1YBMHb" node="XSBwowleEm" resolve="gegevenshuishouding" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOSWO" id="XSBwowllXv" role="3clFbw">
+          <node concept="3cmrfG" id="XSBwowllXy" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="XSBwowlh0Z" role="3uHU7B">
+            <node concept="2OqwBi" id="XSBwowlfh3" role="2Oq$k0">
+              <node concept="2OqwBi" id="XSBwowleM5" role="2Oq$k0">
+                <node concept="1YBJjd" id="XSBwowleEv" role="2Oq$k0">
+                  <ref role="1YBMHb" node="XSBwowleEm" resolve="gegevenshuishouding" />
+                </node>
+                <node concept="I4A8Y" id="XSBwowleWM" role="2OqNvi" />
+              </node>
+              <node concept="2SmgA7" id="XSBwowlfq2" role="2OqNvi">
+                <node concept="chp4Y" id="XSBwowlfvp" role="1dBWTz">
+                  <ref role="cht4Q" to="xhlk:6w7GUCbsHju" resolve="Gegevenshuishouding" />
+                </node>
+              </node>
+            </node>
+            <node concept="34oBXx" id="XSBwowliWX" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="XSBwowleEm" role="1YuTPh">
       <property role="TrG5h" value="gegevenshuishouding" />
       <ref role="1YaFvo" to="xhlk:6w7GUCbsHju" resolve="Gegevenshuishouding" />
     </node>

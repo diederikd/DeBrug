@@ -447,7 +447,7 @@
     <property role="EcuMT" value="2282129504205456769" />
     <property role="3GE5qa" value="Waarden" />
     <property role="TrG5h" value="ReeelGetalWaarde" />
-    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
+    <ref role="1TJDcQ" node="XSBwowcV4J" resolve="RekenWaarde" />
     <node concept="1TJgyi" id="1YFKb5tAQ8V" role="1TKVEl">
       <property role="IQ2nx" value="2282129504205496891" />
       <property role="TrG5h" value="waarde" />
@@ -612,7 +612,7 @@
     <property role="EcuMT" value="7108013867280407591" />
     <property role="3GE5qa" value="Waarden" />
     <property role="TrG5h" value="GeheelGetal" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="XSBwowcV4J" resolve="RekenWaarde" />
     <node concept="1TJgyi" id="6a$JffhNDwP" role="1TKVEl">
       <property role="IQ2nx" value="7108013867280537653" />
       <property role="TrG5h" value="waarde" />
@@ -630,6 +630,14 @@
       <property role="20kJfa" value="waarde" />
       <ref role="20lvS9" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="XSBwowcV4J">
+    <property role="EcuMT" value="1114814656921448751" />
+    <property role="3GE5qa" value="Waarden" />
+    <property role="TrG5h" value="RekenWaarde" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
   </node>
 </model>
 
