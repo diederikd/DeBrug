@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root nodeRef="r:3df49951-e3fc-4e01-9775-1c24138c18f7(Simulatie.test)/1114814656924873404">
+    <file name="TestFuncties_Test.java">
+      <node id="1114814656925151887" at="23,67,24,36" concept="2" />
+      <node id="1114814656924936348" at="26,39,27,178" concept="3" />
+      <node id="1114814656924958029" at="29,15,30,62" concept="2" />
+      <node id="1114814656924954468" at="30,62,31,201" concept="2" />
+      <node id="1114814656925016929" at="31,201,32,377" concept="0" />
+      <node id="1114814656924974825" at="34,39,35,192" concept="3" />
+      <node id="1114814656925126122" at="37,16,38,197" concept="2" />
+      <node id="1114814656925079324" at="38,197,39,185" concept="2" />
+      <node id="1114814656925084456" at="39,185,40,177" concept="0" />
+      <node id="1114814656925135617" at="40,177,41,195" concept="0" />
+      <node id="1114814656925029433" at="41,195,42,200" concept="0" />
+      <node id="1114814656925193434" at="42,200,43,77" concept="0" />
+      <node id="1114814656924873524" at="43,77,44,55" concept="2" />
+      <node id="1114814656925155024" at="44,55,45,207" concept="0" />
+      <node id="1114814656925223880" at="45,207,46,44" concept="0" />
+      <node id="1114814656924873404" at="48,0,50,0" concept="1" trace="setUp#()V" />
+      <node id="1114814656924873404" at="50,0,52,0" concept="1" trace="tearDown#()V" />
+      <node id="1114814656924935435" at="26,0,29,0" concept="1" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1114814656924972855" at="34,0,37,0" concept="1" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1114814656924873521" at="24,36,29,15" concept="2" />
+      <node id="1114814656924961127" at="32,377,37,16" concept="0" />
+      <node id="1114814656924873435" at="23,0,48,0" concept="1" trace="test_TestZoekInstantiesVanObject#()V" />
+      <scope id="1114814656924873747" at="48,23,48,23" />
+      <scope id="1114814656925236453" at="50,26,50,26" />
+      <scope id="1114814656924935436" at="26,39,27,178" />
+      <scope id="1114814656924972856" at="34,39,35,192" />
+      <scope id="1114814656924873404" at="48,0,50,0" />
+      <scope id="1114814656924873404" at="50,0,52,0" />
+      <scope id="1114814656924935435" at="26,0,29,0">
+        <var name="it" id="1114814656924935435" />
+      </scope>
+      <scope id="1114814656924972855" at="34,0,37,0">
+        <var name="it" id="1114814656924972855" />
+      </scope>
+      <scope id="1114814656924873438" at="23,67,46,44">
+        <var name="IF" id="1114814656924873525" />
+        <var name="geheelGetal" id="1114814656925079327" />
+        <var name="geheelGetalWaarde" id="1114814656925126125" />
+        <var name="instantieVanObjects" id="1114814656925151890" />
+        <var name="listWaardeVanKenmerk" id="1114814656924958032" />
+        <var name="object" id="1114814656924873522" />
+        <var name="waardeVanKenmerk" id="1114814656924954471" />
+      </scope>
+      <scope id="1114814656924873435" at="23,0,48,0" />
+      <unit id="1114814656924935435" at="25,327,29,5" name="Simulatie.test.TestFuncties_Test$1" />
+      <unit id="1114814656924972855" at="33,446,37,5" name="Simulatie.test.TestFuncties_Test$2" />
+      <unit id="1114814656924873404" at="22,0,53,0" name="Simulatie.test.TestFuncties_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:3df49951-e3fc-4e01-9775-1c24138c18f7(Simulatie.test)/1114814656929807529">
+    <file name="test_Test.java">
+      <node id="1114814656929833366" at="33,52,34,177" concept="2" />
+      <node id="1114814656929833372" at="34,177,35,61" concept="2" />
+      <node id="1114814656929833381" at="35,61,36,86" concept="2" />
+      <node id="1114814656929833386" at="36,86,37,38" concept="2" />
+      <node id="1114814656929833401" at="39,41,40,180" concept="3" />
+      <node id="1114814656929833410" at="42,17,43,64" concept="2" />
+      <node id="1114814656929833416" at="43,64,44,203" concept="2" />
+      <node id="1114814656929833422" at="44,203,45,379" concept="0" />
+      <node id="1114814656929833443" at="47,41,48,194" concept="3" />
+      <node id="1114814656929833452" at="50,18,51,199" concept="2" />
+      <node id="1114814656929833458" at="51,199,52,187" concept="2" />
+      <node id="1114814656929833464" at="52,187,53,179" concept="0" />
+      <node id="1114814656929833470" at="53,179,54,197" concept="0" />
+      <node id="1114814656929833476" at="54,197,55,202" concept="0" />
+      <node id="1114814656929833483" at="55,202,56,79" concept="0" />
+      <node id="1114814656929833488" at="56,79,57,57" concept="2" />
+      <node id="1114814656929833493" at="57,57,58,92" concept="0" />
+      <node id="1114814656929833502" at="58,92,59,46" concept="0" />
+      <node id="1114814656929833399" at="39,0,42,0" concept="1" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1114814656929833441" at="47,0,50,0" concept="1" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1114814656929833389" at="37,38,42,17" concept="2" />
+      <node id="1114814656929833428" at="45,379,50,18" concept="0" />
+      <node id="1114814656929807529" at="33,0,61,0" concept="1" trace="test_TestZoekInstantiesVanObject#()V" />
+      <scope id="1114814656929833400" at="39,41,40,180" />
+      <scope id="1114814656929833442" at="47,41,48,194" />
+      <scope id="1114814656929833399" at="39,0,42,0">
+        <var name="it" id="1114814656929833399" />
+      </scope>
+      <scope id="1114814656929833441" at="47,0,50,0">
+        <var name="it" id="1114814656929833441" />
+      </scope>
+      <scope id="1114814656929807529" at="33,52,59,46">
+        <var name="IF" id="1114814656929833489" />
+        <var name="g" id="1114814656929833367" />
+        <var name="geheelGetal" id="1114814656929833459" />
+        <var name="geheelGetalWaarde" id="1114814656929833453" />
+        <var name="instantieVanObjects" id="1114814656929833387" />
+        <var name="listWaardeVanKenmerk" id="1114814656929833411" />
+        <var name="model" id="1114814656929833382" />
+        <var name="object" id="1114814656929833390" />
+        <var name="sRepository" id="1114814656929833373" />
+        <var name="waardeVanKenmerk" id="1114814656929833417" />
+      </scope>
+      <scope id="1114814656929807529" at="33,0,61,0" />
+      <unit id="1114814656929833399" at="38,212,42,7" name="Simulatie.test.test_Test$1" />
+      <unit id="1114814656929833441" at="46,448,50,7" name="Simulatie.test.test_Test$2" />
+      <unit id="1114814656929807529" at="29,0,62,0" name="Simulatie.test.test_Test$TestBody" />
+      <unit id="1114814656929807529" at="26,0,63,0" name="Simulatie.test.test_Test" />
+    </file>
+  </root>
+</debug-info>
+

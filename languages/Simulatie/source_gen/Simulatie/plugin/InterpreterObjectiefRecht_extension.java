@@ -6,8 +6,8 @@ import jetbrains.mps.smodel.structure.Extension;
 import com.mbeddr.mpsutil.interpreter.rt.IInterpreter;
 import com.mbeddr.mpsutil.interpreter.rt.CachedInterpreterFinder;
 
-public class ObjectiefRecht_extension extends Extension.Default<IInterpreter> {
-  public ObjectiefRecht_extension() {
+public class InterpreterObjectiefRecht_extension extends Extension.Default<IInterpreter> {
+  public InterpreterObjectiefRecht_extension() {
     super("com.mbeddr.mpsutil.interpreter.InterpreterExtensionPoint");
   }
 
@@ -19,6 +19,6 @@ public class ObjectiefRecht_extension extends Extension.Default<IInterpreter> {
   }
 
   public IInterpreter get() {
-    return new InterpreterObjectiefRecht();
+    return new InterpreterInterpreterObjectiefRecht();
   }
 }
