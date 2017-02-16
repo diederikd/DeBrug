@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="Simulatie.plugin.ExtensionDescriptor" file="ExtensionDescriptor.java">
-    <classNode dependClassName="Simulatie.plugin.ObjectiefRecht_extension" />
+    <classNode dependClassName="Simulatie.plugin.InterpreterObjectiefRecht_extension" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />
@@ -24,6 +24,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="Simulatie.plugin.InterpreterFuncties" file="InterpreterFuncties.java">
+    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
@@ -34,10 +35,11 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
-  <dependency className="Simulatie.plugin.InterpreterObjectiefRecht" file="InterpreterObjectiefRecht.java">
+  <dependency className="Simulatie.plugin.InterpreterInterpreterObjectiefRecht" file="InterpreterInterpreterObjectiefRecht.java">
     <classNode dependClassName="Gegevens.behavior.GeheelGetalWaarde__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.ReeelGetalWaarde__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.RekenWaarde__BehaviorDescriptor" />
+    <classNode dependClassName="Simulatie.plugin.RunTimeObject" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
@@ -59,12 +61,17 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterBase" />
   </dependency>
-  <dependency className="Simulatie.plugin.ObjectiefRecht_extension" file="ObjectiefRecht_extension.java">
-    <classNode dependClassName="Simulatie.plugin.InterpreterObjectiefRecht" />
+  <dependency className="Simulatie.plugin.InterpreterObjectiefRecht_extension" file="InterpreterObjectiefRecht_extension.java">
+    <classNode dependClassName="Simulatie.plugin.InterpreterInterpreterObjectiefRecht" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.CachedInterpreterFinder" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IInterpreter" />
     <classNode dependClassName="jetbrains.mps.smodel.structure.Extension" />
     <classNode extendsClassName="jetbrains.mps.smodel.structure.Default" />
+  </dependency>
+  <dependency className="Simulatie.plugin.RunTimeObject" file="RunTimeObject.java">
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IEnvironment" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
 </dependenciesRoot>
 

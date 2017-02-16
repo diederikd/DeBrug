@@ -11686,5 +11686,61 @@
       <ref role="2$4xQ3" node="vqB$L$cYE6" resolve="Tabel" />
     </node>
   </node>
+  <node concept="PKFIW" id="XSBwowHu_8">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="BronGeldigheidRechtsBetrekking" />
+    <ref role="1XX52x" to="3pw0:64gsXol8COd" resolve="Rechtsbetrekking" />
+    <node concept="3EZMnI" id="XSBwowHu_9" role="2wV5jI">
+      <node concept="3F0ifn" id="XSBwowHu_a" role="3EZMnx">
+        <property role="3F0ifm" value="Conceptnummer" />
+      </node>
+      <node concept="3F0ifn" id="XSBwowHu_b" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="XSBwowHu_c" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:6syAJDE2ItU" resolve="conceptnummer" />
+        <node concept="ljvvj" id="XSBwowHu_d" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="XSBwowHuAD" role="3EZMnx">
+        <property role="3F0ifm" value="Initieel" />
+      </node>
+      <node concept="3F0ifn" id="XSBwowHuBy" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="XSBwowHu_O" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:2mYdLn7QCwo" resolve="initieel" />
+        <node concept="ljvvj" id="XSBwowHuC0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="XSBwowHu_e" role="3EZMnx">
+        <property role="3F0ifm" value="Geldig van" />
+      </node>
+      <node concept="3F0ifn" id="XSBwowHu_f" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="XSBwowHu_g" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4$mS69sS$iU" resolve="brongeldigVan" />
+        <node concept="ljvvj" id="XSBwowHu_h" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="XSBwowHu_i" role="3EZMnx">
+        <property role="3F0ifm" value="Geldig tot" />
+      </node>
+      <node concept="3F0ifn" id="XSBwowHu_j" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="XSBwowHu_k" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4$mS69sS$iW" resolve="brongeldigTot" />
+      </node>
+      <node concept="l2Vlx" id="XSBwowHu_l" role="2iSdaV" />
+    </node>
+    <node concept="1PE4EZ" id="XSBwowHu_o" role="1PM95z">
+      <ref role="1PE7su" node="4$mS69sS$kF" resolve="BronGeldigheid" />
+    </node>
+  </node>
 </model>
 
