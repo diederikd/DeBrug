@@ -30,7 +30,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_DatumUitvoerenHandeling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DeSom = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DelenExpressie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_EnkeleVoorwaarde = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_EnkeleVoorwaarde = new ConceptPresentationBuilder().deprecated().create();
   private final ConceptPresentation props_Enumeratie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_EnumeratieElement = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_EnumeratieType = new ConceptPresentationBuilder().create();
@@ -100,7 +100,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Regel = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RekenExpressie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RijVanKaraktersType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_SamengesteldeVoorwaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SubjectType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TabelMetInstanties = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TenMinsteNa = new ConceptPresentationBuilder().create();
@@ -114,6 +113,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_VerschilTussen = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Voor = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_VoorbeeldenMetInstanties = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Voorwaarden = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_VoorwaardenRechtshandeling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_VormVoorwaarde = new ConceptPresentationBuilder().deprecated().create();
   private final ConceptPresentation props_VrijeTekst = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_VrijheidGeenaanspraak = new ConceptPresentationBuilder().create();
@@ -307,44 +308,46 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 89:
         return props_RijVanKaraktersType;
       case 90:
-        return props_SamengesteldeVoorwaarde;
-      case 91:
         return props_SubjectType;
-      case 92:
+      case 91:
         return props_TabelMetInstanties;
-      case 93:
+      case 92:
         return props_TenMinsteNa;
-      case 94:
+      case 93:
         return props_TenMinsteVoor;
-      case 95:
+      case 94:
         return props_TijdType;
-      case 96:
+      case 95:
         return props_TijdsverloopMetRechtsgevolg;
-      case 97:
+      case 96:
         return props_Toestand;
-      case 98:
+      case 97:
         return props_Variabele;
-      case 99:
+      case 98:
         return props_VermenigvuldigenExpressie;
-      case 100:
+      case 99:
         return props_VerplichteBevoegdheidVerplichteGehoudenheid;
-      case 101:
+      case 100:
         return props_VerschilTussen;
-      case 102:
+      case 101:
         return props_Voor;
-      case 103:
+      case 102:
         return props_VoorbeeldenMetInstanties;
+      case 103:
+        return props_Voorwaarden;
       case 104:
-        return props_VormVoorwaarde;
+        return props_VoorwaardenRechtshandeling;
       case 105:
-        return props_VrijeTekst;
+        return props_VormVoorwaarde;
       case 106:
-        return props_VrijheidGeenaanspraak;
+        return props_VrijeTekst;
       case 107:
-        return props_WaardeVanKenmerk;
+        return props_VrijheidGeenaanspraak;
       case 108:
-        return props_ZwakkeAanspraakZwakkePlicht;
+        return props_WaardeVanKenmerk;
       case 109:
+        return props_ZwakkeAanspraakZwakkePlicht;
+      case 110:
         return props_isNegatief;
     }
     throw new IllegalStateException("Unknown concept " + c);

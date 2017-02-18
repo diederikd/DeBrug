@@ -79,12 +79,17 @@
         <reference id="5266643527326926122" name="artikel" index="lY6l8" />
       </concept>
       <concept id="4271677511961776445" name="ObjectiefRecht.structure.VrijeTekst" flags="ng" index="2GMpOH" />
+      <concept id="301351583718898920" name="ObjectiefRecht.structure.Voorwaarden" flags="ng" index="KfA53">
+        <child id="301351583718898956" name="voorwaarden" index="KfA2B" />
+        <child id="2024696888645639213" name="conditie" index="3l_JsU" />
+      </concept>
       <concept id="2317404197410750246" name="ObjectiefRecht.structure.ReferentieNaarRechtsbetrekking" flags="ng" index="33wURK">
         <reference id="2317404197410750247" name="rechtsbetrekking" index="33wURL" />
       </concept>
       <concept id="2317404197411012455" name="ObjectiefRecht.structure.ReferentieNaarRechtssubject" flags="ng" index="33xUQL">
         <reference id="2317404197411012456" name="rechtssubject" index="33xUQY" />
       </concept>
+      <concept id="2024696888645630049" name="ObjectiefRecht.structure.ConditieAlle" flags="ng" index="3l_DdQ" />
       <concept id="2417641230338880953" name="ObjectiefRecht.structure.Onderwerp" flags="ng" index="3D8HDq" />
       <concept id="6994217584621161876" name="ObjectiefRecht.structure.VerplichteBevoegdheidVerplichteGehoudenheid" flags="ng" index="1OcJT2">
         <reference id="4322810351015246537" name="bevoegdheidTot" index="1gm8Zl" />
@@ -113,7 +118,7 @@
         <reference id="6994217584621161773" name="rechtssubjectMetRecht" index="1OcJVV" />
         <child id="5266643527326926282" name="bron" index="lY6mC" />
         <child id="4271677511961776510" name="GeldigVan" index="2GMpPI" />
-        <child id="2719671791662605881" name="geldigOnderVoorwaarden" index="3y3h4G" />
+        <child id="2719671791662605881" name="Voorwaarden" index="3y3h4G" />
       </concept>
       <concept id="6994217584621161738" name="ObjectiefRecht.structure.RechtsSubject" flags="ng" index="1OcJVs" />
       <concept id="6994217584621161736" name="ObjectiefRecht.structure.MaterieleVoorwaarde" flags="ng" index="1OcJVu" />
@@ -294,8 +299,11 @@
       <node concept="2GMpOH" id="3oRnirXyZo2" role="2GMpPI">
         <property role="TrG5h" value="ingangsdatum van de wet" />
       </node>
-      <node concept="1OcJVu" id="3oRnirXyZo4" role="3y3h4G">
-        <property role="TrG5h" value="De bij Ministeriele regeling vastgestelde voorwaarden" />
+      <node concept="KfA53" id="5kuxuwXfFOb" role="3y3h4G">
+        <node concept="1OcJVu" id="3oRnirXyZo4" role="KfA2B">
+          <property role="TrG5h" value="De bij Ministeriele regeling vastgestelde voorwaarden" />
+        </node>
+        <node concept="3l_DdQ" id="5kuxuwXfFOg" role="3l_JsU" />
       </node>
     </node>
     <node concept="1OcJVs" id="4NzHub3Ff8y" role="3D8HBz">

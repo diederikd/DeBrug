@@ -82,6 +82,10 @@
         <child id="6249140128507897487" name="type" index="LSO5p" />
       </concept>
       <concept id="4271677511961776445" name="ObjectiefRecht.structure.VrijeTekst" flags="ng" index="2GMpOH" />
+      <concept id="301351583718898920" name="ObjectiefRecht.structure.Voorwaarden" flags="ng" index="KfA53">
+        <child id="301351583718898956" name="voorwaarden" index="KfA2B" />
+        <child id="2024696888645639213" name="conditie" index="3l_JsU" />
+      </concept>
       <concept id="2907397198644945343" name="ObjectiefRecht.structure.RijVanKaraktersType" flags="ng" index="QqSvA" />
       <concept id="2317404197410750246" name="ObjectiefRecht.structure.ReferentieNaarRechtsbetrekking" flags="ng" index="33wURK">
         <reference id="2317404197410750247" name="rechtsbetrekking" index="33wURL" />
@@ -89,6 +93,7 @@
       <concept id="2317404197411012455" name="ObjectiefRecht.structure.ReferentieNaarRechtssubject" flags="ng" index="33xUQL">
         <reference id="2317404197411012456" name="rechtssubject" index="33xUQY" />
       </concept>
+      <concept id="2024696888645630049" name="ObjectiefRecht.structure.ConditieAlle" flags="ng" index="3l_DdQ" />
       <concept id="2417641230338880953" name="ObjectiefRecht.structure.Onderwerp" flags="ng" index="3D8HDq">
         <child id="5266643527326992524" name="kenmerk" index="lYmzI" />
       </concept>
@@ -139,7 +144,7 @@
       <concept id="6994217584621161786" name="ObjectiefRecht.structure.RechtsgevolgVeroorzakers" flags="ng" index="1OcJVG">
         <child id="5266643527326926295" name="bron" index="lY6mP" />
         <child id="2317404197410860326" name="heeftAlsGevolg" index="33xnZK" />
-        <child id="2719671791662335135" name="geldigOnderVoorwaarden" index="3y4jea" />
+        <child id="2719671791662335135" name="Voorwaarden" index="3y4jea" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -571,9 +576,6 @@
     <node concept="1OcJVF" id="5Bacij9tPmt" role="33xyji">
       <property role="da7Q0" value="38" />
       <property role="TrG5h" value="Mondeling intrekken van het bezwaar of beroep " />
-      <node concept="1OcJVv" id="3JXHhLFC6T5" role="3y4jea">
-        <property role="TrG5h" value="er is sprake van horen." />
-      </node>
       <node concept="33xUQL" id="5Bacij9tPm_" role="33xUQS">
         <ref role="33xUQY" node="3d6QfrhoinX" resolve="Belanghebbende" />
       </node>
@@ -599,6 +601,12 @@
       </node>
       <node concept="2GMpOH" id="3H8312n_pOM" role="2GMpsb">
         <property role="TrG5h" value="datum intrekken bezwaar of beroep" />
+      </node>
+      <node concept="KfA53" id="5kuxuwXfFNV" role="3y4jea">
+        <node concept="1OcJVv" id="3JXHhLFC6T5" role="KfA2B">
+          <property role="TrG5h" value="er is sprake van horen." />
+        </node>
+        <node concept="3l_DdQ" id="5kuxuwXfFO0" role="3l_JsU" />
       </node>
     </node>
     <node concept="1OcJVF" id="5b3WIC8Jw2_" role="33xyji">
@@ -721,9 +729,6 @@
     <node concept="1OcJUm" id="7dFv$5lS1Ug" role="33xyji">
       <property role="da7Q0" value="0000" />
       <property role="TrG5h" value="Geen reactie op de bevestiging van het intrekken binnen de reactietermijn" />
-      <node concept="1OcJVu" id="2mYdLn7Kwpk" role="3y4jea">
-        <property role="TrG5h" value="Reactietermijn is verstreken." />
-      </node>
       <node concept="2B78Lw" id="7dFv$5lS1Uj" role="lXajo">
         <property role="2B78LB" value="1" />
         <property role="2B78L_" value="1" />
@@ -740,6 +745,12 @@
         <node concept="33wURK" id="7dFv$5lS1W3" role="1OcJUG">
           <ref role="33wURL" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
         </node>
+      </node>
+      <node concept="KfA53" id="5kuxuwXfFO3" role="3y4jea">
+        <node concept="1OcJVu" id="2mYdLn7Kwpk" role="KfA2B">
+          <property role="TrG5h" value="Reactietermijn is verstreken." />
+        </node>
+        <node concept="3l_DdQ" id="5kuxuwXfFO8" role="3l_JsU" />
       </node>
     </node>
     <node concept="1OcJVF" id="5b3WIC8IRYX" role="33xyji">

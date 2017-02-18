@@ -42,9 +42,9 @@ public class EnkeleVoorwaarde_Editor extends DefaultNodeEditor {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
       public String getText() {
         StringBuilder level = new StringBuilder();
-        SNode cond = SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fce8L, "ObjectiefRecht.structure.SamengesteldeVoorwaarde"), false, false);
+        SNode cond = SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fce8L, "ObjectiefRecht.structure.Voorwaarden"), false, false);
         while ((cond != null)) {
-          cond = SNodeOperations.getNodeAncestor(cond, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fce8L, "ObjectiefRecht.structure.SamengesteldeVoorwaarde"), false, false);
+          cond = SNodeOperations.getNodeAncestor(cond, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fce8L, "ObjectiefRecht.structure.Voorwaarden"), false, false);
           level.append("-");
         }
         return level.toString();

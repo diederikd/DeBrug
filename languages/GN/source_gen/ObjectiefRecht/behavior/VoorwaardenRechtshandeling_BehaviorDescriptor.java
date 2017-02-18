@@ -9,7 +9,7 @@ package ObjectiefRecht.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class SamengesteldeVoorwaarde_BehaviorDescriptor {
+public class VoorwaardenRechtshandeling_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

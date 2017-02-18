@@ -511,5 +511,42 @@
       <unit id="6133486975024500684" at="8,0,32,0" name="Simulatie.plugin.RunTimeObject" />
     </file>
   </root>
+  <root nodeRef="r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)/6133486975027427430">
+    <file name="DebugHelper.java">
+      <node id="7929247449109952877" at="9,68,10,113" concept="3" />
+      <node id="7929247449109962936" at="13,61,14,127" concept="9" />
+      <node id="7929247449109944873" at="9,0,12,0" concept="12" trace="printContext#(Ljava/lang/String;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;)V" />
+      <node id="7929247449109962293" at="13,0,16,0" concept="12" trace="concatEnvRecursive#(Lcom/mbeddr/mpsutil/interpreter/rt/IEnvironment;)Ljava/lang/String;" />
+      <scope id="7929247449109944876" at="9,68,10,113" />
+      <scope id="7929247449109962296" at="13,61,14,127" />
+      <scope id="7929247449109944873" at="9,0,12,0">
+        <var name="context" id="7929247449109945076" />
+        <var name="marker" id="7929247449109953230" />
+      </scope>
+      <scope id="7929247449109962293" at="13,0,16,0">
+        <var name="env" id="7929247449109962719" />
+      </scope>
+      <unit id="6133486975027427430" at="8,0,17,0" name="Simulatie.plugin.DebugHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)/6133486975027468479">
+    <file name="InterpreterHelper.java">
+      <node id="2216436276256297752" at="14,195,15,198" concept="8" />
+      <node id="2216436276256297759" at="15,198,16,209" concept="3" />
+      <node id="2216436276256297773" at="17,5,18,17" concept="9" />
+      <node id="2216436276256297750" at="13,88,17,5" concept="6" />
+      <node id="2216436276256294297" at="13,0,20,0" concept="12" trace="storeVariableRef#(nullLcom/mbeddr/mpsutil/interpreter/rt/IEnvironment;Lorg/jetbrains/mps/openapi/model/SNode;)null" />
+      <scope id="2216436276256297751" at="14,195,16,209">
+        <var name="varRef" id="2216436276256297753" />
+      </scope>
+      <scope id="2216436276256294300" at="13,88,18,17" />
+      <scope id="2216436276256294297" at="13,0,20,0">
+        <var name="env" id="2216436276256294924" />
+        <var name="exprNode" id="2216436276256295139" />
+        <var name="value" id="2216436276256730925" />
+      </scope>
+      <unit id="6133486975027468479" at="12,0,21,0" name="Simulatie.plugin.InterpreterHelper" />
+    </file>
+  </root>
 </debug-info>
 

@@ -287,9 +287,6 @@
     <file name="RijVanKaraktersType_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.RijVanKaraktersType_BehaviorDescriptor" />
     </file>
-    <file name="SamengesteldeVoorwaarde_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.SamengesteldeVoorwaarde_BehaviorDescriptor" />
-    </file>
     <file name="SubjectType_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.SubjectType_BehaviorDescriptor" />
     </file>
@@ -328,6 +325,12 @@
     </file>
     <file name="VoorbeeldenMetInstanties_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VoorbeeldenMetInstanties_BehaviorDescriptor" />
+    </file>
+    <file name="VoorwaardenRechtshandeling_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VoorwaardenRechtshandeling_BehaviorDescriptor" />
+    </file>
+    <file name="Voorwaarden_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Voorwaarden_BehaviorDescriptor" />
     </file>
     <file name="VormVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.VormVoorwaarde_BehaviorDescriptor" />
