@@ -226,9 +226,12 @@
     <classNode dependClassName="ObjectiefRecht.editor.GN_StyleSheet" />
     <classNode dependClassName="Simulatie.behavior.Simulatie__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.editor.Simulatie_StyleSheet" />
+    <classNode dependClassName="Simulatie.plugin.Interpreter" />
     <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="javax.swing.JComponent" />

@@ -16,6 +16,7 @@
     <import index="1fmc" ref="r:4cec5b5b-0fcc-4674-abb9-27263d97025d(org.campagnelab.ui.code.Swing)" />
     <import index="o661" ref="r:6497b91a-d9b6-415a-8653-94aa85e58bd3(Simulatie.intentions)" />
     <import index="ni1i" ref="r:97789470-63a6-4e32-b8ff-6ef8d4adc5ac(SubjectiefRecht.editor)" />
+    <import index="uefu" ref="r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ln8d" ref="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -128,6 +129,9 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
@@ -2135,6 +2139,50 @@
         </node>
         <node concept="ljvvj" id="3d6QfrfKQ5R" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="ykhUs" id="5kuxuwXoANl" role="3EZMnx">
+        <property role="ykhUg" value="Evalueer" />
+        <node concept="ykhUf" id="5kuxuwXoANm" role="ynkVX">
+          <node concept="3clFbS" id="5kuxuwXoANn" role="2VODD2">
+            <node concept="3cpWs8" id="5kuxuwXoGtG" role="3cqZAp">
+              <node concept="3cpWsn" id="5kuxuwXoGtH" role="3cpWs9">
+                <property role="TrG5h" value="object" />
+                <node concept="3uibUv" id="5kuxuwXoGtI" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+                <node concept="2YIFZM" id="5kuxuwXoKO1" role="33vP2m">
+                  <ref role="37wK5l" to="uefu:3xDNhgd54rl" resolve="evaluate" />
+                  <ref role="1Pybhc" to="uefu:2IjnF_A6UGv" resolve="Interpreter" />
+                  <node concept="2OqwBi" id="5kuxuwXoKO2" role="37wK5m">
+                    <node concept="2OqwBi" id="5kuxuwXoKO3" role="2Oq$k0">
+                      <node concept="1VaYGm" id="5kuxuwXoKO4" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="5kuxuwXoKO5" role="2OqNvi">
+                        <ref role="3Tt5mk" to="xhlk:3d6QfrfG1St" resolve="rechtshandeling" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5kuxuwXoKO6" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3pw0:2mYdLn7FKiv" resolve="Voorwaarden" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5kuxuwXoJ$f" role="3cqZAp">
+              <node concept="2OqwBi" id="5kuxuwXoJZq" role="3clFbG">
+                <node concept="10M0yZ" id="5kuxuwXoJDt" role="2Oq$k0">
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                </node>
+                <node concept="liA8E" id="5kuxuwXoKvF" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
+                  <node concept="37vLTw" id="5kuxuwXoKDm" role="37wK5m">
+                    <ref role="3cqZAo" node="5kuxuwXoGtH" resolve="object" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1HlG4h" id="3d6QfrfKQ5S" role="3EZMnx">

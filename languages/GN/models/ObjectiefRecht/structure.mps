@@ -1162,7 +1162,7 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
     <node concept="PrWs8" id="XSBwowgVAj" role="PzmwI">
-      <ref role="PrY4T" node="XSBwowgV_S" resolve="IRekenWaarde" />
+      <ref role="PrY4T" node="XSBwowgV_S" resolve="IRekenWaardeExpressie" />
     </node>
   </node>
   <node concept="1TIwiD" id="gIBqGO45PV">
@@ -1300,7 +1300,7 @@
   </node>
   <node concept="1TIwiD" id="1KpaLv9ASGV">
     <property role="EcuMT" value="2024696888646404923" />
-    <property role="3GE5qa" value="Expressies.Functies" />
+    <property role="3GE5qa" value="Expressies.Functies.Temporeel" />
     <property role="TrG5h" value="VerschilTussen" />
     <property role="34LRSv" value="verschil tussen" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
@@ -1700,7 +1700,7 @@
   </node>
   <node concept="PlHQZ" id="XSBwowgV_S">
     <property role="EcuMT" value="1114814656922499448" />
-    <property role="TrG5h" value="IRekenWaarde" />
+    <property role="TrG5h" value="IRekenWaardeExpressie" />
     <property role="3GE5qa" value="Expressies.Rekenen" />
     <node concept="1TJgyj" id="XSBwowgVAh" role="1TKVEi">
       <property role="IQ2ns" value="1114814656922499473" />
@@ -1736,6 +1736,7 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
     </node>
+    <node concept="asaX9" id="5kuxuwXhMVJ" role="lGtFl" />
   </node>
 </model>
 

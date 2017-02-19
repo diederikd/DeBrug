@@ -116,8 +116,8 @@
     <file name="IBinaireExpressie_BehaviorDescriptor.java">
       <unit at="11,0,14,0" name="ObjectiefRecht.behavior.IBinaireExpressie_BehaviorDescriptor" />
     </file>
-    <file name="IRekenWaarde_BehaviorDescriptor.java">
-      <unit at="11,0,14,0" name="ObjectiefRecht.behavior.IRekenWaarde_BehaviorDescriptor" />
+    <file name="IRekenWaardeExpressie_BehaviorDescriptor.java">
+      <unit at="11,0,14,0" name="ObjectiefRecht.behavior.IRekenWaardeExpressie_BehaviorDescriptor" />
     </file>
     <file name="IUnaireExpressie_BehaviorDescriptor.java">
       <unit at="11,0,14,0" name="ObjectiefRecht.behavior.IUnaireExpressie_BehaviorDescriptor" />

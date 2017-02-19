@@ -9,5 +9,5 @@ package ObjectiefRecht.behavior;
  * This interface is not involved in the actual method invocation
  */
 @Deprecated
-public interface IRekenWaarde_BehaviorDescriptor {
+public interface IRekenWaardeExpressie_BehaviorDescriptor {
 }

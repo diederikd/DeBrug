@@ -25,18 +25,18 @@ public final class ReeelGetalWaarde__BehaviorDescriptor extends BaseBHDescriptor
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac581L, "Gegevens.structure.ReeelGetalWaarde");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<Double> GeefWaarde_id44Jn6rIHpBP = new SMethodBuilder<Double>(new SJavaCompoundTypeImpl(Double.class)).name("GeefWaarde").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("44Jn6rIHpBP").registry(REGISTRY).build();
+  public static final SMethod<Double> GeefWaarde_idXSBwowcV5H = new SMethodBuilder<Double>(new SJavaCompoundTypeImpl(Double.TYPE)).name("GeefWaarde").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("XSBwowcV5H").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefWaarde_id44Jn6rIHpBP);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefWaarde_idXSBwowcV5H);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static Double GeefWaarde_id44Jn6rIHpBP(@NotNull SNode __thisNode__) {
+  /*package*/ static double GeefWaarde_idXSBwowcV5H(@NotNull SNode __thisNode__) {
     try {
       return Double.parseDouble(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac581L, 0x1fabc0b15d9b623bL, "waarde")).replace(",", "."));
     } catch (NumberFormatException e) {
-      return null;
+      return 0;
     }
   }
 
@@ -57,7 +57,7 @@ public final class ReeelGetalWaarde__BehaviorDescriptor extends BaseBHDescriptor
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((Double) GeefWaarde_id44Jn6rIHpBP(node));
+        return (T) ((Double) GeefWaarde_idXSBwowcV5H(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

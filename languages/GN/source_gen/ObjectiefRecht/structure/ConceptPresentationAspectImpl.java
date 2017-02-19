@@ -43,7 +43,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_GeheelGetalType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Gelijkstelling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IBinaireExpressie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IRekenWaarde = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_IRekenWaardeExpressie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IUnaireExpressie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImmuniteitGeenbevoegdheid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_InstantieVanObject = new ConceptPresentationBuilder().create();
@@ -114,7 +114,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Voor = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_VoorbeeldenMetInstanties = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Voorwaarden = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VoorwaardenRechtshandeling = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_VoorwaardenRechtshandeling = new ConceptPresentationBuilder().deprecated().create();
   private final ConceptPresentation props_VormVoorwaarde = new ConceptPresentationBuilder().deprecated().create();
   private final ConceptPresentation props_VrijeTekst = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_VrijheidGeenaanspraak = new ConceptPresentationBuilder().create();
@@ -194,7 +194,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 32:
         return props_IBinaireExpressie;
       case 33:
-        return props_IRekenWaarde;
+        return props_IRekenWaardeExpressie;
       case 34:
         return props_IUnaireExpressie;
       case 35:

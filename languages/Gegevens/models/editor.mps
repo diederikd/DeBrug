@@ -777,7 +777,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1YFKb5t_BZL">
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Rekenwaarde" />
     <ref role="1XX52x" to="uwhu:1YFKb5t_BZA" resolve="GeheelGetalWaarde" />
     <node concept="3EZMnI" id="1YFKb5t_BZN" role="2wV5jI">
       <node concept="l2Vlx" id="1YFKb5t_BZQ" role="2iSdaV" />
@@ -1034,7 +1034,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1YFKb5tAQ9y">
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Rekenwaarde" />
     <ref role="1XX52x" to="uwhu:1YFKb5tAGm1" resolve="ReeelGetalWaarde" />
     <node concept="3EZMnI" id="1YFKb5tAQ9D" role="2wV5jI">
       <node concept="3F0A7n" id="1YFKb5tAQ9K" role="3EZMnx">
@@ -1044,7 +1044,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1YFKb5tAQ9Y">
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Temporelewaarde" />
     <ref role="1XX52x" to="uwhu:1YFKb5tAQ9N" resolve="DatumWaarde" />
     <node concept="3EZMnI" id="1YFKb5tAQa3" role="2wV5jI">
       <node concept="l2Vlx" id="1YFKb5tAQa4" role="2iSdaV" />
@@ -1445,7 +1445,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="vqB$L$qd2q">
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Temporelewaarde" />
     <ref role="1XX52x" to="uwhu:vqB$L$qd2f" resolve="TijdWaarde" />
     <node concept="3EZMnI" id="vqB$L$qd2s" role="2wV5jI">
       <node concept="3F1sOY" id="vqB$L$qd2z" role="3EZMnx">
@@ -1455,7 +1455,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6a$JffhN9KL">
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Rekenwaarde" />
     <ref role="1XX52x" to="uwhu:6a$JffhN9KB" resolve="GeheelGetal" />
     <node concept="3EZMnI" id="6a$JffhN9KN" role="2wV5jI">
       <node concept="l2Vlx" id="6a$JffhN9KQ" role="2iSdaV" />
@@ -1465,7 +1465,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2IjnF_A4QR0">
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Temporelewaarde" />
     <ref role="1XX52x" to="uwhu:2IjnF_A4QQO" resolve="DatumTijdWaarde" />
     <node concept="3EZMnI" id="2IjnF_A4QR2" role="2wV5jI">
       <node concept="3F1sOY" id="2IjnF_A4QRc" role="3EZMnx">

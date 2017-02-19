@@ -48,6 +48,8 @@
   <dependency className="Gegevens.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
     <classNode dependClassName="Gegevens.behavior.AbstracteWaarde__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.Concept__BehaviorDescriptor" />
+    <classNode dependClassName="Gegevens.behavior.DatumTijdWaarde__BehaviorDescriptor" />
+    <classNode dependClassName="Gegevens.behavior.DatumWaarde__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.GeheelGetalWaarde__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.GeheelGetal__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.ObjectInstantie__BehaviorDescriptor" />
@@ -55,6 +57,8 @@
     <classNode dependClassName="Gegevens.behavior.ReferentieNaarOnderwerp__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.ReferentieNaarSubject__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.RekenWaarde__BehaviorDescriptor" />
+    <classNode dependClassName="Gegevens.behavior.TemporeleWaarde__BehaviorDescriptor" />
+    <classNode dependClassName="Gegevens.behavior.TijdWaarde__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -95,9 +99,57 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="Gegevens.behavior.DatumTijdWaarde__BehaviorDescriptor" file="DatumTijdWaarde__BehaviorDescriptor.java">
+    <classNode dependClassName="Datum.behavior.DatumTijd__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.time.temporal.Temporal" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
+  </dependency>
   <dependency className="Gegevens.behavior.DatumWaarde_BehaviorDescriptor" file="DatumWaarde_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.DatumWaarde__BehaviorDescriptor" file="DatumWaarde__BehaviorDescriptor.java">
+    <classNode dependClassName="Datum.behavior.Datum__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.time.temporal.Temporal" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="Gegevens.behavior.EnumeratieDatatype_BehaviorDescriptor" file="EnumeratieDatatype_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
@@ -156,20 +208,14 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Gegevens.behavior.GeheelGetal__BehaviorDescriptor" file="GeheelGetal__BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Double" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -399,6 +445,32 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="Gegevens.behavior.TemporeleWaarde_BehaviorDescriptor" file="TemporeleWaarde_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.TemporeleWaarde__BehaviorDescriptor" file="TemporeleWaarde__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.time.temporal.Temporal" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
+  </dependency>
   <dependency className="Gegevens.behavior.TijdDatatype_BehaviorDescriptor" file="TijdDatatype_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -406,6 +478,30 @@
   <dependency className="Gegevens.behavior.TijdWaarde_BehaviorDescriptor" file="TijdWaarde_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Gegevens.behavior.TijdWaarde__BehaviorDescriptor" file="TijdWaarde__BehaviorDescriptor.java">
+    <classNode dependClassName="Datum.behavior.Tijd__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.time.temporal.Temporal" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="Gegevens.behavior.WaardeVanAttribuut_BehaviorDescriptor" file="WaardeVanAttribuut_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />

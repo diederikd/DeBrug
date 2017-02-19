@@ -7,17 +7,22 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.util.EqualUtil;
+import jetbrains.mps.openapi.editor.cells.CellActionType;
+import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
+import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
-import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
@@ -35,17 +40,39 @@ public class Voorwaarden_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_311ogr_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createConstant_311ogr_a0(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_311ogr_a0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_311ogr_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_311ogr_c0(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_311ogr_c0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_311ogr_d0(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_311ogr_e0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_311ogr_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "is geldig indien wordt voldaan aan");
-    editorCell.setCellId("Constant_311ogr_a0");
-    editorCell.setDefaultText("");
+  private EditorCell createReadOnlyModelAccessor_311ogr_a0(final EditorContext editorContext, final SNode node) {
+    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
+      public String getText() {
+        {
+          final SNode rechtsbetrekking = SNodeOperations.getParent(node);
+          if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"))) {
+            return "is geldig indien wordt voldaan aan";
+          }
+        }
+        {
+          final SNode rechtshandeling = SNodeOperations.getParent(node);
+          if (SNodeOperations.isInstanceOf(rechtshandeling, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"))) {
+            return "rechtshandeling kan rechtens worden uitgevoerd wanneer wordt voldaan aan";
+          }
+        }
+        return "";
+      }
+      public void setText(String s) {
+      }
+      public boolean isValidText(String s) {
+        return EqualUtil.equals(s, getText());
+      }
+    }, node);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_311ogr_a0");
     return editorCell;
   }
   private EditorCell createRefNode_311ogr_b0(EditorContext editorContext, SNode node) {
@@ -99,10 +126,32 @@ public class Voorwaarden_Editor extends DefaultNodeEditor {
       return "alle";
     }
   }
-  private EditorCell createConstant_311ogr_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "volgende voorwaarden");
-    editorCell.setCellId("Constant_311ogr_c0");
-    editorCell.setDefaultText("");
+  private EditorCell createReadOnlyModelAccessor_311ogr_c0(final EditorContext editorContext, final SNode node) {
+    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
+      public String getText() {
+        {
+          final SNode rechtsbetrekking = SNodeOperations.getParent(node);
+          if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"))) {
+            return "volgende voorwaarden";
+          }
+        }
+        {
+          final SNode rechtshandeling = SNodeOperations.getParent(node);
+          if (SNodeOperations.isInstanceOf(rechtshandeling, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"))) {
+            return "volgende voorwaarden";
+          }
+        }
+        return "";
+      }
+      public void setText(String s) {
+      }
+      public boolean isValidText(String s) {
+        return EqualUtil.equals(s, getText());
+      }
+    }, node);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_311ogr_c0");
     return editorCell;
   }
   private EditorCell createConstant_311ogr_d0(EditorContext editorContext, SNode node) {

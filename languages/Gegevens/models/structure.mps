@@ -8,6 +8,7 @@
   <imports>
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" />
     <import index="jx79" ref="r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)" />
+    <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -382,7 +383,7 @@
   <node concept="1TIwiD" id="1YFKb5t_BZA">
     <property role="EcuMT" value="2282129504205176806" />
     <property role="TrG5h" value="GeheelGetalWaarde" />
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Rekenwaarde" />
     <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
     <node concept="1TJgyj" id="6a$JffhN9KX" role="1TKVEi">
       <property role="IQ2ns" value="7108013867280407613" />
@@ -445,7 +446,7 @@
   </node>
   <node concept="1TIwiD" id="1YFKb5tAGm1">
     <property role="EcuMT" value="2282129504205456769" />
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Rekenwaarde" />
     <property role="TrG5h" value="ReeelGetalWaarde" />
     <ref role="1TJDcQ" node="XSBwowcV4J" resolve="RekenWaarde" />
     <node concept="1TJgyi" id="1YFKb5tAQ8V" role="1TKVEl">
@@ -461,9 +462,9 @@
   </node>
   <node concept="1TIwiD" id="1YFKb5tAQ9N">
     <property role="EcuMT" value="2282129504205496947" />
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Temporelewaarde" />
     <property role="TrG5h" value="DatumWaarde" />
-    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
+    <ref role="1TJDcQ" node="5kuxuwXDNY_" resolve="TemporeleWaarde" />
     <node concept="1TJgyj" id="1YFKb5tAQ9O" role="1TKVEi">
       <property role="IQ2ns" value="2282129504205496948" />
       <property role="20lmBu" value="aggregation" />
@@ -597,9 +598,9 @@
   </node>
   <node concept="1TIwiD" id="vqB$L$qd2f">
     <property role="EcuMT" value="565938754127712399" />
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Temporelewaarde" />
     <property role="TrG5h" value="TijdWaarde" />
-    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
+    <ref role="1TJDcQ" node="5kuxuwXDNY_" resolve="TemporeleWaarde" />
     <node concept="1TJgyj" id="vqB$L$qd2g" role="1TKVEi">
       <property role="IQ2ns" value="565938754127712400" />
       <property role="20lmBu" value="aggregation" />
@@ -610,7 +611,7 @@
   </node>
   <node concept="1TIwiD" id="6a$JffhN9KB">
     <property role="EcuMT" value="7108013867280407591" />
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Rekenwaarde" />
     <property role="TrG5h" value="GeheelGetal" />
     <ref role="1TJDcQ" node="XSBwowcV4J" resolve="RekenWaarde" />
     <node concept="1TJgyi" id="6a$JffhNDwP" role="1TKVEl">
@@ -621,9 +622,9 @@
   </node>
   <node concept="1TIwiD" id="2IjnF_A4QQO">
     <property role="EcuMT" value="3139957515581877684" />
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Temporelewaarde" />
     <property role="TrG5h" value="DatumTijdWaarde" />
-    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
+    <ref role="1TJDcQ" node="5kuxuwXDNY_" resolve="TemporeleWaarde" />
     <node concept="1TJgyj" id="2IjnF_A4QQP" role="1TKVEi">
       <property role="IQ2ns" value="3139957515581877685" />
       <property role="20lmBu" value="aggregation" />
@@ -633,8 +634,16 @@
   </node>
   <node concept="1TIwiD" id="XSBwowcV4J">
     <property role="EcuMT" value="1114814656921448751" />
-    <property role="3GE5qa" value="Waarden" />
+    <property role="3GE5qa" value="Waarden.Rekenwaarde" />
     <property role="TrG5h" value="RekenWaarde" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
+  </node>
+  <node concept="1TIwiD" id="5kuxuwXDNY_">
+    <property role="EcuMT" value="6133486975038472101" />
+    <property role="3GE5qa" value="Waarden.Temporelewaarde" />
+    <property role="TrG5h" value="TemporeleWaarde" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
