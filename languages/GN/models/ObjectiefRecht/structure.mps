@@ -1304,7 +1304,7 @@
     <property role="TrG5h" value="VerschilTussen" />
     <property role="34LRSv" value="verschil tussen" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
-    <node concept="PrWs8" id="4rrm763H9U0" role="PzmwI">
+    <node concept="PrWs8" id="56OUB0WobHv" role="PzmwI">
       <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
     </node>
   </node>
@@ -1443,7 +1443,7 @@
   </node>
   <node concept="PlHQZ" id="4NzHub3_orp">
     <property role="EcuMT" value="5540471952144434905" />
-    <property role="3GE5qa" value="Expressies" />
+    <property role="3GE5qa" value="Expressies.UnaireExpressies" />
     <property role="TrG5h" value="IUnaireExpressie" />
     <node concept="1TJgyj" id="4NzHub3_orq" role="1TKVEi">
       <property role="IQ2ns" value="5540471952144434906" />
@@ -1455,7 +1455,7 @@
   </node>
   <node concept="1TIwiD" id="4NzHub3_ors">
     <property role="EcuMT" value="5540471952144434908" />
-    <property role="3GE5qa" value="Expressies" />
+    <property role="3GE5qa" value="Expressies.UnaireExpressies" />
     <property role="TrG5h" value="IsPositief" />
     <property role="34LRSv" value="is positief" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
@@ -1465,7 +1465,7 @@
   </node>
   <node concept="1TIwiD" id="4NzHub3_orY">
     <property role="EcuMT" value="5540471952144434942" />
-    <property role="3GE5qa" value="Expressies" />
+    <property role="3GE5qa" value="Expressies.UnaireExpressies" />
     <property role="TrG5h" value="isNegatief" />
     <property role="34LRSv" value="is negatief" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
@@ -1604,7 +1604,7 @@
   </node>
   <node concept="1TIwiD" id="jcJoZ9JaUU">
     <property role="EcuMT" value="345859696663244474" />
-    <property role="3GE5qa" value="Expressies" />
+    <property role="3GE5qa" value="Expressies.UnaireExpressies" />
     <property role="TrG5h" value="DeSom" />
     <property role="34LRSv" value="de som van" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
@@ -1614,7 +1614,7 @@
   </node>
   <node concept="1TIwiD" id="jcJoZ9LTgl">
     <property role="EcuMT" value="345859696663958549" />
-    <property role="3GE5qa" value="Expressies" />
+    <property role="3GE5qa" value="Expressies.UnaireExpressies" />
     <property role="TrG5h" value="IsNietBekend" />
     <property role="34LRSv" value="is niet bekend" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
@@ -1737,6 +1737,25 @@
       <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
     </node>
     <node concept="asaX9" id="5kuxuwXhMVJ" role="lGtFl" />
+  </node>
+  <node concept="PlHQZ" id="56OUB0Wl5YZ">
+    <property role="EcuMT" value="5887588380649480127" />
+    <property role="3GE5qa" value="Expressies.Functies.Temporeel" />
+    <property role="TrG5h" value="IBinaireTemporeleExpressie" />
+    <node concept="1TJgyj" id="56OUB0Wl5Z0" role="1TKVEi">
+      <property role="IQ2ns" value="5887588380649480128" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressie1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="uwhu:5kuxuwXDNY_" resolve="TemporeleWaarde" />
+    </node>
+    <node concept="1TJgyj" id="56OUB0Wl5Z1" role="1TKVEi">
+      <property role="IQ2ns" value="5887588380649480129" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressie2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="uwhu:5kuxuwXDNY_" resolve="TemporeleWaarde" />
+    </node>
   </node>
 </model>
 

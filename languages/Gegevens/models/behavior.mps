@@ -1628,6 +1628,7 @@
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="GeefWaarde" />
       <property role="DiZV1" value="true" />
+      <property role="13i0iv" value="true" />
       <node concept="3Tm1VV" id="XSBwowcV5I" role="1B3o_S" />
       <node concept="10P55v" id="XSBwowcV65" role="3clF45" />
       <node concept="3clFbS" id="XSBwowcV5K" role="3clF47">
@@ -1705,6 +1706,25 @@
     <node concept="13hLZK" id="XSBwowdL4s" role="13h7CW">
       <node concept="3clFbS" id="XSBwowdL4t" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="54gkgrMW20g" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="GeefWaarde" />
+      <property role="DiZV1" value="true" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="XSBwowcV5H" resolve="GeefWaarde" />
+      <node concept="3Tm1VV" id="54gkgrMW20h" role="1B3o_S" />
+      <node concept="3clFbS" id="54gkgrMW20m" role="3clF47">
+        <node concept="3cpWs6" id="54gkgrMW3x2" role="3cqZAp">
+          <node concept="2OqwBi" id="54gkgrMW3Gt" role="3cqZAk">
+            <node concept="13iPFW" id="54gkgrMW3xv" role="2Oq$k0" />
+            <node concept="3TrcHB" id="54gkgrMW3Um" role="2OqNvi">
+              <ref role="3TsBF5" to="uwhu:6a$JffhNDwP" resolve="waarde" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P55v" id="54gkgrMW20n" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="XSBwowfdEk">
     <property role="3GE5qa" value="Waarden.Rekenwaarde" />
@@ -1744,6 +1764,7 @@
     <node concept="13i0hz" id="5kuxuwXEUJM" role="13h7CS">
       <property role="TrG5h" value="GeefTemporeleWaarde" />
       <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
       <node concept="3Tm1VV" id="5kuxuwXEUJN" role="1B3o_S" />
       <node concept="3uibUv" id="5kuxuwXEXPk" role="3clF45">
         <ref role="3uigEE" to="dzyv:~Temporal" resolve="Temporal" />

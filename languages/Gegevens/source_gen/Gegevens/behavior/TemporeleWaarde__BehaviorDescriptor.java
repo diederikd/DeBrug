@@ -25,16 +25,13 @@ public final class TemporeleWaarde__BehaviorDescriptor extends BaseBHDescriptor 
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<Temporal> GeefTemporeleWaarde_id5kuxuwXEUJM = new SMethodBuilder<Temporal>(new SJavaCompoundTypeImpl(Temporal.class)).name("GeefTemporeleWaarde").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5kuxuwXEUJM").registry(REGISTRY).build();
+  public static final SMethod<Temporal> GeefTemporeleWaarde_id5kuxuwXEUJM = new SMethodBuilder<Temporal>(new SJavaCompoundTypeImpl(Temporal.class)).name("GeefTemporeleWaarde").modifiers(SModifiersImpl.create(12, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5kuxuwXEUJM").registry(REGISTRY).build();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefTemporeleWaarde_id5kuxuwXEUJM);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static Temporal GeefTemporeleWaarde_id5kuxuwXEUJM(@NotNull SNode __thisNode__) {
-    return null;
-  }
 
   /*package*/ TemporeleWaarde__BehaviorDescriptor() {
     super(REGISTRY);
@@ -52,8 +49,6 @@ public final class TemporeleWaarde__BehaviorDescriptor extends BaseBHDescriptor 
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
-      case 0:
-        return (T) ((Temporal) GeefTemporeleWaarde_id5kuxuwXEUJM(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

@@ -379,6 +379,9 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="Waarden" />
     <ref role="1TJDcQ" node="4rrm763g8LU" resolve="AbstracteWaarde" />
+    <node concept="PrWs8" id="56OUB0WhhjH" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1YFKb5t_BZA">
     <property role="EcuMT" value="2282129504205176806" />

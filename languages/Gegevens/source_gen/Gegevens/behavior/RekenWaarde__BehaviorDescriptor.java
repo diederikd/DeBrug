@@ -24,16 +24,13 @@ public final class RekenWaarde__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<Double> GeefWaarde_idXSBwowcV5H = new SMethodBuilder<Double>(new SJavaCompoundTypeImpl(Double.TYPE)).name("GeefWaarde").modifiers(SModifiersImpl.create(10, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("XSBwowcV5H").registry(REGISTRY).build();
+  public static final SMethod<Double> GeefWaarde_idXSBwowcV5H = new SMethodBuilder<Double>(new SJavaCompoundTypeImpl(Double.TYPE)).name("GeefWaarde").modifiers(SModifiersImpl.create(14, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("XSBwowcV5H").registry(REGISTRY).build();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefWaarde_idXSBwowcV5H);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static double GeefWaarde_idXSBwowcV5H(@NotNull SNode __thisNode__) {
-    return 0;
-  }
 
   /*package*/ RekenWaarde__BehaviorDescriptor() {
     super(REGISTRY);
@@ -51,8 +48,6 @@ public final class RekenWaarde__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
-      case 0:
-        return (T) ((Double) GeefWaarde_idXSBwowcV5H(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

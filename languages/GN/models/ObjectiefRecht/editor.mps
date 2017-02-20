@@ -8840,7 +8840,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4NzHub3_orB">
-    <property role="3GE5qa" value="Expressies" />
+    <property role="3GE5qa" value="Expressies.UnaireExpressies" />
     <ref role="1XX52x" to="3pw0:4NzHub3_ors" resolve="IsPositief" />
     <node concept="3EZMnI" id="4NzHub3_orH" role="2wV5jI">
       <node concept="3F1sOY" id="4NzHub3_orO" role="3EZMnx">
@@ -8853,7 +8853,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4NzHub3_os9">
-    <property role="3GE5qa" value="Expressies" />
+    <property role="3GE5qa" value="Expressies.UnaireExpressies" />
     <ref role="1XX52x" to="3pw0:4NzHub3_orY" resolve="isNegatief" />
     <node concept="3EZMnI" id="4NzHub3_osb" role="2wV5jI">
       <node concept="3F1sOY" id="4NzHub3_osi" role="3EZMnx">
@@ -10182,7 +10182,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="jcJoZ9JaVf">
-    <property role="3GE5qa" value="Expressies" />
+    <property role="3GE5qa" value="Expressies.UnaireExpressies" />
     <ref role="1XX52x" to="3pw0:jcJoZ9JaUU" resolve="DeSom" />
     <node concept="3EZMnI" id="jcJoZ9JaVh" role="2wV5jI">
       <node concept="3F0ifn" id="jcJoZ9JaVo" role="3EZMnx">
@@ -10198,7 +10198,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="jcJoZ9LTgw">
-    <property role="3GE5qa" value="Expressies" />
+    <property role="3GE5qa" value="Expressies.UnaireExpressies" />
     <ref role="1XX52x" to="3pw0:jcJoZ9LTgl" resolve="IsNietBekend" />
     <node concept="3EZMnI" id="jcJoZ9LTgA" role="2wV5jI">
       <node concept="3F1sOY" id="jcJoZ9LTgH" role="3EZMnx">
