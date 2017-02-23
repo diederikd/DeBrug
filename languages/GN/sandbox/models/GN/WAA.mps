@@ -3635,51 +3635,51 @@
       </node>
       <node concept="LeFwc" id="2K7y4iIY0zd" role="LeFwH">
         <property role="LeFwf" value="0" />
-        <property role="LeFwL" value="0" />
-        <property role="LeFwM" value="5" />
+        <property role="LeFwL" value="1" />
+        <property role="LeFwM" value="31" />
       </node>
     </node>
-    <node concept="LeFwQ" id="5kuxuwXq88p" role="3zKq1C">
-      <node concept="2B78Lw" id="5kuxuwXq88_" role="LeFwF">
+    <node concept="LeFwQ" id="3xrEZDArfFi" role="3zKq1C">
+      <node concept="2B78Lw" id="3xrEZDArfFu" role="LeFwF">
         <property role="2B78LE" value="2017" />
         <property role="2B78L_" value="2" />
-        <property role="2B78LB" value="19" />
+        <property role="2B78LB" value="23" />
       </node>
-      <node concept="LeFwc" id="5kuxuwXq88B" role="LeFwH">
-        <property role="LeFwf" value="13" />
-        <property role="LeFwL" value="48" />
-        <property role="LeFwM" value="37" />
+      <node concept="LeFwc" id="3xrEZDArfFw" role="LeFwH">
+        <property role="LeFwf" value="14" />
+        <property role="LeFwL" value="37" />
+        <property role="LeFwM" value="40" />
       </node>
     </node>
-    <node concept="2BLbnY" id="5kuxuwXq88E" role="2BLYKK">
-      <node concept="2B78KX" id="5kuxuwXq88G" role="1O2iA3">
+    <node concept="2BLbnY" id="3xrEZDArfFz" role="2BLYKK">
+      <node concept="2B78KX" id="3xrEZDArfF_" role="1O2iA3">
         <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur&#10;bij eigen werkgever in te dienen" />
         <ref role="2B78KW" node="4pem8DJZpq7" resolve="Amalius" />
         <ref role="2B78K2" node="4pem8DJZpq9" resolve="AZML" />
-        <node concept="LeFwQ" id="5kuxuwXq88H" role="2B78LI">
-          <node concept="2B78Lw" id="5kuxuwXq88I" role="LeFwF">
+        <node concept="LeFwQ" id="3xrEZDArfFA" role="2B78LI">
+          <node concept="2B78Lw" id="3xrEZDArfFB" role="LeFwF">
             <property role="2B78LB" value="1" />
             <property role="2B78L_" value="1" />
             <property role="2B78LE" value="2001" />
           </node>
-          <node concept="LeFwc" id="5kuxuwXq88J" role="LeFwH">
+          <node concept="LeFwc" id="3xrEZDArfFC" role="LeFwH">
             <property role="LeFwf" value="12" />
             <property role="LeFwL" value="34" />
             <property role="LeFwM" value="0" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="5kuxuwXq88K" role="1O2iA3">
+      <node concept="2B78KX" id="3xrEZDArfFD" role="1O2iA3">
         <ref role="2B78K5" node="1VomLPHLHJe" resolve="de bevoegdheid om de gewenste spreiding van de uren te wijzigen" />
         <ref role="2B78K2" node="4pem8DJZpq9" resolve="AZML" />
         <ref role="2B78KW" node="4pem8DJZpq7" resolve="Amalius" />
-        <node concept="LeFwQ" id="5kuxuwXq88L" role="2B78LI">
-          <node concept="2B78Lw" id="5kuxuwXq88M" role="LeFwF">
+        <node concept="LeFwQ" id="3xrEZDArfFE" role="2B78LI">
+          <node concept="2B78Lw" id="3xrEZDArfFF" role="LeFwF">
             <property role="2B78LB" value="1" />
             <property role="2B78L_" value="1" />
             <property role="2B78LE" value="2000" />
           </node>
-          <node concept="LeFwc" id="5kuxuwXq88N" role="LeFwH">
+          <node concept="LeFwc" id="3xrEZDArfFG" role="LeFwH">
             <property role="LeFwf" value="0" />
             <property role="LeFwL" value="0" />
             <property role="LeFwM" value="0" />
@@ -3687,10 +3687,10 @@
         </node>
       </node>
     </node>
-    <node concept="3WXGrE" id="5kuxuwXq88O" role="3WXGrD">
+    <node concept="3WXGrE" id="3xrEZDArfFH" role="3WXGrD">
       <ref role="3WXGrF" node="4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
     </node>
-    <node concept="3WXGrE" id="5kuxuwXq88Q" role="3WXGrD">
+    <node concept="3WXGrE" id="3xrEZDArfFJ" role="3WXGrD">
       <ref role="3WXGrF" node="1VomLPHLX4J" resolve="Wijzigen van de spreiding van de uren" />
     </node>
   </node>
