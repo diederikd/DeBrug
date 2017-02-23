@@ -7,7 +7,7 @@ import jetbrains.mps.smodel.structure.Extension;
 import java.util.Arrays;
 
 public class ExtensionDescriptor extends DefaultExtensionDescriptor {
-  private Extension[] extensions = new Extension[]{new InterpreterVoorwaarden_extension(), new InterpreterVariabelen_extension(), new InterpreterBase_extension(), new InterpreterTemporal_extension()};
+  private Extension[] extensions = new Extension[]{new InterpreterVoorwaarden_extension(), new InterpreterVariabelen_extension(), new InterpreterBase_extension(), new InterpreterTemporal_extension(), new InterpreterExpressie_extension()};
   public ExtensionDescriptor() {
   }
   @Override

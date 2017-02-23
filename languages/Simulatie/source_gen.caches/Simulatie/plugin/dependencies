@@ -9,6 +9,7 @@
   </dependency>
   <dependency className="Simulatie.plugin.ExtensionDescriptor" file="ExtensionDescriptor.java">
     <classNode dependClassName="Simulatie.plugin.InterpreterBase_extension" />
+    <classNode dependClassName="Simulatie.plugin.InterpreterExpressie_extension" />
     <classNode dependClassName="Simulatie.plugin.InterpreterTemporal_extension" />
     <classNode dependClassName="Simulatie.plugin.InterpreterVariabelen_extension" />
     <classNode dependClassName="Simulatie.plugin.InterpreterVoorwaarden_extension" />
@@ -20,6 +21,7 @@
   </dependency>
   <dependency className="Simulatie.plugin.Interpreter" file="Interpreter.java">
     <classNode dependClassName="Simulatie.plugin.DebugHelper" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.CombinedInterpreter" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ContextImpl" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer" />
@@ -36,6 +38,13 @@
   </dependency>
   <dependency className="Simulatie.plugin.InterpreterBase_extension" file="InterpreterBase_extension.java">
     <classNode dependClassName="Simulatie.plugin.InterpreterInterpreterBase" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.CachedInterpreterFinder" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IInterpreter" />
+    <classNode dependClassName="jetbrains.mps.smodel.structure.Extension" />
+    <classNode extendsClassName="jetbrains.mps.smodel.structure.Default" />
+  </dependency>
+  <dependency className="Simulatie.plugin.InterpreterExpressie_extension" file="InterpreterExpressie_extension.java">
+    <classNode dependClassName="Simulatie.plugin.InterpreterInterpreterExpressie" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.CachedInterpreterFinder" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IInterpreter" />
     <classNode dependClassName="jetbrains.mps.smodel.structure.Extension" />
@@ -66,6 +75,35 @@
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IRelationship" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ITypeMapper" />
     <classNode dependClassName="java.util.List" />
+    <classNode extendsClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterBase" />
+  </dependency>
+  <dependency className="Simulatie.plugin.InterpreterInterpreterExpressie" file="InterpreterInterpreterExpressie.java">
+    <classNode dependClassName="Gegevens.behavior.GeheelGetalWaarde__BehaviorDescriptor" />
+    <classNode dependClassName="Gegevens.behavior.RekenWaarde__BehaviorDescriptor" />
+    <classNode dependClassName="Simulatie.plugin.DebugHelper" />
+    <classNode dependClassName="Simulatie.plugin.RunTimeObject" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IEvaluator" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IRelationship" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ITypeMapper" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpretAfterRelationshipImpl" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.TypedChildConstraintImpl" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.RuntimeException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterBase" />
   </dependency>
   <dependency className="Simulatie.plugin.InterpreterInterpreterTemporal" file="InterpreterInterpreterTemporal.java">
@@ -117,10 +155,7 @@
     <classNode extendsClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterBase" />
   </dependency>
   <dependency className="Simulatie.plugin.InterpreterInterpreterVoorwaarden" file="InterpreterInterpreterVoorwaarden.java">
-    <classNode dependClassName="Gegevens.behavior.GeheelGetalWaarde__BehaviorDescriptor" />
-    <classNode dependClassName="Gegevens.behavior.RekenWaarde__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.plugin.DebugHelper" />
-    <classNode dependClassName="Simulatie.plugin.RunTimeObject" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
@@ -129,18 +164,16 @@
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IRelationship" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ITypeMapper" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpretAfterRelationshipImpl" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpretBeforeRelationshipImpl" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException" />
-    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.TypedChildConstraintImpl" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.RuntimeException" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterBase" />

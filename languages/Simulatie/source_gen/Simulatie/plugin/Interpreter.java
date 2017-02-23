@@ -8,6 +8,7 @@ import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import com.mbeddr.mpsutil.interpreter.rt.IEnvironment;
 import com.mbeddr.mpsutil.interpreter.rt.INodeValueCache;
 import org.jetbrains.mps.openapi.model.SNode;
+import com.mbeddr.mpsutil.interpreter.rt.CombinedInterpreter;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRegistry;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.mpsutil.interpreter.rt.ContextImpl;
@@ -21,7 +22,9 @@ public class Interpreter {
 
   private static Tuples._3<Object, IEnvironment, INodeValueCache> eval(SNode node) {
     if (interpreter == null) {
-      interpreter = InterpreterRegistry.getInterpreterExecutable(SNodeOperations.getNode("r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)", "3139957515582036208"));
+
+      interpreter = new CombinedInterpreter(InterpreterRegistry.getInterpreterExecutable(SNodeOperations.getNode("r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)", "5887588380650786349")), InterpreterRegistry.getInterpreterExecutable(SNodeOperations.getNode("r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)", "3139957515582036208")), InterpreterRegistry.getInterpreterExecutable(SNodeOperations.getNode("r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)", "2464168203965147620")), InterpreterRegistry.getInterpreterExecutable(SNodeOperations.getNode("r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)", "5887588380650751276")), InterpreterRegistry.getInterpreterExecutable(SNodeOperations.getNode("r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)", "5887588380650816811")));
+
     }
     context = new ContextImpl(interpreter);
     DebugHelper.printContext("eval", node, context);
