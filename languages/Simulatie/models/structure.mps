@@ -124,7 +124,7 @@
     <node concept="1TJgyj" id="5RiSaxyO00G" role="1TKVEi">
       <property role="IQ2ns" value="6760713004453462060" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="20kJfa" value="uittevoerenhandeling" />
       <ref role="20lvS9" node="5RiSaxyNDdp" resolve="UitTeVoerenHandeling" />
     </node>
