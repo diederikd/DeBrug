@@ -702,52 +702,70 @@
   </root>
   <root nodeRef="r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)/3139957515582417695">
     <file name="Interpreter.java">
-      <node id="4065005624681052873" at="20,0,21,0" concept="12" trace="interpreter" />
-      <node id="4065005624681057620" at="21,0,22,0" concept="12" trace="context" />
-      <node id="2464168203965606750" at="24,30,25,0" concept="11" />
-      <node id="902624672044185345" at="25,0,26,814" concept="3" />
-      <node id="2464168203965606809" at="26,814,27,0" concept="11" />
-      <node id="5917060184178583723" at="28,5,29,43" concept="3" />
-      <node id="6133486975033592135" at="29,43,30,52" concept="3" />
-      <node id="3139957515582454446" at="30,52,31,60" concept="8" />
-      <node id="5917060184178583776" at="31,60,32,65" concept="8" />
-      <node id="5917060184178870233" at="32,65,33,177" concept="8" />
-      <node id="5917060184178583782" at="33,177,34,18" concept="9" />
-      <node id="8286181731523264451" at="37,45,38,37" concept="8" />
-      <node id="8286181731523270885" at="39,30,40,18" concept="9" />
-      <node id="5917060184178573243" at="41,5,42,92" concept="8" />
-      <node id="6133486975033595272" at="42,92,43,56" concept="3" />
-      <node id="5917060184178578093" at="44,30,45,25" concept="9" />
-      <node id="7760345304273981256" at="46,5,47,45" concept="8" />
-      <node id="7760345304273593359" at="48,29,49,18" concept="9" />
-      <node id="7760345304273273715" at="50,5,51,32" concept="9" />
-      <node id="8286181731523268508" at="38,37,41,5" concept="6" />
-      <node id="7760345304273128048" at="43,56,46,5" concept="6" />
-      <node id="7760345304273591389" at="47,45,50,5" concept="6" />
-      <node id="5917060184178583717" at="23,84,28,5" concept="6" />
-      <node id="5917060184178583416" at="23,0,36,0" concept="13" trace="eval#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/baseLanguage/tuples/runtime/Tuples/_3;" />
-      <node id="4065005624681055957" at="37,0,53,0" concept="13" trace="evaluate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
-      <scope id="8286181731523268510" at="39,30,40,18" />
-      <scope id="7760345304273128050" at="44,30,45,25" />
-      <scope id="7760345304273591391" at="48,29,49,18" />
-      <scope id="5917060184178583718" at="24,30,27,0" />
-      <scope id="5917060184178583419" at="23,84,34,18">
+      <node id="4065005624681052873" at="22,0,23,0" concept="12" trace="interpreter" />
+      <node id="4065005624681057620" at="23,0,24,0" concept="12" trace="context" />
+      <node id="2464168203965606750" at="26,30,27,0" concept="11" />
+      <node id="902624672044185345" at="27,0,28,814" concept="3" />
+      <node id="2464168203965606809" at="28,814,29,0" concept="11" />
+      <node id="5917060184178583723" at="30,5,31,43" concept="3" />
+      <node id="6133486975033592135" at="31,43,32,52" concept="3" />
+      <node id="3139957515582454446" at="32,52,33,60" concept="8" />
+      <node id="5917060184178583776" at="33,60,34,65" concept="8" />
+      <node id="5917060184178870233" at="34,65,35,177" concept="8" />
+      <node id="5917060184178583782" at="35,177,36,18" concept="9" />
+      <node id="3079509193314028006" at="39,45,40,25" concept="8" />
+      <node id="3079509193313999697" at="41,5,42,49" concept="8" />
+      <node id="3079509193314000814" at="44,9,45,64" concept="8" />
+      <node id="3079509193314029543" at="46,200,47,223" concept="3" />
+      <node id="3079509193314024368" at="52,5,53,42" concept="8" />
+      <node id="3079509193314024374" at="54,199,55,379" concept="3" />
+      <node id="7760345304273273715" at="57,5,58,18" concept="9" />
+      <node id="3079509193314006366" at="61,63,62,92" concept="8" />
+      <node id="3079509193314011327" at="62,92,63,23" concept="9" />
+      <node id="3079509193314000814" at="45,64,48,11" concept="6" />
+      <node id="3079509193314024368" at="53,42,56,7" concept="6" />
+      <node id="3079509193314006341" at="61,0,65,0" concept="13" trace="evaluateVoorwaarden#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="5917060184178583717" at="25,84,30,5" concept="6" />
+      <node id="3079509193314000814" at="43,213,49,9" concept="1" />
+      <node id="3079509193314024368" at="51,5,57,5" concept="1" />
+      <node id="3079509193313999697" at="42,49,50,7" concept="6" />
+      <node id="3079509193313999697" at="40,25,51,5" concept="1" />
+      <node id="5917060184178583416" at="25,0,38,0" concept="13" trace="eval#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/baseLanguage/tuples/runtime/Tuples/_3;" />
+      <node id="4065005624681055957" at="39,0,60,0" concept="13" trace="evaluate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="3079509193314000816" at="46,200,47,223" />
+      <scope id="3079509193314024370" at="54,199,55,379" />
+      <scope id="3079509193314006342" at="61,63,63,23">
+        <var name="result" id="3079509193314006367" />
+      </scope>
+      <scope id="5917060184178583718" at="26,30,29,0" />
+      <scope id="3079509193314000814" at="44,9,48,11">
+        <var name="rechtshandeling" id="3079509193314000814" />
+      </scope>
+      <scope id="3079509193314024368" at="52,5,56,7">
+        <var name="rechtsbetrekking" id="3079509193314024368" />
+      </scope>
+      <scope id="3079509193314006341" at="61,0,65,0">
+        <var name="voorwaarden" id="3079509193314006406" />
+      </scope>
+      <scope id="3079509193313999701" at="43,213,49,9" />
+      <scope id="3079509193313999697" at="41,5,50,7">
+        <var name="rechtsgevolgVeroorzaker" id="3079509193313999697" />
+      </scope>
+      <scope id="5917060184178583419" at="25,84,36,18">
         <var name="coverage" id="3139957515582454449" />
         <var name="result" id="5917060184178870234" />
         <var name="value" id="5917060184178583777" />
       </scope>
-      <scope id="5917060184178583416" at="23,0,36,0">
+      <scope id="5917060184178583416" at="25,0,38,0">
         <var name="node" id="5917060184178583700" />
       </scope>
-      <scope id="4065005624681055960" at="37,45,51,32">
-        <var name="nodeValues" id="7760345304273981257" />
-        <var name="result" id="5917060184178573244" />
-        <var name="voorwaarden" id="8286181731523264452" />
+      <scope id="4065005624681055960" at="39,45,58,18">
+        <var name="result" id="3079509193314028007" />
       </scope>
-      <scope id="4065005624681055957" at="37,0,53,0">
+      <scope id="4065005624681055957" at="39,0,60,0">
         <var name="node" id="4065005624681055990" />
       </scope>
-      <unit id="3139957515582417695" at="19,0,56,0" name="Simulatie.plugin.Interpreter" />
+      <unit id="3139957515582417695" at="21,0,67,0" name="Simulatie.plugin.Interpreter" />
     </file>
   </root>
   <root nodeRef="r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)/5887588380650751276">

@@ -39,11 +39,6 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
-import javax.swing.JComponent;
-import org.campagnelab.ui.code.Swing.ButtonCallback;
-import org.campagnelab.ui.code.Swing.Button;
-import Simulatie.plugin.Interpreter;
 
 public class ReferentieNaarRechtshandeling_HandelingenRol1_Editor extends DefaultNodeEditor {
   private Collection<String> myContextHints = Arrays.asList(new String[]{"Simulatie.editor.Simulatie.HandelingenRol1"});
@@ -76,10 +71,8 @@ public class ReferentieNaarRechtshandeling_HandelingenRol1_Editor extends Defaul
     editorCell.addEditorCell(this.createConstant_ljvns5_d0a(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_ljvns5_e0a(editorContext, node));
     editorCell.addEditorCell(this.createConstant_ljvns5_f0a(editorContext, node));
-    editorCell.addEditorCell(this.createJComponent_ljvns5_g0a(editorContext, node));
-    editorCell.addEditorCell(this.createJComponent_ljvns5_h0a(editorContext, node));
-    editorCell.addEditorCell(this.createReadOnlyModelAccessor_ljvns5_i0a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_ljvns5_j0a(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_ljvns5_g0a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_ljvns5_h0a(editorContext, node));
     return editorCell;
   }
   private static boolean renderingCondition_ljvns5_a0a(SNode node, EditorContext editorContext) {
@@ -273,43 +266,7 @@ public class ReferentieNaarRechtshandeling_HandelingenRol1_Editor extends Defaul
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createJComponent_ljvns5_g0a(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = EditorCell_Component.createComponentCell(editorContext, node, ReferentieNaarRechtshandeling_HandelingenRol1_Editor._QueryFunction_JComponent_ljvns5_a6a0(node, editorContext), "_ljvns5_g0a");
-    editorCell.setCellId("JComponent_ljvns5_g0a");
-    return editorCell;
-  }
-  private static JComponent _QueryFunction_JComponent_ljvns5_a6a0(final SNode node, final EditorContext editorContext) {
-    ButtonCallback callback = new ButtonCallback(node, editorContext) {
-      public void process(final SNode n, final EditorContext editorContext) {
-        {
-          final SNode node = ((SNode) n);
-          SNode simulatie = (SNode) SNodeOperations.getParent(node);
-          Simulatie__BehaviorDescriptor.ExecuteHandeling_id3d6QfrgVOeu.invoke(simulatie, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")), node);
-        }
-      }
-    };
-    return Button.createButton("Uitvoeren", editorContext, node, callback);
-
-  }
-  private EditorCell createJComponent_ljvns5_h0a(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = EditorCell_Component.createComponentCell(editorContext, node, ReferentieNaarRechtshandeling_HandelingenRol1_Editor._QueryFunction_JComponent_ljvns5_a7a0(node, editorContext), "_ljvns5_h0a");
-    editorCell.setCellId("JComponent_ljvns5_h0a");
-    return editorCell;
-  }
-  private static JComponent _QueryFunction_JComponent_ljvns5_a7a0(final SNode node, final EditorContext editorContext) {
-    ButtonCallback callback = new ButtonCallback(node, editorContext) {
-      public void process(final SNode n, final EditorContext editorContext) {
-        {
-          final SNode node = ((SNode) n);
-          Object object = Interpreter.evaluate(SLinkOperations.getTarget(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x25be3715c7af049fL, "Voorwaarden")));
-          System.out.println(object);
-        }
-      }
-    };
-    return Button.createButton("Evalueer", editorContext, node, callback);
-
-  }
-  private EditorCell createReadOnlyModelAccessor_ljvns5_i0a(final EditorContext editorContext, final SNode node) {
+  private EditorCell createReadOnlyModelAccessor_ljvns5_g0a(final EditorContext editorContext, final SNode node) {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
       public String getText() {
         SNode simulatie = (SNode) SNodeOperations.getParent(node);
@@ -323,16 +280,16 @@ public class ReferentieNaarRechtshandeling_HandelingenRol1_Editor extends Defaul
     }, node);
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
     editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
-    editorCell.setCellId("ReadOnlyModelAccessor_ljvns5_i0a");
+    editorCell.setCellId("ReadOnlyModelAccessor_ljvns5_g0a");
     Style style = new StyleImpl();
     Simulatie_StyleSheet.apply_uitzondering(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
-  private EditorCell createConstant_ljvns5_j0a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_ljvns5_h0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_ljvns5_j0a");
+    editorCell.setCellId("Constant_ljvns5_h0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);

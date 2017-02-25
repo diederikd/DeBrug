@@ -121,6 +121,13 @@
       <property role="20kJfa" value="datumtijdlaatstehandeling" />
       <ref role="20lvS9" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
     </node>
+    <node concept="1TJgyj" id="5RiSaxyO00G" role="1TKVEi">
+      <property role="IQ2ns" value="6760713004453462060" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="uittevoerenhandeling" />
+      <ref role="20lvS9" node="5RiSaxyNDdp" resolve="UitTeVoerenHandeling" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6OHSlZaUlix">
     <property role="EcuMT" value="7867191925628556449" />
@@ -175,6 +182,32 @@
     </node>
     <node concept="PrWs8" id="6w7GUCbsHkT" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5RiSaxyNDdp">
+    <property role="EcuMT" value="6760713004453368665" />
+    <property role="TrG5h" value="UitTeVoerenHandeling" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5RiSaxyNDdv" role="1TKVEi">
+      <property role="IQ2ns" value="6760713004453368671" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="actor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="gcgs:6c9haf45syb" resolve="Rechtssubject" />
+    </node>
+    <node concept="1TJgyj" id="5RiSaxyNDdq" role="1TKVEi">
+      <property role="IQ2ns" value="6760713004453368666" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="rechtshandeling" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
+    </node>
+    <node concept="1TJgyj" id="5RiSaxyNDds" role="1TKVEi">
+      <property role="IQ2ns" value="6760713004453368668" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="onderwerp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
     </node>
   </node>
 </model>

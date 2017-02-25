@@ -15,6 +15,8 @@ import com.mbeddr.mpsutil.interpreter.rt.ContextImpl;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
 import com.mbeddr.mpsutil.interpreter.rt.NullCoverageAnalyzer;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class Interpreter {
   private static IInterpreter interpreter;
@@ -35,21 +37,30 @@ public class Interpreter {
   }
 
   public static Object evaluate(SNode node) {
-    SNode voorwaarden = (SNode) node;
-    if (voorwaarden == null) {
-      return null;
+    Object result = null;
+    {
+      final SNode rechtsgevolgVeroorzaker = node;
+      if (SNodeOperations.isInstanceOf(rechtsgevolgVeroorzaker, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, "ObjectiefRecht.structure.RechtsgevolgVeroorzakers"))) {
+        {
+          final SNode rechtshandeling = rechtsgevolgVeroorzaker;
+          if (SNodeOperations.isInstanceOf(rechtshandeling, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"))) {
+            result = evaluateVoorwaarden(SLinkOperations.getTarget(rechtshandeling, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x25be3715c7af049fL, "Voorwaarden")));
+          }
+        }
+      }
     }
-    Tuples._3<Object, IEnvironment, INodeValueCache> result = Interpreter.eval(voorwaarden);
-    DebugHelper.printContext("evaluate", node, context);
-    if (node == voorwaarden) {
-      return result._0();
+    {
+      final SNode rechtsbetrekking = node;
+      if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"))) {
+        evaluateVoorwaarden(SLinkOperations.getTarget(SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "rechtsbetrekking")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden")));
+      }
     }
-    INodeValueCache nodeValues = result._2();
-    if (nodeValues == null) {
-      return null;
-    }
-    return nodeValues.get(node);
+    return result;
   }
 
+  public static Object evaluateVoorwaarden(SNode voorwaarden) {
+    Tuples._3<Object, IEnvironment, INodeValueCache> result = Interpreter.eval(voorwaarden);
+    return result._0();
+  }
 
 }
