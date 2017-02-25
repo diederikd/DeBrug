@@ -16,6 +16,7 @@ import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import Datum.editor.GN_StyleSheet;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
 import javax.swing.JComponent;
 import org.campagnelab.ui.code.Swing.ButtonCallback;
@@ -117,6 +118,9 @@ public class UitTeVoerenHandeling_Editor extends DefaultNodeEditor {
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name");
+      Style style = new StyleImpl();
+      GN_StyleSheet.apply_Subject(style, editorCell);
+      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {
@@ -178,6 +182,9 @@ public class UitTeVoerenHandeling_Editor extends DefaultNodeEditor {
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name_1");
+      Style style = new StyleImpl();
+      ObjectiefRecht.editor.GN_StyleSheet.apply_Name(style, editorCell);
+      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {
@@ -235,6 +242,9 @@ public class UitTeVoerenHandeling_Editor extends DefaultNodeEditor {
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name_2");
+      Style style = new StyleImpl();
+      ObjectiefRecht.editor.GN_StyleSheet.apply_Onderwerp(style, editorCell);
+      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {
@@ -274,7 +284,7 @@ public class UitTeVoerenHandeling_Editor extends DefaultNodeEditor {
         {
           final SNode node = ((SNode) n);
           SNode simulatie = (SNode) SNodeOperations.getParent(node);
-          Simulatie__BehaviorDescriptor.ExecuteHandeling_id3d6QfrgVOeu.invoke(simulatie, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935aL, "rechtshandeling")), node);
+          Simulatie__BehaviorDescriptor.ExecuteHandeling_id3d6QfrgVOeu.invoke(simulatie, simulatie, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935aL, "rechtshandeling")), SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL, "onderwerp")));
         }
       }
     };

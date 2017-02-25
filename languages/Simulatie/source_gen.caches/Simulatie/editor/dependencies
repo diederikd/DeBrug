@@ -357,6 +357,8 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="Simulatie.editor.UitTeVoerenHandeling_Editor" file="UitTeVoerenHandeling_Editor.java">
+    <classNode dependClassName="Datum.editor.GN_StyleSheet" />
+    <classNode dependClassName="ObjectiefRecht.editor.GN_StyleSheet" />
     <classNode dependClassName="Simulatie.behavior.Simulatie__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.plugin.Interpreter" />
     <classNode dependClassName="java.lang.Object" />

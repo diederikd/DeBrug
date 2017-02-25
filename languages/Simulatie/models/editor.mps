@@ -21,6 +21,7 @@
     <import index="ln8d" ref="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="rwnv" ref="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)" implicit="true" />
+    <import index="z1s1" ref="r:4d95e375-a45b-4405-8471-233ad9d6fb8b(Datum.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -2007,9 +2008,25 @@
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="5RiSaxz0vWO" role="3EZMnx">
+        <property role="3F0ifm" value="uitgevoerd met als onderwerp" />
+      </node>
+      <node concept="1iCGBv" id="5RiSaxz0vXy" role="3EZMnx">
+        <ref role="1NtTu8" to="gcgs:28MuYO0sFSW" resolve="onderwerp" />
+        <node concept="1sVBvm" id="5RiSaxz0vX$" role="1sWHZn">
+          <node concept="3F0A7n" id="5RiSaxz0vY0" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" to="9nno:28ifPi2_$n1" resolve="Onderwerp" />
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="6c9haf45_Sb" role="3EZMnx">
-        <property role="3F0ifm" value="uitgevoerd door actor" />
+        <property role="3F0ifm" value="door actor" />
         <node concept="lj46D" id="6c9haf45_Tq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="5RiSaxz0vWp" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -2822,6 +2839,7 @@
         <node concept="1sVBvm" id="5RiSaxyNDdO" role="1sWHZn">
           <node concept="3F0A7n" id="5RiSaxyNDdQ" role="2wV5jI">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" to="z1s1:28ifPi2yzU5" resolve="Subject" />
           </node>
         </node>
         <node concept="ljvvj" id="5RiSaxyNDes" role="3F10Kt">
@@ -2840,6 +2858,7 @@
           <node concept="3F0A7n" id="5RiSaxyRQzt" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" to="9nno:6c9haf45jMN" resolve="Name" />
           </node>
         </node>
         <node concept="ljvvj" id="5RiSaxyNDev" role="3F10Kt">
@@ -2857,6 +2876,7 @@
         <node concept="1sVBvm" id="5RiSaxyNDe2" role="1sWHZn">
           <node concept="3F0A7n" id="5RiSaxyNDe4" role="2wV5jI">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" to="9nno:28ifPi2_$n1" resolve="Onderwerp" />
           </node>
         </node>
       </node>
@@ -2902,13 +2922,21 @@
                 </node>
                 <node concept="2qgKlT" id="5RiSaxyNDlq" role="2OqNvi">
                   <ref role="37wK5l" to="ln8d:3d6QfrgVOeu" resolve="ExecuteHandeling" />
+                  <node concept="37vLTw" id="5RiSaxyXrym" role="37wK5m">
+                    <ref role="3cqZAo" node="5RiSaxyNDlg" resolve="simulatie" />
+                  </node>
                   <node concept="2OqwBi" id="5RiSaxyNDlr" role="37wK5m">
                     <node concept="1VaYGm" id="5RiSaxyNDls" role="2Oq$k0" />
                     <node concept="3TrEf2" id="5RiSaxyQRKS" role="2OqNvi">
                       <ref role="3Tt5mk" to="xhlk:5RiSaxyNDdq" resolve="rechtshandeling" />
                     </node>
                   </node>
-                  <node concept="1VaYGm" id="5RiSaxyNDlu" role="37wK5m" />
+                  <node concept="2OqwBi" id="5RiSaxyXrZi" role="37wK5m">
+                    <node concept="1VaYGm" id="5RiSaxyXrKZ" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5RiSaxyXsfM" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xhlk:5RiSaxyNDds" resolve="onderwerp" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
