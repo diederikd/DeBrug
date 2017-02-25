@@ -47,6 +47,9 @@ public class Rechtshandeling_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_2759bf_i0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_2759bf_j0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_2759bf_k0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_2759bf_l0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_2759bf_m0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_2759bf_n0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_2759bf_a0(EditorContext editorContext, SNode node) {
@@ -319,6 +322,11 @@ public class Rechtshandeling_Editor extends DefaultNodeEditor {
       if (editorCell.getRole() == null) {
         editorCell.setRole("uitgevoerdOp");
       }
+      Style style = new StyleImpl();
+      SNode node = myOwnerNode;
+      EditorContext editorContext = myEditorContext;
+      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+      editorCell.getStyle().putAll(style);
     }
     @Override
     protected EditorCell createEmptyCell() {
@@ -335,6 +343,67 @@ public class Rechtshandeling_Editor extends DefaultNodeEditor {
     }
     protected String getNoTargetText() {
       return "<no uitgevoerdOp>";
+    }
+  }
+  private EditorCell createConstant_2759bf_l0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "onderwerp");
+    editorCell.setCellId("Constant_2759bf_l0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_2759bf_m0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_2759bf_m0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefCell_2759bf_n0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("onderwerp");
+    provider.setNoTargetText("<no onderwerp>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new Rechtshandeling_Editor._Inline_2759bf_a31a());
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("onderwerp");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  public static class _Inline_2759bf_a31a extends InlineCellProvider {
+    public _Inline_2759bf_a31a() {
+      super();
+    }
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createProperty_2759bf_a0n0(editorContext, node);
+    }
+    private EditorCell createProperty_2759bf_a0n0(EditorContext editorContext, SNode node) {
+      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+      provider.setRole("name");
+      provider.setNoTargetText("<no name>");
+      provider.setReadOnly(true);
+      EditorCell editorCell;
+      editorCell = provider.createEditorCell(editorContext);
+      editorCell.setCellId("property_name_1");
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      SNode attributeConcept = provider.getRoleAttribute();
+      if (attributeConcept != null) {
+        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+        return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+      } else
+      return editorCell;
     }
   }
 }

@@ -24,9 +24,6 @@
     <file name="LijstMetRechtshandelingen_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="SubjectiefRecht.behavior.LijstMetRechtshandelingen_BehaviorDescriptor" />
     </file>
-    <file name="NatuurlijkPersoon_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.NatuurlijkPersoon_BehaviorDescriptor" />
-    </file>
     <file name="Rechtsbetrekking_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="SubjectiefRecht.behavior.Rechtsbetrekking_BehaviorDescriptor" />
     </file>
@@ -36,17 +33,8 @@
     <file name="Rechtshandeling_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="SubjectiefRecht.behavior.Rechtshandeling_BehaviorDescriptor" />
     </file>
-    <file name="Rechtspersoon_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.Rechtspersoon_BehaviorDescriptor" />
-    </file>
     <file name="Rechtssubject_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="SubjectiefRecht.behavior.Rechtssubject_BehaviorDescriptor" />
-    </file>
-    <file name="ReferentieNaarInstantieVanObject_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.ReferentieNaarInstantieVanObject_BehaviorDescriptor" />
-    </file>
-    <file name="ReferentieNaarNatuurlijkPersoon_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="SubjectiefRecht.behavior.ReferentieNaarNatuurlijkPersoon_BehaviorDescriptor" />
     </file>
     <file name="ReferentieNaarRechtsSubject_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="SubjectiefRecht.behavior.ReferentieNaarRechtsSubject_BehaviorDescriptor" />

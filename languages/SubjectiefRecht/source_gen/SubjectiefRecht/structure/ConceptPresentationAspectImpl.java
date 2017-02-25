@@ -12,14 +12,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Casus = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LijstMetRechtsbetrekkingen = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LijstMetRechtshandelingen = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_NatuurlijkPersoon = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rechtsbetrekking = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RechtsgevolgVeroorzaker = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rechtshandeling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Rechtspersoon = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rechtssubject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarInstantieVanObject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarNatuurlijkPersoon = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtsSubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtsbetrekking = new ConceptPresentationBuilder().create();
 
@@ -35,24 +31,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 2:
         return props_LijstMetRechtshandelingen;
       case 3:
-        return props_NatuurlijkPersoon;
-      case 4:
         return props_Rechtsbetrekking;
-      case 5:
+      case 4:
         return props_RechtsgevolgVeroorzaker;
-      case 6:
+      case 5:
         return props_Rechtshandeling;
-      case 7:
-        return props_Rechtspersoon;
-      case 8:
+      case 6:
         return props_Rechtssubject;
-      case 9:
-        return props_ReferentieNaarInstantieVanObject;
-      case 10:
-        return props_ReferentieNaarNatuurlijkPersoon;
-      case 11:
+      case 7:
         return props_ReferentieNaarRechtsSubject;
-      case 12:
+      case 8:
         return props_ReferentieNaarRechtsbetrekking;
     }
     throw new IllegalStateException("Unknown concept " + c);

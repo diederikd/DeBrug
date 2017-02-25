@@ -14,12 +14,11 @@
         <child id="7812026954661547171" name="rechtsbetrekkingen" index="1O2iA3" />
       </concept>
       <concept id="7867191925628288949" name="Simulatie.structure.Simulatie" flags="ng" index="2BMdVE">
-        <reference id="7867191925628478847" name="rol1" index="2BLsgw" />
+        <reference id="7867191925628478847" name="rechtssubject1" index="2BLsgw" />
         <reference id="7867191925628437242" name="casus" index="2BMAe_" />
-        <reference id="2222626598059533343" name="rol2" index="1Nt3W2" />
+        <reference id="2222626598059533343" name="rechtssubject2" index="1Nt3W2" />
         <child id="3172654291078996041" name="datumtijdlaatstehandeling" index="22TAwd" />
         <child id="7431672735427965832" name="datumtijdvanstartvandeSimulatie" index="d0i_M" />
-        <child id="7431672735429245552" name="uitgevoerdehandelingen" index="d5q2a" />
         <child id="7867191925628603759" name="rechtspositie" index="2BLYKK" />
         <child id="3694879098876164254" name="datumtijdvaninitialisatie" index="3zKq1C" />
         <child id="3694879098862050847" name="uitvoerbarehandelingen2" index="3WXGrD" />
@@ -59,27 +58,27 @@
       </concept>
     </language>
     <language id="2c493149-da1d-45e9-8ea2-e0b0cfc3047a" name="SubjectiefRecht">
+      <concept id="7136310554705382613" name="SubjectiefRecht.structure.ReferentieNaarRechtsSubject" flags="ng" index="2B78xQ">
+        <reference id="7136310554705382614" name="rechtssubject" index="2B78xP" />
+      </concept>
       <concept id="7136310554705382612" name="SubjectiefRecht.structure.Rechtshandeling" flags="ng" index="2B78xR">
+        <reference id="2464168203970068028" name="onderwerp" index="ygcnh" />
         <reference id="7136310554705418537" name="rechtshandeling" index="2B7LQa" />
         <child id="7136310554705382616" name="actor" index="2B78xV" />
         <child id="7136310554705419907" name="uitgevoerdOp" index="2B7LCw" />
       </concept>
       <concept id="7136310554705382618" name="SubjectiefRecht.structure.Casus" flags="ng" index="2B78xT">
         <reference id="5066083982446220006" name="context" index="QjCDG" />
-        <child id="7136310554705382621" name="rechtsbetrekkingen" index="2B78xY" />
-        <child id="5066083982445988473" name="natuurlijkepersonen" index="DGLbN" />
+        <child id="5066083982445988473" name="rechtssubjecten" index="DGLbN" />
       </concept>
-      <concept id="7136310554705381516" name="SubjectiefRecht.structure.NatuurlijkPersoon" flags="ng" index="2B78KJ">
-        <reference id="5066083982445997697" name="rol" index="DGNob" />
+      <concept id="7136310554705381515" name="SubjectiefRecht.structure.Rechtssubject" flags="ng" index="2B78KC">
+        <reference id="2464168203968430668" name="rol" index="yqVAx" />
       </concept>
       <concept id="7136310554705381534" name="SubjectiefRecht.structure.Rechtsbetrekking" flags="ng" index="2B78KX">
         <reference id="7136310554705381537" name="rechtssubjectMetPlicht" index="2B78K2" />
         <reference id="7136310554705381542" name="rechtsbetrekking" index="2B78K5" />
         <reference id="7136310554705381535" name="rechtssubjectMetRecht" index="2B78KW" />
         <child id="7136310554705381581" name="geldigVan" index="2B78LI" />
-      </concept>
-      <concept id="7867191925628531237" name="SubjectiefRecht.structure.ReferentieNaarNatuurlijkPersoon" flags="ng" index="2BLhdU">
-        <reference id="7867191925628531238" name="natuurlijkpersoon" index="2BLhdT" />
       </concept>
       <concept id="3139957515581586222" name="SubjectiefRecht.structure.LijstMetRechtsbetrekkingen" flags="ng" index="1dBqmn">
         <child id="3139957515581586223" name="rechtsbetrekkingen" index="1dBqmm" />
@@ -2754,7 +2753,7 @@
       </node>
     </node>
     <node concept="1OcJTe" id="1VomLPHLHJe" role="33wtHG">
-      <property role="TrG5h" value="de bevoegdheid om de gewenste spreiding van de uren te wijzigen" />
+      <property role="TrG5h" value="de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen" />
       <property role="da7Q0" value="72" />
       <ref role="1OcJVV" node="4ZpB41Rnx4z" resolve="Werkgever" />
       <ref role="1OcJVS" node="4ZpB41RnoMO" resolve="Werknemer" />
@@ -3058,7 +3057,7 @@
           <ref role="33wURL" node="2xDgDlj72l7" resolve="immuniteit (recht) om de verplichte bevoegdheid tot het&#10;vaststellen van de spreiding van de uren overeenkomstige de wensen&#10;van de werknemer te neutraliseren." />
         </node>
         <node concept="33wURK" id="3r$i425gUW3" role="1OcJUI">
-          <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegdheid om de gewenste spreiding van de uren te wijzigen" />
+          <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen" />
         </node>
       </node>
       <node concept="lY6iO" id="4pem8DK24r$" role="lY6mP">
@@ -3248,7 +3247,7 @@
           <ref role="33wURL" node="MvzNsyB7Rg" resolve="de verplichte bevoegdheid (recht) tot het inwilligen van verzoek &#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing" />
         </node>
         <node concept="33wURK" id="28ifPi2BQ72" role="1OcJUG">
-          <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegdheid om de gewenste spreiding van de uren te wijzigen" />
+          <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen" />
         </node>
         <node concept="33wURK" id="28ifPi2BQ7a" role="1OcJUG">
           <ref role="33wURL" node="1fugvh9_kgi" resolve="immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren" />
@@ -3296,7 +3295,7 @@
           <ref role="33wURL" node="5u1YjWIkWvP" resolve="de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren&#10;overeenkomstig de wensen van de werknemer" />
         </node>
         <node concept="33wURK" id="28ifPi2BQzC" role="1OcJUG">
-          <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegdheid om de gewenste spreiding van de uren te wijzigen" />
+          <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen" />
         </node>
         <node concept="33wURK" id="2xDgDlj72mI" role="1OcJUG">
           <ref role="33wURL" node="2xDgDlj72l7" resolve="immuniteit (recht) om de verplichte bevoegdheid tot het&#10;vaststellen van de spreiding van de uren overeenkomstige de wensen&#10;van de werknemer te neutraliseren." />
@@ -3384,7 +3383,7 @@
           <ref role="33wURL" node="28ifPi2C7Jc" resolve="verplichting tot het mededelen van de redenen" />
         </node>
         <node concept="33wURK" id="5riiL_C8Lis" role="1OcJUG">
-          <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegdheid om de gewenste spreiding van de uren te wijzigen" />
+          <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen" />
         </node>
         <node concept="33wURK" id="2xDgDlj72mQ" role="1OcJUG">
           <ref role="33wURL" node="2xDgDlj72l7" resolve="immuniteit (recht) om de verplichte bevoegdheid tot het&#10;vaststellen van de spreiding van de uren overeenkomstige de wensen&#10;van de werknemer te neutraliseren." />
@@ -3547,7 +3546,7 @@
           <ref role="33wURL" node="1fugvh9_kgi" resolve="immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren" />
         </node>
         <node concept="33wURK" id="MvzNsy$K6L" role="1OcJUG">
-          <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegdheid om de gewenste spreiding van de uren te wijzigen" />
+          <ref role="33wURL" node="1VomLPHLHJe" resolve="de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen" />
         </node>
       </node>
       <node concept="lY6iO" id="MvzNsy$ScX" role="lY6mP">
@@ -3585,37 +3584,20 @@
   <node concept="2B78xT" id="6c9haf45x5E">
     <property role="TrG5h" value="Subjectief WAA2000" />
     <ref role="QjCDG" node="4ZpB41RnoMN" resolve="Objectief WAA2000" />
-    <node concept="2B78KX" id="7unEhCq$QnY" role="2B78xY">
-      <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur&#10;bij eigen werkgever in te dienen" />
-      <ref role="2B78KW" node="4pem8DJZpq7" resolve="Amalius" />
-      <ref role="2B78K2" node="4pem8DJZpq9" resolve="AZML" />
-      <node concept="LeFwQ" id="7unEhCq$QnZ" role="2B78LI">
-        <node concept="2B78Lw" id="7unEhCq$Qo0" role="LeFwF">
-          <property role="2B78LB" value="1" />
-          <property role="2B78L_" value="1" />
-          <property role="2B78LE" value="2001" />
-        </node>
-        <node concept="LeFwc" id="7unEhCq$Qo1" role="LeFwH">
-          <property role="LeFwf" value="12" />
-          <property role="LeFwL" value="34" />
-          <property role="LeFwM" value="0" />
-        </node>
-      </node>
-    </node>
-    <node concept="2B78KJ" id="4pem8DJZpq7" role="DGLbN">
-      <property role="TrG5h" value="Amalius" />
-      <ref role="DGNob" node="4ZpB41RnoMO" resolve="Werknemer" />
-    </node>
-    <node concept="2B78KJ" id="4pem8DJZpq9" role="DGLbN">
+    <node concept="2B78KC" id="28MuYO0n6cK" role="DGLbN">
       <property role="TrG5h" value="AZML" />
-      <ref role="DGNob" node="4ZpB41Rnx4z" resolve="Werkgever" />
+      <ref role="yqVAx" node="4ZpB41Rnx4z" resolve="Werkgever" />
+    </node>
+    <node concept="2B78KC" id="28MuYO0n6cM" role="DGLbN">
+      <property role="TrG5h" value="Amalius" />
+      <ref role="yqVAx" node="4ZpB41RnoMO" resolve="Werknemer" />
     </node>
   </node>
   <node concept="2BMdVE" id="4$ztVczs7v_">
     <property role="TrG5h" value="Simulatie WAA2000" />
     <ref role="2BMAe_" node="6c9haf45x5E" resolve="Subjectief WAA2000" />
-    <ref role="2BLsgw" node="4pem8DJZpq7" resolve="Amalius" />
-    <ref role="1Nt3W2" node="4pem8DJZpq9" resolve="AZML" />
+    <ref role="2BLsgw" node="28MuYO0n6cK" resolve="AZML" />
+    <ref role="1Nt3W2" node="28MuYO0n6cM" resolve="Amalius" />
     <node concept="LeFwQ" id="6syAJDE9SgU" role="d0i_M">
       <node concept="2B78Lw" id="6syAJDE9SgV" role="LeFwF">
         <property role="2B78LB" value="01" />
@@ -3635,196 +3617,44 @@
         <property role="2B78LB" value="1" />
       </node>
       <node concept="LeFwc" id="2K7y4iIY0zd" role="LeFwH">
-        <property role="LeFwf" value="5" />
-        <property role="LeFwL" value="29" />
+        <property role="LeFwf" value="0" />
+        <property role="LeFwL" value="0" />
         <property role="LeFwM" value="4" />
       </node>
     </node>
-    <node concept="LeFwQ" id="3xrEZDArfFi" role="3zKq1C">
-      <node concept="2B78Lw" id="3xrEZDArfFu" role="LeFwF">
+    <node concept="LeFwQ" id="28MuYO0sXxz" role="3zKq1C">
+      <node concept="2B78Lw" id="28MuYO0sXxJ" role="LeFwF">
         <property role="2B78LE" value="2017" />
         <property role="2B78L_" value="2" />
-        <property role="2B78LB" value="23" />
+        <property role="2B78LB" value="25" />
       </node>
-      <node concept="LeFwc" id="3xrEZDArfFw" role="LeFwH">
-        <property role="LeFwf" value="14" />
-        <property role="LeFwL" value="37" />
-        <property role="LeFwM" value="40" />
+      <node concept="LeFwc" id="28MuYO0sXxL" role="LeFwH">
+        <property role="LeFwf" value="12" />
+        <property role="LeFwL" value="52" />
+        <property role="LeFwM" value="29" />
       </node>
     </node>
-    <node concept="2BLbnY" id="3xrEZDArfFz" role="2BLYKK">
-      <node concept="2B78KX" id="3xrEZDArfF_" role="1O2iA3">
+    <node concept="2BLbnY" id="28MuYO0sXxO" role="2BLYKK">
+      <node concept="2B78KX" id="28MuYO0sXxQ" role="1O2iA3">
+        <ref role="2B78K2" node="28MuYO0n6cK" resolve="AZML" />
+        <ref role="2B78KW" node="28MuYO0n6cM" resolve="Amalius" />
         <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur&#10;bij eigen werkgever in te dienen" />
-        <ref role="2B78KW" node="4pem8DJZpq7" resolve="Amalius" />
-        <ref role="2B78K2" node="4pem8DJZpq9" resolve="AZML" />
-        <node concept="LeFwQ" id="3xrEZDArfFA" role="2B78LI">
-          <node concept="2B78Lw" id="3xrEZDArfFB" role="LeFwF">
-            <property role="2B78LB" value="1" />
-            <property role="2B78L_" value="1" />
-            <property role="2B78LE" value="2001" />
-          </node>
-          <node concept="LeFwc" id="3xrEZDArfFC" role="LeFwH">
-            <property role="LeFwf" value="12" />
-            <property role="LeFwL" value="34" />
-            <property role="LeFwM" value="0" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="3xrEZDArfFD" role="1O2iA3">
-        <ref role="2B78K5" node="1VomLPHLHJe" resolve="de bevoegdheid om de gewenste spreiding van de uren te wijzigen" />
-        <ref role="2B78K2" node="4pem8DJZpq9" resolve="AZML" />
-        <ref role="2B78KW" node="4pem8DJZpq7" resolve="Amalius" />
-        <node concept="LeFwQ" id="3xrEZDArfFE" role="2B78LI">
-          <node concept="2B78Lw" id="3xrEZDArfFF" role="LeFwF">
+        <node concept="LeFwQ" id="28MuYO0sXxR" role="2B78LI">
+          <node concept="2B78Lw" id="28MuYO0sXxS" role="LeFwF">
             <property role="2B78LB" value="1" />
             <property role="2B78L_" value="1" />
             <property role="2B78LE" value="2000" />
           </node>
-          <node concept="LeFwc" id="3xrEZDArfFG" role="LeFwH">
+          <node concept="LeFwc" id="28MuYO0sXxT" role="LeFwH">
             <property role="LeFwf" value="0" />
             <property role="LeFwL" value="0" />
             <property role="LeFwM" value="0" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="28MuYO0l4D4" role="1O2iA3">
-        <ref role="2B78K5" node="20D4HrzFibY" resolve="verplichting tot overleg plegen" />
-        <ref role="2B78K2" node="4pem8DJZpq7" resolve="Amalius" />
-        <ref role="2B78KW" node="4pem8DJZpq9" resolve="AZML" />
-        <node concept="LeFwQ" id="28MuYO0l4D5" role="2B78LI">
-          <node concept="2B78Lw" id="28MuYO0l4D8" role="LeFwF">
-            <property role="2B78LE" value="2003" />
-            <property role="2B78L_" value="7" />
-            <property role="2B78LB" value="1" />
-          </node>
-          <node concept="LeFwc" id="28MuYO0l4Da" role="LeFwH">
-            <property role="LeFwf" value="5" />
-            <property role="LeFwL" value="29" />
-            <property role="LeFwM" value="4" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="28MuYO0l4Dc" role="1O2iA3">
-        <ref role="2B78K5" node="MvzNsyB7Rg" resolve="de verplichte bevoegdheid (recht) tot het inwilligen van verzoek &#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing" />
-        <ref role="2B78K2" node="4pem8DJZpq7" resolve="Amalius" />
-        <ref role="2B78KW" node="4pem8DJZpq9" resolve="AZML" />
-        <node concept="LeFwQ" id="28MuYO0l4Dd" role="2B78LI">
-          <node concept="2B78Lw" id="28MuYO0l4Dg" role="LeFwF">
-            <property role="2B78LE" value="2003" />
-            <property role="2B78L_" value="7" />
-            <property role="2B78LB" value="1" />
-          </node>
-          <node concept="LeFwc" id="28MuYO0l4Di" role="LeFwH">
-            <property role="LeFwf" value="5" />
-            <property role="LeFwL" value="29" />
-            <property role="LeFwM" value="4" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="28MuYO0l4Dk" role="1O2iA3">
-        <ref role="2B78K5" node="5u1YjWIkWvP" resolve="de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren&#10;overeenkomstig de wensen van de werknemer" />
-        <ref role="2B78K2" node="4pem8DJZpq7" resolve="Amalius" />
-        <ref role="2B78KW" node="4pem8DJZpq9" resolve="AZML" />
-        <node concept="LeFwQ" id="28MuYO0l4Dl" role="2B78LI">
-          <node concept="2B78Lw" id="28MuYO0l4Do" role="LeFwF">
-            <property role="2B78LE" value="2003" />
-            <property role="2B78L_" value="7" />
-            <property role="2B78LB" value="1" />
-          </node>
-          <node concept="LeFwc" id="28MuYO0l4Dq" role="LeFwH">
-            <property role="LeFwf" value="5" />
-            <property role="LeFwL" value="29" />
-            <property role="LeFwM" value="4" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="28MuYO0l4Ds" role="1O2iA3">
-        <ref role="2B78K5" node="1fugvh9_kgi" resolve="immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren" />
-        <ref role="2B78K2" node="4pem8DJZpq7" resolve="Amalius" />
-        <ref role="2B78KW" node="4pem8DJZpq9" resolve="AZML" />
-        <node concept="LeFwQ" id="28MuYO0l4Dt" role="2B78LI">
-          <node concept="2B78Lw" id="28MuYO0l4Dw" role="LeFwF">
-            <property role="2B78LE" value="2003" />
-            <property role="2B78L_" value="7" />
-            <property role="2B78LB" value="1" />
-          </node>
-          <node concept="LeFwc" id="28MuYO0l4Dy" role="LeFwH">
-            <property role="LeFwf" value="5" />
-            <property role="LeFwL" value="29" />
-            <property role="LeFwM" value="4" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="28MuYO0l4D$" role="1O2iA3">
-        <ref role="2B78K5" node="2xDgDlj72l7" resolve="immuniteit (recht) om de verplichte bevoegdheid tot het&#10;vaststellen van de spreiding van de uren overeenkomstige de wensen&#10;van de werknemer te neutraliseren." />
-        <ref role="2B78K2" node="4pem8DJZpq7" resolve="Amalius" />
-        <ref role="2B78KW" node="4pem8DJZpq9" resolve="AZML" />
-        <node concept="LeFwQ" id="28MuYO0l4D_" role="2B78LI">
-          <node concept="2B78Lw" id="28MuYO0l4DC" role="LeFwF">
-            <property role="2B78LE" value="2003" />
-            <property role="2B78L_" value="7" />
-            <property role="2B78LB" value="1" />
-          </node>
-          <node concept="LeFwc" id="28MuYO0l4DE" role="LeFwH">
-            <property role="LeFwf" value="5" />
-            <property role="LeFwL" value="29" />
-            <property role="LeFwM" value="4" />
-          </node>
-        </node>
-      </node>
-      <node concept="2B78KX" id="28MuYO0l4DG" role="1O2iA3">
-        <ref role="2B78K5" node="1VomLPHLHJe" resolve="de bevoegdheid om de gewenste spreiding van de uren te wijzigen" />
-        <ref role="2B78K2" node="4pem8DJZpq7" resolve="Amalius" />
-        <ref role="2B78KW" node="4pem8DJZpq9" resolve="AZML" />
-        <node concept="LeFwQ" id="28MuYO0l4DH" role="2B78LI">
-          <node concept="2B78Lw" id="28MuYO0l4DK" role="LeFwF">
-            <property role="2B78LE" value="2003" />
-            <property role="2B78L_" value="7" />
-            <property role="2B78LB" value="1" />
-          </node>
-          <node concept="LeFwc" id="28MuYO0l4DM" role="LeFwH">
-            <property role="LeFwf" value="5" />
-            <property role="LeFwL" value="29" />
-            <property role="LeFwM" value="4" />
-          </node>
-        </node>
-      </node>
     </node>
-    <node concept="2B78xR" id="28MuYO0l4DO" role="d5q2a">
-      <ref role="2B7LQa" node="4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
-      <node concept="2BLhdU" id="28MuYO0l4DP" role="2B78xV">
-        <ref role="2BLhdT" node="4pem8DJZpq7" resolve="Amalius" />
-      </node>
-      <node concept="LeFwQ" id="28MuYO0l4DQ" role="2B7LCw">
-        <node concept="2B78Lw" id="28MuYO0l4DT" role="LeFwF">
-          <property role="2B78LE" value="2003" />
-          <property role="2B78L_" value="7" />
-          <property role="2B78LB" value="1" />
-        </node>
-        <node concept="LeFwc" id="28MuYO0l4DV" role="LeFwH">
-          <property role="LeFwf" value="5" />
-          <property role="LeFwL" value="29" />
-          <property role="LeFwM" value="4" />
-        </node>
-      </node>
-    </node>
-    <node concept="3WXGrE" id="28MuYO0l4DX" role="3WXGrD">
+    <node concept="3WXGrE" id="28MuYO0sXxU" role="3WXGrD">
       <ref role="3WXGrF" node="4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
-    </node>
-    <node concept="3WXGrE" id="28MuYO0l4DZ" role="3WXGrD">
-      <ref role="3WXGrF" node="1VomLPHLX4J" resolve="Wijzigen van de spreiding van de uren" />
-    </node>
-    <node concept="3WXGrE" id="28MuYO0l4E0" role="3WXGrD">
-      <ref role="3WXGrF" node="28ifPi2BQ89" resolve="Overleg plegen" />
-    </node>
-    <node concept="3WXGrE" id="28MuYO0l4E1" role="3WXGrD">
-      <ref role="3WXGrF" node="4pem8DK2crJ" resolve="Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing" />
-    </node>
-    <node concept="3WXGrE" id="28MuYO0l4E2" role="3WXGrD">
-      <ref role="3WXGrF" node="28ifPi2BQyF" resolve="Vaststellen van de spreiding van de uren" />
-    </node>
-    <node concept="3WXGrE" id="28MuYO0l4E3" role="3WXGrD">
-      <ref role="3WXGrF" node="28ifPi2BQ3p" resolve="Afwijzen van het verzoek" />
     </node>
   </node>
   <node concept="1ztmtO" id="6EEavyms9IX">
@@ -4101,6 +3931,703 @@
         </node>
       </node>
     </node>
+    <node concept="1ztWYz" id="28MuYO0sXhm" role="1ztmtP">
+      <ref role="1ztKoi" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
+      <node concept="2M1C9k" id="28MuYO0sXmH" role="1ztKoP">
+        <property role="TrG5h" value="Verzoek 1" />
+        <ref role="2M1C9n" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
+        <node concept="2M1C6R" id="28MuYO0sXmI" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXmJ" role="2M1C6S">
+            <ref role="2mbrj7" node="3r$i425gxTV" resolve="op grond van arbeidsovereenkomst" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXsY" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sW8R" resolve="Arbeidsovereenkomst 1" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXmL" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXmM" role="2M1C6S">
+            <ref role="2mbrj7" node="5qTpXpBo3uX" resolve="datum indienen verzoek" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sXmN" role="2M1C9h">
+            <node concept="2B78Lw" id="28MuYO0sXtm" role="12cab5">
+              <property role="2B78LB" value="10" />
+              <property role="2B78L_" value="1" />
+              <property role="2B78LE" value="2002" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXmO" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXmP" role="2M1C6S">
+            <ref role="2mbrj7" node="3r$i425evlJ" resolve="datum vorig versie van het verzoek" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sXmQ" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXmR" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXmS" role="2M1C6S">
+            <ref role="2mbrj7" node="7k4OuKunaq" resolve="datum overleg plegen" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sXmT" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXmU" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXmV" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3x_gh" resolve="datum inwilligen verzoek" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sXmW" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXmX" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXmY" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3x_iv" resolve="datum afwijzen verzoek" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sXmZ" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXn0" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXn1" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3z6$y" resolve="datum vaststellen spreiding" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sXn2" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXn3" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXn4" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3z6Fr" resolve="datum wijzigen van de spreiding van de uren" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sXn5" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXn6" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXn7" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3z6II" resolve="datum mededelen beslissing" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sXn8" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXn9" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXna" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3z6Lq" resolve="datum mededelen redenen" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sXnb" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXnc" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXnd" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3z6Cn" resolve="werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken" />
+          </node>
+          <node concept="12cgnX" id="28MuYO0sXne" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXnf" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXng" role="2M1C6S">
+            <ref role="2mbrj7" node="4$mS69sWF6g" resolve="beoogde ingangsdatum van de aanpassing" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sXnh" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXni" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXnj" role="2M1C6S">
+            <ref role="2mbrj7" node="GhrpPwK$en" resolve="omvang van de aanpassing" />
+          </node>
+          <node concept="12cgkK" id="28MuYO0sXvF" role="2M1C9h">
+            <property role="12caaa" value="36" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXnl" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXnm" role="2M1C6S">
+            <ref role="2mbrj7" node="GhrpPwK$fm" resolve="gewenste spreiding" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXxb" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWjC" resolve="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXno" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXnp" role="2M1C6S">
+            <ref role="2mbrj7" node="1KHGaPR$on" resolve="schriftelijk ingediend" />
+          </node>
+          <node concept="12cgnX" id="28MuYO0sXnq" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXnr" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXns" role="2M1C6S">
+            <ref role="2mbrj7" node="4rrm763mT9K" resolve="samentelling volgens werknemer" />
+          </node>
+          <node concept="12frXn" id="28MuYO0sXnt" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXnu" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXnv" role="2M1C6S">
+            <ref role="2mbrj7" node="4rrm763mTaW" resolve="samentelling volgens werkgever" />
+          </node>
+          <node concept="12frXn" id="28MuYO0sXnw" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXnx" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXny" role="2M1C6S">
+            <ref role="2mbrj7" node="4rrm763mTgf" resolve="redenen voor afwijzing" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sXw3" role="2M1C9h">
+            <property role="12cgnl" value="Geen" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXn$" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXn_" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3z6hn" resolve="zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen" />
+          </node>
+          <node concept="12cgnX" id="28MuYO0sXnA" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXnB" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXnC" role="2M1C6S">
+            <ref role="2mbrj7" node="4rrm763F9tz" resolve="feiten bij vermindering" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sXwr" role="2M1C9h">
+            <ref role="1zyu0_" node="2aEn9tXM$Qd" resolve="geen feiten bij vermindering" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sXnE" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sXnF" role="2M1C6S">
+            <ref role="2mbrj7" node="4rrm763F9v7" resolve="feiten bij vermeerdering" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sXwN" role="2M1C9h">
+            <ref role="1zyu0_" node="2aEn9tXM$Qj" resolve="geen feiten bij vermeerdering" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1ztWYz" id="28MuYO0sW5O" role="1ztmtP">
+      <ref role="1ztKoi" node="4$mS69sWjnv" resolve="arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+      <node concept="2M1C9k" id="28MuYO0sW8R" role="1ztKoP">
+        <property role="TrG5h" value="Arbeidsovereenkomst 1" />
+        <ref role="2M1C9n" node="4$mS69sWjnv" resolve="arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+        <node concept="2M1C6R" id="28MuYO0sW8S" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sW8T" role="2M1C6S">
+            <ref role="2mbrj7" node="GhrpPwO1cn" resolve="werknemersidentificatie" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sWbC" role="2M1C9h">
+            <ref role="3dadDm" node="2IjnF__Ico$" resolve="Jan" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sW8V" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sW8W" role="2M1C6S">
+            <ref role="2mbrj7" node="GhrpPwO1d3" resolve="werkgeversidentificatie" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sWbK" role="2M1C9h">
+            <ref role="3dadDm" node="6a$JffhOsaC" resolve="Essent" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sW8Y" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sW8Z" role="2M1C6S">
+            <ref role="2mbrj7" node="5qTpXpBoOu0" resolve="datum indiensttreding" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sW90" role="2M1C9h">
+            <node concept="2B78Lw" id="28MuYO0sWbS" role="12cab5">
+              <property role="2B78LB" value="1" />
+              <property role="2B78L_" value="1" />
+              <property role="2B78LE" value="2001" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sW91" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sW92" role="2M1C6S">
+            <ref role="2mbrj7" node="5u1YjWIjO3G" resolve="arbeidsovereenkomst getekend op" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sW93" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sW94" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sW95" role="2M1C6S">
+            <ref role="2mbrj7" node="GhrpPwO1ee" resolve="arbeidsduurperiode in arbeidsovereenkomst" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXhe" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWeP" resolve="Arbeidsduur 1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1ztWYz" id="28MuYO0sWct" role="1ztmtP">
+      <ref role="1ztKoi" node="5u1YjWIljaR" resolve="arbeidsduurperiode van arbeidsovereenkomst" />
+      <node concept="2M1C9k" id="28MuYO0sWeP" role="1ztKoP">
+        <property role="TrG5h" value="Arbeidsduur 1" />
+        <ref role="2M1C9n" node="5u1YjWIljaR" resolve="arbeidsduurperiode van arbeidsovereenkomst" />
+        <node concept="2M1C6R" id="28MuYO0sWeQ" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWeR" role="2M1C6S">
+            <ref role="2mbrj7" node="5qTpXpBoOus" resolve="arbeidsduur geldig van datum" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sWeS" role="2M1C9h">
+            <node concept="2B78Lw" id="28MuYO0sWgr" role="12cab5">
+              <property role="2B78LB" value="1" />
+              <property role="2B78L_" value="1" />
+              <property role="2B78LE" value="2001" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWeT" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWeU" role="2M1C6S">
+            <ref role="2mbrj7" node="5qTpXpBoOuZ" resolve="arbeidsduur geldig tot datum" />
+          </node>
+          <node concept="12cab2" id="28MuYO0sWeV" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWeW" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWeX" role="2M1C6S">
+            <ref role="2mbrj7" node="28ifPi2D117" resolve="arbeidsduur" />
+          </node>
+          <node concept="12frXn" id="28MuYO0sWeY" role="2M1C9h">
+            <node concept="2Nq23k" id="28MuYO0sWgX" role="2Nq23e">
+              <property role="2Nqyj6" value="40" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWeZ" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWf0" role="2M1C6S">
+            <ref role="2mbrj7" node="GhrpPwO1bp" resolve="spreiding" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXh7" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWjC" resolve="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1ztWYz" id="28MuYO0sWh3" role="1ztmtP">
+      <ref role="1ztKoi" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+      <node concept="2M1C9k" id="28MuYO0sWjC" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWjD" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWjE" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWjF" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWjG" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWjH" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sWlp" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44k" resolve="Maandag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWjJ" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWjK" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sWqP" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWoe" resolve="'s morgens 8-12" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWqV" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWqW" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWqX" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWqY" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWqZ" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWr0" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sWSM" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44k" resolve="Maandag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWr2" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWr3" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sX7Y" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWp6" resolve="'s middags 13-17" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWrI" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWrJ" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWrK" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWrL" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWrM" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWrN" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sWTv" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44m" resolve="Dinsdag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWrP" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWrQ" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sX8F" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWoe" resolve="'s morgens 8-12" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWsL" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWsM" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWsN" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWsO" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWsP" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWsQ" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sWUc" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44m" resolve="Dinsdag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWsS" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWsT" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sX9o" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWp6" resolve="'s middags 13-17" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWu4" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWu5" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWu6" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWu7" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWu8" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWu9" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sWUT" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44p" resolve="Woensdag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWub" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWuc" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXa5" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWoe" resolve="'s morgens 8-12" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWvB" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWvC" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWvD" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWvE" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWvF" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWvG" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sWVA" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44p" resolve="Woensdag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWvI" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWvJ" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXaM" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWp6" resolve="'s middags 13-17" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWxq" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWxr" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWxs" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWxt" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWxu" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWxv" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sWWj" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44t" resolve="Donderdag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWxx" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWxy" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXbv" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWoe" resolve="'s morgens 8-12" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWzt" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWzu" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWzv" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWzw" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWzx" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWzy" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sWX0" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44t" resolve="Donderdag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWz$" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWz_" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXcc" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWp6" resolve="'s middags 13-17" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sW_K" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sW_L" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sW_M" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sW_N" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sW_O" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sW_P" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sWXH" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44y" resolve="Vrijdag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sW_R" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sW_S" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXcT" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWoe" resolve="'s morgens 8-12" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWCj" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWCk" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWCl" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWCm" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWCn" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWCo" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sWYq" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44y" resolve="Vrijdag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWCq" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWCr" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXdA" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWp6" resolve="'s middags 13-17" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWF6" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWF7" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWF8" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWF9" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWFa" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWFb" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sWZ7" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44C" resolve="Zaterdag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWFd" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWFe" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXej" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWoe" resolve="'s morgens 8-12" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWI9" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWIa" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWIb" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWIc" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWId" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWIe" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sWZO" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44C" resolve="Zaterdag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWIg" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWIh" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXf0" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWp6" resolve="'s middags 13-17" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWLs" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWLt" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWLu" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWLv" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWLw" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWLx" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sX0x" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44J" resolve="Zondag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWLz" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWL$" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXfH" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWoe" resolve="'s morgens 8-12" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWOZ" role="1ztKoP">
+        <property role="TrG5h" value="maandag tot vrijdag 5 x 8" />
+        <ref role="2M1C9n" node="7unEhCq_jbd" resolve="spreidingperiodes" />
+        <node concept="2M1C6R" id="28MuYO0sWP0" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWP1" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPLN$T" resolve="rooster" />
+          </node>
+          <node concept="12cgni" id="28MuYO0sWP2" role="2M1C9h">
+            <property role="12cgnl" value="maandag tot vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWP3" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWP4" role="2M1C6S">
+            <ref role="2mbrj7" node="5Jf4KAPIpHA" resolve="dag" />
+          </node>
+          <node concept="1zyu0$" id="28MuYO0sX1e" role="2M1C9h">
+            <ref role="1zyu0_" node="6syAJDDQ44J" resolve="Zondag" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWP6" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWP7" role="2M1C6S">
+            <ref role="2mbrj7" node="7unEhCq_jeb" resolve="tijden" />
+          </node>
+          <node concept="3dadDn" id="28MuYO0sXgq" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sWp6" resolve="'s middags 13-17" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1ztWYz" id="28MuYO0sWlv" role="1ztmtP">
+      <ref role="1ztKoi" node="6syAJDDCTZC" resolve="werkperiode" />
+      <node concept="2M1C9k" id="28MuYO0sWoe" role="1ztKoP">
+        <property role="TrG5h" value="'s morgens 8-12" />
+        <ref role="2M1C9n" node="6syAJDDCTZC" resolve="werkperiode" />
+        <node concept="2M1C6R" id="28MuYO0sWof" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWog" role="2M1C6S">
+            <ref role="2mbrj7" node="6syAJDDCU12" resolve="aanvangstijd periode" />
+          </node>
+          <node concept="1zG$V3" id="28MuYO0sWoh" role="2M1C9h">
+            <node concept="LeFwc" id="28MuYO0sWoi" role="1zG$Vs">
+              <property role="LeFwf" value="8" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWoj" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWok" role="2M1C6S">
+            <ref role="2mbrj7" node="6syAJDDCU1p" resolve="eindtijd periode" />
+          </node>
+          <node concept="1zG$V3" id="28MuYO0sWol" role="2M1C9h">
+            <node concept="LeFwc" id="28MuYO0sWom" role="1zG$Vs">
+              <property role="LeFwf" value="12" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="28MuYO0sWp6" role="1ztKoP">
+        <property role="TrG5h" value="'s middags 13-17" />
+        <ref role="2M1C9n" node="6syAJDDCTZC" resolve="werkperiode" />
+        <node concept="2M1C6R" id="28MuYO0sWp7" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWp8" role="2M1C6S">
+            <ref role="2mbrj7" node="6syAJDDCU12" resolve="aanvangstijd periode" />
+          </node>
+          <node concept="1zG$V3" id="28MuYO0sWp9" role="2M1C9h">
+            <node concept="LeFwc" id="28MuYO0sWpa" role="1zG$Vs">
+              <property role="LeFwf" value="13" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="28MuYO0sWpb" role="2M1C9l">
+          <node concept="2mbrj6" id="28MuYO0sWpc" role="2M1C6S">
+            <ref role="2mbrj7" node="6syAJDDCU1p" resolve="eindtijd periode" />
+          </node>
+          <node concept="1zG$V3" id="28MuYO0sWpd" role="2M1C9h">
+            <node concept="LeFwc" id="28MuYO0sWpe" role="1zG$Vs">
+              <property role="LeFwf" value="17" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1ztWYz" id="2IjnF__K54a" role="1ztmtP">
       <ref role="1ztKoi" node="3d6QfrhlNk0" resolve="NL-postcode" />
       <node concept="2M1C9k" id="2IjnF__K55V" role="1ztKoP">
@@ -4158,6 +4685,7 @@
     <node concept="1dBqmH" id="2IjnF_Abxco" role="1dIIjt">
       <node concept="2B78xR" id="2IjnF_AhLZL" role="1dBqmG">
         <ref role="2B7LQa" node="28ifPi2BQ3p" resolve="Afwijzen van het verzoek" />
+        <ref role="ygcnh" node="28MuYO0sXmH" resolve="Verzoek 1" />
         <node concept="LeFwQ" id="2IjnF_AhLZM" role="2B7LCw">
           <node concept="2B78Lw" id="2IjnF_AhLZN" role="LeFwF">
             <property role="2B78LB" value="1" />
@@ -4170,12 +4698,13 @@
             <property role="LeFwM" value="0" />
           </node>
         </node>
-        <node concept="2BLhdU" id="2IjnF_AlwAz" role="2B78xV">
-          <ref role="2BLhdT" node="4pem8DJZpq9" resolve="AZML" />
+        <node concept="2B78xQ" id="28MuYO0qILD" role="2B78xV">
+          <ref role="2B78xP" node="28MuYO0n6cK" resolve="AZML" />
         </node>
       </node>
       <node concept="2B78xR" id="2IjnF_AlAf7" role="1dBqmG">
         <ref role="2B7LQa" node="4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
+        <ref role="ygcnh" node="28MuYO0sXmH" resolve="Verzoek 1" />
         <node concept="LeFwQ" id="2IjnF_AlAf8" role="2B7LCw">
           <node concept="2B78Lw" id="2IjnF_AlAf9" role="LeFwF">
             <property role="2B78LB" value="1" />
@@ -4188,12 +4717,13 @@
             <property role="LeFwM" value="0" />
           </node>
         </node>
-        <node concept="2BLhdU" id="2IjnF_AlAft" role="2B78xV">
-          <ref role="2BLhdT" node="4pem8DJZpq7" resolve="Amalius" />
+        <node concept="2B78xQ" id="28MuYO0qILG" role="2B78xV">
+          <ref role="2B78xP" node="28MuYO0n6cM" resolve="Amalius" />
         </node>
       </node>
       <node concept="2B78xR" id="2IjnF_AlJ5q" role="1dBqmG">
         <ref role="2B7LQa" node="4pem8DK2crJ" resolve="Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing" />
+        <ref role="ygcnh" node="28MuYO0sXmH" resolve="Verzoek 1" />
         <node concept="LeFwQ" id="2IjnF_AlJ5r" role="2B7LCw">
           <node concept="2B78Lw" id="2IjnF_AlJ5s" role="LeFwF">
             <property role="2B78LB" value="1" />
@@ -4206,16 +4736,16 @@
             <property role="LeFwM" value="0" />
           </node>
         </node>
-        <node concept="2BLhdU" id="2IjnF_AlJ5U" role="2B78xV">
-          <ref role="2BLhdT" node="4pem8DJZpq9" resolve="AZML" />
+        <node concept="2B78xQ" id="28MuYO0qILJ" role="2B78xV">
+          <ref role="2B78xP" node="28MuYO0n6cM" resolve="Amalius" />
         </node>
       </node>
     </node>
     <node concept="1dBqmn" id="2IjnF_AoEqz" role="1dND5V">
       <node concept="2B78KX" id="2IjnF_AoEqA" role="1dBqmm">
-        <ref role="2B78K5" node="1VomLPHLHJe" resolve="de bevoegdheid om de gewenste spreiding van de uren te wijzigen" />
-        <ref role="2B78K2" node="4pem8DJZpq9" resolve="AZML" />
-        <ref role="2B78KW" node="4pem8DJZpq7" resolve="Amalius" />
+        <ref role="2B78K2" node="28MuYO0n6cK" resolve="AZML" />
+        <ref role="2B78KW" node="28MuYO0n6cM" resolve="Amalius" />
+        <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur&#10;bij eigen werkgever in te dienen" />
         <node concept="LeFwQ" id="2IjnF_AoEqB" role="2B78LI">
           <node concept="2B78Lw" id="2IjnF_AoEqC" role="LeFwF">
             <property role="2B78LB" value="1" />

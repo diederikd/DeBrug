@@ -24,10 +24,6 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="SubjectiefRecht.behavior.NatuurlijkPersoon_BehaviorDescriptor" file="NatuurlijkPersoon_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="SubjectiefRecht.behavior.Rechtsbetrekking_BehaviorDescriptor" file="Rechtsbetrekking_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -65,19 +61,7 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="SubjectiefRecht.behavior.Rechtspersoon_BehaviorDescriptor" file="Rechtspersoon_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="SubjectiefRecht.behavior.Rechtssubject_BehaviorDescriptor" file="Rechtssubject_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="SubjectiefRecht.behavior.ReferentieNaarInstantieVanObject_BehaviorDescriptor" file="ReferentieNaarInstantieVanObject_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="SubjectiefRecht.behavior.ReferentieNaarNatuurlijkPersoon_BehaviorDescriptor" file="ReferentieNaarNatuurlijkPersoon_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

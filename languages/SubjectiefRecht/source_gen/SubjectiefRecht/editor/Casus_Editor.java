@@ -166,7 +166,7 @@ public class Casus_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_p67uos_a6a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "natuurlijke personen");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtssubjecten");
     editorCell.setCellId("Constant_p67uos_a6a");
     editorCell.setDefaultText("");
     return editorCell;
@@ -181,9 +181,9 @@ public class Casus_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNodeList_p67uos_c6a(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Casus_Editor.natuurlijkepersonenListHandler_p67uos_c6a(node, "natuurlijkepersonen", editorContext);
+    AbstractCellListHandler handler = new Casus_Editor.rechtssubjectenListHandler_p67uos_c6a(node, "rechtssubjecten", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_natuurlijkepersonen");
+    editorCell.setCellId("refNodeList_rechtssubjecten");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
@@ -192,8 +192,8 @@ public class Casus_Editor extends DefaultNodeEditor {
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class natuurlijkepersonenListHandler_p67uos_c6a extends RefNodeListHandler {
-    public natuurlijkepersonenListHandler_p67uos_c6a(SNode ownerNode, String childRole, EditorContext context) {
+  private static class rechtssubjectenListHandler_p67uos_c6a extends RefNodeListHandler {
+    public rechtssubjectenListHandler_p67uos_c6a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -216,7 +216,7 @@ public class Casus_Editor extends DefaultNodeEditor {
     }
     public EditorCell createEmptyCell(EditorContext editorContext) {
       editorContext.getCellFactory().pushCellContext();
-      editorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(natuurlijkepersonenListHandler_p67uos_c6a.this.getOwner(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, 0x464e588a6ffd4a79L, "natuurlijkepersonen")));
+      editorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(rechtssubjectenListHandler_p67uos_c6a.this.getOwner(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, 0x464e588a6ffd4a79L, "rechtssubjecten")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell(editorContext);
@@ -234,7 +234,7 @@ public class Casus_Editor extends DefaultNodeEditor {
           elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
         }
         if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, 0x464e588a6ffd4a79L, "natuurlijkepersonen"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
+          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, 0x464e588a6ffd4a79L, "rechtssubjecten"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
         }
       }
     }

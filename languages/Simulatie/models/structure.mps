@@ -63,16 +63,16 @@
     <node concept="1TJgyj" id="6OHSlZaU2lZ" role="1TKVEi">
       <property role="IQ2ns" value="7867191925628478847" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="rol1" />
+      <property role="20kJfa" value="rechtssubject1" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="gcgs:6c9haf45syc" resolve="NatuurlijkPersoon" />
+      <ref role="20lvS9" to="gcgs:6c9haf45syb" resolve="Rechtssubject" />
     </node>
     <node concept="1TJgyj" id="1VomLPHF6gv" role="1TKVEi">
       <property role="IQ2ns" value="2222626598059533343" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="rol2" />
+      <property role="20kJfa" value="rechtssubject2" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="gcgs:6c9haf45syc" resolve="NatuurlijkPersoon" />
+      <ref role="20lvS9" to="gcgs:6c9haf45syb" resolve="Rechtssubject" />
     </node>
     <node concept="1TJgyj" id="6OHSlZaUwPJ" role="1TKVEi">
       <property role="IQ2ns" value="7867191925628603759" />

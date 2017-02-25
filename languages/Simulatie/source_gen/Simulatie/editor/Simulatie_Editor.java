@@ -392,14 +392,14 @@ public class Simulatie_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_fapojb_q0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("rol1");
-    provider.setNoTargetText("<no rol1>");
+    provider.setRole("rechtssubject1");
+    provider.setNoTargetText("<no rechtssubject1>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new Simulatie_Editor._Inline_fapojb_a61a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("rol1");
+      editorCell.setRole("rechtssubject1");
     }
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
@@ -540,14 +540,14 @@ public class Simulatie_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_fapojb_w0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("rol2");
-    provider.setNoTargetText("<no rol2>");
+    provider.setRole("rechtssubject2");
+    provider.setNoTargetText("<no rechtssubject2>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new Simulatie_Editor._Inline_fapojb_a22a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("rol2");
+      editorCell.setRole("rechtssubject2");
     }
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);

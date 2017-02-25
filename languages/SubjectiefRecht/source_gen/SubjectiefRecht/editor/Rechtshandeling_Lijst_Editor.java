@@ -26,13 +26,13 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
-import Datum.editor.GN_StyleSheet;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import de.slisson.mps.tables.runtime.gridmodel.HeaderGrid;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import de.slisson.mps.tables.runtime.gridmodel.Header;
 import de.slisson.mps.tables.runtime.gridmodel.EditorCellHeader;
 import de.slisson.mps.tables.runtime.gridmodel.StringHeaderReference;
+import ObjectiefRecht.editor.GN_StyleSheet;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -90,7 +90,7 @@ public class Rechtshandeling_Lijst_Editor extends DefaultNodeEditor {
   public Grid createStaticHorizontal_d09504_a0(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();
 
-    List<Grid> children = new ArrayList<Grid>(3);
+    List<Grid> children = new ArrayList<Grid>(4);
     if (true) {
       children.add(createTableCell_d09504_a0a(editorContext, node));
     }
@@ -99,6 +99,9 @@ public class Rechtshandeling_Lijst_Editor extends DefaultNodeEditor {
     }
     if (true) {
       children.add(createTableCell_d09504_c0a(editorContext, node));
+    }
+    if (true) {
+      children.add(createTableCell_d09504_d0a(editorContext, node));
     }
     int maxHeight = grid.getRowHeadersSizeY();
     for (Grid child : ListSequence.fromList(children)) {
@@ -179,14 +182,14 @@ public class Rechtshandeling_Lijst_Editor extends DefaultNodeEditor {
     }
     private EditorCell createRefCell_d09504_a0a0a0a(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-      provider.setRole("natuurlijkpersoon");
-      provider.setNoTargetText("<no natuurlijkpersoon>");
+      provider.setRole("rechtssubject");
+      provider.setNoTargetText("<no rechtssubject>");
       EditorCell editorCell;
       provider.setAuxiliaryCellProvider(new Rechtshandeling_Lijst_Editor._Inline_d09504_a0a0a._Inline_d09504_a0a0a0a0());
       editorCell = provider.createEditorCell(editorContext);
       if (editorCell.getRole() == null) {
         editorCell.setReferenceCell(true);
-        editorCell.setRole("natuurlijkpersoon");
+        editorCell.setRole("rechtssubject");
       }
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
@@ -215,7 +218,6 @@ public class Rechtshandeling_Lijst_Editor extends DefaultNodeEditor {
         editorCell = provider.createEditorCell(editorContext);
         editorCell.setCellId("property_name");
         Style style = new StyleImpl();
-        GN_StyleSheet.apply_Onderwerp(style, editorCell);
         style.set(StyleAttributes.AUTO_DELETABLE, 0, true);
         editorCell.getStyle().putAll(style);
         editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
@@ -304,7 +306,7 @@ public class Rechtshandeling_Lijst_Editor extends DefaultNodeEditor {
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name_1");
       Style style = new StyleImpl();
-      ObjectiefRecht.editor.GN_StyleSheet.apply_Name(style, editorCell);
+      GN_StyleSheet.apply_Name(style, editorCell);
       style.set(StyleAttributes.AUTO_DELETABLE, 0, true);
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
@@ -415,6 +417,94 @@ public class Rechtshandeling_Lijst_Editor extends DefaultNodeEditor {
     final EditorCell_Constant cell = new EditorCell_Constant(editorContext, snode, "Uitgevoerd op", false);
     Header header = new EditorCellHeader(new StringHeaderReference("Uitgevoerd op"), cell);
     header.setLabel("Uitgevoerd op");
+    header.setStyle(style);
+    HeaderGrid grid = new HeaderGrid();
+    grid.setElement(0, 0, header);
+    return grid;
+  }
+  public Grid createTableCell_d09504_d0a(final EditorContext editorContext, final SNode node) {
+
+    EditorCell cell = createRefCell_d09504_a3a0(editorContext, node);
+    final Style style = new ITableStyleFactory() {
+      public Style createStyle(final int columnIndex, final int rowIndex) {
+        Style style = new StyleImpl();
+        return style;
+      }
+    }.createStyle(0, 0);
+
+    Grid grid;
+    if (cell instanceof PartialTableEditor) {
+      grid = ((PartialTableEditor) cell).getGrid().clone();
+    } else {
+      grid = new Grid();
+      EditorCellGridLeaf leaf = new EditorCellGridLeaf(cell);
+      leaf.setStyle(style);
+      grid.setElement(0, 0, leaf);
+    }
+    grid.setColumnHeaders(0, 0, createStaticHeader_d09504_a3a0(editorContext, node));
+
+    return grid;
+  }
+  private EditorCell createRefCell_d09504_a3a0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("onderwerp");
+    provider.setNoTargetText("<no onderwerp>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new Rechtshandeling_Lijst_Editor._Inline_d09504_a0d0a());
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("onderwerp");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  public static class _Inline_d09504_a0d0a extends InlineCellProvider {
+    public _Inline_d09504_a0d0a() {
+      super();
+    }
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createProperty_d09504_a0a3a0(editorContext, node);
+    }
+    private EditorCell createProperty_d09504_a0a3a0(EditorContext editorContext, SNode node) {
+      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+      provider.setRole("name");
+      provider.setNoTargetText("<no name>");
+      provider.setReadOnly(true);
+      EditorCell editorCell;
+      editorCell = provider.createEditorCell(editorContext);
+      editorCell.setCellId("property_name_2");
+      Style style = new StyleImpl();
+      Datum.editor.GN_StyleSheet.apply_Onderwerp(style, editorCell);
+      style.set(StyleAttributes.AUTO_DELETABLE, 0, true);
+      editorCell.getStyle().putAll(style);
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      SNode attributeConcept = provider.getRoleAttribute();
+      if (attributeConcept != null) {
+        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+        return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+      } else
+      return editorCell;
+    }
+  }
+  public HeaderGrid createStaticHeader_d09504_a3a0(final EditorContext editorContext, final SNode snode) {
+    final Style style = new ITableStyleFactory() {
+      public Style createStyle(final int columnIndex, final int rowIndex) {
+        Style style = new StyleImpl();
+        return style;
+      }
+    }.createStyle(0, 0);
+    final EditorCell_Constant cell = new EditorCell_Constant(editorContext, snode, "Onderwerp", false);
+    Header header = new EditorCellHeader(new StringHeaderReference("Onderwerp"), cell);
+    header.setLabel("Onderwerp");
     header.setStyle(style);
     HeaderGrid grid = new HeaderGrid();
     grid.setElement(0, 0, header);

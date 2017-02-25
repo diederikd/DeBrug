@@ -42,30 +42,20 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 3:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new NatuurlijkPersoon_Editor());
+            return Arrays.asList(new ConceptEditor[]{new Rechtsbetrekking_Editor(), new Rechtsbetrekking_Lijst_Editor()});
           }
           break;
         case 4:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new Rechtsbetrekking_Editor(), new Rechtsbetrekking_Lijst_Editor()});
+            return Arrays.asList(new ConceptEditor[]{new Rechtshandeling_Editor(), new Rechtshandeling_Lijst_Editor()});
           }
           break;
         case 5:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new Rechtshandeling_Editor(), new Rechtshandeling_Lijst_Editor()});
+            return Collections.<ConceptEditor>singletonList(new Rechtssubject_Editor());
           }
           break;
         case 6:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rechtspersoon_Editor());
-          }
-          break;
-        case 7:
-          if (true) {
-            return Arrays.asList(new ConceptEditor[]{new ReferentieNaarNatuurlijkPersoon_Editor(), new ReferentieNaarNatuurlijkPersoon_Lijst_Editor()});
-          }
-          break;
-        case 8:
           if (true) {
             return Collections.<ConceptEditor>singletonList(new ReferentieNaarRechtsSubject_Editor());
           }
@@ -89,5 +79,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, "SubjectiefRecht.structure.Casus"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb2eL, "SubjectiefRecht.structure.LijstMetRechtsbetrekkingen"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L, "SubjectiefRecht.structure.LijstMetRechtshandelingen"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88cL, "SubjectiefRecht.structure.NatuurlijkPersoon"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88dL, "SubjectiefRecht.structure.Rechtspersoon"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x6d2de15fcae8f225L, "SubjectiefRecht.structure.ReferentieNaarNatuurlijkPersoon"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd5L, "SubjectiefRecht.structure.ReferentieNaarRechtsSubject"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, "SubjectiefRecht.structure.Casus"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb2eL, "SubjectiefRecht.structure.LijstMetRechtsbetrekkingen"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L, "SubjectiefRecht.structure.LijstMetRechtshandelingen"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88bL, "SubjectiefRecht.structure.Rechtssubject"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd5L, "SubjectiefRecht.structure.ReferentieNaarRechtsSubject"));
 }

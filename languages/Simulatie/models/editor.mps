@@ -2264,9 +2264,9 @@
           </node>
           <node concept="3cpWs8" id="3d6QfrfKQ6r" role="3cqZAp">
             <node concept="3cpWsn" id="3d6QfrfKQ6s" role="3cpWs9">
-              <property role="TrG5h" value="natuurlijkPersoon" />
+              <property role="TrG5h" value="rechtssubject" />
               <node concept="3Tqbb2" id="3d6QfrfKQ6t" role="1tU5fm">
-                <ref role="ehGHo" to="gcgs:6c9haf45syc" resolve="NatuurlijkPersoon" />
+                <ref role="ehGHo" to="gcgs:6c9haf45syb" resolve="Rechtssubject" />
               </node>
               <node concept="10Nm6u" id="3d6QfrfKQ6u" role="33vP2m" />
             </node>
@@ -2284,7 +2284,7 @@
           </node>
           <node concept="2Gpval" id="3d6QfrfKQ6z" role="3cqZAp">
             <node concept="2GrKxI" id="3d6QfrfKQ6$" role="2Gsz3X">
-              <property role="TrG5h" value="NP" />
+              <property role="TrG5h" value="subject" />
             </node>
             <node concept="3clFbS" id="3d6QfrfKQ6_" role="2LFqv$">
               <node concept="3clFbJ" id="3d6QfrfKQ6A" role="3cqZAp">
@@ -2300,10 +2300,10 @@
                   <node concept="3clFbF" id="3d6QfrfKQ6F" role="3cqZAp">
                     <node concept="37vLTI" id="3d6QfrfKQ6G" role="3clFbG">
                       <node concept="2GrUjf" id="3d6QfrfKQ6H" role="37vLTx">
-                        <ref role="2Gs0qQ" node="3d6QfrfKQ6$" resolve="NP" />
+                        <ref role="2Gs0qQ" node="3d6QfrfKQ6$" resolve="subject" />
                       </node>
                       <node concept="37vLTw" id="3d6QfrfKQ6I" role="37vLTJ">
-                        <ref role="3cqZAo" node="3d6QfrfKQ6s" resolve="natuurlijkPersoon" />
+                        <ref role="3cqZAo" node="3d6QfrfKQ6s" resolve="rechtssubject" />
                       </node>
                     </node>
                   </node>
@@ -2327,7 +2327,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="3d6QfrfKQ6Q" role="2OqNvi">
-                <ref role="3TtcxE" to="gcgs:4pem8DJZkDT" resolve="natuurlijkepersonen" />
+                <ref role="3TtcxE" to="gcgs:4pem8DJZkDT" resolve="rechtssubjecten" />
               </node>
             </node>
           </node>
@@ -2376,13 +2376,13 @@
               <node concept="2OqwBi" id="3d6QfrfKQ79" role="3uHU7w">
                 <node concept="2OqwBi" id="3d6QfrfKQ7a" role="2Oq$k0">
                   <node concept="37vLTw" id="3d6QfrfKQ7b" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3d6QfrfKQ6s" resolve="natuurlijkPersoon" />
+                    <ref role="3cqZAo" node="3d6QfrfKQ6s" resolve="rechtssubject" />
                   </node>
-                  <node concept="3TrEf2" id="3d6QfrfKQ7c" role="2OqNvi">
-                    <ref role="3Tt5mk" to="gcgs:4pem8DJZmU1" resolve="rol" />
+                  <node concept="3TrEf2" id="28MuYO0oFQZ" role="2OqNvi">
+                    <ref role="3Tt5mk" to="gcgs:28MuYO0ms9c" resolve="rol" />
                   </node>
                 </node>
-                <node concept="3TrcHB" id="3d6QfrfKQ7d" role="2OqNvi">
+                <node concept="3TrcHB" id="28MuYO0oGq_" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
@@ -2545,9 +2545,9 @@
           </node>
           <node concept="3cpWs8" id="3d6QfrfKQ87" role="3cqZAp">
             <node concept="3cpWsn" id="3d6QfrfKQ88" role="3cpWs9">
-              <property role="TrG5h" value="natuurlijkPersoon" />
+              <property role="TrG5h" value="rechtssubject" />
               <node concept="3Tqbb2" id="3d6QfrfKQ89" role="1tU5fm">
-                <ref role="ehGHo" to="gcgs:6c9haf45syc" resolve="NatuurlijkPersoon" />
+                <ref role="ehGHo" to="gcgs:6c9haf45syb" resolve="Rechtssubject" />
               </node>
               <node concept="10Nm6u" id="3d6QfrfKQ8a" role="33vP2m" />
             </node>
@@ -2565,7 +2565,7 @@
           </node>
           <node concept="2Gpval" id="3d6QfrfKQ8f" role="3cqZAp">
             <node concept="2GrKxI" id="3d6QfrfKQ8g" role="2Gsz3X">
-              <property role="TrG5h" value="NP" />
+              <property role="TrG5h" value="subject" />
             </node>
             <node concept="3clFbS" id="3d6QfrfKQ8h" role="2LFqv$">
               <node concept="3clFbJ" id="3d6QfrfKQ8i" role="3cqZAp">
@@ -2581,10 +2581,10 @@
                   <node concept="3clFbF" id="3d6QfrfKQ8n" role="3cqZAp">
                     <node concept="37vLTI" id="3d6QfrfKQ8o" role="3clFbG">
                       <node concept="2GrUjf" id="3d6QfrfKQ8p" role="37vLTx">
-                        <ref role="2Gs0qQ" node="3d6QfrfKQ8g" resolve="NP" />
+                        <ref role="2Gs0qQ" node="3d6QfrfKQ8g" resolve="subject" />
                       </node>
                       <node concept="37vLTw" id="3d6QfrfKQ8q" role="37vLTJ">
-                        <ref role="3cqZAo" node="3d6QfrfKQ88" resolve="natuurlijkPersoon" />
+                        <ref role="3cqZAo" node="3d6QfrfKQ88" resolve="rechtssubject" />
                       </node>
                     </node>
                   </node>
@@ -2608,7 +2608,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="3d6QfrfKQ8y" role="2OqNvi">
-                <ref role="3TtcxE" to="gcgs:4pem8DJZkDT" resolve="natuurlijkepersonen" />
+                <ref role="3TtcxE" to="gcgs:4pem8DJZkDT" resolve="rechtssubjecten" />
               </node>
             </node>
           </node>
@@ -2657,13 +2657,13 @@
               <node concept="2OqwBi" id="3d6QfrfKQ8P" role="3uHU7w">
                 <node concept="2OqwBi" id="3d6QfrfKQ8Q" role="2Oq$k0">
                   <node concept="37vLTw" id="3d6QfrfKQ8R" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3d6QfrfKQ88" resolve="natuurlijkPersoon" />
+                    <ref role="3cqZAo" node="3d6QfrfKQ88" resolve="rechtssubject" />
                   </node>
-                  <node concept="3TrEf2" id="3d6QfrfKQ8S" role="2OqNvi">
-                    <ref role="3Tt5mk" to="gcgs:4pem8DJZmU1" resolve="rol" />
+                  <node concept="3TrEf2" id="28MuYO0pqhy" role="2OqNvi">
+                    <ref role="3Tt5mk" to="gcgs:28MuYO0ms9c" resolve="rol" />
                   </node>
                 </node>
-                <node concept="3TrcHB" id="3d6QfrfKQ8T" role="2OqNvi">
+                <node concept="3TrcHB" id="28MuYO0pqP8" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
