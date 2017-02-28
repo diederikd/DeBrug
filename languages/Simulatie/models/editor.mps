@@ -2947,6 +2947,23 @@
         <property role="ykhUg" value="Evalueer" />
         <node concept="ykhUf" id="5RiSaxyNDlw" role="ynkVX">
           <node concept="3clFbS" id="5RiSaxyNDlx" role="2VODD2">
+            <node concept="3cpWs8" id="5RiSaxzgkQH" role="3cqZAp">
+              <node concept="3cpWsn" id="5RiSaxzgkQK" role="3cpWs9">
+                <property role="TrG5h" value="simulatie" />
+                <node concept="3Tqbb2" id="5RiSaxzgkQF" role="1tU5fm">
+                  <ref role="ehGHo" to="xhlk:6OHSlZaTjYP" resolve="Simulatie" />
+                </node>
+                <node concept="10QFUN" id="5RiSaxzglCn" role="33vP2m">
+                  <node concept="2OqwBi" id="5RiSaxzglke" role="10QFUP">
+                    <node concept="1VaYGm" id="5RiSaxzglbE" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="5RiSaxzglt_" role="2OqNvi" />
+                  </node>
+                  <node concept="3Tqbb2" id="5RiSaxzglCo" role="10QFUM">
+                    <ref role="ehGHo" to="xhlk:6OHSlZaTjYP" resolve="Simulatie" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="5RiSaxyNDly" role="3cqZAp">
               <node concept="3cpWsn" id="5RiSaxyNDlz" role="3cpWs9">
                 <property role="TrG5h" value="object" />
@@ -2954,8 +2971,11 @@
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2YIFZM" id="5RiSaxyNDl_" role="33vP2m">
-                  <ref role="37wK5l" to="uefu:3xDNhgd54rl" resolve="evaluate" />
+                  <ref role="37wK5l" to="uefu:3xDNhgd54rl" resolve="evalueer" />
                   <ref role="1Pybhc" to="uefu:2IjnF_A6UGv" resolve="Interpreter" />
+                  <node concept="37vLTw" id="5RiSaxzglFq" role="37wK5m">
+                    <ref role="3cqZAo" node="5RiSaxzgkQK" resolve="simulatie" />
+                  </node>
                   <node concept="2OqwBi" id="5RiSaxyPyOB" role="37wK5m">
                     <node concept="1VaYGm" id="5RiSaxyPyGh" role="2Oq$k0" />
                     <node concept="3TrEf2" id="5RiSaxyPyYn" role="2OqNvi">

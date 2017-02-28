@@ -29,8 +29,11 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
-          boolean result = false;
+          double result;
           DebugHelper.printContext("Variabele", node, context);
+          DebugHelper.printContext("Rechtshandeling", Interpreter.OnderwerpVanDeHandeling(), context);
+          result = Interpreter.GeefWaardeVanVariabele(Interpreter.OnderwerpVanDeHandeling(), node);
+          System.out.println("Variabele waarde" + result);
           return result;
         } catch (InterpreterEscapeException ex) {
           throw ex;

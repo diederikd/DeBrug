@@ -11889,5 +11889,33 @@
       <node concept="l2Vlx" id="5kuxuwX8lIN" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5RiSaxzqU8W">
+    <property role="3GE5qa" value="ObjectInstantie" />
+    <ref role="1XX52x" to="3pw0:5RiSaxzqU8L" resolve="ReferentieNaarInstantieVanObject" />
+    <node concept="3EZMnI" id="5RiSaxzqU8Y" role="2wV5jI">
+      <node concept="1iCGBv" id="5RiSaxzqU95" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:5RiSaxzqU8M" resolve="instantieVanObject" />
+        <node concept="1sVBvm" id="5RiSaxzqU97" role="1sWHZn">
+          <node concept="3F0A7n" id="5RiSaxzqU9e" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5RiSaxzqU91" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5RiSaxzqU9r">
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="1XX52x" to="3pw0:5RiSaxzqU8J" resolve="MeervoudigeObjectWaarde" />
+    <node concept="3EZMnI" id="5RiSaxzqU9t" role="2wV5jI">
+      <node concept="3F2HdR" id="5RiSaxzqU9$" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="3pw0:5RiSaxzqU9h" resolve="instantiesVanObject" />
+        <node concept="l2Vlx" id="5RiSaxzqU9A" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="5RiSaxzqU9w" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

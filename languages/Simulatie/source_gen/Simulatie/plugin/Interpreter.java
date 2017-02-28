@@ -4,47 +4,44 @@ package Simulatie.plugin;
 
 import com.mbeddr.mpsutil.interpreter.rt.IInterpreter;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
-import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
-import com.mbeddr.mpsutil.interpreter.rt.IEnvironment;
-import com.mbeddr.mpsutil.interpreter.rt.INodeValueCache;
+import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.interpreter.rt.CombinedInterpreter;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRegistry;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.mpsutil.interpreter.rt.ContextImpl;
-import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
 import com.mbeddr.mpsutil.interpreter.rt.NullCoverageAnalyzer;
-import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
+import com.mbeddr.mpsutil.interpreter.rt.IEnvironment;
+import com.mbeddr.mpsutil.interpreter.rt.INodeValueCache;
+import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
+import Gegevens.behavior.RekenWaarde__BehaviorDescriptor;
 
 public class Interpreter {
   private static IInterpreter interpreter;
   private static IContext context;
+  private static ICoverageAnalyzer coverage;
+  private static SNode simulatie;
 
-  private static Tuples._3<Object, IEnvironment, INodeValueCache> eval(SNode node) {
+  public static Object evalueer(SNode simulatieparameter, SNode node) {
+    Object result = null;
+    simulatie = simulatieparameter;
     if (interpreter == null) {
-
       interpreter = new CombinedInterpreter(InterpreterRegistry.getInterpreterExecutable(SNodeOperations.getNode("r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)", "5887588380650786349")), InterpreterRegistry.getInterpreterExecutable(SNodeOperations.getNode("r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)", "3139957515582036208")), InterpreterRegistry.getInterpreterExecutable(SNodeOperations.getNode("r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)", "2464168203965147620")), InterpreterRegistry.getInterpreterExecutable(SNodeOperations.getNode("r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)", "5887588380650751276")), InterpreterRegistry.getInterpreterExecutable(SNodeOperations.getNode("r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)", "5887588380650816811")));
-
     }
     context = new ContextImpl(interpreter);
-    DebugHelper.printContext("eval", node, context);
-    ICoverageAnalyzer coverage = new NullCoverageAnalyzer();
-    Object value = interpreter.evaluate(node, context, coverage);
-    Tuples._3<Object, IEnvironment, INodeValueCache> result = MultiTuple.<Object,IEnvironment,INodeValueCache>from(value, context.getEnvironment(), context.getNodeValueCache());
-    return result;
-  }
+    coverage = new NullCoverageAnalyzer();
 
-  public static Object evaluate(SNode node) {
-    Object result = null;
     {
       final SNode rechtsgevolgVeroorzaker = node;
       if (SNodeOperations.isInstanceOf(rechtsgevolgVeroorzaker, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, "ObjectiefRecht.structure.RechtsgevolgVeroorzakers"))) {
         {
           final SNode rechtshandeling = rechtsgevolgVeroorzaker;
           if (SNodeOperations.isInstanceOf(rechtshandeling, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"))) {
-            result = evaluateVoorwaarden(SLinkOperations.getTarget(rechtshandeling, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x25be3715c7af049fL, "Voorwaarden")));
+            DebugHelper.printContext("Evalueer rechtshandeling", node, context);
+            result = evalueerVoorwaarden(SLinkOperations.getTarget(rechtshandeling, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x25be3715c7af049fL, "Voorwaarden")));
           }
         }
       }
@@ -52,15 +49,35 @@ public class Interpreter {
     {
       final SNode rechtsbetrekking = node;
       if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"))) {
-        evaluateVoorwaarden(SLinkOperations.getTarget(SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "rechtsbetrekking")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden")));
+        DebugHelper.printContext("Evalueer rechtsbetrekking", node, context);
+        result = evalueerVoorwaarden(SLinkOperations.getTarget(SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "rechtsbetrekking")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden")));
       }
     }
     return result;
   }
 
-  public static Object evaluateVoorwaarden(SNode voorwaarden) {
-    Tuples._3<Object, IEnvironment, INodeValueCache> result = Interpreter.eval(voorwaarden);
-    return result._0();
+  private static Object evalueerVoorwaarden(SNode node) {
+    DebugHelper.printContext("Evalueer voorwaarden", node, context);
+    Object value = interpreter.evaluate(node, context, coverage);
+    Tuples._3<Object, IEnvironment, INodeValueCache> result = MultiTuple.<Object,IEnvironment,INodeValueCache>from(value, context.getEnvironment(), context.getNodeValueCache());
+    return result;
+  }
+
+  public static SNode OnderwerpVanDeHandeling() {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x5dd2e0a862d0002cL, "uittevoerenhandeling")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL, "onderwerp"));
+  }
+  public static double GeefWaardeVanVariabele(SNode instantieVanObject, SNode variabele) {
+    SNode waarde = InterpreterFuncties.GeefWaardeVanKenmerk(Interpreter.OnderwerpVanDeHandeling(), SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+    {
+      final SNode rekenWaarde = waarde;
+      if (SNodeOperations.isInstanceOf(rekenWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde"))) {
+        return (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(rekenWaarde);
+      }
+    }
+    return 0;
+  }
+  public static double SomVan(double getal) {
+    return 40;
   }
 
 }

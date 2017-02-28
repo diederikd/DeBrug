@@ -43,7 +43,7 @@ public class InterpreterFuncties {
     }
     return returninstantieVanObjects;
   }
-  public SNode GeefKenmerkVanInstantie(SNode instantieVanObject, SNode kenmerk) {
+  public static SNode GeefWaardeVanKenmerk(SNode instantieVanObject, SNode kenmerk) {
     for (SNode waardeVanKenmerkInInstantie : ListSequence.fromList(SLinkOperations.getChildren(instantieVanObject, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca15L, "waardeVanKenmerken")))) {
       if (SLinkOperations.getTarget(SLinkOperations.getTarget(waardeVanKenmerkInInstantie, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")) == kenmerk) {
         return SLinkOperations.getTarget(waardeVanKenmerkInInstantie, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde"));

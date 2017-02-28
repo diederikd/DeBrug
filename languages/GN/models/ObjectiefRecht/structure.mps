@@ -1757,5 +1757,31 @@
       <ref role="20lvS9" to="uwhu:5kuxuwXDNY_" resolve="TemporeleWaarde" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5RiSaxzqU8J">
+    <property role="EcuMT" value="6760713004463661615" />
+    <property role="TrG5h" value="MeervoudigeObjectWaarde" />
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="1TJDcQ" to="uwhu:1YFKb5t_BZt" resolve="Waarde" />
+    <node concept="1TJgyj" id="5RiSaxzqU9h" role="1TKVEi">
+      <property role="IQ2ns" value="6760713004463661649" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="instantiesVanObject" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5RiSaxzqU8L" resolve="ReferentieNaarInstantieVanObject" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5RiSaxzqU8L">
+    <property role="EcuMT" value="6760713004463661617" />
+    <property role="3GE5qa" value="ObjectInstantie" />
+    <property role="TrG5h" value="ReferentieNaarInstantieVanObject" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5RiSaxzqU8M" role="1TKVEi">
+      <property role="IQ2ns" value="6760713004463661618" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instantieVanObject" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3r$i424SGCk" resolve="InstantieVanObject" />
+    </node>
+  </node>
 </model>
 
