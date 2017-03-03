@@ -114,6 +114,8 @@
     <classNode dependClassName="ObjectiefRecht.intentions.KrachtigeAanspraakFataleVerplichtig_Intention" />
     <classNode dependClassName="ObjectiefRecht.intentions.MaakKenmerkEnkelvoudig_Intention" />
     <classNode dependClassName="ObjectiefRecht.intentions.MaakKenmerkMeervoudig_Intention" />
+    <classNode dependClassName="ObjectiefRecht.intentions.MaakKenmerkOptioneel_Intention" />
+    <classNode dependClassName="ObjectiefRecht.intentions.MaakKenmerkVerplicht_Intention" />
     <classNode dependClassName="ObjectiefRecht.intentions.OptioneleBevoegdheidOptioneleGehoudenheid_Intention" />
     <classNode dependClassName="ObjectiefRecht.intentions.ToevoegenInstantieAanTabel_Intention" />
     <classNode dependClassName="ObjectiefRecht.intentions.ToevoegenInstantie_Intention" />
@@ -172,6 +174,40 @@
     <classNode extendsClassName="jetbrains.mps.intentions.IntentionFactory" />
   </dependency>
   <dependency className="ObjectiefRecht.intentions.MaakKenmerkMeervoudig_Intention" file="MaakKenmerkMeervoudig_Intention.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionDescriptor" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionExecutable" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionExecutableBase" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionType" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.intentions.IntentionDescriptorBase" />
+    <classNode extendsClassName="jetbrains.mps.intentions.IntentionFactory" />
+  </dependency>
+  <dependency className="ObjectiefRecht.intentions.MaakKenmerkOptioneel_Intention" file="MaakKenmerkOptioneel_Intention.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionDescriptor" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionExecutable" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionExecutableBase" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionType" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.intentions.IntentionDescriptorBase" />
+    <classNode extendsClassName="jetbrains.mps.intentions.IntentionFactory" />
+  </dependency>
+  <dependency className="ObjectiefRecht.intentions.MaakKenmerkVerplicht_Intention" file="MaakKenmerkVerplicht_Intention.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />

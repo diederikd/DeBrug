@@ -2665,7 +2665,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F0ifn" id="6w7GUCbsHl5" role="3EZMnx">
-          <property role="3F0ifm" value="gegevens" />
+          <property role="3F0ifm" value="feitelijke gegevens" />
         </node>
         <node concept="3F0ifn" id="6w7GUCbsHl6" role="3EZMnx">
           <property role="3F0ifm" value=":" />

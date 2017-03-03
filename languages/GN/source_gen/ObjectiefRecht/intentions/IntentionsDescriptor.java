@@ -51,9 +51,11 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
         case 2:
           if (true) {
             // Concept: Kenmerk 
-            intentions = new IntentionFactory[2];
+            intentions = new IntentionFactory[4];
             intentions[0] = new MaakKenmerkMeervoudig_Intention();
             intentions[1] = new MaakKenmerkEnkelvoudig_Intention();
+            intentions[2] = new MaakKenmerkVerplicht_Intention();
+            intentions[3] = new MaakKenmerkOptioneel_Intention();
           }
           break;
         case 3:
@@ -94,7 +96,7 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[15];
+    IntentionFactory[] rv = new IntentionFactory[17];
     rv[0] = new VerplichteBevoegdheidVerplichteGehoudenheid_Intention();
     rv[1] = new AanspraakNaIngebrekeStellingPlicht_Intention();
     rv[2] = new KrachtigeAanspraakFataleVerplichtig_Intention();
@@ -110,6 +112,8 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
     rv[12] = new ToevoegenInstantie_Intention();
     rv[13] = new ToevoegenKenmerken_Intention();
     rv[14] = new ToevoegenInstantieAanTabel_Intention();
+    rv[15] = new MaakKenmerkVerplicht_Intention();
+    rv[16] = new MaakKenmerkOptioneel_Intention();
     return Arrays.asList(rv);
   }
   private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {

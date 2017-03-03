@@ -20,6 +20,9 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final BHDescriptor myDatumWaarde__BehaviorDescriptor = new DatumWaarde__BehaviorDescriptor();
   private final BHDescriptor myDatumTijdWaarde__BehaviorDescriptor = new DatumTijdWaarde__BehaviorDescriptor();
   private final BHDescriptor myAbstracteWaarde__BehaviorDescriptor = new AbstracteWaarde__BehaviorDescriptor();
+  private final BHDescriptor mywaardeJa__BehaviorDescriptor = new waardeJa__BehaviorDescriptor();
+  private final BHDescriptor mywaardeNee__BehaviorDescriptor = new waardeNee__BehaviorDescriptor();
+  private final BHDescriptor mywaardeJaNee__BehaviorDescriptor = new waardeJaNee__BehaviorDescriptor();
   private final BHDescriptor myTemporeleWaarde__BehaviorDescriptor = new TemporeleWaarde__BehaviorDescriptor();
   private final BHDescriptor myConcept__BehaviorDescriptor = new Concept__BehaviorDescriptor();
   private final BHDescriptor myReferentieNaarOnderwerp__BehaviorDescriptor = new ReferentieNaarOnderwerp__BehaviorDescriptor();
@@ -33,7 +36,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     {
       SAbstractConcept cncpt = concept;
-      Integer preIndex = indices_846f5o_a0q.get(cncpt);
+      Integer preIndex = indices_846f5o_a0t.get(cncpt);
       int switchIndex = (preIndex == null ? -1 : preIndex);
       switch (switchIndex) {
         case 0:
@@ -101,6 +104,21 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
             return myTijdWaarde__BehaviorDescriptor;
           }
           break;
+        case 13:
+          if (true) {
+            return mywaardeJa__BehaviorDescriptor;
+          }
+          break;
+        case 14:
+          if (true) {
+            return mywaardeJaNee__BehaviorDescriptor;
+          }
+          break;
+        case 15:
+          if (true) {
+            return mywaardeNee__BehaviorDescriptor;
+          }
+          break;
         default:
           // default 
       }
@@ -115,5 +133,5 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0q = buildConceptIndices(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x46db587183408c7aL, "Gegevens.structure.AbstracteWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL, "Gegevens.structure.Concept"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x2b935eb966136db4L, "Gegevens.structure.DatumTijdWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, "Gegevens.structure.DatumWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x62a4bcf3d1cc9c27L, "Gegevens.structure.GeheelGetal"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fe6L, "Gegevens.structure.GeheelGetalWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L, "Gegevens.structure.ObjectInstantie"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac581L, "Gegevens.structure.ReeelGetalWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L, "Gegevens.structure.ReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383bc1aL, "Gegevens.structure.ReferentieNaarSubject"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, "Gegevens.structure.TijdWaarde"));
+  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0t = buildConceptIndices(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x46db587183408c7aL, "Gegevens.structure.AbstracteWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL, "Gegevens.structure.Concept"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x2b935eb966136db4L, "Gegevens.structure.DatumTijdWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, "Gegevens.structure.DatumWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x62a4bcf3d1cc9c27L, "Gegevens.structure.GeheelGetal"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fe6L, "Gegevens.structure.GeheelGetalWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L, "Gegevens.structure.ObjectInstantie"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac581L, "Gegevens.structure.ReeelGetalWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L, "Gegevens.structure.ReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383bc1aL, "Gegevens.structure.ReferentieNaarSubject"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, "Gegevens.structure.TijdWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x4ce3b5e2c38f70c2L, "Gegevens.structure.waardeJa"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x4ce3b5e2c38f70d1L, "Gegevens.structure.waardeJaNee"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x4ce3b5e2c38f70d0L, "Gegevens.structure.waardeNee"));
 }

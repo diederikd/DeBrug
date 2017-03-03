@@ -21,6 +21,8 @@
   </dependency>
   <dependency className="Simulatie.plugin.Interpreter" file="Interpreter.java">
     <classNode dependClassName="Gegevens.behavior.RekenWaarde__BehaviorDescriptor" />
+    <classNode dependClassName="Gegevens.behavior.TemporeleWaarde__BehaviorDescriptor" />
+    <classNode dependClassName="Gegevens.behavior.waardeJaNee__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.plugin.DebugHelper" />
     <classNode dependClassName="Simulatie.plugin.InterpreterFuncties" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.CombinedInterpreter" />
@@ -86,7 +88,6 @@
     <classNode dependClassName="Gegevens.behavior.RekenWaarde__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.plugin.DebugHelper" />
     <classNode dependClassName="Simulatie.plugin.Interpreter" />
-    <classNode dependClassName="Simulatie.plugin.RunTimeObject" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
@@ -107,6 +108,7 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterBase" />

@@ -8,7 +8,7 @@ import com.mbeddr.mpsutil.interpreter.rt.IEnvironment;
 
 public class DebugHelper {
   public static void printContext(String marker, SNode node, IContext context) {
-    System.out.println(marker + ": " + node + context.hashCode() + "::" + concatEnvRecursive(context.getEnvironment()));
+    System.out.println(marker + ":          " + node + "          " + context.hashCode() + "::" + concatEnvRecursive(context.getEnvironment()));
   }
 
   public static String concatEnvRecursive(IEnvironment env) {

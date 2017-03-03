@@ -2347,5 +2347,93 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="4yDNEIgGVYB">
+    <property role="3GE5qa" value="Kenmerk" />
+    <property role="TrG5h" value="MaakKenmerkVerplicht" />
+    <ref role="2ZfgGC" to="3pw0:4$mS69sVSy3" resolve="Kenmerk" />
+    <node concept="2S6ZIM" id="4yDNEIgGVYC" role="2ZfVej">
+      <node concept="3clFbS" id="4yDNEIgGVYD" role="2VODD2">
+        <node concept="3cpWs6" id="4yDNEIgGVYE" role="3cqZAp">
+          <node concept="Xl_RD" id="4yDNEIgGVYF" role="3cqZAk">
+            <property role="Xl_RC" value="Maak Kenmerk Verplicht" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="4yDNEIgGVYG" role="2ZfgGD">
+      <node concept="3clFbS" id="4yDNEIgGVYH" role="2VODD2">
+        <node concept="3clFbF" id="4yDNEIgGVYI" role="3cqZAp">
+          <node concept="37vLTI" id="4yDNEIgGVYJ" role="3clFbG">
+            <node concept="3clFbT" id="4yDNEIgGVYK" role="37vLTx">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="2OqwBi" id="4yDNEIgGVYL" role="37vLTJ">
+              <node concept="2Sf5sV" id="4yDNEIgGVYM" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4yDNEIgGYNG" role="2OqNvi">
+                <ref role="3TsBF5" to="3pw0:4yDNEIgGSWM" resolve="optioneel" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="4yDNEIgGVYO" role="2ZfVeh">
+      <node concept="3clFbS" id="4yDNEIgGVYP" role="2VODD2">
+        <node concept="3cpWs6" id="4yDNEIgGVYQ" role="3cqZAp">
+          <node concept="2OqwBi" id="4yDNEIgGVYR" role="3cqZAk">
+            <node concept="2Sf5sV" id="4yDNEIgGVYS" role="2Oq$k0" />
+            <node concept="3TrcHB" id="4yDNEIgGXPm" role="2OqNvi">
+              <ref role="3TsBF5" to="3pw0:4yDNEIgGSWM" resolve="optioneel" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="4yDNEIgGVYU">
+    <property role="3GE5qa" value="Kenmerk" />
+    <property role="TrG5h" value="MaakKenmerkOptioneel" />
+    <ref role="2ZfgGC" to="3pw0:4$mS69sVSy3" resolve="Kenmerk" />
+    <node concept="2S6ZIM" id="4yDNEIgGVYV" role="2ZfVej">
+      <node concept="3clFbS" id="4yDNEIgGVYW" role="2VODD2">
+        <node concept="3cpWs6" id="4yDNEIgGVYX" role="3cqZAp">
+          <node concept="Xl_RD" id="4yDNEIgGVYY" role="3cqZAk">
+            <property role="Xl_RC" value="Maak Kenmerk Optioneel" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="4yDNEIgGVYZ" role="2ZfgGD">
+      <node concept="3clFbS" id="4yDNEIgGVZ0" role="2VODD2">
+        <node concept="3clFbF" id="4yDNEIgGVZ1" role="3cqZAp">
+          <node concept="37vLTI" id="4yDNEIgGVZ2" role="3clFbG">
+            <node concept="3clFbT" id="4yDNEIgGVZ3" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="4yDNEIgGVZ4" role="37vLTJ">
+              <node concept="2Sf5sV" id="4yDNEIgGVZ5" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4yDNEIgH0el" role="2OqNvi">
+                <ref role="3TsBF5" to="3pw0:4yDNEIgGSWM" resolve="optioneel" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="4yDNEIgGVZ7" role="2ZfVeh">
+      <node concept="3clFbS" id="4yDNEIgGVZ8" role="2VODD2">
+        <node concept="3cpWs6" id="4yDNEIgGVZ9" role="3cqZAp">
+          <node concept="3fqX7Q" id="4yDNEIgGVZa" role="3cqZAk">
+            <node concept="2OqwBi" id="4yDNEIgGVZb" role="3fr31v">
+              <node concept="2Sf5sV" id="4yDNEIgGVZc" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4yDNEIgGZP$" role="2OqNvi">
+                <ref role="3TsBF5" to="3pw0:4yDNEIgGSWM" resolve="optioneel" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

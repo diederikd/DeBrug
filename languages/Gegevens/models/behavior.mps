@@ -7,9 +7,9 @@
   </languages>
   <imports>
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" implicit="true" />
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="rwnv" ref="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)" implicit="true" />
   </imports>
@@ -95,6 +95,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -1864,6 +1867,69 @@
     </node>
     <node concept="13hLZK" id="5kuxuwXF07O" role="13h7CW">
       <node concept="3clFbS" id="5kuxuwXF07P" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4yDNEIh2toM">
+    <property role="3GE5qa" value="waardeJaNee" />
+    <ref role="13h7C2" to="uwhu:4NzHub3zR3h" resolve="waardeJaNee" />
+    <node concept="13hLZK" id="4yDNEIh2toN" role="13h7CW">
+      <node concept="3clFbS" id="4yDNEIh2toO" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4yDNEIh2toX" role="13h7CS">
+      <property role="TrG5h" value="geefWaarde" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="4yDNEIh2toY" role="1B3o_S" />
+      <node concept="3clFbS" id="4yDNEIh2tp0" role="3clF47" />
+      <node concept="3uibUv" id="4yDNEIh2zSJ" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="4yDNEIh2zTw">
+    <property role="3GE5qa" value="waardeJaNee" />
+    <ref role="13h7C2" to="uwhu:4NzHub3zR32" resolve="waardeJa" />
+    <node concept="13hLZK" id="4yDNEIh2zTx" role="13h7CW">
+      <node concept="3clFbS" id="4yDNEIh2zTy" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4yDNEIh2zTF" role="13h7CS">
+      <property role="TrG5h" value="geefWaarde" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="4yDNEIh2toX" resolve="geefWaarde" />
+      <node concept="3Tm1VV" id="4yDNEIh2zTG" role="1B3o_S" />
+      <node concept="3clFbS" id="4yDNEIh2zTJ" role="3clF47">
+        <node concept="3cpWs6" id="4yDNEIh2zVc" role="3cqZAp">
+          <node concept="3clFbT" id="4yDNEIh2zVE" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="4yDNEIh2zTK" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="4yDNEIh2zVZ">
+    <property role="3GE5qa" value="waardeJaNee" />
+    <ref role="13h7C2" to="uwhu:4NzHub3zR3g" resolve="waardeNee" />
+    <node concept="13hLZK" id="4yDNEIh2zW0" role="13h7CW">
+      <node concept="3clFbS" id="4yDNEIh2zW1" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4yDNEIh2zWa" role="13h7CS">
+      <property role="TrG5h" value="geefWaarde" />
+      <ref role="13i0hy" node="4yDNEIh2toX" resolve="geefWaarde" />
+      <node concept="3Tm1VV" id="4yDNEIh2zWb" role="1B3o_S" />
+      <node concept="3clFbS" id="4yDNEIh2zWd" role="3clF47">
+        <node concept="3cpWs6" id="4yDNEIh2zWs" role="3cqZAp">
+          <node concept="3clFbT" id="4yDNEIh2zWU" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="4yDNEIh2zWe" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+      </node>
     </node>
   </node>
 </model>

@@ -27,6 +27,12 @@ import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import ObjectiefRecht.behavior.Onderwerp__BehaviorDescriptor;
+import ObjectiefRecht.behavior.RechtsSubject__BehaviorDescriptor;
+import jetbrains.mps.util.EqualUtil;
+import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
 public class Kenmerk_Editor extends DefaultNodeEditor {
@@ -46,6 +52,12 @@ public class Kenmerk_Editor extends DefaultNodeEditor {
     }
     if (renderingCondition_wasupv_a2a(node, editorContext)) {
       editorCell.addEditorCell(this.createCollection_wasupv_c0(editorContext, node));
+    }
+    if (renderingCondition_wasupv_a3a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_wasupv_d0(editorContext, node));
+    }
+    if (renderingCondition_wasupv_a4a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_wasupv_e0(editorContext, node));
     }
     return editorCell;
   }
@@ -164,6 +176,95 @@ public class Kenmerk_Editor extends DefaultNodeEditor {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "meervoudig");
     editorCell.setCellId("Constant_wasupv_b2a");
     editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createCollection_wasupv_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_wasupv_d0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_wasupv_a3a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_wasupv_b3a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_wasupv_a3a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x48a9ceab90b38f32L, "optioneel"));
+  }
+  private EditorCell createConstant_wasupv_a3a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_wasupv_a3a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_wasupv_b3a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "optioneel");
+    editorCell.setCellId("Constant_wasupv_b3a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createCollection_wasupv_e0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_wasupv_e0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_wasupv_a4a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_wasupv_a4a(SNode node, EditorContext editorContext) {
+    {
+      final SNode objectType = SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"));
+      if (SNodeOperations.isInstanceOf(objectType, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60ac64b8L, "ObjectiefRecht.structure.ObjectType"))) {
+        SNode object = SLinkOperations.getTarget(objectType, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60ac64b8L, 0xb116d9d60b91205L, "object"));
+        {
+          final SNode onderwerp = object;
+          if (SNodeOperations.isInstanceOf(onderwerp, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"))) {
+            return true;
+          }
+        }
+        {
+          final SNode rechtsSubject = object;
+          if (SNodeOperations.isInstanceOf(rechtsSubject, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"))) {
+            return true;
+          }
+        }
+      }
+    }
+    return false;
+  }
+  private EditorCell createReadOnlyModelAccessor_wasupv_a4a(final EditorContext editorContext, final SNode node) {
+    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
+      public String getText() {
+        {
+          final SNode objectType = SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"));
+          if (SNodeOperations.isInstanceOf(objectType, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60ac64b8L, "ObjectiefRecht.structure.ObjectType"))) {
+            SNode object = SLinkOperations.getTarget(objectType, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60ac64b8L, 0xb116d9d60b91205L, "object"));
+            {
+              final SNode onderwerp = object;
+              if (SNodeOperations.isInstanceOf(onderwerp, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"))) {
+                return "(" + Onderwerp__BehaviorDescriptor.StringMetUniekIdentificerendeKenmerken_id4yDNEIhb6NS.invoke(onderwerp) + ")";
+              }
+            }
+            {
+              final SNode rechtsSubject = object;
+              if (SNodeOperations.isInstanceOf(rechtsSubject, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"))) {
+                return "(" + RechtsSubject__BehaviorDescriptor.StringMetUniekIdentificerendeKenmerken_id4yDNEIhbMSq.invoke(rechtsSubject) + ")";
+              }
+            }
+          }
+        }
+        return "";
+      }
+      public void setText(String s) {
+      }
+      public boolean isValidText(String s) {
+        return EqualUtil.equals(s, getText());
+      }
+    }, node);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_wasupv_a4a");
     return editorCell;
   }
   private EditorCell createComponent_wasupv_a(EditorContext editorContext, SNode node) {

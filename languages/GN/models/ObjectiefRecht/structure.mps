@@ -738,6 +738,11 @@
       <property role="TrG5h" value="meervoudig" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="4yDNEIgGSWM" role="1TKVEl">
+      <property role="IQ2nx" value="5235943278057328434" />
+      <property role="TrG5h" value="optioneel" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="3r$i424WsPs" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -993,6 +998,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
+    <node concept="PrWs8" id="4yDNEIgNMLB" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1YFKb5ttIIb">
     <property role="EcuMT" value="2282129504203107211" />
@@ -1610,6 +1618,13 @@
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
     <node concept="PrWs8" id="jcJoZ9JaUV" role="PzmwI">
       <ref role="PrY4T" node="4NzHub3_orp" resolve="IUnaireExpressie" />
+    </node>
+    <node concept="1TJgyj" id="4yDNEIgM43I" role="1TKVEi">
+      <property role="IQ2ns" value="5235943278058684654" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="kenmerk" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4$mS69sVSy3" resolve="Kenmerk" />
     </node>
   </node>
   <node concept="1TIwiD" id="jcJoZ9LTgl">

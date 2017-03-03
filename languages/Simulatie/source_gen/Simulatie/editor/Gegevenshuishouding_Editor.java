@@ -94,7 +94,7 @@ public class Gegevenshuishouding_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_hnwz83_a3a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "gegevens");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "feitelijke gegevens");
     editorCell.setCellId("Constant_hnwz83_a3a");
     editorCell.setDefaultText("");
     return editorCell;

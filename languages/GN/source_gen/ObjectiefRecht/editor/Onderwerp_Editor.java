@@ -220,7 +220,7 @@ public class Onderwerp_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_5e6yc7_a0f0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "heeft het volgende identificerende kenmerk ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "heeft het volgende identificerende kenmerk: ");
     editorCell.setCellId("Constant_5e6yc7_a0f0a");
     editorCell.setDefaultText("");
     return editorCell;
@@ -295,7 +295,7 @@ public class Onderwerp_Editor extends DefaultNodeEditor {
     protected void createInnerCells(SNode node, EditorContext editorContext) {
       try {
         editorContext.getCellFactory().pushCellContext();
-        editorContext.getCellFactory().addCellContextHints(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.Kort"});
+        editorContext.getCellFactory().addCellContextHints(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.ZonderLidwoord"});
         editorContext.getCellFactory().removeCellContextHints();
         super.createInnerCells(node, editorContext);
       } finally {

@@ -13,9 +13,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myObject__BehaviorDescriptor = new Object__BehaviorDescriptor();
+  private final BHDescriptor myOnderwerp__BehaviorDescriptor = new Onderwerp__BehaviorDescriptor();
   private final BHDescriptor myInstantieVanObject__BehaviorDescriptor = new InstantieVanObject__BehaviorDescriptor();
   private final BHDescriptor myVoorbeeldenMetInstanties__BehaviorDescriptor = new VoorbeeldenMetInstanties__BehaviorDescriptor();
   private final BHDescriptor myConcept__BehaviorDescriptor = new Concept__BehaviorDescriptor();
+  private final BHDescriptor myRechtsSubject__BehaviorDescriptor = new RechtsSubject__BehaviorDescriptor();
   private final BHDescriptor myRechtsbetrekking__BehaviorDescriptor = new Rechtsbetrekking__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
@@ -25,7 +27,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     {
       SAbstractConcept cncpt = concept;
-      Integer preIndex = indices_846f5o_a0i.get(cncpt);
+      Integer preIndex = indices_846f5o_a0k.get(cncpt);
       int switchIndex = (preIndex == null ? -1 : preIndex);
       switch (switchIndex) {
         case 0:
@@ -45,10 +47,20 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
           break;
         case 3:
           if (true) {
-            return myRechtsbetrekking__BehaviorDescriptor;
+            return myOnderwerp__BehaviorDescriptor;
           }
           break;
         case 4:
+          if (true) {
+            return myRechtsSubject__BehaviorDescriptor;
+          }
+          break;
+        case 5:
+          if (true) {
+            return myRechtsbetrekking__BehaviorDescriptor;
+          }
+          break;
+        case 6:
           if (true) {
             return myVoorbeeldenMetInstanties__BehaviorDescriptor;
           }
@@ -67,5 +79,5 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0i = buildConceptIndices(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, "ObjectiefRecht.structure.Concept"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L, "ObjectiefRecht.structure.Object"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca1aL, "ObjectiefRecht.structure.VoorbeeldenMetInstanties"));
+  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0k = buildConceptIndices(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, "ObjectiefRecht.structure.Concept"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L, "ObjectiefRecht.structure.Object"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca1aL, "ObjectiefRecht.structure.VoorbeeldenMetInstanties"));
 }

@@ -56,6 +56,9 @@ public class Kenmerk_MetLidwoord_Editor extends DefaultNodeEditor {
     if (renderingCondition_sn0itw_a3a(node, editorContext)) {
       editorCell.addEditorCell(this.createCollection_sn0itw_d0(editorContext, node));
     }
+    if (renderingCondition_sn0itw_a4a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_sn0itw_e0(editorContext, node));
+    }
     return editorCell;
   }
   private EditorCell createRefNode_sn0itw_a0(EditorContext editorContext, SNode node) {
@@ -155,6 +158,31 @@ public class Kenmerk_MetLidwoord_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_sn0itw_b3a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "meervoudig");
     editorCell.setCellId("Constant_sn0itw_b3a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createCollection_sn0itw_e0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_sn0itw_e0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_sn0itw_a4a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_sn0itw_b4a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_sn0itw_a4a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x48a9ceab90b38f32L, "optioneel"));
+  }
+  private EditorCell createConstant_sn0itw_a4a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_sn0itw_a4a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_sn0itw_b4a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "optioneel");
+    editorCell.setCellId("Constant_sn0itw_b4a");
     editorCell.setDefaultText("");
     return editorCell;
   }

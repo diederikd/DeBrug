@@ -42,6 +42,9 @@ public class Kenmerk_ZonderLidwoord_Editor extends DefaultNodeEditor {
     if (renderingCondition_dooni4_a1a(node, editorContext)) {
       editorCell.addEditorCell(this.createCollection_dooni4_b0(editorContext, node));
     }
+    if (renderingCondition_dooni4_a2a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_dooni4_c0(editorContext, node));
+    }
     return editorCell;
   }
   private EditorCell createProperty_dooni4_a0(EditorContext editorContext, SNode node) {
@@ -81,6 +84,31 @@ public class Kenmerk_ZonderLidwoord_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_dooni4_b1a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "meervoudig");
     editorCell.setCellId("Constant_dooni4_b1a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createCollection_dooni4_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_dooni4_c0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_dooni4_a2a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_dooni4_b2a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_dooni4_a2a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x48a9ceab90b38f32L, "optioneel"));
+  }
+  private EditorCell createConstant_dooni4_a2a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_dooni4_a2a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_dooni4_b2a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "optioneel");
+    editorCell.setCellId("Constant_dooni4_b2a");
     editorCell.setDefaultText("");
     return editorCell;
   }
