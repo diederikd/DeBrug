@@ -15,7 +15,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,115,0" name="ObjectiefRecht.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,125,0" name="ObjectiefRecht.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/301351583719086755">
@@ -392,6 +392,108 @@
         <var name="parentNode" id="6249140128508723272" />
       </scope>
       <unit id="6249140128508723272" at="16,0,47,0" name="ObjectiefRecht.constraints.Kenmerk_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7168729926834067610">
+    <file name="VerwoordingObject_Constraints.java">
+      <node id="7168729926834067610" at="30,42,31,150" concept="12" />
+      <node id="7168729926834067610" at="35,90,36,131" concept="6" />
+      <node id="7168729926834067610" at="39,44,40,20" concept="7" />
+      <node id="7168729926834067610" at="47,63,48,58" concept="7" />
+      <node id="7168729926834069866" at="52,13,53,59" concept="6" />
+      <node id="7168729926834069872" at="54,15,55,72" concept="6" />
+      <node id="7168729926834085088" at="56,206,57,410" concept="2" />
+      <node id="7168729926834069903" at="60,15,61,74" concept="6" />
+      <node id="7168729926834069906" at="62,210,63,95" concept="6" />
+      <node id="7168729926834117944" at="63,95,64,410" concept="2" />
+      <node id="7168729926834069942" at="66,15,67,57" concept="7" />
+      <node id="7168729926834067610" at="72,7,73,22" concept="7" />
+      <node id="7168729926834067610" at="75,0,76,0" concept="10" trace="breakingNode_k8rzi1_a0a0a0a0a1a0b0a1a2" />
+      <node id="7168729926834067610" at="30,0,33,0" concept="1" trace="VerwoordingObject_Constraints#()V" />
+      <node id="7168729926834069872" at="55,72,58,17" concept="4" />
+      <node id="7168729926834067610" at="38,0,42,0" concept="5" trace="hasOwnScopeProvider#()Z" />
+      <node id="7168729926834067610" at="46,0,50,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="7168729926834069903" at="61,74,65,17" concept="4" />
+      <node id="7168729926834069872" at="53,59,59,15" concept="0" />
+      <node id="7168729926834069903" at="59,15,66,15" concept="0" />
+      <node id="7168729926834067610" at="51,122,68,13" concept="0" />
+      <node id="7168729926834067610" at="50,0,70,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="7168729926834067610" at="44,56,70,10" concept="7" />
+      <node id="7168729926834067610" at="42,0,72,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7168729926834067610" at="36,131,72,7" concept="2" />
+      <node id="7168729926834067610" at="34,0,75,0" concept="5" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7168729926834067610" at="30,42,31,150" />
+      <scope id="7168729926834067610" at="39,44,40,20" />
+      <scope id="7168729926834067610" at="47,63,48,58" />
+      <scope id="7168729926834069874" at="56,206,57,410" />
+      <scope id="7168729926834069905" at="62,210,64,410">
+        <var name="feitVerwoording" id="7168729926834069907" />
+      </scope>
+      <scope id="7168729926834067610" at="30,0,33,0" />
+      <scope id="7168729926834067610" at="38,0,42,0" />
+      <scope id="7168729926834067610" at="46,0,50,0" />
+      <scope id="7168729926834069872" at="54,15,58,17">
+        <var name="feitVerwoording" id="7168729926834069872" />
+      </scope>
+      <scope id="7168729926834069903" at="60,15,65,17">
+        <var name="verwoordingObject" id="7168729926834069903" />
+      </scope>
+      <scope id="7168729926834069681" at="52,13,67,57">
+        <var name="objects" id="7168729926834069867" />
+      </scope>
+      <scope id="7168729926834067610" at="51,122,68,13" />
+      <scope id="7168729926834067610" at="50,0,70,0">
+        <var name="_context" id="7168729926834067610" />
+        <var name="operationContext" id="7168729926834067610" />
+      </scope>
+      <scope id="7168729926834067610" at="44,56,70,10" />
+      <scope id="7168729926834067610" at="42,0,72,0" />
+      <scope id="7168729926834067610" at="35,90,73,22">
+        <var name="references" id="7168729926834067610" />
+      </scope>
+      <scope id="7168729926834067610" at="34,0,75,0" />
+      <unit id="7168729926834067610" at="45,19,70,9" name="ObjectiefRecht.constraints.VerwoordingObject_Constraints$2" />
+      <unit id="7168729926834067610" at="37,154,72,5" name="ObjectiefRecht.constraints.VerwoordingObject_Constraints$1" />
+      <unit id="7168729926834067610" at="29,0,77,0" name="ObjectiefRecht.constraints.VerwoordingObject_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7168729926835982244">
+    <file name="FeitVerwoording_Constraints.java">
+      <node id="7168729926835982244" at="25,40,26,148" concept="12" />
+      <node id="7168729926835982244" at="30,90,31,131" concept="6" />
+      <node id="7168729926835982244" at="34,44,35,20" concept="7" />
+      <node id="7168729926835982244" at="42,63,43,58" concept="7" />
+      <node id="4319339164444304922" at="46,122,47,412" concept="7" />
+      <node id="7168729926835982244" at="51,7,52,22" concept="7" />
+      <node id="7168729926835982244" at="54,0,55,0" concept="10" trace="breakingNode_9n8a10_a0a0a0a0a1a0b0a1a2" />
+      <node id="7168729926835982244" at="25,0,28,0" concept="1" trace="FeitVerwoording_Constraints#()V" />
+      <node id="7168729926835982244" at="33,0,37,0" concept="5" trace="hasOwnScopeProvider#()Z" />
+      <node id="7168729926835982244" at="41,0,45,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="7168729926835982244" at="45,0,49,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="7168729926835982244" at="39,56,49,10" concept="7" />
+      <node id="7168729926835982244" at="37,0,51,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7168729926835982244" at="31,131,51,7" concept="2" />
+      <node id="7168729926835982244" at="29,0,54,0" concept="5" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7168729926835982244" at="25,40,26,148" />
+      <scope id="7168729926835982244" at="34,44,35,20" />
+      <scope id="7168729926835982244" at="42,63,43,58" />
+      <scope id="7168729926835982244" at="46,122,47,412" />
+      <scope id="7168729926835982244" at="25,0,28,0" />
+      <scope id="7168729926835982244" at="33,0,37,0" />
+      <scope id="7168729926835982244" at="41,0,45,0" />
+      <scope id="7168729926835982244" at="45,0,49,0">
+        <var name="_context" id="7168729926835982244" />
+        <var name="operationContext" id="7168729926835982244" />
+      </scope>
+      <scope id="7168729926835982244" at="39,56,49,10" />
+      <scope id="7168729926835982244" at="37,0,51,0" />
+      <scope id="7168729926835982244" at="30,90,52,22">
+        <var name="references" id="7168729926835982244" />
+      </scope>
+      <scope id="7168729926835982244" at="29,0,54,0" />
+      <unit id="7168729926835982244" at="40,19,49,9" name="ObjectiefRecht.constraints.FeitVerwoording_Constraints$2" />
+      <unit id="7168729926835982244" at="32,157,51,5" name="ObjectiefRecht.constraints.FeitVerwoording_Constraints$1" />
+      <unit id="7168729926835982244" at="24,0,56,0" name="ObjectiefRecht.constraints.FeitVerwoording_Constraints" />
     </file>
   </root>
   <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7366216351236656416">

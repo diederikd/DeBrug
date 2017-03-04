@@ -32,7 +32,11 @@ public class VerwoordingWaarde_Editor extends DefaultNodeEditor {
   private EditorCell createReadOnlyModelAccessor_j0qnka_a0(final EditorContext editorContext, final SNode node) {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
       public String getText() {
-        return Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab91b3bb31L, 0x48a9ceab91b3bb32L, "waardevankenmerk")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde")));
+        String result = Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab91b3bb31L, 0x48a9ceab91b3bb32L, "waardevankenmerk")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde")));
+        if (result == "Nee") {
+          result = "geen";
+        }
+        return result;
       }
       public void setText(String s) {
       }

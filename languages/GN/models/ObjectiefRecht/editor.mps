@@ -203,6 +203,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -12450,22 +12451,53 @@
         <node concept="1HfYo3" id="Fzw$g_HwcO" role="1HlULh">
           <node concept="3TQlhw" id="Fzw$g_HwcQ" role="1Hhtcw">
             <node concept="3clFbS" id="Fzw$g_HwcS" role="2VODD2">
-              <node concept="3cpWs6" id="Fzw$g_Hzy3" role="3cqZAp">
-                <node concept="2OqwBi" id="Fzw$g_HywC" role="3cqZAk">
-                  <node concept="2OqwBi" id="Fzw$g_Hxw7" role="2Oq$k0">
-                    <node concept="2OqwBi" id="Fzw$g_HwBh" role="2Oq$k0">
-                      <node concept="pncrf" id="Fzw$g_Hwlq" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="Fzw$g_Hx0i" role="2OqNvi">
-                        <ref role="3Tt5mk" to="3pw0:4yDNEIhGVGM" resolve="waardevankenmerk" />
+              <node concept="3cpWs8" id="6dWsucbHK$o" role="3cqZAp">
+                <node concept="3cpWsn" id="6dWsucbHK$k" role="3cpWs9">
+                  <property role="TrG5h" value="result" />
+                  <node concept="17QB3L" id="6dWsucbHKOS" role="1tU5fm" />
+                  <node concept="2OqwBi" id="Fzw$g_HywC" role="33vP2m">
+                    <node concept="2OqwBi" id="Fzw$g_Hxw7" role="2Oq$k0">
+                      <node concept="2OqwBi" id="Fzw$g_HwBh" role="2Oq$k0">
+                        <node concept="pncrf" id="Fzw$g_Hwlq" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="Fzw$g_Hx0i" role="2OqNvi">
+                          <ref role="3Tt5mk" to="3pw0:4yDNEIhGVGM" resolve="waardevankenmerk" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="Fzw$g_HxWG" role="2OqNvi">
+                        <ref role="3Tt5mk" to="3pw0:3r$i424SGCh" resolve="waarde" />
                       </node>
                     </node>
-                    <node concept="3TrEf2" id="Fzw$g_HxWG" role="2OqNvi">
-                      <ref role="3Tt5mk" to="3pw0:3r$i424SGCh" resolve="waarde" />
+                    <node concept="2qgKlT" id="Fzw$g_Hz11" role="2OqNvi">
+                      <ref role="37wK5l" to="fcw4:Fzw$g_H4hz" resolve="GeefWaardeString" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="Fzw$g_Hz11" role="2OqNvi">
-                    <ref role="37wK5l" to="fcw4:Fzw$g_H4hz" resolve="GeefWaardeString" />
+                </node>
+              </node>
+              <node concept="3clFbJ" id="6dWsucbHK3n" role="3cqZAp">
+                <node concept="3clFbS" id="6dWsucbHK3p" role="3clFbx">
+                  <node concept="3clFbF" id="6dWsucbHP4N" role="3cqZAp">
+                    <node concept="37vLTI" id="6dWsucbHQYY" role="3clFbG">
+                      <node concept="Xl_RD" id="6dWsucbHRfH" role="37vLTx">
+                        <property role="Xl_RC" value="geen" />
+                      </node>
+                      <node concept="37vLTw" id="6dWsucbHP4L" role="37vLTJ">
+                        <ref role="3cqZAo" node="6dWsucbHK$k" resolve="result" />
+                      </node>
+                    </node>
                   </node>
+                </node>
+                <node concept="3clFbC" id="6dWsucbHQcD" role="3clFbw">
+                  <node concept="37vLTw" id="6dWsucbHN8w" role="3uHU7B">
+                    <ref role="3cqZAo" node="6dWsucbHK$k" resolve="result" />
+                  </node>
+                  <node concept="Xl_RD" id="6dWsucbHOj1" role="3uHU7w">
+                    <property role="Xl_RC" value="Nee" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="Fzw$g_Hzy3" role="3cqZAp">
+                <node concept="37vLTw" id="6dWsucbHMSb" role="3cqZAk">
+                  <ref role="3cqZAo" node="6dWsucbHK$k" resolve="result" />
                 </node>
               </node>
             </node>

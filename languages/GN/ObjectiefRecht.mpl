@@ -58,6 +58,7 @@
     <dependency reexport="false">61be2dc6-a140-4def-a592-7499aa2bac19(Datum)</dependency>
     <dependency reexport="false">30ef095a-d489-45ff-a80f-456a798ac125(Gegevens)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
+    <dependency reexport="false">8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
