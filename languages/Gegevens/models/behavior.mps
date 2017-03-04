@@ -8,10 +8,11 @@
   <imports>
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" implicit="true" />
+    <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" />
+    <import index="rwnv" ref="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)" />
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
-    <import index="rwnv" ref="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -75,6 +76,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -1642,6 +1644,28 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="Fzw$g_H4mH" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="GeefWaardeString" />
+      <ref role="13i0hy" node="Fzw$g_H4hz" resolve="GeefWaardeString" />
+      <node concept="3Tm1VV" id="Fzw$g_H4mI" role="1B3o_S" />
+      <node concept="3clFbS" id="Fzw$g_H4mL" role="3clF47">
+        <node concept="3clFbF" id="Fzw$g_H4n6" role="3cqZAp">
+          <node concept="2YIFZM" id="Fzw$g_H4nn" role="3clFbG">
+            <ref role="37wK5l" to="wyt6:~Double.toString(double):java.lang.String" resolve="toString" />
+            <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
+            <node concept="2OqwBi" id="Fzw$g_H4$j" role="37wK5m">
+              <node concept="13iPFW" id="Fzw$g_H4oq" role="2Oq$k0" />
+              <node concept="2qgKlT" id="Fzw$g_H4R3" role="2OqNvi">
+                <ref role="37wK5l" node="XSBwowcV5H" resolve="GeefWaarde" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="Fzw$g_H4mM" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="XSBwowcVfI" role="13h7CW">
       <node concept="3clFbS" id="XSBwowcVfJ" role="2VODD2" />
     </node>
@@ -1754,6 +1778,33 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="Fzw$g_Hu$M" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="GeefWaardeString" />
+      <ref role="13i0hy" node="Fzw$g_H4hz" resolve="GeefWaardeString" />
+      <node concept="3Tm1VV" id="Fzw$g_Hu$N" role="1B3o_S" />
+      <node concept="3clFbS" id="Fzw$g_Hu$Q" role="3clF47">
+        <node concept="3cpWs6" id="Fzw$g_HuG1" role="3cqZAp">
+          <node concept="2YIFZM" id="6dWsucbyY2D" role="3cqZAk">
+            <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+            <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+            <node concept="2OqwBi" id="6dWsucbyYMC" role="37wK5m">
+              <node concept="2OqwBi" id="6dWsucbyY2E" role="2Oq$k0">
+                <node concept="13iPFW" id="6dWsucbyY2F" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6dWsucbyYme" role="2OqNvi">
+                  <ref role="3Tt5mk" to="uwhu:6a$JffhN9KX" resolve="waarde" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6dWsucbyZ6N" role="2OqNvi">
+                <ref role="3TsBF5" to="uwhu:6a$JffhNDwP" resolve="waarde" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="Fzw$g_Hu$R" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="XSBwowfdEl" role="13h7CW">
       <node concept="3clFbS" id="XSBwowfdEm" role="2VODD2" />
     </node>
@@ -1808,6 +1859,29 @@
         <ref role="3uigEE" to="dzyv:~Temporal" resolve="Temporal" />
       </node>
     </node>
+    <node concept="13i0hz" id="Fzw$g_H9si" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="GeefWaardeString" />
+      <ref role="13i0hy" node="Fzw$g_H4hz" resolve="GeefWaardeString" />
+      <node concept="3Tm1VV" id="Fzw$g_H9sj" role="1B3o_S" />
+      <node concept="3clFbS" id="Fzw$g_H9sm" role="3clF47">
+        <node concept="3clFbF" id="Fzw$g_H9_Q" role="3cqZAp">
+          <node concept="2OqwBi" id="Fzw$g_Hafu" role="3clFbG">
+            <node concept="2OqwBi" id="Fzw$g_H9LE" role="2Oq$k0">
+              <node concept="13iPFW" id="Fzw$g_H9_P" role="2Oq$k0" />
+              <node concept="2qgKlT" id="Fzw$g_Ha12" role="2OqNvi">
+                <ref role="37wK5l" node="5kuxuwXEUJM" resolve="GeefTemporeleWaarde" />
+              </node>
+            </node>
+            <node concept="liA8E" id="Fzw$g_Havq" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="Fzw$g_H9sn" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="5kuxuwXEZLw">
     <property role="3GE5qa" value="Waarden.Temporelewaarde" />
@@ -1838,6 +1912,29 @@
     <node concept="13hLZK" id="5kuxuwXEZLx" role="13h7CW">
       <node concept="3clFbS" id="5kuxuwXEZLy" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="Fzw$g_HaPd" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="GeefWaardeString" />
+      <ref role="13i0hy" node="Fzw$g_H4hz" resolve="GeefWaardeString" />
+      <node concept="3Tm1VV" id="Fzw$g_HaPe" role="1B3o_S" />
+      <node concept="3clFbS" id="Fzw$g_HaPh" role="3clF47">
+        <node concept="3clFbF" id="Fzw$g_HaWY" role="3cqZAp">
+          <node concept="2OqwBi" id="Fzw$g_HbCI" role="3clFbG">
+            <node concept="2OqwBi" id="Fzw$g_HbaU" role="2Oq$k0">
+              <node concept="13iPFW" id="Fzw$g_HaWX" role="2Oq$k0" />
+              <node concept="2qgKlT" id="Fzw$g_Hbqi" role="2OqNvi">
+                <ref role="37wK5l" node="5kuxuwXEUJM" resolve="GeefTemporeleWaarde" />
+              </node>
+            </node>
+            <node concept="liA8E" id="Fzw$g_HbSE" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="Fzw$g_HaPi" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="5kuxuwXF07N">
     <property role="3GE5qa" value="Waarden.Temporelewaarde" />
@@ -1867,6 +1964,29 @@
     </node>
     <node concept="13hLZK" id="5kuxuwXF07O" role="13h7CW">
       <node concept="3clFbS" id="5kuxuwXF07P" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="Fzw$g_HbYN" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="GeefWaardeString" />
+      <ref role="13i0hy" node="Fzw$g_H4hz" resolve="GeefWaardeString" />
+      <node concept="3Tm1VV" id="Fzw$g_HbYO" role="1B3o_S" />
+      <node concept="3clFbS" id="Fzw$g_HbYR" role="3clF47">
+        <node concept="3clFbF" id="Fzw$g_Hc6J" role="3cqZAp">
+          <node concept="2OqwBi" id="Fzw$g_HcKf" role="3clFbG">
+            <node concept="2OqwBi" id="Fzw$g_Hcir" role="2Oq$k0">
+              <node concept="13iPFW" id="Fzw$g_Hc6I" role="2Oq$k0" />
+              <node concept="2qgKlT" id="Fzw$g_HcxN" role="2OqNvi">
+                <ref role="37wK5l" node="5kuxuwXEUJM" resolve="GeefTemporeleWaarde" />
+              </node>
+            </node>
+            <node concept="liA8E" id="Fzw$g_Hd0b" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="Fzw$g_HbYS" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="4yDNEIh2toM">
@@ -1930,6 +2050,171 @@
       <node concept="3uibUv" id="4yDNEIh2zWe" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="Fzw$g_H4gT">
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="13h7C2" to="uwhu:1YFKb5t_BZt" resolve="Waarde" />
+    <node concept="13i0hz" id="Fzw$g_H4hz" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <property role="TrG5h" value="GeefWaardeString" />
+      <node concept="3Tm1VV" id="Fzw$g_H4h$" role="1B3o_S" />
+      <node concept="17QB3L" id="Fzw$g_H4hN" role="3clF45" />
+      <node concept="3clFbS" id="Fzw$g_H4hA" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="Fzw$g_H4gU" role="13h7CW">
+      <node concept="3clFbS" id="Fzw$g_H4gV" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="Fzw$g_H5ty">
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="13h7C2" to="uwhu:1YFKb5tAGlc" resolve="JaNeeWaarde" />
+    <node concept="13hLZK" id="Fzw$g_H5tz" role="13h7CW">
+      <node concept="3clFbS" id="Fzw$g_H5t$" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="Fzw$g_H5tH" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="GeefWaardeString" />
+      <ref role="13i0hy" node="Fzw$g_H4hz" resolve="GeefWaardeString" />
+      <node concept="3Tm1VV" id="Fzw$g_H5tI" role="1B3o_S" />
+      <node concept="3clFbS" id="Fzw$g_H5tL" role="3clF47">
+        <node concept="Jncv_" id="Fzw$g_H5tZ" role="3cqZAp">
+          <ref role="JncvD" to="uwhu:4NzHub3zR32" resolve="waardeJa" />
+          <node concept="2OqwBi" id="Fzw$g_H5B_" role="JncvB">
+            <node concept="13iPFW" id="Fzw$g_H5us" role="2Oq$k0" />
+            <node concept="3TrEf2" id="Fzw$g_H5PF" role="2OqNvi">
+              <ref role="3Tt5mk" to="uwhu:4NzHub3zR3W" resolve="waarde" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="Fzw$g_H5u1" role="Jncv$">
+            <node concept="3cpWs6" id="Fzw$g_H5Xj" role="3cqZAp">
+              <node concept="Xl_RD" id="Fzw$g_H606" role="3cqZAk">
+                <property role="Xl_RC" value="Ja" />
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="Fzw$g_H5u2" role="JncvA">
+            <property role="TrG5h" value="waardeJa" />
+            <node concept="2jxLKc" id="Fzw$g_H5u3" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="Jncv_" id="Fzw$g_H688" role="3cqZAp">
+          <ref role="JncvD" to="uwhu:4NzHub3zR3g" resolve="waardeNee" />
+          <node concept="2OqwBi" id="Fzw$g_H689" role="JncvB">
+            <node concept="13iPFW" id="Fzw$g_H68a" role="2Oq$k0" />
+            <node concept="3TrEf2" id="Fzw$g_H68b" role="2OqNvi">
+              <ref role="3Tt5mk" to="uwhu:4NzHub3zR3W" resolve="waarde" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="Fzw$g_H68c" role="Jncv$">
+            <node concept="3cpWs6" id="Fzw$g_H68d" role="3cqZAp">
+              <node concept="Xl_RD" id="Fzw$g_H68e" role="3cqZAk">
+                <property role="Xl_RC" value="Nee" />
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="Fzw$g_H68f" role="JncvA">
+            <property role="TrG5h" value="waardeNee" />
+            <node concept="2jxLKc" id="Fzw$g_H68g" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="Fzw$g_H6kq" role="3cqZAp">
+          <node concept="10Nm6u" id="Fzw$g_H6qC" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="Fzw$g_H5tM" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="Fzw$g_H6tP">
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="13h7C2" to="uwhu:6DGvEUpM01B" resolve="EnumeratieWaarde" />
+    <node concept="13hLZK" id="Fzw$g_H6tQ" role="13h7CW">
+      <node concept="3clFbS" id="Fzw$g_H6tR" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="Fzw$g_H6u0" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="GeefWaardeString" />
+      <ref role="13i0hy" node="Fzw$g_H4hz" resolve="GeefWaardeString" />
+      <node concept="3Tm1VV" id="Fzw$g_H6u1" role="1B3o_S" />
+      <node concept="3clFbS" id="Fzw$g_H6u4" role="3clF47">
+        <node concept="3cpWs6" id="Fzw$g_H6ui" role="3cqZAp">
+          <node concept="2OqwBi" id="Fzw$g_H7gN" role="3cqZAk">
+            <node concept="2OqwBi" id="Fzw$g_H6DP" role="2Oq$k0">
+              <node concept="13iPFW" id="Fzw$g_H6uJ" role="2Oq$k0" />
+              <node concept="3TrEf2" id="Fzw$g_H6RI" role="2OqNvi">
+                <ref role="3Tt5mk" to="uwhu:6DGvEUpNlDZ" resolve="waarde" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="Fzw$g_H7vp" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="Fzw$g_H6u5" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="Fzw$g_H7zJ">
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="13h7C2" to="uwhu:1YFKb5tAQa9" resolve="ObjectWaarde" />
+    <node concept="13hLZK" id="Fzw$g_H7zK" role="13h7CW">
+      <node concept="3clFbS" id="Fzw$g_H7zL" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="Fzw$g_H7zU" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="GeefWaardeString" />
+      <ref role="13i0hy" node="Fzw$g_H4hz" resolve="GeefWaardeString" />
+      <node concept="3Tm1VV" id="Fzw$g_H7zV" role="1B3o_S" />
+      <node concept="3clFbS" id="Fzw$g_H7zY" role="3clF47">
+        <node concept="3cpWs6" id="Fzw$g_H7$c" role="3cqZAp">
+          <node concept="2OqwBi" id="Fzw$g_H93v" role="3cqZAk">
+            <node concept="2OqwBi" id="Fzw$g_H8nv" role="2Oq$k0">
+              <node concept="2OqwBi" id="Fzw$g_H7JJ" role="2Oq$k0">
+                <node concept="13iPFW" id="Fzw$g_H7$D" role="2Oq$k0" />
+                <node concept="3TrEf2" id="Fzw$g_H7XC" role="2OqNvi">
+                  <ref role="3Tt5mk" to="uwhu:1YFKb5tAQae" resolve="object" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="Fzw$g_H8BD" role="2OqNvi">
+                <ref role="3Tt5mk" to="uwhu:3ouvO1Uq5SY" resolve="object" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="Fzw$g_H9lO" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="Fzw$g_H7zZ" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="Fzw$g_HvKi">
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="13h7C2" to="uwhu:1YFKb5tAGlz" resolve="RijVanKaraktersWaarde" />
+    <node concept="13hLZK" id="Fzw$g_HvKj" role="13h7CW">
+      <node concept="3clFbS" id="Fzw$g_HvKk" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="Fzw$g_HvKt" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="GeefWaardeString" />
+      <ref role="13i0hy" node="Fzw$g_H4hz" resolve="GeefWaardeString" />
+      <node concept="3Tm1VV" id="Fzw$g_HvKu" role="1B3o_S" />
+      <node concept="3clFbS" id="Fzw$g_HvKx" role="3clF47">
+        <node concept="3cpWs6" id="Fzw$g_HvKJ" role="3cqZAp">
+          <node concept="2OqwBi" id="Fzw$g_HvWi" role="3cqZAk">
+            <node concept="13iPFW" id="Fzw$g_HvLc" role="2Oq$k0" />
+            <node concept="3TrcHB" id="Fzw$g_Hwab" role="2OqNvi">
+              <ref role="3TsBF5" to="uwhu:1YFKb5tAGl$" resolve="waarde" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="Fzw$g_HvKy" role="3clF45" />
     </node>
   </node>
 </model>

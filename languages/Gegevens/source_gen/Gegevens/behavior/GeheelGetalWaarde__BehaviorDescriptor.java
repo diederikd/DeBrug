@@ -17,6 +17,7 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -26,14 +27,18 @@ public final class GeheelGetalWaarde__BehaviorDescriptor extends BaseBHDescripto
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<Double> GeefWaarde_idXSBwowdL4A = new SMethodBuilder<Double>(new SJavaCompoundTypeImpl(Double.TYPE)).name("GeefWaarde").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("XSBwowdL4A").registry(REGISTRY).build();
+  public static final SMethod<String> GeefWaardeString_idFzw$g_H4hz = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("GeefWaardeString").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("Fzw$g_H4hz").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefWaarde_idXSBwowdL4A);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefWaarde_idXSBwowdL4A, GeefWaardeString_idFzw$g_H4hz);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static double GeefWaarde_idXSBwowdL4A(@NotNull SNode __thisNode__) {
     return (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fe6L, 0x62a4bcf3d1cc9c3dL, "waarde")));
+  }
+  /*package*/ static String GeefWaardeString_idFzw$g_H4hz(@NotNull SNode __thisNode__) {
+    return Integer.toString(SPropertyOperations.getInteger(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fe6L, 0x62a4bcf3d1cc9c3dL, "waarde")), MetaAdapterFactory.getProperty(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x62a4bcf3d1cc9c27L, 0x62a4bcf3d1ce9835L, "waarde")));
   }
 
   /*package*/ GeheelGetalWaarde__BehaviorDescriptor() {
@@ -54,6 +59,8 @@ public final class GeheelGetalWaarde__BehaviorDescriptor extends BaseBHDescripto
     switch (methodIndex) {
       case 0:
         return (T) ((Double) GeefWaarde_idXSBwowdL4A(node));
+      case 1:
+        return (T) ((String) GeefWaardeString_idFzw$g_H4hz(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

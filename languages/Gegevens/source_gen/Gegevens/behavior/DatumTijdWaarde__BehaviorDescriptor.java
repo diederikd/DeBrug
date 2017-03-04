@@ -28,14 +28,18 @@ public final class DatumTijdWaarde__BehaviorDescriptor extends BaseBHDescriptor 
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<Temporal> GeefTemporeleWaarde_id5kuxuwXEUJM = new SMethodBuilder<Temporal>(new SJavaCompoundTypeImpl(Temporal.class)).name("GetTemporalValue").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5kuxuwXEUJM").registry(REGISTRY).build();
+  public static final SMethod<String> GeefWaardeString_idFzw$g_H4hz = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("GeefWaardeString").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("Fzw$g_H4hz").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefTemporeleWaarde_id5kuxuwXEUJM);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefTemporeleWaarde_id5kuxuwXEUJM, GeefWaardeString_idFzw$g_H4hz);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static Temporal GeefTemporeleWaarde_id5kuxuwXEUJM(@NotNull SNode __thisNode__) {
     return DatumTijd__BehaviorDescriptor.getdatetime_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x2b935eb966136db4L, 0x2b935eb966136db5L, "waarde")));
+  }
+  /*package*/ static String GeefWaardeString_idFzw$g_H4hz(@NotNull SNode __thisNode__) {
+    return TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(__thisNode__).toString();
   }
 
   /*package*/ DatumTijdWaarde__BehaviorDescriptor() {
@@ -56,6 +60,8 @@ public final class DatumTijdWaarde__BehaviorDescriptor extends BaseBHDescriptor 
     switch (methodIndex) {
       case 0:
         return (T) ((Temporal) GeefTemporeleWaarde_id5kuxuwXEUJM(node));
+      case 1:
+        return (T) ((String) GeefWaardeString_idFzw$g_H4hz(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

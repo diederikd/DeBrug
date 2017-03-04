@@ -25,12 +25,16 @@ public final class RekenWaarde__BehaviorDescriptor extends BaseBHDescriptor {
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<Double> GeefWaarde_idXSBwowcV5H = new SMethodBuilder<Double>(new SJavaCompoundTypeImpl(Double.TYPE)).name("GeefWaarde").modifiers(SModifiersImpl.create(14, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("XSBwowcV5H").registry(REGISTRY).build();
+  public static final SMethod<String> GeefWaardeString_idFzw$g_H4hz = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("GeefWaardeString").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("Fzw$g_H4hz").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefWaarde_idXSBwowcV5H);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefWaarde_idXSBwowcV5H, GeefWaardeString_idFzw$g_H4hz);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
+  /*package*/ static String GeefWaardeString_idFzw$g_H4hz(@NotNull SNode __thisNode__) {
+    return Double.toString(((double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(__thisNode__)));
+  }
 
   /*package*/ RekenWaarde__BehaviorDescriptor() {
     super(REGISTRY);
@@ -48,6 +52,8 @@ public final class RekenWaarde__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
+      case 1:
+        return (T) ((String) GeefWaardeString_idFzw$g_H4hz(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
