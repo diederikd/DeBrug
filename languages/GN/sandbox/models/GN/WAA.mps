@@ -283,6 +283,9 @@
       <concept id="565938754126315112" name="ObjectiefRecht.structure.EnumeratieWaarde" flags="ng" index="1zyu0$">
         <reference id="565938754126315113" name="element" index="1zyu0_" />
       </concept>
+      <concept id="7168729926833270445" name="ObjectiefRecht.structure.VerwoordingObject" flags="ng" index="1CTTXe">
+        <reference id="7168729926833270446" name="object" index="1CTTXd" />
+      </concept>
       <concept id="2417641230338880953" name="ObjectiefRecht.structure.Onderwerp" flags="ng" index="3D8HDq">
         <child id="3909890012146257601" name="uniekIdentificerendeKenmerken" index="i$vq1" />
         <child id="5266643527326992524" name="kenmerk" index="lYmzI" />
@@ -741,8 +744,14 @@
         <node concept="3pTFDx" id="4yDNEIhrmiU" role="3pTFHC">
           <node concept="3pTFOL" id="4yDNEIhwy77" role="3pTFDw">
             <ref role="3pTFOu" node="6a$JffhOsaC" resolve="Essent" />
-            <node concept="3pTFOh" id="6dWsucb_hsl" role="3pTFOs">
-              <property role="3pTFOg" value="De werkgever met" />
+            <node concept="3pTFOh" id="6dWsucbHFw$" role="3pTFOs">
+              <property role="3pTFOg" value="De" />
+            </node>
+            <node concept="1CTTXe" id="6dWsucbHFw_" role="3pTFOs">
+              <ref role="1CTTXd" node="4ZpB41Rnx4z" resolve="Werkgever" />
+            </node>
+            <node concept="3pTFOh" id="6dWsucbHFwA" role="3pTFOs">
+              <property role="3pTFOg" value="met" />
             </node>
             <node concept="3pTFPU" id="6dWsucb_hsU" role="3pTFOs">
               <ref role="3pTFPT" node="5u1YjWIkoYi" resolve="werkgeversidentificatie" />
@@ -789,8 +798,14 @@
           </node>
           <node concept="3pTFOL" id="6dWsucb_hOv" role="3pTFDw">
             <ref role="3pTFOu" node="6a$JffhOsaC" resolve="Essent" />
-            <node concept="3pTFOh" id="6dWsucb_hP4" role="3pTFOs">
-              <property role="3pTFOg" value="De werkgever met" />
+            <node concept="3pTFOh" id="6dWsucbHFuK" role="3pTFOs">
+              <property role="3pTFOg" value="De" />
+            </node>
+            <node concept="1CTTXe" id="6dWsucbHFuL" role="3pTFOs">
+              <ref role="1CTTXd" node="4ZpB41Rnx4z" resolve="Werkgever" />
+            </node>
+            <node concept="3pTFOh" id="6dWsucbHFuM" role="3pTFOs">
+              <property role="3pTFOg" value="met" />
             </node>
             <node concept="3pTFPU" id="6dWsucb_hPD" role="3pTFOs">
               <ref role="3pTFPT" node="5u1YjWIkoYi" resolve="werkgeversidentificatie" />
@@ -814,7 +829,13 @@
           <node concept="3pTFOL" id="4yDNEIht5ud" role="3pTFDw">
             <ref role="3pTFOu" node="6a$JffhOs1s" resolve="Philips" />
             <node concept="3pTFOh" id="6dWsucb_hVh" role="3pTFOs">
-              <property role="3pTFOg" value="De werkgever met" />
+              <property role="3pTFOg" value="De" />
+            </node>
+            <node concept="1CTTXe" id="6dWsucbHFtb" role="3pTFOs">
+              <ref role="1CTTXd" node="4ZpB41Rnx4z" resolve="Werkgever" />
+            </node>
+            <node concept="3pTFOh" id="6dWsucbHFtX" role="3pTFOs">
+              <property role="3pTFOg" value="met" />
             </node>
             <node concept="3pTFPU" id="6dWsucbAYlh" role="3pTFOs">
               <ref role="3pTFPT" node="5u1YjWIkoYi" resolve="werkgeversidentificatie" />

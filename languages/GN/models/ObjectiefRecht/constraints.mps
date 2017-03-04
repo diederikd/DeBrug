@@ -1096,5 +1096,123 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6dWsucbE1yq">
+    <property role="3GE5qa" value="FeitVerwoording" />
+    <ref role="1M2myG" to="3pw0:6dWsucbAYUH" resolve="VerwoordingObject" />
+    <node concept="1N5Pfh" id="6dWsucbE1yQ" role="1Mr941">
+      <ref role="1N5Vy1" to="3pw0:6dWsucbAYUI" resolve="object" />
+      <node concept="13QW63" id="6dWsucbE22J" role="1N6uqs">
+        <node concept="3clFbS" id="6dWsucbE22L" role="2VODD2">
+          <node concept="3cpWs8" id="6dWsucbE25E" role="3cqZAp">
+            <node concept="3cpWsn" id="6dWsucbE25F" role="3cpWs9">
+              <property role="TrG5h" value="objects" />
+              <node concept="2I9FWS" id="6dWsucbE25G" role="1tU5fm">
+                <ref role="2I9WkF" to="3pw0:GhrpPwHHWz" resolve="Object" />
+              </node>
+              <node concept="2ShNRf" id="6dWsucbE25H" role="33vP2m">
+                <node concept="2T8Vx0" id="6dWsucbE25I" role="2ShVmc">
+                  <node concept="2I9FWS" id="6dWsucbE25J" role="2T96Bj">
+                    <ref role="2I9WkF" to="3pw0:GhrpPwHHWz" resolve="Object" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="Jncv_" id="6dWsucbE25K" role="3cqZAp">
+            <ref role="JncvD" to="3pw0:4yDNEIhjReq" resolve="FeitVerwoording" />
+            <node concept="2rP1CM" id="6dWsucbE25L" role="JncvB" />
+            <node concept="3clFbS" id="6dWsucbE25M" role="Jncv$">
+              <node concept="3clFbF" id="6dWsucbE5Nw" role="3cqZAp">
+                <node concept="2OqwBi" id="6dWsucbE7If" role="3clFbG">
+                  <node concept="37vLTw" id="6dWsucbE5Nv" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6dWsucbE25F" resolve="objects" />
+                  </node>
+                  <node concept="TSZUe" id="6dWsucbE9VH" role="2OqNvi">
+                    <node concept="2OqwBi" id="6dWsucbEb$x" role="25WWJ7">
+                      <node concept="2OqwBi" id="6dWsucbEa$O" role="2Oq$k0">
+                        <node concept="Jnkvi" id="6dWsucbEadJ" role="2Oq$k0">
+                          <ref role="1M0zk5" node="6dWsucbE26d" resolve="feitVerwoording" />
+                        </node>
+                        <node concept="3TrEf2" id="6dWsucbEb0j" role="2OqNvi">
+                          <ref role="3Tt5mk" to="3pw0:4yDNEIhjReP" resolve="instantie" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="6dWsucbEc2Y" role="2OqNvi">
+                        <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="referentieNaarObject" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="JncvC" id="6dWsucbE26d" role="JncvA">
+              <property role="TrG5h" value="feitVerwoording" />
+              <node concept="2jxLKc" id="6dWsucbE26e" role="1tU5fm" />
+            </node>
+          </node>
+          <node concept="Jncv_" id="6dWsucbE26f" role="3cqZAp">
+            <ref role="JncvD" to="3pw0:6dWsucbAYUH" resolve="VerwoordingObject" />
+            <node concept="2rP1CM" id="6dWsucbE26g" role="JncvB" />
+            <node concept="3clFbS" id="6dWsucbE26h" role="Jncv$">
+              <node concept="3cpWs8" id="6dWsucbE26i" role="3cqZAp">
+                <node concept="3cpWsn" id="6dWsucbE26j" role="3cpWs9">
+                  <property role="TrG5h" value="feitVerwoording" />
+                  <node concept="3Tqbb2" id="6dWsucbE26k" role="1tU5fm">
+                    <ref role="ehGHo" to="3pw0:4yDNEIhjReq" resolve="FeitVerwoording" />
+                  </node>
+                  <node concept="10QFUN" id="6dWsucbE26l" role="33vP2m">
+                    <node concept="2OqwBi" id="6dWsucbE26m" role="10QFUP">
+                      <node concept="Jnkvi" id="6dWsucbE26n" role="2Oq$k0">
+                        <ref role="1M0zk5" node="6dWsucbE26O" resolve="verwoordingObject" />
+                      </node>
+                      <node concept="1mfA1w" id="6dWsucbE26o" role="2OqNvi" />
+                    </node>
+                    <node concept="3Tqbb2" id="6dWsucbE26p" role="10QFUM">
+                      <ref role="ehGHo" to="3pw0:4yDNEIhjReq" resolve="FeitVerwoording" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6dWsucbEdOS" role="3cqZAp">
+                <node concept="2OqwBi" id="6dWsucbEdOT" role="3clFbG">
+                  <node concept="37vLTw" id="6dWsucbEdOU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6dWsucbE25F" resolve="objects" />
+                  </node>
+                  <node concept="TSZUe" id="6dWsucbEdOV" role="2OqNvi">
+                    <node concept="2OqwBi" id="6dWsucbEdOW" role="25WWJ7">
+                      <node concept="2OqwBi" id="6dWsucbEdOX" role="2Oq$k0">
+                        <node concept="37vLTw" id="6dWsucbEelH" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6dWsucbE26j" resolve="feitVerwoording" />
+                        </node>
+                        <node concept="3TrEf2" id="6dWsucbEdOZ" role="2OqNvi">
+                          <ref role="3Tt5mk" to="3pw0:4yDNEIhjReP" resolve="instantie" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="6dWsucbEdP0" role="2OqNvi">
+                        <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="referentieNaarObject" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="JncvC" id="6dWsucbE26O" role="JncvA">
+              <property role="TrG5h" value="verwoordingObject" />
+              <node concept="2jxLKc" id="6dWsucbE26P" role="1tU5fm" />
+            </node>
+          </node>
+          <node concept="3cpWs6" id="6dWsucbE26Q" role="3cqZAp">
+            <node concept="2YIFZM" id="6dWsucbE26R" role="3cqZAk">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="37vLTw" id="6dWsucbE26S" role="37wK5m">
+                <ref role="3cqZAo" node="6dWsucbE25F" resolve="objects" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
