@@ -12,11 +12,13 @@ import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.SModifiersImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import java.time.Duration;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import java.time.temporal.ChronoUnit;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -26,8 +28,9 @@ public final class Dagen__BehaviorDescriptor extends BaseBHDescriptor {
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<Double> AantalDagen_idbTj1CmnGUz = new SMethodBuilder<Double>(new SJavaCompoundTypeImpl(Double.TYPE)).name("AantalDagen").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("bTj1CmnGUz").registry(REGISTRY).build();
+  public static final SMethod<Duration> geefDuur_id3JLo1nhiwEa = new SMethodBuilder<Duration>(new SJavaCompoundTypeImpl(Duration.class)).name("geefDuur").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3JLo1nhiwEa").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AantalDagen_idbTj1CmnGUz);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AantalDagen_idbTj1CmnGUz, geefDuur_id3JLo1nhiwEa);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -37,6 +40,9 @@ public final class Dagen__BehaviorDescriptor extends BaseBHDescriptor {
       return Double.valueOf(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cda8L, 0x46db587183b2cda9L, "dagen")));
     }
     return 0;
+  }
+  /*package*/ static Duration geefDuur_id3JLo1nhiwEa(@NotNull SNode __thisNode__) {
+    return Duration.of((long) ((double) Dagen__BehaviorDescriptor.AantalDagen_idbTj1CmnGUz.invoke(__thisNode__)), ChronoUnit.DAYS);
   }
 
   /*package*/ Dagen__BehaviorDescriptor() {
@@ -57,6 +63,8 @@ public final class Dagen__BehaviorDescriptor extends BaseBHDescriptor {
     switch (methodIndex) {
       case 0:
         return (T) ((Double) AantalDagen_idbTj1CmnGUz(node));
+      case 1:
+        return (T) ((Duration) geefDuur_id3JLo1nhiwEa(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

@@ -8,7 +8,6 @@
   <imports>
     <import index="1jct" ref="r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -66,16 +65,11 @@
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="1iCGBv" id="ZvVXY6$UAj" role="3EZMnx">
-        <ref role="1NtTu8" to="1jct:ZvVXY6$Tqf" resolve="referentieNaarAttribuut" />
+        <ref role="1NtTu8" to="1jct:ZvVXY6$Tqf" resolve="referentieNaarKenmerk" />
         <node concept="1sVBvm" id="ZvVXY6$UAl" role="1sWHZn">
-          <node concept="1iCGBv" id="ZvVXY6$UAw" role="2wV5jI">
-            <ref role="1NtTu8" to="uwhu:7rcH1JNvrW7" resolve="kenmerk" />
-            <node concept="1sVBvm" id="ZvVXY6$UAy" role="1sWHZn">
-              <node concept="3F0A7n" id="ZvVXY6$UAD" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
+          <node concept="3F0A7n" id="4f9cC5ovbK" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>

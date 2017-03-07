@@ -1808,6 +1808,30 @@
     <node concept="13hLZK" id="XSBwowfdEl" role="13h7CW">
       <node concept="3clFbS" id="XSBwowfdEm" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="4f9cC5nQw5" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="GeefWaarde" />
+      <property role="DiZV1" value="true" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="XSBwowcV5H" resolve="GeefWaarde" />
+      <node concept="3Tm1VV" id="4f9cC5nQw6" role="1B3o_S" />
+      <node concept="3clFbS" id="4f9cC5nQwb" role="3clF47">
+        <node concept="3cpWs6" id="4f9cC5nQDi" role="3cqZAp">
+          <node concept="2OqwBi" id="4f9cC5nSkH" role="3cqZAk">
+            <node concept="2OqwBi" id="4f9cC5nQPB" role="2Oq$k0">
+              <node concept="13iPFW" id="4f9cC5nQDJ" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4f9cC5nRvc" role="2OqNvi">
+                <ref role="3Tt5mk" to="uwhu:6a$JffhN9KX" resolve="waarde" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="4f9cC5nSCb" role="2OqNvi">
+              <ref role="3TsBF5" to="uwhu:6a$JffhNDwP" resolve="waarde" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P55v" id="4f9cC5nQwc" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="5kuxuwXEnsT">
     <property role="3GE5qa" value="Waarden.Temporelewaarde" />

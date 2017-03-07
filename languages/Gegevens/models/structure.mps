@@ -387,7 +387,7 @@
     <property role="EcuMT" value="2282129504205176806" />
     <property role="TrG5h" value="GeheelGetalWaarde" />
     <property role="3GE5qa" value="Waarden.Rekenwaarde" />
-    <ref role="1TJDcQ" node="1YFKb5t_BZt" resolve="Waarde" />
+    <ref role="1TJDcQ" node="XSBwowcV4J" resolve="RekenWaarde" />
     <node concept="1TJgyj" id="6a$JffhN9KX" role="1TKVEi">
       <property role="IQ2ns" value="7108013867280407613" />
       <property role="20lmBu" value="aggregation" />

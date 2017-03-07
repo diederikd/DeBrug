@@ -541,6 +541,23 @@
   <node concept="13h7C7" id="3r$i4253_uu">
     <property role="3GE5qa" value="ObjectInstantie" />
     <ref role="13h7C2" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+    <node concept="13i0hz" id="4f9cC5bR2h" role="13h7CS">
+      <property role="TrG5h" value="GeefObject" />
+      <node concept="3Tm1VV" id="4f9cC5bR2i" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4f9cC5bRnW" role="3clF45">
+        <ref role="ehGHo" to="3pw0:GhrpPwHHWz" resolve="Object" />
+      </node>
+      <node concept="3clFbS" id="4f9cC5bR2k" role="3clF47">
+        <node concept="3cpWs6" id="4f9cC5bRPi" role="3cqZAp">
+          <node concept="2OqwBi" id="4f9cC5bRyu" role="3cqZAk">
+            <node concept="13iPFW" id="4f9cC5bRoZ" role="2Oq$k0" />
+            <node concept="3TrEf2" id="4f9cC5bRHj" role="2OqNvi">
+              <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="referentieNaarObject" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="3r$i4253ACb" role="13h7CS">
       <property role="TrG5h" value="ToevoegenVanKenmerkenAanInstantie" />
       <node concept="3Tm1VV" id="3r$i4253ACe" role="1B3o_S" />

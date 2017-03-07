@@ -20,9 +20,12 @@
     <classNode extendsClassName="jetbrains.mps.smodel.structure.DefaultExtensionDescriptor" />
   </dependency>
   <dependency className="Simulatie.plugin.Interpreter" file="Interpreter.java">
+    <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.RekenWaarde__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.TemporeleWaarde__BehaviorDescriptor" />
+    <classNode dependClassName="Gegevens.behavior.Waarde__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.waardeJaNee__BehaviorDescriptor" />
+    <classNode dependClassName="ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.plugin.DebugHelper" />
     <classNode dependClassName="Simulatie.plugin.InterpreterFuncties" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.CombinedInterpreter" />
@@ -35,8 +38,11 @@
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterRegistry" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.NullCoverageAnalyzer" />
     <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
@@ -84,8 +90,10 @@
     <classNode extendsClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterBase" />
   </dependency>
   <dependency className="Simulatie.plugin.InterpreterInterpreterExpressie" file="InterpreterInterpreterExpressie.java">
+    <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.GeheelGetalWaarde__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.RekenWaarde__BehaviorDescriptor" />
+    <classNode dependClassName="Gegevens.behavior.TemporeleWaarde__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.plugin.DebugHelper" />
     <classNode dependClassName="Simulatie.plugin.Interpreter" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
@@ -103,6 +111,8 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.RuntimeException" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.time.Duration" />
+    <classNode dependClassName="java.time.temporal.Temporal" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
@@ -176,6 +186,7 @@
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpretBeforeRelationshipImpl" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException" />
+    <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.RuntimeException" />

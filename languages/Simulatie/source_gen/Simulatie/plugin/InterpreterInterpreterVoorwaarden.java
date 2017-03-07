@@ -31,13 +31,20 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          Object resultvoorwaarden = true;
           DebugHelper.printContext("Voorwaarden", node, context);
-          Object object = null;
+          Object resultaatvoorwaarde = null;
           for (SNode voorwaarde : ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fce8L, 0x42e9dab3410fd0cL, "voorwaarden")))) {
             DebugHelper.printContext("Voorwaarde", voorwaarde, context);
-            object = context.getRootInterpreter().evaluate(voorwaarde, context, coverage);
+            resultaatvoorwaarde = context.getRootInterpreter().evaluate(voorwaarde, context, coverage);
+            if (resultaatvoorwaarde != null) {
+              resultvoorwaarden = ((Boolean) resultvoorwaarden) && ((Boolean) resultaatvoorwaarde);
+            }
+            if (resultaatvoorwaarde == null) {
+              resultaatvoorwaarde = false;
+            }
           }
-          return object;
+          return resultvoorwaarden;
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {

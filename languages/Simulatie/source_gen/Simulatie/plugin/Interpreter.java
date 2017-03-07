@@ -17,9 +17,14 @@ import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import com.mbeddr.mpsutil.interpreter.rt.IEnvironment;
 import com.mbeddr.mpsutil.interpreter.rt.INodeValueCache;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
+import Gegevens.behavior.Waarde__BehaviorDescriptor;
 import Gegevens.behavior.RekenWaarde__BehaviorDescriptor;
 import Gegevens.behavior.waardeJaNee__BehaviorDescriptor;
 import Gegevens.behavior.TemporeleWaarde__BehaviorDescriptor;
+import Datum.behavior.Duur__BehaviorDescriptor;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 
 public class Interpreter {
   private static IInterpreter interpreter;
@@ -76,33 +81,81 @@ public class Interpreter {
   }
 
   public static Object GeefWaardeVanVariabele(SNode variabele) {
+    System.out.println("Variabele object " + SNodeOperations.getParent(SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk"))));
+    System.out.println("Variabele kenmerk: " + SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+
     // Variabele verwijst naar kenmerk van onderwerp? 
-    SNode waarde = InterpreterFuncties.GeefWaardeVanKenmerk(Interpreter.InstantieVanOnderwerpVanDeHandeling(), SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+    SNode waarde = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fddL, "Gegevens.structure.Waarde"));
+    SNode objectVanVariabele = (SNode) SNodeOperations.getParent(SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+    if (objectVanVariabele == InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanOnderwerpVanDeHandeling())) {
+      waarde = InterpreterFuncties.GeefWaardeVanKenmerk(Interpreter.InstantieVanOnderwerpVanDeHandeling(), SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+    }
+    // Variabele verwijst niet naar kenmerk van onderwerp? 
+    if (SNodeOperations.getParent(SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk"))) != InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanOnderwerpVanDeHandeling())) {
+      SNode kenmerk = GeefKenmerkMetVerwijzingNaarObject(InstantieVanOnderwerpVanDeHandeling(), objectVanVariabele);
+      waarde = InterpreterFuncties.GeefWaardeVanKenmerk(Interpreter.InstantieVanOnderwerpVanDeHandeling(), kenmerk);
+      SNode objectWaarde = (SNode) waarde;
+      waarde = InterpreterFuncties.GeefWaardeVanKenmerk(SLinkOperations.getTarget(objectWaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, 0x4ccbd8fc9e467d9L, "object")), SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+    }
+
+    System.out.println("Type van variabele : " + waarde);
+
     {
       final SNode rekenWaarde = waarde;
       if (SNodeOperations.isInstanceOf(rekenWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde"))) {
+        System.out.println("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(rekenWaarde));
         return (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(rekenWaarde);
       }
     }
     {
       final SNode instantieVanObject = waarde;
       if (SNodeOperations.isInstanceOf(instantieVanObject, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"))) {
+        System.out.println("Waarde van variabele : " + instantieVanObject);
         return instantieVanObject;
       }
     }
     {
       final SNode jaNeeWaarde = waarde;
       if (SNodeOperations.isInstanceOf(jaNeeWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac54cL, "Gegevens.structure.JaNeeWaarde"))) {
+        System.out.println("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(jaNeeWaarde));
         return waardeJaNee__BehaviorDescriptor.geefWaarde_id4yDNEIh2toX.invoke(SLinkOperations.getTarget(jaNeeWaarde, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac54cL, 0x4ce3b5e2c38f70fcL, "waarde")));
       }
     }
     {
       final SNode temporeleWaarde = waarde;
       if (SNodeOperations.isInstanceOf(temporeleWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde"))) {
+        System.out.println("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(temporeleWaarde));
         return TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(temporeleWaarde);
       }
     }
+    {
+      final SNode duur = waarde;
+      if (SNodeOperations.isInstanceOf(duur, MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cba0L, "Datum.structure.Duur"))) {
+        System.out.println("Waarde van variabele : " + duur);
+        return Duur__BehaviorDescriptor.geefDuurString_idCRumITzgHT.invoke(duur);
+      }
+    }
+    {
+      final SNode objectWaarde = waarde;
+      if (SNodeOperations.isInstanceOf(objectWaarde, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, "ObjectiefRecht.structure.ObjectWaarde"))) {
+        System.out.println("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(objectWaarde));
+        return SLinkOperations.getTarget(objectWaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, 0x4ccbd8fc9e467d9L, "object"));
+      }
+    }
     return null;
+  }
+
+  public static SNode GeefKenmerkMetVerwijzingNaarObject(SNode instantieVanObject, SNode object) {
+    SNode kenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, "ObjectiefRecht.structure.Kenmerk"));
+    for (SNode waardeVanKenmerk : ListSequence.fromList(SLinkOperations.getChildren(instantieVanObject, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca15L, "waardeVanKenmerken")))) {
+      {
+        final SNode Typeobject = SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"));
+        if (SNodeOperations.isInstanceOf(Typeobject, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L, "ObjectiefRecht.structure.Object"))) {
+          kenmerk = SLinkOperations.getTarget(SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk"));
+        }
+      }
+    }
+    return kenmerk;
   }
   public static double SomVan(double getal) {
     return 40;

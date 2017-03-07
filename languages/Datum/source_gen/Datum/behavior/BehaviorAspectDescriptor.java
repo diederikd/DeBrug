@@ -12,6 +12,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
+  private final BHDescriptor myDuur__BehaviorDescriptor = new Duur__BehaviorDescriptor();
   private final BHDescriptor myUren__BehaviorDescriptor = new Uren__BehaviorDescriptor();
   private final BHDescriptor myDagen__BehaviorDescriptor = new Dagen__BehaviorDescriptor();
   private final BHDescriptor myMinuten__BehaviorDescriptor = new Minuten__BehaviorDescriptor();
@@ -29,7 +30,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     {
       SAbstractConcept cncpt = concept;
-      Integer preIndex = indices_846f5o_a0m.get(cncpt);
+      Integer preIndex = indices_846f5o_a0n.get(cncpt);
       int switchIndex = (preIndex == null ? -1 : preIndex);
       switch (switchIndex) {
         case 0:
@@ -49,30 +50,35 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
           break;
         case 3:
           if (true) {
-            return myJaren__BehaviorDescriptor;
+            return myDuur__BehaviorDescriptor;
           }
           break;
         case 4:
           if (true) {
-            return myMaanden__BehaviorDescriptor;
+            return myJaren__BehaviorDescriptor;
           }
           break;
         case 5:
           if (true) {
-            return myMinuten__BehaviorDescriptor;
+            return myMaanden__BehaviorDescriptor;
           }
           break;
         case 6:
           if (true) {
-            return mySeconden__BehaviorDescriptor;
+            return myMinuten__BehaviorDescriptor;
           }
           break;
         case 7:
           if (true) {
-            return myTijd__BehaviorDescriptor;
+            return mySeconden__BehaviorDescriptor;
           }
           break;
         case 8:
+          if (true) {
+            return myTijd__BehaviorDescriptor;
+          }
+          break;
+        case 9:
           if (true) {
             return myUren__BehaviorDescriptor;
           }
@@ -91,5 +97,5 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0m = buildConceptIndices(MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cda8L, "Datum.structure.Dagen"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, "Datum.structure.Datum"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f32fL, "Datum.structure.DatumTijd"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b322e6L, "Datum.structure.Jaren"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cdcbL, "Datum.structure.Maanden"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cdc8L, "Datum.structure.Minuten"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b32322L, "Datum.structure.Seconden"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, "Datum.structure.Tijd"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cba1L, "Datum.structure.Uren"));
+  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0n = buildConceptIndices(MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cda8L, "Datum.structure.Dagen"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x630944a3c415c8c3L, "Datum.structure.Datum"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f32fL, "Datum.structure.DatumTijd"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cba0L, "Datum.structure.Duur"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b322e6L, "Datum.structure.Jaren"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cdcbL, "Datum.structure.Maanden"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cdc8L, "Datum.structure.Minuten"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b32322L, "Datum.structure.Seconden"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, "Datum.structure.Tijd"), MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cba1L, "Datum.structure.Uren"));
 }

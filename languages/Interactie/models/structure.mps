@@ -9,7 +9,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" implicit="true" />
+    <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -67,9 +67,9 @@
     <node concept="1TJgyj" id="ZvVXY6$Tqf" role="1TKVEi">
       <property role="IQ2ns" value="1143896573689960079" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="referentieNaarAttribuut" />
+      <property role="20kJfa" value="referentieNaarKenmerk" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="uwhu:7rcH1JNvmQQ" resolve="AttribuutMetReferentieNaarKenmerk" />
+      <ref role="20lvS9" to="3pw0:4$mS69sVSy3" resolve="Kenmerk" />
     </node>
     <node concept="1TJgyj" id="3OGX4DbygwA" role="1TKVEi">
       <property role="IQ2ns" value="4408166735220901926" />

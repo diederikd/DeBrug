@@ -9,7 +9,7 @@ package Datum.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class Duur_BehaviorDescriptor {
+public abstract class Duur_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }
