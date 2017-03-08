@@ -19,6 +19,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ll8w" ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)" implicit="true" />
     <import index="cyn4" ref="r:ec7c7ee2-8dd8-4ba4-92e8-f12d35099d0b(SubjectiefRecht.behavior)" implicit="true" />
+    <import index="8ao0" ref="r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -185,6 +186,7 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -4735,6 +4737,96 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4VhV7ipI_wu" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="CRumITE5PD" role="13h7CS">
+      <property role="TrG5h" value="schoonBerichten" />
+      <node concept="3Tm1VV" id="CRumITE5PE" role="1B3o_S" />
+      <node concept="3cqZAl" id="CRumITEgfO" role="3clF45" />
+      <node concept="3clFbS" id="CRumITE5PG" role="3clF47">
+        <node concept="3clFbF" id="CRumITEhmN" role="3cqZAp">
+          <node concept="2OqwBi" id="CRumITEhWG" role="3clFbG">
+            <node concept="2OqwBi" id="CRumITEhux" role="2Oq$k0">
+              <node concept="13iPFW" id="CRumITEhmM" role="2Oq$k0" />
+              <node concept="3TrEf2" id="CRumITEhDm" role="2OqNvi">
+                <ref role="3Tt5mk" to="xhlk:CRumITBpEO" resolve="lijstmetberichten" />
+              </node>
+            </node>
+            <node concept="1PgB_6" id="CRumITErWJ" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="CRumITEttY" role="3cqZAp">
+          <node concept="2OqwBi" id="CRumITEujK" role="3clFbG">
+            <node concept="2OqwBi" id="CRumITEtD_" role="2Oq$k0">
+              <node concept="13iPFW" id="CRumITEttW" role="2Oq$k0" />
+              <node concept="3TrEf2" id="CRumITEtYM" role="2OqNvi">
+                <ref role="3Tt5mk" to="xhlk:CRumITBpEO" resolve="lijstmetberichten" />
+              </node>
+            </node>
+            <node concept="2DeJnY" id="CRumITEuEM" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="CRumITGtjc" role="13h7CS">
+      <property role="TrG5h" value="voegBerichtToe" />
+      <node concept="37vLTG" id="CRumITGC_G" role="3clF46">
+        <property role="TrG5h" value="tekst" />
+        <node concept="17QB3L" id="CRumITGC_U" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="CRumITGtjd" role="1B3o_S" />
+      <node concept="3cqZAl" id="CRumITGCsv" role="3clF45" />
+      <node concept="3clFbS" id="CRumITGtjf" role="3clF47">
+        <node concept="3cpWs8" id="CRumITGCAi" role="3cqZAp">
+          <node concept="3cpWsn" id="CRumITGCAl" role="3cpWs9">
+            <property role="TrG5h" value="bericht" />
+            <node concept="3Tqbb2" id="CRumITGCAh" role="1tU5fm">
+              <ref role="ehGHo" to="8ao0:2IjnF_A6eNj" resolve="Bericht" />
+            </node>
+            <node concept="2ShNRf" id="CRumITGCBF" role="33vP2m">
+              <node concept="3zrR0B" id="CRumITGCBD" role="2ShVmc">
+                <node concept="3Tqbb2" id="CRumITGCBE" role="3zrR0E">
+                  <ref role="ehGHo" to="8ao0:2IjnF_A6eNj" resolve="Bericht" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="CRumITGCCi" role="3cqZAp">
+          <node concept="37vLTI" id="CRumITGDD3" role="3clFbG">
+            <node concept="37vLTw" id="CRumITGDS0" role="37vLTx">
+              <ref role="3cqZAo" node="CRumITGC_G" resolve="tekst" />
+            </node>
+            <node concept="2OqwBi" id="CRumITGCJr" role="37vLTJ">
+              <node concept="37vLTw" id="CRumITGCCg" role="2Oq$k0">
+                <ref role="3cqZAo" node="CRumITGCAl" resolve="bericht" />
+              </node>
+              <node concept="3TrcHB" id="CRumITGCSI" role="2OqNvi">
+                <ref role="3TsBF5" to="8ao0:2IjnF_A6eNk" resolve="berichttekst" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="CRumITGDUt" role="3cqZAp">
+          <node concept="2OqwBi" id="CRumITGGGC" role="3clFbG">
+            <node concept="2OqwBi" id="CRumITGEEU" role="2Oq$k0">
+              <node concept="2OqwBi" id="CRumITGE2n" role="2Oq$k0">
+                <node concept="13iPFW" id="CRumITGDUr" role="2Oq$k0" />
+                <node concept="3TrEf2" id="CRumITGEn$" role="2OqNvi">
+                  <ref role="3Tt5mk" to="xhlk:CRumITBpEO" resolve="lijstmetberichten" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="CRumITGFcd" role="2OqNvi">
+                <ref role="3TtcxE" to="8ao0:2IjnF_A6eNZ" resolve="berichten" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="CRumITGIo6" role="2OqNvi">
+              <node concept="37vLTw" id="CRumITGIBx" role="25WWJ7">
+                <ref role="3cqZAo" node="CRumITGCAl" resolve="bericht" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="3d6QfrgxoSB" role="13h7CW">
       <node concept="3clFbS" id="3d6QfrgxoSC" role="2VODD2" />

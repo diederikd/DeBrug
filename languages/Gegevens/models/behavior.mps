@@ -10,6 +10,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" />
     <import index="rwnv" ref="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)" />
+    <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -148,6 +149,7 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -2239,6 +2241,90 @@
         </node>
       </node>
       <node concept="17QB3L" id="Fzw$g_HvKy" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="CRumITWPrd">
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="13h7C2" to="uwhu:CRumITWPqD" resolve="DuurWaarde" />
+    <node concept="13hLZK" id="CRumITWPre" role="13h7CW">
+      <node concept="3clFbS" id="CRumITWPrf" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="CRumIU3iNh" role="13h7CS">
+      <property role="TrG5h" value="geefWaardeDuur" />
+      <node concept="3Tm1VV" id="CRumIU3iNi" role="1B3o_S" />
+      <node concept="3uibUv" id="CRumIU3lZo" role="3clF45">
+        <ref role="3uigEE" to="28m1:~Duration" resolve="Duration" />
+      </node>
+      <node concept="3clFbS" id="CRumIU3iNk" role="3clF47">
+        <node concept="3clFbJ" id="CRumIU3mMe" role="3cqZAp">
+          <node concept="2OqwBi" id="CRumIU3n_h" role="3clFbw">
+            <node concept="2OqwBi" id="CRumIU3mX$" role="2Oq$k0">
+              <node concept="13iPFW" id="CRumIU3mMy" role="2Oq$k0" />
+              <node concept="3TrEf2" id="CRumIU3nbt" role="2OqNvi">
+                <ref role="3Tt5mk" to="uwhu:CRumITWPqE" resolve="duur" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="CRumIU3nPr" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="CRumIU3mMg" role="3clFbx">
+            <node concept="3cpWs6" id="CRumIU3nTQ" role="3cqZAp">
+              <node concept="2OqwBi" id="CRumIU3pkl" role="3cqZAk">
+                <node concept="2OqwBi" id="CRumIU3oAe" role="2Oq$k0">
+                  <node concept="13iPFW" id="CRumIU3omV" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="CRumIU3oSk" role="2OqNvi">
+                    <ref role="3Tt5mk" to="uwhu:CRumITWPqE" resolve="duur" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="CRumIU3pAD" role="2OqNvi">
+                  <ref role="37wK5l" to="rwnv:3JLo1nhiwEa" resolve="geefDuur" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="CRumIU3pO1" role="3cqZAp">
+          <node concept="10Nm6u" id="CRumIU3q1u" role="3cqZAk" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="CRumITWPro" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="GeefWaardeString" />
+      <ref role="13i0hy" node="Fzw$g_H4hz" resolve="GeefWaardeString" />
+      <node concept="3Tm1VV" id="CRumITWPrp" role="1B3o_S" />
+      <node concept="3clFbS" id="CRumITWPrs" role="3clF47">
+        <node concept="3clFbJ" id="CRumITWPrE" role="3cqZAp">
+          <node concept="2OqwBi" id="CRumITWQeH" role="3clFbw">
+            <node concept="2OqwBi" id="CRumITWPB0" role="2Oq$k0">
+              <node concept="13iPFW" id="CRumITWPrY" role="2Oq$k0" />
+              <node concept="3TrEf2" id="CRumITWPOT" role="2OqNvi">
+                <ref role="3Tt5mk" to="uwhu:CRumITWPqE" resolve="duur" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="CRumITWQGg" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="CRumITWPrG" role="3clFbx">
+            <node concept="3cpWs6" id="CRumITWQKF" role="3cqZAp">
+              <node concept="2OqwBi" id="CRumITWRKo" role="3cqZAk">
+                <node concept="2OqwBi" id="CRumITWR4C" role="2Oq$k0">
+                  <node concept="13iPFW" id="CRumITWQPl" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="CRumITWRmI" role="2OqNvi">
+                    <ref role="3Tt5mk" to="uwhu:CRumITWPqE" resolve="duur" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="CRumITWS2G" role="2OqNvi">
+                  <ref role="37wK5l" to="rwnv:CRumITzgHT" resolve="geefDuurString" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="CRumITWSg2" role="3cqZAp">
+          <node concept="Xl_RD" id="CRumITWSmV" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="CRumITWPrt" role="3clF45" />
     </node>
   </node>
 </model>

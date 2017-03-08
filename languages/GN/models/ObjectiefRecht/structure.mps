@@ -1225,20 +1225,6 @@
       <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
     </node>
   </node>
-  <node concept="1TIwiD" id="gIBqGO4fO9">
-    <property role="EcuMT" value="301351583718898953" />
-    <property role="3GE5qa" value="Voorwaarden" />
-    <property role="TrG5h" value="EnkeleVoorwaarde" />
-    <ref role="1TJDcQ" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
-    <node concept="1TJgyj" id="gIBqGO4fOa" role="1TKVEi">
-      <property role="IQ2ns" value="301351583718898954" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="voorwaarde" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="20D4HrzEWvY" resolve="AbstracteVoorwaarde" />
-    </node>
-    <node concept="asaX9" id="5kuxuwX1n8X" role="lGtFl" />
-  </node>
   <node concept="1TIwiD" id="1KpaLv9zVxq">
     <property role="EcuMT" value="2024696888645630042" />
     <property role="TrG5h" value="Conditie" />
@@ -1898,6 +1884,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="GhrpPwHHWz" resolve="Object" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="CRumITUQ3J">
+    <property role="EcuMT" value="736190567686037743" />
+    <property role="3GE5qa" value="KenmerkType" />
+    <property role="TrG5h" value="DuurType" />
+    <property role="34LRSv" value="duur" />
+    <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
   </node>
 </model>
 

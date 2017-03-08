@@ -1474,5 +1474,15 @@
       <node concept="l2Vlx" id="2IjnF_A4QR5" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="CRumITZ9mA">
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="1XX52x" to="uwhu:CRumITWPqD" resolve="DuurWaarde" />
+    <node concept="3EZMnI" id="CRumITZ9mC" role="2wV5jI">
+      <node concept="3F1sOY" id="CRumITZ9mJ" role="3EZMnx">
+        <ref role="1NtTu8" to="uwhu:CRumITWPqE" resolve="duur" />
+      </node>
+      <node concept="l2Vlx" id="CRumITZ9mF" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

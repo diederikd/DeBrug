@@ -18,10 +18,13 @@ import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
 import java.time.temporal.Temporal;
 import Gegevens.behavior.TemporeleWaarde__BehaviorDescriptor;
 import java.time.Duration;
-import Datum.behavior.Duur__BehaviorDescriptor;
+import Gegevens.behavior.DuurWaarde__BehaviorDescriptor;
+import Gegevens.behavior.Waarde__BehaviorDescriptor;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
 import com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo;
+import java.time.LocalDate;
+import java.time.ZoneId;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import Gegevens.behavior.GeheelGetalWaarde__BehaviorDescriptor;
 import Gegevens.behavior.RekenWaarde__BehaviorDescriptor;
@@ -35,17 +38,20 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
   }
 
   protected void populateEvaluators(List<? extends IEvaluator> evaluators) {
-    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, "ObjectiefRecht.structure.TenMinsteVoor"), true, new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde").getDeclarationNode()))), new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde").getDeclarationNode()))), new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, 0x4ce3b5e2c36bdf25L, "duur")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cba0L, "Datum.structure.Duur").getDeclarationNode())))) {
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, "ObjectiefRecht.structure.TenMinsteVoor"), true, new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde").getDeclarationNode()))), new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde").getDeclarationNode()))), new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, 0x4ce3b5e2c36bdf25L, "duur")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, "Gegevens.structure.DuurWaarde").getDeclarationNode())))) {
       public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           boolean result = false;
+          Interpreter.voegBerichtToe("Start expressie ligt tenminste <duur> voor (waarde)");
+          DebugHelper.printContext("Temporal1 ligt ten minste <duur> voor temporal2" + " : " + result, node, context);
           Temporal temporal1 = TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"))));
           Temporal temporal2 = TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"))));
-          Duration minimaleduur = Duur__BehaviorDescriptor.geefDuur_id3JLo1nhiwEa.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, 0x4ce3b5e2c36bdf25L, "duur"))));
+          Duration minimaleduur = DuurWaarde__BehaviorDescriptor.geefWaardeDuur_idCRumIU3iNh.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, 0x4ce3b5e2c36bdf25L, "duur"))));
+          Interpreter.voegBerichtToe(Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")))) + " ligt ten minste " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, 0x4ce3b5e2c36bdf25L, "duur")))) + " voor " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")))));
           Duration werkelijkeduur = Duration.between(temporal1, temporal2);
-          if (werkelijkeduur.getSeconds() - minimaleduur.getSeconds() >= 0) {
+          if (werkelijkeduur.getNano() - minimaleduur.getNano() >= 0) {
             result = true;
           }
           DebugHelper.printContext("Ligt ten minste <duur> voor " + temporal1 + temporal2 + " : " + result, node, context);
@@ -53,7 +59,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("ligt ten minste <duur> voor(expressie1[TemporeleWaarde], expressie2[TemporeleWaarde], duur[duur])", node, ex);
+          throw new InterpreterRuntimeException("ligt ten minste <duur> voor(expressie1[TemporeleWaarde], expressie2[TemporeleWaarde], duur[DuurWaarde])", node, ex);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -71,6 +77,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           boolean result = false;
+          Interpreter.voegBerichtToe("Start expressie (variabele) ligt tenminste <variabele> voor (variabele)");
           DebugHelper.printContext("Variabele1 ligt ten minste <duur> voor variabele2" + " : " + result, node, context);
           Object temporal1 = Interpreter.GeefWaardeVanVariabele(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"))));
           Object temporal2 = Interpreter.GeefWaardeVanVariabele(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"))));
@@ -80,14 +87,15 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
 
             return false;
           }
-          DebugHelper.printContext("Variabele1 ligt ten minste <duur> voor variabele2" + temporal1.toString() + temporal2.toString() + duur.toString() + " : " + result, node, context);
-
+          Interpreter.voegBerichtToe(temporal1.toString() + " ligt ten minste " + duur.toString() + " voor " + temporal2.toString());
           Duration minimaleduur = ((Duration) duur);
-          Duration werkelijkeduur = Duration.between(((Temporal) temporal1), ((Temporal) temporal2));
-          if (werkelijkeduur.getSeconds() - minimaleduur.getSeconds() >= 0) {
+          Interpreter.voegBerichtToe("Minimale duur bepaald");
+          Duration werkelijkeduur = Duration.between(((LocalDate) temporal1).atStartOfDay(ZoneId.systemDefault()).toInstant(), ((LocalDate) temporal2).atStartOfDay(ZoneId.systemDefault()).toInstant());
+          Interpreter.voegBerichtToe("Werkelijke duur bepaald");
+          if (werkelijkeduur.getNano() - minimaleduur.getNano() >= 0) {
             result = true;
           }
-          DebugHelper.printContext("Variabele1 ligt ten minste <duur> voor variabele2" + temporal1.toString() + temporal2.toString() + " : " + result, node, context);
+          Interpreter.voegBerichtToe("Resultaat van " + temporal1.toString() + " ligt ten minste " + duur.toString() + " voor " + temporal2.toString() + " is " + result);
           return result;
         } catch (InterpreterEscapeException ex) {
           throw ex;

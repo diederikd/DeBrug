@@ -25,6 +25,11 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
             return Collections.<ConceptEditor>singletonList(new Bericht_Editor());
           }
           break;
+        case 1:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new LijstMetBerichten_Editor());
+          }
+          break;
         default:
       }
     }
@@ -41,5 +46,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x2b935eb96618ecd3L, "Algemeen.structure.Bericht"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x2b935eb96618ecd3L, "Algemeen.structure.Bericht"), MetaAdapterFactory.getConcept(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x2b935eb96618ecfeL, "Algemeen.structure.LijstMetBerichten"));
 }

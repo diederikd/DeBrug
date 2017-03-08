@@ -30,7 +30,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_DatumUitvoerenHandeling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DeSom = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DelenExpressie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_EnkeleVoorwaarde = new ConceptPresentationBuilder().deprecated().create();
+  private final ConceptPresentation props_DuurType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Enumeratie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_EnumeratieElement = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_EnumeratieType = new ConceptPresentationBuilder().create();
@@ -178,7 +178,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 19:
         return props_DelenExpressie;
       case 20:
-        return props_EnkeleVoorwaarde;
+        return props_DuurType;
       case 21:
         return props_Enumeratie;
       case 22:

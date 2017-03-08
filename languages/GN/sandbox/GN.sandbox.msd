@@ -13,6 +13,7 @@
     <dependency reexport="false">61be2dc6-a140-4def-a592-7499aa2bac19(Datum)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:f856d46f-3338-47a8-8a48-11e26bc535e0:Algemeen" version="0" />
     <language slang="l:61be2dc6-a140-4def-a592-7499aa2bac19:Datum" version="0" />
     <language slang="l:30ef095a-d489-45ff-a80f-456a798ac125:Gegevens" version="0" />
     <language slang="l:c4c9a68e-ce24-4c5b-9241-c819e554f07c:Interactie" version="0" />

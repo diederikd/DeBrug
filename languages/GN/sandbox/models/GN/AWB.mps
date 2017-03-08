@@ -14,12 +14,17 @@
       <concept id="7867191925628288949" name="Simulatie.structure.Simulatie" flags="ng" index="2BMdVE">
         <reference id="7867191925628478847" name="rechtssubject1" index="2BLsgw" />
         <reference id="7867191925628437242" name="casus" index="2BMAe_" />
+        <reference id="736190567687680580" name="gegevenshuishouding" index="2KcKGJ" />
         <reference id="2222626598059533343" name="rechtssubject2" index="1Nt3W2" />
         <child id="3172654291078996041" name="datumtijdlaatstehandeling" index="22TAwd" />
         <child id="7431672735427965832" name="datumtijdvanstartvandeSimulatie" index="d0i_M" />
         <child id="7867191925628603759" name="rechtspositie" index="2BLYKK" />
         <child id="3694879098876164254" name="datumtijdvaninitialisatie" index="3zKq1C" />
         <child id="3694879098862050847" name="uitvoerbarehandelingen2" index="3WXGrD" />
+      </concept>
+      <concept id="7496157647699367134" name="Simulatie.structure.Gegevenshuishouding" flags="ng" index="1ztmtO">
+        <child id="3139957515583339108" name="rechtshandelingen" index="1dIIjt" />
+        <child id="3139957515586752450" name="rechtsbetrekkingen" index="1dND5V" />
       </concept>
       <concept id="3694879098862050844" name="Simulatie.structure.ReferentieNaarRechtshandeling" flags="ng" index="3WXGrE">
         <reference id="3694879098862050845" name="rechtshandeling" index="3WXGrF" />
@@ -33,6 +38,8 @@
       <concept id="7136310554705381515" name="SubjectiefRecht.structure.Rechtssubject" flags="ng" index="2B78KC">
         <reference id="2464168203968430668" name="rol" index="yqVAx" />
       </concept>
+      <concept id="3139957515581586222" name="SubjectiefRecht.structure.LijstMetRechtsbetrekkingen" flags="ng" index="1dBqmn" />
+      <concept id="3139957515581586196" name="SubjectiefRecht.structure.LijstMetRechtshandelingen" flags="ng" index="1dBqmH" />
     </language>
     <language id="61be2dc6-a140-4def-a592-7499aa2bac19" name="Datum">
       <concept id="7136310554705381571" name="Datum.structure.Datum" flags="ng" index="2B78Lw">
@@ -853,6 +860,7 @@
     <ref role="2BMAe_" node="5Bacij9tPqm" resolve="Subjectief AWB" />
     <ref role="2BLsgw" node="28MuYO0sXzN" resolve="Diederik" />
     <ref role="1Nt3W2" node="28MuYO0sXzP" resolve="UWV" />
+    <ref role="2KcKGJ" node="CRumIU2vtI" resolve="Gegevenshuishouding AWB" />
     <node concept="LeFwQ" id="5Bacij9tPq2" role="d0i_M">
       <node concept="2B78Lw" id="5Bacij9tPq3" role="LeFwF">
         <property role="2B78LB" value="24" />
@@ -905,6 +913,11 @@
       <property role="TrG5h" value="UWV" />
       <ref role="yqVAx" node="3d6QfrhoinP" resolve="Bestuursorgaaan" />
     </node>
+  </node>
+  <node concept="1ztmtO" id="CRumIU2vtI">
+    <property role="TrG5h" value="Gegevenshuishouding AWB" />
+    <node concept="1dBqmH" id="CRumIU2vtJ" role="1dIIjt" />
+    <node concept="1dBqmn" id="CRumIU2vtK" role="1dND5V" />
   </node>
 </model>
 

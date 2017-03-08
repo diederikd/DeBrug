@@ -10,11 +10,11 @@
     <import index="gcgs" ref="r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)" />
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" />
     <import index="tpdt" ref="r:00000000-0000-4000-0000-011c895902dd(jetbrains.mps.baseLanguage.blTypes.structure)" />
+    <import index="8ao0" ref="r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -37,9 +37,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -59,6 +56,13 @@
       <property role="20kJfa" value="casus" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="gcgs:6c9haf45sNq" resolve="Casus" />
+    </node>
+    <node concept="1TJgyj" id="CRumIU1794" role="1TKVEi">
+      <property role="IQ2ns" value="736190567687680580" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="gegevenshuishouding" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6w7GUCbsHju" resolve="Gegevenshuishouding" />
     </node>
     <node concept="1TJgyj" id="6OHSlZaU2lZ" role="1TKVEi">
       <property role="IQ2ns" value="7867191925628478847" />
@@ -80,14 +84,6 @@
       <property role="20kJfa" value="rechtspositie" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6OHSlZaUlix" resolve="Informatiepositie" />
-    </node>
-    <node concept="1TJgyj" id="4pem8DK4Yi1" role="1TKVEi">
-      <property role="IQ2ns" value="5066083982447469697" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="uitvoerbarehandelingen" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
-      <node concept="asaX9" id="2rhLMRp3vaO" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="3d6QfrfG1Sv" role="1TKVEi">
       <property role="IQ2ns" value="3694879098862050847" />
@@ -127,6 +123,12 @@
       <property role="20lbJX" value="0..1" />
       <property role="20kJfa" value="uittevoerenhandeling" />
       <ref role="20lvS9" node="5RiSaxyNDdp" resolve="UitTeVoerenHandeling" />
+    </node>
+    <node concept="1TJgyj" id="CRumITBpEO" role="1TKVEi">
+      <property role="IQ2ns" value="736190567680940724" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lijstmetberichten" />
+      <ref role="20lvS9" to="8ao0:2IjnF_A6eNY" resolve="LijstMetBerichten" />
     </node>
   </node>
   <node concept="1TIwiD" id="6OHSlZaUlix">

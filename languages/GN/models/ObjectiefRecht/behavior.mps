@@ -1126,6 +1126,72 @@
                 <node concept="2jxLKc" id="3r$i4253AE6" role="1tU5fm" />
               </node>
             </node>
+            <node concept="Jncv_" id="CRumITURtq" role="3cqZAp">
+              <ref role="JncvD" to="3pw0:CRumITUQ3J" resolve="DuurType" />
+              <node concept="2OqwBi" id="CRumITURtr" role="JncvB">
+                <node concept="2GrUjf" id="CRumITURts" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="3r$i4253ACh" resolve="kenmerk" />
+                </node>
+                <node concept="3TrEf2" id="CRumITURtt" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3pw0:5qTpXpBmyqf" resolve="type" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="CRumITURtu" role="Jncv$">
+                <node concept="3cpWs8" id="CRumITURtv" role="3cqZAp">
+                  <node concept="3cpWsn" id="CRumITURtw" role="3cpWs9">
+                    <property role="TrG5h" value="duurWaarde" />
+                    <node concept="3Tqbb2" id="CRumITURtx" role="1tU5fm">
+                      <ref role="ehGHo" to="uwhu:CRumITWPqD" resolve="DuurWaarde" />
+                    </node>
+                    <node concept="2ShNRf" id="CRumITURty" role="33vP2m">
+                      <node concept="3zrR0B" id="CRumITURtz" role="2ShVmc">
+                        <node concept="3Tqbb2" id="CRumITURt$" role="3zrR0E">
+                          <ref role="ehGHo" to="uwhu:CRumITWPqD" resolve="DuurWaarde" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1X3_iC" id="CRumITURt_" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="3clFbF" id="CRumITURtA" role="8Wnug">
+                    <node concept="2OqwBi" id="CRumITURtB" role="3clFbG">
+                      <node concept="2OqwBi" id="CRumITURtC" role="2Oq$k0">
+                        <node concept="37vLTw" id="CRumITURtD" role="2Oq$k0">
+                          <ref role="3cqZAo" node="CRumITURtw" resolve="duurWaarde" />
+                        </node>
+                        <node concept="3TrEf2" id="CRumITURtE" role="2OqNvi">
+                          <ref role="3Tt5mk" to="uwhu:1YFKb5tAQ9O" resolve="waarde" />
+                        </node>
+                      </node>
+                      <node concept="2DeJnY" id="CRumITURtF" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="CRumITURtG" role="3cqZAp">
+                  <node concept="2OqwBi" id="CRumITURtH" role="3clFbG">
+                    <node concept="2OqwBi" id="CRumITURtI" role="2Oq$k0">
+                      <node concept="37vLTw" id="CRumITURtJ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3r$i4253ACn" resolve="waardeVanKenmerk" />
+                      </node>
+                      <node concept="3TrEf2" id="CRumITURtK" role="2OqNvi">
+                        <ref role="3Tt5mk" to="3pw0:3r$i424SGCh" resolve="waarde" />
+                      </node>
+                    </node>
+                    <node concept="2oxUTD" id="CRumITURtL" role="2OqNvi">
+                      <node concept="37vLTw" id="CRumITURtM" role="2oxUTC">
+                        <ref role="3cqZAo" node="CRumITURtw" resolve="duurWaarde" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="JncvC" id="CRumITURtN" role="JncvA">
+                <property role="TrG5h" value="TypeDuur" />
+                <node concept="2jxLKc" id="CRumITURtO" role="1tU5fm" />
+              </node>
+            </node>
             <node concept="Jncv_" id="vqB$L$qbCr" role="3cqZAp">
               <ref role="JncvD" to="3pw0:5qTpXpBo3vZ" resolve="TijdType" />
               <node concept="2OqwBi" id="vqB$L$qbCs" role="JncvB">
