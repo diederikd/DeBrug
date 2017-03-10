@@ -42,7 +42,7 @@ public final class Uren__BehaviorDescriptor extends BaseBHDescriptor {
     return 0;
   }
   /*package*/ static Duration geefDuur_id3JLo1nhiwEa(@NotNull SNode __thisNode__) {
-    return Duration.of((long) ((double) Uren__BehaviorDescriptor.AantalUren_idbTj1CmnFSe.invoke(__thisNode__)), ChronoUnit.HOURS);
+    return ChronoUnit.HOURS.getDuration().multipliedBy((long) ((double) Uren__BehaviorDescriptor.AantalUren_idbTj1CmnFSe.invoke(__thisNode__)));
   }
 
   /*package*/ Uren__BehaviorDescriptor() {

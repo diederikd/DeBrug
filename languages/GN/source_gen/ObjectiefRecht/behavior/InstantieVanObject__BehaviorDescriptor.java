@@ -33,8 +33,9 @@ public final class InstantieVanObject__BehaviorDescriptor extends BaseBHDescript
 
   public static final SMethod<SNode> GeefObject_id4f9cC5bR2h = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("GeefObject").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("4f9cC5bR2h").registry(REGISTRY).build();
   public static final SMethod<Void> ToevoegenVanKenmerkenAanInstantie_id3r$i4253ACb = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ToevoegenVanKenmerkenAanInstantie").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3r$i4253ACb").registry(REGISTRY).build();
+  public static final SMethod<SNode> GeefWaardeVanKenmerk_idFR9FxGLp3H = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("GeefWaardeVanKenmerk").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("FR9FxGLp3H").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefObject_id4f9cC5bR2h, ToevoegenVanKenmerkenAanInstantie_id3r$i4253ACb);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefObject_id4f9cC5bR2h, ToevoegenVanKenmerkenAanInstantie_id3r$i4253ACb, GeefWaardeVanKenmerk_idFR9FxGLp3H);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -140,6 +141,14 @@ public final class InstantieVanObject__BehaviorDescriptor extends BaseBHDescript
       ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca15L, "waardeVanKenmerken"))).addElement(waardeVanKenmerk);
     }
   }
+  /*package*/ static SNode GeefWaardeVanKenmerk_idFR9FxGLp3H(@NotNull SNode __thisNode__, SNode kenmerk) {
+    for (SNode waardeVanKenmerk : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca15L, "waardeVanKenmerken")))) {
+      if (SLinkOperations.getTarget(SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")) == kenmerk) {
+        return SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde"));
+      }
+    }
+    return null;
+  }
 
   /*package*/ InstantieVanObject__BehaviorDescriptor() {
     super(REGISTRY);
@@ -162,6 +171,8 @@ public final class InstantieVanObject__BehaviorDescriptor extends BaseBHDescript
       case 1:
         ToevoegenVanKenmerkenAanInstantie_id3r$i4253ACb(node);
         return null;
+      case 2:
+        return (T) ((SNode) GeefWaardeVanKenmerk_idFR9FxGLp3H(node, (SNode) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

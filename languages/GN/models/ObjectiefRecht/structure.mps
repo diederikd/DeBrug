@@ -1615,12 +1615,19 @@
     <node concept="PrWs8" id="jcJoZ9JaUV" role="PzmwI">
       <ref role="PrY4T" node="4NzHub3_orp" resolve="IUnaireExpressie" />
     </node>
-    <node concept="1TJgyj" id="4yDNEIgM43I" role="1TKVEi">
-      <property role="IQ2ns" value="5235943278058684654" />
-      <property role="20lmBu" value="reference" />
+    <node concept="1TJgyj" id="FR9FxGqhab" role="1TKVEi">
+      <property role="IQ2ns" value="790142833161474699" />
+      <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="kenmerk" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4$mS69sVSy3" resolve="Kenmerk" />
+      <ref role="20lvS9" node="7rcH1JNxHPY" resolve="Variabele" />
+    </node>
+    <node concept="1TJgyj" id="FR9FxGDSPP" role="1TKVEi">
+      <property role="IQ2ns" value="790142833165569397" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="meervoudigkenmerk" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7rcH1JNxHPY" resolve="Variabele" />
     </node>
   </node>
   <node concept="1TIwiD" id="jcJoZ9LTgl">

@@ -27,6 +27,8 @@ import java.time.LocalDate;
 import Gegevens.behavior.TemporeleWaarde__BehaviorDescriptor;
 import Gegevens.behavior.DuurWaarde__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import java.util.List;
+import java.util.ArrayList;
 import Simulatie.behavior.Simulatie__BehaviorDescriptor;
 
 public class Interpreter {
@@ -156,6 +158,13 @@ public class Interpreter {
         return SLinkOperations.getTarget(objectWaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, 0x4ccbd8fc9e467d9L, "object"));
       }
     }
+    {
+      final SNode meervoudigeObjectWaarde = waarde;
+      if (SNodeOperations.isInstanceOf(meervoudigeObjectWaarde, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba22fL, "ObjectiefRecht.structure.MeervoudigeObjectWaarde"))) {
+        System.out.println("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(meervoudigeObjectWaarde));
+        return meervoudigeObjectWaarde;
+      }
+    }
     return null;
   }
 
@@ -173,9 +182,18 @@ public class Interpreter {
     }
     return kenmerk;
   }
-  public static double SomVan(double getal) {
-    return 40;
+  public static List<SNode> GeefLijstVanInstanties(SNode variabele, SNode meervoudigeVariabele) {
+    List<SNode> result = new ArrayList<SNode>();
+    Interpreter.voegBerichtToe("Geef lijst van instanties van variabele " + variabele + " en meervoudige variabele " + meervoudigeVariabele);
+    Object instantieVanObject = GeefWaardeVanVariabele(variabele);
+    Interpreter.voegBerichtToe("Waarde van variabele " + instantieVanObject);
+    SNode meervoudigeObjectWaarde = (SNode) GeefWaardeVanVariabele(meervoudigeVariabele);
+    for (SNode referentieNaarInstantiesVanObject : ListSequence.fromList(SLinkOperations.getChildren(meervoudigeObjectWaarde, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba22fL, 0x5dd2e0a8636ba251L, "instantiesVanObject")))) {
+      ListSequence.fromList(result).addElement(SLinkOperations.getTarget(referentieNaarInstantiesVanObject, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba231L, 0x5dd2e0a8636ba232L, "instantieVanObject")));
+    }
+    return result;
   }
+
   public static void voegBerichtToe(String tekst) {
     Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, tekst);
   }

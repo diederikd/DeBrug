@@ -42,7 +42,7 @@ public final class Maanden__BehaviorDescriptor extends BaseBHDescriptor {
     return 0;
   }
   /*package*/ static Duration geefDuur_id3JLo1nhiwEa(@NotNull SNode __thisNode__) {
-    return Duration.of((long) ((double) Maanden__BehaviorDescriptor.AantalMaanden_idbTj1CmnGi4.invoke(__thisNode__)), ChronoUnit.MONTHS);
+    return ChronoUnit.MONTHS.getDuration().multipliedBy((long) ((double) Maanden__BehaviorDescriptor.AantalMaanden_idbTj1CmnGi4.invoke(__thisNode__)));
   }
 
   /*package*/ Maanden__BehaviorDescriptor() {

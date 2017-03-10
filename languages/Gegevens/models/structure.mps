@@ -379,9 +379,6 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="Waarden" />
     <ref role="1TJDcQ" node="4rrm763g8LU" resolve="AbstracteWaarde" />
-    <node concept="PrWs8" id="56OUB0WhhjH" role="PzmwI">
-      <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1YFKb5t_BZA">
     <property role="EcuMT" value="2282129504205176806" />
@@ -576,6 +573,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7f8Xt4VfQqX" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4NzHub3zR32">
     <property role="EcuMT" value="5540471952144036034" />

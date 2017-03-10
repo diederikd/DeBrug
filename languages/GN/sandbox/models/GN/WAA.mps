@@ -125,6 +125,9 @@
       <concept id="5105771847118693094" name="Datum.structure.Jaren" flags="ng" index="35q7En">
         <property id="5105771847118693098" name="jaren" index="35q7Er" />
       </concept>
+      <concept id="5105771847118670753" name="Datum.structure.Uren" flags="ng" index="35qpfg">
+        <property id="5105771847118670754" name="uren" index="35qpfj" />
+      </concept>
       <concept id="5105771847118671307" name="Datum.structure.Maanden" flags="ng" index="35qpmU">
         <property id="5105771847118671308" name="maanden" index="35qpmX" />
       </concept>
@@ -262,7 +265,8 @@
         <reference id="345859696665847769" name="object" index="3dadDm" />
       </concept>
       <concept id="345859696663244474" name="ObjectiefRecht.structure.DeSom" flags="ng" index="3ds1cP">
-        <reference id="5235943278058684654" name="kenmerk" index="3oooT5" />
+        <child id="790142833165569397" name="meervoudigkenmerk" index="1AkaJd" />
+        <child id="790142833161474699" name="kenmerk" index="1ABzgN" />
       </concept>
       <concept id="2024696888646214736" name="ObjectiefRecht.structure.IsGelijk" flags="ng" index="3lwoX7">
         <child id="2024696888646214737" name="expressie1" index="3lwoX6" />
@@ -1802,7 +1806,7 @@
           <property role="2B78L_" value="1" />
           <property role="2B78LE" value="1000" />
         </node>
-        <node concept="QqSuW" id="2aEn9tXJnbk" role="LSO5p" />
+        <node concept="2NR1A4" id="3CWQViUlV8t" role="LSO5p" />
         <node concept="2mcr8I" id="GhrpPwK$fW" role="2mcr89" />
       </node>
       <node concept="lYmzx" id="GhrpPwK$fm" role="lYmzI">
@@ -1919,170 +1923,172 @@
         <ref role="2mbrj7" node="5qTpXpBo3uX" resolve="datum indienen verzoek" />
       </node>
       <node concept="2M1C9q" id="4yDNEIgGSvR" role="2M7YkN">
-        <node concept="2M1C9k" id="CRumITZ9ho" role="2M1C9r">
+        <node concept="2M1C9k" id="3CWQViUlV9e" role="2M1C9r">
           <property role="TrG5h" value="Verzoek 1" />
           <ref role="2M1C9n" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
-          <node concept="2M1C6R" id="CRumITZ9hp" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9hq" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9f" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9g" role="2M1C6S">
               <ref role="2mbrj7" node="3r$i425gxTV" resolve="op grond van arbeidsovereenkomst" />
             </node>
-            <node concept="3dadDn" id="CRumITZJS9" role="2M1C9h">
-              <ref role="3dadDm" node="vqB$L$pQmT" resolve="Arbeidsovereenkomst 1" />
+            <node concept="3dadDn" id="3CWQViUlVp8" role="2M1C9h">
+              <ref role="3dadDm" node="vqB$L$pQnt" resolve="Arbeidsovereenkomst 2" />
             </node>
           </node>
-          <node concept="2M1C6R" id="CRumITZ9hs" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9ht" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9i" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9j" role="2M1C6S">
               <ref role="2mbrj7" node="5qTpXpBo3uX" resolve="datum indienen verzoek" />
             </node>
-            <node concept="12cab2" id="CRumITZ9hu" role="2M1C9h">
-              <node concept="2B78Lw" id="CRumITZJSU" role="12cab5">
+            <node concept="12cab2" id="3CWQViUlV9k" role="2M1C9h">
+              <node concept="2B78Lw" id="3CWQViUlVpT" role="12cab5">
                 <property role="2B78LB" value="1" />
                 <property role="2B78L_" value="1" />
                 <property role="2B78LE" value="2003" />
               </node>
             </node>
           </node>
-          <node concept="2M1C6R" id="CRumITZ9hv" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9hw" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9l" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9m" role="2M1C6S">
               <ref role="2mbrj7" node="3r$i425evlJ" resolve="datum vorige versie van het verzoek" />
             </node>
-            <node concept="12cab2" id="CRumITZ9hx" role="2M1C9h" />
+            <node concept="12cab2" id="3CWQViUlV9n" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9hy" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9hz" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9o" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9p" role="2M1C6S">
               <ref role="2mbrj7" node="7k4OuKunaq" resolve="datum overleg gepleegd" />
             </node>
-            <node concept="12cab2" id="CRumITZ9h$" role="2M1C9h" />
+            <node concept="12cab2" id="3CWQViUlV9q" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9h_" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9hA" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9r" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9s" role="2M1C6S">
               <ref role="2mbrj7" node="4NzHub3x_gh" resolve="datum verzoek ingewilligd" />
             </node>
-            <node concept="12cab2" id="CRumITZ9hB" role="2M1C9h" />
+            <node concept="12cab2" id="3CWQViUlV9t" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9hC" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9hD" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9u" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9v" role="2M1C6S">
               <ref role="2mbrj7" node="4NzHub3x_iv" resolve="datum verzoek afgewezen" />
             </node>
-            <node concept="12cab2" id="CRumITZ9hE" role="2M1C9h" />
+            <node concept="12cab2" id="3CWQViUlV9w" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9hF" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9hG" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9x" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9y" role="2M1C6S">
               <ref role="2mbrj7" node="4NzHub3z6$y" resolve="datum spreiding vastgesteld" />
             </node>
-            <node concept="12cab2" id="CRumITZ9hH" role="2M1C9h" />
+            <node concept="12cab2" id="3CWQViUlV9z" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9hI" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9hJ" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9$" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9_" role="2M1C6S">
               <ref role="2mbrj7" node="4NzHub3z6Fr" resolve="datum spreiding van de uren laatst gewijzigd" />
             </node>
-            <node concept="12cab2" id="CRumITZ9hK" role="2M1C9h" />
+            <node concept="12cab2" id="3CWQViUlV9A" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9hL" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9hM" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9B" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9C" role="2M1C6S">
               <ref role="2mbrj7" node="4NzHub3z6II" resolve="datum beslissing medegedeeld" />
             </node>
-            <node concept="12cab2" id="CRumITZ9hN" role="2M1C9h" />
+            <node concept="12cab2" id="3CWQViUlV9D" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9hO" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9hP" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9E" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9F" role="2M1C6S">
               <ref role="2mbrj7" node="4NzHub3z6Lq" resolve="datum mededelen redenen" />
             </node>
-            <node concept="12cab2" id="CRumITZ9hQ" role="2M1C9h" />
+            <node concept="12cab2" id="3CWQViUlV9G" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9hR" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9hS" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9H" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9I" role="2M1C6S">
               <ref role="2mbrj7" node="4NzHub3z6Cn" resolve="werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken" />
             </node>
-            <node concept="12cgnX" id="CRumITZ9hT" role="2M1C9h" />
+            <node concept="12cgnX" id="3CWQViUlV9J" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9hU" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9hV" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9K" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9L" role="2M1C6S">
               <ref role="2mbrj7" node="4yDNEIgGSlm" resolve="datum belang aangegeven" />
             </node>
-            <node concept="12cab2" id="CRumITZ9hW" role="2M1C9h" />
+            <node concept="12cab2" id="3CWQViUlV9M" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9hX" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9hY" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9N" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9O" role="2M1C6S">
               <ref role="2mbrj7" node="4$mS69sWF6g" resolve="beoogde ingangsdatum van de aanpassing" />
             </node>
-            <node concept="12cab2" id="CRumITZ9hZ" role="2M1C9h" />
+            <node concept="12cab2" id="3CWQViUlV9P" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9i0" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9i1" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9Q" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9R" role="2M1C6S">
               <ref role="2mbrj7" node="GhrpPwK$en" resolve="omvang van de aanpassing" />
             </node>
-            <node concept="12cgkK" id="CRumITZ9i2" role="2M1C9h">
-              <property role="12caaa" value="36" />
+            <node concept="2NL2Z2" id="3CWQViUlV9S" role="2M1C9h">
+              <node concept="35qpfg" id="3CWQViUlVuX" role="2NL2Z1">
+                <property role="35qpfj" value="40" />
+              </node>
             </node>
           </node>
-          <node concept="2M1C6R" id="CRumITZ9i3" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9i4" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9T" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9U" role="2M1C6S">
               <ref role="2mbrj7" node="GhrpPwK$fm" resolve="gewenste spreiding" />
             </node>
-            <node concept="3dadDn" id="CRumITZJYG" role="2M1C9h">
-              <ref role="3dadDm" node="5RiSaxzsDij" resolve="Maandag t/m Vrijdag 5 x 8" />
+            <node concept="3dadDn" id="3CWQViUlVx9" role="2M1C9h">
+              <ref role="3dadDm" node="5RiSaxzsEAR" resolve="Maandag t/m vrijdag 5 x 8" />
             </node>
           </node>
-          <node concept="2M1C6R" id="CRumITZ9i6" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9i7" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9W" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlV9X" role="2M1C6S">
               <ref role="2mbrj7" node="1KHGaPR$on" resolve="schriftelijk ingediend" />
             </node>
-            <node concept="12cgnX" id="CRumITZ9i8" role="2M1C9h" />
+            <node concept="12cgnX" id="3CWQViUlV9Y" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9i9" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9ia" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlV9Z" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlVa0" role="2M1C6S">
               <ref role="2mbrj7" node="4rrm763mT9K" resolve="samentelling volgens werknemer" />
             </node>
-            <node concept="2NL2Z2" id="CRumITZ9ib" role="2M1C9h">
-              <node concept="35qpnp" id="CRumITZJZt" role="2NL2Z1">
+            <node concept="2NL2Z2" id="3CWQViUlVa1" role="2M1C9h">
+              <node concept="35qpnp" id="3CWQViUlVxU" role="2NL2Z1">
                 <property role="35qpno" value="40" />
               </node>
             </node>
           </node>
-          <node concept="2M1C6R" id="CRumITZ9ic" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9id" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlVa2" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlVa3" role="2M1C6S">
               <ref role="2mbrj7" node="4rrm763mTaW" resolve="samentelling volgens werkgever" />
             </node>
-            <node concept="2NL2Z2" id="CRumITZ9ie" role="2M1C9h">
-              <node concept="35qpnp" id="CRumITZK1D" role="2NL2Z1">
+            <node concept="2NL2Z2" id="3CWQViUlVa4" role="2M1C9h">
+              <node concept="35qpnp" id="3CWQViUlV$6" role="2NL2Z1">
                 <property role="35qpno" value="40" />
               </node>
             </node>
           </node>
-          <node concept="2M1C6R" id="CRumITZ9if" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9ig" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlVa5" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlVa6" role="2M1C6S">
               <ref role="2mbrj7" node="4rrm763mTgf" resolve="redenen voor afwijzing" />
             </node>
-            <node concept="12cgni" id="CRumITZK3P" role="2M1C9h">
+            <node concept="12cgni" id="3CWQViUlVAi" role="2M1C9h">
               <property role="12cgnl" value="geen" />
             </node>
           </node>
-          <node concept="2M1C6R" id="CRumITZ9ii" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9ij" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlVa8" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlVa9" role="2M1C6S">
               <ref role="2mbrj7" node="4NzHub3z6hn" resolve="zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen" />
             </node>
-            <node concept="12cgnX" id="CRumITZ9ik" role="2M1C9h" />
+            <node concept="12cgnX" id="3CWQViUlVaa" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9il" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9im" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlVab" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlVac" role="2M1C6S">
               <ref role="2mbrj7" node="4yDNEIgGSUg" resolve="datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever" />
             </node>
-            <node concept="12cab2" id="CRumITZ9in" role="2M1C9h" />
+            <node concept="12cab2" id="3CWQViUlVad" role="2M1C9h" />
           </node>
-          <node concept="2M1C6R" id="CRumITZ9io" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9ip" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlVae" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlVaf" role="2M1C6S">
               <ref role="2mbrj7" node="4rrm763F9tz" resolve="feiten bij vermindering" />
             </node>
-            <node concept="1zyu0$" id="CRumITZK4A" role="2M1C9h">
+            <node concept="1zyu0$" id="3CWQViUlVB3" role="2M1C9h">
               <ref role="1zyu0_" node="2aEn9tXM$Qd" resolve="geen feiten bij vermindering" />
             </node>
           </node>
-          <node concept="2M1C6R" id="CRumITZ9ir" role="2M1C9l">
-            <node concept="2mbrj6" id="CRumITZ9is" role="2M1C6S">
+          <node concept="2M1C6R" id="3CWQViUlVah" role="2M1C9l">
+            <node concept="2mbrj6" id="3CWQViUlVai" role="2M1C6S">
               <ref role="2mbrj7" node="4rrm763F9v7" resolve="feiten bij vermeerdering" />
             </node>
-            <node concept="1zyu0$" id="CRumITZK5n" role="2M1C9h">
+            <node concept="1zyu0$" id="3CWQViUlVBO" role="2M1C9h">
               <ref role="1zyu0_" node="2aEn9tXM$Qj" resolve="geen feiten bij vermeerdering" />
             </node>
           </node>
@@ -2348,8 +2354,8 @@
             </node>
             <node concept="1zG$V3" id="5RiSaxzsEh5" role="2M1C9h">
               <node concept="LeFwc" id="5RiSaxzsEh6" role="1zG$Vs">
-                <property role="LeFwf" value="0" />
-                <property role="LeFwL" value="8" />
+                <property role="LeFwf" value="8" />
+                <property role="LeFwL" value="0" />
                 <property role="LeFwM" value="0" />
               </node>
             </node>
@@ -2360,8 +2366,8 @@
             </node>
             <node concept="1zG$V3" id="5RiSaxzsEh9" role="2M1C9h">
               <node concept="LeFwc" id="5RiSaxzsEha" role="1zG$Vs">
-                <property role="LeFwf" value="0" />
-                <property role="LeFwL" value="12" />
+                <property role="LeFwf" value="12" />
+                <property role="LeFwL" value="0" />
                 <property role="LeFwM" value="0" />
               </node>
             </node>
@@ -2384,8 +2390,8 @@
             </node>
             <node concept="1zG$V3" id="5RiSaxzsEjP" role="2M1C9h">
               <node concept="LeFwc" id="5RiSaxzsEjQ" role="1zG$Vs">
-                <property role="LeFwf" value="0" />
-                <property role="LeFwL" value="12" />
+                <property role="LeFwf" value="12" />
+                <property role="LeFwL" value="0" />
                 <property role="LeFwM" value="0" />
               </node>
             </node>
@@ -2396,8 +2402,8 @@
             </node>
             <node concept="1zG$V3" id="5RiSaxzsEjT" role="2M1C9h">
               <node concept="LeFwc" id="5RiSaxzsEjU" role="1zG$Vs">
-                <property role="LeFwf" value="0" />
-                <property role="LeFwL" value="16" />
+                <property role="LeFwf" value="16" />
+                <property role="LeFwL" value="0" />
                 <property role="LeFwM" value="30" />
               </node>
             </node>
@@ -2420,8 +2426,8 @@
             </node>
             <node concept="1zG$V3" id="5RiSaxzsEpv" role="2M1C9h">
               <node concept="LeFwc" id="5RiSaxzsEpw" role="1zG$Vs">
-                <property role="LeFwf" value="0" />
-                <property role="LeFwL" value="8" />
+                <property role="LeFwf" value="8" />
+                <property role="LeFwL" value="0" />
                 <property role="LeFwM" value="0" />
               </node>
             </node>
@@ -2432,8 +2438,8 @@
             </node>
             <node concept="1zG$V3" id="5RiSaxzsEpz" role="2M1C9h">
               <node concept="LeFwc" id="5RiSaxzsEp$" role="1zG$Vs">
-                <property role="LeFwf" value="0" />
-                <property role="LeFwL" value="12" />
+                <property role="LeFwf" value="12" />
+                <property role="LeFwL" value="0" />
                 <property role="LeFwM" value="0" />
               </node>
             </node>
@@ -3122,7 +3128,6 @@
         <node concept="12OPpU" id="5kuxuwX4y18" role="KfA2B">
           <node concept="3lwoX7" id="5kuxuwX4y19" role="12O34u">
             <node concept="3ds1cP" id="5kuxuwX4y1a" role="3lwoX6">
-              <ref role="3oooT5" node="GhrpPwK$fm" resolve="gewenste spreiding" />
               <node concept="3lwE0G" id="5kuxuwX4y1b" role="2ftzcS">
                 <node concept="25iA__" id="5kuxuwX4y1c" role="35II_4">
                   <node concept="2mbrj6" id="5kuxuwX4y1d" role="12b92R">
@@ -3133,6 +3138,16 @@
                   <node concept="2mbrj6" id="5kuxuwX4y1f" role="12b92R">
                     <ref role="2mbrj7" node="6syAJDDCU1p" resolve="eindtijd periode" />
                   </node>
+                </node>
+              </node>
+              <node concept="25iA__" id="FR9FxGsk8u" role="1ABzgN">
+                <node concept="2mbrj6" id="FR9FxGsk8y" role="12b92R">
+                  <ref role="2mbrj7" node="GhrpPwK$fm" resolve="gewenste spreiding" />
+                </node>
+              </node>
+              <node concept="25iA__" id="FR9FxGFxiW" role="1AkaJd">
+                <node concept="2mbrj6" id="FR9FxGFxj0" role="12b92R">
+                  <ref role="2mbrj7" node="5RiSaxzsDhi" resolve="perioden" />
                 </node>
               </node>
             </node>
@@ -3771,116 +3786,242 @@
     <node concept="3WXGrE" id="4f9cC5oxMF" role="3WXGrD">
       <ref role="3WXGrF" node="4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
     </node>
-    <node concept="1dyV97" id="7f8Xt4Vccen" role="2NEIfv">
-      <node concept="1dyV9E" id="7f8Xt4Vccof" role="1dyV96">
+    <node concept="1dyV97" id="3CWQViUm5Yw" role="2NEIfv">
+      <node concept="1dyV9E" id="3CWQViUm67O" role="1dyV96">
         <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden van Indienen verzoek aanpassing arbeidsduur" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccog" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm67P" role="1dyV96">
         <property role="1dyV9H" value=" " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccoh" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm67Q" role="1dyV96">
         <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccoi" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm67R" role="1dyV96">
         <property role="1dyV9H" value="Evalueer de expressie 'ligt ten minste &lt;duur&gt; voor'" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccoj" role="1dyV96">
-        <property role="1dyV9H" value="Start expressie ligt tenminste &lt;duur&gt; voor (variabele)" />
+      <node concept="1dyV9E" id="3CWQViUm67S" role="1dyV96">
+        <property role="1dyV9H" value="Start expressie (variabele) ligt tenminste &lt;variabele&gt; voor (variabele)" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccoo" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm67X" role="1dyV96">
         <property role="1dyV9H" value="2001-01-01 ligt ten minste PT960H voor 2004-01-01" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccop" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm67Y" role="1dyV96">
         <property role="1dyV9H" value="Minimale duur bepaald" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccoq" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm67Z" role="1dyV96">
         <property role="1dyV9H" value="Werkelijke duur bepaald" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccor" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm680" role="1dyV96">
         <property role="1dyV9H" value="Resultaat van 2001-01-01 ligt ten minste PT960H voor 2004-01-01 is true" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccos" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm681" role="1dyV96">
         <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccot" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm682" role="1dyV96">
         <property role="1dyV9H" value=" " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccou" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm683" role="1dyV96">
         <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccov" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm684" role="1dyV96">
         <property role="1dyV9H" value="Evalueer de expressie 'ligt ten minste &lt;duur&gt; voor'" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccow" role="1dyV96">
-        <property role="1dyV9H" value="Start expressie ligt tenminste &lt;duur&gt; voor (variabele)" />
+      <node concept="1dyV9E" id="3CWQViUm685" role="1dyV96">
+        <property role="1dyV9H" value="Start expressie (variabele) ligt tenminste &lt;variabele&gt; voor (variabele)" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vcco_" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'false'" />
+      <node concept="1dyV9E" id="3CWQViUm688" role="1dyV96">
+        <property role="1dyV9H" value="2002-01-01 ligt ten minste PT2921H56M24S voor 2004-01-01" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoA" role="1dyV96">
-        <property role="1dyV9H" value=" " />
+      <node concept="1dyV9E" id="3CWQViUm689" role="1dyV96">
+        <property role="1dyV9H" value="Minimale duur bepaald" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoB" role="1dyV96">
-        <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+      <node concept="1dyV9E" id="3CWQViUm68a" role="1dyV96">
+        <property role="1dyV9H" value="Werkelijke duur bepaald" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoC" role="1dyV96">
-        <property role="1dyV9H" value="Evalueer de expressie 'is opgegeven'" />
+      <node concept="1dyV9E" id="3CWQViUm68b" role="1dyV96">
+        <property role="1dyV9H" value="Resultaat van 2002-01-01 ligt ten minste PT2921H56M24S voor 2004-01-01 is true" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoE" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68c" role="1dyV96">
         <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoF" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68d" role="1dyV96">
         <property role="1dyV9H" value=" " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoG" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68e" role="1dyV96">
         <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoH" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68f" role="1dyV96">
         <property role="1dyV9H" value="Evalueer de expressie 'is opgegeven'" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoJ" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68h" role="1dyV96">
+        <property role="1dyV9H" value="variabele is opgegeven is true" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68i" role="1dyV96">
         <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoK" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68j" role="1dyV96">
         <property role="1dyV9H" value=" " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoL" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68k" role="1dyV96">
         <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoM" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68l" role="1dyV96">
+        <property role="1dyV9H" value="Evalueer de expressie 'is opgegeven'" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68n" role="1dyV96">
+        <property role="1dyV9H" value="variabele is opgegeven is true" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68o" role="1dyV96">
+        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68p" role="1dyV96">
+        <property role="1dyV9H" value=" " />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68q" role="1dyV96">
+        <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68r" role="1dyV96">
         <property role="1dyV9H" value="Evalueer de expressie 'is waar'" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoO" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68t" role="1dyV96">
+        <property role="1dyV9H" value="variabele is waar is true" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68u" role="1dyV96">
         <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoP" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68v" role="1dyV96">
         <property role="1dyV9H" value=" " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoQ" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68w" role="1dyV96">
         <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoR" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68x" role="1dyV96">
         <property role="1dyV9H" value="Evalueer de expressie 'is opgegeven'" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoT" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68z" role="1dyV96">
+        <property role="1dyV9H" value="variabele is opgegeven is true" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68$" role="1dyV96">
         <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoU" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68_" role="1dyV96">
         <property role="1dyV9H" value=" " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoV" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68A" role="1dyV96">
         <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoW" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68B" role="1dyV96">
         <property role="1dyV9H" value="Evalueer de expressie 'is gelijk aan'" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoY" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'false'" />
+      <node concept="1dyV9E" id="3CWQViUm68C" role="1dyV96">
+        <property role="1dyV9H" value="Geef lijst van instanties van variabele variabele en meervoudige variabele variabele" />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4VccoZ" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68E" role="1dyV96">
+        <property role="1dyV9H" value="Waarde van variabele Maandag t/m vrijdag 5 x 8" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68H" role="1dyV96">
+        <property role="1dyV9H" value="Bereken 1 van 10" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68I" role="1dyV96">
+        <property role="1dyV9H" value="Het verschil tussen 08:00 en 12:00 is PT-4H" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68J" role="1dyV96">
         <property role="1dyV9H" value=" " />
       </node>
-      <node concept="1dyV9E" id="7f8Xt4Vccp0" role="1dyV96">
+      <node concept="1dyV9E" id="3CWQViUm68K" role="1dyV96">
+        <property role="1dyV9H" value="Bereken 2 van 10" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68L" role="1dyV96">
+        <property role="1dyV9H" value="Het verschil tussen 12:00 en 16:00 is PT-4H" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68M" role="1dyV96">
+        <property role="1dyV9H" value=" " />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68N" role="1dyV96">
+        <property role="1dyV9H" value="Bereken 3 van 10" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68O" role="1dyV96">
+        <property role="1dyV9H" value="Het verschil tussen 08:00 en 12:00 is PT-4H" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68P" role="1dyV96">
+        <property role="1dyV9H" value=" " />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68Q" role="1dyV96">
+        <property role="1dyV9H" value="Bereken 4 van 10" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68R" role="1dyV96">
+        <property role="1dyV9H" value="Het verschil tussen 12:00 en 16:00 is PT-4H" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68S" role="1dyV96">
+        <property role="1dyV9H" value=" " />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68T" role="1dyV96">
+        <property role="1dyV9H" value="Bereken 5 van 10" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68U" role="1dyV96">
+        <property role="1dyV9H" value="Het verschil tussen 08:00 en 12:00 is PT-4H" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68V" role="1dyV96">
+        <property role="1dyV9H" value=" " />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68W" role="1dyV96">
+        <property role="1dyV9H" value="Bereken 6 van 10" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68X" role="1dyV96">
+        <property role="1dyV9H" value="Het verschil tussen 12:00 en 16:00 is PT-4H" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68Y" role="1dyV96">
+        <property role="1dyV9H" value=" " />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm68Z" role="1dyV96">
+        <property role="1dyV9H" value="Bereken 7 van 10" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm690" role="1dyV96">
+        <property role="1dyV9H" value="Het verschil tussen 08:00 en 12:00 is PT-4H" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm691" role="1dyV96">
+        <property role="1dyV9H" value=" " />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm692" role="1dyV96">
+        <property role="1dyV9H" value="Bereken 8 van 10" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm693" role="1dyV96">
+        <property role="1dyV9H" value="Het verschil tussen 12:00 en 16:00 is PT-4H" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm694" role="1dyV96">
+        <property role="1dyV9H" value=" " />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm695" role="1dyV96">
+        <property role="1dyV9H" value="Bereken 9 van 10" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm696" role="1dyV96">
+        <property role="1dyV9H" value="Het verschil tussen 08:00 en 12:00 is PT-4H" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm697" role="1dyV96">
+        <property role="1dyV9H" value=" " />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm698" role="1dyV96">
+        <property role="1dyV9H" value="Bereken 10 van 10" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm699" role="1dyV96">
+        <property role="1dyV9H" value="Het verschil tussen 12:00 en 16:00 is PT-4H" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm69a" role="1dyV96">
+        <property role="1dyV9H" value=" " />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm69b" role="1dyV96">
+        <property role="1dyV9H" value="De som van de lijst 'verschil tussen' is PT-40H" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm69d" role="1dyV96">
+        <property role="1dyV9H" value="'de som van' is gelijk aan 'variabele' is false" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm69e" role="1dyV96">
+        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'false'" />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm69f" role="1dyV96">
+        <property role="1dyV9H" value=" " />
+      </node>
+      <node concept="1dyV9E" id="3CWQViUm69g" role="1dyV96">
         <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is false" />
       </node>
     </node>
@@ -4493,8 +4634,8 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEBS" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEBT" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="8" />
+              <property role="LeFwf" value="8" />
+              <property role="LeFwL" value="0" />
               <property role="LeFwM" value="0" />
             </node>
           </node>
@@ -4505,8 +4646,8 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEBW" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEBX" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="12" />
+              <property role="LeFwf" value="12" />
+              <property role="LeFwL" value="0" />
               <property role="LeFwM" value="0" />
             </node>
           </node>
@@ -4529,9 +4670,9 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEDt" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEDu" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="12" />
-              <property role="LeFwM" value="30" />
+              <property role="LeFwf" value="12" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
             </node>
           </node>
         </node>
@@ -4541,9 +4682,9 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEDx" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEDy" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="16" />
-              <property role="LeFwM" value="30" />
+              <property role="LeFwf" value="16" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
             </node>
           </node>
         </node>
@@ -4565,8 +4706,8 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEMr" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEMs" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="8" />
+              <property role="LeFwf" value="8" />
+              <property role="LeFwL" value="0" />
               <property role="LeFwM" value="0" />
             </node>
           </node>
@@ -4577,8 +4718,8 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEMv" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEMw" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="12" />
+              <property role="LeFwf" value="12" />
+              <property role="LeFwL" value="0" />
               <property role="LeFwM" value="0" />
             </node>
           </node>
@@ -4601,9 +4742,9 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsENv" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsENw" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="12" />
-              <property role="LeFwM" value="30" />
+              <property role="LeFwf" value="12" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
             </node>
           </node>
         </node>
@@ -4613,9 +4754,9 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsENz" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEN$" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="16" />
-              <property role="LeFwM" value="30" />
+              <property role="LeFwf" value="16" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
             </node>
           </node>
         </node>
@@ -4637,8 +4778,8 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEOM" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEON" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="8" />
+              <property role="LeFwf" value="8" />
+              <property role="LeFwL" value="0" />
               <property role="LeFwM" value="0" />
             </node>
           </node>
@@ -4649,8 +4790,8 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEOQ" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEOR" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="12" />
+              <property role="LeFwf" value="12" />
+              <property role="LeFwL" value="0" />
               <property role="LeFwM" value="0" />
             </node>
           </node>
@@ -4673,9 +4814,9 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEQk" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEQl" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="12" />
-              <property role="LeFwM" value="30" />
+              <property role="LeFwf" value="12" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
             </node>
           </node>
         </node>
@@ -4685,9 +4826,9 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEQo" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEQp" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="16" />
-              <property role="LeFwM" value="30" />
+              <property role="LeFwf" value="16" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
             </node>
           </node>
         </node>
@@ -4709,8 +4850,8 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsES5" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsES6" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="8" />
+              <property role="LeFwf" value="8" />
+              <property role="LeFwL" value="0" />
               <property role="LeFwM" value="0" />
             </node>
           </node>
@@ -4721,8 +4862,8 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsES9" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsESa" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="12" />
+              <property role="LeFwf" value="12" />
+              <property role="LeFwL" value="0" />
               <property role="LeFwM" value="0" />
             </node>
           </node>
@@ -4745,9 +4886,9 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEU5" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEU6" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="12" />
-              <property role="LeFwM" value="30" />
+              <property role="LeFwf" value="12" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
             </node>
           </node>
         </node>
@@ -4757,9 +4898,9 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEU9" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEUa" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="16" />
-              <property role="LeFwM" value="30" />
+              <property role="LeFwf" value="16" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
             </node>
           </node>
         </node>
@@ -4781,8 +4922,8 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEWk" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEWl" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="8" />
+              <property role="LeFwf" value="8" />
+              <property role="LeFwL" value="0" />
               <property role="LeFwM" value="0" />
             </node>
           </node>
@@ -4793,8 +4934,8 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEWo" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEWp" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="12" />
+              <property role="LeFwf" value="12" />
+              <property role="LeFwL" value="0" />
               <property role="LeFwM" value="0" />
             </node>
           </node>
@@ -4817,9 +4958,9 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEYM" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEYN" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="12" />
-              <property role="LeFwM" value="30" />
+              <property role="LeFwf" value="12" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
             </node>
           </node>
         </node>
@@ -4829,9 +4970,9 @@
           </node>
           <node concept="1zG$V3" id="5RiSaxzsEYQ" role="2M1C9h">
             <node concept="LeFwc" id="5RiSaxzsEYR" role="1zG$Vs">
-              <property role="LeFwf" value="0" />
-              <property role="LeFwL" value="16" />
-              <property role="LeFwM" value="30" />
+              <property role="LeFwf" value="16" />
+              <property role="LeFwL" value="0" />
+              <property role="LeFwM" value="0" />
             </node>
           </node>
         </node>

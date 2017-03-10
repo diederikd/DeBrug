@@ -1988,6 +1988,28 @@
         <ref role="3uigEE" to="dzyv:~Temporal" resolve="Temporal" />
       </node>
     </node>
+    <node concept="13i0hz" id="FR9FxGLL6n" role="13h7CS">
+      <property role="TrG5h" value="GeefTijdWaarde" />
+      <node concept="3Tm1VV" id="FR9FxGLL6o" role="1B3o_S" />
+      <node concept="3uibUv" id="FR9FxGLLif" role="3clF45">
+        <ref role="3uigEE" to="28m1:~LocalTime" resolve="LocalTime" />
+      </node>
+      <node concept="3clFbS" id="FR9FxGLL6q" role="3clF47">
+        <node concept="3cpWs6" id="FR9FxGLLiW" role="3cqZAp">
+          <node concept="2OqwBi" id="FR9FxGLM8C" role="3cqZAk">
+            <node concept="2OqwBi" id="FR9FxGLLvc" role="2Oq$k0">
+              <node concept="13iPFW" id="FR9FxGLLjr" role="2Oq$k0" />
+              <node concept="3TrEf2" id="FR9FxGLLIF" role="2OqNvi">
+                <ref role="3Tt5mk" to="uwhu:vqB$L$qd2g" resolve="waarde" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="FR9FxGLMlV" role="2OqNvi">
+              <ref role="37wK5l" to="rwnv:5riiL_BUHOa" resolve="gettime" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="5kuxuwXF07O" role="13h7CW">
       <node concept="3clFbS" id="5kuxuwXF07P" role="2VODD2" />
     </node>

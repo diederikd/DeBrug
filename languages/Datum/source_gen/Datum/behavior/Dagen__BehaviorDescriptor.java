@@ -42,7 +42,7 @@ public final class Dagen__BehaviorDescriptor extends BaseBHDescriptor {
     return 0;
   }
   /*package*/ static Duration geefDuur_id3JLo1nhiwEa(@NotNull SNode __thisNode__) {
-    return Duration.of((long) ((double) Dagen__BehaviorDescriptor.AantalDagen_idbTj1CmnGUz.invoke(__thisNode__)), ChronoUnit.DAYS);
+    return ChronoUnit.DAYS.getDuration().multipliedBy((long) ((double) Dagen__BehaviorDescriptor.AantalDagen_idbTj1CmnGUz.invoke(__thisNode__)));
   }
 
   /*package*/ Dagen__BehaviorDescriptor() {

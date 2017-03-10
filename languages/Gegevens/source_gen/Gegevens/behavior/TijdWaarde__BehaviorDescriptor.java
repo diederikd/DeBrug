@@ -13,6 +13,7 @@ import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.SModifiersImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import java.time.LocalTime;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -28,14 +29,18 @@ public final class TijdWaarde__BehaviorDescriptor extends BaseBHDescriptor {
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<Temporal> GeefTemporeleWaarde_id5kuxuwXEUJM = new SMethodBuilder<Temporal>(new SJavaCompoundTypeImpl(Temporal.class)).name("GeefTemporeleWaarde").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5kuxuwXEUJM").registry(REGISTRY).build();
+  public static final SMethod<LocalTime> GeefTijdWaarde_idFR9FxGLL6n = new SMethodBuilder<LocalTime>(new SJavaCompoundTypeImpl(LocalTime.class)).name("GeefTijdWaarde").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("FR9FxGLL6n").registry(REGISTRY).build();
   public static final SMethod<String> GeefWaardeString_idFzw$g_H4hz = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("GeefWaardeString").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("Fzw$g_H4hz").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefTemporeleWaarde_id5kuxuwXEUJM, GeefWaardeString_idFzw$g_H4hz);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefTemporeleWaarde_id5kuxuwXEUJM, GeefTijdWaarde_idFR9FxGLL6n, GeefWaardeString_idFzw$g_H4hz);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static Temporal GeefTemporeleWaarde_id5kuxuwXEUJM(@NotNull SNode __thisNode__) {
+    return Tijd__BehaviorDescriptor.gettime_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, 0x7da9e4c6468d090L, "waarde")));
+  }
+  /*package*/ static LocalTime GeefTijdWaarde_idFR9FxGLL6n(@NotNull SNode __thisNode__) {
     return Tijd__BehaviorDescriptor.gettime_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, 0x7da9e4c6468d090L, "waarde")));
   }
   /*package*/ static String GeefWaardeString_idFzw$g_H4hz(@NotNull SNode __thisNode__) {
@@ -61,6 +66,8 @@ public final class TijdWaarde__BehaviorDescriptor extends BaseBHDescriptor {
       case 0:
         return (T) ((Temporal) GeefTemporeleWaarde_id5kuxuwXEUJM(node));
       case 1:
+        return (T) ((LocalTime) GeefTijdWaarde_idFR9FxGLL6n(node));
+      case 2:
         return (T) ((String) GeefWaardeString_idFzw$g_H4hz(node));
       default:
         throw new BHMethodNotFoundException(this, method);

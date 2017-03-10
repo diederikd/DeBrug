@@ -42,7 +42,7 @@ public final class Minuten__BehaviorDescriptor extends BaseBHDescriptor {
     return 0;
   }
   /*package*/ static Duration geefDuur_id3JLo1nhiwEa(@NotNull SNode __thisNode__) {
-    return Duration.of((long) ((double) Minuten__BehaviorDescriptor.AantalMinuten_idbTj1CmnEPZ.invoke(__thisNode__)), ChronoUnit.MINUTES);
+    return ChronoUnit.MINUTES.getDuration().multipliedBy((long) ((double) Minuten__BehaviorDescriptor.AantalMinuten_idbTj1CmnEPZ.invoke(__thisNode__)));
   }
 
   /*package*/ Minuten__BehaviorDescriptor() {

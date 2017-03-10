@@ -54,7 +54,7 @@ public class Tijd_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_4rhwny_a0a(SNode node, EditorContext editorContext) {
-    return SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren")) < 10;
+    return (SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f316L, "Uren")) < 10);
   }
   private EditorCell createConstant_4rhwny_a0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "0");
@@ -122,7 +122,7 @@ public class Tijd_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_4rhwny_a3a(SNode node, EditorContext editorContext) {
-    return SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten")) < 10;
+    return (SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x56d24b1967e8f315L, 0x56d24b1967e8f328L, "Minuten")) < 10);
   }
   private EditorCell createConstant_4rhwny_a3a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "0");

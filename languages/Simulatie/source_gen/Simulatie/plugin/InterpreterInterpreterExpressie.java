@@ -8,24 +8,22 @@ import com.mbeddr.mpsutil.interpreter.rt.IEvaluator;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import com.mbeddr.mpsutil.interpreter.rt.TypedChildConstraintImpl;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
-import java.time.temporal.Temporal;
-import Gegevens.behavior.TemporeleWaarde__BehaviorDescriptor;
-import java.time.Duration;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import Gegevens.behavior.DuurWaarde__BehaviorDescriptor;
-import Gegevens.behavior.Waarde__BehaviorDescriptor;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.ZoneId;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
 import com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo;
-import java.time.LocalDate;
-import java.time.ZoneId;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.MapSequence;
+import java.time.LocalTime;
+import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
+import Gegevens.behavior.TijdWaarde__BehaviorDescriptor;
 import Gegevens.behavior.GeheelGetalWaarde__BehaviorDescriptor;
 import Gegevens.behavior.RekenWaarde__BehaviorDescriptor;
 import com.mbeddr.mpsutil.interpreter.rt.ITypeMapper;
@@ -38,39 +36,6 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
   }
 
   protected void populateEvaluators(List<? extends IEvaluator> evaluators) {
-    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, "ObjectiefRecht.structure.TenMinsteVoor"), true, new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde").getDeclarationNode()))), new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde").getDeclarationNode()))), new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, 0x4ce3b5e2c36bdf25L, "duur")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, "Gegevens.structure.DuurWaarde").getDeclarationNode())))) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
-        try {
-          coverage.visitedEvaluator(this);
-          coverage.visitedConcept(this.concept);
-          boolean result = false;
-          Interpreter.voegBerichtToe("Start expressie ligt tenminste <duur> voor (waarde)");
-          DebugHelper.printContext("Temporal1 ligt ten minste <duur> voor temporal2" + " : " + result, node, context);
-          Temporal temporal1 = TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"))));
-          Temporal temporal2 = TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"))));
-          Duration minimaleduur = DuurWaarde__BehaviorDescriptor.geefWaardeDuur_idCRumIU3iNh.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, 0x4ce3b5e2c36bdf25L, "duur"))));
-          Interpreter.voegBerichtToe(Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")))) + " ligt ten minste " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, 0x4ce3b5e2c36bdf25L, "duur")))) + " voor " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")))));
-          Duration werkelijkeduur = Duration.between(temporal1, temporal2);
-          if (werkelijkeduur.getNano() - minimaleduur.getNano() >= 0) {
-            result = true;
-          }
-          DebugHelper.printContext("Ligt ten minste <duur> voor " + temporal1 + temporal2 + " : " + result, node, context);
-          return result;
-        } catch (InterpreterEscapeException ex) {
-          throw ex;
-        } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("ligt ten minste <duur> voor(expressie1[TemporeleWaarde], expressie2[TemporeleWaarde], duur[DuurWaarde])", node, ex);
-        }
-      }
-      public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("TenMinsteVoor");
-      }
-
-      @Override
-      public String toString() {
-        return "TenMinsteVoor";
-      }
-    });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, "ObjectiefRecht.structure.TenMinsteVoor"), true) {
       public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
         try {
@@ -81,7 +46,19 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
           DebugHelper.printContext("Variabele1 ligt ten minste <duur> voor variabele2" + " : " + result, node, context);
           Object temporal1 = Interpreter.GeefWaardeVanVariabele(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"))));
           Object temporal2 = Interpreter.GeefWaardeVanVariabele(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"))));
-          Object duur = Interpreter.GeefWaardeVanVariabele(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, 0x4ce3b5e2c36bdf25L, "duur"))));
+          Object duur = null;
+          {
+            final SNode variabele = SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, 0x4ce3b5e2c36bdf25L, "duur"));
+            if (SNodeOperations.isInstanceOf(variabele, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, "ObjectiefRecht.structure.Variabele"))) {
+              duur = Interpreter.GeefWaardeVanVariabele(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, 0x4ce3b5e2c36bdf25L, "duur"))));
+            }
+          }
+          {
+            final SNode duurWaarde = SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, 0x4ce3b5e2c36bdf25L, "duur"));
+            if (SNodeOperations.isInstanceOf(duurWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, "Gegevens.structure.DuurWaarde"))) {
+              duur = DuurWaarde__BehaviorDescriptor.geefWaardeDuur_idCRumIU3iNh.invoke(duurWaarde);
+            }
+          }
           if (temporal1 == null || temporal2 == null || duur == null) {
             DebugHelper.printContext("Variabele1 ligt ten minste <duur> voor variabele2 niet voldoende gegevens", node, context);
 
@@ -123,7 +100,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
           if (waarde == null) {
             result = false;
           }
-          DebugHelper.printContext("Is opgegeven resultaat " + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x2db6a3c6801e6ee4L, 0x2db6a3c6801e6ee5L, "variabele")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " : " + result, node, context);
+          Interpreter.voegBerichtToe(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x2db6a3c6801e6ee4L, 0x2db6a3c6801e6ee5L, "variabele")) + " is opgegeven is " + result);
           return result;
         } catch (InterpreterEscapeException ex) {
           throw ex;
@@ -147,7 +124,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           Object result;
           result = Interpreter.GeefWaardeVanVariabele(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x70b6c2b5db7413L, 0x70b6c2b5db7425L, "variabele")));
-          DebugHelper.printContext("Is waar resultaat " + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x70b6c2b5db7413L, 0x70b6c2b5db7425L, "variabele")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " : " + result, node, context);
+          Interpreter.voegBerichtToe(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x70b6c2b5db7413L, 0x70b6c2b5db7425L, "variabele")) + " is waar is " + result);
           if (result != null) {
             return true;
           }
@@ -167,61 +144,26 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         return "IsWaar";
       }
     });
-    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9bcaebaL, "ObjectiefRecht.structure.DeSom"), true, new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c39586d9L, 0x4ce3b5e2c39586daL, "expressie")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d71f16cL, "ObjectiefRecht.structure.AbstracteExpressie").getDeclarationNode())))) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
-        try {
-          coverage.visitedEvaluator(this);
-          coverage.visitedConcept(this.concept);
-          double result;
-          result = Interpreter.SomVan((double) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c39586d9L, 0x4ce3b5e2c39586daL, "expressie")), context, coverage));
-          DebugHelper.printContext("De som van een expressie", node, context);
-          return result;
-        } catch (InterpreterEscapeException ex) {
-          throw ex;
-        } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("de som van(expressie[AbstracteExpressie])", node, ex);
-        }
-      }
-      public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("DeSom");
-      }
-
-      @Override
-      public String toString() {
-        return "DeSom";
-      }
-    });
-    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9bcaebaL, "ObjectiefRecht.structure.DeSom"), true, new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c39586d9L, 0x4ce3b5e2c39586daL, "expressie")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde").getDeclarationNode())))) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
-        try {
-          coverage.visitedEvaluator(this);
-          coverage.visitedConcept(this.concept);
-          double result;
-          result = Interpreter.SomVan((double) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c39586d9L, 0x4ce3b5e2c39586daL, "expressie")), context, coverage));
-          DebugHelper.printContext("De som van waarde", node, context);
-          return result;
-        } catch (InterpreterEscapeException ex) {
-          throw ex;
-        } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("de som van(expressie[RekenWaarde])", node, ex);
-        }
-      }
-      public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("DeSom");
-      }
-
-      @Override
-      public String toString() {
-        return "DeSom";
-      }
-    });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9bcaebaL, "ObjectiefRecht.structure.DeSom"), true) {
       public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
-          DebugHelper.printContext("De som van (anders)", node, context);
-          return true;
+          Integer index = 1;
+          Duration duur = Duration.ofSeconds(0);
+          Duration tussenresultaat = Duration.ofSeconds(0);
+          List<SNode> instantiesVanObject = Interpreter.GeefLijstVanInstanties(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9bcaebaL, 0xaf726b86c69128bL, "kenmerk")), SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9bcaebaL, 0xaf726b86ca78d75L, "meervoudigkenmerk")));
+          for (SNode instantie : ListSequence.fromList(instantiesVanObject)) {
+            Interpreter.voegBerichtToe("Bereken " + index + " van " + ListSequence.fromList(instantiesVanObject).count());
+            MapSequence.fromMap(context.getEnvironment()).put(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c39586d9L, 0x4ce3b5e2c39586daL, "expressie")), instantie);
+            tussenresultaat = ((Duration) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c39586d9L, 0x4ce3b5e2c39586daL, "expressie")), context, coverage));
+            MapSequence.fromMap(context.getEnvironment()).put(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c39586d9L, 0x4ce3b5e2c39586daL, "expressie")), null);
+            duur = Duration.ofSeconds(duur.getSeconds() + tussenresultaat.getSeconds());
+            index = index + 1;
+            Interpreter.voegBerichtToe(" ");
+          }
+          Interpreter.voegBerichtToe("De som van de lijst '" + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c39586d9L, 0x4ce3b5e2c39586daL, "expressie")) + "' is " + duur);
+          return duur;
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
@@ -237,19 +179,44 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         return "DeSom";
       }
     });
-    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c99b8b3bL, "ObjectiefRecht.structure.VerschilTussen"), true, new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde").getDeclarationNode()))), new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde").getDeclarationNode())))) {
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c99b8b3bL, "ObjectiefRecht.structure.VerschilTussen"), true) {
       public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
-          Object result = false;
-          DebugHelper.printContext("Verschil tussen", node, context);
+          Duration result = Duration.ofNanos(0);
+          LocalTime time1 = null;
+          LocalTime time2 = null;
+          if (MapSequence.fromMap(context.getEnvironment()).get(node) != null) {
+            SNode instantieVanObject = (SNode) MapSequence.fromMap(context.getEnvironment()).get(node);
+            {
+              final SNode variabele1 = SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"));
+              if (SNodeOperations.isInstanceOf(variabele1, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, "ObjectiefRecht.structure.Variabele"))) {
+                SNode tijdWaarde = (SNode) InstantieVanObject__BehaviorDescriptor.GeefWaardeVanKenmerk_idFR9FxGLp3H.invoke(instantieVanObject, SLinkOperations.getTarget(SLinkOperations.getTarget(variabele1, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+                time1 = TijdWaarde__BehaviorDescriptor.GeefTijdWaarde_idFR9FxGLL6n.invoke(tijdWaarde);
+              }
+            }
+            {
+              final SNode variabele2 = SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"));
+              if (SNodeOperations.isInstanceOf(variabele2, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, "ObjectiefRecht.structure.Variabele"))) {
+                SNode tijdWaarde = (SNode) InstantieVanObject__BehaviorDescriptor.GeefWaardeVanKenmerk_idFR9FxGLp3H.invoke(instantieVanObject, SLinkOperations.getTarget(SLinkOperations.getTarget(variabele2, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+                time2 = TijdWaarde__BehaviorDescriptor.GeefTijdWaarde_idFR9FxGLL6n.invoke(tijdWaarde);
+              }
+            }
 
+          }
+          if (time1 == null || time2 == null) {
+            Interpreter.voegBerichtToe("Niet genoeg gegevens voor 'verschil tussen'");
+            return false;
+          }
+
+          result = Duration.between(time2, time1);
+          Interpreter.voegBerichtToe("Het verschil tussen " + time1 + " en " + time2 + " is " + result);
           return result;
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("verschil tussen(expressie1[TemporeleWaarde], expressie2[TemporeleWaarde])", node, ex);
+          throw new InterpreterRuntimeException("verschil tussen()", node, ex);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -267,8 +234,8 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           boolean result = false;
-          DebugHelper.printContext("Is gelijk aan", node, context);
           result = (context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1")), context, coverage) == context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2")), context, coverage));
+          Interpreter.voegBerichtToe("'" + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1")) + "' is gelijk aan '" + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2")) + "' is " + result);
           return result;
         } catch (InterpreterEscapeException ex) {
           throw ex;

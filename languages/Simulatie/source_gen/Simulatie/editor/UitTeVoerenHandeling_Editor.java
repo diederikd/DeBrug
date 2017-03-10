@@ -302,6 +302,7 @@ public class UitTeVoerenHandeling_Editor extends DefaultNodeEditor {
         {
           final SNode node = ((SNode) n);
           SNode simulatie = (SNode) SNodeOperations.getParent(node);
+          Simulatie__BehaviorDescriptor.schoonBerichten_idCRumITE5PD.invoke(simulatie);
           Object object = Interpreter.evalueer(simulatie, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935aL, "rechtshandeling")));
           System.out.println(object);
         }

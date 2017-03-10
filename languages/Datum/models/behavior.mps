@@ -13,7 +13,6 @@
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
-      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -612,19 +611,28 @@
       <ref role="13i0hy" node="3JLo1nhiwEa" resolve="geefDuur" />
       <node concept="3Tm1VV" id="3JLo1nhiy2V" role="1B3o_S" />
       <node concept="3clFbS" id="3JLo1nhiy2W" role="3clF47">
-        <node concept="3cpWs6" id="3JLo1nhiy2X" role="3cqZAp">
-          <node concept="2YIFZM" id="3JLo1nhiyuo" role="3cqZAk">
-            <ref role="37wK5l" to="28m1:~Duration.of(long,java.time.temporal.TemporalUnit):java.time.Duration" resolve="of" />
-            <ref role="1Pybhc" to="28m1:~Duration" resolve="Duration" />
-            <node concept="10QFUN" id="3JLo1nhiyup" role="37wK5m">
-              <node concept="BsUDl" id="3JLo1nhiDqG" role="10QFUP">
-                <ref role="37wK5l" node="bTj1CmnvAs" resolve="AantalJaren" />
+        <node concept="3cpWs6" id="FR9FxGmqOz" role="3cqZAp">
+          <node concept="2OqwBi" id="FR9FxGmqO$" role="3cqZAk">
+            <node concept="2OqwBi" id="FR9FxGmqO_" role="2Oq$k0">
+              <node concept="Rm8GO" id="FR9FxGmrcF" role="2Oq$k0">
+                <ref role="Rm8GQ" to="dzyv:~ChronoUnit.YEARS" resolve="YEARS" />
+                <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
               </node>
-              <node concept="3cpWsb" id="3JLo1nhiyur" role="10QFUM" />
+              <node concept="liA8E" id="FR9FxGmqOB" role="2OqNvi">
+                <ref role="37wK5l" to="dzyv:~ChronoUnit.getDuration():java.time.Duration" resolve="getDuration" />
+              </node>
             </node>
-            <node concept="Rm8GO" id="3JLo1nhiDju" role="37wK5m">
-              <ref role="Rm8GQ" to="dzyv:~ChronoUnit.YEARS" resolve="YEARS" />
-              <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+            <node concept="liA8E" id="FR9FxGmqOC" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~Duration.multipliedBy(long):java.time.Duration" resolve="multipliedBy" />
+              <node concept="10QFUN" id="FR9FxGmqOD" role="37wK5m">
+                <node concept="2OqwBi" id="FR9FxGmqOE" role="10QFUP">
+                  <node concept="13iPFW" id="FR9FxGmqOF" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="FR9FxGmrzB" role="2OqNvi">
+                    <ref role="37wK5l" node="bTj1CmnvAs" resolve="AantalJaren" />
+                  </node>
+                </node>
+                <node concept="3cpWsb" id="FR9FxGmqOH" role="10QFUM" />
+              </node>
             </node>
           </node>
         </node>
@@ -684,19 +692,28 @@
       <ref role="13i0hy" node="3JLo1nhiwEa" resolve="geefDuur" />
       <node concept="3Tm1VV" id="3JLo1nhiEWh" role="1B3o_S" />
       <node concept="3clFbS" id="3JLo1nhiEWi" role="3clF47">
-        <node concept="3cpWs6" id="3JLo1nhiEWj" role="3cqZAp">
-          <node concept="2YIFZM" id="3JLo1nhiEWk" role="3cqZAk">
-            <ref role="37wK5l" to="28m1:~Duration.of(long,java.time.temporal.TemporalUnit):java.time.Duration" resolve="of" />
-            <ref role="1Pybhc" to="28m1:~Duration" resolve="Duration" />
-            <node concept="10QFUN" id="3JLo1nhiEWl" role="37wK5m">
-              <node concept="BsUDl" id="3JLo1nhiFeD" role="10QFUP">
-                <ref role="37wK5l" node="bTj1CmnEPZ" resolve="AantalMinuten" />
+        <node concept="3cpWs6" id="FR9FxGmtxH" role="3cqZAp">
+          <node concept="2OqwBi" id="FR9FxGmtxI" role="3cqZAk">
+            <node concept="2OqwBi" id="FR9FxGmtxJ" role="2Oq$k0">
+              <node concept="Rm8GO" id="FR9FxGmutP" role="2Oq$k0">
+                <ref role="Rm8GQ" to="dzyv:~ChronoUnit.MINUTES" resolve="MINUTES" />
+                <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
               </node>
-              <node concept="3cpWsb" id="3JLo1nhiEWn" role="10QFUM" />
+              <node concept="liA8E" id="FR9FxGmtxL" role="2OqNvi">
+                <ref role="37wK5l" to="dzyv:~ChronoUnit.getDuration():java.time.Duration" resolve="getDuration" />
+              </node>
             </node>
-            <node concept="Rm8GO" id="3JLo1nhiFmr" role="37wK5m">
-              <ref role="Rm8GQ" to="dzyv:~ChronoUnit.MINUTES" resolve="MINUTES" />
-              <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+            <node concept="liA8E" id="FR9FxGmtxM" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~Duration.multipliedBy(long):java.time.Duration" resolve="multipliedBy" />
+              <node concept="10QFUN" id="FR9FxGmtxN" role="37wK5m">
+                <node concept="2OqwBi" id="FR9FxGmtxO" role="10QFUP">
+                  <node concept="13iPFW" id="FR9FxGmtxP" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="FR9FxGmugL" role="2OqNvi">
+                    <ref role="37wK5l" node="bTj1CmnEPZ" resolve="AantalMinuten" />
+                  </node>
+                </node>
+                <node concept="3cpWsb" id="FR9FxGmtxR" role="10QFUM" />
+              </node>
             </node>
           </node>
         </node>
@@ -756,19 +773,28 @@
       <ref role="13i0hy" node="3JLo1nhiwEa" resolve="geefDuur" />
       <node concept="3Tm1VV" id="3JLo1nhiFxX" role="1B3o_S" />
       <node concept="3clFbS" id="3JLo1nhiFxY" role="3clF47">
-        <node concept="3cpWs6" id="3JLo1nhiFxZ" role="3cqZAp">
-          <node concept="2YIFZM" id="3JLo1nhiFy0" role="3cqZAk">
-            <ref role="37wK5l" to="28m1:~Duration.of(long,java.time.temporal.TemporalUnit):java.time.Duration" resolve="of" />
-            <ref role="1Pybhc" to="28m1:~Duration" resolve="Duration" />
-            <node concept="10QFUN" id="3JLo1nhiFy1" role="37wK5m">
-              <node concept="BsUDl" id="3JLo1nhiFOl" role="10QFUP">
-                <ref role="37wK5l" node="bTj1CmnFyp" resolve="AantalSeconden" />
+        <node concept="3cpWs6" id="FR9FxGmvw3" role="3cqZAp">
+          <node concept="2OqwBi" id="FR9FxGmvw4" role="3cqZAk">
+            <node concept="2OqwBi" id="FR9FxGmvw5" role="2Oq$k0">
+              <node concept="Rm8GO" id="FR9FxGmvS1" role="2Oq$k0">
+                <ref role="Rm8GQ" to="dzyv:~ChronoUnit.SECONDS" resolve="SECONDS" />
+                <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
               </node>
-              <node concept="3cpWsb" id="3JLo1nhiFy3" role="10QFUM" />
+              <node concept="liA8E" id="FR9FxGmvw7" role="2OqNvi">
+                <ref role="37wK5l" to="dzyv:~ChronoUnit.getDuration():java.time.Duration" resolve="getDuration" />
+              </node>
             </node>
-            <node concept="Rm8GO" id="3JLo1nhiFW7" role="37wK5m">
-              <ref role="Rm8GQ" to="dzyv:~ChronoUnit.SECONDS" resolve="SECONDS" />
-              <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+            <node concept="liA8E" id="FR9FxGmvw8" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~Duration.multipliedBy(long):java.time.Duration" resolve="multipliedBy" />
+              <node concept="10QFUN" id="FR9FxGmvw9" role="37wK5m">
+                <node concept="2OqwBi" id="FR9FxGmvwa" role="10QFUP">
+                  <node concept="13iPFW" id="FR9FxGmvwb" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="FR9FxGmweX" role="2OqNvi">
+                    <ref role="37wK5l" node="bTj1CmnFyp" resolve="AantalSeconden" />
+                  </node>
+                </node>
+                <node concept="3cpWsb" id="FR9FxGmvwd" role="10QFUM" />
+              </node>
             </node>
           </node>
         </node>
@@ -828,19 +854,28 @@
       <ref role="13i0hy" node="3JLo1nhiwEa" resolve="geefDuur" />
       <node concept="3Tm1VV" id="3JLo1nhiGi3" role="1B3o_S" />
       <node concept="3clFbS" id="3JLo1nhiGi4" role="3clF47">
-        <node concept="3cpWs6" id="3JLo1nhiGi5" role="3cqZAp">
-          <node concept="2YIFZM" id="3JLo1nhiGi6" role="3cqZAk">
-            <ref role="37wK5l" to="28m1:~Duration.of(long,java.time.temporal.TemporalUnit):java.time.Duration" resolve="of" />
-            <ref role="1Pybhc" to="28m1:~Duration" resolve="Duration" />
-            <node concept="10QFUN" id="3JLo1nhiGi7" role="37wK5m">
-              <node concept="BsUDl" id="3JLo1nhiGJd" role="10QFUP">
-                <ref role="37wK5l" node="bTj1CmnFSe" resolve="AantalUren" />
+        <node concept="3cpWs6" id="FR9FxGmxgJ" role="3cqZAp">
+          <node concept="2OqwBi" id="FR9FxGmxgK" role="3cqZAk">
+            <node concept="2OqwBi" id="FR9FxGmxgL" role="2Oq$k0">
+              <node concept="Rm8GO" id="FR9FxGmxCR" role="2Oq$k0">
+                <ref role="Rm8GQ" to="dzyv:~ChronoUnit.HOURS" resolve="HOURS" />
+                <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
               </node>
-              <node concept="3cpWsb" id="3JLo1nhiGi9" role="10QFUM" />
+              <node concept="liA8E" id="FR9FxGmxgN" role="2OqNvi">
+                <ref role="37wK5l" to="dzyv:~ChronoUnit.getDuration():java.time.Duration" resolve="getDuration" />
+              </node>
             </node>
-            <node concept="Rm8GO" id="3JLo1nhiGQZ" role="37wK5m">
-              <ref role="Rm8GQ" to="dzyv:~ChronoUnit.HOURS" resolve="HOURS" />
-              <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+            <node concept="liA8E" id="FR9FxGmxgO" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~Duration.multipliedBy(long):java.time.Duration" resolve="multipliedBy" />
+              <node concept="10QFUN" id="FR9FxGmxgP" role="37wK5m">
+                <node concept="2OqwBi" id="FR9FxGmxgQ" role="10QFUP">
+                  <node concept="13iPFW" id="FR9FxGmxgR" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="FR9FxGmxZN" role="2OqNvi">
+                    <ref role="37wK5l" node="bTj1CmnFSe" resolve="AantalUren" />
+                  </node>
+                </node>
+                <node concept="3cpWsb" id="FR9FxGmxgT" role="10QFUM" />
+              </node>
             </node>
           </node>
         </node>
@@ -900,19 +935,28 @@
       <ref role="13i0hy" node="3JLo1nhiwEa" resolve="geefDuur" />
       <node concept="3Tm1VV" id="3JLo1nhiEfV" role="1B3o_S" />
       <node concept="3clFbS" id="3JLo1nhiEfW" role="3clF47">
-        <node concept="3cpWs6" id="3JLo1nhiEfX" role="3cqZAp">
-          <node concept="2YIFZM" id="3JLo1nhiEfY" role="3cqZAk">
-            <ref role="37wK5l" to="28m1:~Duration.of(long,java.time.temporal.TemporalUnit):java.time.Duration" resolve="of" />
-            <ref role="1Pybhc" to="28m1:~Duration" resolve="Duration" />
-            <node concept="10QFUN" id="3JLo1nhiEfZ" role="37wK5m">
-              <node concept="BsUDl" id="3JLo1nhiEHh" role="10QFUP">
-                <ref role="37wK5l" node="bTj1CmnGi4" resolve="AantalMaanden" />
+        <node concept="3cpWs6" id="FR9FxGmrJW" role="3cqZAp">
+          <node concept="2OqwBi" id="FR9FxGmrJX" role="3cqZAk">
+            <node concept="2OqwBi" id="FR9FxGmrJY" role="2Oq$k0">
+              <node concept="Rm8GO" id="FR9FxGmsuz" role="2Oq$k0">
+                <ref role="Rm8GQ" to="dzyv:~ChronoUnit.MONTHS" resolve="MONTHS" />
+                <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
               </node>
-              <node concept="3cpWsb" id="3JLo1nhiEg1" role="10QFUM" />
+              <node concept="liA8E" id="FR9FxGmrK0" role="2OqNvi">
+                <ref role="37wK5l" to="dzyv:~ChronoUnit.getDuration():java.time.Duration" resolve="getDuration" />
+              </node>
             </node>
-            <node concept="Rm8GO" id="3JLo1nhiEP4" role="37wK5m">
-              <ref role="Rm8GQ" to="dzyv:~ChronoUnit.MONTHS" resolve="MONTHS" />
-              <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+            <node concept="liA8E" id="FR9FxGmrK1" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~Duration.multipliedBy(long):java.time.Duration" resolve="multipliedBy" />
+              <node concept="10QFUN" id="FR9FxGmrK2" role="37wK5m">
+                <node concept="2OqwBi" id="FR9FxGmrK3" role="10QFUP">
+                  <node concept="13iPFW" id="FR9FxGmrK4" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="FR9FxGmshv" role="2OqNvi">
+                    <ref role="37wK5l" node="bTj1CmnGi4" resolve="AantalMaanden" />
+                  </node>
+                </node>
+                <node concept="3cpWsb" id="FR9FxGmrK6" role="10QFUM" />
+              </node>
             </node>
           </node>
         </node>
@@ -976,18 +1020,27 @@
       <node concept="3Tm1VV" id="3JLo1nhiwFT" role="1B3o_S" />
       <node concept="3clFbS" id="3JLo1nhiwFW" role="3clF47">
         <node concept="3cpWs6" id="3JLo1nhiDy$" role="3cqZAp">
-          <node concept="2YIFZM" id="3JLo1nhiDy_" role="3cqZAk">
-            <ref role="1Pybhc" to="28m1:~Duration" resolve="Duration" />
-            <ref role="37wK5l" to="28m1:~Duration.of(long,java.time.temporal.TemporalUnit):java.time.Duration" resolve="of" />
-            <node concept="10QFUN" id="3JLo1nhiDyA" role="37wK5m">
-              <node concept="BsUDl" id="3JLo1nhiDE9" role="10QFUP">
-                <ref role="37wK5l" node="bTj1CmnGUz" resolve="AantalDagen" />
+          <node concept="2OqwBi" id="FR9FxGmpde" role="3cqZAk">
+            <node concept="2OqwBi" id="FR9FxGmneL" role="2Oq$k0">
+              <node concept="Rm8GO" id="FR9FxGmmQo" role="2Oq$k0">
+                <ref role="Rm8GQ" to="dzyv:~ChronoUnit.DAYS" resolve="DAYS" />
+                <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
               </node>
-              <node concept="3cpWsb" id="3JLo1nhiDyC" role="10QFUM" />
+              <node concept="liA8E" id="FR9FxGmoV$" role="2OqNvi">
+                <ref role="37wK5l" to="dzyv:~ChronoUnit.getDuration():java.time.Duration" resolve="getDuration" />
+              </node>
             </node>
-            <node concept="Rm8GO" id="3JLo1nhiDLW" role="37wK5m">
-              <ref role="Rm8GQ" to="dzyv:~ChronoUnit.DAYS" resolve="DAYS" />
-              <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+            <node concept="liA8E" id="FR9FxGmpZY" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~Duration.multipliedBy(long):java.time.Duration" resolve="multipliedBy" />
+              <node concept="10QFUN" id="FR9FxGmqAs" role="37wK5m">
+                <node concept="2OqwBi" id="FR9FxGmqdL" role="10QFUP">
+                  <node concept="13iPFW" id="FR9FxGmq1o" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="FR9FxGmqtG" role="2OqNvi">
+                    <ref role="37wK5l" node="bTj1CmnGUz" resolve="AantalDagen" />
+                  </node>
+                </node>
+                <node concept="3cpWsb" id="FR9FxGmqAt" role="10QFUM" />
+              </node>
             </node>
           </node>
         </node>

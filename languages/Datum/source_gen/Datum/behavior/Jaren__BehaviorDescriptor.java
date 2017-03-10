@@ -42,7 +42,7 @@ public final class Jaren__BehaviorDescriptor extends BaseBHDescriptor {
     return 0;
   }
   /*package*/ static Duration geefDuur_id3JLo1nhiwEa(@NotNull SNode __thisNode__) {
-    return Duration.of((long) ((double) Jaren__BehaviorDescriptor.AantalJaren_idbTj1CmnvAs.invoke(__thisNode__)), ChronoUnit.YEARS);
+    return ChronoUnit.YEARS.getDuration().multipliedBy((long) ((double) Jaren__BehaviorDescriptor.AantalJaren_idbTj1CmnvAs.invoke(__thisNode__)));
   }
 
   /*package*/ Jaren__BehaviorDescriptor() {
