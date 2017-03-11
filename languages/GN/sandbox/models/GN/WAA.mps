@@ -3746,7 +3746,7 @@
     </node>
     <node concept="Z77fL" id="5RiSaxyQR8p" role="Z0I24">
       <ref role="Z77fR" node="28MuYO0n6cK" resolve="AZML" />
-      <ref role="Z77fM" node="4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
+      <ref role="Z77fM" node="28ifPi2BQ3p" resolve="Afwijzen van het verzoek" />
       <ref role="Z77fO" node="3CWQViUvbue" resolve="Verzoek 1" />
     </node>
     <node concept="LeFwQ" id="4f9cC5oxMk" role="3zKq1C">
@@ -3783,315 +3783,42 @@
     <node concept="3WXGrE" id="4f9cC5oxMF" role="3WXGrD">
       <ref role="3WXGrF" node="4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
     </node>
-    <node concept="1dyV97" id="5gJzES7QSky" role="2NEIfv">
-      <node concept="1dyV9E" id="5gJzES7QSu5" role="1dyV96">
-        <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden van Indienen verzoek aanpassing arbeidsduur" />
+    <node concept="1dyV97" id="5gJzES8ePAs" role="2NEIfv">
+      <node concept="1dyV9E" id="5gJzES8ePAt" role="1dyV96">
+        <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden van Afwijzen van het verzoek" />
       </node>
-      <node concept="1dyV9E" id="5gJzES7QSu6" role="1dyV96">
+      <node concept="1dyV9E" id="5gJzES8ePAu" role="1dyV96">
         <property role="1dyV9H" value=" " />
       </node>
-      <node concept="1dyV9E" id="5gJzES7QSu7" role="1dyV96">
+      <node concept="1dyV9E" id="5gJzES8ePAv" role="1dyV96">
         <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
       </node>
-      <node concept="1dyV9E" id="5gJzES7QSu8" role="1dyV96">
-        <property role="1dyV9H" value="Evalueer de expressie 'ligt ten minste &lt;duur&gt; voor'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSu9" role="1dyV96">
-        <property role="1dyV9H" value="Start expressie (variabele) ligt tenminste &lt;variabele&gt; voor (variabele)" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuc" role="1dyV96">
-        <property role="1dyV9H" value="Type van variabele : DatumWaarde" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSue" role="1dyV96">
-        <property role="1dyV9H" value="Type van variabele : DatumWaarde" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSug" role="1dyV96">
-        <property role="1dyV9H" value="Type van variabele : DuurWaarde" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuh" role="1dyV96">
-        <property role="1dyV9H" value="2001-01-01 ligt ten minste PT960H voor 2004-01-01" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSui" role="1dyV96">
-        <property role="1dyV9H" value="Minimale duur bepaald" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuj" role="1dyV96">
-        <property role="1dyV9H" value="Werkelijke duur bepaald" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuk" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van 2001-01-01 ligt ten minste PT960H voor 2004-01-01 is true" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSul" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSum" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSun" role="1dyV96">
-        <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuo" role="1dyV96">
-        <property role="1dyV9H" value="Evalueer de expressie 'ligt ten minste &lt;duur&gt; voor'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSup" role="1dyV96">
-        <property role="1dyV9H" value="Start expressie (variabele) ligt tenminste &lt;variabele&gt; voor (variabele)" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSur" role="1dyV96">
-        <property role="1dyV9H" value="Type van variabele : DatumWaarde" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSut" role="1dyV96">
-        <property role="1dyV9H" value="Type van variabele : DatumWaarde" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuu" role="1dyV96">
-        <property role="1dyV9H" value="2002-01-01 ligt ten minste PT2921H56M24S voor 2004-01-01" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuv" role="1dyV96">
-        <property role="1dyV9H" value="Minimale duur bepaald" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuw" role="1dyV96">
-        <property role="1dyV9H" value="Werkelijke duur bepaald" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSux" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van 2002-01-01 ligt ten minste PT2921H56M24S voor 2004-01-01 is true" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuy" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuz" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSu$" role="1dyV96">
-        <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSu_" role="1dyV96">
-        <property role="1dyV9H" value="Evalueer de expressie 'is opgegeven'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuB" role="1dyV96">
-        <property role="1dyV9H" value="Type van variabele : DuurWaarde" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuC" role="1dyV96">
-        <property role="1dyV9H" value="variabele is opgegeven is true" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuD" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuE" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuF" role="1dyV96">
-        <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuG" role="1dyV96">
-        <property role="1dyV9H" value="Evalueer de expressie 'is opgegeven'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuI" role="1dyV96">
-        <property role="1dyV9H" value="Type van variabele : InstantieVanObject" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuJ" role="1dyV96">
-        <property role="1dyV9H" value="variabele is opgegeven is true" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuK" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuL" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuM" role="1dyV96">
-        <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuN" role="1dyV96">
+      <node concept="1dyV9E" id="5gJzES8ePAw" role="1dyV96">
         <property role="1dyV9H" value="Evalueer de expressie 'is waar'" />
       </node>
-      <node concept="1dyV9E" id="5gJzES7QSuP" role="1dyV96">
+      <node concept="1dyV9E" id="5gJzES8ePAy" role="1dyV96">
         <property role="1dyV9H" value="Type van variabele : JaNeeWaarde" />
       </node>
-      <node concept="1dyV9E" id="5gJzES7QSuQ" role="1dyV96">
-        <property role="1dyV9H" value="variabele is waar is true" />
+      <node concept="1dyV9E" id="5gJzES8ePAz" role="1dyV96">
+        <property role="1dyV9H" value="Waarde van variabele : null" />
       </node>
-      <node concept="1dyV9E" id="5gJzES7QSuR" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
+      <node concept="1dyV9E" id="5gJzES8ePA$" role="1dyV96">
+        <property role="1dyV9H" value="Variabele 'zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen' is waar is 'false'" />
       </node>
-      <node concept="1dyV9E" id="5gJzES7QSuS" role="1dyV96">
+      <node concept="1dyV9E" id="5gJzES8ePA_" role="1dyV96">
+        <property role="1dyV9H" value="Resultaat van expressie 'false'" />
+      </node>
+      <node concept="1dyV9E" id="5gJzES8ePAA" role="1dyV96">
+        <property role="1dyV9H" value="Resultaat van de voorwaarde 'false'" />
+      </node>
+      <node concept="1dyV9E" id="5gJzES8ePAB" role="1dyV96">
+        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'false'" />
+      </node>
+      <node concept="1dyV9E" id="5gJzES8ePAC" role="1dyV96">
         <property role="1dyV9H" value=" " />
       </node>
-      <node concept="1dyV9E" id="5gJzES7QSuT" role="1dyV96">
-        <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuU" role="1dyV96">
-        <property role="1dyV9H" value="Evalueer de expressie 'is opgegeven'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuW" role="1dyV96">
-        <property role="1dyV9H" value="Type van variabele : DatumWaarde" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuX" role="1dyV96">
-        <property role="1dyV9H" value="variabele is opgegeven is true" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuY" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSuZ" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSv0" role="1dyV96">
-        <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSv1" role="1dyV96">
-        <property role="1dyV9H" value="Evalueer de expressie 'is gelijk aan'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSv3" role="1dyV96">
-        <property role="1dyV9H" value="Geef lijst van instanties van variabele variabele en meervoudige variabele variabele" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSv5" role="1dyV96">
-        <property role="1dyV9H" value="Type van variabele : InstantieVanObject" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSv6" role="1dyV96">
-        <property role="1dyV9H" value="Waarde van variabele Maandag t/m vrijdag 5 x 8" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSv9" role="1dyV96">
-        <property role="1dyV9H" value="Type van variabele : MeervoudigeObjectWaarde" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSva" role="1dyV96">
-        <property role="1dyV9H" value="Bereken 1 van 10" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvc" role="1dyV96">
-        <property role="1dyV9H" value="Het verschil tussen 08:00 en 12:00 is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSve" role="1dyV96">
-        <property role="1dyV9H" value="Resultaatwaarde is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvf" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvg" role="1dyV96">
-        <property role="1dyV9H" value="Bereken 2 van 10" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvi" role="1dyV96">
-        <property role="1dyV9H" value="Het verschil tussen 12:00 en 16:00 is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvk" role="1dyV96">
-        <property role="1dyV9H" value="Resultaatwaarde is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvl" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvm" role="1dyV96">
-        <property role="1dyV9H" value="Bereken 3 van 10" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvo" role="1dyV96">
-        <property role="1dyV9H" value="Het verschil tussen 08:00 en 12:00 is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvq" role="1dyV96">
-        <property role="1dyV9H" value="Resultaatwaarde is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvr" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvs" role="1dyV96">
-        <property role="1dyV9H" value="Bereken 4 van 10" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvu" role="1dyV96">
-        <property role="1dyV9H" value="Het verschil tussen 12:00 en 16:00 is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvw" role="1dyV96">
-        <property role="1dyV9H" value="Resultaatwaarde is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvx" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvy" role="1dyV96">
-        <property role="1dyV9H" value="Bereken 5 van 10" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSv$" role="1dyV96">
-        <property role="1dyV9H" value="Het verschil tussen 08:00 en 12:00 is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvA" role="1dyV96">
-        <property role="1dyV9H" value="Resultaatwaarde is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvB" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvC" role="1dyV96">
-        <property role="1dyV9H" value="Bereken 6 van 10" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvE" role="1dyV96">
-        <property role="1dyV9H" value="Het verschil tussen 12:00 en 16:00 is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvG" role="1dyV96">
-        <property role="1dyV9H" value="Resultaatwaarde is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvH" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvI" role="1dyV96">
-        <property role="1dyV9H" value="Bereken 7 van 10" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvK" role="1dyV96">
-        <property role="1dyV9H" value="Het verschil tussen 08:00 en 12:00 is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvM" role="1dyV96">
-        <property role="1dyV9H" value="Resultaatwaarde is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvN" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvO" role="1dyV96">
-        <property role="1dyV9H" value="Bereken 8 van 10" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvQ" role="1dyV96">
-        <property role="1dyV9H" value="Het verschil tussen 12:00 en 16:00 is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvS" role="1dyV96">
-        <property role="1dyV9H" value="Resultaatwaarde is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvT" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvU" role="1dyV96">
-        <property role="1dyV9H" value="Bereken 9 van 10" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvW" role="1dyV96">
-        <property role="1dyV9H" value="Het verschil tussen 08:00 en 12:00 is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvY" role="1dyV96">
-        <property role="1dyV9H" value="Resultaatwaarde is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSvZ" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSw0" role="1dyV96">
-        <property role="1dyV9H" value="Bereken 10 van 10" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSw2" role="1dyV96">
-        <property role="1dyV9H" value="Het verschil tussen 12:00 en 16:00 is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSw4" role="1dyV96">
-        <property role="1dyV9H" value="Resultaatwaarde is PT4H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSw5" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSw6" role="1dyV96">
-        <property role="1dyV9H" value="De som van de lijst 'verschil tussen' is PT40H" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSw7" role="1dyV96">
-        <property role="1dyV9H" value="Opvragen waarde van variabele 'omvang van de aanpassing'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSw9" role="1dyV96">
-        <property role="1dyV9H" value="Type van variabele : DuurWaarde" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSwa" role="1dyV96">
-        <property role="1dyV9H" value="Waarde van variabele 'PT40H'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSwb" role="1dyV96">
-        <property role="1dyV9H" value="'de som van' is gelijk aan 'variabele' is true" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSwc" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSwd" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="5gJzES7QSwe" role="1dyV96">
-        <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is true" />
+      <node concept="1dyV9E" id="5gJzES8ePAD" role="1dyV96">
+        <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is false" />
       </node>
     </node>
   </node>
@@ -4545,6 +4272,186 @@
             <ref role="2mbrj7" node="4rrm763F9v7" resolve="feiten bij vermeerdering" />
           </node>
           <node concept="1zyu0$" id="3CWQViUvc4Q" role="2M1C9h">
+            <ref role="1zyu0_" node="2aEn9tXM$Qj" resolve="geen feiten bij vermeerdering" />
+          </node>
+        </node>
+      </node>
+      <node concept="2M1C9k" id="5gJzES8eOSC" role="1ztKoP">
+        <property role="TrG5h" value="Af te wijzen verzoek" />
+        <ref role="2M1C9n" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
+        <node concept="2M1C6R" id="5gJzES8eOSD" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOSE" role="2M1C6S">
+            <ref role="2mbrj7" node="3r$i425gxTV" resolve="op grond van arbeidsovereenkomst" />
+          </node>
+          <node concept="3dadDn" id="5gJzES8ePf3" role="2M1C9h">
+            <ref role="3dadDm" node="28MuYO0sW8R" resolve="Arbeidsovereenkomst 1" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOSG" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOSH" role="2M1C6S">
+            <ref role="2mbrj7" node="5qTpXpBo3uX" resolve="datum indienen verzoek" />
+          </node>
+          <node concept="12cab2" id="5gJzES8eOSI" role="2M1C9h">
+            <node concept="2B78Lw" id="5gJzES8ePfO" role="12cab5">
+              <property role="2B78LB" value="1" />
+              <property role="2B78L_" value="1" />
+              <property role="2B78LE" value="2002" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOSJ" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOSK" role="2M1C6S">
+            <ref role="2mbrj7" node="3r$i425evlJ" resolve="datum vorige versie van het verzoek" />
+          </node>
+          <node concept="12cab2" id="5gJzES8eOSL" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOSM" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOSN" role="2M1C6S">
+            <ref role="2mbrj7" node="7k4OuKunaq" resolve="datum overleg gepleegd" />
+          </node>
+          <node concept="12cab2" id="5gJzES8eOSO" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOSP" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOSQ" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3x_gh" resolve="datum verzoek ingewilligd" />
+          </node>
+          <node concept="12cab2" id="5gJzES8eOSR" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOSS" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOST" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3x_iv" resolve="datum verzoek afgewezen" />
+          </node>
+          <node concept="12cab2" id="5gJzES8eOSU" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOSV" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOSW" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3z6$y" resolve="datum spreiding vastgesteld" />
+          </node>
+          <node concept="12cab2" id="5gJzES8eOSX" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOSY" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOSZ" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3z6Fr" resolve="datum spreiding van de uren laatst gewijzigd" />
+          </node>
+          <node concept="12cab2" id="5gJzES8eOT0" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOT1" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOT2" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3z6II" resolve="datum beslissing medegedeeld" />
+          </node>
+          <node concept="12cab2" id="5gJzES8eOT3" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOT4" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOT5" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3z6Lq" resolve="datum mededelen redenen" />
+          </node>
+          <node concept="12cab2" id="5gJzES8eOT6" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOT7" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOT8" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3z6Cn" resolve="werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken" />
+          </node>
+          <node concept="12cgnX" id="5gJzES8eOT9" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOTa" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOTb" role="2M1C6S">
+            <ref role="2mbrj7" node="4yDNEIgGSlm" resolve="datum belang aangegeven" />
+          </node>
+          <node concept="12cab2" id="5gJzES8eOTc" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOTd" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOTe" role="2M1C6S">
+            <ref role="2mbrj7" node="4$mS69sWF6g" resolve="beoogde ingangsdatum van de aanpassing" />
+          </node>
+          <node concept="12cab2" id="5gJzES8eOTf" role="2M1C9h">
+            <node concept="2B78Lw" id="5gJzES8ePkS" role="12cab5">
+              <property role="2B78LB" value="1" />
+              <property role="2B78L_" value="1" />
+              <property role="2B78LE" value="2004" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOTg" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOTh" role="2M1C6S">
+            <ref role="2mbrj7" node="GhrpPwK$en" resolve="omvang van de aanpassing" />
+          </node>
+          <node concept="2NL2Z2" id="5gJzES8eOTi" role="2M1C9h">
+            <node concept="35qpfg" id="5gJzES8ePpW" role="2NL2Z1">
+              <property role="35qpfj" value="40" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOTj" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOTk" role="2M1C6S">
+            <ref role="2mbrj7" node="GhrpPwK$fm" resolve="gewenste spreiding" />
+          </node>
+          <node concept="3dadDn" id="5gJzES8ePsT" role="2M1C9h">
+            <ref role="3dadDm" node="5RiSaxzsEAR" resolve="Maandag t/m vrijdag 5 x 8" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOTm" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOTn" role="2M1C6S">
+            <ref role="2mbrj7" node="1KHGaPR$on" resolve="schriftelijk ingediend" />
+          </node>
+          <node concept="12cgnX" id="5gJzES8eOTo" role="2M1C9h">
+            <node concept="2frckw" id="5gJzES8ePtE" role="2frcku" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOTp" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOTq" role="2M1C6S">
+            <ref role="2mbrj7" node="4rrm763mT9K" resolve="samentelling volgens werknemer" />
+          </node>
+          <node concept="2NL2Z2" id="5gJzES8eOTr" role="2M1C9h">
+            <node concept="35qpnp" id="5gJzES8ePuq" role="2NL2Z1">
+              <property role="35qpno" value="40" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOTs" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOTt" role="2M1C6S">
+            <ref role="2mbrj7" node="4rrm763mTaW" resolve="samentelling volgens werkgever" />
+          </node>
+          <node concept="2NL2Z2" id="5gJzES8eOTu" role="2M1C9h">
+            <node concept="35qpnp" id="5gJzES8ePwA" role="2NL2Z1">
+              <property role="35qpno" value="40" />
+            </node>
+          </node>
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOTv" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOTw" role="2M1C6S">
+            <ref role="2mbrj7" node="4rrm763mTgf" resolve="redenen voor afwijzing" />
+          </node>
+          <node concept="12cgni" id="5gJzES8ePyM" role="2M1C9h">
+            <property role="12cgnl" value="Geen" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOTy" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOTz" role="2M1C6S">
+            <ref role="2mbrj7" node="4NzHub3z6hn" resolve="zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen" />
+          </node>
+          <node concept="12cgnX" id="5gJzES8eOT$" role="2M1C9h">
+            <node concept="2frckw" id="5gJzES8ePzz" role="2frcku" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOT_" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOTA" role="2M1C6S">
+            <ref role="2mbrj7" node="4yDNEIgGSUg" resolve="datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever" />
+          </node>
+          <node concept="12cab2" id="5gJzES8eOTB" role="2M1C9h" />
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOTC" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOTD" role="2M1C6S">
+            <ref role="2mbrj7" node="4rrm763F9tz" resolve="feiten bij vermindering" />
+          </node>
+          <node concept="1zyu0$" id="5gJzES8eP$j" role="2M1C9h">
+            <ref role="1zyu0_" node="2aEn9tXM$Qd" resolve="geen feiten bij vermindering" />
+          </node>
+        </node>
+        <node concept="2M1C6R" id="5gJzES8eOTF" role="2M1C9l">
+          <node concept="2mbrj6" id="5gJzES8eOTG" role="2M1C6S">
+            <ref role="2mbrj7" node="4rrm763F9v7" resolve="feiten bij vermeerdering" />
+          </node>
+          <node concept="1zyu0$" id="5gJzES8eP_4" role="2M1C9h">
             <ref role="1zyu0_" node="2aEn9tXM$Qj" resolve="geen feiten bij vermeerdering" />
           </node>
         </node>

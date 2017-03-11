@@ -31,12 +31,15 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
-          SNode duurWaarde;
-          Duration result;
-          Interpreter.voegBerichtToe("Opvragen waarde van variabele '" + SLinkOperations.getTarget(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")) + "'");
-          result = ((Duration) Interpreter.GeefWaardeVanVariabele(node));
-          Interpreter.voegBerichtToe("Waarde van variabele '" + result + "'");
-          return result;
+          Object waarde = Interpreter.GeefWaardeVanVariabele(node);
+          if (waarde instanceof Duration) {
+            Duration result;
+            Interpreter.voegBerichtToe("Opvragen waarde van variabele van type Duurwaarde '" + SLinkOperations.getTarget(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")) + "'");
+            result = ((Duration) Interpreter.GeefWaardeVanVariabele(node));
+            Interpreter.voegBerichtToe("Waarde van variabele '" + result + "'");
+            return result;
+          }
+          return null;
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {

@@ -31,15 +31,16 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
-          Object resultvoorwaarden = true;
+          Boolean resultvoorwaarden = true;
           Interpreter.voegBerichtToe("Start van de evaluatie van de voorwaarden van " + Interpreter.teEvaluerenRechtshandeling());
           Interpreter.voegBerichtToe(" ");
-          Object resultaatvoorwaarde = null;
+          Boolean resultaatvoorwaarde = null;
           for (SNode voorwaarde : ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fce8L, 0x42e9dab3410fd0cL, "voorwaarden")))) {
             Interpreter.voegBerichtToe("Start van de evaluatie van de voorwaarde ");
-            resultaatvoorwaarde = context.getRootInterpreter().evaluate(voorwaarde, context, coverage);
+            resultaatvoorwaarde = ((Boolean) context.getRootInterpreter().evaluate(voorwaarde, context, coverage));
+            Interpreter.voegBerichtToe("Resultaat van de voorwaarde '" + resultaatvoorwaarde + "'");
             if (resultaatvoorwaarde != null) {
-              resultvoorwaarden = ((Boolean) resultvoorwaarden) && ((Boolean) resultaatvoorwaarde);
+              resultvoorwaarden = resultvoorwaarden && resultaatvoorwaarde;
             }
             if (resultaatvoorwaarde == null) {
               resultaatvoorwaarde = false;
@@ -71,9 +72,10 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           Interpreter.voegBerichtToe("Evalueer de expressie '" + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")) + "'");
-          Object object = null;
-          object = context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")), context, coverage);
-          return object;
+          Boolean result = null;
+          result = ((Boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")), context, coverage));
+          Interpreter.voegBerichtToe("Resultaat van expressie '" + result + "'");
+          return result;
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {

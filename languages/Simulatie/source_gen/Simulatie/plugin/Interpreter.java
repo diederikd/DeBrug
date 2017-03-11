@@ -126,7 +126,7 @@ public class Interpreter {
     {
       final SNode jaNeeWaarde = waarde;
       if (SNodeOperations.isInstanceOf(jaNeeWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac54cL, "Gegevens.structure.JaNeeWaarde"))) {
-        System.out.println("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(jaNeeWaarde));
+        Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(jaNeeWaarde));
         return waardeJaNee__BehaviorDescriptor.geefWaarde_id4yDNEIh2toX.invoke(SLinkOperations.getTarget(jaNeeWaarde, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac54cL, 0x4ce3b5e2c38f70fcL, "waarde")));
       }
     }
