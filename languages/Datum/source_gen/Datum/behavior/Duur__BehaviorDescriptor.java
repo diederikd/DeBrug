@@ -26,16 +26,13 @@ public final class Duur__BehaviorDescriptor extends BaseBHDescriptor {
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<Duration> geefDuur_id3JLo1nhiwEa = new SMethodBuilder<Duration>(new SJavaCompoundTypeImpl(Duration.class)).name("geefDuur").modifiers(SModifiersImpl.create(12, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3JLo1nhiwEa").registry(REGISTRY).build();
-  public static final SMethod<String> geefDuurString_idCRumITzgHT = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("geefDuurString").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("CRumITzgHT").registry(REGISTRY).build();
+  public static final SMethod<Void> ZetDuur_id3CWQViUPQ1p = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ZetDuur").modifiers(SModifiersImpl.create(12, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3CWQViUPQ1p").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(Duration.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(geefDuur_id3JLo1nhiwEa, geefDuurString_idCRumITzgHT);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(geefDuur_id3JLo1nhiwEa, ZetDuur_id3CWQViUPQ1p);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static String geefDuurString_idCRumITzgHT(@NotNull SNode __thisNode__) {
-    return Duur__BehaviorDescriptor.geefDuur_id3JLo1nhiwEa.invoke(__thisNode__).toString();
-  }
 
   /*package*/ Duur__BehaviorDescriptor() {
     super(REGISTRY);
@@ -53,8 +50,6 @@ public final class Duur__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
-      case 1:
-        return (T) ((String) geefDuurString_idCRumITzgHT(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

@@ -14,6 +14,7 @@
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="jx79" ref="r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2272,7 +2273,7 @@
       <node concept="3clFbS" id="CRumITWPrf" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="CRumIU3iNh" role="13h7CS">
-      <property role="TrG5h" value="geefWaardeDuur" />
+      <property role="TrG5h" value="geefDuurWaarde" />
       <node concept="3Tm1VV" id="CRumIU3iNi" role="1B3o_S" />
       <node concept="3uibUv" id="CRumIU3lZo" role="3clF45">
         <ref role="3uigEE" to="28m1:~Duration" resolve="Duration" />
@@ -2309,6 +2310,62 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="3CWQViUCGox" role="13h7CS">
+      <property role="TrG5h" value="ZetDuurWaarde" />
+      <node concept="37vLTG" id="3CWQViUCGV8" role="3clF46">
+        <property role="TrG5h" value="duration" />
+        <node concept="3uibUv" id="3CWQViUCGVm" role="1tU5fm">
+          <ref role="3uigEE" to="28m1:~Duration" resolve="Duration" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3CWQViUCGoy" role="1B3o_S" />
+      <node concept="3cqZAl" id="3CWQViUCGGP" role="3clF45" />
+      <node concept="3clFbS" id="3CWQViUCGo$" role="3clF47">
+        <node concept="3cpWs8" id="3CWQViUCGVL" role="3cqZAp">
+          <node concept="3cpWsn" id="3CWQViUCGVO" role="3cpWs9">
+            <property role="TrG5h" value="uren" />
+            <node concept="3Tqbb2" id="3CWQViUCGVK" role="1tU5fm">
+              <ref role="ehGHo" to="jx79:4rrm763GGIx" resolve="Uren" />
+            </node>
+            <node concept="2ShNRf" id="3CWQViUCGX9" role="33vP2m">
+              <node concept="3zrR0B" id="3CWQViUCGX7" role="2ShVmc">
+                <node concept="3Tqbb2" id="3CWQViUCGX8" role="3zrR0E">
+                  <ref role="ehGHo" to="jx79:4rrm763GGIx" resolve="Uren" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3CWQViUCH2q" role="3cqZAp">
+          <node concept="2OqwBi" id="3CWQViUCHbB" role="3clFbG">
+            <node concept="37vLTw" id="3CWQViUCH2o" role="2Oq$k0">
+              <ref role="3cqZAo" node="3CWQViUCGVO" resolve="uren" />
+            </node>
+            <node concept="2qgKlT" id="3CWQViUCHpI" role="2OqNvi">
+              <ref role="37wK5l" to="rwnv:3CWQViUPQ1p" resolve="ZetDuur" />
+              <node concept="37vLTw" id="3CWQViUCHub" role="37wK5m">
+                <ref role="3cqZAo" node="3CWQViUCGV8" resolve="duration" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3CWQViUJGXr" role="3cqZAp">
+          <node concept="2OqwBi" id="3CWQViUJHPi" role="3clFbG">
+            <node concept="2OqwBi" id="3CWQViUJHaZ" role="2Oq$k0">
+              <node concept="13iPFW" id="3CWQViUJGXp" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3CWQViUJHtd" role="2OqNvi">
+                <ref role="3Tt5mk" to="uwhu:CRumITWPqE" resolve="duur" />
+              </node>
+            </node>
+            <node concept="2oxUTD" id="3CWQViUJInK" role="2OqNvi">
+              <node concept="37vLTw" id="3CWQViUJIsv" role="2oxUTC">
+                <ref role="3cqZAo" node="3CWQViUCGVO" resolve="uren" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="CRumITWPro" role="13h7CS">
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -2328,15 +2385,20 @@
           </node>
           <node concept="3clFbS" id="CRumITWPrG" role="3clFbx">
             <node concept="3cpWs6" id="CRumITWQKF" role="3cqZAp">
-              <node concept="2OqwBi" id="CRumITWRKo" role="3cqZAk">
-                <node concept="2OqwBi" id="CRumITWR4C" role="2Oq$k0">
-                  <node concept="13iPFW" id="CRumITWQPl" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="CRumITWRmI" role="2OqNvi">
-                    <ref role="3Tt5mk" to="uwhu:CRumITWPqE" resolve="duur" />
+              <node concept="2OqwBi" id="5gJzES7Dj5s" role="3cqZAk">
+                <node concept="2OqwBi" id="CRumITWRKo" role="2Oq$k0">
+                  <node concept="2OqwBi" id="CRumITWR4C" role="2Oq$k0">
+                    <node concept="13iPFW" id="CRumITWQPl" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="CRumITWRmI" role="2OqNvi">
+                      <ref role="3Tt5mk" to="uwhu:CRumITWPqE" resolve="duur" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="5gJzES7Di_K" role="2OqNvi">
+                    <ref role="37wK5l" to="rwnv:3JLo1nhiwEa" resolve="geefDuur" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="CRumITWS2G" role="2OqNvi">
-                  <ref role="37wK5l" to="rwnv:CRumITzgHT" resolve="geefDuurString" />
+                <node concept="liA8E" id="5gJzES7Dj_i" role="2OqNvi">
+                  <ref role="37wK5l" to="28m1:~Duration.toString():java.lang.String" resolve="toString" />
                 </node>
               </node>
             </node>

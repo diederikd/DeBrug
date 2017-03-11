@@ -11,6 +11,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
+import java.time.Duration;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
 import com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo;
@@ -29,11 +31,11 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
-          double result;
-          DebugHelper.printContext("Variabele", node, context);
-          DebugHelper.printContext("Rechtshandeling", Interpreter.InstantieVanOnderwerpVanDeHandeling(), context);
-          result = (double) Interpreter.GeefWaardeVanVariabele(node);
-          System.out.println("Variabele waarde" + result);
+          SNode duurWaarde;
+          Duration result;
+          Interpreter.voegBerichtToe("Opvragen waarde van variabele '" + SLinkOperations.getTarget(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")) + "'");
+          result = ((Duration) Interpreter.GeefWaardeVanVariabele(node));
+          Interpreter.voegBerichtToe("Waarde van variabele '" + result + "'");
           return result;
         } catch (InterpreterEscapeException ex) {
           throw ex;

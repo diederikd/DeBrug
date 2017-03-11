@@ -20,6 +20,7 @@ import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import Simulatie.behavior.Simulatie__BehaviorDescriptor;
 import Gegevens.behavior.Waarde__BehaviorDescriptor;
 import Gegevens.behavior.RekenWaarde__BehaviorDescriptor;
 import Gegevens.behavior.waardeJaNee__BehaviorDescriptor;
@@ -29,7 +30,6 @@ import Gegevens.behavior.DuurWaarde__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.List;
 import java.util.ArrayList;
-import Simulatie.behavior.Simulatie__BehaviorDescriptor;
 
 public class Interpreter {
   private static IInterpreter interpreter;
@@ -107,7 +107,7 @@ public class Interpreter {
       waarde = InterpreterFuncties.GeefWaardeVanKenmerk(SLinkOperations.getTarget(objectWaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, 0x4ccbd8fc9e467d9L, "object")), SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
     }
 
-    System.out.println("Type van variabele : " + waarde);
+    Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Type van variabele : " + waarde);
 
     {
       final SNode rekenWaarde = waarde;
@@ -138,17 +138,17 @@ public class Interpreter {
       }
     }
     {
+      final SNode duurWaarde = waarde;
+      if (SNodeOperations.isInstanceOf(duurWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, "Gegevens.structure.DuurWaarde"))) {
+        System.out.println("Waarde van variabele : " + duurWaarde);
+        return DuurWaarde__BehaviorDescriptor.geefDuurWaarde_idCRumIU3iNh.invoke(duurWaarde);
+      }
+    }
+    {
       final SNode temporeleWaarde = waarde;
       if (SNodeOperations.isInstanceOf(temporeleWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde"))) {
         System.out.println("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(temporeleWaarde));
         return TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(temporeleWaarde);
-      }
-    }
-    {
-      final SNode duurWaarde = waarde;
-      if (SNodeOperations.isInstanceOf(duurWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, "Gegevens.structure.DuurWaarde"))) {
-        System.out.println("Waarde van variabele : " + duurWaarde);
-        return DuurWaarde__BehaviorDescriptor.geefWaardeDuur_idCRumIU3iNh.invoke(duurWaarde);
       }
     }
     {

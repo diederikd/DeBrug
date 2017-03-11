@@ -29,8 +29,10 @@ public final class Minuten__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Double> AantalMinuten_idbTj1CmnEPZ = new SMethodBuilder<Double>(new SJavaCompoundTypeImpl(Double.TYPE)).name("AantalMinuten").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("bTj1CmnEPZ").registry(REGISTRY).build();
   public static final SMethod<Duration> geefDuur_id3JLo1nhiwEa = new SMethodBuilder<Duration>(new SJavaCompoundTypeImpl(Duration.class)).name("geefDuur").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3JLo1nhiwEa").registry(REGISTRY).build();
+  public static final SMethod<Void> ZetDuur_id3CWQViUPQ1p = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ZetDuur").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3CWQViUPQ1p").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(Duration.class, ""));
+  public static final SMethod<String> geefDuurString_id3CWQViUAhiD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("geefDuurString").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3CWQViUAhiD").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AantalMinuten_idbTj1CmnEPZ, geefDuur_id3JLo1nhiwEa);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AantalMinuten_idbTj1CmnEPZ, geefDuur_id3JLo1nhiwEa, ZetDuur_id3CWQViUPQ1p, geefDuurString_id3CWQViUAhiD);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -43,6 +45,13 @@ public final class Minuten__BehaviorDescriptor extends BaseBHDescriptor {
   }
   /*package*/ static Duration geefDuur_id3JLo1nhiwEa(@NotNull SNode __thisNode__) {
     return ChronoUnit.MINUTES.getDuration().multipliedBy((long) ((double) Minuten__BehaviorDescriptor.AantalMinuten_idbTj1CmnEPZ.invoke(__thisNode__)));
+  }
+  /*package*/ static void ZetDuur_id3CWQViUPQ1p(@NotNull SNode __thisNode__, Duration duration) {
+    Long duur = duration.toMinutes();
+    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cdc8L, 0x46db587183b2cdc9L, "minuten"), duur.toString());
+  }
+  /*package*/ static String geefDuurString_id3CWQViUAhiD(@NotNull SNode __thisNode__) {
+    return Duur__BehaviorDescriptor.geefDuur_id3JLo1nhiwEa.invoke(__thisNode__).toString();
   }
 
   /*package*/ Minuten__BehaviorDescriptor() {
@@ -65,6 +74,11 @@ public final class Minuten__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((Double) AantalMinuten_idbTj1CmnEPZ(node));
       case 1:
         return (T) ((Duration) geefDuur_id3JLo1nhiwEa(node));
+      case 2:
+        ZetDuur_id3CWQViUPQ1p(node, (Duration) parameters[0]);
+        return null;
+      case 3:
+        return (T) ((String) geefDuurString_id3CWQViUAhiD(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

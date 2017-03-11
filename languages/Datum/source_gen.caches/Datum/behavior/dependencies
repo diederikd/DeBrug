@@ -26,10 +26,13 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Datum.behavior.Dagen__BehaviorDescriptor" file="Dagen__BehaviorDescriptor.java">
+    <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.time.Duration" />
     <classNode dependClassName="java.time.temporal.ChronoUnit" />
     <classNode dependClassName="java.util.Arrays" />
@@ -116,7 +119,7 @@
   <dependency className="Datum.behavior.Duur__BehaviorDescriptor" file="Duur__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.time.Duration" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
@@ -141,10 +144,13 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Datum.behavior.Jaren__BehaviorDescriptor" file="Jaren__BehaviorDescriptor.java">
+    <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.time.Duration" />
     <classNode dependClassName="java.time.temporal.ChronoUnit" />
     <classNode dependClassName="java.util.Arrays" />
@@ -171,10 +177,13 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Datum.behavior.Maanden__BehaviorDescriptor" file="Maanden__BehaviorDescriptor.java">
+    <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.time.Duration" />
     <classNode dependClassName="java.time.temporal.ChronoUnit" />
     <classNode dependClassName="java.util.Arrays" />
@@ -201,10 +210,13 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Datum.behavior.Minuten__BehaviorDescriptor" file="Minuten__BehaviorDescriptor.java">
+    <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.time.Duration" />
     <classNode dependClassName="java.time.temporal.ChronoUnit" />
     <classNode dependClassName="java.util.Arrays" />
@@ -231,10 +243,13 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Datum.behavior.Seconden__BehaviorDescriptor" file="Seconden__BehaviorDescriptor.java">
+    <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.time.Duration" />
     <classNode dependClassName="java.time.temporal.ChronoUnit" />
     <classNode dependClassName="java.util.Arrays" />
@@ -289,10 +304,13 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Datum.behavior.Uren__BehaviorDescriptor" file="Uren__BehaviorDescriptor.java">
+    <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.time.Duration" />
     <classNode dependClassName="java.time.temporal.ChronoUnit" />
     <classNode dependClassName="java.util.Arrays" />

@@ -19,6 +19,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import Datum.behavior.Duur__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -27,23 +28,29 @@ public final class DuurWaarde__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, "Gegevens.structure.DuurWaarde");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<Duration> geefWaardeDuur_idCRumIU3iNh = new SMethodBuilder<Duration>(new SJavaCompoundTypeImpl(Duration.class)).name("geefWaardeDuur").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("CRumIU3iNh").registry(REGISTRY).build();
+  public static final SMethod<Duration> geefDuurWaarde_idCRumIU3iNh = new SMethodBuilder<Duration>(new SJavaCompoundTypeImpl(Duration.class)).name("geefDuurWaarde").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("CRumIU3iNh").registry(REGISTRY).build();
+  public static final SMethod<Void> ZetDuurWaarde_id3CWQViUCGox = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ZetDuurWaarde").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3CWQViUCGox").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(Duration.class, ""));
   public static final SMethod<String> GeefWaardeString_idFzw$g_H4hz = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("GeefWaardeString").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("Fzw$g_H4hz").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(geefWaardeDuur_idCRumIU3iNh, GeefWaardeString_idFzw$g_H4hz);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(geefDuurWaarde_idCRumIU3iNh, ZetDuurWaarde_id3CWQViUCGox, GeefWaardeString_idFzw$g_H4hz);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static Duration geefWaardeDuur_idCRumIU3iNh(@NotNull SNode __thisNode__) {
+  /*package*/ static Duration geefDuurWaarde_idCRumIU3iNh(@NotNull SNode __thisNode__) {
     if ((SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, 0xa37796bb9f356aaL, "duur")) != null)) {
       return Duur__BehaviorDescriptor.geefDuur_id3JLo1nhiwEa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, 0xa37796bb9f356aaL, "duur")));
     }
     return null;
   }
+  /*package*/ static void ZetDuurWaarde_id3CWQViUCGox(@NotNull SNode __thisNode__, Duration duration) {
+    SNode uren = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x61be2dc6a1404defL, 0xa5927499aa2bac19L, 0x46db587183b2cba1L, "Datum.structure.Uren"));
+    Duur__BehaviorDescriptor.ZetDuur_id3CWQViUPQ1p.invoke(uren, duration);
+    SLinkOperations.setTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, 0xa37796bb9f356aaL, "duur"), uren);
+  }
   /*package*/ static String GeefWaardeString_idFzw$g_H4hz(@NotNull SNode __thisNode__) {
     if ((SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, 0xa37796bb9f356aaL, "duur")) != null)) {
-      return Duur__BehaviorDescriptor.geefDuurString_idCRumITzgHT.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, 0xa37796bb9f356aaL, "duur")));
+      return Duur__BehaviorDescriptor.geefDuur_id3JLo1nhiwEa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, 0xa37796bb9f356aaL, "duur"))).toString();
     }
     return "";
   }
@@ -65,8 +72,11 @@ public final class DuurWaarde__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((Duration) geefWaardeDuur_idCRumIU3iNh(node));
+        return (T) ((Duration) geefDuurWaarde_idCRumIU3iNh(node));
       case 1:
+        ZetDuurWaarde_id3CWQViUCGox(node, (Duration) parameters[0]);
+        return null;
+      case 2:
         return (T) ((String) GeefWaardeString_idFzw$g_H4hz(node));
       default:
         throw new BHMethodNotFoundException(this, method);
