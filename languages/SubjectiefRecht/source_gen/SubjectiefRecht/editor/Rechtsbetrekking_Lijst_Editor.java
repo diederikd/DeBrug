@@ -89,7 +89,7 @@ public class Rechtsbetrekking_Lijst_Editor extends DefaultNodeEditor {
   public Grid createStaticHorizontal_ev95sk_a0(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();
 
-    List<Grid> children = new ArrayList<Grid>(5);
+    List<Grid> children = new ArrayList<Grid>(6);
     if (true) {
       children.add(createTableCell_ev95sk_a0a(editorContext, node));
     }
@@ -104,6 +104,9 @@ public class Rechtsbetrekking_Lijst_Editor extends DefaultNodeEditor {
     }
     if (true) {
       children.add(createTableCell_ev95sk_e0a(editorContext, node));
+    }
+    if (true) {
+      children.add(createTableCell_ev95sk_f0a(editorContext, node));
     }
     int maxHeight = grid.getRowHeadersSizeY();
     for (Grid child : ListSequence.fromList(children)) {
@@ -149,14 +152,14 @@ public class Rechtsbetrekking_Lijst_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_ev95sk_a0a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("rechtsbetrekking");
-    provider.setNoTargetText("<no rechtsbetrekking>");
+    provider.setRole("objectieveRechtsbetrekking");
+    provider.setNoTargetText("<no objectieveRechtsbetrekking>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new Rechtsbetrekking_Lijst_Editor._Inline_ev95sk_a0a0a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("rechtsbetrekking");
+      editorCell.setRole("objectieveRechtsbetrekking");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -390,7 +393,7 @@ public class Rechtsbetrekking_Lijst_Editor extends DefaultNodeEditor {
   }
   public Grid createTableCell_ev95sk_d0a(final EditorContext editorContext, final SNode node) {
 
-    EditorCell cell = createRefNode_ev95sk_a3a0(editorContext, node);
+    EditorCell cell = createRefCell_ev95sk_a3a0(editorContext, node);
     final Style style = new ITableStyleFactory() {
       public Style createStyle(final int columnIndex, final int rowIndex) {
         Style style = new StyleImpl();
@@ -411,12 +414,99 @@ public class Rechtsbetrekking_Lijst_Editor extends DefaultNodeEditor {
 
     return grid;
   }
-  private EditorCell createRefNode_ev95sk_a3a0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Rechtsbetrekking_Lijst_Editor.geldigVanSingleRoleHandler_ev95sk_a3a0(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8cdL, "geldigVan"), editorContext);
+  private EditorCell createRefCell_ev95sk_a3a0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("onderwerp");
+    provider.setNoTargetText("<no onderwerp>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new Rechtsbetrekking_Lijst_Editor._Inline_ev95sk_a0d0a());
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("onderwerp");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  public static class _Inline_ev95sk_a0d0a extends InlineCellProvider {
+    public _Inline_ev95sk_a0d0a() {
+      super();
+    }
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createProperty_ev95sk_a0a3a0(editorContext, node);
+    }
+    private EditorCell createProperty_ev95sk_a0a3a0(EditorContext editorContext, SNode node) {
+      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+      provider.setRole("name");
+      provider.setNoTargetText("<no name>");
+      provider.setReadOnly(true);
+      EditorCell editorCell;
+      editorCell = provider.createEditorCell(editorContext);
+      editorCell.setCellId("property_name_3");
+      Style style = new StyleImpl();
+      ObjectiefRecht.editor.GN_StyleSheet.apply_Onderwerp(style, editorCell);
+      editorCell.getStyle().putAll(style);
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      SNode attributeConcept = provider.getRoleAttribute();
+      if (attributeConcept != null) {
+        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+        return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+      } else
+      return editorCell;
+    }
+  }
+  public HeaderGrid createStaticHeader_ev95sk_a3a0(final EditorContext editorContext, final SNode snode) {
+    final Style style = new ITableStyleFactory() {
+      public Style createStyle(final int columnIndex, final int rowIndex) {
+        Style style = new StyleImpl();
+        return style;
+      }
+    }.createStyle(0, 0);
+    final EditorCell_Constant cell = new EditorCell_Constant(editorContext, snode, "Onderwerp", false);
+    Header header = new EditorCellHeader(new StringHeaderReference("Onderwerp"), cell);
+    header.setLabel("Onderwerp");
+    header.setStyle(style);
+    HeaderGrid grid = new HeaderGrid();
+    grid.setElement(0, 0, header);
+    return grid;
+  }
+  public Grid createTableCell_ev95sk_e0a(final EditorContext editorContext, final SNode node) {
+
+    EditorCell cell = createRefNode_ev95sk_a4a0(editorContext, node);
+    final Style style = new ITableStyleFactory() {
+      public Style createStyle(final int columnIndex, final int rowIndex) {
+        Style style = new StyleImpl();
+        return style;
+      }
+    }.createStyle(0, 0);
+
+    Grid grid;
+    if (cell instanceof PartialTableEditor) {
+      grid = ((PartialTableEditor) cell).getGrid().clone();
+    } else {
+      grid = new Grid();
+      EditorCellGridLeaf leaf = new EditorCellGridLeaf(cell);
+      leaf.setStyle(style);
+      grid.setElement(0, 0, leaf);
+    }
+    grid.setColumnHeaders(0, 0, createStaticHeader_ev95sk_a4a0(editorContext, node));
+
+    return grid;
+  }
+  private EditorCell createRefNode_ev95sk_a4a0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Rechtsbetrekking_Lijst_Editor.geldigVanSingleRoleHandler_ev95sk_a4a0(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8cdL, "geldigVan"), editorContext);
     return provider.createCell();
   }
-  private class geldigVanSingleRoleHandler_ev95sk_a3a0 extends SingleRoleCellProvider {
-    public geldigVanSingleRoleHandler_ev95sk_a3a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class geldigVanSingleRoleHandler_ev95sk_a4a0 extends SingleRoleCellProvider {
+    public geldigVanSingleRoleHandler_ev95sk_a4a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -462,7 +552,7 @@ public class Rechtsbetrekking_Lijst_Editor extends DefaultNodeEditor {
       return "<no geldigVan>";
     }
   }
-  public HeaderGrid createStaticHeader_ev95sk_a3a0(final EditorContext editorContext, final SNode snode) {
+  public HeaderGrid createStaticHeader_ev95sk_a4a0(final EditorContext editorContext, final SNode snode) {
     final Style style = new ITableStyleFactory() {
       public Style createStyle(final int columnIndex, final int rowIndex) {
         Style style = new StyleImpl();
@@ -477,9 +567,9 @@ public class Rechtsbetrekking_Lijst_Editor extends DefaultNodeEditor {
     grid.setElement(0, 0, header);
     return grid;
   }
-  public Grid createTableCell_ev95sk_e0a(final EditorContext editorContext, final SNode node) {
+  public Grid createTableCell_ev95sk_f0a(final EditorContext editorContext, final SNode node) {
 
-    EditorCell cell = createRefNode_ev95sk_a4a0(editorContext, node);
+    EditorCell cell = createRefNode_ev95sk_a5a0(editorContext, node);
     final Style style = new ITableStyleFactory() {
       public Style createStyle(final int columnIndex, final int rowIndex) {
         Style style = new StyleImpl();
@@ -496,16 +586,16 @@ public class Rechtsbetrekking_Lijst_Editor extends DefaultNodeEditor {
       leaf.setStyle(style);
       grid.setElement(0, 0, leaf);
     }
-    grid.setColumnHeaders(0, 0, createStaticHeader_ev95sk_a4a0(editorContext, node));
+    grid.setColumnHeaders(0, 0, createStaticHeader_ev95sk_a5a0(editorContext, node));
 
     return grid;
   }
-  private EditorCell createRefNode_ev95sk_a4a0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Rechtsbetrekking_Lijst_Editor.geldigTotSingleRoleHandler_ev95sk_a4a0(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot"), editorContext);
+  private EditorCell createRefNode_ev95sk_a5a0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Rechtsbetrekking_Lijst_Editor.geldigTotSingleRoleHandler_ev95sk_a5a0(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot"), editorContext);
     return provider.createCell();
   }
-  private class geldigTotSingleRoleHandler_ev95sk_a4a0 extends SingleRoleCellProvider {
-    public geldigTotSingleRoleHandler_ev95sk_a4a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class geldigTotSingleRoleHandler_ev95sk_a5a0 extends SingleRoleCellProvider {
+    public geldigTotSingleRoleHandler_ev95sk_a5a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -551,7 +641,7 @@ public class Rechtsbetrekking_Lijst_Editor extends DefaultNodeEditor {
       return "<no geldigTot>";
     }
   }
-  public HeaderGrid createStaticHeader_ev95sk_a4a0(final EditorContext editorContext, final SNode snode) {
+  public HeaderGrid createStaticHeader_ev95sk_a5a0(final EditorContext editorContext, final SNode snode) {
     final Style style = new ITableStyleFactory() {
       public Style createStyle(final int columnIndex, final int rowIndex) {
         Style style = new StyleImpl();

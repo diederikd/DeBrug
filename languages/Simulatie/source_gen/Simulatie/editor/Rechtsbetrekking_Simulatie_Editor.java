@@ -71,14 +71,14 @@ public class Rechtsbetrekking_Simulatie_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_o8qqqk_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("rechtsbetrekking");
-    provider.setNoTargetText("<no rechtsbetrekking>");
+    provider.setRole("objectieveRechtsbetrekking");
+    provider.setNoTargetText("<no objectieveRechtsbetrekking>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new Rechtsbetrekking_Simulatie_Editor._Inline_o8qqqk_a1a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("rechtsbetrekking");
+      editorCell.setRole("objectieveRechtsbetrekking");
     }
     Style style = new StyleImpl();
     GN_StyleSheet.apply_Name(style, editorCell);
@@ -208,14 +208,14 @@ public class Rechtsbetrekking_Simulatie_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_o8qqqk_e2a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("rechtsbetrekking");
-    provider.setNoTargetText("<no rechtsbetrekking>");
+    provider.setRole("objectieveRechtsbetrekking");
+    provider.setNoTargetText("<no objectieveRechtsbetrekking>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new Rechtsbetrekking_Simulatie_Editor._Inline_o8qqqk_a4c0());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("rechtsbetrekking");
+      editorCell.setRole("objectieveRechtsbetrekking");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -392,14 +392,14 @@ public class Rechtsbetrekking_Simulatie_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_o8qqqk_e3a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("rechtsbetrekking");
-    provider.setNoTargetText("<no rechtsbetrekking>");
+    provider.setRole("objectieveRechtsbetrekking");
+    provider.setNoTargetText("<no objectieveRechtsbetrekking>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new Rechtsbetrekking_Simulatie_Editor._Inline_o8qqqk_a4d0());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("rechtsbetrekking");
+      editorCell.setRole("objectieveRechtsbetrekking");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();

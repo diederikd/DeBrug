@@ -84,9 +84,15 @@
     <node concept="1TJgyj" id="6c9haf45syA" role="1TKVEi">
       <property role="IQ2ns" value="7136310554705381542" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="rechtsbetrekking" />
+      <property role="20kJfa" value="objectieveRechtsbetrekking" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="3pw0:64gsXol8COd" resolve="Rechtsbetrekking" />
+    </node>
+    <node concept="1TJgyj" id="5gJzES8$v3G" role="1TKVEi">
+      <property role="IQ2ns" value="6066224101210583276" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="onderwerp" />
+      <ref role="20lvS9" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
     </node>
     <node concept="1TJgyj" id="6c9haf45szd" role="1TKVEi">
       <property role="IQ2ns" value="7136310554705381581" />

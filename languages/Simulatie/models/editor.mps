@@ -637,7 +637,7 @@
         <property role="3F0ifm" value="rechtsbetrekking" />
       </node>
       <node concept="1iCGBv" id="6c9haf45yLg" role="3EZMnx">
-        <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="rechtsbetrekking" />
+        <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
         <ref role="1k5W1q" to="9nno:6c9haf45jMN" resolve="Name" />
         <node concept="1sVBvm" id="6c9haf45yLj" role="1sWHZn">
           <node concept="3F0A7n" id="6c9haf45yLl" role="2wV5jI">
@@ -668,7 +668,7 @@
           <property role="3F0ifm" value="(" />
         </node>
         <node concept="1iCGBv" id="6c9haf45zWG" role="3EZMnx">
-          <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="rechtsbetrekking" />
+          <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
           <node concept="1sVBvm" id="6c9haf45zWI" role="1sWHZn">
             <node concept="1iCGBv" id="6c9haf45zXn" role="2wV5jI">
               <ref role="1NtTu8" to="3pw0:64gsXol8COH" resolve="rechtssubjectMetRecht" />
@@ -812,7 +812,7 @@
           <property role="3F0ifm" value="(" />
         </node>
         <node concept="1iCGBv" id="6c9haf45$8p" role="3EZMnx">
-          <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="rechtsbetrekking" />
+          <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
           <node concept="1sVBvm" id="6c9haf45$8r" role="1sWHZn">
             <node concept="1iCGBv" id="6c9haf45$9d" role="2wV5jI">
               <ref role="1NtTu8" to="3pw0:64gsXol8COI" resolve="rechtssubjectMetPlicht" />
@@ -1146,7 +1146,7 @@
       </node>
       <node concept="1iCGBv" id="1VomLPHKDmc" role="3EZMnx">
         <ref role="1k5W1q" to="9nno:6c9haf45jMN" resolve="Name" />
-        <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="rechtsbetrekking" />
+        <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
         <node concept="1sVBvm" id="1VomLPHKDmd" role="1sWHZn">
           <node concept="3F0A7n" id="1VomLPHKDme" role="2wV5jI">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1186,7 +1186,7 @@
       <node concept="3EZMnI" id="1VomLPHKDmg" role="3EZMnx">
         <node concept="l2Vlx" id="1VomLPHKDmh" role="2iSdaV" />
         <node concept="3F0ifn" id="1VomLPHKDmi" role="3EZMnx">
-          <property role="3F0ifm" value="heeft recht" />
+          <property role="3F0ifm" value="is een recht voor" />
         </node>
         <node concept="1iCGBv" id="1VomLPHKDmj" role="3EZMnx">
           <ref role="1NtTu8" to="gcgs:6c9haf45syv" resolve="rechtssubjectMetRecht" />
@@ -1203,7 +1203,7 @@
           <property role="3F0ifm" value="(" />
         </node>
         <node concept="1iCGBv" id="1VomLPHKDmo" role="3EZMnx">
-          <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="rechtsbetrekking" />
+          <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
           <node concept="1sVBvm" id="1VomLPHKDmp" role="1sWHZn">
             <node concept="1iCGBv" id="1VomLPHKDmq" role="2wV5jI">
               <ref role="1NtTu8" to="3pw0:64gsXol8COH" resolve="rechtssubjectMetRecht" />
@@ -1330,7 +1330,10 @@
       <node concept="3EZMnI" id="1VomLPHKDnf" role="3EZMnx">
         <node concept="l2Vlx" id="1VomLPHKDng" role="2iSdaV" />
         <node concept="3F0ifn" id="1VomLPHKDnh" role="3EZMnx">
-          <property role="3F0ifm" value="heeft plicht" />
+          <property role="3F0ifm" value="is een plicht voor" />
+        </node>
+        <node concept="3F0ifn" id="5gJzES8$UUl" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
         </node>
         <node concept="1iCGBv" id="1VomLPHKDnj" role="3EZMnx">
           <ref role="1NtTu8" to="gcgs:6c9haf45syx" resolve="rechtssubjectMetPlicht" />
@@ -1347,7 +1350,7 @@
           <property role="3F0ifm" value="(" />
         </node>
         <node concept="1iCGBv" id="1VomLPHKDno" role="3EZMnx">
-          <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="rechtsbetrekking" />
+          <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
           <node concept="1sVBvm" id="1VomLPHKDnp" role="1sWHZn">
             <node concept="1iCGBv" id="1VomLPHKDnq" role="2wV5jI">
               <ref role="1NtTu8" to="3pw0:64gsXol8COI" resolve="rechtssubjectMetPlicht" />
@@ -1469,6 +1472,83 @@
         </node>
         <node concept="ljvvj" id="1VomLPHKDog" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5gJzES8$Sie" role="3EZMnx">
+        <property role="3F0ifm" value="met onderwerp" />
+        <node concept="lj46D" id="5gJzES8$UDP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5gJzES8$TeM" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="1iCGBv" id="5gJzES8$Ubo" role="3EZMnx">
+        <ref role="1NtTu8" to="gcgs:5gJzES8$v3G" resolve="onderwerp" />
+        <node concept="1sVBvm" id="5gJzES8$Ubq" role="1sWHZn">
+          <node concept="3F0A7n" id="5gJzES8$UDM" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" to="9nno:28ifPi2_$n1" resolve="Onderwerp" />
+          </node>
+        </node>
+      </node>
+      <node concept="ykhUs" id="5gJzES8nTDn" role="3EZMnx">
+        <property role="ykhUg" value="Evalueer" />
+        <node concept="ykhUf" id="5gJzES8nTDo" role="ynkVX">
+          <node concept="3clFbS" id="5gJzES8nTDp" role="2VODD2">
+            <node concept="3cpWs8" id="5gJzES8knmw" role="3cqZAp">
+              <node concept="3cpWsn" id="5gJzES8knmx" role="3cpWs9">
+                <property role="TrG5h" value="simulatie" />
+                <node concept="3Tqbb2" id="5gJzES8knmy" role="1tU5fm">
+                  <ref role="ehGHo" to="xhlk:6OHSlZaTjYP" resolve="Simulatie" />
+                </node>
+                <node concept="10QFUN" id="5gJzES8knmz" role="33vP2m">
+                  <node concept="2OqwBi" id="5gJzES8suvu" role="10QFUP">
+                    <node concept="2OqwBi" id="5gJzES8knm$" role="2Oq$k0">
+                      <node concept="1VaYGm" id="5gJzES8nUQr" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="5gJzES8knmA" role="2OqNvi" />
+                    </node>
+                    <node concept="1mfA1w" id="5gJzES8suZK" role="2OqNvi" />
+                  </node>
+                  <node concept="3Tqbb2" id="5gJzES8knmB" role="10QFUM">
+                    <ref role="ehGHo" to="xhlk:6OHSlZaTjYP" resolve="Simulatie" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5gJzES8yFAk" role="3cqZAp">
+              <node concept="2OqwBi" id="5gJzES8yFTF" role="3clFbG">
+                <node concept="37vLTw" id="5gJzES8yFAi" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5gJzES8knmx" resolve="simulatie" />
+                </node>
+                <node concept="2qgKlT" id="5gJzES8yGkk" role="2OqNvi">
+                  <ref role="37wK5l" to="ln8d:CRumITE5PD" resolve="schoonBerichten" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5gJzES8knmG" role="3cqZAp">
+              <node concept="3cpWsn" id="5gJzES8knmH" role="3cpWs9">
+                <property role="TrG5h" value="object" />
+                <node concept="3uibUv" id="5gJzES8knmI" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+                <node concept="2YIFZM" id="5gJzES8knmJ" role="33vP2m">
+                  <ref role="1Pybhc" to="uefu:2IjnF_A6UGv" resolve="Interpreter" />
+                  <ref role="37wK5l" to="uefu:3xDNhgd54rl" resolve="evalueer" />
+                  <node concept="37vLTw" id="5gJzES8knmK" role="37wK5m">
+                    <ref role="3cqZAo" node="5gJzES8knmx" resolve="simulatie" />
+                  </node>
+                  <node concept="2OqwBi" id="5gJzES8knmL" role="37wK5m">
+                    <node concept="1VaYGm" id="5gJzES8nV05" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5gJzES8kroL" role="2OqNvi">
+                      <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="28ifPi2AljH" role="3EZMnx">
@@ -1655,7 +1735,7 @@
         <property role="3F0ifm" value="rechtsbetrekking" />
       </node>
       <node concept="1iCGBv" id="1VomLPHKE2d" role="3EZMnx">
-        <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="rechtsbetrekking" />
+        <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
         <ref role="1k5W1q" to="9nno:6c9haf45jMN" resolve="Name" />
         <node concept="1sVBvm" id="1VomLPHKE2e" role="1sWHZn">
           <node concept="3F0A7n" id="1VomLPHKE2f" role="2wV5jI">
@@ -1693,7 +1773,10 @@
       <node concept="3EZMnI" id="1VomLPHKE2h" role="3EZMnx">
         <node concept="l2Vlx" id="1VomLPHKE2i" role="2iSdaV" />
         <node concept="3F0ifn" id="1VomLPHKE2j" role="3EZMnx">
-          <property role="3F0ifm" value="heeft recht" />
+          <property role="3F0ifm" value="is een recht voor" />
+        </node>
+        <node concept="3F0ifn" id="5gJzES8$WuQ" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
         </node>
         <node concept="1iCGBv" id="1VomLPHKE2k" role="3EZMnx">
           <ref role="1NtTu8" to="gcgs:6c9haf45syv" resolve="rechtssubjectMetRecht" />
@@ -1710,7 +1793,7 @@
           <property role="3F0ifm" value="(" />
         </node>
         <node concept="1iCGBv" id="1VomLPHKE2p" role="3EZMnx">
-          <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="rechtsbetrekking" />
+          <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
           <node concept="1sVBvm" id="1VomLPHKE2q" role="1sWHZn">
             <node concept="1iCGBv" id="1VomLPHKE2r" role="2wV5jI">
               <ref role="1NtTu8" to="3pw0:64gsXol8COH" resolve="rechtssubjectMetRecht" />
@@ -1837,7 +1920,10 @@
       <node concept="3EZMnI" id="1VomLPHKE3g" role="3EZMnx">
         <node concept="l2Vlx" id="1VomLPHKE3h" role="2iSdaV" />
         <node concept="3F0ifn" id="1VomLPHKE3i" role="3EZMnx">
-          <property role="3F0ifm" value="heeft plicht" />
+          <property role="3F0ifm" value="is een plicht voor" />
+        </node>
+        <node concept="3F0ifn" id="5gJzES8$VXV" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
         </node>
         <node concept="1iCGBv" id="1VomLPHKE3k" role="3EZMnx">
           <ref role="1NtTu8" to="gcgs:6c9haf45syx" resolve="rechtssubjectMetPlicht" />
@@ -1854,7 +1940,7 @@
           <property role="3F0ifm" value="(" />
         </node>
         <node concept="1iCGBv" id="1VomLPHKE3p" role="3EZMnx">
-          <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="rechtsbetrekking" />
+          <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
           <node concept="1sVBvm" id="1VomLPHKE3q" role="1sWHZn">
             <node concept="1iCGBv" id="1VomLPHKE3r" role="2wV5jI">
               <ref role="1NtTu8" to="3pw0:64gsXol8COI" resolve="rechtssubjectMetPlicht" />

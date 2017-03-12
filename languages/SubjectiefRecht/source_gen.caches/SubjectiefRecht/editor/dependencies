@@ -179,6 +179,7 @@
   </dependency>
   <dependency className="SubjectiefRecht.editor.Rechtsbetrekking_Lijst_Editor" file="Rechtsbetrekking_Lijst_Editor.java">
     <classNode dependClassName="Datum.editor.GN_StyleSheet" />
+    <classNode dependClassName="ObjectiefRecht.editor.GN_StyleSheet" />
     <classNode dependClassName="de.slisson.mps.tables.runtime.cells.ChildsTracker" />
     <classNode dependClassName="de.slisson.mps.tables.runtime.cells.PartialTableEditor" />
     <classNode dependClassName="de.slisson.mps.tables.runtime.gridmodel.EditorCellGridLeaf" />

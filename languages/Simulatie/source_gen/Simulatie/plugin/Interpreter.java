@@ -12,6 +12,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.mpsutil.interpreter.rt.ContextImpl;
 import com.mbeddr.mpsutil.interpreter.rt.NullCoverageAnalyzer;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import Simulatie.behavior.Simulatie__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import com.mbeddr.mpsutil.interpreter.rt.IEnvironment;
@@ -20,7 +21,6 @@ import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import Simulatie.behavior.Simulatie__BehaviorDescriptor;
 import Gegevens.behavior.Waarde__BehaviorDescriptor;
 import Gegevens.behavior.RekenWaarde__BehaviorDescriptor;
 import Gegevens.behavior.waardeJaNee__BehaviorDescriptor;
@@ -36,6 +36,8 @@ public class Interpreter {
   private static IContext context;
   private static ICoverageAnalyzer coverage;
   private static SNode simulatie;
+  private static SNode teEvaluerenRechtsbetrekking;
+  private static SNode teEvaluerenRechtshandeling;
 
   public static Object evalueer(SNode simulatieparameter, SNode node) {
     Object result = null;
@@ -52,7 +54,8 @@ public class Interpreter {
         {
           final SNode rechtshandeling = rechtsgevolgVeroorzaker;
           if (SNodeOperations.isInstanceOf(rechtshandeling, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"))) {
-            DebugHelper.printContext("Evalueer rechtshandeling", node, context);
+            Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Evalueer rechtshandeling" + rechtshandeling);
+            teEvaluerenRechtshandeling = rechtshandeling;
             result = evalueerVoorwaarden(SLinkOperations.getTarget(rechtshandeling, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x25be3715c7af049fL, "Voorwaarden")));
           }
         }
@@ -60,9 +63,10 @@ public class Interpreter {
     }
     {
       final SNode rechtsbetrekking = node;
-      if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"))) {
-        DebugHelper.printContext("Evalueer rechtsbetrekking", node, context);
-        result = evalueerVoorwaarden(SLinkOperations.getTarget(SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "rechtsbetrekking")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden")));
+      if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"))) {
+        Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Evalueer rechtsbetrekking" + rechtsbetrekking);
+        teEvaluerenRechtsbetrekking = rechtsbetrekking;
+        result = evalueerVoorwaarden(SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden")));
       }
     }
     return result;
@@ -73,6 +77,12 @@ public class Interpreter {
     Object value = interpreter.evaluate(node, context, coverage);
     Tuples._3<Object, IEnvironment, INodeValueCache> result = MultiTuple.<Object,IEnvironment,INodeValueCache>from(value, context.getEnvironment(), context.getNodeValueCache());
     return result;
+  }
+  public static SNode RechtssubjectMetPlichtRechtsbetrekking() {
+    return SLinkOperations.getTarget(teEvaluerenRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2eL, "rechtssubjectMetPlicht"));
+  }
+  public static SNode RechtssubjectMetRechtRechtsbetrekking() {
+    return SLinkOperations.getTarget(teEvaluerenRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2dL, "rechtssubjectMetRecht"));
   }
   public static SNode teEvaluerenRechtshandeling() {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x5dd2e0a862d0002cL, "uittevoerenhandeling")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935aL, "rechtshandeling"));
