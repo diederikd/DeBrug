@@ -12,10 +12,8 @@
     <language id="15970de3-8fe7-4b13-81c7-38b38d51c39a" name="Simulatie">
       <concept id="7867191925628556449" name="Simulatie.structure.Informatiepositie" flags="ng" index="2BLbnY" />
       <concept id="7867191925628288949" name="Simulatie.structure.Simulatie" flags="ng" index="2BMdVE">
-        <reference id="7867191925628478847" name="rechtssubject1" index="2BLsgw" />
         <reference id="7867191925628437242" name="casus" index="2BMAe_" />
         <reference id="736190567687680580" name="gegevenshuishouding" index="2KcKGJ" />
-        <reference id="2222626598059533343" name="rechtssubject2" index="1Nt3W2" />
         <child id="3172654291078996041" name="datumtijdlaatstehandeling" index="22TAwd" />
         <child id="7431672735427965832" name="datumtijdvanstartvandeSimulatie" index="d0i_M" />
         <child id="7867191925628603759" name="rechtspositie" index="2BLYKK" />
@@ -858,8 +856,6 @@
   <node concept="2BMdVE" id="5Bacij9tPq1">
     <property role="TrG5h" value="Simulatie AWB" />
     <ref role="2BMAe_" node="5Bacij9tPqm" resolve="Subjectief AWB" />
-    <ref role="2BLsgw" node="28MuYO0sXzN" resolve="Diederik" />
-    <ref role="1Nt3W2" node="28MuYO0sXzP" resolve="UWV" />
     <ref role="2KcKGJ" node="CRumIU2vtI" resolve="Gegevenshuishouding AWB" />
     <node concept="LeFwQ" id="5Bacij9tPq2" role="d0i_M">
       <node concept="2B78Lw" id="5Bacij9tPq3" role="LeFwF">

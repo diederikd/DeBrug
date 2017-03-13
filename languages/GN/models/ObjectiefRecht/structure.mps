@@ -1557,8 +1557,8 @@
   <node concept="1TIwiD" id="7QVfFLFlZBw">
     <property role="EcuMT" value="9059904054361586144" />
     <property role="3GE5qa" value="Expressies.Parameters" />
-    <property role="TrG5h" value="Nu" />
-    <property role="34LRSv" value="nu" />
+    <property role="TrG5h" value="HuidigeDatum" />
+    <property role="34LRSv" value="huidige datum" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
   </node>
   <node concept="1TIwiD" id="7QVfFLFqR9U">

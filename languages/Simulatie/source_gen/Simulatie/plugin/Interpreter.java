@@ -19,8 +19,8 @@ import com.mbeddr.mpsutil.interpreter.rt.IEnvironment;
 import com.mbeddr.mpsutil.interpreter.rt.INodeValueCache;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
 import Gegevens.behavior.Waarde__BehaviorDescriptor;
 import Gegevens.behavior.RekenWaarde__BehaviorDescriptor;
 import Gegevens.behavior.waardeJaNee__BehaviorDescriptor;
@@ -36,7 +36,7 @@ public class Interpreter {
   private static IContext context;
   private static ICoverageAnalyzer coverage;
   private static SNode simulatie;
-  private static SNode teEvaluerenRechtsbetrekking;
+  private static SNode teEvaluerenSubjectieveRechtsbetrekking;
   private static SNode teEvaluerenRechtshandeling;
 
   public static Object evalueer(SNode simulatieparameter, SNode node) {
@@ -63,10 +63,10 @@ public class Interpreter {
     }
     {
       final SNode rechtsbetrekking = node;
-      if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"))) {
+      if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"))) {
         Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Evalueer rechtsbetrekking" + rechtsbetrekking);
-        teEvaluerenRechtsbetrekking = rechtsbetrekking;
-        result = evalueerVoorwaarden(SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden")));
+        teEvaluerenSubjectieveRechtsbetrekking = rechtsbetrekking;
+        result = evalueerVoorwaarden(SLinkOperations.getTarget(SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden")));
       }
     }
     return result;
@@ -78,16 +78,21 @@ public class Interpreter {
     Tuples._3<Object, IEnvironment, INodeValueCache> result = MultiTuple.<Object,IEnvironment,INodeValueCache>from(value, context.getEnvironment(), context.getNodeValueCache());
     return result;
   }
-  public static SNode RechtssubjectMetPlichtRechtsbetrekking() {
-    return SLinkOperations.getTarget(teEvaluerenRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2eL, "rechtssubjectMetPlicht"));
+  public static SNode RechtssubjectMetPlicht() {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(teEvaluerenSubjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2eL, "rechtssubjectMetPlicht"));
   }
-  public static SNode RechtssubjectMetRechtRechtsbetrekking() {
-    return SLinkOperations.getTarget(teEvaluerenRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2dL, "rechtssubjectMetRecht"));
+  public static SNode RechtssubjectMetRecht() {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(teEvaluerenSubjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2dL, "rechtssubjectMetRecht"));
+  }
+  public static SNode InstantieVanRechtssubjectMetPlicht() {
+    return SLinkOperations.getTarget(teEvaluerenSubjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a1L, "rechtssubjectMetPlicht"));
+  }
+  public static SNode InstantieVanRechtssubjectMetRecht() {
+    return SLinkOperations.getTarget(teEvaluerenSubjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c89fL, "rechtssubjectMetRecht"));
   }
   public static SNode teEvaluerenRechtshandeling() {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x5dd2e0a862d0002cL, "uittevoerenhandeling")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935aL, "rechtshandeling"));
   }
-
   public static SNode InstantieVanOnderwerpVanDeHandeling() {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x5dd2e0a862d0002cL, "uittevoerenhandeling")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL, "onderwerp"));
   }
@@ -99,19 +104,30 @@ public class Interpreter {
   }
 
   public static Object GeefWaardeVanVariabele(SNode variabele) {
-    System.out.println("Variabele object " + SNodeOperations.getParent(SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk"))));
-    System.out.println("Variabele kenmerk: " + SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
-
-    // Variabele verwijst naar kenmerk van onderwerp? 
     SNode waarde = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fddL, "Gegevens.structure.Waarde"));
     SNode objectVanVariabele = (SNode) SNodeOperations.getParent(SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+    Interpreter.voegBerichtToe("Opvragen van variabele " + SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")) + " van object " + SPropertyOperations.getString(objectVanVariabele, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+
+
+    // Variabele verwijst naar kenmerk van onderwerp? 
     if (objectVanVariabele == InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanOnderwerpVanDeHandeling())) {
       waarde = InterpreterFuncties.GeefWaardeVanKenmerk(Interpreter.InstantieVanOnderwerpVanDeHandeling(), SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
     }
-    // Variabele verwijst niet naar kenmerk van onderwerp? 
-    if (SNodeOperations.getParent(SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk"))) != InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanOnderwerpVanDeHandeling())) {
+    // Variabele verwijst naar rechtssubject met plicht? 
+    if (objectVanVariabele == InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanRechtssubjectMetPlicht())) {
+      waarde = InterpreterFuncties.GeefWaardeVanKenmerk(Interpreter.InstantieVanRechtssubjectMetPlicht(), SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+      Interpreter.voegBerichtToe(InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanRechtssubjectMetPlicht()) + " met instantie " + SPropertyOperations.getString(InstantieVanRechtssubjectMetPlicht(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " heeft waarde " + waarde);
+    }
+    // Variabele verwijst naar rechtssubject met recht? 
+    if (objectVanVariabele == InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanRechtssubjectMetRecht())) {
+      waarde = InterpreterFuncties.GeefWaardeVanKenmerk(Interpreter.InstantieVanRechtssubjectMetRecht(), SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+      Interpreter.voegBerichtToe(InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanRechtssubjectMetRecht()) + " met instantie " + SPropertyOperations.getString(InstantieVanRechtssubjectMetRecht(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " heeft waarde " + waarde);
+    }
+
+    // Variabele verwijst niet naar kenmerk van onderwerp en niet naar rechtssubjecten? 
+    if (SNodeOperations.getParent(SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk"))) != InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanOnderwerpVanDeHandeling()) && objectVanVariabele != InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanRechtssubjectMetRecht()) && objectVanVariabele != InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanRechtssubjectMetPlicht())) {
       SNode kenmerk = GeefKenmerkMetVerwijzingNaarObject(InstantieVanOnderwerpVanDeHandeling(), objectVanVariabele);
-      System.out.println("Kenmerk met verwijzing naar object : " + SPropertyOperations.getString(kenmerk, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+      Interpreter.voegBerichtToe("Kenmerk met verwijzing naar object : " + SPropertyOperations.getString(kenmerk, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
       waarde = InterpreterFuncties.GeefWaardeVanKenmerk(Interpreter.InstantieVanOnderwerpVanDeHandeling(), kenmerk);
       SNode objectWaarde = (SNode) waarde;
       waarde = InterpreterFuncties.GeefWaardeVanKenmerk(SLinkOperations.getTarget(objectWaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, 0x4ccbd8fc9e467d9L, "object")), SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));

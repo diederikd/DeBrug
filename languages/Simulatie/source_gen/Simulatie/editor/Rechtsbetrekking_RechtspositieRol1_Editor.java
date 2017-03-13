@@ -749,7 +749,7 @@ public class Rechtsbetrekking_RechtspositieRol1_Editor extends DefaultNodeEditor
           final SNode node = ((SNode) n);
           SNode simulatie = (SNode) SNodeOperations.getParent(SNodeOperations.getParent(node));
           Simulatie__BehaviorDescriptor.schoonBerichten_idCRumITE5PD.invoke(simulatie);
-          Object object = Interpreter.evalueer(simulatie, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")));
+          Object object = Interpreter.evalueer(simulatie, node);
         }
       }
     };

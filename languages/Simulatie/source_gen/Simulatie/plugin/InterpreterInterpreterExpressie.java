@@ -528,6 +528,28 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         return "ErIsEen";
       }
     });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b7d334fL, "ObjectiefRecht.structure.ErIsGeen"), true) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          Interpreter.voegBerichtToe("Er is geen <object> waarbij <voorwaarden>");
+          return false;
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("er is geen <object> waarbij <voorwaarden>()", node, ex);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("ErIsGeen");
+      }
+
+      @Override
+      public String toString() {
+        return "ErIsGeen";
+      }
+    });
   }
 
 

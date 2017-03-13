@@ -22,70 +22,120 @@
       <node id="736190567687326245" at="40,56,41,42" concept="7" />
       <node id="736190567687326245" at="46,44,47,20" concept="7" />
       <node id="736190567687326245" at="54,63,55,58" concept="7" />
-      <node id="7168729926834069866" at="59,13,60,71" concept="6" />
-      <node id="6066224101205721811" at="60,71,61,93" concept="6" />
-      <node id="6066224101205720238" at="61,93,62,222" concept="6" />
-      <node id="6066224101205732678" at="64,17,65,206" concept="6" />
-      <node id="6066224101205744601" at="67,240,68,87" concept="2" />
-      <node id="7168729926834069942" at="72,15,73,69" concept="7" />
-      <node id="736190567687326245" at="78,7,79,22" concept="7" />
-      <node id="736190567687326245" at="81,0,82,0" concept="8" trace="breakingNode_cy5ydd_a0a0a0a0a1a0b0a2a2" />
+      <node id="8120684925531069508" at="59,13,60,71" concept="6" />
+      <node id="8120684925531069514" at="60,71,61,93" concept="6" />
+      <node id="8120684925531069522" at="61,93,62,222" concept="6" />
+      <node id="8120684925531069534" at="64,17,65,210" concept="6" />
+      <node id="8120684925531069545" at="67,240,68,87" concept="2" />
+      <node id="8120684925531069552" at="72,15,73,69" concept="7" />
+      <node id="736190567687326245" at="81,44,82,20" concept="7" />
+      <node id="736190567687326245" at="89,63,90,58" concept="7" />
+      <node id="7168729926834069866" at="94,13,95,71" concept="6" />
+      <node id="6066224101205721811" at="95,71,96,93" concept="6" />
+      <node id="6066224101205720238" at="96,93,97,222" concept="6" />
+      <node id="6066224101205732678" at="99,17,100,206" concept="6" />
+      <node id="6066224101205744601" at="102,240,103,87" concept="2" />
+      <node id="7168729926834069942" at="107,15,108,69" concept="7" />
+      <node id="736190567687326245" at="113,7,114,22" concept="7" />
+      <node id="736190567687326245" at="116,0,117,0" concept="8" trace="breakingNode_cy5ydd_a0a0a0a0a1a0b0a2a2" />
+      <node id="736190567687326245" at="117,0,118,0" concept="8" trace="breakingNode_cy5ydd_a0a0a0a0a1a0b0a3a2" />
       <node id="736190567687326245" at="30,0,33,0" concept="1" trace="UitTeVoerenHandeling_Constraints#()V" />
-      <node id="6066224101205736325" at="66,196,69,21" concept="3" />
+      <node id="8120684925531069539" at="66,204,69,21" concept="3" />
+      <node id="6066224101205736325" at="101,196,104,21" concept="3" />
       <node id="736190567687326245" at="45,0,49,0" concept="5" trace="hasOwnScopeProvider#()Z" />
       <node id="736190567687326245" at="53,0,57,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="736190567687326245" at="80,0,84,0" concept="5" trace="hasOwnScopeProvider#()Z" />
+      <node id="736190567687326245" at="88,0,92,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
       <node id="736190567687326245" at="38,0,43,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="6066224101205732678" at="65,206,70,19" concept="4" />
+      <node id="8120684925531069534" at="65,210,70,19" concept="4" />
+      <node id="6066224101205732678" at="100,206,105,19" concept="4" />
       <node id="736190567687326245" at="36,131,43,7" concept="2" />
-      <node id="6066224101205732678" at="63,242,71,17" concept="0" />
-      <node id="6066224101205728698" at="62,222,72,15" concept="3" />
+      <node id="8120684925531069534" at="63,242,71,17" concept="0" />
+      <node id="6066224101205732678" at="98,242,106,17" concept="0" />
+      <node id="8120684925531069528" at="62,222,72,15" concept="3" />
+      <node id="6066224101205728698" at="97,222,107,15" concept="3" />
       <node id="736190567687326245" at="58,122,74,13" concept="0" />
+      <node id="736190567687326245" at="93,122,109,13" concept="0" />
       <node id="736190567687326245" at="57,0,76,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="736190567687326245" at="92,0,111,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
       <node id="736190567687326245" at="51,56,76,10" concept="7" />
+      <node id="736190567687326245" at="86,56,111,10" concept="7" />
       <node id="736190567687326245" at="49,0,78,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="736190567687326245" at="84,0,113,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
       <node id="736190567687326245" at="43,7,78,7" concept="2" />
-      <node id="736190567687326245" at="34,0,81,0" concept="5" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <node id="736190567687326245" at="78,7,113,7" concept="2" />
+      <node id="736190567687326245" at="34,0,116,0" concept="5" trace="getSpecifiedReferences#()Ljava/util/Map;" />
       <scope id="736190567687326245" at="30,45,31,148" />
       <scope id="736190567687326245" at="40,56,41,42" />
       <scope id="736190567687326245" at="46,44,47,20" />
       <scope id="736190567687326245" at="54,63,55,58" />
-      <scope id="6066224101205736328" at="67,240,68,87" />
+      <scope id="8120684925531069544" at="67,240,68,87" />
+      <scope id="736190567687326245" at="81,44,82,20" />
+      <scope id="736190567687326245" at="89,63,90,58" />
+      <scope id="6066224101205736328" at="102,240,103,87" />
       <scope id="736190567687326245" at="30,0,33,0" />
-      <scope id="6066224101205732682" at="66,196,69,21" />
-      <scope id="6066224101205736325" at="66,196,69,21">
+      <scope id="8120684925531069538" at="66,204,69,21" />
+      <scope id="8120684925531069539" at="66,204,69,21">
+        <var name="instantie" id="8120684925531069540" />
+      </scope>
+      <scope id="6066224101205732682" at="101,196,104,21" />
+      <scope id="6066224101205736325" at="101,196,104,21">
         <var name="instantie" id="6066224101205736326" />
       </scope>
       <scope id="736190567687326245" at="45,0,49,0" />
       <scope id="736190567687326245" at="53,0,57,0" />
+      <scope id="736190567687326245" at="80,0,84,0" />
+      <scope id="736190567687326245" at="88,0,92,0" />
       <scope id="736190567687326245" at="38,0,43,0" />
-      <scope id="6066224101205732678" at="64,17,70,19">
+      <scope id="8120684925531069534" at="64,17,70,19">
+        <var name="rechtsSubject" id="8120684925531069534" />
+      </scope>
+      <scope id="6066224101205732678" at="99,17,105,19">
         <var name="onderwerp" id="6066224101205732678" />
       </scope>
-      <scope id="6066224101205728704" at="63,242,71,17" />
-      <scope id="6066224101205728698" at="62,222,72,15">
+      <scope id="8120684925531069533" at="63,242,71,17" />
+      <scope id="6066224101205728704" at="98,242,106,17" />
+      <scope id="8120684925531069528" at="62,222,72,15">
+        <var name="tabel" id="8120684925531069529" />
+      </scope>
+      <scope id="6066224101205728698" at="97,222,107,15">
         <var name="tabel" id="6066224101205728700" />
       </scope>
-      <scope id="6066224101205716873" at="59,13,73,69">
+      <scope id="8120684925531069324" at="59,13,73,69">
+        <var name="gegevenshuishouding" id="8120684925531069523" />
+        <var name="instantiesVanObject" id="8120684925531069509" />
+        <var name="simulatie" id="8120684925531069515" />
+      </scope>
+      <scope id="6066224101205716873" at="94,13,108,69">
         <var name="gegevenshuishouding" id="6066224101205720241" />
         <var name="instantiesVanObject" id="7168729926834069867" />
         <var name="simulatie" id="6066224101205721814" />
       </scope>
       <scope id="736190567687326245" at="58,122,74,13" />
+      <scope id="736190567687326245" at="93,122,109,13" />
       <scope id="736190567687326245" at="57,0,76,0">
         <var name="_context" id="736190567687326245" />
         <var name="operationContext" id="736190567687326245" />
       </scope>
+      <scope id="736190567687326245" at="92,0,111,0">
+        <var name="_context" id="736190567687326245" />
+        <var name="operationContext" id="736190567687326245" />
+      </scope>
       <scope id="736190567687326245" at="51,56,76,10" />
+      <scope id="736190567687326245" at="86,56,111,10" />
       <scope id="736190567687326245" at="49,0,78,0" />
-      <scope id="736190567687326245" at="35,90,79,22">
+      <scope id="736190567687326245" at="84,0,113,0" />
+      <scope id="736190567687326245" at="35,90,114,22">
         <var name="references" id="736190567687326245" />
       </scope>
-      <scope id="736190567687326245" at="34,0,81,0" />
+      <scope id="736190567687326245" at="34,0,116,0" />
       <unit id="736190567687326245" at="41,19,41,41" name="Simulatie.constraints.UitTeVoerenHandeling_Constraints$2" />
       <unit id="736190567687326245" at="37,163,43,5" name="Simulatie.constraints.UitTeVoerenHandeling_Constraints$1" />
       <unit id="736190567687326245" at="52,19,76,9" name="Simulatie.constraints.UitTeVoerenHandeling_Constraints$3" />
-      <unit id="736190567687326245" at="44,157,78,5" name="Simulatie.constraints.UitTeVoerenHandeling_Constraints$2" />
-      <unit id="736190567687326245" at="29,0,83,0" name="Simulatie.constraints.UitTeVoerenHandeling_Constraints" />
+      <unit id="736190567687326245" at="87,19,111,9" name="Simulatie.constraints.UitTeVoerenHandeling_Constraints$4" />
+      <unit id="736190567687326245" at="44,153,78,5" name="Simulatie.constraints.UitTeVoerenHandeling_Constraints$2" />
+      <unit id="736190567687326245" at="79,157,113,5" name="Simulatie.constraints.UitTeVoerenHandeling_Constraints$3" />
+      <unit id="736190567687326245" at="29,0,119,0" name="Simulatie.constraints.UitTeVoerenHandeling_Constraints" />
     </file>
   </root>
 </debug-info>

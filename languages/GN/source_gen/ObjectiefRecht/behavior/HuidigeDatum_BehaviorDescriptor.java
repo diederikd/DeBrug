@@ -9,7 +9,7 @@ package ObjectiefRecht.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class Nu_BehaviorDescriptor {
+public class HuidigeDatum_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

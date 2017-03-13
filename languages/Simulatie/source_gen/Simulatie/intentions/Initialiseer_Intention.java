@@ -48,7 +48,7 @@ public final class Initialiseer_Intention extends IntentionDescriptorBase implem
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      Simulatie__BehaviorDescriptor.InitialiseerSimulatie_id5FFw3Y4c4n0.invoke(node, node);
+      Simulatie__BehaviorDescriptor.Initialiseer_id5FFw3Y4c4n0.invoke(node, node);
     }
     @Override
     public IntentionDescriptor getDescriptor() {

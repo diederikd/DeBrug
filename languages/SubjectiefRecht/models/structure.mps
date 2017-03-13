@@ -72,14 +72,14 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="rechtssubjectMetRecht" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6c9haf45syb" resolve="Rechtssubject" />
+      <ref role="20lvS9" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
     </node>
     <node concept="1TJgyj" id="6c9haf45syx" role="1TKVEi">
       <property role="IQ2ns" value="7136310554705381537" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="rechtssubjectMetPlicht" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6c9haf45syb" resolve="Rechtssubject" />
+      <ref role="20lvS9" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
     </node>
     <node concept="1TJgyj" id="6c9haf45syA" role="1TKVEi">
       <property role="IQ2ns" value="7136310554705381542" />

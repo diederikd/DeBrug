@@ -31,6 +31,7 @@
   <dependency className="Simulatie.behavior.Simulatie__BehaviorDescriptor" file="Simulatie__BehaviorDescriptor.java">
     <classNode dependClassName="Datum.behavior.DatumTijd__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.Concept__BehaviorDescriptor" />
+    <classNode dependClassName="ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor" />
     <classNode dependClassName="SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Long" />

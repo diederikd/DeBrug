@@ -100,7 +100,7 @@ public class ErIsGeen_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_6o9513_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "waarbij");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "waarbij geldt");
     editorCell.setCellId("Constant_6o9513_c0");
     editorCell.setDefaultText("");
     return editorCell;

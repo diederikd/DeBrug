@@ -521,6 +521,7 @@
     <classNode dependClassName="ObjectiefRecht.editor.GebeurtenisMetRechtsgevolg_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.GeheelGetalType_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.Gelijkstelling_Editor" />
+    <classNode dependClassName="ObjectiefRecht.editor.HuidigeDatum_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_EN_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.InstantieVanObject_Editor" />
@@ -552,7 +553,6 @@
     <classNode dependClassName="ObjectiefRecht.editor.MethodeBeeidigenOnderwerp_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.MethodeNieuweFeiten_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.Na_Editor" />
-    <classNode dependClassName="ObjectiefRecht.editor.Nu_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.Object" />
     <classNode dependClassName="ObjectiefRecht.editor.ObjectType_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.ObjectWaarde_Editor" />
@@ -890,6 +890,13 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="ObjectiefRecht.editor.HuidigeDatum_Editor" file="HuidigeDatum_Editor.java">
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
@@ -1594,13 +1601,6 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="ObjectiefRecht.editor.Nu_Editor" file="Nu_Editor.java">
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>

@@ -116,6 +116,9 @@
     <file name="Gelijkstelling_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Gelijkstelling_BehaviorDescriptor" />
     </file>
+    <file name="HuidigeDatum_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.HuidigeDatum_BehaviorDescriptor" />
+    </file>
     <file name="IBinaireExpressie_BehaviorDescriptor.java">
       <unit at="11,0,14,0" name="ObjectiefRecht.behavior.IBinaireExpressie_BehaviorDescriptor" />
     </file>
@@ -208,9 +211,6 @@
     </file>
     <file name="Na_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Na_BehaviorDescriptor" />
-    </file>
-    <file name="Nu_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Nu_BehaviorDescriptor" />
     </file>
     <file name="ObjectType_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ObjectType_BehaviorDescriptor" />

@@ -41,7 +41,7 @@ public class UitTeVoerenHandeling_Constraints extends BaseConstraintsDescriptor 
         return new BaseScopeProvider() {};
       }
     });
-    references.put(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL, "onderwerp"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL), this) {
+    references.put(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935fL, "actor"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935fL), this) {
       @Override
       public boolean hasOwnScopeProvider() {
         return true;
@@ -53,6 +53,41 @@ public class UitTeVoerenHandeling_Constraints extends BaseConstraintsDescriptor 
           @Override
           public SNodeReference getSearchScopeValidatorNode() {
             return breakingNode_cy5ydd_a0a0a0a0a1a0b0a2a2;
+          }
+          @Override
+          public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
+            {
+              List<SNode> instantiesVanObject = new ArrayList<SNode>();
+              SNode simulatie = (SNode) SNodeOperations.getParent(_context.getContextNode());
+              SNode gegevenshuishouding = SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0xa37796bba047244L, "gegevenshuishouding"));
+              for (SNode tabel : ListSequence.fromList(SLinkOperations.getChildren(gegevenshuishouding, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL, 0x6807b3aa0b72d4dfL, "tabellen")))) {
+                {
+                  final SNode rechtsSubject = SLinkOperations.getTarget(tabel, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object"));
+                  if (SNodeOperations.isInstanceOf(rechtsSubject, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"))) {
+                    for (SNode instantie : ListSequence.fromList(SLinkOperations.getChildren(tabel, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties")))) {
+                      ListSequence.fromList(instantiesVanObject).addElement(instantie);
+                    }
+                  }
+                }
+              }
+              return ListScope.forNamedElements(instantiesVanObject);
+            }
+          }
+        };
+      }
+    });
+    references.put(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL, "onderwerp"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL), this) {
+      @Override
+      public boolean hasOwnScopeProvider() {
+        return true;
+      }
+      @Nullable
+      @Override
+      public ReferenceScopeProvider getScopeProvider() {
+        return new BaseScopeProvider() {
+          @Override
+          public SNodeReference getSearchScopeValidatorNode() {
+            return breakingNode_cy5ydd_a0a0a0a0a1a0b0a3a2;
           }
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
@@ -78,5 +113,6 @@ public class UitTeVoerenHandeling_Constraints extends BaseConstraintsDescriptor 
     });
     return references;
   }
-  private static SNodePointer breakingNode_cy5ydd_a0a0a0a0a1a0b0a2a2 = new SNodePointer("r:484b93fc-0f0b-4d8a-917c-688df91c2a48(Simulatie.constraints)", "6066224101205716871");
+  private static SNodePointer breakingNode_cy5ydd_a0a0a0a0a1a0b0a2a2 = new SNodePointer("r:484b93fc-0f0b-4d8a-917c-688df91c2a48(Simulatie.constraints)", "8120684925531069323");
+  private static SNodePointer breakingNode_cy5ydd_a0a0a0a0a1a0b0a3a2 = new SNodePointer("r:484b93fc-0f0b-4d8a-917c-688df91c2a48(Simulatie.constraints)", "6066224101205716871");
 }

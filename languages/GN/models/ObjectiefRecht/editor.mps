@@ -10278,9 +10278,9 @@
   </node>
   <node concept="24kQdi" id="7QVfFLFlZBD">
     <property role="3GE5qa" value="Expressies.Parameters" />
-    <ref role="1XX52x" to="3pw0:7QVfFLFlZBw" resolve="Nu" />
+    <ref role="1XX52x" to="3pw0:7QVfFLFlZBw" resolve="HuidigeDatum" />
     <node concept="3F0ifn" id="7QVfFLFlZBF" role="2wV5jI">
-      <property role="3F0ifm" value="nu" />
+      <property role="3F0ifm" value="huidige datum" />
     </node>
   </node>
   <node concept="24kQdi" id="7QVfFLFlZBT">
@@ -10379,7 +10379,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7QVfFLFvjd$" role="3EZMnx">
-        <property role="3F0ifm" value="waarbij" />
+        <property role="3F0ifm" value="waarbij geldt" />
       </node>
       <node concept="3F0ifn" id="7QVfFLFvjd_" role="3EZMnx">
         <property role="3F0ifm" value=":" />

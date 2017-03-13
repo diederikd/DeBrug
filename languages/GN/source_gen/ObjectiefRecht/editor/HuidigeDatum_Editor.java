@@ -8,13 +8,13 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
-public class Nu_Editor extends DefaultNodeEditor {
+public class HuidigeDatum_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createConstant_r53ur6_a(editorContext, node);
+    return this.createConstant_yg6z9a_a(editorContext, node);
   }
-  private EditorCell createConstant_r53ur6_a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "nu");
-    editorCell.setCellId("Constant_r53ur6_a");
+  private EditorCell createConstant_yg6z9a_a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "huidige datum");
+    editorCell.setCellId("Constant_yg6z9a_a");
     editorCell.setBig(true);
     editorCell.setDefaultText("");
     return editorCell;

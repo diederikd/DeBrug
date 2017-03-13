@@ -10,14 +10,10 @@
   <imports />
   <registry>
     <language id="15970de3-8fe7-4b13-81c7-38b38d51c39a" name="Simulatie">
-      <concept id="7867191925628556449" name="Simulatie.structure.Informatiepositie" flags="ng" index="2BLbnY">
-        <child id="7812026954661547171" name="rechtsbetrekkingen" index="1O2iA3" />
-      </concept>
+      <concept id="7867191925628556449" name="Simulatie.structure.Informatiepositie" flags="ng" index="2BLbnY" />
       <concept id="7867191925628288949" name="Simulatie.structure.Simulatie" flags="ng" index="2BMdVE">
-        <reference id="7867191925628478847" name="rechtssubject1" index="2BLsgw" />
         <reference id="7867191925628437242" name="casus" index="2BMAe_" />
         <reference id="736190567687680580" name="gegevenshuishouding" index="2KcKGJ" />
-        <reference id="2222626598059533343" name="rechtssubject2" index="1Nt3W2" />
         <child id="3172654291078996041" name="datumtijdlaatstehandeling" index="22TAwd" />
         <child id="7431672735427965832" name="datumtijdvanstartvandeSimulatie" index="d0i_M" />
         <child id="7867191925628603759" name="rechtspositie" index="2BLYKK" />
@@ -35,17 +31,10 @@
     <language id="2c493149-da1d-45e9-8ea2-e0b0cfc3047a" name="SubjectiefRecht">
       <concept id="7136310554705382618" name="SubjectiefRecht.structure.Casus" flags="ng" index="2B78xT">
         <reference id="5066083982446220006" name="context" index="QjCDG" />
-        <child id="7136310554705382621" name="rechtsbetrekkingen" index="2B78xY" />
         <child id="5066083982445988473" name="rechtssubjecten" index="DGLbN" />
       </concept>
       <concept id="7136310554705381515" name="SubjectiefRecht.structure.Rechtssubject" flags="ng" index="2B78KC">
         <reference id="2464168203968430668" name="rol" index="yqVAx" />
-      </concept>
-      <concept id="7136310554705381534" name="SubjectiefRecht.structure.Rechtsbetrekking" flags="ng" index="2B78KX">
-        <reference id="7136310554705381537" name="rechtssubjectMetPlicht" index="2B78K2" />
-        <reference id="7136310554705381542" name="rechtsbetrekking" index="2B78K5" />
-        <reference id="7136310554705381535" name="rechtssubjectMetRecht" index="2B78KW" />
-        <child id="7136310554705381581" name="geldigVan" index="2B78LI" />
       </concept>
       <concept id="3139957515581586222" name="SubjectiefRecht.structure.LijstMetRechtsbetrekkingen" flags="ng" index="1dBqmn" />
       <concept id="3139957515581586196" name="SubjectiefRecht.structure.LijstMetRechtshandelingen" flags="ng" index="1dBqmH" />
@@ -356,8 +345,6 @@
   <node concept="2BMdVE" id="3oRnirXz4Cp">
     <property role="TrG5h" value="Simulatie AWR" />
     <ref role="2BMAe_" node="3oRnirXz4Cq" resolve="Casus AWR" />
-    <ref role="2BLsgw" node="28MuYO0sXz0" resolve="Jan" />
-    <ref role="1Nt3W2" node="28MuYO0sXyQ" resolve="Piet" />
     <ref role="2KcKGJ" node="CRumIU2vtL" resolve="Gegevenshuishouding AWR" />
     <node concept="LeFwQ" id="3oRnirXz4Cr" role="d0i_M">
       <node concept="2B78Lw" id="3oRnirXz4Cs" role="LeFwF">
@@ -383,64 +370,29 @@
         <property role="LeFwM" value="32" />
       </node>
     </node>
-    <node concept="LeFwQ" id="28MuYO0sXz4" role="3zKq1C">
-      <node concept="2B78Lw" id="28MuYO0sXzg" role="LeFwF">
+    <node concept="LeFwQ" id="72MtYCvlL3A" role="3zKq1C">
+      <node concept="2B78Lw" id="72MtYCvlL3M" role="LeFwF">
         <property role="2B78LE" value="2017" />
-        <property role="2B78L_" value="2" />
-        <property role="2B78LB" value="25" />
+        <property role="2B78L_" value="3" />
+        <property role="2B78LB" value="13" />
       </node>
-      <node concept="LeFwc" id="28MuYO0sXzi" role="LeFwH">
-        <property role="LeFwf" value="12" />
-        <property role="LeFwL" value="53" />
-        <property role="LeFwM" value="53" />
-      </node>
-    </node>
-    <node concept="2BLbnY" id="28MuYO0sXzl" role="2BLYKK">
-      <node concept="2B78KX" id="28MuYO0sXzn" role="1O2iA3">
-        <ref role="2B78K5" node="32ed8Ah8VHX" resolve="Bevoegdheid tot het uitnodigen tot het doen van aangifte" />
-        <ref role="2B78K2" node="28MuYO0sXz0" resolve="Jan" />
-        <ref role="2B78KW" node="28MuYO0sXyQ" resolve="Piet" />
-        <node concept="LeFwQ" id="28MuYO0sXzo" role="2B78LI">
-          <node concept="2B78Lw" id="28MuYO0sXzp" role="LeFwF">
-            <property role="2B78LB" value="1" />
-            <property role="2B78L_" value="1" />
-            <property role="2B78LE" value="2017" />
-          </node>
-          <node concept="LeFwc" id="28MuYO0sXzq" role="LeFwH">
-            <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="0" />
-          </node>
-        </node>
+      <node concept="LeFwc" id="72MtYCvlL3O" role="LeFwH">
+        <property role="LeFwf" value="17" />
+        <property role="LeFwL" value="32" />
+        <property role="LeFwM" value="0" />
       </node>
     </node>
-    <node concept="3WXGrE" id="28MuYO0sXzr" role="3WXGrD">
+    <node concept="2BLbnY" id="72MtYCvlL3R" role="2BLYKK" />
+    <node concept="3WXGrE" id="72MtYCvlL3T" role="3WXGrD">
       <ref role="3WXGrF" node="32ed8Ah8VIF" resolve="Uitnodigen tot het doen van aangifte" />
     </node>
-    <node concept="3WXGrE" id="28MuYO0sXzs" role="3WXGrD">
+    <node concept="3WXGrE" id="72MtYCvlL3U" role="3WXGrD">
       <ref role="3WXGrF" node="3oRnirXyZnv" resolve="Indienen van een verzoek om te worden uitgenodigd" />
     </node>
   </node>
   <node concept="2B78xT" id="3oRnirXz4Cq">
     <property role="TrG5h" value="Casus AWR" />
     <ref role="QjCDG" node="4NzHub3Ff8p" resolve="AWR" />
-    <node concept="2B78KX" id="3oRnirXz4E7" role="2B78xY">
-      <ref role="2B78K5" node="32ed8Ah8VHX" resolve="Bevoegdheid tot het uitnodigen tot het doen van aangifte" />
-      <ref role="2B78K2" node="28MuYO0sXz0" resolve="Jan" />
-      <ref role="2B78KW" node="28MuYO0sXyQ" resolve="Piet" />
-      <node concept="LeFwQ" id="3oRnirXz4E8" role="2B78LI">
-        <node concept="2B78Lw" id="3oRnirXz4E9" role="LeFwF">
-          <property role="2B78LB" value="1" />
-          <property role="2B78L_" value="1" />
-          <property role="2B78LE" value="2017" />
-        </node>
-        <node concept="LeFwc" id="3oRnirXz4Ea" role="LeFwH">
-          <property role="LeFwf" value="0" />
-          <property role="LeFwL" value="0" />
-          <property role="LeFwM" value="0" />
-        </node>
-      </node>
-    </node>
     <node concept="2B78KC" id="28MuYO0sXyQ" role="DGLbN">
       <property role="TrG5h" value="Piet" />
       <ref role="yqVAx" node="4NzHub3Ff8E" resolve="Inspecteur" />
