@@ -30,6 +30,9 @@ import Gegevens.behavior.DuurWaarde__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.List;
 import java.util.ArrayList;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import Datum.behavior.Datum__BehaviorDescriptor;
 
 public class Interpreter {
   private static IInterpreter interpreter;
@@ -78,6 +81,7 @@ public class Interpreter {
     Tuples._3<Object, IEnvironment, INodeValueCache> result = MultiTuple.<Object,IEnvironment,INodeValueCache>from(value, context.getEnvironment(), context.getNodeValueCache());
     return result;
   }
+
   public static SNode RechtssubjectMetPlicht() {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(teEvaluerenSubjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2eL, "rechtssubjectMetPlicht"));
   }
@@ -230,4 +234,112 @@ public class Interpreter {
   public static void voegBerichtToe(String tekst) {
     Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, tekst);
   }
+
+  public static List<SNode> GeefLijstVanInstanties(final SNode object) {
+    List<SNode> instantiesVanObject = (List<SNode>) ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0xa37796bba047244L, "gegevenshuishouding")), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "referentieNaarObject")) == object;
+      }
+    }).toListSequence();
+    return instantiesVanObject;
+  }
+
+  public static List<SNode> BeperklijstMetInstanties(List<SNode> instantiesVanObject, List<SNode> abstracteExpressies) {
+    List<SNode> result = instantiesVanObject;
+    Interpreter.voegBerichtToe("Start beperk lijst met instanties" + result);
+    for (SNode abstracteExpressie : ListSequence.fromList(abstracteExpressies)) {
+      {
+        final SNode isGelijk = abstracteExpressie;
+        if (SNodeOperations.isInstanceOf(isGelijk, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, "ObjectiefRecht.structure.IsGelijk"))) {
+          Interpreter.voegBerichtToe("Beperk lijst met instanties d.m.v. is gelijk aan");
+          result = BeperklijstMetInstantiesIsGelijkAan(result, isGelijk);
+        }
+      }
+      {
+        final SNode ligtVoor = abstracteExpressie;
+        if (SNodeOperations.isInstanceOf(ligtVoor, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b78c22dL, "ObjectiefRecht.structure.LigtVoor"))) {
+          Interpreter.voegBerichtToe("Beperk lijst met instanties d.m.v. ligt voor");
+          result = BeperklijstMetInstantiesLigtVoor(result, ligtVoor);
+        }
+      }
+      Interpreter.voegBerichtToe("Tussenresultaat lijst met instanties" + result);
+
+    }
+    return result;
+  }
+
+  public static List<SNode> BeperklijstMetInstantiesIsGelijkAan(List<SNode> instantiesVanObject, SNode gelijk) {
+
+    List<SNode> result = instantiesVanObject;
+    List<SNode> teverwijderenInstanties = new ArrayList<SNode>();
+
+    SNode kenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, "ObjectiefRecht.structure.Kenmerk"));
+    {
+      final SNode variabele = SLinkOperations.getTarget(gelijk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1"));
+      if (SNodeOperations.isInstanceOf(variabele, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, "ObjectiefRecht.structure.Variabele"))) {
+        kenmerk = SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk"));
+      }
+    }
+    {
+      final SNode rechtsSubjectMetRecht = SLinkOperations.getTarget(gelijk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2"));
+      if (SNodeOperations.isInstanceOf(rechtsSubjectMetRecht, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b6b727aL, "ObjectiefRecht.structure.RechtsSubjectMetRecht"))) {
+        for (SNode instantieVanObject : ListSequence.fromList(instantiesVanObject)) {
+          SNode objectWaarde = (SNode) InstantieVanObject__BehaviorDescriptor.GeefWaardeVanKenmerk_idFR9FxGLp3H.invoke(instantieVanObject, kenmerk);
+          SNode subject = SLinkOperations.getTarget(objectWaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, 0x4ccbd8fc9e467d9L, "object"));
+          Interpreter.voegBerichtToe("Is " + subject + " gelijk aan " + Interpreter.InstantieVanRechtssubjectMetRecht() + "?");
+          if (subject != Interpreter.InstantieVanRechtssubjectMetRecht()) {
+            Interpreter.voegBerichtToe(subject + " is niet gelijk aan " + Interpreter.InstantieVanRechtssubjectMetRecht());
+            teverwijderenInstanties.add(instantieVanObject);
+          }
+        }
+      }
+    }
+    {
+      final SNode rechtsSubjectMetPlicht = SLinkOperations.getTarget(gelijk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2"));
+      if (SNodeOperations.isInstanceOf(rechtsSubjectMetPlicht, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b6b7288L, "ObjectiefRecht.structure.RechtsSubjectMetPlicht"))) {
+        for (SNode instantieVanObject : ListSequence.fromList(instantiesVanObject)) {
+          SNode objectWaarde = (SNode) InstantieVanObject__BehaviorDescriptor.GeefWaardeVanKenmerk_idFR9FxGLp3H.invoke(instantieVanObject, kenmerk);
+          SNode subject = SLinkOperations.getTarget(objectWaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, 0x4ccbd8fc9e467d9L, "object"));
+          Interpreter.voegBerichtToe("Is " + subject + " gelijk aan " + Interpreter.InstantieVanRechtssubjectMetPlicht() + "?");
+          if (subject != Interpreter.InstantieVanRechtssubjectMetPlicht()) {
+            Interpreter.voegBerichtToe(subject + " is niet gelijk aan " + Interpreter.InstantieVanRechtssubjectMetPlicht());
+            teverwijderenInstanties.add(instantieVanObject);
+          }
+        }
+      }
+    }
+    result.removeAll(teverwijderenInstanties);
+    return result;
+  }
+
+  public static List<SNode> BeperklijstMetInstantiesLigtVoor(List<SNode> instantiesVanObject, SNode ligtVoor) {
+
+    List<SNode> result = instantiesVanObject;
+    List<SNode> teverwijderenInstanties = new ArrayList<SNode>();
+
+    SNode kenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, "ObjectiefRecht.structure.Kenmerk"));
+    {
+      final SNode variabele = SLinkOperations.getTarget(ligtVoor, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"));
+      if (SNodeOperations.isInstanceOf(variabele, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, "ObjectiefRecht.structure.Variabele"))) {
+        kenmerk = SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk"));
+      }
+    }
+    {
+      final SNode huidigeDatum = SLinkOperations.getTarget(ligtVoor, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"));
+      if (SNodeOperations.isInstanceOf(huidigeDatum, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9e0L, "ObjectiefRecht.structure.HuidigeDatum"))) {
+        for (SNode instantieVanObject : ListSequence.fromList(result)) {
+          SNode datumWaarde = (SNode) InstantieVanObject__BehaviorDescriptor.GeefWaardeVanKenmerk_idFR9FxGLp3H.invoke(instantieVanObject, kenmerk);
+          LocalDate Datum = Datum__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(datumWaarde, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, 0x1fabc0b15d9b6274L, "waarde")));
+          Interpreter.voegBerichtToe("Ligt " + Datum + " voor " + LocalDate.now() + "?");
+          if (!(Datum.isBefore(LocalDate.now()))) {
+            Interpreter.voegBerichtToe(Datum + " ligt niet voor " + LocalDate.now());
+            teverwijderenInstanties.add(instantieVanObject);
+          }
+        }
+      }
+    }
+    result.removeAll(teverwijderenInstanties);
+    return result;
+  }
+
 }

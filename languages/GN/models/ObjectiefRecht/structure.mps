@@ -1551,7 +1551,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="voorwaarden" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
+      <ref role="20lvS9" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
     </node>
   </node>
   <node concept="1TIwiD" id="7QVfFLFlZBw">
@@ -1603,7 +1603,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="voorwaarden" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
+      <ref role="20lvS9" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
     </node>
   </node>
   <node concept="1TIwiD" id="jcJoZ9JaUU">

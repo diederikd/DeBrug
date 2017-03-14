@@ -4,21 +4,21 @@ package Simulatie.plugin;
 
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
-import org.jetbrains.mps.openapi.model.SModel;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 
 public class InterpreterFuncties {
-  public List<SNode> ZoekInstantiesVanObject(SModel model, final SNode object, List<SNode> LijstMetKenmerkWaarden) {
+  public List<SNode> ZoekInstantiesVanObject(SNode simulatie, final SNode object, List<SNode> LijstMetKenmerkWaarden) {
     // Validatie of object wel beschikbaar is in het model 
-    System.out.println("Begin van de functie");
+    Interpreter.voegBerichtToe("Zoeken naar instanties van object");
     // validatie of het wel de kenmerken betreffen van het object 
     List<SNode> returninstantieVanObjects = new ArrayList<SNode>();
-    List<SNode> instantieVanObjects = (List<SNode>) ListSequence.fromList(SModelOperations.nodes(model, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"))).where(new IWhereFilter<SNode>() {
+    List<SNode> instantieVanObjects = (List<SNode>) ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0xa37796bba047244L, "gegevenshuishouding")), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "referentieNaarObject")) == object;
       }

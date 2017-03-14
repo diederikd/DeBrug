@@ -495,7 +495,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
           if ((expressie1 instanceof Double) && (expressie2 instanceof Double)) {
             result = ((Double) expressie1) >= ((Double) expressie2);
           }
-          Interpreter.voegBerichtToe("is groter of gelijk aan");
+          Interpreter.voegBerichtToe("is groter of gelijk aan is '" + result + "'");
           return result;
         } catch (InterpreterEscapeException ex) {
           throw ex;
@@ -517,7 +517,14 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
-          Interpreter.voegBerichtToe("Er is een <object> waarbij <voorwaarden");
+          Interpreter.voegBerichtToe("Vraag lijst op van instanties");
+          List<SNode> instantiesVanObject = Interpreter.GeefLijstVanInstanties(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9c6L, 0x7dbb3ebc6b57f9deL, "object")));
+          Interpreter.voegBerichtToe("Beperk lijst met instanties");
+          instantiesVanObject = Interpreter.BeperklijstMetInstanties(instantiesVanObject, SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9c6L, 0x7dbb3ebc6b57f9eeL, "voorwaarden")));
+          Interpreter.voegBerichtToe("Resultaat lijst met instanties " + instantiesVanObject);
+          if (ListSequence.fromList(instantiesVanObject).count() > 0) {
+            return true;
+          }
           return false;
         } catch (InterpreterEscapeException ex) {
           throw ex;
@@ -539,7 +546,12 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          List<SNode> instantiesVanObject = Interpreter.GeefLijstVanInstanties(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b7d334fL, 0x7dbb3ebc6b7d3352L, "object")));
+          instantiesVanObject = Interpreter.BeperklijstMetInstanties(instantiesVanObject, SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b7d334fL, 0x7dbb3ebc6b7d3350L, "voorwaarden")));
           Interpreter.voegBerichtToe("Er is geen <object> waarbij <voorwaarden>");
+          if (ListSequence.fromList(instantiesVanObject).count() == 0) {
+            return true;
+          }
           return false;
         } catch (InterpreterEscapeException ex) {
           throw ex;
