@@ -489,8 +489,14 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          Boolean result = false;
+          Object expressie1 = context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")), context, coverage);
+          Object expressie2 = context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")), context, coverage);
+          if ((expressie1 instanceof Double) && (expressie2 instanceof Double)) {
+            result = ((Double) expressie1) >= ((Double) expressie2);
+          }
           Interpreter.voegBerichtToe("is groter of gelijk aan");
-          return false;
+          return result;
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {

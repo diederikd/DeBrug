@@ -136,6 +136,13 @@ public class Interpreter {
     Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Type van variabele : " + waarde);
 
     {
+      final SNode geheelGetalWaarde = waarde;
+      if (SNodeOperations.isInstanceOf(geheelGetalWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fe6L, "Gegevens.structure.GeheelGetalWaarde"))) {
+        Interpreter.voegBerichtToe("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(geheelGetalWaarde));
+        return (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(geheelGetalWaarde);
+      }
+    }
+    {
       final SNode rekenWaarde = waarde;
       if (SNodeOperations.isInstanceOf(rekenWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde"))) {
         System.out.println("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(rekenWaarde));

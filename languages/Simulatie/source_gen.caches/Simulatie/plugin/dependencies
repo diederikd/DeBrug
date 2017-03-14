@@ -116,6 +116,7 @@
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.TypedChildConstraintImpl" />
     <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Double" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -173,6 +174,7 @@
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpretAfterRelationshipImpl" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException" />
+    <classNode dependClassName="java.lang.Double" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.RuntimeException" />
