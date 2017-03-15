@@ -17,8 +17,8 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import Datum.behavior.Datum__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import Datum.behavior.Datum__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -36,10 +36,16 @@ public final class DatumWaarde__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static Temporal GeefTemporeleWaarde_id5kuxuwXEUJM(@NotNull SNode __thisNode__) {
-    return Datum__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, 0x1fabc0b15d9b6274L, "waarde")));
+    if ((SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, 0x1fabc0b15d9b6274L, "waarde")) != null)) {
+      return Datum__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, 0x1fabc0b15d9b6274L, "waarde")));
+    }
+    return null;
   }
   /*package*/ static String GeefWaardeString_idFzw$g_H4hz(@NotNull SNode __thisNode__) {
-    return TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(__thisNode__).toString();
+    if (TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(__thisNode__) != null) {
+      TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(__thisNode__).toString();
+    }
+    return null;
   }
 
   /*package*/ DatumWaarde__BehaviorDescriptor() {

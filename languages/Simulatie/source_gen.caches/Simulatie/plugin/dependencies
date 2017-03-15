@@ -20,6 +20,7 @@
     <classNode extendsClassName="jetbrains.mps.smodel.structure.DefaultExtensionDescriptor" />
   </dependency>
   <dependency className="Simulatie.plugin.Interpreter" file="Interpreter.java">
+    <classNode dependClassName="Datum.behavior.DatumTijd__BehaviorDescriptor" />
     <classNode dependClassName="Datum.behavior.Datum__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.DuurWaarde__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.RekenWaarde__BehaviorDescriptor" />
@@ -28,7 +29,6 @@
     <classNode dependClassName="Gegevens.behavior.waardeJaNee__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.behavior.Simulatie__BehaviorDescriptor" />
-    <classNode dependClassName="Simulatie.plugin.DebugHelper" />
     <classNode dependClassName="Simulatie.plugin.InterpreterFuncties" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.CombinedInterpreter" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ContextImpl" />
@@ -39,10 +39,13 @@
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.INodeValueCache" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterRegistry" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.NullCoverageAnalyzer" />
+    <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.time.Duration" />
     <classNode dependClassName="java.time.LocalDate" />
+    <classNode dependClassName="java.time.LocalDateTime" />
+    <classNode dependClassName="java.time.ZoneId" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
@@ -105,7 +108,6 @@
     <classNode dependClassName="Gegevens.behavior.RekenWaarde__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.TijdWaarde__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor" />
-    <classNode dependClassName="Simulatie.plugin.DebugHelper" />
     <classNode dependClassName="Simulatie.plugin.Interpreter" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo" />

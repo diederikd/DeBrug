@@ -18,8 +18,8 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import Datum.behavior.Tijd__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import Datum.behavior.Tijd__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -38,13 +38,19 @@ public final class TijdWaarde__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static Temporal GeefTemporeleWaarde_id5kuxuwXEUJM(@NotNull SNode __thisNode__) {
-    return Tijd__BehaviorDescriptor.gettime_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, 0x7da9e4c6468d090L, "waarde")));
+    if ((SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, 0x7da9e4c6468d090L, "waarde")) != null)) {
+      return Tijd__BehaviorDescriptor.gettime_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, 0x7da9e4c6468d090L, "waarde")));
+    }
+    return null;
   }
   /*package*/ static LocalTime GeefTijdWaarde_idFR9FxGLL6n(@NotNull SNode __thisNode__) {
     return Tijd__BehaviorDescriptor.gettime_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, 0x7da9e4c6468d090L, "waarde")));
   }
   /*package*/ static String GeefWaardeString_idFzw$g_H4hz(@NotNull SNode __thisNode__) {
-    return TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(__thisNode__).toString();
+    if (TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(__thisNode__) != null) {
+      return TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(__thisNode__).toString();
+    }
+    return null;
   }
 
   /*package*/ TijdWaarde__BehaviorDescriptor() {
