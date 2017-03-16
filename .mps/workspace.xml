@@ -18,45 +18,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f2805d-4538-46c3-a016-7128ec7e185d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/models/textGen.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/TestInteractie.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/AWB/Gegevenshuishouding AWB.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/AWR/Gegevenshuishouding AWR.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/TestInteractie/regelingen.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/TestInteractie/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/WAA/Gegevenshuishouding WAA2000.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/textGen/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/textGen/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/EnumeratieWaarde_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/InstantieVanObject_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/ObjectWaarde_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/TabelMetInstanties_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/TextGenAspectDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/WaardeVanKenmerk_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/models/textGen.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/textGen/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/textGen/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/textGen/DatumWaarde_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/textGen/DuurWaarde_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/textGen/EnumeratieWaarde_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/textGen/GeheelGetalWaarde_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/textGen/JaNeeWaarde_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/textGen/ReeelGetalWaarde_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/textGen/RijVanKaraktersWaarde_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/textGen/TextGenAspectDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/textGen/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/behavior/InteractieDefinitie_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/behavior/Regeling_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/editor/InteractieDefinitie_Editor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/editor/Regeling_Editor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/textGen/InteractieDefinitie_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/models/textGen.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/textGen/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/textGen/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/textGen/Gegevenshuishouding_TextGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/textGen/TextGenAspectDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/textGen/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/Language.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/Language.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/Language.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/Language.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/editor/EditorAspectDescriptorImpl.class" afterPath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/editor/EditorAspectDescriptorImpl.class" />
@@ -65,48 +26,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/textGen/TextGenAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/textGen/TextGenAspectDescriptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/Language.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/Language.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/ObjectiefRecht.mpl" afterPath="$PROJECT_DIR$/languages/GN/ObjectiefRecht.mpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/TestInteractie/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/TestInteractie/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/Language.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/Language.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/dependencies" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/generated" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/Language.java" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/Language.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/Interactie.mpl" afterPath="$PROJECT_DIR$/languages/Interactie/Interactie.mpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/behavior/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/editor/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/structure/trace.info" afterPath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/structure/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/textGen/trace.info" afterPath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/textGen/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/models/editor.mps" afterPath="$PROJECT_DIR$/languages/Interactie/models/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/models/structure.mps" afterPath="$PROJECT_DIR$/languages/Interactie/models/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/models/textGen.mps" afterPath="$PROJECT_DIR$/languages/Interactie/models/textGen.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/editor/dependencies" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/editor/generated" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/generated" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/structure/generated" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/textGen/dependencies" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/textGen/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/textGen/generated" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/textGen/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/editor/EditorAspectDescriptorImpl.java" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/editor/EditorAspectDescriptorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/structure/ConceptPresentationAspectImpl.java" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/structure/ConceptPresentationAspectImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/structure/trace.info" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/textGen/TextGenAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/textGen/TextGenAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/textGen/trace.info" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/textGen/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/dependencies" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/Language.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/Language.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/trace.info" />
     </list>
     <ignored path="DeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -1086,7 +1012,8 @@
     <MESSAGE value="Evaluatie van de voorwaarden van de eerste rechtsbetrekking loopt door" />
     <MESSAGE value="Er is een &lt;object&gt; waarbij &lt;voorwaarden&gt; geimplementeerd." />
     <MESSAGE value="Aantal rechtsbetrekkingen wordt al geevalueerd!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aantal rechtsbetrekkingen wordt al geevalueerd!" />
+    <MESSAGE value="XML export voor WS" />
+    <option name="LAST_COMMIT_MESSAGE" value="XML export voor WS" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://GN.sandbox/GN.WAA/Simulatie WAA2000">
