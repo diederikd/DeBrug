@@ -18,9 +18,11 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(5);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(7);
   /*package*/ final ConceptDescriptor myConceptFormulier = createDescriptorForFormulier();
   /*package*/ final ConceptDescriptor myConceptFormulierVeld = createDescriptorForFormulierVeld();
+  /*package*/ final ConceptDescriptor myConceptInteractieDefinitie = createDescriptorForInteractieDefinitie();
+  /*package*/ final ConceptDescriptor myConceptRegeling = createDescriptorForRegeling();
   /*package*/ final ConceptDescriptor myConceptTypeRadioJaNee = createDescriptorForTypeRadioJaNee();
   /*package*/ final ConceptDescriptor myConceptTypeText = createDescriptorForTypeText();
   /*package*/ final ConceptDescriptor myConceptTypeVeld = createDescriptorForTypeVeld();
@@ -28,14 +30,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   public StructureAspectDescriptor() {
     myIndexMap.put(myConceptFormulier.getId(), 0);
     myIndexMap.put(myConceptFormulierVeld.getId(), 1);
-    myIndexMap.put(myConceptTypeRadioJaNee.getId(), 2);
-    myIndexMap.put(myConceptTypeText.getId(), 3);
-    myIndexMap.put(myConceptTypeVeld.getId(), 4);
+    myIndexMap.put(myConceptInteractieDefinitie.getId(), 2);
+    myIndexMap.put(myConceptRegeling.getId(), 3);
+    myIndexMap.put(myConceptTypeRadioJaNee.getId(), 4);
+    myIndexMap.put(myConceptTypeText.getId(), 5);
+    myIndexMap.put(myConceptTypeVeld.getId(), 6);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptFormulier, myConceptFormulierVeld, myConceptTypeRadioJaNee, myConceptTypeText, myConceptTypeVeld);
+    return Arrays.asList(myConceptFormulier, myConceptFormulierVeld, myConceptInteractieDefinitie, myConceptRegeling, myConceptTypeRadioJaNee, myConceptTypeText, myConceptTypeVeld);
   }
 
   @Override
@@ -51,10 +55,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 1:
         return myConceptFormulierVeld;
       case 2:
-        return myConceptTypeRadioJaNee;
+        return myConceptInteractieDefinitie;
       case 3:
-        return myConceptTypeText;
+        return myConceptRegeling;
       case 4:
+        return myConceptTypeRadioJaNee;
+      case 5:
+        return myConceptTypeText;
+      case 6:
         return myConceptTypeVeld;
       default:
         throw new IllegalStateException();
@@ -76,6 +84,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForFormulierVeld() {
     return new ConceptDescriptorBuilder("Interactie.structure.FormulierVeld", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0xfdfefdf8693968fL, "referentieNaarKenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "1143896573689960079"))).references("referentieNaarKenmerk").childDescriptors(new ConceptDescriptorBuilder.Link(0x3d2cf44a4b890826L, "type", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907d3L), false, false, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "4408166735220901926"))).children(new String[]{"type"}, new boolean[]{false}).sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "31726144783350478")).create();
+  }
+  private static ConceptDescriptor createDescriptorForInteractieDefinitie() {
+    return new ConceptDescriptorBuilder("Interactie.structure.InteractieDefinitie", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x544f33b7f1ebe005L, "regelingen", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L), true, true, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476887557"))).children(new String[]{"regelingen"}, new boolean[]{true}).rootable().sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476887556")).create();
+  }
+  private static ConceptDescriptor createDescriptorForRegeling() {
+    return new ConceptDescriptorBuilder("Interactie.structure.Regeling", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x544f33b7f1ecd0cbL, "regels", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476949195")), new ConceptDescriptorBuilder.Ref(0x544f33b7f1ecd0cdL, "gegevenshuishouding", MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476949197")), new ConceptDescriptorBuilder.Ref(0x544f33b7f1ef7cdcL, "subject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287477124316"))).references("regels", "gegevenshuishouding", "subject").sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476886896")).create();
   }
   private static ConceptDescriptor createDescriptorForTypeRadioJaNee() {
     return new ConceptDescriptorBuilder("Interactie.structure.TypeRadioJaNee", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907e2L)).super_("Interactie.structure.TypeVeld").version(1).super_(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907d3L)).parents("Interactie.structure.TypeVeld").parentIds(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907d3L)).sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "4408166735220901858")).create();

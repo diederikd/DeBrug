@@ -2,10 +2,10 @@
 <debug-info version="2">
   <root>
     <file name="ConceptPresentationAspectImpl.java">
-      <unit at="11,0,37,0" name="Interactie.structure.ConceptPresentationAspectImpl" />
+      <unit at="11,0,43,0" name="Interactie.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="20,0,90,0" name="Interactie.structure.StructureAspectDescriptor" />
+      <unit at="20,0,104,0" name="Interactie.structure.StructureAspectDescriptor" />
     </file>
   </root>
 </debug-info>

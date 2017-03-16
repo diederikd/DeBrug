@@ -10,6 +10,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" implicit="true" />
+    <import index="xhlk" ref="r:516f69e8-d332-4ecb-b3a2-f14c7ad25337(Simulatie.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -95,6 +96,51 @@
     <property role="EcuMT" value="4408166735220901858" />
     <property role="TrG5h" value="TypeRadioJaNee" />
     <ref role="1TJDcQ" node="3OGX4Dbygvj" resolve="TypeVeld" />
+  </node>
+  <node concept="1TIwiD" id="5hfcVvLUXPK">
+    <property role="EcuMT" value="6075131287476886896" />
+    <property role="TrG5h" value="Regeling" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5hfcVvLUXPL" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="5hfcVvLVd3b" role="1TKVEi">
+      <property role="IQ2ns" value="6075131287476949195" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="regels" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="3pw0:64gsXol8CO2" resolve="Context" />
+    </node>
+    <node concept="1TJgyj" id="5hfcVvLVd3d" role="1TKVEi">
+      <property role="IQ2ns" value="6075131287476949197" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="gegevenshuishouding" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="xhlk:6w7GUCbsHju" resolve="Gegevenshuishouding" />
+    </node>
+    <node concept="1TJgyj" id="5hfcVvLVRNs" role="1TKVEi">
+      <property role="IQ2ns" value="6075131287477124316" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="subject" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="3pw0:64gsXol8COa" resolve="RechtsSubject" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5hfcVvLUY04">
+    <property role="EcuMT" value="6075131287476887556" />
+    <property role="TrG5h" value="InteractieDefinitie" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5hfcVvLUY05" role="1TKVEi">
+      <property role="IQ2ns" value="6075131287476887557" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="regelingen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5hfcVvLUXPK" resolve="Regeling" />
+    </node>
+    <node concept="PrWs8" id="5hfcVvLVkhs" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

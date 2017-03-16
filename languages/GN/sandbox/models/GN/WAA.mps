@@ -7,6 +7,7 @@
     <use id="61be2dc6-a140-4def-a592-7499aa2bac19" name="Datum" version="0" />
     <use id="15970de3-8fe7-4b13-81c7-38b38d51c39a" name="Simulatie" version="-1" />
     <use id="f856d46f-3338-47a8-8a48-11e26bc535e0" name="Algemeen" version="0" />
+    <use id="c4c9a68e-ce24-4c5b-9241-c819e554f07c" name="Interactie" version="0" />
   </languages>
   <imports />
   <registry>

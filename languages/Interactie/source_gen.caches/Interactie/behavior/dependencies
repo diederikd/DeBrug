@@ -18,6 +18,14 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="Interactie.behavior.InteractieDefinitie_BehaviorDescriptor" file="InteractieDefinitie_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Interactie.behavior.Regeling_BehaviorDescriptor" file="Regeling_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="Interactie.behavior.TypeRadioJaNee_BehaviorDescriptor" file="TypeRadioJaNee_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />

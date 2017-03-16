@@ -7,6 +7,7 @@
     <classNode dependClassName="Gegevens.intentions.IntentionsDescriptor" />
     <classNode dependClassName="Gegevens.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="Gegevens.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="Gegevens.textGen.TextGenAspectDescriptor" />
     <classNode dependClassName="Gegevens.typesystem.TypesystemDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
@@ -26,6 +27,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenAspectDescriptor" />
     <classNode dependClassName="org.apache.log4j.LogManager" />
     <classNode dependClassName="org.apache.log4j.Logger" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />

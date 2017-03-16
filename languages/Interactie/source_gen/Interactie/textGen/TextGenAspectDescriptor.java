@@ -31,6 +31,11 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
             return new Formulier_TextGen();
           }
           break;
+        case 1:
+          if (true) {
+            return new InteractieDefinitie_TextGen();
+          }
+          break;
         default:
           // default 
       }
@@ -47,13 +52,25 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
         continue;
       }
+      if (root.getConcept().equals(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L, "Interactie.structure.InteractieDefinitie"))) {
+        String fname = getFileName_InteractieDefinitie(root);
+        String ext = getFileExtension_InteractieDefinitie(root);
+        outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
+        continue;
+      }
     }
   }
   private static String getFileName_Formulier(SNode node) {
     return SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
+  private static String getFileName_InteractieDefinitie(SNode node) {
+    return "regelingen";
+  }
   private static String getFileExtension_Formulier(SNode node) {
     return "html";
+  }
+  private static String getFileExtension_InteractieDefinitie(SNode node) {
+    return "xml";
   }
   private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
     HashMap<SAbstractConcept, Integer> res = new HashMap<SAbstractConcept, Integer>();
@@ -63,5 +80,5 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_t8hmqt_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L, "Interactie.structure.Formulier"));
+  private static final Map<SAbstractConcept, Integer> indices_t8hmqt_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L, "Interactie.structure.Formulier"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L, "Interactie.structure.InteractieDefinitie"));
 }

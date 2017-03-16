@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="15,0,72,0" name="ObjectiefRecht.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:fdc08c05-76c4-4292-b33b-2cf07cac8d95(ObjectiefRecht.textGen)/6075131287477226194">
+    <file name="InstantieVanObject_TextGen.java">
+      <node id="6075131287477226194" at="15,54,16,55" concept="5" />
+      <node id="6075131287477226194" at="16,55,17,44" concept="1" />
+      <node id="6075131287480847746" at="17,44,18,17" concept="1" />
+      <node id="6075131287477226194" at="18,17,19,30" concept="1" />
+      <node id="6075131287477226194" at="19,30,20,18" concept="1" />
+      <node id="6075131287482026855" at="20,18,21,17" concept="1" />
+      <node id="6075131287477226194" at="21,17,22,26" concept="1" />
+      <node id="6075131287477226194" at="22,26,23,183" concept="1" />
+      <node id="6075131287477226194" at="23,183,24,21" concept="1" />
+      <node id="6075131287477226194" at="24,21,25,18" concept="1" />
+      <node id="6075131287477226194" at="25,18,26,44" concept="1" />
+      <node id="6075131287478372241" at="27,220,28,27" concept="1" />
+      <node id="6075131287477226194" at="29,5,30,44" concept="1" />
+      <node id="6075131287481403676" at="30,44,31,17" concept="1" />
+      <node id="6075131287477226194" at="31,17,32,31" concept="1" />
+      <node id="6075131287477226194" at="32,31,33,18" concept="1" />
+      <node id="6075131287477226194" at="33,18,34,44" concept="1" />
+      <node id="6075131287478372241" at="26,44,29,5" concept="2" />
+      <node id="6075131287477226194" at="14,0,36,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6075131287478372241" at="27,220,28,27" />
+      <scope id="6075131287478372241" at="26,44,29,5">
+        <var name="item" id="6075131287478372241" />
+      </scope>
+      <scope id="6075131287477226194" at="15,54,34,44">
+        <var name="tgs" id="6075131287477226194" />
+      </scope>
+      <scope id="6075131287477226194" at="14,0,36,0">
+        <var name="ctx" id="6075131287477226194" />
+      </scope>
+      <unit id="6075131287477226194" at="13,0,37,0" name="ObjectiefRecht.textGen.InstantieVanObject_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:fdc08c05-76c4-4292-b33b-2cf07cac8d95(ObjectiefRecht.textGen)/6075131287478357505">
+    <file name="TabelMetInstanties_TextGen.java">
+      <node id="6075131287478357505" at="16,54,17,55" concept="5" />
+      <node id="6075131287478360225" at="18,5,19,214" concept="5" />
+      <node id="6075131287478360229" at="20,192,21,48" concept="1" />
+      <node id="6075131287480825947" at="21,48,22,21" concept="1" />
+      <node id="6075131287478360229" at="22,21,23,39" concept="1" />
+      <node id="6075131287478360229" at="23,39,24,22" concept="1" />
+      <node id="6075131287481430836" at="24,22,25,21" concept="1" />
+      <node id="6075131287478360229" at="25,21,26,30" concept="1" />
+      <node id="6075131287478360229" at="26,30,27,345" concept="1" />
+      <node id="6075131287478360229" at="27,345,28,25" concept="1" />
+      <node id="6075131287478360229" at="28,25,29,22" concept="1" />
+      <node id="6075131287478364438" at="30,216,31,31" concept="1" />
+      <node id="6075131287481431475" at="32,9,33,21" concept="1" />
+      <node id="6075131287478360229" at="33,21,34,39" concept="1" />
+      <node id="6075131287478360229" at="34,39,35,22" concept="1" />
+      <node id="6075131287478360229" at="35,22,36,48" concept="1" />
+      <node id="6075131287478364438" at="29,22,32,9" concept="2" />
+      <node id="6075131287478360225" at="19,214,37,7" concept="3" />
+      <node id="6075131287478360225" at="17,55,38,5" concept="0" />
+      <node id="6075131287478357505" at="15,0,40,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6075131287478364438" at="30,216,31,31" />
+      <scope id="6075131287478364438" at="29,22,32,9">
+        <var name="item" id="6075131287478364438" />
+      </scope>
+      <scope id="6075131287478360229" at="20,192,36,48" />
+      <scope id="6075131287478360225" at="18,5,37,7">
+        <var name="rechtsSubject" id="6075131287478360225" />
+      </scope>
+      <scope id="6075131287478357505" at="16,54,38,5">
+        <var name="tgs" id="6075131287478357505" />
+      </scope>
+      <scope id="6075131287478357505" at="15,0,40,0">
+        <var name="ctx" id="6075131287478357505" />
+      </scope>
+      <unit id="6075131287478357505" at="14,0,41,0" name="ObjectiefRecht.textGen.TabelMetInstanties_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:fdc08c05-76c4-4292-b33b-2cf07cac8d95(ObjectiefRecht.textGen)/6075131287478378629">
+    <file name="WaardeVanKenmerk_TextGen.java">
+      <node id="6075131287478378629" at="14,54,15,55" concept="5" />
+      <node id="6075131287481413112" at="15,55,16,17" concept="1" />
+      <node id="6075131287478378629" at="16,17,17,28" concept="1" />
+      <node id="6075131287478378629" at="17,28,18,18" concept="1" />
+      <node id="6075131287478378629" at="18,18,19,44" concept="1" />
+      <node id="6075131287480827572" at="19,44,20,17" concept="1" />
+      <node id="6075131287478378629" at="20,17,21,26" concept="1" />
+      <node id="6075131287478378629" at="21,26,22,503" concept="1" />
+      <node id="6075131287478378629" at="22,503,23,21" concept="1" />
+      <node id="6075131287478378629" at="23,21,24,18" concept="1" />
+      <node id="6075131287480840650" at="24,18,25,17" concept="1" />
+      <node id="6075131287478378629" at="25,17,26,28" concept="1" />
+      <node id="6075131287478378629" at="26,28,27,202" concept="1" />
+      <node id="6075131287478378629" at="27,202,28,21" concept="1" />
+      <node id="6075131287478378629" at="28,21,29,18" concept="1" />
+      <node id="6075131287478378629" at="29,18,30,44" concept="1" />
+      <node id="6075131287480846439" at="30,44,31,17" concept="1" />
+      <node id="6075131287478378629" at="31,17,32,29" concept="1" />
+      <node id="6075131287478378629" at="32,29,33,18" concept="1" />
+      <node id="6075131287481411070" at="33,18,34,0" concept="6" />
+      <node id="6075131287478378629" at="13,0,36,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6075131287478378629" at="14,54,34,0">
+        <var name="tgs" id="6075131287478378629" />
+      </scope>
+      <scope id="6075131287478378629" at="13,0,36,0">
+        <var name="ctx" id="6075131287478378629" />
+      </scope>
+      <unit id="6075131287478378629" at="12,0,37,0" name="ObjectiefRecht.textGen.WaardeVanKenmerk_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:fdc08c05-76c4-4292-b33b-2cf07cac8d95(ObjectiefRecht.textGen)/6075131287478400068">
+    <file name="ObjectWaarde_TextGen.java">
+      <node id="6075131287478400068" at="12,54,13,55" concept="5" />
+      <node id="6075131287478400090" at="13,55,14,103" concept="1" />
+      <node id="6075131287478400068" at="11,0,16,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6075131287478400068" at="12,54,14,103">
+        <var name="tgs" id="6075131287478400068" />
+      </scope>
+      <scope id="6075131287478400068" at="11,0,16,0">
+        <var name="ctx" id="6075131287478400068" />
+      </scope>
+      <unit id="6075131287478400068" at="10,0,17,0" name="ObjectiefRecht.textGen.ObjectWaarde_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:fdc08c05-76c4-4292-b33b-2cf07cac8d95(ObjectiefRecht.textGen)/6075131287479787921">
+    <file name="EnumeratieWaarde_TextGen.java">
+      <node id="6075131287479787921" at="12,54,13,55" concept="5" />
+      <node id="6075131287479787943" at="13,55,14,103" concept="1" />
+      <node id="6075131287479787921" at="11,0,16,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6075131287479787921" at="12,54,14,103">
+        <var name="tgs" id="6075131287479787921" />
+      </scope>
+      <scope id="6075131287479787921" at="11,0,16,0">
+        <var name="ctx" id="6075131287479787921" />
+      </scope>
+      <unit id="6075131287479787921" at="10,0,17,0" name="ObjectiefRecht.textGen.EnumeratieWaarde_TextGen" />
+    </file>
+  </root>
+</debug-info>
+

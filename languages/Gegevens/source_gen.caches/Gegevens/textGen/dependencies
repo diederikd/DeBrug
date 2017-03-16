@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="Gegevens.textGen.DatumWaarde_TextGen" file="DatumWaarde_TextGen.java">
+    <classNode dependClassName="Gegevens.behavior.Waarde__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="Gegevens.textGen.DuurWaarde_TextGen" file="DuurWaarde_TextGen.java">
+    <classNode dependClassName="Gegevens.behavior.Waarde__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="Gegevens.textGen.EnumeratieWaarde_TextGen" file="EnumeratieWaarde_TextGen.java">
+    <classNode dependClassName="Gegevens.behavior.Waarde__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="Gegevens.textGen.GeheelGetalWaarde_TextGen" file="GeheelGetalWaarde_TextGen.java">
+    <classNode dependClassName="Gegevens.behavior.Waarde__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="Gegevens.textGen.JaNeeWaarde_TextGen" file="JaNeeWaarde_TextGen.java">
+    <classNode dependClassName="Gegevens.behavior.Waarde__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="Gegevens.textGen.ReeelGetalWaarde_TextGen" file="ReeelGetalWaarde_TextGen.java">
+    <classNode dependClassName="Gegevens.behavior.Waarde__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="Gegevens.textGen.RijVanKaraktersWaarde_TextGen" file="RijVanKaraktersWaarde_TextGen.java">
+    <classNode dependClassName="Gegevens.behavior.Waarde__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="Gegevens.textGen.TextGenAspectDescriptor" file="TextGenAspectDescriptor.java">
+    <classNode dependClassName="Gegevens.textGen.DatumWaarde_TextGen" />
+    <classNode dependClassName="Gegevens.textGen.DuurWaarde_TextGen" />
+    <classNode dependClassName="Gegevens.textGen.EnumeratieWaarde_TextGen" />
+    <classNode dependClassName="Gegevens.textGen.GeheelGetalWaarde_TextGen" />
+    <classNode dependClassName="Gegevens.textGen.JaNeeWaarde_TextGen" />
+    <classNode dependClassName="Gegevens.textGen.ReeelGetalWaarde_TextGen" />
+    <classNode dependClassName="Gegevens.textGen.RijVanKaraktersWaarde_TextGen" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenDescriptor" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenModelOutline" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenAspectBase" />
+  </dependency>
+</dependenciesRoot>
+
