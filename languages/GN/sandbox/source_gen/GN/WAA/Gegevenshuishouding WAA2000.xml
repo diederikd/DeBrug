@@ -1,6 +1,6 @@
 <gegevenshuishouding>
 <name='Gegevenshuishouding WAA2000>
-    </rechtssubject>
+    <rechtssubject>
     <type='werknemer'>
       <instantie>
       <naam='Amalius'>
@@ -74,7 +74,7 @@
         </kenmerk>
       </instantie>
     </rechtssubject>
-    </rechtssubject>
+    <rechtssubject>
     <type='werkgever'>
       <instantie>
       <naam='Essent'>

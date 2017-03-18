@@ -20,7 +20,7 @@ public class TabelMetInstanties_TextGen extends TextGenDescriptorBase {
       if (SNodeOperations.isInstanceOf(rechtsSubject, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"))) {
         ctx.getBuffer().area().increaseIndent();
         tgs.indent();
-        tgs.append("</rechtssubject>");
+        tgs.append("<rechtssubject>");
         tgs.newLine();
         tgs.indent();
         tgs.append("<type='");

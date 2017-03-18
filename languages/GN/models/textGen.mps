@@ -156,7 +156,7 @@
                 <node concept="1bpajm" id="5hfcVvM9Zxr" role="3cqZAp" />
                 <node concept="lc7rE" id="5hfcVvMchYO" role="3cqZAp">
                   <node concept="la8eA" id="5hfcVvMchYP" role="lcghm">
-                    <property role="lacIc" value="&lt;/rechtssubject&gt;" />
+                    <property role="lacIc" value="&lt;rechtssubject&gt;" />
                   </node>
                   <node concept="l8MVK" id="5hfcVvMchYQ" role="lcghm" />
                 </node>

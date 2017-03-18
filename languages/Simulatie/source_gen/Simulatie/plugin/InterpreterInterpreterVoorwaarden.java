@@ -32,7 +32,7 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           Boolean resultvoorwaarden = true;
-          Interpreter.voegBerichtToe("Start van de evaluatie van de voorwaarden van " + Interpreter.teEvaluerenRechtshandeling());
+          Interpreter.voegBerichtToe("Start van de evaluatie van de voorwaarden");
           Interpreter.voegBerichtToe(" ");
           Boolean resultaatvoorwaarde = null;
           for (SNode voorwaarde : ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fce8L, 0x42e9dab3410fd0cL, "voorwaarden")))) {
