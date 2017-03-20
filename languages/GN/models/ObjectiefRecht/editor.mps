@@ -2457,10 +2457,28 @@
         <property role="2USNnj" value="2" />
       </node>
     </node>
-    <node concept="14StLt" id="6dWsucbAYpL" role="V601i">
-      <property role="TrG5h" value="Kenmerkwaarde" />
-      <node concept="VechU" id="6dWsucbAYq9" role="3F10Kt">
+    <node concept="14StLt" id="5vursKQMYro" role="V601i">
+      <property role="TrG5h" value="VerwoordingKenmerk" />
+      <node concept="VechU" id="5vursKQMYrp" role="3F10Kt">
+        <property role="Vb096" value="gray" />
+      </node>
+    </node>
+    <node concept="14StLt" id="5vursKQMYp_" role="V601i">
+      <property role="TrG5h" value="VerwoordingObject" />
+      <node concept="VechU" id="5vursKQMYpA" role="3F10Kt">
         <property role="Vb096" value="DARK_GREEN" />
+      </node>
+      <node concept="Vb9p2" id="5vursKQMYpB" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
+      </node>
+      <node concept="VQ3r3" id="5vursKQMYss" role="3F10Kt">
+        <property role="2USNnj" value="2" />
+      </node>
+    </node>
+    <node concept="14StLt" id="6dWsucbAYpL" role="V601i">
+      <property role="TrG5h" value="VerwoordingKenmerkwaarde" />
+      <node concept="VechU" id="6dWsucbAYq9" role="3F10Kt">
+        <property role="Vb096" value="blue" />
       </node>
     </node>
   </node>
@@ -12283,7 +12301,7 @@
           <node concept="3F0A7n" id="4yDNEIhwy7_" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <ref role="1k5W1q" node="6dWsucbAYp2" resolve="Kenmerk" />
+            <ref role="1k5W1q" node="5vursKQMYro" resolve="VerwoordingKenmerk" />
           </node>
         </node>
       </node>
@@ -12349,7 +12367,7 @@
     <ref role="1XX52x" to="3pw0:4yDNEIhGVGL" resolve="VerwoordingWaarde" />
     <node concept="3EZMnI" id="4yDNEIhJPme" role="2wV5jI">
       <node concept="1HlG4h" id="Fzw$g_HwcM" role="3EZMnx">
-        <ref role="1k5W1q" node="6dWsucbAYpL" resolve="Kenmerkwaarde" />
+        <ref role="1k5W1q" node="6dWsucbAYpL" resolve="VerwoordingKenmerkwaarde" />
         <node concept="1HfYo3" id="Fzw$g_HwcO" role="1HlULh">
           <node concept="3TQlhw" id="Fzw$g_HwcQ" role="1Hhtcw">
             <node concept="3clFbS" id="Fzw$g_HwcS" role="2VODD2">
@@ -12493,7 +12511,7 @@
           <node concept="3F0A7n" id="6dWsucbAYVd" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <ref role="1k5W1q" node="28ifPi2_$n1" resolve="Onderwerp" />
+            <ref role="1k5W1q" node="5vursKQMYp_" resolve="VerwoordingObject" />
           </node>
         </node>
       </node>
@@ -12505,6 +12523,28 @@
     <ref role="1XX52x" to="3pw0:CRumITUQ3J" resolve="DuurType" />
     <node concept="3F0ifn" id="CRumITUQ43" role="2wV5jI">
       <property role="3F0ifm" value="duur" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5vursKQN0$G">
+    <property role="3GE5qa" value="Expressies.Functies.Datum" />
+    <ref role="1XX52x" to="3pw0:5vursKQN0$v" resolve="TenHoogsteVoor" />
+    <node concept="3EZMnI" id="5vursKQN0$I" role="2wV5jI">
+      <node concept="3F1sOY" id="5vursKQN0$J" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4rrm763or4P" resolve="expressie1" />
+      </node>
+      <node concept="3F0ifn" id="5vursKQN0$K" role="3EZMnx">
+        <property role="3F0ifm" value="ligt ten hoogste" />
+      </node>
+      <node concept="3F1sOY" id="5vursKQN0$L" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:5vursKQN0$y" resolve="duur" />
+      </node>
+      <node concept="3F0ifn" id="5vursKQN0$M" role="3EZMnx">
+        <property role="3F0ifm" value="voor" />
+      </node>
+      <node concept="3F1sOY" id="5vursKQN0$N" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:4rrm763or4R" resolve="expressie2" />
+      </node>
+      <node concept="l2Vlx" id="5vursKQN0$O" role="2iSdaV" />
     </node>
   </node>
 </model>

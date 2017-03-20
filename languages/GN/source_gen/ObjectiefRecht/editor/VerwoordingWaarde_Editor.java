@@ -48,7 +48,7 @@ public class VerwoordingWaarde_Editor extends DefaultNodeEditor {
     editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
     editorCell.setCellId("ReadOnlyModelAccessor_j0qnka_a0");
     Style style = new StyleImpl();
-    GN_StyleSheet.apply_Kenmerkwaarde(style, editorCell);
+    GN_StyleSheet.apply_VerwoordingKenmerkwaarde(style, editorCell);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }

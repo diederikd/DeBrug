@@ -65,7 +65,7 @@ public class VerwoordingObject_Editor extends DefaultNodeEditor {
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name");
       Style style = new StyleImpl();
-      GN_StyleSheet.apply_Onderwerp(style, editorCell);
+      GN_StyleSheet.apply_VerwoordingObject(style, editorCell);
       style.set(StyleAttributes.AUTO_DELETABLE, 0, true);
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());

@@ -211,6 +211,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
     </node>
+    <node concept="PrWs8" id="5vursKQy70l" role="PzmwI">
+      <ref role="PrY4T" to="gcgs:5vursKQxUxY" resolve="IEvaluatieResultaat" />
+    </node>
   </node>
 </model>
 

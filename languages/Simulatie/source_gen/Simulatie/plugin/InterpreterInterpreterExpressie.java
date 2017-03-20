@@ -599,6 +599,9 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
           Interpreter.voegBerichtToe("Er is geen <object> waarbij <voorwaarden>");
           for (SNode voorwaarde : ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b7d334fL, 0x7dbb3ebc6b7d3350L, "voorwaarden")))) {
             List<SNode> instantiesVanObject = Interpreter.GeefLijstVanInstanties(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b7d334fL, 0x7dbb3ebc6b7d3352L, "object")));
+            if (SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b7d334fL, 0x7dbb3ebc6b7d3352L, "object")) == Interpreter.TypeOnderwerpVanDeHandeling()) {
+              ListSequence.fromList(instantiesVanObject).removeElement(Interpreter.InstantieVanOnderwerpVanDeHandeling());
+            }
             instantiesVanObject = Interpreter.BeperklijstMetInstanties(instantiesVanObject, SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b7d334fL, 0x7dbb3ebc6b7d3350L, "voorwaarden")));
             if ((result == true) && ListSequence.fromList(instantiesVanObject).count() > 0) {
               result = false;

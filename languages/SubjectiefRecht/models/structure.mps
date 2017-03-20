@@ -9,6 +9,7 @@
     <import index="jx79" ref="r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" implicit="true" />
+    <import index="8ao0" ref="r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -18,7 +19,9 @@
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -26,6 +29,10 @@
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -106,6 +113,9 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="geldigTot" />
       <ref role="20lvS9" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
+    </node>
+    <node concept="PrWs8" id="5vursKQxUy8" role="PzmwI">
+      <ref role="PrY4T" node="5vursKQxUxY" resolve="IEvaluatieResultaat" />
     </node>
   </node>
   <node concept="1TIwiD" id="6c9haf45sNj">
@@ -238,6 +248,22 @@
       <property role="20kJfa" value="rechtsbetrekkingen" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6c9haf45syu" resolve="Rechtsbetrekking" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5vursKQxUxY">
+    <property role="EcuMT" value="6331618849985112190" />
+    <property role="TrG5h" value="IEvaluatieResultaat" />
+    <node concept="1TJgyi" id="5vursKQxUu6" role="1TKVEl">
+      <property role="IQ2nx" value="6331618849985111942" />
+      <property role="TrG5h" value="evaluatieresultaat" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="5vursKQxUy0" role="1TKVEi">
+      <property role="IQ2ns" value="6331618849985112192" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="evaluatielog" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="8ao0:2IjnF_A6eNY" resolve="LijstMetBerichten" />
     </node>
   </node>
 </model>

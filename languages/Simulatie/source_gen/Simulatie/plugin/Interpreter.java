@@ -6,13 +6,13 @@ import com.mbeddr.mpsutil.interpreter.rt.IInterpreter;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import com.mbeddr.mpsutil.interpreter.rt.CombinedInterpreter;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRegistry;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.mpsutil.interpreter.rt.ContextImpl;
 import com.mbeddr.mpsutil.interpreter.rt.NullCoverageAnalyzer;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import Simulatie.behavior.Simulatie__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -24,7 +24,6 @@ import java.time.Duration;
 import Datum.behavior.DatumTijd__BehaviorDescriptor;
 import java.time.LocalDateTime;
 import java.time.LocalDate;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
 import Gegevens.behavior.Waarde__BehaviorDescriptor;
 import Gegevens.behavior.RekenWaarde__BehaviorDescriptor;
@@ -45,6 +44,7 @@ public class Interpreter {
   private static SNode simulatie;
   private static SNode teEvaluerenSubjectieveRechtsbetrekking;
   private static SNode teEvaluerenRechtshandeling;
+  private static SNode lijstMetBerichten = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x2b935eb96618ecfeL, "Algemeen.structure.LijstMetBerichten"));
 
   public static Object evalueer(SNode simulatieparameter, SNode node) {
     Object result = null;
@@ -61,10 +61,10 @@ public class Interpreter {
         {
           final SNode rechtshandeling = rechtsgevolgVeroorzaker;
           if (SNodeOperations.isInstanceOf(rechtshandeling, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"))) {
-            Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Evalueer rechtshandeling " + rechtshandeling);
+            Interpreter.voegBerichtToe("Evalueer rechtshandeling " + rechtshandeling);
             teEvaluerenRechtshandeling = rechtshandeling;
             result = evalueerVoorwaarden(SLinkOperations.getTarget(rechtshandeling, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x25be3715c7af049fL, "Voorwaarden")));
-            Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Resultaat van evaluatie rechtshandeling " + rechtshandeling + " is " + result);
+            Interpreter.voegBerichtToe("Resultaat van evaluatie rechtshandeling " + rechtshandeling + " is " + result);
           }
         }
       }
@@ -72,24 +72,24 @@ public class Interpreter {
     {
       final SNode rechtsbetrekking = node;
       if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"))) {
-        Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Evalueer rechtsbetrekking " + SPropertyOperations.getString(SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+        Interpreter.voegBerichtToe("Evalueer rechtsbetrekking " + SPropertyOperations.getString(SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
         teEvaluerenSubjectieveRechtsbetrekking = rechtsbetrekking;
         result = evalueerVoorwaarden(SLinkOperations.getTarget(SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden")));
-        Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Resultaat van evaluatie rechtsbetrekking " + SPropertyOperations.getString(SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " is " + result);
+        Interpreter.voegBerichtToe("Resultaat van evaluatie rechtsbetrekking " + SPropertyOperations.getString(SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " is " + result);
       }
     }
     return result;
   }
 
   private static Object evalueerVoorwaarden(SNode node) {
-    Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Evalueer voorwaarden");
+    Interpreter.voegBerichtToe("Evalueer voorwaarden");
     if (ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fce8L, 0x42e9dab3410fd0cL, "voorwaarden"))).isEmpty()) {
-      Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Geen voorwaarden gevonden");
+      Interpreter.voegBerichtToe("Geen voorwaarden gevonden");
       return true;
     }
     Object value = interpreter.evaluate(node, context, coverage);
     Tuples._3<Object, IEnvironment, INodeValueCache> result = MultiTuple.<Object,IEnvironment,INodeValueCache>from(value, context.getEnvironment(), context.getNodeValueCache());
-    return result;
+    return result._0();
   }
 
   public static SNode RechtssubjectMetPlicht() {
@@ -105,7 +105,7 @@ public class Interpreter {
     return SLinkOperations.getTarget(teEvaluerenSubjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c89fL, "rechtssubjectMetRecht"));
   }
   public static SNode teEvaluerenRechtshandeling() {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x5dd2e0a862d0002cL, "uittevoerenhandeling")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935aL, "rechtshandeling"));
+    return teEvaluerenRechtshandeling;
   }
   public static SNode InstantieVanOnderwerpVanDeHandeling() {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x5dd2e0a862d0002cL, "uittevoerenhandeling")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL, "onderwerp"));
@@ -115,6 +115,14 @@ public class Interpreter {
   }
   public static SNode ActorVanDeHandeling() {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x5dd2e0a862d0002cL, "uittevoerenhandeling")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935fL, "actor"));
+  }
+
+  public static SNode geefLijstMetBerichten() {
+    return lijstMetBerichten;
+  }
+
+  public static void schoonBerichten() {
+    ListSequence.fromList(SLinkOperations.getChildren(lijstMetBerichten, MetaAdapterFactory.getContainmentLink(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x2b935eb96618ecfeL, 0x2b935eb96618ecffL, "berichten"))).clear();
   }
 
   public static Object GeefWaarde(SNode abstracteWaarde) {
@@ -136,6 +144,7 @@ public class Interpreter {
     }
     return null;
   }
+
   public static Object GeefWaardeVanVariabele(SNode variabele) {
     SNode waarde = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fddL, "Gegevens.structure.Waarde"));
     SNode objectVanVariabele = (SNode) SNodeOperations.getParent(SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
@@ -145,24 +154,21 @@ public class Interpreter {
     // Variabele verwijst naar kenmerk van onderwerp? 
     if (objectVanVariabele == InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanOnderwerpVanDeHandeling())) {
       waarde = InterpreterFuncties.GeefWaardeVanKenmerk(Interpreter.InstantieVanOnderwerpVanDeHandeling(), SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
-      Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Type van variabele : " + waarde);
+      Interpreter.voegBerichtToe("Type van variabele : " + waarde);
     }
 
-    Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Wijst variabele naar rechtssubject met plicht?");
     // Variabele verwijst naar rechtssubject met plicht? 
     if (objectVanVariabele == InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanRechtssubjectMetPlicht())) {
       waarde = InterpreterFuncties.GeefWaardeVanKenmerk(Interpreter.InstantieVanRechtssubjectMetPlicht(), SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
       Interpreter.voegBerichtToe(InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanRechtssubjectMetPlicht()) + " met instantie " + SPropertyOperations.getString(InstantieVanRechtssubjectMetPlicht(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " heeft waarde " + waarde);
     }
 
-    Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Wijst variabele naar rechtssubject met recht?");
     // Variabele verwijst naar rechtssubject met recht? 
     if (objectVanVariabele == InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanRechtssubjectMetRecht())) {
       waarde = InterpreterFuncties.GeefWaardeVanKenmerk(Interpreter.InstantieVanRechtssubjectMetRecht(), SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
       Interpreter.voegBerichtToe(InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanRechtssubjectMetRecht()) + " met instantie " + SPropertyOperations.getString(InstantieVanRechtssubjectMetRecht(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " heeft waarde " + waarde);
     }
 
-    Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Wijst variabele naar iets anders?");
     // Variabele verwijst niet naar kenmerk van onderwerp en niet naar rechtssubjecten? 
     if (SNodeOperations.getParent(SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk"))) != InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanOnderwerpVanDeHandeling()) && objectVanVariabele != InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanRechtssubjectMetRecht()) && objectVanVariabele != InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(InstantieVanRechtssubjectMetPlicht())) {
       SNode kenmerk = GeefKenmerkMetVerwijzingNaarObject(InstantieVanOnderwerpVanDeHandeling(), objectVanVariabele);
@@ -173,7 +179,7 @@ public class Interpreter {
     }
 
     if ((waarde == null)) {
-      Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Variabele heeft geen waarde?");
+      Interpreter.voegBerichtToe("Variabele heeft geen waarde!");
       return null;
     }
 
@@ -187,21 +193,21 @@ public class Interpreter {
     {
       final SNode rekenWaarde = waarde;
       if (SNodeOperations.isInstanceOf(rekenWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde"))) {
-        Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(rekenWaarde));
+        Interpreter.voegBerichtToe("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(rekenWaarde));
         return (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(rekenWaarde);
       }
     }
     {
       final SNode instantieVanObject = waarde;
       if (SNodeOperations.isInstanceOf(instantieVanObject, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"))) {
-        Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Waarde van variabele : " + instantieVanObject);
+        Interpreter.voegBerichtToe("Waarde van variabele : " + instantieVanObject);
         return instantieVanObject;
       }
     }
     {
       final SNode jaNeeWaarde = waarde;
       if (SNodeOperations.isInstanceOf(jaNeeWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac54cL, "Gegevens.structure.JaNeeWaarde"))) {
-        Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(jaNeeWaarde));
+        Interpreter.voegBerichtToe("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(jaNeeWaarde));
         return waardeJaNee__BehaviorDescriptor.geefWaarde_id4yDNEIh2toX.invoke(SLinkOperations.getTarget(jaNeeWaarde, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac54cL, 0x4ce3b5e2c38f70fcL, "waarde")));
       }
     }
@@ -209,7 +215,7 @@ public class Interpreter {
       final SNode datumWaarde = waarde;
       if (SNodeOperations.isInstanceOf(datumWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, "Gegevens.structure.DatumWaarde"))) {
         if (TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(datumWaarde) != null) {
-          Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Waarde van variabele : " + TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(datumWaarde).toString());
+          Interpreter.voegBerichtToe("Waarde van variabele : " + TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(datumWaarde).toString());
         }
         return ((LocalDate) TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(datumWaarde));
       }
@@ -217,28 +223,28 @@ public class Interpreter {
     {
       final SNode duurWaarde = waarde;
       if (SNodeOperations.isInstanceOf(duurWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, "Gegevens.structure.DuurWaarde"))) {
-        Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Waarde van variabele : " + duurWaarde);
+        Interpreter.voegBerichtToe("Waarde van variabele : " + duurWaarde);
         return DuurWaarde__BehaviorDescriptor.geefDuurWaarde_idCRumIU3iNh.invoke(duurWaarde);
       }
     }
     {
       final SNode temporeleWaarde = waarde;
       if (SNodeOperations.isInstanceOf(temporeleWaarde, MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde"))) {
-        Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(temporeleWaarde));
+        Interpreter.voegBerichtToe("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(temporeleWaarde));
         return TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(temporeleWaarde);
       }
     }
     {
       final SNode objectWaarde = waarde;
       if (SNodeOperations.isInstanceOf(objectWaarde, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, "ObjectiefRecht.structure.ObjectWaarde"))) {
-        Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(objectWaarde));
+        Interpreter.voegBerichtToe("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(objectWaarde));
         return SLinkOperations.getTarget(objectWaarde, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, 0x4ccbd8fc9e467d9L, "object"));
       }
     }
     {
       final SNode meervoudigeObjectWaarde = waarde;
       if (SNodeOperations.isInstanceOf(meervoudigeObjectWaarde, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba22fL, "ObjectiefRecht.structure.MeervoudigeObjectWaarde"))) {
-        Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, "Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(meervoudigeObjectWaarde));
+        Interpreter.voegBerichtToe("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(meervoudigeObjectWaarde));
         return meervoudigeObjectWaarde;
       }
     }
@@ -259,6 +265,7 @@ public class Interpreter {
     }
     return kenmerk;
   }
+
   public static List<SNode> GeefLijstVanInstanties(SNode variabele, SNode meervoudigeVariabele) {
     List<SNode> result = new ArrayList<SNode>();
     Interpreter.voegBerichtToe("Geef lijst van instanties van variabele " + variabele + " en meervoudige variabele " + meervoudigeVariabele);
@@ -272,7 +279,9 @@ public class Interpreter {
   }
 
   public static void voegBerichtToe(String tekst) {
-    Simulatie__BehaviorDescriptor.voegBerichtToe_idCRumITGtjc.invoke(simulatie, tekst);
+    SNode bericht = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x2b935eb96618ecd3L, "Algemeen.structure.Bericht"));
+    SPropertyOperations.set(bericht, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x2b935eb96618ecd3L, 0x2b935eb96618ecd4L, "berichttekst"), tekst);
+    ListSequence.fromList(SLinkOperations.getChildren(lijstMetBerichten, MetaAdapterFactory.getContainmentLink(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x2b935eb96618ecfeL, 0x2b935eb96618ecffL, "berichten"))).addElement(bericht);
   }
 
   public static List<SNode> GeefLijstVanInstanties(final SNode object) {
@@ -309,6 +318,13 @@ public class Interpreter {
           if (SNodeOperations.isInstanceOf(tenMinsteVoor, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, "ObjectiefRecht.structure.TenMinsteVoor"))) {
             Interpreter.voegBerichtToe("Beperk lijst met instanties d.m.v. ligt tenminste voor");
             result = BeperklijstMetInstantiesLigtTenminsteVoor(result, tenMinsteVoor);
+          }
+        }
+        {
+          final SNode tenHoogsteVoor = abstracteExpressie;
+          if (SNodeOperations.isInstanceOf(tenHoogsteVoor, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x57de6dcc36cc091fL, "ObjectiefRecht.structure.TenHoogsteVoor"))) {
+            Interpreter.voegBerichtToe("Beperk lijst met instanties d.m.v. ligt ten hoogste voor");
+            result = BeperklijstMetInstantiesLigtTenHoogsteVoor(result, tenHoogsteVoor);
           }
         }
         Interpreter.voegBerichtToe("Tussenresultaat lijst met instanties" + result);
@@ -435,5 +451,51 @@ public class Interpreter {
     result.removeAll(teverwijderenInstanties);
     return result;
   }
+
+  public static List<SNode> BeperklijstMetInstantiesLigtTenHoogsteVoor(List<SNode> instantiesVanObject, SNode tenHoogsteVoor) {
+
+    List<SNode> result = instantiesVanObject;
+    List<SNode> teverwijderenInstanties = new ArrayList<SNode>();
+
+    SNode kenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, "ObjectiefRecht.structure.Kenmerk"));
+    {
+      final SNode variabele = SLinkOperations.getTarget(tenHoogsteVoor, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"));
+      if (SNodeOperations.isInstanceOf(variabele, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, "ObjectiefRecht.structure.Variabele"))) {
+        kenmerk = SLinkOperations.getTarget(SLinkOperations.getTarget(variabele, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk"));
+      }
+    }
+    if ((kenmerk == null)) {
+      ListSequence.fromList(instantiesVanObject).clear();
+      return instantiesVanObject;
+    }
+    SNode duurWaarde = (SNode) SLinkOperations.getTarget(tenHoogsteVoor, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x57de6dcc36cc091fL, 0x57de6dcc36cc0922L, "duur"));
+    Duration minimaleduur = DuurWaarde__BehaviorDescriptor.geefDuurWaarde_idCRumIU3iNh.invoke(duurWaarde);
+
+    {
+      final SNode huidigeDatum = SLinkOperations.getTarget(tenHoogsteVoor, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2"));
+      if (SNodeOperations.isInstanceOf(huidigeDatum, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9e0L, "ObjectiefRecht.structure.HuidigeDatum"))) {
+        for (SNode instantieVanObject : ListSequence.fromList(result)) {
+          SNode datumWaarde = (SNode) InstantieVanObject__BehaviorDescriptor.GeefWaardeVanKenmerk_idFR9FxGLp3H.invoke(instantieVanObject, kenmerk);
+          LocalDate Datum = Datum__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(datumWaarde, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, 0x1fabc0b15d9b6274L, "waarde")));
+          if (Datum == null) {
+            Interpreter.voegBerichtToe("Geen waarde voor kenmerk '" + kenmerk + "' gevonden");
+            ListSequence.fromList(instantiesVanObject).clear();
+            return instantiesVanObject;
+          }
+          Interpreter.voegBerichtToe(Datum + " ligt ten hoogste " + DuurWaarde__BehaviorDescriptor.geefDuurWaarde_idCRumIU3iNh.invoke(duurWaarde).toString() + " voor " + LocalDate.now() + "?");
+          Interpreter.voegBerichtToe("Minimale duur bepaald");
+          Duration werkelijkeduur = Duration.between(Datum.atStartOfDay(ZoneId.systemDefault()).toInstant(), LocalDate.now().atStartOfDay(ZoneId.systemDefault()).toInstant());
+          Interpreter.voegBerichtToe("Werkelijke duur bepaald");
+          if (werkelijkeduur.getNano() - minimaleduur.getNano() < 0) {
+            Interpreter.voegBerichtToe(Datum + " ligt niet " + DuurWaarde__BehaviorDescriptor.geefDuurWaarde_idCRumIU3iNh.invoke(duurWaarde).toString() + " voor " + LocalDate.now());
+            teverwijderenInstanties.add(instantieVanObject);
+          }
+        }
+      }
+    }
+    result.removeAll(teverwijderenInstanties);
+    return result;
+  }
+
 
 }

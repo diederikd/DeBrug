@@ -35,7 +35,10 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
 import javax.swing.JComponent;
 import org.campagnelab.ui.code.Swing.ButtonCallback;
 import Simulatie.behavior.Simulatie__BehaviorDescriptor;
+import Simulatie.behavior.Informatiepositie__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.campagnelab.ui.code.Swing.Button;
+import Simulatie.plugin.Interpreter;
 
 public class Simulatie_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -1071,6 +1074,7 @@ public class Simulatie_Editor extends DefaultNodeEditor {
         {
           final SNode node = ((SNode) n);
           Simulatie__BehaviorDescriptor.Initialiseer_id5FFw3Y4c4n0.invoke(node, node);
+          Informatiepositie__BehaviorDescriptor.evalueerRechtsbetrekkingen_id5vursKQG4Ym.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcaea0d6fL, "rechtspositie")), node);
         }
       }
     };
@@ -1167,10 +1171,11 @@ public class Simulatie_Editor extends DefaultNodeEditor {
         {
           final SNode node = ((SNode) n);
           Simulatie__BehaviorDescriptor.schoonBerichten_idCRumITE5PD.invoke(node);
+          Interpreter.schoonBerichten();
         }
       }
     };
-    return Button.createButton("Leeg berichten", editorContext, node, callback);
+    return Button.createButton("Schoon berichten", editorContext, node, callback);
 
   }
   private EditorCell createConstant_fapojb_zb0(EditorContext editorContext, SNode node) {

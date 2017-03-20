@@ -1899,5 +1899,22 @@
     <property role="34LRSv" value="duur" />
     <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
   </node>
+  <node concept="1TIwiD" id="5vursKQN0$v">
+    <property role="EcuMT" value="6331618849989593375" />
+    <property role="3GE5qa" value="Expressies.Functies.Datum" />
+    <property role="TrG5h" value="TenHoogsteVoor" />
+    <property role="34LRSv" value="ligt ten hoogste &lt;duur&gt; voor" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="1TJgyj" id="5vursKQN0$y" role="1TKVEi">
+      <property role="IQ2ns" value="6331618849989593378" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="duur" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
+    </node>
+    <node concept="PrWs8" id="5vursKQN0$w" role="PzmwI">
+      <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
+    </node>
+  </node>
 </model>
 

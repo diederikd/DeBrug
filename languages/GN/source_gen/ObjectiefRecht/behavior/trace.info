@@ -308,6 +308,9 @@
     <file name="TabelMetInstanties_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TabelMetInstanties_BehaviorDescriptor" />
     </file>
+    <file name="TenHoogsteVoor_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TenHoogsteVoor_BehaviorDescriptor" />
+    </file>
     <file name="TenMinsteNa_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TenMinsteNa_BehaviorDescriptor" />
     </file>

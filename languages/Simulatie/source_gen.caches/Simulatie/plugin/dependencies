@@ -28,7 +28,6 @@
     <classNode dependClassName="Gegevens.behavior.Waarde__BehaviorDescriptor" />
     <classNode dependClassName="Gegevens.behavior.waardeJaNee__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor" />
-    <classNode dependClassName="Simulatie.behavior.Simulatie__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.plugin.InterpreterFuncties" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.CombinedInterpreter" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ContextImpl" />
