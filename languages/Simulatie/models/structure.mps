@@ -88,7 +88,7 @@
     <node concept="1TJgyj" id="3d6QfrfG1Sv" role="1TKVEi">
       <property role="IQ2ns" value="3694879098862050847" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="uitvoerbarehandelingen2" />
+      <property role="20kJfa" value="uitvoerbarehandelingen" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3d6QfrfG1Ss" resolve="ReferentieNaarRechtshandeling" />
     </node>

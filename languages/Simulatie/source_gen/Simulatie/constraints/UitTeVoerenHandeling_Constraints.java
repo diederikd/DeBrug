@@ -21,8 +21,8 @@ import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.scope.ListScope;
 import jetbrains.mps.smodel.SNodePointer;
 
@@ -35,10 +35,30 @@ public class UitTeVoerenHandeling_Constraints extends BaseConstraintsDescriptor 
   protected Map<SReferenceLink, ReferenceConstraintsDescriptor> getSpecifiedReferences() {
     Map<SReferenceLink, ReferenceConstraintsDescriptor> references = new HashMap<SReferenceLink, ReferenceConstraintsDescriptor>();
     references.put(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935aL, "rechtshandeling"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935aL), this) {
+      @Override
+      public boolean hasOwnScopeProvider() {
+        return true;
+      }
       @Nullable
       @Override
       public ReferenceScopeProvider getScopeProvider() {
-        return new BaseScopeProvider() {};
+        return new BaseScopeProvider() {
+          @Override
+          public SNodeReference getSearchScopeValidatorNode() {
+            return breakingNode_cy5ydd_a0a0a0a0a1a0b0a1a2;
+          }
+          @Override
+          public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
+            {
+              List<SNode> rechtshandelingen = new ArrayList<SNode>();
+              SNode simulatie = (SNode) SNodeOperations.getParent(_context.getContextNode());
+              for (SNode rechtshandeling : ListSequence.fromList(SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen")))) {
+                ListSequence.fromList(rechtshandelingen).addElement(SLinkOperations.getTarget(rechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")));
+              }
+              return ListScope.forNamedElements(rechtshandelingen);
+            }
+          }
+        };
       }
     });
     references.put(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935fL, "actor"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935fL), this) {
@@ -113,6 +133,7 @@ public class UitTeVoerenHandeling_Constraints extends BaseConstraintsDescriptor 
     });
     return references;
   }
+  private static SNodePointer breakingNode_cy5ydd_a0a0a0a0a1a0b0a1a2 = new SNodePointer("r:484b93fc-0f0b-4d8a-917c-688df91c2a48(Simulatie.constraints)", "7367710708723852993");
   private static SNodePointer breakingNode_cy5ydd_a0a0a0a0a1a0b0a2a2 = new SNodePointer("r:484b93fc-0f0b-4d8a-917c-688df91c2a48(Simulatie.constraints)", "8120684925531069323");
   private static SNodePointer breakingNode_cy5ydd_a0a0a0a0a1a0b0a3a2 = new SNodePointer("r:484b93fc-0f0b-4d8a-917c-688df91c2a48(Simulatie.constraints)", "6066224101205716871");
 }

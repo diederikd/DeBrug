@@ -157,7 +157,7 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
   }
   /*package*/ static void Reset_id3d6QfrgEDkp(@NotNull SNode __thisNode__) {
 
-    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen2"))).clear();
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen"))).clear();
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x67229afa6a373a70L, "uitgevoerdehandelingen"))).clear();
     SLinkOperations.setTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcaea0d6fL, "rechtspositie"), null);
   }
@@ -167,7 +167,7 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
     SModel objectiefmodel = SNodeOperations.getModel(SLinkOperations.getTarget(casus, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, 0x464e588a7000d2e6L, "context")));
 
     // Migratie naar uitvoerbarehandelingen2 
-    ListSequence.fromList(SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen2"))).clear();
+    ListSequence.fromList(SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen"))).clear();
     // Migratie naar uitvoerbarehandelingen2 
 
     // Bepaal het verschil tussen het fictieve tijdstip van initialisatie en het huidige tijstip  
@@ -311,12 +311,12 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
     }
   }
   /*package*/ static void ToevoegenHandeling_id2N$PylwVyEM(@NotNull SNode __thisNode__, SNode simulatie, final SNode referentieNaarRechtshandeling) {
-    if (ListSequence.fromList(SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen2"))).where(new IWhereFilter<SNode>() {
+    if (ListSequence.fromList(SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen"))).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) == SPropertyOperations.getString(SLinkOperations.getTarget(referentieNaarRechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
       }
     }).isEmpty()) {
-      ListSequence.fromList(SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen2"))).addElement(referentieNaarRechtshandeling);
+      ListSequence.fromList(SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen"))).addElement(referentieNaarRechtshandeling);
     }
   }
   /*package*/ static void ExecuteHandeling_id3d6QfrgVOeu(@NotNull SNode __thisNode__, SNode simulatie, final SNode rechtshandeling, SNode onderwerp) {
