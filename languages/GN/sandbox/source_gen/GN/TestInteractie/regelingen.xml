@@ -1,4 +1,157 @@
 <regelingen>
-<regeling>   <regeling naam='WAA' />
-</regeling><regeling>   <regeling naam='AWR' />
-</regeling></regelingen>
+<regeling naam='WAA' gghh='<gegevenshuishouding>
+<name='Gegevenshuishouding WAA>
+    <rechtssubject>
+    <type='werknemer'>
+      <instantie>
+      <naam='Pieter'>
+        <kenmerk>
+          <naam='werknemersidentificatie'>
+          <waarde='5'>
+        </kenmerk>
+        <kenmerk>
+          <naam='burgerservicenummer'>
+          <waarde='333333333'>
+        </kenmerk>
+        <kenmerk>
+          <naam='voornamen'>
+          <waarde='Jan'>
+        </kenmerk>
+        <kenmerk>
+          <naam='roepnaam'>
+          <waarde='Jan'>
+        </kenmerk>
+        <kenmerk>
+          <naam='achternaam'>
+          <waarde='Janssen'>
+        </kenmerk>
+        <kenmerk>
+          <naam='geboortedatum'>
+          <waarde=''>
+        </kenmerk>
+        <kenmerk>
+          <naam='geboorteplaats'>
+          <waarde='Amsterdam'>
+        </kenmerk>
+        <kenmerk>
+          <naam='adres werknemer'>
+          <waarde='De weg'>
+        </kenmerk>
+        <kenmerk>
+          <naam='huisnummer werknemer'>
+          <waarde='19'>
+        </kenmerk>
+        <kenmerk>
+          <naam='postcode van de werknemer'>
+          <waarde='1095 AA'>
+        </kenmerk>
+        <kenmerk>
+          <naam='woonplaats'>
+          <waarde='Groningen'>
+        </kenmerk>
+        <kenmerk>
+          <naam='paspoortnummer'>
+          <waarde='12345'>
+        </kenmerk>
+        <kenmerk>
+          <naam='identiteitskaartnummer'>
+          <waarde='12345'>
+        </kenmerk>
+        <kenmerk>
+          <naam='burgerlijke staat'>
+          <waarde='ongehuwd'>
+        </kenmerk>
+        <kenmerk>
+          <naam='nationaliteit'>
+          <waarde='NL'>
+        </kenmerk>
+        <kenmerk>
+          <naam='nationaliteit datum sinds'>
+          <waarde=''>
+        </kenmerk>
+        <kenmerk>
+          <naam='militair ambtenaar'>
+          <waarde='Nee'>
+        </kenmerk>
+      </instantie>
+    </rechtssubject>
+    <rechtssubject>
+    <type='werkgever'>
+      <instantie>
+      <naam='Essent'>
+        <kenmerk>
+          <naam='werkgeversidentificatie'>
+          <waarde='3'>
+        </kenmerk>
+        <kenmerk>
+          <naam='naam'>
+          <waarde='Essent'>
+        </kenmerk>
+        <kenmerk>
+          <naam='adres'>
+          <waarde='J.F. Kennedylaan '>
+        </kenmerk>
+        <kenmerk>
+          <naam='huisnummer'>
+          <waarde='109'>
+        </kenmerk>
+        <kenmerk>
+          <naam='postcode'>
+          <waarde='1095 AA'>
+        </kenmerk>
+        <kenmerk>
+          <naam='aantal werknemers'>
+          <waarde='30'>
+        </kenmerk>
+        <kenmerk>
+          <naam='peildatum aantal werknemers'>
+          <waarde=''>
+        </kenmerk>
+        <kenmerk>
+          <naam='militairen in dienst'>
+          <waarde=''>
+        </kenmerk>
+      </instantie>
+      <instantie>
+      <naam='Eneco'>
+        <kenmerk>
+          <naam='werkgeversidentificatie'>
+          <waarde='4'>
+        </kenmerk>
+        <kenmerk>
+          <naam='naam'>
+          <waarde='Eneco'>
+        </kenmerk>
+        <kenmerk>
+          <naam='adres'>
+          <waarde='Wegenerstraat '>
+        </kenmerk>
+        <kenmerk>
+          <naam='huisnummer'>
+          <waarde='140'>
+        </kenmerk>
+        <kenmerk>
+          <naam='postcode'>
+          <waarde='1073 RR'>
+        </kenmerk>
+        <kenmerk>
+          <naam='aantal werknemers'>
+          <waarde='40'>
+        </kenmerk>
+        <kenmerk>
+          <naam='peildatum aantal werknemers'>
+          <waarde=''>
+        </kenmerk>
+        <kenmerk>
+          <naam='militairen in dienst'>
+          <waarde=''>
+        </kenmerk>
+      </instantie>
+    </rechtssubject>
+</gegevenshuishouding>
+' regels='<!TextGen not found for 'ObjectiefRecht.structure.Context'!>' subject='<!TextGen not found for 'ObjectiefRecht.structure.RechtsSubject'!>
+<regeling naam='AWR' gghh='<gegevenshuishouding>
+<name='Gegevenshuishouding AWR>
+</gegevenshuishouding>
+' regels='<!TextGen not found for 'ObjectiefRecht.structure.Context'!>' subject='<!TextGen not found for 'ObjectiefRecht.structure.RechtsSubject'!>
+</regelingen>

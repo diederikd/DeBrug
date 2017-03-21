@@ -78,6 +78,9 @@ public class Regeling_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_igmdf6_g3a(editorContext, node));
     editorCell.addEditorCell(this.createConstant_igmdf6_h3a(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_igmdf6_i3a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_igmdf6_j3a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_igmdf6_k3a(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_igmdf6_l3a(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_igmdf6_a3a(EditorContext editorContext, SNode node) {
@@ -231,6 +234,9 @@ public class Regeling_Editor extends DefaultNodeEditor {
       editorCell.setReferenceCell(true);
       editorCell.setRole("subject");
     }
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
@@ -257,6 +263,64 @@ public class Regeling_Editor extends DefaultNodeEditor {
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name_3");
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      SNode attributeConcept = provider.getRoleAttribute();
+      if (attributeConcept != null) {
+        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+        return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+      } else
+      return editorCell;
+    }
+  }
+  private EditorCell createConstant_igmdf6_j3a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "instantie van subject");
+    editorCell.setCellId("Constant_igmdf6_j3a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_igmdf6_k3a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_igmdf6_k3a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefCell_igmdf6_l3a(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("instantieVanSubject");
+    provider.setNoTargetText("<no instantieVanSubject>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new Regeling_Editor._Inline_igmdf6_a11d0());
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("instantieVanSubject");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  public static class _Inline_igmdf6_a11d0 extends InlineCellProvider {
+    public _Inline_igmdf6_a11d0() {
+      super();
+    }
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createProperty_igmdf6_a0l3a(editorContext, node);
+    }
+    private EditorCell createProperty_igmdf6_a0l3a(EditorContext editorContext, SNode node) {
+      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+      provider.setRole("name");
+      provider.setNoTargetText("<no name>");
+      provider.setReadOnly(true);
+      EditorCell editorCell;
+      editorCell = provider.createEditorCell(editorContext);
+      editorCell.setCellId("property_name_4");
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {

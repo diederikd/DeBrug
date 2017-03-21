@@ -125,6 +125,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="3pw0:64gsXol8COa" resolve="RechtsSubject" />
     </node>
+    <node concept="1TJgyj" id="5vursKRgrPf" role="1TKVEi">
+      <property role="IQ2ns" value="6331618849997307215" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instantieVanSubject" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5hfcVvLUY04">
     <property role="EcuMT" value="6075131287476887556" />

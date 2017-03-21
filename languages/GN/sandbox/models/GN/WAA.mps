@@ -395,7 +395,7 @@
     </language>
   </registry>
   <node concept="1OcJVk" id="4ZpB41RnoMN">
-    <property role="TrG5h" value="Objectief Recht WAA2000" />
+    <property role="TrG5h" value="Objectief Recht WAA" />
     <property role="I0$kN" value="true" />
     <property role="ddjTs" value="true" />
     <node concept="eXoDf" id="6syAJDDQ44i" role="eXoSc">
@@ -3996,8 +3996,8 @@
     </node>
   </node>
   <node concept="2B78xT" id="6c9haf45x5E">
-    <property role="TrG5h" value="Subjectief WAA2000" />
-    <ref role="QjCDG" node="4ZpB41RnoMN" resolve="Objectief Recht WAA2000" />
+    <property role="TrG5h" value="Subjectief WAA" />
+    <ref role="QjCDG" node="4ZpB41RnoMN" resolve="Objectief Recht WAA" />
     <node concept="2B78KC" id="28MuYO0n6cK" role="DGLbN">
       <property role="TrG5h" value="AZML" />
       <ref role="yqVAx" node="4ZpB41Rnx4z" resolve="werkgever" />
@@ -4026,9 +4026,9 @@
     </node>
   </node>
   <node concept="2BMdVE" id="4$ztVczs7v_">
-    <property role="TrG5h" value="Simulatie WAA2000" />
-    <ref role="2BMAe_" node="6c9haf45x5E" resolve="Subjectief WAA2000" />
-    <ref role="2KcKGJ" node="6EEavyms9IX" resolve="Gegevenshuishouding WAA2000" />
+    <property role="TrG5h" value="Simulatie WAA" />
+    <ref role="2BMAe_" node="6c9haf45x5E" resolve="Subjectief WAA" />
+    <ref role="2KcKGJ" node="6EEavyms9IX" resolve="Gegevenshuishouding WAA" />
     <ref role="2BLsgw" node="2IjnF__Ico$" resolve="Pieter" />
     <ref role="1Nt3W2" node="2IjnF__C6lN" resolve="Essent" />
     <node concept="LeFwQ" id="6syAJDE9SgU" role="d0i_M">
@@ -4689,7 +4689,7 @@
     <node concept="1dyV97" id="5vursKR9yWm" role="2NEIfv" />
   </node>
   <node concept="1ztmtO" id="6EEavyms9IX">
-    <property role="TrG5h" value="Gegevenshuishouding WAA2000" />
+    <property role="TrG5h" value="Gegevenshuishouding WAA" />
     <node concept="1ztWYz" id="2IjnF__Icnq" role="1ztmtP">
       <ref role="1ztKoi" node="4ZpB41RnoMO" resolve="werknemer" />
       <node concept="2M1C9k" id="2IjnF__Ico$" role="1ztKoP">
@@ -5381,7 +5381,7 @@
             <ref role="2mbrj7" node="GhrpPwO1ee" resolve="arbeidsduurperiode in arbeidsovereenkomst" />
           </node>
           <node concept="3dadDn" id="28MuYO0sXhe" role="2M1C9h">
-            <ref role="3dadDm" node="28MuYO0sWeP" resolve="Arbeidsduur 1" />
+            <ref role="3dadDm" node="28MuYO0sWeP" resolve="Arbeidsduur van arbeidsovereenkomst 1" />
           </node>
         </node>
       </node>
@@ -5389,7 +5389,7 @@
     <node concept="1ztWYz" id="28MuYO0sWct" role="1ztmtP">
       <ref role="1ztKoi" node="5u1YjWIljaR" resolve="arbeidsduurperiode van arbeidsovereenkomst" />
       <node concept="2M1C9k" id="28MuYO0sWeP" role="1ztKoP">
-        <property role="TrG5h" value="Arbeidsduur 1" />
+        <property role="TrG5h" value="Arbeidsduur van arbeidsovereenkomst 1" />
         <ref role="2M1C9n" node="5u1YjWIljaR" resolve="arbeidsduurperiode van arbeidsovereenkomst" />
         <node concept="2M1C6R" id="28MuYO0sWeQ" role="2M1C9l">
           <node concept="2mbrj6" id="28MuYO0sWeR" role="2M1C6S">

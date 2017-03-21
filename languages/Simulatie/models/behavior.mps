@@ -548,7 +548,7 @@
               <ref role="3cqZAo" node="5FFw3Y4clfr" resolve="simulatie" />
             </node>
             <node concept="2qgKlT" id="5FFw3Y4c4pj" role="2OqNvi">
-              <ref role="37wK5l" node="2rhLMRp46el" resolve="RefreshHandelingenSimulatie" />
+              <ref role="37wK5l" node="2rhLMRp46el" resolve="VerversHandelingenInSimulatie" />
               <node concept="37vLTw" id="2rhLMRp50mc" role="37wK5m">
                 <ref role="3cqZAo" node="5FFw3Y4clfr" resolve="simulatie" />
               </node>
@@ -1308,7 +1308,7 @@
       <node concept="3Tm1VV" id="1VomLPHGTQj" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="2rhLMRp46el" role="13h7CS">
-      <property role="TrG5h" value="RefreshHandelingenSimulatie" />
+      <property role="TrG5h" value="VerversHandelingenInSimulatie" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2rhLMRp46em" role="3clF47">
@@ -1624,7 +1624,7 @@
                     </node>
                     <node concept="3clFbF" id="2N$PylwVHZN" role="3cqZAp">
                       <node concept="BsUDl" id="2N$PylwVHZL" role="3clFbG">
-                        <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandeling" />
+                        <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandelingAanSimulatie" />
                         <node concept="37vLTw" id="2N$PylwVI0y" role="37wK5m">
                           <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
                         </node>
@@ -1684,7 +1684,7 @@
                     </node>
                     <node concept="3clFbF" id="2N$PylwVIbu" role="3cqZAp">
                       <node concept="BsUDl" id="2N$PylwVIbv" role="3clFbG">
-                        <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandeling" />
+                        <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandelingAanSimulatie" />
                         <node concept="37vLTw" id="2N$PylwVIbw" role="37wK5m">
                           <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
                         </node>
@@ -1744,7 +1744,7 @@
                     </node>
                     <node concept="3clFbF" id="2N$PylwVIdP" role="3cqZAp">
                       <node concept="BsUDl" id="2N$PylwVIdQ" role="3clFbG">
-                        <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandeling" />
+                        <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandelingAanSimulatie" />
                         <node concept="37vLTw" id="2N$PylwVIdR" role="37wK5m">
                           <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
                         </node>
@@ -1804,7 +1804,7 @@
                     </node>
                     <node concept="3clFbF" id="2N$PylwVIgc" role="3cqZAp">
                       <node concept="BsUDl" id="2N$PylwVIgd" role="3clFbG">
-                        <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandeling" />
+                        <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandelingAanSimulatie" />
                         <node concept="37vLTw" id="2N$PylwVIge" role="37wK5m">
                           <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
                         </node>
@@ -1864,7 +1864,7 @@
                     </node>
                     <node concept="3clFbF" id="2N$PylwVIkb" role="3cqZAp">
                       <node concept="BsUDl" id="2N$PylwVIkc" role="3clFbG">
-                        <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandeling" />
+                        <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandelingAanSimulatie" />
                         <node concept="37vLTw" id="2N$PylwVIkd" role="37wK5m">
                           <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
                         </node>
@@ -1924,7 +1924,7 @@
                     </node>
                     <node concept="3clFbF" id="2N$PylwVImy" role="3cqZAp">
                       <node concept="BsUDl" id="2N$PylwVImz" role="3clFbG">
-                        <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandeling" />
+                        <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandelingAanSimulatie" />
                         <node concept="37vLTw" id="2N$PylwVIm$" role="37wK5m">
                           <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
                         </node>
@@ -2052,7 +2052,7 @@
                         </node>
                         <node concept="3clFbF" id="2N$PylwVIoT" role="3cqZAp">
                           <node concept="BsUDl" id="2N$PylwVIoU" role="3clFbG">
-                            <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandeling" />
+                            <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandelingAanSimulatie" />
                             <node concept="37vLTw" id="2N$PylwVIoV" role="37wK5m">
                               <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
                             </node>
@@ -2137,7 +2137,7 @@
                         </node>
                         <node concept="3clFbF" id="2N$PylwVIsS" role="3cqZAp">
                           <node concept="BsUDl" id="2N$PylwVIsT" role="3clFbG">
-                            <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandeling" />
+                            <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandelingAanSimulatie" />
                             <node concept="37vLTw" id="2N$PylwVIsU" role="37wK5m">
                               <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
                             </node>
@@ -2222,7 +2222,7 @@
                         </node>
                         <node concept="3clFbF" id="2N$PylwVIvf" role="3cqZAp">
                           <node concept="BsUDl" id="2N$PylwVIvg" role="3clFbG">
-                            <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandeling" />
+                            <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandelingAanSimulatie" />
                             <node concept="37vLTw" id="2N$PylwVIvh" role="37wK5m">
                               <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
                             </node>
@@ -2307,7 +2307,7 @@
                         </node>
                         <node concept="3clFbF" id="2N$PylwVIxA" role="3cqZAp">
                           <node concept="BsUDl" id="2N$PylwVIxB" role="3clFbG">
-                            <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandeling" />
+                            <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandelingAanSimulatie" />
                             <node concept="37vLTw" id="2N$PylwVIxC" role="37wK5m">
                               <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
                             </node>
@@ -2392,7 +2392,7 @@
                         </node>
                         <node concept="3clFbF" id="2N$PylwVIzX" role="3cqZAp">
                           <node concept="BsUDl" id="2N$PylwVIzY" role="3clFbG">
-                            <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandeling" />
+                            <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandelingAanSimulatie" />
                             <node concept="37vLTw" id="2N$PylwVIzZ" role="37wK5m">
                               <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
                             </node>
@@ -2477,7 +2477,7 @@
                         </node>
                         <node concept="3clFbF" id="2N$PylwVIAk" role="3cqZAp">
                           <node concept="BsUDl" id="2N$PylwVIAl" role="3clFbG">
-                            <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandeling" />
+                            <ref role="37wK5l" node="2N$PylwVyEM" resolve="ToevoegenHandelingAanSimulatie" />
                             <node concept="37vLTw" id="2N$PylwVIAm" role="37wK5m">
                               <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
                             </node>
@@ -2515,7 +2515,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="2N$PylwVyEM" role="13h7CS">
-      <property role="TrG5h" value="ToevoegenHandeling" />
+      <property role="TrG5h" value="ToevoegenHandelingAanSimulatie" />
       <node concept="37vLTG" id="2N$PylwVC3b" role="3clF46">
         <property role="TrG5h" value="simulatie" />
         <node concept="3Tqbb2" id="2N$PylwVC3p" role="1tU5fm">
@@ -2608,7 +2608,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="3d6QfrgVOeu" role="13h7CS">
-      <property role="TrG5h" value="ExecuteHandeling" />
+      <property role="TrG5h" value="UitvoerenHandeling" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="5riiL_C3oTA" role="3clF47">
@@ -3785,7 +3785,7 @@
               <ref role="3cqZAo" node="3d6Qfrgo2by" resolve="simulatie" />
             </node>
             <node concept="2qgKlT" id="7rcH1JNq0fL" role="2OqNvi">
-              <ref role="37wK5l" node="2rhLMRp46el" resolve="RefreshHandelingenSimulatie" />
+              <ref role="37wK5l" node="2rhLMRp46el" resolve="VerversHandelingenInSimulatie" />
               <node concept="37vLTw" id="5RiSaxyXSFc" role="37wK5m">
                 <ref role="3cqZAo" node="3d6Qfrgo2by" resolve="simulatie" />
               </node>

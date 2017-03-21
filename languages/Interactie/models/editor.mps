@@ -230,6 +230,24 @@
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
+          <node concept="ljvvj" id="5vursKRgwot" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="5vursKRgwmy" role="3EZMnx">
+          <property role="3F0ifm" value="instantie van subject" />
+        </node>
+        <node concept="3F0ifn" id="5vursKRgwne" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="1iCGBv" id="5vursKRgwnW" role="3EZMnx">
+          <ref role="1NtTu8" to="1jct:5vursKRgrPf" resolve="instantieVanSubject" />
+          <node concept="1sVBvm" id="5vursKRgwnY" role="1sWHZn">
+            <node concept="3F0A7n" id="5vursKRgwoq" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="5hfcVvLUXUe" role="3EZMnx">

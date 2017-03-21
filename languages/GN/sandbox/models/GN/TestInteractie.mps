@@ -23,6 +23,7 @@
         <reference id="6075131287477124316" name="subject" index="2_C4XF" />
         <reference id="6075131287476949197" name="gegevenshuishouding" index="2_CYdU" />
         <reference id="6075131287476949195" name="regels" index="2_CYdW" />
+        <reference id="6331618849997307215" name="instantieVanSubject" index="1wBX23" />
       </concept>
     </language>
   </registry>
@@ -30,15 +31,17 @@
     <property role="TrG5h" value="Interactie definitie" />
     <node concept="2_DeV7" id="5hfcVvM625g" role="2_DdeM">
       <property role="TrG5h" value="WAA" />
-      <ref role="2_CYdU" to="zznl:6EEavyms9IX" resolve="Gegevenshuishouding WAA2000" />
-      <ref role="2_CYdW" to="zznl:4ZpB41RnoMN" resolve="Objectief WAA2000" />
+      <ref role="2_CYdU" to="zznl:6EEavyms9IX" resolve="Gegevenshuishouding WAA" />
+      <ref role="2_CYdW" to="zznl:4ZpB41RnoMN" resolve="Objectief Recht WAA" />
       <ref role="2_C4XF" to="zznl:4ZpB41RnoMO" resolve="werknemer" />
+      <ref role="1wBX23" to="zznl:2IjnF__Ico$" resolve="Pieter" />
     </node>
     <node concept="2_DeV7" id="5hfcVvM625i" role="2_DdeM">
       <property role="TrG5h" value="AWR" />
       <ref role="2_CYdU" to="1hf7:CRumIU2vtL" resolve="Gegevenshuishouding AWR" />
       <ref role="2_CYdW" to="1hf7:4NzHub3Ff8p" resolve="AWR" />
       <ref role="2_C4XF" to="1hf7:4NzHub3Ff8y" resolve="Belastingplichtige" />
+      <ref role="1wBX23" to="zznl:2IjnF__Ico$" resolve="Pieter" />
     </node>
   </node>
 </model>

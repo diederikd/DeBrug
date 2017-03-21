@@ -48,7 +48,7 @@ public final class VerversUitvoerbareHandelingen_Intention extends IntentionDesc
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      Simulatie__BehaviorDescriptor.RefreshHandelingenSimulatie_id2rhLMRp46el.invoke(node, node);
+      Simulatie__BehaviorDescriptor.VerversHandelingenInSimulatie_id2rhLMRp46el.invoke(node, node);
     }
     @Override
     public IntentionDescriptor getDescriptor() {

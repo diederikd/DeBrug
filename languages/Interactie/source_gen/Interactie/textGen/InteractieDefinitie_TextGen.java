@@ -18,12 +18,16 @@ public class InteractieDefinitie_TextGen extends TextGenDescriptorBase {
     tgs.append("<regelingen>");
     tgs.newLine();
     for (SNode regeling : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L, 0x544f33b7f1ebe005L, "regelingen")))) {
-      tgs.append("<regeling>");
-      tgs.append("   <regeling naam='");
+      tgs.append("<regeling naam='");
       tgs.append(SPropertyOperations.getString(regeling, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+      tgs.append("' gghh='");
+      tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(regeling, MetaAdapterFactory.getReferenceLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L, 0x544f33b7f1ecd0cdL, "gegevenshuishouding")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+      tgs.append("' regels='");
+      tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(regeling, MetaAdapterFactory.getReferenceLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L, 0x544f33b7f1ecd0cbL, "regels")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+      tgs.append("' subject='");
+      tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(regeling, MetaAdapterFactory.getReferenceLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L, 0x544f33b7f1ef7cdcL, "subject")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
       tgs.append("' />");
       tgs.newLine();
-      tgs.append("</regeling>");
     }
     tgs.append("</regelingen>");
   }

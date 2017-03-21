@@ -95,24 +95,31 @@ public class Interpreter {
   public static SNode RechtssubjectMetPlicht() {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(teEvaluerenSubjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2eL, "rechtssubjectMetPlicht"));
   }
+
   public static SNode RechtssubjectMetRecht() {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(teEvaluerenSubjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2dL, "rechtssubjectMetRecht"));
   }
+
   public static SNode InstantieVanRechtssubjectMetPlicht() {
     return SLinkOperations.getTarget(teEvaluerenSubjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a1L, "rechtssubjectMetPlicht"));
   }
+
   public static SNode InstantieVanRechtssubjectMetRecht() {
     return SLinkOperations.getTarget(teEvaluerenSubjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c89fL, "rechtssubjectMetRecht"));
   }
+
   public static SNode teEvaluerenRechtshandeling() {
     return teEvaluerenRechtshandeling;
   }
+
   public static SNode InstantieVanOnderwerpVanDeHandeling() {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x5dd2e0a862d0002cL, "uittevoerenhandeling")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL, "onderwerp"));
   }
+
   public static SNode TypeOnderwerpVanDeHandeling() {
     return ((SNode) SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x5dd2e0a862d0002cL, "uittevoerenhandeling")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL, "onderwerp")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "referentieNaarObject")));
   }
+
   public static SNode ActorVanDeHandeling() {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x5dd2e0a862d0002cL, "uittevoerenhandeling")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935fL, "actor"));
   }

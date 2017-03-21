@@ -376,14 +376,9 @@
             </node>
           </node>
           <node concept="3clFbS" id="5hfcVvLVquo" role="2LFqv$">
-            <node concept="lc7rE" id="5hfcVvLW23f" role="3cqZAp">
-              <node concept="la8eA" id="5hfcVvLW23g" role="lcghm">
-                <property role="lacIc" value="&lt;regeling&gt;" />
-              </node>
-            </node>
             <node concept="lc7rE" id="5hfcVvLVyel" role="3cqZAp">
               <node concept="la8eA" id="5hfcVvLVyq4" role="lcghm">
-                <property role="lacIc" value="   &lt;regeling naam='" />
+                <property role="lacIc" value="&lt;regeling naam='" />
               </node>
               <node concept="l9hG8" id="5hfcVvLVyrG" role="lcghm">
                 <node concept="2OqwBi" id="5hfcVvLVyBq" role="lb14g">
@@ -396,14 +391,63 @@
                 </node>
               </node>
               <node concept="la8eA" id="5hfcVvLVyXl" role="lcghm">
+                <property role="lacIc" value="' gghh='" />
+              </node>
+              <node concept="l9hG8" id="5vursKRgnEp" role="lcghm">
+                <node concept="2OqwBi" id="5vursKRg_Cy" role="lb14g">
+                  <node concept="2OqwBi" id="5vursKRgnPz" role="2Oq$k0">
+                    <node concept="2GrUjf" id="5vursKRgnFo" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="5hfcVvLVqum" resolve="regeling" />
+                    </node>
+                    <node concept="3TrEf2" id="5vursKRgo5I" role="2OqNvi">
+                      <ref role="3Tt5mk" to="1jct:5hfcVvLVd3d" resolve="gegevenshuishouding" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="5vursKRgA3L" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="5vursKRgodC" role="lcghm">
+                <property role="lacIc" value="' regels='" />
+              </node>
+              <node concept="l9hG8" id="5vursKRgofN" role="lcghm">
+                <node concept="2OqwBi" id="5vursKRgAqg" role="lb14g">
+                  <node concept="2OqwBi" id="5vursKRgpBH" role="2Oq$k0">
+                    <node concept="2GrUjf" id="5vursKRgpty" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="5hfcVvLVqum" resolve="regeling" />
+                    </node>
+                    <node concept="3TrEf2" id="5vursKRgpUj" role="2OqNvi">
+                      <ref role="3Tt5mk" to="1jct:5hfcVvLVd3b" resolve="regels" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="5vursKRgAL2" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="5vursKRgqee" role="lcghm">
+                <property role="lacIc" value="' subject='" />
+              </node>
+              <node concept="l9hG8" id="5vursKRgq$3" role="lcghm">
+                <node concept="2OqwBi" id="5vursKRgB8P" role="lb14g">
+                  <node concept="2OqwBi" id="5vursKRgr7s" role="2Oq$k0">
+                    <node concept="2GrUjf" id="5vursKRgqXh" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="5hfcVvLVqum" resolve="regeling" />
+                    </node>
+                    <node concept="3TrEf2" id="5vursKRgrCO" role="2OqNvi">
+                      <ref role="3Tt5mk" to="1jct:5hfcVvLVRNs" resolve="subject" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="5vursKRgByw" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="5vursKRgG2c" role="lcghm">
                 <property role="lacIc" value="' /&gt;" />
               </node>
               <node concept="l8MVK" id="5hfcVvLW1MF" role="lcghm" />
-            </node>
-            <node concept="lc7rE" id="5hfcVvLW24y" role="3cqZAp">
-              <node concept="la8eA" id="5hfcVvLW24z" role="lcghm">
-                <property role="lacIc" value="&lt;/regeling&gt;" />
-              </node>
             </node>
           </node>
         </node>
