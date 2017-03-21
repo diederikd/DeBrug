@@ -171,7 +171,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="rechtssubject" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6c9haf45syb" resolve="Rechtssubject" />
+      <ref role="20lvS9" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
     </node>
   </node>
   <node concept="1TIwiD" id="6c9haf45sNq">

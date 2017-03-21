@@ -143,8 +143,8 @@ public class Interpreter {
       final SNode huidigeDatum = abstracteWaarde;
       if (SNodeOperations.isInstanceOf(huidigeDatum, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9e0L, "ObjectiefRecht.structure.HuidigeDatum"))) {
         // Om de simulatie te laten werken moet de simulatiedatum worden teruggegeven. 
-        Long VerschillenInNanoSeconden = Duration.between(DatumTijd__BehaviorDescriptor.getdatetime_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6d087789eL, "datumtijdvaninitialisatie"))), LocalDateTime.now()).toNanos();
-        LocalDate simulatiedatum = DatumTijd__BehaviorDescriptor.getdatetime_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(Interpreter.simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x67229afa6a23b388L, "datumtijdvanstartvandeSimulatie"))).plusNanos(VerschillenInNanoSeconden).toLocalDate();
+        Long VerschillenInNanoSeconden = Duration.between(DatumTijd__BehaviorDescriptor.geefDatumTijd_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6d087789eL, "datumtijdvaninitialisatie"))), LocalDateTime.now()).toNanos();
+        LocalDate simulatiedatum = DatumTijd__BehaviorDescriptor.geefDatumTijd_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(Interpreter.simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x67229afa6a23b388L, "datumtijdvanstartvandeSimulatie"))).plusNanos(VerschillenInNanoSeconden).toLocalDate();
         Interpreter.voegBerichtToe("Huidige datum is " + simulatiedatum);
         return simulatiedatum;
       }
@@ -401,7 +401,7 @@ public class Interpreter {
       if (SNodeOperations.isInstanceOf(huidigeDatum, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9e0L, "ObjectiefRecht.structure.HuidigeDatum"))) {
         for (SNode instantieVanObject : ListSequence.fromList(result)) {
           SNode datumWaarde = (SNode) InstantieVanObject__BehaviorDescriptor.GeefWaardeVanKenmerk_idFR9FxGLp3H.invoke(instantieVanObject, kenmerk);
-          LocalDate Datum = Datum__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(datumWaarde, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, 0x1fabc0b15d9b6274L, "waarde")));
+          LocalDate Datum = Datum__BehaviorDescriptor.geefdatum_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(datumWaarde, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, 0x1fabc0b15d9b6274L, "waarde")));
           Interpreter.voegBerichtToe("Ligt " + Datum + " voor " + LocalDate.now() + "?");
           if (!(Datum.isBefore(LocalDate.now()))) {
             Interpreter.voegBerichtToe(Datum + " ligt niet voor " + LocalDate.now());
@@ -438,7 +438,7 @@ public class Interpreter {
       if (SNodeOperations.isInstanceOf(huidigeDatum, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9e0L, "ObjectiefRecht.structure.HuidigeDatum"))) {
         for (SNode instantieVanObject : ListSequence.fromList(result)) {
           SNode datumWaarde = (SNode) InstantieVanObject__BehaviorDescriptor.GeefWaardeVanKenmerk_idFR9FxGLp3H.invoke(instantieVanObject, kenmerk);
-          LocalDate Datum = Datum__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(datumWaarde, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, 0x1fabc0b15d9b6274L, "waarde")));
+          LocalDate Datum = Datum__BehaviorDescriptor.geefdatum_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(datumWaarde, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, 0x1fabc0b15d9b6274L, "waarde")));
           if (Datum == null) {
             Interpreter.voegBerichtToe("Geen waarde voor kenmerk '" + kenmerk + "' gevonden");
             ListSequence.fromList(instantiesVanObject).clear();
@@ -483,7 +483,7 @@ public class Interpreter {
       if (SNodeOperations.isInstanceOf(huidigeDatum, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9e0L, "ObjectiefRecht.structure.HuidigeDatum"))) {
         for (SNode instantieVanObject : ListSequence.fromList(result)) {
           SNode datumWaarde = (SNode) InstantieVanObject__BehaviorDescriptor.GeefWaardeVanKenmerk_idFR9FxGLp3H.invoke(instantieVanObject, kenmerk);
-          LocalDate Datum = Datum__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(datumWaarde, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, 0x1fabc0b15d9b6274L, "waarde")));
+          LocalDate Datum = Datum__BehaviorDescriptor.geefdatum_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(datumWaarde, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, 0x1fabc0b15d9b6274L, "waarde")));
           if (Datum == null) {
             Interpreter.voegBerichtToe("Geen waarde voor kenmerk '" + kenmerk + "' gevonden");
             ListSequence.fromList(instantiesVanObject).clear();

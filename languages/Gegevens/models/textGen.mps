@@ -174,5 +174,23 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="5vursKRkHTo">
+    <property role="3GE5qa" value="Waarden.Temporelewaarde" />
+    <ref role="WuzLi" to="uwhu:vqB$L$qd2f" resolve="TijdWaarde" />
+    <node concept="11bSqf" id="5vursKRkHTp" role="11c4hB">
+      <node concept="3clFbS" id="5vursKRkHTq" role="2VODD2">
+        <node concept="lc7rE" id="5vursKRkHUg" role="3cqZAp">
+          <node concept="l9hG8" id="5vursKRkHUA" role="lcghm">
+            <node concept="2OqwBi" id="5vursKRkI7G" role="lb14g">
+              <node concept="117lpO" id="5vursKRkHVu" role="2Oq$k0" />
+              <node concept="2qgKlT" id="5vursKRkInK" role="2OqNvi">
+                <ref role="37wK5l" to="fcw4:Fzw$g_H4hz" resolve="GeefWaardeString" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

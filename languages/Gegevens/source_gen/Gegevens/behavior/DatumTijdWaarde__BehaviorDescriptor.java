@@ -37,7 +37,7 @@ public final class DatumTijdWaarde__BehaviorDescriptor extends BaseBHDescriptor 
 
   /*package*/ static Temporal GeefTemporeleWaarde_id5kuxuwXEUJM(@NotNull SNode __thisNode__) {
     if ((SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x2b935eb966136db4L, 0x2b935eb966136db5L, "waarde")) != null)) {
-      return DatumTijd__BehaviorDescriptor.getdatetime_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x2b935eb966136db4L, 0x2b935eb966136db5L, "waarde")));
+      return DatumTijd__BehaviorDescriptor.geefDatumTijd_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x2b935eb966136db4L, 0x2b935eb966136db5L, "waarde")));
     }
     return null;
   }

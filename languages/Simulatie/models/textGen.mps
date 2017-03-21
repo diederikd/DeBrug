@@ -68,6 +68,9 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
@@ -98,6 +101,11 @@
     </node>
     <node concept="11bSqf" id="5hfcVvLWfbV" role="11c4hB">
       <node concept="3clFbS" id="5hfcVvLWfbW" role="2VODD2">
+        <node concept="lc7rE" id="1f2HX0m_otM" role="3cqZAp">
+          <node concept="la8eA" id="1f2HX0m_oE7" role="lcghm">
+            <property role="lacIc" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;" />
+          </node>
+        </node>
         <node concept="lc7rE" id="5hfcVvLWfnd" role="3cqZAp">
           <node concept="la8eA" id="5hfcVvLWfnz" role="lcghm">
             <property role="lacIc" value="&lt;gegevenshuishouding&gt;" />
@@ -131,6 +139,26 @@
                   <node concept="117lpO" id="5hfcVvLWhgf" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="5hfcVvLWi4z" role="2OqNvi">
                     <ref role="3TtcxE" to="xhlk:6w7GUCbsHjv" resolve="tabellen" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="lc7rE" id="5vursKRt1cD" role="3cqZAp">
+              <node concept="l9hG8" id="5vursKRt1cE" role="lcghm">
+                <node concept="2OqwBi" id="5vursKRt1cF" role="lb14g">
+                  <node concept="117lpO" id="5vursKRt1cG" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5vursKRzIX_" role="2OqNvi">
+                    <ref role="3Tt5mk" to="xhlk:2IjnF_AnsZ2" resolve="rechtsbetrekkingen" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="lc7rE" id="5vursKRt0DU" role="3cqZAp">
+              <node concept="l9hG8" id="5vursKRt0GM" role="lcghm">
+                <node concept="2OqwBi" id="5vursKRt0RD" role="lb14g">
+                  <node concept="117lpO" id="5vursKRt0HE" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5vursKRt13a" role="2OqNvi">
+                    <ref role="3Tt5mk" to="xhlk:2IjnF_AarD$" resolve="rechtshandelingen" />
                   </node>
                 </node>
               </node>

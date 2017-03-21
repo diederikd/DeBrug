@@ -39,12 +39,12 @@ public final class TijdWaarde__BehaviorDescriptor extends BaseBHDescriptor {
 
   /*package*/ static Temporal GeefTemporeleWaarde_id5kuxuwXEUJM(@NotNull SNode __thisNode__) {
     if ((SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, 0x7da9e4c6468d090L, "waarde")) != null)) {
-      return Tijd__BehaviorDescriptor.gettime_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, 0x7da9e4c6468d090L, "waarde")));
+      return Tijd__BehaviorDescriptor.geefTijd_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, 0x7da9e4c6468d090L, "waarde")));
     }
     return null;
   }
   /*package*/ static LocalTime GeefTijdWaarde_idFR9FxGLL6n(@NotNull SNode __thisNode__) {
-    return Tijd__BehaviorDescriptor.gettime_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, 0x7da9e4c6468d090L, "waarde")));
+    return Tijd__BehaviorDescriptor.geefTijd_id5riiL_BUHOa.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, 0x7da9e4c6468d090L, "waarde")));
   }
   /*package*/ static String GeefWaardeString_idFzw$g_H4hz(@NotNull SNode __thisNode__) {
     if (TemporeleWaarde__BehaviorDescriptor.GeefTemporeleWaarde_id5kuxuwXEUJM.invoke(__thisNode__) != null) {

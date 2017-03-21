@@ -2895,7 +2895,7 @@
       </node>
     </node>
     <node concept="1OcJTe" id="20D4HrzEMbL" role="33wtHG">
-      <property role="TrG5h" value="recht om verzoek aanpassing arbeidsduur&#10;bij eigen werkgever in te dienen" />
+      <property role="TrG5h" value="recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen" />
       <property role="da7Q0" value="64" />
       <property role="3ypbWd" value="true" />
       <property role="I0$kK" value="Dit is een initiele rechtsbetrekking (het kenmerk is te vinden in de Inspector). &#10;Die initiele rechtsbetrekking is van wetswege tot stand gekomen, &#10;of doordat de wet ingegaan is tijdens een lopende arbeidsovereenkomst, &#10;of doordat de arbeidsovereenkomst ingegaan is na ingang van de wet. &#10;M.a.w. we laten de rechtspositieveranderaar die  deze rechtsbetrekking tot stand heeft gebracht buiten beschouwing.&#10;We moeten immers ergens een grens trekken.&#10;Sommige wetten worden hiermee ‘ontkoppeld' door de gegevenshuishouding waarin in dit geval&#10;de arbeidsovereenkomst is te vinden.&#10;&#10;De afgelopen twee jaren dient de werknemer geen inwilliging of afwijzing gehad te hebben van de werkgever." />
@@ -4007,7 +4007,7 @@
       <ref role="yqVAx" node="4ZpB41RnoMO" resolve="werknemer" />
     </node>
     <node concept="2B78KX" id="5gJzES8$B8o" role="2B78xY">
-      <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur&#10;bij eigen werkgever in te dienen" />
+      <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen" />
       <ref role="2B78KW" node="28MuYO0n6cM" resolve="Amalius" />
       <ref role="2B78K2" node="28MuYO0n6cK" resolve="AZML" />
       <ref role="1sJBT2" node="28MuYO0sW8R" resolve="Arbeidsovereenkomst 1" />
@@ -4076,7 +4076,7 @@
     <node concept="2BLbnY" id="5vursKR7cLL" role="2BLYKK">
       <node concept="2B78KX" id="5vursKR7cLN" role="1O2iA3">
         <property role="1xmsDa" value="true" />
-        <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur&#10;bij eigen werkgever in te dienen" />
+        <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen" />
         <ref role="1sJBT2" node="28MuYO0sW8R" resolve="Arbeidsovereenkomst 1" />
         <ref role="2B78K2" node="2IjnF__C6lN" resolve="Essent" />
         <ref role="2B78KW" node="2IjnF__Ico$" resolve="Pieter" />
@@ -5897,8 +5897,8 @@
         <node concept="LeFwQ" id="2IjnF_AhLZM" role="2B7LCw">
           <node concept="2B78Lw" id="2IjnF_AhLZN" role="LeFwF">
             <property role="2B78LB" value="1" />
-            <property role="2B78L_" value="1" />
-            <property role="2B78LE" value="1000" />
+            <property role="2B78L_" value="3" />
+            <property role="2B78LE" value="2000" />
           </node>
           <node concept="LeFwc" id="2IjnF_AhLZO" role="LeFwH">
             <property role="LeFwf" value="0" />
@@ -5906,8 +5906,8 @@
             <property role="LeFwM" value="0" />
           </node>
         </node>
-        <node concept="2B78xQ" id="28MuYO0qILD" role="2B78xV">
-          <ref role="2B78xP" node="28MuYO0n6cK" resolve="AZML" />
+        <node concept="2B78xQ" id="5vursKRzIy9" role="2B78xV">
+          <ref role="2B78xP" node="2IjnF__C6lN" resolve="Essent" />
         </node>
       </node>
       <node concept="2B78xR" id="2IjnF_AlAf7" role="1dBqmG">
@@ -5917,7 +5917,7 @@
           <node concept="2B78Lw" id="2IjnF_AlAf9" role="LeFwF">
             <property role="2B78LB" value="1" />
             <property role="2B78L_" value="1" />
-            <property role="2B78LE" value="1000" />
+            <property role="2B78LE" value="2000" />
           </node>
           <node concept="LeFwc" id="2IjnF_AlAfa" role="LeFwH">
             <property role="LeFwf" value="0" />
@@ -5925,8 +5925,8 @@
             <property role="LeFwM" value="0" />
           </node>
         </node>
-        <node concept="2B78xQ" id="28MuYO0qILG" role="2B78xV">
-          <ref role="2B78xP" node="28MuYO0n6cM" resolve="Amalius" />
+        <node concept="2B78xQ" id="5vursKRzIyc" role="2B78xV">
+          <ref role="2B78xP" node="2IjnF__Ico$" resolve="Pieter" />
         </node>
       </node>
       <node concept="2B78xR" id="2IjnF_AlJ5q" role="1dBqmG">
@@ -5935,7 +5935,7 @@
         <node concept="LeFwQ" id="2IjnF_AlJ5r" role="2B7LCw">
           <node concept="2B78Lw" id="2IjnF_AlJ5s" role="LeFwF">
             <property role="2B78LB" value="1" />
-            <property role="2B78L_" value="1" />
+            <property role="2B78L_" value="2" />
             <property role="2B78LE" value="2000" />
           </node>
           <node concept="LeFwc" id="2IjnF_AlJ5t" role="LeFwH">
@@ -5944,14 +5944,33 @@
             <property role="LeFwM" value="0" />
           </node>
         </node>
-        <node concept="2B78xQ" id="28MuYO0qILJ" role="2B78xV">
-          <ref role="2B78xP" node="28MuYO0n6cM" resolve="Amalius" />
+        <node concept="2B78xQ" id="5vursKRzIyf" role="2B78xV">
+          <ref role="2B78xP" node="2IjnF__Ico$" resolve="Pieter" />
         </node>
       </node>
     </node>
     <node concept="1dBqmn" id="2IjnF_AoEqz" role="1dND5V">
+      <node concept="2B78KX" id="1f2HX0mEjkg" role="1dBqmm">
+        <property role="1xmsDa" value="false" />
+        <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen" />
+        <ref role="2B78K2" node="2IjnF__D$7i" resolve="Eneco" />
+        <ref role="2B78KW" node="2IjnF__Ico$" resolve="Pieter" />
+        <ref role="1sJBT2" node="28MuYO0sW8R" resolve="Arbeidsovereenkomst 1" />
+        <node concept="LeFwQ" id="1f2HX0mEjkh" role="2B78LI">
+          <node concept="2B78Lw" id="1f2HX0mEjki" role="LeFwF">
+            <property role="2B78LB" value="1" />
+            <property role="2B78L_" value="1" />
+            <property role="2B78LE" value="2001" />
+          </node>
+          <node concept="LeFwc" id="1f2HX0mEjkj" role="LeFwH">
+            <property role="LeFwf" value="0" />
+            <property role="LeFwL" value="0" />
+            <property role="LeFwM" value="0" />
+          </node>
+        </node>
+      </node>
       <node concept="2B78KX" id="2IjnF_AoEqA" role="1dBqmm">
-        <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur&#10;bij eigen werkgever in te dienen" />
+        <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen" />
         <ref role="1sJBT2" node="28MuYO0sW8R" resolve="Arbeidsovereenkomst 1" />
         <ref role="2B78K2" node="2IjnF__C6lN" resolve="Essent" />
         <ref role="2B78KW" node="2IjnF__Ico$" resolve="Pieter" />

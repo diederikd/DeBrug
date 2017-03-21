@@ -5,7 +5,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="15,0,82,0" name="Gegevens.textGen.TextGenAspectDescriptor" />
+      <unit at="15,0,87,0" name="Gegevens.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:b19e57ae-d9ad-455f-9dad-f5b4704b43d4(Gegevens.textGen)/6075131287478402208">
@@ -104,6 +104,20 @@
         <var name="ctx" id="6075131287479040769" />
       </scope>
       <unit id="6075131287479040769" at="10,0,17,0" name="Gegevens.textGen.DuurWaarde_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:b19e57ae-d9ad-455f-9dad-f5b4704b43d4(Gegevens.textGen)/6331618849998429784">
+    <file name="TijdWaarde_TextGen.java">
+      <node id="6331618849998429784" at="12,54,13,55" concept="2" />
+      <node id="6331618849998429840" at="13,55,14,103" concept="0" />
+      <node id="6331618849998429784" at="11,0,16,0" concept="1" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6331618849998429784" at="12,54,14,103">
+        <var name="tgs" id="6331618849998429784" />
+      </scope>
+      <scope id="6331618849998429784" at="11,0,16,0">
+        <var name="ctx" id="6331618849998429784" />
+      </scope>
+      <unit id="6331618849998429784" at="10,0,17,0" name="Gegevens.textGen.TijdWaarde_TextGen" />
     </file>
   </root>
 </debug-info>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="15,0,67,0" name="SubjectiefRecht.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:95c613f5-7163-41db-a8d2-c7f5da746212(SubjectiefRecht.textGen)/6331618849999029931">
+    <file name="LijstMetRechtshandelingen_TextGen.java">
+      <node id="6331618849999029931" at="14,54,15,55" concept="4" />
+      <node id="6331618849999029931" at="15,55,16,44" concept="0" />
+      <node id="1423902536562394334" at="16,44,17,17" concept="0" />
+      <node id="6331618849999029931" at="17,17,18,38" concept="0" />
+      <node id="6331618849999029931" at="18,38,19,18" concept="0" />
+      <node id="6331618849999029931" at="19,18,20,44" concept="0" />
+      <node id="6075131287478364438" at="21,219,22,27" concept="0" />
+      <node id="6075131287481431475" at="23,5,24,17" concept="0" />
+      <node id="6331618849999029931" at="24,17,25,44" concept="0" />
+      <node id="6331618849999029931" at="25,44,26,39" concept="0" />
+      <node id="6331618849999029931" at="26,39,27,18" concept="0" />
+      <node id="6331618849999029931" at="27,18,28,44" concept="0" />
+      <node id="6075131287478364438" at="20,44,23,5" concept="1" />
+      <node id="6331618849999029931" at="13,0,30,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6075131287478364438" at="21,219,22,27" />
+      <scope id="6075131287478364438" at="20,44,23,5">
+        <var name="item" id="6075131287478364438" />
+      </scope>
+      <scope id="6331618849999029931" at="14,54,28,44">
+        <var name="tgs" id="6331618849999029931" />
+      </scope>
+      <scope id="6331618849999029931" at="13,0,30,0">
+        <var name="ctx" id="6331618849999029931" />
+      </scope>
+      <unit id="6331618849999029931" at="12,0,31,0" name="SubjectiefRecht.textGen.LijstMetRechtshandelingen_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:95c613f5-7163-41db-a8d2-c7f5da746212(SubjectiefRecht.textGen)/6331618849999065169">
+    <file name="LijstMetRechtsbetrekkingen_TextGen.java">
+      <node id="6331618849999065169" at="14,54,15,55" concept="4" />
+      <node id="6331618849999065169" at="15,55,16,44" concept="0" />
+      <node id="1423902536562394782" at="16,44,17,17" concept="0" />
+      <node id="6331618849999065169" at="17,17,18,39" concept="0" />
+      <node id="6331618849999065169" at="18,39,19,18" concept="0" />
+      <node id="6331618849999065169" at="19,18,20,44" concept="0" />
+      <node id="6331618849999065416" at="21,220,22,27" concept="0" />
+      <node id="6331618849999065421" at="23,5,24,17" concept="0" />
+      <node id="6331618849999065169" at="24,17,25,44" concept="0" />
+      <node id="6331618849999065169" at="25,44,26,40" concept="0" />
+      <node id="6331618849999065169" at="26,40,27,18" concept="0" />
+      <node id="6331618849999065169" at="27,18,28,44" concept="0" />
+      <node id="6331618849999065416" at="20,44,23,5" concept="1" />
+      <node id="6331618849999065169" at="13,0,30,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6331618849999065416" at="21,220,22,27" />
+      <scope id="6331618849999065416" at="20,44,23,5">
+        <var name="item" id="6331618849999065416" />
+      </scope>
+      <scope id="6331618849999065169" at="14,54,28,44">
+        <var name="tgs" id="6331618849999065169" />
+      </scope>
+      <scope id="6331618849999065169" at="13,0,30,0">
+        <var name="ctx" id="6331618849999065169" />
+      </scope>
+      <unit id="6331618849999065169" at="12,0,31,0" name="SubjectiefRecht.textGen.LijstMetRechtsbetrekkingen_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:95c613f5-7163-41db-a8d2-c7f5da746212(SubjectiefRecht.textGen)/6331618849999801334">
+    <file name="Rechtsbetrekking_TextGen.java">
+      <node id="6331618849999801334" at="15,54,16,55" concept="4" />
+      <node id="6331618849999801334" at="16,55,17,44" concept="0" />
+      <node id="6331618849999801522" at="17,44,18,17" concept="0" />
+      <node id="6331618849999801334" at="18,17,19,37" concept="0" />
+      <node id="6331618849999801334" at="19,37,20,18" concept="0" />
+      <node id="6331618849999801334" at="20,18,21,44" concept="0" />
+      <node id="6331618849999801526" at="21,44,22,17" concept="0" />
+      <node id="6331618849999801334" at="22,17,23,32" concept="0" />
+      <node id="6331618849999801334" at="23,32,24,205" concept="0" />
+      <node id="6331618849999801334" at="24,205,25,22" concept="0" />
+      <node id="6331618849999801334" at="25,22,26,18" concept="0" />
+      <node id="6331618850003679680" at="27,205,28,19" concept="0" />
+      <node id="1423902536563824844" at="28,19,29,34" concept="0" />
+      <node id="1423902536563824844" at="29,34,30,207" concept="0" />
+      <node id="1423902536563824844" at="30,207,31,24" concept="0" />
+      <node id="1423902536563824844" at="31,24,32,20" concept="0" />
+      <node id="6331618850003682282" at="33,5,34,17" concept="0" />
+      <node id="6331618849999801334" at="34,17,35,49" concept="0" />
+      <node id="6331618849999801334" at="35,49,36,284" concept="0" />
+      <node id="6331618849999801334" at="36,284,37,22" concept="0" />
+      <node id="6331618849999801334" at="37,22,38,18" concept="0" />
+      <node id="6331618850003684887" at="38,18,39,17" concept="0" />
+      <node id="6331618849999801334" at="39,17,40,32" concept="0" />
+      <node id="6331618849999801334" at="40,32,41,344" concept="0" />
+      <node id="6331618849999801334" at="41,344,42,22" concept="0" />
+      <node id="6331618849999801334" at="42,22,43,18" concept="0" />
+      <node id="6331618850003687495" at="43,18,44,17" concept="0" />
+      <node id="6331618849999801334" at="44,17,45,45" concept="0" />
+      <node id="6331618849999801334" at="45,45,46,357" concept="0" />
+      <node id="6331618849999801334" at="46,357,47,22" concept="0" />
+      <node id="6331618849999801334" at="47,22,48,18" concept="0" />
+      <node id="6331618850003690106" at="48,18,49,17" concept="0" />
+      <node id="6331618849999801334" at="49,17,50,44" concept="0" />
+      <node id="6331618849999801334" at="50,44,51,356" concept="0" />
+      <node id="6331618849999801334" at="51,356,52,22" concept="0" />
+      <node id="6331618849999801334" at="52,22,53,18" concept="0" />
+      <node id="6331618849999801334" at="53,18,54,44" concept="0" />
+      <node id="6331618849999801532" at="54,44,55,17" concept="0" />
+      <node id="6331618849999801334" at="55,17,56,38" concept="0" />
+      <node id="6331618849999801334" at="56,38,57,18" concept="0" />
+      <node id="6331618849999801334" at="57,18,58,44" concept="0" />
+      <node id="1423902536563824842" at="26,18,33,5" concept="2" />
+      <node id="6331618849999801334" at="14,0,60,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1423902536563824844" at="27,205,32,20" />
+      <scope id="6331618849999801334" at="15,54,58,44">
+        <var name="tgs" id="6331618849999801334" />
+      </scope>
+      <scope id="6331618849999801334" at="14,0,60,0">
+        <var name="ctx" id="6331618849999801334" />
+      </scope>
+      <unit id="6331618849999801334" at="13,0,61,0" name="SubjectiefRecht.textGen.Rechtsbetrekking_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:95c613f5-7163-41db-a8d2-c7f5da746212(SubjectiefRecht.textGen)/6331618849999819126">
+    <file name="Rechtshandeling_TextGen.java">
+      <node id="6331618849999819126" at="14,54,15,55" concept="4" />
+      <node id="6331618849999819126" at="15,55,16,44" concept="0" />
+      <node id="6331618849999819150" at="16,44,17,17" concept="0" />
+      <node id="6331618849999819126" at="17,17,18,36" concept="0" />
+      <node id="6331618849999819126" at="18,36,19,18" concept="0" />
+      <node id="6331618849999819126" at="19,18,20,44" concept="0" />
+      <node id="6331618849999819154" at="20,44,21,17" concept="0" />
+      <node id="6331618849999819126" at="21,17,22,35" concept="0" />
+      <node id="6331618849999819126" at="22,35,23,208" concept="0" />
+      <node id="6331618849999819126" at="23,208,24,22" concept="0" />
+      <node id="6331618849999819126" at="24,22,25,18" concept="0" />
+      <node id="6331618850003600858" at="25,18,26,17" concept="0" />
+      <node id="6331618849999819126" at="26,17,27,28" concept="0" />
+      <node id="6331618849999819126" at="27,28,28,507" concept="0" />
+      <node id="6331618849999819126" at="28,507,29,22" concept="0" />
+      <node id="6331618849999819126" at="29,22,30,18" concept="0" />
+      <node id="6331618850003602065" at="30,18,31,17" concept="0" />
+      <node id="6331618849999819126" at="31,17,32,32" concept="0" />
+      <node id="6331618849999819126" at="32,32,33,344" concept="0" />
+      <node id="6331618849999819126" at="33,344,34,22" concept="0" />
+      <node id="6331618849999819126" at="34,22,35,18" concept="0" />
+      <node id="6331618849999819126" at="35,18,36,44" concept="0" />
+      <node id="6331618849999819203" at="36,44,37,17" concept="0" />
+      <node id="6331618849999819126" at="37,17,38,37" concept="0" />
+      <node id="6331618849999819126" at="38,37,39,18" concept="0" />
+      <node id="6331618849999819126" at="39,18,40,44" concept="0" />
+      <node id="6331618849999819126" at="13,0,42,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6331618849999819126" at="14,54,40,44">
+        <var name="tgs" id="6331618849999819126" />
+      </scope>
+      <scope id="6331618849999819126" at="13,0,42,0">
+        <var name="ctx" id="6331618849999819126" />
+      </scope>
+      <unit id="6331618849999819126" at="12,0,43,0" name="SubjectiefRecht.textGen.Rechtshandeling_TextGen" />
+    </file>
+  </root>
+</debug-info>
+

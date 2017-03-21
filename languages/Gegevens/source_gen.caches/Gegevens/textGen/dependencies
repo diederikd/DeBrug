@@ -57,6 +57,7 @@
     <classNode dependClassName="Gegevens.textGen.JaNeeWaarde_TextGen" />
     <classNode dependClassName="Gegevens.textGen.ReeelGetalWaarde_TextGen" />
     <classNode dependClassName="Gegevens.textGen.RijVanKaraktersWaarde_TextGen" />
+    <classNode dependClassName="Gegevens.textGen.TijdWaarde_TextGen" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
@@ -68,6 +69,13 @@
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenAspectBase" />
+  </dependency>
+  <dependency className="Gegevens.textGen.TijdWaarde_TextGen" file="TijdWaarde_TextGen.java">
+    <classNode dependClassName="Gegevens.behavior.Waarde__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
 </dependenciesRoot>
 

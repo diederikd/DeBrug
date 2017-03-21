@@ -13,6 +13,7 @@
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -45,9 +46,11 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -72,6 +75,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -139,7 +143,7 @@
   <node concept="13h7C7" id="5riiL_BUfJI">
     <ref role="13h7C2" to="jx79:6c9haf45sz3" resolve="Datum" />
     <node concept="13i0hz" id="5riiL_BUg0c" role="13h7CS">
-      <property role="TrG5h" value="getdate" />
+      <property role="TrG5h" value="geefdatum" />
       <node concept="3Tm1VV" id="5riiL_BUg0d" role="1B3o_S" />
       <node concept="3uibUv" id="5riiL_BUk5f" role="3clF45">
         <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
@@ -189,8 +193,25 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5vursKRvRmQ" role="13h7CS">
+      <property role="TrG5h" value="geefDatumString" />
+      <node concept="3Tm1VV" id="5vursKRvRmR" role="1B3o_S" />
+      <node concept="17QB3L" id="5vursKRvRL1" role="3clF45" />
+      <node concept="3clFbS" id="5vursKRvRmT" role="3clF47">
+        <node concept="3cpWs6" id="5vursKRvRLO" role="3cqZAp">
+          <node concept="2OqwBi" id="5vursKRvSh$" role="3cqZAk">
+            <node concept="BsUDl" id="5vursKRvRMi" role="2Oq$k0">
+              <ref role="37wK5l" node="5riiL_BUg0c" resolve="geefdatum" />
+            </node>
+            <node concept="liA8E" id="5vursKRvSQ$" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~LocalDate.toString():java.lang.String" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="5riiL_BUmpQ" role="13h7CS">
-      <property role="TrG5h" value="setdate" />
+      <property role="TrG5h" value="zetdatum" />
       <node concept="37vLTG" id="5riiL_BUmqW" role="3clF46">
         <property role="TrG5h" value="ld" />
         <node concept="3uibUv" id="5riiL_BUmr2" role="1tU5fm">
@@ -315,7 +336,7 @@
   <node concept="13h7C7" id="5riiL_BUAx0">
     <ref role="13h7C2" to="jx79:5riiL_BUfcl" resolve="Tijd" />
     <node concept="13i0hz" id="5riiL_BUAB9" role="13h7CS">
-      <property role="TrG5h" value="settime" />
+      <property role="TrG5h" value="zetTijd" />
       <node concept="37vLTG" id="5riiL_BUHlq" role="3clF46">
         <property role="TrG5h" value="lt" />
         <node concept="3uibUv" id="5riiL_BUHum" role="1tU5fm">
@@ -382,7 +403,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="5riiL_BUHOa" role="13h7CS">
-      <property role="TrG5h" value="gettime" />
+      <property role="TrG5h" value="geefTijd" />
       <node concept="3Tm1VV" id="5riiL_BUHOb" role="1B3o_S" />
       <node concept="3uibUv" id="5riiL_BUHXG" role="3clF45">
         <ref role="3uigEE" to="28m1:~LocalTime" resolve="LocalTime" />
@@ -428,6 +449,23 @@
         <node concept="3cpWs6" id="5riiL_BUVmw" role="3cqZAp">
           <node concept="37vLTw" id="5riiL_BUVsI" role="3cqZAk">
             <ref role="3cqZAo" node="5riiL_BUAC2" resolve="lt" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5vursKRvTA3" role="13h7CS">
+      <property role="TrG5h" value="geefTijdString" />
+      <node concept="3Tm1VV" id="5vursKRvTA4" role="1B3o_S" />
+      <node concept="17QB3L" id="5vursKRvTGW" role="3clF45" />
+      <node concept="3clFbS" id="5vursKRvTA6" role="3clF47">
+        <node concept="3cpWs6" id="5vursKRvTH7" role="3cqZAp">
+          <node concept="2OqwBi" id="5vursKRvU9j" role="3cqZAk">
+            <node concept="BsUDl" id="5vursKRvTHr" role="2Oq$k0">
+              <ref role="37wK5l" node="5riiL_BUHOa" resolve="geefTijd" />
+            </node>
+            <node concept="liA8E" id="5vursKRvVat" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~LocalTime.toString():java.lang.String" resolve="toString" />
+            </node>
           </node>
         </node>
       </node>
@@ -479,7 +517,7 @@
   <node concept="13h7C7" id="5riiL_BUVyr">
     <ref role="13h7C2" to="jx79:5riiL_BUfcJ" resolve="DatumTijd" />
     <node concept="13i0hz" id="5riiL_BUVyA" role="13h7CS">
-      <property role="TrG5h" value="getdatetime" />
+      <property role="TrG5h" value="geefDatumTijd" />
       <node concept="3Tm1VV" id="5riiL_BUVyB" role="1B3o_S" />
       <node concept="3uibUv" id="5riiL_BUVyM" role="3clF45">
         <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
@@ -497,7 +535,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="5riiL_BUWDP" role="2OqNvi">
-                <ref role="37wK5l" node="5riiL_BUg0c" resolve="getdate" />
+                <ref role="37wK5l" node="5riiL_BUg0c" resolve="geefdatum" />
               </node>
             </node>
             <node concept="2OqwBi" id="5riiL_BUXBr" role="37wK5m">
@@ -508,7 +546,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="5riiL_BUXOh" role="2OqNvi">
-                <ref role="37wK5l" node="5riiL_BUHOa" resolve="gettime" />
+                <ref role="37wK5l" node="5riiL_BUHOa" resolve="geefTijd" />
               </node>
             </node>
           </node>
@@ -516,7 +554,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="5riiL_BUXYm" role="13h7CS">
-      <property role="TrG5h" value="setdatetime" />
+      <property role="TrG5h" value="zetDatumTijd" />
       <node concept="37vLTG" id="5riiL_BUYqP" role="3clF46">
         <property role="TrG5h" value="ldt" />
         <node concept="3uibUv" id="5riiL_BUYsV" role="1tU5fm">
@@ -534,7 +572,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="5riiL_BV1vG" role="2OqNvi">
-              <ref role="37wK5l" node="5riiL_BUmpQ" resolve="setdate" />
+              <ref role="37wK5l" node="5riiL_BUmpQ" resolve="zetdatum" />
               <node concept="2OqwBi" id="5riiL_BV3U2" role="37wK5m">
                 <node concept="37vLTw" id="5riiL_BV3nX" role="2Oq$k0">
                   <ref role="3cqZAo" node="5riiL_BUYqP" resolve="ldt" />
@@ -555,7 +593,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="5riiL_BV64u" role="2OqNvi">
-              <ref role="37wK5l" node="5riiL_BUAB9" resolve="settime" />
+              <ref role="37wK5l" node="5riiL_BUAB9" resolve="zetTijd" />
               <node concept="2OqwBi" id="5riiL_BV6Js" role="37wK5m">
                 <node concept="37vLTw" id="5riiL_BV6dq" role="2Oq$k0">
                   <ref role="3cqZAo" node="5riiL_BUYqP" resolve="ldt" />
@@ -569,6 +607,47 @@
         </node>
       </node>
       <node concept="3cqZAl" id="5riiL_BUXZS" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="5vursKRvZal" role="13h7CS">
+      <property role="TrG5h" value="geefDatumTijdString" />
+      <node concept="3Tm1VV" id="5vursKRvZam" role="1B3o_S" />
+      <node concept="17QB3L" id="5vursKRvZlN" role="3clF45" />
+      <node concept="3clFbS" id="5vursKRvZao" role="3clF47">
+        <node concept="3cpWs8" id="1f2HX0mEj$d" role="3cqZAp">
+          <node concept="3cpWsn" id="1f2HX0mEj$e" role="3cpWs9">
+            <property role="TrG5h" value="datumtijd" />
+            <node concept="3uibUv" id="1f2HX0mEj$f" role="1tU5fm">
+              <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+            </node>
+            <node concept="BsUDl" id="1f2HX0mEjFq" role="33vP2m">
+              <ref role="37wK5l" node="5riiL_BUVyA" resolve="geefDatumTijd" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1f2HX0mEjIh" role="3cqZAp">
+          <node concept="3clFbS" id="1f2HX0mEjIj" role="3clFbx">
+            <node concept="3cpWs6" id="1f2HX0mEmo3" role="3cqZAp">
+              <node concept="Xl_RD" id="1f2HX0mEmp3" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="1f2HX0mEml9" role="3clFbw">
+            <node concept="10Nm6u" id="1f2HX0mEmmR" role="3uHU7w" />
+            <node concept="37vLTw" id="1f2HX0mEjK5" role="3uHU7B">
+              <ref role="3cqZAo" node="1f2HX0mEj$e" resolve="datumtijd" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5vursKRvZmA" role="3cqZAp">
+          <node concept="2OqwBi" id="5vursKRvZUI" role="3cqZAk">
+            <node concept="BsUDl" id="5vursKRvZn4" role="2Oq$k0">
+              <ref role="37wK5l" node="5riiL_BUVyA" resolve="geefDatumTijd" />
+            </node>
+            <node concept="liA8E" id="5vursKRw0C2" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~LocalDateTime.toString():java.lang.String" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="5riiL_BUVys" role="13h7CW">
       <node concept="3clFbS" id="5riiL_BUVyt" role="2VODD2" />

@@ -14,6 +14,7 @@ public class Gegevenshuishouding_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
+    tgs.append("<?xml version=\"1.0\" encoding=\"utf-8\" ?>");
     tgs.append("<gegevenshuishouding>");
     tgs.newLine();
     tgs.append("<name='");
@@ -24,6 +25,8 @@ public class Gegevenshuishouding_TextGen extends TextGenDescriptorBase {
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL, 0x6807b3aa0b72d4dfL, "tabellen"))) {
       tgs.appendNode(item);
     }
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL, 0x2b935eb9665dcfc2L, "rechtsbetrekkingen")));
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL, 0x2b935eb96629ba64L, "rechtshandelingen")));
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("</gegevenshuishouding>");
     tgs.newLine();

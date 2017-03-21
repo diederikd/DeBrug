@@ -238,7 +238,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="2mYdLn7TFXh" role="2OqNvi">
-                  <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="getdate" />
+                  <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="geefdatum" />
                 </node>
               </node>
               <node concept="liA8E" id="2mYdLn7THcF" role="2OqNvi">
@@ -284,7 +284,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="2mYdLn7TTW0" role="2OqNvi">
-                  <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="getdate" />
+                  <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="geefdatum" />
                 </node>
               </node>
               <node concept="liA8E" id="2mYdLn7TVPS" role="2OqNvi">
@@ -303,7 +303,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="2mYdLn7TQ4N" role="2OqNvi">
-                  <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="getdate" />
+                  <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="geefdatum" />
                 </node>
               </node>
               <node concept="liA8E" id="2mYdLn7TRV_" role="2OqNvi">
@@ -326,6 +326,21 @@
   <node concept="13h7C7" id="2mYdLn7QCIi">
     <property role="3GE5qa" value="Rechtsbetrekking" />
     <ref role="13h7C2" to="3pw0:64gsXol8COd" resolve="Rechtsbetrekking" />
+    <node concept="13i0hz" id="5vursKRAATV" role="13h7CS">
+      <property role="TrG5h" value="geefNaam" />
+      <node concept="3Tm1VV" id="5vursKRAATW" role="1B3o_S" />
+      <node concept="17QB3L" id="5vursKRAAWN" role="3clF45" />
+      <node concept="3clFbS" id="5vursKRAATY" role="3clF47">
+        <node concept="3cpWs6" id="5vursKRAAXe" role="3cqZAp">
+          <node concept="2OqwBi" id="5vursKRAB8B" role="3cqZAk">
+            <node concept="13iPFW" id="5vursKRAAXx" role="2Oq$k0" />
+            <node concept="3TrcHB" id="5vursKRABmw" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="2mYdLn7QCIj" role="13h7CW">
       <node concept="3clFbS" id="2mYdLn7QCIk" role="2VODD2">
         <node concept="3clFbF" id="2mYdLn7QCID" role="3cqZAp">

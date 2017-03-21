@@ -35,10 +35,10 @@ public final class IBronGeldigheid__BehaviorDescriptor extends BaseBHDescriptor 
   }
 
   /*package*/ static boolean IsGeldigOpDatum_id2mYdLn7TluB(@NotNull SNode __thisNode__, LocalDate datum) {
-    if ((SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x62a4bcf3d18e0321L, 0x4916e0625ce244bcL, "brongeldigTot")) == null) && Datum__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x62a4bcf3d18e0321L, 0x4916e0625ce244baL, "brongeldigVan"))).isBefore(datum)) {
+    if ((SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x62a4bcf3d18e0321L, 0x4916e0625ce244bcL, "brongeldigTot")) == null) && Datum__BehaviorDescriptor.geefdatum_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x62a4bcf3d18e0321L, 0x4916e0625ce244baL, "brongeldigVan"))).isBefore(datum)) {
       return true;
     }
-    if (Datum__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x62a4bcf3d18e0321L, 0x4916e0625ce244baL, "brongeldigVan"))).isBefore(datum) && Datum__BehaviorDescriptor.getdate_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x62a4bcf3d18e0321L, 0x4916e0625ce244bcL, "brongeldigTot"))).isAfter(datum)) {
+    if (Datum__BehaviorDescriptor.geefdatum_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x62a4bcf3d18e0321L, 0x4916e0625ce244baL, "brongeldigVan"))).isBefore(datum) && Datum__BehaviorDescriptor.geefdatum_id5riiL_BUg0c.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x62a4bcf3d18e0321L, 0x4916e0625ce244bcL, "brongeldigTot"))).isAfter(datum)) {
       return true;
     }
     return false;

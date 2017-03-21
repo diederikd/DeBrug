@@ -63,6 +63,7 @@
     <classNode dependClassName="Datum.behavior.Tijd__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.time.LocalDateTime" />
     <classNode dependClassName="java.util.Arrays" />
@@ -91,6 +92,7 @@
   <dependency className="Datum.behavior.Datum__BehaviorDescriptor" file="Datum__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.time.LocalDate" />
     <classNode dependClassName="java.util.Arrays" />
@@ -278,6 +280,7 @@
   <dependency className="Datum.behavior.Tijd__BehaviorDescriptor" file="Tijd__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.time.LocalTime" />
     <classNode dependClassName="java.util.Arrays" />

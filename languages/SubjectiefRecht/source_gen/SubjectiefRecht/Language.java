@@ -18,6 +18,7 @@ import SubjectiefRecht.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import SubjectiefRecht.structure.ConceptPresentationAspectImpl;
+import jetbrains.mps.text.rt.TextGenAspectDescriptor;
 import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
 import SubjectiefRecht.typesystem.TypesystemDescriptor;
 
@@ -73,6 +74,11 @@ public class Language extends LanguageRuntime {
       if (aspectClass.getName().equals("jetbrains.mps.smodel.runtime.ConceptPresentationAspect")) {
         if (aspectClass == ConceptPresentationAspect.class) {
           return (T) new ConceptPresentationAspectImpl();
+        }
+      }
+      if (aspectClass.getName().equals("jetbrains.mps.text.rt.TextGenAspectDescriptor")) {
+        if (aspectClass == TextGenAspectDescriptor.class) {
+          return (T) new SubjectiefRecht.textGen.TextGenAspectDescriptor();
         }
       }
       if (aspectClass.getName().equals("jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor")) {
