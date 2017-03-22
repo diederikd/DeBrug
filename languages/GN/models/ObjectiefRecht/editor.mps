@@ -10715,7 +10715,29 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6EEavymsmrO" role="3EZMnx">
-        <property role="3F0ifm" value="feitelijke gegevens van object" />
+        <property role="3F0ifm" value="feitelijke gegevens van" />
+      </node>
+      <node concept="1HlG4h" id="1f2HX0n20uv" role="3EZMnx">
+        <ref role="1k5W1q" node="MvzNsy_Dd_" resolve="Bold" />
+        <node concept="1HfYo3" id="1f2HX0n20ux" role="1HlULh">
+          <node concept="3TQlhw" id="1f2HX0n20uz" role="1Hhtcw">
+            <node concept="3clFbS" id="1f2HX0n20u_" role="2VODD2">
+              <node concept="3cpWs6" id="1f2HX0n2cny" role="3cqZAp">
+                <node concept="2OqwBi" id="1f2HX0n2dB9" role="3cqZAk">
+                  <node concept="2OqwBi" id="1f2HX0n2cPb" role="2Oq$k0">
+                    <node concept="pncrf" id="1f2HX0n2cCm" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1f2HX0n2d8j" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3pw0:6w7GUCbsbmS" resolve="object" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="1f2HX0n2e0X" role="2OqNvi">
+                    <ref role="37wK5l" to="ll8w:1f2HX0n1roP" resolve="geefType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="6EEavymsrUo" role="3EZMnx">
         <property role="3F0ifm" value=":" />

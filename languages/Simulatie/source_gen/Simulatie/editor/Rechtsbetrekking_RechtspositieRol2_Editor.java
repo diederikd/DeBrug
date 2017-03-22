@@ -139,6 +139,7 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     imagePath = "/Users/diederikdulfer/MPSProjects/DeBrug/images/Green.png";
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
     editorCell.setCellId("Image_de2l07_a2a");
+    EvalueerRechtsbetrekking.setCellActions(editorCell, node, editorContext);
     editorCell.setDescent(0);
     return editorCell;
   }
@@ -149,6 +150,7 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     imagePath = "/Users/diederikdulfer/MPSProjects/DeBrug/images/Red.png";
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
     editorCell.setCellId("Image_de2l07_a2a_0");
+    EvalueerRechtsbetrekking.setCellActions(editorCell, node, editorContext);
     editorCell.setDescent(0);
     return editorCell;
   }

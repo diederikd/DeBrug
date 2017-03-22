@@ -84,6 +84,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -1487,6 +1488,62 @@
       <node concept="A3Dl8" id="3r$i4253HGC" role="3clF45">
         <node concept="3Tqbb2" id="3r$i4253HGD" role="A3Ik2">
           <ref role="ehGHo" to="3pw0:4$mS69sVSy3" resolve="Kenmerk" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1f2HX0n1roP" role="13h7CS">
+      <property role="TrG5h" value="geefType" />
+      <node concept="3Tm1VV" id="1f2HX0n1roQ" role="1B3o_S" />
+      <node concept="17QB3L" id="1f2HX0n1rw9" role="3clF45" />
+      <node concept="3clFbS" id="1f2HX0n1roS" role="3clF47">
+        <node concept="Jncv_" id="1f2HX0n1rzf" role="3cqZAp">
+          <ref role="JncvD" to="3pw0:64gsXol8COa" resolve="RechtsSubject" />
+          <node concept="13iPFW" id="1f2HX0n1rzG" role="JncvB" />
+          <node concept="3clFbS" id="1f2HX0n1rzh" role="Jncv$">
+            <node concept="3cpWs6" id="1f2HX0n1r_3" role="3cqZAp">
+              <node concept="Xl_RD" id="1f2HX0n1r_m" role="3cqZAk">
+                <property role="Xl_RC" value="rechtssubject" />
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="1f2HX0n1rzi" role="JncvA">
+            <property role="TrG5h" value="rechtsSubject" />
+            <node concept="2jxLKc" id="1f2HX0n1rzj" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="Jncv_" id="1f2HX0n1rEm" role="3cqZAp">
+          <ref role="JncvD" to="3pw0:26dbYf8FZmT" resolve="Onderwerp" />
+          <node concept="13iPFW" id="1f2HX0n1rEn" role="JncvB" />
+          <node concept="3clFbS" id="1f2HX0n1rEo" role="Jncv$">
+            <node concept="3cpWs6" id="1f2HX0n1rEp" role="3cqZAp">
+              <node concept="Xl_RD" id="1f2HX0n1rEq" role="3cqZAk">
+                <property role="Xl_RC" value="onderwerp" />
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="1f2HX0n1rEr" role="JncvA">
+            <property role="TrG5h" value="onderwerp" />
+            <node concept="2jxLKc" id="1f2HX0n1rEs" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="Jncv_" id="1f2HX0n1rJ8" role="3cqZAp">
+          <ref role="JncvD" to="3pw0:6syAJDDPL2P" resolve="Enumeratie" />
+          <node concept="13iPFW" id="1f2HX0n1rJ9" role="JncvB" />
+          <node concept="3clFbS" id="1f2HX0n1rJa" role="Jncv$">
+            <node concept="3cpWs6" id="1f2HX0n1rJb" role="3cqZAp">
+              <node concept="Xl_RD" id="1f2HX0n1rJc" role="3cqZAk">
+                <property role="Xl_RC" value="enumeratie" />
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="1f2HX0n1rJd" role="JncvA">
+            <property role="TrG5h" value="enumeratie" />
+            <node concept="2jxLKc" id="1f2HX0n1rJe" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="1f2HX0n1rDz" role="3cqZAp" />
+        <node concept="3cpWs6" id="1f2HX0n1rB_" role="3cqZAp">
+          <node concept="10Nm6u" id="1f2HX0n1rCS" role="3cqZAk" />
         </node>
       </node>
     </node>

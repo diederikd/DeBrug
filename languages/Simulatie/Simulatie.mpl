@@ -73,6 +73,7 @@
     <dependency reexport="false">707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)</dependency>
     <dependency reexport="false">f856d46f-3338-47a8-8a48-11e26bc535e0(Algemeen)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
+    <dependency reexport="false">c4c9a68e-ce24-4c5b-9241-c819e554f07c(Interactie)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -124,6 +125,7 @@
     <module reference="847a3235-09f9-403c-b6a9-1c294a212e92(Ant)" version="0" />
     <module reference="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" version="0" />
     <module reference="30ef095a-d489-45ff-a80f-456a798ac125(Gegevens)" version="0" />
+    <module reference="c4c9a68e-ce24-4c5b-9241-c819e554f07c(Interactie)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />

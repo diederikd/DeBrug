@@ -27,8 +27,9 @@ public final class Object__BehaviorDescriptor extends BaseBHDescriptor {
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<Iterable<SNode>> ObjectKenmerken_id3r$i4253HG8 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("ObjectKenmerken").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3r$i4253HG8").registry(REGISTRY).build();
+  public static final SMethod<String> geefType_id1f2HX0n1roP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("geefType").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1f2HX0n1roP").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(ObjectKenmerken_id3r$i4253HG8);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(ObjectKenmerken_id3r$i4253HG8, geefType_id1f2HX0n1roP);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -49,6 +50,28 @@ public final class Object__BehaviorDescriptor extends BaseBHDescriptor {
     }
     return result;
   }
+  /*package*/ static String geefType_id1f2HX0n1roP(@NotNull SNode __thisNode__) {
+    {
+      final SNode rechtsSubject = __thisNode__;
+      if (SNodeOperations.isInstanceOf(rechtsSubject, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"))) {
+        return "rechtssubject";
+      }
+    }
+    {
+      final SNode onderwerp = __thisNode__;
+      if (SNodeOperations.isInstanceOf(onderwerp, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"))) {
+        return "onderwerp";
+      }
+    }
+    {
+      final SNode enumeratie = __thisNode__;
+      if (SNodeOperations.isInstanceOf(enumeratie, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L, "ObjectiefRecht.structure.Enumeratie"))) {
+        return "enumeratie";
+      }
+    }
+
+    return null;
+  }
 
   /*package*/ Object__BehaviorDescriptor() {
     super(REGISTRY);
@@ -68,6 +91,8 @@ public final class Object__BehaviorDescriptor extends BaseBHDescriptor {
     switch (methodIndex) {
       case 0:
         return (T) ((Iterable<SNode>) ObjectKenmerken_id3r$i4253HG8(node));
+      case 1:
+        return (T) ((String) geefType_id1f2HX0n1roP(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

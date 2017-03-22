@@ -105,29 +105,13 @@
           <node concept="la8eA" id="1f2HX0m_oE7" role="lcghm">
             <property role="lacIc" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;" />
           </node>
+          <node concept="l8MVK" id="1f2HX0mWq2L" role="lcghm" />
         </node>
         <node concept="lc7rE" id="5hfcVvLWfnd" role="3cqZAp">
           <node concept="la8eA" id="5hfcVvLWfnz" role="lcghm">
             <property role="lacIc" value="&lt;gegevenshuishouding&gt;" />
           </node>
           <node concept="l8MVK" id="5hfcVvLWfq5" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="5hfcVvLWfsr" role="3cqZAp">
-          <node concept="la8eA" id="5hfcVvLWfsU" role="lcghm">
-            <property role="lacIc" value="&lt;name='" />
-          </node>
-          <node concept="l9hG8" id="5hfcVvLWfuJ" role="lcghm">
-            <node concept="2OqwBi" id="5hfcVvLWfEg" role="lb14g">
-              <node concept="117lpO" id="5hfcVvLWfvC" role="2Oq$k0" />
-              <node concept="3TrcHB" id="5hfcVvLWfPL" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="5hfcVvLWfV5" role="lcghm">
-            <property role="lacIc" value="&gt;" />
-          </node>
-          <node concept="l8MVK" id="5hfcVvLWg0X" role="lcghm" />
         </node>
         <node concept="3izx1p" id="5hfcVvLWiaw" role="3cqZAp">
           <node concept="3clFbS" id="5hfcVvLWiay" role="3izTki">

@@ -26,6 +26,22 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorAspectDescriptorBase" />
     <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.EditorHintsProvider" />
   </dependency>
+  <dependency className="Simulatie.editor.EvalueerRechtsbetrekking" file="EvalueerRechtsbetrekking.java">
+    <classNode dependClassName="Simulatie.behavior.Simulatie__BehaviorDescriptor" />
+    <classNode dependClassName="Simulatie.plugin.Interpreter" />
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.cells.AbstractCellAction" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
   <dependency className="Simulatie.editor.Gegevenshuishouding_Editor" file="Gegevenshuishouding_Editor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -82,6 +98,7 @@
     <classNode dependClassName="Datum.behavior.DatumTijd__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.editor.GN_StyleSheet" />
     <classNode dependClassName="Simulatie.behavior.Simulatie__BehaviorDescriptor" />
+    <classNode dependClassName="Simulatie.editor.EvalueerRechtsbetrekking" />
     <classNode dependClassName="Simulatie.plugin.Interpreter" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Object" />
@@ -130,6 +147,7 @@
     <classNode dependClassName="Datum.editor.GN_StyleSheet" />
     <classNode dependClassName="ObjectiefRecht.editor.GN_StyleSheet" />
     <classNode dependClassName="Simulatie.behavior.Simulatie__BehaviorDescriptor" />
+    <classNode dependClassName="Simulatie.editor.EvalueerRechtsbetrekking" />
     <classNode dependClassName="Simulatie.plugin.Interpreter" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Object" />
@@ -377,7 +395,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="Simulatie.editor.UitTeVoerenHandeling_Editor" file="UitTeVoerenHandeling_Editor.java">
-    <classNode dependClassName="Datum.editor.GN_StyleSheet" />
     <classNode dependClassName="ObjectiefRecht.editor.GN_StyleSheet" />
     <classNode dependClassName="Simulatie.behavior.Informatiepositie__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.behavior.Simulatie__BehaviorDescriptor" />

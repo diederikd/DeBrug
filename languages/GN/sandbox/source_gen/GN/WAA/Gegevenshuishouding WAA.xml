@@ -1,252 +1,234 @@
-<?xml version="1.0" encoding="utf-8" ?><gegevenshuishouding>
-<name='Gegevenshuishouding WAA>
-    <rechtssubject>
-    <type='werknemer'>
-      <instantie>
-      <id='Pieter'>
-          <kenmerk naam='werknemersidentificatie'>5</kenmerk>
-          <kenmerk naam='burgerservicenummer'>333333333</kenmerk>
-          <kenmerk naam='voornamen'>Jan</kenmerk>
-          <kenmerk naam='roepnaam'>Jan</kenmerk>
-          <kenmerk naam='achternaam'>Janssen</kenmerk>
-          <kenmerk naam='geboortedatum'></kenmerk>
-          <kenmerk naam='geboorteplaats'>Amsterdam</kenmerk>
-          <kenmerk naam='adres werknemer'>De weg</kenmerk>
-          <kenmerk naam='huisnummer werknemer'>19</kenmerk>
-          <kenmerk naam='postcode van de werknemer'>1095 AA</kenmerk>
-          <kenmerk naam='woonplaats'>Groningen</kenmerk>
-          <kenmerk naam='paspoortnummer'>12345</kenmerk>
-          <kenmerk naam='identiteitskaartnummer'>12345</kenmerk>
-          <kenmerk naam='burgerlijke staat'>ongehuwd</kenmerk>
-          <kenmerk naam='nationaliteit'>NL</kenmerk>
-          <kenmerk naam='nationaliteit datum sinds'></kenmerk>
-          <kenmerk naam='militair ambtenaar'>Nee</kenmerk>
+<?xml version="1.0" encoding="utf-8" ?>
+<gegevenshuishouding>
+    <rechtssubjecten naam='werknemer'>
+          <instantie naam='Pieter'>
+        <kenmerk naam='werknemersidentificatie'>5</kenmerk>
+        <kenmerk naam='burgerservicenummer'>333333333</kenmerk>
+        <kenmerk naam='voornamen'>Jan</kenmerk>
+        <kenmerk naam='roepnaam'>Jan</kenmerk>
+        <kenmerk naam='achternaam'>Janssen</kenmerk>
+        <kenmerk naam='geboortedatum'></kenmerk>
+        <kenmerk naam='geboorteplaats'>Amsterdam</kenmerk>
+        <kenmerk naam='adres werknemer'>De weg</kenmerk>
+        <kenmerk naam='huisnummer werknemer'>19</kenmerk>
+        <kenmerk naam='postcode van de werknemer'>1095 AA</kenmerk>
+        <kenmerk naam='woonplaats'>Groningen</kenmerk>
+        <kenmerk naam='paspoortnummer'>12345</kenmerk>
+        <kenmerk naam='identiteitskaartnummer'>12345</kenmerk>
+        <kenmerk naam='burgerlijke staat'>ongehuwd</kenmerk>
+        <kenmerk naam='nationaliteit'>NL</kenmerk>
+        <kenmerk naam='nationaliteit datum sinds'></kenmerk>
+        <kenmerk naam='militair ambtenaar'>Nee</kenmerk>
       </instantie>
-    </rechtssubject>
-    <rechtssubject>
-    <type='werkgever'>
-      <instantie>
-      <id='Essent'>
-          <kenmerk naam='werkgeversidentificatie'>3</kenmerk>
-          <kenmerk naam='naam'>Essent</kenmerk>
-          <kenmerk naam='adres'>J.F. Kennedylaan </kenmerk>
-          <kenmerk naam='huisnummer'>109</kenmerk>
-          <kenmerk naam='postcode'>1095 AA</kenmerk>
-          <kenmerk naam='aantal werknemers'>30</kenmerk>
-          <kenmerk naam='peildatum aantal werknemers'></kenmerk>
-          <kenmerk naam='militairen in dienst'></kenmerk>
+    </rechtssubjecten>
+    <rechtssubjecten naam='werkgever'>
+          <instantie naam='Essent'>
+        <kenmerk naam='werkgeversidentificatie'>3</kenmerk>
+        <kenmerk naam='naam'>Essent</kenmerk>
+        <kenmerk naam='adres'>J.F. Kennedylaan </kenmerk>
+        <kenmerk naam='huisnummer'>109</kenmerk>
+        <kenmerk naam='postcode'>1095 AA</kenmerk>
+        <kenmerk naam='aantal werknemers'>30</kenmerk>
+        <kenmerk naam='peildatum aantal werknemers'></kenmerk>
+        <kenmerk naam='militairen in dienst'></kenmerk>
       </instantie>
-      <instantie>
-      <id='Eneco'>
-          <kenmerk naam='werkgeversidentificatie'>4</kenmerk>
-          <kenmerk naam='naam'>Eneco</kenmerk>
-          <kenmerk naam='adres'>Wegenerstraat </kenmerk>
-          <kenmerk naam='huisnummer'>140</kenmerk>
-          <kenmerk naam='postcode'>1073 RR</kenmerk>
-          <kenmerk naam='aantal werknemers'>40</kenmerk>
-          <kenmerk naam='peildatum aantal werknemers'></kenmerk>
-          <kenmerk naam='militairen in dienst'></kenmerk>
+      <instantie naam='Eneco'>
+        <kenmerk naam='werkgeversidentificatie'>4</kenmerk>
+        <kenmerk naam='naam'>Eneco</kenmerk>
+        <kenmerk naam='adres'>Wegenerstraat </kenmerk>
+        <kenmerk naam='huisnummer'>140</kenmerk>
+        <kenmerk naam='postcode'>1073 RR</kenmerk>
+        <kenmerk naam='aantal werknemers'>40</kenmerk>
+        <kenmerk naam='peildatum aantal werknemers'></kenmerk>
+        <kenmerk naam='militairen in dienst'></kenmerk>
       </instantie>
-    </rechtssubject>
-    <onderwerp>
-    <type='aanpassing van de arbeidsduur'>
-      <instantie>
-      <id='Verzoek 1'>
-          <kenmerk naam='op grond van arbeidsovereenkomst'>Arbeidsovereenkomst 1</kenmerk>
-          <kenmerk naam='datum indienen verzoek'></kenmerk>
-          <kenmerk naam='datum vorige versie van het verzoek'></kenmerk>
-          <kenmerk naam='datum overleg gepleegd'></kenmerk>
-          <kenmerk naam='datum verzoek ingewilligd'></kenmerk>
-          <kenmerk naam='datum verzoek afgewezen'></kenmerk>
-          <kenmerk naam='datum spreiding vastgesteld'></kenmerk>
-          <kenmerk naam='datum spreiding van de uren laatst gewijzigd'></kenmerk>
-          <kenmerk naam='datum beslissing medegedeeld'></kenmerk>
-          <kenmerk naam='datum mededelen redenen'></kenmerk>
-          <kenmerk naam='werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken'></kenmerk>
-          <kenmerk naam='datum belang aangegeven'></kenmerk>
-          <kenmerk naam='beoogde ingangsdatum van de aanpassing'></kenmerk>
-          <kenmerk naam='omvang van de aanpassing'>PT40H</kenmerk>
-          <kenmerk naam='gewenste spreiding'>Maandag t/m vrijdag 5 x 8</kenmerk>
-          <kenmerk naam='schriftelijk ingediend'>Ja</kenmerk>
-          <kenmerk naam='samentelling volgens werknemer'>PT960H</kenmerk>
-          <kenmerk naam='samentelling volgens werkgever'>PT960H</kenmerk>
-          <kenmerk naam='redenen voor afwijzing'>Geen</kenmerk>
-          <kenmerk naam='zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen'></kenmerk>
-          <kenmerk naam='datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever'></kenmerk>
-          <kenmerk naam='feiten bij vermindering'>geen feiten bij vermindering</kenmerk>
-          <kenmerk naam='feiten bij vermeerdering'>geen feiten bij vermeerdering</kenmerk>
+    </rechtssubjecten>
+    <onderwerpen naam='aanpassing van de arbeidsduur'>
+          <instantie naam='Verzoek 1'>
+        <kenmerk naam='op grond van arbeidsovereenkomst'>Arbeidsovereenkomst tussen Pieter en Essent</kenmerk>
+        <kenmerk naam='datum indienen verzoek'></kenmerk>
+        <kenmerk naam='datum vorige versie van het verzoek'></kenmerk>
+        <kenmerk naam='datum overleg gepleegd'></kenmerk>
+        <kenmerk naam='datum verzoek ingewilligd'></kenmerk>
+        <kenmerk naam='datum verzoek afgewezen'></kenmerk>
+        <kenmerk naam='datum spreiding vastgesteld'></kenmerk>
+        <kenmerk naam='datum spreiding van de uren laatst gewijzigd'></kenmerk>
+        <kenmerk naam='datum beslissing medegedeeld'></kenmerk>
+        <kenmerk naam='datum mededelen redenen'></kenmerk>
+        <kenmerk naam='werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken'></kenmerk>
+        <kenmerk naam='datum belang aangegeven'></kenmerk>
+        <kenmerk naam='beoogde ingangsdatum van de aanpassing'></kenmerk>
+        <kenmerk naam='omvang van de aanpassing'>PT40H</kenmerk>
+        <kenmerk naam='gewenste spreiding'>Maandag t/m vrijdag 5 x 8</kenmerk>
+        <kenmerk naam='schriftelijk ingediend'>Ja</kenmerk>
+        <kenmerk naam='samentelling volgens werknemer'>PT960H</kenmerk>
+        <kenmerk naam='samentelling volgens werkgever'>PT960H</kenmerk>
+        <kenmerk naam='redenen voor afwijzing'>Geen</kenmerk>
+        <kenmerk naam='zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen'></kenmerk>
+        <kenmerk naam='datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever'></kenmerk>
+        <kenmerk naam='feiten bij vermindering'>geen feiten bij vermindering</kenmerk>
+        <kenmerk naam='feiten bij vermeerdering'>geen feiten bij vermeerdering</kenmerk>
       </instantie>
-      <instantie>
-      <id='Af te wijzen verzoek'>
-          <kenmerk naam='op grond van arbeidsovereenkomst'>Arbeidsovereenkomst 1</kenmerk>
-          <kenmerk naam='datum indienen verzoek'></kenmerk>
-          <kenmerk naam='datum vorige versie van het verzoek'></kenmerk>
-          <kenmerk naam='datum overleg gepleegd'></kenmerk>
-          <kenmerk naam='datum verzoek ingewilligd'></kenmerk>
-          <kenmerk naam='datum verzoek afgewezen'></kenmerk>
-          <kenmerk naam='datum spreiding vastgesteld'></kenmerk>
-          <kenmerk naam='datum spreiding van de uren laatst gewijzigd'></kenmerk>
-          <kenmerk naam='datum beslissing medegedeeld'></kenmerk>
-          <kenmerk naam='datum mededelen redenen'></kenmerk>
-          <kenmerk naam='werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken'></kenmerk>
-          <kenmerk naam='datum belang aangegeven'></kenmerk>
-          <kenmerk naam='beoogde ingangsdatum van de aanpassing'></kenmerk>
-          <kenmerk naam='omvang van de aanpassing'>PT40H</kenmerk>
-          <kenmerk naam='gewenste spreiding'>Maandag t/m vrijdag 5 x 8</kenmerk>
-          <kenmerk naam='schriftelijk ingediend'>Ja</kenmerk>
-          <kenmerk naam='samentelling volgens werknemer'>PT960H</kenmerk>
-          <kenmerk naam='samentelling volgens werkgever'>PT960H</kenmerk>
-          <kenmerk naam='redenen voor afwijzing'>Geen</kenmerk>
-          <kenmerk naam='zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen'>Ja</kenmerk>
-          <kenmerk naam='datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever'></kenmerk>
-          <kenmerk naam='feiten bij vermindering'>geen feiten bij vermindering</kenmerk>
-          <kenmerk naam='feiten bij vermeerdering'>geen feiten bij vermeerdering</kenmerk>
+      <instantie naam='Af te wijzen verzoek'>
+        <kenmerk naam='op grond van arbeidsovereenkomst'>Arbeidsovereenkomst tussen Pieter en Essent</kenmerk>
+        <kenmerk naam='datum indienen verzoek'></kenmerk>
+        <kenmerk naam='datum vorige versie van het verzoek'></kenmerk>
+        <kenmerk naam='datum overleg gepleegd'></kenmerk>
+        <kenmerk naam='datum verzoek ingewilligd'></kenmerk>
+        <kenmerk naam='datum verzoek afgewezen'></kenmerk>
+        <kenmerk naam='datum spreiding vastgesteld'></kenmerk>
+        <kenmerk naam='datum spreiding van de uren laatst gewijzigd'></kenmerk>
+        <kenmerk naam='datum beslissing medegedeeld'></kenmerk>
+        <kenmerk naam='datum mededelen redenen'></kenmerk>
+        <kenmerk naam='werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken'></kenmerk>
+        <kenmerk naam='datum belang aangegeven'></kenmerk>
+        <kenmerk naam='beoogde ingangsdatum van de aanpassing'></kenmerk>
+        <kenmerk naam='omvang van de aanpassing'>PT40H</kenmerk>
+        <kenmerk naam='gewenste spreiding'>Maandag t/m vrijdag 5 x 8</kenmerk>
+        <kenmerk naam='schriftelijk ingediend'>Ja</kenmerk>
+        <kenmerk naam='samentelling volgens werknemer'>PT960H</kenmerk>
+        <kenmerk naam='samentelling volgens werkgever'>PT960H</kenmerk>
+        <kenmerk naam='redenen voor afwijzing'>Geen</kenmerk>
+        <kenmerk naam='zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen'>Ja</kenmerk>
+        <kenmerk naam='datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever'></kenmerk>
+        <kenmerk naam='feiten bij vermindering'>geen feiten bij vermindering</kenmerk>
+        <kenmerk naam='feiten bij vermeerdering'>geen feiten bij vermeerdering</kenmerk>
       </instantie>
-    </onderwerp>
-    <onderwerp>
-    <type='arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling'>
-      <instantie>
-      <id='Arbeidsovereenkomst 1'>
-          <kenmerk naam='werknemersidentificatie'>Pieter</kenmerk>
-          <kenmerk naam='werkgeversidentificatie'>Essent</kenmerk>
-          <kenmerk naam='datum indiensttreding'></kenmerk>
-          <kenmerk naam='arbeidsovereenkomst getekend op'></kenmerk>
-          <kenmerk naam='arbeidsduurperiode in arbeidsovereenkomst'>Arbeidsduur van arbeidsovereenkomst 1</kenmerk>
+    </onderwerpen>
+    <onderwerpen naam='arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling'>
+          <instantie naam='Arbeidsovereenkomst tussen Pieter en Essent'>
+        <kenmerk naam='werknemersidentificatie'>Pieter</kenmerk>
+        <kenmerk naam='werkgeversidentificatie'>Essent</kenmerk>
+        <kenmerk naam='datum indiensttreding'></kenmerk>
+        <kenmerk naam='arbeidsovereenkomst getekend op'></kenmerk>
+        <kenmerk naam='arbeidsduurperiode in arbeidsovereenkomst'>Arbeidsduur van arbeidsovereenkomst 1</kenmerk>
       </instantie>
-    </onderwerp>
-    <onderwerp>
-    <type='arbeidsduurperiode van arbeidsovereenkomst'>
-      <instantie>
-      <id='Arbeidsduur van arbeidsovereenkomst 1'>
-          <kenmerk naam='arbeidsduur geldig van datum'></kenmerk>
-          <kenmerk naam='arbeidsduur geldig tot datum'></kenmerk>
-          <kenmerk naam='arbeidsduur'>40</kenmerk>
-          <kenmerk naam='spreiding'>Maandag t/m vrijdag 5 x 8</kenmerk>
+      <instantie naam='Arbeidsovereenkomst tussen Pieter en Eneco'>
+        <kenmerk naam='werknemersidentificatie'>Pieter</kenmerk>
+        <kenmerk naam='werkgeversidentificatie'>Eneco</kenmerk>
+        <kenmerk naam='datum indiensttreding'></kenmerk>
+        <kenmerk naam='arbeidsovereenkomst getekend op'></kenmerk>
+        <kenmerk naam='arbeidsduurperiode in arbeidsovereenkomst'>Arbeidsduur van arbeidsovereenkomst 2</kenmerk>
       </instantie>
-    </onderwerp>
-    <onderwerp>
-    <type='spreidingperioden'>
-      <instantie>
-      <id='Maandag t/m vrijdag 5 x 8'>
-          <kenmerk naam='perioden'>Maandag van 08:00 - 12:00, Maandag van 12:30 - 16:30, Dinsdag van 08:00 - 12:00, Dinsdag van 12:30 - 16:30, Woensdag van 08:00 - 12:00, Woensdag van 12:30 - 16:30, Donderdag van 08:00 - 12:00, Donderdag van 12:30 - 16:30, Vrijdag van 08:00 - 12:00, Vrijdag van 12:30 - 16:30, </kenmerk>
+    </onderwerpen>
+    <onderwerpen naam='arbeidsduurperiode van arbeidsovereenkomst'>
+          <instantie naam='Arbeidsduur van arbeidsovereenkomst 1'>
+        <kenmerk naam='arbeidsduur geldig van datum'></kenmerk>
+        <kenmerk naam='arbeidsduur geldig tot datum'></kenmerk>
+        <kenmerk naam='arbeidsduur'>40</kenmerk>
+        <kenmerk naam='spreiding'>Maandag t/m vrijdag 5 x 8</kenmerk>
       </instantie>
-    </onderwerp>
-    <onderwerp>
-    <type='werkperiode'>
-      <instantie>
-      <id='Maandag van 08:00 - 12:00'>
-          <kenmerk naam='dag'>Maandag</kenmerk>
-          <kenmerk naam='aanvangstijd periode'>08:00</kenmerk>
-          <kenmerk naam='eindtijd periode'>12:00</kenmerk>
+      <instantie naam='Arbeidsduur van arbeidsovereenkomst 2'>
+        <kenmerk naam='arbeidsduur geldig van datum'></kenmerk>
+        <kenmerk naam='arbeidsduur geldig tot datum'></kenmerk>
+        <kenmerk naam='arbeidsduur'>40.0</kenmerk>
+        <kenmerk naam='spreiding'>Maandag t/m vrijdag 5 x 8</kenmerk>
       </instantie>
-      <instantie>
-      <id='Maandag van 12:30 - 16:30'>
-          <kenmerk naam='dag'>Maandag</kenmerk>
-          <kenmerk naam='aanvangstijd periode'>12:00</kenmerk>
-          <kenmerk naam='eindtijd periode'>16:00</kenmerk>
+    </onderwerpen>
+    <onderwerpen naam='spreidingperioden'>
+          <instantie naam='Maandag t/m vrijdag 5 x 8'>
+        <kenmerk naam='perioden'>Maandag van 08:00 - 12:00, Maandag van 12:30 - 16:30, Dinsdag van 08:00 - 12:00, Dinsdag van 12:30 - 16:30, Woensdag van 08:00 - 12:00, Woensdag van 12:30 - 16:30, Donderdag van 08:00 - 12:00, Donderdag van 12:30 - 16:30, Vrijdag van 08:00 - 12:00, Vrijdag van 12:30 - 16:30, </kenmerk>
       </instantie>
-      <instantie>
-      <id='Dinsdag van 08:00 - 12:00'>
-          <kenmerk naam='dag'>Dinsdag</kenmerk>
-          <kenmerk naam='aanvangstijd periode'>08:00</kenmerk>
-          <kenmerk naam='eindtijd periode'>12:00</kenmerk>
+    </onderwerpen>
+    <onderwerpen naam='werkperiode'>
+          <instantie naam='Maandag van 08:00 - 12:00'>
+        <kenmerk naam='dag'>Maandag</kenmerk>
+        <kenmerk naam='aanvangstijd periode'>08:00</kenmerk>
+        <kenmerk naam='eindtijd periode'>12:00</kenmerk>
       </instantie>
-      <instantie>
-      <id='Dinsdag van 12:30 - 16:30'>
-          <kenmerk naam='dag'>Dinsdag</kenmerk>
-          <kenmerk naam='aanvangstijd periode'>12:00</kenmerk>
-          <kenmerk naam='eindtijd periode'>16:00</kenmerk>
+      <instantie naam='Maandag van 12:30 - 16:30'>
+        <kenmerk naam='dag'>Maandag</kenmerk>
+        <kenmerk naam='aanvangstijd periode'>12:00</kenmerk>
+        <kenmerk naam='eindtijd periode'>16:00</kenmerk>
       </instantie>
-      <instantie>
-      <id='Woensdag van 08:00 - 12:00'>
-          <kenmerk naam='dag'>Woensdag</kenmerk>
-          <kenmerk naam='aanvangstijd periode'>08:00</kenmerk>
-          <kenmerk naam='eindtijd periode'>12:00</kenmerk>
+      <instantie naam='Dinsdag van 08:00 - 12:00'>
+        <kenmerk naam='dag'>Dinsdag</kenmerk>
+        <kenmerk naam='aanvangstijd periode'>08:00</kenmerk>
+        <kenmerk naam='eindtijd periode'>12:00</kenmerk>
       </instantie>
-      <instantie>
-      <id='Woensdag van 12:30 - 16:30'>
-          <kenmerk naam='dag'>Woensdag</kenmerk>
-          <kenmerk naam='aanvangstijd periode'>12:00</kenmerk>
-          <kenmerk naam='eindtijd periode'>16:00</kenmerk>
+      <instantie naam='Dinsdag van 12:30 - 16:30'>
+        <kenmerk naam='dag'>Dinsdag</kenmerk>
+        <kenmerk naam='aanvangstijd periode'>12:00</kenmerk>
+        <kenmerk naam='eindtijd periode'>16:00</kenmerk>
       </instantie>
-      <instantie>
-      <id='Donderdag van 08:00 - 12:00'>
-          <kenmerk naam='dag'>Donderdag</kenmerk>
-          <kenmerk naam='aanvangstijd periode'>08:00</kenmerk>
-          <kenmerk naam='eindtijd periode'>12:00</kenmerk>
+      <instantie naam='Woensdag van 08:00 - 12:00'>
+        <kenmerk naam='dag'>Woensdag</kenmerk>
+        <kenmerk naam='aanvangstijd periode'>08:00</kenmerk>
+        <kenmerk naam='eindtijd periode'>12:00</kenmerk>
       </instantie>
-      <instantie>
-      <id='Donderdag van 12:30 - 16:30'>
-          <kenmerk naam='dag'>Donderdag</kenmerk>
-          <kenmerk naam='aanvangstijd periode'>12:00</kenmerk>
-          <kenmerk naam='eindtijd periode'>16:00</kenmerk>
+      <instantie naam='Woensdag van 12:30 - 16:30'>
+        <kenmerk naam='dag'>Woensdag</kenmerk>
+        <kenmerk naam='aanvangstijd periode'>12:00</kenmerk>
+        <kenmerk naam='eindtijd periode'>16:00</kenmerk>
       </instantie>
-      <instantie>
-      <id='Vrijdag van 08:00 - 12:00'>
-          <kenmerk naam='dag'>Vrijdag</kenmerk>
-          <kenmerk naam='aanvangstijd periode'>08:00</kenmerk>
-          <kenmerk naam='eindtijd periode'>12:00</kenmerk>
+      <instantie naam='Donderdag van 08:00 - 12:00'>
+        <kenmerk naam='dag'>Donderdag</kenmerk>
+        <kenmerk naam='aanvangstijd periode'>08:00</kenmerk>
+        <kenmerk naam='eindtijd periode'>12:00</kenmerk>
       </instantie>
-      <instantie>
-      <id='Vrijdag van 12:30 - 16:30'>
-          <kenmerk naam='dag'>Vrijdag</kenmerk>
-          <kenmerk naam='aanvangstijd periode'>12:00</kenmerk>
-          <kenmerk naam='eindtijd periode'>16:00</kenmerk>
+      <instantie naam='Donderdag van 12:30 - 16:30'>
+        <kenmerk naam='dag'>Donderdag</kenmerk>
+        <kenmerk naam='aanvangstijd periode'>12:00</kenmerk>
+        <kenmerk naam='eindtijd periode'>16:00</kenmerk>
       </instantie>
-    </onderwerp>
-    <onderwerp>
-    <type='NL-postcode'>
-      <instantie>
-      <id='1073 RR'>
-          <kenmerk naam='PostcodeNummer'>1073</kenmerk>
-          <kenmerk naam='PostcodeLetters'>RR</kenmerk>
+      <instantie naam='Vrijdag van 08:00 - 12:00'>
+        <kenmerk naam='dag'>Vrijdag</kenmerk>
+        <kenmerk naam='aanvangstijd periode'>08:00</kenmerk>
+        <kenmerk naam='eindtijd periode'>12:00</kenmerk>
       </instantie>
-      <instantie>
-      <id='1095 AA'>
-          <kenmerk naam='PostcodeNummer'>1095</kenmerk>
-          <kenmerk naam='PostcodeLetters'>AA</kenmerk>
+      <instantie naam='Vrijdag van 12:30 - 16:30'>
+        <kenmerk naam='dag'>Vrijdag</kenmerk>
+        <kenmerk naam='aanvangstijd periode'>12:00</kenmerk>
+        <kenmerk naam='eindtijd periode'>16:00</kenmerk>
       </instantie>
-    </onderwerp>
-    <onderwerp>
-    <type='burgerservicenummer'>
-      <instantie>
-      <id='333333333'>
+    </onderwerpen>
+    <onderwerpen naam='NL-postcode'>
+          <instantie naam='1073 RR'>
+        <kenmerk naam='PostcodeNummer'>1073</kenmerk>
+        <kenmerk naam='PostcodeLetters'>RR</kenmerk>
       </instantie>
-      <instantie>
-      <id='444444444'>
+      <instantie naam='1095 AA'>
+        <kenmerk naam='PostcodeNummer'>1095</kenmerk>
+        <kenmerk naam='PostcodeLetters'>AA</kenmerk>
       </instantie>
-    </onderwerp>
+    </onderwerpen>
+    <onderwerpen naam='burgerservicenummer'>
+          <instantie naam='333333333'>
+      </instantie>
+      <instantie naam='444444444'>
+      </instantie>
+    </onderwerpen>
     <rechtsbetrekkingen>
         <rechtsbetrekking>
-          < geldigvan='2001-01-01T00:00' >
-          < objectieverechtsbetrekking='recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen' >
-          < onderwerp='Arbeidsovereenkomst 1' >
-          < rechtssubjectMetPlicht='Eneco' >
-          < rechtssubjectMetRecht='Pieter' >
+          <kenmerk naam='geldigvan'>2001-01-01T00:00</kenmerk>
+          <kenmerk naam='objectieverechtsbetrekking'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</kenmerk>
+          <kenmerk naam='onderwerp'>Arbeidsovereenkomst tussen Pieter en Eneco' >
+          <kenmerk naam='rechtssubjectMetPlicht'>Eneco</kenmerk>
+          <kenmerk naam='rechtssubjectMetRecht'>Pieter</kenmerk>
         </rechtsbetrekking>
         <rechtsbetrekking>
-          < geldigvan='2001-01-01T12:00' >
-          < objectieverechtsbetrekking='recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen' >
-          < onderwerp='Arbeidsovereenkomst 1' >
-          < rechtssubjectMetPlicht='Essent' >
-          < rechtssubjectMetRecht='Pieter' >
+          <kenmerk naam='geldigvan'>2001-01-01T12:00</kenmerk>
+          <kenmerk naam='objectieverechtsbetrekking'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</kenmerk>
+          <kenmerk naam='onderwerp'>Arbeidsovereenkomst tussen Pieter en Essent' >
+          <kenmerk naam='rechtssubjectMetPlicht'>Essent</kenmerk>
+          <kenmerk naam='rechtssubjectMetRecht'>Pieter</kenmerk>
         </rechtsbetrekking>
       </rechtsbetrekkingen>
     <rechtshandelingen>
         <rechtshandeling>
-          < uitgevoerdop='2000-03-01T00:00' >
-          < actor='Essent' >
-          < onderwerp='Verzoek 1' >
+          <kenmerk naam='uitgevoerdop'>2000-03-01T00:00</kenmerk>
+          <kenmerk naam='actor'>Essent</kenmerk>
+          <kenmerk naam='onderwerp'>Verzoek 1</kenmerk>
         </rechtshandeling>
         <rechtshandeling>
-          < uitgevoerdop='2000-01-01T00:00' >
-          < actor='Pieter' >
-          < onderwerp='Verzoek 1' >
+          <kenmerk naam='uitgevoerdop'>2000-01-01T00:00</kenmerk>
+          <kenmerk naam='actor'>Pieter</kenmerk>
+          <kenmerk naam='onderwerp'>Verzoek 1</kenmerk>
         </rechtshandeling>
         <rechtshandeling>
-          < uitgevoerdop='2000-02-01T00:00' >
-          < actor='Pieter' >
-          < onderwerp='Verzoek 1' >
+          <kenmerk naam='uitgevoerdop'>2000-02-01T00:00</kenmerk>
+          <kenmerk naam='actor'>Pieter</kenmerk>
+          <kenmerk naam='onderwerp'>Verzoek 1</kenmerk>
         </rechtshandeling>
       </rechtshandelingen>
 </gegevenshuishouding>
