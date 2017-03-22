@@ -18,73 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f2805d-4538-46c3-a016-7128ec7e185d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/EvalueerRechtsbetrekking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/Object__BehaviorDescriptor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/Object__BehaviorDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$1.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$10.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$2.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$3.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$4.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$5.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$6.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$7.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$8.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$9.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor.class" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$_Inline_yhtdgo_a1l0.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$_Inline_yhtdgo_a1l0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$_Inline_yhtdgo_a4l0$_Inline_yhtdgo_a0a0e11a.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$_Inline_yhtdgo_a4l0$_Inline_yhtdgo_a0a0e11a.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$_Inline_yhtdgo_a4l0.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$_Inline_yhtdgo_a4l0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$geldigTotSingleRoleHandler_yhtdgo_f0.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$geldigTotSingleRoleHandler_yhtdgo_f0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$geldigVanSingleRoleHandler_yhtdgo_c0.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$geldigVanSingleRoleHandler_yhtdgo_c0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol2_Editor$geldigTotSingleRoleHandler_de2l07_f0.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol2_Editor$geldigTotSingleRoleHandler_de2l07_f0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol2_Editor$geldigVanSingleRoleHandler_de2l07_c0.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol2_Editor$geldigVanSingleRoleHandler_de2l07_c0.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol2_Editor.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol2_Editor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/GN/classes_gen/ObjectiefRecht/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/behavior.mps" afterPath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/behavior.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/editor.mps" afterPath="$PROJECT_DIR$/languages/GN/models/ObjectiefRecht/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/models/textGen.mps" afterPath="$PROJECT_DIR$/languages/GN/models/textGen.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/AWB/Gegevenshuishouding AWB.xml" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/AWB/Gegevenshuishouding AWB.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/AWR/Gegevenshuishouding AWR.xml" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/AWR/Gegevenshuishouding AWR.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/WAA/Gegevenshuishouding WAA.xml" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/WAA/Gegevenshuishouding WAA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/textGen/generated" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/textGen/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/Object__BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/Object__BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/InstantieVanObject_TextGen.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/InstantieVanObject_TextGen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/TabelMetInstanties_TextGen.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/TabelMetInstanties_TextGen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/WaardeVanKenmerk_TextGen.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/WaardeVanKenmerk_TextGen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/textGen/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/Simulatie.mpl" afterPath="$PROJECT_DIR$/languages/Simulatie/Simulatie.mpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/models/editor.mps" afterPath="$PROJECT_DIR$/languages/Simulatie/models/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/models/textGen.mps" afterPath="$PROJECT_DIR$/languages/Simulatie/models/textGen.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/dependencies" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/textGen/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/textGen/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol2_Editor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol2_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/UitTeVoerenHandeling_Editor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/UitTeVoerenHandeling_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/textGen/Gegevenshuishouding_TextGen.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/textGen/Gegevenshuishouding_TextGen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/textGen/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/textGen/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SubjectiefRecht/models/textGen.mps" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/models/textGen.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen.caches/SubjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen.caches/SubjectiefRecht/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen.caches/SubjectiefRecht/textGen/generated" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen.caches/SubjectiefRecht/textGen/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/textGen/Rechtsbetrekking_TextGen.java" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/textGen/Rechtsbetrekking_TextGen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/textGen/Rechtshandeling_TextGen.java" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/textGen/Rechtshandeling_TextGen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/textGen/trace.info" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/textGen/trace.info" />
     </list>
     <ignored path="DeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -130,7 +64,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="5faf82a7-0c9e-48c6-b460-dedea758fca1/r:941450f4-b8dd-404b-a164-fe50674e393a(TempModule5faf82a7-0c9e-48c6-b460-dedea758fca1/TempModel_338839234656366)">
+            <model ref="f2a90e5f-8c74-4d0c-bc91-dcbfcbba22d5/r:3ae2c981-d918-4e23-b05d-1662cca703e6(TempModulef2a90e5f-8c74-4d0c-bc91-dcbfcbba22d5/TempModel_343796002505718)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -160,9 +94,9 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="1f2HX0n0Ry3">
-                <node concept="3balQm" id="1f2HX0n0Ry4" role="aymYE" />
-                <node concept="2Clz$F" id="1f2HX0n0Ry5" role="aymYO">
+              <node concept="aymSD" id="1f2HX0n9WSe">
+                <node concept="3balQm" id="1f2HX0n9WSf" role="aymYE" />
+                <node concept="2Clz$F" id="1f2HX0n9WSg" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
               </node>
@@ -189,48 +123,10 @@
     </search_options>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IBinaireExpressie" pinned="false" current-in-tab="true">
-        <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/IBinaireExpressie">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="295" />
-                    <property name="caretXRelative" value="140" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="name" cellNumber="0" isInList="false">
-                      <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5105771847113355572" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5105771847113355572" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-              <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5105771847113355572" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$mbeddr.github.core.home$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -479,7 +375,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Favorites" />
       <pane id="FileSystem" />
+      <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -505,18 +405,18 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="2c493149-da1d-45e9-8ea2-e0b0cfc3047a(SubjectiefRecht)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:95c613f5-7163-41db-a8d2-c7f5da746212(SubjectiefRecht.textGen) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/SubjectiefRecht/models/textGen.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -536,15 +436,23 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
+              <option name="myItemId" value="2c493149-da1d-45e9-8ea2-e0b0cfc3047a(SubjectiefRecht)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:95c613f5-7163-41db-a8d2-c7f5da746212(SubjectiefRecht.textGen) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/SubjectiefRecht/models/textGen.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rechtsbetrekking" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6331618849999065169" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
         </subPane>
-      </pane>
-      <pane id="Favorites" />
-      <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
-        <subPane />
       </pane>
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
         <subPane />
@@ -598,7 +506,7 @@
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Visualization" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -613,25 +521,23 @@
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3233909" sideWeight="0.6470113" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32237872" sideWeight="0.649722" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9708589" sideWeight="0.41276252" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27158555" sideWeight="0.33037156" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3233909" sideWeight="0.3529887" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.45961228" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3233909" sideWeight="0.350278" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.42649436" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26844585" sideWeight="0.4716981" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27544427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27544427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
@@ -640,7 +546,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.45961228" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -945,82 +853,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Aanpassingen voor Wim" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/WaardeVanKenmerk">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="391" />
-                <property name="caretXRelative" value="128" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:fdc08c05-76c4-4292-b33b-2cf07cac8d95(ObjectiefRecht.textGen)/6075131287478378629" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:fdc08c05-76c4-4292-b33b-2cf07cac8d95(ObjectiefRecht.textGen)/6075131287478378630" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor)/7496157647699367174" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:fdc08c05-76c4-4292-b33b-2cf07cac8d95(ObjectiefRecht.textGen)/6075131287478378629" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://Simulatie/Simulatie.structure/Gegevenshuishouding">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="399" />
-                <property name="caretXRelative" value="156" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor)/7496157647699367174" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7686001861713763261" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor)/7496157647699367174" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://GN.sandbox/GN.WAA/Gegevenshuishouding WAA">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
@@ -3637,6 +3469,76 @@
             <restoreAlways />
           </memento>
           <inspectorMemento currentlyEditedNode="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5105771847113355572" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5105771847113355572" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/IBinaireExpressie">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="279" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_6h6dhy_e2a" cellNumber="0" isInList="false">
+                  <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5105771847113355573" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5105771847113355573" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5105771847113355572" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/IBinaireExpressie">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="279" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_6h6dhy_e2a" cellNumber="0" isInList="false">
+                  <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5105771847113355573" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5105771847113355573" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
