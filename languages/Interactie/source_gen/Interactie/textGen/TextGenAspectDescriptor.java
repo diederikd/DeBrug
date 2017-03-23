@@ -28,12 +28,52 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
       switch (switchIndex) {
         case 0:
           if (true) {
-            return new Formulier_TextGen();
+            return new InteractieDefinitie_TextGen();
           }
           break;
         case 1:
           if (true) {
-            return new InteractieDefinitie_TextGen();
+            return new Kolom_TextGen();
+          }
+          break;
+        case 2:
+          if (true) {
+            return new Presentatie_TextGen();
+          }
+          break;
+        case 3:
+          if (true) {
+            return new PresentatieConstante_TextGen();
+          }
+          break;
+        case 4:
+          if (true) {
+            return new PresentatieKenmerk_TextGen();
+          }
+          break;
+        case 5:
+          if (true) {
+            return new PresentatieLink_TextGen();
+          }
+          break;
+        case 6:
+          if (true) {
+            return new PresentatieObject_TextGen();
+          }
+          break;
+        case 7:
+          if (true) {
+            return new PresentatieRechtsbetrekking_TextGen();
+          }
+          break;
+        case 8:
+          if (true) {
+            return new PresentatieRechtshandeling_TextGen();
+          }
+          break;
+        case 9:
+          if (true) {
+            return new Rij_TextGen();
           }
           break;
         default:
@@ -46,9 +86,9 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public void breakdownToUnits(@NotNull TextGenModelOutline outline) {
     for (SNode root : outline.getModel().getRootNodes()) {
-      if (root.getConcept().equals(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L, "Interactie.structure.Formulier"))) {
-        String fname = getFileName_Formulier(root);
-        String ext = getFileExtension_Formulier(root);
+      if (root.getConcept().equals(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L, "Interactie.structure.Presentatie"))) {
+        String fname = getFileName_Presentatie(root);
+        String ext = getFileExtension_Presentatie(root);
         outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
         continue;
       }
@@ -60,14 +100,14 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
       }
     }
   }
-  private static String getFileName_Formulier(SNode node) {
+  private static String getFileName_Presentatie(SNode node) {
     return SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
   private static String getFileName_InteractieDefinitie(SNode node) {
     return "regelingen";
   }
-  private static String getFileExtension_Formulier(SNode node) {
-    return "html";
+  private static String getFileExtension_Presentatie(SNode node) {
+    return "xml";
   }
   private static String getFileExtension_InteractieDefinitie(SNode node) {
     return "xml";
@@ -80,5 +120,5 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_t8hmqt_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L, "Interactie.structure.Formulier"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L, "Interactie.structure.InteractieDefinitie"));
+  private static final Map<SAbstractConcept, Integer> indices_t8hmqt_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L, "Interactie.structure.InteractieDefinitie"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a29d8L, "Interactie.structure.Kolom"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L, "Interactie.structure.Presentatie"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33e7f5dL, "Interactie.structure.PresentatieConstante"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL, "Interactie.structure.PresentatieKenmerk"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32f3dfaL, "Interactie.structure.PresentatieLink"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a95ffL, "Interactie.structure.PresentatieObject"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa180L, "Interactie.structure.PresentatieRechtsbetrekking"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33ad98eL, "Interactie.structure.PresentatieRechtshandeling"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32dc163L, "Interactie.structure.Rij"));
 }

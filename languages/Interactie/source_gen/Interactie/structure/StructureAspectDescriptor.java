@@ -18,28 +18,38 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(7);
-  /*package*/ final ConceptDescriptor myConceptFormulier = createDescriptorForFormulier();
-  /*package*/ final ConceptDescriptor myConceptFormulierVeld = createDescriptorForFormulierVeld();
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(12);
   /*package*/ final ConceptDescriptor myConceptInteractieDefinitie = createDescriptorForInteractieDefinitie();
+  /*package*/ final ConceptDescriptor myConceptKolom = createDescriptorForKolom();
+  /*package*/ final ConceptDescriptor myConceptPresentatie = createDescriptorForPresentatie();
+  /*package*/ final ConceptDescriptor myConceptPresentatieConstante = createDescriptorForPresentatieConstante();
+  /*package*/ final ConceptDescriptor myConceptPresentatieKenmerk = createDescriptorForPresentatieKenmerk();
+  /*package*/ final ConceptDescriptor myConceptPresentatieLink = createDescriptorForPresentatieLink();
+  /*package*/ final ConceptDescriptor myConceptPresentatieObject = createDescriptorForPresentatieObject();
+  /*package*/ final ConceptDescriptor myConceptPresentatieRechtsbetrekking = createDescriptorForPresentatieRechtsbetrekking();
+  /*package*/ final ConceptDescriptor myConceptPresentatieRechtshandeling = createDescriptorForPresentatieRechtshandeling();
+  /*package*/ final ConceptDescriptor myConceptPresentatieVeld = createDescriptorForPresentatieVeld();
   /*package*/ final ConceptDescriptor myConceptRegeling = createDescriptorForRegeling();
-  /*package*/ final ConceptDescriptor myConceptTypeRadioJaNee = createDescriptorForTypeRadioJaNee();
-  /*package*/ final ConceptDescriptor myConceptTypeText = createDescriptorForTypeText();
-  /*package*/ final ConceptDescriptor myConceptTypeVeld = createDescriptorForTypeVeld();
+  /*package*/ final ConceptDescriptor myConceptRij = createDescriptorForRij();
 
   public StructureAspectDescriptor() {
-    myIndexMap.put(myConceptFormulier.getId(), 0);
-    myIndexMap.put(myConceptFormulierVeld.getId(), 1);
-    myIndexMap.put(myConceptInteractieDefinitie.getId(), 2);
-    myIndexMap.put(myConceptRegeling.getId(), 3);
-    myIndexMap.put(myConceptTypeRadioJaNee.getId(), 4);
-    myIndexMap.put(myConceptTypeText.getId(), 5);
-    myIndexMap.put(myConceptTypeVeld.getId(), 6);
+    myIndexMap.put(myConceptInteractieDefinitie.getId(), 0);
+    myIndexMap.put(myConceptKolom.getId(), 1);
+    myIndexMap.put(myConceptPresentatie.getId(), 2);
+    myIndexMap.put(myConceptPresentatieConstante.getId(), 3);
+    myIndexMap.put(myConceptPresentatieKenmerk.getId(), 4);
+    myIndexMap.put(myConceptPresentatieLink.getId(), 5);
+    myIndexMap.put(myConceptPresentatieObject.getId(), 6);
+    myIndexMap.put(myConceptPresentatieRechtsbetrekking.getId(), 7);
+    myIndexMap.put(myConceptPresentatieRechtshandeling.getId(), 8);
+    myIndexMap.put(myConceptPresentatieVeld.getId(), 9);
+    myIndexMap.put(myConceptRegeling.getId(), 10);
+    myIndexMap.put(myConceptRij.getId(), 11);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptFormulier, myConceptFormulierVeld, myConceptInteractieDefinitie, myConceptRegeling, myConceptTypeRadioJaNee, myConceptTypeText, myConceptTypeVeld);
+    return Arrays.asList(myConceptInteractieDefinitie, myConceptKolom, myConceptPresentatie, myConceptPresentatieConstante, myConceptPresentatieKenmerk, myConceptPresentatieLink, myConceptPresentatieObject, myConceptPresentatieRechtsbetrekking, myConceptPresentatieRechtshandeling, myConceptPresentatieVeld, myConceptRegeling, myConceptRij);
   }
 
   @Override
@@ -51,19 +61,29 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     }
     switch (((int) index)) {
       case 0:
-        return myConceptFormulier;
-      case 1:
-        return myConceptFormulierVeld;
-      case 2:
         return myConceptInteractieDefinitie;
+      case 1:
+        return myConceptKolom;
+      case 2:
+        return myConceptPresentatie;
       case 3:
-        return myConceptRegeling;
+        return myConceptPresentatieConstante;
       case 4:
-        return myConceptTypeRadioJaNee;
+        return myConceptPresentatieKenmerk;
       case 5:
-        return myConceptTypeText;
+        return myConceptPresentatieLink;
       case 6:
-        return myConceptTypeVeld;
+        return myConceptPresentatieObject;
+      case 7:
+        return myConceptPresentatieRechtsbetrekking;
+      case 8:
+        return myConceptPresentatieRechtshandeling;
+      case 9:
+        return myConceptPresentatieVeld;
+      case 10:
+        return myConceptRegeling;
+      case 11:
+        return myConceptRij;
       default:
         throw new IllegalStateException();
     }
@@ -79,25 +99,40 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return (res == null ? -1 : res);
   }
 
-  private static ConceptDescriptor createDescriptorForFormulier() {
-    return new ConceptDescriptorBuilder("Interactie.structure.Formulier", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x70b6c2b5eaa1f1L, "velden", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL), true, true, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "31726144783557105"))).children(new String[]{"velden"}, new boolean[]{true}).rootable().sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "31726144783349621")).create();
-  }
-  private static ConceptDescriptor createDescriptorForFormulierVeld() {
-    return new ConceptDescriptorBuilder("Interactie.structure.FormulierVeld", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0xfdfefdf8693968fL, "referentieNaarKenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "1143896573689960079"))).references("referentieNaarKenmerk").childDescriptors(new ConceptDescriptorBuilder.Link(0x3d2cf44a4b890826L, "type", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907d3L), false, false, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "4408166735220901926"))).children(new String[]{"type"}, new boolean[]{false}).sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "31726144783350478")).create();
-  }
   private static ConceptDescriptor createDescriptorForInteractieDefinitie() {
     return new ConceptDescriptorBuilder("Interactie.structure.InteractieDefinitie", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x544f33b7f1ebe005L, "regelingen", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L), true, true, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476887557"))).children(new String[]{"regelingen"}, new boolean[]{true}).rootable().sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476887556")).create();
   }
+  private static ConceptDescriptor createDescriptorForKolom() {
+    return new ConceptDescriptorBuilder("Interactie.structure.Kolom", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a29d8L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x70b6c2b5eaa1f1L, "velden", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa185L), true, true, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "31726144783557105"))).children(new String[]{"velden"}, new boolean[]{true}).sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314517976")).create();
+  }
+  private static ConceptDescriptor createDescriptorForPresentatie() {
+    return new ConceptDescriptorBuilder("Interactie.structure.Presentatie", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x7b98ef41a32a63e0L, "gegevenshuishouding", MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314532832"))).references("gegevenshuishouding").childDescriptors(new ConceptDescriptorBuilder.Link(0x7b98ef41a32a9fc1L, "presentatieobjecten", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a95ffL), true, true, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314548161")), new ConceptDescriptorBuilder.Link(0x7b98ef41a32fe733L, "presentatieRechtsbetrekking", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa180L), true, false, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314894131")), new ConceptDescriptorBuilder.Link(0x7b98ef41a33ad9fdL, "presentatieRechtshandeling", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33ad98eL), true, false, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328315611645"))).children(new String[]{"presentatieobjecten", "presentatieRechtsbetrekking", "presentatieRechtshandeling"}, new boolean[]{true, false, false}).rootable().sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "31726144783349621")).create();
+  }
+  private static ConceptDescriptor createDescriptorForPresentatieConstante() {
+    return new ConceptDescriptorBuilder("Interactie.structure.PresentatieConstante", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33e7f5dL)).super_("Interactie.structure.PresentatieVeld").version(1).super_(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa185L)).parents("Interactie.structure.PresentatieVeld").parentIds(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa185L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x7b98ef41a33e830bL, "text", new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328315851531"))).properties("text").alias("tekst", "").sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328315850589")).create();
+  }
+  private static ConceptDescriptor createDescriptorForPresentatieKenmerk() {
+    return new ConceptDescriptorBuilder("Interactie.structure.PresentatieKenmerk", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL)).super_("Interactie.structure.PresentatieVeld").version(1).super_(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa185L)).parents("Interactie.structure.PresentatieVeld").parentIds(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa185L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0xfdfefdf8693968fL, "referentieNaarKenmerk", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "1143896573689960079"))).references("referentieNaarKenmerk").sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "31726144783350478")).create();
+  }
+  private static ConceptDescriptor createDescriptorForPresentatieLink() {
+    return new ConceptDescriptorBuilder("Interactie.structure.PresentatieLink", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32f3dfaL)).super_("Interactie.structure.PresentatieVeld").version(1).super_(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa185L)).parents("Interactie.structure.PresentatieVeld").parentIds(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa185L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x7b98ef41a32fa17eL, "link", MetaIdFactory.conceptId(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314876286"))).references("link").sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314850810")).create();
+  }
+  private static ConceptDescriptor createDescriptorForPresentatieObject() {
+    return new ConceptDescriptorBuilder("Interactie.structure.PresentatieObject", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a95ffL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x7b98ef41a32a9600L, "object", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314545664"))).references("object").childDescriptors(new ConceptDescriptorBuilder.Link(0x7b98ef41a32a29daL, "rijen", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32dc163L), true, true, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314517978"))).children(new String[]{"rijen"}, new boolean[]{true}).sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314545663")).create();
+  }
+  private static ConceptDescriptor createDescriptorForPresentatieRechtsbetrekking() {
+    return new ConceptDescriptorBuilder("Interactie.structure.PresentatieRechtsbetrekking", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa180L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x7b98ef41a32fa183L, "rijen", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32dc163L), true, true, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314876291"))).children(new String[]{"rijen"}, new boolean[]{true}).sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314876288")).create();
+  }
+  private static ConceptDescriptor createDescriptorForPresentatieRechtshandeling() {
+    return new ConceptDescriptorBuilder("Interactie.structure.PresentatieRechtshandeling", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33ad98eL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x7b98ef41a33ad98fL, "rijen", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32dc163L), true, true, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328315611535"))).children(new String[]{"rijen"}, new boolean[]{true}).sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328315611534")).create();
+  }
+  private static ConceptDescriptor createDescriptorForPresentatieVeld() {
+    return new ConceptDescriptorBuilder("Interactie.structure.PresentatieVeld", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa185L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314876293")).create();
+  }
   private static ConceptDescriptor createDescriptorForRegeling() {
-    return new ConceptDescriptorBuilder("Interactie.structure.Regeling", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x544f33b7f1ecd0cbL, "regels", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476949195")), new ConceptDescriptorBuilder.Ref(0x544f33b7f1ecd0cdL, "gegevenshuishouding", MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476949197")), new ConceptDescriptorBuilder.Ref(0x544f33b7f1ef7cdcL, "subject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287477124316")), new ConceptDescriptorBuilder.Ref(0x57de6dcc3741bd4fL, "instantieVanSubject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6331618849997307215"))).references("regels", "gegevenshuishouding", "subject", "instantieVanSubject").sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476886896")).create();
+    return new ConceptDescriptorBuilder("Interactie.structure.Regeling", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x544f33b7f1ecd0cbL, "regels", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476949195")), new ConceptDescriptorBuilder.Ref(0x544f33b7f1ecd0cdL, "gegevenshuishouding", MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476949197")), new ConceptDescriptorBuilder.Ref(0x544f33b7f1ef7cdcL, "subject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287477124316")), new ConceptDescriptorBuilder.Ref(0x57de6dcc3741bd4fL, "instantieVanSubject", MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L), false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6331618849997307215")), new ConceptDescriptorBuilder.Ref(0x7b98ef41a33fb66fL, "presentatie", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L), true, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328315930223"))).references("regels", "gegevenshuishouding", "subject", "instantieVanSubject", "presentatie").sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "6075131287476886896")).create();
   }
-  private static ConceptDescriptor createDescriptorForTypeRadioJaNee() {
-    return new ConceptDescriptorBuilder("Interactie.structure.TypeRadioJaNee", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907e2L)).super_("Interactie.structure.TypeVeld").version(1).super_(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907d3L)).parents("Interactie.structure.TypeVeld").parentIds(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907d3L)).sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "4408166735220901858")).create();
-  }
-  private static ConceptDescriptor createDescriptorForTypeText() {
-    return new ConceptDescriptorBuilder("Interactie.structure.TypeText", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907d4L)).super_("Interactie.structure.TypeVeld").version(1).super_(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907d3L)).parents("Interactie.structure.TypeVeld").parentIds(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907d3L)).sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "4408166735220901844")).create();
-  }
-  private static ConceptDescriptor createDescriptorForTypeVeld() {
-    return new ConceptDescriptorBuilder("Interactie.structure.TypeVeld", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907d3L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "4408166735220901843")).create();
+  private static ConceptDescriptor createDescriptorForRij() {
+    return new ConceptDescriptorBuilder("Interactie.structure.Rij", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32dc163L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x7b98ef41a32dc164L, "kolommen", MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a29d8L), true, true, false, new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314753380"))).children(new String[]{"kolommen"}, new boolean[]{true}).sourceNode(new SNodePointer("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)", "8906131328314753379")).create();
   }
 }

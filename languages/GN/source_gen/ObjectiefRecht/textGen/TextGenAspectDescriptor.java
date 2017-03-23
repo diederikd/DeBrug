@@ -8,9 +8,11 @@ import jetbrains.mps.text.rt.TextGenDescriptor;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.text.rt.TextGenModelOutline;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Map;
 import java.util.HashMap;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class TextGenAspectDescriptor extends TextGenAspectBase {
   public TextGenAspectDescriptor() {
@@ -26,35 +28,75 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
       switch (switchIndex) {
         case 0:
           if (true) {
-            return new EnumeratieWaarde_TextGen();
+            return new Context_TextGen();
           }
           break;
         case 1:
           if (true) {
-            return new InstantieVanObject_TextGen();
+            return new Enumeratie_TextGen();
           }
           break;
         case 2:
           if (true) {
-            return new MeervoudigeObjectWaarde_TextGen();
+            return new EnumeratieElement_TextGen();
           }
           break;
         case 3:
           if (true) {
-            return new ObjectWaarde_TextGen();
+            return new EnumeratieWaarde_TextGen();
           }
           break;
         case 4:
           if (true) {
-            return new ReferentieNaarInstantieVanObject_TextGen();
+            return new InstantieVanObject_TextGen();
           }
           break;
         case 5:
           if (true) {
-            return new TabelMetInstanties_TextGen();
+            return new MeervoudigeObjectWaarde_TextGen();
           }
           break;
         case 6:
+          if (true) {
+            return new ObjectWaarde_TextGen();
+          }
+          break;
+        case 7:
+          if (true) {
+            return new Onderwerp_TextGen();
+          }
+          break;
+        case 8:
+          if (true) {
+            return new RechtsSubject_TextGen();
+          }
+          break;
+        case 9:
+          if (true) {
+            return new RechtsgevolgVeroorzakers_TextGen();
+          }
+          break;
+        case 10:
+          if (true) {
+            return new ReferentieNaarInstantieVanObject_TextGen();
+          }
+          break;
+        case 11:
+          if (true) {
+            return new Regel_TextGen();
+          }
+          break;
+        case 12:
+          if (true) {
+            return new TabelMetInstanties_TextGen();
+          }
+          break;
+        case 13:
+          if (true) {
+            return new Toestand_TextGen();
+          }
+          break;
+        case 14:
           if (true) {
             return new WaardeVanKenmerk_TextGen();
           }
@@ -68,6 +110,20 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
 
   @Override
   public void breakdownToUnits(@NotNull TextGenModelOutline outline) {
+    for (SNode root : outline.getModel().getRootNodes()) {
+      if (root.getConcept().equals(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, "ObjectiefRecht.structure.Context"))) {
+        String fname = getFileName_Context(root);
+        String ext = getFileExtension_Context(root);
+        outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
+        continue;
+      }
+    }
+  }
+  private static String getFileName_Context(SNode node) {
+    return SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+  }
+  private static String getFileExtension_Context(SNode node) {
+    return "xml";
   }
   private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
     HashMap<SAbstractConcept, Integer> res = new HashMap<SAbstractConcept, Integer>();
@@ -77,5 +133,5 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_t8hmqt_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7da9e4c64537e68L, "ObjectiefRecht.structure.EnumeratieWaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba22fL, "ObjectiefRecht.structure.MeervoudigeObjectWaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, "ObjectiefRecht.structure.ObjectWaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba231L, "ObjectiefRecht.structure.ReferentieNaarInstantieVanObject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, "ObjectiefRecht.structure.TabelMetInstanties"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, "ObjectiefRecht.structure.WaardeVanKenmerk"));
+  private static final Map<SAbstractConcept, Integer> indices_t8hmqt_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, "ObjectiefRecht.structure.Context"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L, "ObjectiefRecht.structure.Enumeratie"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b8L, "ObjectiefRecht.structure.EnumeratieElement"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7da9e4c64537e68L, "ObjectiefRecht.structure.EnumeratieWaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba22fL, "ObjectiefRecht.structure.MeervoudigeObjectWaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, "ObjectiefRecht.structure.ObjectWaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, "ObjectiefRecht.structure.RechtsgevolgVeroorzakers"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba231L, "ObjectiefRecht.structure.ReferentieNaarInstantieVanObject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5ffL, "ObjectiefRecht.structure.Regel"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, "ObjectiefRecht.structure.TabelMetInstanties"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3a8c9b9L, "ObjectiefRecht.structure.Toestand"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, "ObjectiefRecht.structure.WaardeVanKenmerk"));
 }

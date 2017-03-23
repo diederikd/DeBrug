@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<presentatie>
+<object type='rechtssubject' naam='werknemer' >
+      <row>
+        <column>
+          <xpath>kenmerk[@naam='voornamen']/text()</xpath>
+          <string>(</string>
+          <xpath>kenmerk[@naam='roepnaam']/text()</xpath>
+          <string>)</string>
+          <xpath>kenmerk[@naam='achternaam']/text()</xpath>
+        </column>
+        <column>
+          <xpath>kenmerk[@naam='adres werknemer']/text()</xpath>
+          <xpath>kenmerk[@naam='huisnummer werknemer']/text()</xpath>
+          <string>, </string>
+          <xpath>kenmerk[@naam='postcode van de werknemer']/text()</xpath>
+          <xpath>kenmerk[@naam='woonplaats']/text()</xpath>
+        </column>
+        <column>
+          <string>Nationaliteit:</string>
+          <xpath>kenmerk[@naam='nationaliteit']/text()</xpath>
+          <string> - Paspoortnummer:</string>
+          <xpath>kenmerk[@naam='paspoortnummer']/text()</xpath>
+          <xpath>kenmerk[@naam='identiteitskaartnummer']/text()</xpath>
+        </column>
+      </row>
+      <row>
+        <column>
+          <string>BSN:</string>
+          <xpath>kenmerk[@naam='burgerservicenummer']/text()</xpath>
+        </column>
+        <column>
+          <string>Burgerlijke staat:</string>
+          <xpath>kenmerk[@naam='burgerlijke staat']/text()</xpath>
+        </column>
+        <column>
+          <string>Miitair:</string>
+          <xpath>kenmerk[@naam='militair ambtenaar']/text()</xpath>
+        </column>
+      </row>
+</object>    <object type='rechtsbetrekking' naam='' >
+            <row>
+        <column>
+          <xpath>kenmerk[@naam='objectieveRechtsbetrekking']/text()</xpath>
+        </column>
+        <column>
+          <xpath>kenmerk[@naam='onderwerp']/text()</xpath>
+        </column>
+        <column>
+          <string>Geldig van:</string>
+          <xpath>kenmerk[@naam='geldigVan']/text()</xpath>
+          <string>Geldig tot:</string>
+          <xpath>kenmerk[@naam='geldigTot']/text()</xpath>
+          <string>== Recht:</string>
+          <xpath>kenmerk[@naam='rechtssubjectMetRecht']/text()</xpath>
+          <string> == Plicht:</string>
+          <xpath>kenmerk[@naam='rechtssubjectMetPlicht']/text()</xpath>
+        </column>
+      </row>
+</object>    <object type='rechtshandeling' naam='' >
+            <row>
+        <column>
+          <xpath>kenmerk[@naam='onderwerp']/text()</xpath>
+        </column>
+        <column>
+          <xpath>kenmerk[@naam='actor']/text()</xpath>
+        </column>
+        <column>
+          <xpath>kenmerk[@naam='uitgevoerdOp']/text()</xpath>
+        </column>
+      </row>
+</object></presentatie>

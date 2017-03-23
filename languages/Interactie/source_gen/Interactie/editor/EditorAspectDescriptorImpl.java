@@ -22,32 +22,57 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       switch (switchIndex) {
         case 0:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Formulier_Editor());
+            return Collections.<ConceptEditor>singletonList(new InteractieDefinitie_Editor());
           }
           break;
         case 1:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new FormulierVeld_Editor());
+            return Collections.<ConceptEditor>singletonList(new Kolom_Editor());
           }
           break;
         case 2:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new InteractieDefinitie_Editor());
+            return Collections.<ConceptEditor>singletonList(new Presentatie_Editor());
           }
           break;
         case 3:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Regeling_Editor());
+            return Collections.<ConceptEditor>singletonList(new PresentatieConstante_Editor());
           }
           break;
         case 4:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new TypeRadioJaNee_Editor());
+            return Collections.<ConceptEditor>singletonList(new PresentatieKenmerk_Editor());
           }
           break;
         case 5:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new TypeText_Editor());
+            return Collections.<ConceptEditor>singletonList(new PresentatieLink_Editor());
+          }
+          break;
+        case 6:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new PresentatieObject_Editor());
+          }
+          break;
+        case 7:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new PresentatieRechtsbetrekking_Editor());
+          }
+          break;
+        case 8:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new PresentatieRechtshandeling_Editor());
+          }
+          break;
+        case 9:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new Regeling_Editor());
+          }
+          break;
+        case 10:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new Rij_Editor());
           }
           break;
         default:
@@ -66,5 +91,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L, "Interactie.structure.Formulier"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL, "Interactie.structure.FormulierVeld"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L, "Interactie.structure.InteractieDefinitie"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L, "Interactie.structure.Regeling"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907e2L, "Interactie.structure.TypeRadioJaNee"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x3d2cf44a4b8907d4L, "Interactie.structure.TypeText"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L, "Interactie.structure.InteractieDefinitie"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a29d8L, "Interactie.structure.Kolom"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L, "Interactie.structure.Presentatie"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33e7f5dL, "Interactie.structure.PresentatieConstante"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL, "Interactie.structure.PresentatieKenmerk"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32f3dfaL, "Interactie.structure.PresentatieLink"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a95ffL, "Interactie.structure.PresentatieObject"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa180L, "Interactie.structure.PresentatieRechtsbetrekking"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33ad98eL, "Interactie.structure.PresentatieRechtshandeling"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L, "Interactie.structure.Regeling"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32dc163L, "Interactie.structure.Rij"));
 }

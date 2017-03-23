@@ -15,26 +15,41 @@
     <file name="BehaviorAspectDescriptor.java">
       <unit at="14,0,48,0" name="Interactie.behavior.BehaviorAspectDescriptor" />
     </file>
-    <file name="FormulierVeld_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="Interactie.behavior.FormulierVeld_BehaviorDescriptor" />
-    </file>
-    <file name="Formulier_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="Interactie.behavior.Formulier_BehaviorDescriptor" />
-    </file>
     <file name="InteractieDefinitie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Interactie.behavior.InteractieDefinitie_BehaviorDescriptor" />
+    </file>
+    <file name="Kolom_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.Kolom_BehaviorDescriptor" />
+    </file>
+    <file name="PresentatieConstante_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.PresentatieConstante_BehaviorDescriptor" />
+    </file>
+    <file name="PresentatieKenmerk_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.PresentatieKenmerk_BehaviorDescriptor" />
+    </file>
+    <file name="PresentatieLink_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.PresentatieLink_BehaviorDescriptor" />
+    </file>
+    <file name="PresentatieObject_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.PresentatieObject_BehaviorDescriptor" />
+    </file>
+    <file name="PresentatieRechtsbetrekking_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.PresentatieRechtsbetrekking_BehaviorDescriptor" />
+    </file>
+    <file name="PresentatieRechtshandeling_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.PresentatieRechtshandeling_BehaviorDescriptor" />
+    </file>
+    <file name="PresentatieVeld_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.PresentatieVeld_BehaviorDescriptor" />
+    </file>
+    <file name="Presentatie_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.Presentatie_BehaviorDescriptor" />
     </file>
     <file name="Regeling_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Interactie.behavior.Regeling_BehaviorDescriptor" />
     </file>
-    <file name="TypeRadioJaNee_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="Interactie.behavior.TypeRadioJaNee_BehaviorDescriptor" />
-    </file>
-    <file name="TypeText_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="Interactie.behavior.TypeText_BehaviorDescriptor" />
-    </file>
-    <file name="TypeVeld_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="Interactie.behavior.TypeVeld_BehaviorDescriptor" />
+    <file name="Rij_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.Rij_BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:09efe9da-b1e8-41d8-ac88-7bd3864d8106(Interactie.behavior)/1423902536563710198">

@@ -12,14 +12,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBehaviorAspectDescriptor" />
   </dependency>
-  <dependency className="Interactie.behavior.FormulierVeld_BehaviorDescriptor" file="FormulierVeld_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="Interactie.behavior.Formulier_BehaviorDescriptor" file="Formulier_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="Interactie.behavior.InteractieDefinitie_BehaviorDescriptor" file="InteractieDefinitie_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -47,19 +39,47 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
+  <dependency className="Interactie.behavior.Kolom_BehaviorDescriptor" file="Kolom_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Interactie.behavior.PresentatieConstante_BehaviorDescriptor" file="PresentatieConstante_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Interactie.behavior.PresentatieKenmerk_BehaviorDescriptor" file="PresentatieKenmerk_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Interactie.behavior.PresentatieLink_BehaviorDescriptor" file="PresentatieLink_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Interactie.behavior.PresentatieObject_BehaviorDescriptor" file="PresentatieObject_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Interactie.behavior.PresentatieRechtsbetrekking_BehaviorDescriptor" file="PresentatieRechtsbetrekking_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Interactie.behavior.PresentatieRechtshandeling_BehaviorDescriptor" file="PresentatieRechtshandeling_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Interactie.behavior.PresentatieVeld_BehaviorDescriptor" file="PresentatieVeld_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Interactie.behavior.Presentatie_BehaviorDescriptor" file="Presentatie_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="Interactie.behavior.Regeling_BehaviorDescriptor" file="Regeling_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="Interactie.behavior.TypeRadioJaNee_BehaviorDescriptor" file="TypeRadioJaNee_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="Interactie.behavior.TypeText_BehaviorDescriptor" file="TypeText_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="Interactie.behavior.TypeVeld_BehaviorDescriptor" file="TypeVeld_BehaviorDescriptor.java">
+  <dependency className="Interactie.behavior.Rij_BehaviorDescriptor" file="Rij_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

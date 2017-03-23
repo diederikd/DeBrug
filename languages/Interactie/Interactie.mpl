@@ -56,6 +56,7 @@
     <dependency reexport="false">8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)</dependency>
     <dependency reexport="false">15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
+    <dependency reexport="false">2c493149-da1d-45e9-8ea2-e0b0cfc3047a(SubjectiefRecht)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

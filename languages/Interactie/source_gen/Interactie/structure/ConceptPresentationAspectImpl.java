@@ -9,13 +9,18 @@ import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private final ConceptPresentation props_Formulier = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FormulierVeld = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_InteractieDefinitie = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Kolom = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Presentatie = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PresentatieConstante = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PresentatieKenmerk = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PresentatieLink = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PresentatieObject = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PresentatieRechtsbetrekking = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PresentatieRechtshandeling = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PresentatieVeld = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Regeling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TypeRadioJaNee = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TypeText = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TypeVeld = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Rij = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -23,19 +28,29 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case 0:
-        return props_Formulier;
-      case 1:
-        return props_FormulierVeld;
-      case 2:
         return props_InteractieDefinitie;
+      case 1:
+        return props_Kolom;
+      case 2:
+        return props_Presentatie;
       case 3:
-        return props_Regeling;
+        return props_PresentatieConstante;
       case 4:
-        return props_TypeRadioJaNee;
+        return props_PresentatieKenmerk;
       case 5:
-        return props_TypeText;
+        return props_PresentatieLink;
       case 6:
-        return props_TypeVeld;
+        return props_PresentatieObject;
+      case 7:
+        return props_PresentatieRechtsbetrekking;
+      case 8:
+        return props_PresentatieRechtshandeling;
+      case 9:
+        return props_PresentatieVeld;
+      case 10:
+        return props_Regeling;
+      case 11:
+        return props_Rij;
     }
     throw new IllegalStateException("Unknown concept " + c);
   }
