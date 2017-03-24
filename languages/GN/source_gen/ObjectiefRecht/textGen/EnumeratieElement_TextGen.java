@@ -10,6 +10,6 @@ public class EnumeratieElement_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    ObjectiefRechtTextgen.conceptTextgen(ctx.getPrimaryInput(), ctx);
+    GenericXMLTextgen.conceptTextgen(ctx.getPrimaryInput(), ctx);
   }
 }

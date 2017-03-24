@@ -14,7 +14,7 @@ public class Enumeratie_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    ObjectiefRechtTextgen.conceptTextgen(ctx.getPrimaryInput(), ctx);
+    GenericXMLTextgen.conceptTextgen(ctx.getPrimaryInput(), ctx);
     for (SNode child : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d710b5L, 0x67229afa69d710c7L, "elementen")))) {
       ctx.getBuffer().area().increaseIndent();
       tgs.indent();
