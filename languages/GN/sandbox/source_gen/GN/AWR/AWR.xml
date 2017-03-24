@@ -1,312 +1,503 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <context>
-<enumeraties>
-    <concept name='RechtsSubject'>
+<rechtssubjecten>
+    <node role='rechtssubjecten'>
+    <node type='RechtsSubject'>
     <node name='Belastingplichtige'>
-      <property name='definitie'>
-      <property value=''>
-      <property name='alias'>
-      <property value=''>
-      <property name='name'>
-      <property value='Belastingplichtige'>
-      <concept name='Datum'>
-        <property name='dag'>
-        <property value='1'>
-        <property name='maand'>
-        <property value='1'>
-        <property name='jaar'>
-        <property value='1000'>
-        <property name='alias'>
-        <property value=''>
-    <concept name='RechtsSubject'>
+      <properties>
+          <property name='definitie'></property>
+          <property name='alias'></property>
+          <property name='name'>Belastingplichtige</property>
+      </properties>
+      <children>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>1000</property>
+              <property name='alias'></property>
+          </properties>
+      </children>
+    <node role='rechtssubjecten'>
+    <node type='RechtsSubject'>
     <node name='Inspecteur'>
-      <property name='definitie'>
-      <property value=''>
-      <property name='alias'>
-      <property value=''>
-      <property name='name'>
-      <property value='Inspecteur'>
-      <concept name='Datum'>
-        <property name='dag'>
-        <property value='1'>
-        <property name='maand'>
-        <property value='1'>
-        <property name='jaar'>
-        <property value='1000'>
-        <property name='alias'>
-        <property value=''>
-    <concept name='RechtsSubject'>
+      <properties>
+          <property name='definitie'></property>
+          <property name='alias'></property>
+          <property name='name'>Inspecteur</property>
+      </properties>
+      <children>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>1000</property>
+              <property name='alias'></property>
+          </properties>
+      </children>
+    <node role='rechtssubjecten'>
+    <node type='RechtsSubject'>
     <node name='Persoon'>
-      <property name='definitie'>
-      <property value=''>
-      <property name='alias'>
-      <property value=''>
-      <property name='name'>
-      <property value='Persoon'>
-      <concept name='Datum'>
-        <property name='dag'>
-        <property value='1'>
-        <property name='maand'>
-        <property value='1'>
-        <property name='jaar'>
-        <property value='1000'>
-        <property name='alias'>
-        <property value=''>
-    <concept name='Onderwerp'>
+      <properties>
+          <property name='definitie'></property>
+          <property name='alias'></property>
+          <property name='name'>Persoon</property>
+      </properties>
+      <children>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>1000</property>
+              <property name='alias'></property>
+          </properties>
+      </children>
+</rechtssubjecten>
+<onderwerpen>
+    <node role='onderwerpen'>
+    <node type='Onderwerp'>
     <node name='Uitnodiging tot het doen van aangifte'>
-      <property name='alias'>
-      <property value=''>
-      <property name='name'>
-      <property value='Uitnodiging tot het doen van aangifte'>
-      <concept name='Datum'>
-        <property name='dag'>
-        <property value='1'>
-        <property name='maand'>
-        <property value='1'>
-        <property name='jaar'>
-        <property value='1000'>
-        <property name='alias'>
-        <property value=''>
-    <concept name='Onderwerp'>
+      <properties>
+          <property name='alias'></property>
+          <property name='name'>Uitnodiging tot het doen van aangifte</property>
+      </properties>
+      <children>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>1000</property>
+              <property name='alias'></property>
+          </properties>
+      </children>
+    <node role='onderwerpen'>
+    <node type='Onderwerp'>
     <node name='Verzoek om te worden uitgenodigd'>
-      <property name='alias'>
-      <property value=''>
-      <property name='name'>
-      <property value='Verzoek om te worden uitgenodigd'>
-      <concept name='Datum'>
-        <property name='dag'>
-        <property value='1'>
-        <property name='maand'>
-        <property value='1'>
-        <property name='jaar'>
-        <property value='1000'>
-        <property name='alias'>
-        <property value=''>
-    <concept name='Onderwerp'>
+      <properties>
+          <property name='alias'></property>
+          <property name='name'>Verzoek om te worden uitgenodigd</property>
+      </properties>
+      <children>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>1000</property>
+              <property name='alias'></property>
+          </properties>
+      </children>
+    <node role='onderwerpen'>
+    <node type='Onderwerp'>
     <node name='Aangifte'>
-      <property name='alias'>
-      <property value=''>
-      <property name='name'>
-      <property value='Aangifte'>
-      <concept name='Datum'>
-        <property name='dag'>
-        <property value='1'>
-        <property name='maand'>
-        <property value='1'>
-        <property name='jaar'>
-        <property value='1000'>
-        <property name='alias'>
-        <property value=''>
-    <concept name='Onderwerp'>
+      <properties>
+          <property name='alias'></property>
+          <property name='name'>Aangifte</property>
+      </properties>
+      <children>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>1000</property>
+              <property name='alias'></property>
+          </properties>
+      </children>
+    <node role='onderwerpen'>
+    <node type='Onderwerp'>
     <node name='Aanslag'>
-      <property name='alias'>
-      <property value=''>
-      <property name='name'>
-      <property value='Aanslag'>
-      <concept name='Datum'>
-        <property name='dag'>
-        <property value='1'>
-        <property name='maand'>
-        <property value='1'>
-        <property name='jaar'>
-        <property value='1000'>
-        <property name='alias'>
-        <property value=''>
+      <properties>
+          <property name='alias'></property>
+          <property name='name'>Aanslag</property>
+      </properties>
+      <children>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>1000</property>
+              <property name='alias'></property>
+          </properties>
+      </children>
+</onderwerpen>
+<enumeraties>
 </enumeraties>
 <rechtsbetrekkingen>
-      <concept name='OptioneleBevoegdheidOptioneleGehoudenheid'>
-      <node name='Bevoegdheid tot het uitnodigen tot het doen van aangifte'>
-        <property name='initieel'>
-        <property value='true'>
-        <property name='alias'>
-        <property value=''>
-        <property name='name'>
-        <property value='Bevoegdheid tot het uitnodigen tot het doen van aangifte'>
-        <concept name='VrijeTekst'>
+    <node role='toestanden'>
+    <node type='OptioneleBevoegdheidOptioneleGehoudenheid'>
+    <node name='Bevoegdheid tot het uitnodigen tot het doen van aangifte'>
+      <properties>
+          <property name='initieel'>true</property>
+          <property name='alias'></property>
+          <property name='name'>Bevoegdheid tot het uitnodigen tot het doen van aangifte</property>
+      </properties>
+      <children>
+        <node role='GeldigVan'>
+        <node type='VrijeTekst'>
         <node name='Ingangsdatum van de wet'>
-          <property name='alias'>
-          <property value=''>
-          <property name='name'>
-          <property value='Ingangsdatum van de wet'>
-        <concept name='Datum'>
-          <property name='dag'>
-          <property value='1'>
-          <property name='maand'>
-          <property value='1'>
-          <property name='jaar'>
-          <property value='2000'>
-          <property name='alias'>
-          <property value=''>
-        <concept name='Artikel'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>Ingangsdatum van de wet</property>
+          </properties>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>2000</property>
+              <property name='alias'></property>
+          </properties>
+        <node role='bron'>
+        <node type='Artikel'>
         <node name='AWR - artikel 6-1'>
-          <property name='alias'>
-          <property value=''>
-          <property name='name'>
-          <property value='AWR - artikel 6-1'>
-      <concept name='OptioneleBevoegdheidOptioneleGehoudenheid'>
-      <node name='De bevoegdheid om te verzoeken om te worden uitgenodigd'>
-        <property name='initieel'>
-        <property value='true'>
-        <property name='alias'>
-        <property value=''>
-        <property name='name'>
-        <property value='De bevoegdheid om te verzoeken om te worden uitgenodigd'>
-        <concept name='VrijeTekst'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>AWR - artikel 6-1</property>
+          </properties>
+      </children>
+      <references>
+        <node role='GeldigVan'>
+        <node type='VrijeTekst'>
+        <node name='Ingangsdatum van de wet'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>Ingangsdatum van de wet</property>
+          </properties>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>2000</property>
+              <property name='alias'></property>
+          </properties>
+        <node role='bron'>
+        <node type='Artikel'>
+        <node name='AWR - artikel 6-1'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>AWR - artikel 6-1</property>
+          </properties>
+      </references>
+    <node role='toestanden'>
+    <node type='OptioneleBevoegdheidOptioneleGehoudenheid'>
+    <node name='De bevoegdheid om te verzoeken om te worden uitgenodigd'>
+      <properties>
+          <property name='initieel'>true</property>
+          <property name='alias'></property>
+          <property name='name'>De bevoegdheid om te verzoeken om te worden uitgenodigd</property>
+      </properties>
+      <children>
+        <node role='GeldigVan'>
+        <node type='VrijeTekst'>
         <node name='ingangsdatum van de wet'>
-          <property name='alias'>
-          <property value=''>
-          <property name='name'>
-          <property value='ingangsdatum van de wet'>
-        <concept name='Datum'>
-          <property name='dag'>
-          <property value='1'>
-          <property name='maand'>
-          <property value='1'>
-          <property name='jaar'>
-          <property value='2000'>
-          <property name='alias'>
-          <property value=''>
-        <concept name='Artikel'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>ingangsdatum van de wet</property>
+          </properties>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>2000</property>
+              <property name='alias'></property>
+          </properties>
+        <node role='bron'>
+        <node type='Artikel'>
         <node name='AWR - artikel 6-2'>
-          <property name='alias'>
-          <property value=''>
-          <property name='name'>
-          <property value='AWR - artikel 6-2'>
-      <concept name='VerplichteBevoegdheidVerplichteGehoudenheid'>
-      <node name='Verplichting tot het uitnodigen tot het doen van aangifte'>
-        <property name='initieel'>
-        <property value='false'>
-        <property name='alias'>
-        <property value=''>
-        <property name='name'>
-        <property value='Verplichting tot het uitnodigen tot het doen van aangifte'>
-        <concept name='VrijeTekst'>
-        <node name='datum indienen verzoek'>
-          <property name='alias'>
-          <property value=''>
-          <property name='name'>
-          <property value='datum indienen verzoek'>
-        <concept name='Datum'>
-          <property name='dag'>
-          <property value='1'>
-          <property name='maand'>
-          <property value='1'>
-          <property name='jaar'>
-          <property value='2000'>
-          <property name='alias'>
-          <property value=''>
-        <concept name='ReferentieNaarArtikel'>
-          <property name='alias'>
-          <property value=''>
-      <concept name='VerplichteBevoegdheidVerplichteGehoudenheid'>
-      <node name='De verplichting om te verzoeken om te worden uitgenodigd'>
-        <property name='initieel'>
-        <property value='true'>
-        <property name='alias'>
-        <property value=''>
-        <property name='name'>
-        <property value='De verplichting om te verzoeken om te worden uitgenodigd'>
-        <concept name='Artikel'>
-        <node name='AWR - artikel 6-3'>
-          <property name='alias'>
-          <property value=''>
-          <property name='name'>
-          <property value='AWR - artikel 6-3'>
-        <concept name='Datum'>
-          <property name='dag'>
-          <property value='1'>
-          <property name='maand'>
-          <property value='1'>
-          <property name='jaar'>
-          <property value='1000'>
-          <property name='alias'>
-          <property value=''>
-        <concept name='VrijeTekst'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>AWR - artikel 6-2</property>
+          </properties>
+      </children>
+      <references>
+        <node role='GeldigVan'>
+        <node type='VrijeTekst'>
         <node name='ingangsdatum van de wet'>
-          <property name='alias'>
-          <property value=''>
-          <property name='name'>
-          <property value='ingangsdatum van de wet'>
-        <concept name='Voorwaarden'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>ingangsdatum van de wet</property>
+          </properties>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>2000</property>
+              <property name='alias'></property>
+          </properties>
+        <node role='bron'>
+        <node type='Artikel'>
+        <node name='AWR - artikel 6-2'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>AWR - artikel 6-2</property>
+          </properties>
+      </references>
+    <node role='toestanden'>
+    <node type='VerplichteBevoegdheidVerplichteGehoudenheid'>
+    <node name='Verplichting tot het uitnodigen tot het doen van aangifte'>
+      <properties>
+          <property name='initieel'>false</property>
+          <property name='alias'></property>
+          <property name='name'>Verplichting tot het uitnodigen tot het doen van aangifte</property>
+      </properties>
+      <children>
+        <node role='GeldigVan'>
+        <node type='VrijeTekst'>
+        <node name='datum indienen verzoek'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>datum indienen verzoek</property>
+          </properties>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>2000</property>
+              <property name='alias'></property>
+          </properties>
+        <node role='bron'>
+        <node type='ReferentieNaarArtikel'>
+          <properties>
+              <property name='alias'></property>
+          </properties>
+          <references>
+          </references>
+      </children>
+      <references>
+        <node role='GeldigVan'>
+        <node type='VrijeTekst'>
+        <node name='datum indienen verzoek'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>datum indienen verzoek</property>
+          </properties>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>2000</property>
+              <property name='alias'></property>
+          </properties>
+        <node role='bron'>
+        <node type='ReferentieNaarArtikel'>
+          <properties>
+              <property name='alias'></property>
+          </properties>
+          <references>
+          </references>
+      </references>
+    <node role='toestanden'>
+    <node type='VerplichteBevoegdheidVerplichteGehoudenheid'>
+    <node name='De verplichting om te verzoeken om te worden uitgenodigd'>
+      <properties>
+          <property name='initieel'>true</property>
+          <property name='alias'></property>
+          <property name='name'>De verplichting om te verzoeken om te worden uitgenodigd</property>
+      </properties>
+      <children>
+        <node role='bron'>
+        <node type='Artikel'>
+        <node name='AWR - artikel 6-3'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>AWR - artikel 6-3</property>
+          </properties>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>1000</property>
+              <property name='alias'></property>
+          </properties>
+        <node role='GeldigVan'>
+        <node type='VrijeTekst'>
+        <node name='ingangsdatum van de wet'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>ingangsdatum van de wet</property>
+          </properties>
+        <node role='Voorwaarden'>
+        <node type='Voorwaarden'>
         <node name=''>
-          <property name='alias'>
-          <property value=''>
-          <property name='name'>
-          <property value=''>
-          <concept name='MaterieleVoorwaarde'>
-          <node name='De bij Ministeriele regeling vastgestelde voorwaarden'>
-            <property name='alias'>
-            <property value=''>
-            <property name='name'>
-            <property value='De bij Ministeriele regeling vastgestelde voorwaarden'>
-          <concept name='ConditieAlle'>
-            <property name='alias'>
-            <property value=''>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'></property>
+          </properties>
+          <children>
+            <node role='voorwaarden'>
+            <node type='MaterieleVoorwaarde'>
+            <node name='De bij Ministeriele regeling vastgestelde voorwaarden'>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>De bij Ministeriele regeling vastgestelde voorwaarden</property>
+              </properties>
+            <node role='conditie'>
+            <node type='ConditieAlle'>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+          </children>
+      </children>
+      <references>
+        <node role='bron'>
+        <node type='Artikel'>
+        <node name='AWR - artikel 6-3'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>AWR - artikel 6-3</property>
+          </properties>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>1000</property>
+              <property name='alias'></property>
+          </properties>
+        <node role='GeldigVan'>
+        <node type='VrijeTekst'>
+        <node name='ingangsdatum van de wet'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>ingangsdatum van de wet</property>
+          </properties>
+        <node role='Voorwaarden'>
+        <node type='Voorwaarden'>
+        <node name=''>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'></property>
+          </properties>
+          <children>
+            <node role='voorwaarden'>
+            <node type='MaterieleVoorwaarde'>
+            <node name='De bij Ministeriele regeling vastgestelde voorwaarden'>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>De bij Ministeriele regeling vastgestelde voorwaarden</property>
+              </properties>
+            <node role='conditie'>
+            <node type='ConditieAlle'>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+          </children>
+      </references>
 </rechtsbetrekkingen>
 <rechtsgevolgveroorzakers>
-      <concept name='Rechtshandeling'>
-      <node name='Uitnodigen tot het doen van aangifte'>
-        <property name='alias'>
-        <property value=''>
-        <property name='name'>
-        <property value='Uitnodigen tot het doen van aangifte'>
-        <concept name='ReferentieNaarRechtssubject'>
-          <property name='alias'>
-          <property value=''>
-        <concept name='Datum'>
-          <property name='dag'>
-          <property value='1'>
-          <property name='maand'>
-          <property value='1'>
-          <property name='jaar'>
-          <property value='1000'>
-          <property name='alias'>
-          <property value=''>
-        <concept name='Rechtsgevolg'>
+    <node role='overgangen'>
+    <node type='Rechtshandeling'>
+    <node name='Uitnodigen tot het doen van aangifte'>
+      <properties>
+          <property name='alias'></property>
+          <property name='name'>Uitnodigen tot het doen van aangifte</property>
+      </properties>
+      <children>
+        <node role='rechtssubject'>
+        <node type='ReferentieNaarRechtssubject'>
+          <properties>
+              <property name='alias'></property>
+          </properties>
+          <references>
+          </references>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>1000</property>
+              <property name='alias'></property>
+          </properties>
+        <node role='heeftAlsGevolg'>
+        <node type='Rechtsgevolg'>
         <node name='uitgenodigd tot het doen van aangifte'>
-          <property name='alias'>
-          <property value=''>
-          <property name='name'>
-          <property value='uitgenodigd tot het doen van aangifte'>
-          <concept name='ReferentieNaarRechtsbetrekking'>
-            <property name='alias'>
-            <property value=''>
-          <concept name='ReferentieNaarRechtsbetrekking'>
-            <property name='alias'>
-            <property value=''>
-          <concept name='ReferentieNaarRechtsbetrekking'>
-            <property name='alias'>
-            <property value=''>
-      <concept name='Rechtshandeling'>
-      <node name='Indienen van een verzoek om te worden uitgenodigd'>
-        <property name='alias'>
-        <property value=''>
-        <property name='name'>
-        <property value='Indienen van een verzoek om te worden uitgenodigd'>
-        <concept name='ReferentieNaarRechtssubject'>
-          <property name='alias'>
-          <property value=''>
-        <concept name='Datum'>
-          <property name='dag'>
-          <property value='1'>
-          <property name='maand'>
-          <property value='1'>
-          <property name='jaar'>
-          <property value='1000'>
-          <property name='alias'>
-          <property value=''>
-        <concept name='Rechtsgevolg'>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>uitgenodigd tot het doen van aangifte</property>
+          </properties>
+          <children>
+            <node role='EindigendeRechtsbetrekkingen'>
+            <node type='ReferentieNaarRechtsbetrekking'>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+              </references>
+            <node role='EindigendeRechtsbetrekkingen'>
+            <node type='ReferentieNaarRechtsbetrekking'>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+              </references>
+            <node role='EindigendeRechtsbetrekkingen'>
+            <node type='ReferentieNaarRechtsbetrekking'>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+              </references>
+          </children>
+      </children>
+    <node role='overgangen'>
+    <node type='Rechtshandeling'>
+    <node name='Indienen van een verzoek om te worden uitgenodigd'>
+      <properties>
+          <property name='alias'></property>
+          <property name='name'>Indienen van een verzoek om te worden uitgenodigd</property>
+      </properties>
+      <children>
+        <node role='rechtssubject'>
+        <node type='ReferentieNaarRechtssubject'>
+          <properties>
+              <property name='alias'></property>
+          </properties>
+          <references>
+          </references>
+        <node role='brongeldigVan'>
+        <node type='Datum'>
+          <properties>
+              <property name='dag'>1</property>
+              <property name='maand'>1</property>
+              <property name='jaar'>1000</property>
+              <property name='alias'></property>
+          </properties>
+        <node role='heeftAlsGevolg'>
+        <node type='Rechtsgevolg'>
         <node name='verzoek ingediend'>
-          <property name='alias'>
-          <property value=''>
-          <property name='name'>
-          <property value='verzoek ingediend'>
-          <concept name='ReferentieNaarRechtsbetrekking'>
-            <property name='alias'>
-            <property value=''>
-        <concept name='ReferentieNaarArtikel'>
-          <property name='alias'>
-          <property value=''>
+          <properties>
+              <property name='alias'></property>
+              <property name='name'>verzoek ingediend</property>
+          </properties>
+          <children>
+            <node role='NieuweRechtsbetrekkingen'>
+            <node type='ReferentieNaarRechtsbetrekking'>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+              </references>
+          </children>
+        <node role='bron'>
+        <node type='ReferentieNaarArtikel'>
+          <properties>
+              <property name='alias'></property>
+          </properties>
+          <references>
+          </references>
+      </children>
 </rechtsgevolgveroorzakers>
 <regels>
 </regels>
