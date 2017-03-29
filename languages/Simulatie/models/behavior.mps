@@ -339,7 +339,7 @@
               <ref role="3cqZAo" node="5FFw3Y4clfr" resolve="simulatie" />
             </node>
             <node concept="2qgKlT" id="5FFw3Y4c4nz" role="2OqNvi">
-              <ref role="37wK5l" node="3d6QfrgEDkp" resolve="Reset" />
+              <ref role="37wK5l" node="3d6QfrgEDkp" resolve="ResetSimulatie" />
             </node>
           </node>
         </node>
@@ -1357,7 +1357,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="3d6QfrgEDkp" role="13h7CS">
-      <property role="TrG5h" value="Reset" />
+      <property role="TrG5h" value="ResetSimulatie" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="1VomLPHGTQk" role="3clF47">
@@ -1442,12 +1442,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2rhLMRp46eK" role="3cqZAp" />
-        <node concept="3SKdUt" id="2rhLMRp46eL" role="3cqZAp">
-          <node concept="3SKdUq" id="2rhLMRp46eM" role="3SKWNk">
-            <property role="3SKdUp" value="Migratie naar uitvoerbarehandelingen2" />
-          </node>
-        </node>
         <node concept="3clFbF" id="2rhLMRp46eN" role="3cqZAp">
           <node concept="2OqwBi" id="2rhLMRp46eO" role="3clFbG">
             <node concept="2OqwBi" id="2rhLMRp46eP" role="2Oq$k0">
@@ -1461,102 +1455,7 @@
             <node concept="2Kehj3" id="2rhLMRp46eS" role="2OqNvi" />
           </node>
         </node>
-        <node concept="3SKdUt" id="2rhLMRp46eT" role="3cqZAp">
-          <node concept="3SKdUq" id="2rhLMRp46eU" role="3SKWNk">
-            <property role="3SKdUp" value="Migratie naar uitvoerbarehandelingen2" />
-          </node>
-        </node>
         <node concept="3clFbH" id="2rhLMRp46eV" role="3cqZAp" />
-        <node concept="3SKdUt" id="2mYdLn7Ulj8" role="3cqZAp">
-          <node concept="3SKdUq" id="2mYdLn7Ulja" role="3SKWNk">
-            <property role="3SKdUp" value="Bepaal het verschil tussen het fictieve tijdstip van initialisatie en het huidige tijstip " />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2rhLMRp46g4" role="3cqZAp">
-          <node concept="3cpWsn" id="2rhLMRp46g5" role="3cpWs9">
-            <property role="TrG5h" value="VerschillenInNanoSeconden" />
-            <node concept="3uibUv" id="2rhLMRp46g6" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~Long" resolve="Long" />
-            </node>
-            <node concept="2OqwBi" id="2rhLMRp46g7" role="33vP2m">
-              <node concept="2YIFZM" id="2rhLMRp46g8" role="2Oq$k0">
-                <ref role="1Pybhc" to="28m1:~Duration" resolve="Duration" />
-                <ref role="37wK5l" to="28m1:~Duration.between(java.time.temporal.Temporal,java.time.temporal.Temporal):java.time.Duration" resolve="between" />
-                <node concept="2OqwBi" id="2rhLMRp46g9" role="37wK5m">
-                  <node concept="2OqwBi" id="2rhLMRp46ga" role="2Oq$k0">
-                    <node concept="37vLTw" id="2rhLMRp4Yuj" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
-                    </node>
-                    <node concept="3TrEf2" id="2rhLMRp46gc" role="2OqNvi">
-                      <ref role="3Tt5mk" to="xhlk:3d6QfrgxRyu" resolve="datumtijdvaninitialisatie" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="2rhLMRp46gd" role="2OqNvi">
-                    <ref role="37wK5l" to="rwnv:5riiL_BUVyA" resolve="geefDatumTijd" />
-                  </node>
-                </node>
-                <node concept="2YIFZM" id="2rhLMRp46ge" role="37wK5m">
-                  <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
-                  <ref role="37wK5l" to="28m1:~LocalDateTime.now():java.time.LocalDateTime" resolve="now" />
-                </node>
-              </node>
-              <node concept="liA8E" id="2rhLMRp46gf" role="2OqNvi">
-                <ref role="37wK5l" to="28m1:~Duration.toNanos():long" resolve="toNanos" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2mYdLn7Uo9F" role="3cqZAp" />
-        <node concept="3SKdUt" id="2mYdLn7Uns0" role="3cqZAp">
-          <node concept="3SKdUq" id="2mYdLn7Uns2" role="3SKWNk">
-            <property role="3SKdUp" value="Bepaal het huidige fictieve tijstip" />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2mYdLn7UrGA" role="3cqZAp">
-          <node concept="3cpWsn" id="2mYdLn7UrGy" role="3cpWs9">
-            <property role="TrG5h" value="huidigetijdstip" />
-            <node concept="3uibUv" id="2mYdLn7Usqn" role="1tU5fm">
-              <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
-            </node>
-            <node concept="2OqwBi" id="2mYdLn7UuLh" role="33vP2m">
-              <node concept="2OqwBi" id="2mYdLn7Uu3I" role="2Oq$k0">
-                <node concept="2OqwBi" id="2mYdLn7Us_J" role="2Oq$k0">
-                  <node concept="37vLTw" id="2mYdLn7UsrZ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
-                  </node>
-                  <node concept="3TrEf2" id="2mYdLn7UsKR" role="2OqNvi">
-                    <ref role="3Tt5mk" to="xhlk:6syAJDE8Ve8" resolve="datumtijdvanstartvandeSimulatie" />
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="2mYdLn7UugQ" role="2OqNvi">
-                  <ref role="37wK5l" to="rwnv:5riiL_BUVyA" resolve="geefDatumTijd" />
-                </node>
-              </node>
-              <node concept="liA8E" id="2mYdLn7Uwhb" role="2OqNvi">
-                <ref role="37wK5l" to="28m1:~LocalDateTime.plusNanos(long):java.time.LocalDateTime" resolve="plusNanos" />
-                <node concept="37vLTw" id="2mYdLn7UwmD" role="37wK5m">
-                  <ref role="3cqZAo" node="2rhLMRp46g5" resolve="VerschillenInNanoSeconden" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2mYdLn7U$gg" role="3cqZAp">
-          <node concept="3cpWsn" id="2mYdLn7U$gh" role="3cpWs9">
-            <property role="TrG5h" value="huidigedatum" />
-            <node concept="3uibUv" id="2mYdLn7U$gi" role="1tU5fm">
-              <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
-            </node>
-            <node concept="2OqwBi" id="2mYdLn7U_vy" role="33vP2m">
-              <node concept="37vLTw" id="2mYdLn7U_2P" role="2Oq$k0">
-                <ref role="3cqZAo" node="2mYdLn7UrGy" resolve="huidigetijdstip" />
-              </node>
-              <node concept="liA8E" id="2mYdLn7UB6l" role="2OqNvi">
-                <ref role="37wK5l" to="28m1:~LocalDateTime.toLocalDate():java.time.LocalDate" resolve="toLocalDate" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="2mYdLn7WWCL" role="3cqZAp">
           <node concept="2OqwBi" id="2mYdLn7WWCM" role="3clFbG">
             <node concept="10M0yZ" id="2mYdLn7WWCN" role="2Oq$k0">
@@ -1565,8 +1464,16 @@
             </node>
             <node concept="liA8E" id="2mYdLn7WWCO" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-              <node concept="37vLTw" id="2mYdLn7WXla" role="37wK5m">
-                <ref role="3cqZAo" node="2mYdLn7UrGy" resolve="huidigetijdstip" />
+              <node concept="2OqwBi" id="5QFVCQs$G0p" role="37wK5m">
+                <node concept="37vLTw" id="5QFVCQs$Et8" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
+                </node>
+                <node concept="2qgKlT" id="5QFVCQs$Hlt" role="2OqNvi">
+                  <ref role="37wK5l" node="1Enheq$Rvw5" resolve="GeefHuidigTijdstipVanDeSimulatie" />
+                  <node concept="37vLTw" id="5QFVCQs$Ixf" role="37wK5m">
+                    <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1579,8 +1486,16 @@
             </node>
             <node concept="liA8E" id="2mYdLn7WWwr" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-              <node concept="37vLTw" id="2mYdLn7WWx4" role="37wK5m">
-                <ref role="3cqZAo" node="2mYdLn7U$gh" resolve="huidigedatum" />
+              <node concept="2OqwBi" id="5QFVCQs_aXF" role="37wK5m">
+                <node concept="37vLTw" id="5QFVCQs_9rO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
+                </node>
+                <node concept="2qgKlT" id="5QFVCQs_crH" role="2OqNvi">
+                  <ref role="37wK5l" node="5QFVCQs$JI4" resolve="GeefHuidigeDatumVanDeSimulatie" />
+                  <node concept="37vLTw" id="5QFVCQs_d$b" role="37wK5m">
+                    <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1627,8 +1542,16 @@
                   </node>
                   <node concept="2qgKlT" id="2mYdLn7Uyfe" role="2OqNvi">
                     <ref role="37wK5l" to="ll8w:2mYdLn7TluB" resolve="IsGeldigOpDatum" />
-                    <node concept="37vLTw" id="2mYdLn7UBiE" role="37wK5m">
-                      <ref role="3cqZAo" node="2mYdLn7U$gh" resolve="huidigedatum" />
+                    <node concept="2OqwBi" id="5QFVCQs_ePs" role="37wK5m">
+                      <node concept="37vLTw" id="5QFVCQs_ePt" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
+                      </node>
+                      <node concept="2qgKlT" id="5QFVCQs_ePu" role="2OqNvi">
+                        <ref role="37wK5l" node="5QFVCQs$JI4" resolve="GeefHuidigeDatumVanDeSimulatie" />
+                        <node concept="37vLTw" id="5QFVCQs_ePv" role="37wK5m">
+                          <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2035,6 +1958,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5QFVCQsEn9S" role="3cqZAp" />
         <node concept="3SKdUt" id="64jNPp5Ikkd" role="3cqZAp">
           <node concept="3SKdUq" id="64jNPp5Ikkf" role="3SKWNk">
             <property role="3SKdUp" value="Voer vervolgens andere handelingen op, op basis van de bestaande subjectieve rechtsbetrekkingen in de simulatie" />
@@ -2070,41 +1994,33 @@
                 </node>
                 <node concept="2qgKlT" id="64jNPp5IBEP" role="2OqNvi">
                   <ref role="37wK5l" to="cyn4:2mYdLn7TluB" resolve="IsGeldigOpDatumTijdstip" />
-                  <node concept="37vLTw" id="64jNPp5IBMo" role="37wK5m">
-                    <ref role="3cqZAo" node="2mYdLn7UrGy" resolve="huidigetijdstip" />
+                  <node concept="2OqwBi" id="5QFVCQs_f8p" role="37wK5m">
+                    <node concept="37vLTw" id="5QFVCQs_f8q" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
+                    </node>
+                    <node concept="2qgKlT" id="5QFVCQs_f8r" role="2OqNvi">
+                      <ref role="37wK5l" node="1Enheq$Rvw5" resolve="GeefHuidigTijdstipVanDeSimulatie" />
+                      <node concept="37vLTw" id="5QFVCQs_f8s" role="37wK5m">
+                        <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
               <node concept="3clFbS" id="64jNPp5IAhJ" role="3clFbx">
-                <node concept="Jncv_" id="64jNPp5IHRR" role="3cqZAp">
-                  <ref role="JncvD" to="3pw0:64gsXol8CQo" resolve="OptioneleBevoegdheidOptioneleGehoudenheid" />
-                  <node concept="2OqwBi" id="64jNPp5IHZH" role="JncvB">
-                    <node concept="2GrUjf" id="64jNPp5IHSk" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
-                    </node>
-                    <node concept="3TrEf2" id="64jNPp5IINz" role="2OqNvi">
-                      <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="64jNPp5IHRT" role="Jncv$">
-                    <node concept="3SKdUt" id="64jNPp5ISa2" role="3cqZAp">
-                      <node concept="3SKdUq" id="64jNPp5ISa4" role="3SKWNk">
-                        <property role="3SKdUp" value="Bepaal of de objectieve rechtsbetrekking geldig is" />
-                      </node>
-                    </node>
-                    <node concept="3clFbJ" id="64jNPp5IQdI" role="3cqZAp">
-                      <node concept="2OqwBi" id="64jNPp5IQpR" role="3clFbw">
-                        <node concept="Jnkvi" id="64jNPp5IQe3" role="2Oq$k0">
-                          <ref role="1M0zk5" node="64jNPp5IHRU" resolve="rechtsbetrekkingOBOG2" />
+                <node concept="3clFbJ" id="5QFVCQsHePZ" role="3cqZAp">
+                  <node concept="3clFbS" id="5QFVCQsHeQ1" role="3clFbx">
+                    <node concept="Jncv_" id="64jNPp5IHRR" role="3cqZAp">
+                      <ref role="JncvD" to="3pw0:64gsXol8CQo" resolve="OptioneleBevoegdheidOptioneleGehoudenheid" />
+                      <node concept="2OqwBi" id="64jNPp5IHZH" role="JncvB">
+                        <node concept="2GrUjf" id="64jNPp5IHSk" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
                         </node>
-                        <node concept="2qgKlT" id="64jNPp5IRDD" role="2OqNvi">
-                          <ref role="37wK5l" to="ll8w:2mYdLn7TluB" resolve="IsGeldigOpDatum" />
-                          <node concept="37vLTw" id="64jNPp5IRIt" role="37wK5m">
-                            <ref role="3cqZAo" node="2mYdLn7U$gh" resolve="huidigedatum" />
-                          </node>
+                        <node concept="3TrEf2" id="64jNPp5IINz" role="2OqNvi">
+                          <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
                         </node>
                       </node>
-                      <node concept="3clFbS" id="64jNPp5IQdK" role="3clFbx">
+                      <node concept="3clFbS" id="64jNPp5IHRT" role="Jncv$">
                         <node concept="3cpWs8" id="64jNPp5ISf4" role="3cqZAp">
                           <node concept="3cpWsn" id="64jNPp5ISf5" role="3cpWs9">
                             <property role="TrG5h" value="referentienaarrechtshandeling" />
@@ -2154,42 +2070,22 @@
                           </node>
                         </node>
                       </node>
-                    </node>
-                  </node>
-                  <node concept="JncvC" id="64jNPp5IHRU" role="JncvA">
-                    <property role="TrG5h" value="rechtsbetrekkingOBOG2" />
-                    <node concept="2jxLKc" id="64jNPp5IHRV" role="1tU5fm" />
-                  </node>
-                </node>
-                <node concept="Jncv_" id="64jNPp5IV4l" role="3cqZAp">
-                  <ref role="JncvD" to="3pw0:64gsXol8CQk" resolve="VerplichteBevoegdheidVerplichteGehoudenheid" />
-                  <node concept="2OqwBi" id="64jNPp5IV4m" role="JncvB">
-                    <node concept="2GrUjf" id="64jNPp5IV4n" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
-                    </node>
-                    <node concept="3TrEf2" id="64jNPp5IV4o" role="2OqNvi">
-                      <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="64jNPp5IV4p" role="Jncv$">
-                    <node concept="3SKdUt" id="64jNPp5IV4q" role="3cqZAp">
-                      <node concept="3SKdUq" id="64jNPp5IV4r" role="3SKWNk">
-                        <property role="3SKdUp" value="Bepaal of de objectieve rechtsbetrekking geldig is" />
+                      <node concept="JncvC" id="64jNPp5IHRU" role="JncvA">
+                        <property role="TrG5h" value="rechtsbetrekkingOBOG2" />
+                        <node concept="2jxLKc" id="64jNPp5IHRV" role="1tU5fm" />
                       </node>
                     </node>
-                    <node concept="3clFbJ" id="64jNPp5IV4s" role="3cqZAp">
-                      <node concept="2OqwBi" id="64jNPp5IV4t" role="3clFbw">
-                        <node concept="Jnkvi" id="64jNPp5IV4u" role="2Oq$k0">
-                          <ref role="1M0zk5" node="64jNPp5IV4S" resolve="rechtsbetrekkingVBVG2" />
+                    <node concept="Jncv_" id="64jNPp5IV4l" role="3cqZAp">
+                      <ref role="JncvD" to="3pw0:64gsXol8CQk" resolve="VerplichteBevoegdheidVerplichteGehoudenheid" />
+                      <node concept="2OqwBi" id="64jNPp5IV4m" role="JncvB">
+                        <node concept="2GrUjf" id="64jNPp5IV4n" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
                         </node>
-                        <node concept="2qgKlT" id="64jNPp5IV4v" role="2OqNvi">
-                          <ref role="37wK5l" to="ll8w:2mYdLn7TluB" resolve="IsGeldigOpDatum" />
-                          <node concept="37vLTw" id="64jNPp5IV4w" role="37wK5m">
-                            <ref role="3cqZAo" node="2mYdLn7U$gh" resolve="huidigedatum" />
-                          </node>
+                        <node concept="3TrEf2" id="64jNPp5IV4o" role="2OqNvi">
+                          <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
                         </node>
                       </node>
-                      <node concept="3clFbS" id="64jNPp5IV4x" role="3clFbx">
+                      <node concept="3clFbS" id="64jNPp5IV4p" role="Jncv$">
                         <node concept="3cpWs8" id="2N$PylwT9JY" role="3cqZAp">
                           <node concept="3cpWsn" id="2N$PylwT9JZ" role="3cpWs9">
                             <property role="TrG5h" value="referentienaarrechtshandeling" />
@@ -2239,42 +2135,22 @@
                           </node>
                         </node>
                       </node>
-                    </node>
-                  </node>
-                  <node concept="JncvC" id="64jNPp5IV4S" role="JncvA">
-                    <property role="TrG5h" value="rechtsbetrekkingVBVG2" />
-                    <node concept="2jxLKc" id="64jNPp5IV4T" role="1tU5fm" />
-                  </node>
-                </node>
-                <node concept="Jncv_" id="2N$PylwTdPm" role="3cqZAp">
-                  <ref role="JncvD" to="3pw0:64gsXol8CQj" resolve="AanspraakNaIngebrekeStellingPlicht" />
-                  <node concept="2OqwBi" id="2N$PylwTdPn" role="JncvB">
-                    <node concept="2GrUjf" id="2N$PylwTdPo" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
-                    </node>
-                    <node concept="3TrEf2" id="2N$PylwTdPp" role="2OqNvi">
-                      <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="2N$PylwTdPq" role="Jncv$">
-                    <node concept="3SKdUt" id="2N$PylwTdPr" role="3cqZAp">
-                      <node concept="3SKdUq" id="2N$PylwTdPs" role="3SKWNk">
-                        <property role="3SKdUp" value="Bepaal of de objectieve rechtsbetrekking geldig is" />
+                      <node concept="JncvC" id="64jNPp5IV4S" role="JncvA">
+                        <property role="TrG5h" value="rechtsbetrekkingVBVG2" />
+                        <node concept="2jxLKc" id="64jNPp5IV4T" role="1tU5fm" />
                       </node>
                     </node>
-                    <node concept="3clFbJ" id="2N$PylwTdPt" role="3cqZAp">
-                      <node concept="2OqwBi" id="2N$PylwTdPu" role="3clFbw">
-                        <node concept="Jnkvi" id="2N$PylwTdPv" role="2Oq$k0">
-                          <ref role="1M0zk5" node="2N$PylwTdPT" resolve="rechtsbetrekkingANIS2" />
+                    <node concept="Jncv_" id="2N$PylwTdPm" role="3cqZAp">
+                      <ref role="JncvD" to="3pw0:64gsXol8CQj" resolve="AanspraakNaIngebrekeStellingPlicht" />
+                      <node concept="2OqwBi" id="2N$PylwTdPn" role="JncvB">
+                        <node concept="2GrUjf" id="2N$PylwTdPo" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
                         </node>
-                        <node concept="2qgKlT" id="2N$PylwTdPw" role="2OqNvi">
-                          <ref role="37wK5l" to="ll8w:2mYdLn7TluB" resolve="IsGeldigOpDatum" />
-                          <node concept="37vLTw" id="2N$PylwTdPx" role="37wK5m">
-                            <ref role="3cqZAo" node="2mYdLn7U$gh" resolve="huidigedatum" />
-                          </node>
+                        <node concept="3TrEf2" id="2N$PylwTdPp" role="2OqNvi">
+                          <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
                         </node>
                       </node>
-                      <node concept="3clFbS" id="2N$PylwTdPy" role="3clFbx">
+                      <node concept="3clFbS" id="2N$PylwTdPq" role="Jncv$">
                         <node concept="3cpWs8" id="2N$PylwTdPz" role="3cqZAp">
                           <node concept="3cpWsn" id="2N$PylwTdP$" role="3cpWs9">
                             <property role="TrG5h" value="referentienaarrechtshandeling" />
@@ -2324,42 +2200,22 @@
                           </node>
                         </node>
                       </node>
-                    </node>
-                  </node>
-                  <node concept="JncvC" id="2N$PylwTdPT" role="JncvA">
-                    <property role="TrG5h" value="rechtsbetrekkingANIS2" />
-                    <node concept="2jxLKc" id="2N$PylwTdPU" role="1tU5fm" />
-                  </node>
-                </node>
-                <node concept="Jncv_" id="2N$PylwTgFp" role="3cqZAp">
-                  <ref role="JncvD" to="3pw0:64gsXol8CQn" resolve="KrachtigeAanspraakFataleVerplichtig" />
-                  <node concept="2OqwBi" id="2N$PylwTgFq" role="JncvB">
-                    <node concept="2GrUjf" id="2N$PylwTgFr" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
-                    </node>
-                    <node concept="3TrEf2" id="2N$PylwTgFs" role="2OqNvi">
-                      <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="2N$PylwTgFt" role="Jncv$">
-                    <node concept="3SKdUt" id="2N$PylwTgFu" role="3cqZAp">
-                      <node concept="3SKdUq" id="2N$PylwTgFv" role="3SKWNk">
-                        <property role="3SKdUp" value="Bepaal of de objectieve rechtsbetrekking geldig is" />
+                      <node concept="JncvC" id="2N$PylwTdPT" role="JncvA">
+                        <property role="TrG5h" value="rechtsbetrekkingANIS2" />
+                        <node concept="2jxLKc" id="2N$PylwTdPU" role="1tU5fm" />
                       </node>
                     </node>
-                    <node concept="3clFbJ" id="2N$PylwTgFw" role="3cqZAp">
-                      <node concept="2OqwBi" id="2N$PylwTgFx" role="3clFbw">
-                        <node concept="Jnkvi" id="2N$PylwTgFy" role="2Oq$k0">
-                          <ref role="1M0zk5" node="2N$PylwTgFW" resolve="rechtsbetrekkingKAFV2" />
+                    <node concept="Jncv_" id="2N$PylwTgFp" role="3cqZAp">
+                      <ref role="JncvD" to="3pw0:64gsXol8CQn" resolve="KrachtigeAanspraakFataleVerplichtig" />
+                      <node concept="2OqwBi" id="2N$PylwTgFq" role="JncvB">
+                        <node concept="2GrUjf" id="2N$PylwTgFr" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
                         </node>
-                        <node concept="2qgKlT" id="2N$PylwTgFz" role="2OqNvi">
-                          <ref role="37wK5l" to="ll8w:2mYdLn7TluB" resolve="IsGeldigOpDatum" />
-                          <node concept="37vLTw" id="2N$PylwTgF$" role="37wK5m">
-                            <ref role="3cqZAo" node="2mYdLn7U$gh" resolve="huidigedatum" />
-                          </node>
+                        <node concept="3TrEf2" id="2N$PylwTgFs" role="2OqNvi">
+                          <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
                         </node>
                       </node>
-                      <node concept="3clFbS" id="2N$PylwTgF_" role="3clFbx">
+                      <node concept="3clFbS" id="2N$PylwTgFt" role="Jncv$">
                         <node concept="3cpWs8" id="2N$PylwTgFA" role="3cqZAp">
                           <node concept="3cpWsn" id="2N$PylwTgFB" role="3cpWs9">
                             <property role="TrG5h" value="referentienaarrechtshandeling" />
@@ -2409,42 +2265,22 @@
                           </node>
                         </node>
                       </node>
-                    </node>
-                  </node>
-                  <node concept="JncvC" id="2N$PylwTgFW" role="JncvA">
-                    <property role="TrG5h" value="rechtsbetrekkingKAFV2" />
-                    <node concept="2jxLKc" id="2N$PylwTgFX" role="1tU5fm" />
-                  </node>
-                </node>
-                <node concept="Jncv_" id="2N$PylwTjq5" role="3cqZAp">
-                  <ref role="JncvD" to="3pw0:64gsXol8CQm" resolve="ZwakkeAanspraakZwakkePlicht" />
-                  <node concept="2OqwBi" id="2N$PylwTjq6" role="JncvB">
-                    <node concept="2GrUjf" id="2N$PylwTjq7" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
-                    </node>
-                    <node concept="3TrEf2" id="2N$PylwTjq8" role="2OqNvi">
-                      <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="2N$PylwTjq9" role="Jncv$">
-                    <node concept="3SKdUt" id="2N$PylwTjqa" role="3cqZAp">
-                      <node concept="3SKdUq" id="2N$PylwTjqb" role="3SKWNk">
-                        <property role="3SKdUp" value="Bepaal of de objectieve rechtsbetrekking geldig is" />
+                      <node concept="JncvC" id="2N$PylwTgFW" role="JncvA">
+                        <property role="TrG5h" value="rechtsbetrekkingKAFV2" />
+                        <node concept="2jxLKc" id="2N$PylwTgFX" role="1tU5fm" />
                       </node>
                     </node>
-                    <node concept="3clFbJ" id="2N$PylwTjqc" role="3cqZAp">
-                      <node concept="2OqwBi" id="2N$PylwTjqd" role="3clFbw">
-                        <node concept="Jnkvi" id="2N$PylwTjqe" role="2Oq$k0">
-                          <ref role="1M0zk5" node="2N$PylwTjqC" resolve="rechtsbetrekkingZAZP2" />
+                    <node concept="Jncv_" id="2N$PylwTjq5" role="3cqZAp">
+                      <ref role="JncvD" to="3pw0:64gsXol8CQm" resolve="ZwakkeAanspraakZwakkePlicht" />
+                      <node concept="2OqwBi" id="2N$PylwTjq6" role="JncvB">
+                        <node concept="2GrUjf" id="2N$PylwTjq7" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
                         </node>
-                        <node concept="2qgKlT" id="2N$PylwTjqf" role="2OqNvi">
-                          <ref role="37wK5l" to="ll8w:2mYdLn7TluB" resolve="IsGeldigOpDatum" />
-                          <node concept="37vLTw" id="2N$PylwTjqg" role="37wK5m">
-                            <ref role="3cqZAo" node="2mYdLn7U$gh" resolve="huidigedatum" />
-                          </node>
+                        <node concept="3TrEf2" id="2N$PylwTjq8" role="2OqNvi">
+                          <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
                         </node>
                       </node>
-                      <node concept="3clFbS" id="2N$PylwTjqh" role="3clFbx">
+                      <node concept="3clFbS" id="2N$PylwTjq9" role="Jncv$">
                         <node concept="3cpWs8" id="2N$PylwTjqi" role="3cqZAp">
                           <node concept="3cpWsn" id="2N$PylwTjqj" role="3cpWs9">
                             <property role="TrG5h" value="referentienaarrechtshandeling" />
@@ -2494,42 +2330,22 @@
                           </node>
                         </node>
                       </node>
-                    </node>
-                  </node>
-                  <node concept="JncvC" id="2N$PylwTjqC" role="JncvA">
-                    <property role="TrG5h" value="rechtsbetrekkingZAZP2" />
-                    <node concept="2jxLKc" id="2N$PylwTjqD" role="1tU5fm" />
-                  </node>
-                </node>
-                <node concept="Jncv_" id="2N$PylwTmLT" role="3cqZAp">
-                  <ref role="JncvD" to="3pw0:64gsXol8CQl" resolve="ImmuniteitGeenbevoegdheid" />
-                  <node concept="2OqwBi" id="2N$PylwTmLU" role="JncvB">
-                    <node concept="2GrUjf" id="2N$PylwTmLV" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
-                    </node>
-                    <node concept="3TrEf2" id="2N$PylwTmLW" role="2OqNvi">
-                      <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="2N$PylwTmLX" role="Jncv$">
-                    <node concept="3SKdUt" id="2N$PylwTmLY" role="3cqZAp">
-                      <node concept="3SKdUq" id="2N$PylwTmLZ" role="3SKWNk">
-                        <property role="3SKdUp" value="Bepaal of de objectieve rechtsbetrekking geldig is" />
+                      <node concept="JncvC" id="2N$PylwTjqC" role="JncvA">
+                        <property role="TrG5h" value="rechtsbetrekkingZAZP2" />
+                        <node concept="2jxLKc" id="2N$PylwTjqD" role="1tU5fm" />
                       </node>
                     </node>
-                    <node concept="3clFbJ" id="2N$PylwTmM0" role="3cqZAp">
-                      <node concept="2OqwBi" id="2N$PylwTmM1" role="3clFbw">
-                        <node concept="Jnkvi" id="2N$PylwTmM2" role="2Oq$k0">
-                          <ref role="1M0zk5" node="2N$PylwTmMs" resolve="rechtsbetrekkingIGB2" />
+                    <node concept="Jncv_" id="2N$PylwTmLT" role="3cqZAp">
+                      <ref role="JncvD" to="3pw0:64gsXol8CQl" resolve="ImmuniteitGeenbevoegdheid" />
+                      <node concept="2OqwBi" id="2N$PylwTmLU" role="JncvB">
+                        <node concept="2GrUjf" id="2N$PylwTmLV" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
                         </node>
-                        <node concept="2qgKlT" id="2N$PylwTmM3" role="2OqNvi">
-                          <ref role="37wK5l" to="ll8w:2mYdLn7TluB" resolve="IsGeldigOpDatum" />
-                          <node concept="37vLTw" id="2N$PylwTmM4" role="37wK5m">
-                            <ref role="3cqZAo" node="2mYdLn7U$gh" resolve="huidigedatum" />
-                          </node>
+                        <node concept="3TrEf2" id="2N$PylwTmLW" role="2OqNvi">
+                          <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
                         </node>
                       </node>
-                      <node concept="3clFbS" id="2N$PylwTmM5" role="3clFbx">
+                      <node concept="3clFbS" id="2N$PylwTmLX" role="Jncv$">
                         <node concept="3cpWs8" id="2N$PylwTmM6" role="3cqZAp">
                           <node concept="3cpWsn" id="2N$PylwTmM7" role="3cpWs9">
                             <property role="TrG5h" value="referentienaarrechtshandeling" />
@@ -2579,11 +2395,36 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="JncvC" id="2N$PylwTmMs" role="JncvA">
+                        <property role="TrG5h" value="rechtsbetrekkingIGB2" />
+                        <node concept="2jxLKc" id="2N$PylwTmMt" role="1tU5fm" />
+                      </node>
                     </node>
+                    <node concept="3clFbH" id="5QFVCQsHeQ0" role="3cqZAp" />
                   </node>
-                  <node concept="JncvC" id="2N$PylwTmMs" role="JncvA">
-                    <property role="TrG5h" value="rechtsbetrekkingIGB2" />
-                    <node concept="2jxLKc" id="2N$PylwTmMt" role="1tU5fm" />
+                  <node concept="2OqwBi" id="5QFVCQsHhpJ" role="3clFbw">
+                    <node concept="2OqwBi" id="5QFVCQsHf_I" role="2Oq$k0">
+                      <node concept="2GrUjf" id="5QFVCQsHfsh" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="64jNPp5Iv3r" resolve="rechtsbetrekking" />
+                      </node>
+                      <node concept="3TrEf2" id="5QFVCQsHgry" role="2OqNvi">
+                        <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="5QFVCQsHiD2" role="2OqNvi">
+                      <ref role="37wK5l" to="ll8w:2mYdLn7TluB" resolve="IsGeldigOpDatum" />
+                      <node concept="2OqwBi" id="5QFVCQsHjrZ" role="37wK5m">
+                        <node concept="37vLTw" id="5QFVCQsHjdP" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
+                        </node>
+                        <node concept="2qgKlT" id="5QFVCQsHjPQ" role="2OqNvi">
+                          <ref role="37wK5l" node="5QFVCQs$JI4" resolve="GeefHuidigeDatumVanDeSimulatie" />
+                          <node concept="37vLTw" id="5QFVCQsHjYw" role="37wK5m">
+                            <ref role="3cqZAo" node="2rhLMRp4Knp" resolve="simulatie" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbH" id="2N$PylwTgrk" role="3cqZAp" />
@@ -3796,7 +3637,7 @@
             <node concept="2qgKlT" id="1Enheq$RivK" role="2OqNvi">
               <ref role="37wK5l" to="rwnv:5riiL_BUXYm" resolve="zetDatumTijd" />
               <node concept="BsUDl" id="1Enheq$RA9E" role="37wK5m">
-                <ref role="37wK5l" node="1Enheq$Rvw5" resolve="GeefHuidigTijdstip" />
+                <ref role="37wK5l" node="1Enheq$Rvw5" resolve="GeefHuidigTijdstipVanDeSimulatie" />
                 <node concept="37vLTw" id="1Enheq$RAdC" role="37wK5m">
                   <ref role="3cqZAo" node="1Enheq$RjvZ" resolve="simulatie" />
                 </node>
@@ -3911,7 +3752,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="1Enheq$Rvw5" role="13h7CS">
-      <property role="TrG5h" value="GeefHuidigTijdstip" />
+      <property role="TrG5h" value="GeefHuidigTijdstipVanDeSimulatie" />
       <node concept="3Tm1VV" id="1Enheq$Rvw6" role="1B3o_S" />
       <node concept="3uibUv" id="1Enheq$R_1Z" role="3clF45">
         <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
@@ -3929,8 +3770,10 @@
                 <ref role="37wK5l" to="28m1:~Duration.between(java.time.temporal.Temporal,java.time.temporal.Temporal):java.time.Duration" resolve="between" />
                 <node concept="2OqwBi" id="1Enheq$R_ts" role="37wK5m">
                   <node concept="2OqwBi" id="1Enheq$R_tt" role="2Oq$k0">
-                    <node concept="13iPFW" id="1Enheq$R_tu" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="1Enheq$R_tv" role="2OqNvi">
+                    <node concept="37vLTw" id="5QFVCQs_2BZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1Enheq$R_oh" resolve="simulatie" />
+                    </node>
+                    <node concept="3TrEf2" id="5QFVCQs_40H" role="2OqNvi">
                       <ref role="3Tt5mk" to="xhlk:3d6QfrgxRyu" resolve="datumtijdvaninitialisatie" />
                     </node>
                   </node>
@@ -3949,6 +3792,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5QFVCQs$YLU" role="3cqZAp" />
         <node concept="3cpWs6" id="1Enheq$R_as" role="3cqZAp">
           <node concept="2OqwBi" id="1Enheq$RivL" role="3cqZAk">
             <node concept="2OqwBi" id="1Enheq$RivM" role="2Oq$k0">
@@ -3977,6 +3821,39 @@
         <property role="TrG5h" value="simulatie" />
         <node concept="3Tqbb2" id="1Enheq$R_og" role="1tU5fm">
           <ref role="ehGHo" to="xhlk:6OHSlZaTjYP" resolve="Simulatie" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5QFVCQs$JI4" role="13h7CS">
+      <property role="TrG5h" value="GeefHuidigeDatumVanDeSimulatie" />
+      <node concept="37vLTG" id="5QFVCQs$Wdb" role="3clF46">
+        <property role="TrG5h" value="simulatie" />
+        <node concept="3Tqbb2" id="5QFVCQs$WdC" role="1tU5fm">
+          <ref role="ehGHo" to="xhlk:6OHSlZaTjYP" resolve="Simulatie" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5QFVCQs$JI5" role="1B3o_S" />
+      <node concept="3uibUv" id="5QFVCQs$P7A" role="3clF45">
+        <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+      </node>
+      <node concept="3clFbS" id="5QFVCQs$JI7" role="3clF47">
+        <node concept="3cpWs6" id="5QFVCQs$We9" role="3cqZAp">
+          <node concept="2OqwBi" id="5QFVCQs$X97" role="3cqZAk">
+            <node concept="2OqwBi" id="5QFVCQs$Wos" role="2Oq$k0">
+              <node concept="37vLTw" id="5QFVCQs$WeG" role="2Oq$k0">
+                <ref role="3cqZAo" node="5QFVCQs$Wdb" resolve="simulatie" />
+              </node>
+              <node concept="2qgKlT" id="5QFVCQs$Wzx" role="2OqNvi">
+                <ref role="37wK5l" node="1Enheq$Rvw5" resolve="GeefHuidigTijdstipVanDeSimulatie" />
+                <node concept="37vLTw" id="5QFVCQs$WCh" role="37wK5m">
+                  <ref role="3cqZAo" node="5QFVCQs$Wdb" resolve="simulatie" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="5QFVCQs$YB$" role="2OqNvi">
+              <ref role="37wK5l" to="28m1:~LocalDateTime.toLocalDate():java.time.LocalDate" resolve="toLocalDate" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

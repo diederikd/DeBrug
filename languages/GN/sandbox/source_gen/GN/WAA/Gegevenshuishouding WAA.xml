@@ -200,15 +200,17 @@
     </onderwerpen>
     <rechtsbetrekkingen>
         <rechtsbetrekking>
-          <kenmerk naam='geldigvan'>2001-01-01T00:00</kenmerk>
-          <kenmerk naam='objectieverechtsbetrekking'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</kenmerk>
+          <kenmerk naam='geldigVan'>2001-01-01T00:00</kenmerk>
+          <kenmerk naam='geldigTot'>'???</kenmerk>
+          <kenmerk naam='objectieveRechtsbetrekking'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</kenmerk>
           <kenmerk naam='onderwerp'>Arbeidsovereenkomst tussen Pieter en Eneco</kenmerk>
           <kenmerk naam='rechtssubjectMetPlicht'>Eneco</kenmerk>
           <kenmerk naam='rechtssubjectMetRecht'>Pieter</kenmerk>
         </rechtsbetrekking>
         <rechtsbetrekking>
-          <kenmerk naam='geldigvan'>2001-01-01T12:00</kenmerk>
-          <kenmerk naam='objectieverechtsbetrekking'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</kenmerk>
+          <kenmerk naam='geldigVan'>2001-01-01T12:00</kenmerk>
+          <kenmerk naam='geldigTot'>'???</kenmerk>
+          <kenmerk naam='objectieveRechtsbetrekking'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</kenmerk>
           <kenmerk naam='onderwerp'>Arbeidsovereenkomst tussen Pieter en Essent</kenmerk>
           <kenmerk naam='rechtssubjectMetPlicht'>Essent</kenmerk>
           <kenmerk naam='rechtssubjectMetRecht'>Pieter</kenmerk>
@@ -219,16 +221,19 @@
           <kenmerk naam='uitgevoerdop'>2000-03-01T00:00</kenmerk>
           <kenmerk naam='actor'>Essent</kenmerk>
           <kenmerk naam='onderwerp'>Verzoek 1</kenmerk>
+          <kenmerk naam='handeling'>Verzoek 1</kenmerk>
         </rechtshandeling>
         <rechtshandeling>
           <kenmerk naam='uitgevoerdop'>2000-01-01T00:00</kenmerk>
           <kenmerk naam='actor'>Pieter</kenmerk>
           <kenmerk naam='onderwerp'>Verzoek 1</kenmerk>
+          <kenmerk naam='handeling'>Verzoek 1</kenmerk>
         </rechtshandeling>
         <rechtshandeling>
           <kenmerk naam='uitgevoerdop'>2000-02-01T00:00</kenmerk>
           <kenmerk naam='actor'>Pieter</kenmerk>
           <kenmerk naam='onderwerp'>Verzoek 1</kenmerk>
+          <kenmerk naam='handeling'>Verzoek 1</kenmerk>
         </rechtshandeling>
       </rechtshandelingen>
 </gegevenshuishouding>

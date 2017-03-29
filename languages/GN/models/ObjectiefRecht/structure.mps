@@ -310,7 +310,7 @@
     <node concept="1TJgyj" id="20D4HrzFFXI" role="1TKVEi">
       <property role="IQ2ns" value="2317404197411012462" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="rechtssubject" />
+      <property role="20kJfa" value="actor" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="20D4HrzFFXB" resolve="ReferentieNaarRechtssubject" />
     </node>

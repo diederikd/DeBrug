@@ -139,7 +139,7 @@
       <node concept="3oHiSy" id="7IoVO6zbNN4" role="3oGGqr">
         <node concept="3oGGqp" id="7IoVO6zbNPw" role="3oHiS_">
           <node concept="3oDD0s" id="7IoVO6zfJ1v" role="2PAxsN">
-            <property role="3oDALa" value="BSN:" />
+            <property role="3oDALa" value="BSN: " />
           </node>
           <node concept="2P_WKc" id="7IoVO6zbNPH" role="2PAxsN">
             <ref role="29j7_g" to="zznl:GhrpPwO1R2" resolve="burgerservicenummer" />
@@ -147,7 +147,7 @@
         </node>
         <node concept="3oGGqp" id="7IoVO6zbNPC" role="3oHiS_">
           <node concept="3oDD0s" id="7IoVO6zfJ1A" role="2PAxsN">
-            <property role="3oDALa" value="Burgerlijke staat:" />
+            <property role="3oDALa" value="Burgerlijke staat: " />
           </node>
           <node concept="2P_WKc" id="7IoVO6zbNPJ" role="2PAxsN">
             <ref role="29j7_g" to="zznl:5u1YjWIkWrV" resolve="burgerlijke staat" />
@@ -155,7 +155,7 @@
         </node>
         <node concept="3oGGqp" id="7IoVO6zbNOg" role="3oHiS_">
           <node concept="3oDD0s" id="7IoVO6zfJ1H" role="2PAxsN">
-            <property role="3oDALa" value="Miitair:" />
+            <property role="3oDALa" value="Miitair: " />
           </node>
           <node concept="2P_WKc" id="7IoVO6zbNPL" role="2PAxsN">
             <ref role="29j7_g" to="zznl:5u1YjWIkWu3" resolve="militair ambtenaar" />

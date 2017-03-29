@@ -20,19 +20,17 @@ public class Rechtsbetrekking_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("<kenmerk naam='geldigvan'>");
+    tgs.append("<kenmerk naam='geldigVan'>");
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8cdL, "geldigVan")));
     tgs.append("</kenmerk>");
     tgs.newLine();
-    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot")) != null)) {
-      tgs.indent();
-      tgs.append("<kenmerk naam='geldigtot'>'");
-      tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot")));
-      tgs.append("</kenmerk>");
-      tgs.newLine();
-    }
     tgs.indent();
-    tgs.append("<kenmerk naam='objectieverechtsbetrekking'>");
+    tgs.append("<kenmerk naam='geldigTot'>'");
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot")));
+    tgs.append("</kenmerk>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<kenmerk naam='objectieveRechtsbetrekking'>");
     tgs.append(Rechtsbetrekking__BehaviorDescriptor.geefNaam_id5vursKRAATV.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking"))));
     tgs.append("</kenmerk>");
     tgs.newLine();

@@ -41,6 +41,10 @@ public abstract class GenericXMLTextgen {
         tgs.newLine();
       }
     }
+    tgs.indent();
+    tgs.append("<nodeid>");
+    tgs.append(node.getNodeId().toString());
+    tgs.append("<nodeid>");
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
     tgs.append("<properties>");

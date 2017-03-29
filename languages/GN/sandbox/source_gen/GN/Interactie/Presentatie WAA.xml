@@ -26,15 +26,15 @@
       </row>
       <row>
         <column>
-          <string>BSN:</string>
+          <string>BSN: </string>
           <xpath>kenmerk[@naam='burgerservicenummer']/text()</xpath>
         </column>
         <column>
-          <string>Burgerlijke staat:</string>
+          <string>Burgerlijke staat: </string>
           <xpath>kenmerk[@naam='burgerlijke staat']/text()</xpath>
         </column>
         <column>
-          <string>Miitair:</string>
+          <string>Miitair: </string>
           <xpath>kenmerk[@naam='militair ambtenaar']/text()</xpath>
         </column>
       </row>

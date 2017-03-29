@@ -30618,20 +30618,20 @@
       <node id="5266643527326926620" at="261,87,262,47" concept="2" />
       <node id="5266643527326926620" at="262,47,263,34" concept="2" />
       <node id="5266643527326926620" at="263,34,264,22" concept="9" />
-      <node id="5753801799637051246" at="266,87,267,267" concept="8" />
-      <node id="5753801799637051246" at="267,267,268,33" concept="9" />
-      <node id="5753801799637051246" at="271,127,272,49" concept="13" />
+      <node id="5753801799637051246" at="266,87,267,251" concept="8" />
+      <node id="5753801799637051246" at="267,251,268,33" concept="9" />
+      <node id="5753801799637051246" at="271,119,272,49" concept="13" />
       <node id="5753801799637051246" at="274,55,275,57" concept="2" />
       <node id="5753801799637051246" at="275,57,276,90" concept="2" />
       <node id="5753801799637051246" at="277,11,278,61" concept="8" />
-      <node id="5753801799637051246" at="278,61,279,240" concept="2" />
-      <node id="5753801799637051246" at="279,240,280,243" concept="2" />
-      <node id="5753801799637051246" at="280,243,281,43" concept="2" />
+      <node id="5753801799637051246" at="278,61,279,232" concept="2" />
+      <node id="5753801799637051246" at="279,232,280,235" concept="2" />
+      <node id="5753801799637051246" at="280,235,281,43" concept="2" />
       <node id="5753801799637051246" at="281,43,282,26" concept="9" />
       <node id="5753801799637051246" at="283,17,284,58" concept="2" />
       <node id="5753801799637051246" at="288,45,289,19" concept="9" />
-      <node id="5753801799637051246" at="293,118,294,389" concept="2" />
-      <node id="5753801799637051246" at="296,41,297,44" concept="2" />
+      <node id="5753801799637051246" at="293,118,294,381" concept="2" />
+      <node id="5753801799637051246" at="296,41,297,36" concept="2" />
       <node id="5753801799637051246" at="298,7,299,36" concept="8" />
       <node id="5753801799637051246" at="299,36,300,53" concept="2" />
       <node id="5753801799637051246" at="300,53,301,31" concept="8" />
@@ -30639,13 +30639,13 @@
       <node id="5753801799637051246" at="302,52,303,65" concept="2" />
       <node id="5753801799637051246" at="303,65,304,42" concept="2" />
       <node id="5753801799637051246" at="307,44,308,57" concept="2" />
-      <node id="5753801799637051246" at="308,57,309,245" concept="2" />
+      <node id="5753801799637051246" at="308,57,309,237" concept="2" />
       <node id="5753801799637051246" at="310,11,311,56" concept="8" />
-      <node id="5753801799637051246" at="311,56,312,52" concept="2" />
-      <node id="5753801799637051246" at="312,52,313,42" concept="2" />
+      <node id="5753801799637051246" at="311,56,312,44" concept="2" />
+      <node id="5753801799637051246" at="312,44,313,42" concept="2" />
       <node id="5753801799637051246" at="313,42,314,26" concept="9" />
       <node id="5753801799637051246" at="315,17,316,58" concept="2" />
-      <node id="5753801799637051246" at="319,40,320,34" concept="9" />
+      <node id="5753801799637051246" at="319,40,320,26" concept="9" />
       <node id="131751487724156545" at="323,88,324,123" concept="8" />
       <node id="131751487724156545" at="324,123,325,47" concept="2" />
       <node id="131751487724156545" at="325,47,326,34" concept="8" />
@@ -31017,7 +31017,7 @@
       <node id="5753801799637051246" at="225,70,228,7" concept="6" />
       <node id="5753801799637051246" at="228,7,231,7" concept="6" />
       <node id="5753801799637051246" at="246,0,249,0" concept="7" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="5753801799637051246" at="271,0,274,0" concept="1" trace="rechtssubjectSingleRoleHandler_2759bf_l0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="5753801799637051246" at="271,0,274,0" concept="1" trace="actorSingleRoleHandler_2759bf_l0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="5753801799637051246" at="288,0,291,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="5753801799637051246" at="292,70,295,7" concept="6" />
       <node id="5753801799637051246" at="295,7,298,7" concept="6" />
@@ -31071,7 +31071,7 @@
       <node id="5753801799637051246" at="169,236,177,7" concept="15" />
       <node id="5753801799637051246" at="225,0,233,0" concept="7" trace="installCellInfo#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
       <node id="5753801799637051246" at="236,244,244,7" concept="15" />
-      <node id="5753801799637051246" at="309,245,317,7" concept="15" />
+      <node id="5753801799637051246" at="309,237,317,7" concept="15" />
       <node id="5753801799637051246" at="413,281,421,7" concept="15" />
       <node id="5753801799637051246" at="508,296,516,7" concept="15" />
       <node id="5753801799637051246" at="612,302,620,7" concept="15" />
@@ -31158,13 +31158,13 @@
       <scope id="5753801799637051246" at="229,41,230,43" />
       <scope id="5753801799637051246" at="242,17,243,58" />
       <scope id="5753801799637051246" at="246,40,247,33" />
-      <scope id="5753801799637051246" at="271,127,272,49" />
+      <scope id="5753801799637051246" at="271,119,272,49" />
       <scope id="5753801799637051246" at="283,17,284,58" />
       <scope id="5753801799637051246" at="288,45,289,19" />
-      <scope id="5753801799637051246" at="293,118,294,389" />
-      <scope id="5753801799637051246" at="296,41,297,44" />
+      <scope id="5753801799637051246" at="293,118,294,381" />
+      <scope id="5753801799637051246" at="296,41,297,36" />
       <scope id="5753801799637051246" at="315,17,316,58" />
-      <scope id="5753801799637051246" at="319,40,320,34" />
+      <scope id="5753801799637051246" at="319,40,320,26" />
       <scope id="5753801799637051246" at="390,106,391,50" />
       <scope id="5753801799637051246" at="404,17,405,56" />
       <scope id="5753801799637051246" at="408,45,409,19" />
@@ -31826,7 +31826,7 @@
       <unit id="5753801799637051246" at="484,0,531,0" name="ObjectiefRecht.editor.Rechtshandeling_Editor$teWijzigingenFeitenListHandler_2759bf_a2p0" />
       <unit id="5753801799637051246" at="588,0,635,0" name="ObjectiefRecht.editor.Rechtshandeling_Editor$teBeindigenOnderwerpenListHandler_2759bf_a2r0" />
       <unit id="5753801799637051246" at="131,0,183,0" name="ObjectiefRecht.editor.Rechtshandeling_Editor$bronSingleRoleHandler_2759bf_f0" />
-      <unit id="5753801799637051246" at="270,0,323,0" name="ObjectiefRecht.editor.Rechtshandeling_Editor$rechtssubjectSingleRoleHandler_2759bf_l0" />
+      <unit id="5753801799637051246" at="270,0,323,0" name="ObjectiefRecht.editor.Rechtshandeling_Editor$actorSingleRoleHandler_2759bf_l0" />
       <unit id="5753801799637051246" at="649,0,702,0" name="ObjectiefRecht.editor.Rechtshandeling_Editor$VoorwaardenSingleRoleHandler_2759bf_t0" />
       <unit id="5753801799637051246" at="759,0,814,0" name="ObjectiefRecht.editor.Rechtshandeling_Editor$heeftAlsGevolgSingleRoleHandler_2759bf_a42a" />
       <unit id="5753801799637051246" at="37,0,889,0" name="ObjectiefRecht.editor.Rechtshandeling_Editor" />
@@ -34650,20 +34650,20 @@
       <node id="6677724352152701798" at="270,87,271,47" concept="2" />
       <node id="6677724352152701798" at="271,47,272,34" concept="2" />
       <node id="6677724352152701798" at="272,34,273,22" concept="9" />
-      <node id="6677724352152701773" at="275,87,276,270" concept="8" />
-      <node id="6677724352152701773" at="276,270,277,33" concept="9" />
-      <node id="6677724352152701773" at="280,127,281,49" concept="13" />
+      <node id="6677724352152701773" at="275,87,276,254" concept="8" />
+      <node id="6677724352152701773" at="276,254,277,33" concept="9" />
+      <node id="6677724352152701773" at="280,119,281,49" concept="13" />
       <node id="6677724352152701773" at="283,55,284,57" concept="2" />
       <node id="6677724352152701773" at="284,57,285,90" concept="2" />
       <node id="6677724352152701773" at="286,11,287,61" concept="8" />
-      <node id="6677724352152701773" at="287,61,288,240" concept="2" />
-      <node id="6677724352152701773" at="288,240,289,243" concept="2" />
-      <node id="6677724352152701773" at="289,243,290,43" concept="2" />
+      <node id="6677724352152701773" at="287,61,288,232" concept="2" />
+      <node id="6677724352152701773" at="288,232,289,235" concept="2" />
+      <node id="6677724352152701773" at="289,235,290,43" concept="2" />
       <node id="6677724352152701773" at="290,43,291,26" concept="9" />
       <node id="6677724352152701773" at="292,17,293,58" concept="2" />
       <node id="6677724352152701773" at="297,45,298,19" concept="9" />
-      <node id="6677724352152701773" at="302,118,303,389" concept="2" />
-      <node id="6677724352152701773" at="305,41,306,44" concept="2" />
+      <node id="6677724352152701773" at="302,118,303,381" concept="2" />
+      <node id="6677724352152701773" at="305,41,306,36" concept="2" />
       <node id="6677724352152701773" at="307,7,308,36" concept="8" />
       <node id="6677724352152701773" at="308,36,309,53" concept="2" />
       <node id="6677724352152701773" at="309,53,310,31" concept="8" />
@@ -34671,13 +34671,13 @@
       <node id="6677724352152701773" at="311,52,312,65" concept="2" />
       <node id="6677724352152701773" at="312,65,313,42" concept="2" />
       <node id="6677724352152701773" at="316,44,317,57" concept="2" />
-      <node id="6677724352152701773" at="317,57,318,245" concept="2" />
+      <node id="6677724352152701773" at="317,57,318,237" concept="2" />
       <node id="6677724352152701773" at="319,11,320,56" concept="8" />
-      <node id="6677724352152701773" at="320,56,321,52" concept="2" />
-      <node id="6677724352152701773" at="321,52,322,42" concept="2" />
+      <node id="6677724352152701773" at="320,56,321,44" concept="2" />
+      <node id="6677724352152701773" at="321,44,322,42" concept="2" />
       <node id="6677724352152701773" at="322,42,323,26" concept="9" />
       <node id="6677724352152701773" at="324,17,325,58" concept="2" />
-      <node id="6677724352152701773" at="328,40,329,34" concept="9" />
+      <node id="6677724352152701773" at="328,40,329,26" concept="9" />
       <node id="5540471952143021487" at="332,88,333,136" concept="8" />
       <node id="5540471952143021487" at="333,136,334,47" concept="2" />
       <node id="5540471952143021487" at="334,47,335,34" concept="8" />
@@ -35048,7 +35048,7 @@
       <node id="6677724352152701773" at="234,70,237,7" concept="6" />
       <node id="6677724352152701773" at="237,7,240,7" concept="6" />
       <node id="6677724352152701773" at="255,0,258,0" concept="7" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="6677724352152701773" at="280,0,283,0" concept="1" trace="rechtssubjectSingleRoleHandler_tm5zcc_l0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="6677724352152701773" at="280,0,283,0" concept="1" trace="actorSingleRoleHandler_tm5zcc_l0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="6677724352152701773" at="297,0,300,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="6677724352152701773" at="301,70,304,7" concept="6" />
       <node id="6677724352152701773" at="304,7,307,7" concept="6" />
@@ -35103,7 +35103,7 @@
       <node id="6677724352152701773" at="178,236,186,7" concept="15" />
       <node id="6677724352152701773" at="234,0,242,0" concept="7" trace="installCellInfo#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
       <node id="6677724352152701773" at="245,244,253,7" concept="15" />
-      <node id="6677724352152701773" at="318,245,326,7" concept="15" />
+      <node id="6677724352152701773" at="318,237,326,7" concept="15" />
       <node id="6677724352152701773" at="422,281,430,7" concept="15" />
       <node id="6677724352152701773" at="517,296,525,7" concept="15" />
       <node id="6677724352152701773" at="621,302,629,7" concept="15" />
@@ -35191,13 +35191,13 @@
       <scope id="6677724352152701773" at="238,41,239,43" />
       <scope id="6677724352152701773" at="251,17,252,58" />
       <scope id="6677724352152701773" at="255,40,256,33" />
-      <scope id="6677724352152701773" at="280,127,281,49" />
+      <scope id="6677724352152701773" at="280,119,281,49" />
       <scope id="6677724352152701773" at="292,17,293,58" />
       <scope id="6677724352152701773" at="297,45,298,19" />
-      <scope id="6677724352152701773" at="302,118,303,389" />
-      <scope id="6677724352152701773" at="305,41,306,44" />
+      <scope id="6677724352152701773" at="302,118,303,381" />
+      <scope id="6677724352152701773" at="305,41,306,36" />
       <scope id="6677724352152701773" at="324,17,325,58" />
-      <scope id="6677724352152701773" at="328,40,329,34" />
+      <scope id="6677724352152701773" at="328,40,329,26" />
       <scope id="6677724352152701773" at="399,106,400,50" />
       <scope id="6677724352152701773" at="413,17,414,56" />
       <scope id="6677724352152701773" at="417,45,418,19" />
@@ -35860,7 +35860,7 @@
       <unit id="6677724352152701773" at="493,0,540,0" name="ObjectiefRecht.editor.Rechtshandeling_EN_Editor$teWijzigingenFeitenListHandler_tm5zcc_a2p0" />
       <unit id="6677724352152701773" at="597,0,644,0" name="ObjectiefRecht.editor.Rechtshandeling_EN_Editor$teBeindigenOnderwerpenListHandler_tm5zcc_a2r0" />
       <unit id="6677724352152701773" at="140,0,192,0" name="ObjectiefRecht.editor.Rechtshandeling_EN_Editor$bronSingleRoleHandler_tm5zcc_f0" />
-      <unit id="6677724352152701773" at="279,0,332,0" name="ObjectiefRecht.editor.Rechtshandeling_EN_Editor$rechtssubjectSingleRoleHandler_tm5zcc_l0" />
+      <unit id="6677724352152701773" at="279,0,332,0" name="ObjectiefRecht.editor.Rechtshandeling_EN_Editor$actorSingleRoleHandler_tm5zcc_l0" />
       <unit id="6677724352152701773" at="658,0,711,0" name="ObjectiefRecht.editor.Rechtshandeling_EN_Editor$VoorwaardenSingleRoleHandler_tm5zcc_t0" />
       <unit id="6677724352152701773" at="767,0,822,0" name="ObjectiefRecht.editor.Rechtshandeling_EN_Editor$heeftAlsGevolgSingleRoleHandler_tm5zcc_a42a" />
       <unit id="6677724352152701773" at="40,0,897,0" name="ObjectiefRecht.editor.Rechtshandeling_EN_Editor" />
