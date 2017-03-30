@@ -201,7 +201,7 @@
     <rechtsbetrekkingen>
         <rechtsbetrekking>
           <kenmerk naam='geldigVan'>2001-01-01T00:00</kenmerk>
-          <kenmerk naam='geldigTot'>'???</kenmerk>
+          <kenmerk naam='geldigTot'>'</kenmerk>
           <kenmerk naam='objectieveRechtsbetrekking'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</kenmerk>
           <kenmerk naam='onderwerp'>Arbeidsovereenkomst tussen Pieter en Eneco</kenmerk>
           <kenmerk naam='rechtssubjectMetPlicht'>Eneco</kenmerk>
@@ -209,7 +209,7 @@
         </rechtsbetrekking>
         <rechtsbetrekking>
           <kenmerk naam='geldigVan'>2001-01-01T12:00</kenmerk>
-          <kenmerk naam='geldigTot'>'???</kenmerk>
+          <kenmerk naam='geldigTot'>'</kenmerk>
           <kenmerk naam='objectieveRechtsbetrekking'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</kenmerk>
           <kenmerk naam='onderwerp'>Arbeidsovereenkomst tussen Pieter en Essent</kenmerk>
           <kenmerk naam='rechtssubjectMetPlicht'>Essent</kenmerk>

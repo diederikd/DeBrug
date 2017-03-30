@@ -55,6 +55,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -867,8 +868,9 @@
                 </node>
               </node>
               <node concept="la8eA" id="512SkqNYLQj" role="lcghm">
-                <property role="lacIc" value="&lt;nodeid&gt;" />
+                <property role="lacIc" value="&lt;/nodeid&gt;" />
               </node>
+              <node concept="l8MVK" id="512SkqO3zIT" role="lcghm" />
             </node>
             <node concept="3izx1p" id="1Enheq_1BnP" role="3cqZAp">
               <node concept="3clFbS" id="1Enheq_1BnR" role="3izTki">
@@ -1113,6 +1115,26 @@
                       <node concept="3clFbS" id="1Enheq_26VL" role="2LFqv$">
                         <node concept="3izx1p" id="1Enheq_26VM" role="3cqZAp">
                           <node concept="3clFbS" id="1Enheq_26VN" role="3izTki">
+                            <node concept="1bpajm" id="512SkqO3CZr" role="3cqZAp" />
+                            <node concept="lc7rE" id="512SkqO3DB_" role="3cqZAp">
+                              <node concept="la8eA" id="512SkqO3DBA" role="lcghm">
+                                <property role="lacIc" value="&lt;referencerole&gt;" />
+                              </node>
+                              <node concept="l9hG8" id="512SkqO3DBB" role="lcghm">
+                                <node concept="2OqwBi" id="512SkqO3DYj" role="lb14g">
+                                  <node concept="2GrUjf" id="512SkqO3DOK" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="1Enheq_26VH" resolve="reference" />
+                                  </node>
+                                  <node concept="liA8E" id="512SkqO3EdN" role="2OqNvi">
+                                    <ref role="37wK5l" to="mhbf:~SReference.getRole():java.lang.String" resolve="getRole" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="la8eA" id="512SkqO3DBH" role="lcghm">
+                                <property role="lacIc" value="&lt;/referencerole&gt;" />
+                              </node>
+                              <node concept="l8MVK" id="512SkqO3DBI" role="lcghm" />
+                            </node>
                             <node concept="lc7rE" id="1Enheq_8iIP" role="3cqZAp">
                               <node concept="1bDJIP" id="1Enheq_8j0N" role="lcghm">
                                 <ref role="1rvKf6" node="1Enheq_8ifo" resolve="conceptTextgenReferent" />
@@ -1150,6 +1172,7 @@
                 <node concept="3GX2aA" id="1Enheq_26Vj" role="2OqNvi" />
               </node>
             </node>
+            <node concept="3clFbH" id="512SkqO3$XI" role="3cqZAp" />
           </node>
         </node>
         <node concept="1bpajm" id="1Enheq_4u2Z" role="3cqZAp" />
@@ -1337,6 +1360,31 @@
                 <property role="TrG5h" value="iNamedConcept" />
                 <node concept="2jxLKc" id="1Enheq_8ig4" role="1tU5fm" />
               </node>
+            </node>
+            <node concept="1bpajm" id="512SkqO3$1W" role="3cqZAp" />
+            <node concept="lc7rE" id="512SkqO3$1X" role="3cqZAp">
+              <node concept="la8eA" id="512SkqO3$1Y" role="lcghm">
+                <property role="lacIc" value="&lt;nodeid&gt;" />
+              </node>
+              <node concept="l9hG8" id="512SkqO3$1Z" role="lcghm">
+                <node concept="2OqwBi" id="512SkqO3$20" role="lb14g">
+                  <node concept="2OqwBi" id="512SkqO3$21" role="2Oq$k0">
+                    <node concept="2JrnkZ" id="512SkqO3$22" role="2Oq$k0">
+                      <node concept="117lpO" id="512SkqO3$23" role="2JrQYb" />
+                    </node>
+                    <node concept="liA8E" id="512SkqO3$24" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="512SkqO3$25" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="512SkqO3$26" role="lcghm">
+                <property role="lacIc" value="&lt;/nodeid&gt;" />
+              </node>
+              <node concept="l8MVK" id="512SkqO3$27" role="lcghm" />
             </node>
           </node>
         </node>

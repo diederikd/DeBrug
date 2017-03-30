@@ -44,7 +44,8 @@ public abstract class GenericXMLTextgen {
     tgs.indent();
     tgs.append("<nodeid>");
     tgs.append(node.getNodeId().toString());
-    tgs.append("<nodeid>");
+    tgs.append("</nodeid>");
+    tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
     tgs.append("<properties>");
@@ -91,6 +92,11 @@ public abstract class GenericXMLTextgen {
       tgs.newLine();
       for (SReference reference : ListSequence.fromList(SNodeOperations.getReferences(node))) {
         ctx.getBuffer().area().increaseIndent();
+        tgs.indent();
+        tgs.append("<referencerole>");
+        tgs.append(reference.getRole());
+        tgs.append("</referencerole>");
+        tgs.newLine();
         GenericXMLTextgenReferent.conceptTextgenReferent(reference.getTargetNode(), ctx);
         ctx.getBuffer().area().decreaseIndent();
       }
@@ -99,6 +105,7 @@ public abstract class GenericXMLTextgen {
       tgs.newLine();
       ctx.getBuffer().area().decreaseIndent();
     }
+
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("</node>");

@@ -125,6 +125,12 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="RechtsgevolgVeroorzaker" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="512SkqO7EXp" role="1TKVEi">
+      <property role="IQ2ns" value="5783432565283008345" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="gebaseerdOp" />
+      <ref role="20lvS9" node="6c9haf45syu" resolve="Rechtsbetrekking" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6c9haf45sNk">
     <property role="EcuMT" value="7136310554705382612" />
