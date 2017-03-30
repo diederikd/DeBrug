@@ -215,34 +215,38 @@
           </node>
         </children>
         <references>
-          <referencerole>rechtssubjectMetRecht</referencerole>
-          <node>
-            <noderole>rechtssubjecten</noderole>
-            <nodetype>RechtsSubject</nodetype>
-            <nodename>Inspecteur</nodename>
-            <nodeid>5540471952145969706</nodeid>
-          </node>
-          <referencerole>rechtssubjectMetPlicht</referencerole>
-          <node>
-            <noderole>rechtssubjecten</noderole>
-            <nodetype>RechtsSubject</nodetype>
-            <nodename>Persoon</nodename>
-            <nodeid>3498791725963656049</nodeid>
-          </node>
-          <referencerole>bevoegdheidTot</referencerole>
-          <node>
-            <noderole>overgangen</noderole>
-            <nodetype>Rechtshandeling</nodetype>
-            <nodename>Uitnodigen tot het doen van aangifte</nodename>
-            <nodeid>3498791725963656107</nodeid>
-          </node>
-          <referencerole>onderwerp</referencerole>
-          <node>
-            <noderole>onderwerpen</noderole>
-            <nodetype>Onderwerp</nodetype>
-            <nodename>Uitnodiging tot het doen van aangifte</nodename>
-            <nodeid>3498791725963656075</nodeid>
-          </node>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Inspecteur</nodename>
+              <nodeid>5540471952145969706</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Persoon</nodename>
+              <nodeid>3498791725963656049</nodeid>
+            </node>
+          </reference>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>Uitnodigen tot het doen van aangifte</nodename>
+              <nodeid>3498791725963656107</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>Uitnodiging tot het doen van aangifte</nodename>
+              <nodeid>3498791725963656075</nodeid>
+            </node>
+          </reference>
         </references>
     </node>
     <node>
@@ -289,34 +293,38 @@
           </node>
         </children>
         <references>
-          <referencerole>rechtssubjectMetRecht</referencerole>
-          <node>
-            <noderole>rechtssubjecten</noderole>
-            <nodetype>RechtsSubject</nodetype>
-            <nodename>Persoon</nodename>
-            <nodeid>3498791725963656049</nodeid>
-          </node>
-          <referencerole>rechtssubjectMetPlicht</referencerole>
-          <node>
-            <noderole>rechtssubjecten</noderole>
-            <nodetype>RechtsSubject</nodetype>
-            <nodename>Inspecteur</nodename>
-            <nodeid>5540471952145969706</nodeid>
-          </node>
-          <referencerole>onderwerp</referencerole>
-          <node>
-            <noderole>onderwerpen</noderole>
-            <nodetype>Onderwerp</nodetype>
-            <nodename>Verzoek om te worden uitgenodigd</nodename>
-            <nodeid>3906693623811143160</nodeid>
-          </node>
-          <referencerole>bevoegdheidTot</referencerole>
-          <node>
-            <noderole>overgangen</noderole>
-            <nodetype>Rechtshandeling</nodetype>
-            <nodename>Indienen van een verzoek om te worden uitgenodigd</nodename>
-            <nodeid>3906693623811143135</nodeid>
-          </node>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Persoon</nodename>
+              <nodeid>3498791725963656049</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Inspecteur</nodename>
+              <nodeid>5540471952145969706</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>Verzoek om te worden uitgenodigd</nodename>
+              <nodeid>3906693623811143160</nodeid>
+            </node>
+          </reference>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>Indienen van een verzoek om te worden uitgenodigd</nodename>
+              <nodeid>3906693623811143135</nodeid>
+            </node>
+          </reference>
         </references>
     </node>
     <node>
@@ -359,45 +367,50 @@
                   <property name='alias'></property>
               </properties>
               <references>
-                <referencerole>artikel</referencerole>
-                <node>
-                  <noderole>bron</noderole>
-                  <nodetype>Artikel</nodetype>
-                  <nodename>AWR - artikel 6-2</nodename>
-                  <nodeid>3906693623811143208</nodeid>
-                </node>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>AWR - artikel 6-2</nodename>
+                    <nodeid>3906693623811143208</nodeid>
+                  </node>
+                </reference>
               </references>
           </node>
         </children>
         <references>
-          <referencerole>bevoegdheidTot</referencerole>
-          <node>
-            <noderole>overgangen</noderole>
-            <nodetype>Rechtshandeling</nodetype>
-            <nodename>Uitnodigen tot het doen van aangifte</nodename>
-            <nodeid>3498791725963656107</nodeid>
-          </node>
-          <referencerole>rechtssubjectMetRecht</referencerole>
-          <node>
-            <noderole>rechtssubjecten</noderole>
-            <nodetype>RechtsSubject</nodetype>
-            <nodename>Persoon</nodename>
-            <nodeid>3498791725963656049</nodeid>
-          </node>
-          <referencerole>rechtssubjectMetPlicht</referencerole>
-          <node>
-            <noderole>rechtssubjecten</noderole>
-            <nodetype>RechtsSubject</nodetype>
-            <nodename>Inspecteur</nodename>
-            <nodeid>5540471952145969706</nodeid>
-          </node>
-          <referencerole>onderwerp</referencerole>
-          <node>
-            <noderole>onderwerpen</noderole>
-            <nodetype>Onderwerp</nodetype>
-            <nodename>Uitnodiging tot het doen van aangifte</nodename>
-            <nodeid>3498791725963656075</nodeid>
-          </node>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>Uitnodigen tot het doen van aangifte</nodename>
+              <nodeid>3498791725963656107</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Persoon</nodename>
+              <nodeid>3498791725963656049</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Inspecteur</nodename>
+              <nodeid>5540471952145969706</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>Uitnodiging tot het doen van aangifte</nodename>
+              <nodeid>3498791725963656075</nodeid>
+            </node>
+          </reference>
         </references>
     </node>
     <node>
@@ -474,34 +487,38 @@
           </node>
         </children>
         <references>
-          <referencerole>rechtssubjectMetPlicht</referencerole>
-          <node>
-            <noderole>rechtssubjecten</noderole>
-            <nodetype>RechtsSubject</nodetype>
-            <nodename>Persoon</nodename>
-            <nodeid>3498791725963656049</nodeid>
-          </node>
-          <referencerole>rechtssubjectMetRecht</referencerole>
-          <node>
-            <noderole>rechtssubjecten</noderole>
-            <nodetype>RechtsSubject</nodetype>
-            <nodename>Inspecteur</nodename>
-            <nodeid>5540471952145969706</nodeid>
-          </node>
-          <referencerole>bevoegdheidTot</referencerole>
-          <node>
-            <noderole>overgangen</noderole>
-            <nodetype>Rechtshandeling</nodetype>
-            <nodename>Indienen van een verzoek om te worden uitgenodigd</nodename>
-            <nodeid>3906693623811143135</nodeid>
-          </node>
-          <referencerole>onderwerp</referencerole>
-          <node>
-            <noderole>onderwerpen</noderole>
-            <nodetype>Onderwerp</nodetype>
-            <nodename>Verzoek om te worden uitgenodigd</nodename>
-            <nodeid>3906693623811143160</nodeid>
-          </node>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Persoon</nodename>
+              <nodeid>3498791725963656049</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Inspecteur</nodename>
+              <nodeid>5540471952145969706</nodeid>
+            </node>
+          </reference>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>Indienen van een verzoek om te worden uitgenodigd</nodename>
+              <nodeid>3906693623811143135</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>Verzoek om te worden uitgenodigd</nodename>
+              <nodeid>3906693623811143160</nodeid>
+            </node>
+          </reference>
         </references>
     </node>
 </rechtsbetrekkingen>
@@ -524,13 +541,14 @@
                   <property name='alias'></property>
               </properties>
               <references>
-                <referencerole>rechtssubject</referencerole>
-                <node>
-                  <noderole>rechtssubjecten</noderole>
-                  <nodetype>RechtsSubject</nodetype>
-                  <nodename>Inspecteur</nodename>
-                  <nodeid>5540471952145969706</nodeid>
-                </node>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>Inspecteur</nodename>
+                    <nodeid>5540471952145969706</nodeid>
+                  </node>
+                </reference>
               </references>
           </node>
           <node>
@@ -562,13 +580,14 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>rechtsbetrekking</referencerole>
-                      <node>
-                        <noderole>toestanden</noderole>
-                        <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
-                        <nodename>Bevoegdheid tot het uitnodigen tot het doen van aangifte</nodename>
-                        <nodeid>3498791725963656061</nodeid>
-                      </node>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+                          <nodename>Bevoegdheid tot het uitnodigen tot het doen van aangifte</nodename>
+                          <nodeid>3498791725963656061</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
                 <node>
@@ -579,13 +598,14 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>rechtsbetrekking</referencerole>
-                      <node>
-                        <noderole>toestanden</noderole>
-                        <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-                        <nodename>De verplichting om te verzoeken om te worden uitgenodigd</nodename>
-                        <nodeid>3906693623811143152</nodeid>
-                      </node>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+                          <nodename>De verplichting om te verzoeken om te worden uitgenodigd</nodename>
+                          <nodeid>3906693623811143152</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
                 <node>
@@ -596,13 +616,14 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>rechtsbetrekking</referencerole>
-                      <node>
-                        <noderole>toestanden</noderole>
-                        <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-                        <nodename>Verplichting tot het uitnodigen tot het doen van aangifte</nodename>
-                        <nodeid>3906693623811143233</nodeid>
-                      </node>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+                          <nodename>Verplichting tot het uitnodigen tot het doen van aangifte</nodename>
+                          <nodeid>3906693623811143233</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
               </children>
@@ -627,13 +648,14 @@
                   <property name='alias'></property>
               </properties>
               <references>
-                <referencerole>rechtssubject</referencerole>
-                <node>
-                  <noderole>rechtssubjecten</noderole>
-                  <nodetype>RechtsSubject</nodetype>
-                  <nodename>Persoon</nodename>
-                  <nodeid>3498791725963656049</nodeid>
-                </node>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>Persoon</nodename>
+                    <nodeid>3498791725963656049</nodeid>
+                  </node>
+                </reference>
               </references>
           </node>
           <node>
@@ -665,13 +687,14 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>rechtsbetrekking</referencerole>
-                      <node>
-                        <noderole>toestanden</noderole>
-                        <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-                        <nodename>Verplichting tot het uitnodigen tot het doen van aangifte</nodename>
-                        <nodeid>3906693623811143233</nodeid>
-                      </node>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+                          <nodename>Verplichting tot het uitnodigen tot het doen van aangifte</nodename>
+                          <nodeid>3906693623811143233</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
               </children>
@@ -684,13 +707,14 @@
                   <property name='alias'></property>
               </properties>
               <references>
-                <referencerole>artikel</referencerole>
-                <node>
-                  <noderole>bron</noderole>
-                  <nodetype>Artikel</nodetype>
-                  <nodename>AWR - artikel 6-2</nodename>
-                  <nodeid>3906693623811143208</nodeid>
-                </node>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>AWR - artikel 6-2</nodename>
+                    <nodeid>3906693623811143208</nodeid>
+                  </node>
+                </reference>
               </references>
           </node>
         </children>

@@ -2518,13 +2518,19 @@
       </node>
       <node concept="3F0ifn" id="3r$i425ewF$" role="3EZMnx">
         <property role="3F0ifm" value="waarbij volgens andere partij is voldaan aan alle voorwaarden." />
+        <node concept="ljvvj" id="52o5oqbjbOY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="7$WBeOqLHka" role="2iSdaV" />
+      <node concept="3F0ifn" id="52o5oqbjbOm" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3d6QfrfKQ5e">
     <property role="3GE5qa" value="RechtsgevolgVeroorzakers" />
-    <ref role="1XX52x" to="xhlk:3d6QfrfG1Ss" resolve="ReferentieNaarRechtshandeling" />
+    <ref role="1XX52x" to="xhlk:3d6QfrfG1Ss" resolve="UitvoerbareRechtshandeling" />
     <node concept="3EZMnI" id="3d6QfrfKQ5f" role="2wV5jI">
       <node concept="l2Vlx" id="3d6QfrfKQ5g" role="2iSdaV" />
       <node concept="1HlG4h" id="3d6QfrfKQ5h" role="3EZMnx">
@@ -2815,7 +2821,7 @@
   </node>
   <node concept="24kQdi" id="3d6QfrfKQ7h">
     <property role="3GE5qa" value="RechtsgevolgVeroorzakers" />
-    <ref role="1XX52x" to="xhlk:3d6QfrfG1Ss" resolve="ReferentieNaarRechtshandeling" />
+    <ref role="1XX52x" to="xhlk:3d6QfrfG1Ss" resolve="UitvoerbareRechtshandeling" />
     <node concept="3EZMnI" id="3d6QfrfKQ7i" role="2wV5jI">
       <node concept="l2Vlx" id="3d6QfrfKQ7j" role="2iSdaV" />
       <node concept="1HlG4h" id="3d6QfrfKQ7k" role="3EZMnx">
@@ -3569,6 +3575,26 @@
                   <node concept="37vLTw" id="5vursKR4oqb" role="37wK5m">
                     <ref role="3cqZAo" node="5RiSaxyNDlg" resolve="simulatie" />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="52o5oqbjf$F" role="3cqZAp">
+              <node concept="2OqwBi" id="52o5oqbjiAN" role="3clFbG">
+                <node concept="2OqwBi" id="52o5oqbjgOV" role="2Oq$k0">
+                  <node concept="2OqwBi" id="52o5oqbjfS_" role="2Oq$k0">
+                    <node concept="37vLTw" id="52o5oqbjf$D" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5RiSaxyNDlg" resolve="simulatie" />
+                    </node>
+                    <node concept="3TrEf2" id="52o5oqbjgnS" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xhlk:5RiSaxyO00G" resolve="uittevoerenhandeling" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="52o5oqbjhbB" role="2OqNvi">
+                    <ref role="3Tt5mk" to="xhlk:5RiSaxyNDdq" resolve="rechtshandeling" />
+                  </node>
+                </node>
+                <node concept="2oxUTD" id="52o5oqbjj0V" role="2OqNvi">
+                  <node concept="10Nm6u" id="52o5oqbjjd6" role="2oxUTC" />
                 </node>
               </node>
             </node>

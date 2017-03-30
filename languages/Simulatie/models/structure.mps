@@ -159,7 +159,7 @@
       <property role="IQ2ns" value="5807415387094569851" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="gebaseerdOp" />
-      <ref role="20lvS9" to="gcgs:6c9haf45sNk" resolve="Rechtshandeling" />
+      <ref role="20lvS9" to="gcgs:6c9haf45syu" resolve="Rechtsbetrekking" />
     </node>
   </node>
   <node concept="1TIwiD" id="6w7GUCbsHju">
