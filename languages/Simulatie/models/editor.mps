@@ -176,6 +176,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -263,6 +264,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
     </language>
   </registry>
   <node concept="24kQdi" id="6OHSlZaWs6K">
@@ -596,6 +598,38 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="52o5oqbsx$D" role="3cqZAp">
+              <node concept="2OqwBi" id="52o5oqbsx$E" role="3clFbG">
+                <node concept="2OqwBi" id="52o5oqbsx$F" role="2Oq$k0">
+                  <node concept="2OqwBi" id="52o5oqbsx$G" role="2Oq$k0">
+                    <node concept="1VaYGm" id="52o5oqbsy0x" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="52o5oqbsx$I" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xhlk:5RiSaxyO00G" resolve="uittevoerenhandeling" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="52o5oqbsx$J" role="2OqNvi">
+                    <ref role="3Tt5mk" to="xhlk:5RiSaxyNDdq" resolve="rechtshandeling" />
+                  </node>
+                </node>
+                <node concept="2oxUTD" id="52o5oqbsx$K" role="2OqNvi">
+                  <node concept="2OqwBi" id="52o5oqbsx$L" role="2oxUTC">
+                    <node concept="2OqwBi" id="52o5oqbsx$M" role="2Oq$k0">
+                      <node concept="2OqwBi" id="52o5oqbsx$N" role="2Oq$k0">
+                        <node concept="1VaYGm" id="52o5oqbsy9T" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="52o5oqbsx$P" role="2OqNvi">
+                          <ref role="3TtcxE" to="xhlk:3d6QfrfG1Sv" resolve="uitvoerbarehandelingen" />
+                        </node>
+                      </node>
+                      <node concept="1yVyf7" id="52o5oqbsx$Q" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrEf2" id="52o5oqbsx$R" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xhlk:3d6QfrfG1St" resolve="rechtshandeling" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="52o5oqbsxsf" role="3cqZAp" />
           </node>
         </node>
         <node concept="ljvvj" id="5RiSaxyO084" role="3F10Kt">
@@ -3594,7 +3628,22 @@
                   </node>
                 </node>
                 <node concept="2oxUTD" id="52o5oqbjj0V" role="2OqNvi">
-                  <node concept="10Nm6u" id="52o5oqbjjd6" role="2oxUTC" />
+                  <node concept="2OqwBi" id="52o5oqbpEsV" role="2oxUTC">
+                    <node concept="2OqwBi" id="52o5oqbp_fb" role="2Oq$k0">
+                      <node concept="2OqwBi" id="52o5oqbpyUN" role="2Oq$k0">
+                        <node concept="37vLTw" id="52o5oqbpyIO" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5RiSaxyNDlg" resolve="simulatie" />
+                        </node>
+                        <node concept="3Tsc0h" id="52o5oqbpz8r" role="2OqNvi">
+                          <ref role="3TtcxE" to="xhlk:3d6QfrfG1Sv" resolve="uitvoerbarehandelingen" />
+                        </node>
+                      </node>
+                      <node concept="1yVyf7" id="52o5oqbsxir" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrEf2" id="52o5oqbpEGs" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xhlk:3d6QfrfG1St" resolve="rechtshandeling" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
