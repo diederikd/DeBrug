@@ -1118,7 +1118,7 @@
                             <node concept="1bpajm" id="512SkqO3CZr" role="3cqZAp" />
                             <node concept="lc7rE" id="512SkqO3DB_" role="3cqZAp">
                               <node concept="la8eA" id="512SkqO3DBA" role="lcghm">
-                                <property role="lacIc" value="&lt;referencerole&gt;" />
+                                <property role="lacIc" value="&lt;reference role='" />
                               </node>
                               <node concept="l9hG8" id="512SkqO3DBB" role="lcghm">
                                 <node concept="2OqwBi" id="512SkqO3DYj" role="lb14g">
@@ -1130,23 +1130,34 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="la8eA" id="512SkqO3DBH" role="lcghm">
-                                <property role="lacIc" value="&lt;/referencerole&gt;" />
+                              <node concept="la8eA" id="52o5oqaP8Rh" role="lcghm">
+                                <property role="lacIc" value="'&gt;" />
                               </node>
                               <node concept="l8MVK" id="512SkqO3DBI" role="lcghm" />
                             </node>
-                            <node concept="lc7rE" id="1Enheq_8iIP" role="3cqZAp">
-                              <node concept="1bDJIP" id="1Enheq_8j0N" role="lcghm">
-                                <ref role="1rvKf6" node="1Enheq_8ifo" resolve="conceptTextgenReferent" />
-                                <node concept="2OqwBi" id="1Enheq_8j97" role="1ryhcI">
-                                  <node concept="2GrUjf" id="1Enheq_8j11" role="2Oq$k0">
-                                    <ref role="2Gs0qQ" node="1Enheq_26VH" resolve="reference" />
-                                  </node>
-                                  <node concept="liA8E" id="1Enheq_8jo6" role="2OqNvi">
-                                    <ref role="37wK5l" to="mhbf:~SReference.getTargetNode():org.jetbrains.mps.openapi.model.SNode" resolve="getTargetNode" />
+                            <node concept="3izx1p" id="52o5oqaP1Ly" role="3cqZAp">
+                              <node concept="3clFbS" id="52o5oqaP1L$" role="3izTki">
+                                <node concept="lc7rE" id="1Enheq_8iIP" role="3cqZAp">
+                                  <node concept="1bDJIP" id="1Enheq_8j0N" role="lcghm">
+                                    <ref role="1rvKf6" node="1Enheq_8ifo" resolve="conceptTextgenReferent" />
+                                    <node concept="2OqwBi" id="1Enheq_8j97" role="1ryhcI">
+                                      <node concept="2GrUjf" id="1Enheq_8j11" role="2Oq$k0">
+                                        <ref role="2Gs0qQ" node="1Enheq_26VH" resolve="reference" />
+                                      </node>
+                                      <node concept="liA8E" id="1Enheq_8jo6" role="2OqNvi">
+                                        <ref role="37wK5l" to="mhbf:~SReference.getTargetNode():org.jetbrains.mps.openapi.model.SNode" resolve="getTargetNode" />
+                                      </node>
+                                    </node>
                                   </node>
                                 </node>
                               </node>
+                            </node>
+                            <node concept="1bpajm" id="52o5oqaP1KD" role="3cqZAp" />
+                            <node concept="lc7rE" id="52o5oqaP1J8" role="3cqZAp">
+                              <node concept="la8eA" id="512SkqO3DBH" role="lcghm">
+                                <property role="lacIc" value="&lt;/reference&gt;" />
+                              </node>
+                              <node concept="l8MVK" id="52o5oqaP1K0" role="lcghm" />
                             </node>
                           </node>
                         </node>
@@ -1270,7 +1281,7 @@
     </node>
   </node>
   <node concept="1bsvg0" id="1Enheq_8ifn">
-    <property role="TrG5h" value="GenericXMLTextgenReferent" />
+    <property role="TrG5h" value="GenericXMLTextgenReference" />
     <node concept="1bwezc" id="1Enheq_8ifo" role="1bwxVq">
       <property role="TrG5h" value="conceptTextgenReferent" />
       <node concept="37vLTG" id="1Enheq_8ifp" role="3clF46">

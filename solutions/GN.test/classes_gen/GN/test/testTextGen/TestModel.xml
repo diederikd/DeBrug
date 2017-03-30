@@ -1,0 +1,1498 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<context>
+<rechtssubjecten>
+</rechtssubjecten>
+<onderwerpen>
+</onderwerpen>
+<enumeraties>
+</enumeraties>
+<rechtsbetrekkingen>
+    <node>
+      <noderole>toestanden</noderole>
+      <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+      <nodename>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</nodename>
+      <nodeid>2317404197410775793</nodeid>
+        <properties>
+            <property name='initieel'>true</property>
+            <property name='alias'></property>
+            <property name='name'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>Voorwaarden</noderole>
+            <nodetype>Voorwaarden</nodetype>
+            <nodename></nodename>
+            <nodeid>6133486975028282110</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'></property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>6133486975028698525</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>ErIsEen</nodetype>
+                        <nodeid>6133486975028698526</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>voorwaarden</noderole>
+                              <nodetype>IsGelijk</nodetype>
+                              <nodeid>6133486975028698527</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>expressie1</noderole>
+                                    <nodetype>Variabele</nodetype>
+                                    <nodeid>6133486975028698528</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <children>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>ReferentieNaarKenmerk</nodetype>
+                                          <nodeid>6133486975028698529</nodeid>
+                                            <properties>
+                                                <property name='alias'></property>
+                                            </properties>
+                                            <references>
+                                              <referencerole>kenmerk</referencerole>
+                                              <node>
+                                                <noderole>kenmerk</noderole>
+                                                <nodetype>Kenmerk</nodetype>
+                                                <nodename>werkgeversidentificatie</nodename>
+                                                <nodeid>797539131722830659</nodeid>
+                                              </node>
+                                            </references>
+                                        </node>
+                                      </children>
+                                  </node>
+                                  <node>
+                                    <noderole>expressie2</noderole>
+                                    <nodetype>RechtsSubjectMetPlicht</nodetype>
+                                    <nodeid>6133486975028698530</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                  </node>
+                                </children>
+                            </node>
+                            <node>
+                              <noderole>voorwaarden</noderole>
+                              <nodetype>IsGelijk</nodetype>
+                              <nodeid>6133486975028698531</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>expressie1</noderole>
+                                    <nodetype>Variabele</nodetype>
+                                    <nodeid>6133486975028698532</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <children>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>ReferentieNaarKenmerk</nodetype>
+                                          <nodeid>6133486975028698533</nodeid>
+                                            <properties>
+                                                <property name='alias'></property>
+                                            </properties>
+                                            <references>
+                                              <referencerole>kenmerk</referencerole>
+                                              <node>
+                                                <noderole>kenmerk</noderole>
+                                                <nodetype>Kenmerk</nodetype>
+                                                <nodename>werknemersidentificatie</nodename>
+                                                <nodeid>797539131722830615</nodeid>
+                                              </node>
+                                            </references>
+                                        </node>
+                                      </children>
+                                  </node>
+                                  <node>
+                                    <noderole>expressie2</noderole>
+                                    <nodetype>RechtsSubjectMetRecht</nodetype>
+                                    <nodeid>6133486975028698534</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                  </node>
+                                </children>
+                            </node>
+                            <node>
+                              <noderole>voorwaarden</noderole>
+                              <nodetype>LigtVoor</nodetype>
+                              <nodeid>6133486975028698535</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>expressie1</noderole>
+                                    <nodetype>Variabele</nodetype>
+                                    <nodeid>6133486975028698536</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <children>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>ReferentieNaarKenmerk</nodetype>
+                                          <nodeid>6133486975028698537</nodeid>
+                                            <properties>
+                                                <property name='alias'></property>
+                                            </properties>
+                                            <references>
+                                              <referencerole>kenmerk</referencerole>
+                                              <node>
+                                                <noderole>kenmerk</noderole>
+                                                <nodetype>Kenmerk</nodetype>
+                                                <nodename>arbeidsovereenkomst getekend op</nodename>
+                                                <nodeid>6305595003050606828</nodeid>
+                                              </node>
+                                            </references>
+                                        </node>
+                                      </children>
+                                  </node>
+                                  <node>
+                                    <noderole>expressie2</noderole>
+                                    <nodetype>HuidigeDatum</nodetype>
+                                    <nodeid>6133486975028698538</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                          <references>
+                            <referencerole>object</referencerole>
+                            <node>
+                              <noderole>onderwerpen</noderole>
+                              <nodetype>Onderwerp</nodetype>
+                              <nodename>arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling</nodename>
+                              <nodeid>5266643527327102431</nodeid>
+                            </node>
+                          </references>
+                      </node>
+                    </children>
+                </node>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>6133486975028698579</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>IsGroterOfGelijk</nodetype>
+                        <nodeid>6133486975028698580</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>expressie1</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>6133486975028698581</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>6133486975028698582</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>kenmerk</referencerole>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>Kenmerk</nodetype>
+                                          <nodename>aantal werknemers</nodename>
+                                          <nodeid>6305595003050758148</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                            <node>
+                              <noderole>expressie2</noderole>
+                              <nodetype>GeheelGetalWaarde</nodetype>
+                              <nodeid>6133486975028698583</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>waarde</noderole>
+                                    <nodetype>GeheelGetal</nodetype>
+                                    <nodeid>6133486975028698584</nodeid>
+                                      <properties>
+                                          <property name='waarde'>10</property>
+                                          <property name='alias'></property>
+                                      </properties>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                      </node>
+                    </children>
+                </node>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>6133486975028282498</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>IsGeen</nodetype>
+                        <nodeid>6133486975028282499</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>variabele</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>6133486975028282500</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>6133486975028282501</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>kenmerk</referencerole>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>Kenmerk</nodetype>
+                                          <nodename>militair ambtenaar</nodename>
+                                          <nodeid>6305595003050903427</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                  <node>
+                                    <noderole>object</noderole>
+                                    <nodetype>ReferentieNaarObject</nodetype>
+                                    <nodeid>6133486975028282502</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>object</referencerole>
+                                        <node>
+                                          <noderole>rechtssubjecten</noderole>
+                                          <nodetype>RechtsSubject</nodetype>
+                                          <nodename>werknemer</nodename>
+                                          <nodeid>5753801799636978868</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                      </node>
+                    </children>
+                </node>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>6133486975028698637</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>ErIsGeen</nodetype>
+                        <nodeid>6133486975028698638</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>voorwaarden</noderole>
+                              <nodetype>TenHoogsteVoor</nodetype>
+                              <nodeid>6331618849990035133</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>duur</noderole>
+                                    <nodetype>DuurWaarde</nodetype>
+                                    <nodeid>6331618849990035170</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <children>
+                                        <node>
+                                          <noderole>duur</noderole>
+                                          <nodetype>Jaren</nodetype>
+                                          <nodeid>6331618849990035173</nodeid>
+                                            <properties>
+                                                <property name='jaren'>2</property>
+                                                <property name='alias'></property>
+                                            </properties>
+                                        </node>
+                                      </children>
+                                  </node>
+                                  <node>
+                                    <noderole>expressie1</noderole>
+                                    <nodetype>Variabele</nodetype>
+                                    <nodeid>6331618849990035157</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <children>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>ReferentieNaarKenmerk</nodetype>
+                                          <nodeid>6331618849990035163</nodeid>
+                                            <properties>
+                                                <property name='alias'></property>
+                                            </properties>
+                                            <references>
+                                              <referencerole>kenmerk</referencerole>
+                                              <node>
+                                                <noderole>kenmerk</noderole>
+                                                <nodetype>Kenmerk</nodetype>
+                                                <nodename>datum verzoek ingewilligd</nodename>
+                                                <nodeid>5540471952143438865</nodeid>
+                                              </node>
+                                            </references>
+                                        </node>
+                                      </children>
+                                  </node>
+                                  <node>
+                                    <noderole>expressie2</noderole>
+                                    <nodetype>HuidigeDatum</nodetype>
+                                    <nodeid>6331618849990035175</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                  </node>
+                                </children>
+                            </node>
+                            <node>
+                              <noderole>voorwaarden</noderole>
+                              <nodetype>TenHoogsteVoor</nodetype>
+                              <nodeid>6331618849990035198</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>duur</noderole>
+                                    <nodetype>DuurWaarde</nodetype>
+                                    <nodeid>6331618849990035237</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <children>
+                                        <node>
+                                          <noderole>duur</noderole>
+                                          <nodetype>Jaren</nodetype>
+                                          <nodeid>6331618849990035240</nodeid>
+                                            <properties>
+                                                <property name='jaren'>2</property>
+                                                <property name='alias'></property>
+                                            </properties>
+                                        </node>
+                                      </children>
+                                  </node>
+                                  <node>
+                                    <noderole>expressie1</noderole>
+                                    <nodetype>Variabele</nodetype>
+                                    <nodeid>6331618849990035228</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <children>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>ReferentieNaarKenmerk</nodetype>
+                                          <nodeid>6331618849990035234</nodeid>
+                                            <properties>
+                                                <property name='alias'></property>
+                                            </properties>
+                                            <references>
+                                              <referencerole>kenmerk</referencerole>
+                                              <node>
+                                                <noderole>kenmerk</noderole>
+                                                <nodetype>Kenmerk</nodetype>
+                                                <nodename>datum verzoek afgewezen</nodename>
+                                                <nodeid>5540471952143439007</nodeid>
+                                              </node>
+                                            </references>
+                                        </node>
+                                      </children>
+                                  </node>
+                                  <node>
+                                    <noderole>expressie2</noderole>
+                                    <nodetype>HuidigeDatum</nodetype>
+                                    <nodeid>6331618849990035242</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                          <references>
+                            <referencerole>object</referencerole>
+                            <node>
+                              <noderole>onderwerpen</noderole>
+                              <nodetype>Onderwerp</nodetype>
+                              <nodename>aanpassing van de arbeidsduur</nodename>
+                              <nodeid>848775529194317032</nodeid>
+                            </node>
+                          </references>
+                      </node>
+                    </children>
+                </node>
+                <node>
+                  <noderole>conditie</noderole>
+                  <nodetype>ConditieAlle</nodetype>
+                  <nodeid>6133486975028282192</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>5266643527326992491</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <referencerole>artikel</referencerole>
+                <node>
+                  <noderole>bron</noderole>
+                  <nodetype>Artikel</nodetype>
+                  <nodename>2.1</nodename>
+                  <nodeid>5066083982446708452</nodeid>
+                </node>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>909603116718604842</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>7</property>
+                  <property name='jaar'>2000</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>GeldigVan</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>de latere datum van ingang wet of datum van indiensttredingdatum</nodename>
+            <nodeid>4271677511962075765</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>de latere datum van ingang wet of datum van indiensttredingdatum</property>
+              </properties>
+          </node>
+        </children>
+        <references>
+          <referencerole>rechtssubjectMetPlicht</referencerole>
+          <node>
+            <noderole>rechtssubjecten</noderole>
+            <nodetype>RechtsSubject</nodetype>
+            <nodename>werkgever</nodename>
+            <nodeid>5753801799637012771</nodeid>
+          </node>
+          <referencerole>onderwerp</referencerole>
+          <node>
+            <noderole>onderwerpen</noderole>
+            <nodetype>Onderwerp</nodetype>
+            <nodename>aanpassing van de arbeidsduur</nodename>
+            <nodeid>848775529194317032</nodeid>
+          </node>
+          <referencerole>rechtssubjectMetRecht</referencerole>
+          <node>
+            <noderole>rechtssubjecten</noderole>
+            <nodetype>RechtsSubject</nodetype>
+            <nodename>werknemer</nodename>
+            <nodeid>5753801799636978868</nodeid>
+          </node>
+          <referencerole>bevoegdheidTot</referencerole>
+          <node>
+            <noderole>overgangen</noderole>
+            <nodetype>Rechtshandeling</nodetype>
+            <nodename>Indienen verzoek aanpassing arbeidsduur</nodename>
+            <nodeid>5066083982446708445</nodeid>
+          </node>
+        </references>
+    </node>
+</rechtsbetrekkingen>
+<rechtsgevolgveroorzakers>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>Rechtshandeling</nodetype>
+      <nodename>Indienen verzoek aanpassing arbeidsduur</nodename>
+      <nodeid>5066083982446708445</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Indienen verzoek aanpassing arbeidsduur</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>nieuweFeiten</noderole>
+            <nodetype>MethodeNieuweFeiten</nodetype>
+            <nodeid>5540471952143220831</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>5540471952143220839</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <referencerole>kenmerk</referencerole>
+                      <node>
+                        <noderole>kenmerk</noderole>
+                        <nodetype>Kenmerk</nodetype>
+                        <nodename>omvang van de aanpassing</nodename>
+                        <nodeid>797539131721925527</nodeid>
+                      </node>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>3955365814688413158</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <referencerole>kenmerk</referencerole>
+                      <node>
+                        <noderole>kenmerk</noderole>
+                        <nodetype>Kenmerk</nodetype>
+                        <nodename>gewenste spreiding</nodename>
+                        <nodeid>797539131721925590</nodeid>
+                      </node>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>5540471952143220847</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <referencerole>kenmerk</referencerole>
+                      <node>
+                        <noderole>kenmerk</noderole>
+                        <nodetype>Kenmerk</nodetype>
+                        <nodename>schriftelijk ingediend</nodename>
+                        <nodeid>31726144782747159</nodeid>
+                      </node>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>5540471952143220857</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <referencerole>kenmerk</referencerole>
+                      <node>
+                        <noderole>kenmerk</noderole>
+                        <nodetype>Kenmerk</nodetype>
+                        <nodename>datum indienen verzoek</nodename>
+                        <nodeid>6249140128508295101</nodeid>
+                      </node>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>3955365814688413140</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <referencerole>kenmerk</referencerole>
+                      <node>
+                        <noderole>kenmerk</noderole>
+                        <nodetype>Kenmerk</nodetype>
+                        <nodename>datum vorige versie van het verzoek</nodename>
+                        <nodeid>3955365814688413039</nodeid>
+                      </node>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>5540471952143220894</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <referencerole>kenmerk</referencerole>
+                      <node>
+                        <noderole>kenmerk</noderole>
+                        <nodetype>Kenmerk</nodetype>
+                        <nodename>samentelling volgens werknemer</nodename>
+                        <nodeid>5105771847112954480</nodeid>
+                      </node>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>5540471952143220908</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <referencerole>kenmerk</referencerole>
+                      <node>
+                        <noderole>kenmerk</noderole>
+                        <nodetype>Kenmerk</nodetype>
+                        <nodename>beoogde ingangsdatum van de aanpassing</nodename>
+                        <nodeid>5266643527327199632</nodeid>
+                      </node>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>76320168777623139</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <referencerole>kenmerk</referencerole>
+                      <node>
+                        <noderole>kenmerk</noderole>
+                        <nodetype>Kenmerk</nodetype>
+                        <nodename>op grond van arbeidsovereenkomst</nodename>
+                        <nodeid>3955365814688947835</nodeid>
+                      </node>
+                    </references>
+                </node>
+              </children>
+              <references>
+                <referencerole>refObject</referencerole>
+                <node>
+                  <noderole>onderwerpen</noderole>
+                  <nodetype>Onderwerp</nodetype>
+                  <nodename>aanpassing van de arbeidsduur</nodename>
+                  <nodeid>848775529194317032</nodeid>
+                </node>
+              </references>
+          </node>
+          <node>
+            <noderole>Voorwaarden</noderole>
+            <nodetype>Voorwaarden</nodetype>
+            <nodename></nodename>
+            <nodeid>6133486975028699074</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'></property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>6133486975028699174</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>TenMinsteVoor</nodetype>
+                        <nodeid>6133486975028699175</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>duur</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>6133486975028699176</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>6133486975028699177</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>kenmerk</referencerole>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>Kenmerk</nodetype>
+                                          <nodename>samentelling volgens werknemer</nodename>
+                                          <nodeid>5105771847112954480</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                            <node>
+                              <noderole>expressie1</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>6133486975028699178</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>6133486975028699179</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>kenmerk</referencerole>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>Kenmerk</nodetype>
+                                          <nodename>datum indiensttreding</nodename>
+                                          <nodeid>6249140128508495744</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                            <node>
+                              <noderole>expressie2</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>6133486975028699180</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>6133486975028699181</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>kenmerk</referencerole>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>Kenmerk</nodetype>
+                                          <nodename>beoogde ingangsdatum van de aanpassing</nodename>
+                                          <nodeid>5266643527327199632</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                      </node>
+                    </children>
+                </node>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>736190567688042220</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>TenMinsteVoor</nodetype>
+                        <nodeid>736190567688042270</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>duur</noderole>
+                              <nodetype>DuurWaarde</nodetype>
+                              <nodeid>736190567688042291</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>duur</noderole>
+                                    <nodetype>Maanden</nodetype>
+                                    <nodeid>736190567688042294</nodeid>
+                                      <properties>
+                                          <property name='maanden'>4</property>
+                                          <property name='alias'></property>
+                                      </properties>
+                                  </node>
+                                </children>
+                            </node>
+                            <node>
+                              <noderole>expressie1</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>736190567688042282</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>736190567688042288</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>kenmerk</referencerole>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>Kenmerk</nodetype>
+                                          <nodename>datum indienen verzoek</nodename>
+                                          <nodeid>6249140128508295101</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                            <node>
+                              <noderole>expressie2</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>736190567688042296</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>736190567688042302</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>kenmerk</referencerole>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>Kenmerk</nodetype>
+                                          <nodename>beoogde ingangsdatum van de aanpassing</nodename>
+                                          <nodeid>5266643527327199632</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                      </node>
+                    </children>
+                </node>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>6133486975028699189</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>IsOpgegeven</nodetype>
+                        <nodeid>6133486975028699190</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>variabele</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>6133486975028699191</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>6133486975028699192</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>kenmerk</referencerole>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>Kenmerk</nodetype>
+                                          <nodename>omvang van de aanpassing</nodename>
+                                          <nodeid>797539131721925527</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                  <node>
+                                    <noderole>object</noderole>
+                                    <nodetype>ReferentieNaarObject</nodetype>
+                                    <nodeid>6133486975028699193</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>object</referencerole>
+                                        <node>
+                                          <noderole>onderwerpen</noderole>
+                                          <nodetype>Onderwerp</nodetype>
+                                          <nodename>aanpassing van de arbeidsduur</nodename>
+                                          <nodeid>848775529194317032</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                      </node>
+                    </children>
+                </node>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>6133486975028699194</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>IsOpgegeven</nodetype>
+                        <nodeid>6133486975028699195</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>variabele</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>6133486975028699196</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>6133486975028699197</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>kenmerk</referencerole>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>Kenmerk</nodetype>
+                                          <nodename>gewenste spreiding</nodename>
+                                          <nodeid>797539131721925590</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                      </node>
+                    </children>
+                </node>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>6133486975028699198</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>IsWaar</nodetype>
+                        <nodeid>6133486975028699199</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>variabele</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>6133486975028699200</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>6133486975028699201</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>kenmerk</referencerole>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>Kenmerk</nodetype>
+                                          <nodename>schriftelijk ingediend</nodename>
+                                          <nodeid>31726144782747159</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                  <node>
+                                    <noderole>object</noderole>
+                                    <nodetype>ReferentieNaarObject</nodetype>
+                                    <nodeid>6133486975028699202</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>object</referencerole>
+                                        <node>
+                                          <noderole>onderwerpen</noderole>
+                                          <nodetype>Onderwerp</nodetype>
+                                          <nodename>aanpassing van de arbeidsduur</nodename>
+                                          <nodeid>848775529194317032</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                      </node>
+                    </children>
+                </node>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>6133486975028699203</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>IsOpgegeven</nodetype>
+                        <nodeid>6133486975028699204</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>variabele</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>6133486975028699205</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>6133486975028699206</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>kenmerk</referencerole>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>Kenmerk</nodetype>
+                                          <nodename>beoogde ingangsdatum van de aanpassing</nodename>
+                                          <nodeid>5266643527327199632</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                  <node>
+                                    <noderole>object</noderole>
+                                    <nodetype>ReferentieNaarObject</nodetype>
+                                    <nodeid>6133486975028699207</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>object</referencerole>
+                                        <node>
+                                          <noderole>onderwerpen</noderole>
+                                          <nodetype>Onderwerp</nodetype>
+                                          <nodename>aanpassing van de arbeidsduur</nodename>
+                                          <nodeid>848775529194317032</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                      </node>
+                    </children>
+                </node>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>6133486975028699208</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>IsGelijk</nodetype>
+                        <nodeid>6133486975028699209</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>expressie1</noderole>
+                              <nodetype>DeSom</nodetype>
+                              <nodeid>6133486975028699210</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>expressie</noderole>
+                                    <nodetype>VerschilTussen</nodetype>
+                                    <nodeid>6133486975028699211</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <children>
+                                        <node>
+                                          <noderole>expressie1</noderole>
+                                          <nodetype>Variabele</nodetype>
+                                          <nodeid>6133486975028699212</nodeid>
+                                            <properties>
+                                                <property name='alias'></property>
+                                            </properties>
+                                            <children>
+                                              <node>
+                                                <noderole>kenmerk</noderole>
+                                                <nodetype>ReferentieNaarKenmerk</nodetype>
+                                                <nodeid>6133486975028699213</nodeid>
+                                                  <properties>
+                                                      <property name='alias'></property>
+                                                  </properties>
+                                                  <references>
+                                                    <referencerole>kenmerk</referencerole>
+                                                    <node>
+                                                      <noderole>kenmerk</noderole>
+                                                      <nodetype>Kenmerk</nodetype>
+                                                      <nodename>aanvangstijd periode</nodename>
+                                                      <nodeid>7431672735419572290</nodeid>
+                                                    </node>
+                                                  </references>
+                                              </node>
+                                            </children>
+                                        </node>
+                                        <node>
+                                          <noderole>expressie2</noderole>
+                                          <nodetype>Variabele</nodetype>
+                                          <nodeid>6133486975028699214</nodeid>
+                                            <properties>
+                                                <property name='alias'></property>
+                                            </properties>
+                                            <children>
+                                              <node>
+                                                <noderole>kenmerk</noderole>
+                                                <nodetype>ReferentieNaarKenmerk</nodetype>
+                                                <nodeid>6133486975028699215</nodeid>
+                                                  <properties>
+                                                      <property name='alias'></property>
+                                                  </properties>
+                                                  <references>
+                                                    <referencerole>kenmerk</referencerole>
+                                                    <node>
+                                                      <noderole>kenmerk</noderole>
+                                                      <nodetype>Kenmerk</nodetype>
+                                                      <nodename>eindtijd periode</nodename>
+                                                      <nodeid>7431672735419572313</nodeid>
+                                                    </node>
+                                                  </references>
+                                              </node>
+                                            </children>
+                                        </node>
+                                      </children>
+                                  </node>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>Variabele</nodetype>
+                                    <nodeid>790142833162011166</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <children>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>ReferentieNaarKenmerk</nodetype>
+                                          <nodeid>790142833162011170</nodeid>
+                                            <properties>
+                                                <property name='alias'></property>
+                                            </properties>
+                                            <references>
+                                              <referencerole>kenmerk</referencerole>
+                                              <node>
+                                                <noderole>kenmerk</noderole>
+                                                <nodetype>Kenmerk</nodetype>
+                                                <nodename>gewenste spreiding</nodename>
+                                                <nodeid>797539131721925590</nodeid>
+                                              </node>
+                                            </references>
+                                        </node>
+                                      </children>
+                                  </node>
+                                  <node>
+                                    <noderole>meervoudigkenmerk</noderole>
+                                    <nodetype>Variabele</nodetype>
+                                    <nodeid>790142833165997244</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <children>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>ReferentieNaarKenmerk</nodetype>
+                                          <nodeid>790142833165997248</nodeid>
+                                            <properties>
+                                                <property name='alias'></property>
+                                            </properties>
+                                            <references>
+                                              <referencerole>kenmerk</referencerole>
+                                              <node>
+                                                <noderole>kenmerk</noderole>
+                                                <nodetype>Kenmerk</nodetype>
+                                                <nodename>perioden</nodename>
+                                                <nodeid>6760713004464116818</nodeid>
+                                              </node>
+                                            </references>
+                                        </node>
+                                      </children>
+                                  </node>
+                                </children>
+                            </node>
+                            <node>
+                              <noderole>expressie2</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>6133486975028699216</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>6133486975028699217</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <referencerole>kenmerk</referencerole>
+                                        <node>
+                                          <noderole>kenmerk</noderole>
+                                          <nodetype>Kenmerk</nodetype>
+                                          <nodename>omvang van de aanpassing</nodename>
+                                          <nodeid>797539131721925527</nodeid>
+                                        </node>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                      </node>
+                    </children>
+                </node>
+                <node>
+                  <noderole>conditie</noderole>
+                  <nodetype>ConditieAlle</nodetype>
+                  <nodeid>6133486975028699170</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>5066083982446708446</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <referencerole>rechtssubject</referencerole>
+                <node>
+                  <noderole>rechtssubjecten</noderole>
+                  <nodetype>RechtsSubject</nodetype>
+                  <nodename>werknemer</nodename>
+                  <nodeid>5753801799636978868</nodeid>
+                </node>
+              </references>
+          </node>
+          <node>
+            <noderole>heeftAlsGevolg</noderole>
+            <nodetype>Rechtsgevolg</nodetype>
+            <nodename>verzoek is ingediend bij eigen werkgever</nodename>
+            <nodeid>5066083982446708447</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>verzoek is ingediend bij eigen werkgever</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>3955365814689050366</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <referencerole>rechtsbetrekking</referencerole>
+                      <node>
+                        <noderole>toestanden</noderole>
+                        <nodetype>ZwakkeAanspraakZwakkePlicht</nodetype>
+                        <nodename>verplichting tot overleg plegen</nodename>
+                        <nodeid>2317404197410906878</nodeid>
+                      </node>
+                    </references>
+                </node>
+                <node>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>3955365814689050367</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <referencerole>rechtsbetrekking</referencerole>
+                      <node>
+                        <noderole>toestanden</noderole>
+                        <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+                        <nodename>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
+en de omvang van de aanpassing</nodename>
+                        <nodeid>909603116718783952</nodeid>
+                      </node>
+                    </references>
+                </node>
+                <node>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>3955365814689050369</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <referencerole>rechtsbetrekking</referencerole>
+                      <node>
+                        <noderole>toestanden</noderole>
+                        <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
+                        <nodename>immuniteit (recht) om de verplichte bevoegdheid
+tot het inwilligen van het verzoek te neutraliseren</nodename>
+                        <nodeid>1431654249012741138</nodeid>
+                      </node>
+                    </references>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>Artikel</nodetype>
+            <nodename>2.1</nodename>
+            <nodeid>5066083982446708452</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>2.1</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>5066083982446708453</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>7</property>
+                  <property name='jaar'>2000</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>UitgevoerdOp</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>datum (opnieuw) indienen verzoek</nodename>
+            <nodeid>4271677511962658738</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>datum (opnieuw) indienen verzoek</property>
+              </properties>
+          </node>
+        </children>
+    </node>
+</rechtsgevolgveroorzakers>
+<regels>
+</regels>
+</context>

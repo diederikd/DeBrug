@@ -93,11 +93,16 @@ public abstract class GenericXMLTextgen {
       for (SReference reference : ListSequence.fromList(SNodeOperations.getReferences(node))) {
         ctx.getBuffer().area().increaseIndent();
         tgs.indent();
-        tgs.append("<referencerole>");
+        tgs.append("<reference role='");
         tgs.append(reference.getRole());
-        tgs.append("</referencerole>");
+        tgs.append("'>");
         tgs.newLine();
-        GenericXMLTextgenReferent.conceptTextgenReferent(reference.getTargetNode(), ctx);
+        ctx.getBuffer().area().increaseIndent();
+        GenericXMLTextgenReference.conceptTextgenReferent(reference.getTargetNode(), ctx);
+        ctx.getBuffer().area().decreaseIndent();
+        tgs.indent();
+        tgs.append("</reference>");
+        tgs.newLine();
         ctx.getBuffer().area().decreaseIndent();
       }
       tgs.indent();

@@ -37,7 +37,7 @@
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
   <dependency className="ObjectiefRecht.textGen.GenericXMLTextgen" file="GenericXMLTextgen.java">
-    <classNode dependClassName="ObjectiefRecht.textGen.GenericXMLTextgenReferent" />
+    <classNode dependClassName="ObjectiefRecht.textGen.GenericXMLTextgenReference" />
     <classNode dependClassName="jetbrains.mps.checkedName.PropertyReference" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.CollectionSequence" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
@@ -50,7 +50,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SReference" />
   </dependency>
-  <dependency className="ObjectiefRecht.textGen.GenericXMLTextgenReferent" file="GenericXMLTextgenReferent.java">
+  <dependency className="ObjectiefRecht.textGen.GenericXMLTextgenReference" file="GenericXMLTextgenReference.java">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
