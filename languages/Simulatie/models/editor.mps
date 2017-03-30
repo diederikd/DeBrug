@@ -2479,7 +2479,7 @@
         <ref role="1NtTu8" to="gcgs:6c9haf45_$D" resolve="rechtshandeling" />
         <node concept="1sVBvm" id="6c9haf45BTG" role="1sWHZn">
           <node concept="3F1sOY" id="6c9haf45BU0" role="2wV5jI">
-            <ref role="1NtTu8" to="3pw0:20D4HrzFFXI" resolve="rechtssubject" />
+            <ref role="1NtTu8" to="3pw0:20D4HrzFFXI" resolve="actor" />
           </node>
         </node>
       </node>
@@ -2561,7 +2561,7 @@
         <ref role="1NtTu8" to="xhlk:3d6QfrfG1St" resolve="rechtshandeling" />
         <node concept="1sVBvm" id="3d6QfrfPMOn" role="1sWHZn">
           <node concept="3F1sOY" id="3d6QfrfPNi_" role="2wV5jI">
-            <ref role="1NtTu8" to="3pw0:20D4HrzFFXI" resolve="rechtssubject" />
+            <ref role="1NtTu8" to="3pw0:20D4HrzFFXI" resolve="actor" />
           </node>
         </node>
       </node>
@@ -2745,7 +2745,7 @@
                       </node>
                     </node>
                     <node concept="3TrEf2" id="3d6QfrfKQ76" role="2OqNvi">
-                      <ref role="3Tt5mk" to="3pw0:20D4HrzFFXI" resolve="rechtssubject" />
+                      <ref role="3Tt5mk" to="3pw0:20D4HrzFFXI" resolve="actor" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="3d6QfrfKQ77" role="2OqNvi">
@@ -2852,7 +2852,7 @@
         <ref role="1NtTu8" to="xhlk:3d6QfrfG1St" resolve="rechtshandeling" />
         <node concept="1sVBvm" id="3d6QfrfPR3b" role="1sWHZn">
           <node concept="3F1sOY" id="3d6QfrfPRxo" role="2wV5jI">
-            <ref role="1NtTu8" to="3pw0:20D4HrzFFXI" resolve="rechtssubject" />
+            <ref role="1NtTu8" to="3pw0:20D4HrzFFXI" resolve="actor" />
           </node>
         </node>
       </node>
@@ -2985,7 +2985,7 @@
                       </node>
                     </node>
                     <node concept="3TrEf2" id="3d6QfrfONv6" role="2OqNvi">
-                      <ref role="3Tt5mk" to="3pw0:20D4HrzFFXI" resolve="rechtssubject" />
+                      <ref role="3Tt5mk" to="3pw0:20D4HrzFFXI" resolve="actor" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="3d6QfrfOOkd" role="2OqNvi">
@@ -3286,20 +3286,9 @@
       <node concept="1iCGBv" id="1f2HX0mK0gB" role="3EZMnx">
         <ref role="1NtTu8" to="xhlk:5RiSaxyNDdq" resolve="rechtshandeling" />
         <node concept="1sVBvm" id="1f2HX0mK0gD" role="1sWHZn">
-          <node concept="1iCGBv" id="1f2HX0mK0rV" role="2wV5jI">
-            <ref role="1NtTu8" to="3pw0:20D4HrzFFXI" resolve="rechtssubject" />
-            <node concept="1sVBvm" id="1f2HX0mK0rX" role="1sWHZn">
-              <node concept="1iCGBv" id="1f2HX0mK0sc" role="2wV5jI">
-                <ref role="1NtTu8" to="3pw0:20D4HrzFFXC" resolve="rechtssubject" />
-                <node concept="1sVBvm" id="1f2HX0mK0se" role="1sWHZn">
-                  <node concept="3F0A7n" id="1f2HX0mK0sl" role="2wV5jI">
-                    <property role="1Intyy" value="true" />
-                    <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-                    <ref role="1k5W1q" to="9nno:28ifPi2yzU5" resolve="Subject" />
-                  </node>
-                </node>
-              </node>
-            </node>
+          <node concept="3F1sOY" id="52o5oqaHJhf" role="2wV5jI">
+            <ref role="1NtTu8" to="3pw0:20D4HrzFFXI" resolve="actor" />
+            <ref role="1k5W1q" to="9nno:28ifPi2yzU5" resolve="Subject" />
           </node>
         </node>
         <node concept="ljvvj" id="1f2HX0mK0sr" role="3F10Kt">
