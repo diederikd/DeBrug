@@ -90,7 +90,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="uitvoerbarehandelingen" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3d6QfrfG1Ss" resolve="ReferentieNaarRechtshandeling" />
+      <ref role="20lvS9" node="3d6QfrfG1Ss" resolve="UitvoerbareRechtshandeling" />
     </node>
     <node concept="1TJgyj" id="6syAJDEdNDK" role="1TKVEi">
       <property role="IQ2ns" value="7431672735429245552" />
@@ -145,7 +145,7 @@
   </node>
   <node concept="1TIwiD" id="3d6QfrfG1Ss">
     <property role="EcuMT" value="3694879098862050844" />
-    <property role="TrG5h" value="ReferentieNaarRechtshandeling" />
+    <property role="TrG5h" value="UitvoerbareRechtshandeling" />
     <property role="34LRSv" value="referentie naar objectieve rechtshandeling" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3d6QfrfG1St" role="1TKVEi">
@@ -154,6 +154,12 @@
       <property role="20kJfa" value="rechtshandeling" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
+    </node>
+    <node concept="1TJgyj" id="52o5oqaUddV" role="1TKVEi">
+      <property role="IQ2ns" value="5807415387094569851" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="gebaseerdOp" />
+      <ref role="20lvS9" to="gcgs:6c9haf45sNk" resolve="Rechtshandeling" />
     </node>
   </node>
   <node concept="1TIwiD" id="6w7GUCbsHju">

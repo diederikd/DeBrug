@@ -45,7 +45,7 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> InitialiseerSubjecten_id72MtYCv3ANG = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("InitialiseerSubjecten").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("72MtYCv3ANG").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> ToevoegenUitgevoerdeHandeling_id3d6QfrgxoSL = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ToevoegenUitgevoerdeHandeling").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3d6QfrgxoSL").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> ResetSimulatie_id3d6QfrgEDkp = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ResetSimulatie").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3d6QfrgEDkp").registry(REGISTRY).build();
-  public static final SMethod<Void> VerversHandelingenInSimulatie_id2rhLMRp46el = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("VerversHandelingenInSimulatie").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("2rhLMRp46el").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> VerversUitvoerbareHandelingenInSimulatie_id2rhLMRp46el = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("VerversUitvoerbareHandelingenInSimulatie").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("2rhLMRp46el").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> ToevoegenHandelingAanSimulatie_id2N$PylwVyEM = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ToevoegenHandelingAanSimulatie").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("2N$PylwVyEM").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> UitvoerenHandeling_id3d6QfrgVOeu = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("UitvoerenHandeling").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3d6QfrgVOeu").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> HandelingToevoegenAanUitgevoerdeHandeling_id1Enheq$Rd7O = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("HandelingToevoegenAanUitgevoerdeHandeling").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1Enheq$Rd7O").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
@@ -56,7 +56,7 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> schoonBerichten_idCRumITE5PD = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("schoonBerichten").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("CRumITE5PD").registry(REGISTRY).build();
   public static final SMethod<Void> voegBerichtToe_idCRumITGtjc = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("voegBerichtToe").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("CRumITGtjc").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(Initialiseer_id5FFw3Y4c4n0, InitialiseerSubjecten_id72MtYCv3ANG, ToevoegenUitgevoerdeHandeling_id3d6QfrgxoSL, ResetSimulatie_id3d6QfrgEDkp, VerversHandelingenInSimulatie_id2rhLMRp46el, ToevoegenHandelingAanSimulatie_id2N$PylwVyEM, UitvoerenHandeling_id3d6QfrgVOeu, HandelingToevoegenAanUitgevoerdeHandeling_id1Enheq$Rd7O, GeefHuidigTijdstipVanDeSimulatie_id1Enheq$Rvw5, GeefHuidigeDatumVanDeSimulatie_id5QFVCQs$JI4, OpzoekenTypeHandeling_id3d6QfrgWko$, OpzoekenUitzonderingen_id3d6Qfrh1abK, schoonBerichten_idCRumITE5PD, voegBerichtToe_idCRumITGtjc);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(Initialiseer_id5FFw3Y4c4n0, InitialiseerSubjecten_id72MtYCv3ANG, ToevoegenUitgevoerdeHandeling_id3d6QfrgxoSL, ResetSimulatie_id3d6QfrgEDkp, VerversUitvoerbareHandelingenInSimulatie_id2rhLMRp46el, ToevoegenHandelingAanSimulatie_id2N$PylwVyEM, UitvoerenHandeling_id3d6QfrgVOeu, HandelingToevoegenAanUitgevoerdeHandeling_id1Enheq$Rd7O, GeefHuidigTijdstipVanDeSimulatie_id1Enheq$Rvw5, GeefHuidigeDatumVanDeSimulatie_id5QFVCQs$JI4, OpzoekenTypeHandeling_id3d6QfrgWko$, OpzoekenUitzonderingen_id3d6Qfrh1abK, schoonBerichten_idCRumITE5PD, voegBerichtToe_idCRumITGtjc);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -90,7 +90,7 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
     }
 
     // Initialiseer de rechtshandelingen 
-    Simulatie__BehaviorDescriptor.VerversHandelingenInSimulatie_id2rhLMRp46el.invoke(simulatie, simulatie);
+    Simulatie__BehaviorDescriptor.VerversUitvoerbareHandelingenInSimulatie_id2rhLMRp46el.invoke(simulatie, simulatie);
 
   }
   /*package*/ static void InitialiseerSubjecten_id72MtYCv3ANG(@NotNull SNode __thisNode__, SNode simulatie) {
@@ -131,6 +131,7 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
 
         SNode handeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"));
         SNodeFactoryOperations.setNewChild(handeling, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, 0x630944a3c415ccd8L, "actor"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd5L, "SubjectiefRecht.structure.ReferentieNaarRechtsSubject")));
+        SLinkOperations.setTarget(handeling, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd3L, 0x5042e146b41eaf59L, "gebaseerdOp"), SLinkOperations.getTarget(refnode, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x509815868ae8d37bL, "gebaseerdOp")));
         SNode rechtssubject = ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae782faL, "casus")), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, 0x464e588a6ffd4a79L, "rechtssubjecten"))).where(new IWhereFilter<SNode>() {
           public boolean accept(SNode it) {
             return SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88bL, 0x22327bed0059c24cL, "rol")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) == SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(refnode, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "actor")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aebf67L, 0x202912d6e3aebf68L, "rechtssubject")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
@@ -167,11 +168,12 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x67229afa6a373a70L, "uitgevoerdehandelingen"))).clear();
     SLinkOperations.setTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcaea0d6fL, "rechtspositie"), null);
   }
-  /*package*/ static void VerversHandelingenInSimulatie_id2rhLMRp46el(@NotNull SNode __thisNode__, SNode simulatie) {
+  /*package*/ static void VerversUitvoerbareHandelingenInSimulatie_id2rhLMRp46el(@NotNull SNode __thisNode__, SNode simulatie) {
     // Initialiseer rechtsbetrekkingen 
     SNode casus = SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae782faL, "casus"));
     SModel objectiefmodel = SNodeOperations.getModel(SLinkOperations.getTarget(casus, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, 0x464e588a7000d2e6L, "context")));
     ListSequence.fromList(SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen"))).clear();
+    SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.UitvoerbareRechtshandeling"));
 
     System.out.println(Simulatie__BehaviorDescriptor.GeefHuidigTijdstipVanDeSimulatie_id1Enheq$Rvw5.invoke(simulatie, simulatie));
     System.out.println(Simulatie__BehaviorDescriptor.GeefHuidigeDatumVanDeSimulatie_id5QFVCQs$JI4.invoke(simulatie, simulatie));
@@ -185,7 +187,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
         {
           final SNode rechtsbetrekkingVBVG = rechtsbetrekking;
           if (SNodeOperations.isInstanceOf(rechtsbetrekkingVBVG, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L, "ObjectiefRecht.structure.VerplichteBevoegdheidVerplichteGehoudenheid"))) {
-            SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"));
             SLinkOperations.setTarget(referentienaarrechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling"), SLinkOperations.getTarget(rechtsbetrekkingVBVG, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L, 0x3bfdb51c6ba53ac9L, "bevoegdheidTot")));
             Simulatie__BehaviorDescriptor.ToevoegenHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, referentienaarrechtshandeling);
           }
@@ -193,7 +194,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
         {
           final SNode rechtsbetrekkingOBOG = rechtsbetrekking;
           if (SNodeOperations.isInstanceOf(rechtsbetrekkingOBOG, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d98L, "ObjectiefRecht.structure.OptioneleBevoegdheidOptioneleGehoudenheid"))) {
-            SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"));
             SLinkOperations.setTarget(referentienaarrechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling"), SLinkOperations.getTarget(rechtsbetrekkingOBOG, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d98L, 0x3bfdb51c6ba51ed6L, "bevoegdheidTot")));
             Simulatie__BehaviorDescriptor.ToevoegenHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, referentienaarrechtshandeling);
           }
@@ -201,7 +201,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
         {
           final SNode rechtsbetrekkingKAFV = rechtsbetrekking;
           if (SNodeOperations.isInstanceOf(rechtsbetrekkingKAFV, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d97L, "ObjectiefRecht.structure.KrachtigeAanspraakFataleVerplichtig"))) {
-            SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"));
             SLinkOperations.setTarget(referentienaarrechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling"), SLinkOperations.getTarget(rechtsbetrekkingKAFV, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d97L, 0x3bfdb51c6ba51ed1L, "verplichtingTot")));
             Simulatie__BehaviorDescriptor.ToevoegenHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, referentienaarrechtshandeling);
           }
@@ -209,7 +208,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
         {
           final SNode rechtsbetrekkingANIS = rechtsbetrekking;
           if (SNodeOperations.isInstanceOf(rechtsbetrekkingANIS, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d93L, "ObjectiefRecht.structure.AanspraakNaIngebrekeStellingPlicht"))) {
-            SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"));
             SLinkOperations.setTarget(referentienaarrechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling"), SLinkOperations.getTarget(rechtsbetrekkingANIS, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d93L, 0x3bfdb51c6ba50297L, "verplichtingTot")));
             Simulatie__BehaviorDescriptor.ToevoegenHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, referentienaarrechtshandeling);
           }
@@ -217,7 +215,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
         {
           final SNode rechtsbetrekkingZAZP = rechtsbetrekking;
           if (SNodeOperations.isInstanceOf(rechtsbetrekkingZAZP, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d96L, "ObjectiefRecht.structure.ZwakkeAanspraakZwakkePlicht"))) {
-            SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"));
             SLinkOperations.setTarget(referentienaarrechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling"), SLinkOperations.getTarget(rechtsbetrekkingZAZP, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d96L, 0x3bfdb51c6ba54be5L, "verplichtingTot")));
             Simulatie__BehaviorDescriptor.ToevoegenHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, referentienaarrechtshandeling);
           }
@@ -225,7 +222,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
         {
           final SNode rechtsbetrekkingIGB = rechtsbetrekking;
           if (SNodeOperations.isInstanceOf(rechtsbetrekkingIGB, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, "ObjectiefRecht.structure.ImmuniteitGeenbevoegdheid"))) {
-            SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"));
             SLinkOperations.setTarget(referentienaarrechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling"), SLinkOperations.getTarget(rechtsbetrekkingIGB, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, 0x3bfdb51c6ba5108fL, "uittevoeren")));
             Simulatie__BehaviorDescriptor.ToevoegenHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, referentienaarrechtshandeling);
           }
@@ -241,7 +237,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
           {
             final SNode rechtsbetrekkingOBOG2 = SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking"));
             if (SNodeOperations.isInstanceOf(rechtsbetrekkingOBOG2, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d98L, "ObjectiefRecht.structure.OptioneleBevoegdheidOptioneleGehoudenheid"))) {
-              SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"));
               SLinkOperations.setTarget(referentienaarrechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling"), SLinkOperations.getTarget(rechtsbetrekkingOBOG2, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d98L, 0x3bfdb51c6ba51ed6L, "bevoegdheidTot")));
               Simulatie__BehaviorDescriptor.ToevoegenHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, referentienaarrechtshandeling);
             }
@@ -249,7 +244,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
           {
             final SNode rechtsbetrekkingVBVG2 = SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking"));
             if (SNodeOperations.isInstanceOf(rechtsbetrekkingVBVG2, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L, "ObjectiefRecht.structure.VerplichteBevoegdheidVerplichteGehoudenheid"))) {
-              SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"));
               SLinkOperations.setTarget(referentienaarrechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling"), SLinkOperations.getTarget(rechtsbetrekkingVBVG2, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L, 0x3bfdb51c6ba53ac9L, "bevoegdheidTot")));
               Simulatie__BehaviorDescriptor.ToevoegenHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, referentienaarrechtshandeling);
             }
@@ -257,7 +251,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
           {
             final SNode rechtsbetrekkingANIS2 = SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking"));
             if (SNodeOperations.isInstanceOf(rechtsbetrekkingANIS2, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d93L, "ObjectiefRecht.structure.AanspraakNaIngebrekeStellingPlicht"))) {
-              SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"));
               SLinkOperations.setTarget(referentienaarrechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling"), SLinkOperations.getTarget(rechtsbetrekkingANIS2, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d93L, 0x3bfdb51c6ba50297L, "verplichtingTot")));
               Simulatie__BehaviorDescriptor.ToevoegenHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, referentienaarrechtshandeling);
             }
@@ -265,7 +258,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
           {
             final SNode rechtsbetrekkingKAFV2 = SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking"));
             if (SNodeOperations.isInstanceOf(rechtsbetrekkingKAFV2, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d97L, "ObjectiefRecht.structure.KrachtigeAanspraakFataleVerplichtig"))) {
-              SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"));
               SLinkOperations.setTarget(referentienaarrechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling"), SLinkOperations.getTarget(rechtsbetrekkingKAFV2, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d97L, 0x3bfdb51c6ba51ed1L, "verplichtingTot")));
               Simulatie__BehaviorDescriptor.ToevoegenHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, referentienaarrechtshandeling);
             }
@@ -273,7 +265,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
           {
             final SNode rechtsbetrekkingZAZP2 = SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking"));
             if (SNodeOperations.isInstanceOf(rechtsbetrekkingZAZP2, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d96L, "ObjectiefRecht.structure.ZwakkeAanspraakZwakkePlicht"))) {
-              SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"));
               SLinkOperations.setTarget(referentienaarrechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling"), SLinkOperations.getTarget(rechtsbetrekkingZAZP2, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d96L, 0x3bfdb51c6ba54be5L, "verplichtingTot")));
               Simulatie__BehaviorDescriptor.ToevoegenHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, referentienaarrechtshandeling);
             }
@@ -281,7 +272,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
           {
             final SNode rechtsbetrekkingIGB2 = SLinkOperations.getTarget(rechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking"));
             if (SNodeOperations.isInstanceOf(rechtsbetrekkingIGB2, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, "ObjectiefRecht.structure.ImmuniteitGeenbevoegdheid"))) {
-              SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.ReferentieNaarRechtshandeling"));
               SLinkOperations.setTarget(referentienaarrechtshandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "rechtshandeling"), SLinkOperations.getTarget(rechtsbetrekkingIGB2, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, 0x3bfdb51c6ba5108fL, "uittevoeren")));
               Simulatie__BehaviorDescriptor.ToevoegenHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, referentienaarrechtshandeling);
             }
@@ -378,7 +368,7 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
     Simulatie__BehaviorDescriptor.HandelingToevoegenAanUitgevoerdeHandeling_id1Enheq$Rd7O.invoke(__thisNode__, simulatie, rechtshandeling, onderwerp);
 
     // Nieuwe lijst van uitvoerbare handelingen opbouwen 
-    Simulatie__BehaviorDescriptor.VerversHandelingenInSimulatie_id2rhLMRp46el.invoke(simulatie, simulatie);
+    Simulatie__BehaviorDescriptor.VerversUitvoerbareHandelingenInSimulatie_id2rhLMRp46el.invoke(simulatie, simulatie);
 
   }
   /*package*/ static void HandelingToevoegenAanUitgevoerdeHandeling_id1Enheq$Rd7O(@NotNull SNode __thisNode__, SNode simulatie, SNode rechtshandelingObjectiefRecht, SNode onderwerp) {
@@ -555,7 +545,7 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
         ResetSimulatie_id3d6QfrgEDkp(node);
         return null;
       case 4:
-        VerversHandelingenInSimulatie_id2rhLMRp46el(node, (SNode) parameters[0]);
+        VerversUitvoerbareHandelingenInSimulatie_id2rhLMRp46el(node, (SNode) parameters[0]);
         return null;
       case 5:
         ToevoegenHandelingAanSimulatie_id2N$PylwVyEM(node, (SNode) parameters[0], (SNode) parameters[1]);

@@ -50,10 +50,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Simulatie.behavior.ReferentieNaarRechtshandeling_BehaviorDescriptor" file="ReferentieNaarRechtshandeling_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="Simulatie.behavior.Simulatie_BehaviorDescriptor" file="Simulatie_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -102,6 +98,10 @@
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="Simulatie.behavior.UitTeVoerenHandeling_BehaviorDescriptor" file="UitTeVoerenHandeling_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Simulatie.behavior.UitvoerbareRechtshandeling_BehaviorDescriptor" file="UitvoerbareRechtshandeling_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

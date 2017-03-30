@@ -9,7 +9,7 @@ package Simulatie.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class ReferentieNaarRechtshandeling_BehaviorDescriptor {
+public class UitvoerbareRechtshandeling_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

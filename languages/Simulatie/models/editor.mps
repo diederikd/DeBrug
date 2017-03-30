@@ -2443,9 +2443,15 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
+        <node concept="ljvvj" id="52o5oqaRdpT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="5RiSaxz0vWO" role="3EZMnx">
         <property role="3F0ifm" value="uitgevoerd met als onderwerp" />
+        <node concept="lj46D" id="52o5oqaRdpW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="1iCGBv" id="5RiSaxz0vXy" role="3EZMnx">
         <ref role="1NtTu8" to="gcgs:28MuYO0sFSW" resolve="onderwerp" />
@@ -2454,6 +2460,30 @@
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <ref role="1k5W1q" to="9nno:28ifPi2_$n1" resolve="Onderwerp" />
+          </node>
+        </node>
+        <node concept="ljvvj" id="52o5oqaRdpZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="52o5oqaRdqv" role="3EZMnx">
+        <property role="3F0ifm" value="op basis van rechtsbetrekking" />
+        <node concept="lj46D" id="52o5oqaRdsc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="52o5oqaRdrr" role="3EZMnx">
+        <ref role="1NtTu8" to="gcgs:512SkqO7EXp" resolve="gebaseerdOp" />
+        <node concept="1sVBvm" id="52o5oqaRdrt" role="1sWHZn">
+          <node concept="1iCGBv" id="52o5oqaRds0" role="2wV5jI">
+            <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
+            <node concept="1sVBvm" id="52o5oqaRds2" role="1sWHZn">
+              <node concept="3F0A7n" id="52o5oqaRds9" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                <ref role="1k5W1q" to="9nno:6c9haf45jMN" resolve="Name" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
