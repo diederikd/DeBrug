@@ -92,7 +92,7 @@ public class Rechtsbetrekking_RechtspositieRol1_Editor extends DefaultNodeEditor
     SModule imageModule;
     String imagePath;
     imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
-    imagePath = "/Users/diederikdulfer/MPSProjects/DeBrug/images/label_new_red.jpeg";
+    imagePath = "./images/label_new_red.jpeg";
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
     editorCell.setCellId("Image_yhtdgo_a0");
     editorCell.setDescent(0);
@@ -108,7 +108,7 @@ public class Rechtsbetrekking_RechtspositieRol1_Editor extends DefaultNodeEditor
     SModule imageModule;
     String imagePath;
     imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
-    imagePath = "/Users/diederikdulfer/MPSProjects/DeBrug/images/DeletedIcon.jpg";
+    imagePath = "./images/DeletedIcon.jpg";
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
     editorCell.setCellId("Image_yhtdgo_b0");
     editorCell.setDescent(0);
@@ -135,7 +135,7 @@ public class Rechtsbetrekking_RechtspositieRol1_Editor extends DefaultNodeEditor
     SModule imageModule;
     String imagePath;
     imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
-    imagePath = "/Users/diederikdulfer/MPSProjects/DeBrug/images/Green.png";
+    imagePath = "./images/Green.png";
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
     editorCell.setCellId("Image_yhtdgo_a2a");
     EvalueerRechtsbetrekking.setCellActions(editorCell, node, editorContext);
@@ -146,7 +146,7 @@ public class Rechtsbetrekking_RechtspositieRol1_Editor extends DefaultNodeEditor
     SModule imageModule;
     String imagePath;
     imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
-    imagePath = "/Users/diederikdulfer/MPSProjects/DeBrug/images/Red.png";
+    imagePath = "./images/Red.png";
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
     editorCell.setCellId("Image_yhtdgo_a2a_0");
     EvalueerRechtsbetrekking.setCellActions(editorCell, node, editorContext);

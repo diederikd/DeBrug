@@ -1099,7 +1099,7 @@
     <node concept="3EZMnI" id="1VomLPHKDm9" role="2wV5jI">
       <node concept="l2Vlx" id="1VomLPHKDma" role="2iSdaV" />
       <node concept="1u4HXA" id="2K7y4iISMb5" role="3EZMnx">
-        <property role="1ubRXE" value="/Users/diederikdulfer/MPSProjects/DeBrug/images/label_new_red.jpeg" />
+        <property role="1ubRXE" value="./images/label_new_red.jpeg" />
         <node concept="pkWqt" id="2K7y4iISMy8" role="pqm2j">
           <node concept="3clFbS" id="2K7y4iISMy9" role="2VODD2">
             <node concept="3cpWs8" id="2K7y4iISOjp" role="3cqZAp">
@@ -1203,7 +1203,7 @@
         </node>
       </node>
       <node concept="1u4HXA" id="6syAJDEeOwK" role="3EZMnx">
-        <property role="1ubRXE" value="/Users/diederikdulfer/MPSProjects/DeBrug/images/DeletedIcon.jpg" />
+        <property role="1ubRXE" value="./images/DeletedIcon.jpg" />
         <node concept="pkWqt" id="2K7y4iIRtIG" role="pqm2j">
           <node concept="3clFbS" id="2K7y4iIRtIH" role="2VODD2">
             <node concept="3cpWs6" id="2K7y4iIRw4p" role="3cqZAp">
@@ -1223,7 +1223,7 @@
       <node concept="1QoScp" id="5vursKQvDNK" role="3EZMnx">
         <property role="1QpmdY" value="true" />
         <node concept="1u4HXA" id="5vursKQvEi0" role="1QoS34">
-          <property role="1ubRXE" value="/Users/diederikdulfer/MPSProjects/DeBrug/images/Green.png" />
+          <property role="1ubRXE" value="./images/Green.png" />
           <ref role="1ERwB7" node="1f2HX0mHa4i" resolve="EvalueerRechtsbetrekking" />
         </node>
         <node concept="pkWqt" id="5vursKQvDNN" role="3e4ffs">
@@ -1239,7 +1239,7 @@
           </node>
         </node>
         <node concept="1u4HXA" id="5vursKQvEi5" role="1QoVPY">
-          <property role="1ubRXE" value="/Users/diederikdulfer/MPSProjects/DeBrug/images/Red.png" />
+          <property role="1ubRXE" value="./images/Red.png" />
           <ref role="1ERwB7" node="1f2HX0mHa4i" resolve="EvalueerRechtsbetrekking" />
         </node>
       </node>
@@ -1767,7 +1767,7 @@
     <node concept="3EZMnI" id="1VomLPHKE2a" role="2wV5jI">
       <node concept="l2Vlx" id="1VomLPHKE2b" role="2iSdaV" />
       <node concept="1u4HXA" id="2K7y4iJ1Ija" role="3EZMnx">
-        <property role="1ubRXE" value="/Users/diederikdulfer/MPSProjects/DeBrug/images/label_new_red.jpeg" />
+        <property role="1ubRXE" value="./images/label_new_red.jpeg" />
         <node concept="pkWqt" id="2K7y4iJ1IEc" role="pqm2j">
           <node concept="3clFbS" id="2K7y4iJ1IEd" role="2VODD2">
             <node concept="3cpWs8" id="2K7y4iJ1ILl" role="3cqZAp">
@@ -1871,7 +1871,7 @@
         </node>
       </node>
       <node concept="1u4HXA" id="2K7y4iIRyLp" role="3EZMnx">
-        <property role="1ubRXE" value="/Users/diederikdulfer/MPSProjects/DeBrug/images/DeletedIcon.jpg" />
+        <property role="1ubRXE" value="./images/DeletedIcon.jpg" />
         <node concept="pkWqt" id="2K7y4iIRz61" role="pqm2j">
           <node concept="3clFbS" id="2K7y4iIRz62" role="2VODD2">
             <node concept="3cpWs6" id="2K7y4iIRzda" role="3cqZAp">
@@ -1891,7 +1891,7 @@
       <node concept="1QoScp" id="5vursKQxXAK" role="3EZMnx">
         <property role="1QpmdY" value="true" />
         <node concept="1u4HXA" id="5vursKQxXAL" role="1QoS34">
-          <property role="1ubRXE" value="/Users/diederikdulfer/MPSProjects/DeBrug/images/Green.png" />
+          <property role="1ubRXE" value="./images/Green.png" />
           <ref role="1ERwB7" node="1f2HX0mHa4i" resolve="EvalueerRechtsbetrekking" />
         </node>
         <node concept="pkWqt" id="5vursKQxXAM" role="3e4ffs">
@@ -1907,7 +1907,7 @@
           </node>
         </node>
         <node concept="1u4HXA" id="5vursKQxXAS" role="1QoVPY">
-          <property role="1ubRXE" value="/Users/diederikdulfer/MPSProjects/DeBrug/images/Red.png" />
+          <property role="1ubRXE" value="./images/Red.png" />
           <ref role="1ERwB7" node="1f2HX0mHa4i" resolve="EvalueerRechtsbetrekking" />
         </node>
       </node>
@@ -3395,7 +3395,7 @@
       <node concept="1QoScp" id="5vursKQy5MR" role="3EZMnx">
         <property role="1QpmdY" value="true" />
         <node concept="1u4HXA" id="5vursKQy5MS" role="1QoS34">
-          <property role="1ubRXE" value="/Users/diederikdulfer/MPSProjects/DeBrug/images/Green.png" />
+          <property role="1ubRXE" value="./images/Green.png" />
         </node>
         <node concept="pkWqt" id="5vursKQy5MT" role="3e4ffs">
           <node concept="3clFbS" id="5vursKQy5MU" role="2VODD2">
@@ -3410,7 +3410,7 @@
           </node>
         </node>
         <node concept="1u4HXA" id="5vursKQy5MZ" role="1QoVPY">
-          <property role="1ubRXE" value="/Users/diederikdulfer/MPSProjects/DeBrug/images/Red.png" />
+          <property role="1ubRXE" value="./images/Red.png" />
         </node>
       </node>
       <node concept="ykhUs" id="5RiSaxyNDlv" role="3EZMnx">
