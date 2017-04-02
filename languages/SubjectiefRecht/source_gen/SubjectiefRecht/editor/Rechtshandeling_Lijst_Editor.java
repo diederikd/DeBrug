@@ -90,7 +90,7 @@ public class Rechtshandeling_Lijst_Editor extends DefaultNodeEditor {
   public Grid createStaticHorizontal_d09504_a0(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();
 
-    List<Grid> children = new ArrayList<Grid>(4);
+    List<Grid> children = new ArrayList<Grid>(5);
     if (true) {
       children.add(createTableCell_d09504_a0a(editorContext, node));
     }
@@ -102,6 +102,9 @@ public class Rechtshandeling_Lijst_Editor extends DefaultNodeEditor {
     }
     if (true) {
       children.add(createTableCell_d09504_d0a(editorContext, node));
+    }
+    if (true) {
+      children.add(createTableCell_d09504_e0a(editorContext, node));
     }
     int maxHeight = grid.getRowHeadersSizeY();
     for (Grid child : ListSequence.fromList(children)) {
@@ -505,6 +508,130 @@ public class Rechtshandeling_Lijst_Editor extends DefaultNodeEditor {
     final EditorCell_Constant cell = new EditorCell_Constant(editorContext, snode, "Onderwerp", false);
     Header header = new EditorCellHeader(new StringHeaderReference("Onderwerp"), cell);
     header.setLabel("Onderwerp");
+    header.setStyle(style);
+    HeaderGrid grid = new HeaderGrid();
+    grid.setElement(0, 0, header);
+    return grid;
+  }
+  public Grid createTableCell_d09504_e0a(final EditorContext editorContext, final SNode node) {
+
+    EditorCell cell = createRefCell_d09504_a4a0(editorContext, node);
+    final Style style = new ITableStyleFactory() {
+      public Style createStyle(final int columnIndex, final int rowIndex) {
+        Style style = new StyleImpl();
+        return style;
+      }
+    }.createStyle(0, 0);
+
+    Grid grid;
+    if (cell instanceof PartialTableEditor) {
+      grid = ((PartialTableEditor) cell).getGrid().clone();
+    } else {
+      grid = new Grid();
+      EditorCellGridLeaf leaf = new EditorCellGridLeaf(cell);
+      leaf.setStyle(style);
+      grid.setElement(0, 0, leaf);
+    }
+    grid.setColumnHeaders(0, 0, createStaticHeader_d09504_a4a0(editorContext, node));
+
+    return grid;
+  }
+  private EditorCell createRefCell_d09504_a4a0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("gebaseerdOp");
+    provider.setNoTargetText("<no gebaseerdOp>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new Rechtshandeling_Lijst_Editor._Inline_d09504_a0e0a());
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("gebaseerdOp");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  public static class _Inline_d09504_a0e0a extends InlineCellProvider {
+    public _Inline_d09504_a0e0a() {
+      super();
+    }
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createCollection_d09504_a0a4a0(editorContext, node);
+    }
+    private EditorCell createCollection_d09504_a0a4a0(EditorContext editorContext, SNode node) {
+      EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+      editorCell.setCellId("Collection_d09504_a0a4a0");
+      editorCell.addEditorCell(this.createRefCell_d09504_a0a0e0a(editorContext, node));
+      return editorCell;
+    }
+    private EditorCell createRefCell_d09504_a0a0e0a(EditorContext editorContext, SNode node) {
+      CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+      provider.setRole("objectieveRechtsbetrekking");
+      provider.setNoTargetText("<no objectieveRechtsbetrekking>");
+      EditorCell editorCell;
+      provider.setAuxiliaryCellProvider(new Rechtshandeling_Lijst_Editor._Inline_d09504_a0e0a._Inline_d09504_a0a0a4a0());
+      editorCell = provider.createEditorCell(editorContext);
+      if (editorCell.getRole() == null) {
+        editorCell.setReferenceCell(true);
+        editorCell.setRole("objectieveRechtsbetrekking");
+      }
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      SNode attributeConcept = provider.getRoleAttribute();
+      if (attributeConcept != null) {
+        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+        return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+      } else
+      return editorCell;
+    }
+    public static class _Inline_d09504_a0a0a4a0 extends InlineCellProvider {
+      public _Inline_d09504_a0a0a4a0() {
+        super();
+      }
+      public EditorCell createEditorCell(EditorContext editorContext) {
+        return this.createEditorCell(editorContext, this.getSNode());
+      }
+      public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+        return this.createProperty_d09504_a0a0a0e0a(editorContext, node);
+      }
+      private EditorCell createProperty_d09504_a0a0a0e0a(EditorContext editorContext, SNode node) {
+        CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+        provider.setRole("name");
+        provider.setNoTargetText("<no name>");
+        provider.setReadOnly(true);
+        EditorCell editorCell;
+        editorCell = provider.createEditorCell(editorContext);
+        editorCell.setCellId("property_name_3");
+        Style style = new StyleImpl();
+        GN_StyleSheet.apply_Name(style, editorCell);
+        style.set(StyleAttributes.AUTO_DELETABLE, 0, true);
+        editorCell.getStyle().putAll(style);
+        editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+        SNode attributeConcept = provider.getRoleAttribute();
+        if (attributeConcept != null) {
+          EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+          return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+        } else
+        return editorCell;
+      }
+    }
+  }
+  public HeaderGrid createStaticHeader_d09504_a4a0(final EditorContext editorContext, final SNode snode) {
+    final Style style = new ITableStyleFactory() {
+      public Style createStyle(final int columnIndex, final int rowIndex) {
+        Style style = new StyleImpl();
+        return style;
+      }
+    }.createStyle(0, 0);
+    final EditorCell_Constant cell = new EditorCell_Constant(editorContext, snode, "Gebaseerd op", false);
+    Header header = new EditorCellHeader(new StringHeaderReference("Gebaseerd op"), cell);
+    header.setLabel("Gebaseerd op");
     header.setStyle(style);
     HeaderGrid grid = new HeaderGrid();
     grid.setElement(0, 0, header);

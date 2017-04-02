@@ -16,7 +16,9 @@ public class Rechtsbetrekking_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("<rechtsbetrekking>");
+    tgs.append("<rechtsbetrekking nodeid='");
+    tgs.append(ctx.getPrimaryInput().getNodeId().toString());
+    tgs.append("' >");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();

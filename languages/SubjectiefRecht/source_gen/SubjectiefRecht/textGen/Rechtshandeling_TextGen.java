@@ -15,7 +15,9 @@ public class Rechtshandeling_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("<rechtshandeling>");
+    tgs.append("<rechtshandeling nodeid='");
+    tgs.append(ctx.getPrimaryInput().getNodeId().toString());
+    tgs.append("' >");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
@@ -36,6 +38,11 @@ public class Rechtshandeling_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("<kenmerk naam='handeling'>");
     tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, 0x22327bed0072be3cL, "onderwerp")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.append("</kenmerk>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<kenmerk naam='gebaseerd op'>");
+    tgs.append(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd3L, 0x5042e146b41eaf59L, "gebaseerdOp")).getNodeId().toString());
     tgs.append("</kenmerk>");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();

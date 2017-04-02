@@ -10,13 +10,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import org.jetbrains.mps.openapi.module.SModule;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Image;
-import Datum.behavior.DatumTijd__BehaviorDescriptor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
@@ -36,6 +31,8 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
 import javax.swing.JComponent;
 import org.campagnelab.ui.code.Swing.ButtonCallback;
@@ -60,12 +57,8 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_de2l07_a");
     editorCell.setBig(true);
-    if (renderingCondition_de2l07_a0a(node, editorContext)) {
-      editorCell.addEditorCell(this.createImage_de2l07_a0(editorContext, node));
-    }
-    if (renderingCondition_de2l07_a1a(node, editorContext)) {
-      editorCell.addEditorCell(this.createImage_de2l07_b0(editorContext, node));
-    }
+    editorCell.addEditorCell(this.createComponent_de2l07_a0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_de2l07_b0(editorContext, node));
     editorCell.addEditorCell(this.createAlternation_de2l07_c0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_de2l07_d0(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_de2l07_e0(editorContext, node));
@@ -89,69 +82,34 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     editorCell.addEditorCell(this.createConstant_de2l07_s0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createImage_de2l07_a0(final EditorContext editorContext, final SNode node) {
-    SModule imageModule;
-    String imagePath;
-    imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
-    imagePath = "./images/label_new_red.jpeg";
-    EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
-    editorCell.setCellId("Image_de2l07_a0");
-    editorCell.setDescent(0);
+  private EditorCell createComponent_de2l07_a0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "Simulatie.editor.imageNew");
     return editorCell;
   }
-  private static boolean renderingCondition_de2l07_a0a(SNode node, EditorContext editorContext) {
-    SNode simulatie = (SNode) SNodeOperations.getParent(SNodeOperations.getParent(node));
-    System.out.println(DatumTijd__BehaviorDescriptor.geefDatumTijd_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x2c078844aee1e049L, "datumtijdlaatstehandeling"))));
-    System.out.print(DatumTijd__BehaviorDescriptor.geefDatumTijd_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8cdL, "geldigVan"))));
-    return DatumTijd__BehaviorDescriptor.geefDatumTijd_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8cdL, "geldigVan"))).equals(DatumTijd__BehaviorDescriptor.geefDatumTijd_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x2c078844aee1e049L, "datumtijdlaatstehandeling"))));
-  }
-  private EditorCell createImage_de2l07_b0(final EditorContext editorContext, final SNode node) {
-    SModule imageModule;
-    String imagePath;
-    imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
-    imagePath = "./images/DeletedIcon.jpg";
-    EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
-    editorCell.setCellId("Image_de2l07_b0");
-    editorCell.setDescent(0);
+  private EditorCell createComponent_de2l07_b0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "Simulatie.editor.imageDeleted");
     return editorCell;
-  }
-  private static boolean renderingCondition_de2l07_a1a(SNode node, EditorContext editorContext) {
-    return (SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot")) != null);
   }
   private EditorCell createAlternation_de2l07_c0(EditorContext editorContext, SNode node) {
     boolean alternationCondition = true;
     alternationCondition = Rechtsbetrekking_RechtspositieRol2_Editor.renderingCondition_de2l07_a2a(node, editorContext);
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = this.createImage_de2l07_a2a(editorContext, node);
+      editorCell = this.createComponent_de2l07_a2a(editorContext, node);
     } else {
-      editorCell = this.createImage_de2l07_a2a_0(editorContext, node);
+      editorCell = this.createComponent_de2l07_a2a_0(editorContext, node);
     }
     return editorCell;
   }
   private static boolean renderingCondition_de2l07_a2a(SNode node, EditorContext editorContext) {
     return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a786L, "evaluatieresultaat"));
   }
-  private EditorCell createImage_de2l07_a2a(final EditorContext editorContext, final SNode node) {
-    SModule imageModule;
-    String imagePath;
-    imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
-    imagePath = "./images/Green.png";
-    EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
-    editorCell.setCellId("Image_de2l07_a2a");
-    EvalueerRechtsbetrekking.setCellActions(editorCell, node, editorContext);
-    editorCell.setDescent(0);
+  private EditorCell createComponent_de2l07_a2a(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "Simulatie.editor.imageGreen");
     return editorCell;
   }
-  private EditorCell createImage_de2l07_a2a_0(final EditorContext editorContext, final SNode node) {
-    SModule imageModule;
-    String imagePath;
-    imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
-    imagePath = "./images/Red.png";
-    EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
-    editorCell.setCellId("Image_de2l07_a2a_0");
-    EvalueerRechtsbetrekking.setCellActions(editorCell, node, editorContext);
-    editorCell.setDescent(0);
+  private EditorCell createComponent_de2l07_a2a_0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "Simulatie.editor.imageRed");
     return editorCell;
   }
   private EditorCell createConstant_de2l07_d0(EditorContext editorContext, SNode node) {

@@ -12,6 +12,7 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.Collections;
+import jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent;
 import java.util.Map;
 import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -66,6 +67,34 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     return Collections.<ConceptEditor>emptyList();
   }
 
+  @NotNull
+  public Collection<ConceptEditorComponent> getDeclaredEditorComponents(SAbstractConcept concept, String editorComponentId) {
+    {
+      SAbstractConcept cncpt = ((SAbstractConcept) concept);
+      Integer preIndex = indices_xbvbvu_a0d.get(cncpt);
+      int switchIndex = (preIndex == null ? -1 : preIndex);
+      switch (switchIndex) {
+        case 0:
+          if (true) {
+            switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0a0a3a0a3, editorComponentId)) {
+              case 0:
+                return Collections.<ConceptEditorComponent>singletonList(new imageDeleted());
+              case 1:
+                return Collections.<ConceptEditorComponent>singletonList(new imageGreen());
+              case 2:
+                return Collections.<ConceptEditorComponent>singletonList(new imageNew());
+              case 3:
+                return Collections.<ConceptEditorComponent>singletonList(new imageRed());
+              default:
+                return Collections.<ConceptEditorComponent>emptyList();
+            }
+          }
+          break;
+        default:
+      }
+    }
+    return Collections.<ConceptEditorComponent>emptyList();
+  }
   public Collection<ConceptEditorHint> getHints() {
     return myHints;
   }
@@ -80,4 +109,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     return res;
   }
   private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL, "Simulatie.structure.Gegevenshuishouding"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L, "Simulatie.structure.Informatiepositie"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, "Simulatie.structure.UitTeVoerenHandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.UitvoerbareRechtshandeling"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0d = buildConceptIndices(MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"));
+  private static String[] stringSwitchCases_xbvbvu_a0a0a0a3a0a3 = new String[]{"Simulatie.editor.imageDeleted", "Simulatie.editor.imageGreen", "Simulatie.editor.imageNew", "Simulatie.editor.imageRed"};
 }

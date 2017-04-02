@@ -331,7 +331,7 @@
         <ref role="1NtTu8" to="gcgs:6c9haf45_$D" resolve="rechtshandeling" />
         <node concept="1sVBvm" id="6c9haf45BTG" role="1sWHZn">
           <node concept="3F1sOY" id="6c9haf45BU0" role="2wV5jI">
-            <ref role="1NtTu8" to="3pw0:20D4HrzFFXI" resolve="rechtssubject" />
+            <ref role="1NtTu8" to="3pw0:20D4HrzFFXI" resolve="actor" />
           </node>
         </node>
       </node>
@@ -598,6 +598,26 @@
           </node>
           <node concept="2rfbtV" id="28MuYO0sFWn" role="2recC9">
             <property role="2rfbtB" value="Onderwerp" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="52o5oqbQqC_" role="2reCL6">
+          <node concept="1iCGBv" id="52o5oqbQqCZ" role="2reSmM">
+            <ref role="1NtTu8" to="gcgs:512SkqO7EXp" resolve="gebaseerdOp" />
+            <node concept="1sVBvm" id="52o5oqbQqD1" role="1sWHZn">
+              <node concept="1iCGBv" id="52o5oqbQqDi" role="2wV5jI">
+                <ref role="1NtTu8" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
+                <node concept="1sVBvm" id="52o5oqbQqDk" role="1sWHZn">
+                  <node concept="3F0A7n" id="52o5oqbQqDr" role="2wV5jI">
+                    <property role="1Intyy" value="true" />
+                    <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                    <ref role="1k5W1q" to="9nno:6c9haf45jMN" resolve="Name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2rfbtV" id="52o5oqbQqDu" role="2recC9">
+            <property role="2rfbtB" value="Gebaseerd op" />
           </node>
         </node>
       </node>
