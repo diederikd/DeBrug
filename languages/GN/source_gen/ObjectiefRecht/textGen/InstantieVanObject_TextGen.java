@@ -16,14 +16,32 @@ public class InstantieVanObject_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("<instantie naam='");
+    tgs.append("<instantie>");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("<instantienaam>");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-    tgs.append("'>");
+    tgs.append("</instantienaam>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<instantieid>");
+    tgs.append(ctx.getPrimaryInput().getNodeId().toString());
+    tgs.append("</instantieid>");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("<kenmerken>");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca15L, "waardeVanKenmerken"))) {
       tgs.appendNode(item);
     }
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("</kenmerken>");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("</instantie>");

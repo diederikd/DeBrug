@@ -21,14 +21,25 @@ public class TabelMetInstanties_TextGen extends TextGenDescriptorBase {
       if (SNodeOperations.isInstanceOf(rechtsSubject, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"))) {
         ctx.getBuffer().area().increaseIndent();
         tgs.indent();
-        tgs.append("<rechtssubjecten naam='");
+        tgs.append("<rechtssubjecten>");
+        tgs.newLine();
+        ctx.getBuffer().area().increaseIndent();
+        tgs.indent();
+        tgs.append("<rechtssubjectnaam>");
         tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-        tgs.append("'>");
+        tgs.append("</rechtssubjectnaam>");
         tgs.newLine();
         tgs.indent();
+        tgs.append("<rechtssubjectid>");
+        tgs.append(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object")).getNodeId().toString());
+        tgs.append("</rechtssubjectid>");
+        tgs.newLine();
+        ctx.getBuffer().area().increaseIndent();
         for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties"))) {
           tgs.appendNode(item);
         }
+        ctx.getBuffer().area().decreaseIndent();
+        ctx.getBuffer().area().decreaseIndent();
         tgs.indent();
         tgs.append("</rechtssubjecten>");
         tgs.newLine();
@@ -40,14 +51,25 @@ public class TabelMetInstanties_TextGen extends TextGenDescriptorBase {
       if (SNodeOperations.isInstanceOf(onderwerp, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"))) {
         ctx.getBuffer().area().increaseIndent();
         tgs.indent();
-        tgs.append("<onderwerpen naam='");
+        tgs.append("<onderwerpen>");
+        tgs.newLine();
+        ctx.getBuffer().area().increaseIndent();
+        tgs.indent();
+        tgs.append("<onderwerpnaam>");
         tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-        tgs.append("'>");
+        tgs.append("</onderwerpnaam>");
         tgs.newLine();
         tgs.indent();
+        tgs.append("<onderwerpid>");
+        tgs.append(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object")).getNodeId().toString());
+        tgs.append("</onderwerpid>");
+        tgs.newLine();
+        ctx.getBuffer().area().increaseIndent();
         for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties"))) {
           tgs.appendNode(item);
         }
+        ctx.getBuffer().area().decreaseIndent();
+        ctx.getBuffer().area().decreaseIndent();
         tgs.indent();
         tgs.append("</onderwerpen>");
         tgs.newLine();
