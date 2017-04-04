@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <use id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" name="org.campagnelab.ui" version="0" />
+    <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -19,10 +20,21 @@
     <import index="uefu" ref="r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="3s15" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.workbench(MPS.Workbench/)" />
+    <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
+    <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="ofh9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.platform(MPS.IDEA/)" />
+    <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="alog" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.project(MPS.Workbench/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ln8d" ref="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="z1s1" ref="r:4d95e375-a45b-4405-8471-233ad9d6fb8b(Datum.editor)" implicit="true" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
+    <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" implicit="true" />
     <import index="rwnv" ref="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -32,6 +44,7 @@
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
+      <concept id="1176899348742" name="jetbrains.mps.lang.editor.structure.QueryFunction_ImagePath" flags="in" index="4EIwk" />
       <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
@@ -94,6 +107,7 @@
       <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
         <property id="1139746504291" name="imageFile" index="1ubRXE" />
         <property id="1139858284555" name="descent" index="1$Qi42" />
+        <child id="1176899909521" name="imagePathProvider" index="4GRq3" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -156,6 +170,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -196,6 +213,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -218,6 +236,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
     </language>
     <language id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" name="org.campagnelab.ui">
       <concept id="1879241968983569938" name="org.campagnelab.ui.structure.ButtonHandler" flags="ig" index="ykhUf" />
@@ -3596,9 +3615,77 @@
     <property role="TrG5h" value="imageGreen" />
     <ref role="1XX52x" to="gcgs:6c9haf45syu" resolve="Rechtsbetrekking" />
     <node concept="1u4HXA" id="52o5oqbM3tK" role="2wV5jI">
-      <property role="1ubRXE" value="${imagespath}/Green.png" />
       <property role="1$Qi42" value="4" />
       <ref role="1ERwB7" node="1f2HX0mHa4i" resolve="EvalueerRechtsbetrekking" />
+      <node concept="4EIwk" id="52o5oqc02yW" role="4GRq3">
+        <node concept="3clFbS" id="52o5oqc02yY" role="2VODD2">
+          <node concept="3cpWs8" id="5lRFs1H2eCj" role="3cqZAp">
+            <node concept="3cpWsn" id="5lRFs1H2eCk" role="3cpWs9">
+              <property role="TrG5h" value="project" />
+              <node concept="3uibUv" id="5lRFs1H2pwp" role="1tU5fm">
+                <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+              </node>
+              <node concept="2OqwBi" id="5lRFs1H2gyU" role="33vP2m">
+                <node concept="10M0yZ" id="5lRFs1H2gyV" role="2Oq$k0">
+                  <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+                  <ref role="1PxDUh" to="3s15:~MPSDataKeys" resolve="MPSDataKeys" />
+                </node>
+                <node concept="liA8E" id="5lRFs1H2gyW" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext):java.lang.Object" resolve="getData" />
+                  <node concept="2OqwBi" id="5lRFs1H2gyX" role="37wK5m">
+                    <node concept="2YIFZM" id="5lRFs1H2gyY" role="2Oq$k0">
+                      <ref role="1Pybhc" to="ddhc:~DataManager" resolve="DataManager" />
+                      <ref role="37wK5l" to="ddhc:~DataManager.getInstance():com.intellij.ide.DataManager" resolve="getInstance" />
+                    </node>
+                    <node concept="liA8E" id="5lRFs1H2gyZ" role="2OqNvi">
+                      <ref role="37wK5l" to="ddhc:~DataManager.getDataContext():com.intellij.openapi.actionSystem.DataContext" resolve="getDataContext" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5lRFs1H2suU" role="3cqZAp">
+            <node concept="3clFbS" id="5lRFs1H2suW" role="3clFbx">
+              <node concept="3cpWs6" id="52o5oqc0dbS" role="3cqZAp">
+                <node concept="3cpWs3" id="5lRFs1GZkgb" role="3cqZAk">
+                  <node concept="Xl_RD" id="5lRFs1GZkH7" role="3uHU7w">
+                    <property role="Xl_RC" value="/images/Green.png" />
+                  </node>
+                  <node concept="2OqwBi" id="52o5oqc0gw$" role="3uHU7B">
+                    <node concept="2OqwBi" id="52o5oqc0ezt" role="2Oq$k0">
+                      <node concept="2YIFZM" id="52o5oqc0dZl" role="2Oq$k0">
+                        <ref role="1Pybhc" to="ofh9:~ProjectBaseDirectory" resolve="ProjectBaseDirectory" />
+                        <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project):com.intellij.platform.ProjectBaseDirectory" resolve="getInstance" />
+                        <node concept="37vLTw" id="5lRFs1H2rdE" role="37wK5m">
+                          <ref role="3cqZAo" node="5lRFs1H2eCk" resolve="project" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="52o5oqc0eYw" role="2OqNvi">
+                        <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getBaseDir():com.intellij.openapi.vfs.VirtualFile" resolve="getBaseDir" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="52o5oqc0hH6" role="2OqNvi">
+                      <ref role="37wK5l" to="jlff:~VirtualFile.getCanonicalPath():java.lang.String" resolve="getCanonicalPath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="5lRFs1H2vZx" role="3clFbw">
+              <node concept="10Nm6u" id="5lRFs1H2wjx" role="3uHU7w" />
+              <node concept="37vLTw" id="5lRFs1H2sRp" role="3uHU7B">
+                <ref role="3cqZAo" node="5lRFs1H2eCk" resolve="project" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="5lRFs1H2y8J" role="3cqZAp">
+            <node concept="Xl_RD" id="5lRFs1H2yts" role="3cqZAk">
+              <property role="Xl_RC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="52o5oqbM3B2">
@@ -3608,6 +3695,75 @@
       <property role="1ubRXE" value="/Users/diederikdulfer/MPSProjects/DeBrug/images/Red.png" />
       <property role="1$Qi42" value="4" />
       <ref role="1ERwB7" node="1f2HX0mHa4i" resolve="EvalueerRechtsbetrekking" />
+      <node concept="4EIwk" id="5lRFs1H5Col" role="4GRq3">
+        <node concept="3clFbS" id="5lRFs1H5Con" role="2VODD2">
+          <node concept="3cpWs8" id="5lRFs1H5C_J" role="3cqZAp">
+            <node concept="3cpWsn" id="5lRFs1H5C_K" role="3cpWs9">
+              <property role="TrG5h" value="project" />
+              <node concept="3uibUv" id="5lRFs1H5C_L" role="1tU5fm">
+                <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+              </node>
+              <node concept="2OqwBi" id="5lRFs1H5C_M" role="33vP2m">
+                <node concept="10M0yZ" id="5lRFs1H5C_N" role="2Oq$k0">
+                  <ref role="1PxDUh" to="3s15:~MPSDataKeys" resolve="MPSDataKeys" />
+                  <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+                </node>
+                <node concept="liA8E" id="5lRFs1H5C_O" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext):java.lang.Object" resolve="getData" />
+                  <node concept="2OqwBi" id="5lRFs1H5C_P" role="37wK5m">
+                    <node concept="2YIFZM" id="5lRFs1H5C_Q" role="2Oq$k0">
+                      <ref role="1Pybhc" to="ddhc:~DataManager" resolve="DataManager" />
+                      <ref role="37wK5l" to="ddhc:~DataManager.getInstance():com.intellij.ide.DataManager" resolve="getInstance" />
+                    </node>
+                    <node concept="liA8E" id="5lRFs1H5C_R" role="2OqNvi">
+                      <ref role="37wK5l" to="ddhc:~DataManager.getDataContext():com.intellij.openapi.actionSystem.DataContext" resolve="getDataContext" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5lRFs1H5C_S" role="3cqZAp">
+            <node concept="3clFbS" id="5lRFs1H5C_T" role="3clFbx">
+              <node concept="3cpWs6" id="5lRFs1H5C_U" role="3cqZAp">
+                <node concept="3cpWs3" id="5lRFs1H5C_V" role="3cqZAk">
+                  <node concept="Xl_RD" id="5lRFs1H5C_W" role="3uHU7w">
+                    <property role="Xl_RC" value="/images/Red.png" />
+                  </node>
+                  <node concept="2OqwBi" id="5lRFs1H5C_X" role="3uHU7B">
+                    <node concept="2OqwBi" id="5lRFs1H5C_Y" role="2Oq$k0">
+                      <node concept="2YIFZM" id="5lRFs1H5C_Z" role="2Oq$k0">
+                        <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project):com.intellij.platform.ProjectBaseDirectory" resolve="getInstance" />
+                        <ref role="1Pybhc" to="ofh9:~ProjectBaseDirectory" resolve="ProjectBaseDirectory" />
+                        <node concept="37vLTw" id="5lRFs1H5CA0" role="37wK5m">
+                          <ref role="3cqZAo" node="5lRFs1H5C_K" resolve="project" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="5lRFs1H5CA1" role="2OqNvi">
+                        <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getBaseDir():com.intellij.openapi.vfs.VirtualFile" resolve="getBaseDir" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="5lRFs1H5CA2" role="2OqNvi">
+                      <ref role="37wK5l" to="jlff:~VirtualFile.getCanonicalPath():java.lang.String" resolve="getCanonicalPath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="5lRFs1H5CA3" role="3clFbw">
+              <node concept="10Nm6u" id="5lRFs1H5CA4" role="3uHU7w" />
+              <node concept="37vLTw" id="5lRFs1H5CA5" role="3uHU7B">
+                <ref role="3cqZAo" node="5lRFs1H5C_K" resolve="project" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="5lRFs1H5CA6" role="3cqZAp">
+            <node concept="Xl_RD" id="5lRFs1H5CA7" role="3cqZAk">
+              <property role="Xl_RC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="52o5oqbMjJB">
@@ -3717,6 +3873,75 @@
           </node>
         </node>
       </node>
+      <node concept="4EIwk" id="5lRFs1H5zXA" role="4GRq3">
+        <node concept="3clFbS" id="5lRFs1H5zXC" role="2VODD2">
+          <node concept="3cpWs8" id="5lRFs1H5$pp" role="3cqZAp">
+            <node concept="3cpWsn" id="5lRFs1H5$pq" role="3cpWs9">
+              <property role="TrG5h" value="project" />
+              <node concept="3uibUv" id="5lRFs1H5$pr" role="1tU5fm">
+                <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+              </node>
+              <node concept="2OqwBi" id="5lRFs1H5$ps" role="33vP2m">
+                <node concept="10M0yZ" id="5lRFs1H5$pt" role="2Oq$k0">
+                  <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+                  <ref role="1PxDUh" to="3s15:~MPSDataKeys" resolve="MPSDataKeys" />
+                </node>
+                <node concept="liA8E" id="5lRFs1H5$pu" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext):java.lang.Object" resolve="getData" />
+                  <node concept="2OqwBi" id="5lRFs1H5$pv" role="37wK5m">
+                    <node concept="2YIFZM" id="5lRFs1H5$pw" role="2Oq$k0">
+                      <ref role="37wK5l" to="ddhc:~DataManager.getInstance():com.intellij.ide.DataManager" resolve="getInstance" />
+                      <ref role="1Pybhc" to="ddhc:~DataManager" resolve="DataManager" />
+                    </node>
+                    <node concept="liA8E" id="5lRFs1H5$px" role="2OqNvi">
+                      <ref role="37wK5l" to="ddhc:~DataManager.getDataContext():com.intellij.openapi.actionSystem.DataContext" resolve="getDataContext" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5lRFs1H5$py" role="3cqZAp">
+            <node concept="3clFbS" id="5lRFs1H5$pz" role="3clFbx">
+              <node concept="3cpWs6" id="5lRFs1H5$p$" role="3cqZAp">
+                <node concept="3cpWs3" id="5lRFs1H5$p_" role="3cqZAk">
+                  <node concept="Xl_RD" id="5lRFs1H5$pA" role="3uHU7w">
+                    <property role="Xl_RC" value="/images/label_new_red.jpeg" />
+                  </node>
+                  <node concept="2OqwBi" id="5lRFs1H5$pB" role="3uHU7B">
+                    <node concept="2OqwBi" id="5lRFs1H5$pC" role="2Oq$k0">
+                      <node concept="2YIFZM" id="5lRFs1H5$pD" role="2Oq$k0">
+                        <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project):com.intellij.platform.ProjectBaseDirectory" resolve="getInstance" />
+                        <ref role="1Pybhc" to="ofh9:~ProjectBaseDirectory" resolve="ProjectBaseDirectory" />
+                        <node concept="37vLTw" id="5lRFs1H5$pE" role="37wK5m">
+                          <ref role="3cqZAo" node="5lRFs1H5$pq" resolve="project" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="5lRFs1H5$pF" role="2OqNvi">
+                        <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getBaseDir():com.intellij.openapi.vfs.VirtualFile" resolve="getBaseDir" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="5lRFs1H5$pG" role="2OqNvi">
+                      <ref role="37wK5l" to="jlff:~VirtualFile.getCanonicalPath():java.lang.String" resolve="getCanonicalPath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="5lRFs1H5$pH" role="3clFbw">
+              <node concept="10Nm6u" id="5lRFs1H5$pI" role="3uHU7w" />
+              <node concept="37vLTw" id="5lRFs1H5$pJ" role="3uHU7B">
+                <ref role="3cqZAo" node="5lRFs1H5$pq" resolve="project" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="5lRFs1H5$pK" role="3cqZAp">
+            <node concept="Xl_RD" id="5lRFs1H5$pL" role="3cqZAk">
+              <property role="Xl_RC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="52o5oqbMkfN">
@@ -3736,6 +3961,75 @@
                 </node>
               </node>
               <node concept="3x8VRR" id="52o5oqbMkfW" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="4EIwk" id="5lRFs1H5vti" role="4GRq3">
+        <node concept="3clFbS" id="5lRFs1H5vtk" role="2VODD2">
+          <node concept="3cpWs8" id="5lRFs1H5vKV" role="3cqZAp">
+            <node concept="3cpWsn" id="5lRFs1H5vKW" role="3cpWs9">
+              <property role="TrG5h" value="project" />
+              <node concept="3uibUv" id="5lRFs1H5vKX" role="1tU5fm">
+                <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+              </node>
+              <node concept="2OqwBi" id="5lRFs1H5vKY" role="33vP2m">
+                <node concept="10M0yZ" id="5lRFs1H5vKZ" role="2Oq$k0">
+                  <ref role="1PxDUh" to="3s15:~MPSDataKeys" resolve="MPSDataKeys" />
+                  <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+                </node>
+                <node concept="liA8E" id="5lRFs1H5vL0" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext):java.lang.Object" resolve="getData" />
+                  <node concept="2OqwBi" id="5lRFs1H5vL1" role="37wK5m">
+                    <node concept="2YIFZM" id="5lRFs1H5vL2" role="2Oq$k0">
+                      <ref role="37wK5l" to="ddhc:~DataManager.getInstance():com.intellij.ide.DataManager" resolve="getInstance" />
+                      <ref role="1Pybhc" to="ddhc:~DataManager" resolve="DataManager" />
+                    </node>
+                    <node concept="liA8E" id="5lRFs1H5vL3" role="2OqNvi">
+                      <ref role="37wK5l" to="ddhc:~DataManager.getDataContext():com.intellij.openapi.actionSystem.DataContext" resolve="getDataContext" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5lRFs1H5vL4" role="3cqZAp">
+            <node concept="3clFbS" id="5lRFs1H5vL5" role="3clFbx">
+              <node concept="3cpWs6" id="5lRFs1H5vL6" role="3cqZAp">
+                <node concept="3cpWs3" id="5lRFs1H5vL7" role="3cqZAk">
+                  <node concept="Xl_RD" id="5lRFs1H5vL8" role="3uHU7w">
+                    <property role="Xl_RC" value="/images/DeletedIcon.jpg" />
+                  </node>
+                  <node concept="2OqwBi" id="5lRFs1H5vL9" role="3uHU7B">
+                    <node concept="2OqwBi" id="5lRFs1H5vLa" role="2Oq$k0">
+                      <node concept="2YIFZM" id="5lRFs1H5vLb" role="2Oq$k0">
+                        <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project):com.intellij.platform.ProjectBaseDirectory" resolve="getInstance" />
+                        <ref role="1Pybhc" to="ofh9:~ProjectBaseDirectory" resolve="ProjectBaseDirectory" />
+                        <node concept="37vLTw" id="5lRFs1H5vLc" role="37wK5m">
+                          <ref role="3cqZAo" node="5lRFs1H5vKW" resolve="project" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="5lRFs1H5vLd" role="2OqNvi">
+                        <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getBaseDir():com.intellij.openapi.vfs.VirtualFile" resolve="getBaseDir" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="5lRFs1H5vLe" role="2OqNvi">
+                      <ref role="37wK5l" to="jlff:~VirtualFile.getCanonicalPath():java.lang.String" resolve="getCanonicalPath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="5lRFs1H5vLf" role="3clFbw">
+              <node concept="10Nm6u" id="5lRFs1H5vLg" role="3uHU7w" />
+              <node concept="37vLTw" id="5lRFs1H5vLh" role="3uHU7B">
+                <ref role="3cqZAo" node="5lRFs1H5vKW" resolve="project" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="5lRFs1H5vLi" role="3cqZAp">
+            <node concept="Xl_RD" id="5lRFs1H5vLj" role="3cqZAk">
+              <property role="Xl_RC" value="" />
             </node>
           </node>
         </node>

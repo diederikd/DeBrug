@@ -11,6 +11,11 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.module.SModule;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import com.intellij.openapi.project.Project;
+import jetbrains.mps.workbench.MPSDataKeys;
+import com.intellij.ide.DataManager;
+import com.intellij.platform.ProjectBaseDirectory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Image;
 
 public class imageRed implements ConceptEditorComponent {
@@ -24,8 +29,16 @@ public class imageRed implements ConceptEditorComponent {
   private EditorCell createImage_senrtn_a(final EditorContext editorContext, final SNode node) {
     SModule imageModule;
     String imagePath;
-    imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
-    imagePath = "/Users/diederikdulfer/MPSProjects/DeBrug/images/Red.png";
+    imageModule = SNodeOperations.getModel(node).getModule();
+    imagePath = (new _FunctionTypes._return_P0_E0<String>() {
+      public String invoke() {
+        Project project = MPSDataKeys.PROJECT.getData(DataManager.getInstance().getDataContext());
+        if (project != null) {
+          return ProjectBaseDirectory.getInstance(project).getBaseDir().getCanonicalPath() + "/images/Red.png";
+        }
+        return "";
+      }
+    }).invoke();
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
     editorCell.setCellId("Image_senrtn_a");
     EvalueerRechtsbetrekking.setCellActions(editorCell, node, editorContext);

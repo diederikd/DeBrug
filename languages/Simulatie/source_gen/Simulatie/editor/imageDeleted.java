@@ -15,6 +15,11 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import org.jetbrains.mps.openapi.module.SModule;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import com.intellij.openapi.project.Project;
+import jetbrains.mps.workbench.MPSDataKeys;
+import com.intellij.ide.DataManager;
+import com.intellij.platform.ProjectBaseDirectory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Image;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -41,8 +46,16 @@ public class imageDeleted implements ConceptEditorComponent {
   private EditorCell createImage_hrnbj3_a0(final EditorContext editorContext, final SNode node) {
     SModule imageModule;
     String imagePath;
-    imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
-    imagePath = "/Users/diederikdulfer/MPSProjects/DeBrug/images/DeletedIcon.jpg";
+    imageModule = SNodeOperations.getModel(node).getModule();
+    imagePath = (new _FunctionTypes._return_P0_E0<String>() {
+      public String invoke() {
+        Project project = MPSDataKeys.PROJECT.getData(DataManager.getInstance().getDataContext());
+        if (project != null) {
+          return ProjectBaseDirectory.getInstance(project).getBaseDir().getCanonicalPath() + "/images/DeletedIcon.jpg";
+        }
+        return "";
+      }
+    }).invoke();
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
     editorCell.setCellId("Image_hrnbj3_a0");
     editorCell.setDescent(4);

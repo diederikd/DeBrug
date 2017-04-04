@@ -13,7 +13,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
   <root>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="14,0,48,0" name="Algemeen.behavior.BehaviorAspectDescriptor" />
+      <unit at="14,0,54,0" name="Algemeen.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="Bericht_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Algemeen.behavior.Bericht_BehaviorDescriptor" />
@@ -27,8 +27,77 @@
     <file name="IOpmerking_BehaviorDescriptor.java">
       <unit at="11,0,14,0" name="Algemeen.behavior.IOpmerking_BehaviorDescriptor" />
     </file>
+    <file name="KorteNaam_BehaviorDescriptor.java">
+      <unit at="11,0,14,0" name="Algemeen.behavior.KorteNaam_BehaviorDescriptor" />
+    </file>
     <file name="LijstMetBerichten_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Algemeen.behavior.LijstMetBerichten_BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:47f70a36-2d19-4ed4-99ab-02ae4af48125(Algemeen.behavior)/1365497693572321463">
+    <file name="KorteNaam__BehaviorDescriptor.java">
+      <node id="1365497693572321463" at="21,0,22,0" concept="6" trace="CONCEPT" />
+      <node id="1365497693572321463" at="22,0,23,0" concept="6" trace="REGISTRY" />
+      <node id="1365497693572321463" at="25,0,26,0" concept="6" trace="BH_METHODS" />
+      <node id="1365497693572324463" at="27,63,28,175" concept="1" />
+      <node id="1365497693572321463" at="32,47,33,20" concept="8" />
+      <node id="1365497693572321463" at="37,114,38,21" concept="1" />
+      <node id="1365497693572321463" at="42,114,43,49" concept="4" />
+      <node id="1365497693572321463" at="44,26,45,56" concept="10" />
+      <node id="1365497693572321463" at="48,14,49,58" concept="10" />
+      <node id="1365497693572321463" at="54,128,55,49" concept="4" />
+      <node id="1365497693572321463" at="56,26,57,56" concept="10" />
+      <node id="1365497693572321463" at="60,14,61,58" concept="10" />
+      <node id="1365497693572321463" at="67,48,68,22" concept="5" />
+      <node id="1365497693572321463" at="73,40,74,19" concept="5" />
+      <node id="1365497693572321463" at="27,0,30,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1365497693572321463" at="32,0,35,0" concept="0" trace="KorteNaam__BehaviorDescriptor#()V" />
+      <node id="1365497693572321463" at="43,49,46,5" concept="2" />
+      <node id="1365497693572321463" at="55,49,58,5" concept="2" />
+      <node id="1365497693572321463" at="36,0,40,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="1365497693572321463" at="46,5,50,5" concept="9" />
+      <node id="1365497693572321463" at="58,5,62,5" concept="9" />
+      <node id="1365497693572321463" at="65,0,70,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="1365497693572321463" at="71,0,76,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1365497693572321463" at="41,0,52,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="1365497693572321463" at="53,0,64,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="1365497693572321463" at="27,63,28,175" />
+      <scope id="1365497693572321463" at="32,47,33,20" />
+      <scope id="1365497693572321463" at="37,114,38,21" />
+      <scope id="1365497693572321463" at="44,26,45,56" />
+      <scope id="1365497693572321463" at="48,14,49,58" />
+      <scope id="1365497693572321463" at="56,26,57,56" />
+      <scope id="1365497693572321463" at="60,14,61,58" />
+      <scope id="1365497693572321463" at="67,48,68,22" />
+      <scope id="1365497693572321463" at="73,40,74,19" />
+      <scope id="1365497693572321463" at="27,0,30,0">
+        <var name="__thisNode__" id="1365497693572321463" />
+      </scope>
+      <scope id="1365497693572321463" at="32,0,35,0" />
+      <scope id="1365497693572321463" at="36,0,40,0">
+        <var name="constructor" id="1365497693572321463" />
+        <var name="node" id="1365497693572321463" />
+        <var name="parameters" id="1365497693572321463" />
+      </scope>
+      <scope id="1365497693572321463" at="65,0,70,0" />
+      <scope id="1365497693572321463" at="71,0,76,0" />
+      <scope id="1365497693572321463" at="42,114,50,5">
+        <var name="methodIndex" id="1365497693572321463" />
+      </scope>
+      <scope id="1365497693572321463" at="54,128,62,5">
+        <var name="methodIndex" id="1365497693572321463" />
+      </scope>
+      <scope id="1365497693572321463" at="41,0,52,0">
+        <var name="method" id="1365497693572321463" />
+        <var name="node" id="1365497693572321463" />
+        <var name="parameters" id="1365497693572321463" />
+      </scope>
+      <scope id="1365497693572321463" at="53,0,64,0">
+        <var name="concept" id="1365497693572321463" />
+        <var name="method" id="1365497693572321463" />
+        <var name="parameters" id="1365497693572321463" />
+      </scope>
+      <unit id="1365497693572321463" at="20,0,77,0" name="Algemeen.behavior.KorteNaam__BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:47f70a36-2d19-4ed4-99ab-02ae4af48125(Algemeen.behavior)/7108013867276421466">

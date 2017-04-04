@@ -1,0 +1,38 @@
+## Graphviz file gegenereerd vanuit MPS
+##-------------------------------------
+
+
+##Command to produce the output: neato -Tpng thisfile > thisfile.png
+
+
+digraph diagram{
+node [shape=box];"Indienen verzoek aanpassing arbeidsduur"; "Overleg plegen"; "Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing"; "Afwijzen van het verzoek"; "Vaststellen van de spreiding van de uren"; "Wijzigen van de spreiding van de uren"; "Inzetten van de immuniteit 2.5"; "Schriftelijk mededelen van de beslissing aan de werknemer"; "Mededelen van de redenen"; "de arbeidsduur wordt aangepast overeenkomstig het verzoek van de werknemer"; 
+node [shape=circle,fixedsize=true,width=0.9];"recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen"; "verplichting tot overleg plegen"; "de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
+en de omvang van de aanpassing"; "immuniteit (recht) om de verplichte bevoegdheid
+tot het inwilligen van het verzoek te neutraliseren"; "de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren
+overeenkomstig de wensen van de werknemer"; "immuniteit (recht) om de verplichte bevoegdheid tot het
+vaststellen van de spreiding van de uren overeenkomstige de wensen
+van de werknemer te neutraliseren."; "de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen"; "verplichting tot het schriftelijk mededelen van de beslissing"; "verplichting tot het mededelen van de redenen"; 
+"recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen"->"Indienen verzoek aanpassing arbeidsduur";
+"verplichting tot overleg plegen"->"Overleg plegen";
+"de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
+en de omvang van de aanpassing"->"Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing";
+"immuniteit (recht) om de verplichte bevoegdheid
+tot het inwilligen van het verzoek te neutraliseren"->"Afwijzen van het verzoek";
+"de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren
+overeenkomstig de wensen van de werknemer"->"Vaststellen van de spreiding van de uren";
+"immuniteit (recht) om de verplichte bevoegdheid tot het
+vaststellen van de spreiding van de uren overeenkomstige de wensen
+van de werknemer te neutraliseren."->"Inzetten van de immuniteit 2.5";
+"de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen"->"Wijzigen van de spreiding van de uren";
+"verplichting tot het schriftelijk mededelen van de beslissing"->"Schriftelijk mededelen van de beslissing aan de werknemer";
+"verplichting tot het mededelen van de redenen"->"Mededelen van de redenen";
+"Indienen verzoek aanpassing arbeidsduur"->"verplichting tot overleg plegen";"Indienen verzoek aanpassing arbeidsduur"->"de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
+en de omvang van de aanpassing";"Indienen verzoek aanpassing arbeidsduur"->"immuniteit (recht) om de verplichte bevoegdheid
+tot het inwilligen van het verzoek te neutraliseren";"Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing"->"de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren
+overeenkomstig de wensen van de werknemer";"Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing"->"immuniteit (recht) om de verplichte bevoegdheid tot het
+vaststellen van de spreiding van de uren overeenkomstige de wensen
+van de werknemer te neutraliseren.";"Afwijzen van het verzoek"->"verplichting tot het schriftelijk mededelen van de beslissing";"Afwijzen van het verzoek"->"verplichting tot het mededelen van de redenen";"Vaststellen van de spreiding van de uren"->"verplichting tot het mededelen van de redenen";"Wijzigen van de spreiding van de uren"->"verplichting tot het mededelen van de redenen";"Inzetten van de immuniteit 2.5"->"de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen";}

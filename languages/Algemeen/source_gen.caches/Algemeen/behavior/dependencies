@@ -2,6 +2,7 @@
 <dependenciesRoot>
   <dependency className="Algemeen.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
     <classNode dependClassName="Algemeen.behavior.IBronGeldigheid__BehaviorDescriptor" />
+    <classNode dependClassName="Algemeen.behavior.KorteNaam__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -49,6 +50,27 @@
   </dependency>
   <dependency className="Algemeen.behavior.IOpmerking_BehaviorDescriptor" file="IOpmerking_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
+  <dependency className="Algemeen.behavior.KorteNaam_BehaviorDescriptor" file="KorteNaam_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
+  <dependency className="Algemeen.behavior.KorteNaam__BehaviorDescriptor" file="KorteNaam__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="Algemeen.behavior.LijstMetBerichten_BehaviorDescriptor" file="LijstMetBerichten_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />

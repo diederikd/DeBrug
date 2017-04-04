@@ -13,6 +13,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_IBronGeldigheid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IConceptnummer = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IOpmerking = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_KorteNaam = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LijstMetBerichten = new ConceptPresentationBuilder().create();
 
   @Override
@@ -29,6 +30,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 3:
         return props_IOpmerking;
       case 4:
+        return props_KorteNaam;
+      case 5:
         return props_LijstMetBerichten;
     }
     throw new IllegalStateException("Unknown concept " + c);
