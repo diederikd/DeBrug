@@ -138,9 +138,8 @@ public class GraphVizFile {
     Project project = MPSDataKeys.PROJECT.getData(DataManager.getInstance().getDataContext());
     String filegv = ProjectBaseDirectory.getInstance(project).getBaseDir().getCanonicalPath() + "/graphviz/visualiser.gv";
     String filepng = ProjectBaseDirectory.getInstance(project).getBaseDir().getCanonicalPath() + "/graphviz/visualiser.png";
-    String[] commandarray = {"/bin/sh", "-c", "neato", "-Tpng", filegv, ">", filepng};
-    String command = "sh -c neato -Tpng " + filegv + " > " + filepng;
-    System.out.println("Running command : " + command);
+    String[] commandarray = {"/bin/sh", "-c", "neato " + "-Tpng " + filegv + " > " + filepng};
+    System.out.println("Running command");
     String result = ExecuteCommand(commandarray);
     System.out.println("Command executed with result" + result);
   }

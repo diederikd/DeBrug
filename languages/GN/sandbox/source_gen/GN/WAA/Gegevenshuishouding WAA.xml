@@ -3,887 +3,316 @@
     <rechtssubjecten>
       <rechtssubjectnaam>werknemer</rechtssubjectnaam>
       <rechtssubjectid>5753801799636978868</rechtssubjectid>
-          <instantie>
-            <instantienaam>Pieter</instantienaam>
-            <instantieid>3139957515575936548</instantieid>
+          <instantie naam='Pieter' id='3139957515575936548'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6305595003050758060</kenmerkid>
-                  <kenmerknaam>werknemersidentificatie</kenmerknaam>
-                  <kenmerkwaarde>5</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131722833346</kenmerkid>
-                  <kenmerknaam>burgerservicenummer</kenmerknaam>
-                  <kenmerkwaarde>333333333</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050758070</kenmerkid>
-                  <kenmerknaam>voornamen</kenmerknaam>
-                  <kenmerkwaarde>Jan</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050902801</kenmerkid>
-                  <kenmerknaam>roepnaam</kenmerknaam>
-                  <kenmerkwaarde>Jan</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050758088</kenmerkid>
-                  <kenmerknaam>achternaam</kenmerknaam>
-                  <kenmerkwaarde>Janssen</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6249140128508617785</kenmerkid>
-                  <kenmerknaam>geboortedatum</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050902831</kenmerkid>
-                  <kenmerknaam>geboorteplaats</kenmerknaam>
-                  <kenmerkwaarde>Amsterdam</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050902865</kenmerkid>
-                  <kenmerknaam>adres werknemer</kenmerknaam>
-                  <kenmerkwaarde>De weg</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050902903</kenmerkid>
-                  <kenmerknaam>huisnummer werknemer</kenmerknaam>
-                  <kenmerkwaarde>19</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131722833133</kenmerkid>
-                  <kenmerknaam>postcode van de werknemer</kenmerknaam>
-                  <kenmerkwaarde>1095 AA</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050902991</kenmerkid>
-                  <kenmerknaam>woonplaats</kenmerknaam>
-                  <kenmerkwaarde>Groningen</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050903171</kenmerkid>
-                  <kenmerknaam>paspoortnummer</kenmerknaam>
-                  <kenmerkwaarde>12345</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050903229</kenmerkid>
-                  <kenmerknaam>identiteitskaartnummer</kenmerknaam>
-                  <kenmerkwaarde>12345</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050903291</kenmerkid>
-                  <kenmerknaam>burgerlijke staat</kenmerknaam>
-                  <kenmerkwaarde>ongehuwd</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050903357</kenmerkid>
-                  <kenmerknaam>nationaliteit</kenmerknaam>
-                  <kenmerkwaarde>NL</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>2911931843183476917</kenmerkid>
-                  <kenmerknaam>nationaliteit datum sinds</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050903427</kenmerkid>
-                  <kenmerknaam>militair ambtenaar</kenmerknaam>
-                  <kenmerkwaarde>Nee</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6305595003050758060' naam='werknemersidentificatie'>5</kenmerk>
+                <kenmerk id='797539131722833346' naam='burgerservicenummer'>3139957515576430800</kenmerk>
+                <kenmerk id='6305595003050758070' naam='voornamen'>Jan</kenmerk>
+                <kenmerk id='6305595003050902801' naam='roepnaam'>Jan</kenmerk>
+                <kenmerk id='6305595003050758088' naam='achternaam'>Janssen</kenmerk>
+                <kenmerk id='6249140128508617785' naam='geboortedatum'></kenmerk>
+                <kenmerk id='6305595003050902831' naam='geboorteplaats'>Amsterdam</kenmerk>
+                <kenmerk id='6305595003050902865' naam='adres werknemer'>De weg</kenmerk>
+                <kenmerk id='6305595003050902903' naam='huisnummer werknemer'>19</kenmerk>
+                <kenmerk id='797539131722833133' naam='postcode van de werknemer'>3139957515576834385</kenmerk>
+                <kenmerk id='6305595003050902991' naam='woonplaats'>Groningen</kenmerk>
+                <kenmerk id='6305595003050903171' naam='paspoortnummer'>12345</kenmerk>
+                <kenmerk id='6305595003050903229' naam='identiteitskaartnummer'>12345</kenmerk>
+                <kenmerk id='6305595003050903291' naam='burgerlijke staat'>ongehuwd</kenmerk>
+                <kenmerk id='6305595003050903357' naam='nationaliteit'>NL</kenmerk>
+                <kenmerk id='2911931843183476917' naam='nationaliteit datum sinds'></kenmerk>
+                <kenmerk id='6305595003050903427' naam='militair ambtenaar'>Nee</kenmerk>
               </kenmerken>
           </instantie>
     </rechtssubjecten>
     <rechtssubjecten>
       <rechtssubjectnaam>werkgever</rechtssubjectnaam>
       <rechtssubjectid>5753801799637012771</rechtssubjectid>
-          <instantie>
-            <instantienaam>Essent</instantienaam>
-            <instantieid>3139957515574338931</instantieid>
+          <instantie naam='Essent' id='3139957515574338931'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6305595003050758034</kenmerkid>
-                  <kenmerknaam>werkgeversidentificatie</kenmerknaam>
-                  <kenmerkwaarde>3</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050758130</kenmerkid>
-                  <kenmerknaam>naam</kenmerknaam>
-                  <kenmerkwaarde>Essent</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>4582643239557941005</kenmerkid>
-                  <kenmerknaam>adres</kenmerknaam>
-                  <kenmerkwaarde>J.F. Kennedylaan </kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>4582643239557941058</kenmerkid>
-                  <kenmerknaam>huisnummer</kenmerknaam>
-                  <kenmerkwaarde>109</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131722832948</kenmerkid>
-                  <kenmerknaam>postcode</kenmerknaam>
-                  <kenmerkwaarde>1095 AA</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050758148</kenmerkid>
-                  <kenmerknaam>aantal werknemers</kenmerknaam>
-                  <kenmerkwaarde>30</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6249140128508617900</kenmerkid>
-                  <kenmerknaam>peildatum aantal werknemers</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050903477</kenmerkid>
-                  <kenmerknaam>militairen in dienst</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6305595003050758034' naam='werkgeversidentificatie'>3</kenmerk>
+                <kenmerk id='6305595003050758130' naam='naam'>Essent</kenmerk>
+                <kenmerk id='4582643239557941005' naam='adres'>J.F. Kennedylaan </kenmerk>
+                <kenmerk id='4582643239557941058' naam='huisnummer'>109</kenmerk>
+                <kenmerk id='797539131722832948' naam='postcode'>3139957515576834347</kenmerk>
+                <kenmerk id='6305595003050758148' naam='aantal werknemers'>30</kenmerk>
+                <kenmerk id='6249140128508617900' naam='peildatum aantal werknemers'></kenmerk>
+                <kenmerk id='6305595003050903477' naam='militairen in dienst'></kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Eneco</instantienaam>
-            <instantieid>3139957515574723026</instantieid>
+          <instantie naam='Eneco' id='3139957515574723026'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6305595003050758034</kenmerkid>
-                  <kenmerknaam>werkgeversidentificatie</kenmerknaam>
-                  <kenmerkwaarde>4</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050758130</kenmerkid>
-                  <kenmerknaam>naam</kenmerknaam>
-                  <kenmerkwaarde>Eneco</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>4582643239557941005</kenmerkid>
-                  <kenmerknaam>adres</kenmerknaam>
-                  <kenmerkwaarde>Wegenerstraat </kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>4582643239557941058</kenmerkid>
-                  <kenmerknaam>huisnummer</kenmerknaam>
-                  <kenmerkwaarde>140</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131722832948</kenmerkid>
-                  <kenmerknaam>postcode</kenmerknaam>
-                  <kenmerkwaarde>1073 RR</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050758148</kenmerkid>
-                  <kenmerknaam>aantal werknemers</kenmerknaam>
-                  <kenmerkwaarde>40</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6249140128508617900</kenmerkid>
-                  <kenmerknaam>peildatum aantal werknemers</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050903477</kenmerkid>
-                  <kenmerknaam>militairen in dienst</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6305595003050758034' naam='werkgeversidentificatie'>4</kenmerk>
+                <kenmerk id='6305595003050758130' naam='naam'>Eneco</kenmerk>
+                <kenmerk id='4582643239557941005' naam='adres'>Wegenerstraat </kenmerk>
+                <kenmerk id='4582643239557941058' naam='huisnummer'>140</kenmerk>
+                <kenmerk id='797539131722832948' naam='postcode'>3139957515576834366</kenmerk>
+                <kenmerk id='6305595003050758148' naam='aantal werknemers'>40</kenmerk>
+                <kenmerk id='6249140128508617900' naam='peildatum aantal werknemers'></kenmerk>
+                <kenmerk id='6305595003050903477' naam='militairen in dienst'></kenmerk>
               </kenmerken>
           </instantie>
     </rechtssubjecten>
     <onderwerpen>
       <onderwerpnaam>aanpassing van de arbeidsduur</onderwerpnaam>
       <onderwerpid>848775529194317032</onderwerpid>
-          <instantie>
-            <instantienaam>Verzoek 1</instantienaam>
-            <instantieid>4196470522071791502</instantieid>
+          <instantie naam='Verzoek 1' id='4196470522071791502'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>3955365814688947835</kenmerkid>
-                  <kenmerknaam>op grond van arbeidsovereenkomst</kenmerknaam>
-                  <kenmerkwaarde>Arbeidsovereenkomst tussen Pieter en Essent</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6249140128508295101</kenmerkid>
-                  <kenmerknaam>datum indienen verzoek</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>3955365814688413039</kenmerkid>
-                  <kenmerknaam>datum vorige versie van het verzoek</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>131751487724941978</kenmerkid>
-                  <kenmerknaam>datum overleg gepleegd</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143438865</kenmerkid>
-                  <kenmerknaam>datum verzoek ingewilligd</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143439007</kenmerkid>
-                  <kenmerknaam>datum verzoek afgewezen</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143837474</kenmerkid>
-                  <kenmerknaam>datum spreiding vastgesteld</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143837915</kenmerkid>
-                  <kenmerknaam>datum spreiding van de uren laatst gewijzigd</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143838126</kenmerkid>
-                  <kenmerknaam>datum beslissing medegedeeld</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143838298</kenmerkid>
-                  <kenmerknaam>datum mededelen redenen</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143837719</kenmerkid>
-                  <kenmerknaam>werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5235943278057325910</kenmerkid>
-                  <kenmerknaam>datum belang aangegeven</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5266643527327199632</kenmerkid>
-                  <kenmerknaam>beoogde ingangsdatum van de aanpassing</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131721925527</kenmerkid>
-                  <kenmerknaam>omvang van de aanpassing</kenmerknaam>
-                  <kenmerkwaarde>PT40H</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131721925590</kenmerkid>
-                  <kenmerknaam>gewenste spreiding</kenmerknaam>
-                  <kenmerkwaarde>Maandag t/m vrijdag 5 x 8</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>31726144782747159</kenmerkid>
-                  <kenmerknaam>schriftelijk ingediend</kenmerknaam>
-                  <kenmerkwaarde>Ja</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5105771847112954480</kenmerkid>
-                  <kenmerknaam>samentelling volgens werknemer</kenmerknaam>
-                  <kenmerkwaarde>PT960H</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5105771847112954556</kenmerkid>
-                  <kenmerknaam>samentelling volgens werkgever</kenmerknaam>
-                  <kenmerkwaarde>PT960H</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5105771847112954895</kenmerkid>
-                  <kenmerknaam>redenen voor afwijzing</kenmerknaam>
-                  <kenmerkwaarde>Geen</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143836247</kenmerkid>
-                  <kenmerknaam>zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5235943278057328272</kenmerkid>
-                  <kenmerknaam>datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5105771847118264163</kenmerkid>
-                  <kenmerknaam>feiten bij vermindering</kenmerknaam>
-                  <kenmerkwaarde>geen feiten bij vermindering</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5105771847118264263</kenmerkid>
-                  <kenmerknaam>feiten bij vermeerdering</kenmerknaam>
-                  <kenmerkwaarde>geen feiten bij vermeerdering</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='3955365814688947835' naam='op grond van arbeidsovereenkomst'>4196470522071792522</kenmerk>
+                <kenmerk id='6249140128508295101' naam='datum indienen verzoek'></kenmerk>
+                <kenmerk id='3955365814688413039' naam='datum vorige versie van het verzoek'></kenmerk>
+                <kenmerk id='131751487724941978' naam='datum overleg gepleegd'></kenmerk>
+                <kenmerk id='5540471952143438865' naam='datum verzoek ingewilligd'></kenmerk>
+                <kenmerk id='5540471952143439007' naam='datum verzoek afgewezen'></kenmerk>
+                <kenmerk id='5540471952143837474' naam='datum spreiding vastgesteld'></kenmerk>
+                <kenmerk id='5540471952143837915' naam='datum spreiding van de uren laatst gewijzigd'></kenmerk>
+                <kenmerk id='5540471952143838126' naam='datum beslissing medegedeeld'></kenmerk>
+                <kenmerk id='5540471952143838298' naam='datum mededelen redenen'></kenmerk>
+                <kenmerk id='5540471952143837719' naam='werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken'></kenmerk>
+                <kenmerk id='5235943278057325910' naam='datum belang aangegeven'></kenmerk>
+                <kenmerk id='5266643527327199632' naam='beoogde ingangsdatum van de aanpassing'></kenmerk>
+                <kenmerk id='797539131721925527' naam='omvang van de aanpassing'>PT40H</kenmerk>
+                <kenmerk id='797539131721925590' naam='gewenste spreiding'>4196470522071793499</kenmerk>
+                <kenmerk id='31726144782747159' naam='schriftelijk ingediend'>Ja</kenmerk>
+                <kenmerk id='5105771847112954480' naam='samentelling volgens werknemer'>PT960H</kenmerk>
+                <kenmerk id='5105771847112954556' naam='samentelling volgens werkgever'>PT960H</kenmerk>
+                <kenmerk id='5105771847112954895' naam='redenen voor afwijzing'>Geen</kenmerk>
+                <kenmerk id='5540471952143836247' naam='zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen'></kenmerk>
+                <kenmerk id='5235943278057328272' naam='datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever'></kenmerk>
+                <kenmerk id='5105771847118264163' naam='feiten bij vermindering'>geen feiten bij vermindering</kenmerk>
+                <kenmerk id='5105771847118264263' naam='feiten bij vermeerdering'>geen feiten bij vermeerdering</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Af te wijzen verzoek</instantienaam>
-            <instantieid>6066224101204905512</instantieid>
+          <instantie naam='Af te wijzen verzoek' id='6066224101204905512'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>3955365814688947835</kenmerkid>
-                  <kenmerknaam>op grond van arbeidsovereenkomst</kenmerknaam>
-                  <kenmerkwaarde>Arbeidsovereenkomst tussen Pieter en Essent</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6249140128508295101</kenmerkid>
-                  <kenmerknaam>datum indienen verzoek</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>3955365814688413039</kenmerkid>
-                  <kenmerknaam>datum vorige versie van het verzoek</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>131751487724941978</kenmerkid>
-                  <kenmerknaam>datum overleg gepleegd</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143438865</kenmerkid>
-                  <kenmerknaam>datum verzoek ingewilligd</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143439007</kenmerkid>
-                  <kenmerknaam>datum verzoek afgewezen</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143837474</kenmerkid>
-                  <kenmerknaam>datum spreiding vastgesteld</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143837915</kenmerkid>
-                  <kenmerknaam>datum spreiding van de uren laatst gewijzigd</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143838126</kenmerkid>
-                  <kenmerknaam>datum beslissing medegedeeld</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143838298</kenmerkid>
-                  <kenmerknaam>datum mededelen redenen</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143837719</kenmerkid>
-                  <kenmerknaam>werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5235943278057325910</kenmerkid>
-                  <kenmerknaam>datum belang aangegeven</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5266643527327199632</kenmerkid>
-                  <kenmerknaam>beoogde ingangsdatum van de aanpassing</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131721925527</kenmerkid>
-                  <kenmerknaam>omvang van de aanpassing</kenmerknaam>
-                  <kenmerkwaarde>PT40H</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131721925590</kenmerkid>
-                  <kenmerknaam>gewenste spreiding</kenmerknaam>
-                  <kenmerkwaarde>Maandag t/m vrijdag 5 x 8</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>31726144782747159</kenmerkid>
-                  <kenmerknaam>schriftelijk ingediend</kenmerknaam>
-                  <kenmerkwaarde>Ja</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5105771847112954480</kenmerkid>
-                  <kenmerknaam>samentelling volgens werknemer</kenmerknaam>
-                  <kenmerkwaarde>PT960H</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5105771847112954556</kenmerkid>
-                  <kenmerknaam>samentelling volgens werkgever</kenmerknaam>
-                  <kenmerkwaarde>PT960H</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5105771847112954895</kenmerkid>
-                  <kenmerknaam>redenen voor afwijzing</kenmerknaam>
-                  <kenmerkwaarde>Geen</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5540471952143836247</kenmerkid>
-                  <kenmerknaam>zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen</kenmerknaam>
-                  <kenmerkwaarde>Ja</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5235943278057328272</kenmerkid>
-                  <kenmerknaam>datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5105771847118264163</kenmerkid>
-                  <kenmerknaam>feiten bij vermindering</kenmerknaam>
-                  <kenmerkwaarde>geen feiten bij vermindering</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>5105771847118264263</kenmerkid>
-                  <kenmerknaam>feiten bij vermeerdering</kenmerknaam>
-                  <kenmerkwaarde>geen feiten bij vermeerdering</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='3955365814688947835' naam='op grond van arbeidsovereenkomst'>6066224101204906947</kenmerk>
+                <kenmerk id='6249140128508295101' naam='datum indienen verzoek'></kenmerk>
+                <kenmerk id='3955365814688413039' naam='datum vorige versie van het verzoek'></kenmerk>
+                <kenmerk id='131751487724941978' naam='datum overleg gepleegd'></kenmerk>
+                <kenmerk id='5540471952143438865' naam='datum verzoek ingewilligd'></kenmerk>
+                <kenmerk id='5540471952143439007' naam='datum verzoek afgewezen'></kenmerk>
+                <kenmerk id='5540471952143837474' naam='datum spreiding vastgesteld'></kenmerk>
+                <kenmerk id='5540471952143837915' naam='datum spreiding van de uren laatst gewijzigd'></kenmerk>
+                <kenmerk id='5540471952143838126' naam='datum beslissing medegedeeld'></kenmerk>
+                <kenmerk id='5540471952143838298' naam='datum mededelen redenen'></kenmerk>
+                <kenmerk id='5540471952143837719' naam='werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken'></kenmerk>
+                <kenmerk id='5235943278057325910' naam='datum belang aangegeven'></kenmerk>
+                <kenmerk id='5266643527327199632' naam='beoogde ingangsdatum van de aanpassing'></kenmerk>
+                <kenmerk id='797539131721925527' naam='omvang van de aanpassing'>PT40H</kenmerk>
+                <kenmerk id='797539131721925590' naam='gewenste spreiding'>6066224101204907833</kenmerk>
+                <kenmerk id='31726144782747159' naam='schriftelijk ingediend'>Ja</kenmerk>
+                <kenmerk id='5105771847112954480' naam='samentelling volgens werknemer'>PT960H</kenmerk>
+                <kenmerk id='5105771847112954556' naam='samentelling volgens werkgever'>PT960H</kenmerk>
+                <kenmerk id='5105771847112954895' naam='redenen voor afwijzing'>Geen</kenmerk>
+                <kenmerk id='5540471952143836247' naam='zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen'>Ja</kenmerk>
+                <kenmerk id='5235943278057328272' naam='datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever'></kenmerk>
+                <kenmerk id='5105771847118264163' naam='feiten bij vermindering'>geen feiten bij vermindering</kenmerk>
+                <kenmerk id='5105771847118264263' naam='feiten bij vermeerdering'>geen feiten bij vermeerdering</kenmerk>
               </kenmerken>
           </instantie>
     </onderwerpen>
     <onderwerpen>
       <onderwerpnaam>arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling</onderwerpnaam>
       <onderwerpid>5266643527327102431</onderwerpid>
-          <instantie>
-            <instantienaam>Arbeidsovereenkomst tussen Pieter en Essent</instantienaam>
-            <instantieid>2464168203970134583</instantieid>
+          <instantie naam='Arbeidsovereenkomst tussen Pieter en Essent' id='2464168203970134583'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>797539131722830615</kenmerkid>
-                  <kenmerknaam>werknemersidentificatie</kenmerknaam>
-                  <kenmerkwaarde>Pieter</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131722830659</kenmerkid>
-                  <kenmerknaam>werkgeversidentificatie</kenmerknaam>
-                  <kenmerkwaarde>Essent</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6249140128508495744</kenmerkid>
-                  <kenmerknaam>datum indiensttreding</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050606828</kenmerkid>
-                  <kenmerknaam>arbeidsovereenkomst getekend op</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131722830734</kenmerkid>
-                  <kenmerknaam>arbeidsduurperiode in arbeidsovereenkomst</kenmerknaam>
-                  <kenmerkwaarde>Arbeidsduur van arbeidsovereenkomst 1</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='797539131722830615' naam='werknemersidentificatie'>8120684925543537448</kenmerk>
+                <kenmerk id='797539131722830659' naam='werkgeversidentificatie'>8120684925543537456</kenmerk>
+                <kenmerk id='6249140128508495744' naam='datum indiensttreding'></kenmerk>
+                <kenmerk id='6305595003050606828' naam='arbeidsovereenkomst getekend op'></kenmerk>
+                <kenmerk id='797539131722830734' naam='arbeidsduurperiode in arbeidsovereenkomst'>2464168203970139214</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Arbeidsovereenkomst tussen Pieter en Eneco</instantienaam>
-            <instantieid>1423902536565253958</instantieid>
+          <instantie naam='Arbeidsovereenkomst tussen Pieter en Eneco' id='1423902536565253958'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>797539131722830615</kenmerkid>
-                  <kenmerknaam>werknemersidentificatie</kenmerknaam>
-                  <kenmerkwaarde>Pieter</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131722830659</kenmerkid>
-                  <kenmerknaam>werkgeversidentificatie</kenmerknaam>
-                  <kenmerkwaarde>Eneco</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6249140128508495744</kenmerkid>
-                  <kenmerknaam>datum indiensttreding</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6305595003050606828</kenmerkid>
-                  <kenmerknaam>arbeidsovereenkomst getekend op</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131722830734</kenmerkid>
-                  <kenmerknaam>arbeidsduurperiode in arbeidsovereenkomst</kenmerknaam>
-                  <kenmerkwaarde>Arbeidsduur van arbeidsovereenkomst 2</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='797539131722830615' naam='werknemersidentificatie'>1423902536565254565</kenmerk>
+                <kenmerk id='797539131722830659' naam='werkgeversidentificatie'>1423902536565254578</kenmerk>
+                <kenmerk id='6249140128508495744' naam='datum indiensttreding'></kenmerk>
+                <kenmerk id='6305595003050606828' naam='arbeidsovereenkomst getekend op'></kenmerk>
+                <kenmerk id='797539131722830734' naam='arbeidsduurperiode in arbeidsovereenkomst'>1423902536565255364</kenmerk>
               </kenmerken>
           </instantie>
     </onderwerpen>
     <onderwerpen>
       <onderwerpnaam>arbeidsduurperiode van arbeidsovereenkomst</onderwerpnaam>
       <onderwerpid>6305595003050996407</onderwerpid>
-          <instantie>
-            <instantienaam>Arbeidsduur van arbeidsovereenkomst 1</instantienaam>
-            <instantieid>2464168203970134965</instantieid>
+          <instantie naam='Arbeidsduur van arbeidsovereenkomst 1' id='2464168203970134965'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6249140128508495772</kenmerkid>
-                  <kenmerknaam>arbeidsduur geldig van datum</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6249140128508495807</kenmerkid>
-                  <kenmerknaam>arbeidsduur geldig tot datum</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>2455094379071934535</kenmerkid>
-                  <kenmerknaam>arbeidsduur</kenmerknaam>
-                  <kenmerkwaarde>40</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131722830553</kenmerkid>
-                  <kenmerknaam>spreiding</kenmerknaam>
-                  <kenmerkwaarde>Maandag t/m vrijdag 5 x 8</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6249140128508495772' naam='arbeidsduur geldig van datum'></kenmerk>
+                <kenmerk id='6249140128508495807' naam='arbeidsduur geldig tot datum'></kenmerk>
+                <kenmerk id='2455094379071934535' naam='arbeidsduur'>40</kenmerk>
+                <kenmerk id='797539131722830553' naam='spreiding'>6760713004464131948</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Arbeidsduur van arbeidsovereenkomst 2</instantienaam>
-            <instantieid>1423902536565254735</instantieid>
+          <instantie naam='Arbeidsduur van arbeidsovereenkomst 2' id='1423902536565254735'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6249140128508495772</kenmerkid>
-                  <kenmerknaam>arbeidsduur geldig van datum</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>6249140128508495807</kenmerkid>
-                  <kenmerknaam>arbeidsduur geldig tot datum</kenmerknaam>
-                  <kenmerkwaarde></kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>2455094379071934535</kenmerkid>
-                  <kenmerknaam>arbeidsduur</kenmerknaam>
-                  <kenmerkwaarde>40.0</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>797539131722830553</kenmerkid>
-                  <kenmerknaam>spreiding</kenmerknaam>
-                  <kenmerkwaarde>Maandag t/m vrijdag 5 x 8</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6249140128508495772' naam='arbeidsduur geldig van datum'></kenmerk>
+                <kenmerk id='6249140128508495807' naam='arbeidsduur geldig tot datum'></kenmerk>
+                <kenmerk id='2455094379071934535' naam='arbeidsduur'>40.0</kenmerk>
+                <kenmerk id='797539131722830553' naam='spreiding'>1423902536565255353</kenmerk>
               </kenmerken>
           </instantie>
     </onderwerpen>
     <onderwerpen>
       <onderwerpnaam>spreidingperioden</onderwerpnaam>
       <onderwerpid>6760713004464116352</onderwerpid>
-          <instantie>
-            <instantienaam>Maandag t/m vrijdag 5 x 8</instantienaam>
-            <instantieid>6760713004464122295</instantieid>
+          <instantie naam='Maandag t/m vrijdag 5 x 8' id='6760713004464122295'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6760713004464116818</kenmerkid>
-                  <kenmerknaam>perioden</kenmerknaam>
-                  <kenmerkwaarde>Maandag van 08:00 - 12:00, Maandag van 12:30 - 16:30, Dinsdag van 08:00 - 12:00, Dinsdag van 12:30 - 16:30, Woensdag van 08:00 - 12:00, Woensdag van 12:30 - 16:30, Donderdag van 08:00 - 12:00, Donderdag van 12:30 - 16:30, Vrijdag van 08:00 - 12:00, Vrijdag van 12:30 - 16:30, </kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6760713004464116818' naam='perioden'>Maandag van 08:00 - 12:00, Maandag van 12:30 - 16:30, Dinsdag van 08:00 - 12:00, Dinsdag van 12:30 - 16:30, Woensdag van 08:00 - 12:00, Woensdag van 12:30 - 16:30, Donderdag van 08:00 - 12:00, Donderdag van 12:30 - 16:30, Vrijdag van 08:00 - 12:00, Vrijdag van 12:30 - 16:30, </kenmerk>
               </kenmerken>
           </instantie>
     </onderwerpen>
     <onderwerpen>
       <onderwerpnaam>werkperiode</onderwerpnaam>
       <onderwerpid>7431672735419572200</onderwerpid>
-          <instantie>
-            <instantienaam>Maandag van 08:00 - 12:00</instantienaam>
-            <instantieid>6760713004464122354</instantieid>
+          <instantie naam='Maandag van 08:00 - 12:00' id='6760713004464122354'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6760713004464120839</kenmerkid>
-                  <kenmerknaam>dag</kenmerknaam>
-                  <kenmerkwaarde>Maandag</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572290</kenmerkid>
-                  <kenmerknaam>aanvangstijd periode</kenmerknaam>
-                  <kenmerkwaarde>08:00</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572313</kenmerkid>
-                  <kenmerknaam>eindtijd periode</kenmerknaam>
-                  <kenmerkwaarde>12:00</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6760713004464120839' naam='dag'>Maandag</kenmerk>
+                <kenmerk id='7431672735419572290' naam='aanvangstijd periode'>08:00</kenmerk>
+                <kenmerk id='7431672735419572313' naam='eindtijd periode'>12:00</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Maandag van 12:30 - 16:30</instantienaam>
-            <instantieid>6760713004464122455</instantieid>
+          <instantie naam='Maandag van 12:30 - 16:30' id='6760713004464122455'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6760713004464120839</kenmerkid>
-                  <kenmerknaam>dag</kenmerknaam>
-                  <kenmerkwaarde>Maandag</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572290</kenmerkid>
-                  <kenmerknaam>aanvangstijd periode</kenmerknaam>
-                  <kenmerkwaarde>12:00</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572313</kenmerkid>
-                  <kenmerknaam>eindtijd periode</kenmerknaam>
-                  <kenmerkwaarde>16:00</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6760713004464120839' naam='dag'>Maandag</kenmerk>
+                <kenmerk id='7431672735419572290' naam='aanvangstijd periode'>12:00</kenmerk>
+                <kenmerk id='7431672735419572313' naam='eindtijd periode'>16:00</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Dinsdag van 08:00 - 12:00</instantienaam>
-            <instantieid>6760713004464123029</instantieid>
+          <instantie naam='Dinsdag van 08:00 - 12:00' id='6760713004464123029'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6760713004464120839</kenmerkid>
-                  <kenmerknaam>dag</kenmerknaam>
-                  <kenmerkwaarde>Dinsdag</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572290</kenmerkid>
-                  <kenmerknaam>aanvangstijd periode</kenmerknaam>
-                  <kenmerkwaarde>08:00</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572313</kenmerkid>
-                  <kenmerknaam>eindtijd periode</kenmerknaam>
-                  <kenmerkwaarde>12:00</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6760713004464120839' naam='dag'>Dinsdag</kenmerk>
+                <kenmerk id='7431672735419572290' naam='aanvangstijd periode'>08:00</kenmerk>
+                <kenmerk id='7431672735419572313' naam='eindtijd periode'>12:00</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Dinsdag van 12:30 - 16:30</instantienaam>
-            <instantieid>6760713004464123097</instantieid>
+          <instantie naam='Dinsdag van 12:30 - 16:30' id='6760713004464123097'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6760713004464120839</kenmerkid>
-                  <kenmerknaam>dag</kenmerknaam>
-                  <kenmerkwaarde>Dinsdag</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572290</kenmerkid>
-                  <kenmerknaam>aanvangstijd periode</kenmerknaam>
-                  <kenmerkwaarde>12:00</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572313</kenmerkid>
-                  <kenmerknaam>eindtijd periode</kenmerknaam>
-                  <kenmerkwaarde>16:00</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6760713004464120839' naam='dag'>Dinsdag</kenmerk>
+                <kenmerk id='7431672735419572290' naam='aanvangstijd periode'>12:00</kenmerk>
+                <kenmerk id='7431672735419572313' naam='eindtijd periode'>16:00</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Woensdag van 08:00 - 12:00</instantienaam>
-            <instantieid>6760713004464123180</instantieid>
+          <instantie naam='Woensdag van 08:00 - 12:00' id='6760713004464123180'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6760713004464120839</kenmerkid>
-                  <kenmerknaam>dag</kenmerknaam>
-                  <kenmerkwaarde>Woensdag</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572290</kenmerkid>
-                  <kenmerknaam>aanvangstijd periode</kenmerknaam>
-                  <kenmerkwaarde>08:00</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572313</kenmerkid>
-                  <kenmerknaam>eindtijd periode</kenmerknaam>
-                  <kenmerkwaarde>12:00</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6760713004464120839' naam='dag'>Woensdag</kenmerk>
+                <kenmerk id='7431672735419572290' naam='aanvangstijd periode'>08:00</kenmerk>
+                <kenmerk id='7431672735419572313' naam='eindtijd periode'>12:00</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Woensdag van 12:30 - 16:30</instantienaam>
-            <instantieid>6760713004464123278</instantieid>
+          <instantie naam='Woensdag van 12:30 - 16:30' id='6760713004464123278'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6760713004464120839</kenmerkid>
-                  <kenmerknaam>dag</kenmerknaam>
-                  <kenmerkwaarde>Woensdag</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572290</kenmerkid>
-                  <kenmerknaam>aanvangstijd periode</kenmerknaam>
-                  <kenmerkwaarde>12:00</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572313</kenmerkid>
-                  <kenmerknaam>eindtijd periode</kenmerknaam>
-                  <kenmerkwaarde>16:00</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6760713004464120839' naam='dag'>Woensdag</kenmerk>
+                <kenmerk id='7431672735419572290' naam='aanvangstijd periode'>12:00</kenmerk>
+                <kenmerk id='7431672735419572313' naam='eindtijd periode'>16:00</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Donderdag van 08:00 - 12:00</instantienaam>
-            <instantieid>6760713004464123391</instantieid>
+          <instantie naam='Donderdag van 08:00 - 12:00' id='6760713004464123391'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6760713004464120839</kenmerkid>
-                  <kenmerknaam>dag</kenmerknaam>
-                  <kenmerkwaarde>Donderdag</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572290</kenmerkid>
-                  <kenmerknaam>aanvangstijd periode</kenmerknaam>
-                  <kenmerkwaarde>08:00</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572313</kenmerkid>
-                  <kenmerknaam>eindtijd periode</kenmerknaam>
-                  <kenmerkwaarde>12:00</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6760713004464120839' naam='dag'>Donderdag</kenmerk>
+                <kenmerk id='7431672735419572290' naam='aanvangstijd periode'>08:00</kenmerk>
+                <kenmerk id='7431672735419572313' naam='eindtijd periode'>12:00</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Donderdag van 12:30 - 16:30</instantienaam>
-            <instantieid>6760713004464123519</instantieid>
+          <instantie naam='Donderdag van 12:30 - 16:30' id='6760713004464123519'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6760713004464120839</kenmerkid>
-                  <kenmerknaam>dag</kenmerknaam>
-                  <kenmerkwaarde>Donderdag</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572290</kenmerkid>
-                  <kenmerknaam>aanvangstijd periode</kenmerknaam>
-                  <kenmerkwaarde>12:00</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572313</kenmerkid>
-                  <kenmerknaam>eindtijd periode</kenmerknaam>
-                  <kenmerkwaarde>16:00</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6760713004464120839' naam='dag'>Donderdag</kenmerk>
+                <kenmerk id='7431672735419572290' naam='aanvangstijd periode'>12:00</kenmerk>
+                <kenmerk id='7431672735419572313' naam='eindtijd periode'>16:00</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Vrijdag van 08:00 - 12:00</instantienaam>
-            <instantieid>6760713004464123662</instantieid>
+          <instantie naam='Vrijdag van 08:00 - 12:00' id='6760713004464123662'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6760713004464120839</kenmerkid>
-                  <kenmerknaam>dag</kenmerknaam>
-                  <kenmerkwaarde>Vrijdag</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572290</kenmerkid>
-                  <kenmerknaam>aanvangstijd periode</kenmerknaam>
-                  <kenmerkwaarde>08:00</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572313</kenmerkid>
-                  <kenmerknaam>eindtijd periode</kenmerknaam>
-                  <kenmerkwaarde>12:00</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6760713004464120839' naam='dag'>Vrijdag</kenmerk>
+                <kenmerk id='7431672735419572290' naam='aanvangstijd periode'>08:00</kenmerk>
+                <kenmerk id='7431672735419572313' naam='eindtijd periode'>12:00</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>Vrijdag van 12:30 - 16:30</instantienaam>
-            <instantieid>6760713004464123820</instantieid>
+          <instantie naam='Vrijdag van 12:30 - 16:30' id='6760713004464123820'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>6760713004464120839</kenmerkid>
-                  <kenmerknaam>dag</kenmerknaam>
-                  <kenmerkwaarde>Vrijdag</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572290</kenmerkid>
-                  <kenmerknaam>aanvangstijd periode</kenmerknaam>
-                  <kenmerkwaarde>12:00</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>7431672735419572313</kenmerkid>
-                  <kenmerknaam>eindtijd periode</kenmerknaam>
-                  <kenmerkwaarde>16:00</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='6760713004464120839' naam='dag'>Vrijdag</kenmerk>
+                <kenmerk id='7431672735419572290' naam='aanvangstijd periode'>12:00</kenmerk>
+                <kenmerk id='7431672735419572313' naam='eindtijd periode'>16:00</kenmerk>
               </kenmerken>
           </instantie>
     </onderwerpen>
     <onderwerpen>
       <onderwerpnaam>NL-postcode</onderwerpnaam>
       <onderwerpid>3694879098889778432</onderwerpid>
-          <instantie>
-            <instantienaam>1073 RR</instantienaam>
-            <instantieid>3139957515576430971</instantieid>
+          <instantie naam='1073 RR' id='3139957515576430971'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>3694879098889778532</kenmerkid>
-                  <kenmerknaam>PostcodeNummer</kenmerknaam>
-                  <kenmerkwaarde>1073</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>3694879098889778545</kenmerkid>
-                  <kenmerknaam>PostcodeLetters</kenmerknaam>
-                  <kenmerkwaarde>RR</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='3694879098889778532' naam='PostcodeNummer'>1073</kenmerk>
+                <kenmerk id='3694879098889778545' naam='PostcodeLetters'>RR</kenmerk>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>1095 AA</instantienaam>
-            <instantieid>3139957515576834288</instantieid>
+          <instantie naam='1095 AA' id='3139957515576834288'>
               <kenmerken>
-                <kenmerk>
-                  <kenmerkid>3694879098889778532</kenmerkid>
-                  <kenmerknaam>PostcodeNummer</kenmerknaam>
-                  <kenmerkwaarde>1095</kenmerkwaarde>
-                </kenmerk>
-                <kenmerk>
-                  <kenmerkid>3694879098889778545</kenmerkid>
-                  <kenmerknaam>PostcodeLetters</kenmerknaam>
-                  <kenmerkwaarde>AA</kenmerkwaarde>
-                </kenmerk>
+                <kenmerk id='3694879098889778532' naam='PostcodeNummer'>1095</kenmerk>
+                <kenmerk id='3694879098889778545' naam='PostcodeLetters'>AA</kenmerk>
               </kenmerken>
           </instantie>
     </onderwerpen>
     <onderwerpen>
       <onderwerpnaam>burgerservicenummer</onderwerpnaam>
       <onderwerpid>6305595003050903037</onderwerpid>
-          <instantie>
-            <instantienaam>333333333</instantienaam>
-            <instantieid>3139957515576430795</instantieid>
+          <instantie naam='333333333' id='3139957515576430795'>
               <kenmerken>
               </kenmerken>
           </instantie>
-          <instantie>
-            <instantienaam>444444444</instantienaam>
-            <instantieid>3139957515576430797</instantieid>
+          <instantie naam='444444444' id='3139957515576430797'>
               <kenmerken>
               </kenmerken>
           </instantie>
     </onderwerpen>
     <rechtsbetrekkingen>
-        <rechtsbetrekking nodeid='1423902536563766544' >
-          <kenmerk naam='geldigVan'>2001-01-01T00:00</kenmerk>
-          <kenmerk naam='geldigTot'>'</kenmerk>
-          <kenmerk naam='objectieveRechtsbetrekking'>2317404197410775793</kenmerk>
-          <kenmerk naam='onderwerp'>1423902536565253958</kenmerk>
-          <kenmerk naam='rechtssubjectMetPlicht'>3139957515574723026</kenmerk>
-          <kenmerk naam='rechtssubjectMetRecht'>3139957515575936548</kenmerk>
-        </rechtsbetrekking>
-        <rechtsbetrekking nodeid='3139957515587069606' >
-          <kenmerk naam='geldigVan'>2001-01-01T12:00</kenmerk>
-          <kenmerk naam='geldigTot'>'</kenmerk>
-          <kenmerk naam='objectieveRechtsbetrekking'>2317404197410775793</kenmerk>
-          <kenmerk naam='onderwerp'>2464168203970134583</kenmerk>
-          <kenmerk naam='rechtssubjectMetPlicht'>3139957515574338931</kenmerk>
-          <kenmerk naam='rechtssubjectMetRecht'>3139957515575936548</kenmerk>
-        </rechtsbetrekking>
-        <rechtsbetrekking nodeid='5807415387110390739' >
-          <kenmerk naam='geldigVan'>2001-01-01T00:00</kenmerk>
-          <kenmerk naam='geldigTot'>'</kenmerk>
-          <kenmerk naam='objectieveRechtsbetrekking'>909603116718783952</kenmerk>
-          <kenmerk naam='onderwerp'>4196470522071791502</kenmerk>
-          <kenmerk naam='rechtssubjectMetPlicht'>3139957515574723026</kenmerk>
-          <kenmerk naam='rechtssubjectMetRecht'>3139957515575936548</kenmerk>
-        </rechtsbetrekking>
+        <instantie nodeid='1423902536563766544' >
+          <geldigVan>2001-01-01T00:00</geldigVan>
+          <geldigTot></geldigTot>
+          <objectieveRechtsbetrekkingid>2317404197410775793</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingnaam>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>1423902536565253958</onderwerpid>
+          <rechtssubjectMetPlichtid>3139957515574723026</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>3139957515575936548</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie nodeid='3139957515587069606' >
+          <geldigVan>2001-01-01T12:00</geldigVan>
+          <geldigTot></geldigTot>
+          <objectieveRechtsbetrekkingid>2317404197410775793</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingnaam>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>2464168203970134583</onderwerpid>
+          <rechtssubjectMetPlichtid>3139957515574338931</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>3139957515575936548</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie nodeid='5807415387110390739' >
+          <geldigVan>2001-01-01T00:00</geldigVan>
+          <geldigTot></geldigTot>
+          <objectieveRechtsbetrekkingid>909603116718783952</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingnaam>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
+en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>4196470522071791502</onderwerpid>
+          <rechtssubjectMetPlichtid>3139957515574723026</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>3139957515575936548</rechtssubjectMetRechtid>
+        </instantie>
       </rechtsbetrekkingen>
     <rechtshandelingen>
-        <rechtshandeling nodeid='3139957515585265649' >
-          <kenmerk naam='uitgevoerdop'>2000-03-01T00:00</kenmerk>
-          <kenmerk naam='actor'>3139957515574338931</kenmerk>
-          <kenmerk naam='onderwerp'>4196470522071791502</kenmerk>
-          <kenmerk naam='gebaseerd op'>3139957515587069606</kenmerk>
-        </rechtshandeling>
-        <rechtshandeling nodeid='3139957515586266055' >
-          <kenmerk naam='uitgevoerdop'>2000-01-01T00:00</kenmerk>
-          <kenmerk naam='actor'>3139957515575936548</kenmerk>
-          <kenmerk naam='onderwerp'>4196470522071791502</kenmerk>
-          <kenmerk naam='gebaseerd op'>1423902536563766544</kenmerk>
-        </rechtshandeling>
-        <rechtshandeling nodeid='3139957515586302298' >
-          <kenmerk naam='uitgevoerdop'>2000-02-01T00:00</kenmerk>
-          <kenmerk naam='actor'>3139957515575936548</kenmerk>
-          <kenmerk naam='onderwerp'>4196470522071791502</kenmerk>
-          <kenmerk naam='gebaseerd op'>5807415387110390739</kenmerk>
-        </rechtshandeling>
+        <instantie nodeid='3139957515585265649' >
+          <uitgevoerdopid>2000-03-01T00:00</uitgevoerdopid>
+          <actorid>3139957515574338931</actorid>
+          <onderwerpid>4196470522071791502</onderwerpid>
+          <rechtsbetrekkingid>3139957515587069606</rechtsbetrekkingid>
+        </instantie>
+        <instantie nodeid='3139957515586266055' >
+          <uitgevoerdopid>2000-01-01T00:00</uitgevoerdopid>
+          <actorid>3139957515575936548</actorid>
+          <onderwerpid>4196470522071791502</onderwerpid>
+          <rechtsbetrekkingid>1423902536563766544</rechtsbetrekkingid>
+        </instantie>
+        <instantie nodeid='3139957515586302298' >
+          <uitgevoerdopid>2000-02-01T00:00</uitgevoerdopid>
+          <actorid>3139957515575936548</actorid>
+          <onderwerpid>4196470522071791502</onderwerpid>
+          <rechtsbetrekkingid>5807415387110390739</rechtsbetrekkingid>
+        </instantie>
       </rechtshandelingen>
 </gegevenshuishouding>

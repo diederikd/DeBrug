@@ -7,6 +7,7 @@ import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import ObjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
 
 public class Rechtsbetrekking_TextGen extends TextGenDescriptorBase {
   @Override
@@ -14,52 +15,57 @@ public class Rechtsbetrekking_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("<rechtsbetrekking nodeid='");
+    tgs.append("<instantie nodeid='");
     tgs.append(ctx.getPrimaryInput().getNodeId().toString());
     tgs.append("' >");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("<kenmerk naam='geldigVan'>");
+    tgs.append("<geldigVan>");
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8cdL, "geldigVan")));
-    tgs.append("</kenmerk>");
+    tgs.append("</geldigVan>");
     tgs.newLine();
     if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot")) != null)) {
       tgs.indent();
-      tgs.append("<kenmerk naam='geldigTot'>'");
+      tgs.append("<geldigTot>");
       tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot")));
-      tgs.append("</kenmerk>");
+      tgs.append("</geldigTot>");
       tgs.newLine();
     }
     if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot")) == null)) {
       tgs.indent();
-      tgs.append("<kenmerk naam='geldigTot'>'");
-      tgs.append("</kenmerk>");
+      tgs.append("<geldigTot>");
+      tgs.append("</geldigTot>");
       tgs.newLine();
     }
     tgs.indent();
-    tgs.append("<kenmerk naam='objectieveRechtsbetrekking'>");
+    tgs.append("<objectieveRechtsbetrekkingid>");
     tgs.append(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")).getNodeId().toString());
-    tgs.append("</kenmerk>");
+    tgs.append("</objectieveRechtsbetrekkingtypeid>");
     tgs.newLine();
     tgs.indent();
-    tgs.append("<kenmerk naam='onderwerp'>");
+    tgs.append("<objectieveRechtsbetrekkingnaam>");
+    tgs.append(Rechtsbetrekking__BehaviorDescriptor.geefNaam_id5vursKRAATV.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking"))));
+    tgs.append("</objectieveRechtsbetrekkingtypenaam>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<onderwerpid>");
     tgs.append(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x542f8eae0891f0ecL, "onderwerp")).getNodeId().toString());
-    tgs.append("</kenmerk>");
+    tgs.append("</onderwerpid>");
     tgs.newLine();
     tgs.indent();
-    tgs.append("<kenmerk naam='rechtssubjectMetPlicht'>");
+    tgs.append("<rechtssubjectMetPlichtid>");
     tgs.append(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a1L, "rechtssubjectMetPlicht")).getNodeId().toString());
-    tgs.append("</kenmerk>");
+    tgs.append("</rechtssubjectMetPlichtid>");
     tgs.newLine();
     tgs.indent();
-    tgs.append("<kenmerk naam='rechtssubjectMetRecht'>");
+    tgs.append("<rechtssubjectMetRechtid>");
     tgs.append(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c89fL, "rechtssubjectMetRecht")).getNodeId().toString());
-    tgs.append("</kenmerk>");
+    tgs.append("</rechtssubjectMetRechtid>");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
-    tgs.append("</rechtsbetrekking>");
+    tgs.append("</instantie>");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
   }

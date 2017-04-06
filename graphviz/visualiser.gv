@@ -7,7 +7,7 @@
 
 digraph diagram{
 node [shape=circle,fixedsize=true,width=0.9];"Indienen verzoek aanpassing arbeidsduur"; "Overleg plegen"; "Inwilligen verzoek"; "Afwijzen van het verzoek"; "Vaststellen van de spreiding van de uren"; "Wijzigen van de spreiding van de uren"; "Immuniteit voor het vaststellen van de uren"; "Schriftelijk mededelen van de beslissing aan de werknemer"; "Mededelen van de redenen"; "aanpassen arbeidsduur overeenkomstig het verzoek"; 
-node [shape=box, width=2];"recht om verzoek aanpassing arbeidsduur in te dienen"; "verplichting tot overleg plegen"; "Inwilligen van verzoek
+node [shape=box, width=2.5];"recht om verzoek aanpassing arbeidsduur in te dienen"; "verplichting tot overleg plegen"; "Inwilligen van verzoek
 voor aanpassing arbeidsduur"; "immuniteit inwilligen van het verzoek"; "Verplichting tot het vaststellen van de spreiding van de uren"; "immuniteit vaststellen van de spreiding van de uren"; "wijzigen van gewenste spreiding van de uren"; "verplichting tot het schriftelijk mededelen van de beslissing"; "verplichting tot het mededelen van de redenen"; 
 "recht om verzoek aanpassing arbeidsduur in te dienen"->"Indienen verzoek aanpassing arbeidsduur";
 
@@ -40,5 +40,5 @@ voor aanpassing arbeidsduur";
 "Wijzigen van de spreiding van de uren"->"verplichting tot het mededelen van de redenen";
 "Immuniteit voor het vaststellen van de uren"->"wijzigen van gewenste spreiding van de uren";
 overlap=false
-fontsize=12;
+fontsize=10;
 }

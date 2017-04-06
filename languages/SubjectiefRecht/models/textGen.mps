@@ -10,6 +10,7 @@
     <import index="gcgs" ref="r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="ll8w" ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -58,6 +59,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -166,7 +168,7 @@
             <node concept="1bpajm" id="5vursKRpWMM" role="3cqZAp" />
             <node concept="lc7rE" id="5vursKRpWMN" role="3cqZAp">
               <node concept="la8eA" id="5vursKRpWMO" role="lcghm">
-                <property role="lacIc" value="&lt;rechtsbetrekking nodeid='" />
+                <property role="lacIc" value="&lt;instantie nodeid='" />
               </node>
               <node concept="l9hG8" id="52o5oqbQAad" role="lcghm">
                 <node concept="2OqwBi" id="52o5oqbQAae" role="lb14g">
@@ -193,7 +195,7 @@
                 <node concept="1bpajm" id="5vursKRpWMQ" role="3cqZAp" />
                 <node concept="lc7rE" id="5vursKRpXL2" role="3cqZAp">
                   <node concept="la8eA" id="5vursKRpXL3" role="lcghm">
-                    <property role="lacIc" value="&lt;kenmerk naam='geldigVan'&gt;" />
+                    <property role="lacIc" value="&lt;geldigVan&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRpXL4" role="lcghm">
                     <node concept="2OqwBi" id="5vursKRpXL5" role="lb14g">
@@ -204,7 +206,7 @@
                     </node>
                   </node>
                   <node concept="la8eA" id="5vursKRpXL8" role="lcghm">
-                    <property role="lacIc" value="&lt;/kenmerk&gt;" />
+                    <property role="lacIc" value="&lt;/geldigVan&gt;" />
                   </node>
                   <node concept="l8MVK" id="5vursKRpXL9" role="lcghm" />
                 </node>
@@ -213,7 +215,7 @@
                     <node concept="1bpajm" id="5vursKRCJB0" role="3cqZAp" />
                     <node concept="lc7rE" id="5vursKRpWMR" role="3cqZAp">
                       <node concept="la8eA" id="5vursKRpX1k" role="lcghm">
-                        <property role="lacIc" value="&lt;kenmerk naam='geldigTot'&gt;'" />
+                        <property role="lacIc" value="&lt;geldigTot&gt;" />
                       </node>
                       <node concept="l9hG8" id="5vursKRpX3n" role="lcghm">
                         <node concept="2OqwBi" id="5vursKRpXef" role="lb14g">
@@ -224,7 +226,7 @@
                         </node>
                       </node>
                       <node concept="la8eA" id="5vursKRpXyI" role="lcghm">
-                        <property role="lacIc" value="&lt;/kenmerk&gt;" />
+                        <property role="lacIc" value="&lt;/geldigTot&gt;" />
                       </node>
                       <node concept="l8MVK" id="5vursKRpXGv" role="lcghm" />
                     </node>
@@ -244,10 +246,10 @@
                     <node concept="1bpajm" id="512SkqO5JCe" role="3cqZAp" />
                     <node concept="lc7rE" id="512SkqO5JCf" role="3cqZAp">
                       <node concept="la8eA" id="512SkqO5JCg" role="lcghm">
-                        <property role="lacIc" value="&lt;kenmerk naam='geldigTot'&gt;'" />
+                        <property role="lacIc" value="&lt;geldigTot&gt;" />
                       </node>
                       <node concept="la8eA" id="512SkqO5JCl" role="lcghm">
-                        <property role="lacIc" value="&lt;/kenmerk&gt;" />
+                        <property role="lacIc" value="&lt;/geldigTot&gt;" />
                       </node>
                       <node concept="l8MVK" id="512SkqO5JCm" role="lcghm" />
                     </node>
@@ -265,7 +267,7 @@
                 <node concept="1bpajm" id="5vursKRCKfE" role="3cqZAp" />
                 <node concept="lc7rE" id="5vursKRpZqd" role="3cqZAp">
                   <node concept="la8eA" id="5vursKRpZqe" role="lcghm">
-                    <property role="lacIc" value="&lt;kenmerk naam='objectieveRechtsbetrekking'&gt;" />
+                    <property role="lacIc" value="&lt;objectieveRechtsbetrekkingid&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRpZqf" role="lcghm">
                     <node concept="2OqwBi" id="1WUS4DPr6ON" role="lb14g">
@@ -288,14 +290,37 @@
                     </node>
                   </node>
                   <node concept="la8eA" id="5vursKRpZqj" role="lcghm">
-                    <property role="lacIc" value="&lt;/kenmerk&gt;" />
+                    <property role="lacIc" value="&lt;/objectieveRechtsbetrekkingtypeid&gt;" />
                   </node>
                   <node concept="l8MVK" id="5vursKRpZqk" role="lcghm" />
                 </node>
                 <node concept="1bpajm" id="5vursKRCKSn" role="3cqZAp" />
+                <node concept="lc7rE" id="1WUS4DPs9cD" role="3cqZAp">
+                  <node concept="la8eA" id="1WUS4DPs9cE" role="lcghm">
+                    <property role="lacIc" value="&lt;objectieveRechtsbetrekkingnaam&gt;" />
+                  </node>
+                  <node concept="l9hG8" id="1WUS4DPs9cF" role="lcghm">
+                    <node concept="2OqwBi" id="1WUS4DPsal8" role="lb14g">
+                      <node concept="2OqwBi" id="1WUS4DPs9cJ" role="2Oq$k0">
+                        <node concept="117lpO" id="1WUS4DPs9cK" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="1WUS4DPs9cL" role="2OqNvi">
+                          <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
+                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="1WUS4DPsaCP" role="2OqNvi">
+                        <ref role="37wK5l" to="ll8w:5vursKRAATV" resolve="geefNaam" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="la8eA" id="1WUS4DPs9cO" role="lcghm">
+                    <property role="lacIc" value="&lt;/objectieveRechtsbetrekkingtypenaam&gt;" />
+                  </node>
+                  <node concept="l8MVK" id="1WUS4DPs9cP" role="lcghm" />
+                </node>
+                <node concept="1bpajm" id="1WUS4DPs9cQ" role="3cqZAp" />
                 <node concept="lc7rE" id="5vursKRpXVn" role="3cqZAp">
                   <node concept="la8eA" id="5vursKRpXVo" role="lcghm">
-                    <property role="lacIc" value="&lt;kenmerk naam='onderwerp'&gt;" />
+                    <property role="lacIc" value="&lt;onderwerpid&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRpXVp" role="lcghm">
                     <node concept="2OqwBi" id="1WUS4DPr2$w" role="lb14g">
@@ -318,14 +343,14 @@
                     </node>
                   </node>
                   <node concept="la8eA" id="5vursKRpXVt" role="lcghm">
-                    <property role="lacIc" value="&lt;/kenmerk&gt;" />
+                    <property role="lacIc" value="&lt;/onderwerpid&gt;" />
                   </node>
                   <node concept="l8MVK" id="5vursKRpXVu" role="lcghm" />
                 </node>
                 <node concept="1bpajm" id="5vursKRCLx7" role="3cqZAp" />
                 <node concept="lc7rE" id="5vursKRpY1k" role="3cqZAp">
                   <node concept="la8eA" id="5vursKRpY1l" role="lcghm">
-                    <property role="lacIc" value="&lt;kenmerk naam='rechtssubjectMetPlicht'&gt;" />
+                    <property role="lacIc" value="&lt;rechtssubjectMetPlichtid&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRpY1m" role="lcghm">
                     <node concept="2OqwBi" id="1WUS4DPr3IE" role="lb14g">
@@ -348,14 +373,14 @@
                     </node>
                   </node>
                   <node concept="la8eA" id="5vursKRpY1q" role="lcghm">
-                    <property role="lacIc" value="&lt;/kenmerk&gt;" />
+                    <property role="lacIc" value="&lt;/rechtssubjectMetPlichtid&gt;" />
                   </node>
                   <node concept="l8MVK" id="5vursKRpY1r" role="lcghm" />
                 </node>
                 <node concept="1bpajm" id="5vursKRCM9U" role="3cqZAp" />
                 <node concept="lc7rE" id="5vursKRpY7K" role="3cqZAp">
                   <node concept="la8eA" id="5vursKRpY7L" role="lcghm">
-                    <property role="lacIc" value="&lt;kenmerk naam='rechtssubjectMetRecht'&gt;" />
+                    <property role="lacIc" value="&lt;rechtssubjectMetRechtid&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRpY7M" role="lcghm">
                     <node concept="2OqwBi" id="1WUS4DPr5jZ" role="lb14g">
@@ -378,7 +403,7 @@
                     </node>
                   </node>
                   <node concept="la8eA" id="5vursKRpY7Q" role="lcghm">
-                    <property role="lacIc" value="&lt;/kenmerk&gt;" />
+                    <property role="lacIc" value="&lt;/rechtssubjectMetRechtid&gt;" />
                   </node>
                   <node concept="l8MVK" id="5vursKRpY7R" role="lcghm" />
                 </node>
@@ -387,7 +412,7 @@
             <node concept="1bpajm" id="5vursKRpWMW" role="3cqZAp" />
             <node concept="lc7rE" id="5vursKRpWMX" role="3cqZAp">
               <node concept="la8eA" id="5vursKRpWMY" role="lcghm">
-                <property role="lacIc" value="&lt;/rechtsbetrekking&gt;" />
+                <property role="lacIc" value="&lt;/instantie&gt;" />
               </node>
               <node concept="l8MVK" id="5vursKRpWMZ" role="lcghm" />
             </node>
@@ -406,7 +431,7 @@
             <node concept="1bpajm" id="5vursKRq16e" role="3cqZAp" />
             <node concept="lc7rE" id="5vursKRq16f" role="3cqZAp">
               <node concept="la8eA" id="5vursKRq16g" role="lcghm">
-                <property role="lacIc" value="&lt;rechtshandeling nodeid='" />
+                <property role="lacIc" value="&lt;instantie nodeid='" />
               </node>
               <node concept="l9hG8" id="52o5oqbQzWY" role="lcghm">
                 <node concept="2OqwBi" id="52o5oqbQ_p8" role="lb14g">
@@ -433,7 +458,7 @@
                 <node concept="1bpajm" id="5vursKRq16i" role="3cqZAp" />
                 <node concept="lc7rE" id="5vursKRq16j" role="3cqZAp">
                   <node concept="la8eA" id="5vursKRq16k" role="lcghm">
-                    <property role="lacIc" value="&lt;kenmerk naam='uitgevoerdop'&gt;" />
+                    <property role="lacIc" value="&lt;uitgevoerdopid&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRq16l" role="lcghm">
                     <node concept="2OqwBi" id="5vursKRq16m" role="lb14g">
@@ -444,14 +469,14 @@
                     </node>
                   </node>
                   <node concept="la8eA" id="5vursKRq16p" role="lcghm">
-                    <property role="lacIc" value="&lt;/kenmerk&gt;" />
+                    <property role="lacIc" value="&lt;/uitgevoerdopid&gt;" />
                   </node>
                   <node concept="l8MVK" id="5vursKRq16q" role="lcghm" />
                 </node>
                 <node concept="1bpajm" id="5vursKRCsnq" role="3cqZAp" />
                 <node concept="lc7rE" id="5vursKRq16r" role="3cqZAp">
                   <node concept="la8eA" id="5vursKRq16s" role="lcghm">
-                    <property role="lacIc" value="&lt;kenmerk naam='actor'&gt;" />
+                    <property role="lacIc" value="&lt;actorid&gt;" />
                   </node>
                   <node concept="l9hG8" id="1WUS4DPqmnh" role="lcghm">
                     <node concept="2OqwBi" id="1WUS4DPqqGe" role="lb14g">
@@ -479,14 +504,14 @@
                     </node>
                   </node>
                   <node concept="la8eA" id="5vursKRq16x" role="lcghm">
-                    <property role="lacIc" value="&lt;/kenmerk&gt;" />
+                    <property role="lacIc" value="&lt;/actorid&gt;" />
                   </node>
                   <node concept="l8MVK" id="5vursKRq16y" role="lcghm" />
                 </node>
                 <node concept="1bpajm" id="5vursKRCsEh" role="3cqZAp" />
                 <node concept="lc7rE" id="5vursKRq16F" role="3cqZAp">
                   <node concept="la8eA" id="5vursKRq16G" role="lcghm">
-                    <property role="lacIc" value="&lt;kenmerk naam='onderwerp'&gt;" />
+                    <property role="lacIc" value="&lt;onderwerpid&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRq16H" role="lcghm">
                     <node concept="2OqwBi" id="1WUS4DPqsiC" role="lb14g">
@@ -509,14 +534,14 @@
                     </node>
                   </node>
                   <node concept="la8eA" id="5vursKRq16L" role="lcghm">
-                    <property role="lacIc" value="&lt;/kenmerk&gt;" />
+                    <property role="lacIc" value="&lt;/onderwerpid&gt;" />
                   </node>
                   <node concept="l8MVK" id="5vursKRq16M" role="lcghm" />
                 </node>
                 <node concept="1bpajm" id="512SkqNYMyf" role="3cqZAp" />
                 <node concept="lc7rE" id="52o5oqbQBSH" role="3cqZAp">
                   <node concept="la8eA" id="52o5oqbQBSI" role="lcghm">
-                    <property role="lacIc" value="&lt;kenmerk naam='gebaseerd op'&gt;" />
+                    <property role="lacIc" value="&lt;rechtsbetrekkingid&gt;" />
                   </node>
                   <node concept="l9hG8" id="52o5oqbQBSJ" role="lcghm">
                     <node concept="2OqwBi" id="52o5oqbQDzt" role="lb14g">
@@ -539,7 +564,7 @@
                     </node>
                   </node>
                   <node concept="la8eA" id="52o5oqbQBSP" role="lcghm">
-                    <property role="lacIc" value="&lt;/kenmerk&gt;" />
+                    <property role="lacIc" value="&lt;/rechtsbetrekkingid&gt;" />
                   </node>
                   <node concept="l8MVK" id="52o5oqbQBSQ" role="lcghm" />
                 </node>
@@ -548,7 +573,7 @@
             <node concept="1bpajm" id="5vursKRq173" role="3cqZAp" />
             <node concept="lc7rE" id="5vursKRq174" role="3cqZAp">
               <node concept="la8eA" id="5vursKRq175" role="lcghm">
-                <property role="lacIc" value="&lt;/rechtshandeling&gt;" />
+                <property role="lacIc" value="&lt;/instantie&gt;" />
               </node>
               <node concept="l8MVK" id="5vursKRq176" role="lcghm" />
             </node>

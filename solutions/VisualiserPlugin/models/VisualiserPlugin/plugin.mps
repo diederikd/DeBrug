@@ -1664,43 +1664,27 @@
               <node concept="Xl_RD" id="1CEEWkGiVIH" role="2BsfMF">
                 <property role="Xl_RC" value="-c" />
               </node>
-              <node concept="Xl_RD" id="1CEEWkGiWS4" role="2BsfMF">
-                <property role="Xl_RC" value="neato" />
-              </node>
-              <node concept="Xl_RD" id="mDqpRGn39Q" role="2BsfMF">
-                <property role="Xl_RC" value="-Tpng" />
-              </node>
-              <node concept="37vLTw" id="1CEEWkGiSfP" role="2BsfMF">
-                <ref role="3cqZAo" node="mDqpRGlm$p" resolve="filegv" />
-              </node>
-              <node concept="Xl_RD" id="1CEEWkGiSQt" role="2BsfMF">
-                <property role="Xl_RC" value="&gt;" />
-              </node>
-              <node concept="37vLTw" id="1CEEWkGiTHX" role="2BsfMF">
-                <ref role="3cqZAo" node="mDqpRGn0ay" resolve="filepng" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1sNqp83$9ME" role="3cqZAp">
-          <node concept="3cpWsn" id="1sNqp83$9MH" role="3cpWs9">
-            <property role="TrG5h" value="command" />
-            <node concept="17QB3L" id="1sNqp83$9MC" role="1tU5fm" />
-            <node concept="3cpWs3" id="1sNqp83$dEM" role="33vP2m">
-              <node concept="37vLTw" id="1sNqp83$dUA" role="3uHU7w">
-                <ref role="3cqZAo" node="mDqpRGn0ay" resolve="filepng" />
-              </node>
-              <node concept="3cpWs3" id="1sNqp83$cJT" role="3uHU7B">
-                <node concept="3cpWs3" id="1sNqp83$bSV" role="3uHU7B">
-                  <node concept="Xl_RD" id="1sNqp83$ba3" role="3uHU7B">
-                    <property role="Xl_RC" value="sh -c neato -Tpng " />
-                  </node>
-                  <node concept="37vLTw" id="1sNqp83$c4g" role="3uHU7w">
-                    <ref role="3cqZAo" node="mDqpRGlm$p" resolve="filegv" />
-                  </node>
+              <node concept="3cpWs3" id="5ys8900PCGC" role="2BsfMF">
+                <node concept="37vLTw" id="5ys8900PD74" role="3uHU7w">
+                  <ref role="3cqZAo" node="mDqpRGn0ay" resolve="filepng" />
                 </node>
-                <node concept="Xl_RD" id="1sNqp83$cUh" role="3uHU7w">
-                  <property role="Xl_RC" value=" &gt; " />
+                <node concept="3cpWs3" id="5ys8900PBn5" role="3uHU7B">
+                  <node concept="3cpWs3" id="5ys8900PA6X" role="3uHU7B">
+                    <node concept="3cpWs3" id="5ys8900P_6V" role="3uHU7B">
+                      <node concept="Xl_RD" id="1CEEWkGiWS4" role="3uHU7B">
+                        <property role="Xl_RC" value="neato " />
+                      </node>
+                      <node concept="Xl_RD" id="mDqpRGn39Q" role="3uHU7w">
+                        <property role="Xl_RC" value="-Tpng " />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="5ys8900PAwW" role="3uHU7w">
+                      <ref role="3cqZAo" node="mDqpRGlm$p" resolve="filegv" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="5ys8900PBG5" role="3uHU7w">
+                    <property role="Xl_RC" value=" &gt; " />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1714,13 +1698,8 @@
             </node>
             <node concept="liA8E" id="mDqpRGnpQN" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="mDqpRGnqDA" role="37wK5m">
-                <node concept="37vLTw" id="7gKYNh$lNjW" role="3uHU7w">
-                  <ref role="3cqZAo" node="1sNqp83$9MH" resolve="command" />
-                </node>
-                <node concept="Xl_RD" id="mDqpRGnpWI" role="3uHU7B">
-                  <property role="Xl_RC" value="Running command : " />
-                </node>
+              <node concept="Xl_RD" id="mDqpRGnpWI" role="37wK5m">
+                <property role="Xl_RC" value="Running command" />
               </node>
             </node>
           </node>
