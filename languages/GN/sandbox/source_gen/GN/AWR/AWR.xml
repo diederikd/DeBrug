@@ -180,6 +180,7 @@
             <property name='initieel'>true</property>
             <property name='alias'></property>
             <property name='name'>Bevoegdheid tot het uitnodigen tot het doen van aangifte</property>
+            <property name='kortenaam'></property>
         </properties>
         <children>
           <node>
@@ -258,6 +259,7 @@
             <property name='initieel'>true</property>
             <property name='alias'></property>
             <property name='name'>De bevoegdheid om te verzoeken om te worden uitgenodigd</property>
+            <property name='kortenaam'></property>
         </properties>
         <children>
           <node>
@@ -336,6 +338,7 @@
             <property name='initieel'>false</property>
             <property name='alias'></property>
             <property name='name'>Verplichting tot het uitnodigen tot het doen van aangifte</property>
+            <property name='kortenaam'></property>
         </properties>
         <children>
           <node>
@@ -422,6 +425,7 @@
             <property name='initieel'>true</property>
             <property name='alias'></property>
             <property name='name'>De verplichting om te verzoeken om te worden uitgenodigd</property>
+            <property name='kortenaam'></property>
         </properties>
         <children>
           <node>
@@ -531,6 +535,7 @@
         <properties>
             <property name='alias'></property>
             <property name='name'>Uitnodigen tot het doen van aangifte</property>
+            <property name='kortenaam'></property>
         </properties>
         <children>
           <node>
@@ -638,6 +643,7 @@
         <properties>
             <property name='alias'></property>
             <property name='name'>Indienen van een verzoek om te worden uitgenodigd</property>
+            <property name='kortenaam'></property>
         </properties>
         <children>
           <node>

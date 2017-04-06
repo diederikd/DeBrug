@@ -9,5 +9,5 @@ package Algemeen.behavior;
  * This interface is not involved in the actual method invocation
  */
 @Deprecated
-public interface KorteNaam_BehaviorDescriptor {
+public interface IKorteNaam_BehaviorDescriptor {
 }

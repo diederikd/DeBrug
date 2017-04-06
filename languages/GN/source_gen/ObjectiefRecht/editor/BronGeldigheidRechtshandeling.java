@@ -28,53 +28,50 @@ import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
-public class BronGeldigheidRechtsBetrekking implements ConceptEditorComponent {
+public class BronGeldigheidRechtshandeling implements ConceptEditorComponent {
   @NotNull
   public Collection<String> getContextHints() {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_b84ey0_a(editorContext, node);
+    return this.createCollection_lovqb1_a(editorContext, node);
   }
-  private EditorCell createCollection_b84ey0_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_lovqb1_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_b84ey0_a");
-    editorCell.addEditorCell(this.createConstant_b84ey0_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_b84ey0_b0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_b84ey0_c0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_b84ey0_d0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_b84ey0_e0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_b84ey0_f0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_b84ey0_g0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_b84ey0_h0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_b84ey0_i0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_b84ey0_j0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_b84ey0_k0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_b84ey0_l0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_b84ey0_m0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_b84ey0_n0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_b84ey0_o0(editorContext, node));
+    editorCell.setCellId("Collection_lovqb1_a");
+    editorCell.addEditorCell(this.createConstant_lovqb1_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_lovqb1_b0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_lovqb1_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_lovqb1_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_lovqb1_e0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_lovqb1_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_lovqb1_g0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_lovqb1_h0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_lovqb1_i0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_lovqb1_j0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_lovqb1_k0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_lovqb1_l0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_b84ey0_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_lovqb1_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Conceptnummer");
-    editorCell.setCellId("Constant_b84ey0_a0");
+    editorCell.setCellId("Constant_lovqb1_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_b84ey0_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_lovqb1_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_b84ey0_b0");
+    editorCell.setCellId("Constant_lovqb1_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_b84ey0_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_lovqb1_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("conceptnummer");
     provider.setNoTargetText("<no conceptnummer>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("BGRB_property_conceptnummer");
+    editorCell.setCellId("BGR_property_conceptnummer");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
@@ -86,55 +83,25 @@ public class BronGeldigheidRechtsBetrekking implements ConceptEditorComponent {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_b84ey0_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_lovqb1_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Korte naam");
-    editorCell.setCellId("Constant_b84ey0_d0");
+    editorCell.setCellId("Constant_lovqb1_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_b84ey0_e0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_lovqb1_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_b84ey0_e0");
+    editorCell.setCellId("Constant_lovqb1_e0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_b84ey0_f0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_lovqb1_f0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("kortenaam");
     provider.setNoTargetText("<no kortenaam>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("BGRB_property_kortenaam");
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
-    return editorCell;
-  }
-  private EditorCell createConstant_b84ey0_g0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Initieel");
-    editorCell.setCellId("Constant_b84ey0_g0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_b84ey0_h0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_b84ey0_h0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createProperty_b84ey0_i0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("initieel");
-    provider.setNoTargetText("<no initieel>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("BGRB_property_initieel");
+    editorCell.setCellId("BGR_property_kortenaam");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
@@ -146,24 +113,24 @@ public class BronGeldigheidRechtsBetrekking implements ConceptEditorComponent {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_b84ey0_j0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_lovqb1_g0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Geldig van");
-    editorCell.setCellId("Constant_b84ey0_j0");
+    editorCell.setCellId("Constant_lovqb1_g0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_b84ey0_k0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_lovqb1_h0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_b84ey0_k0");
+    editorCell.setCellId("Constant_lovqb1_h0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_b84ey0_l0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new BronGeldigheidRechtsBetrekking.brongeldigVanSingleRoleHandler_b84ey0_l0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, 0x4916e0625ce244baL, "brongeldigVan"), editorContext);
+  private EditorCell createRefNode_lovqb1_i0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new BronGeldigheidRechtshandeling.brongeldigVanSingleRoleHandler_lovqb1_i0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, 0x4916e0625ce244baL, "brongeldigVan"), editorContext);
     return provider.createCell();
   }
-  private class brongeldigVanSingleRoleHandler_b84ey0_l0 extends SingleRoleCellProvider {
-    public brongeldigVanSingleRoleHandler_b84ey0_l0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class brongeldigVanSingleRoleHandler_lovqb1_i0 extends SingleRoleCellProvider {
+    public brongeldigVanSingleRoleHandler_lovqb1_i0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -214,24 +181,24 @@ public class BronGeldigheidRechtsBetrekking implements ConceptEditorComponent {
       return "<no brongeldigVan>";
     }
   }
-  private EditorCell createConstant_b84ey0_m0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_lovqb1_j0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Geldig tot");
-    editorCell.setCellId("Constant_b84ey0_m0");
+    editorCell.setCellId("Constant_lovqb1_j0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_b84ey0_n0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_lovqb1_k0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_b84ey0_n0");
+    editorCell.setCellId("Constant_lovqb1_k0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_b84ey0_o0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new BronGeldigheidRechtsBetrekking.brongeldigTotSingleRoleHandler_b84ey0_o0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, 0x4916e0625ce244bcL, "brongeldigTot"), editorContext);
+  private EditorCell createRefNode_lovqb1_l0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new BronGeldigheidRechtshandeling.brongeldigTotSingleRoleHandler_lovqb1_l0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, 0x4916e0625ce244bcL, "brongeldigTot"), editorContext);
     return provider.createCell();
   }
-  private class brongeldigTotSingleRoleHandler_b84ey0_o0 extends SingleRoleCellProvider {
-    public brongeldigTotSingleRoleHandler_b84ey0_o0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class brongeldigTotSingleRoleHandler_lovqb1_l0 extends SingleRoleCellProvider {
+    public brongeldigTotSingleRoleHandler_lovqb1_l0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {

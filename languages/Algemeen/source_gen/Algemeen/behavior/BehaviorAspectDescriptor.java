@@ -12,7 +12,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
-  private final BHDescriptor myKorteNaam__BehaviorDescriptor = new KorteNaam__BehaviorDescriptor();
+  private final BHDescriptor myIKorteNaam__BehaviorDescriptor = new IKorteNaam__BehaviorDescriptor();
   private final BHDescriptor myIBronGeldigheid__BehaviorDescriptor = new IBronGeldigheid__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
@@ -32,7 +32,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
           break;
         case 1:
           if (true) {
-            return myKorteNaam__BehaviorDescriptor;
+            return myIKorteNaam__BehaviorDescriptor;
           }
           break;
         default:
@@ -49,5 +49,5 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0f = buildConceptIndices(MetaAdapterFactory.getInterfaceConcept(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x62a4bcf3d18e0321L, "Algemeen.structure.IBronGeldigheid"), MetaAdapterFactory.getInterfaceConcept(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, "Algemeen.structure.KorteNaam"));
+  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0f = buildConceptIndices(MetaAdapterFactory.getInterfaceConcept(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x62a4bcf3d18e0321L, "Algemeen.structure.IBronGeldigheid"), MetaAdapterFactory.getInterfaceConcept(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, "Algemeen.structure.IKorteNaam"));
 }

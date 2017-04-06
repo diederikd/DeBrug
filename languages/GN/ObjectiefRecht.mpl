@@ -62,6 +62,7 @@
     <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
+    <dependency reexport="false">f856d46f-3338-47a8-8a48-11e26bc535e0(Algemeen)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -106,6 +107,7 @@
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="f856d46f-3338-47a8-8a48-11e26bc535e0(Algemeen)" version="0" />
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" version="0" />
     <module reference="30ef095a-d489-45ff-a80f-456a798ac125(Gegevens)" version="0" />

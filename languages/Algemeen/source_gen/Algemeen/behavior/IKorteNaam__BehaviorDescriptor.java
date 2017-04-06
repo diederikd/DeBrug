@@ -17,8 +17,8 @@ import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
-public final class KorteNaam__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, "Algemeen.structure.KorteNaam");
+public final class IKorteNaam__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, "Algemeen.structure.IKorteNaam");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
 
@@ -29,7 +29,7 @@ public final class KorteNaam__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
 
-  /*package*/ KorteNaam__BehaviorDescriptor() {
+  /*package*/ IKorteNaam__BehaviorDescriptor() {
     super(REGISTRY);
   }
 

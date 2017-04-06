@@ -51,6 +51,9 @@
       <concept id="3139957515582237907" name="Algemeen.structure.Bericht" flags="ng" index="1dyV9E">
         <property id="3139957515582237908" name="berichttekst" index="1dyV9H" />
       </concept>
+      <concept id="1365497693572273217" name="Algemeen.structure.IKorteNaam" flags="ng" index="3O3EMF">
+        <property id="1365497693572273240" name="kortenaam" index="3O3EMM" />
+      </concept>
     </language>
     <language id="30ef095a-d489-45ff-a80f-456a798ac125" name="Gegevens">
       <concept id="5540471952144036034" name="Gegevens.structure.waardeJa" flags="ng" index="2frckw" />
@@ -2906,6 +2909,7 @@
       <property role="da7Q0" value="64" />
       <property role="3ypbWd" value="true" />
       <property role="I0$kK" value="Dit is een initiele rechtsbetrekking (het kenmerk is te vinden in de Inspector). &#10;Die initiele rechtsbetrekking is van wetswege tot stand gekomen, &#10;of doordat de wet ingegaan is tijdens een lopende arbeidsovereenkomst, &#10;of doordat de arbeidsovereenkomst ingegaan is na ingang van de wet. &#10;M.a.w. we laten de rechtspositieveranderaar die  deze rechtsbetrekking tot stand heeft gebracht buiten beschouwing.&#10;We moeten immers ergens een grens trekken.&#10;Sommige wetten worden hiermee ‘ontkoppeld' door de gegevenshuishouding waarin in dit geval&#10;de arbeidsovereenkomst is te vinden.&#10;&#10;De afgelopen twee jaren dient de werknemer geen inwilliging of afwijzing gehad te hebben van de werkgever." />
+      <property role="3O3EMM" value="recht om verzoek aanpassing arbeidsduur in te dienen" />
       <ref role="1OcJVV" node="4ZpB41RnoMO" resolve="werknemer" />
       <ref role="1OcJVS" node="4ZpB41Rnx4z" resolve="werkgever" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
@@ -3014,6 +3018,7 @@
     <node concept="1OcJT0" id="20D4HrzFibY" role="33wtHG">
       <property role="TrG5h" value="verplichting tot overleg plegen" />
       <property role="da7Q0" value="67" />
+      <property role="3O3EMM" value="verplichting tot overleg plegen" />
       <ref role="1OcJVV" node="4ZpB41RnoMO" resolve="werknemer" />
       <ref role="1OcJVS" node="4ZpB41Rnx4z" resolve="werkgever" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
@@ -3036,6 +3041,7 @@
     <node concept="1OcJT2" id="MvzNsyB7Rg" role="33wtHG">
       <property role="TrG5h" value="de verplichte bevoegdheid (recht) tot het inwilligen van verzoek&#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing" />
       <property role="da7Q0" value="68" />
+      <property role="3O3EMM" value="Inwilligen van verzoek&#10;voor aanpassing arbeidsduur" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
       <ref role="1OcJVV" node="4ZpB41Rnx4z" resolve="werkgever" />
       <ref role="1OcJVS" node="4ZpB41RnoMO" resolve="werknemer" />
@@ -3074,6 +3080,7 @@
       <property role="TrG5h" value="immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren" />
       <property role="da7Q0" value="69" />
       <property role="I0$kK" value="De vraag zou gesteld kunnen worden: Is het wel nodig om deze immuniteit te definieren? &#10;Is het niet genoeg om bij de handeling afwijzen de voorwaarde &#10;&quot;de zwaarwegende bedrijfs- of dienstbelangen zich verzetten &#10;tegen het inwilligen van het verzoek&quot; op te nemen als voorwaarde?.&#10;&#10;Het antwoord is dat zonder het opnemen van deze immuniteit het niet mogelijk is te&#10;onderkennen dat er een handeling is die de verplichting kan neutraliseren." />
+      <property role="3O3EMM" value="immuniteit inwilligen van het verzoek" />
       <ref role="1OcJVV" node="4ZpB41Rnx4z" resolve="werkgever" />
       <ref role="1OcJVS" node="4ZpB41RnoMO" resolve="werknemer" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
@@ -3095,6 +3102,7 @@
       <property role="TrG5h" value="de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren&#10;overeenkomstig de wensen van de werknemer" />
       <property role="da7Q0" value="70" />
       <property role="I0$kK" value="Het is nog een vraag hoe wordt bepaald of &quot;de gevraagde arbeidsduur dient door de werkgever te zijn ingewilligd&quot;&#10;Betekent dit hetzelfde als dat de rechtshandeling &quot;Inwilligen verzoek voor zover het betreft het tijdstip &#10;van ingang en omvang van de aanpassing&quot; is uitgevoerd?" />
+      <property role="3O3EMM" value="Verplichting tot het vaststellen van de spreiding van de uren" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
       <ref role="1OcJVV" node="4ZpB41Rnx4z" resolve="werkgever" />
       <ref role="1OcJVS" node="4ZpB41RnoMO" resolve="werknemer" />
@@ -3132,11 +3140,12 @@
     <node concept="1OcJT3" id="2xDgDlj72l7" role="33wtHG">
       <property role="da7Q0" value="71" />
       <property role="TrG5h" value="immuniteit (recht) om de verplichte bevoegdheid tot het&#10;vaststellen van de spreiding van de uren overeenkomstige de wensen&#10;van de werknemer te neutraliseren." />
+      <property role="3O3EMM" value="immuniteit vaststellen van de spreiding van de uren" />
       <ref role="Q2jOe" node="5u1YjWIkWvP" resolve="de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren&#10;overeenkomstig de wensen van de werknemer" />
       <ref role="1OcJVV" node="4ZpB41Rnx4z" resolve="werkgever" />
       <ref role="1OcJVS" node="4ZpB41RnoMO" resolve="werknemer" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
-      <ref role="1gmamj" node="1Enheq_1aHm" resolve="Inzetten van de immuniteit 2.5" />
+      <ref role="1gmamj" node="1Enheq_1aHm" resolve="Inzetten van de immuniteit voor het vaststellen van de uren" />
       <node concept="2B78Lw" id="2xDgDlj72lg" role="lXajo">
         <property role="2B78LB" value="01" />
         <property role="2B78L_" value="07" />
@@ -3152,6 +3161,7 @@
     <node concept="1OcJTe" id="1VomLPHLHJe" role="33wtHG">
       <property role="TrG5h" value="de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen" />
       <property role="da7Q0" value="72" />
+      <property role="3O3EMM" value="wijzigen van gewenste spreiding van de uren" />
       <ref role="1OcJVV" node="4ZpB41Rnx4z" resolve="werkgever" />
       <ref role="1OcJVS" node="4ZpB41RnoMO" resolve="werknemer" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
@@ -3172,6 +3182,7 @@
       <property role="TrG5h" value="verplichting tot het schriftelijk mededelen van de beslissing" />
       <property role="I0$kK" value="uitzoeken of dit een fatale verplichting of verplichting na ingebrekestelling is." />
       <property role="da7Q0" value="73" />
+      <property role="3O3EMM" value="verplichting tot het schriftelijk mededelen van de beslissing" />
       <ref role="1OcJVV" node="4ZpB41RnoMO" resolve="werknemer" />
       <ref role="1OcJVS" node="4ZpB41Rnx4z" resolve="werkgever" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
@@ -3192,6 +3203,7 @@
       <property role="TrG5h" value="verplichting tot het mededelen van de redenen" />
       <property role="I0$kK" value="uitzoeken of dit een fatale verplichting of verplichting na ingebrekestelling is." />
       <property role="da7Q0" value="74" />
+      <property role="3O3EMM" value="verplichting tot het mededelen van de redenen" />
       <ref role="1OcJVV" node="4ZpB41RnoMO" resolve="werknemer" />
       <ref role="1OcJVS" node="4ZpB41Rnx4z" resolve="werkgever" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
@@ -3302,6 +3314,7 @@
       <property role="TrG5h" value="Indienen verzoek aanpassing arbeidsduur" />
       <property role="da7Q0" value="87" />
       <property role="I0$kK" value="De nieuwe arbeidsduur is de som van de oude arbeidsduur plus de van teken voorziene omvang van de aanpassing&#10;De beoogde ingangsdatum wordt ook wel aangeduid als tijdstip van ingang.&#10;omvang van de aanpassing en spreiding zijn consistent (de som van de minuten van de spreiding moet gelijk zijn aan nieuwe arbeidsduur)." />
+      <property role="3O3EMM" value="Indienen verzoek aanpassing arbeidsduur" />
       <node concept="2LInXT" id="4NzHub3wK1v" role="2LInYK">
         <ref role="2LInZ6" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
         <node concept="2mbrj6" id="4NzHub3wK1B" role="2LInZ1">
@@ -3479,6 +3492,7 @@
       <property role="TrG5h" value="Overleg plegen" />
       <property role="I0$kK" value="Het is denk ik handig om hier een feitelijke handeling van te maken.&#10;Er is immers geen rechtsgevolg? Uit de jurisprudentie blijkt dat de rechter &#10;een dergelijk niet nakomen door de werkgever deze wel aanrekent als een minpunt. &#10;De vraag is: is dat een rechtsgevolg????&#10;We zouden dus ook moeten kijken of een eindigende rechtsbetrekking wel een rechtsgevolg is. " />
       <property role="da7Q0" value="90" />
+      <property role="3O3EMM" value="Overleg plegen" />
       <node concept="33xUQL" id="28ifPi2BQ8D" role="33xUQS">
         <ref role="33xUQY" node="4ZpB41Rnx4z" resolve="werkgever" />
       </node>
@@ -3520,6 +3534,7 @@
     <node concept="1OcJVF" id="4pem8DK2crJ" role="33xyji">
       <property role="TrG5h" value="Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing" />
       <property role="da7Q0" value="91" />
+      <property role="3O3EMM" value="Inwilligen verzoek" />
       <node concept="33xUQL" id="4pem8DK2ct0" role="33xUQS">
         <ref role="33xUQY" node="4ZpB41Rnx4z" resolve="werkgever" />
       </node>
@@ -3618,6 +3633,7 @@
     <node concept="1OcJVF" id="28ifPi2BQ3p" role="33xyji">
       <property role="TrG5h" value="Afwijzen van het verzoek" />
       <property role="da7Q0" value="102" />
+      <property role="3O3EMM" value="Afwijzen van het verzoek" />
       <node concept="2f_mKx" id="4NzHub3ylSH" role="2fAA3G">
         <ref role="2f_mKA" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
         <node concept="25iAAE" id="4NzHub3ylSK" role="2f_mK$">
@@ -3692,6 +3708,7 @@
     <node concept="1OcJVF" id="28ifPi2BQyF" role="33xyji">
       <property role="TrG5h" value="Vaststellen van de spreiding van de uren" />
       <property role="da7Q0" value="103" />
+      <property role="3O3EMM" value="Vaststellen van de spreiding van de uren" />
       <node concept="33xUQL" id="28ifPi2BQzi" role="33xUQS">
         <ref role="33xUQY" node="4ZpB41Rnx4z" resolve="werkgever" />
       </node>
@@ -3763,6 +3780,7 @@
     <node concept="1OcJVF" id="1VomLPHLX4J" role="33xyji">
       <property role="TrG5h" value="Wijzigen van de spreiding van de uren" />
       <property role="da7Q0" value="109" />
+      <property role="3O3EMM" value="Wijzigen van de spreiding van de uren" />
       <node concept="2f_mKx" id="4NzHub3z6GQ" role="2fAA3G">
         <ref role="2f_mKA" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
         <node concept="25iAAE" id="4NzHub3z6GX" role="2f_mK$">
@@ -3821,7 +3839,8 @@
     </node>
     <node concept="1OcJVF" id="1Enheq_1aHm" role="33xyji">
       <property role="da7Q0" value="0000" />
-      <property role="TrG5h" value="Inzetten van de immuniteit 2.5" />
+      <property role="TrG5h" value="Inzetten van de immuniteit voor het vaststellen van de uren" />
+      <property role="3O3EMM" value="Immuniteit voor het vaststellen van de uren" />
       <node concept="33xUQL" id="1Enheq_1aLg" role="33xUQS">
         <ref role="33xUQY" node="4ZpB41Rnx4z" resolve="werkgever" />
       </node>
@@ -3849,6 +3868,7 @@
     <node concept="1OcJVF" id="28ifPi2C7Fj" role="33xyji">
       <property role="TrG5h" value="Schriftelijk mededelen van de beslissing aan de werknemer" />
       <property role="da7Q0" value="110" />
+      <property role="3O3EMM" value="Schriftelijk mededelen van de beslissing aan de werknemer" />
       <node concept="33xUQL" id="28ifPi2C7G0" role="33xUQS">
         <ref role="33xUQY" node="4ZpB41Rnx4z" resolve="werkgever" />
       </node>
@@ -3890,6 +3910,7 @@
     <node concept="1OcJVF" id="28ifPi2CKm1" role="33xyji">
       <property role="TrG5h" value="Mededelen van de redenen" />
       <property role="da7Q0" value="111" />
+      <property role="3O3EMM" value="Mededelen van de redenen" />
       <node concept="2f_mKx" id="4NzHub3z6MP" role="2fAA3G">
         <ref role="2f_mKA" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
         <node concept="25iAAE" id="4NzHub3z6MS" role="2f_mK$">
@@ -3943,6 +3964,7 @@
     <node concept="1OcJUm" id="MvzNsy$K4F" role="33xyji">
       <property role="TrG5h" value="de arbeidsduur wordt aangepast overeenkomstig het verzoek van de werknemer" />
       <property role="da7Q0" value="112" />
+      <property role="3O3EMM" value="aanpassen arbeidsduur overeenkomstig het verzoek" />
       <node concept="KfA53" id="5kuxuwX4y4v" role="3y4jea">
         <node concept="12OPpU" id="5kuxuwX4y51" role="KfA2B">
           <node concept="3d2MAq" id="5kuxuwX4y52" role="12O34u">
@@ -4073,7 +4095,7 @@
       </node>
       <node concept="LeFwc" id="2K7y4iIY0zd" role="LeFwH">
         <property role="LeFwf" value="0" />
-        <property role="LeFwL" value="1" />
+        <property role="LeFwL" value="0" />
         <property role="LeFwM" value="41" />
       </node>
     </node>
@@ -4083,658 +4105,949 @@
       <ref role="Z77fR" node="2IjnF__C6lN" resolve="Essent" />
       <ref role="Z77fM" node="28ifPi2BQ3p" resolve="Afwijzen van het verzoek" />
     </node>
-    <node concept="LeFwQ" id="52o5oqbQq2Y" role="3zKq1C">
-      <node concept="2B78Lw" id="52o5oqbQq3a" role="LeFwF">
+    <node concept="LeFwQ" id="1WUS4DPq6Bp" role="3zKq1C">
+      <node concept="2B78Lw" id="1WUS4DPq6B_" role="LeFwF">
         <property role="2B78LE" value="2017" />
-        <property role="2B78L_" value="3" />
-        <property role="2B78LB" value="31" />
+        <property role="2B78L_" value="4" />
+        <property role="2B78LB" value="6" />
       </node>
-      <node concept="LeFwc" id="52o5oqbQq3c" role="LeFwH">
-        <property role="LeFwf" value="15" />
-        <property role="LeFwL" value="12" />
-        <property role="LeFwM" value="3" />
+      <node concept="LeFwc" id="1WUS4DPq6BB" role="LeFwH">
+        <property role="LeFwf" value="10" />
+        <property role="LeFwL" value="32" />
+        <property role="LeFwM" value="57" />
       </node>
     </node>
-    <node concept="2BLbnY" id="52o5oqbQq3f" role="2BLYKK">
-      <node concept="2B78KX" id="52o5oqbQq3h" role="1O2iA3">
+    <node concept="2BLbnY" id="1WUS4DPq6BE" role="2BLYKK">
+      <node concept="2B78KX" id="1WUS4DPq6BG" role="1O2iA3">
         <property role="1xmsDa" value="true" />
         <ref role="2B78K5" node="20D4HrzEMbL" resolve="recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen" />
         <ref role="1sJBT2" node="28MuYO0sW8R" resolve="Arbeidsovereenkomst tussen Pieter en Essent" />
         <ref role="2B78K2" node="2IjnF__C6lN" resolve="Essent" />
         <ref role="2B78KW" node="2IjnF__Ico$" resolve="Pieter" />
-        <node concept="LeFwQ" id="52o5oqbQq3i" role="2B78LI">
-          <node concept="2B78Lw" id="52o5oqbQq3j" role="LeFwF">
+        <node concept="LeFwQ" id="1WUS4DPq6BH" role="2B78LI">
+          <node concept="2B78Lw" id="1WUS4DPq6BI" role="LeFwF">
             <property role="2B78LB" value="1" />
             <property role="2B78L_" value="1" />
             <property role="2B78LE" value="2001" />
           </node>
-          <node concept="LeFwc" id="52o5oqbQq3k" role="LeFwH">
+          <node concept="LeFwc" id="1WUS4DPq6BJ" role="LeFwH">
             <property role="LeFwf" value="12" />
             <property role="LeFwL" value="0" />
             <property role="LeFwM" value="0" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="52o5oqbQqhA" role="1O2iA3">
+      <node concept="2B78KX" id="1WUS4DPq6Q1" role="1O2iA3">
         <property role="1xmsDa" value="true" />
         <ref role="2B78K5" node="20D4HrzFibY" resolve="verplichting tot overleg plegen" />
         <ref role="1sJBT2" node="3CWQViUvbue" resolve="Verzoek 1" />
         <ref role="2B78K2" node="2IjnF__C6lN" resolve="Essent" />
         <ref role="2B78KW" node="2IjnF__Ico$" resolve="Pieter" />
-        <node concept="LeFwQ" id="52o5oqbQqhB" role="2B78LI">
-          <node concept="2B78Lw" id="52o5oqbQqhE" role="LeFwF">
+        <node concept="LeFwQ" id="1WUS4DPq6Q2" role="2B78LI">
+          <node concept="2B78Lw" id="1WUS4DPq6Q5" role="LeFwF">
             <property role="2B78LE" value="2001" />
             <property role="2B78L_" value="7" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="52o5oqbQqhG" role="LeFwH">
+          <node concept="LeFwc" id="1WUS4DPq6Q7" role="LeFwH">
             <property role="LeFwf" value="0" />
             <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="13" />
+            <property role="LeFwM" value="12" />
           </node>
         </node>
-        <node concept="LeFwQ" id="52o5oqbQquA" role="2B78LR">
-          <node concept="2B78Lw" id="52o5oqbQquD" role="LeFwF">
+        <node concept="LeFwQ" id="1WUS4DPq70x" role="2B78LR">
+          <node concept="2B78Lw" id="1WUS4DPq70$" role="LeFwF">
             <property role="2B78LE" value="2001" />
             <property role="2B78L_" value="7" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="52o5oqbQquF" role="LeFwH">
+          <node concept="LeFwc" id="1WUS4DPq70A" role="LeFwH">
             <property role="LeFwf" value="0" />
-            <property role="LeFwL" value="1" />
+            <property role="LeFwL" value="0" />
             <property role="LeFwM" value="41" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="52o5oqbQqhI" role="1O2iA3">
+      <node concept="2B78KX" id="1WUS4DPq6Q9" role="1O2iA3">
         <property role="1xmsDa" value="true" />
         <ref role="2B78K5" node="MvzNsyB7Rg" resolve="de verplichte bevoegdheid (recht) tot het inwilligen van verzoek&#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing" />
         <ref role="1sJBT2" node="3CWQViUvbue" resolve="Verzoek 1" />
         <ref role="2B78K2" node="2IjnF__Ico$" resolve="Pieter" />
         <ref role="2B78KW" node="2IjnF__C6lN" resolve="Essent" />
-        <node concept="LeFwQ" id="52o5oqbQqhJ" role="2B78LI">
-          <node concept="2B78Lw" id="52o5oqbQqhM" role="LeFwF">
+        <node concept="LeFwQ" id="1WUS4DPq6Qa" role="2B78LI">
+          <node concept="2B78Lw" id="1WUS4DPq6Qd" role="LeFwF">
             <property role="2B78LE" value="2001" />
             <property role="2B78L_" value="7" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="52o5oqbQqhO" role="LeFwH">
+          <node concept="LeFwc" id="1WUS4DPq6Qf" role="LeFwH">
             <property role="LeFwf" value="0" />
             <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="13" />
+            <property role="LeFwM" value="12" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="52o5oqbQqhQ" role="1O2iA3">
+      <node concept="2B78KX" id="1WUS4DPq6Qh" role="1O2iA3">
         <property role="1xmsDa" value="true" />
         <ref role="2B78K5" node="1fugvh9_kgi" resolve="immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren" />
         <ref role="1sJBT2" node="3CWQViUvbue" resolve="Verzoek 1" />
         <ref role="2B78K2" node="2IjnF__Ico$" resolve="Pieter" />
         <ref role="2B78KW" node="2IjnF__C6lN" resolve="Essent" />
-        <node concept="LeFwQ" id="52o5oqbQqhR" role="2B78LI">
-          <node concept="2B78Lw" id="52o5oqbQqhU" role="LeFwF">
+        <node concept="LeFwQ" id="1WUS4DPq6Qi" role="2B78LI">
+          <node concept="2B78Lw" id="1WUS4DPq6Ql" role="LeFwF">
             <property role="2B78LE" value="2001" />
             <property role="2B78L_" value="7" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="52o5oqbQqhW" role="LeFwH">
+          <node concept="LeFwc" id="1WUS4DPq6Qn" role="LeFwH">
             <property role="LeFwf" value="0" />
             <property role="LeFwL" value="0" />
-            <property role="LeFwM" value="13" />
+            <property role="LeFwM" value="12" />
           </node>
         </node>
-        <node concept="1dyV97" id="52o5oqbQq3o" role="1xmslc">
-          <node concept="1dyV9E" id="52o5oqbQqsl" role="1dyV96">
+        <node concept="1dyV97" id="1WUS4DPq6BN" role="1xmslc">
+          <node concept="1dyV9E" id="1WUS4DPq6Lm" role="1dyV96">
             <property role="1dyV9H" value="Evalueer rechtsbetrekking recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsm" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Ln" role="1dyV96">
             <property role="1dyV9H" value="Evalueer voorwaarden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsn" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Lo" role="1dyV96">
             <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqso" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Lp" role="1dyV96">
             <property role="1dyV9H" value=" " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsp" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Lq" role="1dyV96">
             <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsq" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Lr" role="1dyV96">
             <property role="1dyV9H" value="Evalueer de expressie 'er is een &lt;object&gt; waarbij &lt;voorwaarden&gt;'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsr" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Ls" role="1dyV96">
             <property role="1dyV9H" value="Vraag lijst op van instanties" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqss" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Lt" role="1dyV96">
             <property role="1dyV9H" value="Beperk lijst met instanties" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqst" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Lu" role="1dyV96">
             <property role="1dyV9H" value="Start beperk lijst met instanties[Arbeidsovereenkomst tussen Pieter en Essent, Arbeidsovereenkomst tussen Pieter en Eneco]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsu" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Lv" role="1dyV96">
             <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. is gelijk aan" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsw" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Lx" role="1dyV96">
             <property role="1dyV9H" value="Is Essent gelijk aan Essent?" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsx" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Ly" role="1dyV96">
             <property role="1dyV9H" value="Is Eneco gelijk aan Essent?" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsy" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Lz" role="1dyV96">
             <property role="1dyV9H" value="Eneco is niet gelijk aan Essent" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsz" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6L$" role="1dyV96">
             <property role="1dyV9H" value="Tussenresultaat lijst met instanties[Arbeidsovereenkomst tussen Pieter en Essent]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqs$" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6L_" role="1dyV96">
             <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. is gelijk aan" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsA" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LB" role="1dyV96">
             <property role="1dyV9H" value="Is Pieter gelijk aan Pieter?" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsB" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LC" role="1dyV96">
             <property role="1dyV9H" value="Tussenresultaat lijst met instanties[Arbeidsovereenkomst tussen Pieter en Essent]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsC" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LD" role="1dyV96">
             <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. ligt voor" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsE" role="1dyV96">
-            <property role="1dyV9H" value="Ligt 2001-01-01 voor 2017-03-31?" />
+          <node concept="1dyV9E" id="1WUS4DPq6LF" role="1dyV96">
+            <property role="1dyV9H" value="Ligt 2001-01-01 voor 2017-04-06?" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsF" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LG" role="1dyV96">
             <property role="1dyV9H" value="Tussenresultaat lijst met instanties[Arbeidsovereenkomst tussen Pieter en Essent]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsG" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LH" role="1dyV96">
             <property role="1dyV9H" value="Resultaat lijst met instanties [Arbeidsovereenkomst tussen Pieter en Essent]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsH" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LI" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van expressie 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsI" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LJ" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsJ" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LK" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsK" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LL" role="1dyV96">
             <property role="1dyV9H" value=" " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsL" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LM" role="1dyV96">
             <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsM" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LN" role="1dyV96">
             <property role="1dyV9H" value="Evalueer de expressie 'is groter of gelijk aan'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsO" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LP" role="1dyV96">
             <property role="1dyV9H" value="Opvragen van variabele 'aantal werknemers' van object 'werkgever'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsP" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LQ" role="1dyV96">
             <property role="1dyV9H" value="werkgever met instantie Essent heeft waarde GeheelGetalWaarde" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsQ" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LR" role="1dyV96">
             <property role="1dyV9H" value="Waarde van variabele : 30" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsR" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LS" role="1dyV96">
             <property role="1dyV9H" value="Opvragen waarde van variabele van type Double 'aantal werknemers'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsT" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LU" role="1dyV96">
             <property role="1dyV9H" value="Opvragen van variabele 'aantal werknemers' van object 'werkgever'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsU" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LV" role="1dyV96">
             <property role="1dyV9H" value="werkgever met instantie Essent heeft waarde GeheelGetalWaarde" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsV" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LW" role="1dyV96">
             <property role="1dyV9H" value="Waarde van variabele : 30" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsW" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LX" role="1dyV96">
             <property role="1dyV9H" value="Waarde van variabele '30.0'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsX" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LY" role="1dyV96">
             <property role="1dyV9H" value="is groter of gelijk aan is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsY" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6LZ" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van expressie 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqsZ" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6M0" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqt0" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6M1" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqt1" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6M2" role="1dyV96">
             <property role="1dyV9H" value=" " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqt2" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6M3" role="1dyV96">
             <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqt3" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6M4" role="1dyV96">
             <property role="1dyV9H" value="Evalueer de expressie 'is niet waar'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqt5" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6M6" role="1dyV96">
             <property role="1dyV9H" value="Opvragen van variabele 'militair ambtenaar' van object 'werknemer'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqt6" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6M7" role="1dyV96">
             <property role="1dyV9H" value="werknemer met instantie Pieter heeft waarde JaNeeWaarde" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqt7" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6M8" role="1dyV96">
             <property role="1dyV9H" value="Waarde van variabele : Nee" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqt8" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6M9" role="1dyV96">
             <property role="1dyV9H" value="Variabele 'militair ambtenaar' is waar is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqt9" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Ma" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van expressie 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqta" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mb" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtb" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mc" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtc" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Md" role="1dyV96">
             <property role="1dyV9H" value=" " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtd" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Me" role="1dyV96">
             <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqte" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mf" role="1dyV96">
             <property role="1dyV9H" value="Evalueer de expressie 'er is geen &lt;object&gt; waarbij &lt;voorwaarden&gt;'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtf" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mg" role="1dyV96">
             <property role="1dyV9H" value="Er is geen &lt;object&gt; waarbij &lt;voorwaarden&gt;" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtg" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mh" role="1dyV96">
             <property role="1dyV9H" value="Start beperk lijst met instanties[Af te wijzen verzoek]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqth" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mi" role="1dyV96">
             <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. ligt ten hoogste voor" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtj" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mk" role="1dyV96">
             <property role="1dyV9H" value="Geen waarde voor kenmerk 'datum verzoek ingewilligd' gevonden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtk" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Ml" role="1dyV96">
             <property role="1dyV9H" value="Tussenresultaat lijst met instanties[]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtl" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mm" role="1dyV96">
             <property role="1dyV9H" value="Start beperk lijst met instanties[Af te wijzen verzoek]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtm" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mn" role="1dyV96">
             <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. ligt ten hoogste voor" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqto" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mp" role="1dyV96">
             <property role="1dyV9H" value="Geen waarde voor kenmerk 'datum verzoek ingewilligd' gevonden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtp" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mq" role="1dyV96">
             <property role="1dyV9H" value="Tussenresultaat lijst met instanties[]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtq" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mr" role="1dyV96">
             <property role="1dyV9H" value="Resultaat 'is geen &lt;object&gt; waarbij &lt;voorwaarden&gt;' is true" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtr" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Ms" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van expressie 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqts" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mt" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtt" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mu" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtu" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mv" role="1dyV96">
             <property role="1dyV9H" value=" " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtv" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mw" role="1dyV96">
             <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is true" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqtw" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Mx" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van evaluatie rechtsbetrekking recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen is true" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQquW" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QD" role="1dyV96">
             <property role="1dyV9H" value="Evalueer rechtsbetrekking recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQquX" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QE" role="1dyV96">
             <property role="1dyV9H" value="Evalueer voorwaarden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQquY" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QF" role="1dyV96">
             <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQquZ" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QG" role="1dyV96">
             <property role="1dyV9H" value=" " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqv0" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QH" role="1dyV96">
             <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqv1" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QI" role="1dyV96">
             <property role="1dyV9H" value="Evalueer de expressie 'er is een &lt;object&gt; waarbij &lt;voorwaarden&gt;'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqv2" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QJ" role="1dyV96">
             <property role="1dyV9H" value="Vraag lijst op van instanties" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqv3" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QK" role="1dyV96">
             <property role="1dyV9H" value="Beperk lijst met instanties" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqv4" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QL" role="1dyV96">
             <property role="1dyV9H" value="Start beperk lijst met instanties[Arbeidsovereenkomst tussen Pieter en Essent, Arbeidsovereenkomst tussen Pieter en Eneco]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqv5" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QM" role="1dyV96">
             <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. is gelijk aan" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqv7" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QO" role="1dyV96">
             <property role="1dyV9H" value="Is Essent gelijk aan Essent?" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqv8" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QP" role="1dyV96">
             <property role="1dyV9H" value="Is Eneco gelijk aan Essent?" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqv9" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QQ" role="1dyV96">
             <property role="1dyV9H" value="Eneco is niet gelijk aan Essent" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqva" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QR" role="1dyV96">
             <property role="1dyV9H" value="Tussenresultaat lijst met instanties[Arbeidsovereenkomst tussen Pieter en Essent]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvb" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QS" role="1dyV96">
             <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. is gelijk aan" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvd" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QU" role="1dyV96">
             <property role="1dyV9H" value="Is Pieter gelijk aan Pieter?" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqve" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QV" role="1dyV96">
             <property role="1dyV9H" value="Tussenresultaat lijst met instanties[Arbeidsovereenkomst tussen Pieter en Essent]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvf" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QW" role="1dyV96">
             <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. ligt voor" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvh" role="1dyV96">
-            <property role="1dyV9H" value="Ligt 2001-01-01 voor 2017-03-31?" />
+          <node concept="1dyV9E" id="1WUS4DPq6QY" role="1dyV96">
+            <property role="1dyV9H" value="Ligt 2001-01-01 voor 2017-04-06?" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvi" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6QZ" role="1dyV96">
             <property role="1dyV9H" value="Tussenresultaat lijst met instanties[Arbeidsovereenkomst tussen Pieter en Essent]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvj" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6R0" role="1dyV96">
             <property role="1dyV9H" value="Resultaat lijst met instanties [Arbeidsovereenkomst tussen Pieter en Essent]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvk" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6R1" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van expressie 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvl" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6R2" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvm" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6R3" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvn" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6R4" role="1dyV96">
             <property role="1dyV9H" value=" " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvo" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6R5" role="1dyV96">
             <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvp" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6R6" role="1dyV96">
             <property role="1dyV9H" value="Evalueer de expressie 'is groter of gelijk aan'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvr" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6R8" role="1dyV96">
             <property role="1dyV9H" value="Opvragen van variabele 'aantal werknemers' van object 'werkgever'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvs" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6R9" role="1dyV96">
             <property role="1dyV9H" value="werkgever met instantie Essent heeft waarde GeheelGetalWaarde" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvt" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Ra" role="1dyV96">
             <property role="1dyV9H" value="Waarde van variabele : 30" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvu" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rb" role="1dyV96">
             <property role="1dyV9H" value="Opvragen waarde van variabele van type Double 'aantal werknemers'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvw" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rd" role="1dyV96">
             <property role="1dyV9H" value="Opvragen van variabele 'aantal werknemers' van object 'werkgever'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvx" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Re" role="1dyV96">
             <property role="1dyV9H" value="werkgever met instantie Essent heeft waarde GeheelGetalWaarde" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvy" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rf" role="1dyV96">
             <property role="1dyV9H" value="Waarde van variabele : 30" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvz" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rg" role="1dyV96">
             <property role="1dyV9H" value="Waarde van variabele '30.0'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqv$" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rh" role="1dyV96">
             <property role="1dyV9H" value="is groter of gelijk aan is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqv_" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Ri" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van expressie 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvA" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rj" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvB" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rk" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvC" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rl" role="1dyV96">
             <property role="1dyV9H" value=" " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvD" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rm" role="1dyV96">
             <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvE" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rn" role="1dyV96">
             <property role="1dyV9H" value="Evalueer de expressie 'is niet waar'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvG" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rp" role="1dyV96">
             <property role="1dyV9H" value="Opvragen van variabele 'militair ambtenaar' van object 'werknemer'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvH" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rq" role="1dyV96">
             <property role="1dyV9H" value="werknemer met instantie Pieter heeft waarde JaNeeWaarde" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvI" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rr" role="1dyV96">
             <property role="1dyV9H" value="Waarde van variabele : Nee" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvJ" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rs" role="1dyV96">
             <property role="1dyV9H" value="Variabele 'militair ambtenaar' is waar is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvK" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rt" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van expressie 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvL" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Ru" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvM" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rv" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvN" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rw" role="1dyV96">
             <property role="1dyV9H" value=" " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvO" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rx" role="1dyV96">
             <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvP" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Ry" role="1dyV96">
             <property role="1dyV9H" value="Evalueer de expressie 'er is geen &lt;object&gt; waarbij &lt;voorwaarden&gt;'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvQ" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Rz" role="1dyV96">
             <property role="1dyV9H" value="Er is geen &lt;object&gt; waarbij &lt;voorwaarden&gt;" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvR" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6R$" role="1dyV96">
             <property role="1dyV9H" value="Start beperk lijst met instanties[Af te wijzen verzoek]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvS" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6R_" role="1dyV96">
             <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. ligt ten hoogste voor" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvU" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RB" role="1dyV96">
             <property role="1dyV9H" value="Geen waarde voor kenmerk 'datum verzoek ingewilligd' gevonden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvV" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RC" role="1dyV96">
             <property role="1dyV9H" value="Tussenresultaat lijst met instanties[]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvW" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RD" role="1dyV96">
             <property role="1dyV9H" value="Start beperk lijst met instanties[Af te wijzen verzoek]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvX" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RE" role="1dyV96">
             <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. ligt ten hoogste voor" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqvZ" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RG" role="1dyV96">
             <property role="1dyV9H" value="Geen waarde voor kenmerk 'datum verzoek ingewilligd' gevonden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqw0" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RH" role="1dyV96">
             <property role="1dyV9H" value="Tussenresultaat lijst met instanties[]" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqw1" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RI" role="1dyV96">
             <property role="1dyV9H" value="Resultaat 'is geen &lt;object&gt; waarbij &lt;voorwaarden&gt;' is true" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqw2" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RJ" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van expressie 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqw3" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RK" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqw4" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RL" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqw5" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RM" role="1dyV96">
             <property role="1dyV9H" value=" " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqw6" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RN" role="1dyV96">
             <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is true" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqw7" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RO" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van evaluatie rechtsbetrekking recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen is true" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqw9" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RQ" role="1dyV96">
             <property role="1dyV9H" value="Evalueer rechtsbetrekking verplichting tot overleg plegen" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwa" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RR" role="1dyV96">
             <property role="1dyV9H" value="Evalueer voorwaarden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwb" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RS" role="1dyV96">
             <property role="1dyV9H" value="Geen voorwaarden gevonden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwc" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RT" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van evaluatie rechtsbetrekking verplichting tot overleg plegen is true" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwe" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RV" role="1dyV96">
             <property role="1dyV9H" value="Evalueer rechtsbetrekking de verplichte bevoegdheid (recht) tot het inwilligen van verzoek&#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwf" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RW" role="1dyV96">
             <property role="1dyV9H" value="Evalueer voorwaarden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwg" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RX" role="1dyV96">
             <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwh" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RY" role="1dyV96">
             <property role="1dyV9H" value=" " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwi" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6RZ" role="1dyV96">
             <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwj" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6S0" role="1dyV96">
             <property role="1dyV9H" value="Evalueer de expressie 'ligt ten minste &lt;duur&gt; na'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwk" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6S1" role="1dyV96">
             <property role="1dyV9H" value="Start expressie (variabele) ligt tenminste &lt;duur&gt; na (variabele)" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwm" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6S3" role="1dyV96">
             <property role="1dyV9H" value="Opvragen van variabele 'beoogde ingangsdatum van de aanpassing' van object 'aanpassing van de arbeidsduur'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwn" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6S4" role="1dyV96">
             <property role="1dyV9H" value="Type van variabele : DatumWaarde" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwo" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6S5" role="1dyV96">
             <property role="1dyV9H" value="Waarde van variabele : 2004-01-01" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwp" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6S6" role="1dyV96">
             <property role="1dyV9H" value="Huidige datum is 2001-07-01" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwq" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6S7" role="1dyV96">
             <property role="1dyV9H" value="2004-01-01 ligt ten minste PT2921H56M24S na 2001-07-01" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwr" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6S8" role="1dyV96">
             <property role="1dyV9H" value="Minimale duur bepaald PT2921H56M24S" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqws" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6S9" role="1dyV96">
             <property role="1dyV9H" value="Werkelijke duur bepaald PT21937H" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwt" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Sa" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van 2004-01-01 ligt ten minste PT2921H56M24S na 2001-07-01 is true" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwu" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Sb" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van expressie 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwv" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Sc" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqww" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Sd" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwx" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Se" role="1dyV96">
             <property role="1dyV9H" value=" " />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwy" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Sf" role="1dyV96">
             <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is true" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwz" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Sg" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van evaluatie rechtsbetrekking de verplichte bevoegdheid (recht) tot het inwilligen van verzoek&#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing is true" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqw_" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Si" role="1dyV96">
             <property role="1dyV9H" value="Evalueer rechtsbetrekking immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwA" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Sj" role="1dyV96">
             <property role="1dyV9H" value="Evalueer voorwaarden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwB" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Sk" role="1dyV96">
             <property role="1dyV9H" value="Geen voorwaarden gevonden" />
           </node>
-          <node concept="1dyV9E" id="52o5oqbQqwC" role="1dyV96">
+          <node concept="1dyV9E" id="1WUS4DPq6Sl" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van evaluatie rechtsbetrekking immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren is true" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq70R" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer rechtsbetrekking recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq70S" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer voorwaarden" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq70T" role="1dyV96">
+            <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq70U" role="1dyV96">
+            <property role="1dyV9H" value=" " />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq70V" role="1dyV96">
+            <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq70W" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer de expressie 'er is een &lt;object&gt; waarbij &lt;voorwaarden&gt;'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq70X" role="1dyV96">
+            <property role="1dyV9H" value="Vraag lijst op van instanties" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq70Y" role="1dyV96">
+            <property role="1dyV9H" value="Beperk lijst met instanties" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq70Z" role="1dyV96">
+            <property role="1dyV9H" value="Start beperk lijst met instanties[Arbeidsovereenkomst tussen Pieter en Essent, Arbeidsovereenkomst tussen Pieter en Eneco]" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq710" role="1dyV96">
+            <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. is gelijk aan" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq712" role="1dyV96">
+            <property role="1dyV9H" value="Is Essent gelijk aan Essent?" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq713" role="1dyV96">
+            <property role="1dyV9H" value="Is Eneco gelijk aan Essent?" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq714" role="1dyV96">
+            <property role="1dyV9H" value="Eneco is niet gelijk aan Essent" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq715" role="1dyV96">
+            <property role="1dyV9H" value="Tussenresultaat lijst met instanties[Arbeidsovereenkomst tussen Pieter en Essent]" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq716" role="1dyV96">
+            <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. is gelijk aan" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq718" role="1dyV96">
+            <property role="1dyV9H" value="Is Pieter gelijk aan Pieter?" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq719" role="1dyV96">
+            <property role="1dyV9H" value="Tussenresultaat lijst met instanties[Arbeidsovereenkomst tussen Pieter en Essent]" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71a" role="1dyV96">
+            <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. ligt voor" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71c" role="1dyV96">
+            <property role="1dyV9H" value="Ligt 2001-01-01 voor 2017-04-06?" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71d" role="1dyV96">
+            <property role="1dyV9H" value="Tussenresultaat lijst met instanties[Arbeidsovereenkomst tussen Pieter en Essent]" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71e" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat lijst met instanties [Arbeidsovereenkomst tussen Pieter en Essent]" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71f" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van expressie 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71g" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71h" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71i" role="1dyV96">
+            <property role="1dyV9H" value=" " />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71j" role="1dyV96">
+            <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71k" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer de expressie 'is groter of gelijk aan'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71m" role="1dyV96">
+            <property role="1dyV9H" value="Opvragen van variabele 'aantal werknemers' van object 'werkgever'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71n" role="1dyV96">
+            <property role="1dyV9H" value="werkgever met instantie Essent heeft waarde GeheelGetalWaarde" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71o" role="1dyV96">
+            <property role="1dyV9H" value="Waarde van variabele : 30" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71p" role="1dyV96">
+            <property role="1dyV9H" value="Opvragen waarde van variabele van type Double 'aantal werknemers'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71r" role="1dyV96">
+            <property role="1dyV9H" value="Opvragen van variabele 'aantal werknemers' van object 'werkgever'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71s" role="1dyV96">
+            <property role="1dyV9H" value="werkgever met instantie Essent heeft waarde GeheelGetalWaarde" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71t" role="1dyV96">
+            <property role="1dyV9H" value="Waarde van variabele : 30" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71u" role="1dyV96">
+            <property role="1dyV9H" value="Waarde van variabele '30.0'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71v" role="1dyV96">
+            <property role="1dyV9H" value="is groter of gelijk aan is 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71w" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van expressie 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71x" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71y" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71z" role="1dyV96">
+            <property role="1dyV9H" value=" " />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71$" role="1dyV96">
+            <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71_" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer de expressie 'is niet waar'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71B" role="1dyV96">
+            <property role="1dyV9H" value="Opvragen van variabele 'militair ambtenaar' van object 'werknemer'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71C" role="1dyV96">
+            <property role="1dyV9H" value="werknemer met instantie Pieter heeft waarde JaNeeWaarde" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71D" role="1dyV96">
+            <property role="1dyV9H" value="Waarde van variabele : Nee" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71E" role="1dyV96">
+            <property role="1dyV9H" value="Variabele 'militair ambtenaar' is waar is 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71F" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van expressie 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71G" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71H" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71I" role="1dyV96">
+            <property role="1dyV9H" value=" " />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71J" role="1dyV96">
+            <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71K" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer de expressie 'er is geen &lt;object&gt; waarbij &lt;voorwaarden&gt;'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71L" role="1dyV96">
+            <property role="1dyV9H" value="Er is geen &lt;object&gt; waarbij &lt;voorwaarden&gt;" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71M" role="1dyV96">
+            <property role="1dyV9H" value="Start beperk lijst met instanties[Af te wijzen verzoek]" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71N" role="1dyV96">
+            <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. ligt ten hoogste voor" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71P" role="1dyV96">
+            <property role="1dyV9H" value="Geen waarde voor kenmerk 'datum verzoek ingewilligd' gevonden" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71Q" role="1dyV96">
+            <property role="1dyV9H" value="Tussenresultaat lijst met instanties[]" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71R" role="1dyV96">
+            <property role="1dyV9H" value="Start beperk lijst met instanties[Af te wijzen verzoek]" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71S" role="1dyV96">
+            <property role="1dyV9H" value="Beperk lijst met instanties d.m.v. ligt ten hoogste voor" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71U" role="1dyV96">
+            <property role="1dyV9H" value="Geen waarde voor kenmerk 'datum verzoek ingewilligd' gevonden" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71V" role="1dyV96">
+            <property role="1dyV9H" value="Tussenresultaat lijst met instanties[]" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71W" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat 'is geen &lt;object&gt; waarbij &lt;voorwaarden&gt;' is true" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71X" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van expressie 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71Y" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq71Z" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq720" role="1dyV96">
+            <property role="1dyV9H" value=" " />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq721" role="1dyV96">
+            <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is true" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq722" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van evaluatie rechtsbetrekking recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen is true" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq724" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer rechtsbetrekking verplichting tot overleg plegen" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq725" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer voorwaarden" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq726" role="1dyV96">
+            <property role="1dyV9H" value="Geen voorwaarden gevonden" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq727" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van evaluatie rechtsbetrekking verplichting tot overleg plegen is true" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq729" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer rechtsbetrekking de verplichte bevoegdheid (recht) tot het inwilligen van verzoek&#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72a" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer voorwaarden" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72b" role="1dyV96">
+            <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72c" role="1dyV96">
+            <property role="1dyV9H" value=" " />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72d" role="1dyV96">
+            <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72e" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer de expressie 'ligt ten minste &lt;duur&gt; na'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72f" role="1dyV96">
+            <property role="1dyV9H" value="Start expressie (variabele) ligt tenminste &lt;duur&gt; na (variabele)" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72h" role="1dyV96">
+            <property role="1dyV9H" value="Opvragen van variabele 'beoogde ingangsdatum van de aanpassing' van object 'aanpassing van de arbeidsduur'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72i" role="1dyV96">
+            <property role="1dyV9H" value="Type van variabele : DatumWaarde" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72j" role="1dyV96">
+            <property role="1dyV9H" value="Waarde van variabele : 2004-01-01" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72k" role="1dyV96">
+            <property role="1dyV9H" value="Huidige datum is 2001-07-01" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72l" role="1dyV96">
+            <property role="1dyV9H" value="2004-01-01 ligt ten minste PT2921H56M24S na 2001-07-01" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72m" role="1dyV96">
+            <property role="1dyV9H" value="Minimale duur bepaald PT2921H56M24S" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72n" role="1dyV96">
+            <property role="1dyV9H" value="Werkelijke duur bepaald PT21937H" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72o" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van 2004-01-01 ligt ten minste PT2921H56M24S na 2001-07-01 is true" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72p" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van expressie 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72q" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72r" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72s" role="1dyV96">
+            <property role="1dyV9H" value=" " />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72t" role="1dyV96">
+            <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is true" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72u" role="1dyV96">
+            <property role="1dyV9H" value="Resultaat van evaluatie rechtsbetrekking de verplichte bevoegdheid (recht) tot het inwilligen van verzoek&#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing is true" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72w" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer rechtsbetrekking immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72x" role="1dyV96">
+            <property role="1dyV9H" value="Evalueer voorwaarden" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72y" role="1dyV96">
+            <property role="1dyV9H" value="Geen voorwaarden gevonden" />
+          </node>
+          <node concept="1dyV9E" id="1WUS4DPq72z" role="1dyV96">
             <property role="1dyV9H" value="Resultaat van evaluatie rechtsbetrekking immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren is true" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2B78xR" id="52o5oqbQqhY" role="d5q2a">
-      <ref role="3$n4Sv" node="52o5oqbQq3h" />
+    <node concept="2B78xR" id="1WUS4DPq6Qp" role="d5q2a">
+      <ref role="3$n4Sv" node="1WUS4DPq6BG" />
       <ref role="2B7LQa" node="4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
       <ref role="ygcnh" node="3CWQViUvbue" resolve="Verzoek 1" />
-      <node concept="2B78xQ" id="52o5oqbQqhZ" role="2B78xV">
+      <node concept="2B78xQ" id="1WUS4DPq6Qq" role="2B78xV">
         <ref role="2B78xP" node="2IjnF__Ico$" resolve="Pieter" />
       </node>
-      <node concept="LeFwQ" id="52o5oqbQqi1" role="2B7LCw">
-        <node concept="2B78Lw" id="52o5oqbQqi4" role="LeFwF">
+      <node concept="LeFwQ" id="1WUS4DPq6Qs" role="2B7LCw">
+        <node concept="2B78Lw" id="1WUS4DPq6Qv" role="LeFwF">
           <property role="2B78LE" value="2001" />
           <property role="2B78L_" value="7" />
           <property role="2B78LB" value="1" />
         </node>
-        <node concept="LeFwc" id="52o5oqbQqi6" role="LeFwH">
+        <node concept="LeFwc" id="1WUS4DPq6Qx" role="LeFwH">
           <property role="LeFwf" value="0" />
           <property role="LeFwL" value="0" />
-          <property role="LeFwM" value="13" />
+          <property role="LeFwM" value="12" />
         </node>
       </node>
     </node>
-    <node concept="2B78xR" id="52o5oqbQquH" role="d5q2a">
-      <ref role="3$n4Sv" node="52o5oqbQqhA" />
+    <node concept="2B78xR" id="1WUS4DPq70C" role="d5q2a">
+      <ref role="3$n4Sv" node="1WUS4DPq6Q1" />
       <ref role="2B7LQa" node="28ifPi2BQ89" resolve="Overleg plegen" />
       <ref role="ygcnh" node="3CWQViUvbue" resolve="Verzoek 1" />
-      <node concept="2B78xQ" id="52o5oqbQquI" role="2B78xV">
+      <node concept="2B78xQ" id="1WUS4DPq70D" role="2B78xV">
         <ref role="2B78xP" node="2IjnF__C6lN" resolve="Essent" />
       </node>
-      <node concept="LeFwQ" id="52o5oqbQquK" role="2B7LCw">
-        <node concept="2B78Lw" id="52o5oqbQquN" role="LeFwF">
+      <node concept="LeFwQ" id="1WUS4DPq70F" role="2B7LCw">
+        <node concept="2B78Lw" id="1WUS4DPq70I" role="LeFwF">
           <property role="2B78LE" value="2001" />
           <property role="2B78L_" value="7" />
           <property role="2B78LB" value="1" />
         </node>
-        <node concept="LeFwc" id="52o5oqbQquP" role="LeFwH">
+        <node concept="LeFwc" id="1WUS4DPq70K" role="LeFwH">
           <property role="LeFwf" value="0" />
-          <property role="LeFwL" value="1" />
+          <property role="LeFwL" value="0" />
           <property role="LeFwM" value="41" />
         </node>
       </node>
     </node>
-    <node concept="3WXGrE" id="52o5oqbQquS" role="3WXGrD">
-      <ref role="3qscrX" node="52o5oqbQq3h" />
+    <node concept="3WXGrE" id="1WUS4DPq70N" role="3WXGrD">
+      <ref role="3qscrX" node="1WUS4DPq6BG" />
       <ref role="3WXGrF" node="4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
     </node>
-    <node concept="3WXGrE" id="52o5oqbQquT" role="3WXGrD">
-      <ref role="3qscrX" node="52o5oqbQqhI" />
+    <node concept="3WXGrE" id="1WUS4DPq70O" role="3WXGrD">
+      <ref role="3qscrX" node="1WUS4DPq6Q9" />
       <ref role="3WXGrF" node="4pem8DK2crJ" resolve="Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing" />
     </node>
-    <node concept="3WXGrE" id="52o5oqbQquU" role="3WXGrD">
-      <ref role="3qscrX" node="52o5oqbQqhQ" />
+    <node concept="3WXGrE" id="1WUS4DPq70P" role="3WXGrD">
+      <ref role="3qscrX" node="1WUS4DPq6Qh" />
       <ref role="3WXGrF" node="28ifPi2BQ3p" resolve="Afwijzen van het verzoek" />
     </node>
-    <node concept="1dyV97" id="52o5oqbQqw$" role="2NEIfv" />
+    <node concept="1dyV97" id="1WUS4DPq72v" role="2NEIfv" />
   </node>
   <node concept="1ztmtO" id="6EEavyms9IX">
     <property role="TrG5h" value="Gegevenshuishouding WAA" />

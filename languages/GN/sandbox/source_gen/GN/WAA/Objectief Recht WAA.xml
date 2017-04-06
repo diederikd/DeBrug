@@ -11302,6 +11302,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
             <property name='initieel'>true</property>
             <property name='alias'></property>
             <property name='name'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</property>
+            <property name='kortenaam'>recht om verzoek aanpassing arbeidsduur in te dienen</property>
         </properties>
         <children>
           <node>
@@ -11877,6 +11878,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>verplichting tot overleg plegen</property>
+            <property name='kortenaam'>verplichting tot overleg plegen</property>
         </properties>
         <children>
           <node>
@@ -11969,6 +11971,8 @@ en de omvang van de aanpassing</nodename>
             <property name='name'>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
 voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
 en de omvang van de aanpassing</property>
+            <property name='kortenaam'>Inwilligen van verzoek
+voor aanpassing arbeidsduur</property>
         </properties>
         <children>
           <node>
@@ -12146,6 +12150,7 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
             <property name='alias'></property>
             <property name='name'>immuniteit (recht) om de verplichte bevoegdheid
 tot het inwilligen van het verzoek te neutraliseren</property>
+            <property name='kortenaam'>immuniteit inwilligen van het verzoek</property>
         </properties>
         <children>
           <node>
@@ -12244,6 +12249,7 @@ overeenkomstig de wensen van de werknemer</nodename>
             <property name='alias'></property>
             <property name='name'>de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren
 overeenkomstig de wensen van de werknemer</property>
+            <property name='kortenaam'>Verplichting tot het vaststellen van de spreiding van de uren</property>
         </properties>
         <children>
           <node>
@@ -12423,6 +12429,7 @@ van de werknemer te neutraliseren.</nodename>
             <property name='name'>immuniteit (recht) om de verplichte bevoegdheid tot het
 vaststellen van de spreiding van de uren overeenkomstige de wensen
 van de werknemer te neutraliseren.</property>
+            <property name='kortenaam'>immuniteit vaststellen van de spreiding van de uren</property>
         </properties>
         <children>
           <node>
@@ -12503,7 +12510,7 @@ overeenkomstig de wensen van de werknemer</nodename>
             <node>
               <noderole>overgangen</noderole>
               <nodetype>Rechtshandeling</nodetype>
-              <nodename>Inzetten van de immuniteit 2.5</nodename>
+              <nodename>Inzetten van de immuniteit voor het vaststellen van de uren</nodename>
               <nodeid>1916075923871148886</nodeid>
             </node>
           </reference>
@@ -12518,6 +12525,7 @@ overeenkomstig de wensen van de werknemer</nodename>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen</property>
+            <property name='kortenaam'>wijzigen van gewenste spreiding van de uren</property>
         </properties>
         <children>
           <node>
@@ -12604,6 +12612,7 @@ overeenkomstig de wensen van de werknemer</nodename>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>verplichting tot het schriftelijk mededelen van de beslissing</property>
+            <property name='kortenaam'>verplichting tot het schriftelijk mededelen van de beslissing</property>
         </properties>
         <children>
           <node>
@@ -12690,6 +12699,7 @@ overeenkomstig de wensen van de werknemer</nodename>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>verplichting tot het mededelen van de redenen</property>
+            <property name='kortenaam'>verplichting tot het mededelen van de redenen</property>
         </properties>
         <children>
           <node>
@@ -12777,6 +12787,7 @@ overeenkomstig de wensen van de werknemer</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Indienen verzoek aanpassing arbeidsduur</property>
+            <property name='kortenaam'>Indienen verzoek aanpassing arbeidsduur</property>
         </properties>
         <children>
           <node>
@@ -13730,6 +13741,7 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Overleg plegen</property>
+            <property name='kortenaam'>Overleg plegen</property>
         </properties>
         <children>
           <node>
@@ -13906,6 +13918,7 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing</property>
+            <property name='kortenaam'>Inwilligen verzoek</property>
         </properties>
         <children>
           <node>
@@ -14368,6 +14381,7 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Afwijzen van het verzoek</property>
+            <property name='kortenaam'>Afwijzen van het verzoek</property>
         </properties>
         <children>
           <node>
@@ -14746,6 +14760,7 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Vaststellen van de spreiding van de uren</property>
+            <property name='kortenaam'>Vaststellen van de spreiding van de uren</property>
         </properties>
         <children>
           <node>
@@ -15076,6 +15091,7 @@ van de werknemer te neutraliseren.</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Wijzigen van de spreiding van de uren</property>
+            <property name='kortenaam'>Wijzigen van de spreiding van de uren</property>
         </properties>
         <children>
           <node>
@@ -15355,11 +15371,12 @@ van de werknemer te neutraliseren.</nodename>
     <node>
       <noderole>overgangen</noderole>
       <nodetype>Rechtshandeling</nodetype>
-      <nodename>Inzetten van de immuniteit 2.5</nodename>
+      <nodename>Inzetten van de immuniteit voor het vaststellen van de uren</nodename>
       <nodeid>1916075923871148886</nodeid>
         <properties>
             <property name='alias'></property>
-            <property name='name'>Inzetten van de immuniteit 2.5</property>
+            <property name='name'>Inzetten van de immuniteit voor het vaststellen van de uren</property>
+            <property name='kortenaam'>Immuniteit voor het vaststellen van de uren</property>
         </properties>
         <children>
           <node>
@@ -15480,6 +15497,7 @@ van de werknemer te neutraliseren.</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Schriftelijk mededelen van de beslissing aan de werknemer</property>
+            <property name='kortenaam'>Schriftelijk mededelen van de beslissing aan de werknemer</property>
         </properties>
         <children>
           <node>
@@ -15648,6 +15666,7 @@ van de werknemer te neutraliseren.</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Mededelen van de redenen</property>
+            <property name='kortenaam'>Mededelen van de redenen</property>
         </properties>
         <children>
           <node>
@@ -15894,6 +15913,7 @@ van de werknemer te neutraliseren.</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>de arbeidsduur wordt aangepast overeenkomstig het verzoek van de werknemer</property>
+            <property name='kortenaam'>aanpassen arbeidsduur overeenkomstig het verzoek</property>
         </properties>
         <children>
           <node>

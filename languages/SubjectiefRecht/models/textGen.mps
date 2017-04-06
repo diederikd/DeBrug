@@ -10,8 +10,6 @@
     <import index="gcgs" ref="r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="ll8w" ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -60,15 +58,11 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
-      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -274,15 +268,22 @@
                     <property role="lacIc" value="&lt;kenmerk naam='objectieveRechtsbetrekking'&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRpZqf" role="lcghm">
-                    <node concept="2OqwBi" id="5vursKRABGm" role="lb14g">
-                      <node concept="2OqwBi" id="5vursKRpZqg" role="2Oq$k0">
-                        <node concept="117lpO" id="5vursKRpZqh" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="5vursKRpZSB" role="2OqNvi">
-                          <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
+                    <node concept="2OqwBi" id="1WUS4DPr6ON" role="lb14g">
+                      <node concept="2OqwBi" id="1WUS4DPr6tO" role="2Oq$k0">
+                        <node concept="2JrnkZ" id="1WUS4DPr6hB" role="2Oq$k0">
+                          <node concept="2OqwBi" id="5vursKRpZqg" role="2JrQYb">
+                            <node concept="117lpO" id="5vursKRpZqh" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="5vursKRpZSB" role="2OqNvi">
+                              <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="1WUS4DPr6DC" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="5vursKRABYB" role="2OqNvi">
-                        <ref role="37wK5l" to="ll8w:5vursKRAATV" resolve="geefNaam" />
+                      <node concept="liA8E" id="1WUS4DPr795" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                       </node>
                     </node>
                   </node>
@@ -297,15 +298,22 @@
                     <property role="lacIc" value="&lt;kenmerk naam='onderwerp'&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRpXVp" role="lcghm">
-                    <node concept="2OqwBi" id="5vursKRA_qp" role="lb14g">
-                      <node concept="2OqwBi" id="5vursKRpXVq" role="2Oq$k0">
-                        <node concept="117lpO" id="5vursKRpXVr" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="5vursKRpYDx" role="2OqNvi">
-                          <ref role="3Tt5mk" to="gcgs:5gJzES8$v3G" resolve="onderwerp" />
+                    <node concept="2OqwBi" id="1WUS4DPr2$w" role="lb14g">
+                      <node concept="2OqwBi" id="5vursKRA_qp" role="2Oq$k0">
+                        <node concept="2JrnkZ" id="1WUS4DPr2cu" role="2Oq$k0">
+                          <node concept="2OqwBi" id="5vursKRpXVq" role="2JrQYb">
+                            <node concept="117lpO" id="5vursKRpXVr" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="5vursKRpYDx" role="2OqNvi">
+                              <ref role="3Tt5mk" to="gcgs:5gJzES8$v3G" resolve="onderwerp" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="1WUS4DPr2pl" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                         </node>
                       </node>
-                      <node concept="3TrcHB" id="5vursKRA_Dy" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="liA8E" id="1WUS4DPr2SM" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                       </node>
                     </node>
                   </node>
@@ -320,15 +328,22 @@
                     <property role="lacIc" value="&lt;kenmerk naam='rechtssubjectMetPlicht'&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRpY1m" role="lcghm">
-                    <node concept="2OqwBi" id="5vursKRAA04" role="lb14g">
-                      <node concept="2OqwBi" id="5vursKRpY1n" role="2Oq$k0">
-                        <node concept="117lpO" id="5vursKRpY1o" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="5vursKRpYSA" role="2OqNvi">
-                          <ref role="3Tt5mk" to="gcgs:6c9haf45syx" resolve="rechtssubjectMetPlicht" />
+                    <node concept="2OqwBi" id="1WUS4DPr3IE" role="lb14g">
+                      <node concept="2OqwBi" id="5vursKRAA04" role="2Oq$k0">
+                        <node concept="2JrnkZ" id="1WUS4DPr3mC" role="2Oq$k0">
+                          <node concept="2OqwBi" id="5vursKRpY1n" role="2JrQYb">
+                            <node concept="117lpO" id="5vursKRpY1o" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="5vursKRpYSA" role="2OqNvi">
+                              <ref role="3Tt5mk" to="gcgs:6c9haf45syx" resolve="rechtssubjectMetPlicht" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="1WUS4DPr3zv" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                         </node>
                       </node>
-                      <node concept="3TrcHB" id="5vursKRAAfd" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="liA8E" id="1WUS4DPr42W" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                       </node>
                     </node>
                   </node>
@@ -343,15 +358,22 @@
                     <property role="lacIc" value="&lt;kenmerk naam='rechtssubjectMetRecht'&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRpY7M" role="lcghm">
-                    <node concept="2OqwBi" id="5vursKRAA_J" role="lb14g">
-                      <node concept="2OqwBi" id="5vursKRpY7N" role="2Oq$k0">
-                        <node concept="117lpO" id="5vursKRpY7O" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="5vursKRpZ7F" role="2OqNvi">
-                          <ref role="3Tt5mk" to="gcgs:6c9haf45syv" resolve="rechtssubjectMetRecht" />
+                    <node concept="2OqwBi" id="1WUS4DPr5jZ" role="lb14g">
+                      <node concept="2OqwBi" id="1WUS4DPr4FQ" role="2Oq$k0">
+                        <node concept="2JrnkZ" id="1WUS4DPr4wM" role="2Oq$k0">
+                          <node concept="2OqwBi" id="5vursKRpY7N" role="2JrQYb">
+                            <node concept="117lpO" id="5vursKRpY7O" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="5vursKRpZ7F" role="2OqNvi">
+                              <ref role="3Tt5mk" to="gcgs:6c9haf45syv" resolve="rechtssubjectMetRecht" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="1WUS4DPr4ZR" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                         </node>
                       </node>
-                      <node concept="3TrcHB" id="5vursKRAAOS" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="liA8E" id="1WUS4DPr5Ch" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                       </node>
                     </node>
                   </node>
@@ -431,21 +453,28 @@
                   <node concept="la8eA" id="5vursKRq16s" role="lcghm">
                     <property role="lacIc" value="&lt;kenmerk naam='actor'&gt;" />
                   </node>
-                  <node concept="l9hG8" id="5vursKRq16t" role="lcghm">
-                    <node concept="2OqwBi" id="5vursKRvPhZ" role="lb14g">
-                      <node concept="2OqwBi" id="5vursKRvOGf" role="2Oq$k0">
-                        <node concept="2OqwBi" id="5vursKRq16u" role="2Oq$k0">
-                          <node concept="117lpO" id="5vursKRq16v" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="5vursKRq1Jy" role="2OqNvi">
-                            <ref role="3Tt5mk" to="gcgs:6c9haf45sNo" resolve="actor" />
+                  <node concept="l9hG8" id="1WUS4DPqmnh" role="lcghm">
+                    <node concept="2OqwBi" id="1WUS4DPqqGe" role="lb14g">
+                      <node concept="2OqwBi" id="1WUS4DPqqhu" role="2Oq$k0">
+                        <node concept="2JrnkZ" id="1WUS4DPqq3o" role="2Oq$k0">
+                          <node concept="2OqwBi" id="1WUS4DPqmnj" role="2JrQYb">
+                            <node concept="2OqwBi" id="1WUS4DPqmnk" role="2Oq$k0">
+                              <node concept="117lpO" id="1WUS4DPqmnl" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="1WUS4DPqmnm" role="2OqNvi">
+                                <ref role="3Tt5mk" to="gcgs:6c9haf45sNo" resolve="actor" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="1WUS4DPqmnn" role="2OqNvi">
+                              <ref role="3Tt5mk" to="gcgs:6c9haf45sNm" resolve="rechtssubject" />
+                            </node>
                           </node>
                         </node>
-                        <node concept="3TrEf2" id="5vursKRvOTK" role="2OqNvi">
-                          <ref role="3Tt5mk" to="gcgs:6c9haf45sNm" resolve="rechtssubject" />
+                        <node concept="liA8E" id="1WUS4DPqqvb" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                         </node>
                       </node>
-                      <node concept="3TrcHB" id="5vursKRvPz2" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="liA8E" id="1WUS4DPqr31" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                       </node>
                     </node>
                   </node>
@@ -460,15 +489,22 @@
                     <property role="lacIc" value="&lt;kenmerk naam='onderwerp'&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRq16H" role="lcghm">
-                    <node concept="2OqwBi" id="5vursKRvO5K" role="lb14g">
-                      <node concept="2OqwBi" id="5vursKRq16I" role="2Oq$k0">
-                        <node concept="117lpO" id="5vursKRq16J" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="5vursKRq16K" role="2OqNvi">
-                          <ref role="3Tt5mk" to="gcgs:28MuYO0sFSW" resolve="onderwerp" />
+                    <node concept="2OqwBi" id="1WUS4DPqsiC" role="lb14g">
+                      <node concept="2OqwBi" id="1WUS4DPqrVF" role="2Oq$k0">
+                        <node concept="2JrnkZ" id="1WUS4DPqrJv" role="2Oq$k0">
+                          <node concept="2OqwBi" id="5vursKRq16I" role="2JrQYb">
+                            <node concept="117lpO" id="5vursKRq16J" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="5vursKRq16K" role="2OqNvi">
+                              <ref role="3Tt5mk" to="gcgs:28MuYO0sFSW" resolve="onderwerp" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="1WUS4DPqs7u" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                         </node>
                       </node>
-                      <node concept="3TrcHB" id="5vursKRvOkP" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="liA8E" id="1WUS4DPqsAT" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                       </node>
                     </node>
                   </node>
@@ -478,29 +514,6 @@
                   <node concept="l8MVK" id="5vursKRq16M" role="lcghm" />
                 </node>
                 <node concept="1bpajm" id="512SkqNYMyf" role="3cqZAp" />
-                <node concept="lc7rE" id="512SkqNYMyg" role="3cqZAp">
-                  <node concept="la8eA" id="512SkqNYMyh" role="lcghm">
-                    <property role="lacIc" value="&lt;kenmerk naam='handeling'&gt;" />
-                  </node>
-                  <node concept="l9hG8" id="512SkqNYMyi" role="lcghm">
-                    <node concept="2OqwBi" id="512SkqNYMyj" role="lb14g">
-                      <node concept="2OqwBi" id="512SkqNYMyk" role="2Oq$k0">
-                        <node concept="117lpO" id="512SkqNYMyl" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="512SkqNYMym" role="2OqNvi">
-                          <ref role="3Tt5mk" to="gcgs:28MuYO0sFSW" resolve="onderwerp" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="512SkqNYMyn" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="la8eA" id="512SkqNYMyo" role="lcghm">
-                    <property role="lacIc" value="&lt;/kenmerk&gt;" />
-                  </node>
-                  <node concept="l8MVK" id="512SkqNYMyp" role="lcghm" />
-                </node>
-                <node concept="1bpajm" id="52o5oqbQBSG" role="3cqZAp" />
                 <node concept="lc7rE" id="52o5oqbQBSH" role="3cqZAp">
                   <node concept="la8eA" id="52o5oqbQBSI" role="lcghm">
                     <property role="lacIc" value="&lt;kenmerk naam='gebaseerd op'&gt;" />

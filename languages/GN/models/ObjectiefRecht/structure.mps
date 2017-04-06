@@ -9,6 +9,7 @@
     <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="jx79" ref="r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)" implicit="true" />
+    <import index="8ao0" ref="r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -223,6 +224,9 @@
     <node concept="PrWs8" id="64gsXol8COe" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="1bNeeFB1XFu" role="PzmwI">
+      <ref role="PrY4T" to="8ao0:1bNeeFAZph1" resolve="IKorteNaam" />
+    </node>
     <node concept="1TJgyj" id="w5NyGmT2qQ" role="1TKVEi">
       <property role="IQ2ns" value="578094811649943222" />
       <property role="20lmBu" value="aggregation" />
@@ -280,6 +284,9 @@
     <ref role="1TJDcQ" node="4$mS69sSlIw" resolve="Concept" />
     <node concept="PrWs8" id="64gsXol8COV" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1bNeeFB3KGr" role="PzmwI">
+      <ref role="PrY4T" to="8ao0:1bNeeFAZph1" resolve="IKorteNaam" />
     </node>
     <node concept="1TJgyj" id="20D4HrzF6OA" role="1TKVEi">
       <property role="IQ2ns" value="2317404197410860326" />

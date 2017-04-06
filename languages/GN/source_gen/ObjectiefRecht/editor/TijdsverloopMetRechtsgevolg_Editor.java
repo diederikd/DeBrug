@@ -308,7 +308,7 @@ public class TijdsverloopMetRechtsgevolg_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createComponent_ri0if9_a(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "ObjectiefRecht.editor.BronGeldigheid");
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "ObjectiefRecht.editor.BronGeldigheidRechtsgevolgveroorzaker");
     EditorCell bigCell = BigCellUtil.findBigCell(editorCell, node);
     if (bigCell != null) {
       bigCell.setBig(true);

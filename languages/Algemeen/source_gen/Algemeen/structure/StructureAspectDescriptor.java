@@ -22,22 +22,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBericht = createDescriptorForBericht();
   /*package*/ final ConceptDescriptor myConceptIBronGeldigheid = createDescriptorForIBronGeldigheid();
   /*package*/ final ConceptDescriptor myConceptIConceptnummer = createDescriptorForIConceptnummer();
+  /*package*/ final ConceptDescriptor myConceptIKorteNaam = createDescriptorForIKorteNaam();
   /*package*/ final ConceptDescriptor myConceptIOpmerking = createDescriptorForIOpmerking();
-  /*package*/ final ConceptDescriptor myConceptKorteNaam = createDescriptorForKorteNaam();
   /*package*/ final ConceptDescriptor myConceptLijstMetBerichten = createDescriptorForLijstMetBerichten();
 
   public StructureAspectDescriptor() {
     myIndexMap.put(myConceptBericht.getId(), 0);
     myIndexMap.put(myConceptIBronGeldigheid.getId(), 1);
     myIndexMap.put(myConceptIConceptnummer.getId(), 2);
-    myIndexMap.put(myConceptIOpmerking.getId(), 3);
-    myIndexMap.put(myConceptKorteNaam.getId(), 4);
+    myIndexMap.put(myConceptIKorteNaam.getId(), 3);
+    myIndexMap.put(myConceptIOpmerking.getId(), 4);
     myIndexMap.put(myConceptLijstMetBerichten.getId(), 5);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBericht, myConceptIBronGeldigheid, myConceptIConceptnummer, myConceptIOpmerking, myConceptKorteNaam, myConceptLijstMetBerichten);
+    return Arrays.asList(myConceptBericht, myConceptIBronGeldigheid, myConceptIConceptnummer, myConceptIKorteNaam, myConceptIOpmerking, myConceptLijstMetBerichten);
   }
 
   @Override
@@ -55,9 +55,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 2:
         return myConceptIConceptnummer;
       case 3:
-        return myConceptIOpmerking;
+        return myConceptIKorteNaam;
       case 4:
-        return myConceptKorteNaam;
+        return myConceptIOpmerking;
       case 5:
         return myConceptLijstMetBerichten;
       default:
@@ -84,11 +84,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForIConceptnummer() {
     return new ConceptDescriptorBuilder("Algemeen.structure.IConceptnummer", MetaIdFactory.conceptId(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x62a4bcf3d18e030fL)).version(1).interface_().propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x67229afa6a0ae77aL, "conceptnummer", new SNodePointer("r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)", "7431672735426340730"))).properties("conceptnummer").sourceNode(new SNodePointer("r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)", "7108013867276305167")).create();
   }
+  private static ConceptDescriptor createDescriptorForIKorteNaam() {
+    return new ConceptDescriptorBuilder("Algemeen.structure.IKorteNaam", MetaIdFactory.conceptId(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L)).version(1).interface_().propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x12f338eae6fd9458L, "kortenaam", new SNodePointer("r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)", "1365497693572273240"))).properties("kortenaam").sourceNode(new SNodePointer("r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)", "1365497693572273217")).create();
+  }
   private static ConceptDescriptor createDescriptorForIOpmerking() {
     return new ConceptDescriptorBuilder("Algemeen.structure.IOpmerking", MetaIdFactory.conceptId(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x62a4bcf3d18e076cL)).version(1).interface_().propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x62a4bcf3d18e076dL, "opmerkingen", new SNodePointer("r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)", "7108013867276306285"))).properties("opmerkingen").sourceNode(new SNodePointer("r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)", "7108013867276306284")).create();
-  }
-  private static ConceptDescriptor createDescriptorForKorteNaam() {
-    return new ConceptDescriptorBuilder("Algemeen.structure.KorteNaam", MetaIdFactory.conceptId(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L)).version(1).interface_().propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x12f338eae6fd9458L, "kortenaam", new SNodePointer("r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)", "1365497693572273240"))).properties("kortenaam").sourceNode(new SNodePointer("r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)", "1365497693572273217")).create();
   }
   private static ConceptDescriptor createDescriptorForLijstMetBerichten() {
     return new ConceptDescriptorBuilder("Algemeen.structure.LijstMetBerichten", MetaIdFactory.conceptId(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x2b935eb96618ecfeL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x2b935eb96618ecffL, "berichten", MetaIdFactory.conceptId(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x2b935eb96618ecd3L), true, true, false, new SNodePointer("r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)", "3139957515582237951"))).children(new String[]{"berichten"}, new boolean[]{true}).sourceNode(new SNodePointer("r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)", "3139957515582237950")).create();

@@ -12,8 +12,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Bericht = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IBronGeldigheid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IConceptnummer = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_IKorteNaam = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IOpmerking = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_KorteNaam = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LijstMetBerichten = new ConceptPresentationBuilder().create();
 
   @Override
@@ -28,9 +28,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 2:
         return props_IConceptnummer;
       case 3:
-        return props_IOpmerking;
+        return props_IKorteNaam;
       case 4:
-        return props_KorteNaam;
+        return props_IOpmerking;
       case 5:
         return props_LijstMetBerichten;
     }

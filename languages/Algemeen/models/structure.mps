@@ -98,7 +98,7 @@
   </node>
   <node concept="PlHQZ" id="1bNeeFAZph1">
     <property role="EcuMT" value="1365497693572273217" />
-    <property role="TrG5h" value="KorteNaam" />
+    <property role="TrG5h" value="IKorteNaam" />
     <node concept="1TJgyi" id="1bNeeFAZpho" role="1TKVEl">
       <property role="IQ2nx" value="1365497693572273240" />
       <property role="TrG5h" value="kortenaam" />

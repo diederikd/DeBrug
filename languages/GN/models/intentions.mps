@@ -12,6 +12,7 @@
     <import index="jx79" ref="r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)" implicit="true" />
     <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" implicit="true" />
     <import index="ll8w" ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)" implicit="true" />
+    <import index="8ao0" ref="r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -19,6 +20,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
@@ -88,6 +90,9 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
@@ -118,6 +123,14 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
@@ -2428,6 +2441,130 @@
               <node concept="2Sf5sV" id="4yDNEIgGVZc" role="2Oq$k0" />
               <node concept="3TrcHB" id="4yDNEIgGZP$" role="2OqNvi">
                 <ref role="3TsBF5" to="3pw0:4yDNEIgGSWM" resolve="optioneel" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1bNeeFB3KTy">
+    <property role="TrG5h" value="KopieerNaamNaarKorteNaamRechtsbetrekking" />
+    <ref role="2ZfgGC" to="3pw0:64gsXol8CO2" resolve="Context" />
+    <node concept="2S6ZIM" id="1bNeeFB3KTz" role="2ZfVej">
+      <node concept="3clFbS" id="1bNeeFB3KT$" role="2VODD2">
+        <node concept="3cpWs6" id="1bNeeFB3L2G" role="3cqZAp">
+          <node concept="Xl_RD" id="1bNeeFB3Ljw" role="3cqZAk">
+            <property role="Xl_RC" value="Kopieer Naam Naar Korte Naam Rechtsbetrekking" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1bNeeFB3KT_" role="2ZfgGD">
+      <node concept="3clFbS" id="1bNeeFB3KTA" role="2VODD2">
+        <node concept="2Gpval" id="1bNeeFB3Na9" role="3cqZAp">
+          <node concept="2GrKxI" id="1bNeeFB3Naa" role="2Gsz3X">
+            <property role="TrG5h" value="toestand" />
+          </node>
+          <node concept="2OqwBi" id="1bNeeFB3Nt9" role="2GsD0m">
+            <node concept="2Sf5sV" id="1bNeeFB3NbS" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="1bNeeFB3NC7" role="2OqNvi">
+              <ref role="3TtcxE" to="3pw0:20D4HrzEcAU" resolve="toestanden" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="1bNeeFB3Nac" role="2LFqv$">
+            <node concept="Jncv_" id="1bNeeFB3Wco" role="3cqZAp">
+              <ref role="JncvD" to="3pw0:64gsXol8COd" resolve="Rechtsbetrekking" />
+              <node concept="2GrUjf" id="1bNeeFB3WcW" role="JncvB">
+                <ref role="2Gs0qQ" node="1bNeeFB3Naa" resolve="toestand" />
+              </node>
+              <node concept="3clFbS" id="1bNeeFB3Wcq" role="Jncv$">
+                <node concept="3clFbF" id="1bNeeFB3Wml" role="3cqZAp">
+                  <node concept="37vLTI" id="1bNeeFB3XFN" role="3clFbG">
+                    <node concept="2OqwBi" id="1bNeeFB3Y3T" role="37vLTx">
+                      <node concept="Jnkvi" id="1bNeeFB3XPw" role="2Oq$k0">
+                        <ref role="1M0zk5" node="1bNeeFB3Wcr" resolve="rechtsbetrekking" />
+                      </node>
+                      <node concept="3TrcHB" id="1bNeeFB3Ys$" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="1bNeeFB3Wwb" role="37vLTJ">
+                      <node concept="Jnkvi" id="1bNeeFB3Wmk" role="2Oq$k0">
+                        <ref role="1M0zk5" node="1bNeeFB3Wcr" resolve="rechtsbetrekking" />
+                      </node>
+                      <node concept="3TrcHB" id="1bNeeFB3X1j" role="2OqNvi">
+                        <ref role="3TsBF5" to="8ao0:1bNeeFAZpho" resolve="kortenaam" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="JncvC" id="1bNeeFB3Wcr" role="JncvA">
+                <property role="TrG5h" value="rechtsbetrekking" />
+                <node concept="2jxLKc" id="1bNeeFB3Wcs" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1bNeeFB3YEj">
+    <property role="TrG5h" value="KopieerNaamNaarKorteNaamRechtsgevolgveroorzaker" />
+    <ref role="2ZfgGC" to="3pw0:64gsXol8CO2" resolve="Context" />
+    <node concept="2S6ZIM" id="1bNeeFB3YEk" role="2ZfVej">
+      <node concept="3clFbS" id="1bNeeFB3YEl" role="2VODD2">
+        <node concept="3cpWs6" id="1bNeeFB3YEm" role="3cqZAp">
+          <node concept="Xl_RD" id="1bNeeFB3YEn" role="3cqZAk">
+            <property role="Xl_RC" value="Kopieer Naam Naar Korte Naam Rechtsgevolgveroorzaker" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1bNeeFB3YEo" role="2ZfgGD">
+      <node concept="3clFbS" id="1bNeeFB3YEp" role="2VODD2">
+        <node concept="2Gpval" id="1bNeeFB3YEq" role="3cqZAp">
+          <node concept="2GrKxI" id="1bNeeFB3YEr" role="2Gsz3X">
+            <property role="TrG5h" value="toestand" />
+          </node>
+          <node concept="2OqwBi" id="1bNeeFB3YEs" role="2GsD0m">
+            <node concept="2Sf5sV" id="1bNeeFB3YEt" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="1bNeeFB3Zs0" role="2OqNvi">
+              <ref role="3TtcxE" to="3pw0:20D4HrzFNo4" resolve="overgangen" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="1bNeeFB3YEv" role="2LFqv$">
+            <node concept="Jncv_" id="1bNeeFB3YEw" role="3cqZAp">
+              <ref role="JncvD" to="3pw0:64gsXol8COU" resolve="RechtsgevolgVeroorzakers" />
+              <node concept="2GrUjf" id="1bNeeFB3YEx" role="JncvB">
+                <ref role="2Gs0qQ" node="1bNeeFB3YEr" resolve="toestand" />
+              </node>
+              <node concept="3clFbS" id="1bNeeFB3YEy" role="Jncv$">
+                <node concept="3clFbF" id="1bNeeFB3YEz" role="3cqZAp">
+                  <node concept="37vLTI" id="1bNeeFB3YE$" role="3clFbG">
+                    <node concept="2OqwBi" id="1bNeeFB3YE_" role="37vLTx">
+                      <node concept="Jnkvi" id="1bNeeFB3YEA" role="2Oq$k0">
+                        <ref role="1M0zk5" node="1bNeeFB3YEF" resolve="rechtsgevolgVeroorzakers" />
+                      </node>
+                      <node concept="3TrcHB" id="1bNeeFB3YEB" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="1bNeeFB3YEC" role="37vLTJ">
+                      <node concept="Jnkvi" id="1bNeeFB3YED" role="2Oq$k0">
+                        <ref role="1M0zk5" node="1bNeeFB3YEF" resolve="rechtsgevolgVeroorzakers" />
+                      </node>
+                      <node concept="3TrcHB" id="1bNeeFB3YEE" role="2OqNvi">
+                        <ref role="3TsBF5" to="8ao0:1bNeeFAZpho" resolve="kortenaam" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="JncvC" id="1bNeeFB3YEF" role="JncvA">
+                <property role="TrG5h" value="rechtsgevolgVeroorzakers" />
+                <node concept="2jxLKc" id="1bNeeFB3YEG" role="1tU5fm" />
               </node>
             </node>
           </node>
