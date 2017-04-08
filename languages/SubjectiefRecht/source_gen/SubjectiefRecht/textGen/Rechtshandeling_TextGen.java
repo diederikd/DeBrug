@@ -14,9 +14,9 @@ public class Rechtshandeling_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("<instantie nodeid='");
+    tgs.append("<instantie id='");
     tgs.append(ctx.getPrimaryInput().getNodeId().toString());
-    tgs.append("' >");
+    tgs.append("'>");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();

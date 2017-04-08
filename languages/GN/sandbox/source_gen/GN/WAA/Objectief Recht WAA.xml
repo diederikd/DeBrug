@@ -11971,7 +11971,7 @@ en de omvang van de aanpassing</nodename>
             <property name='name'>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
 voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
 en de omvang van de aanpassing</property>
-            <property name='kortenaam'>Inwilligen van verzoek
+            <property name='kortenaam'>verplichting inwilligen van verzoek
 voor aanpassing arbeidsduur</property>
         </properties>
         <children>
@@ -12150,7 +12150,7 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
             <property name='alias'></property>
             <property name='name'>immuniteit (recht) om de verplichte bevoegdheid
 tot het inwilligen van het verzoek te neutraliseren</property>
-            <property name='kortenaam'>immuniteit inwilligen van het verzoek</property>
+            <property name='kortenaam'>immuniteitsrecht inwilligen van het verzoek</property>
         </properties>
         <children>
           <node>
@@ -12249,7 +12249,7 @@ overeenkomstig de wensen van de werknemer</nodename>
             <property name='alias'></property>
             <property name='name'>de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren
 overeenkomstig de wensen van de werknemer</property>
-            <property name='kortenaam'>Verplichting tot het vaststellen van de spreiding van de uren</property>
+            <property name='kortenaam'>verplichting tot vaststellen van de spreiding van de uren</property>
         </properties>
         <children>
           <node>
@@ -12429,7 +12429,7 @@ van de werknemer te neutraliseren.</nodename>
             <property name='name'>immuniteit (recht) om de verplichte bevoegdheid tot het
 vaststellen van de spreiding van de uren overeenkomstige de wensen
 van de werknemer te neutraliseren.</property>
-            <property name='kortenaam'>immuniteit vaststellen van de spreiding van de uren</property>
+            <property name='kortenaam'>immuniteitsrecht vaststellen van de spreiding van de uren</property>
         </properties>
         <children>
           <node>
@@ -12525,7 +12525,7 @@ overeenkomstig de wensen van de werknemer</nodename>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen</property>
-            <property name='kortenaam'>wijzigen van gewenste spreiding van de uren</property>
+            <property name='kortenaam'>recht wijzigen van gewenste spreiding van de uren</property>
         </properties>
         <children>
           <node>
@@ -14755,6 +14755,145 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
     <node>
       <noderole>overgangen</noderole>
       <nodetype>Rechtshandeling</nodetype>
+      <nodename>Inzetten van de immuniteit voor het vaststellen van de uren</nodename>
+      <nodeid>1916075923871148886</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Inzetten van de immuniteit voor het vaststellen van de uren</property>
+            <property name='kortenaam'>Inzetten immuniteit voor het vaststellen van de uren</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>1916075923871149136</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>werkgever</nodename>
+                    <nodeid>5753801799637012771</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>1916075923871148892</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>7</property>
+                  <property name='jaar'>2000</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>UitgevoerdOp</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>tijdstip van inzetten immuniteit</nodename>
+            <nodeid>1916075923871149139</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>tijdstip van inzetten immuniteit</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>heeftAlsGevolg</noderole>
+            <nodetype>Rechtsgevolg</nodetype>
+            <nodename>Immuniteit ingezet</nodename>
+            <nodeid>1916075923871149141</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>Immuniteit ingezet</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>EindigendeRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>1916075923871149143</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+                          <nodename>de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren
+overeenkomstig de wensen van de werknemer</nodename>
+                          <nodeid>6305595003050903541</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>EindigendeRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>1916075923871157793</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
+                          <nodename>immuniteit (recht) om de verplichte bevoegdheid tot het
+vaststellen van de spreiding van de uren overeenkomstige de wensen
+van de werknemer te neutraliseren.</nodename>
+                          <nodeid>2911931843183650119</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>1916075923871149145</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+                          <nodename>de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen</nodename>
+                          <nodeid>2222626598061267918</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>6950243528407701813</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>2.5</nodename>
+                    <nodeid>5066083982446740806</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>Rechtshandeling</nodetype>
       <nodename>Vaststellen van de spreiding van de uren</nodename>
       <nodeid>2455094379071629483</nodeid>
         <properties>
@@ -15363,127 +15502,6 @@ van de werknemer te neutraliseren.</nodename>
                     <properties>
                         <property name='alias'></property>
                     </properties>
-                </node>
-              </children>
-          </node>
-        </children>
-    </node>
-    <node>
-      <noderole>overgangen</noderole>
-      <nodetype>Rechtshandeling</nodetype>
-      <nodename>Inzetten van de immuniteit voor het vaststellen van de uren</nodename>
-      <nodeid>1916075923871148886</nodeid>
-        <properties>
-            <property name='alias'></property>
-            <property name='name'>Inzetten van de immuniteit voor het vaststellen van de uren</property>
-            <property name='kortenaam'>Immuniteit voor het vaststellen van de uren</property>
-        </properties>
-        <children>
-          <node>
-            <noderole>actor</noderole>
-            <nodetype>ReferentieNaarRechtssubject</nodetype>
-            <nodeid>1916075923871149136</nodeid>
-              <properties>
-                  <property name='alias'></property>
-              </properties>
-              <references>
-                <reference role='rechtssubject'>
-                  <node>
-                    <noderole>rechtssubjecten</noderole>
-                    <nodetype>RechtsSubject</nodetype>
-                    <nodename>werkgever</nodename>
-                    <nodeid>5753801799637012771</nodeid>
-                  </node>
-                </reference>
-              </references>
-          </node>
-          <node>
-            <noderole>brongeldigVan</noderole>
-            <nodetype>Datum</nodetype>
-            <nodeid>1916075923871148892</nodeid>
-              <properties>
-                  <property name='dag'>1</property>
-                  <property name='maand'>7</property>
-                  <property name='jaar'>2000</property>
-                  <property name='alias'></property>
-              </properties>
-          </node>
-          <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>tijdstip van inzetten immuniteit</nodename>
-            <nodeid>1916075923871149139</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>tijdstip van inzetten immuniteit</property>
-              </properties>
-          </node>
-          <node>
-            <noderole>heeftAlsGevolg</noderole>
-            <nodetype>Rechtsgevolg</nodetype>
-            <nodename>Immuniteit ingezet</nodename>
-            <nodeid>1916075923871149141</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>Immuniteit ingezet</property>
-              </properties>
-              <children>
-                <node>
-                  <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>1916075923871149143</nodeid>
-                    <properties>
-                        <property name='alias'></property>
-                    </properties>
-                    <references>
-                      <reference role='rechtsbetrekking'>
-                        <node>
-                          <noderole>toestanden</noderole>
-                          <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-                          <nodename>de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren
-overeenkomstig de wensen van de werknemer</nodename>
-                          <nodeid>6305595003050903541</nodeid>
-                        </node>
-                      </reference>
-                    </references>
-                </node>
-                <node>
-                  <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>1916075923871157793</nodeid>
-                    <properties>
-                        <property name='alias'></property>
-                    </properties>
-                    <references>
-                      <reference role='rechtsbetrekking'>
-                        <node>
-                          <noderole>toestanden</noderole>
-                          <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
-                          <nodename>immuniteit (recht) om de verplichte bevoegdheid tot het
-vaststellen van de spreiding van de uren overeenkomstige de wensen
-van de werknemer te neutraliseren.</nodename>
-                          <nodeid>2911931843183650119</nodeid>
-                        </node>
-                      </reference>
-                    </references>
-                </node>
-                <node>
-                  <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>1916075923871149145</nodeid>
-                    <properties>
-                        <property name='alias'></property>
-                    </properties>
-                    <references>
-                      <reference role='rechtsbetrekking'>
-                        <node>
-                          <noderole>toestanden</noderole>
-                          <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
-                          <nodename>de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen</nodename>
-                          <nodeid>2222626598061267918</nodeid>
-                        </node>
-                      </reference>
-                    </references>
                 </node>
               </children>
           </node>

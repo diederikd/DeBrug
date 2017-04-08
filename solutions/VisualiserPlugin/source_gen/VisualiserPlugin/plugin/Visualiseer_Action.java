@@ -8,19 +8,20 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 import java.util.Map;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
+import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.smodel.ModelAccess;
-import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import javax.swing.JOptionPane;
 
 public class Visualiseer_Action extends BaseAction {
   private static final Icon ICON = null;
 
   public Visualiseer_Action() {
-    super("Visualiseer", "Visualiseer toestanden en overgangen", ICON);
+    super("Visualiseer Context", "Visualiseer toestanden en overgangen", ICON);
     this.setIsAlwaysVisible(false);
     this.setExecuteOutsideCommand(true);
     this.addPlace(null);
@@ -40,6 +41,12 @@ public class Visualiseer_Action extends BaseAction {
         return false;
       }
     }
+    {
+      SNode node = event.getData(MPSCommonDataKeys.NODE);
+      if (node == null) {
+        return false;
+      }
+    }
     return true;
   }
   @Override
@@ -52,6 +59,9 @@ public class Visualiseer_Action extends BaseAction {
             GraphVizFile graphVizFile = new GraphVizFile();
             graphVizFile.WriteToFile(context);
           }
+        }
+        if (!((event.getData(MPSCommonDataKeys.NODE) instanceof SNode))) {
+          JOptionPane.showMessageDialog(null, "Message", "Geen context node", JOptionPane.ERROR_MESSAGE);
         }
       }
     });

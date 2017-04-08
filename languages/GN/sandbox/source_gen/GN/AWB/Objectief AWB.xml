@@ -245,7 +245,7 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
             <property name='initieel'>true</property>
             <property name='alias'></property>
             <property name='name'>Optionele bevoegheid tot het indienen van een bezwaar</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Optionele bevoegheid tot het indienen van een bezwaar</property>
         </properties>
         <children>
           <node>
@@ -324,7 +324,7 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>Bezwaar of beroep is ingediend</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Bezwaar of beroep is ingediend</property>
         </properties>
         <children>
           <node>
@@ -405,7 +405,8 @@ de ontvangst van het bezwaar of beroep</nodename>
             <property name='alias'></property>
             <property name='name'>Verplichte bevoegdheid tot het schriftelijk bevestigen van 
 de ontvangst van het bezwaar of beroep</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Verplichte bevoegdheid tot het schriftelijk bevestigen van 
+de ontvangst van het bezwaar of beroep</property>
         </properties>
         <children>
           <node>
@@ -496,7 +497,8 @@ van het bezwaar of beroep</nodename>
             <property name='alias'></property>
             <property name='name'>Optionele bevoegheid tot het schiftelijk intrekken 
 van het bezwaar of beroep</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Optionele bevoegheid tot het schiftelijk intrekken 
+van het bezwaar of beroep</property>
         </properties>
         <children>
           <node>
@@ -575,7 +577,7 @@ van het bezwaar of beroep</property>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>Optionele bevoegheid tot het mondeling intrekken van het bezwaar of beroep</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Optionele bevoegheid tot het mondeling intrekken van het bezwaar of beroep</property>
         </properties>
         <children>
           <node>
@@ -654,7 +656,7 @@ van het bezwaar of beroep</property>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>Optionele bevoegheid om te bellen bij bezwaar, door selecteur</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Optionele bevoegheid om te bellen bij bezwaar, door selecteur</property>
         </properties>
         <children>
           <node>
@@ -733,7 +735,7 @@ van het bezwaar of beroep</property>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>Optionele bevoegheid bij bellen om het bezwaar in te trekken</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Optionele bevoegheid bij bellen om het bezwaar in te trekken</property>
         </properties>
         <children>
           <node>
@@ -820,7 +822,7 @@ van het bezwaar of beroep</property>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>Verplichting tot het schriftelijk bevestigen van het intrekken van het bezwaar</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Verplichting tot het schriftelijk bevestigen van het intrekken van het bezwaar</property>
         </properties>
         <children>
           <node>
@@ -920,7 +922,8 @@ van het intrekken van het bezwaar</nodename>
             <property name='alias'></property>
             <property name='name'>Optionele bevoegdheid om te reageren op de schriftelijk bevestiging 
 van het intrekken van het bezwaar</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Optionele bevoegdheid om te reageren op de schriftelijk bevestiging 
+van het intrekken van het bezwaar</property>
         </properties>
         <children>
           <node>
@@ -1010,7 +1013,7 @@ van het intrekken van het bezwaar</property>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken</property>
         </properties>
         <children>
           <node>
@@ -1097,7 +1100,7 @@ van het intrekken van het bezwaar</property>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>Optionele bevoegheid om het bezwaar door te zetten</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Optionele bevoegheid om het bezwaar door te zetten</property>
         </properties>
         <children>
           <node>
@@ -1184,7 +1187,7 @@ van het intrekken van het bezwaar</property>
             <property name='initieel'></property>
             <property name='alias'></property>
             <property name='name'>Verplichte bevoegdheid tot het behandelen van het bezwaar</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Verplichte bevoegdheid tot het behandelen van het bezwaar</property>
         </properties>
         <children>
           <node>
@@ -1272,7 +1275,7 @@ van het intrekken van het bezwaar</property>
         <properties>
             <property name='alias'></property>
             <property name='name'>Indienen bezwaar of beroep</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Indienen bezwaar of beroep</property>
         </properties>
         <children>
           <node>
@@ -1436,7 +1439,7 @@ van het bezwaar of beroep</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Schriftelijk bevestigen van de ontvangst van het bezwaar of beroep</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Schriftelijk bevestigen van de ontvangst van het bezwaar of beroep</property>
         </properties>
         <children>
           <node>
@@ -1537,7 +1540,7 @@ de ontvangst van het bezwaar of beroep</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Schriftelijk intrekken van het bezwaar of beroep</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Schriftelijk intrekken van het bezwaar of beroep</property>
         </properties>
         <children>
           <node>
@@ -1664,7 +1667,7 @@ van het bezwaar of beroep</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Mondeling intrekken van het bezwaar of beroep </property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Mondeling intrekken van het bezwaar of beroep </property>
         </properties>
         <children>
           <node>
@@ -1831,7 +1834,7 @@ van het bezwaar of beroep</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Bellen bij bezwaar</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Bellen bij bezwaar</property>
         </properties>
         <children>
           <node>
@@ -2004,7 +2007,7 @@ de ontvangst van het bezwaar of beroep</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Intrekken bezwaar bij bellen</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Intrekken bezwaar bij bellen</property>
         </properties>
         <children>
           <node>
@@ -2158,7 +2161,7 @@ de ontvangst van het bezwaar of beroep</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Schriftelijk bevestigen van het intrekken van het bezwaar</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Schriftelijk bevestigen van het intrekken van het bezwaar</property>
         </properties>
         <children>
           <node>
@@ -2277,7 +2280,7 @@ van het intrekken van het bezwaar</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Reageren op de schriftelijk bevestiging van het intrekken van het bezwaar</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Reageren op de schriftelijk bevestiging van het intrekken van het bezwaar</property>
         </properties>
         <children>
           <node>
@@ -2368,7 +2371,7 @@ van het intrekken van het bezwaar</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Geen reactie op de bevestiging van het intrekken binnen de reactietermijn</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Geen reactie op de bevestiging van het intrekken binnen de reactietermijn</property>
         </properties>
         <children>
           <node>
@@ -2489,7 +2492,7 @@ van het intrekken van het bezwaar</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Gedeeltelijk intrekken bezwaar bij bellen</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Gedeeltelijk intrekken bezwaar bij bellen</property>
         </properties>
         <children>
           <node>
@@ -2640,7 +2643,7 @@ van het intrekken van het bezwaar</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Doorzetten bezwaar</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Doorzetten bezwaar</property>
         </properties>
         <children>
           <node>
@@ -2827,7 +2830,7 @@ van het intrekken van het bezwaar</nodename>
         <properties>
             <property name='alias'></property>
             <property name='name'>Bezwaar behandelen</property>
-            <property name='kortenaam'></property>
+            <property name='kortenaam'>Bezwaar behandelen</property>
         </properties>
         <children>
           <node>

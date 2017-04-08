@@ -18,14 +18,19 @@
         <child id="7431672735427965832" name="datumtijdvanstartvandeSimulatie" index="d0i_M" />
         <child id="7867191925628603759" name="rechtspositie" index="2BLYKK" />
         <child id="3694879098876164254" name="datumtijdvaninitialisatie" index="3zKq1C" />
-        <child id="3694879098862050847" name="uitvoerbarehandelingen2" index="3WXGrD" />
+        <child id="3694879098862050847" name="uitvoerbarehandelingen" index="3WXGrD" />
       </concept>
       <concept id="7496157647699367134" name="Simulatie.structure.Gegevenshuishouding" flags="ng" index="1ztmtO">
         <child id="3139957515583339108" name="rechtshandelingen" index="1dIIjt" />
         <child id="3139957515586752450" name="rechtsbetrekkingen" index="1dND5V" />
       </concept>
-      <concept id="3694879098862050844" name="Simulatie.structure.ReferentieNaarRechtshandeling" flags="ng" index="3WXGrE">
+      <concept id="3694879098862050844" name="Simulatie.structure.UitvoerbareRechtshandeling" flags="ng" index="3WXGrE">
         <reference id="3694879098862050845" name="rechtshandeling" index="3WXGrF" />
+      </concept>
+    </language>
+    <language id="f856d46f-3338-47a8-8a48-11e26bc535e0" name="Algemeen">
+      <concept id="1365497693572273217" name="Algemeen.structure.IKorteNaam" flags="ng" index="3O3EMF">
+        <property id="1365497693572273240" name="kortenaam" index="3O3EMM" />
       </concept>
     </language>
     <language id="2c493149-da1d-45e9-8ea2-e0b0cfc3047a" name="SubjectiefRecht">
@@ -109,7 +114,7 @@
       <concept id="6994217584621161738" name="ObjectiefRecht.structure.RechtsSubject" flags="ng" index="1OcJVs" />
       <concept id="6994217584621161736" name="ObjectiefRecht.structure.MaterieleVoorwaarde" flags="ng" index="1OcJVu" />
       <concept id="6994217584621161789" name="ObjectiefRecht.structure.Rechtshandeling" flags="ng" index="1OcJVF">
-        <child id="2317404197411012462" name="rechtssubject" index="33xUQS" />
+        <child id="2317404197411012462" name="actor" index="33xUQS" />
       </concept>
       <concept id="6994217584621161786" name="ObjectiefRecht.structure.RechtsgevolgVeroorzakers" flags="ng" index="1OcJVG">
         <child id="5266643527326926295" name="bron" index="lY6mP" />
@@ -128,6 +133,7 @@
     <node concept="1OcJVF" id="32ed8Ah8VIF" role="33xyji">
       <property role="da7Q0" value="0000" />
       <property role="TrG5h" value="Uitnodigen tot het doen van aangifte" />
+      <property role="3O3EMM" value="Uitnodigen tot het doen van aangifte" />
       <node concept="33xUQL" id="32ed8Ah8VIR" role="33xUQS">
         <ref role="33xUQY" node="4NzHub3Ff8E" resolve="Inspecteur" />
       </node>
@@ -152,6 +158,7 @@
     <node concept="1OcJVF" id="3oRnirXyZnv" role="33xyji">
       <property role="da7Q0" value="0000" />
       <property role="TrG5h" value="Indienen van een verzoek om te worden uitgenodigd" />
+      <property role="3O3EMM" value="Indienen van een verzoek om te worden uitgenodigd" />
       <node concept="33xUQL" id="3oRnirXyZoH" role="33xUQS">
         <ref role="33xUQY" node="32ed8Ah8VHL" resolve="Persoon" />
       </node>
@@ -210,6 +217,7 @@
       <property role="da7Q0" value="0000" />
       <property role="3ypbWd" value="true" />
       <property role="TrG5h" value="Bevoegdheid tot het uitnodigen tot het doen van aangifte" />
+      <property role="3O3EMM" value="Bevoegdheid tot het uitnodigen tot het doen van aangifte" />
       <ref role="1OcJVV" node="4NzHub3Ff8E" resolve="Inspecteur" />
       <ref role="1OcJVS" node="32ed8Ah8VHL" resolve="Persoon" />
       <ref role="1gmaJa" node="32ed8Ah8VIF" resolve="Uitnodigen tot het doen van aangifte" />
@@ -230,6 +238,7 @@
       <property role="da7Q0" value="0000" />
       <property role="3ypbWd" value="true" />
       <property role="TrG5h" value="De bevoegdheid om te verzoeken om te worden uitgenodigd" />
+      <property role="3O3EMM" value="De bevoegdheid om te verzoeken om te worden uitgenodigd" />
       <ref role="1OcJVV" node="32ed8Ah8VHL" resolve="Persoon" />
       <ref role="1OcJVS" node="4NzHub3Ff8E" resolve="Inspecteur" />
       <ref role="3D8HCl" node="3oRnirXyZnS" resolve="Verzoek om te worden uitgenodigd" />
@@ -250,6 +259,7 @@
       <property role="da7Q0" value="0000" />
       <property role="3ypbWd" value="false" />
       <property role="TrG5h" value="Verplichting tot het uitnodigen tot het doen van aangifte" />
+      <property role="3O3EMM" value="Verplichting tot het uitnodigen tot het doen van aangifte" />
       <ref role="1gm8Zl" node="32ed8Ah8VIF" resolve="Uitnodigen tot het doen van aangifte" />
       <ref role="1OcJVV" node="32ed8Ah8VHL" resolve="Persoon" />
       <ref role="1OcJVS" node="4NzHub3Ff8E" resolve="Inspecteur" />
@@ -270,6 +280,7 @@
       <property role="da7Q0" value="0000" />
       <property role="3ypbWd" value="true" />
       <property role="TrG5h" value="De verplichting om te verzoeken om te worden uitgenodigd" />
+      <property role="3O3EMM" value="De verplichting om te verzoeken om te worden uitgenodigd" />
       <ref role="1OcJVS" node="32ed8Ah8VHL" resolve="Persoon" />
       <ref role="1OcJVV" node="4NzHub3Ff8E" resolve="Inspecteur" />
       <ref role="1gm8Zl" node="3oRnirXyZnv" resolve="Indienen van een verzoek om te worden uitgenodigd" />

@@ -44,7 +44,10 @@ public class Visualiseer_Tool extends GeneratedTool {
     Visualiseer_Tool.this.makeAvailable();
   }
   public void Refresh() {
+    System.out.println("Ververs figuur met " + Visualiseer_Tool.this.graphvizpng);
     Visualiseer_Tool.this.jLabel.setIcon(new ImageIcon(Visualiseer_Tool.this.graphvizpng));
+    Visualiseer_Tool.this.jPanel.revalidate();
+    Visualiseer_Tool.this.jPanel.repaint();
   }
   public JComponent getComponent() {
     return Visualiseer_Tool.this.jScrollPane;

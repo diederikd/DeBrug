@@ -4,6 +4,7 @@ package VisualiserPlugin.plugin;
 
 import jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin;
 import com.intellij.openapi.extensions.PluginId;
+import jetbrains.mps.ide.actions.NodeActions_ActionGroup;
 
 public class VisualiserPlugin_ApplicationPlugin extends BaseApplicationPlugin {
   private PluginId myId = PluginId.getId("VisualiserPlugin");
@@ -19,6 +20,6 @@ public class VisualiserPlugin_ApplicationPlugin extends BaseApplicationPlugin {
     addGroup(new Visualiseer_ActionGroup());
   }
   public void adjustRegularGroups() {
-    insertGroupIntoAnother(Visualiseer_ActionGroup.ID, "MPSHelpMenu", null);
+    insertGroupIntoAnother(Visualiseer_ActionGroup.ID, NodeActions_ActionGroup.ID, null);
   }
 }

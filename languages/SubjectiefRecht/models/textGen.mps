@@ -168,7 +168,7 @@
             <node concept="1bpajm" id="5vursKRpWMM" role="3cqZAp" />
             <node concept="lc7rE" id="5vursKRpWMN" role="3cqZAp">
               <node concept="la8eA" id="5vursKRpWMO" role="lcghm">
-                <property role="lacIc" value="&lt;instantie nodeid='" />
+                <property role="lacIc" value="&lt;instantie id='" />
               </node>
               <node concept="l9hG8" id="52o5oqbQAad" role="lcghm">
                 <node concept="2OqwBi" id="52o5oqbQAae" role="lb14g">
@@ -186,7 +186,7 @@
                 </node>
               </node>
               <node concept="la8eA" id="52o5oqbQAak" role="lcghm">
-                <property role="lacIc" value="' &gt;" />
+                <property role="lacIc" value="'&gt;" />
               </node>
               <node concept="l8MVK" id="5vursKRpWMP" role="lcghm" />
             </node>
@@ -267,7 +267,7 @@
                 <node concept="1bpajm" id="5vursKRCKfE" role="3cqZAp" />
                 <node concept="lc7rE" id="5vursKRpZqd" role="3cqZAp">
                   <node concept="la8eA" id="5vursKRpZqe" role="lcghm">
-                    <property role="lacIc" value="&lt;objectieveRechtsbetrekkingid&gt;" />
+                    <property role="lacIc" value="&lt;objectieveRechtsbetrekkingtypeid&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRpZqf" role="lcghm">
                     <node concept="2OqwBi" id="1WUS4DPr6ON" role="lb14g">
@@ -297,7 +297,7 @@
                 <node concept="1bpajm" id="5vursKRCKSn" role="3cqZAp" />
                 <node concept="lc7rE" id="1WUS4DPs9cD" role="3cqZAp">
                   <node concept="la8eA" id="1WUS4DPs9cE" role="lcghm">
-                    <property role="lacIc" value="&lt;objectieveRechtsbetrekkingnaam&gt;" />
+                    <property role="lacIc" value="&lt;objectieveRechtsbetrekkingtypenaam&gt;" />
                   </node>
                   <node concept="l9hG8" id="1WUS4DPs9cF" role="lcghm">
                     <node concept="2OqwBi" id="1WUS4DPsal8" role="lb14g">
@@ -431,7 +431,7 @@
             <node concept="1bpajm" id="5vursKRq16e" role="3cqZAp" />
             <node concept="lc7rE" id="5vursKRq16f" role="3cqZAp">
               <node concept="la8eA" id="5vursKRq16g" role="lcghm">
-                <property role="lacIc" value="&lt;instantie nodeid='" />
+                <property role="lacIc" value="&lt;instantie id='" />
               </node>
               <node concept="l9hG8" id="52o5oqbQzWY" role="lcghm">
                 <node concept="2OqwBi" id="52o5oqbQ_p8" role="lb14g">
@@ -449,7 +449,7 @@
                 </node>
               </node>
               <node concept="la8eA" id="52o5oqbQA6K" role="lcghm">
-                <property role="lacIc" value="' &gt;" />
+                <property role="lacIc" value="'&gt;" />
               </node>
               <node concept="l8MVK" id="5vursKRq16h" role="lcghm" />
             </node>

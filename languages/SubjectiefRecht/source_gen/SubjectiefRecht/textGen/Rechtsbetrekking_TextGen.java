@@ -15,9 +15,9 @@ public class Rechtsbetrekking_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("<instantie nodeid='");
+    tgs.append("<instantie id='");
     tgs.append(ctx.getPrimaryInput().getNodeId().toString());
-    tgs.append("' >");
+    tgs.append("'>");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
@@ -39,12 +39,12 @@ public class Rechtsbetrekking_TextGen extends TextGenDescriptorBase {
       tgs.newLine();
     }
     tgs.indent();
-    tgs.append("<objectieveRechtsbetrekkingid>");
+    tgs.append("<objectieveRechtsbetrekkingtypeid>");
     tgs.append(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")).getNodeId().toString());
     tgs.append("</objectieveRechtsbetrekkingtypeid>");
     tgs.newLine();
     tgs.indent();
-    tgs.append("<objectieveRechtsbetrekkingnaam>");
+    tgs.append("<objectieveRechtsbetrekkingtypenaam>");
     tgs.append(Rechtsbetrekking__BehaviorDescriptor.geefNaam_id5vursKRAATV.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking"))));
     tgs.append("</objectieveRechtsbetrekkingtypenaam>");
     tgs.newLine();

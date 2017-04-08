@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 
 public class VisualiseerListener implements ActionListener {
 
-  private Visualiseer_Tool tool;
+  private static Visualiseer_Tool tool;
 
   @Override
   public void actionPerformed(ActionEvent event) {
