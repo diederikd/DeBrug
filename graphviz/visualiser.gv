@@ -7,39 +7,93 @@
 
 digraph diagram{
 rankdir=LR;
-node [shape=circle, fixedsize=true, width=3];"Indienen verzoek aanpassing arbeidsduur"; "Overleg plegen"; "Inwilligen verzoek"; "Afwijzen van het verzoek"; "Inzetten immuniteit voor het vaststellen van de uren"; "Vaststellen van de spreiding van de uren"; "Wijzigen van de spreiding van de uren"; "Schriftelijk mededelen van de beslissing aan de werknemer"; "Mededelen van de redenen"; "aanpassen arbeidsduur overeenkomstig het verzoek"; 
-node [shape=box, fixedsize=true, width=3];"recht om verzoek aanpassing arbeidsduur in te dienen"[color=lightblue, style=filled]; "verplichting tot overleg plegen"; "verplichting inwilligen van verzoek
-voor aanpassing arbeidsduur"; "immuniteitsrecht inwilligen van het verzoek"; "verplichting tot vaststellen van de spreiding van de uren"; "immuniteitsrecht vaststellen van de spreiding van de uren"; "recht wijzigen van gewenste spreiding van de uren"; "verplichting tot het schriftelijk mededelen van de beslissing"; "verplichting tot het mededelen van de redenen"; 
-"recht om verzoek aanpassing arbeidsduur in te dienen"->"Indienen verzoek aanpassing arbeidsduur";
+node [shape=circle, fixedsize=true, width=2];"Indienen verzoek aanpassing
+ arbeidsduur"; "Overleg 
+plegen"; "Inwilligen
+ verzoek"; "Afwijzen van 
+het verzoek"; "Inzetten immuniteit voor het
+ vaststellen van de uren"; "Vaststellen van de spreiding
+ van de uren"; "Wijzigen van de spreiding
+ van de uren"; "Schriftelijk mededelen van de
+ beslissing aan de werknemer"; "Mededelen van
+ de redenen"; "aanpassen arbeidsduur overeenkomstig
+ het verzoek"; 
+node [shape=box, fixedsize=true, width=3];"recht om verzoek aanpassing
+ arbeidsduur in te dienen"[color=lightblue, style=filled]; "verplichting tot
+ overleg plegen"; "verplichting inwilligen van verzoek
+ voor aanpassing arbeidsduur"; "immuniteitsrecht inwilligen
+ van het verzoek"; "verplichting tot vaststellen 
+van de spreiding van de uren"; "immuniteitsrecht vaststellen 
+van de spreiding van de uren"; "recht wijzigen van gewenste
+ spreiding van de uren"; "verplichting tot het schriftelijk
+ mededelen van de beslissing"; "verplichting tot het mededelen
+ van de redenen"; 
+"recht om verzoek aanpassing
+ arbeidsduur in te dienen"->"Indienen verzoek aanpassing
+ arbeidsduur";
 
-"verplichting tot overleg plegen"->"Overleg plegen";
+"verplichting tot
+ overleg plegen"->"Overleg 
+plegen";
 
 "verplichting inwilligen van verzoek
-voor aanpassing arbeidsduur"->"Inwilligen verzoek";
+ voor aanpassing arbeidsduur"->"Inwilligen
+ verzoek";
 
-"immuniteitsrecht inwilligen van het verzoek"->"Afwijzen van het verzoek";
+"immuniteitsrecht inwilligen
+ van het verzoek"->"Afwijzen van 
+het verzoek";
 
-"verplichting tot vaststellen van de spreiding van de uren"->"Vaststellen van de spreiding van de uren";
+"verplichting tot vaststellen 
+van de spreiding van de uren"->"Vaststellen van de spreiding
+ van de uren";
 
-"immuniteitsrecht vaststellen van de spreiding van de uren"->"Inzetten immuniteit voor het vaststellen van de uren";
+"immuniteitsrecht vaststellen 
+van de spreiding van de uren"->"Inzetten immuniteit voor het
+ vaststellen van de uren";
 
-"recht wijzigen van gewenste spreiding van de uren"->"Wijzigen van de spreiding van de uren";
+"recht wijzigen van gewenste
+ spreiding van de uren"->"Wijzigen van de spreiding
+ van de uren";
 
-"verplichting tot het schriftelijk mededelen van de beslissing"->"Schriftelijk mededelen van de beslissing aan de werknemer";
+"verplichting tot het schriftelijk
+ mededelen van de beslissing"->"Schriftelijk mededelen van de
+ beslissing aan de werknemer";
 
-"verplichting tot het mededelen van de redenen"->"Mededelen van de redenen";
+"verplichting tot het mededelen
+ van de redenen"->"Mededelen van
+ de redenen";
 
-"Indienen verzoek aanpassing arbeidsduur"->"verplichting tot overleg plegen";
-"Indienen verzoek aanpassing arbeidsduur"->"verplichting inwilligen van verzoek
-voor aanpassing arbeidsduur";
-"Indienen verzoek aanpassing arbeidsduur"->"immuniteitsrecht inwilligen van het verzoek";
-"Inwilligen verzoek"->"verplichting tot vaststellen van de spreiding van de uren";
-"Inwilligen verzoek"->"immuniteitsrecht vaststellen van de spreiding van de uren";
-"Afwijzen van het verzoek"->"verplichting tot het schriftelijk mededelen van de beslissing";
-"Afwijzen van het verzoek"->"verplichting tot het mededelen van de redenen";
-"Inzetten immuniteit voor het vaststellen van de uren"->"recht wijzigen van gewenste spreiding van de uren";
-"Vaststellen van de spreiding van de uren"->"verplichting tot het mededelen van de redenen";
-"Wijzigen van de spreiding van de uren"->"verplichting tot het mededelen van de redenen";
+"Indienen verzoek aanpassing
+ arbeidsduur"->"verplichting tot
+ overleg plegen";
+"Indienen verzoek aanpassing
+ arbeidsduur"->"verplichting inwilligen van verzoek
+ voor aanpassing arbeidsduur";
+"Indienen verzoek aanpassing
+ arbeidsduur"->"immuniteitsrecht inwilligen
+ van het verzoek";
+"Inwilligen
+ verzoek"->"verplichting tot vaststellen 
+van de spreiding van de uren";
+"Inwilligen
+ verzoek"->"immuniteitsrecht vaststellen 
+van de spreiding van de uren";
+"Afwijzen van 
+het verzoek"->"verplichting tot het schriftelijk
+ mededelen van de beslissing";
+"Afwijzen van 
+het verzoek"->"verplichting tot het mededelen
+ van de redenen";
+"Inzetten immuniteit voor het
+ vaststellen van de uren"->"recht wijzigen van gewenste
+ spreiding van de uren";
+"Vaststellen van de spreiding
+ van de uren"->"verplichting tot het mededelen
+ van de redenen";
+"Wijzigen van de spreiding
+ van de uren"->"verplichting tot het mededelen
+ van de redenen";
 overlap=false
-fontsize=10;
+fontsize=14;
 }

@@ -3039,7 +3039,7 @@
     <node concept="1OcJT2" id="MvzNsyB7Rg" role="33wtHG">
       <property role="TrG5h" value="de verplichte bevoegdheid (recht) tot het inwilligen van verzoek&#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing" />
       <property role="da7Q0" value="83" />
-      <property role="3O3EMM" value="verplichting inwilligen van verzoek&#10;voor aanpassing arbeidsduur" />
+      <property role="3O3EMM" value="verplichting inwilligen van verzoek voor aanpassing arbeidsduur" />
       <ref role="3D8HCl" node="J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
       <ref role="1OcJVV" node="4ZpB41Rnx4z" resolve="werkgever" />
       <ref role="1OcJVS" node="4ZpB41RnoMO" resolve="werknemer" />

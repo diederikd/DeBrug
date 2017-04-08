@@ -35,9 +35,9 @@ public class GraphVizFile {
     gvWriter.append("digraph diagram" + "{" + "\n");
     gvWriter.append("rankdir=LR;" + "\n");
     // Eerst alle overgangen wegschrijven 
-    gvWriter.append("node [shape=circle, fixedsize=true, width=3];");
+    gvWriter.append("node [shape=circle, fixedsize=true, width=2];");
     for (SNode overgang : ListSequence.fromList(SLinkOperations.getChildren(context, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, 0x202912d6e3af3604L, "overgangen")))) {
-      gvWriter.append("\"" + SPropertyOperations.getString(overgang, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")) + "\"" + "; ");
+      gvWriter.append("\"" + addCRLFtoString(SPropertyOperations.getString(overgang, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + "; ");
     }
     gvWriter.append("\n");
     // Nu alle toestanden wegschrijven 
@@ -47,10 +47,10 @@ public class GraphVizFile {
         final SNode rechtsbetrekking = toestand;
         if (SNodeOperations.isInstanceOf(rechtsbetrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"))) {
           if (SPropertyOperations.getBoolean(rechtsbetrekking, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7da8818L, "initieel")) == false) {
-            gvWriter.append("\"" + SPropertyOperations.getString(rechtsbetrekking, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")) + "\"" + "; ");
+            gvWriter.append("\"" + addCRLFtoString(SPropertyOperations.getString(rechtsbetrekking, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + "; ");
           }
           if (SPropertyOperations.getBoolean(rechtsbetrekking, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7da8818L, "initieel")) == true) {
-            gvWriter.append("\"" + SPropertyOperations.getString(rechtsbetrekking, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")) + "\"" + "[color=lightblue, style=filled]" + "; ");
+            gvWriter.append("\"" + addCRLFtoString(SPropertyOperations.getString(rechtsbetrekking, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + "[color=lightblue, style=filled]" + "; ");
           }
         }
       }
@@ -61,37 +61,37 @@ public class GraphVizFile {
       {
         final SNode aanspraakNaIngebrekeStellingPlicht = toestand;
         if (SNodeOperations.isInstanceOf(aanspraakNaIngebrekeStellingPlicht, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d93L, "ObjectiefRecht.structure.AanspraakNaIngebrekeStellingPlicht"))) {
-          WriteRelatie(gvWriter, SPropertyOperations.getString(aanspraakNaIngebrekeStellingPlicht, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")), SPropertyOperations.getString(SLinkOperations.getTarget(aanspraakNaIngebrekeStellingPlicht, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d93L, 0x3bfdb51c6ba50297L, "verplichtingTot")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")));
+          WriteRelatie(gvWriter, addCRLFtoString(SPropertyOperations.getString(aanspraakNaIngebrekeStellingPlicht, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))), addCRLFtoString(SPropertyOperations.getString(SLinkOperations.getTarget(aanspraakNaIngebrekeStellingPlicht, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d93L, 0x3bfdb51c6ba50297L, "verplichtingTot")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))));
         }
       }
       {
         final SNode immuniteitGeenbevoegdheid = toestand;
         if (SNodeOperations.isInstanceOf(immuniteitGeenbevoegdheid, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, "ObjectiefRecht.structure.ImmuniteitGeenbevoegdheid"))) {
-          WriteRelatie(gvWriter, SPropertyOperations.getString(immuniteitGeenbevoegdheid, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")), SPropertyOperations.getString(SLinkOperations.getTarget(immuniteitGeenbevoegdheid, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, 0x3bfdb51c6ba5108fL, "uittevoeren")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")));
+          WriteRelatie(gvWriter, addCRLFtoString(SPropertyOperations.getString(immuniteitGeenbevoegdheid, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))), addCRLFtoString(SPropertyOperations.getString(SLinkOperations.getTarget(immuniteitGeenbevoegdheid, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, 0x3bfdb51c6ba5108fL, "uittevoeren")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))));
         }
       }
       {
         final SNode krachtigeAanspraakFataleVerplichtig = toestand;
         if (SNodeOperations.isInstanceOf(krachtigeAanspraakFataleVerplichtig, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d97L, "ObjectiefRecht.structure.KrachtigeAanspraakFataleVerplichtig"))) {
-          WriteRelatie(gvWriter, SPropertyOperations.getString(krachtigeAanspraakFataleVerplichtig, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")), SPropertyOperations.getString(SLinkOperations.getTarget(krachtigeAanspraakFataleVerplichtig, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d97L, 0x3bfdb51c6ba51ed1L, "verplichtingTot")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")));
+          WriteRelatie(gvWriter, addCRLFtoString(SPropertyOperations.getString(krachtigeAanspraakFataleVerplichtig, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))), addCRLFtoString(SPropertyOperations.getString(SLinkOperations.getTarget(krachtigeAanspraakFataleVerplichtig, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d97L, 0x3bfdb51c6ba51ed1L, "verplichtingTot")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))));
         }
       }
       {
         final SNode optioneleBevoegdheidOptioneleGehoudenheid = toestand;
         if (SNodeOperations.isInstanceOf(optioneleBevoegdheidOptioneleGehoudenheid, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d98L, "ObjectiefRecht.structure.OptioneleBevoegdheidOptioneleGehoudenheid"))) {
-          WriteRelatie(gvWriter, SPropertyOperations.getString(optioneleBevoegdheidOptioneleGehoudenheid, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")), SPropertyOperations.getString(SLinkOperations.getTarget(optioneleBevoegdheidOptioneleGehoudenheid, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d98L, 0x3bfdb51c6ba51ed6L, "bevoegdheidTot")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")));
+          WriteRelatie(gvWriter, addCRLFtoString(SPropertyOperations.getString(optioneleBevoegdheidOptioneleGehoudenheid, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))), addCRLFtoString(SPropertyOperations.getString(SLinkOperations.getTarget(optioneleBevoegdheidOptioneleGehoudenheid, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d98L, 0x3bfdb51c6ba51ed6L, "bevoegdheidTot")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))));
         }
       }
       {
         final SNode verplichteBevoegdheidVerplichteGehoudenheid = toestand;
         if (SNodeOperations.isInstanceOf(verplichteBevoegdheidVerplichteGehoudenheid, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L, "ObjectiefRecht.structure.VerplichteBevoegdheidVerplichteGehoudenheid"))) {
-          WriteRelatie(gvWriter, SPropertyOperations.getString(verplichteBevoegdheidVerplichteGehoudenheid, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")), SPropertyOperations.getString(SLinkOperations.getTarget(verplichteBevoegdheidVerplichteGehoudenheid, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L, 0x3bfdb51c6ba53ac9L, "bevoegdheidTot")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")));
+          WriteRelatie(gvWriter, addCRLFtoString(SPropertyOperations.getString(verplichteBevoegdheidVerplichteGehoudenheid, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))), addCRLFtoString(SPropertyOperations.getString(SLinkOperations.getTarget(verplichteBevoegdheidVerplichteGehoudenheid, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L, 0x3bfdb51c6ba53ac9L, "bevoegdheidTot")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))));
         }
       }
       {
         final SNode zwakkeAanspraakZwakkePlicht = toestand;
         if (SNodeOperations.isInstanceOf(zwakkeAanspraakZwakkePlicht, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d96L, "ObjectiefRecht.structure.ZwakkeAanspraakZwakkePlicht"))) {
-          WriteRelatie(gvWriter, SPropertyOperations.getString(zwakkeAanspraakZwakkePlicht, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")), SPropertyOperations.getString(SLinkOperations.getTarget(zwakkeAanspraakZwakkePlicht, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d96L, 0x3bfdb51c6ba54be5L, "verplichtingTot")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")));
+          WriteRelatie(gvWriter, addCRLFtoString(SPropertyOperations.getString(zwakkeAanspraakZwakkePlicht, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))), addCRLFtoString(SPropertyOperations.getString(SLinkOperations.getTarget(zwakkeAanspraakZwakkePlicht, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d96L, 0x3bfdb51c6ba54be5L, "verplichtingTot")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))));
         }
       }
       gvWriter.append("\n");
@@ -107,12 +107,12 @@ public class GraphVizFile {
           return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aabf26L, 0x202912d6e3aabf27L, "rechtsbetrekking"));
         }
       })) {
-        gvWriter.append("\"" + SPropertyOperations.getString(rechtspositieveranderaar, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")) + "\"" + "->" + "\"" + SPropertyOperations.getString(rechtsbetrekking, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")) + "\"" + ";" + "\n");
+        gvWriter.append("\"" + addCRLFtoString(SPropertyOperations.getString(rechtspositieveranderaar, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + "->" + "\"" + addCRLFtoString(SPropertyOperations.getString(rechtsbetrekking, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + ";" + "\n");
       }
     }
 
     gvWriter.append("overlap=false" + "\n");
-    gvWriter.append("fontsize=10;" + "\n");
+    gvWriter.append("fontsize=14;" + "\n");
     gvWriter.append("}");
     gvWriter.close();
     TransformToPng();
@@ -171,5 +171,15 @@ public class GraphVizFile {
     }
     return output.toString();
   }
-
+  /*package*/ String addCRLFtoString(String inputstring) {
+    int positieSpatie = inputstring.length() / 2;
+    int index = inputstring.length() / 2;
+    System.out.println(inputstring + "Nummer " + index + inputstring.charAt(index));
+    while ((index < inputstring.length()) && (!(Character.isSpaceChar(inputstring.charAt(index))))) {
+      positieSpatie = index;
+      index++;
+      System.out.println("Nummer " + index + inputstring.charAt(index));
+    }
+    return inputstring.substring(0, positieSpatie + 1) + "\n" + inputstring.substring(positieSpatie + 1, inputstring.length());
+  }
 }

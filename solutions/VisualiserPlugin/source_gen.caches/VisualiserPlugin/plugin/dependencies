@@ -10,6 +10,7 @@
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.io.InputStreamReader" />
     <classNode dependClassName="java.io.PrintWriter" />
+    <classNode dependClassName="java.lang.Character" />
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Process" />
     <classNode dependClassName="java.lang.Runtime" />
@@ -25,6 +26,19 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.workbench.MPSDataKeys" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="VisualiserPlugin.plugin.ImagePanel" file="ImagePanel.java">
+    <classNode dependClassName="com.intellij.ide.DataManager" />
+    <classNode dependClassName="com.intellij.openapi.project.Project" />
+    <classNode dependClassName="com.intellij.platform.ProjectBaseDirectory" />
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.awt.Image" />
+    <classNode dependClassName="java.awt.Toolkit" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="jetbrains.mps.workbench.MPSDataKeys" />
+    <classNode extendsClassName="javax.swing.JPanel" />
   </dependency>
   <dependency className="VisualiserPlugin.plugin.VisualiseerListener" file="VisualiseerListener.java">
     <classNode dependClassName="VisualiserPlugin.plugin.Visualiseer_Tool" />
@@ -64,6 +78,7 @@
     <classNode dependClassName="com.intellij.openapi.wm.ToolWindowAnchor" />
     <classNode dependClassName="com.intellij.platform.ProjectBaseDirectory" />
     <classNode dependClassName="java.awt.BorderLayout" />
+    <classNode dependClassName="java.awt.Image" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="javax.swing.Icon" />

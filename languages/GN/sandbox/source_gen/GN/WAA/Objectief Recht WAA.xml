@@ -11971,8 +11971,7 @@ en de omvang van de aanpassing</nodename>
             <property name='name'>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
 voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
 en de omvang van de aanpassing</property>
-            <property name='kortenaam'>verplichting inwilligen van verzoek
-voor aanpassing arbeidsduur</property>
+            <property name='kortenaam'>verplichting inwilligen van verzoek voor aanpassing arbeidsduur</property>
         </properties>
         <children>
           <node>

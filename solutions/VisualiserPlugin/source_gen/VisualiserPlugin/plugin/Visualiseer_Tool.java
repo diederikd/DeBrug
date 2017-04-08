@@ -7,6 +7,7 @@ import javax.swing.Icon;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JLabel;
+import java.awt.Image;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindowAnchor;
 import jetbrains.mps.workbench.MPSDataKeys;
@@ -23,6 +24,7 @@ public class Visualiseer_Tool extends GeneratedTool {
   private JScrollPane jScrollPane;
   private JLabel jLabel;
   private String graphvizpng;
+  private Image image;
   public Visualiseer_Tool(Project project) {
     super(project, "Visualiseer", null, ICON, ToolWindowAnchor.BOTTOM, false);
   }
@@ -31,21 +33,28 @@ public class Visualiseer_Tool extends GeneratedTool {
     Project MPSproject = MPSDataKeys.PROJECT.getData(DataManager.getInstance().getDataContext());
     Visualiseer_Tool.this.graphvizpng = ProjectBaseDirectory.getInstance(MPSproject).getBaseDir().getCanonicalPath() + "/graphviz/visualiser.png";
     System.out.println("File: " + Visualiseer_Tool.this.graphvizpng);
-    ImageIcon image = new ImageIcon(Visualiseer_Tool.this.graphvizpng);
+    ImageIcon imageicon = new ImageIcon(Visualiseer_Tool.this.graphvizpng);
+    Image image = imageicon.getImage();
+    Image newImage = image.getScaledInstance(300, 300, Image.SCALE_SMOOTH);
+    imageicon = new ImageIcon(newImage);
     JButton refreshButton = new JButton("Refresh");
     VisualiseerListener actionListener = new VisualiseerListener();
     actionListener.ZetTool(Visualiseer_Tool.this);
     refreshButton.addActionListener(new VisualiseerListener());
-    Visualiseer_Tool.this.jLabel = new JLabel("", image, JLabel.CENTER);
+    Visualiseer_Tool.this.jLabel = new JLabel("", imageicon, JLabel.CENTER);
     Visualiseer_Tool.this.jPanel = new JPanel();
     Visualiseer_Tool.this.jScrollPane = new JScrollPane(Visualiseer_Tool.this.jPanel);
+    Visualiseer_Tool.this.jPanel.add(refreshButton, BorderLayout.NORTH);
     Visualiseer_Tool.this.jPanel.add(Visualiseer_Tool.this.jLabel, BorderLayout.CENTER);
-    Visualiseer_Tool.this.jPanel.add(refreshButton, BorderLayout.SOUTH);
     Visualiseer_Tool.this.makeAvailable();
   }
-  public void Refresh() {
+  public void Ververs() {
     System.out.println("Ververs figuur met " + Visualiseer_Tool.this.graphvizpng);
-    Visualiseer_Tool.this.jLabel.setIcon(new ImageIcon(Visualiseer_Tool.this.graphvizpng));
+    ImageIcon imageicon = new ImageIcon(Visualiseer_Tool.this.graphvizpng);
+    Image image = imageicon.getImage();
+    Image newImage = image.getScaledInstance(Visualiseer_Tool.this.jPanel.getParent().getWidth(), Visualiseer_Tool.this.jPanel.getParent().getHeight(), Image.SCALE_SMOOTH);
+    imageicon = new ImageIcon(newImage);
+    Visualiseer_Tool.this.jLabel.setIcon(imageicon);
     Visualiseer_Tool.this.jPanel.revalidate();
     Visualiseer_Tool.this.jPanel.repaint();
   }

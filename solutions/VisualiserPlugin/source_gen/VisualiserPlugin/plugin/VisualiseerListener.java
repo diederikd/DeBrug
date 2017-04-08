@@ -11,7 +11,7 @@ public class VisualiseerListener implements ActionListener {
 
   @Override
   public void actionPerformed(ActionEvent event) {
-    tool.Refresh();
+    tool.Ververs();
   }
   public void ZetTool(Visualiseer_Tool toolvisualiseer) {
     tool = toolvisualiseer;
