@@ -18,26 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f2805d-4538-46c3-a016-7128ec7e185d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/classes_gen/VisualiserPlugin/plugin/GraphVizFile$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/classes_gen/VisualiserPlugin/plugin/ImagePanel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen/VisualiserPlugin/plugin/ImagePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphviz/visualiser.png" afterPath="$PROJECT_DIR$/graphviz/visualiser.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/VisualiserPlugin/classes_gen/VisualiserPlugin/plugin/GraphVizFile.class" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/classes_gen/VisualiserPlugin/plugin/GraphVizFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/VisualiserPlugin/classes_gen/VisualiserPlugin/plugin/VisualiseerListener.class" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/classes_gen/VisualiserPlugin/plugin/VisualiseerListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/VisualiserPlugin/classes_gen/VisualiserPlugin/plugin/Visualiseer_Tool.class" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/classes_gen/VisualiserPlugin/plugin/Visualiseer_Tool.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphviz/visualiser.gv" afterPath="$PROJECT_DIR$/graphviz/visualiser.gv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/WAA/Objectief Recht WAA.xml" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/WAA/Objectief Recht WAA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/VisualiserPlugin/classes_gen/VisualiserPlugin/plugin/trace.info" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/classes_gen/VisualiserPlugin/plugin/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/VisualiserPlugin/models/VisualiserPlugin/plugin.mps" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/models/VisualiserPlugin/plugin.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen.caches/VisualiserPlugin/plugin/dependencies" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen.caches/VisualiserPlugin/plugin/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen.caches/VisualiserPlugin/plugin/generated" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen.caches/VisualiserPlugin/plugin/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen/VisualiserPlugin/plugin/GraphVizFile.java" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen/VisualiserPlugin/plugin/GraphVizFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen/VisualiserPlugin/plugin/VisualiseerListener.java" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen/VisualiserPlugin/plugin/VisualiseerListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen/VisualiserPlugin/plugin/Visualiseer_Tool.java" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen/VisualiserPlugin/plugin/Visualiseer_Tool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen/VisualiserPlugin/plugin/trace.info" afterPath="$PROJECT_DIR$/solutions/VisualiserPlugin/source_gen/VisualiserPlugin/plugin/trace.info" />
     </list>
     <ignored path="DeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -873,7 +854,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Alle voorwaarden positief geevalueerd!" />
     <MESSAGE value="Alle voorwaarden van handelingen getest" />
     <MESSAGE value="Onderwerp toegevoegd aan rechtsbetrekking subjectief recht" />
     <MESSAGE value="Simulatie werkt met onderwerp in rechtsbetrekking subjectief recht" />
@@ -898,7 +878,8 @@
     <MESSAGE value="Eerste versie visualisatie." />
     <MESSAGE value="Diverse aanpassingen in de XML export." />
     <MESSAGE value="Visualisatie genereren werkt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Visualisatie genereren werkt." />
+    <MESSAGE value="Verfraaien visualisatie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Verfraaien visualisatie" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://VisualiserPlugin/VisualiserPlugin.plugin/Visualiseer">
