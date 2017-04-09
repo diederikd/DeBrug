@@ -318,8 +318,8 @@
     <file name="TenMinsteVoor_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TenMinsteVoor_BehaviorDescriptor" />
     </file>
-    <file name="TijdType_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TijdType_BehaviorDescriptor" />
+    <file name="TijdstipType_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TijdstipType_BehaviorDescriptor" />
     </file>
     <file name="TijdsverloopMetRechtsgevolg_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.TijdsverloopMetRechtsgevolg_BehaviorDescriptor" />
@@ -631,7 +631,7 @@
       <node id="736190567686043487" at="121,183,122,188" concept="6" />
       <node id="736190567686043500" at="122,188,123,199" concept="2" />
       <node id="565938754127706651" at="126,7,127,197" concept="6" />
-      <node id="565938754127706656" at="128,184,129,188" concept="6" />
+      <node id="565938754127706656" at="128,188,129,188" concept="6" />
       <node id="565938754127706662" at="129,188,130,348" concept="2" />
       <node id="565938754127706668" at="130,348,131,199" concept="2" />
       <node id="3955365814685559431" at="134,7,135,198" concept="6" />
@@ -750,7 +750,7 @@
       <scope id="3955365814685554590" at="43,0,46,0">
         <var name="__thisNode__" id="3955365814685554590" />
       </scope>
-      <scope id="565938754127706655" at="128,184,131,199">
+      <scope id="565938754127706655" at="128,188,131,199">
         <var name="tijdWaarde" id="565938754127706657" />
       </scope>
       <scope id="6760713004460250652" at="145,246,148,7" />

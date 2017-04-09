@@ -1771,6 +1771,21 @@
       <node concept="3F1sOY" id="3H8312nyCpl" role="3EZMnx">
         <ref role="1NtTu8" to="3pw0:3H8312nwpGr" resolve="UitgevoerdOp" />
       </node>
+      <node concept="3F0ifn" id="146AQXTyaGD" role="3EZMnx">
+        <property role="3F0ifm" value="tijdstip van uitvoeren" />
+        <node concept="lj46D" id="146AQXTyaGE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="146AQXTyaGF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="146AQXTyaGG" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="146AQXTyaGH" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:5qTpXpBoPx_" resolve="uitgevoerdOp" />
+      </node>
       <node concept="3F0ifn" id="4ZpB41RnEtO" role="3EZMnx">
         <property role="3F0ifm" value="door rechtssubject" />
         <node concept="pVoyu" id="4ZpB41RnEup" role="3F10Kt">
@@ -3050,7 +3065,7 @@
   </node>
   <node concept="24kQdi" id="5qTpXpBo3wo">
     <property role="3GE5qa" value="KenmerkType" />
-    <ref role="1XX52x" to="3pw0:5qTpXpBo3vZ" resolve="TijdType" />
+    <ref role="1XX52x" to="3pw0:5qTpXpBo3vZ" resolve="TijdstipType" />
     <node concept="3F0ifn" id="5qTpXpBo3wq" role="2wV5jI">
       <property role="3F0ifm" value="tijd" />
     </node>
@@ -7793,6 +7808,21 @@
       <node concept="3F1sOY" id="5MG2IGe2oHy" role="3EZMnx">
         <ref role="1NtTu8" to="3pw0:3H8312nwpGr" resolve="UitgevoerdOp" />
       </node>
+      <node concept="3F0ifn" id="146AQXTyb6u" role="3EZMnx">
+        <property role="3F0ifm" value="timestamp of the execution of the action" />
+        <node concept="lj46D" id="146AQXTyb6v" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="146AQXTyb6w" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="146AQXTyb6x" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="146AQXTyb6y" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:5qTpXpBoPx_" resolve="uitgevoerdOp" />
+      </node>
       <node concept="3F0ifn" id="5MG2IGe2oHz" role="3EZMnx">
         <property role="3F0ifm" value="legal actor" />
         <node concept="pVoyu" id="5MG2IGe2oH$" role="3F10Kt">
@@ -9848,7 +9878,7 @@
                         </node>
                       </node>
                       <node concept="Jncv_" id="vqB$L$qbCr" role="3cqZAp">
-                        <ref role="JncvD" to="3pw0:5qTpXpBo3vZ" resolve="TijdType" />
+                        <ref role="JncvD" to="3pw0:5qTpXpBo3vZ" resolve="TijdstipType" />
                         <node concept="2OqwBi" id="vqB$L$qbCs" role="JncvB">
                           <node concept="37vLTw" id="6a$JffhRvaO" role="2Oq$k0">
                             <ref role="3cqZAo" node="6a$JffhQYls" resolve="kenmerk" />
@@ -11458,7 +11488,7 @@
                         </node>
                       </node>
                       <node concept="Jncv_" id="6w7GUCbsj75" role="3cqZAp">
-                        <ref role="JncvD" to="3pw0:5qTpXpBo3vZ" resolve="TijdType" />
+                        <ref role="JncvD" to="3pw0:5qTpXpBo3vZ" resolve="TijdstipType" />
                         <node concept="2OqwBi" id="6w7GUCbsj76" role="JncvB">
                           <node concept="37vLTw" id="6w7GUCbsj77" role="2Oq$k0">
                             <ref role="3cqZAo" node="6w7GUCbsj4R" resolve="kenmerk" />
@@ -12262,6 +12292,18 @@
         </node>
       </node>
       <node concept="l2Vlx" id="4yDNEIgIEUK" role="2iSdaV" />
+      <node concept="3F0ifn" id="146AQXTzZQG" role="3EZMnx">
+        <property role="3F0ifm" value="Type" />
+      </node>
+      <node concept="3F0ifn" id="146AQXTzZRg" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="146AQXTzZSO" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:5qTpXpBmyqf" resolve="type" />
+        <node concept="ljvvj" id="146AQXTzZT8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="4yDNEIgIEV5" role="3EZMnx">
         <property role="3F0ifm" value="Optioneel" />
       </node>

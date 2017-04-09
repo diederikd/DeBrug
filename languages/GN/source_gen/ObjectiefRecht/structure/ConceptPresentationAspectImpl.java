@@ -110,7 +110,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TenHoogsteVoor = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TenMinsteNa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TenMinsteVoor = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TijdType = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TijdstipType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TijdsverloopMetRechtsgevolg = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Toestand = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Variabele = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d5dc56eL, "onderwerp2"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d5dc570L, "kenmerk2")).create();
@@ -339,7 +339,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 99:
         return props_TenMinsteVoor;
       case 100:
-        return props_TijdType;
+        return props_TijdstipType;
       case 101:
         return props_TijdsverloopMetRechtsgevolg;
       case 102:

@@ -669,7 +669,7 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.TijdType_BehaviorDescriptor" file="TijdType_BehaviorDescriptor.java">
+  <dependency className="ObjectiefRecht.behavior.TijdstipType_BehaviorDescriptor" file="TijdstipType_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

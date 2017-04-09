@@ -650,7 +650,7 @@
     <classNode dependClassName="ObjectiefRecht.editor.TenHoogsteVoor_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.TenMinsteNa_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.TenMinsteVoor_Editor" />
-    <classNode dependClassName="ObjectiefRecht.editor.TijdType_Editor" />
+    <classNode dependClassName="ObjectiefRecht.editor.TijdstipType_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.TijdsverloopMetRechtsgevolg_EN_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.TijdsverloopMetRechtsgevolg_Editor" />
     <classNode dependClassName="ObjectiefRecht.editor.Variabele_Editor" />
@@ -2476,7 +2476,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="ObjectiefRecht.editor.TijdType_Editor" file="TijdType_Editor.java">
+  <dependency className="ObjectiefRecht.editor.TijdstipType_Editor" file="TijdstipType_Editor.java">
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />

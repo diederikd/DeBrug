@@ -326,13 +326,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="UitgevoerdOp" />
       <ref role="20lvS9" node="3H8312nwp4X" resolve="VrijeTekst" />
+      <node concept="asaX9" id="146AQXT_O9b" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="5qTpXpBoPx_" role="1TKVEi">
       <property role="IQ2ns" value="6249140128508500069" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="uitgevoerdOp" />
       <ref role="20lvS9" node="4$mS69sVSy3" resolve="Kenmerk" />
-      <node concept="asaX9" id="3H8312nwpGv" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="7k4OuKrmNR" role="1TKVEi">
       <property role="IQ2ns" value="131751487724154103" />
@@ -831,8 +831,8 @@
   </node>
   <node concept="1TIwiD" id="5qTpXpBo3vZ">
     <property role="EcuMT" value="6249140128508295167" />
-    <property role="TrG5h" value="TijdType" />
-    <property role="34LRSv" value="tijd" />
+    <property role="TrG5h" value="TijdstipType" />
+    <property role="34LRSv" value="tijdstip" />
     <property role="3GE5qa" value="KenmerkType" />
     <ref role="1TJDcQ" node="2xp9_$ucE6q" resolve="AbstractKenmerkType" />
   </node>

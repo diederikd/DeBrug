@@ -8186,7 +8186,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                 </node>
                 <node>
                   <noderole>type</noderole>
-                  <nodetype>TijdType</nodetype>
+                  <nodetype>TijdstipType</nodetype>
                   <nodeid>7431672735419572301</nodeid>
                     <properties>
                         <property name='alias'></property>
@@ -8227,7 +8227,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                 </node>
                 <node>
                   <noderole>type</noderole>
-                  <nodetype>TijdType</nodetype>
+                  <nodetype>TijdstipType</nodetype>
                   <nodeid>7431672735419572327</nodeid>
                     <properties>
                         <property name='alias'></property>
@@ -13730,6 +13730,39 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                   <property name='name'>datum (opnieuw) indienen verzoek</property>
               </properties>
           </node>
+          <node>
+            <noderole>uitgevoerdOp</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>tijdstip (opnieuw) indienen verzoek</nodename>
+            <nodeid>1226838851588193684</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>tijdstip (opnieuw) indienen verzoek</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>1226838851588193685</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>7</property>
+                        <property name='jaar'>2000</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>TijdstipType</nodetype>
+                  <nodeid>1226838851588668471</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
         </children>
     </node>
     <node>
@@ -13831,81 +13864,37 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
               </properties>
           </node>
           <node>
-            <noderole>teWijzigingenFeiten</noderole>
-            <nodetype>MethodeAanpassenFeiten</nodetype>
-            <nodeid>5540471952143438768</nodeid>
+            <noderole>uitgevoerdOp</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>tijdstip overleg plegen</nodename>
+            <nodeid>1226838851588668462</nodeid>
               <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
                   <property name='alias'></property>
+                  <property name='name'>tijdstip overleg plegen</property>
               </properties>
               <children>
                 <node>
-                  <noderole>wijzigingen</noderole>
-                  <nodetype>Gelijkstelling</nodetype>
-                  <nodeid>5540471952143438770</nodeid>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>1226838851588668463</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>7</property>
+                        <property name='jaar'>2000</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>TijdstipType</nodetype>
+                  <nodeid>1226838851588668468</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
-                    <children>
-                      <node>
-                        <noderole>variabele</noderole>
-                        <nodetype>Variabele</nodetype>
-                        <nodeid>5540471952143438771</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                          <children>
-                            <node>
-                              <noderole>kenmerk</noderole>
-                              <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>5540471952143438780</nodeid>
-                                <properties>
-                                    <property name='alias'></property>
-                                </properties>
-                                <references>
-                                  <reference role='kenmerk'>
-                                    <node>
-                                      <noderole>kenmerk</noderole>
-                                      <nodetype>Kenmerk</nodetype>
-                                      <nodename>datum overleg gepleegd</nodename>
-                                      <nodeid>131751487724941978</nodeid>
-                                    </node>
-                                  </reference>
-                                </references>
-                            </node>
-                          </children>
-                      </node>
-                      <node>
-                        <noderole>gelijkTeStellenAan</noderole>
-                        <nodetype>DatumUitvoerenHandeling</nodetype>
-                        <nodeid>5540471952143438783</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                      <node>
-                        <noderole>brongeldigVan</noderole>
-                        <nodetype>Datum</nodetype>
-                        <nodeid>5540471952143438774</nodeid>
-                          <properties>
-                              <property name='dag'>1</property>
-                              <property name='maand'>1</property>
-                              <property name='jaar'>1000</property>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                    </children>
                 </node>
               </children>
-              <references>
-                <reference role='refObject'>
-                  <node>
-                    <noderole>onderwerpen</noderole>
-                    <nodetype>Onderwerp</nodetype>
-                    <nodename>aanpassing van de arbeidsduur</nodename>
-                    <nodeid>848775529194317032</nodeid>
-                  </node>
-                </reference>
-              </references>
           </node>
         </children>
     </node>
@@ -14294,81 +14283,37 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
               </properties>
           </node>
           <node>
-            <noderole>teWijzigingenFeiten</noderole>
-            <nodetype>MethodeAanpassenFeiten</nodetype>
-            <nodeid>5540471952143438788</nodeid>
+            <noderole>uitgevoerdOp</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>tijdstip inwilligen verzoek</nodename>
+            <nodeid>1226838851588668474</nodeid>
               <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
                   <property name='alias'></property>
+                  <property name='name'>tijdstip inwilligen verzoek</property>
               </properties>
               <children>
                 <node>
-                  <noderole>wijzigingen</noderole>
-                  <nodetype>Gelijkstelling</nodetype>
-                  <nodeid>5540471952143438790</nodeid>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>1226838851588668475</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>7</property>
+                        <property name='jaar'>2000</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>TijdstipType</nodetype>
+                  <nodeid>1226838851588668478</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
-                    <children>
-                      <node>
-                        <noderole>variabele</noderole>
-                        <nodetype>Variabele</nodetype>
-                        <nodeid>5540471952143438791</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                          <children>
-                            <node>
-                              <noderole>kenmerk</noderole>
-                              <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>5540471952143438934</nodeid>
-                                <properties>
-                                    <property name='alias'></property>
-                                </properties>
-                                <references>
-                                  <reference role='kenmerk'>
-                                    <node>
-                                      <noderole>kenmerk</noderole>
-                                      <nodetype>Kenmerk</nodetype>
-                                      <nodename>datum verzoek ingewilligd</nodename>
-                                      <nodeid>5540471952143438865</nodeid>
-                                    </node>
-                                  </reference>
-                                </references>
-                            </node>
-                          </children>
-                      </node>
-                      <node>
-                        <noderole>gelijkTeStellenAan</noderole>
-                        <nodetype>DatumUitvoerenHandeling</nodetype>
-                        <nodeid>5540471952143438937</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                      <node>
-                        <noderole>brongeldigVan</noderole>
-                        <nodetype>Datum</nodetype>
-                        <nodeid>5540471952143438794</nodeid>
-                          <properties>
-                              <property name='dag'>1</property>
-                              <property name='maand'>1</property>
-                              <property name='jaar'>1000</property>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                    </children>
                 </node>
               </children>
-              <references>
-                <reference role='refObject'>
-                  <node>
-                    <noderole>onderwerpen</noderole>
-                    <nodetype>Onderwerp</nodetype>
-                    <nodename>aanpassing van de arbeidsduur</nodename>
-                    <nodeid>848775529194317032</nodeid>
-                  </node>
-                </reference>
-              </references>
           </node>
         </children>
     </node>
@@ -14383,83 +14328,6 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
             <property name='kortenaam'>Afwijzen van het verzoek</property>
         </properties>
         <children>
-          <node>
-            <noderole>teWijzigingenFeiten</noderole>
-            <nodetype>MethodeAanpassenFeiten</nodetype>
-            <nodeid>5540471952143638061</nodeid>
-              <properties>
-                  <property name='alias'></property>
-              </properties>
-              <children>
-                <node>
-                  <noderole>wijzigingen</noderole>
-                  <nodetype>Gelijkstelling</nodetype>
-                  <nodeid>5540471952143638064</nodeid>
-                    <properties>
-                        <property name='alias'></property>
-                    </properties>
-                    <children>
-                      <node>
-                        <noderole>variabele</noderole>
-                        <nodetype>Variabele</nodetype>
-                        <nodeid>5540471952143638065</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                          <children>
-                            <node>
-                              <noderole>kenmerk</noderole>
-                              <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>5540471952143638074</nodeid>
-                                <properties>
-                                    <property name='alias'></property>
-                                </properties>
-                                <references>
-                                  <reference role='kenmerk'>
-                                    <node>
-                                      <noderole>kenmerk</noderole>
-                                      <nodetype>Kenmerk</nodetype>
-                                      <nodename>datum verzoek afgewezen</nodename>
-                                      <nodeid>5540471952143439007</nodeid>
-                                    </node>
-                                  </reference>
-                                </references>
-                            </node>
-                          </children>
-                      </node>
-                      <node>
-                        <noderole>gelijkTeStellenAan</noderole>
-                        <nodetype>DatumUitvoerenHandeling</nodetype>
-                        <nodeid>5540471952143638077</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                      <node>
-                        <noderole>brongeldigVan</noderole>
-                        <nodetype>Datum</nodetype>
-                        <nodeid>5540471952143638068</nodeid>
-                          <properties>
-                              <property name='dag'>1</property>
-                              <property name='maand'>1</property>
-                              <property name='jaar'>1000</property>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                    </children>
-                </node>
-              </children>
-              <references>
-                <reference role='refObject'>
-                  <node>
-                    <noderole>onderwerpen</noderole>
-                    <nodetype>Onderwerp</nodetype>
-                    <nodename>aanpassing van de arbeidsduur</nodename>
-                    <nodeid>848775529194317032</nodeid>
-                  </node>
-                </reference>
-              </references>
-          </node>
           <node>
             <noderole>actor</noderole>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
@@ -14749,6 +14617,39 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                 </node>
               </children>
           </node>
+          <node>
+            <noderole>uitgevoerdOp</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>tijdstip afwijzen verzoek</nodename>
+            <nodeid>1226838851588668480</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>tijdstip afwijzen verzoek</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>1226838851588668481</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>7</property>
+                        <property name='jaar'>2000</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>TijdstipType</nodetype>
+                  <nodeid>1226838851588668486</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
         </children>
     </node>
     <node>
@@ -14887,6 +14788,39 @@ van de werknemer te neutraliseren.</nodename>
                   </node>
                 </reference>
               </references>
+          </node>
+          <node>
+            <noderole>uitgevoerdOp</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>tijdstip inzetten immuniteit</nodename>
+            <nodeid>1226838851588668489</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>tijdstip inzetten immuniteit</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>1226838851588668490</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>7</property>
+                        <property name='jaar'>2000</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>TijdstipType</nodetype>
+                  <nodeid>1226838851588668493</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
           </node>
         </children>
     </node>
@@ -15048,83 +14982,6 @@ van de werknemer te neutraliseren.</nodename>
           <node>
             <noderole>teWijzigingenFeiten</noderole>
             <nodetype>MethodeAanpassenFeiten</nodetype>
-            <nodeid>5540471952143837549</nodeid>
-              <properties>
-                  <property name='alias'></property>
-              </properties>
-              <children>
-                <node>
-                  <noderole>wijzigingen</noderole>
-                  <nodetype>Gelijkstelling</nodetype>
-                  <nodeid>5540471952143837551</nodeid>
-                    <properties>
-                        <property name='alias'></property>
-                    </properties>
-                    <children>
-                      <node>
-                        <noderole>variabele</noderole>
-                        <nodetype>Variabele</nodetype>
-                        <nodeid>5540471952143837552</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                          <children>
-                            <node>
-                              <noderole>kenmerk</noderole>
-                              <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>5540471952143837561</nodeid>
-                                <properties>
-                                    <property name='alias'></property>
-                                </properties>
-                                <references>
-                                  <reference role='kenmerk'>
-                                    <node>
-                                      <noderole>kenmerk</noderole>
-                                      <nodetype>Kenmerk</nodetype>
-                                      <nodename>datum spreiding vastgesteld</nodename>
-                                      <nodeid>5540471952143837474</nodeid>
-                                    </node>
-                                  </reference>
-                                </references>
-                            </node>
-                          </children>
-                      </node>
-                      <node>
-                        <noderole>gelijkTeStellenAan</noderole>
-                        <nodetype>DatumUitvoerenHandeling</nodetype>
-                        <nodeid>5540471952143837564</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                      <node>
-                        <noderole>brongeldigVan</noderole>
-                        <nodetype>Datum</nodetype>
-                        <nodeid>5540471952143837555</nodeid>
-                          <properties>
-                              <property name='dag'>1</property>
-                              <property name='maand'>1</property>
-                              <property name='jaar'>1000</property>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                    </children>
-                </node>
-              </children>
-              <references>
-                <reference role='refObject'>
-                  <node>
-                    <noderole>onderwerpen</noderole>
-                    <nodetype>Onderwerp</nodetype>
-                    <nodename>aanpassing van de arbeidsduur</nodename>
-                    <nodeid>848775529194317032</nodeid>
-                  </node>
-                </reference>
-              </references>
-          </node>
-          <node>
-            <noderole>teWijzigingenFeiten</noderole>
-            <nodetype>MethodeAanpassenFeiten</nodetype>
             <nodeid>5540471952143837588</nodeid>
               <properties>
                   <property name='alias'></property>
@@ -15219,6 +15076,39 @@ van de werknemer te neutraliseren.</nodename>
                 </reference>
               </references>
           </node>
+          <node>
+            <noderole>uitgevoerdOp</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>tijdstip vaststellen spreiding</nodename>
+            <nodeid>1226838851588668495</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>tijdstip vaststellen spreiding</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>1226838851588668496</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>7</property>
+                        <property name='jaar'>2000</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>TijdstipType</nodetype>
+                  <nodeid>1226838851588668499</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
         </children>
     </node>
     <node>
@@ -15232,83 +15122,6 @@ van de werknemer te neutraliseren.</nodename>
             <property name='kortenaam'>Wijzigen van de spreiding van de uren</property>
         </properties>
         <children>
-          <node>
-            <noderole>teWijzigingenFeiten</noderole>
-            <nodetype>MethodeAanpassenFeiten</nodetype>
-            <nodeid>5540471952143838006</nodeid>
-              <properties>
-                  <property name='alias'></property>
-              </properties>
-              <children>
-                <node>
-                  <noderole>wijzigingen</noderole>
-                  <nodetype>Gelijkstelling</nodetype>
-                  <nodeid>5540471952143838013</nodeid>
-                    <properties>
-                        <property name='alias'></property>
-                    </properties>
-                    <children>
-                      <node>
-                        <noderole>variabele</noderole>
-                        <nodetype>Variabele</nodetype>
-                        <nodeid>5540471952143838016</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                          <children>
-                            <node>
-                              <noderole>kenmerk</noderole>
-                              <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>5540471952143838033</nodeid>
-                                <properties>
-                                    <property name='alias'></property>
-                                </properties>
-                                <references>
-                                  <reference role='kenmerk'>
-                                    <node>
-                                      <noderole>kenmerk</noderole>
-                                      <nodetype>Kenmerk</nodetype>
-                                      <nodename>datum spreiding van de uren laatst gewijzigd</nodename>
-                                      <nodeid>5540471952143837915</nodeid>
-                                    </node>
-                                  </reference>
-                                </references>
-                            </node>
-                          </children>
-                      </node>
-                      <node>
-                        <noderole>gelijkTeStellenAan</noderole>
-                        <nodetype>DatumUitvoerenHandeling</nodetype>
-                        <nodeid>5540471952143838036</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                      <node>
-                        <noderole>brongeldigVan</noderole>
-                        <nodetype>Datum</nodetype>
-                        <nodeid>5540471952143838025</nodeid>
-                          <properties>
-                              <property name='dag'>1</property>
-                              <property name='maand'>1</property>
-                              <property name='jaar'>1000</property>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                    </children>
-                </node>
-              </children>
-              <references>
-                <reference role='refObject'>
-                  <node>
-                    <noderole>onderwerpen</noderole>
-                    <nodetype>Onderwerp</nodetype>
-                    <nodename>aanpassing van de arbeidsduur</nodename>
-                    <nodeid>848775529194317032</nodeid>
-                  </node>
-                </reference>
-              </references>
-          </node>
           <node>
             <noderole>actor</noderole>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
@@ -15504,6 +15317,57 @@ van de werknemer te neutraliseren.</nodename>
                 </node>
               </children>
           </node>
+          <node>
+            <noderole>uitgevoerdOp</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>tijdstip wijzigen van de spreiding van de uren</nodename>
+            <nodeid>1226838851589143850</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>tijdstip wijzigen van de spreiding van de uren</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>1226838851589143851</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>1</property>
+                        <property name='jaar'>2000</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>TijdstipType</nodetype>
+                  <nodeid>1226838851589143854</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>nieuweFeiten</noderole>
+            <nodetype>MethodeNieuweFeiten</nodetype>
+            <nodeid>1226838851589143877</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='refObject'>
+                  <node>
+                    <noderole>onderwerpen</noderole>
+                    <nodetype>Onderwerp</nodetype>
+                    <nodename>arbeidsduurperiode van arbeidsovereenkomst</nodename>
+                    <nodeid>6305595003050996407</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
         </children>
     </node>
     <node>
@@ -15597,81 +15461,37 @@ van de werknemer te neutraliseren.</nodename>
               </properties>
           </node>
           <node>
-            <noderole>teWijzigingenFeiten</noderole>
-            <nodetype>MethodeAanpassenFeiten</nodetype>
-            <nodeid>5540471952143838410</nodeid>
+            <noderole>uitgevoerdOp</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>tijdstip mededelen beslissing</nodename>
+            <nodeid>1226838851589143856</nodeid>
               <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
                   <property name='alias'></property>
+                  <property name='name'>tijdstip mededelen beslissing</property>
               </properties>
               <children>
                 <node>
-                  <noderole>wijzigingen</noderole>
-                  <nodetype>Gelijkstelling</nodetype>
-                  <nodeid>5540471952143838412</nodeid>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>1226838851589143857</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>1</property>
+                        <property name='jaar'>2000</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>TijdstipType</nodetype>
+                  <nodeid>1226838851589143860</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
-                    <children>
-                      <node>
-                        <noderole>variabele</noderole>
-                        <nodetype>Variabele</nodetype>
-                        <nodeid>5540471952143838413</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                          <children>
-                            <node>
-                              <noderole>kenmerk</noderole>
-                              <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>5540471952143838422</nodeid>
-                                <properties>
-                                    <property name='alias'></property>
-                                </properties>
-                                <references>
-                                  <reference role='kenmerk'>
-                                    <node>
-                                      <noderole>kenmerk</noderole>
-                                      <nodetype>Kenmerk</nodetype>
-                                      <nodename>datum beslissing medegedeeld</nodename>
-                                      <nodeid>5540471952143838126</nodeid>
-                                    </node>
-                                  </reference>
-                                </references>
-                            </node>
-                          </children>
-                      </node>
-                      <node>
-                        <noderole>gelijkTeStellenAan</noderole>
-                        <nodetype>DatumUitvoerenHandeling</nodetype>
-                        <nodeid>5540471952143838425</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                      <node>
-                        <noderole>brongeldigVan</noderole>
-                        <nodetype>Datum</nodetype>
-                        <nodeid>5540471952143838416</nodeid>
-                          <properties>
-                              <property name='dag'>1</property>
-                              <property name='maand'>1</property>
-                              <property name='jaar'>1000</property>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                    </children>
                 </node>
               </children>
-              <references>
-                <reference role='refObject'>
-                  <node>
-                    <noderole>onderwerpen</noderole>
-                    <nodetype>Onderwerp</nodetype>
-                    <nodename>aanpassing van de arbeidsduur</nodename>
-                    <nodeid>848775529194317032</nodeid>
-                  </node>
-                </reference>
-              </references>
           </node>
         </children>
     </node>
@@ -15914,6 +15734,39 @@ van de werknemer te neutraliseren.</nodename>
                   <noderole>conditie</noderole>
                   <nodetype>ConditieAlle</nodetype>
                   <nodeid>6133486975031622878</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>uitgevoerdOp</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>tijdstip datum mededelen redenen</nodename>
+            <nodeid>1226838851589143862</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>tijdstip datum mededelen redenen</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>1226838851589143863</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>1</property>
+                        <property name='jaar'>2000</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>TijdstipType</nodetype>
+                  <nodeid>1226838851589143866</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
