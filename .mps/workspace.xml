@@ -18,27 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f2805d-4538-46c3-a016-7128ec7e185d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$1.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$10.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$11.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$12.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$13.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$14.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$15.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$16.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$17.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$2.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$3.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$4.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$5.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$6.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$7.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$8.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$9.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/models/behavior.mps" afterPath="$PROJECT_DIR$/languages/Simulatie/models/behavior.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/behavior/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/behavior/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" />
@@ -89,7 +69,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="e51275ce-bd80-4b70-8b74-6824a4a0b72b/r:542969f9-5e47-476b-b776-5cb87e1593dd(TempModulee51275ce-bd80-4b70-8b74-6824a4a0b72b/TempModel_6054348707293)">
+            <model ref="040f2653-618a-4e49-b403-65f1ea80574f/r:d4b25b49-adcc-49db-bc13-b5f416c65c3f(TempModule040f2653-618a-4e49-b403-65f1ea80574f/TempModel_7298975688869)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -119,9 +99,9 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="146AQXTpnt9">
-                <node concept="3balQm" id="146AQXTpnta" role="aymYE" />
-                <node concept="2Clz$F" id="146AQXTpntb" role="aymYO">
+              <node concept="aymSD" id="146AQXTulKU">
+                <node concept="3balQm" id="146AQXTulKV" role="aymYE" />
+                <node concept="2Clz$F" id="146AQXTulKW" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
               </node>
@@ -170,7 +150,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098876038706" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
+              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6760713004454212121" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -185,22 +165,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Simulatie" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Simulatie" pinned="false" current-in-tab="false">
         <entry file="mps://node://Simulatie/Simulatie.structure/Simulatie">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
               <memento saveSessionState="false" viewPositionX="0" viewPositionY="160">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="31" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
-                      <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098876038706" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
+                <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
                 <foldable>
@@ -271,11 +241,6 @@
                   </collapsedElement>
                   <collapsedElement isCollapsed="true">
                     <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098876038705" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="true">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
                       <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/1226838851585488841" />
                     </cellIdElement>
                   </collapsedElement>
@@ -302,7 +267,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098876038706" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
+              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6760713004454212121" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -318,11 +283,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Simulatie WAA" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Simulatie WAA" pinned="false" current-in-tab="true">
         <entry file="mps://node://GN.sandbox/GN.WAA/Simulatie WAA">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="1363">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="1169">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                     <property name="caretX" value="0" />
@@ -338,7 +303,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098876038706" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
+              <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6760713004454212121" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -620,6 +585,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -628,7 +594,37 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GN" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -650,36 +646,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
           <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
@@ -692,11 +658,10 @@
           </SELECTED>
         </subPane>
       </pane>
+      <pane id="Favorites" />
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
         <subPane />
       </pane>
-      <pane id="Favorites" />
-      <pane id="FileSystem" />
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
         <subPane />
       </pane>
@@ -1111,78 +1076,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Refactoring simulatie" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://VisualiserPlugin/VisualiserPlugin.plugin/Visualiseer">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="451">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="183" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="methodName" cellNumber="0" isInList="false">
-                  <node node_reference="r:fcad94bc-adb2-4b44-bb1c-cebf5e64113e(VisualiserPlugin.plugin)/7888341338573678778" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:fcad94bc-adb2-4b44-bb1c-cebf5e64113e(VisualiserPlugin.plugin)/7888341338573678778" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:fcad94bc-adb2-4b44-bb1c-cebf5e64113e(VisualiserPlugin.plugin)/1365497693575292846" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:fcad94bc-adb2-4b44-bb1c-cebf5e64113e(VisualiserPlugin.plugin)/1365497693575296109" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VisualiserPlugin/VisualiserPlugin.plugin/Visualiseer">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="refNodeList_reference" cellNumber="0" isInList="false">
-                  <node node_reference="r:fcad94bc-adb2-4b44-bb1c-cebf5e64113e(VisualiserPlugin.plugin)/4919564618422014149" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://VisualiserPlugin/VisualiserPlugin.plugin/Visualiseer">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -4610,6 +4503,155 @@
             </enabledHints>
           </inspectorMemento>
           <node node_ref="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098876038694" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Simulatie/Simulatie.structure/Simulatie">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="160">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/736190567682266316" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/736190567681645929" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098884367088" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098883098148" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/6749750758529497988" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/1916075923868612613" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/1916075923868537332" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098882966430" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3234945888387214002" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/1226838851584226018" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/1226838851584077771" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/1226838851584342164" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/2797235843302974357" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/1226838851585488841" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/8120684925529517292" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098878465305" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="true">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/6551471093229569472" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6lfqqa_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098876038695" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6760713004454212121" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098876038694" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.sandbox/GN.WAA/Simulatie WAA">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1247">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="JComponent_uhioow_p0" cellNumber="0" isInList="false">
+                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6760713004454212121" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6760713004454212121" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
         </state>
       </provider>
     </entry>
