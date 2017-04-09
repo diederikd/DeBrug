@@ -69,6 +69,7 @@
     <classNode dependClassName="java.time.Duration" />
     <classNode dependClassName="java.time.LocalDate" />
     <classNode dependClassName="java.time.LocalDateTime" />
+    <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
