@@ -279,19 +279,25 @@ en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
       </rechtsbetrekkingen>
     <rechtshandelingen>
         <instantie id='3139957515585265649'>
-          <uitgevoerdopid>2000-03-01T00:00</uitgevoerdopid>
+          <handelingObjectiefRechttypeid>2455094379071627481</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Afwijzen van het verzoek</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2000-03-01T00:00</uitgevoerdop>
           <actorid>3139957515574338931</actorid>
           <onderwerpid>4196470522071791502</onderwerpid>
           <rechtsbetrekkingid>3139957515587069606</rechtsbetrekkingid>
         </instantie>
         <instantie id='3139957515586266055'>
-          <uitgevoerdopid>2000-01-01T00:00</uitgevoerdopid>
+          <handelingObjectiefRechttypeid>5066083982446708445</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Indienen verzoek aanpassing arbeidsduur</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2000-01-01T00:00</uitgevoerdop>
           <actorid>3139957515575936548</actorid>
           <onderwerpid>4196470522071791502</onderwerpid>
           <rechtsbetrekkingid>1423902536563766544</rechtsbetrekkingid>
         </instantie>
         <instantie id='3139957515586302298'>
-          <uitgevoerdopid>2000-02-01T00:00</uitgevoerdopid>
+          <handelingObjectiefRechttypeid>5066083982446741231</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2000-02-01T00:00</uitgevoerdop>
           <actorid>3139957515575936548</actorid>
           <onderwerpid>4196470522071791502</onderwerpid>
           <rechtsbetrekkingid>5807415387110390739</rechtsbetrekkingid>

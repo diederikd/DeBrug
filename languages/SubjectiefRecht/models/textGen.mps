@@ -11,6 +11,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="ll8w" ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -65,6 +66,9 @@
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -455,10 +459,63 @@
             </node>
             <node concept="3izx1p" id="5vursKRAzRP" role="3cqZAp">
               <node concept="3clFbS" id="5vursKRAzRR" role="3izTki">
+                <node concept="1bpajm" id="146AQXTC04F" role="3cqZAp" />
+                <node concept="lc7rE" id="146AQXTC0q8" role="3cqZAp">
+                  <node concept="la8eA" id="146AQXTC0$W" role="lcghm">
+                    <property role="lacIc" value="&lt;handelingObjectiefRechttypeid&gt;" />
+                  </node>
+                  <node concept="l9hG8" id="146AQXTC0CD" role="lcghm">
+                    <node concept="2OqwBi" id="146AQXTC3sm" role="lb14g">
+                      <node concept="2OqwBi" id="146AQXTC2WT" role="2Oq$k0">
+                        <node concept="2JrnkZ" id="146AQXTC2KH" role="2Oq$k0">
+                          <node concept="2OqwBi" id="146AQXTC0O8" role="2JrQYb">
+                            <node concept="117lpO" id="146AQXTC0Dy" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="146AQXTC6O0" role="2OqNvi">
+                              <ref role="3Tt5mk" to="gcgs:6c9haf45_$D" resolve="rechtshandeling" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="146AQXTC3hc" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="146AQXTC3KB" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="la8eA" id="146AQXTC1$X" role="lcghm">
+                    <property role="lacIc" value="&lt;/handelingObjectiefRechttypeid&gt;" />
+                  </node>
+                  <node concept="l8MVK" id="146AQXTC5ab" role="lcghm" />
+                </node>
+                <node concept="1bpajm" id="146AQXTC1SR" role="3cqZAp" />
+                <node concept="lc7rE" id="146AQXTC1SS" role="3cqZAp">
+                  <node concept="la8eA" id="146AQXTC1ST" role="lcghm">
+                    <property role="lacIc" value="&lt;handelingObjectiefRechttypenaam&gt;" />
+                  </node>
+                  <node concept="l9hG8" id="146AQXTC1SU" role="lcghm">
+                    <node concept="2OqwBi" id="146AQXTCgSR" role="lb14g">
+                      <node concept="2OqwBi" id="146AQXTC1SV" role="2Oq$k0">
+                        <node concept="117lpO" id="146AQXTC1SW" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="146AQXTC725" role="2OqNvi">
+                          <ref role="3Tt5mk" to="gcgs:6c9haf45_$D" resolve="rechtshandeling" />
+                        </node>
+                      </node>
+                      <node concept="3TrcHB" id="146AQXTChcz" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="la8eA" id="146AQXTC1SY" role="lcghm">
+                    <property role="lacIc" value="&lt;/handelingObjectiefRechttypenaam&gt;" />
+                  </node>
+                  <node concept="l8MVK" id="146AQXTC5ja" role="lcghm" />
+                </node>
                 <node concept="1bpajm" id="5vursKRq16i" role="3cqZAp" />
                 <node concept="lc7rE" id="5vursKRq16j" role="3cqZAp">
                   <node concept="la8eA" id="5vursKRq16k" role="lcghm">
-                    <property role="lacIc" value="&lt;uitgevoerdopid&gt;" />
+                    <property role="lacIc" value="&lt;uitgevoerdop&gt;" />
                   </node>
                   <node concept="l9hG8" id="5vursKRq16l" role="lcghm">
                     <node concept="2OqwBi" id="5vursKRq16m" role="lb14g">
@@ -469,7 +526,7 @@
                     </node>
                   </node>
                   <node concept="la8eA" id="5vursKRq16p" role="lcghm">
-                    <property role="lacIc" value="&lt;/uitgevoerdopid&gt;" />
+                    <property role="lacIc" value="&lt;/uitgevoerdop&gt;" />
                   </node>
                   <node concept="l8MVK" id="5vursKRq16q" role="lcghm" />
                 </node>
