@@ -18,11 +18,14 @@
     <file name="InteractieDefinitie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Interactie.behavior.InteractieDefinitie_BehaviorDescriptor" />
     </file>
+    <file name="InvoerVeld_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.InvoerVeld_BehaviorDescriptor" />
+    </file>
     <file name="Kolom_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Interactie.behavior.Kolom_BehaviorDescriptor" />
     </file>
-    <file name="PresentatieConstante_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="Interactie.behavior.PresentatieConstante_BehaviorDescriptor" />
+    <file name="PresentatieDialoog_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.PresentatieDialoog_BehaviorDescriptor" />
     </file>
     <file name="PresentatieKenmerk_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Interactie.behavior.PresentatieKenmerk_BehaviorDescriptor" />
@@ -50,6 +53,9 @@
     </file>
     <file name="Rij_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Interactie.behavior.Rij_BehaviorDescriptor" />
+    </file>
+    <file name="TekstVeld_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.TekstVeld_BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:09efe9da-b1e8-41d8-ac88-7bd3864d8106(Interactie.behavior)/1423902536563710198">

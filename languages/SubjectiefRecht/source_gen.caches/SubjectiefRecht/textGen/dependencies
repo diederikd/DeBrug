@@ -20,6 +20,7 @@
   </dependency>
   <dependency className="SubjectiefRecht.textGen.Rechtsbetrekking_TextGen" file="Rechtsbetrekking_TextGen.java">
     <classNode dependClassName="ObjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor" />
+    <classNode dependClassName="SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />

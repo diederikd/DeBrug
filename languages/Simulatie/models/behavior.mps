@@ -805,6 +805,35 @@
                 <property role="3SKdUp" value="Ga opzoek naar de rechtsbetrekkingen van de rechtssubjecten" />
               </node>
             </node>
+            <node concept="3clFbF" id="6oAJqs3Fsbd" role="3cqZAp">
+              <node concept="2OqwBi" id="6oAJqs3Fsbe" role="3clFbG">
+                <node concept="10M0yZ" id="6oAJqs3Fsbf" role="2Oq$k0">
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                </node>
+                <node concept="liA8E" id="6oAJqs3Fsbg" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="6oAJqs3Fsbh" role="37wK5m">
+                    <node concept="2OqwBi" id="6oAJqs3Fsbi" role="3uHU7w">
+                      <node concept="2OqwBi" id="6oAJqs3Fsbj" role="2Oq$k0">
+                        <node concept="2GrUjf" id="6oAJqs3FsB2" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="146AQXTpFtT" resolve="rechtbetrekking" />
+                        </node>
+                        <node concept="3TrEf2" id="6oAJqs3Fsbl" role="2OqNvi">
+                          <ref role="3Tt5mk" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
+                        </node>
+                      </node>
+                      <node concept="3TrcHB" id="6oAJqs3Fsbm" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="6oAJqs3Fsbn" role="3uHU7B">
+                      <property role="Xl_RC" value="Rechtsbetrekking uit gegevenshuishouding : " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="146AQXTpFu2" role="3cqZAp">
               <node concept="3clFbS" id="146AQXTpFu3" role="3clFbx">
                 <node concept="3cpWs8" id="146AQXTpFu4" role="3cqZAp">
@@ -866,7 +895,7 @@
                           </node>
                         </node>
                         <node concept="Xl_RD" id="146AQXTpFut" role="3uHU7B">
-                          <property role="Xl_RC" value="Rechtsbetrekking" />
+                          <property role="Xl_RC" value="Rechtsbetrekking in simulatie : " />
                         </node>
                       </node>
                     </node>
@@ -2616,6 +2645,32 @@
           </node>
         </node>
         <node concept="3clFbH" id="5RiSaxyX3Op" role="3cqZAp" />
+        <node concept="3SKdUt" id="3d6QfrgVOeF" role="3cqZAp">
+          <node concept="3SKdUq" id="3d6QfrgVOeG" role="3SKWNk">
+            <property role="3SKdUp" value="Handeling toevoegen aan de lijst met uitgevoerde handelingen" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6oAJqs3Clhk" role="3cqZAp">
+          <node concept="3cpWsn" id="6oAJqs3Clhn" role="3cpWs9">
+            <property role="TrG5h" value="rechtshandelingSubjectiefrecht" />
+            <node concept="3Tqbb2" id="6oAJqs3Clhi" role="1tU5fm">
+              <ref role="ehGHo" to="gcgs:6c9haf45sNk" resolve="Rechtshandeling" />
+            </node>
+            <node concept="BsUDl" id="1Enheq$XsUZ" role="33vP2m">
+              <ref role="37wK5l" node="1Enheq$Rd7O" resolve="HandelingToevoegenAanUitgevoerdeHandeling" />
+              <node concept="37vLTw" id="1Enheq$Xuq$" role="37wK5m">
+                <ref role="3cqZAo" node="3d6Qfrgo2by" resolve="simulatie" />
+              </node>
+              <node concept="37vLTw" id="1Enheq$Xusz" role="37wK5m">
+                <ref role="3cqZAo" node="5riiL_C3t0r" resolve="rechtshandeling" />
+              </node>
+              <node concept="37vLTw" id="1Enheq$X_on" role="37wK5m">
+                <ref role="3cqZAo" node="5RiSaxyXnDz" resolve="onderwerp" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6oAJqs3Ci90" role="3cqZAp" />
         <node concept="3SKdUt" id="2K7y4iISCdI" role="3cqZAp">
           <node concept="3SKdUq" id="2K7y4iISCdK" role="3SKWNk">
             <property role="3SKdUp" value="Zet de datum van de laatste handeling voor het tonen van het icoon new" />
@@ -2758,6 +2813,23 @@
                     <node concept="3Tqbb2" id="4pem8DKcbBu" role="3zrR0E">
                       <ref role="ehGHo" to="gcgs:6c9haf45syu" resolve="Rechtsbetrekking" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6oAJqs3CnJ9" role="3cqZAp">
+              <node concept="2OqwBi" id="6oAJqs3CoG0" role="3clFbG">
+                <node concept="2OqwBi" id="6oAJqs3Coc9" role="2Oq$k0">
+                  <node concept="37vLTw" id="6oAJqs3CnJ7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4pem8DKbDiC" resolve="rbsubjectief" />
+                  </node>
+                  <node concept="3TrEf2" id="6oAJqs3ComX" role="2OqNvi">
+                    <ref role="3Tt5mk" to="gcgs:6oAJqs3xiWT" resolve="ontstaandoor" />
+                  </node>
+                </node>
+                <node concept="2oxUTD" id="6oAJqs3CoQK" role="2OqNvi">
+                  <node concept="37vLTw" id="6oAJqs3CoUY" role="2oxUTC">
+                    <ref role="3cqZAo" node="6oAJqs3Clhn" resolve="rechtshandelingSubjectiefrecht" />
                   </node>
                 </node>
               </node>
@@ -3301,25 +3373,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="3d6Qfrgw70D" role="3cqZAp" />
-        <node concept="3SKdUt" id="3d6QfrgVOeF" role="3cqZAp">
-          <node concept="3SKdUq" id="3d6QfrgVOeG" role="3SKWNk">
-            <property role="3SKdUp" value="Handeling toevoegen aan de lijst met uitgevoerde handelingen" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="1Enheq$XsV1" role="3cqZAp">
-          <node concept="BsUDl" id="1Enheq$XsUZ" role="3clFbG">
-            <ref role="37wK5l" node="1Enheq$Rd7O" resolve="HandelingToevoegenAanUitgevoerdeHandeling" />
-            <node concept="37vLTw" id="1Enheq$Xuq$" role="37wK5m">
-              <ref role="3cqZAo" node="3d6Qfrgo2by" resolve="simulatie" />
-            </node>
-            <node concept="37vLTw" id="1Enheq$Xusz" role="37wK5m">
-              <ref role="3cqZAo" node="5riiL_C3t0r" resolve="rechtshandeling" />
-            </node>
-            <node concept="37vLTw" id="1Enheq$X_on" role="37wK5m">
-              <ref role="3cqZAo" node="5RiSaxyXnDz" resolve="onderwerp" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="5RiSaxyXzX3" role="3cqZAp" />
         <node concept="3SKdUt" id="3d6QfrheEWn" role="3cqZAp">
           <node concept="3SKdUq" id="3d6QfrheEWp" role="3SKWNk">
@@ -3365,11 +3418,13 @@
     <node concept="13i0hz" id="1Enheq$Rd7O" role="13h7CS">
       <property role="TrG5h" value="HandelingToevoegenAanUitgevoerdeHandeling" />
       <node concept="3Tm1VV" id="1Enheq$Rd7P" role="1B3o_S" />
-      <node concept="3cqZAl" id="1Enheq$Risz" role="3clF45" />
+      <node concept="3Tqbb2" id="6oAJqs3Ccbj" role="3clF45">
+        <ref role="ehGHo" to="gcgs:6c9haf45sNk" resolve="Rechtshandeling" />
+      </node>
       <node concept="3clFbS" id="1Enheq$Rd7R" role="3clF47">
         <node concept="3cpWs8" id="1Enheq$Rmxy" role="3cqZAp">
           <node concept="3cpWsn" id="1Enheq$Rmx_" role="3cpWs9">
-            <property role="TrG5h" value="rechtshandeling" />
+            <property role="TrG5h" value="rechtshandelingSubjectiefrecht" />
             <node concept="3Tqbb2" id="1Enheq$Rmxw" role="1tU5fm">
               <ref role="ehGHo" to="gcgs:6c9haf45sNk" resolve="Rechtshandeling" />
             </node>
@@ -3386,7 +3441,7 @@
           <node concept="2OqwBi" id="1Enheq$Riu5" role="3clFbG">
             <node concept="2OqwBi" id="1Enheq$Riu6" role="2Oq$k0">
               <node concept="37vLTw" id="1Enheq$RmQl" role="2Oq$k0">
-                <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandeling" />
+                <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandelingSubjectiefrecht" />
               </node>
               <node concept="3TrEf2" id="1Enheq$Riu8" role="2OqNvi">
                 <ref role="3Tt5mk" to="gcgs:6c9haf45sNo" resolve="actor" />
@@ -3405,7 +3460,7 @@
           <node concept="2OqwBi" id="52o5oqbgcUm" role="3clFbG">
             <node concept="2OqwBi" id="52o5oqbgc2O" role="2Oq$k0">
               <node concept="37vLTw" id="52o5oqbgbG6" role="2Oq$k0">
-                <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandeling" />
+                <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandelingSubjectiefrecht" />
               </node>
               <node concept="3TrEf2" id="52o5oqbgc$$" role="2OqNvi">
                 <ref role="3Tt5mk" to="gcgs:512SkqO7EXp" resolve="gebaseerdOp" />
@@ -3593,7 +3648,7 @@
             <node concept="2OqwBi" id="1Enheq$Riv0" role="2Oq$k0">
               <node concept="2OqwBi" id="1Enheq$Riv1" role="2Oq$k0">
                 <node concept="37vLTw" id="1Enheq$RulI" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandeling" />
+                  <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandelingSubjectiefrecht" />
                 </node>
                 <node concept="3TrEf2" id="1Enheq$RuUu" role="2OqNvi">
                   <ref role="3Tt5mk" to="gcgs:6c9haf45sNo" resolve="actor" />
@@ -3614,7 +3669,7 @@
           <node concept="2OqwBi" id="1Enheq$Riv8" role="3clFbG">
             <node concept="2OqwBi" id="1Enheq$Riv9" role="2Oq$k0">
               <node concept="37vLTw" id="1Enheq$Rusp" role="2Oq$k0">
-                <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandeling" />
+                <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandelingSubjectiefrecht" />
               </node>
               <node concept="3TrEf2" id="1Enheq$Rv9d" role="2OqNvi">
                 <ref role="3Tt5mk" to="gcgs:6c9haf45_$D" resolve="rechtshandeling" />
@@ -3631,7 +3686,7 @@
           <node concept="2OqwBi" id="1Enheq$Rivf" role="3clFbG">
             <node concept="2OqwBi" id="1Enheq$Rivg" role="2Oq$k0">
               <node concept="37vLTw" id="1Enheq$RuyO" role="2Oq$k0">
-                <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandeling" />
+                <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandelingSubjectiefrecht" />
               </node>
               <node concept="3TrEf2" id="1Enheq$RvpL" role="2OqNvi">
                 <ref role="3Tt5mk" to="gcgs:28MuYO0sFSW" resolve="onderwerp" />
@@ -3648,7 +3703,7 @@
           <node concept="2OqwBi" id="1Enheq$Rivm" role="3clFbG">
             <node concept="2OqwBi" id="1Enheq$Rivn" role="2Oq$k0">
               <node concept="37vLTw" id="1Enheq$RuBv" role="2Oq$k0">
-                <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandeling" />
+                <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandelingSubjectiefrecht" />
               </node>
               <node concept="3TrEf2" id="1Enheq$Rivp" role="2OqNvi">
                 <ref role="3Tt5mk" to="gcgs:6c9haf45_U3" resolve="uitgevoerdOp" />
@@ -3662,7 +3717,7 @@
             <node concept="2OqwBi" id="1Enheq$Rivt" role="2Oq$k0">
               <node concept="2OqwBi" id="1Enheq$Rivu" role="2Oq$k0">
                 <node concept="37vLTw" id="1Enheq$RuFH" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandeling" />
+                  <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandelingSubjectiefrecht" />
                 </node>
                 <node concept="3TrEf2" id="1Enheq$Rivw" role="2OqNvi">
                   <ref role="3Tt5mk" to="gcgs:6c9haf45_U3" resolve="uitgevoerdOp" />
@@ -3680,7 +3735,7 @@
             <node concept="2OqwBi" id="1Enheq$Riv_" role="2Oq$k0">
               <node concept="2OqwBi" id="1Enheq$RivA" role="2Oq$k0">
                 <node concept="37vLTw" id="1Enheq$RnRc" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandeling" />
+                  <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandelingSubjectiefrecht" />
                 </node>
                 <node concept="3TrEf2" id="1Enheq$RivC" role="2OqNvi">
                   <ref role="3Tt5mk" to="gcgs:6c9haf45_U3" resolve="uitgevoerdOp" />
@@ -3697,7 +3752,7 @@
           <node concept="2OqwBi" id="1Enheq$RivG" role="3clFbG">
             <node concept="2OqwBi" id="1Enheq$RivH" role="2Oq$k0">
               <node concept="37vLTw" id="1Enheq$RnX4" role="2Oq$k0">
-                <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandeling" />
+                <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandelingSubjectiefrecht" />
               </node>
               <node concept="3TrEf2" id="1Enheq$RivJ" role="2OqNvi">
                 <ref role="3Tt5mk" to="gcgs:6c9haf45_U3" resolve="uitgevoerdOp" />
@@ -3740,7 +3795,7 @@
                 </node>
                 <node concept="TSZUe" id="1Enheq$Riwd" role="2OqNvi">
                   <node concept="37vLTw" id="1Enheq$RoPN" role="25WWJ7">
-                    <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandeling" />
+                    <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandelingSubjectiefrecht" />
                   </node>
                 </node>
               </node>
@@ -3764,7 +3819,7 @@
                         <node concept="2OqwBi" id="1Enheq$Rqc5" role="3uHU7w">
                           <node concept="2OqwBi" id="1Enheq$Riwp" role="2Oq$k0">
                             <node concept="37vLTw" id="1Enheq$Rp5o" role="2Oq$k0">
-                              <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandeling" />
+                              <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandelingSubjectiefrecht" />
                             </node>
                             <node concept="3TrEf2" id="1Enheq$RpAE" role="2OqNvi">
                               <ref role="3Tt5mk" to="gcgs:6c9haf45_$D" resolve="rechtshandeling" />
@@ -3798,6 +3853,11 @@
               </node>
             </node>
             <node concept="1v1jN8" id="1Enheq$Riwz" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6oAJqs3Cfkh" role="3cqZAp">
+          <node concept="37vLTw" id="6oAJqs3CfLq" role="3cqZAk">
+            <ref role="3cqZAo" node="1Enheq$Rmx_" resolve="rechtshandelingSubjectiefrecht" />
           </node>
         </node>
       </node>

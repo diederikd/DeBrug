@@ -19,6 +19,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import Datum.behavior.DatumTijd__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -28,8 +30,9 @@ public final class Rechtsbetrekking__BehaviorDescriptor extends BaseBHDescriptor
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<Boolean> IsGeldigOpDatumTijdstip_id2mYdLn7TluB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("IsGeldigOpDatumTijdstip").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("2mYdLn7TluB").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(LocalDateTime.class, ""));
+  public static final SMethod<String> OntstaanDoor_id6oAJqs3xsei = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("OntstaanDoor").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6oAJqs3xsei").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(IsGeldigOpDatumTijdstip_id2mYdLn7TluB);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(IsGeldigOpDatumTijdstip_id2mYdLn7TluB, OntstaanDoor_id6oAJqs3xsei);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -42,6 +45,15 @@ public final class Rechtsbetrekking__BehaviorDescriptor extends BaseBHDescriptor
       return true;
     }
     return false;
+  }
+  /*package*/ static String OntstaanDoor_id6oAJqs3xsei(@NotNull SNode __thisNode__) {
+    {
+      final SNode rechtshandeling = SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x6626bda703852f39L, "ontstaandoor"));
+      if (SNodeOperations.isInstanceOf(rechtshandeling, MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"))) {
+        return SPropertyOperations.getString(SLinkOperations.getTarget(rechtshandeling, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, 0x630944a3c4165929L, "rechtshandeling")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+      }
+    }
+    return "Onbekend";
   }
 
   /*package*/ Rechtsbetrekking__BehaviorDescriptor() {
@@ -62,6 +74,8 @@ public final class Rechtsbetrekking__BehaviorDescriptor extends BaseBHDescriptor
     switch (methodIndex) {
       case 0:
         return (T) ((Boolean) IsGeldigOpDatumTijdstip_id2mYdLn7TluB(node, (LocalDateTime) parameters[0]));
+      case 1:
+        return (T) ((String) OntstaanDoor_id6oAJqs3xsei(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

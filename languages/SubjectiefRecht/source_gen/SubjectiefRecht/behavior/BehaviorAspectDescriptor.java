@@ -14,6 +14,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myIEvaluatieResultaat__BehaviorDescriptor = new IEvaluatieResultaat__BehaviorDescriptor();
   private final BHDescriptor myRechtsbetrekking__BehaviorDescriptor = new Rechtsbetrekking__BehaviorDescriptor();
+  private final BHDescriptor myRechtsgevolgVeroorzaker__BehaviorDescriptor = new RechtsgevolgVeroorzaker__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
   }
@@ -22,7 +23,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     {
       SAbstractConcept cncpt = concept;
-      Integer preIndex = indices_846f5o_a0f.get(cncpt);
+      Integer preIndex = indices_846f5o_a0g.get(cncpt);
       int switchIndex = (preIndex == null ? -1 : preIndex);
       switch (switchIndex) {
         case 0:
@@ -33,6 +34,11 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
         case 1:
           if (true) {
             return myRechtsbetrekking__BehaviorDescriptor;
+          }
+          break;
+        case 2:
+          if (true) {
+            return myRechtsgevolgVeroorzaker__BehaviorDescriptor;
           }
           break;
         default:
@@ -49,5 +55,5 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0f = buildConceptIndices(MetaAdapterFactory.getInterfaceConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, "SubjectiefRecht.structure.IEvaluatieResultaat"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"));
+  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0g = buildConceptIndices(MetaAdapterFactory.getInterfaceConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, "SubjectiefRecht.structure.IEvaluatieResultaat"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd3L, "SubjectiefRecht.structure.RechtsgevolgVeroorzaker"));
 }

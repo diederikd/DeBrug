@@ -7,7 +7,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="17,0,125,0" name="Interactie.textGen.TextGenAspectDescriptor" />
+      <unit at="17,0,135,0" name="Interactie.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:8a828c14-ded3-4c73-ac8e-09f4e85ad1bc(Interactie.textGen)/1143896573689967572">
@@ -24,39 +24,45 @@
       <node id="8906131328315742932" at="26,17,27,221" concept="0" />
       <node id="8906131328315744295" at="27,221,28,17" concept="0" />
       <node id="8906131328315744296" at="28,17,29,220" concept="0" />
-      <node id="1143896573689967572" at="29,220,30,44" concept="0" />
-      <node id="1143896573689967572" at="30,44,31,33" concept="0" />
-      <node id="1143896573689967572" at="31,33,32,18" concept="0" />
-      <node id="1143896573689967572" at="32,18,33,44" concept="0" />
-      <node id="1143896573690014955" at="35,42,36,17" concept="4" />
-      <node id="1143896573689998288" at="38,41,39,161" concept="4" />
+      <node id="7360779165999604144" at="30,219,31,27" concept="0" />
+      <node id="1143896573689967572" at="32,5,33,44" concept="0" />
+      <node id="1143896573689967572" at="33,44,34,33" concept="0" />
+      <node id="1143896573689967572" at="34,33,35,18" concept="0" />
+      <node id="1143896573689967572" at="35,18,36,44" concept="0" />
+      <node id="1143896573690014955" at="38,42,39,17" concept="4" />
+      <node id="1143896573689998288" at="41,41,42,161" concept="4" />
       <node id="8906131328314869397" at="22,44,25,5" concept="1" />
-      <node id="1143896573689967572" at="35,0,38,0" concept="2" trace="getExtension#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="1143896573689967572" at="38,0,41,0" concept="2" trace="getFilename#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="1143896573689967572" at="14,0,35,0" concept="2" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="7360779165999604144" at="29,220,32,5" concept="1" />
+      <node id="1143896573689967572" at="38,0,41,0" concept="2" trace="getExtension#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1143896573689967572" at="41,0,44,0" concept="2" trace="getFilename#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1143896573689967572" at="14,0,38,0" concept="2" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="8906131328314869397" at="23,219,24,27" />
-      <scope id="1143896573689967572" at="35,42,36,17" />
-      <scope id="1143896573689967572" at="38,41,39,161" />
+      <scope id="7360779165999604144" at="30,219,31,27" />
+      <scope id="1143896573689967572" at="38,42,39,17" />
+      <scope id="1143896573689967572" at="41,41,42,161" />
       <scope id="8906131328314869397" at="22,44,25,5">
         <var name="item" id="8906131328314869397" />
       </scope>
-      <scope id="1143896573689967572" at="35,0,38,0">
-        <var name="node" id="1143896573689967572" />
+      <scope id="7360779165999604144" at="29,220,32,5">
+        <var name="item" id="7360779165999604144" />
       </scope>
       <scope id="1143896573689967572" at="38,0,41,0">
         <var name="node" id="1143896573689967572" />
       </scope>
-      <scope id="1143896573689967572" at="15,54,33,44">
+      <scope id="1143896573689967572" at="41,0,44,0">
+        <var name="node" id="1143896573689967572" />
+      </scope>
+      <scope id="1143896573689967572" at="15,54,36,44">
         <var name="tgs" id="1143896573689967572" />
       </scope>
-      <scope id="1143896573689967572" at="14,0,35,0">
+      <scope id="1143896573689967572" at="14,0,38,0">
         <var name="ctx" id="1143896573689967572" />
       </scope>
-      <unit id="1143896573689967572" at="13,0,42,0" name="Interactie.textGen.Presentatie_TextGen" />
+      <unit id="1143896573689967572" at="13,0,45,0" name="Interactie.textGen.Presentatie_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="1143896573689998288" at="103,61,104,161" concept="4" />
-      <node id="1143896573690014955" at="109,66,110,17" concept="4" />
+      <node id="1143896573689998288" at="113,61,114,161" concept="4" />
+      <node id="1143896573690014955" at="119,66,120,17" concept="4" />
     </file>
   </root>
   <root nodeRef="r:8a828c14-ded3-4c73-ac8e-09f4e85ad1bc(Interactie.textGen)/6075131287476995115">
@@ -109,8 +115,58 @@
       <unit id="6075131287476995115" at="14,0,48,0" name="Interactie.textGen.InteractieDefinitie_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="6075131287476995655" at="106,69,107,24" concept="4" />
-      <node id="6075131287477001430" at="112,74,113,17" concept="4" />
+      <node id="6075131287476995655" at="116,69,117,24" concept="4" />
+      <node id="6075131287477001430" at="122,74,123,17" concept="4" />
+    </file>
+  </root>
+  <root nodeRef="r:8a828c14-ded3-4c73-ac8e-09f4e85ad1bc(Interactie.textGen)/7360779165999580975">
+    <file name="PresentatieDialoog_TextGen.java">
+      <node id="7360779165999580975" at="15,54,16,55" concept="3" />
+      <node id="7360779165999815601" at="16,55,17,17" concept="0" />
+      <node id="7360779165999580975" at="17,17,18,36" concept="0" />
+      <node id="7360779165999580975" at="18,36,19,222" concept="0" />
+      <node id="7360779165999580975" at="19,222,20,27" concept="0" />
+      <node id="7360779165999580975" at="20,27,21,344" concept="0" />
+      <node id="7360779165999580975" at="21,344,22,22" concept="0" />
+      <node id="7360779165999580975" at="22,22,23,18" concept="0" />
+      <node id="7360779165999580975" at="23,18,24,44" concept="0" />
+      <node id="7360779165999580997" at="25,207,26,27" concept="0" />
+      <node id="7360779165999580975" at="27,5,28,44" concept="0" />
+      <node id="7360779165999742356" at="28,44,29,17" concept="0" />
+      <node id="7360779165999580975" at="29,17,30,29" concept="0" />
+      <node id="7360779165999580975" at="30,29,31,18" concept="0" />
+      <node id="7360779165999580997" at="24,44,27,5" concept="1" />
+      <node id="7360779165999580975" at="14,0,33,0" concept="2" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7360779165999580997" at="25,207,26,27" />
+      <scope id="7360779165999580997" at="24,44,27,5">
+        <var name="item" id="7360779165999580997" />
+      </scope>
+      <scope id="7360779165999580975" at="15,54,31,18">
+        <var name="tgs" id="7360779165999580975" />
+      </scope>
+      <scope id="7360779165999580975" at="14,0,33,0">
+        <var name="ctx" id="7360779165999580975" />
+      </scope>
+      <unit id="7360779165999580975" at="13,0,34,0" name="Interactie.textGen.PresentatieDialoog_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:8a828c14-ded3-4c73-ac8e-09f4e85ad1bc(Interactie.textGen)/7360779165999723082">
+    <file name="InvoerVeld_TextGen.java">
+      <node id="7360779165999723082" at="14,54,15,55" concept="3" />
+      <node id="7360779165999723085" at="15,55,16,17" concept="0" />
+      <node id="7360779165999723082" at="16,17,17,47" concept="0" />
+      <node id="7360779165999723082" at="17,47,18,356" concept="0" />
+      <node id="7360779165999723082" at="18,356,19,32" concept="0" />
+      <node id="7360779165999723082" at="19,32,20,21" concept="0" />
+      <node id="7360779165999723082" at="20,21,21,18" concept="0" />
+      <node id="7360779165999723082" at="13,0,23,0" concept="2" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7360779165999723082" at="14,54,21,18">
+        <var name="tgs" id="7360779165999723082" />
+      </scope>
+      <scope id="7360779165999723082" at="13,0,23,0">
+        <var name="ctx" id="7360779165999723082" />
+      </scope>
+      <unit id="7360779165999723082" at="12,0,24,0" name="Interactie.textGen.InvoerVeld_TextGen" />
     </file>
   </root>
   <root nodeRef="r:8a828c14-ded3-4c73-ac8e-09f4e85ad1bc(Interactie.textGen)/8906131328315531747">
@@ -175,20 +231,21 @@
       <node id="8906131328315635310" at="18,44,19,17" concept="0" />
       <node id="8906131328315635311" at="20,207,21,27" concept="0" />
       <node id="8906131328315635283" at="22,5,23,44" concept="0" />
-      <node id="8906131328316005853" at="23,44,24,28" concept="0" />
+      <node id="8906131328315635283" at="23,44,24,28" concept="0" />
+      <node id="8906131328315635283" at="24,28,25,18" concept="0" />
       <node id="8906131328315635311" at="19,17,22,5" concept="1" />
-      <node id="8906131328315635283" at="13,0,26,0" concept="2" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="8906131328315635283" at="13,0,27,0" concept="2" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="8906131328315635311" at="20,207,21,27" />
       <scope id="8906131328315635311" at="19,17,22,5">
         <var name="item" id="8906131328315635311" />
       </scope>
-      <scope id="8906131328315635283" at="14,54,24,28">
+      <scope id="8906131328315635283" at="14,54,25,18">
         <var name="tgs" id="8906131328315635283" />
       </scope>
-      <scope id="8906131328315635283" at="13,0,26,0">
+      <scope id="8906131328315635283" at="13,0,27,0">
         <var name="ctx" id="8906131328315635283" />
       </scope>
-      <unit id="8906131328315635283" at="12,0,27,0" name="Interactie.textGen.PresentatieRechtshandeling_TextGen" />
+      <unit id="8906131328315635283" at="12,0,28,0" name="Interactie.textGen.PresentatieRechtshandeling_TextGen" />
     </file>
   </root>
   <root nodeRef="r:8a828c14-ded3-4c73-ac8e-09f4e85ad1bc(Interactie.textGen)/8906131328315635573">
@@ -282,7 +339,7 @@
     </file>
   </root>
   <root nodeRef="r:8a828c14-ded3-4c73-ac8e-09f4e85ad1bc(Interactie.textGen)/8906131328315851729">
-    <file name="PresentatieConstante_TextGen.java">
+    <file name="TekstVeld_TextGen.java">
       <node id="8906131328315851729" at="13,54,14,55" concept="3" />
       <node id="8906131328315851751" at="14,55,15,17" concept="0" />
       <node id="8906131328315851729" at="15,17,16,27" concept="0" />
@@ -296,7 +353,7 @@
       <scope id="8906131328315851729" at="12,0,21,0">
         <var name="ctx" id="8906131328315851729" />
       </scope>
-      <unit id="8906131328315851729" at="11,0,22,0" name="Interactie.textGen.PresentatieConstante_TextGen" />
+      <unit id="8906131328315851729" at="11,0,22,0" name="Interactie.textGen.TekstVeld_TextGen" />
     </file>
   </root>
 </debug-info>

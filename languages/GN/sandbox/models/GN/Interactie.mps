@@ -32,6 +32,7 @@
         <child id="8906131328315611645" name="presentatieRechtshandeling" index="3oCzqW" />
         <child id="8906131328314548161" name="presentatieobjecten" index="3oGB20" />
         <child id="8906131328314894131" name="presentatieRechtsbetrekking" index="3oHKxM" />
+        <child id="7360779165999522256" name="presentatieDialogen" index="1_mtLR" />
       </concept>
       <concept id="31726144783350478" name="Interactie.structure.PresentatieKenmerk" flags="ng" index="2P_WKc">
         <reference id="1143896573689960079" name="referentieNaarKenmerk" index="29j7_g" />
@@ -39,7 +40,7 @@
       <concept id="8906131328315611534" name="Interactie.structure.PresentatieRechtshandeling" flags="ng" index="3oCzrf">
         <child id="8906131328315611535" name="rijen" index="3oCzre" />
       </concept>
-      <concept id="8906131328315850589" name="Interactie.structure.PresentatieConstante" flags="ng" index="3oDD0s">
+      <concept id="8906131328315850589" name="Interactie.structure.TekstVeld" flags="ng" index="3oDD0s">
         <property id="8906131328315851531" name="text" index="3oDALa" />
       </concept>
       <concept id="8906131328314545663" name="Interactie.structure.PresentatieObject" flags="ng" index="3oGBEY">
@@ -57,6 +58,13 @@
       </concept>
       <concept id="8906131328314850810" name="Interactie.structure.PresentatieLink" flags="ng" index="3oHXaV">
         <reference id="8906131328314876286" name="link" index="3oHOSZ" />
+      </concept>
+      <concept id="7360779165999522222" name="Interactie.structure.PresentatieDialoog" flags="ng" index="1_mtK9">
+        <reference id="7360779165999522253" name="handeling" index="1_mtLE" />
+        <child id="7360779165999522223" name="rijen" index="1_mtK8" />
+      </concept>
+      <concept id="7360779165999666418" name="Interactie.structure.InvoerVeld" flags="ng" index="1_DM_l">
+        <reference id="7360779165999666419" name="referentieNaarKenmerk" index="1_DM_k" />
       </concept>
     </language>
   </registry>
@@ -81,6 +89,61 @@
   <node concept="2P_W6R" id="7IoVO6zbs3I">
     <property role="TrG5h" value="Presentatie WAA" />
     <ref role="3oGCMx" to="zznl:6EEavyms9IX" resolve="Gegevenshuishouding WAA" />
+    <node concept="1_mtK9" id="6oAJqs3w4r5" role="1_mtLR">
+      <ref role="1_mtLE" to="zznl:4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
+      <node concept="3oHiSy" id="6oAJqs3w4rb" role="1_mtK8">
+        <node concept="3oGGqp" id="6oAJqs3w4rK" role="3oHiS_">
+          <node concept="1_DM_l" id="6oAJqs3wB5W" role="2PAxsN">
+            <ref role="1_DM_k" to="zznl:4$mS69sWF6g" resolve="beoogde ingangsdatum van de aanpassing" />
+          </node>
+        </node>
+        <node concept="3oGGqp" id="6oAJqs3w4rE" role="3oHiS_">
+          <node concept="1_DM_l" id="6oAJqs3wB5U" role="2PAxsN">
+            <ref role="1_DM_k" to="zznl:1KHGaPR$on" resolve="schriftelijk ingediend" />
+          </node>
+        </node>
+        <node concept="3oGGqp" id="6oAJqs3w4rx" role="3oHiS_">
+          <node concept="1_DM_l" id="6oAJqs3wB5t" role="2PAxsN">
+            <ref role="1_DM_k" to="zznl:GhrpPwK$fm" resolve="gewenste spreiding" />
+          </node>
+        </node>
+        <node concept="3oGGqp" id="6oAJqs3w4rd" role="3oHiS_">
+          <node concept="1_DM_l" id="6oAJqs3wwaH" role="2PAxsN">
+            <ref role="1_DM_k" to="zznl:GhrpPwK$en" resolve="omvang van de aanpassing" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1_mtK9" id="6oAJqs3wQv5" role="1_mtLR">
+      <ref role="1_mtLE" to="zznl:28ifPi2BQ89" resolve="Overleg plegen" />
+      <node concept="3oHiSy" id="6oAJqs3wQvu" role="1_mtK8">
+        <node concept="3oGGqp" id="6oAJqs3wQvG" role="3oHiS_">
+          <node concept="2P_WKc" id="6oAJqs3wQvK" role="2PAxsN">
+            <ref role="29j7_g" to="zznl:GhrpPwK$fm" resolve="gewenste spreiding" />
+          </node>
+        </node>
+        <node concept="3oGGqp" id="6oAJqs3wQvw" role="3oHiS_">
+          <node concept="2P_WKc" id="6oAJqs3wQvy" role="2PAxsN">
+            <ref role="29j7_g" to="zznl:GhrpPwK$en" resolve="omvang van de aanpassing" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1_mtK9" id="6oAJqs3wQvh" role="1_mtLR">
+      <ref role="1_mtLE" to="zznl:4pem8DK2crJ" resolve="Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing" />
+      <node concept="3oHiSy" id="6oAJqs3wQvM" role="1_mtK8">
+        <node concept="3oGGqp" id="6oAJqs3wQvQ" role="3oHiS_">
+          <node concept="2P_WKc" id="6oAJqs3wQvT" role="2PAxsN">
+            <ref role="29j7_g" to="zznl:4$mS69sWF6g" resolve="beoogde ingangsdatum van de aanpassing" />
+          </node>
+        </node>
+        <node concept="3oGGqp" id="6oAJqs3wQvO" role="3oHiS_">
+          <node concept="2P_WKc" id="6oAJqs3wQvV" role="2PAxsN">
+            <ref role="29j7_g" to="zznl:GhrpPwK$en" resolve="omvang van de aanpassing" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3oGBEY" id="7IoVO6zbs3J" role="3oGB20">
       <ref role="3oGB_1" to="zznl:4ZpB41RnoMO" resolve="werknemer" />
       <node concept="3oHiSy" id="7IoVO6zbNLZ" role="3oGGqr">

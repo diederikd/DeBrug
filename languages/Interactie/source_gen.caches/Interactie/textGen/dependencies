@@ -12,6 +12,15 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="Interactie.textGen.InvoerVeld_TextGen" file="InvoerVeld_TextGen.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="Interactie.textGen.Kolom_TextGen" file="Kolom_TextGen.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -21,12 +30,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
-  <dependency className="Interactie.textGen.PresentatieConstante_TextGen" file="PresentatieConstante_TextGen.java">
+  <dependency className="Interactie.textGen.PresentatieDialoog_TextGen" file="PresentatieDialoog_TextGen.java">
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
   <dependency className="Interactie.textGen.PresentatieKenmerk_TextGen" file="PresentatieKenmerk_TextGen.java">
@@ -96,10 +107,19 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="Interactie.textGen.TekstVeld_TextGen" file="TekstVeld_TextGen.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="Interactie.textGen.TextGenAspectDescriptor" file="TextGenAspectDescriptor.java">
     <classNode dependClassName="Interactie.textGen.InteractieDefinitie_TextGen" />
+    <classNode dependClassName="Interactie.textGen.InvoerVeld_TextGen" />
     <classNode dependClassName="Interactie.textGen.Kolom_TextGen" />
-    <classNode dependClassName="Interactie.textGen.PresentatieConstante_TextGen" />
+    <classNode dependClassName="Interactie.textGen.PresentatieDialoog_TextGen" />
     <classNode dependClassName="Interactie.textGen.PresentatieKenmerk_TextGen" />
     <classNode dependClassName="Interactie.textGen.PresentatieLink_TextGen" />
     <classNode dependClassName="Interactie.textGen.PresentatieObject_TextGen" />
@@ -107,6 +127,7 @@
     <classNode dependClassName="Interactie.textGen.PresentatieRechtshandeling_TextGen" />
     <classNode dependClassName="Interactie.textGen.Presentatie_TextGen" />
     <classNode dependClassName="Interactie.textGen.Rij_TextGen" />
+    <classNode dependClassName="Interactie.textGen.TekstVeld_TextGen" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />

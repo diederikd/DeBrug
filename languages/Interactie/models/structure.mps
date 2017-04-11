@@ -84,6 +84,13 @@
       <property role="20kJfa" value="presentatieRechtshandeling" />
       <ref role="20lvS9" node="7IoVO6zeHAe" resolve="PresentatieRechtshandeling" />
     </node>
+    <node concept="1TJgyj" id="6oAJqs3vQ7g" role="1TKVEi">
+      <property role="IQ2ns" value="7360779165999522256" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="presentatieDialogen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6oAJqs3vQ6I" resolve="PresentatieDialoog" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1KHGaPTRFe">
     <property role="EcuMT" value="31726144783350478" />
@@ -244,13 +251,46 @@
   </node>
   <node concept="1TIwiD" id="7IoVO6zfBXt">
     <property role="EcuMT" value="8906131328315850589" />
-    <property role="TrG5h" value="PresentatieConstante" />
-    <property role="34LRSv" value="tekst" />
+    <property role="TrG5h" value="TekstVeld" />
+    <property role="34LRSv" value="tekstveld" />
     <ref role="1TJDcQ" node="7IoVO6zbU65" resolve="PresentatieVeld" />
     <node concept="1TJgyi" id="7IoVO6zfCcb" role="1TKVEl">
       <property role="IQ2nx" value="8906131328315851531" />
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oAJqs3vQ6I">
+    <property role="EcuMT" value="7360779165999522222" />
+    <property role="TrG5h" value="PresentatieDialoog" />
+    <property role="34LRSv" value="dialoog" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6oAJqs3vQ6J" role="1TKVEi">
+      <property role="IQ2ns" value="7360779165999522223" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rijen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7IoVO6zbs5z" resolve="Rij" />
+    </node>
+    <node concept="1TJgyj" id="6oAJqs3vQ7d" role="1TKVEi">
+      <property role="IQ2ns" value="7360779165999522253" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="handeling" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oAJqs3wpjM">
+    <property role="EcuMT" value="7360779165999666418" />
+    <property role="TrG5h" value="InvoerVeld" />
+    <property role="34LRSv" value="invoerveld" />
+    <ref role="1TJDcQ" node="7IoVO6zbU65" resolve="PresentatieVeld" />
+    <node concept="1TJgyj" id="6oAJqs3wpjN" role="1TKVEi">
+      <property role="IQ2ns" value="7360779165999666419" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="referentieNaarKenmerk" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="3pw0:4$mS69sVSy3" resolve="Kenmerk" />
     </node>
   </node>
 </model>

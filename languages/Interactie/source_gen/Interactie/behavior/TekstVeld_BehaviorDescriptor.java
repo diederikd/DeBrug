@@ -9,7 +9,7 @@ package Interactie.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class PresentatieConstante_BehaviorDescriptor {
+public class TekstVeld_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

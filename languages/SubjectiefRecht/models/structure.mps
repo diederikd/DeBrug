@@ -101,6 +101,12 @@
       <property role="20kJfa" value="onderwerp" />
       <ref role="20lvS9" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
     </node>
+    <node concept="1TJgyj" id="6oAJqs3xiWT" role="1TKVEi">
+      <property role="IQ2ns" value="7360779165999902521" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ontstaandoor" />
+      <ref role="20lvS9" node="6c9haf45sNj" resolve="RechtsgevolgVeroorzaker" />
+    </node>
     <node concept="1TJgyj" id="6c9haf45szd" role="1TKVEi">
       <property role="IQ2ns" value="7136310554705381581" />
       <property role="20lmBu" value="aggregation" />

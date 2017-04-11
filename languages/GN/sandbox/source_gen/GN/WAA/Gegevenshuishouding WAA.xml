@@ -247,16 +247,7 @@
         </instantie>
     </onderwerpen>
     <rechtsbetrekkingen>
-        <instantie id='1423902536563766544'>
-          <geldigVan>2001-01-01T00:00</geldigVan>
-          <geldigTot></geldigTot>
-          <objectieveRechtsbetrekkingtypeid>2317404197410775793</objectieveRechtsbetrekkingtypeid>
-          <objectieveRechtsbetrekkingtypenaam>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</objectieveRechtsbetrekkingtypenaam>
-          <onderwerpid>1423902536565253958</onderwerpid>
-          <rechtssubjectMetPlichtid>3139957515574723026</rechtssubjectMetPlichtid>
-          <rechtssubjectMetRechtid>3139957515575936548</rechtssubjectMetRechtid>
-        </instantie>
-        <instantie id='3139957515587069606'>
+        <instantie id='7360779166002503297'>
           <geldigVan>2001-01-01T12:00</geldigVan>
           <geldigTot></geldigTot>
           <objectieveRechtsbetrekkingtypeid>2317404197410775793</objectieveRechtsbetrekkingtypeid>
@@ -265,9 +256,22 @@
           <rechtssubjectMetPlichtid>3139957515574338931</rechtssubjectMetPlichtid>
           <rechtssubjectMetRechtid>3139957515575936548</rechtssubjectMetRechtid>
         </instantie>
+        <instantie id='1423902536563766544'>
+          <geldigVan>2001-01-01T00:00</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>3139957515585265649</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Afwijzen van het verzoek</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>2317404197410775793</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>1423902536565253958</onderwerpid>
+          <rechtssubjectMetPlichtid>3139957515574723026</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>3139957515575936548</rechtssubjectMetRechtid>
+        </instantie>
         <instantie id='5807415387110390739'>
           <geldigVan>2001-01-01T00:00</geldigVan>
           <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>3139957515585265649</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Afwijzen van het verzoek</subjectieverechtshandelingnaam>
           <objectieveRechtsbetrekkingtypeid>909603116718783952</objectieveRechtsbetrekkingtypeid>
           <objectieveRechtsbetrekkingtypenaam>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
 voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
@@ -284,7 +288,7 @@ en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
           <uitgevoerdop>2000-03-01T00:00</uitgevoerdop>
           <actorid>3139957515574338931</actorid>
           <onderwerpid>4196470522071791502</onderwerpid>
-          <rechtsbetrekkingid>3139957515587069606</rechtsbetrekkingid>
+          <rechtsbetrekkingid>5807415387110390739</rechtsbetrekkingid>
         </instantie>
         <instantie id='3139957515586266055'>
           <handelingObjectiefRechttypeid>5066083982446708445</handelingObjectiefRechttypeid>

@@ -10,9 +10,10 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private final ConceptPresentation props_InteractieDefinitie = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_InvoerVeld = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Kolom = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Presentatie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PresentatieConstante = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PresentatieDialoog = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PresentatieKenmerk = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PresentatieLink = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PresentatieObject = new ConceptPresentationBuilder().create();
@@ -21,6 +22,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_PresentatieVeld = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Regeling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rij = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TekstVeld = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -30,27 +32,31 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 0:
         return props_InteractieDefinitie;
       case 1:
-        return props_Kolom;
+        return props_InvoerVeld;
       case 2:
-        return props_Presentatie;
+        return props_Kolom;
       case 3:
-        return props_PresentatieConstante;
+        return props_Presentatie;
       case 4:
-        return props_PresentatieKenmerk;
+        return props_PresentatieDialoog;
       case 5:
-        return props_PresentatieLink;
+        return props_PresentatieKenmerk;
       case 6:
-        return props_PresentatieObject;
+        return props_PresentatieLink;
       case 7:
-        return props_PresentatieRechtsbetrekking;
+        return props_PresentatieObject;
       case 8:
-        return props_PresentatieRechtshandeling;
+        return props_PresentatieRechtsbetrekking;
       case 9:
-        return props_PresentatieVeld;
+        return props_PresentatieRechtshandeling;
       case 10:
-        return props_Regeling;
+        return props_PresentatieVeld;
       case 11:
+        return props_Regeling;
+      case 12:
         return props_Rij;
+      case 13:
+        return props_TekstVeld;
     }
     throw new IllegalStateException("Unknown concept " + c);
   }

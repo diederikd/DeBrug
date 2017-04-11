@@ -22,5 +22,6 @@ public class PresentatieRechtshandeling_TextGen extends TextGenDescriptorBase {
     }
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("</object>");
+    tgs.newLine();
   }
 }

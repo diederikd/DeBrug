@@ -7,7 +7,7 @@ import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import ObjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
+import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
 
 public class Rechtsbetrekking_TextGen extends TextGenDescriptorBase {
   @Override
@@ -38,6 +38,18 @@ public class Rechtsbetrekking_TextGen extends TextGenDescriptorBase {
       tgs.append("</geldigTot>");
       tgs.newLine();
     }
+    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x6626bda703852f39L, "ontstaandoor")) != null)) {
+      tgs.indent();
+      tgs.append("<subjectieverechtshandelingid>");
+      tgs.append(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x6626bda703852f39L, "ontstaandoor")).getNodeId().toString());
+      tgs.append("</subjectieverechtshandelingid>");
+      tgs.newLine();
+      tgs.indent();
+      tgs.append("<subjectieverechtshandelingnaam>");
+      tgs.append(Rechtsbetrekking__BehaviorDescriptor.OntstaanDoor_id6oAJqs3xsei.invoke(ctx.getPrimaryInput()));
+      tgs.append("</subjectieverechtshandelingnaam>");
+      tgs.newLine();
+    }
     tgs.indent();
     tgs.append("<objectieveRechtsbetrekkingtypeid>");
     tgs.append(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")).getNodeId().toString());
@@ -45,7 +57,7 @@ public class Rechtsbetrekking_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.indent();
     tgs.append("<objectieveRechtsbetrekkingtypenaam>");
-    tgs.append(Rechtsbetrekking__BehaviorDescriptor.geefNaam_id5vursKRAATV.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking"))));
+    tgs.append(ObjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor.geefNaam_id5vursKRAATV.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking"))));
     tgs.append("</objectieveRechtsbetrekkingtypenaam>");
     tgs.newLine();
     tgs.indent();

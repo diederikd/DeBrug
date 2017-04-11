@@ -7,6 +7,7 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
@@ -15,25 +16,31 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import ObjectiefRecht.editor.GN_StyleSheet;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
-public class PresentatieKenmerk_Editor extends DefaultNodeEditor {
+public class InvoerVeld_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_topti0_a(editorContext, node);
+    return this.createCollection_fs0mgt_a(editorContext, node);
   }
-  private EditorCell createCollection_topti0_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_fs0mgt_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_topti0_a");
+    editorCell.setCellId("Collection_fs0mgt_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createRefCell_topti0_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_fs0mgt_a0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_fs0mgt_b0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createRefCell_topti0_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_fs0mgt_a0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "invoerveld");
+    editorCell.setCellId("Constant_fs0mgt_a0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefCell_fs0mgt_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("referentieNaarKenmerk");
     provider.setNoTargetText("<no referentieNaarKenmerk>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new PresentatieKenmerk_Editor._Inline_topti0_a0a());
+    provider.setAuxiliaryCellProvider(new InvoerVeld_Editor._Inline_fs0mgt_a1a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
@@ -47,17 +54,17 @@ public class PresentatieKenmerk_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  public static class _Inline_topti0_a0a extends InlineCellProvider {
-    public _Inline_topti0_a0a() {
+  public static class _Inline_fs0mgt_a1a extends InlineCellProvider {
+    public _Inline_fs0mgt_a1a() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_topti0_a0a0(editorContext, node);
+      return this.createProperty_fs0mgt_a0b0(editorContext, node);
     }
-    private EditorCell createProperty_topti0_a0a0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_fs0mgt_a0b0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -67,7 +74,6 @@ public class PresentatieKenmerk_Editor extends DefaultNodeEditor {
       editorCell.setCellId("property_name");
       Style style = new StyleImpl();
       GN_StyleSheet.apply_Kenmerk(style, editorCell);
-      style.set(StyleAttributes.AUTO_DELETABLE, 0, true);
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();

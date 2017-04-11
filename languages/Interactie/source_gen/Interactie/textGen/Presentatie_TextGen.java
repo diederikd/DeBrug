@@ -27,6 +27,9 @@ public class Presentatie_TextGen extends TextGenDescriptorBase {
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L, 0x7b98ef41a32fe733L, "presentatieRechtsbetrekking")));
     tgs.indent();
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L, 0x7b98ef41a33ad9fdL, "presentatieRechtshandeling")));
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L, 0x6626bda7037f61d0L, "presentatieDialogen"))) {
+      tgs.appendNode(item);
+    }
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("</presentatie>");
     tgs.newLine();

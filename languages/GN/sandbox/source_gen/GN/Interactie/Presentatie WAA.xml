@@ -69,4 +69,41 @@
           <xpath>kenmerk[@naam='uitgevoerdOp']/text()</xpath>
         </column>
       </row>
-</object></presentatie>
+</object>
+    <dialoog typeid='5066083982446708445' name='Indienen verzoek aanpassing arbeidsduur' >
+      <row>
+        <column>
+          <input type="text" name="beoogde ingangsdatum van de aanpassing" value=""/>
+        </column>
+        <column>
+          <input type="text" name="schriftelijk ingediend" value=""/>
+        </column>
+        <column>
+          <input type="text" name="gewenste spreiding" value=""/>
+        </column>
+        <column>
+          <input type="text" name="omvang van de aanpassing" value=""/>
+        </column>
+      </row>
+    </dialoog>
+    <dialoog typeid='2455094379071627785' name='Overleg plegen' >
+      <row>
+        <column>
+          <xpath>kenmerk[@naam='gewenste spreiding']/text()</xpath>
+        </column>
+        <column>
+          <xpath>kenmerk[@naam='omvang van de aanpassing']/text()</xpath>
+        </column>
+      </row>
+    </dialoog>
+    <dialoog typeid='5066083982446741231' name='Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing' >
+      <row>
+        <column>
+          <xpath>kenmerk[@naam='beoogde ingangsdatum van de aanpassing']/text()</xpath>
+        </column>
+        <column>
+          <xpath>kenmerk[@naam='omvang van de aanpassing']/text()</xpath>
+        </column>
+      </row>
+    </dialoog>
+</presentatie>

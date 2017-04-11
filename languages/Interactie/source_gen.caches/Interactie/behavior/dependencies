@@ -39,11 +39,15 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
+  <dependency className="Interactie.behavior.InvoerVeld_BehaviorDescriptor" file="InvoerVeld_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="Interactie.behavior.Kolom_BehaviorDescriptor" file="Kolom_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="Interactie.behavior.PresentatieConstante_BehaviorDescriptor" file="PresentatieConstante_BehaviorDescriptor.java">
+  <dependency className="Interactie.behavior.PresentatieDialoog_BehaviorDescriptor" file="PresentatieDialoog_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -80,6 +84,10 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Interactie.behavior.Rij_BehaviorDescriptor" file="Rij_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Interactie.behavior.TekstVeld_BehaviorDescriptor" file="TekstVeld_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
