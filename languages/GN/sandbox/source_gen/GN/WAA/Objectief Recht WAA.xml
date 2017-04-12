@@ -11296,12 +11296,12 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
     <node>
       <noderole>toestanden</noderole>
       <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
-      <nodename>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</nodename>
+      <nodename>optionele bevoegheid om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</nodename>
       <nodeid>2317404197410775793</nodeid>
         <properties>
             <property name='initieel'>true</property>
             <property name='alias'></property>
-            <property name='name'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</property>
+            <property name='name'>optionele bevoegheid om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</property>
             <property name='kortenaam'>recht om verzoek aanpassing arbeidsduur in te dienen</property>
         </properties>
         <children>

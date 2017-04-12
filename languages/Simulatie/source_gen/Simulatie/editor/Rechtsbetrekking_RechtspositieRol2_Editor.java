@@ -183,7 +183,7 @@ public class Rechtsbetrekking_RechtspositieRol2_Editor extends DefaultNodeEditor
     return editorCell;
   }
   private EditorCell createConstant_de2l07_a5a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "is geldig van");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "is onder de gestelde voorwaarden geldig van");
     editorCell.setCellId("Constant_de2l07_a5a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);

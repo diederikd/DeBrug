@@ -264,7 +264,7 @@
         </node>
         <node concept="3cpWs6" id="6oAJqs3xutq" role="3cqZAp">
           <node concept="Xl_RD" id="6oAJqs3xu_m" role="3cqZAk">
-            <property role="Xl_RC" value="Onbekend" />
+            <property role="Xl_RC" value="Initieel" />
           </node>
         </node>
       </node>

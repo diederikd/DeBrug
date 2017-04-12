@@ -106,7 +106,7 @@
         </instantie>
     </onderwerpen>
     <onderwerpen naam='arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling' typeid='5266643527327102431' >
-        <instantie naam='Arbeidsovereenkomst tussen Pieter en Essent' id='2464168203970134583'>
+        <instantie naam='Arbeidsovereenkomst tussen rechtssubject Pieter en rechtsubject Essent' id='2464168203970134583'>
             <kenmerken>
               <kenmerk id='797539131722830615' naam='werknemersidentificatie'>8120684925543537448</kenmerk>
               <kenmerk id='797539131722830659' naam='werkgeversidentificatie'>8120684925543537456</kenmerk>
@@ -115,7 +115,7 @@
               <kenmerk id='797539131722830734' naam='arbeidsduurperiode in arbeidsovereenkomst'>2464168203970139214</kenmerk>
             </kenmerken>
         </instantie>
-        <instantie naam='Arbeidsovereenkomst tussen Pieter en Eneco' id='1423902536565253958'>
+        <instantie naam='Arbeidsovereenkomst tussen rechtssubject Pieter en rechtssubject Eneco' id='1423902536565253958'>
             <kenmerken>
               <kenmerk id='797539131722830615' naam='werknemersidentificatie'>1423902536565254565</kenmerk>
               <kenmerk id='797539131722830659' naam='werkgeversidentificatie'>1423902536565254578</kenmerk>
@@ -251,7 +251,7 @@
           <geldigVan>2001-01-01T12:00</geldigVan>
           <geldigTot></geldigTot>
           <objectieveRechtsbetrekkingtypeid>2317404197410775793</objectieveRechtsbetrekkingtypeid>
-          <objectieveRechtsbetrekkingtypenaam>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</objectieveRechtsbetrekkingtypenaam>
+          <objectieveRechtsbetrekkingtypenaam>optionele bevoegheid om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</objectieveRechtsbetrekkingtypenaam>
           <onderwerpid>2464168203970134583</onderwerpid>
           <rechtssubjectMetPlichtid>3139957515574338931</rechtssubjectMetPlichtid>
           <rechtssubjectMetRechtid>3139957515575936548</rechtssubjectMetRechtid>
@@ -262,7 +262,7 @@
           <subjectieverechtshandelingid>3139957515585265649</subjectieverechtshandelingid>
           <subjectieverechtshandelingnaam>Afwijzen van het verzoek</subjectieverechtshandelingnaam>
           <objectieveRechtsbetrekkingtypeid>2317404197410775793</objectieveRechtsbetrekkingtypeid>
-          <objectieveRechtsbetrekkingtypenaam>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</objectieveRechtsbetrekkingtypenaam>
+          <objectieveRechtsbetrekkingtypenaam>optionele bevoegheid om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</objectieveRechtsbetrekkingtypenaam>
           <onderwerpid>1423902536565253958</onderwerpid>
           <rechtssubjectMetPlichtid>3139957515574723026</rechtssubjectMetPlichtid>
           <rechtssubjectMetRechtid>3139957515575936548</rechtssubjectMetRechtid>

@@ -1172,7 +1172,7 @@
       <node concept="3EZMnI" id="6oAJqs3y16Z" role="3EZMnx">
         <node concept="l2Vlx" id="6oAJqs3y170" role="2iSdaV" />
         <node concept="3F0ifn" id="5riiL_BWhiA" role="3EZMnx">
-          <property role="3F0ifm" value="is geldig van" />
+          <property role="3F0ifm" value="is onder de gestelde voorwaarden geldig van" />
           <node concept="lj46D" id="2K7y4iIRtIp" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -1760,7 +1760,7 @@
       <node concept="3EZMnI" id="6oAJqs3ybok" role="3EZMnx">
         <node concept="l2Vlx" id="6oAJqs3ybol" role="2iSdaV" />
         <node concept="3F0ifn" id="5riiL_BWl33" role="3EZMnx">
-          <property role="3F0ifm" value="is geldig van" />
+          <property role="3F0ifm" value="is onder de gestelde voorwaarden geldig van" />
           <node concept="lj46D" id="6oAJqs3ycMS" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
