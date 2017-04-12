@@ -143,7 +143,7 @@ public class Interpreter {
       final SNode huidigeDatum = abstracteWaarde;
       if (SNodeOperations.isInstanceOf(huidigeDatum, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9e0L, "ObjectiefRecht.structure.HuidigeDatum"))) {
         // Om de simulatie te laten werken moet de simulatiedatum worden teruggegeven. 
-        Long VerschillenInNanoSeconden = Duration.between(DatumTijd__BehaviorDescriptor.geefDatumTijd_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6d087789eL, "datumtijdvaninitialisatie"))), LocalDateTime.now()).toNanos();
+        Long VerschillenInNanoSeconden = Duration.between(DatumTijd__BehaviorDescriptor.geefDatumTijd_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6d087789eL, "tijdtipvaninitialisatie"))), LocalDateTime.now()).toNanos();
         LocalDate simulatiedatum = DatumTijd__BehaviorDescriptor.geefDatumTijd_id5riiL_BUVyA.invoke(SLinkOperations.getTarget(Interpreter.simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x67229afa6a23b388L, "datumtijdvanstartvandeSimulatie"))).plusNanos(VerschillenInNanoSeconden).toLocalDate();
         Interpreter.voegBerichtToe("Huidige datum is " + simulatiedatum);
         return simulatiedatum;

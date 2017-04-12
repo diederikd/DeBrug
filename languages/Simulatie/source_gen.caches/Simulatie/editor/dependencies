@@ -266,6 +266,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="Simulatie.editor.Simulatie_Editor" file="Simulatie_Editor.java">
+    <classNode dependClassName="Datum.behavior.DatumTijd__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.behavior.Informatiepositie__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.behavior.Simulatie__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.plugin.Interpreter" />

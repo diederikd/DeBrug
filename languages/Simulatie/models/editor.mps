@@ -30,13 +30,13 @@
     <import index="alog" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.project(MPS.Workbench/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="rwnv" ref="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)" implicit="true" />
     <import index="ln8d" ref="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)" implicit="true" />
     <import index="z1s1" ref="r:4d95e375-a45b-4405-8471-233ad9d6fb8b(Datum.editor)" implicit="true" />
     <import index="cyn4" ref="r:ec7c7ee2-8dd8-4ba4-92e8-f12d35099d0b(SubjectiefRecht.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
     <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" implicit="true" />
-    <import index="rwnv" ref="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -312,88 +312,142 @@
     <ref role="1XX52x" to="xhlk:6OHSlZaTjYP" resolve="Simulatie" />
     <node concept="3EZMnI" id="6OHSlZaTSpF" role="2wV5jI">
       <node concept="l2Vlx" id="6OHSlZaTSpG" role="2iSdaV" />
-      <node concept="3F0ifn" id="6OHSlZaTSpH" role="3EZMnx">
-        <property role="3F0ifm" value="simulatie" />
-      </node>
-      <node concept="3F0A7n" id="6OHSlZaTSpI" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3F0ifn" id="6OHSlZaTSpJ" role="3EZMnx">
-        <property role="3F0ifm" value="casus" />
-      </node>
-      <node concept="1iCGBv" id="6OHSlZaTSpK" role="3EZMnx">
-        <ref role="1NtTu8" to="xhlk:6OHSlZaTSbU" resolve="casus" />
-        <node concept="1sVBvm" id="6OHSlZaTSpN" role="1sWHZn">
-          <node concept="3F0A7n" id="6OHSlZaTSpP" role="2wV5jI">
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="3EZMnI" id="1qtR5qoVK0E" role="3EZMnx">
+        <node concept="l2Vlx" id="1qtR5qoVK0F" role="2iSdaV" />
+        <node concept="3F0ifn" id="6OHSlZaTSpH" role="3EZMnx">
+          <property role="3F0ifm" value="simulatie" />
+        </node>
+        <node concept="3F0A7n" id="6OHSlZaTSpI" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="6OHSlZaTSpJ" role="3EZMnx">
+          <property role="3F0ifm" value="casus" />
+        </node>
+        <node concept="1iCGBv" id="6OHSlZaTSpK" role="3EZMnx">
+          <ref role="1NtTu8" to="xhlk:6OHSlZaTSbU" resolve="casus" />
+          <node concept="1sVBvm" id="6OHSlZaTSpN" role="1sWHZn">
+            <node concept="3F0A7n" id="6OHSlZaTSpP" role="2wV5jI">
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+          <node concept="ljvvj" id="6OHSlZaTSs1" role="3F10Kt">
+            <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="ljvvj" id="6OHSlZaTSs1" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+        <node concept="3F0ifn" id="CRumITZLFP" role="3EZMnx">
+          <property role="3F0ifm" value="gegevenshuishouding" />
         </node>
-      </node>
-      <node concept="3F0ifn" id="CRumITZLFP" role="3EZMnx">
-        <property role="3F0ifm" value="gegevenshuishouding" />
-      </node>
-      <node concept="3F0ifn" id="CRumITZLJP" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-      </node>
-      <node concept="1iCGBv" id="CRumIU17hy" role="3EZMnx">
-        <ref role="1NtTu8" to="xhlk:CRumIU1794" resolve="gegevenshuishouding" />
-        <node concept="1sVBvm" id="CRumIU17h$" role="1sWHZn">
-          <node concept="3F0A7n" id="CRumIU17jH" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="3F0ifn" id="CRumITZLJP" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="1iCGBv" id="CRumIU17hy" role="3EZMnx">
+          <ref role="1NtTu8" to="xhlk:CRumIU1794" resolve="gegevenshuishouding" />
+          <node concept="1sVBvm" id="CRumIU17h$" role="1sWHZn">
+            <node concept="3F0A7n" id="CRumIU17jH" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+          <node concept="ljvvj" id="CRumIU17jK" role="3F10Kt">
+            <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="ljvvj" id="CRumIU17jK" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+        <node concept="3F0ifn" id="3d6QfrgxR$R" role="3EZMnx">
+          <property role="3F0ifm" value="tijdstip van initialisatie" />
         </node>
-      </node>
-      <node concept="3F0ifn" id="6syAJDE8VfO" role="3EZMnx">
-        <property role="3F0ifm" value="start van de simulatie" />
-      </node>
-      <node concept="3F0ifn" id="6syAJDE8Via" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-      </node>
-      <node concept="3F1sOY" id="6syAJDE8Vko" role="3EZMnx">
-        <ref role="1NtTu8" to="xhlk:6syAJDE8Ve8" resolve="datumtijdvanstartvandeSimulatie" />
-        <node concept="ljvvj" id="6syAJDE8Vlw" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+        <node concept="3F0ifn" id="3d6QfrgxRC9" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
         </node>
-      </node>
-      <node concept="3F0ifn" id="3d6QfrgxR$R" role="3EZMnx">
-        <property role="3F0ifm" value="moment van initialisatie" />
-      </node>
-      <node concept="3F0ifn" id="3d6QfrgxRC9" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-      </node>
-      <node concept="3F1sOY" id="3d6QfrgxRFt" role="3EZMnx">
-        <ref role="1NtTu8" to="xhlk:3d6QfrgxRyu" resolve="datumtijdvaninitialisatie" />
-        <node concept="ljvvj" id="3d6QfrgxRH8" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+        <node concept="3F1sOY" id="3d6QfrgxRFt" role="3EZMnx">
+          <ref role="1NtTu8" to="xhlk:3d6QfrgxRyu" resolve="tijdtipvaninitialisatie" />
+          <node concept="ljvvj" id="3d6QfrgxRH8" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
-      </node>
-      <node concept="3F0ifn" id="2K7y4iITYZK" role="3EZMnx">
-        <property role="3F0ifm" value="laatste handeling" />
-      </node>
-      <node concept="3F0ifn" id="2K7y4iITZ24" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-      </node>
-      <node concept="3F1sOY" id="2K7y4iITZ4q" role="3EZMnx">
-        <ref role="1NtTu8" to="xhlk:2K7y4iISu19" resolve="datumtijdlaatstehandeling" />
-        <node concept="ljvvj" id="2K7y4iITZ5A" role="3F10Kt">
+        <node concept="3F0ifn" id="6syAJDE8VfO" role="3EZMnx">
+          <property role="3F0ifm" value="start van de simulatie" />
+        </node>
+        <node concept="3F0ifn" id="6syAJDE8Via" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="3F1sOY" id="6syAJDE8Vko" role="3EZMnx">
+          <ref role="1NtTu8" to="xhlk:6syAJDE8Ve8" resolve="datumtijdvanstartvandeSimulatie" />
+          <node concept="ljvvj" id="6syAJDE8Vlw" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="2K7y4iITYZK" role="3EZMnx">
+          <property role="3F0ifm" value="huidig tijdstip simulatie" />
+        </node>
+        <node concept="3F0ifn" id="2K7y4iITZ24" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="3F1sOY" id="2K7y4iITZ4q" role="3EZMnx">
+          <ref role="1NtTu8" to="xhlk:2K7y4iISu19" resolve="huidigtijdtipsimulatie" />
+        </node>
+        <node concept="ykhUs" id="1qtR5qoVJNF" role="3EZMnx">
+          <property role="ykhUg" value="Zet tijdstip week later" />
+          <node concept="ykhUf" id="1qtR5qoVJNG" role="ynkVX">
+            <node concept="3clFbS" id="1qtR5qoVJNH" role="2VODD2">
+              <node concept="3clFbF" id="1qtR5qoVZUt" role="3cqZAp">
+                <node concept="2OqwBi" id="1qtR5qoW4To" role="3clFbG">
+                  <node concept="2OqwBi" id="1qtR5qoW03J" role="2Oq$k0">
+                    <node concept="1VaYGm" id="1qtR5qoVZUs" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1qtR5qoW0eJ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xhlk:2K7y4iISu19" resolve="huidigtijdtipsimulatie" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="1qtR5qoW56l" role="2OqNvi">
+                    <ref role="37wK5l" to="rwnv:5riiL_BUXYm" resolve="zetDatumTijd" />
+                    <node concept="2OqwBi" id="1qtR5qoW2xZ" role="37wK5m">
+                      <node concept="2OqwBi" id="1qtR5qoW1z9" role="2Oq$k0">
+                        <node concept="2OqwBi" id="1qtR5qoW0Z4" role="2Oq$k0">
+                          <node concept="1VaYGm" id="1qtR5qoW0PB" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="1qtR5qoW1dI" role="2OqNvi">
+                            <ref role="3Tt5mk" to="xhlk:2K7y4iISu19" resolve="huidigtijdtipsimulatie" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="1qtR5qoW1M0" role="2OqNvi">
+                          <ref role="37wK5l" to="rwnv:5riiL_BUVyA" resolve="geefDatumTijd" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="1qtR5qoW3mW" role="2OqNvi">
+                        <ref role="37wK5l" to="28m1:~LocalDateTime.plusDays(long):java.time.LocalDateTime" resolve="plusDays" />
+                        <node concept="3cmrfG" id="1qtR5qoW3Ga" role="37wK5m">
+                          <property role="3cmrfH" value="7" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="pVoyu" id="1qtR5qoVJVr" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="pVoyu" id="1qtR5qoVJVt" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="1qtR5qoVJVw" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="lj46D" id="1qtR5qoVK5Y" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="6OHSlZaUeyx" role="3EZMnx">
         <property role="3F0ifm" value="" />
-        <node concept="ljvvj" id="6OHSlZaUeyP" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+      </node>
+      <node concept="3F0ifn" id="1qtR5qoVJSU" role="3EZMnx">
+        <property role="3F0ifm" value="" />
       </node>
       <node concept="3F0ifn" id="6OHSlZaUexV" role="3EZMnx">
         <property role="3F0ifm" value="rechtspositie persoon 1" />
+        <node concept="pVoyu" id="1qtR5qoVJQo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="6OHSlZaUkIu" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -3922,7 +3976,7 @@
                       <ref role="3cqZAo" node="52o5oqbMjJG" resolve="simulatie" />
                     </node>
                     <node concept="3TrEf2" id="52o5oqbMjJW" role="2OqNvi">
-                      <ref role="3Tt5mk" to="xhlk:2K7y4iISu19" resolve="datumtijdlaatstehandeling" />
+                      <ref role="3Tt5mk" to="xhlk:2K7y4iISu19" resolve="huidigtijdtipsimulatie" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="52o5oqbMjJX" role="2OqNvi">
@@ -3975,7 +4029,7 @@
                       <ref role="3cqZAo" node="52o5oqbMjJG" resolve="simulatie" />
                     </node>
                     <node concept="3TrEf2" id="52o5oqbMjKi" role="2OqNvi">
-                      <ref role="3Tt5mk" to="xhlk:2K7y4iISu19" resolve="datumtijdlaatstehandeling" />
+                      <ref role="3Tt5mk" to="xhlk:2K7y4iISu19" resolve="huidigtijdtipsimulatie" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="52o5oqbMjKj" role="2OqNvi">
