@@ -11,7 +11,10 @@ Kijk indien nodig bij de "previous versions"
 Om de code te bewerken zijn ook de mbedrr plugins noodzakelijk. 
 Ga naar https://github.com/mbeddr/mbeddr.core/releases om deze plugins te downloaden.
 Download wel een compatible set.
-Download vervolgens het bestand platform-distribution-xxx-MPS-3.4.3.zip
+Download vervolgens het bestand platform-distribution-410-MPS-3.4.3.zip
+Dit bestand is te vinden op:
+https://github.com/mbeddr/mbeddr.core/releases/tag/nightly-410-MPS-3.4.3
+
 Pak dit bestand uit en kopieer de directory plugins naar de directory plugins in de aplicatie directory van MPS. Op een Mac is dat bijvoorbeeld de directory:
 /Applications/MPS 3.4.app/Contents/Plugins
 

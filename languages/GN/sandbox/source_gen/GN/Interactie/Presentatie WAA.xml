@@ -3,39 +3,54 @@
 <object type='rechtssubject' naam='werknemer' >
       <row>
         <column>
-          <xpath>kenmerk[@naam='voornamen']/text()</xpath>
+          <kenmerk naam='voornamen' />
           <string>(</string>
-          <xpath>kenmerk[@naam='roepnaam']/text()</xpath>
+          <kenmerk naam='roepnaam' />
           <string>)</string>
-          <xpath>kenmerk[@naam='achternaam']/text()</xpath>
+          <kenmerk naam='achternaam' />
         </column>
         <column>
-          <xpath>kenmerk[@naam='adres werknemer']/text()</xpath>
-          <xpath>kenmerk[@naam='huisnummer werknemer']/text()</xpath>
+          <kenmerk naam='adres werknemer' />
+          <kenmerk naam='huisnummer werknemer' />
           <string>, </string>
-          <xpath>kenmerk[@naam='postcode van de werknemer']/text()</xpath>
-          <xpath>kenmerk[@naam='woonplaats']/text()</xpath>
+          <kenmerk naam='postcode van de werknemer' />
+          <kenmerk naam='woonplaats' />
         </column>
         <column>
           <string>Nationaliteit:</string>
-          <xpath>kenmerk[@naam='nationaliteit']/text()</xpath>
+          <kenmerk naam='nationaliteit' />
           <string> - Paspoortnummer:</string>
-          <xpath>kenmerk[@naam='paspoortnummer']/text()</xpath>
-          <xpath>kenmerk[@naam='identiteitskaartnummer']/text()</xpath>
+          <kenmerk naam='paspoortnummer' />
+          <kenmerk naam='identiteitskaartnummer' />
         </column>
       </row>
       <row>
         <column>
           <string>BSN: </string>
-          <xpath>kenmerk[@naam='burgerservicenummer']/text()</xpath>
+          <kenmerk naam='burgerservicenummer' />
         </column>
         <column>
           <string>Burgerlijke staat: </string>
-          <xpath>kenmerk[@naam='burgerlijke staat']/text()</xpath>
+          <kenmerk naam='burgerlijke staat' />
         </column>
         <column>
           <string>Miitair: </string>
-          <xpath>kenmerk[@naam='militair ambtenaar']/text()</xpath>
+          <kenmerk naam='militair ambtenaar' />
+        </column>
+      </row>
+</object><object type='onderwerp' naam='aanpassing van de arbeidsduur' >
+      <row>
+        <column>
+          <kenmerk naam='Naam Indiener' />
+        </column>
+        <column>
+          <kenmerk naam='beoogde ingangsdatum van de aanpassing' />
+        </column>
+        <column>
+          <kenmerk naam='omvang van de aanpassing' />
+        </column>
+        <column>
+          <kenmerk naam='gewenste spreiding' />
         </column>
       </row>
 </object>    <object type='rechtsbetrekking' naam='' >
@@ -89,20 +104,20 @@
     <dialoog typeid='2455094379071627785' name='Overleg plegen' >
       <row>
         <column>
-          <xpath>kenmerk[@naam='gewenste spreiding']/text()</xpath>
+          <kenmerk naam='gewenste spreiding' />
         </column>
         <column>
-          <xpath>kenmerk[@naam='omvang van de aanpassing']/text()</xpath>
+          <kenmerk naam='omvang van de aanpassing' />
         </column>
       </row>
     </dialoog>
     <dialoog typeid='5066083982446741231' name='Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing' >
       <row>
         <column>
-          <xpath>kenmerk[@naam='beoogde ingangsdatum van de aanpassing']/text()</xpath>
+          <kenmerk naam='beoogde ingangsdatum van de aanpassing' />
         </column>
         <column>
-          <xpath>kenmerk[@naam='omvang van de aanpassing']/text()</xpath>
+          <kenmerk naam='omvang van de aanpassing' />
         </column>
       </row>
     </dialoog>

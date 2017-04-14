@@ -14,9 +14,9 @@ public class PresentatieKenmerk_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
-    tgs.append("<xpath>kenmerk[@naam='");
+    tgs.append("<kenmerk naam='");
     tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL, 0xfdfefdf8693968fL, "referentieNaarKenmerk")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-    tgs.append("']/text()</xpath>");
+    tgs.append("' />");
     tgs.newLine();
   }
 }

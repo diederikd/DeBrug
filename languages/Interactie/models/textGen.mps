@@ -583,7 +583,7 @@
         <node concept="1bpajm" id="7IoVO6zf45m" role="3cqZAp" />
         <node concept="lc7rE" id="7IoVO6zePM2" role="3cqZAp">
           <node concept="la8eA" id="7IoVO6zePM3" role="lcghm">
-            <property role="lacIc" value="&lt;xpath&gt;kenmerk[@naam='" />
+            <property role="lacIc" value="&lt;kenmerk naam='" />
           </node>
           <node concept="l9hG8" id="7IoVO6zePM4" role="lcghm">
             <node concept="2OqwBi" id="7IoVO6zePM5" role="lb14g">
@@ -599,7 +599,7 @@
             </node>
           </node>
           <node concept="la8eA" id="7IoVO6zePMa" role="lcghm">
-            <property role="lacIc" value="']/text()&lt;/xpath&gt;" />
+            <property role="lacIc" value="' /&gt;" />
           </node>
           <node concept="l8MVK" id="7IoVO6zf3VI" role="lcghm" />
         </node>

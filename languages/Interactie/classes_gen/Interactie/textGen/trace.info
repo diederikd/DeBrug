@@ -324,10 +324,10 @@
     <file name="PresentatieKenmerk_TextGen.java">
       <node id="8906131328315645036" at="14,54,15,55" concept="3" />
       <node id="8906131328315703638" at="15,55,16,17" concept="0" />
-      <node id="8906131328315645036" at="16,17,17,41" concept="0" />
-      <node id="8906131328315645036" at="17,41,18,353" concept="0" />
-      <node id="8906131328315645036" at="18,353,19,36" concept="0" />
-      <node id="8906131328315645036" at="19,36,20,18" concept="0" />
+      <node id="8906131328315645036" at="16,17,17,34" concept="0" />
+      <node id="8906131328315645036" at="17,34,18,353" concept="0" />
+      <node id="8906131328315645036" at="18,353,19,23" concept="0" />
+      <node id="8906131328315645036" at="19,23,20,18" concept="0" />
       <node id="8906131328315645036" at="13,0,22,0" concept="2" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="8906131328315645036" at="14,54,20,18">
         <var name="tgs" id="8906131328315645036" />

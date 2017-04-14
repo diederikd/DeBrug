@@ -226,6 +226,31 @@
         </node>
       </node>
     </node>
+    <node concept="3oGBEY" id="1qtR5qp8sJK" role="3oGB20">
+      <ref role="3oGB_1" to="zznl:J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
+      <node concept="3oHiSy" id="1qtR5qp8sKg" role="3oGGqr">
+        <node concept="3oGGqp" id="1qtR5qp8sKr" role="3oHiS_">
+          <node concept="2P_WKc" id="1qtR5qp8sKv" role="2PAxsN">
+            <ref role="29j7_g" to="dmt2:5Bacij9tPhT" resolve="Naam Indiener" />
+          </node>
+        </node>
+        <node concept="3oGGqp" id="1qtR5qp8sKo" role="3oHiS_">
+          <node concept="2P_WKc" id="1qtR5qp8sKx" role="2PAxsN">
+            <ref role="29j7_g" to="zznl:4$mS69sWF6g" resolve="beoogde ingangsdatum van de aanpassing" />
+          </node>
+        </node>
+        <node concept="3oGGqp" id="1qtR5qp8sKN" role="3oHiS_">
+          <node concept="2P_WKc" id="1qtR5qp8sKV" role="2PAxsN">
+            <ref role="29j7_g" to="zznl:GhrpPwK$en" resolve="omvang van de aanpassing" />
+          </node>
+        </node>
+        <node concept="3oGGqp" id="1qtR5qp8sKm" role="3oHiS_">
+          <node concept="2P_WKc" id="1qtR5qp8sKz" role="2PAxsN">
+            <ref role="29j7_g" to="zznl:GhrpPwK$fm" resolve="gewenste spreiding" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3oHOV1" id="7IoVO6zc7kb" role="3oHKxM">
       <node concept="3oHiSy" id="7IoVO6zc7kd" role="3oHOV2">
         <node concept="3oGGqp" id="7IoVO6zeC$M" role="3oHiS_">
