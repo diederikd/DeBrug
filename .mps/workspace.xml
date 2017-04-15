@@ -18,31 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f2805d-4538-46c3-a016-7128ec7e185d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/actions/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/constraints/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/editor/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/intentions/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/structure/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/textGen/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/typesystem/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/Betrekking_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/OptieAfkeurenHandeling_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/OptieGoedkeurenHandeling_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/OvergangZonderRechtsgevolg_BehaviorDescriptor.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/Overgangen_BehaviorDescriptor.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/Overgangen_BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/Overgang_BehaviorDescriptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/languages/GN/sandbox/models/GN/WAA.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen.caches/GN/WAA/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/AWR/AWR.xml" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/AWR/AWR.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/WAA/Objectief Recht WAA.xml" afterPath="$PROJECT_DIR$/languages/GN/sandbox/source_gen/GN/WAA/Objectief Recht WAA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/GN/source_gen.caches/ObjectiefRecht/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/trace.info" afterPath="$PROJECT_DIR$/languages/GN/source_gen/ObjectiefRecht/structure/trace.info" />
     </list>
     <ignored path="DeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -1220,7 +1196,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Evaluatie met rode en groene bollen" />
     <MESSAGE value="Aanpassingen voor Wim" />
     <MESSAGE value="Interactie taal" />
     <MESSAGE value="XML export wetsregels en licentie toegevoegd." />
@@ -1245,7 +1220,8 @@
     <MESSAGE value="Aanpassingen op simulatie na reactie Sjir" />
     <MESSAGE value="This closes #17" />
     <MESSAGE value="Aangepaste README.MD met dank aan Onno" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aangepaste README.MD met dank aan Onno" />
+    <MESSAGE value="Interpreter merged in Master" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interpreter merged in Master" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://GN.sandbox/GN.WAA/Gegevenshuishouding WAA">
