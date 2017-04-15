@@ -2,10 +2,10 @@
 <debug-info version="2">
   <root>
     <file name="ConceptPresentationAspectImpl.java">
-      <unit at="12,0,392,0" name="ObjectiefRecht.structure.ConceptPresentationAspectImpl" />
+      <unit at="12,0,404,0" name="ObjectiefRecht.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="20,0,916,0" name="ObjectiefRecht.structure.StructureAspectDescriptor" />
+      <unit at="20,0,944,0" name="ObjectiefRecht.structure.StructureAspectDescriptor" />
     </file>
   </root>
 </debug-info>

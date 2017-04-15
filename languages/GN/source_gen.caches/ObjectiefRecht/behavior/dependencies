@@ -63,6 +63,10 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBehaviorAspectDescriptor" />
   </dependency>
+  <dependency className="ObjectiefRecht.behavior.Betrekking_BehaviorDescriptor" file="Betrekking_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="ObjectiefRecht.behavior.Concept_BehaviorDescriptor" file="Concept_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -502,11 +506,23 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
+  <dependency className="ObjectiefRecht.behavior.OptieAfkeurenHandeling_BehaviorDescriptor" file="OptieAfkeurenHandeling_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ObjectiefRecht.behavior.OptieGoedkeurenHandeling_BehaviorDescriptor" file="OptieGoedkeurenHandeling_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="ObjectiefRecht.behavior.OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor" file="OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.Overgangen_BehaviorDescriptor" file="Overgangen_BehaviorDescriptor.java">
+  <dependency className="ObjectiefRecht.behavior.OvergangZonderRechtsgevolg_BehaviorDescriptor" file="OvergangZonderRechtsgevolg_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ObjectiefRecht.behavior.Overgang_BehaviorDescriptor" file="Overgang_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

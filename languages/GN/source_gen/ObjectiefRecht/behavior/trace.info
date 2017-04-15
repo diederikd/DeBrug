@@ -48,6 +48,9 @@
     <file name="BehaviorAspectDescriptor.java">
       <unit at="14,0,114,0" name="ObjectiefRecht.behavior.BehaviorAspectDescriptor" />
     </file>
+    <file name="Betrekking_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Betrekking_BehaviorDescriptor" />
+    </file>
     <file name="Concept_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Concept_BehaviorDescriptor" />
     </file>
@@ -228,11 +231,20 @@
     <file name="Onderwerp_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Onderwerp_BehaviorDescriptor" />
     </file>
+    <file name="OptieAfkeurenHandeling_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.OptieAfkeurenHandeling_BehaviorDescriptor" />
+    </file>
+    <file name="OptieGoedkeurenHandeling_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.OptieGoedkeurenHandeling_BehaviorDescriptor" />
+    </file>
     <file name="OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor" />
     </file>
-    <file name="Overgangen_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Overgangen_BehaviorDescriptor" />
+    <file name="OvergangZonderRechtsgevolg_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.OvergangZonderRechtsgevolg_BehaviorDescriptor" />
+    </file>
+    <file name="Overgang_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Overgang_BehaviorDescriptor" />
     </file>
     <file name="PlusExpressie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.PlusExpressie_BehaviorDescriptor" />

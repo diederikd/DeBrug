@@ -11306,7 +11306,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
         </properties>
         <children>
           <node>
-            <noderole>Voorwaarden</noderole>
+            <noderole>voorwaarden</noderole>
             <nodetype>Voorwaarden</nodetype>
             <nodename></nodename>
             <nodeid>6133486975028282110</nodeid>
@@ -12006,7 +12006,7 @@ en de omvang van de aanpassing</property>
               </properties>
           </node>
           <node>
-            <noderole>Voorwaarden</noderole>
+            <noderole>voorwaarden</noderole>
             <nodetype>Voorwaarden</nodetype>
             <nodename></nodename>
             <nodeid>6133486975028698816</nodeid>
@@ -12283,7 +12283,7 @@ overeenkomstig de wensen van de werknemer</property>
               </properties>
           </node>
           <node>
-            <noderole>Voorwaarden</noderole>
+            <noderole>voorwaarden</noderole>
             <nodetype>Voorwaarden</nodetype>
             <nodename></nodename>
             <nodeid>6133486975028698897</nodeid>

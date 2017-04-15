@@ -460,7 +460,7 @@
               </properties>
           </node>
           <node>
-            <noderole>Voorwaarden</noderole>
+            <noderole>voorwaarden</noderole>
             <nodetype>Voorwaarden</nodetype>
             <nodename></nodename>
             <nodeid>6133486975031622923</nodeid>

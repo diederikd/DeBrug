@@ -9,7 +9,7 @@ package ObjectiefRecht.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public abstract class Overgangen_BehaviorDescriptor {
+public abstract class Overgang_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }
