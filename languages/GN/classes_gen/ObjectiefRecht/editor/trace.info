@@ -1905,7 +1905,7 @@
       <node id="1582523794838684986" at="452,0,455,0" concept="1" trace="_Inline_d1dh3g_a02a#()V" />
       <node id="1582523794838684986" at="455,0,458,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1582523794838684986" at="458,0,461,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1582523794838684942" at="495,0,498,0" concept="1" trace="VoorwaardenSingleRoleHandler_d1dh3g_w0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="1582523794838684942" at="495,0,498,0" concept="1" trace="voorwaardenSingleRoleHandler_d1dh3g_w0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="1582523794838684942" at="512,0,515,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="1582523794838684942" at="516,70,519,7" concept="6" />
       <node id="1582523794838684942" at="519,7,522,7" concept="6" />
@@ -2590,7 +2590,7 @@
       <unit id="1582523794838684942" at="144,0,196,0" name="ObjectiefRecht.editor.AanspraakNaIngebrekeStellingPlicht_EN_Editor$bronSingleRoleHandler_d1dh3g_f0" />
       <unit id="1582523794838684942" at="586,0,638,0" name="ObjectiefRecht.editor.AanspraakNaIngebrekeStellingPlicht_EN_Editor$GeldigVanSingleRoleHandler_d1dh3g_bb0" />
       <unit id="1582523794838684942" at="657,0,709,0" name="ObjectiefRecht.editor.AanspraakNaIngebrekeStellingPlicht_EN_Editor$GeldigTotSingleRoleHandler_d1dh3g_eb0" />
-      <unit id="1582523794838684942" at="494,0,547,0" name="ObjectiefRecht.editor.AanspraakNaIngebrekeStellingPlicht_EN_Editor$VoorwaardenSingleRoleHandler_d1dh3g_w0" />
+      <unit id="1582523794838684942" at="494,0,547,0" name="ObjectiefRecht.editor.AanspraakNaIngebrekeStellingPlicht_EN_Editor$voorwaardenSingleRoleHandler_d1dh3g_w0" />
       <unit id="1582523794838684942" at="38,0,783,0" name="ObjectiefRecht.editor.AanspraakNaIngebrekeStellingPlicht_EN_Editor" />
     </file>
   </root>
@@ -3091,7 +3091,7 @@
       <node id="1582523794838692377" at="452,0,455,0" concept="1" trace="_Inline_fdm9fu_a02a#()V" />
       <node id="1582523794838692377" at="455,0,458,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1582523794838692377" at="458,0,461,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1582523794838692333" at="495,0,498,0" concept="1" trace="VoorwaardenSingleRoleHandler_fdm9fu_w0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="1582523794838692333" at="495,0,498,0" concept="1" trace="voorwaardenSingleRoleHandler_fdm9fu_w0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="1582523794838692333" at="512,0,515,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="1582523794838692333" at="516,70,519,7" concept="6" />
       <node id="1582523794838692333" at="519,7,522,7" concept="6" />
@@ -3776,7 +3776,7 @@
       <unit id="1582523794838692333" at="144,0,196,0" name="ObjectiefRecht.editor.KrachtigeAanspraakFataleVerplichtig_EN_Editor$bronSingleRoleHandler_fdm9fu_f0" />
       <unit id="1582523794838692333" at="586,0,638,0" name="ObjectiefRecht.editor.KrachtigeAanspraakFataleVerplichtig_EN_Editor$GeldigVanSingleRoleHandler_fdm9fu_bb0" />
       <unit id="1582523794838692333" at="657,0,709,0" name="ObjectiefRecht.editor.KrachtigeAanspraakFataleVerplichtig_EN_Editor$GeldigTotSingleRoleHandler_fdm9fu_eb0" />
-      <unit id="1582523794838692333" at="494,0,547,0" name="ObjectiefRecht.editor.KrachtigeAanspraakFataleVerplichtig_EN_Editor$VoorwaardenSingleRoleHandler_fdm9fu_w0" />
+      <unit id="1582523794838692333" at="494,0,547,0" name="ObjectiefRecht.editor.KrachtigeAanspraakFataleVerplichtig_EN_Editor$voorwaardenSingleRoleHandler_fdm9fu_w0" />
       <unit id="1582523794838692333" at="38,0,783,0" name="ObjectiefRecht.editor.KrachtigeAanspraakFataleVerplichtig_EN_Editor" />
     </file>
   </root>
@@ -4272,7 +4272,7 @@
       <node id="1582523794838697422" at="445,0,448,0" concept="1" trace="_Inline_6um9s6_a91a#()V" />
       <node id="1582523794838697422" at="448,0,451,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1582523794838697422" at="451,0,454,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1582523794838697379" at="488,0,491,0" concept="1" trace="VoorwaardenSingleRoleHandler_6um9s6_v0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="1582523794838697379" at="488,0,491,0" concept="1" trace="voorwaardenSingleRoleHandler_6um9s6_v0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="1582523794838697379" at="505,0,508,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="1582523794838697379" at="509,70,512,7" concept="6" />
       <node id="1582523794838697379" at="512,7,515,7" concept="6" />
@@ -4949,7 +4949,7 @@
       <unit id="1582523794838697379" at="143,0,195,0" name="ObjectiefRecht.editor.OptioneleBevoegdheidOptioneleGehoudenheid_EN_Editor$bronSingleRoleHandler_6um9s6_f0" />
       <unit id="1582523794838697379" at="579,0,631,0" name="ObjectiefRecht.editor.OptioneleBevoegdheidOptioneleGehoudenheid_EN_Editor$GeldigVanSingleRoleHandler_6um9s6_ab0" />
       <unit id="1582523794838697379" at="650,0,702,0" name="ObjectiefRecht.editor.OptioneleBevoegdheidOptioneleGehoudenheid_EN_Editor$GeldigTotSingleRoleHandler_6um9s6_db0" />
-      <unit id="1582523794838697379" at="487,0,540,0" name="ObjectiefRecht.editor.OptioneleBevoegdheidOptioneleGehoudenheid_EN_Editor$VoorwaardenSingleRoleHandler_6um9s6_v0" />
+      <unit id="1582523794838697379" at="487,0,540,0" name="ObjectiefRecht.editor.OptioneleBevoegdheidOptioneleGehoudenheid_EN_Editor$voorwaardenSingleRoleHandler_6um9s6_v0" />
       <unit id="1582523794838697379" at="38,0,776,0" name="ObjectiefRecht.editor.OptioneleBevoegdheidOptioneleGehoudenheid_EN_Editor" />
     </file>
   </root>
@@ -5552,7 +5552,7 @@
       <node id="1582523794838700414" at="445,0,448,0" concept="1" trace="_Inline_s67zsr_a91a#()V" />
       <node id="1582523794838700414" at="448,0,451,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1582523794838700414" at="451,0,454,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1582523794838700371" at="488,0,491,0" concept="1" trace="VoorwaardenSingleRoleHandler_s67zsr_v0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="1582523794838700371" at="488,0,491,0" concept="1" trace="voorwaardenSingleRoleHandler_s67zsr_v0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="1582523794838700371" at="505,0,508,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="1582523794838700371" at="509,70,512,7" concept="6" />
       <node id="1582523794838700371" at="512,7,515,7" concept="6" />
@@ -6229,7 +6229,7 @@
       <unit id="1582523794838700371" at="143,0,195,0" name="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor$bronSingleRoleHandler_s67zsr_f0" />
       <unit id="1582523794838700371" at="579,0,631,0" name="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor$GeldigVanSingleRoleHandler_s67zsr_ab0" />
       <unit id="1582523794838700371" at="650,0,702,0" name="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor$GeldigTotSingleRoleHandler_s67zsr_db0" />
-      <unit id="1582523794838700371" at="487,0,540,0" name="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor$VoorwaardenSingleRoleHandler_s67zsr_v0" />
+      <unit id="1582523794838700371" at="487,0,540,0" name="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor$voorwaardenSingleRoleHandler_s67zsr_v0" />
       <unit id="1582523794838700371" at="38,0,776,0" name="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor" />
     </file>
   </root>
@@ -6730,7 +6730,7 @@
       <node id="1582523794838704021" at="452,0,455,0" concept="1" trace="_Inline_vcx8b9_a02a#()V" />
       <node id="1582523794838704021" at="455,0,458,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1582523794838704021" at="458,0,461,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1582523794838703977" at="495,0,498,0" concept="1" trace="VoorwaardenSingleRoleHandler_vcx8b9_w0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="1582523794838703977" at="495,0,498,0" concept="1" trace="voorwaardenSingleRoleHandler_vcx8b9_w0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="1582523794838703977" at="512,0,515,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="1582523794838703977" at="516,70,519,7" concept="6" />
       <node id="1582523794838703977" at="519,7,522,7" concept="6" />
@@ -7415,7 +7415,7 @@
       <unit id="1582523794838703977" at="144,0,196,0" name="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_EN_Editor$bronSingleRoleHandler_vcx8b9_f0" />
       <unit id="1582523794838703977" at="586,0,638,0" name="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_EN_Editor$GeldigVanSingleRoleHandler_vcx8b9_bb0" />
       <unit id="1582523794838703977" at="657,0,709,0" name="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_EN_Editor$GeldigTotSingleRoleHandler_vcx8b9_eb0" />
-      <unit id="1582523794838703977" at="494,0,547,0" name="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_EN_Editor$VoorwaardenSingleRoleHandler_vcx8b9_w0" />
+      <unit id="1582523794838703977" at="494,0,547,0" name="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_EN_Editor$voorwaardenSingleRoleHandler_vcx8b9_w0" />
       <unit id="1582523794838703977" at="38,0,783,0" name="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_EN_Editor" />
     </file>
   </root>
@@ -11381,7 +11381,7 @@
       <node id="2719671791661700245" at="435,0,438,0" concept="1" trace="_Inline_xevd8x_a91a#()V" />
       <node id="2719671791661700245" at="438,0,441,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2719671791661700245" at="441,0,444,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2719671791661700204" at="478,0,481,0" concept="1" trace="VoorwaardenSingleRoleHandler_xevd8x_v0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2719671791661700204" at="478,0,481,0" concept="1" trace="voorwaardenSingleRoleHandler_xevd8x_v0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2719671791661700204" at="495,0,498,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="2719671791661700204" at="499,70,502,7" concept="6" />
       <node id="2719671791661700204" at="502,7,505,7" concept="6" />
@@ -12055,7 +12055,7 @@
       <unit id="2719671791661700204" at="133,0,185,0" name="ObjectiefRecht.editor.OptioneleBevoegdheidOptioneleGehoudenheid_Editor$bronSingleRoleHandler_xevd8x_f0" />
       <unit id="2719671791661700204" at="569,0,621,0" name="ObjectiefRecht.editor.OptioneleBevoegdheidOptioneleGehoudenheid_Editor$GeldigVanSingleRoleHandler_xevd8x_ab0" />
       <unit id="2719671791661700204" at="640,0,692,0" name="ObjectiefRecht.editor.OptioneleBevoegdheidOptioneleGehoudenheid_Editor$GeldigTotSingleRoleHandler_xevd8x_db0" />
-      <unit id="2719671791661700204" at="477,0,530,0" name="ObjectiefRecht.editor.OptioneleBevoegdheidOptioneleGehoudenheid_Editor$VoorwaardenSingleRoleHandler_xevd8x_v0" />
+      <unit id="2719671791661700204" at="477,0,530,0" name="ObjectiefRecht.editor.OptioneleBevoegdheidOptioneleGehoudenheid_Editor$voorwaardenSingleRoleHandler_xevd8x_v0" />
       <unit id="2719671791661700204" at="34,0,766,0" name="ObjectiefRecht.editor.OptioneleBevoegdheidOptioneleGehoudenheid_Editor" />
     </file>
   </root>
@@ -12549,7 +12549,7 @@
       <node id="2719671791661704342" at="435,0,438,0" concept="1" trace="_Inline_4n4id8_a91a#()V" />
       <node id="2719671791661704342" at="438,0,441,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2719671791661704342" at="441,0,444,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2719671791661704301" at="478,0,481,0" concept="1" trace="VoorwaardenSingleRoleHandler_4n4id8_v0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2719671791661704301" at="478,0,481,0" concept="1" trace="voorwaardenSingleRoleHandler_4n4id8_v0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2719671791661704301" at="495,0,498,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="2719671791661704301" at="499,70,502,7" concept="6" />
       <node id="2719671791661704301" at="502,7,505,7" concept="6" />
@@ -13223,7 +13223,7 @@
       <unit id="2719671791661704301" at="133,0,185,0" name="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_Editor$bronSingleRoleHandler_4n4id8_f0" />
       <unit id="2719671791661704301" at="569,0,621,0" name="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_Editor$GeldigVanSingleRoleHandler_4n4id8_ab0" />
       <unit id="2719671791661704301" at="640,0,692,0" name="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_Editor$GeldigTotSingleRoleHandler_4n4id8_db0" />
-      <unit id="2719671791661704301" at="477,0,530,0" name="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_Editor$VoorwaardenSingleRoleHandler_4n4id8_v0" />
+      <unit id="2719671791661704301" at="477,0,530,0" name="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_Editor$voorwaardenSingleRoleHandler_4n4id8_v0" />
       <unit id="2719671791661704301" at="34,0,766,0" name="ObjectiefRecht.editor.VerplichteBevoegdheidVerplichteGehoudenheid_Editor" />
     </file>
   </root>
@@ -13939,7 +13939,7 @@
       <node id="2719671791664476922" at="442,0,445,0" concept="1" trace="_Inline_pwe3o3_a02a#()V" />
       <node id="2719671791664476922" at="445,0,448,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2719671791664476922" at="448,0,451,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2719671791664476888" at="485,0,488,0" concept="1" trace="VoorwaardenSingleRoleHandler_pwe3o3_w0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2719671791664476888" at="485,0,488,0" concept="1" trace="voorwaardenSingleRoleHandler_pwe3o3_w0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2719671791664476888" at="502,0,505,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="2719671791664476888" at="506,70,509,7" concept="6" />
       <node id="2719671791664476888" at="509,7,512,7" concept="6" />
@@ -14621,7 +14621,7 @@
       <unit id="2719671791664476888" at="134,0,186,0" name="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_Editor$bronSingleRoleHandler_pwe3o3_f0" />
       <unit id="2719671791664476888" at="576,0,628,0" name="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_Editor$GeldigVanSingleRoleHandler_pwe3o3_bb0" />
       <unit id="2719671791664476888" at="647,0,699,0" name="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_Editor$GeldigTotSingleRoleHandler_pwe3o3_eb0" />
-      <unit id="2719671791664476888" at="484,0,537,0" name="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_Editor$VoorwaardenSingleRoleHandler_pwe3o3_w0" />
+      <unit id="2719671791664476888" at="484,0,537,0" name="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_Editor$voorwaardenSingleRoleHandler_pwe3o3_w0" />
       <unit id="2719671791664476888" at="34,0,773,0" name="ObjectiefRecht.editor.ZwakkeAanspraakZwakkePlicht_Editor" />
     </file>
   </root>
@@ -15120,7 +15120,7 @@
       <node id="2719671791664489399" at="442,0,445,0" concept="1" trace="_Inline_6x61xa_a02a#()V" />
       <node id="2719671791664489399" at="445,0,448,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2719671791664489399" at="448,0,451,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2719671791664489356" at="485,0,488,0" concept="1" trace="VoorwaardenSingleRoleHandler_6x61xa_w0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2719671791664489356" at="485,0,488,0" concept="1" trace="voorwaardenSingleRoleHandler_6x61xa_w0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2719671791664489356" at="502,0,505,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="2719671791664489356" at="506,70,509,7" concept="6" />
       <node id="2719671791664489356" at="509,7,512,7" concept="6" />
@@ -15802,7 +15802,7 @@
       <unit id="2719671791664489356" at="134,0,186,0" name="ObjectiefRecht.editor.KrachtigeAanspraakFataleVerplichtig_Editor$bronSingleRoleHandler_6x61xa_f0" />
       <unit id="2719671791664489356" at="576,0,628,0" name="ObjectiefRecht.editor.KrachtigeAanspraakFataleVerplichtig_Editor$GeldigVanSingleRoleHandler_6x61xa_bb0" />
       <unit id="2719671791664489356" at="647,0,699,0" name="ObjectiefRecht.editor.KrachtigeAanspraakFataleVerplichtig_Editor$GeldigTotSingleRoleHandler_6x61xa_eb0" />
-      <unit id="2719671791664489356" at="484,0,537,0" name="ObjectiefRecht.editor.KrachtigeAanspraakFataleVerplichtig_Editor$VoorwaardenSingleRoleHandler_6x61xa_w0" />
+      <unit id="2719671791664489356" at="484,0,537,0" name="ObjectiefRecht.editor.KrachtigeAanspraakFataleVerplichtig_Editor$voorwaardenSingleRoleHandler_6x61xa_w0" />
       <unit id="2719671791664489356" at="34,0,773,0" name="ObjectiefRecht.editor.KrachtigeAanspraakFataleVerplichtig_Editor" />
     </file>
   </root>
@@ -16301,7 +16301,7 @@
       <node id="2719671791664490378" at="442,0,445,0" concept="1" trace="_Inline_puiv9n_a02a#()V" />
       <node id="2719671791664490378" at="445,0,448,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2719671791664490378" at="448,0,451,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2719671791664490335" at="485,0,488,0" concept="1" trace="VoorwaardenSingleRoleHandler_puiv9n_w0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2719671791664490335" at="485,0,488,0" concept="1" trace="voorwaardenSingleRoleHandler_puiv9n_w0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2719671791664490335" at="502,0,505,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="2719671791664490335" at="506,70,509,7" concept="6" />
       <node id="2719671791664490335" at="509,7,512,7" concept="6" />
@@ -16983,7 +16983,7 @@
       <unit id="2719671791664490335" at="134,0,186,0" name="ObjectiefRecht.editor.AanspraakNaIngebrekeStellingPlicht_Editor$bronSingleRoleHandler_puiv9n_f0" />
       <unit id="2719671791664490335" at="576,0,628,0" name="ObjectiefRecht.editor.AanspraakNaIngebrekeStellingPlicht_Editor$GeldigVanSingleRoleHandler_puiv9n_bb0" />
       <unit id="2719671791664490335" at="647,0,699,0" name="ObjectiefRecht.editor.AanspraakNaIngebrekeStellingPlicht_Editor$GeldigTotSingleRoleHandler_puiv9n_eb0" />
-      <unit id="2719671791664490335" at="484,0,537,0" name="ObjectiefRecht.editor.AanspraakNaIngebrekeStellingPlicht_Editor$VoorwaardenSingleRoleHandler_puiv9n_w0" />
+      <unit id="2719671791664490335" at="484,0,537,0" name="ObjectiefRecht.editor.AanspraakNaIngebrekeStellingPlicht_Editor$voorwaardenSingleRoleHandler_puiv9n_w0" />
       <unit id="2719671791664490335" at="34,0,773,0" name="ObjectiefRecht.editor.AanspraakNaIngebrekeStellingPlicht_Editor" />
     </file>
   </root>
@@ -22137,7 +22137,7 @@
       <node id="5066083982450842773" at="591,0,594,0" concept="1" trace="_Inline_cq90ak_a52a#()V" />
       <node id="5066083982450842773" at="594,0,597,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5066083982450842773" at="597,0,600,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="5066083982450842299" at="634,0,637,0" concept="1" trace="VoorwaardenSingleRoleHandler_cq90ak_bb0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="5066083982450842299" at="634,0,637,0" concept="1" trace="voorwaardenSingleRoleHandler_cq90ak_bb0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="5066083982450842299" at="651,0,654,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="5066083982450842299" at="655,70,658,7" concept="6" />
       <node id="5066083982450842299" at="658,7,661,7" concept="6" />
@@ -22949,7 +22949,7 @@
       <unit id="5066083982450842299" at="144,0,196,0" name="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_Editor$bronSingleRoleHandler_cq90ak_f0" />
       <unit id="5066083982450842299" at="725,0,777,0" name="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_Editor$GeldigVanSingleRoleHandler_cq90ak_gb0" />
       <unit id="5066083982450842299" at="796,0,848,0" name="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_Editor$GeldigTotSingleRoleHandler_cq90ak_jb0" />
-      <unit id="5066083982450842299" at="633,0,686,0" name="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_Editor$VoorwaardenSingleRoleHandler_cq90ak_bb0" />
+      <unit id="5066083982450842299" at="633,0,686,0" name="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_Editor$voorwaardenSingleRoleHandler_cq90ak_bb0" />
       <unit id="5066083982450842299" at="39,0,922,0" name="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_Editor" />
     </file>
   </root>
@@ -30115,7 +30115,7 @@
       <node id="5753801799636982458" at="344,0,347,0" concept="1" trace="_Inline_trpnxn_a31a#()V" />
       <node id="5753801799636982458" at="347,0,350,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5753801799636982458" at="350,0,353,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="5753801799636982434" at="387,0,390,0" concept="1" trace="VoorwaardenSingleRoleHandler_trpnxn_p0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="5753801799636982434" at="387,0,390,0" concept="1" trace="voorwaardenSingleRoleHandler_trpnxn_p0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="5753801799636982434" at="404,0,407,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="5753801799636982434" at="408,70,411,7" concept="6" />
       <node id="5753801799636982434" at="411,7,414,7" concept="6" />
@@ -30704,7 +30704,7 @@
       <unit id="5753801799636982434" at="127,0,179,0" name="ObjectiefRecht.editor.Rechtsbetrekking_Editor$bronSingleRoleHandler_trpnxn_f0" />
       <unit id="5753801799636982434" at="478,0,530,0" name="ObjectiefRecht.editor.Rechtsbetrekking_Editor$GeldigVanSingleRoleHandler_trpnxn_u0" />
       <unit id="5753801799636982434" at="549,0,601,0" name="ObjectiefRecht.editor.Rechtsbetrekking_Editor$GeldigTotSingleRoleHandler_trpnxn_x0" />
-      <unit id="5753801799636982434" at="386,0,439,0" name="ObjectiefRecht.editor.Rechtsbetrekking_Editor$VoorwaardenSingleRoleHandler_trpnxn_p0" />
+      <unit id="5753801799636982434" at="386,0,439,0" name="ObjectiefRecht.editor.Rechtsbetrekking_Editor$voorwaardenSingleRoleHandler_trpnxn_p0" />
       <unit id="5753801799636982434" at="34,0,675,0" name="ObjectiefRecht.editor.Rechtsbetrekking_Editor" />
     </file>
   </root>
@@ -34645,7 +34645,7 @@
       <node id="6677724352152503802" at="600,0,603,0" concept="1" trace="_Inline_5bbrbg_a52a#()V" />
       <node id="6677724352152503802" at="603,0,606,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6677724352152503802" at="606,0,609,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="6677724352152503742" at="643,0,646,0" concept="1" trace="VoorwaardenSingleRoleHandler_5bbrbg_bb0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="6677724352152503742" at="643,0,646,0" concept="1" trace="voorwaardenSingleRoleHandler_5bbrbg_bb0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="6677724352152503742" at="660,0,663,0" concept="7" trace="isCompatibilityMode#()Z" />
       <node id="6677724352152503742" at="664,70,667,7" concept="6" />
       <node id="6677724352152503742" at="667,7,670,7" concept="6" />
@@ -35460,7 +35460,7 @@
       <unit id="6677724352152503742" at="153,0,205,0" name="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_EN_Editor$bronSingleRoleHandler_5bbrbg_f0" />
       <unit id="6677724352152503742" at="734,0,786,0" name="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_EN_Editor$GeldigVanSingleRoleHandler_5bbrbg_gb0" />
       <unit id="6677724352152503742" at="805,0,857,0" name="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_EN_Editor$GeldigTotSingleRoleHandler_5bbrbg_jb0" />
-      <unit id="6677724352152503742" at="642,0,695,0" name="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_EN_Editor$VoorwaardenSingleRoleHandler_5bbrbg_bb0" />
+      <unit id="6677724352152503742" at="642,0,695,0" name="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_EN_Editor$voorwaardenSingleRoleHandler_5bbrbg_bb0" />
       <unit id="6677724352152503742" at="42,0,931,0" name="ObjectiefRecht.editor.ImmuniteitGeenbevoegdheid_EN_Editor" />
     </file>
   </root>

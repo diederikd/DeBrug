@@ -221,12 +221,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="26dbYf8FZmT" resolve="Onderwerp" />
     </node>
-    <node concept="PrWs8" id="64gsXol8COe" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="1bNeeFB1XFu" role="PzmwI">
-      <ref role="PrY4T" to="8ao0:1bNeeFAZph1" resolve="IKorteNaam" />
-    </node>
     <node concept="1TJgyj" id="w5NyGmT2qQ" role="1TKVEi">
       <property role="IQ2ns" value="578094811649943222" />
       <property role="20lmBu" value="aggregation" />
@@ -265,7 +259,7 @@
     <node concept="1TJgyj" id="2mYdLn7GMoT" role="1TKVEi">
       <property role="IQ2ns" value="2719671791662605881" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="Voorwaarden" />
+      <property role="20kJfa" value="voorwaarden" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="gIBqGO4fNC" resolve="Voorwaarden" />
     </node>
@@ -281,13 +275,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="RechtsgevolgVeroorzakers" />
-    <ref role="1TJDcQ" node="4$mS69sSlIw" resolve="Concept" />
-    <node concept="PrWs8" id="64gsXol8COV" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="1bNeeFB3KGr" role="PzmwI">
-      <ref role="PrY4T" to="8ao0:1bNeeFAZph1" resolve="IKorteNaam" />
-    </node>
+    <ref role="1TJDcQ" node="3GpI$sPbk8E" resolve="Overgang" />
     <node concept="1TJgyj" id="20D4HrzF6OA" role="1TKVEi">
       <property role="IQ2ns" value="2317404197410860326" />
       <property role="20lmBu" value="aggregation" />
@@ -609,8 +597,14 @@
     <property role="TrG5h" value="Toestand" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="3GE5qa" value="Rechtsbetrekking" />
+    <property role="3GE5qa" value="Toestand" />
     <ref role="1TJDcQ" node="4$mS69sSlIw" resolve="Concept" />
+    <node concept="PrWs8" id="64gsXol8COe" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1bNeeFB1XFu" role="PzmwI">
+      <ref role="PrY4T" to="8ao0:1bNeeFAZph1" resolve="IKorteNaam" />
+    </node>
   </node>
   <node concept="1TIwiD" id="20D4HrzEFWA">
     <property role="EcuMT" value="2317404197410750246" />
@@ -1922,6 +1916,54 @@
     <node concept="PrWs8" id="5vursKQN0$w" role="PzmwI">
       <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3GpI$sPbk8E">
+    <property role="EcuMT" value="4258639737653117482" />
+    <property role="TrG5h" value="Overgang" />
+    <property role="3GE5qa" value="Overgang" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="4$mS69sSlIw" resolve="Concept" />
+    <node concept="PrWs8" id="3GpI$sPbk9j" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="3GpI$sPbk9o" role="PzmwI">
+      <ref role="PrY4T" to="8ao0:1bNeeFAZph1" resolve="IKorteNaam" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3GpI$sPmCZA">
+    <property role="EcuMT" value="4258639737656086502" />
+    <property role="3GE5qa" value="Overgang" />
+    <property role="TrG5h" value="OvergangZonderRechtsgevolg" />
+    <ref role="1TJDcQ" node="3GpI$sPbk8E" resolve="Overgang" />
+  </node>
+  <node concept="1TIwiD" id="3GpI$sPmCZB">
+    <property role="EcuMT" value="4258639737656086503" />
+    <property role="3GE5qa" value="Toestand" />
+    <property role="TrG5h" value="Betrekking" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="Relatie" />
+    <ref role="1TJDcQ" node="20D4HrzEcAT" resolve="Toestand" />
+    <node concept="1TJgyj" id="3GpI$sPmD0u" role="1TKVEi">
+      <property role="IQ2ns" value="4258639737656086558" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="voorwaarden" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="gIBqGO4fNC" resolve="Voorwaarden" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3GpI$sPmD0x">
+    <property role="EcuMT" value="4258639737656086561" />
+    <property role="3GE5qa" value="Toestand" />
+    <property role="TrG5h" value="OptieGoedkeurenHandeling" />
+    <ref role="1TJDcQ" node="3GpI$sPmCZB" resolve="Betrekking" />
+  </node>
+  <node concept="1TIwiD" id="3GpI$sPmD0y">
+    <property role="EcuMT" value="4258639737656086562" />
+    <property role="3GE5qa" value="Toestand" />
+    <property role="TrG5h" value="OptieAfkeurenHandeling" />
+    <ref role="1TJDcQ" node="3GpI$sPmCZB" resolve="Betrekking" />
   </node>
 </model>
 

@@ -481,11 +481,11 @@ public class VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor extends Defau
     return editorCell;
   }
   private EditorCell createRefNode_s67zsr_v0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor.VoorwaardenSingleRoleHandler_s67zsr_v0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden"), editorContext);
+    SingleRoleCellProvider provider = new VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor.voorwaardenSingleRoleHandler_s67zsr_v0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "voorwaarden"), editorContext);
     return provider.createCell();
   }
-  private class VoorwaardenSingleRoleHandler_s67zsr_v0 extends SingleRoleCellProvider {
-    public VoorwaardenSingleRoleHandler_s67zsr_v0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class voorwaardenSingleRoleHandler_s67zsr_v0 extends SingleRoleCellProvider {
+    public voorwaardenSingleRoleHandler_s67zsr_v0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -493,8 +493,8 @@ public class VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor extends Defau
       myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
       try {
         EditorCell editorCell = super.createChildCell(child);
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden"), child));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden"), child));
+        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "voorwaarden"), child));
+        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "voorwaarden"), child));
         installCellInfo(child, editorCell);
         return editorCell;
       } finally {
@@ -508,10 +508,10 @@ public class VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor extends Defau
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "voorwaarden"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
       }
       if (editorCell.getRole() == null) {
-        editorCell.setRole("Voorwaarden");
+        editorCell.setRole("voorwaarden");
       }
       Style style = new StyleImpl();
       SNode node = myOwnerNode;
@@ -523,10 +523,10 @@ public class VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor extends Defau
     @Override
     protected EditorCell createEmptyCell() {
       myEditorContext.getCellFactory().pushCellContext();
-      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "Voorwaarden")));
+      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "voorwaarden")));
       try {
         EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_Voorwaarden");
+        editorCell.setCellId("empty_voorwaarden");
         installCellInfo(null, editorCell);
         return editorCell;
       } finally {
@@ -534,7 +534,7 @@ public class VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor extends Defau
       }
     }
     protected String getNoTargetText() {
-      return "<no Voorwaarden>";
+      return "<no voorwaarden>";
     }
   }
   private EditorCell createConstant_s67zsr_w0(EditorContext editorContext, SNode node) {

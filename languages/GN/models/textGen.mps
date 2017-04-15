@@ -1338,7 +1338,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="3YSG_9P3pCk">
-    <property role="3GE5qa" value="Rechtsbetrekking" />
+    <property role="3GE5qa" value="Toestand" />
     <ref role="WuzLi" to="3pw0:20D4HrzEcAT" resolve="Toestand" />
     <node concept="11bSqf" id="3YSG_9P3pCl" role="11c4hB">
       <node concept="3clFbS" id="3YSG_9P3pCm" role="2VODD2">

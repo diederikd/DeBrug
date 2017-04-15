@@ -231,6 +231,9 @@
     <file name="OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor" />
     </file>
+    <file name="Overgangen_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Overgangen_BehaviorDescriptor" />
+    </file>
     <file name="PlusExpressie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.PlusExpressie_BehaviorDescriptor" />
     </file>
