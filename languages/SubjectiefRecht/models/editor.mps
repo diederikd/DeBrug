@@ -847,5 +847,48 @@
       <node concept="l2Vlx" id="28MuYO0mY86" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="38UPyP9QPBa">
+    <property role="3GE5qa" value="RechtsgevolgVeroorzaker" />
+    <ref role="1XX52x" to="gcgs:2IjnF_A3JGk" resolve="LijstMetRechtshandelingen" />
+    <node concept="3EZMnI" id="38UPyP9QWpy" role="2wV5jI">
+      <node concept="l2Vlx" id="38UPyP9QWpz" role="2iSdaV" />
+      <node concept="3EZMnI" id="38UPyP9QWpC" role="3EZMnx">
+        <node concept="l2Vlx" id="38UPyP9QWpD" role="2iSdaV" />
+        <node concept="lj46D" id="38UPyP9QWpE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="38UPyP9QWpF" role="3EZMnx">
+          <property role="3F0ifm" value="uitgevoerde rechtshandelingen in de gegevenshuishouding" />
+        </node>
+        <node concept="3F0ifn" id="38UPyP9QWpG" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+          <node concept="11L4FC" id="38UPyP9QWpH" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="38UPyP9QWpI" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F2HdR" id="38UPyP9QWpJ" role="3EZMnx">
+          <ref role="1NtTu8" to="gcgs:2IjnF_A3JGl" resolve="rechtshandelingen" />
+          <node concept="l2Vlx" id="38UPyP9QWpK" role="2czzBx" />
+          <node concept="pj6Ft" id="38UPyP9QWpL" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="38UPyP9QWpM" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="38UPyP9QWpN" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="38UPyP9QWpO" role="3EZMnx">
+        <node concept="3mYdg7" id="38UPyP9QWpP" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -26,7 +26,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.openapi.editor.cells.SubstituteInfo;
-import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
+import de.slisson.mps.hacks.editor.SubstituteUtil;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import de.slisson.mps.tables.runtime.gridmodel.IGridElement;
 import de.slisson.mps.tables.runtime.gridmodel.HeaderNodeInsertAction;
@@ -37,6 +37,7 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import de.slisson.mps.tables.runtime.gridmodel.EditorCellFactory;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.AbstractCellAction;
+import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import de.slisson.mps.tables.runtime.gridmodel.IRowCreateHandler;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import de.slisson.mps.tables.runtime.gridmodel.Header;
@@ -119,7 +120,7 @@ public class LijstMetRechtshandelingen_Lijst_Editor extends DefaultNodeEditor {
         final int yFinal = y;
         EditorCell cell = editorContext.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(child);
         ChildsTracker.getInstance().registerChild(cell);
-        SubstituteInfo substituteInfo = new DefaultChildSubstituteInfo(node, (y < ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L, 0x2b935eb9660efb15L, "rechtshandelingen"))).count() ? ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L, 0x2b935eb9660efb15L, "rechtshandelingen"))).getElement(y) : null), SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L, 0x2b935eb9660efb15L, "rechtshandelingen")), editorContext);
+        SubstituteInfo substituteInfo = SubstituteUtil.forChild(editorContext, node, (y < ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L, 0x2b935eb9660efb15L, "rechtshandelingen"))).count() ? ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L, 0x2b935eb9660efb15L, "rechtshandelingen"))).getElement(y) : null), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L, 0x2b935eb9660efb15L, "rechtshandelingen"));
         cell.setSubstituteInfo(substituteInfo);
 
         IGridElement gridElement = PartialTableExtractor.getGridElementFromEditorCell(cell, grid);

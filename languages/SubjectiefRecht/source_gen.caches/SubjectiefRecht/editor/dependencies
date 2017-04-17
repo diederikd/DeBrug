@@ -32,6 +32,7 @@
   <dependency className="SubjectiefRecht.editor.EditorAspectDescriptorImpl" file="EditorAspectDescriptorImpl.java">
     <classNode dependClassName="SubjectiefRecht.editor.Casus_Editor" />
     <classNode dependClassName="SubjectiefRecht.editor.LijstMetRechtsbetrekkingen_Lijst_Editor" />
+    <classNode dependClassName="SubjectiefRecht.editor.LijstMetRechtshandelingen_Editor" />
     <classNode dependClassName="SubjectiefRecht.editor.LijstMetRechtshandelingen_Lijst_Editor" />
     <classNode dependClassName="SubjectiefRecht.editor.Rechtsbetrekking_Editor" />
     <classNode dependClassName="SubjectiefRecht.editor.Rechtsbetrekking_Lijst_Editor" />
@@ -56,6 +57,7 @@
   </dependency>
   <dependency className="SubjectiefRecht.editor.LijstMetRechtsbetrekkingen_Lijst_Editor" file="LijstMetRechtsbetrekkingen_Lijst_Editor.java">
     <classNode dependClassName="de.slisson.mps.hacks.editor.EditorCacheHacks" />
+    <classNode dependClassName="de.slisson.mps.hacks.editor.SubstituteUtil" />
     <classNode dependClassName="de.slisson.mps.tables.runtime.cells.ChildsTracker" />
     <classNode dependClassName="de.slisson.mps.tables.runtime.cells.PartialTableExtractor" />
     <classNode dependClassName="de.slisson.mps.tables.runtime.cells.TableEditor" />
@@ -101,8 +103,33 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
+  <dependency className="SubjectiefRecht.editor.LijstMetRechtshandelingen_Editor" file="LijstMetRechtshandelingen_Editor.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.smodel.action.NodeFactoryManager" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
   <dependency className="SubjectiefRecht.editor.LijstMetRechtshandelingen_Lijst_Editor" file="LijstMetRechtshandelingen_Lijst_Editor.java">
     <classNode dependClassName="de.slisson.mps.hacks.editor.EditorCacheHacks" />
+    <classNode dependClassName="de.slisson.mps.hacks.editor.SubstituteUtil" />
     <classNode dependClassName="de.slisson.mps.tables.runtime.cells.ChildsTracker" />
     <classNode dependClassName="de.slisson.mps.tables.runtime.cells.PartialTableExtractor" />
     <classNode dependClassName="de.slisson.mps.tables.runtime.cells.TableEditor" />
