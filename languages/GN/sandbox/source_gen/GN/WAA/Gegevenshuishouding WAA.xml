@@ -306,5 +306,21 @@ en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
           <onderwerpid>4196470522071791502</onderwerpid>
           <rechtsbetrekkingid>5807415387110390739</rechtsbetrekkingid>
         </instantie>
+        <instantie id='3619440740532706091'>
+          <handelingObjectiefRechttypeid>5066083982446708445</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Indienen verzoek aanpassing arbeidsduur</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2002-09-19T21:07:56</uitgevoerdop>
+          <actorid>3139957515575936548</actorid>
+          <onderwerpid>4196470522071791502</onderwerpid>
+          <rechtsbetrekkingid>3619440740532705166</rechtsbetrekkingid>
+        </instantie>
+        <instantie id='3619440740532706786'>
+          <handelingObjectiefRechttypeid>2455094379071627785</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Overleg plegen</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2002-09-19T21:08:10</uitgevoerdop>
+          <actorid>3139957515574338931</actorid>
+          <onderwerpid>4196470522071791502</onderwerpid>
+          <rechtsbetrekkingid>3619440740532706101</rechtsbetrekkingid>
+        </instantie>
       </rechtshandelingen>
 </gegevenshuishouding>
