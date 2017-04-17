@@ -890,5 +890,22 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7mDqhOiq$hD">
+    <property role="3GE5qa" value="Rechtsbetrekking" />
+    <ref role="1XX52x" to="gcgs:2IjnF_A3JGI" resolve="LijstMetRechtsbetrekkingen" />
+    <node concept="3EZMnI" id="7mDqhOiq$hJ" role="2wV5jI">
+      <node concept="l2Vlx" id="7mDqhOiq$hK" role="2iSdaV" />
+      <node concept="3F2HdR" id="7mDqhOiq$hW" role="3EZMnx">
+        <ref role="1NtTu8" to="gcgs:2IjnF_A3JGJ" resolve="rechtsbetrekkingen" />
+        <node concept="l2Vlx" id="7mDqhOiq$hX" role="2czzBx" />
+        <node concept="pj6Ft" id="7mDqhOiq$hY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="7mDqhOiq$i0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

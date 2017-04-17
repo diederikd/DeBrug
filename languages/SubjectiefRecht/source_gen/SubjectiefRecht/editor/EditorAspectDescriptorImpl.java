@@ -32,7 +32,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 1:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new LijstMetRechtsbetrekkingen_Lijst_Editor());
+            return Arrays.asList(new ConceptEditor[]{new LijstMetRechtsbetrekkingen_Editor(), new LijstMetRechtsbetrekkingen_Lijst_Editor()});
           }
           break;
         case 2:
