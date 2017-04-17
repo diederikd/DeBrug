@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
@@ -31,6 +32,7 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Boolean resultvoorwaarden = true;
           Interpreter.voegBerichtToe("Start van de evaluatie van de voorwaarden");
           Interpreter.voegBerichtToe(" ");
@@ -71,6 +73,7 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Interpreter.voegBerichtToe("Evalueer de expressie '" + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")) + "'");
           Boolean result = null;
           result = ((Boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")), context, coverage));

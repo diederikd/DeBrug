@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.time.Duration;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
@@ -32,6 +33,7 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Object waarde = Interpreter.GeefWaardeVanVariabele(node);
           if (waarde instanceof Duration) {
             Duration result;
@@ -69,6 +71,7 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           return LocalDate.now();
         } catch (InterpreterEscapeException ex) {
           throw ex;
@@ -90,6 +93,7 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           return Interpreter.RechtssubjectMetPlicht();
         } catch (InterpreterEscapeException ex) {
           throw ex;
@@ -111,6 +115,7 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           return Interpreter.RechtssubjectMetRecht();
         } catch (InterpreterEscapeException ex) {
           throw ex;

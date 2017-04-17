@@ -11,8 +11,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import Gegevens.behavior.DuurWaarde__BehaviorDescriptor;
 import java.time.Duration;
 import java.time.LocalDate;
@@ -44,6 +44,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           boolean result = false;
           Interpreter.voegBerichtToe("Start expressie (variabele) ligt tenminste <duur> voor (variabele)");
           Object temporal1 = Interpreter.GeefWaardeVanVariabele(((SNode) SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"))));
@@ -95,6 +96,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           boolean result = false;
           Interpreter.voegBerichtToe("Start expressie (variabele) ligt tenminste <duur> na (variabele)");
           Object temporal1 = Interpreter.GeefWaarde((SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1"))));
@@ -146,6 +148,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Object result = true;
           Object waarde = null;
           waarde = Interpreter.GeefWaardeVanVariabele(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x2db6a3c6801e6ee4L, 0x2db6a3c6801e6ee5L, "variabele")));
@@ -174,6 +177,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Boolean result;
           result = ((Boolean) Interpreter.GeefWaardeVanVariabele(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x70b6c2b5db7413L, 0x70b6c2b5db7425L, "variabele"))));
           Interpreter.voegBerichtToe("Variabele '" + SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x70b6c2b5db7413L, 0x70b6c2b5db7425L, "variabele")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")) + "' is waar is '" + result + "'");
@@ -198,6 +202,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Boolean result;
           result = ((Boolean) Interpreter.GeefWaardeVanVariabele(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db5871837c102bL, 0x46db5871837c102dL, "variabele"))));
           result = !(result);
@@ -223,6 +228,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Integer index = 1;
           Duration duur = Duration.ofSeconds(0);
           SNode tussenresultaat = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, "Gegevens.structure.DuurWaarde"));
@@ -259,6 +265,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Integer index = 1;
           Duration duur = Duration.ofSeconds(0);
           Duration tussenresultaat = Duration.ofSeconds(0);
@@ -295,6 +302,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Duration result = Duration.ofNanos(0);
           SNode resultaatwaarde = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, "Gegevens.structure.DuurWaarde"));
           LocalTime time1 = null;
@@ -347,6 +355,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Boolean result = false;
           Interpreter.voegBerichtToe("Het verschil tussen de duur van " + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1")) + " en " + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2")) + " is " + result);
           SNode duur1 = ((SNode) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1")), context, coverage));
@@ -373,6 +382,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           boolean result = false;
           Duration duur1 = ((Duration) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1")), context, coverage));
           Duration duur2 = ((Duration) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2")), context, coverage));
@@ -400,6 +410,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           return (double) GeheelGetalWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowdL4A.invoke(node);
         } catch (InterpreterEscapeException ex) {
           throw ex;
@@ -421,6 +432,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           return (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(node);
         } catch (InterpreterEscapeException ex) {
           throw ex;
@@ -442,6 +454,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b991L, "expressie1")), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde")) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b992L, "expressie2")), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde"))) {
             return (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b991L, "expressie1"))) + (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b992L, "expressie2")));
           }
@@ -466,6 +479,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b991L, "expressie1")), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde")) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b992L, "expressie2")), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde"))) {
             return (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b991L, "expressie1"))) - (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b992L, "expressie2")));
           }
@@ -490,6 +504,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b991L, "expressie1")), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde")) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b992L, "expressie2")), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde"))) {
             return (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b991L, "expressie1"))) * (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b992L, "expressie2")));
           }
@@ -514,6 +529,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b991L, "expressie1")), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde")) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b992L, "expressie2")), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde"))) {
             return (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b991L, "expressie1"))) / (double) RekenWaarde__BehaviorDescriptor.GeefWaarde_idXSBwowcV5H.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xf789e062043b978L, 0xf789e062043b992L, "expressie2")));
           }
@@ -538,6 +554,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Boolean result = false;
           Object expressie1 = context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")), context, coverage);
           Object expressie2 = context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")), context, coverage);
@@ -566,6 +583,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Interpreter.voegBerichtToe("Vraag lijst op van instanties");
           List<SNode> instantiesVanObject = Interpreter.GeefLijstVanInstanties(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9c6L, 0x7dbb3ebc6b57f9deL, "object")));
           Interpreter.voegBerichtToe("Beperk lijst met instanties");
@@ -595,6 +613,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Boolean result = true;
           Interpreter.voegBerichtToe("Er is geen <object> waarbij <voorwaarden>");
           for (SNode voorwaarde : ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b7d334fL, 0x7dbb3ebc6b7d3350L, "voorwaarden")))) {

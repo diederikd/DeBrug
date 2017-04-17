@@ -33,6 +33,7 @@ public class InterpreterInterpreterTemporal extends InterpreterBase {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
           Object result = false;
           DebugHelper.printContext("Verschil tussen", node, context);
           return result;
