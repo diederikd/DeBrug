@@ -18,9 +18,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f2805d-4538-46c3-a016-7128ec7e185d" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/languages/GN/sandbox/GN.sandbox.msd" afterPath="$PROJECT_DIR$/languages/GN/sandbox/GN.specificaties.msd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.runtime/GN.runtime.msd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.runtime/classes_gen/GN/runtime/runtime/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.runtime/classes_gen/GN/runtime/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.runtime/models/GN/runtime/runtime.mps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.runtime/source_gen.caches/GN/runtime/dependencies" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.runtime/source_gen.caches/GN/runtime/generated" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.runtime/source_gen.caches/GN/runtime/runtime/dependencies" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.runtime/source_gen.caches/GN/runtime/runtime/generated" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.runtime/source_gen/GN/runtime/runtime/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.runtime/source_gen/GN/runtime/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/modules.xml" afterPath="$PROJECT_DIR$/.mps/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.test/GN.test.msd" afterPath="$PROJECT_DIR$/solutions/GN.test/GN.test.msd" />
     </list>
     <ignored path="DeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -403,6 +412,34 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.specificaties.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GN" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/sandbox/models/GN/WAA.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.specificaties.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Modules Pool" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -412,12 +449,6 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.specificaties.msd" />
               <option name="myItemType" value="" />
@@ -426,54 +457,16 @@
               <option name="myItemId" value="GN" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/sandbox/models/GN/WAA.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.specificaties.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.specificaties.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/GN/sandbox/GN.specificaties.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/GN/sandbox/models/GN/WAA.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5753801799636978867" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -841,7 +834,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Voor Wim" />
     <MESSAGE value="Simulatie werkt weer" />
     <MESSAGE value="Voor wim weer okay" />
     <MESSAGE value="Implementeren referentie naar subjectieve rechtsbetrekking in uitvoerbare handeling" />
@@ -866,7 +858,8 @@
     <MESSAGE value="Rechtsbetrekkingen ook in de gegevenshuishouding" />
     <MESSAGE value="Schaduwdraaien simulatie &amp; gegevenshuishouding" />
     <MESSAGE value="Simulatie op gegevenshuishouding" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simulatie op gegevenshuishouding" />
+    <MESSAGE value="Refactor sandbox naar specificaties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor sandbox naar specificaties" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://GN.sandbox/GN.WAA/Simulatie WAA">
