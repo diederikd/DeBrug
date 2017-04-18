@@ -4,10 +4,10 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/Algemeen/Algemeen.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Datum/Datum.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/GN/ObjectiefRecht.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Gegevens/Gegevens.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Integriteit/Integriteit.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Interactie/Interactie.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ObjectiefRecht/ObjectiefRecht.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Simulatie/Simulatie.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/SubjectiefRecht/SubjectiefRecht.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/GN.runtime/GN.runtime.msd" folder="" />
