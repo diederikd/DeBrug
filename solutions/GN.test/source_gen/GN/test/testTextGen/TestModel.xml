@@ -16,10 +16,11 @@
             <property name='initieel'>true</property>
             <property name='alias'></property>
             <property name='name'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</property>
+            <property name='kortenaam'></property>
         </properties>
         <children>
           <node>
-            <noderole>Voorwaarden</noderole>
+            <noderole>voorwaarden</noderole>
             <nodetype>Voorwaarden</nodetype>
             <nodename></nodename>
             <nodeid>6133486975028282110</nodeid>
@@ -70,13 +71,14 @@
                                                 <property name='alias'></property>
                                             </properties>
                                             <references>
-                                              <referencerole>kenmerk</referencerole>
-                                              <node>
-                                                <noderole>kenmerk</noderole>
-                                                <nodetype>Kenmerk</nodetype>
-                                                <nodename>werkgeversidentificatie</nodename>
-                                                <nodeid>797539131722830659</nodeid>
-                                              </node>
+                                              <reference role='kenmerk'>
+                                                <node>
+                                                  <noderole>kenmerk</noderole>
+                                                  <nodetype>Kenmerk</nodetype>
+                                                  <nodename>werkgeversidentificatie</nodename>
+                                                  <nodeid>797539131722830659</nodeid>
+                                                </node>
+                                              </reference>
                                             </references>
                                         </node>
                                       </children>
@@ -115,13 +117,14 @@
                                                 <property name='alias'></property>
                                             </properties>
                                             <references>
-                                              <referencerole>kenmerk</referencerole>
-                                              <node>
-                                                <noderole>kenmerk</noderole>
-                                                <nodetype>Kenmerk</nodetype>
-                                                <nodename>werknemersidentificatie</nodename>
-                                                <nodeid>797539131722830615</nodeid>
-                                              </node>
+                                              <reference role='kenmerk'>
+                                                <node>
+                                                  <noderole>kenmerk</noderole>
+                                                  <nodetype>Kenmerk</nodetype>
+                                                  <nodename>werknemersidentificatie</nodename>
+                                                  <nodeid>797539131722830615</nodeid>
+                                                </node>
+                                              </reference>
                                             </references>
                                         </node>
                                       </children>
@@ -160,13 +163,14 @@
                                                 <property name='alias'></property>
                                             </properties>
                                             <references>
-                                              <referencerole>kenmerk</referencerole>
-                                              <node>
-                                                <noderole>kenmerk</noderole>
-                                                <nodetype>Kenmerk</nodetype>
-                                                <nodename>arbeidsovereenkomst getekend op</nodename>
-                                                <nodeid>6305595003050606828</nodeid>
-                                              </node>
+                                              <reference role='kenmerk'>
+                                                <node>
+                                                  <noderole>kenmerk</noderole>
+                                                  <nodetype>Kenmerk</nodetype>
+                                                  <nodename>arbeidsovereenkomst getekend op</nodename>
+                                                  <nodeid>6305595003050606828</nodeid>
+                                                </node>
+                                              </reference>
                                             </references>
                                         </node>
                                       </children>
@@ -183,13 +187,14 @@
                             </node>
                           </children>
                           <references>
-                            <referencerole>object</referencerole>
-                            <node>
-                              <noderole>onderwerpen</noderole>
-                              <nodetype>Onderwerp</nodetype>
-                              <nodename>arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling</nodename>
-                              <nodeid>5266643527327102431</nodeid>
-                            </node>
+                            <reference role='object'>
+                              <node>
+                                <noderole>onderwerpen</noderole>
+                                <nodetype>Onderwerp</nodetype>
+                                <nodename>arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling</nodename>
+                                <nodeid>5266643527327102431</nodeid>
+                              </node>
+                            </reference>
                           </references>
                       </node>
                     </children>
@@ -228,13 +233,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>kenmerk</referencerole>
-                                        <node>
-                                          <noderole>kenmerk</noderole>
-                                          <nodetype>Kenmerk</nodetype>
-                                          <nodename>aantal werknemers</nodename>
-                                          <nodeid>6305595003050758148</nodeid>
-                                        </node>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>aantal werknemers</nodename>
+                                            <nodeid>6305595003050758148</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                 </children>
@@ -296,13 +302,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>kenmerk</referencerole>
-                                        <node>
-                                          <noderole>kenmerk</noderole>
-                                          <nodetype>Kenmerk</nodetype>
-                                          <nodename>militair ambtenaar</nodename>
-                                          <nodeid>6305595003050903427</nodeid>
-                                        </node>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>militair ambtenaar</nodename>
+                                            <nodeid>6305595003050903427</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                   <node>
@@ -313,13 +320,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>object</referencerole>
-                                        <node>
-                                          <noderole>rechtssubjecten</noderole>
-                                          <nodetype>RechtsSubject</nodetype>
-                                          <nodename>werknemer</nodename>
-                                          <nodeid>5753801799636978868</nodeid>
-                                        </node>
+                                        <reference role='object'>
+                                          <node>
+                                            <noderole>rechtssubjecten</noderole>
+                                            <nodetype>RechtsSubject</nodetype>
+                                            <nodename>werknemer</nodename>
+                                            <nodeid>5753801799636978868</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                 </children>
@@ -389,13 +397,14 @@
                                                 <property name='alias'></property>
                                             </properties>
                                             <references>
-                                              <referencerole>kenmerk</referencerole>
-                                              <node>
-                                                <noderole>kenmerk</noderole>
-                                                <nodetype>Kenmerk</nodetype>
-                                                <nodename>datum verzoek ingewilligd</nodename>
-                                                <nodeid>5540471952143438865</nodeid>
-                                              </node>
+                                              <reference role='kenmerk'>
+                                                <node>
+                                                  <noderole>kenmerk</noderole>
+                                                  <nodetype>Kenmerk</nodetype>
+                                                  <nodename>datum verzoek ingewilligd</nodename>
+                                                  <nodeid>5540471952143438865</nodeid>
+                                                </node>
+                                              </reference>
                                             </references>
                                         </node>
                                       </children>
@@ -453,13 +462,14 @@
                                                 <property name='alias'></property>
                                             </properties>
                                             <references>
-                                              <referencerole>kenmerk</referencerole>
-                                              <node>
-                                                <noderole>kenmerk</noderole>
-                                                <nodetype>Kenmerk</nodetype>
-                                                <nodename>datum verzoek afgewezen</nodename>
-                                                <nodeid>5540471952143439007</nodeid>
-                                              </node>
+                                              <reference role='kenmerk'>
+                                                <node>
+                                                  <noderole>kenmerk</noderole>
+                                                  <nodetype>Kenmerk</nodetype>
+                                                  <nodename>datum verzoek afgewezen</nodename>
+                                                  <nodeid>5540471952143439007</nodeid>
+                                                </node>
+                                              </reference>
                                             </references>
                                         </node>
                                       </children>
@@ -476,13 +486,14 @@
                             </node>
                           </children>
                           <references>
-                            <referencerole>object</referencerole>
-                            <node>
-                              <noderole>onderwerpen</noderole>
-                              <nodetype>Onderwerp</nodetype>
-                              <nodename>aanpassing van de arbeidsduur</nodename>
-                              <nodeid>848775529194317032</nodeid>
-                            </node>
+                            <reference role='object'>
+                              <node>
+                                <noderole>onderwerpen</noderole>
+                                <nodetype>Onderwerp</nodetype>
+                                <nodename>aanpassing van de arbeidsduur</nodename>
+                                <nodeid>848775529194317032</nodeid>
+                              </node>
+                            </reference>
                           </references>
                       </node>
                     </children>
@@ -505,13 +516,14 @@
                   <property name='alias'></property>
               </properties>
               <references>
-                <referencerole>artikel</referencerole>
-                <node>
-                  <noderole>bron</noderole>
-                  <nodetype>Artikel</nodetype>
-                  <nodename>2.1</nodename>
-                  <nodeid>5066083982446708452</nodeid>
-                </node>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>2.1</nodename>
+                    <nodeid>5066083982446708452</nodeid>
+                  </node>
+                </reference>
               </references>
           </node>
           <node>
@@ -537,34 +549,38 @@
           </node>
         </children>
         <references>
-          <referencerole>rechtssubjectMetPlicht</referencerole>
-          <node>
-            <noderole>rechtssubjecten</noderole>
-            <nodetype>RechtsSubject</nodetype>
-            <nodename>werkgever</nodename>
-            <nodeid>5753801799637012771</nodeid>
-          </node>
-          <referencerole>onderwerp</referencerole>
-          <node>
-            <noderole>onderwerpen</noderole>
-            <nodetype>Onderwerp</nodetype>
-            <nodename>aanpassing van de arbeidsduur</nodename>
-            <nodeid>848775529194317032</nodeid>
-          </node>
-          <referencerole>rechtssubjectMetRecht</referencerole>
-          <node>
-            <noderole>rechtssubjecten</noderole>
-            <nodetype>RechtsSubject</nodetype>
-            <nodename>werknemer</nodename>
-            <nodeid>5753801799636978868</nodeid>
-          </node>
-          <referencerole>bevoegdheidTot</referencerole>
-          <node>
-            <noderole>overgangen</noderole>
-            <nodetype>Rechtshandeling</nodetype>
-            <nodename>Indienen verzoek aanpassing arbeidsduur</nodename>
-            <nodeid>5066083982446708445</nodeid>
-          </node>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>werkgever</nodename>
+              <nodeid>5753801799637012771</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>aanpassing van de arbeidsduur</nodename>
+              <nodeid>848775529194317032</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>werknemer</nodename>
+              <nodeid>5753801799636978868</nodeid>
+            </node>
+          </reference>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>Indienen verzoek aanpassing arbeidsduur</nodename>
+              <nodeid>5066083982446708445</nodeid>
+            </node>
+          </reference>
         </references>
     </node>
 </rechtsbetrekkingen>
@@ -577,6 +593,7 @@
         <properties>
             <property name='alias'></property>
             <property name='name'>Indienen verzoek aanpassing arbeidsduur</property>
+            <property name='kortenaam'></property>
         </properties>
         <children>
           <node>
@@ -595,13 +612,14 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>kenmerk</referencerole>
-                      <node>
-                        <noderole>kenmerk</noderole>
-                        <nodetype>Kenmerk</nodetype>
-                        <nodename>omvang van de aanpassing</nodename>
-                        <nodeid>797539131721925527</nodeid>
-                      </node>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>omvang van de aanpassing</nodename>
+                          <nodeid>797539131721925527</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
                 <node>
@@ -612,13 +630,14 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>kenmerk</referencerole>
-                      <node>
-                        <noderole>kenmerk</noderole>
-                        <nodetype>Kenmerk</nodetype>
-                        <nodename>gewenste spreiding</nodename>
-                        <nodeid>797539131721925590</nodeid>
-                      </node>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>gewenste spreiding</nodename>
+                          <nodeid>797539131721925590</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
                 <node>
@@ -629,13 +648,14 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>kenmerk</referencerole>
-                      <node>
-                        <noderole>kenmerk</noderole>
-                        <nodetype>Kenmerk</nodetype>
-                        <nodename>schriftelijk ingediend</nodename>
-                        <nodeid>31726144782747159</nodeid>
-                      </node>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>schriftelijk ingediend</nodename>
+                          <nodeid>31726144782747159</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
                 <node>
@@ -646,13 +666,14 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>kenmerk</referencerole>
-                      <node>
-                        <noderole>kenmerk</noderole>
-                        <nodetype>Kenmerk</nodetype>
-                        <nodename>datum indienen verzoek</nodename>
-                        <nodeid>6249140128508295101</nodeid>
-                      </node>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>datum indienen verzoek</nodename>
+                          <nodeid>6249140128508295101</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
                 <node>
@@ -663,13 +684,14 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>kenmerk</referencerole>
-                      <node>
-                        <noderole>kenmerk</noderole>
-                        <nodetype>Kenmerk</nodetype>
-                        <nodename>datum vorige versie van het verzoek</nodename>
-                        <nodeid>3955365814688413039</nodeid>
-                      </node>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>datum vorige versie van het verzoek</nodename>
+                          <nodeid>3955365814688413039</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
                 <node>
@@ -680,13 +702,14 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>kenmerk</referencerole>
-                      <node>
-                        <noderole>kenmerk</noderole>
-                        <nodetype>Kenmerk</nodetype>
-                        <nodename>samentelling volgens werknemer</nodename>
-                        <nodeid>5105771847112954480</nodeid>
-                      </node>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>samentelling volgens werknemer</nodename>
+                          <nodeid>5105771847112954480</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
                 <node>
@@ -697,13 +720,14 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>kenmerk</referencerole>
-                      <node>
-                        <noderole>kenmerk</noderole>
-                        <nodetype>Kenmerk</nodetype>
-                        <nodename>beoogde ingangsdatum van de aanpassing</nodename>
-                        <nodeid>5266643527327199632</nodeid>
-                      </node>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>beoogde ingangsdatum van de aanpassing</nodename>
+                          <nodeid>5266643527327199632</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
                 <node>
@@ -714,24 +738,26 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>kenmerk</referencerole>
-                      <node>
-                        <noderole>kenmerk</noderole>
-                        <nodetype>Kenmerk</nodetype>
-                        <nodename>op grond van arbeidsovereenkomst</nodename>
-                        <nodeid>3955365814688947835</nodeid>
-                      </node>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>op grond van arbeidsovereenkomst</nodename>
+                          <nodeid>3955365814688947835</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
               </children>
               <references>
-                <referencerole>refObject</referencerole>
-                <node>
-                  <noderole>onderwerpen</noderole>
-                  <nodetype>Onderwerp</nodetype>
-                  <nodename>aanpassing van de arbeidsduur</nodename>
-                  <nodeid>848775529194317032</nodeid>
-                </node>
+                <reference role='refObject'>
+                  <node>
+                    <noderole>onderwerpen</noderole>
+                    <nodetype>Onderwerp</nodetype>
+                    <nodename>aanpassing van de arbeidsduur</nodename>
+                    <nodeid>848775529194317032</nodeid>
+                  </node>
+                </reference>
               </references>
           </node>
           <node>
@@ -778,13 +804,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>kenmerk</referencerole>
-                                        <node>
-                                          <noderole>kenmerk</noderole>
-                                          <nodetype>Kenmerk</nodetype>
-                                          <nodename>samentelling volgens werknemer</nodename>
-                                          <nodeid>5105771847112954480</nodeid>
-                                        </node>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>samentelling volgens werknemer</nodename>
+                                            <nodeid>5105771847112954480</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                 </children>
@@ -805,13 +832,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>kenmerk</referencerole>
-                                        <node>
-                                          <noderole>kenmerk</noderole>
-                                          <nodetype>Kenmerk</nodetype>
-                                          <nodename>datum indiensttreding</nodename>
-                                          <nodeid>6249140128508495744</nodeid>
-                                        </node>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>datum indiensttreding</nodename>
+                                            <nodeid>6249140128508495744</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                 </children>
@@ -832,13 +860,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>kenmerk</referencerole>
-                                        <node>
-                                          <noderole>kenmerk</noderole>
-                                          <nodetype>Kenmerk</nodetype>
-                                          <nodename>beoogde ingangsdatum van de aanpassing</nodename>
-                                          <nodeid>5266643527327199632</nodeid>
-                                        </node>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>beoogde ingangsdatum van de aanpassing</nodename>
+                                            <nodeid>5266643527327199632</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                 </children>
@@ -900,13 +929,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>kenmerk</referencerole>
-                                        <node>
-                                          <noderole>kenmerk</noderole>
-                                          <nodetype>Kenmerk</nodetype>
-                                          <nodename>datum indienen verzoek</nodename>
-                                          <nodeid>6249140128508295101</nodeid>
-                                        </node>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>datum indienen verzoek</nodename>
+                                            <nodeid>6249140128508295101</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                 </children>
@@ -927,13 +957,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>kenmerk</referencerole>
-                                        <node>
-                                          <noderole>kenmerk</noderole>
-                                          <nodetype>Kenmerk</nodetype>
-                                          <nodename>beoogde ingangsdatum van de aanpassing</nodename>
-                                          <nodeid>5266643527327199632</nodeid>
-                                        </node>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>beoogde ingangsdatum van de aanpassing</nodename>
+                                            <nodeid>5266643527327199632</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                 </children>
@@ -976,13 +1007,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>kenmerk</referencerole>
-                                        <node>
-                                          <noderole>kenmerk</noderole>
-                                          <nodetype>Kenmerk</nodetype>
-                                          <nodename>omvang van de aanpassing</nodename>
-                                          <nodeid>797539131721925527</nodeid>
-                                        </node>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>omvang van de aanpassing</nodename>
+                                            <nodeid>797539131721925527</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                   <node>
@@ -993,13 +1025,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>object</referencerole>
-                                        <node>
-                                          <noderole>onderwerpen</noderole>
-                                          <nodetype>Onderwerp</nodetype>
-                                          <nodename>aanpassing van de arbeidsduur</nodename>
-                                          <nodeid>848775529194317032</nodeid>
-                                        </node>
+                                        <reference role='object'>
+                                          <node>
+                                            <noderole>onderwerpen</noderole>
+                                            <nodetype>Onderwerp</nodetype>
+                                            <nodename>aanpassing van de arbeidsduur</nodename>
+                                            <nodeid>848775529194317032</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                 </children>
@@ -1042,13 +1075,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>kenmerk</referencerole>
-                                        <node>
-                                          <noderole>kenmerk</noderole>
-                                          <nodetype>Kenmerk</nodetype>
-                                          <nodename>gewenste spreiding</nodename>
-                                          <nodeid>797539131721925590</nodeid>
-                                        </node>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>gewenste spreiding</nodename>
+                                            <nodeid>797539131721925590</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                 </children>
@@ -1091,13 +1125,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>kenmerk</referencerole>
-                                        <node>
-                                          <noderole>kenmerk</noderole>
-                                          <nodetype>Kenmerk</nodetype>
-                                          <nodename>schriftelijk ingediend</nodename>
-                                          <nodeid>31726144782747159</nodeid>
-                                        </node>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>schriftelijk ingediend</nodename>
+                                            <nodeid>31726144782747159</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                   <node>
@@ -1108,13 +1143,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>object</referencerole>
-                                        <node>
-                                          <noderole>onderwerpen</noderole>
-                                          <nodetype>Onderwerp</nodetype>
-                                          <nodename>aanpassing van de arbeidsduur</nodename>
-                                          <nodeid>848775529194317032</nodeid>
-                                        </node>
+                                        <reference role='object'>
+                                          <node>
+                                            <noderole>onderwerpen</noderole>
+                                            <nodetype>Onderwerp</nodetype>
+                                            <nodename>aanpassing van de arbeidsduur</nodename>
+                                            <nodeid>848775529194317032</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                 </children>
@@ -1157,13 +1193,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>kenmerk</referencerole>
-                                        <node>
-                                          <noderole>kenmerk</noderole>
-                                          <nodetype>Kenmerk</nodetype>
-                                          <nodename>beoogde ingangsdatum van de aanpassing</nodename>
-                                          <nodeid>5266643527327199632</nodeid>
-                                        </node>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>beoogde ingangsdatum van de aanpassing</nodename>
+                                            <nodeid>5266643527327199632</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                   <node>
@@ -1174,13 +1211,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>object</referencerole>
-                                        <node>
-                                          <noderole>onderwerpen</noderole>
-                                          <nodetype>Onderwerp</nodetype>
-                                          <nodename>aanpassing van de arbeidsduur</nodename>
-                                          <nodeid>848775529194317032</nodeid>
-                                        </node>
+                                        <reference role='object'>
+                                          <node>
+                                            <noderole>onderwerpen</noderole>
+                                            <nodetype>Onderwerp</nodetype>
+                                            <nodename>aanpassing van de arbeidsduur</nodename>
+                                            <nodeid>848775529194317032</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                 </children>
@@ -1239,13 +1277,14 @@
                                                       <property name='alias'></property>
                                                   </properties>
                                                   <references>
-                                                    <referencerole>kenmerk</referencerole>
-                                                    <node>
-                                                      <noderole>kenmerk</noderole>
-                                                      <nodetype>Kenmerk</nodetype>
-                                                      <nodename>aanvangstijd periode</nodename>
-                                                      <nodeid>7431672735419572290</nodeid>
-                                                    </node>
+                                                    <reference role='kenmerk'>
+                                                      <node>
+                                                        <noderole>kenmerk</noderole>
+                                                        <nodetype>Kenmerk</nodetype>
+                                                        <nodename>aanvangstijd periode</nodename>
+                                                        <nodeid>7431672735419572290</nodeid>
+                                                      </node>
+                                                    </reference>
                                                   </references>
                                               </node>
                                             </children>
@@ -1266,13 +1305,14 @@
                                                       <property name='alias'></property>
                                                   </properties>
                                                   <references>
-                                                    <referencerole>kenmerk</referencerole>
-                                                    <node>
-                                                      <noderole>kenmerk</noderole>
-                                                      <nodetype>Kenmerk</nodetype>
-                                                      <nodename>eindtijd periode</nodename>
-                                                      <nodeid>7431672735419572313</nodeid>
-                                                    </node>
+                                                    <reference role='kenmerk'>
+                                                      <node>
+                                                        <noderole>kenmerk</noderole>
+                                                        <nodetype>Kenmerk</nodetype>
+                                                        <nodename>eindtijd periode</nodename>
+                                                        <nodeid>7431672735419572313</nodeid>
+                                                      </node>
+                                                    </reference>
                                                   </references>
                                               </node>
                                             </children>
@@ -1295,13 +1335,14 @@
                                                 <property name='alias'></property>
                                             </properties>
                                             <references>
-                                              <referencerole>kenmerk</referencerole>
-                                              <node>
-                                                <noderole>kenmerk</noderole>
-                                                <nodetype>Kenmerk</nodetype>
-                                                <nodename>gewenste spreiding</nodename>
-                                                <nodeid>797539131721925590</nodeid>
-                                              </node>
+                                              <reference role='kenmerk'>
+                                                <node>
+                                                  <noderole>kenmerk</noderole>
+                                                  <nodetype>Kenmerk</nodetype>
+                                                  <nodename>gewenste spreiding</nodename>
+                                                  <nodeid>797539131721925590</nodeid>
+                                                </node>
+                                              </reference>
                                             </references>
                                         </node>
                                       </children>
@@ -1322,13 +1363,14 @@
                                                 <property name='alias'></property>
                                             </properties>
                                             <references>
-                                              <referencerole>kenmerk</referencerole>
-                                              <node>
-                                                <noderole>kenmerk</noderole>
-                                                <nodetype>Kenmerk</nodetype>
-                                                <nodename>perioden</nodename>
-                                                <nodeid>6760713004464116818</nodeid>
-                                              </node>
+                                              <reference role='kenmerk'>
+                                                <node>
+                                                  <noderole>kenmerk</noderole>
+                                                  <nodetype>Kenmerk</nodetype>
+                                                  <nodename>perioden</nodename>
+                                                  <nodeid>6760713004464116818</nodeid>
+                                                </node>
+                                              </reference>
                                             </references>
                                         </node>
                                       </children>
@@ -1351,13 +1393,14 @@
                                           <property name='alias'></property>
                                       </properties>
                                       <references>
-                                        <referencerole>kenmerk</referencerole>
-                                        <node>
-                                          <noderole>kenmerk</noderole>
-                                          <nodetype>Kenmerk</nodetype>
-                                          <nodename>omvang van de aanpassing</nodename>
-                                          <nodeid>797539131721925527</nodeid>
-                                        </node>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>omvang van de aanpassing</nodename>
+                                            <nodeid>797539131721925527</nodeid>
+                                          </node>
+                                        </reference>
                                       </references>
                                   </node>
                                 </children>
@@ -1384,13 +1427,14 @@
                   <property name='alias'></property>
               </properties>
               <references>
-                <referencerole>rechtssubject</referencerole>
-                <node>
-                  <noderole>rechtssubjecten</noderole>
-                  <nodetype>RechtsSubject</nodetype>
-                  <nodename>werknemer</nodename>
-                  <nodeid>5753801799636978868</nodeid>
-                </node>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>werknemer</nodename>
+                    <nodeid>5753801799636978868</nodeid>
+                  </node>
+                </reference>
               </references>
           </node>
           <node>
@@ -1411,13 +1455,14 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>rechtsbetrekking</referencerole>
-                      <node>
-                        <noderole>toestanden</noderole>
-                        <nodetype>ZwakkeAanspraakZwakkePlicht</nodetype>
-                        <nodename>verplichting tot overleg plegen</nodename>
-                        <nodeid>2317404197410906878</nodeid>
-                      </node>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>ZwakkeAanspraakZwakkePlicht</nodetype>
+                          <nodename>verplichting tot overleg plegen</nodename>
+                          <nodeid>2317404197410906878</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
                 <node>
@@ -1428,15 +1473,16 @@
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>rechtsbetrekking</referencerole>
-                      <node>
-                        <noderole>toestanden</noderole>
-                        <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-                        <nodename>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+                          <nodename>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
 voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
 en de omvang van de aanpassing</nodename>
-                        <nodeid>909603116718783952</nodeid>
-                      </node>
+                          <nodeid>909603116718783952</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
                 <node>
@@ -1447,14 +1493,15 @@ en de omvang van de aanpassing</nodename>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <referencerole>rechtsbetrekking</referencerole>
-                      <node>
-                        <noderole>toestanden</noderole>
-                        <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
-                        <nodename>immuniteit (recht) om de verplichte bevoegdheid
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
+                          <nodename>immuniteit (recht) om de verplichte bevoegdheid
 tot het inwilligen van het verzoek te neutraliseren</nodename>
-                        <nodeid>1431654249012741138</nodeid>
-                      </node>
+                          <nodeid>1431654249012741138</nodeid>
+                        </node>
+                      </reference>
                     </references>
                 </node>
               </children>
