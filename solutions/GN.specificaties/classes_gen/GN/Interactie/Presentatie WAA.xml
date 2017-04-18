@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<presentatie>
+<object type='rechtssubject' naam='werknemer' >
+      <row>
+        <column>
+          <kenmerk naam='voornamen' />
+          <string>(</string>
+          <kenmerk naam='roepnaam' />
+          <string>)</string>
+          <kenmerk naam='achternaam' />
+        </column>
+        <column>
+          <kenmerk naam='adres werknemer' />
+          <kenmerk naam='huisnummer werknemer' />
+          <string>, </string>
+          <kenmerk naam='postcode van de werknemer' />
+          <kenmerk naam='woonplaats' />
+        </column>
+        <column>
+          <string>Nationaliteit:</string>
+          <kenmerk naam='nationaliteit' />
+          <string> - Paspoortnummer:</string>
+          <kenmerk naam='paspoortnummer' />
+          <kenmerk naam='identiteitskaartnummer' />
+        </column>
+      </row>
+      <row>
+        <column>
+          <string>BSN: </string>
+          <kenmerk naam='burgerservicenummer' />
+        </column>
+        <column>
+          <string>Burgerlijke staat: </string>
+          <kenmerk naam='burgerlijke staat' />
+        </column>
+        <column>
+          <string>Miitair: </string>
+          <kenmerk naam='militair ambtenaar' />
+        </column>
+      </row>
+</object><object type='onderwerp' naam='aanpassing van de arbeidsduur' >
+      <row>
+        <column>
+          <kenmerk naam='Naam Indiener' />
+        </column>
+        <column>
+          <kenmerk naam='beoogde ingangsdatum van de aanpassing' />
+        </column>
+        <column>
+          <kenmerk naam='omvang van de aanpassing' />
+        </column>
+        <column>
+          <kenmerk naam='gewenste spreiding' />
+        </column>
+      </row>
+</object>    <object type='rechtsbetrekking' naam='' >
+            <row>
+        <column>
+          <xpath>kenmerk[@naam='objectieveRechtsbetrekking']/text()</xpath>
+        </column>
+        <column>
+          <xpath>kenmerk[@naam='onderwerp']/text()</xpath>
+        </column>
+        <column>
+          <string>Geldig van:</string>
+          <xpath>kenmerk[@naam='geldigVan']/text()</xpath>
+          <string>Geldig tot:</string>
+          <xpath>kenmerk[@naam='geldigTot']/text()</xpath>
+          <string>== Recht:</string>
+          <xpath>kenmerk[@naam='rechtssubjectMetRecht']/text()</xpath>
+          <string> == Plicht:</string>
+          <xpath>kenmerk[@naam='rechtssubjectMetPlicht']/text()</xpath>
+        </column>
+      </row>
+</object>    <object type='rechtshandeling' naam='' >
+            <row>
+        <column>
+          <xpath>kenmerk[@naam='onderwerp']/text()</xpath>
+        </column>
+        <column>
+          <xpath>kenmerk[@naam='actor']/text()</xpath>
+        </column>
+        <column>
+          <xpath>kenmerk[@naam='uitgevoerdOp']/text()</xpath>
+        </column>
+      </row>
+</object>
+    <dialoog typeid='5066083982446708445' name='Indienen verzoek aanpassing arbeidsduur' >
+      <row>
+        <column>
+          <input type="text" name="beoogde ingangsdatum van de aanpassing" value=""/>
+        </column>
+        <column>
+          <input type="text" name="schriftelijk ingediend" value=""/>
+        </column>
+        <column>
+          <input type="text" name="gewenste spreiding" value=""/>
+        </column>
+        <column>
+          <input type="text" name="omvang van de aanpassing" value=""/>
+        </column>
+      </row>
+    </dialoog>
+    <dialoog typeid='2455094379071627785' name='Overleg plegen' >
+      <row>
+        <column>
+          <kenmerk naam='gewenste spreiding' />
+        </column>
+        <column>
+          <kenmerk naam='omvang van de aanpassing' />
+        </column>
+      </row>
+    </dialoog>
+    <dialoog typeid='5066083982446741231' name='Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing' >
+      <row>
+        <column>
+          <kenmerk naam='beoogde ingangsdatum van de aanpassing' />
+        </column>
+        <column>
+          <kenmerk naam='omvang van de aanpassing' />
+        </column>
+      </row>
+    </dialoog>
+</presentatie>
