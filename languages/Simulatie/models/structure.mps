@@ -15,6 +15,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -37,6 +38,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -84,6 +88,7 @@
       <property role="20kJfa" value="rechtspositie" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6OHSlZaUlix" resolve="Informatiepositie" />
+      <node concept="asaX9" id="7mDqhOi_isk" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="3d6QfrfG1Sv" role="1TKVEi">
       <property role="IQ2ns" value="3694879098862050847" />
@@ -98,6 +103,7 @@
       <property role="20kJfa" value="uitgevoerdehandelingen" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="gcgs:6c9haf45sNk" resolve="Rechtshandeling" />
+      <node concept="asaX9" id="7mDqhOi_ism" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="6syAJDE8Ve8" role="1TKVEi">
       <property role="IQ2ns" value="7431672735427965832" />
