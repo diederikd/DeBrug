@@ -643,6 +643,30 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         return "ErIsGeen";
       }
     });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x75a9691d143b2e5fL, "ObjectiefRecht.structure.ErIsGeenHandeling"), true) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          Boolean result = true;
+          Interpreter.voegBerichtToe("Er is geen handeling waarbij geldt <voorwaarden>");
+          return result;
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("er is geen handeling waarbij geldt <voorwaarden>()", node, ex);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("ErIsGeenHandeling");
+      }
+
+      @Override
+      public String toString() {
+        return "ErIsGeenHandeling";
+      }
+    });
   }
 
 

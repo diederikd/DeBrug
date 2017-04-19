@@ -1965,5 +1965,19 @@
     <property role="TrG5h" value="OptieAfkeurenHandeling" />
     <ref role="1TJDcQ" node="3GpI$sPmCZB" resolve="Betrekking" />
   </node>
+  <node concept="1TIwiD" id="7mDqhOkeMTv">
+    <property role="EcuMT" value="8478423347116060255" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="ErIsGeenHandeling" />
+    <property role="34LRSv" value="er is geen handeling waarbij geldt &lt;voorwaarden&gt;" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="1TJgyj" id="7mDqhOkeMTx" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347116060257" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="voorwaarden" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    </node>
+  </node>
 </model>
 

@@ -7,6 +7,9 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 import jetbrains.mps.smodel.adapter.ids.SLanguageId;
 import java.util.UUID;
+import java.util.Collection;
+import jetbrains.mps.generator.runtime.TemplateModule;
+import jetbrains.mps.generator.runtime.TemplateUtil;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
@@ -42,6 +45,10 @@ public class Language extends LanguageRuntime {
   @Override
   protected String[] getExtendedLanguageIDs() {
     return new String[]{"ObjectiefRecht", "SubjectiefRecht"};
+  }
+  @Override
+  public Collection<TemplateModule> getGenerators() {
+    return TemplateUtil.<TemplateModule>asCollection(TemplateUtil.createInterpretedGenerator(this, "bfcf1ce2-5fb1-4470-8cb6-9addfbf26415(Simulatie#7812026954661547138)"));
   }
   @Override
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
