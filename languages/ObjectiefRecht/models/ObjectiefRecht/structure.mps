@@ -130,7 +130,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="overgangen" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="64gsXol8COU" resolve="RechtsgevolgVeroorzakers" />
+      <ref role="20lvS9" node="3GpI$sPbk8E" resolve="Overgang" />
     </node>
     <node concept="1TJgyj" id="26dbYf8FZo2" role="1TKVEi">
       <property role="IQ2ns" value="2417641230338881026" />
@@ -1935,7 +1935,61 @@
     <property role="EcuMT" value="4258639737656086502" />
     <property role="3GE5qa" value="Overgang" />
     <property role="TrG5h" value="OvergangZonderRechtsgevolg" />
+    <property role="34LRSv" value="Actie" />
     <ref role="1TJDcQ" node="3GpI$sPbk8E" resolve="Overgang" />
+    <node concept="1TJgyj" id="7mDqhOkJv2E" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347124629674" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="heeftAlsGevolg" />
+      <ref role="20lvS9" node="7mDqhOkOm0O" resolve="Gevolg" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkJv2F" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347124629675" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bron" />
+      <ref role="20lvS9" node="4$mS69sVCn9" resolve="AbstractArtikel" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkJv2G" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347124629676" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="Voorwaarden" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="gIBqGO4fNC" resolve="Voorwaarden" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkGMtS" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347123922808" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="20D4HrzFFXB" resolve="ReferentieNaarRechtssubject" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkGMuv" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347123922847" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="uitgevoerdOp" />
+      <ref role="20lvS9" node="4$mS69sVSy3" resolve="Kenmerk" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkGMuw" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347123922848" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="nieuweFeiten" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7k4OuKrmKY" resolve="MethodeNieuweFeiten" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkGMux" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347123922849" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="teWijzigingenFeiten" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4NzHub3tHB3" resolve="MethodeAanpassenFeiten" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkGMuy" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347123922850" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="teBeindigenOnderwerpen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4NzHub3tHB7" resolve="MethodeBeeidigenOnderwerp" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3GpI$sPmCZB">
     <property role="EcuMT" value="4258639737656086503" />
@@ -1943,8 +1997,55 @@
     <property role="TrG5h" value="Betrekking" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="34LRSv" value="Relatie" />
+    <property role="34LRSv" value="Status" />
     <ref role="1TJDcQ" node="20D4HrzEcAT" resolve="Toestand" />
+    <node concept="1TJgyj" id="7mDqhOkw0mx" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347120571809" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="subjectMetRecht" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="64gsXol8COa" resolve="RechtsSubject" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkw0my" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347120571810" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="subjectMetPlicht" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="64gsXol8COa" resolve="RechtsSubject" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkwO_O" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347120785780" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="onderwerp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="26dbYf8FZmT" resolve="Onderwerp" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkwOq0" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347120785024" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="overgang" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3GpI$sPmCZA" resolve="OvergangZonderRechtsgevolg" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkwO_U" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347120785786" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="GeldigVan" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3H8312nwp4X" resolve="VrijeTekst" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkwO_V" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347120785787" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="GeldigTot" />
+      <ref role="20lvS9" node="3H8312nwp4X" resolve="VrijeTekst" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkwO_W" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347120785788" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bron" />
+      <ref role="20lvS9" node="4$mS69sVCn9" resolve="AbstractArtikel" />
+    </node>
     <node concept="1TJgyj" id="3GpI$sPmD0u" role="1TKVEi">
       <property role="IQ2ns" value="4258639737656086558" />
       <property role="20lmBu" value="aggregation" />
@@ -1956,13 +2057,13 @@
   <node concept="1TIwiD" id="3GpI$sPmD0x">
     <property role="EcuMT" value="4258639737656086561" />
     <property role="3GE5qa" value="Toestand" />
-    <property role="TrG5h" value="OptieGoedkeurenHandeling" />
+    <property role="TrG5h" value="OptieAccepterenHandeling" />
     <ref role="1TJDcQ" node="3GpI$sPmCZB" resolve="Betrekking" />
   </node>
   <node concept="1TIwiD" id="3GpI$sPmD0y">
     <property role="EcuMT" value="4258639737656086562" />
     <property role="3GE5qa" value="Toestand" />
-    <property role="TrG5h" value="OptieAfkeurenHandeling" />
+    <property role="TrG5h" value="OptieAfwijzenHandeling" />
     <ref role="1TJDcQ" node="3GpI$sPmCZB" resolve="Betrekking" />
   </node>
   <node concept="1TIwiD" id="7mDqhOkeMTv">
@@ -1977,6 +2078,56 @@
       <property role="20kJfa" value="voorwaarden" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7mDqhOkOm0O">
+    <property role="EcuMT" value="8478423347125903412" />
+    <property role="TrG5h" value="Gevolg" />
+    <property role="3GE5qa" value="Rechtsgevolg" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7mDqhOkOm0P" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347125903413" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="NieuweToestanden" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7mDqhOkOm0U" resolve="ReferentieNaarToestand" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkOm0Q" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347125903414" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="WijzigendeToestanden" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7mDqhOkOm0U" resolve="ReferentieNaarToestand" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkOm0R" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347125903415" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="Wijzigingen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7rcH1JNxHR_" resolve="Actie" />
+    </node>
+    <node concept="1TJgyj" id="7mDqhOkOm0S" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347125903416" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="EindigendeToestanden" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7mDqhOkOm0U" resolve="ReferentieNaarToestand" />
+    </node>
+    <node concept="PrWs8" id="7mDqhOkOm0T" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7mDqhOkOm0U">
+    <property role="EcuMT" value="8478423347125903418" />
+    <property role="3GE5qa" value="Toestand" />
+    <property role="TrG5h" value="ReferentieNaarToestand" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7mDqhOkOm0V" role="1TKVEi">
+      <property role="IQ2ns" value="8478423347125903419" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="toestand" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="20D4HrzEcAT" resolve="Toestand" />
     </node>
   </node>
 </model>

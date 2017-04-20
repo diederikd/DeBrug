@@ -9,7 +9,7 @@ package ObjectiefRecht.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class OptieGoedkeurenHandeling_BehaviorDescriptor {
+public class OptieAccepterenHandeling_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

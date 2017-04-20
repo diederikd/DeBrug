@@ -11626,7 +11626,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                   <noderole>voorwaarden</noderole>
                   <nodetype>ExpressieVoorwaarde</nodetype>
                   <nodename></nodename>
-                  <nodeid>6133486975028698637</nodeid>
+                  <nodeid>8478423347116532180</nodeid>
                     <properties>
                         <property name='alias'></property>
                         <property name='name'></property>
@@ -11634,8 +11634,8 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                     <children>
                       <node>
                         <noderole>expressie</noderole>
-                        <nodetype>ErIsGeen</nodetype>
-                        <nodeid>6133486975028698638</nodeid>
+                        <nodetype>ErIsGeenHandeling</nodetype>
+                        <nodeid>8478423347116532225</nodeid>
                           <properties>
                               <property name='alias'></property>
                           </properties>
@@ -11643,7 +11643,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>voorwaarden</noderole>
                               <nodetype>TenHoogsteVoor</nodetype>
-                              <nodeid>6331618849990035133</nodeid>
+                              <nodeid>8478423347116532228</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -11651,7 +11651,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                   <node>
                                     <noderole>duur</noderole>
                                     <nodetype>DuurWaarde</nodetype>
-                                    <nodeid>6331618849990035170</nodeid>
+                                    <nodeid>8478423347116532229</nodeid>
                                       <properties>
                                           <property name='alias'></property>
                                       </properties>
@@ -11659,7 +11659,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                         <node>
                                           <noderole>duur</noderole>
                                           <nodetype>Jaren</nodetype>
-                                          <nodeid>6331618849990035173</nodeid>
+                                          <nodeid>8478423347116532230</nodeid>
                                             <properties>
                                                 <property name='jaren'>2</property>
                                                 <property name='alias'></property>
@@ -11670,7 +11670,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                   <node>
                                     <noderole>expressie1</noderole>
                                     <nodetype>Variabele</nodetype>
-                                    <nodeid>6331618849990035157</nodeid>
+                                    <nodeid>8478423347116532231</nodeid>
                                       <properties>
                                           <property name='alias'></property>
                                       </properties>
@@ -11678,17 +11678,17 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                         <node>
                                           <noderole>kenmerk</noderole>
                                           <nodetype>ReferentieNaarKenmerk</nodetype>
-                                          <nodeid>6331618849990035163</nodeid>
+                                          <nodeid>8478423347116532291</nodeid>
                                             <properties>
                                                 <property name='alias'></property>
                                             </properties>
                                             <references>
                                               <reference role='kenmerk'>
                                                 <node>
-                                                  <noderole>kenmerk</noderole>
+                                                  <noderole>uitgevoerdOp</noderole>
                                                   <nodetype>Kenmerk</nodetype>
-                                                  <nodename>datum verzoek ingewilligd</nodename>
-                                                  <nodeid>5540471952143438865</nodeid>
+                                                  <nodename>tijdstip inwilligen verzoek</nodename>
+                                                  <nodeid>1226838851588668474</nodeid>
                                                 </node>
                                               </reference>
                                             </references>
@@ -11698,7 +11698,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                   <node>
                                     <noderole>expressie2</noderole>
                                     <nodetype>HuidigeDatum</nodetype>
-                                    <nodeid>6331618849990035175</nodeid>
+                                    <nodeid>8478423347116532233</nodeid>
                                       <properties>
                                           <property name='alias'></property>
                                       </properties>
@@ -11708,7 +11708,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>voorwaarden</noderole>
                               <nodetype>TenHoogsteVoor</nodetype>
-                              <nodeid>6331618849990035198</nodeid>
+                              <nodeid>8478423347116532234</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -11716,7 +11716,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                   <node>
                                     <noderole>duur</noderole>
                                     <nodetype>DuurWaarde</nodetype>
-                                    <nodeid>6331618849990035237</nodeid>
+                                    <nodeid>8478423347116532235</nodeid>
                                       <properties>
                                           <property name='alias'></property>
                                       </properties>
@@ -11724,7 +11724,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                         <node>
                                           <noderole>duur</noderole>
                                           <nodetype>Jaren</nodetype>
-                                          <nodeid>6331618849990035240</nodeid>
+                                          <nodeid>8478423347116532236</nodeid>
                                             <properties>
                                                 <property name='jaren'>2</property>
                                                 <property name='alias'></property>
@@ -11735,7 +11735,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                   <node>
                                     <noderole>expressie1</noderole>
                                     <nodetype>Variabele</nodetype>
-                                    <nodeid>6331618849990035228</nodeid>
+                                    <nodeid>8478423347116532237</nodeid>
                                       <properties>
                                           <property name='alias'></property>
                                       </properties>
@@ -11743,17 +11743,17 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                         <node>
                                           <noderole>kenmerk</noderole>
                                           <nodetype>ReferentieNaarKenmerk</nodetype>
-                                          <nodeid>6331618849990035234</nodeid>
+                                          <nodeid>8478423347116532294</nodeid>
                                             <properties>
                                                 <property name='alias'></property>
                                             </properties>
                                             <references>
                                               <reference role='kenmerk'>
                                                 <node>
-                                                  <noderole>kenmerk</noderole>
+                                                  <noderole>uitgevoerdOp</noderole>
                                                   <nodetype>Kenmerk</nodetype>
-                                                  <nodename>datum verzoek afgewezen</nodename>
-                                                  <nodeid>5540471952143439007</nodeid>
+                                                  <nodename>tijdstip afwijzen verzoek</nodename>
+                                                  <nodeid>1226838851588668480</nodeid>
                                                 </node>
                                               </reference>
                                             </references>
@@ -11763,7 +11763,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                   <node>
                                     <noderole>expressie2</noderole>
                                     <nodetype>HuidigeDatum</nodetype>
-                                    <nodeid>6331618849990035242</nodeid>
+                                    <nodeid>8478423347116532239</nodeid>
                                       <properties>
                                           <property name='alias'></property>
                                       </properties>
@@ -11771,16 +11771,6 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                 </children>
                             </node>
                           </children>
-                          <references>
-                            <reference role='object'>
-                              <node>
-                                <noderole>onderwerpen</noderole>
-                                <nodetype>Onderwerp</nodetype>
-                                <nodename>aanpassing van de arbeidsduur</nodename>
-                                <nodeid>848775529194317032</nodeid>
-                              </node>
-                            </reference>
-                          </references>
                       </node>
                     </children>
                 </node>
@@ -11865,6 +11855,74 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
               <nodetype>Rechtshandeling</nodetype>
               <nodename>Indienen verzoek aanpassing arbeidsduur</nodename>
               <nodeid>5066083982446708445</nodeid>
+            </node>
+          </reference>
+        </references>
+    </node>
+    <node>
+      <noderole>toestanden</noderole>
+      <nodetype>OptieAccepterenHandeling</nodetype>
+      <nodename>Bevoegheid tot het accepteren van de handeling</nodename>
+      <nodeid>8478423347122187496</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Bevoegheid tot het accepteren van de handeling</property>
+            <property name='kortenaam'>Bevoegheid tot het accepteren van de handeling</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>GeldigVan</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>tijdstip van het accepeteren van de handeling</nodename>
+            <nodeid>8478423347122187604</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>tijdstip van het accepeteren van de handeling</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>8478423347122187502</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>7</property>
+                  <property name='jaar'>2000</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+        </children>
+        <references>
+          <reference role='subjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>werkgever</nodename>
+              <nodeid>5753801799637012771</nodeid>
+            </node>
+          </reference>
+          <reference role='subjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>werknemer</nodename>
+              <nodeid>5753801799636978868</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>aanpassing van de arbeidsduur</nodename>
+              <nodeid>848775529194317032</nodeid>
+            </node>
+          </reference>
+          <reference role='overgang'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>OvergangZonderRechtsgevolg</nodetype>
+              <nodename>Accepteren van het verzoek</nodename>
+              <nodeid>8478423347123919891</nodeid>
             </node>
           </reference>
         </references>
@@ -11961,14 +12019,14 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
     <node>
       <noderole>toestanden</noderole>
       <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-      <nodename>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+      <nodename>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
 voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
 en de omvang van de aanpassing</nodename>
       <nodeid>909603116718783952</nodeid>
         <properties>
             <property name='initieel'></property>
             <property name='alias'></property>
-            <property name='name'>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+            <property name='name'>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
 voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
 en de omvang van de aanpassing</property>
             <property name='kortenaam'>verplichting inwilligen van verzoek voor aanpassing arbeidsduur</property>
@@ -12221,7 +12279,7 @@ tot het inwilligen van het verzoek te neutraliseren</property>
             <node>
               <noderole>toestanden</noderole>
               <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-              <nodename>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+              <nodename>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
 voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
 en de omvang van de aanpassing</nodename>
               <nodeid>909603116718783952</nodeid>
@@ -13670,7 +13728,7 @@ overeenkomstig de wensen van de werknemer</nodename>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-                          <nodename>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+                          <nodename>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
 voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
 en de omvang van de aanpassing</nodename>
                           <nodeid>909603116718783952</nodeid>
@@ -13765,7 +13823,7 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
           </node>
         </children>
     </node>
-    <node>
+<!TextGen not found for 'ObjectiefRecht.structure.OvergangZonderRechtsgevolg'!>    <node>
       <noderole>overgangen</noderole>
       <nodetype>Rechtshandeling</nodetype>
       <nodename>Overleg plegen</nodename>
@@ -14234,6 +14292,24 @@ van de werknemer te neutraliseren.</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>8478423347120569147</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>ZwakkeAanspraakZwakkePlicht</nodetype>
+                          <nodename>verplichting tot overleg plegen</nodename>
+                          <nodeid>2317404197410906878</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>EindigendeRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>5066083982446741317</nodeid>
                     <properties>
                         <property name='alias'></property>
@@ -14243,7 +14319,7 @@ van de werknemer te neutraliseren.</nodename>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-                          <nodename>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+                          <nodename>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
 voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
 en de omvang van de aanpassing</nodename>
                           <nodeid>909603116718783952</nodeid>
@@ -14443,7 +14519,7 @@ van de werknemer te neutraliseren.</nodename>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-                          <nodename>de verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+                          <nodename>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
 voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
 en de omvang van de aanpassing</nodename>
                           <nodeid>909603116718783952</nodeid>

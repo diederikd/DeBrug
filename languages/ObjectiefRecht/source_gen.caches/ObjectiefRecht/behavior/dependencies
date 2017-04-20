@@ -49,6 +49,8 @@
     <classNode dependClassName="ObjectiefRecht.behavior.ObjectWaarde__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.Object__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.Onderwerp__BehaviorDescriptor" />
+    <classNode dependClassName="ObjectiefRecht.behavior.OptieAccepterenHandeling__BehaviorDescriptor" />
+    <classNode dependClassName="ObjectiefRecht.behavior.OptieAfwijzenHandeling__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.RechtsSubject__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.Variabele__BehaviorDescriptor" />
@@ -233,6 +235,10 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.Gelijkstelling_BehaviorDescriptor" file="Gelijkstelling_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ObjectiefRecht.behavior.Gevolg_BehaviorDescriptor" file="Gevolg_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -510,13 +516,49 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.OptieAfkeurenHandeling_BehaviorDescriptor" file="OptieAfkeurenHandeling_BehaviorDescriptor.java">
+  <dependency className="ObjectiefRecht.behavior.OptieAccepterenHandeling_BehaviorDescriptor" file="OptieAccepterenHandeling_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.OptieGoedkeurenHandeling_BehaviorDescriptor" file="OptieGoedkeurenHandeling_BehaviorDescriptor.java">
+  <dependency className="ObjectiefRecht.behavior.OptieAccepterenHandeling__BehaviorDescriptor" file="OptieAccepterenHandeling__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
+  </dependency>
+  <dependency className="ObjectiefRecht.behavior.OptieAfwijzenHandeling_BehaviorDescriptor" file="OptieAfwijzenHandeling_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ObjectiefRecht.behavior.OptieAfwijzenHandeling__BehaviorDescriptor" file="OptieAfwijzenHandeling__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor" file="OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
@@ -654,6 +696,10 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.ReferentieNaarRechtssubject_BehaviorDescriptor" file="ReferentieNaarRechtssubject_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ObjectiefRecht.behavior.ReferentieNaarToestand_BehaviorDescriptor" file="ReferentieNaarToestand_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

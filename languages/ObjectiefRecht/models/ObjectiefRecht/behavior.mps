@@ -1262,7 +1262,7 @@
               </node>
             </node>
             <node concept="Jncv_" id="vqB$L$qbCr" role="3cqZAp">
-              <ref role="JncvD" to="3pw0:5qTpXpBo3vZ" resolve="TijdType" />
+              <ref role="JncvD" to="3pw0:5qTpXpBo3vZ" resolve="TijdstipType" />
               <node concept="2OqwBi" id="vqB$L$qbCs" role="JncvB">
                 <node concept="2GrUjf" id="vqB$L$qbCt" role="2Oq$k0">
                   <ref role="2Gs0qQ" node="3r$i4253ACh" resolve="kenmerk" />
@@ -2111,6 +2111,48 @@
     </node>
     <node concept="13hLZK" id="FR9FxGqhbv" role="13h7CW">
       <node concept="3clFbS" id="FR9FxGqhbw" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7mDqhOk$ioa">
+    <property role="3GE5qa" value="Toestand" />
+    <ref role="13h7C2" to="3pw0:3GpI$sPmD0x" resolve="OptieAccepterenHandeling" />
+    <node concept="13hLZK" id="7mDqhOk$iob" role="13h7CW">
+      <node concept="3clFbS" id="7mDqhOk$ioc" role="2VODD2">
+        <node concept="3clFbF" id="7mDqhOk$iom" role="3cqZAp">
+          <node concept="37vLTI" id="7mDqhOk$jGf" role="3clFbG">
+            <node concept="Xl_RD" id="7mDqhOk$jJb" role="37vLTx">
+              <property role="Xl_RC" value="Mogelijkheid voor het accepteren van de handeling" />
+            </node>
+            <node concept="2OqwBi" id="7mDqhOk$iyG" role="37vLTJ">
+              <node concept="13iPFW" id="7mDqhOk$iol" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7mDqhOk$iN_" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7mDqhOk$kzX">
+    <property role="3GE5qa" value="Toestand" />
+    <ref role="13h7C2" to="3pw0:3GpI$sPmD0y" resolve="OptieAfwijzenHandeling" />
+    <node concept="13hLZK" id="7mDqhOk$kzY" role="13h7CW">
+      <node concept="3clFbS" id="7mDqhOk$kzZ" role="2VODD2">
+        <node concept="3clFbF" id="7mDqhOk$k$8" role="3cqZAp">
+          <node concept="37vLTI" id="7mDqhOk$k$9" role="3clFbG">
+            <node concept="Xl_RD" id="7mDqhOk$k$a" role="37vLTx">
+              <property role="Xl_RC" value="Mogelijkheid voor het afwijzen van de handeling" />
+            </node>
+            <node concept="2OqwBi" id="7mDqhOk$k$b" role="37vLTJ">
+              <node concept="13iPFW" id="7mDqhOk$k$c" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7mDqhOk$k$d" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

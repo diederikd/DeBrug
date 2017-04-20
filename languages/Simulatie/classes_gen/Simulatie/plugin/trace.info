@@ -1443,6 +1443,9 @@
       <node id="6331618849990082063" at="497,182,498,60" concept="3" />
       <node id="6331618849990082079" at="502,5,503,46" concept="3" />
       <node id="6331618849990082084" at="503,46,504,18" concept="9" />
+      <node id="8478423347119716560" at="507,82,508,0" concept="11" />
+      <node id="8478423347119746852" at="510,39,511,751" concept="9" />
+      <node id="8478423347119709050" at="513,24,514,28" concept="9" />
       <node id="5917060184178583717" at="51,35,54,5" concept="6" />
       <node id="6066224101210573952" at="95,0,98,0" concept="13" trace="RechtssubjectMetPlicht#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="6066224101210577939" at="99,0,102,0" concept="13" trace="RechtssubjectMetRecht#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -1463,6 +1466,7 @@
       <node id="8120684925538568359" at="394,203,397,7" concept="6" />
       <node id="8120684925544515901" at="424,208,427,7" concept="6" />
       <node id="6331618849990081922" at="469,209,472,7" concept="6" />
+      <node id="8478423347119746069" at="510,0,513,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="8120684925549239454" at="85,55,89,5" concept="6" />
       <node id="76320168777685191" at="161,54,165,5" concept="6" />
       <node id="8120684925532094312" at="167,57,171,5" concept="6" />
@@ -1492,6 +1496,7 @@
       <node id="8120684925537359050" at="294,72,299,24" concept="8" />
       <node id="8120684925546759181" at="441,258,446,11" concept="6" />
       <node id="6331618849990081989" at="486,258,491,11" concept="6" />
+      <node id="8478423347119709025" at="508,0,513,24" concept="8" />
       <node id="3079509193314000814" at="62,64,68,11" concept="6" />
       <node id="3079509193314024368" at="73,42,79,7" concept="6" />
       <node id="8120684925552567594" at="135,58,141,5" concept="1" />
@@ -1522,6 +1527,7 @@
       <node id="8120684925538573085" at="357,208,366,9" concept="5" />
       <node id="8120684925538573121" at="371,210,380,9" concept="5" />
       <node id="8120684925538568379" at="401,190,410,9" concept="5" />
+      <node id="8478423347119709023" at="507,0,516,0" concept="13" trace="GeefLijstVanRechtshandelingen#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
       <node id="5917060184178583416" at="84,0,94,0" concept="13" trace="evalueerVoorwaarden#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
       <node id="8120684925552571220" at="141,5,151,5" concept="1" />
       <node id="76320168777630803" at="262,183,272,5" concept="5" />
@@ -1571,6 +1577,7 @@
       <scope id="8120684925538568363" at="395,184,396,348" />
       <scope id="8120684925544515905" at="425,184,426,348" />
       <scope id="6331618849990081926" at="470,184,471,348" />
+      <scope id="8478423347119746070" at="510,39,511,751" />
       <scope id="8120684925549239456" at="86,213,88,18" />
       <scope id="76320168777685192" at="162,141,164,67" />
       <scope id="8120684925532094313" at="168,140,170,374" />
@@ -1617,6 +1624,9 @@
       </scope>
       <scope id="8120684925546759182" at="442,30,445,39" />
       <scope id="6331618849990081990" at="487,30,490,39" />
+      <scope id="8478423347119746069" at="510,0,513,0">
+        <var name="it" id="8478423347119746069" />
+      </scope>
       <scope id="3079509193314000816" at="63,200,67,119" />
       <scope id="3079509193314024370" at="74,199,78,440" />
       <scope id="8120684925552567594" at="136,5,140,7">
@@ -1709,6 +1719,9 @@
         <var name="Datum" id="8120684925538568393" />
         <var name="datumWaarde" id="8120684925538568384" />
       </scope>
+      <scope id="8478423347119709024" at="507,82,514,28">
+        <var name="rechtshandelings" id="8478423347119709026" />
+      </scope>
       <scope id="5917060184178583419" at="84,57,92,23">
         <var name="result" id="5917060184178870234" />
         <var name="value" id="5917060184178583777" />
@@ -1737,6 +1750,9 @@
       <scope id="8120684925538568378" at="401,190,410,9" />
       <scope id="8120684925538568379" at="401,190,410,9">
         <var name="instantieVanObject" id="8120684925538568380" />
+      </scope>
+      <scope id="8478423347119709023" at="507,0,516,0">
+        <var name="rechtshandeling" id="8478423347119709053" />
       </scope>
       <scope id="5917060184178583416" at="84,0,94,0">
         <var name="node" id="5917060184178583700" />
@@ -1862,7 +1878,8 @@
         <var name="variabele" id="76320168777685285" />
       </scope>
       <unit id="8120684925537359063" at="295,475,299,5" name="Simulatie.plugin.Interpreter$1" />
-      <unit id="3139957515582417695" at="40,0,509,0" name="Simulatie.plugin.Interpreter" />
+      <unit id="8478423347119746069" at="509,470,513,5" name="Simulatie.plugin.Interpreter$2" />
+      <unit id="3139957515582417695" at="40,0,518,0" name="Simulatie.plugin.Interpreter" />
     </file>
   </root>
   <root nodeRef="r:5ac600bf-f842-4068-bae2-6d8b913fefc6(Simulatie.plugin)/5887588380650751276">

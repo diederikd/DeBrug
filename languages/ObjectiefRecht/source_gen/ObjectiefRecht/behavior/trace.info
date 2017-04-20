@@ -46,7 +46,7 @@
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Artikel_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="14,0,114,0" name="ObjectiefRecht.behavior.BehaviorAspectDescriptor" />
+      <unit at="14,0,126,0" name="ObjectiefRecht.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="Betrekking_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Betrekking_BehaviorDescriptor" />
@@ -122,6 +122,9 @@
     </file>
     <file name="Gelijkstelling_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Gelijkstelling_BehaviorDescriptor" />
+    </file>
+    <file name="Gevolg_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Gevolg_BehaviorDescriptor" />
     </file>
     <file name="HuidigeDatum_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.HuidigeDatum_BehaviorDescriptor" />
@@ -234,11 +237,11 @@
     <file name="Onderwerp_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.Onderwerp_BehaviorDescriptor" />
     </file>
-    <file name="OptieAfkeurenHandeling_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.OptieAfkeurenHandeling_BehaviorDescriptor" />
+    <file name="OptieAccepterenHandeling_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.OptieAccepterenHandeling_BehaviorDescriptor" />
     </file>
-    <file name="OptieGoedkeurenHandeling_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.OptieGoedkeurenHandeling_BehaviorDescriptor" />
+    <file name="OptieAfwijzenHandeling_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.OptieAfwijzenHandeling_BehaviorDescriptor" />
     </file>
     <file name="OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor" />
@@ -308,6 +311,9 @@
     </file>
     <file name="ReferentieNaarRechtssubject_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarRechtssubject_BehaviorDescriptor" />
+    </file>
+    <file name="ReferentieNaarToestand_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarToestand_BehaviorDescriptor" />
     </file>
     <file name="ReferentieNaarVoorwaarde_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarVoorwaarde_BehaviorDescriptor" />
@@ -1644,6 +1650,138 @@
         <var name="parameters" id="790142833161474782" />
       </scope>
       <unit id="790142833161474782" at="26,0,103,0" name="ObjectiefRecht.behavior.Variabele__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)/8478423347121694218">
+    <file name="OptieAccepterenHandeling__BehaviorDescriptor.java">
+      <node id="8478423347121694218" at="21,0,22,0" concept="9" trace="CONCEPT" />
+      <node id="8478423347121694218" at="22,0,23,0" concept="9" trace="REGISTRY" />
+      <node id="8478423347121694218" at="25,0,26,0" concept="9" trace="BH_METHODS" />
+      <node id="8478423347121694230" at="27,63,28,209" concept="2" />
+      <node id="8478423347121694218" at="32,62,33,20" concept="11" />
+      <node id="8478423347121694218" at="37,114,38,21" concept="2" />
+      <node id="8478423347121694218" at="42,114,43,49" concept="6" />
+      <node id="8478423347121694218" at="44,26,45,56" concept="13" />
+      <node id="8478423347121694218" at="48,14,49,58" concept="13" />
+      <node id="8478423347121694218" at="54,128,55,49" concept="6" />
+      <node id="8478423347121694218" at="56,26,57,56" concept="13" />
+      <node id="8478423347121694218" at="60,14,61,58" concept="13" />
+      <node id="8478423347121694218" at="67,48,68,22" concept="7" />
+      <node id="8478423347121694218" at="73,40,74,19" concept="7" />
+      <node id="8478423347121694218" at="27,0,30,0" concept="10" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8478423347121694218" at="32,0,35,0" concept="1" trace="OptieAccepterenHandeling__BehaviorDescriptor#()V" />
+      <node id="8478423347121694218" at="43,49,46,5" concept="4" />
+      <node id="8478423347121694218" at="55,49,58,5" concept="4" />
+      <node id="8478423347121694218" at="36,0,40,0" concept="5" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="8478423347121694218" at="46,5,50,5" concept="12" />
+      <node id="8478423347121694218" at="58,5,62,5" concept="12" />
+      <node id="8478423347121694218" at="65,0,70,0" concept="5" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="8478423347121694218" at="71,0,76,0" concept="5" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8478423347121694218" at="41,0,52,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="8478423347121694218" at="53,0,64,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="8478423347121694218" at="27,63,28,209" />
+      <scope id="8478423347121694218" at="32,62,33,20" />
+      <scope id="8478423347121694218" at="37,114,38,21" />
+      <scope id="8478423347121694218" at="44,26,45,56" />
+      <scope id="8478423347121694218" at="48,14,49,58" />
+      <scope id="8478423347121694218" at="56,26,57,56" />
+      <scope id="8478423347121694218" at="60,14,61,58" />
+      <scope id="8478423347121694218" at="67,48,68,22" />
+      <scope id="8478423347121694218" at="73,40,74,19" />
+      <scope id="8478423347121694218" at="27,0,30,0">
+        <var name="__thisNode__" id="8478423347121694218" />
+      </scope>
+      <scope id="8478423347121694218" at="32,0,35,0" />
+      <scope id="8478423347121694218" at="36,0,40,0">
+        <var name="constructor" id="8478423347121694218" />
+        <var name="node" id="8478423347121694218" />
+        <var name="parameters" id="8478423347121694218" />
+      </scope>
+      <scope id="8478423347121694218" at="65,0,70,0" />
+      <scope id="8478423347121694218" at="71,0,76,0" />
+      <scope id="8478423347121694218" at="42,114,50,5">
+        <var name="methodIndex" id="8478423347121694218" />
+      </scope>
+      <scope id="8478423347121694218" at="54,128,62,5">
+        <var name="methodIndex" id="8478423347121694218" />
+      </scope>
+      <scope id="8478423347121694218" at="41,0,52,0">
+        <var name="method" id="8478423347121694218" />
+        <var name="node" id="8478423347121694218" />
+        <var name="parameters" id="8478423347121694218" />
+      </scope>
+      <scope id="8478423347121694218" at="53,0,64,0">
+        <var name="concept" id="8478423347121694218" />
+        <var name="method" id="8478423347121694218" />
+        <var name="parameters" id="8478423347121694218" />
+      </scope>
+      <unit id="8478423347121694218" at="20,0,77,0" name="ObjectiefRecht.behavior.OptieAccepterenHandeling__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)/8478423347121703165">
+    <file name="OptieAfwijzenHandeling__BehaviorDescriptor.java">
+      <node id="8478423347121703165" at="21,0,22,0" concept="9" trace="CONCEPT" />
+      <node id="8478423347121703165" at="22,0,23,0" concept="9" trace="REGISTRY" />
+      <node id="8478423347121703165" at="25,0,26,0" concept="9" trace="BH_METHODS" />
+      <node id="8478423347121703176" at="27,63,28,207" concept="2" />
+      <node id="8478423347121703165" at="32,60,33,20" concept="11" />
+      <node id="8478423347121703165" at="37,114,38,21" concept="2" />
+      <node id="8478423347121703165" at="42,114,43,49" concept="6" />
+      <node id="8478423347121703165" at="44,26,45,56" concept="13" />
+      <node id="8478423347121703165" at="48,14,49,58" concept="13" />
+      <node id="8478423347121703165" at="54,128,55,49" concept="6" />
+      <node id="8478423347121703165" at="56,26,57,56" concept="13" />
+      <node id="8478423347121703165" at="60,14,61,58" concept="13" />
+      <node id="8478423347121703165" at="67,48,68,22" concept="7" />
+      <node id="8478423347121703165" at="73,40,74,19" concept="7" />
+      <node id="8478423347121703165" at="27,0,30,0" concept="10" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8478423347121703165" at="32,0,35,0" concept="1" trace="OptieAfwijzenHandeling__BehaviorDescriptor#()V" />
+      <node id="8478423347121703165" at="43,49,46,5" concept="4" />
+      <node id="8478423347121703165" at="55,49,58,5" concept="4" />
+      <node id="8478423347121703165" at="36,0,40,0" concept="5" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="8478423347121703165" at="46,5,50,5" concept="12" />
+      <node id="8478423347121703165" at="58,5,62,5" concept="12" />
+      <node id="8478423347121703165" at="65,0,70,0" concept="5" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="8478423347121703165" at="71,0,76,0" concept="5" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8478423347121703165" at="41,0,52,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="8478423347121703165" at="53,0,64,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="8478423347121703165" at="27,63,28,207" />
+      <scope id="8478423347121703165" at="32,60,33,20" />
+      <scope id="8478423347121703165" at="37,114,38,21" />
+      <scope id="8478423347121703165" at="44,26,45,56" />
+      <scope id="8478423347121703165" at="48,14,49,58" />
+      <scope id="8478423347121703165" at="56,26,57,56" />
+      <scope id="8478423347121703165" at="60,14,61,58" />
+      <scope id="8478423347121703165" at="67,48,68,22" />
+      <scope id="8478423347121703165" at="73,40,74,19" />
+      <scope id="8478423347121703165" at="27,0,30,0">
+        <var name="__thisNode__" id="8478423347121703165" />
+      </scope>
+      <scope id="8478423347121703165" at="32,0,35,0" />
+      <scope id="8478423347121703165" at="36,0,40,0">
+        <var name="constructor" id="8478423347121703165" />
+        <var name="node" id="8478423347121703165" />
+        <var name="parameters" id="8478423347121703165" />
+      </scope>
+      <scope id="8478423347121703165" at="65,0,70,0" />
+      <scope id="8478423347121703165" at="71,0,76,0" />
+      <scope id="8478423347121703165" at="42,114,50,5">
+        <var name="methodIndex" id="8478423347121703165" />
+      </scope>
+      <scope id="8478423347121703165" at="54,128,62,5">
+        <var name="methodIndex" id="8478423347121703165" />
+      </scope>
+      <scope id="8478423347121703165" at="41,0,52,0">
+        <var name="method" id="8478423347121703165" />
+        <var name="node" id="8478423347121703165" />
+        <var name="parameters" id="8478423347121703165" />
+      </scope>
+      <scope id="8478423347121703165" at="53,0,64,0">
+        <var name="concept" id="8478423347121703165" />
+        <var name="method" id="8478423347121703165" />
+        <var name="parameters" id="8478423347121703165" />
+      </scope>
+      <unit id="8478423347121703165" at="20,0,77,0" name="ObjectiefRecht.behavior.OptieAfwijzenHandeling__BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>
