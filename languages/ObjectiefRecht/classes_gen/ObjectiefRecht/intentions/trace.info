@@ -13,7 +13,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="IntentionsDescriptor.java">
-      <unit at="16,0,133,0" name="ObjectiefRecht.intentions.IntentionsDescriptor" />
+      <unit at="16,0,135,0" name="ObjectiefRecht.intentions.IntentionsDescriptor" />
     </file>
   </root>
   <root nodeRef="r:52a5cd65-ebfc-4dbe-a32d-128a83072e4a(ObjectiefRecht.intentions)/1365497693573418594">
@@ -152,6 +152,94 @@
       </scope>
       <unit id="1365497693573474963" at="45,0,68,0" name="ObjectiefRecht.intentions.KopieerNaamNaarKorteNaamRechtsgevolgveroorzaker_Intention$IntentionImplementation" />
       <unit id="1365497693573474963" at="22,0,69,0" name="ObjectiefRecht.intentions.KopieerNaamNaarKorteNaamRechtsgevolgveroorzaker_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:52a5cd65-ebfc-4dbe-a32d-128a83072e4a(ObjectiefRecht.intentions)/2677844167526638275">
+    <file name="MigreerRechtsgevolgen_Intention.java">
+      <node id="2677844167526638275" at="23,0,24,0" concept="3" trace="myCachedExecutable" />
+      <node id="2677844167526638275" at="24,44,25,279" concept="10" />
+      <node id="2677844167526638275" at="28,35,29,35" concept="8" />
+      <node id="2677844167526638275" at="32,84,33,16" concept="8" />
+      <node id="2677844167526638275" at="36,35,37,17" concept="8" />
+      <node id="2677844167526638275" at="40,37,41,137" concept="2" />
+      <node id="2677844167526638275" at="42,5,43,30" concept="8" />
+      <node id="2677844167526638839" at="49,87,50,86" concept="8" />
+      <node id="2677844167526657990" at="55,9,56,49" concept="7" />
+      <node id="2677844167526658451" at="57,200,58,217" concept="7" />
+      <node id="2677844167526663756" at="59,260,60,223" concept="7" />
+      <node id="2677844167526696829" at="60,223,61,59" concept="2" />
+      <node id="2677844167526678473" at="63,268,64,223" concept="7" />
+      <node id="2677844167526638275" at="71,48,72,50" concept="8" />
+      <node id="2677844167526638275" at="46,0,48,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="2677844167526638275" at="24,0,27,0" concept="1" trace="MigreerRechtsgevolgen_Intention#()V" />
+      <node id="2677844167526638275" at="39,99,42,5" concept="5" />
+      <node id="2677844167526678467" at="62,13,65,13" concept="4" />
+      <node id="2677844167526638275" at="27,0,31,0" concept="6" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="2677844167526638275" at="31,0,35,0" concept="6" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="2677844167526638275" at="35,0,39,0" concept="6" trace="isSurroundWith#()Z" />
+      <node id="2677844167526638275" at="48,0,52,0" concept="6" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="2677844167526662065" at="58,217,62,13" concept="4" />
+      <node id="2677844167526638275" at="70,0,74,0" concept="6" trace="getDescriptor#()Ljetbrains/mps/intentions/IntentionDescriptor;" />
+      <node id="2677844167526638275" at="39,0,45,0" concept="6" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="2677844167526657990" at="56,49,66,11" concept="5" />
+      <node id="2677844167526657990" at="54,224,67,9" concept="0" />
+      <node id="2677844167526653477" at="53,78,68,7" concept="4" />
+      <node id="2677844167526638275" at="52,0,70,0" concept="6" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="2677844167526638275" at="46,38,46,38" />
+      <scope id="2677844167526638275" at="24,44,25,279" />
+      <scope id="2677844167526638275" at="28,35,29,35" />
+      <scope id="2677844167526638275" at="32,84,33,16" />
+      <scope id="2677844167526638275" at="36,35,37,17" />
+      <scope id="2677844167526638275" at="40,37,41,137" />
+      <scope id="2677844167526638277" at="49,87,50,86" />
+      <scope id="2677844167526678472" at="63,268,64,223">
+        <var name="referentieNaarToestand" id="2677844167526678474" />
+      </scope>
+      <scope id="2677844167526638275" at="71,48,72,50" />
+      <scope id="2677844167526638275" at="46,0,48,0" />
+      <scope id="2677844167526662071" at="59,260,61,59">
+        <var name="referentieNaarToestand" id="2677844167526663759" />
+      </scope>
+      <scope id="2677844167526638275" at="24,0,27,0" />
+      <scope id="2677844167526678467" at="62,13,65,13">
+        <var name="eindigendebetrekking" id="2677844167526678468" />
+      </scope>
+      <scope id="2677844167526638275" at="27,0,31,0" />
+      <scope id="2677844167526638275" at="31,0,35,0">
+        <var name="editorContext" id="2677844167526638275" />
+        <var name="node" id="2677844167526638275" />
+      </scope>
+      <scope id="2677844167526638275" at="35,0,39,0" />
+      <scope id="2677844167526638275" at="39,99,43,30" />
+      <scope id="2677844167526638275" at="48,0,52,0">
+        <var name="editorContext" id="2677844167526638275" />
+        <var name="node" id="2677844167526638275" />
+      </scope>
+      <scope id="2677844167526662065" at="58,217,62,13">
+        <var name="nieuwebetrekking" id="2677844167526662067" />
+      </scope>
+      <scope id="2677844167526638275" at="70,0,74,0" />
+      <scope id="2677844167526638275" at="39,0,45,0">
+        <var name="context" id="2677844167526638275" />
+        <var name="node" id="2677844167526638275" />
+      </scope>
+      <scope id="2677844167526657992" at="57,200,65,13">
+        <var name="rechtsgevolg" id="2677844167526658454" />
+      </scope>
+      <scope id="2677844167526657990" at="55,9,66,11">
+        <var name="rechtshandeling" id="2677844167526657990" />
+      </scope>
+      <scope id="2677844167526653480" at="54,224,67,9" />
+      <scope id="2677844167526638279" at="53,78,68,7" />
+      <scope id="2677844167526653477" at="53,78,68,7">
+        <var name="overgang" id="2677844167526653478" />
+      </scope>
+      <scope id="2677844167526638275" at="52,0,70,0">
+        <var name="editorContext" id="2677844167526638275" />
+        <var name="node" id="2677844167526638275" />
+      </scope>
+      <unit id="2677844167526638275" at="45,0,75,0" name="ObjectiefRecht.intentions.MigreerRechtsgevolgen_Intention$IntentionImplementation" />
+      <unit id="2677844167526638275" at="22,0,76,0" name="ObjectiefRecht.intentions.MigreerRechtsgevolgen_Intention" />
     </file>
   </root>
   <root nodeRef="r:52a5cd65-ebfc-4dbe-a32d-128a83072e4a(ObjectiefRecht.intentions)/3955365814684309407">

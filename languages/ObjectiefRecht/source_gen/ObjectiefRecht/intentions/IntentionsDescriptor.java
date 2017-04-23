@@ -35,12 +35,13 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
         case 0:
           if (true) {
             // Concept: Context 
-            intentions = new IntentionFactory[5];
+            intentions = new IntentionFactory[6];
             intentions[0] = new Hernummer_Intention();
             intentions[1] = new InitialiseerDatums_Intention();
             intentions[2] = new DatumMigreren_Intention();
             intentions[3] = new KopieerNaamNaarKorteNaamRechtsbetrekking_Intention();
             intentions[4] = new KopieerNaamNaarKorteNaamRechtsgevolgveroorzaker_Intention();
+            intentions[5] = new MigreerRechtsgevolgen_Intention();
           }
           break;
         case 1:
@@ -98,7 +99,7 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[19];
+    IntentionFactory[] rv = new IntentionFactory[20];
     rv[0] = new VerplichteBevoegdheidVerplichteGehoudenheid_Intention();
     rv[1] = new AanspraakNaIngebrekeStellingPlicht_Intention();
     rv[2] = new KrachtigeAanspraakFataleVerplichtig_Intention();
@@ -118,6 +119,7 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
     rv[16] = new MaakKenmerkOptioneel_Intention();
     rv[17] = new KopieerNaamNaarKorteNaamRechtsbetrekking_Intention();
     rv[18] = new KopieerNaamNaarKorteNaamRechtsgevolgveroorzaker_Intention();
+    rv[19] = new MigreerRechtsgevolgen_Intention();
     return Arrays.asList(rv);
   }
   private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {

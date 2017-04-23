@@ -11862,22 +11862,22 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
     <node>
       <noderole>toestanden</noderole>
       <nodetype>OptieAccepterenHandeling</nodetype>
-      <nodename>Bevoegheid tot het accepteren van de handeling</nodename>
+      <nodename>Bevoegheid om de handeling te accepteren</nodename>
       <nodeid>8478423347122187496</nodeid>
         <properties>
             <property name='alias'></property>
-            <property name='name'>Bevoegheid tot het accepteren van de handeling</property>
+            <property name='name'>Bevoegheid om de handeling te accepteren</property>
             <property name='kortenaam'>Bevoegheid tot het accepteren van de handeling</property>
         </properties>
         <children>
           <node>
             <noderole>GeldigVan</noderole>
             <nodetype>VrijeTekst</nodetype>
-            <nodename>tijdstip van het accepeteren van de handeling</nodename>
+            <nodename>tijdstip van het accepteren van de handeling</nodename>
             <nodeid>8478423347122187604</nodeid>
               <properties>
                   <property name='alias'></property>
-                  <property name='name'>tijdstip van het accepeteren van de handeling</property>
+                  <property name='name'>tijdstip van het accepteren van de handeling</property>
               </properties>
           </node>
           <node>
@@ -11923,6 +11923,74 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
               <nodetype>OvergangZonderRechtsgevolg</nodetype>
               <nodename>Accepteren van het verzoek</nodename>
               <nodeid>8478423347123919891</nodeid>
+            </node>
+          </reference>
+        </references>
+    </node>
+    <node>
+      <noderole>toestanden</noderole>
+      <nodetype>OptieAfwijzenHandeling</nodetype>
+      <nodename>Bevoegdheid om de handeling af te wijzen</nodename>
+      <nodeid>2677844167524149203</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Bevoegdheid om de handeling af te wijzen</property>
+            <property name='kortenaam'>Bevoegdheid om de handelingen af te wijzen</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>GeldigVan</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>tijdstip van het afwijzen van de handeling</nodename>
+            <nodeid>2677844167524149206</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>tijdstip van het afwijzen van de handeling</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>2677844167524149209</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>7</property>
+                  <property name='jaar'>2000</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+        </children>
+        <references>
+          <reference role='subjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>werkgever</nodename>
+              <nodeid>5753801799637012771</nodeid>
+            </node>
+          </reference>
+          <reference role='subjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>werknemer</nodename>
+              <nodeid>5753801799636978868</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>aanpassing van de arbeidsduur</nodename>
+              <nodeid>848775529194317032</nodeid>
+            </node>
+          </reference>
+          <reference role='overgang'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>OvergangZonderRechtsgevolg</nodetype>
+              <nodename>Afwijzen van het verzoek</nodename>
+              <nodeid>2677844167524149561</nodeid>
             </node>
           </reference>
         </references>
@@ -13700,13 +13768,13 @@ overeenkomstig de wensen van de werknemer</nodename>
               <children>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>3955365814689050366</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167531245302</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ZwakkeAanspraakZwakkePlicht</nodetype>
@@ -13718,13 +13786,13 @@ overeenkomstig de wensen van de werknemer</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>3955365814689050367</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167531245303</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -13738,19 +13806,20 @@ en de omvang van de aanpassing</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>3955365814689050369</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167531245304</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
-                          <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
-                          <nodename>immuniteit (recht) om de verplichte bevoegdheid
-tot het inwilligen van het verzoek te neutraliseren</nodename>
-                          <nodeid>1431654249012741138</nodeid>
+                          <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+                          <nodename>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
+en de omvang van de aanpassing</nodename>
+                          <nodeid>909603116718783952</nodeid>
                         </node>
                       </reference>
                     </references>
@@ -13823,7 +13892,171 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
           </node>
         </children>
     </node>
-<!TextGen not found for 'ObjectiefRecht.structure.OvergangZonderRechtsgevolg'!>    <node>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>OvergangZonderRechtsgevolg</nodetype>
+      <nodename>Accepteren van het verzoek</nodename>
+      <nodeid>8478423347123919891</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Accepteren van het verzoek</property>
+            <property name='kortenaam'>Accepteren van het verzoek</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>8478423347123919894</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>1</property>
+                  <property name='jaar'>2007</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>8478423347125903408</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>werkgever</nodename>
+                    <nodeid>5753801799637012771</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>heeftAlsGevolg</noderole>
+            <nodetype>Gevolg</nodetype>
+            <nodename>verzoek geaccepteerd</nodename>
+            <nodeid>8478423347126392009</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>verzoek geaccepteerd</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>NieuweToestanden</noderole>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167525165732</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='toestand'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>ZwakkeAanspraakZwakkePlicht</nodetype>
+                          <nodename>verplichting tot overleg plegen</nodename>
+                          <nodeid>2317404197410906878</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>NieuweToestanden</noderole>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167525165721</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='toestand'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+                          <nodename>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
+en de omvang van de aanpassing</nodename>
+                          <nodeid>909603116718783952</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>NieuweToestanden</noderole>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167525165723</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='toestand'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+                          <nodename>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
+en de omvang van de aanpassing</nodename>
+                          <nodeid>909603116718783952</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+              </children>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>OvergangZonderRechtsgevolg</nodetype>
+      <nodename>Afwijzen van het verzoek</nodename>
+      <nodeid>2677844167524149561</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Afwijzen van het verzoek</property>
+            <property name='kortenaam'>Afwijzen van het verzoek</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>2677844167524149816</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>werkgever</nodename>
+                    <nodeid>5753801799637012771</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>2677844167524149567</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>7</property>
+                  <property name='jaar'>2000</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>heeftAlsGevolg</noderole>
+            <nodetype>Gevolg</nodetype>
+            <nodename>verzoek afgewezen</nodename>
+            <nodeid>2677844167525165717</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>verzoek afgewezen</property>
+              </properties>
+          </node>
+        </children>
+    </node>
+    <node>
       <noderole>overgangen</noderole>
       <nodetype>Rechtshandeling</nodetype>
       <nodename>Overleg plegen</nodename>
@@ -13882,13 +14115,13 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>2455094379071627824</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167527459637</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ZwakkeAanspraakZwakkePlicht</nodetype>
@@ -14026,13 +14259,13 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
               <children>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>1916075923871141055</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528287</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -14045,13 +14278,13 @@ overeenkomstig de wensen van de werknemer</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>1916075923871141061</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528297</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
@@ -14291,13 +14524,13 @@ van de werknemer te neutraliseren.</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>8478423347120569147</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528310</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ZwakkeAanspraakZwakkePlicht</nodetype>
@@ -14309,13 +14542,13 @@ van de werknemer te neutraliseren.</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5066083982446741317</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528322</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -14329,13 +14562,13 @@ en de omvang van de aanpassing</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5066083982446741330</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528336</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
@@ -14452,13 +14685,13 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>1716206614318475320</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528377</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ZwakkeAanspraakZwakkePlicht</nodetype>
@@ -14470,13 +14703,13 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>1716206614318474912</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528395</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -14489,13 +14722,13 @@ overeenkomstig de wensen van de werknemer</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>1716206614318474924</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528415</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
@@ -14509,13 +14742,13 @@ van de werknemer te neutraliseren.</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>2455094379071627693</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528437</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -14529,31 +14762,13 @@ en de omvang van de aanpassing</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>2455094379071627714</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528461</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
-                        <node>
-                          <noderole>toestanden</noderole>
-                          <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
-                          <nodename>de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen</nodename>
-                          <nodeid>2222626598061267918</nodeid>
-                        </node>
-                      </reference>
-                    </references>
-                </node>
-                <node>
-                  <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>2455094379071627722</nodeid>
-                    <properties>
-                        <property name='alias'></property>
-                    </properties>
-                    <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
@@ -14565,14 +14780,32 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                     </references>
                 </node>
                 <node>
-                  <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>7431672735422278271</nodeid>
+                  <noderole>EindigendeRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528487</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+                          <nodename>de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen</nodename>
+                          <nodeid>2222626598061267918</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528351</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>KrachtigeAanspraakFataleVerplichtig</nodetype>
@@ -14584,13 +14817,13 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>2455094379071699977</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528361</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>KrachtigeAanspraakFataleVerplichtig</nodetype>
@@ -14790,13 +15023,13 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>1916075923871149143</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528522</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -14809,13 +15042,13 @@ overeenkomstig de wensen van de werknemer</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>1916075923871157793</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528532</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
@@ -14829,13 +15062,13 @@ van de werknemer te neutraliseren.</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>1916075923871149145</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528510</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -14959,13 +15192,13 @@ van de werknemer te neutraliseren.</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>2455094379071629532</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528557</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -14978,13 +15211,13 @@ overeenkomstig de wensen van de werknemer</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>2455094379071629544</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528569</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -14996,13 +15229,13 @@ overeenkomstig de wensen van de werknemer</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>2911931843183650222</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528583</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
@@ -15016,13 +15249,13 @@ van de werknemer te neutraliseren.</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>6256145404864437608</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528547</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>KrachtigeAanspraakFataleVerplichtig</nodetype>
@@ -15246,13 +15479,13 @@ van de werknemer te neutraliseren.</nodename>
               <children>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>2455094379071699973</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528597</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>KrachtigeAanspraakFataleVerplichtig</nodetype>
@@ -15264,13 +15497,13 @@ van de werknemer te neutraliseren.</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>6256145404864435356</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528606</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -15282,13 +15515,13 @@ van de werknemer te neutraliseren.</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>2911931843183650230</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528616</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
@@ -15497,13 +15730,13 @@ van de werknemer te neutraliseren.</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>2455094379071699969</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528627</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>KrachtigeAanspraakFataleVerplichtig</nodetype>
@@ -15707,13 +15940,13 @@ van de werknemer te neutraliseren.</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>2455094379071866394</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528635</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>KrachtigeAanspraakFataleVerplichtig</nodetype>
@@ -16021,13 +16254,13 @@ van de werknemer te neutraliseren.</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>6305595003051061745</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528646</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ZwakkeAanspraakZwakkePlicht</nodetype>
@@ -16039,13 +16272,13 @@ van de werknemer te neutraliseren.</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>909603116718162348</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528660</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -16058,32 +16291,33 @@ overeenkomstig de wensen van de werknemer</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>6305595003051061763</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528676</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>ImmuniteitGeenbevoegdheid</nodetype>
-                          <nodename>immuniteit (recht) om de verplichte bevoegdheid
-tot het inwilligen van het verzoek te neutraliseren</nodename>
-                          <nodeid>1431654249012741138</nodeid>
+                          <nodename>immuniteit (recht) om de verplichte bevoegdheid tot het
+vaststellen van de spreiding van de uren overeenkomstige de wensen
+van de werknemer te neutraliseren.</nodename>
+                          <nodeid>2911931843183650119</nodeid>
                         </node>
                       </reference>
                     </references>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>909603116718162353</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528694</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>

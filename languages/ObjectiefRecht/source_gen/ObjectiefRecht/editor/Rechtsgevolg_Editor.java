@@ -43,7 +43,7 @@ public class Rechtsgevolg_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_g12lkx_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtsgevolg");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(rechts)gevolg");
     editorCell.setCellId("Constant_g12lkx_a0");
     Style style = new StyleImpl();
     GN_StyleSheet.apply_Bold(style, editorCell);
@@ -95,7 +95,7 @@ public class Rechtsgevolg_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_g12lkx_a3a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "nieuwe rechtsbetrekkingen");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "nieuwe (rechts)betrekkingen");
     editorCell.setCellId("Constant_g12lkx_a3a");
     editorCell.setDefaultText("");
     return editorCell;
@@ -170,7 +170,7 @@ public class Rechtsgevolg_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_g12lkx_d3a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "wijzigende rechtsbetrekkingen");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "wijzigende (rechts)betrekkingen");
     editorCell.setCellId("Constant_g12lkx_d3a");
     editorCell.setDefaultText("");
     return editorCell;
@@ -327,7 +327,7 @@ public class Rechtsgevolg_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_g12lkx_h3a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "eindigende rechtsbetrekkingen");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "eindigende (rechts)betrekkingen");
     editorCell.setCellId("Constant_g12lkx_h3a");
     editorCell.setDefaultText("");
     return editorCell;

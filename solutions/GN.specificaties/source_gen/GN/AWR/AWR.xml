@@ -579,13 +579,13 @@
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>3394739490395477762</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528713</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -597,13 +597,13 @@
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>3394739490395477920</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528737</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -615,13 +615,13 @@
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>3394739490395477928</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528751</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -687,13 +687,13 @@
               <children>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>3906693623811143265</nodeid>
+                  <nodetype>ReferentieNaarToestand</nodetype>
+                  <nodeid>2677844167529528765</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='rechtsbetrekking'>
+                      <reference role='toestand'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>

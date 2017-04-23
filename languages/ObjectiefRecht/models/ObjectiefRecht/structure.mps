@@ -382,14 +382,14 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="NieuweRechtsbetrekkingen" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="20D4HrzEFWA" resolve="ReferentieNaarRechtsbetrekking" />
+      <ref role="20lvS9" node="7mDqhOkOm0U" resolve="ReferentieNaarToestand" />
     </node>
     <node concept="1TJgyj" id="28ifPi2BIEy" role="1TKVEi">
       <property role="IQ2ns" value="2455094379071597218" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="WijzigendeRechtsbetrekkingen" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="20D4HrzEFWA" resolve="ReferentieNaarRechtsbetrekking" />
+      <ref role="20lvS9" node="7mDqhOkOm0U" resolve="ReferentieNaarToestand" />
     </node>
     <node concept="1TJgyj" id="7rcH1JNxHRA" role="1TKVEi">
       <property role="IQ2ns" value="8560415023867289062" />
@@ -403,7 +403,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="EindigendeRechtsbetrekkingen" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="20D4HrzEFWA" resolve="ReferentieNaarRechtsbetrekking" />
+      <ref role="20lvS9" node="7mDqhOkOm0U" resolve="ReferentieNaarToestand" />
     </node>
     <node concept="PrWs8" id="4ZpB41RnEs7" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -2129,6 +2129,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="20D4HrzEcAT" resolve="Toestand" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2kDBhkxfPsU">
+    <property role="EcuMT" value="2677844167526143802" />
+    <property role="3GE5qa" value="Toestand" />
+    <property role="TrG5h" value="OptieUitvoerenHandeling" />
+    <ref role="1TJDcQ" node="3GpI$sPmCZB" resolve="Betrekking" />
   </node>
 </model>
 

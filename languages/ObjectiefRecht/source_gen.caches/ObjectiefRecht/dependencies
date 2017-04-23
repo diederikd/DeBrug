@@ -6,6 +6,7 @@
     <classNode dependClassName="ObjectiefRecht.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="ObjectiefRecht.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="ObjectiefRecht.intentions.IntentionsDescriptor" />
+    <classNode dependClassName="ObjectiefRecht.migration.MigrationDescriptor" />
     <classNode dependClassName="ObjectiefRecht.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="ObjectiefRecht.structure.StructureAspectDescriptor" />
     <classNode dependClassName="ObjectiefRecht.textGen.TextGenAspectDescriptor" />
@@ -19,6 +20,7 @@
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
     <classNode dependClassName="jetbrains.mps.intentions.IntentionAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.migration.runtime.base.MigrationAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />

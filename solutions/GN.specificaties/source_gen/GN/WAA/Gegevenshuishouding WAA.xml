@@ -303,10 +303,10 @@ en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
           <rechtssubjectMetPlichtid>3139957515574723026</rechtssubjectMetPlichtid>
           <rechtssubjectMetRechtid>8478423347087305814</rechtssubjectMetRechtid>
         </instantie>
-        <instantie id='8478423347126393090'>
-          <geldigVan>2002-09-20T05:24:34</geldigVan>
-          <geldigTot>2002-09-20T05:25:49</geldigTot>
-          <subjectieverechtshandelingid>8478423347126393075</subjectieverechtshandelingid>
+        <instantie id='2677844167531246260'>
+          <geldigVan>2002-09-20T05:26:04</geldigVan>
+          <geldigTot>2002-09-20T05:26:33</geldigTot>
+          <subjectieverechtshandelingid>2677844167531246245</subjectieverechtshandelingid>
           <subjectieverechtshandelingnaam>Indienen verzoek aanpassing arbeidsduur</subjectieverechtshandelingnaam>
           <objectieveRechtsbetrekkingtypeid>2317404197410906878</objectieveRechtsbetrekkingtypeid>
           <objectieveRechtsbetrekkingtypenaam>verplichting tot overleg plegen</objectieveRechtsbetrekkingtypenaam>
@@ -314,10 +314,10 @@ en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
           <rechtssubjectMetPlichtid>3139957515574338931</rechtssubjectMetPlichtid>
           <rechtssubjectMetRechtid>3139957515575936548</rechtssubjectMetRechtid>
         </instantie>
-        <instantie id='8478423347126393098'>
-          <geldigVan>2002-09-20T05:24:34</geldigVan>
-          <geldigTot>2002-09-20T05:25:49</geldigTot>
-          <subjectieverechtshandelingid>8478423347126393075</subjectieverechtshandelingid>
+        <instantie id='2677844167531246268'>
+          <geldigVan>2002-09-20T05:26:04</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>2677844167531246245</subjectieverechtshandelingid>
           <subjectieverechtshandelingnaam>Indienen verzoek aanpassing arbeidsduur</subjectieverechtshandelingnaam>
           <objectieveRechtsbetrekkingtypeid>909603116718783952</objectieveRechtsbetrekkingtypeid>
           <objectieveRechtsbetrekkingtypenaam>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
@@ -327,39 +327,15 @@ en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
           <rechtssubjectMetPlichtid>3139957515575936548</rechtssubjectMetPlichtid>
           <rechtssubjectMetRechtid>3139957515574338931</rechtssubjectMetRechtid>
         </instantie>
-        <instantie id='8478423347126393106'>
-          <geldigVan>2002-09-20T05:24:34</geldigVan>
-          <geldigTot>2002-09-20T05:25:49</geldigTot>
-          <subjectieverechtshandelingid>8478423347126393075</subjectieverechtshandelingid>
+        <instantie id='2677844167531246276'>
+          <geldigVan>2002-09-20T05:26:04</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>2677844167531246245</subjectieverechtshandelingid>
           <subjectieverechtshandelingnaam>Indienen verzoek aanpassing arbeidsduur</subjectieverechtshandelingnaam>
-          <objectieveRechtsbetrekkingtypeid>1431654249012741138</objectieveRechtsbetrekkingtypeid>
-          <objectieveRechtsbetrekkingtypenaam>immuniteit (recht) om de verplichte bevoegdheid
-tot het inwilligen van het verzoek te neutraliseren</objectieveRechtsbetrekkingtypenaam>
-          <onderwerpid>4196470522071791502</onderwerpid>
-          <rechtssubjectMetPlichtid>3139957515575936548</rechtssubjectMetPlichtid>
-          <rechtssubjectMetRechtid>3139957515574338931</rechtssubjectMetRechtid>
-        </instantie>
-        <instantie id='8478423347126395589'>
-          <geldigVan>2002-09-20T05:25:49</geldigVan>
-          <geldigTot></geldigTot>
-          <subjectieverechtshandelingid>8478423347126395574</subjectieverechtshandelingid>
-          <subjectieverechtshandelingnaam>Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing</subjectieverechtshandelingnaam>
-          <objectieveRechtsbetrekkingtypeid>6305595003050903541</objectieveRechtsbetrekkingtypeid>
-          <objectieveRechtsbetrekkingtypenaam>de verplichte bevoegdheid (recht) tot het vaststellen van de spreiding van de uren
-overeenkomstig de wensen van de werknemer</objectieveRechtsbetrekkingtypenaam>
-          <onderwerpid>4196470522071791502</onderwerpid>
-          <rechtssubjectMetPlichtid>3139957515575936548</rechtssubjectMetPlichtid>
-          <rechtssubjectMetRechtid>3139957515574338931</rechtssubjectMetRechtid>
-        </instantie>
-        <instantie id='8478423347126395597'>
-          <geldigVan>2002-09-20T05:25:49</geldigVan>
-          <geldigTot></geldigTot>
-          <subjectieverechtshandelingid>8478423347126395574</subjectieverechtshandelingid>
-          <subjectieverechtshandelingnaam>Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing</subjectieverechtshandelingnaam>
-          <objectieveRechtsbetrekkingtypeid>2911931843183650119</objectieveRechtsbetrekkingtypeid>
-          <objectieveRechtsbetrekkingtypenaam>immuniteit (recht) om de verplichte bevoegdheid tot het
-vaststellen van de spreiding van de uren overeenkomstige de wensen
-van de werknemer te neutraliseren.</objectieveRechtsbetrekkingtypenaam>
+          <objectieveRechtsbetrekkingtypeid>909603116718783952</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
+en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
           <onderwerpid>4196470522071791502</onderwerpid>
           <rechtssubjectMetPlichtid>3139957515575936548</rechtssubjectMetPlichtid>
           <rechtssubjectMetRechtid>3139957515574338931</rechtssubjectMetRechtid>
@@ -390,29 +366,21 @@ van de werknemer te neutraliseren.</objectieveRechtsbetrekkingtypenaam>
           <onderwerpid>4196470522071791502</onderwerpid>
           <rechtsbetrekkingid>5807415387110390739</rechtsbetrekkingid>
         </instantie>
-        <instantie id='8478423347126393075'>
+        <instantie id='2677844167531246245'>
           <handelingObjectiefRechttypeid>5066083982446708445</handelingObjectiefRechttypeid>
           <handelingObjectiefRechttypenaam>Indienen verzoek aanpassing arbeidsduur</handelingObjectiefRechttypenaam>
-          <uitgevoerdop>2002-09-20T05:24:27</uitgevoerdop>
+          <uitgevoerdop>2002-09-20T05:25:59</uitgevoerdop>
           <actorid>3139957515575936548</actorid>
           <onderwerpid>4196470522071791502</onderwerpid>
-          <rechtsbetrekkingid>8478423347126392158</rechtsbetrekkingid>
+          <rechtsbetrekkingid>2677844167531245327</rechtsbetrekkingid>
         </instantie>
-        <instantie id='8478423347126394074'>
+        <instantie id='2677844167531247924'>
           <handelingObjectiefRechttypeid>2455094379071627785</handelingObjectiefRechttypeid>
           <handelingObjectiefRechttypenaam>Overleg plegen</handelingObjectiefRechttypenaam>
-          <uitgevoerdop>2002-09-20T05:24:43</uitgevoerdop>
+          <uitgevoerdop>2002-09-20T05:26:16</uitgevoerdop>
           <actorid>3139957515574338931</actorid>
           <onderwerpid>4196470522071791502</onderwerpid>
-          <rechtsbetrekkingid>8478423347126393114</rechtsbetrekkingid>
-        </instantie>
-        <instantie id='8478423347126395574'>
-          <handelingObjectiefRechttypeid>5066083982446741231</handelingObjectiefRechttypeid>
-          <handelingObjectiefRechttypenaam>Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing</handelingObjectiefRechttypenaam>
-          <uitgevoerdop>2002-09-20T05:25:16</uitgevoerdop>
-          <actorid>3139957515574338931</actorid>
-          <onderwerpid>4196470522071791502</onderwerpid>
-          <rechtsbetrekkingid>8478423347126393118</rechtsbetrekkingid>
+          <rechtsbetrekkingid>2677844167531246284</rechtsbetrekkingid>
         </instantie>
       </rechtshandelingen>
 </gegevenshuishouding>

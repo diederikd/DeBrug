@@ -14,10 +14,10 @@
       <concept id="7867191925628288949" name="Simulatie.structure.Simulatie" flags="ng" index="2BMdVE">
         <reference id="7867191925628437242" name="casus" index="2BMAe_" />
         <reference id="736190567687680580" name="gegevenshuishouding" index="2KcKGJ" />
-        <child id="3172654291078996041" name="datumtijdlaatstehandeling" index="22TAwd" />
+        <child id="3172654291078996041" name="huidigtijdtipsimulatie" index="22TAwd" />
         <child id="7431672735427965832" name="datumtijdvanstartvandeSimulatie" index="d0i_M" />
         <child id="7867191925628603759" name="rechtspositie" index="2BLYKK" />
-        <child id="3694879098876164254" name="datumtijdvaninitialisatie" index="3zKq1C" />
+        <child id="3694879098876164254" name="tijdtipvaninitialisatie" index="3zKq1C" />
         <child id="3694879098862050847" name="uitvoerbarehandelingen" index="3WXGrD" />
       </concept>
       <concept id="7496157647699367134" name="Simulatie.structure.Gegevenshuishouding" flags="ng" index="1ztmtO">
@@ -74,13 +74,13 @@
         <child id="301351583718898956" name="voorwaarden" index="KfA2B" />
         <child id="2024696888645639213" name="conditie" index="3l_JsU" />
       </concept>
-      <concept id="2317404197410750246" name="ObjectiefRecht.structure.ReferentieNaarRechtsbetrekking" flags="ng" index="33wURK">
-        <reference id="2317404197410750247" name="rechtsbetrekking" index="33wURL" />
-      </concept>
       <concept id="2317404197411012455" name="ObjectiefRecht.structure.ReferentieNaarRechtssubject" flags="ng" index="33xUQL">
         <reference id="2317404197411012456" name="rechtssubject" index="33xUQY" />
       </concept>
       <concept id="2024696888645630049" name="ObjectiefRecht.structure.ConditieAlle" flags="ng" index="3l_DdQ" />
+      <concept id="8478423347125903418" name="ObjectiefRecht.structure.ReferentieNaarToestand" flags="ng" index="1xu0$B">
+        <reference id="8478423347125903419" name="toestand" index="1xu0$A" />
+      </concept>
       <concept id="2417641230338880953" name="ObjectiefRecht.structure.Onderwerp" flags="ng" index="3D8HDq" />
       <concept id="6994217584621161876" name="ObjectiefRecht.structure.VerplichteBevoegdheidVerplichteGehoudenheid" flags="ng" index="1OcJT2">
         <reference id="4322810351015246537" name="bevoegdheidTot" index="1gm8Zl" />
@@ -109,7 +109,7 @@
         <reference id="6994217584621161773" name="rechtssubjectMetRecht" index="1OcJVV" />
         <child id="5266643527326926282" name="bron" index="lY6mC" />
         <child id="4271677511961776510" name="GeldigVan" index="2GMpPI" />
-        <child id="2719671791662605881" name="Voorwaarden" index="3y3h4G" />
+        <child id="2719671791662605881" name="voorwaarden" index="3y3h4G" />
       </concept>
       <concept id="6994217584621161738" name="ObjectiefRecht.structure.RechtsSubject" flags="ng" index="1OcJVs" />
       <concept id="6994217584621161736" name="ObjectiefRecht.structure.MaterieleVoorwaarde" flags="ng" index="1OcJVu" />
@@ -144,14 +144,14 @@
       </node>
       <node concept="1OcJUx" id="2Wsypim0Ps0" role="33xnZK">
         <property role="TrG5h" value="uitgenodigd tot het doen van aangifte" />
-        <node concept="33wURK" id="2Wsypim0Ps2" role="1OcJUG">
-          <ref role="33wURL" node="32ed8Ah8VHX" resolve="Bevoegdheid tot het uitnodigen tot het doen van aangifte" />
+        <node concept="1xu0$B" id="2kDBhkxsJQ9" role="1OcJUG">
+          <ref role="1xu0$A" node="32ed8Ah8VHX" resolve="Bevoegdheid tot het uitnodigen tot het doen van aangifte" />
         </node>
-        <node concept="33wURK" id="2Wsypim0Puw" role="1OcJUG">
-          <ref role="33wURL" node="3oRnirXyZnK" resolve="De verplichting om te verzoeken om te worden uitgenodigd" />
+        <node concept="1xu0$B" id="2kDBhkxsJQx" role="1OcJUG">
+          <ref role="1xu0$A" node="3oRnirXyZnK" resolve="De verplichting om te verzoeken om te worden uitgenodigd" />
         </node>
-        <node concept="33wURK" id="2Wsypim0PuC" role="1OcJUG">
-          <ref role="33wURL" node="3oRnirXyZp1" resolve="Verplichting tot het uitnodigen tot het doen van aangifte" />
+        <node concept="1xu0$B" id="2kDBhkxsJQJ" role="1OcJUG">
+          <ref role="1xu0$A" node="3oRnirXyZp1" resolve="Verplichting tot het uitnodigen tot het doen van aangifte" />
         </node>
       </node>
     </node>
@@ -169,8 +169,8 @@
       </node>
       <node concept="1OcJUx" id="3oRnirXyZpv" role="33xnZK">
         <property role="TrG5h" value="verzoek ingediend" />
-        <node concept="33wURK" id="3oRnirXyZpx" role="1OcJUI">
-          <ref role="33wURL" node="3oRnirXyZp1" resolve="Verplichting tot het uitnodigen tot het doen van aangifte" />
+        <node concept="1xu0$B" id="2kDBhkxsJQX" role="1OcJUI">
+          <ref role="1xu0$A" node="3oRnirXyZp1" resolve="Verplichting tot het uitnodigen tot het doen van aangifte" />
         </node>
       </node>
       <node concept="lY6lb" id="3oRnirXyZpz" role="lY6mP">

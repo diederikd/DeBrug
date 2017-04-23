@@ -92,6 +92,13 @@
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="ObjectiefRecht.textGen.Overgang_TextGen" file="Overgang_TextGen.java">
+    <classNode dependClassName="ObjectiefRecht.textGen.GenericXMLTextgen" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="ObjectiefRecht.textGen.RechtsSubject_TextGen" file="RechtsSubject_TextGen.java">
     <classNode dependClassName="ObjectiefRecht.textGen.GenericXMLTextgen" />
     <classNode dependClassName="java.lang.Override" />
@@ -142,6 +149,7 @@
     <classNode dependClassName="ObjectiefRecht.textGen.MeervoudigeObjectWaarde_TextGen" />
     <classNode dependClassName="ObjectiefRecht.textGen.ObjectWaarde_TextGen" />
     <classNode dependClassName="ObjectiefRecht.textGen.Onderwerp_TextGen" />
+    <classNode dependClassName="ObjectiefRecht.textGen.Overgang_TextGen" />
     <classNode dependClassName="ObjectiefRecht.textGen.RechtsSubject_TextGen" />
     <classNode dependClassName="ObjectiefRecht.textGen.RechtsgevolgVeroorzakers_TextGen" />
     <classNode dependClassName="ObjectiefRecht.textGen.ReferentieNaarInstantieVanObject_TextGen" />

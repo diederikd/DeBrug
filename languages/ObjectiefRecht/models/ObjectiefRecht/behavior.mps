@@ -14,6 +14,7 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" />
+    <import index="4iir" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.command(MPS.IDEA/)" />
     <import index="rwnv" ref="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -2121,7 +2122,7 @@
         <node concept="3clFbF" id="7mDqhOk$iom" role="3cqZAp">
           <node concept="37vLTI" id="7mDqhOk$jGf" role="3clFbG">
             <node concept="Xl_RD" id="7mDqhOk$jJb" role="37vLTx">
-              <property role="Xl_RC" value="Mogelijkheid voor het accepteren van de handeling" />
+              <property role="Xl_RC" value="Bevoegdheid om de handeling te accepteren" />
             </node>
             <node concept="2OqwBi" id="7mDqhOk$iyG" role="37vLTJ">
               <node concept="13iPFW" id="7mDqhOk$iol" role="2Oq$k0" />
@@ -2141,14 +2142,35 @@
       <node concept="3clFbS" id="7mDqhOk$kzZ" role="2VODD2">
         <node concept="3clFbF" id="7mDqhOk$k$8" role="3cqZAp">
           <node concept="37vLTI" id="7mDqhOk$k$9" role="3clFbG">
-            <node concept="Xl_RD" id="7mDqhOk$k$a" role="37vLTx">
-              <property role="Xl_RC" value="Mogelijkheid voor het afwijzen van de handeling" />
-            </node>
             <node concept="2OqwBi" id="7mDqhOk$k$b" role="37vLTJ">
               <node concept="13iPFW" id="7mDqhOk$k$c" role="2Oq$k0" />
               <node concept="3TrcHB" id="7mDqhOk$k$d" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
+            </node>
+            <node concept="Xl_RD" id="2kDBhkxfQ2t" role="37vLTx">
+              <property role="Xl_RC" value="Bevoegdheid om de handeling te accepteren" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2kDBhkxfQ9j">
+    <property role="3GE5qa" value="Toestand" />
+    <ref role="13h7C2" to="3pw0:2kDBhkxfPsU" resolve="OptieUitvoerenHandeling" />
+    <node concept="13hLZK" id="2kDBhkxfQ9k" role="13h7CW">
+      <node concept="3clFbS" id="2kDBhkxfQ9l" role="2VODD2">
+        <node concept="3clFbF" id="2kDBhkxfQib" role="3cqZAp">
+          <node concept="37vLTI" id="2kDBhkxfQic" role="3clFbG">
+            <node concept="2OqwBi" id="2kDBhkxfQid" role="37vLTJ">
+              <node concept="13iPFW" id="2kDBhkxfQie" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2kDBhkxfQif" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2kDBhkxfQig" role="37vLTx">
+              <property role="Xl_RC" value="Bevoegdheid om de handeling uit te voeren" />
             </node>
           </node>
         </node>

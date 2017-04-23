@@ -789,7 +789,7 @@ public class Rechtshandeling_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_2759bf_z0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtshandeling heeft als rechtsgevolg");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtshandeling heeft als (rechts)gevolg");
     editorCell.setCellId("Constant_2759bf_z0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
