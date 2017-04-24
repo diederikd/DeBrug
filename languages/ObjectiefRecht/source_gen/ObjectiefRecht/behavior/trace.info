@@ -303,6 +303,9 @@
     <file name="ReferentieNaarOnderwerp_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarOnderwerp_BehaviorDescriptor" />
     </file>
+    <file name="ReferentieNaarOvergang_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarOvergang_BehaviorDescriptor" />
+    </file>
     <file name="ReferentieNaarRechtsHandeling_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="ObjectiefRecht.behavior.ReferentieNaarRechtsHandeling_BehaviorDescriptor" />
     </file>

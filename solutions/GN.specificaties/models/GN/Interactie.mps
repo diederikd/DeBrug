@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c4c9a68e-ce24-4c5b-9241-c819e554f07c" name="Interactie" version="0" />
+    <use id="8dc4b25f-4c49-400e-ac37-0fd230db702c" name="ObjectiefRecht" version="0" />
   </languages>
   <imports>
     <import index="1hf7" ref="r:c9eb8d8c-f541-46c1-a29d-816eb6c40d50(GN.AWR)" />
@@ -11,6 +12,11 @@
     <import index="gcgs" ref="r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)" />
   </imports>
   <registry>
+    <language id="8dc4b25f-4c49-400e-ac37-0fd230db702c" name="ObjectiefRecht">
+      <concept id="97030968393466005" name="ObjectiefRecht.structure.ReferentieNaarOvergang" flags="ng" index="3i5FAN">
+        <reference id="97030968393466006" name="overgang" index="3i5FAK" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -37,6 +43,9 @@
       <concept id="31726144783350478" name="Interactie.structure.PresentatieKenmerk" flags="ng" index="2P_WKc">
         <reference id="1143896573689960079" name="referentieNaarKenmerk" index="29j7_g" />
       </concept>
+      <concept id="97030968393350057" name="Interactie.structure.XpathVeld" flags="ng" index="3i58af">
+        <property id="97030968393350059" name="text" index="3i58ad" />
+      </concept>
       <concept id="8906131328315611534" name="Interactie.structure.PresentatieRechtshandeling" flags="ng" index="3oCzrf">
         <child id="8906131328315611535" name="rijen" index="3oCzre" />
       </concept>
@@ -61,6 +70,7 @@
       </concept>
       <concept id="7360779165999522222" name="Interactie.structure.PresentatieDialoog" flags="ng" index="1_mtK9">
         <reference id="7360779165999522253" name="handeling" index="1_mtLE" />
+        <child id="97030968393466051" name="keuze" index="3i5FB_" />
         <child id="7360779165999522223" name="rijen" index="1_mtK8" />
       </concept>
       <concept id="7360779165999666418" name="Interactie.structure.InvoerVeld" flags="ng" index="1_DM_l">
@@ -91,6 +101,12 @@
     <ref role="3oGCMx" to="zznl:6EEavyms9IX" resolve="Gegevenshuishouding WAA" />
     <node concept="1_mtK9" id="6oAJqs3w4r5" role="1_mtLR">
       <ref role="1_mtLE" to="zznl:4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
+      <node concept="3i5FAN" id="5oIirjo3PZ" role="3i5FB_">
+        <ref role="3i5FAK" to="zznl:2kDBhky6mxe" resolve="Accepteren van het verzoek" />
+      </node>
+      <node concept="3i5FAN" id="5oIirjo3Q1" role="3i5FB_">
+        <ref role="3i5FAK" to="zznl:28ifPi2BQ3p" resolve="Afwijzen van het verzoek" />
+      </node>
       <node concept="3oHiSy" id="6oAJqs3w4rb" role="1_mtK8">
         <node concept="3oGGqp" id="6oAJqs3w4rK" role="3oHiS_">
           <node concept="1_DM_l" id="6oAJqs3wB5W" role="2PAxsN">
@@ -128,6 +144,9 @@
           </node>
         </node>
       </node>
+      <node concept="3i5FAN" id="5oIirjpfvo" role="3i5FB_">
+        <ref role="3i5FAK" to="zznl:28ifPi2BQ89" resolve="Overleg plegen" />
+      </node>
     </node>
     <node concept="1_mtK9" id="6oAJqs3wQvh" role="1_mtLR">
       <ref role="1_mtLE" to="zznl:4pem8DK2crJ" resolve="Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing" />
@@ -148,8 +167,8 @@
       <ref role="3oGB_1" to="zznl:4ZpB41RnoMO" resolve="werknemer" />
       <node concept="3oHiSy" id="7IoVO6zbNLZ" role="3oGGqr">
         <node concept="3oGGqp" id="7IoVO6zbNMe" role="3oHiS_">
-          <node concept="2P_WKc" id="7IoVO6zbNMf" role="2PAxsN">
-            <ref role="29j7_g" to="zznl:5u1YjWIkoYQ" resolve="voornamen" />
+          <node concept="3i58af" id="5oIirjjoxO" role="2PAxsN">
+            <property role="3i58ad" value="./@naam" />
           </node>
           <node concept="3oDD0s" id="7IoVO6zfJ0g" role="2PAxsN">
             <property role="3oDALa" value="(" />
@@ -222,6 +241,39 @@
           </node>
           <node concept="2P_WKc" id="7IoVO6zbNPL" role="2PAxsN">
             <ref role="29j7_g" to="zznl:5u1YjWIkWu3" resolve="militair ambtenaar" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3oGBEY" id="5oIirjjoy4" role="3oGB20">
+      <ref role="3oGB_1" to="zznl:4ZpB41Rnx4z" resolve="werkgever" />
+      <node concept="3oHiSy" id="5oIirjjoyI" role="3oGGqr">
+        <node concept="3oGGqp" id="5oIirjjozg" role="3oHiS_">
+          <node concept="3i58af" id="5oIirjjoyU" role="2PAxsN">
+            <property role="3i58ad" value="./@naam" />
+          </node>
+        </node>
+        <node concept="3oGGqp" id="5oIirjjoyO" role="3oHiS_">
+          <node concept="2P_WKc" id="5oIirjjozl" role="2PAxsN">
+            <ref role="29j7_g" to="zznl:3YoOrWqc$sd" resolve="adres" />
+          </node>
+          <node concept="2P_WKc" id="5oIirjjozq" role="2PAxsN">
+            <ref role="29j7_g" to="zznl:3YoOrWqc$t2" resolve="huisnummer" />
+          </node>
+          <node concept="2P_WKc" id="5oIirjjozy" role="2PAxsN">
+            <ref role="29j7_g" to="zznl:GhrpPwO1KO" resolve="postcode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3oHiSy" id="5oIirjjozB" role="3oGGqr">
+        <node concept="3oGGqp" id="5oIirjjo$w" role="3oHiS_">
+          <node concept="3oDD0s" id="5oIirjjo$4" role="2PAxsN">
+            <property role="3oDALa" value="Aantal werknemers:" />
+          </node>
+        </node>
+        <node concept="3oGGqp" id="5oIirjjo$2" role="3oHiS_">
+          <node concept="2P_WKc" id="5oIirjjo$_" role="2PAxsN">
+            <ref role="29j7_g" to="zznl:5u1YjWIkp04" resolve="aantal werknemers" />
           </node>
         </node>
       </node>

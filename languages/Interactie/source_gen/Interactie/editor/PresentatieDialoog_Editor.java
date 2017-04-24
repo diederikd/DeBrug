@@ -44,6 +44,10 @@ public class PresentatieDialoog_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_l65b7j_d0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_l65b7j_e0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_l65b7j_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_l65b7j_g0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_l65b7j_h0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_l65b7j_i0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_l65b7j_j0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_l65b7j_a0(EditorContext editorContext, SNode node) {
@@ -208,7 +212,90 @@ public class PresentatieDialoog_Editor extends DefaultNodeEditor {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
     editorCell.setCellId("Constant_l65b7j_f0");
     Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_l65b7j_g0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "te kiezen overgangen");
+    editorCell.setCellId("Constant_l65b7j_g0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_l65b7j_h0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_l65b7j_h0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNodeList_l65b7j_i0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new PresentatieDialoog_Editor.keuzeListHandler_l65b7j_i0(node, "keuze", editorContext);
+    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
+    editorCell.setCellId("refNodeList_keuze");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setRole(handler.getElementRole());
+    return editorCell;
+  }
+  private static class keuzeListHandler_l65b7j_i0 extends RefNodeListHandler {
+    public keuzeListHandler_l65b7j_i0(SNode ownerNode, String childRole, EditorContext context) {
+      super(ownerNode, childRole, context, false);
+    }
+    public SNode createNodeToInsert(EditorContext editorContext) {
+      SNode listOwner = super.getOwner();
+      return NodeFactoryManager.createNode(listOwner, editorContext, super.getElementRole());
+    }
+    public EditorCell createNodeCell(EditorContext editorContext, SNode elementNode) {
+      editorContext.getCellFactory().pushCellContext();
+      editorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(elementNode));
+      try {
+        EditorCell elementCell = super.createNodeCell(editorContext, elementNode);
+        this.installElementCellActions(this.getOwner(), elementNode, elementCell, editorContext);
+        return elementCell;
+      } finally {
+        editorContext.getCellFactory().popCellContext();
+      }
+    }
+    protected boolean isCompatibilityMode() {
+      return false;
+    }
+    public EditorCell createEmptyCell(EditorContext editorContext) {
+      editorContext.getCellFactory().pushCellContext();
+      editorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(keuzeListHandler_l65b7j_i0.this.getOwner(), MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7037f61aeL, 0x158b926d34e00c3L, "keuze")));
+      try {
+        EditorCell emptyCell = null;
+        emptyCell = super.createEmptyCell(editorContext);
+        this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
+        return emptyCell;
+      } finally {
+        editorContext.getCellFactory().popCellContext();
+      }
+    }
+    public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
+        if (elementNode != null) {
+          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
+          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
+        }
+        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7037f61aeL, 0x158b926d34e00c3L, "keuze"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
+        }
+      }
+    }
+  }
+  private EditorCell createConstant_l65b7j_j0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    editorCell.setCellId("Constant_l65b7j_j0");
+    Style style = new StyleImpl();
     style.set(StyleAttributes.MATCHING_LABEL, 0, "body-brace");
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

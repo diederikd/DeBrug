@@ -54,8 +54,14 @@
     <file name="Rij_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Interactie.behavior.Rij_BehaviorDescriptor" />
     </file>
+    <file name="TagVeld_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.TagVeld_BehaviorDescriptor" />
+    </file>
     <file name="TekstVeld_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Interactie.behavior.TekstVeld_BehaviorDescriptor" />
+    </file>
+    <file name="XpathVeld_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Interactie.behavior.XpathVeld_BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:09efe9da-b1e8-41d8-ac88-7bd3864d8106(Interactie.behavior)/1423902536563710198">

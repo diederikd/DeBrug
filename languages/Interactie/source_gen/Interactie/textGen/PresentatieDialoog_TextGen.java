@@ -9,6 +9,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 
 public class PresentatieDialoog_TextGen extends TextGenDescriptorBase {
   @Override
@@ -25,6 +26,23 @@ public class PresentatieDialoog_TextGen extends TextGenDescriptorBase {
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7037f61aeL, 0x6626bda7037f61afL, "rijen"))) {
       tgs.appendNode(item);
     }
+    ctx.getBuffer().area().decreaseIndent();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("<rechtshandelingtypes>");
+    tgs.newLine();
+    for (SNode overgang : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7037f61aeL, 0x158b926d34e00c3L, "keuze")))) {
+      ctx.getBuffer().area().increaseIndent();
+      tgs.indent();
+      tgs.append("<rechtshandelingtype typeid='");
+      tgs.append(SLinkOperations.getTarget(overgang, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x158b926d34e0095L, 0x158b926d34e0096L, "overgang")).getNodeId().toString());
+      tgs.append("' />");
+      tgs.newLine();
+      ctx.getBuffer().area().decreaseIndent();
+    }
+    tgs.indent();
+    tgs.append("</rechtshandelingtypes>");
+    tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("</dialoog>");

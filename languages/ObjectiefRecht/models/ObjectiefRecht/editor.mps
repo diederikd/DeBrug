@@ -13953,5 +13953,21 @@
       <ref role="PMmxG" node="1bNeeFB3KSR" resolve="BronGeldigheidRechtsgevolgveroorzaker" />
     </node>
   </node>
+  <node concept="24kQdi" id="5oIirjo3Qc">
+    <property role="3GE5qa" value="Overgang" />
+    <ref role="1XX52x" to="3pw0:5oIirjjw2l" resolve="ReferentieNaarOvergang" />
+    <node concept="3EZMnI" id="5oIirjo3Qe" role="2wV5jI">
+      <node concept="1iCGBv" id="5oIirjo3Ql" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:5oIirjjw2m" resolve="overgang" />
+        <node concept="1sVBvm" id="5oIirjo3Qn" role="1sWHZn">
+          <node concept="3F0A7n" id="5oIirjo3Qx" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5oIirjo3Qh" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

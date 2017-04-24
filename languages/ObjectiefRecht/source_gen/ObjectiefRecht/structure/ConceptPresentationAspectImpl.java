@@ -105,6 +105,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarObject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReferentieNaarOvergang = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtsHandeling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtsbetrekking = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtsgevolg = new ConceptPresentationBuilder().create();
@@ -339,78 +340,80 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 94:
         return props_ReferentieNaarOnderwerp;
       case 95:
-        return props_ReferentieNaarRechtsHandeling;
+        return props_ReferentieNaarOvergang;
       case 96:
-        return props_ReferentieNaarRechtsbetrekking;
+        return props_ReferentieNaarRechtsHandeling;
       case 97:
-        return props_ReferentieNaarRechtsgevolg;
+        return props_ReferentieNaarRechtsbetrekking;
       case 98:
-        return props_ReferentieNaarRechtsgevolgVeroorzaker;
+        return props_ReferentieNaarRechtsgevolg;
       case 99:
-        return props_ReferentieNaarRechtssubject;
+        return props_ReferentieNaarRechtsgevolgVeroorzaker;
       case 100:
-        return props_ReferentieNaarToestand;
+        return props_ReferentieNaarRechtssubject;
       case 101:
-        return props_ReferentieNaarVoorwaarde;
+        return props_ReferentieNaarToestand;
       case 102:
-        return props_Regel;
+        return props_ReferentieNaarVoorwaarde;
       case 103:
-        return props_RekenExpressie;
+        return props_Regel;
       case 104:
-        return props_RijVanKaraktersType;
+        return props_RekenExpressie;
       case 105:
-        return props_SubjectType;
+        return props_RijVanKaraktersType;
       case 106:
-        return props_TabelMetInstanties;
+        return props_SubjectType;
       case 107:
-        return props_TenHoogsteVoor;
+        return props_TabelMetInstanties;
       case 108:
-        return props_TenMinsteNa;
+        return props_TenHoogsteVoor;
       case 109:
-        return props_TenMinsteVoor;
+        return props_TenMinsteNa;
       case 110:
-        return props_TijdstipType;
+        return props_TenMinsteVoor;
       case 111:
-        return props_TijdsverloopMetRechtsgevolg;
+        return props_TijdstipType;
       case 112:
-        return props_Toestand;
+        return props_TijdsverloopMetRechtsgevolg;
       case 113:
-        return props_Variabele;
+        return props_Toestand;
       case 114:
-        return props_VermenigvuldigenExpressie;
+        return props_Variabele;
       case 115:
-        return props_VerplichteBevoegdheidVerplichteGehoudenheid;
+        return props_VermenigvuldigenExpressie;
       case 116:
-        return props_VerschilTussen;
+        return props_VerplichteBevoegdheidVerplichteGehoudenheid;
       case 117:
-        return props_VerwoordingElement;
+        return props_VerschilTussen;
       case 118:
-        return props_VerwoordingKenmerk;
+        return props_VerwoordingElement;
       case 119:
-        return props_VerwoordingObject;
+        return props_VerwoordingKenmerk;
       case 120:
-        return props_VerwoordingTekst;
+        return props_VerwoordingObject;
       case 121:
-        return props_VerwoordingWaarde;
+        return props_VerwoordingTekst;
       case 122:
-        return props_Voor;
+        return props_VerwoordingWaarde;
       case 123:
-        return props_VoorbeeldenMetInstanties;
+        return props_Voor;
       case 124:
-        return props_Voorwaarden;
+        return props_VoorbeeldenMetInstanties;
       case 125:
-        return props_VoorwaardenRechtshandeling;
+        return props_Voorwaarden;
       case 126:
-        return props_VormVoorwaarde;
+        return props_VoorwaardenRechtshandeling;
       case 127:
-        return props_VrijeTekst;
+        return props_VormVoorwaarde;
       case 128:
-        return props_VrijheidGeenaanspraak;
+        return props_VrijeTekst;
       case 129:
-        return props_WaardeVanKenmerk;
+        return props_VrijheidGeenaanspraak;
       case 130:
-        return props_ZwakkeAanspraakZwakkePlicht;
+        return props_WaardeVanKenmerk;
       case 131:
+        return props_ZwakkeAanspraakZwakkePlicht;
+      case 132:
         return props_isNegatief;
     }
     throw new IllegalStateException("Unknown concept " + c);

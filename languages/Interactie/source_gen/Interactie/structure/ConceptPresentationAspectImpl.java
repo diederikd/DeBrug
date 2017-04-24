@@ -22,7 +22,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_PresentatieVeld = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Regeling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rij = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TagVeld = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TekstVeld = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_XpathVeld = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -56,7 +58,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 12:
         return props_Rij;
       case 13:
+        return props_TagVeld;
+      case 14:
         return props_TekstVeld;
+      case 15:
+        return props_XpathVeld;
     }
     throw new IllegalStateException("Unknown concept " + c);
   }
