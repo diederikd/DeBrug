@@ -3,7 +3,7 @@
 <object type='rechtssubject' naam='werknemer' >
       <row>
         <column>
-          <kenmerk naam='voornamen' />
+          <xpath>./@naam</xpath>
           <string>(</string>
           <kenmerk naam='roepnaam' />
           <string>)</string>
@@ -38,7 +38,28 @@
           <kenmerk naam='militair ambtenaar' />
         </column>
       </row>
-</object><object type='onderwerp' naam='aanpassing van de arbeidsduur' >
+</object>
+<object type='rechtssubject' naam='werkgever' >
+      <row>
+        <column>
+          <xpath>./@naam</xpath>
+        </column>
+        <column>
+          <kenmerk naam='adres' />
+          <kenmerk naam='huisnummer' />
+          <kenmerk naam='postcode' />
+        </column>
+      </row>
+      <row>
+        <column>
+          <string>Aantal werknemers:</string>
+        </column>
+        <column>
+          <kenmerk naam='aantal werknemers' />
+        </column>
+      </row>
+</object>
+<object type='onderwerp' naam='aanpassing van de arbeidsduur' >
       <row>
         <column>
           <kenmerk naam='Naam Indiener' />
@@ -53,7 +74,8 @@
           <kenmerk naam='gewenste spreiding' />
         </column>
       </row>
-</object>    <object type='rechtsbetrekking' naam='' >
+</object>
+    <object type='rechtsbetrekking' naam='' >
             <row>
         <column>
           <xpath>kenmerk[@naam='objectieveRechtsbetrekking']/text()</xpath>
@@ -100,6 +122,10 @@
           <input type="text" name="omvang van de aanpassing" value=""/>
         </column>
       </row>
+      <rechtshandelingtypes>
+        <rechtshandelingtype typeid='2677844167540435022' />
+        <rechtshandelingtype typeid='2455094379071627481' />
+      </rechtshandelingtypes>
     </dialoog>
     <dialoog typeid='2455094379071627785' name='Overleg plegen' >
       <row>
@@ -110,6 +136,9 @@
           <kenmerk naam='omvang van de aanpassing' />
         </column>
       </row>
+      <rechtshandelingtypes>
+        <rechtshandelingtype typeid='2455094379071627785' />
+      </rechtshandelingtypes>
     </dialoog>
     <dialoog typeid='5066083982446741231' name='Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing' >
       <row>
@@ -120,5 +149,7 @@
           <kenmerk naam='omvang van de aanpassing' />
         </column>
       </row>
+      <rechtshandelingtypes>
+      </rechtshandelingtypes>
     </dialoog>
 </presentatie>
