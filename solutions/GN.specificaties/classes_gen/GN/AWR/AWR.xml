@@ -580,7 +580,7 @@
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>3394739490395477762</nodeid>
+                  <nodeid>2677844167537518214</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -598,7 +598,7 @@
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>3394739490395477920</nodeid>
+                  <nodeid>2677844167537518226</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -606,9 +606,9 @@
                       <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
-                          <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-                          <nodename>De verplichting om te verzoeken om te worden uitgenodigd</nodename>
-                          <nodeid>3906693623811143152</nodeid>
+                          <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+                          <nodename>De bevoegdheid om te verzoeken om te worden uitgenodigd</nodename>
+                          <nodeid>3906693623811143187</nodeid>
                         </node>
                       </reference>
                     </references>
@@ -616,7 +616,7 @@
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>3394739490395477928</nodeid>
+                  <nodeid>2677844167537518240</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -688,7 +688,7 @@
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>3906693623811143265</nodeid>
+                  <nodeid>2677844167537518254</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>

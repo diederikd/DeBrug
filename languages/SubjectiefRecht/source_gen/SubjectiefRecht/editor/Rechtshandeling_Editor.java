@@ -27,6 +27,12 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import ObjectiefRecht.behavior.Overgang__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.util.EqualUtil;
+import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 
 public class Rechtshandeling_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -42,7 +48,7 @@ public class Rechtshandeling_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createRefNode_2759bf_d0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_2759bf_e0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_2759bf_f0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_2759bf_g0(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_2759bf_g0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_2759bf_h0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_2759bf_i0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_2759bf_j0(editorContext, node));
@@ -60,14 +66,14 @@ public class Rechtshandeling_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_2759bf_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("rechtshandeling");
-    provider.setNoTargetText("<no rechtshandeling>");
+    provider.setRole("overgang");
+    provider.setNoTargetText("<no overgang>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new Rechtshandeling_Editor._Inline_2759bf_a1a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("rechtshandeling");
+      editorCell.setRole("overgang");
     }
     Style style = new StyleImpl();
     GN_StyleSheet.apply_Name(style, editorCell);
@@ -179,92 +185,21 @@ public class Rechtshandeling_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_2759bf_g0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("rechtshandeling");
-    provider.setNoTargetText("<no rechtshandeling>");
-    EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new Rechtshandeling_Editor._Inline_2759bf_a6a());
-    editorCell = provider.createEditorCell(editorContext);
-    if (editorCell.getRole() == null) {
-      editorCell.setReferenceCell(true);
-      editorCell.setRole("rechtshandeling");
-    }
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
+  private EditorCell createReadOnlyModelAccessor_2759bf_g0(final EditorContext editorContext, final SNode node) {
+    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
+      public String getText() {
+        return Overgang__BehaviorDescriptor.GeefActorString_id7tRkx91j0fu.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, 0x630944a3c4165929L, "overgang")));
+      }
+      public void setText(String s) {
+      }
+      public boolean isValidText(String s) {
+        return EqualUtil.equals(s, getText());
+      }
+    }, node);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_2759bf_g0");
     return editorCell;
-  }
-  public static class _Inline_2759bf_a6a extends InlineCellProvider {
-    public _Inline_2759bf_a6a() {
-      super();
-    }
-    public EditorCell createEditorCell(EditorContext editorContext) {
-      return this.createEditorCell(editorContext, this.getSNode());
-    }
-    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createCollection_2759bf_a0g0(editorContext, node);
-    }
-    private EditorCell createCollection_2759bf_a0g0(EditorContext editorContext, SNode node) {
-      EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-      editorCell.setCellId("Collection_2759bf_a0g0");
-      editorCell.addEditorCell(this.createRefNode_2759bf_a0a6a(editorContext, node));
-      return editorCell;
-    }
-    private EditorCell createRefNode_2759bf_a0a6a(EditorContext editorContext, SNode node) {
-      SingleRoleCellProvider provider = new Rechtshandeling_Editor._Inline_2759bf_a6a.actorSingleRoleHandler_2759bf_a0a6a(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "actor"), editorContext);
-      return provider.createCell();
-    }
-    private class actorSingleRoleHandler_2759bf_a0a6a extends SingleRoleCellProvider {
-      public actorSingleRoleHandler_2759bf_a0a6a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
-        super(ownerNode, containmentLink, context);
-      }
-      protected EditorCell createChildCell(SNode child) {
-        myEditorContext.getCellFactory().pushCellContext();
-        myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
-        try {
-          EditorCell editorCell = super.createChildCell(child);
-          editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "actor"), child));
-          editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "actor"), child));
-          installCellInfo(child, editorCell);
-          return editorCell;
-        } finally {
-          myEditorContext.getCellFactory().popCellContext();
-        }
-      }
-
-      protected boolean isCompatibilityMode() {
-        return false;
-      }
-
-      private void installCellInfo(SNode child, EditorCell editorCell) {
-        if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "actor"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
-        }
-        if (editorCell.getRole() == null) {
-          editorCell.setRole("actor");
-        }
-      }
-      @Override
-      protected EditorCell createEmptyCell() {
-        myEditorContext.getCellFactory().pushCellContext();
-        myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, 0x202912d6e3aebf6eL, "actor")));
-        try {
-          EditorCell editorCell = super.createEmptyCell();
-          editorCell.setCellId("empty_actor");
-          installCellInfo(null, editorCell);
-          return editorCell;
-        } finally {
-          myEditorContext.getCellFactory().popCellContext();
-        }
-      }
-      protected String getNoTargetText() {
-        return "<no actor>";
-      }
-    }
   }
   private EditorCell createConstant_2759bf_h0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");

@@ -161,9 +161,9 @@
     <node concept="1TJgyj" id="6c9haf45_$D" role="1TKVEi">
       <property role="IQ2ns" value="7136310554705418537" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="rechtshandeling" />
+      <property role="20kJfa" value="overgang" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
+      <ref role="20lvS9" to="3pw0:3GpI$sPbk8E" resolve="Overgang" />
     </node>
     <node concept="1TJgyj" id="28MuYO0sFSW" role="1TKVEi">
       <property role="IQ2ns" value="2464168203970068028" />

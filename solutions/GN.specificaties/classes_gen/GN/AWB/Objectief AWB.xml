@@ -1338,7 +1338,7 @@ van het intrekken van het bezwaar</property>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551444380</nodeid>
+                  <nodeid>2677844167537518266</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1356,7 +1356,7 @@ van het intrekken van het bezwaar</property>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551443975</nodeid>
+                  <nodeid>2677844167537518291</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1375,7 +1375,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551443962</nodeid>
+                  <nodeid>2677844167537518309</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1393,7 +1393,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551443967</nodeid>
+                  <nodeid>2677844167537518340</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1412,7 +1412,7 @@ van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551608803</nodeid>
+                  <nodeid>2677844167537518362</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1502,7 +1502,7 @@ van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551443980</nodeid>
+                  <nodeid>2677844167537518382</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1603,7 +1603,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>6470037848739763695</nodeid>
+                  <nodeid>2677844167537518392</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1621,7 +1621,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>6470037848739763700</nodeid>
+                  <nodeid>2677844167537518404</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1639,7 +1639,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>6470037848739763716</nodeid>
+                  <nodeid>2677844167537518418</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1730,7 +1730,7 @@ van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>6470037848739763632</nodeid>
+                  <nodeid>2677844167537518434</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1748,7 +1748,7 @@ van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>6470037848739763637</nodeid>
+                  <nodeid>2677844167537518446</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1766,7 +1766,7 @@ van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>6470037848739763645</nodeid>
+                  <nodeid>2677844167537518468</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1897,7 +1897,7 @@ van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551609325</nodeid>
+                  <nodeid>2677844167537518525</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1915,7 +1915,7 @@ van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551607583</nodeid>
+                  <nodeid>2677844167537518535</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1934,7 +1934,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551607585</nodeid>
+                  <nodeid>2677844167537518484</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1952,7 +1952,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551607590</nodeid>
+                  <nodeid>2677844167537518496</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -1970,7 +1970,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551607598</nodeid>
+                  <nodeid>2677844167537518510</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2070,7 +2070,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551607603</nodeid>
+                  <nodeid>2677844167537518556</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2088,7 +2088,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551607608</nodeid>
+                  <nodeid>2677844167537518568</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2106,7 +2106,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551607616</nodeid>
+                  <nodeid>2677844167537518582</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2124,7 +2124,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>8316879955948254056</nodeid>
+                  <nodeid>2677844167537518546</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2224,7 +2224,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>8316879955948254054</nodeid>
+                  <nodeid>2677844167537518608</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2242,7 +2242,7 @@ de ontvangst van het bezwaar of beroep</nodename>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>8316879955948479359</nodeid>
+                  <nodeid>2677844167537518596</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2343,7 +2343,7 @@ van het intrekken van het bezwaar</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>8316879955948481118</nodeid>
+                  <nodeid>2677844167537518616</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2416,7 +2416,7 @@ van het intrekken van het bezwaar</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>8316879955948479364</nodeid>
+                  <nodeid>2677844167537518625</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2435,7 +2435,7 @@ van het intrekken van het bezwaar</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>8316879955948478211</nodeid>
+                  <nodeid>2677844167537518635</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2578,9 +2578,27 @@ van het intrekken van het bezwaar</nodename>
               </properties>
               <children>
                 <node>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518646</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+                          <nodename>Optionele bevoegheid om het bezwaar door te zetten</nodename>
+                          <nodeid>5963877418551443102</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551443450</nodeid>
+                  <nodeid>2677844167537518655</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2598,7 +2616,7 @@ van het intrekken van het bezwaar</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551443455</nodeid>
+                  <nodeid>2677844167537518665</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2609,24 +2627,6 @@ van het intrekken van het bezwaar</nodename>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
                           <nodename>Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken</nodename>
                           <nodeid>5963877418551443058</nodeid>
-                        </node>
-                      </reference>
-                    </references>
-                </node>
-                <node>
-                  <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551443465</nodeid>
-                    <properties>
-                        <property name='alias'></property>
-                    </properties>
-                    <references>
-                      <reference role='rechtsbetrekking'>
-                        <node>
-                          <noderole>toestanden</noderole>
-                          <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
-                          <nodename>Optionele bevoegheid om het bezwaar door te zetten</nodename>
-                          <nodeid>5963877418551443102</nodeid>
                         </node>
                       </reference>
                     </references>
@@ -2731,7 +2731,7 @@ van het intrekken van het bezwaar</nodename>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551607782</nodeid>
+                  <nodeid>2677844167537518676</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2749,7 +2749,7 @@ van het intrekken van het bezwaar</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551607784</nodeid>
+                  <nodeid>2677844167537518687</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2767,7 +2767,7 @@ van het intrekken van het bezwaar</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>8316879955948251028</nodeid>
+                  <nodeid>2677844167537518701</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2785,7 +2785,7 @@ van het intrekken van het bezwaar</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>8316879955948250297</nodeid>
+                  <nodeid>2677844167537518717</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2803,7 +2803,7 @@ van het intrekken van het bezwaar</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>8316879955948251018</nodeid>
+                  <nodeid>2677844167537518735</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2918,7 +2918,7 @@ van het intrekken van het bezwaar</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551608253</nodeid>
+                  <nodeid>2677844167537518753</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -2936,7 +2936,7 @@ van het intrekken van het bezwaar</nodename>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
-                  <nodeid>5963877418551608258</nodeid>
+                  <nodeid>2677844167537518763</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>

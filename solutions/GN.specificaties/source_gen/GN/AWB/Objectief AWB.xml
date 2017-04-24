@@ -1337,13 +1337,13 @@ van het intrekken van het bezwaar</property>
               <children>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528777</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518266</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>AanspraakNaIngebrekeStellingPlicht</nodetype>
@@ -1355,13 +1355,13 @@ van het intrekken van het bezwaar</property>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528793</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518291</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -1374,13 +1374,13 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528811</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518309</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -1392,13 +1392,13 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528877</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518340</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -1411,13 +1411,13 @@ van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528865</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518362</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -1501,13 +1501,13 @@ van het bezwaar of beroep</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528897</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518382</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -1602,13 +1602,13 @@ de ontvangst van het bezwaar of beroep</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528907</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518392</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>AanspraakNaIngebrekeStellingPlicht</nodetype>
@@ -1620,13 +1620,13 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528919</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518404</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -1638,13 +1638,13 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528933</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518418</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -1729,13 +1729,13 @@ van het bezwaar of beroep</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528949</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518434</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>AanspraakNaIngebrekeStellingPlicht</nodetype>
@@ -1747,13 +1747,13 @@ van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528961</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518446</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -1765,13 +1765,13 @@ van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528983</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518468</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -1896,13 +1896,13 @@ van het bezwaar of beroep</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529040</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518525</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -1914,13 +1914,13 @@ van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529050</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518535</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -1933,13 +1933,13 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529528999</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518484</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -1951,13 +1951,13 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529011</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518496</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -1969,13 +1969,13 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529025</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518510</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -2069,13 +2069,13 @@ de ontvangst van het bezwaar of beroep</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529071</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518556</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -2087,13 +2087,13 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529083</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518568</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -2105,13 +2105,13 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529097</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518582</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -2123,13 +2123,13 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529061</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518546</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -2223,13 +2223,13 @@ de ontvangst van het bezwaar of beroep</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529123</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518608</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -2241,13 +2241,13 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529111</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518596</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -2342,13 +2342,13 @@ van het intrekken van het bezwaar</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529131</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518616</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -2415,13 +2415,13 @@ van het intrekken van het bezwaar</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529140</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518625</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -2434,13 +2434,13 @@ van het intrekken van het bezwaar</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529150</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518635</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>AanspraakNaIngebrekeStellingPlicht</nodetype>
@@ -2578,14 +2578,32 @@ van het intrekken van het bezwaar</nodename>
               </properties>
               <children>
                 <node>
-                  <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529170</nodeid>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518646</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+                          <nodename>Optionele bevoegheid om het bezwaar door te zetten</nodename>
+                          <nodeid>5963877418551443102</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>EindigendeRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518655</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -2597,36 +2615,18 @@ van het intrekken van het bezwaar</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529180</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518665</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
                           <nodename>Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken</nodename>
                           <nodeid>5963877418551443058</nodeid>
-                        </node>
-                      </reference>
-                    </references>
-                </node>
-                <node>
-                  <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529161</nodeid>
-                    <properties>
-                        <property name='alias'></property>
-                    </properties>
-                    <references>
-                      <reference role='toestand'>
-                        <node>
-                          <noderole>toestanden</noderole>
-                          <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
-                          <nodename>Optionele bevoegheid om het bezwaar door te zetten</nodename>
-                          <nodeid>5963877418551443102</nodeid>
                         </node>
                       </reference>
                     </references>
@@ -2730,13 +2730,13 @@ van het intrekken van het bezwaar</nodename>
               <children>
                 <node>
                   <noderole>NieuweRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529191</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518676</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -2748,13 +2748,13 @@ van het intrekken van het bezwaar</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529202</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518687</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -2766,13 +2766,13 @@ van het intrekken van het bezwaar</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529216</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518701</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -2784,13 +2784,13 @@ van het intrekken van het bezwaar</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529232</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518717</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -2802,13 +2802,13 @@ van het intrekken van het bezwaar</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529250</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518735</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
@@ -2917,13 +2917,13 @@ van het intrekken van het bezwaar</nodename>
               <children>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529268</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518753</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
@@ -2935,13 +2935,13 @@ van het intrekken van het bezwaar</nodename>
                 </node>
                 <node>
                   <noderole>EindigendeRechtsbetrekkingen</noderole>
-                  <nodetype>ReferentieNaarToestand</nodetype>
-                  <nodeid>2677844167529529278</nodeid>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>2677844167537518763</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
                     <references>
-                      <reference role='toestand'>
+                      <reference role='rechtsbetrekking'>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>AanspraakNaIngebrekeStellingPlicht</nodetype>

@@ -58,6 +58,7 @@
     <classNode dependClassName="Datum.behavior.DatumTijd__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.Concept__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor" />
+    <classNode dependClassName="ObjectiefRecht.behavior.Overgang__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.plugin.Interpreter" />
     <classNode dependClassName="SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Boolean" />

@@ -80,13 +80,13 @@
         <child id="2024696888645639213" name="conditie" index="3l_JsU" />
       </concept>
       <concept id="2907397198644945343" name="ObjectiefRecht.structure.RijVanKaraktersType" flags="ng" index="QqSvA" />
+      <concept id="2317404197410750246" name="ObjectiefRecht.structure.ReferentieNaarRechtsbetrekking" flags="ng" index="33wURK">
+        <reference id="2317404197410750247" name="rechtsbetrekking" index="33wURL" />
+      </concept>
       <concept id="2317404197411012455" name="ObjectiefRecht.structure.ReferentieNaarRechtssubject" flags="ng" index="33xUQL">
         <reference id="2317404197411012456" name="rechtssubject" index="33xUQY" />
       </concept>
       <concept id="2024696888645630049" name="ObjectiefRecht.structure.ConditieAlle" flags="ng" index="3l_DdQ" />
-      <concept id="8478423347125903418" name="ObjectiefRecht.structure.ReferentieNaarToestand" flags="ng" index="1xu0$B">
-        <reference id="8478423347125903419" name="toestand" index="1xu0$A" />
-      </concept>
       <concept id="2417641230338880953" name="ObjectiefRecht.structure.Onderwerp" flags="ng" index="3D8HDq">
         <child id="5266643527326992524" name="kenmerk" index="lYmzI" />
       </concept>
@@ -511,20 +511,20 @@
       </node>
       <node concept="1OcJUx" id="5b3WIC8IS7S" role="33xnZK">
         <property role="TrG5h" value="bezwaar of beroep ingediend" />
-        <node concept="1xu0$B" id="2kDBhkxsJR9" role="1OcJUI">
-          <ref role="1xu0$A" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
+        <node concept="33wURK" id="2kDBhkxVeqU" role="1OcJUI">
+          <ref role="33wURL" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJRp" role="1OcJUI">
-          <ref role="1xu0$A" node="5Bacij9tPk7" resolve="Verplichte bevoegdheid tot het schriftelijk bevestigen van &#10;de ontvangst van het bezwaar of beroep" />
+        <node concept="33wURK" id="2kDBhkxVerj" role="1OcJUI">
+          <ref role="33wURL" node="5Bacij9tPk7" resolve="Verplichte bevoegdheid tot het schriftelijk bevestigen van &#10;de ontvangst van het bezwaar of beroep" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJRF" role="1OcJUI">
-          <ref role="1xu0$A" node="5Bacij9tPlG" resolve="Optionele bevoegheid tot het mondeling intrekken van het bezwaar of beroep" />
+        <node concept="33wURK" id="2kDBhkxVer_" role="1OcJUI">
+          <ref role="33wURL" node="5Bacij9tPlG" resolve="Optionele bevoegheid tot het mondeling intrekken van het bezwaar of beroep" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJSH" role="1OcJUI">
-          <ref role="1xu0$A" node="5Bacij9tPkQ" resolve="Optionele bevoegheid tot het schiftelijk intrekken &#10;van het bezwaar of beroep" />
+        <node concept="33wURK" id="2kDBhkxVes4" role="1OcJUI">
+          <ref role="33wURL" node="5Bacij9tPkQ" resolve="Optionele bevoegheid tot het schiftelijk intrekken &#10;van het bezwaar of beroep" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJSx" role="1OcJUI">
-          <ref role="1xu0$A" node="5b3WIC8IRRC" resolve="Optionele bevoegheid om te bellen bij bezwaar, door selecteur" />
+        <node concept="33wURK" id="2kDBhkxVesq" role="1OcJUI">
+          <ref role="33wURL" node="5b3WIC8IRRC" resolve="Optionele bevoegheid om te bellen bij bezwaar, door selecteur" />
         </node>
       </node>
     </node>
@@ -545,8 +545,8 @@
       </node>
       <node concept="1OcJUx" id="5b3WIC8IS7Q" role="33xnZK">
         <property role="TrG5h" value="ontvangst bevestigd" />
-        <node concept="1xu0$B" id="2kDBhkxsJT1" role="1OcJUG">
-          <ref role="1xu0$A" node="5Bacij9tPk7" resolve="Verplichte bevoegdheid tot het schriftelijk bevestigen van &#10;de ontvangst van het bezwaar of beroep" />
+        <node concept="33wURK" id="2kDBhkxVesI" role="1OcJUG">
+          <ref role="33wURL" node="5Bacij9tPk7" resolve="Verplichte bevoegdheid tot het schriftelijk bevestigen van &#10;de ontvangst van het bezwaar of beroep" />
         </node>
       </node>
       <node concept="2GMpOH" id="3H8312n_pOQ" role="2GMpsb">
@@ -570,14 +570,14 @@
       </node>
       <node concept="1OcJUx" id="5Bacij9tPnH" role="33xnZK">
         <property role="TrG5h" value="verzoek is ingetrokken" />
-        <node concept="1xu0$B" id="2kDBhkxsJTb" role="1OcJUG">
-          <ref role="1xu0$A" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
+        <node concept="33wURK" id="2kDBhkxVesS" role="1OcJUG">
+          <ref role="33wURL" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJTn" role="1OcJUG">
-          <ref role="1xu0$A" node="5Bacij9tPlG" resolve="Optionele bevoegheid tot het mondeling intrekken van het bezwaar of beroep" />
+        <node concept="33wURK" id="2kDBhkxVet4" role="1OcJUG">
+          <ref role="33wURL" node="5Bacij9tPlG" resolve="Optionele bevoegheid tot het mondeling intrekken van het bezwaar of beroep" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJT_" role="1OcJUG">
-          <ref role="1xu0$A" node="5Bacij9tPkQ" resolve="Optionele bevoegheid tot het schiftelijk intrekken &#10;van het bezwaar of beroep" />
+        <node concept="33wURK" id="2kDBhkxVeti" role="1OcJUG">
+          <ref role="33wURL" node="5Bacij9tPkQ" resolve="Optionele bevoegheid tot het schiftelijk intrekken &#10;van het bezwaar of beroep" />
         </node>
       </node>
     </node>
@@ -598,14 +598,14 @@
       </node>
       <node concept="1OcJUx" id="5Bacij9tPmI" role="33xnZK">
         <property role="TrG5h" value="bezwaar of beroep is ingetrokken" />
-        <node concept="1xu0$B" id="2kDBhkxsJTP" role="1OcJUG">
-          <ref role="1xu0$A" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
+        <node concept="33wURK" id="2kDBhkxVety" role="1OcJUG">
+          <ref role="33wURL" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJU1" role="1OcJUG">
-          <ref role="1xu0$A" node="5Bacij9tPlG" resolve="Optionele bevoegheid tot het mondeling intrekken van het bezwaar of beroep" />
+        <node concept="33wURK" id="2kDBhkxVetI" role="1OcJUG">
+          <ref role="33wURL" node="5Bacij9tPlG" resolve="Optionele bevoegheid tot het mondeling intrekken van het bezwaar of beroep" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJUn" role="1OcJUG">
-          <ref role="1xu0$A" node="5Bacij9tPkQ" resolve="Optionele bevoegheid tot het schiftelijk intrekken &#10;van het bezwaar of beroep" />
+        <node concept="33wURK" id="2kDBhkxVeu4" role="1OcJUG">
+          <ref role="33wURL" node="5Bacij9tPkQ" resolve="Optionele bevoegheid tot het schiftelijk intrekken &#10;van het bezwaar of beroep" />
         </node>
       </node>
       <node concept="2GMpOH" id="3H8312n_pOM" role="2GMpsb">
@@ -635,20 +635,20 @@
       </node>
       <node concept="1OcJUx" id="5b3WIC8Jw4r" role="33xnZK">
         <property role="TrG5h" value="gebeld bij bezwaar" />
-        <node concept="1xu0$B" id="2kDBhkxsJVg" role="1OcJUG">
-          <ref role="1xu0$A" node="5b3WIC8IRRC" resolve="Optionele bevoegheid om te bellen bij bezwaar, door selecteur" />
+        <node concept="33wURK" id="2kDBhkxVeuX" role="1OcJUG">
+          <ref role="33wURL" node="5b3WIC8IRRC" resolve="Optionele bevoegheid om te bellen bij bezwaar, door selecteur" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJVq" role="1OcJUG">
-          <ref role="1xu0$A" node="5Bacij9tPk7" resolve="Verplichte bevoegdheid tot het schriftelijk bevestigen van &#10;de ontvangst van het bezwaar of beroep" />
+        <node concept="33wURK" id="2kDBhkxVev7" role="1OcJUG">
+          <ref role="33wURL" node="5Bacij9tPk7" resolve="Verplichte bevoegdheid tot het schriftelijk bevestigen van &#10;de ontvangst van het bezwaar of beroep" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJUB" role="1OcJUI">
-          <ref role="1xu0$A" node="5b3WIC8IRUu" resolve="Optionele bevoegheid om het bezwaar door te zetten" />
+        <node concept="33wURK" id="2kDBhkxVeuk" role="1OcJUI">
+          <ref role="33wURL" node="5b3WIC8IRUu" resolve="Optionele bevoegheid om het bezwaar door te zetten" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJUN" role="1OcJUI">
-          <ref role="1xu0$A" node="5b3WIC8IRTM" resolve="Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken" />
+        <node concept="33wURK" id="2kDBhkxVeuw" role="1OcJUI">
+          <ref role="33wURL" node="5b3WIC8IRTM" resolve="Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJV1" role="1OcJUI">
-          <ref role="1xu0$A" node="5b3WIC8IRSV" resolve="Optionele bevoegheid bij bellen om het bezwaar in te trekken" />
+        <node concept="33wURK" id="2kDBhkxVeuI" role="1OcJUI">
+          <ref role="33wURL" node="5b3WIC8IRSV" resolve="Optionele bevoegheid bij bellen om het bezwaar in te trekken" />
         </node>
       </node>
       <node concept="2GMpOH" id="3H8312nzc0H" role="2GMpsb">
@@ -672,17 +672,17 @@
       </node>
       <node concept="1OcJUx" id="5b3WIC8IRYp" role="33xnZK">
         <property role="TrG5h" value="bezwaar modeling ingetrokken" />
-        <node concept="1xu0$B" id="2kDBhkxsJVJ" role="1OcJUG">
-          <ref role="1xu0$A" node="5b3WIC8IRSV" resolve="Optionele bevoegheid bij bellen om het bezwaar in te trekken" />
+        <node concept="33wURK" id="2kDBhkxVevs" role="1OcJUG">
+          <ref role="33wURL" node="5b3WIC8IRSV" resolve="Optionele bevoegheid bij bellen om het bezwaar in te trekken" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJVV" role="1OcJUG">
-          <ref role="1xu0$A" node="5b3WIC8IRTM" resolve="Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken" />
+        <node concept="33wURK" id="2kDBhkxVevC" role="1OcJUG">
+          <ref role="33wURL" node="5b3WIC8IRTM" resolve="Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJW9" role="1OcJUG">
-          <ref role="1xu0$A" node="5b3WIC8IRUu" resolve="Optionele bevoegheid om het bezwaar door te zetten" />
+        <node concept="33wURK" id="2kDBhkxVevQ" role="1OcJUG">
+          <ref role="33wURL" node="5b3WIC8IRUu" resolve="Optionele bevoegheid om het bezwaar door te zetten" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJV_" role="1OcJUI">
-          <ref role="1xu0$A" node="7dFv$5lRb8X" resolve="Verplichting tot het schriftelijk bevestigen van het intrekken van het bezwaar" />
+        <node concept="33wURK" id="2kDBhkxVevi" role="1OcJUI">
+          <ref role="33wURL" node="7dFv$5lRb8X" resolve="Verplichting tot het schriftelijk bevestigen van het intrekken van het bezwaar" />
         </node>
       </node>
       <node concept="2GMpOH" id="3H8312n_pOO" role="2GMpsb">
@@ -706,11 +706,11 @@
       </node>
       <node concept="1OcJUx" id="7dFv$5lRbd$" role="33xnZK">
         <property role="TrG5h" value="Schriftelijk bevestigd bezwaar ingetrokken" />
-        <node concept="1xu0$B" id="2kDBhkxsJWz" role="1OcJUG">
-          <ref role="1xu0$A" node="7dFv$5lRb8X" resolve="Verplichting tot het schriftelijk bevestigen van het intrekken van het bezwaar" />
+        <node concept="33wURK" id="2kDBhkxVewg" role="1OcJUG">
+          <ref role="33wURL" node="7dFv$5lRb8X" resolve="Verplichting tot het schriftelijk bevestigen van het intrekken van het bezwaar" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJWn" role="1OcJUI">
-          <ref role="1xu0$A" node="7dFv$5lS2cs" resolve="Optionele bevoegdheid om te reageren op de schriftelijk bevestiging &#10;van het intrekken van het bezwaar" />
+        <node concept="33wURK" id="2kDBhkxVew4" role="1OcJUI">
+          <ref role="33wURL" node="7dFv$5lS2cs" resolve="Optionele bevoegdheid om te reageren op de schriftelijk bevestiging &#10;van het intrekken van het bezwaar" />
         </node>
       </node>
       <node concept="2GMpOH" id="3H8312nzc1e" role="2GMpsb">
@@ -734,8 +734,8 @@
       </node>
       <node concept="1OcJUx" id="7dFv$5lS2_U" role="33xnZK">
         <property role="TrG5h" value="Schriftelijk gereageerd op bevestiging " />
-        <node concept="1xu0$B" id="2kDBhkxsJWF" role="1OcJUG">
-          <ref role="1xu0$A" node="7dFv$5lS2cs" resolve="Optionele bevoegdheid om te reageren op de schriftelijk bevestiging &#10;van het intrekken van het bezwaar" />
+        <node concept="33wURK" id="2kDBhkxVewo" role="1OcJUG">
+          <ref role="33wURL" node="7dFv$5lS2cs" resolve="Optionele bevoegdheid om te reageren op de schriftelijk bevestiging &#10;van het intrekken van het bezwaar" />
         </node>
       </node>
     </node>
@@ -753,11 +753,11 @@
       </node>
       <node concept="1OcJUx" id="7dFv$5lS1W1" role="33xnZK">
         <property role="TrG5h" value="Geen reactie op bevestiging" />
-        <node concept="1xu0$B" id="2kDBhkxsJWO" role="1OcJUG">
-          <ref role="1xu0$A" node="7dFv$5lS2cs" resolve="Optionele bevoegdheid om te reageren op de schriftelijk bevestiging &#10;van het intrekken van het bezwaar" />
+        <node concept="33wURK" id="2kDBhkxVewx" role="1OcJUG">
+          <ref role="33wURL" node="7dFv$5lS2cs" resolve="Optionele bevoegdheid om te reageren op de schriftelijk bevestiging &#10;van het intrekken van het bezwaar" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJWY" role="1OcJUG">
-          <ref role="1xu0$A" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
+        <node concept="33wURK" id="2kDBhkxVewF" role="1OcJUG">
+          <ref role="33wURL" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
         </node>
       </node>
       <node concept="KfA53" id="5kuxuwXfFO3" role="3y4jea">
@@ -793,14 +793,14 @@
       </node>
       <node concept="1OcJUx" id="5b3WIC8IRZS" role="33xnZK">
         <property role="TrG5h" value="bezwaar gedeeltelijk ingetrokken" />
-        <node concept="1xu0$B" id="2kDBhkxsJXi" role="1OcJUG">
-          <ref role="1xu0$A" node="5b3WIC8IRSV" resolve="Optionele bevoegheid bij bellen om het bezwaar in te trekken" />
+        <node concept="33wURK" id="2kDBhkxVewQ" role="1OcJUI">
+          <ref role="33wURL" node="5b3WIC8IRUu" resolve="Optionele bevoegheid om het bezwaar door te zetten" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJXs" role="1OcJUG">
-          <ref role="1xu0$A" node="5b3WIC8IRTM" resolve="Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken" />
+        <node concept="33wURK" id="2kDBhkxVewZ" role="1OcJUG">
+          <ref role="33wURL" node="5b3WIC8IRSV" resolve="Optionele bevoegheid bij bellen om het bezwaar in te trekken" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJX9" role="1OcJUI">
-          <ref role="1xu0$A" node="5b3WIC8IRUu" resolve="Optionele bevoegheid om het bezwaar door te zetten" />
+        <node concept="33wURK" id="2kDBhkxVex9" role="1OcJUG">
+          <ref role="33wURL" node="5b3WIC8IRTM" resolve="Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken" />
         </node>
       </node>
     </node>
@@ -830,20 +830,20 @@
       </node>
       <node concept="1OcJUx" id="5b3WIC8Jw7$" role="33xnZK">
         <property role="TrG5h" value="bezwaar doorgezet" />
-        <node concept="1xu0$B" id="2kDBhkxsJXB" role="1OcJUI">
-          <ref role="1xu0$A" node="5b3WIC8IRW9" resolve="Verplichte bevoegdheid tot het behandelen van het bezwaar" />
+        <node concept="33wURK" id="2kDBhkxVexk" role="1OcJUI">
+          <ref role="33wURL" node="5b3WIC8IRW9" resolve="Verplichte bevoegdheid tot het behandelen van het bezwaar" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJXM" role="1OcJUG">
-          <ref role="1xu0$A" node="5b3WIC8IRUu" resolve="Optionele bevoegheid om het bezwaar door te zetten" />
+        <node concept="33wURK" id="2kDBhkxVexv" role="1OcJUG">
+          <ref role="33wURL" node="5b3WIC8IRUu" resolve="Optionele bevoegheid om het bezwaar door te zetten" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJY0" role="1OcJUG">
-          <ref role="1xu0$A" node="5b3WIC8IRRC" resolve="Optionele bevoegheid om te bellen bij bezwaar, door selecteur" />
+        <node concept="33wURK" id="2kDBhkxVexH" role="1OcJUG">
+          <ref role="33wURL" node="5b3WIC8IRRC" resolve="Optionele bevoegheid om te bellen bij bezwaar, door selecteur" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJYg" role="1OcJUG">
-          <ref role="1xu0$A" node="5b3WIC8IRSV" resolve="Optionele bevoegheid bij bellen om het bezwaar in te trekken" />
+        <node concept="33wURK" id="2kDBhkxVexX" role="1OcJUG">
+          <ref role="33wURL" node="5b3WIC8IRSV" resolve="Optionele bevoegheid bij bellen om het bezwaar in te trekken" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJYy" role="1OcJUG">
-          <ref role="1xu0$A" node="5b3WIC8IRTM" resolve="Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken" />
+        <node concept="33wURK" id="2kDBhkxVeyf" role="1OcJUG">
+          <ref role="33wURL" node="5b3WIC8IRTM" resolve="Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken" />
         </node>
       </node>
     </node>
@@ -873,11 +873,11 @@
       </node>
       <node concept="1OcJUx" id="5b3WIC8JweV" role="33xnZK">
         <property role="TrG5h" value="bezwaar behandeld" />
-        <node concept="1xu0$B" id="2kDBhkxsJYO" role="1OcJUG">
-          <ref role="1xu0$A" node="5b3WIC8IRW9" resolve="Verplichte bevoegdheid tot het behandelen van het bezwaar" />
+        <node concept="33wURK" id="2kDBhkxVeyx" role="1OcJUG">
+          <ref role="33wURL" node="5b3WIC8IRW9" resolve="Verplichte bevoegdheid tot het behandelen van het bezwaar" />
         </node>
-        <node concept="1xu0$B" id="2kDBhkxsJYY" role="1OcJUG">
-          <ref role="1xu0$A" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
+        <node concept="33wURK" id="2kDBhkxVeyF" role="1OcJUG">
+          <ref role="33wURL" node="5Bacij9tPjq" resolve="Bezwaar of beroep is ingediend" />
         </node>
       </node>
     </node>

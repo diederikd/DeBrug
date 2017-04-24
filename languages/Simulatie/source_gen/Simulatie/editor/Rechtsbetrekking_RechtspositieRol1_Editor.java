@@ -17,27 +17,27 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import jetbrains.mps.util.EqualUtil;
+import jetbrains.mps.openapi.editor.cells.CellActionType;
+import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
+import ObjectiefRecht.editor.GN_StyleSheet;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
-import ObjectiefRecht.editor.GN_StyleSheet;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
-import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
-import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
-import jetbrains.mps.util.EqualUtil;
-import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
 import javax.swing.JComponent;
 import org.campagnelab.ui.code.Swing.ButtonCallback;
@@ -76,7 +76,7 @@ public class Rechtsbetrekking_RechtspositieRol1_Editor extends DefaultNodeEditor
     editorCell.addEditorCell(this.createComponent_yhtdgo_a0a(editorContext, node));
     editorCell.addEditorCell(this.createComponent_yhtdgo_b0a(editorContext, node));
     editorCell.addEditorCell(this.createAlternation_yhtdgo_c0a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_yhtdgo_d0a(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_yhtdgo_d0a(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_yhtdgo_e0a(editorContext, node));
     editorCell.addEditorCell(this.createCollection_yhtdgo_f0a(editorContext, node));
     return editorCell;
@@ -129,10 +129,30 @@ public class Rechtsbetrekking_RechtspositieRol1_Editor extends DefaultNodeEditor
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "Simulatie.editor.imageRed");
     return editorCell;
   }
-  private EditorCell createConstant_yhtdgo_d0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtsbetrekking");
-    editorCell.setCellId("Constant_yhtdgo_d0a");
-    editorCell.setDefaultText("");
+  private EditorCell createReadOnlyModelAccessor_yhtdgo_d0a(final EditorContext editorContext, final SNode node) {
+    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
+      public String getText() {
+        String tekst = "rechtsbetrekking";
+        {
+          final SNode betrekking = SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking"));
+          if (SNodeOperations.isInstanceOf(betrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a8fe7L, "ObjectiefRecht.structure.Betrekking"))) {
+            tekst = "betrekking";
+          }
+        }
+        return tekst;
+      }
+      public void setText(String s) {
+      }
+      public boolean isValidText(String s) {
+        return EqualUtil.equals(s, getText());
+      }
+    }, node);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_yhtdgo_d0a");
+    Style style = new StyleImpl();
+    GN_StyleSheet.apply_Bold(style, editorCell);
+    editorCell.getStyle().putAll(style);
     return editorCell;
   }
   private EditorCell createRefCell_yhtdgo_e0a(EditorContext editorContext, SNode node) {
@@ -544,7 +564,6 @@ public class Rechtsbetrekking_RechtspositieRol1_Editor extends DefaultNodeEditor
     editorCell.setCellId("Collection_yhtdgo_h5a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createConstant_yhtdgo_a7f0a(editorContext, node));
     editorCell.addEditorCell(this.createConstant_yhtdgo_b7f0a(editorContext, node));

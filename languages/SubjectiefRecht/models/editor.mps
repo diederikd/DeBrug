@@ -7,6 +7,8 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="ll8w" ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)" />
+    <import index="xhlk" ref="r:516f69e8-d332-4ecb-b3a2-f14c7ad25337(Simulatie.structure)" />
     <import index="gcgs" ref="r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)" implicit="true" />
     <import index="9nno" ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -129,6 +131,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -354,7 +359,7 @@
         <property role="3F0ifm" value="rechtshandeling" />
       </node>
       <node concept="1iCGBv" id="6c9haf45_Se" role="3EZMnx">
-        <ref role="1NtTu8" to="gcgs:6c9haf45_$D" resolve="rechtshandeling" />
+        <ref role="1NtTu8" to="gcgs:6c9haf45_$D" resolve="overgang" />
         <ref role="1k5W1q" to="9nno:6c9haf45jMN" resolve="Name" />
         <node concept="1sVBvm" id="6c9haf45_Sh" role="1sWHZn">
           <node concept="3F0A7n" id="6c9haf45_Sj" role="2wV5jI">
@@ -380,11 +385,24 @@
       <node concept="3F0ifn" id="6c9haf45BV0" role="3EZMnx">
         <property role="3F0ifm" value="(" />
       </node>
-      <node concept="1iCGBv" id="6c9haf45BTE" role="3EZMnx">
-        <ref role="1NtTu8" to="gcgs:6c9haf45_$D" resolve="rechtshandeling" />
-        <node concept="1sVBvm" id="6c9haf45BTG" role="1sWHZn">
-          <node concept="3F1sOY" id="6c9haf45BU0" role="2wV5jI">
-            <ref role="1NtTu8" to="3pw0:20D4HrzFFXI" resolve="actor" />
+      <node concept="1HlG4h" id="2kDBhkyplqw" role="3EZMnx">
+        <node concept="1HfYo3" id="2kDBhkyplqy" role="1HlULh">
+          <node concept="3TQlhw" id="2kDBhkyplq$" role="1Hhtcw">
+            <node concept="3clFbS" id="2kDBhkyplqA" role="2VODD2">
+              <node concept="3cpWs6" id="3FnOwJNUrFM" role="3cqZAp">
+                <node concept="2OqwBi" id="3FnOwJNUrFN" role="3cqZAk">
+                  <node concept="2OqwBi" id="3FnOwJNUrFO" role="2Oq$k0">
+                    <node concept="pncrf" id="3FnOwJNUrFP" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="3FnOwJNUrFQ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="gcgs:6c9haf45_$D" resolve="overgang" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="3FnOwJNUrFR" role="2OqNvi">
+                    <ref role="37wK5l" to="ll8w:7tRkx91j0fu" resolve="GeefActorString" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -617,7 +635,7 @@
         </node>
         <node concept="2reCLy" id="2IjnF_A7FR9" role="2reCL6">
           <node concept="1iCGBv" id="2IjnF_A7FRk" role="2reSmM">
-            <ref role="1NtTu8" to="gcgs:6c9haf45_$D" resolve="rechtshandeling" />
+            <ref role="1NtTu8" to="gcgs:6c9haf45_$D" resolve="overgang" />
             <node concept="1sVBvm" id="2IjnF_A7FRm" role="1sWHZn">
               <node concept="3F0A7n" id="2IjnF_AlwAR" role="2wV5jI">
                 <property role="1Intyy" value="true" />

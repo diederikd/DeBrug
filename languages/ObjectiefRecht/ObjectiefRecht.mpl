@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="ObjectiefRecht" uuid="8dc4b25f-4c49-400e-ac37-0fd230db702c" languageVersion="2" moduleVersion="0">
+<language namespace="ObjectiefRecht" uuid="8dc4b25f-4c49-400e-ac37-0fd230db702c" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

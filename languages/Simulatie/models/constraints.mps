@@ -125,14 +125,14 @@
         <node concept="3clFbS" id="6oZntEhkUr2" role="2VODD2">
           <node concept="3cpWs8" id="6oZntEhl1Yb" role="3cqZAp">
             <node concept="3cpWsn" id="6oZntEhl1Yc" role="3cpWs9">
-              <property role="TrG5h" value="rechtshandelingen" />
+              <property role="TrG5h" value="overgangen" />
               <node concept="2I9FWS" id="6oZntEhl1Yd" role="1tU5fm">
-                <ref role="2I9WkF" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
+                <ref role="2I9WkF" to="3pw0:3GpI$sPbk8E" resolve="Overgang" />
               </node>
               <node concept="2ShNRf" id="6oZntEhl1Ye" role="33vP2m">
                 <node concept="2T8Vx0" id="6oZntEhl1Yf" role="2ShVmc">
                   <node concept="2I9FWS" id="6oZntEhl1Yg" role="2T96Bj">
-                    <ref role="2I9WkF" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
+                    <ref role="2I9WkF" to="3pw0:3GpI$sPbk8E" resolve="Overgang" />
                   </node>
                 </node>
               </node>
@@ -163,7 +163,7 @@
               <node concept="3clFbF" id="6oZntEhlbim" role="3cqZAp">
                 <node concept="2OqwBi" id="6oZntEhldSZ" role="3clFbG">
                   <node concept="37vLTw" id="6oZntEhlbil" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6oZntEhl1Yc" resolve="rechtshandelingen" />
+                    <ref role="3cqZAo" node="6oZntEhl1Yc" resolve="overgangen" />
                   </node>
                   <node concept="TSZUe" id="6oZntEhlgnk" role="2OqNvi">
                     <node concept="2OqwBi" id="6oZntEhlh2g" role="25WWJ7">
@@ -192,7 +192,7 @@
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
               <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
               <node concept="37vLTw" id="6oZntEhl1YT" role="37wK5m">
-                <ref role="3cqZAo" node="6oZntEhl1Yc" resolve="rechtshandelingen" />
+                <ref role="3cqZAo" node="6oZntEhl1Yc" resolve="overgangen" />
               </node>
             </node>
           </node>

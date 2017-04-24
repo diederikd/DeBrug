@@ -273,14 +273,14 @@ public class Rechtshandeling_Lijst_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_d09504_a1a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("rechtshandeling");
-    provider.setNoTargetText("<no rechtshandeling>");
+    provider.setRole("overgang");
+    provider.setNoTargetText("<no overgang>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new Rechtshandeling_Lijst_Editor._Inline_d09504_a0b0a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("rechtshandeling");
+      editorCell.setRole("overgang");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();

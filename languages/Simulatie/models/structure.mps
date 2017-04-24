@@ -102,7 +102,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="uitgevoerdehandelingen" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="gcgs:6c9haf45sNk" resolve="Rechtshandeling" />
+      <ref role="20lvS9" to="3pw0:3GpI$sPbk8E" resolve="Overgang" />
       <node concept="asaX9" id="7mDqhOi_ism" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="6syAJDE8Ve8" role="1TKVEi">
@@ -157,9 +157,9 @@
     <node concept="1TJgyj" id="3d6QfrfG1St" role="1TKVEi">
       <property role="IQ2ns" value="3694879098862050845" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="rechtshandeling" />
+      <property role="20kJfa" value="overgang" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
+      <ref role="20lvS9" to="3pw0:3GpI$sPbk8E" resolve="Overgang" />
     </node>
     <node concept="1TJgyj" id="52o5oqaUddV" role="1TKVEi">
       <property role="IQ2ns" value="5807415387094569851" />
@@ -212,9 +212,9 @@
     <node concept="1TJgyj" id="5RiSaxyNDdq" role="1TKVEi">
       <property role="IQ2ns" value="6760713004453368666" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="rechtshandeling" />
+      <property role="20kJfa" value="overgang" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
+      <ref role="20lvS9" to="3pw0:3GpI$sPbk8E" resolve="Overgang" />
     </node>
     <node concept="1TJgyj" id="5RiSaxyNDds" role="1TKVEi">
       <property role="IQ2ns" value="6760713004453368668" />
