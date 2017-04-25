@@ -13886,7 +13886,7 @@ overeenkomstig de wensen van de werknemer</nodename>
           <node>
             <noderole>actor</noderole>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
-            <nodeid>2677844167540435283</nodeid>
+            <nodeid>1619225543223744462</nodeid>
               <properties>
                   <property name='alias'></property>
               </properties>
@@ -13895,8 +13895,8 @@ overeenkomstig de wensen van de werknemer</nodename>
                   <node>
                     <noderole>rechtssubjecten</noderole>
                     <nodetype>RechtsSubject</nodetype>
-                    <nodename>werknemer</nodename>
-                    <nodeid>5753801799636978868</nodeid>
+                    <nodename>werkgever</nodename>
+                    <nodeid>5753801799637012771</nodeid>
                   </node>
                 </reference>
               </references>
