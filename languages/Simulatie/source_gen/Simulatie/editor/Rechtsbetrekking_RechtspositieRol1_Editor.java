@@ -119,7 +119,7 @@ public class Rechtsbetrekking_RechtspositieRol1_Editor extends DefaultNodeEditor
     return editorCell;
   }
   private static boolean renderingCondition_yhtdgo_a2a0(SNode node, EditorContext editorContext) {
-    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a786L, "evaluatieresultaat"));
+    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a786L, "evaluatieresultaat")) && (SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8d4L, "geldigTot")) == null);
   }
   private EditorCell createComponent_yhtdgo_a2a0(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "Simulatie.editor.imageGreen");

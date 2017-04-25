@@ -248,6 +248,7 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" name="org.campagnelab.ui">
       <concept id="1879241968983569938" name="org.campagnelab.ui.structure.ButtonHandler" flags="ig" index="ykhUf" />
@@ -1229,10 +1230,21 @@
         <node concept="pkWqt" id="5vursKQvDNN" role="3e4ffs">
           <node concept="3clFbS" id="5vursKQvDNP" role="2VODD2">
             <node concept="3cpWs6" id="5vursKQvF5T" role="3cqZAp">
-              <node concept="2OqwBi" id="5vursKQxWbB" role="3cqZAk">
-                <node concept="pncrf" id="5vursKQxVYC" role="2Oq$k0" />
-                <node concept="3TrcHB" id="5vursKQxWtp" role="2OqNvi">
-                  <ref role="3TsBF5" to="gcgs:5vursKQxUu6" resolve="evaluatieresultaat" />
+              <node concept="1Wc70l" id="1pSDgPN4Z9c" role="3cqZAk">
+                <node concept="2OqwBi" id="5vursKQxWbB" role="3uHU7B">
+                  <node concept="pncrf" id="5vursKQxVYC" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5vursKQxWtp" role="2OqNvi">
+                    <ref role="3TsBF5" to="gcgs:5vursKQxUu6" resolve="evaluatieresultaat" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1pSDgPN4ZiR" role="3uHU7w">
+                  <node concept="2OqwBi" id="1pSDgPN4ZiS" role="2Oq$k0">
+                    <node concept="pncrf" id="1pSDgPN4ZiT" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1pSDgPN4ZiU" role="2OqNvi">
+                      <ref role="3Tt5mk" to="gcgs:6c9haf45szk" resolve="geldigTot" />
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="1pSDgPN5ldb" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -2243,10 +2255,21 @@
         <node concept="pkWqt" id="5vursKQxXAM" role="3e4ffs">
           <node concept="3clFbS" id="5vursKQxXAN" role="2VODD2">
             <node concept="3cpWs6" id="5vursKQxXAO" role="3cqZAp">
-              <node concept="2OqwBi" id="5vursKQxXAP" role="3cqZAk">
-                <node concept="pncrf" id="5vursKQxXAQ" role="2Oq$k0" />
-                <node concept="3TrcHB" id="5vursKQxXAR" role="2OqNvi">
-                  <ref role="3TsBF5" to="gcgs:5vursKQxUu6" resolve="evaluatieresultaat" />
+              <node concept="1Wc70l" id="1pSDgPN50Qb" role="3cqZAk">
+                <node concept="2OqwBi" id="5vursKQxXAP" role="3uHU7B">
+                  <node concept="pncrf" id="5vursKQxXAQ" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5vursKQxXAR" role="2OqNvi">
+                    <ref role="3TsBF5" to="gcgs:5vursKQxUu6" resolve="evaluatieresultaat" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1pSDgPN50ZQ" role="3uHU7w">
+                  <node concept="2OqwBi" id="1pSDgPN50ZR" role="2Oq$k0">
+                    <node concept="pncrf" id="1pSDgPN50ZS" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1pSDgPN50ZT" role="2OqNvi">
+                      <ref role="3Tt5mk" to="gcgs:6c9haf45szk" resolve="geldigTot" />
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="1pSDgPN5ktm" role="2OqNvi" />
                 </node>
               </node>
             </node>
