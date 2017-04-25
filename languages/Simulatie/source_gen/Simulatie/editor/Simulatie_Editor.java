@@ -1202,7 +1202,7 @@ public class Simulatie_Editor extends DefaultNodeEditor {
           Simulatie__BehaviorDescriptor.Initialiseer_id5FFw3Y4c4n0.invoke(node, node);
           Informatiepositie__BehaviorDescriptor.evalueerRechtsbetrekkingen_id5vursKQG4Ym.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcaea0d6fL, "rechtspositie")), node);
           SLinkOperations.setTarget(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x5dd2e0a862d0002cL, "uittevoerenhandeling")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935aL, "overgang"), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen"))).last(), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "overgang")));
-
+          Simulatie__BehaviorDescriptor.evalueerRechtsbetrekkingen_id7mDqhOixwsa.invoke(node, node);
         }
       }
     };

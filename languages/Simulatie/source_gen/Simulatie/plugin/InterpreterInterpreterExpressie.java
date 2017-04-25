@@ -651,6 +651,13 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           Boolean result = true;
           Interpreter.voegBerichtToe("Er is geen handeling waarbij geldt <voorwaarden>");
+          for (SNode voorwaarde : ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x75a9691d143b2e5fL, 0x75a9691d143b2e61L, "voorwaarden")))) {
+            List<SNode> lijstMetHandelingen = Interpreter.GeefLijstVanRechtshandelingen();
+            lijstMetHandelingen = Interpreter.BeperklijstMetHandelingen(lijstMetHandelingen, voorwaarde);
+            if ((result == true) && ListSequence.fromList(lijstMetHandelingen).count() > 0) {
+              result = false;
+            }
+          }
           return result;
         } catch (InterpreterEscapeException ex) {
           throw ex;

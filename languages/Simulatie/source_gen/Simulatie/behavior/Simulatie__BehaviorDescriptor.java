@@ -29,13 +29,13 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.ArrayList;
+import Simulatie.plugin.Interpreter;
 import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
 import ObjectiefRecht.behavior.Concept__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.time.Duration;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import ObjectiefRecht.behavior.Overgang__BehaviorDescriptor;
-import Simulatie.plugin.Interpreter;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -172,7 +172,6 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
       Simulatie__BehaviorDescriptor.ToevoegenUitvoerbareHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, uitvoerbarehandeling);
     }
     // einde voeg handelingen toe o.b.v. subjectieve rechtsbetrekkingen 
-    listUitvoerbareRechtshandeling = Simulatie__BehaviorDescriptor.AfleidenUitvoerbareHandelingOpBasisVanInitieel_id146AQXTkiZb.invoke(__thisNode__, simulatie);
     for (SNode uitvoerbarehandeling : ListSequence.fromList(listUitvoerbareRechtshandeling)) {
       Simulatie__BehaviorDescriptor.ToevoegenUitvoerbareHandelingAanSimulatie_id2N$PylwVyEM.invoke(__thisNode__, simulatie, uitvoerbarehandeling);
     }
@@ -183,9 +182,10 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
     for (SNode subjectieveRechtsbetrekking : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcaea0d6fL, "rechtspositie")), MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L, 0x6c69e5201860cca3L, "rechtsbetrekkingen")))) {
       SNode referentienaarrechtshandeling = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.UitvoerbareRechtshandeling"));
       // Bepaal nu eerst of de subjectieve rechtsbetrekking geldig is 
-      System.out.println("Huidige datum van de Simulatie: " + Simulatie__BehaviorDescriptor.GeefHuidigeDatumVanDeSimulatie_id5QFVCQs$JI4.invoke(simulatie, simulatie));
-      if ((boolean) Rechtsbetrekking__BehaviorDescriptor.IsGeldigOpDatumTijdstip_id2mYdLn7TluB.invoke(subjectieveRechtsbetrekking, Simulatie__BehaviorDescriptor.GeefHuidigTijdstipVanDeSimulatie_id1Enheq$Rvw5.invoke(simulatie, simulatie))) {
-        System.out.println("Huidige datum van de Simulatie: " + Simulatie__BehaviorDescriptor.GeefHuidigeDatumVanDeSimulatie_id5QFVCQs$JI4.invoke(simulatie, simulatie));
+      boolean evaluatieresultaat = (boolean) Interpreter.evalueer(simulatie, subjectieveRechtsbetrekking);
+      System.out.println("Evaluatieresultaat van rechtsbetrekking " + SPropertyOperations.getString(SLinkOperations.getTarget(subjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " is " + evaluatieresultaat);
+      if ((boolean) Rechtsbetrekking__BehaviorDescriptor.IsGeldigOpDatumTijdstip_id2mYdLn7TluB.invoke(subjectieveRechtsbetrekking, Simulatie__BehaviorDescriptor.GeefHuidigTijdstipVanDeSimulatie_id1Enheq$Rvw5.invoke(simulatie, simulatie)) && evaluatieresultaat) {
+        System.out.println("Rechtsbetrekking is geldig op: " + Simulatie__BehaviorDescriptor.GeefHuidigeDatumVanDeSimulatie_id5QFVCQs$JI4.invoke(simulatie, simulatie));
         if ((boolean) Concept__BehaviorDescriptor.IsGeldigOpDatum_id2mYdLn7TluB.invoke(SLinkOperations.getTarget(subjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), Simulatie__BehaviorDescriptor.GeefHuidigeDatumVanDeSimulatie_id5QFVCQs$JI4.invoke(simulatie, simulatie))) {
           System.out.println("Huidige datum van de Simulatie: " + Simulatie__BehaviorDescriptor.GeefHuidigeDatumVanDeSimulatie_id5QFVCQs$JI4.invoke(simulatie, simulatie));
           System.out.println("Objectieve rechtsbetrekking: " + SPropertyOperations.getString(SLinkOperations.getTarget(subjectieveRechtsbetrekking, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, 0x630944a3c415c8a6L, "objectieveRechtsbetrekking")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
