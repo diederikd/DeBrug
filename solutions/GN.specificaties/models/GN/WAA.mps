@@ -161,6 +161,7 @@
       </concept>
       <concept id="2677844167539494726" name="ObjectiefRecht.structure.HandelingZonderRechtsgevolg" flags="ng" index="78D9j">
         <child id="2677844167539495840" name="actor" index="78CUP" />
+        <child id="2677844167539495843" name="uitgevoerdOp" index="78CUQ" />
       </concept>
       <concept id="4258639737656086562" name="ObjectiefRecht.structure.OptieAfwijzenHandeling" flags="ng" index="egMD_" />
       <concept id="4258639737656086561" name="ObjectiefRecht.structure.OptieAccepterenHandeling" flags="ng" index="egMDA" />
@@ -394,7 +395,6 @@
       </concept>
       <concept id="6994217584621161789" name="ObjectiefRecht.structure.Rechtshandeling" flags="ng" index="1OcJVF">
         <child id="5540471952142619918" name="teWijzigingenFeiten" index="2fAA3G" />
-        <child id="4271677511961778971" name="UitgevoerdOp" index="2GMpsb" />
         <child id="131751487724154103" name="nieuweFeiten" index="2LInYK" />
         <child id="6249140128508500069" name="uitgevoerdOp" index="LQzYN" />
         <child id="2317404197411012462" name="actor" index="33xUQS" />
@@ -3523,9 +3523,6 @@
         <property role="2B78L_" value="07" />
         <property role="2B78LE" value="2000" />
       </node>
-      <node concept="2GMpOH" id="3H8312nzKuM" role="2GMpsb">
-        <property role="TrG5h" value="datum (opnieuw) indienen verzoek" />
-      </node>
       <node concept="lYmzx" id="146AQXTzZQk" role="LQzYN">
         <property role="da7Q0" value="96" />
         <property role="TrG5h" value="tijdstip (opnieuw) indienen verzoek" />
@@ -3565,6 +3562,15 @@
         </node>
         <node concept="33wURK" id="3FnOwJOhEJu" role="1OcJUG">
           <ref role="33wURL" node="2kDBhkxJWlM" resolve="Bevoegdheid om de handeling niet te accepteren" />
+        </node>
+      </node>
+      <node concept="lYmzx" id="39SZYlkIhrx" role="78CUQ">
+        <property role="da7Q0" value="0000" />
+        <property role="TrG5h" value="tijdstip accepteren verzoek" />
+        <node concept="2B78Lw" id="39SZYlkIhry" role="lXajo">
+          <property role="2B78LB" value="1" />
+          <property role="2B78L_" value="7" />
+          <property role="2B78LE" value="2000" />
         </node>
       </node>
     </node>
@@ -3611,9 +3617,6 @@
         <property role="2B78LB" value="01" />
         <property role="2B78L_" value="07" />
         <property role="2B78LE" value="2000" />
-      </node>
-      <node concept="2GMpOH" id="3H8312nzKuS" role="2GMpsb">
-        <property role="TrG5h" value="overleg datum" />
       </node>
       <node concept="lYmzx" id="146AQXT_NKI" role="LQzYN">
         <property role="da7Q0" value="99" />
@@ -3707,9 +3710,6 @@
           <ref role="33wURL" node="1fugvh9_kgi" resolve="immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren" />
         </node>
       </node>
-      <node concept="2GMpOH" id="4NzHub3x_f2" role="2GMpsb">
-        <property role="TrG5h" value="datum inwilligen verzoek" />
-      </node>
       <node concept="lYmzx" id="146AQXT_NKU" role="LQzYN">
         <property role="da7Q0" value="103" />
         <property role="TrG5h" value="tijdstip inwilligen verzoek" />
@@ -3763,9 +3763,6 @@
         <property role="2B78L_" value="07" />
         <property role="2B78LE" value="2000" />
       </node>
-      <node concept="2GMpOH" id="3H8312nzKuU" role="2GMpsb">
-        <property role="TrG5h" value="datum afwijzen verzoek" />
-      </node>
       <node concept="KfA53" id="5kuxuwXfFN_" role="3y4jea">
         <node concept="12OPpU" id="4NzHub3ylT3" role="KfA2B">
           <node concept="2PEWbh" id="4NzHub3ylTa" role="12O34u">
@@ -3800,9 +3797,6 @@
         <property role="2B78LB" value="1" />
         <property role="2B78L_" value="7" />
         <property role="2B78LE" value="2000" />
-      </node>
-      <node concept="2GMpOH" id="1Enheq_1aLj" role="2GMpsb">
-        <property role="TrG5h" value="tijdstip van inzetten immuniteit" />
       </node>
       <node concept="1OcJUx" id="1Enheq_1aLl" role="33xnZK">
         <property role="TrG5h" value="Immuniteit ingezet" />
@@ -3859,9 +3853,6 @@
         <property role="2B78LB" value="01" />
         <property role="2B78L_" value="07" />
         <property role="2B78LE" value="2000" />
-      </node>
-      <node concept="2GMpOH" id="4NzHub3z6zp" role="2GMpsb">
-        <property role="TrG5h" value="datum vaststellen spreiding" />
       </node>
       <node concept="2f_mKx" id="4NzHub3z6Ak" role="2fAA3G">
         <ref role="2f_mKA" node="5u1YjWIljaR" resolve="arbeidsduurperiode van arbeidsovereenkomst" />
@@ -3922,9 +3913,6 @@
         <property role="2B78L_" value="07" />
         <property role="2B78LE" value="2000" />
       </node>
-      <node concept="2GMpOH" id="4NzHub3z6Ec" role="2GMpsb">
-        <property role="TrG5h" value="datum wijzigen van de spreiding van de uren" />
-      </node>
       <node concept="KfA53" id="5kuxuwXfFNK" role="3y4jea">
         <node concept="12OPpU" id="4NzHub3z6DF" role="KfA2B">
           <node concept="2PEWbh" id="4NzHub3z6DW" role="12O34u">
@@ -3971,9 +3959,6 @@
         <property role="2B78LB" value="01" />
         <property role="2B78L_" value="07" />
         <property role="2B78LE" value="2000" />
-      </node>
-      <node concept="2GMpOH" id="4NzHub3z6Hn" role="2GMpsb">
-        <property role="TrG5h" value="datum mededelen beslissing" />
       </node>
       <node concept="lYmzx" id="146AQXTBBOK" role="LQzYN">
         <property role="da7Q0" value="114" />
@@ -4023,9 +4008,6 @@
         <property role="2B78LB" value="01" />
         <property role="2B78L_" value="07" />
         <property role="2B78LE" value="2000" />
-      </node>
-      <node concept="2GMpOH" id="4NzHub3z6Hp" role="2GMpsb">
-        <property role="TrG5h" value="datum mededelen redenen" />
       </node>
       <node concept="KfA53" id="5kuxuwXfFNm" role="3y4jea">
         <node concept="12OPpU" id="jcJoZ9LTbW" role="KfA2B">

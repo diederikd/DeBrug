@@ -1,0 +1,2000 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<context>
+<rechtssubjecten>
+    <node>
+      <noderole>rechtssubjecten</noderole>
+      <nodetype>RechtsSubject</nodetype>
+      <nodename>Bestuursorgaan</nodename>
+      <nodeid>6606770165423411608</nodeid>
+        <properties>
+            <property name='definitie'></property>
+            <property name='alias'></property>
+            <property name='name'>Bestuursorgaan</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423411609</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>1</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>rechtssubjecten</noderole>
+      <nodetype>RechtsSubject</nodetype>
+      <nodename>Belanghebbende</nodename>
+      <nodeid>6606770165423411612</nodeid>
+        <properties>
+            <property name='definitie'></property>
+            <property name='alias'></property>
+            <property name='name'>Belanghebbende</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>kenmerk</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>Naam</nodename>
+            <nodeid>6606770165423867141</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>Naam</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>6606770165423867142</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>4</property>
+                        <property name='jaar'>2017</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>RijVanKaraktersType</nodetype>
+                  <nodeid>6606770165423867145</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>kenmerk</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>Adres</nodename>
+            <nodeid>6606770165423867147</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>Adres</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>6606770165423867148</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>4</property>
+                        <property name='jaar'>2017</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>RijVanKaraktersType</nodetype>
+                  <nodeid>6606770165423867154</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423411613</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>1</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+        </children>
+    </node>
+</rechtssubjecten>
+<onderwerpen>
+    <node>
+      <noderole>onderwerpen</noderole>
+      <nodetype>Onderwerp</nodetype>
+      <nodename>Aanvraag</nodename>
+      <nodeid>6606770165423411622</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Aanvraag</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>kenmerk</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>aanvrager</nodename>
+            <nodeid>6606770165423411628</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>aanvrager</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>6606770165423411629</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>1</property>
+                        <property name='jaar'>2017</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>ObjectType</nodetype>
+                  <nodeid>6606770165423411632</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='object'>
+                        <node>
+                          <noderole>rechtssubjecten</noderole>
+                          <nodetype>RechtsSubject</nodetype>
+                          <nodename>Belanghebbende</nodename>
+                          <nodeid>6606770165423411612</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>kenmerk</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>dagtekening</nodename>
+            <nodeid>6606770165423867156</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>dagtekening</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>6606770165423867157</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>4</property>
+                        <property name='jaar'>2017</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>DatumType</nodetype>
+                  <nodeid>6606770165423867166</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>kenmerk</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>aanduiding van de beschikking</nodename>
+            <nodeid>6606770165423867168</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>aanduiding van de beschikking</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>6606770165423867169</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>4</property>
+                        <property name='jaar'>2017</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>RijVanKaraktersType</nodetype>
+                  <nodeid>6606770165423867181</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>kenmerk</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>schriftelijk ingediend</nodename>
+            <nodeid>6606770165423411838</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>schriftelijk ingediend</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>6606770165423411839</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>1</property>
+                        <property name='jaar'>2017</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>JaNeeType</nodetype>
+                  <nodeid>6606770165423411845</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>kenmerk</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>elektronisch ingediend</nodename>
+            <nodeid>6606770165423867355</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>elektronisch ingediend</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>6606770165423867356</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>4</property>
+                        <property name='jaar'>2017</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>JaNeeType</nodetype>
+                  <nodeid>6606770165423867377</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>kenmerk</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>benodigde gegevens</nodename>
+            <nodeid>6606770165423867282</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>benodigde gegevens</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>6606770165423867283</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>4</property>
+                        <property name='jaar'>2017</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>RijVanKaraktersType</nodetype>
+                  <nodeid>6606770165423867298</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>kenmerk</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>bescheiden</nodename>
+            <nodeid>6606770165423867300</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>bescheiden</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>6606770165423867301</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>4</property>
+                        <property name='jaar'>2017</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>RijVanKaraktersType</nodetype>
+                  <nodeid>6606770165423867319</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423411623</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>1</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>onderwerpen</noderole>
+      <nodetype>Onderwerp</nodetype>
+      <nodename>Beschikking</nodename>
+      <nodeid>6606770165423867183</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Beschikking</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423867184</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>onderwerpen</noderole>
+      <nodetype>Onderwerp</nodetype>
+      <nodename>Besluit</nodename>
+      <nodeid>6606770165423411618</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Besluit</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423411619</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>1</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>kenmerk</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>motivering</nodename>
+            <nodeid>6606770165423411634</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>motivering</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>6606770165423411635</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>1</property>
+                        <property name='jaar'>2017</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>RijVanKaraktersType</nodetype>
+                  <nodeid>6606770165423411638</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>kenmerk</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>grond</nodename>
+            <nodeid>6606770165423411654</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>grond</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>6606770165423411655</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>1</property>
+                        <property name='jaar'>2017</property>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>type</noderole>
+                  <nodetype>ObjectType</nodetype>
+                  <nodeid>6606770165423411661</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='object'>
+                        <node>
+                          <noderole>onderwerpen</noderole>
+                          <nodetype>Onderwerp</nodetype>
+                          <nodename>Wettelijk voorschrift</nodename>
+                          <nodeid>6606770165423411640</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+              </children>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>onderwerpen</noderole>
+      <nodetype>Onderwerp</nodetype>
+      <nodename>Wettelijk voorschrift</nodename>
+      <nodeid>6606770165423411640</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Wettelijk voorschrift</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423411641</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>1</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+        </children>
+    </node>
+</onderwerpen>
+<enumeraties>
+</enumeraties>
+<rechtsbetrekkingen>
+    <node>
+      <noderole>toestanden</noderole>
+      <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+      <nodename>Optionele bevoegheid voor het indienen van een aanvraag</nodename>
+      <nodeid>6606770165423867115</nodeid>
+        <properties>
+            <property name='initieel'>false</property>
+            <property name='alias'></property>
+            <property name='name'>Optionele bevoegheid voor het indienen van een aanvraag</property>
+            <property name='kortenaam'>bevoegheid voor het indienen van een aanvraag</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>GeldigVan</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>datum inwerkingstreding</nodename>
+            <nodeid>6606770165423867118</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>datum inwerkingstreding</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423867121</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>1</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>6606770165423867127</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>ABW 4.1</nodename>
+                    <nodeid>6606770165423411807</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+        </children>
+        <references>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>Indienen aanvraag</nodename>
+              <nodeid>6606770165423411795</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Belanghebbende</nodename>
+              <nodeid>6606770165423411612</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Bestuursorgaan</nodename>
+              <nodeid>6606770165423411608</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>Aanvraag</nodename>
+              <nodeid>6606770165423411622</nodeid>
+            </node>
+          </reference>
+        </references>
+    </node>
+    <node>
+      <noderole>toestanden</noderole>
+      <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+      <nodename>Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</nodename>
+      <nodeid>6606770165423867335</nodeid>
+        <properties>
+            <property name='initieel'>false</property>
+            <property name='alias'></property>
+            <property name='name'>Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</property>
+            <property name='kortenaam'>Verplichte bevoegdheid bevestigen ontvangst elektonisch aanvraag</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>GeldigVan</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>datum indienen aanvraag</nodename>
+            <nodeid>6606770165423867338</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>datum indienen aanvraag</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423867341</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>voorwaarden</noderole>
+            <nodetype>Voorwaarden</nodetype>
+            <nodename></nodename>
+            <nodeid>6606770165423867379</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'></property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>conditie</noderole>
+                  <nodetype>ConditieAlle</nodetype>
+                  <nodeid>6606770165423867383</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>6606770165423867386</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>IsWaar</nodetype>
+                        <nodeid>6606770165423867390</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>variabele</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>6606770165423867392</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>6606770165423867399</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>elektronisch ingediend</nodename>
+                                            <nodeid>6606770165423867355</nodeid>
+                                          </node>
+                                        </reference>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                      </node>
+                    </children>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>Artikel</nodetype>
+            <nodename>AWB 4.3a</nodename>
+            <nodeid>6606770165423867506</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>AWB 4.3a</property>
+              </properties>
+          </node>
+        </children>
+        <references>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>Bevestigen van de ontvangst van de elektronisch ingediende aanvraag</nodename>
+              <nodeid>6606770165423867423</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Bestuursorgaan</nodename>
+              <nodeid>6606770165423411608</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Belanghebbende</nodename>
+              <nodeid>6606770165423411612</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>Aanvraag</nodename>
+              <nodeid>6606770165423411622</nodeid>
+            </node>
+          </reference>
+        </references>
+    </node>
+    <node>
+      <noderole>toestanden</noderole>
+      <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+      <nodename>Verplichte bevoegdheid om op de aanvraag te beslissen</nodename>
+      <nodeid>6606770165423867219</nodeid>
+        <properties>
+            <property name='initieel'>false</property>
+            <property name='alias'></property>
+            <property name='name'>Verplichte bevoegdheid om op de aanvraag te beslissen</property>
+            <property name='kortenaam'>Verplichte bevoegdheid om op de aanvraag te beslissen</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>GeldigVan</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>datum indienen aanvraag</nodename>
+            <nodeid>6606770165423867222</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>datum indienen aanvraag</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423867225</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>Artikel</nodetype>
+            <nodename>AWB 4.4</nodename>
+            <nodeid>6606770165423867321</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>AWB 4.4</property>
+              </properties>
+          </node>
+        </children>
+        <references>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>Beslissen op de aanvraag</nodename>
+              <nodeid>6606770165423867253</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>Aanvraag</nodename>
+              <nodeid>6606770165423411622</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Bestuursorgaan</nodename>
+              <nodeid>6606770165423411608</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Belanghebbende</nodename>
+              <nodeid>6606770165423411612</nodeid>
+            </node>
+          </reference>
+        </references>
+    </node>
+    <node>
+      <noderole>toestanden</noderole>
+      <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+      <nodename>Optionele bevoegdheid om de aanvraag niet te behandelen</nodename>
+      <nodeid>6606770165423867562</nodeid>
+        <properties>
+            <property name='initieel'>false</property>
+            <property name='alias'></property>
+            <property name='name'>Optionele bevoegdheid om de aanvraag niet te behandelen</property>
+            <property name='kortenaam'>Optionele bevoegdheid niet behandelen aanvraag</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>GeldigVan</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>datum indienen aanvraag</nodename>
+            <nodeid>6606770165423867565</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>datum indienen aanvraag</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423867568</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>Artikel</nodetype>
+            <nodename>AWB 4.5</nodename>
+            <nodeid>6606770165423867592</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>AWB 4.5</property>
+              </properties>
+          </node>
+        </children>
+        <references>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Bestuursorgaan</nodename>
+              <nodeid>6606770165423411608</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Belanghebbende</nodename>
+              <nodeid>6606770165423411612</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>Aanvraag</nodename>
+              <nodeid>6606770165423411622</nodeid>
+            </node>
+          </reference>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>Niet in behandeling nemen van het verzoek</nodename>
+              <nodeid>6606770165423867670</nodeid>
+            </node>
+          </reference>
+        </references>
+    </node>
+    <node>
+      <noderole>toestanden</noderole>
+      <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+      <nodename>Optionele bevoegdheid om te vragen naar een vertaling van de aanvraag 
+of een van de daarbij behorende gegevens of bescheiden</nodename>
+      <nodeid>6606770165423868011</nodeid>
+        <properties>
+            <property name='initieel'>false</property>
+            <property name='alias'></property>
+            <property name='name'>Optionele bevoegdheid om te vragen naar een vertaling van de aanvraag 
+of een van de daarbij behorende gegevens of bescheiden</property>
+            <property name='kortenaam'>Optionele bevoegdheid om te vragen naar een vertaling</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>GeldigVan</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>datum indienen aanvraag</nodename>
+            <nodeid>6606770165423868045</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>datum indienen aanvraag</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423868017</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>6606770165423868352</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>AWB 4.5</nodename>
+                    <nodeid>6606770165423867592</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+        </children>
+        <references>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>In gelegenheid stellen de aanvraag aan te vullen met een vertaling</nodename>
+              <nodeid>6606770165423867932</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Bestuursorgaan</nodename>
+              <nodeid>6606770165423411608</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Belanghebbende</nodename>
+              <nodeid>6606770165423411612</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>Aanvraag</nodename>
+              <nodeid>6606770165423411622</nodeid>
+            </node>
+          </reference>
+        </references>
+    </node>
+    <node>
+      <noderole>toestanden</noderole>
+      <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+      <nodename>Optionele bevoegdheid de aanvraag aan te vullen met een vertaling</nodename>
+      <nodeid>6606770165423868318</nodeid>
+        <properties>
+            <property name='initieel'>false</property>
+            <property name='alias'></property>
+            <property name='name'>Optionele bevoegdheid de aanvraag aan te vullen met een vertaling</property>
+            <property name='kortenaam'>Optionele bevoegdheid om te vragen naar een vertaling</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>GeldigVan</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>datum indienen aanvraag</nodename>
+            <nodeid>6606770165423868319</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>datum indienen aanvraag</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423868320</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>6606770165423868354</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>AWB 4.5</nodename>
+                    <nodeid>6606770165423867592</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+        </children>
+        <references>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>Aanvraag</nodename>
+              <nodeid>6606770165423411622</nodeid>
+            </node>
+          </reference>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>Aanvullen aanvraag met vertaling</nodename>
+              <nodeid>6606770165423867844</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Belanghebbende</nodename>
+              <nodeid>6606770165423411612</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Bestuursorgaan</nodename>
+              <nodeid>6606770165423411608</nodeid>
+            </node>
+          </reference>
+        </references>
+    </node>
+    <node>
+      <noderole>toestanden</noderole>
+      <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+      <nodename>Optionele bevoegdheid om te vragen naar een samenvatting van de aanvraag 
+of een van de daarbij behorende gegevens of bescheiden</nodename>
+      <nodeid>6606770165423868048</nodeid>
+        <properties>
+            <property name='initieel'>false</property>
+            <property name='alias'></property>
+            <property name='name'>Optionele bevoegdheid om te vragen naar een samenvatting van de aanvraag 
+of een van de daarbij behorende gegevens of bescheiden</property>
+            <property name='kortenaam'>Optionele bevoegdheid om te vragen naar een vertaling</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>GeldigVan</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>datum indienen aanvraag</nodename>
+            <nodeid>6606770165423868049</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>datum indienen aanvraag</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423868050</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>6606770165423868397</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>AWB 4.5</nodename>
+                    <nodeid>6606770165423867592</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+        </children>
+        <references>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>Aanvraag</nodename>
+              <nodeid>6606770165423411622</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Belanghebbende</nodename>
+              <nodeid>6606770165423411612</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Bestuursorgaan</nodename>
+              <nodeid>6606770165423411608</nodeid>
+            </node>
+          </reference>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>In gelegenheid stellen de aanvraag aan te vullen met een samenvatting</nodename>
+              <nodeid>6606770165423868169</nodeid>
+            </node>
+          </reference>
+        </references>
+    </node>
+    <node>
+      <noderole>toestanden</noderole>
+      <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+      <nodename>Optionele bevoegdheid de aanvraag aan te vullen met een samenvatting</nodename>
+      <nodeid>6606770165423868356</nodeid>
+        <properties>
+            <property name='initieel'>false</property>
+            <property name='alias'></property>
+            <property name='name'>Optionele bevoegdheid de aanvraag aan te vullen met een samenvatting</property>
+            <property name='kortenaam'>Optionele bevoegdheid om te vragen naar een vertaling</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>GeldigVan</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>datum indienen aanvraag</nodename>
+            <nodeid>6606770165423868357</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>datum indienen aanvraag</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423868358</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>6606770165423868359</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>AWB 4.5</nodename>
+                    <nodeid>6606770165423867592</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+        </children>
+        <references>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Bestuursorgaan</nodename>
+              <nodeid>6606770165423411608</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>Belanghebbende</nodename>
+              <nodeid>6606770165423411612</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>Aanvraag</nodename>
+              <nodeid>6606770165423411622</nodeid>
+            </node>
+          </reference>
+          <reference role='bevoegdheidTot'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>Rechtshandeling</nodetype>
+              <nodename>Aanvullen aanvraag met samenvatting</nodename>
+              <nodeid>6606770165423868123</nodeid>
+            </node>
+          </reference>
+        </references>
+    </node>
+</rechtsbetrekkingen>
+<rechtsgevolgveroorzakers>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>Rechtshandeling</nodetype>
+      <nodename>Indienen aanvraag</nodename>
+      <nodeid>6606770165423411795</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Indienen aanvraag</property>
+            <property name='kortenaam'>Indienen aanvraag</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>6606770165423411809</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>Belanghebbende</nodename>
+                    <nodeid>6606770165423411612</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423411801</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>1</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>Artikel</nodetype>
+            <nodename>ABW 4.1</nodename>
+            <nodeid>6606770165423411807</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>ABW 4.1</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>nieuweFeiten</noderole>
+            <nodetype>MethodeNieuweFeiten</nodetype>
+            <nodeid>6606770165423411812</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>6606770165423411814</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>aanvrager</nodename>
+                          <nodeid>6606770165423411628</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>6606770165423411833</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>motivering</nodename>
+                          <nodeid>6606770165423411634</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>6606770165423411819</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>grond</nodename>
+                          <nodeid>6606770165423411654</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+              </children>
+              <references>
+                <reference role='refObject'>
+                  <node>
+                    <noderole>onderwerpen</noderole>
+                    <nodetype>Onderwerp</nodetype>
+                    <nodename>Aanvraag</nodename>
+                    <nodeid>6606770165423411622</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>Voorwaarden</noderole>
+            <nodetype>Voorwaarden</nodetype>
+            <nodename></nodename>
+            <nodeid>6606770165423866950</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'></property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>voorwaarden</noderole>
+                  <nodetype>ExpressieVoorwaarde</nodetype>
+                  <nodename></nodename>
+                  <nodeid>6606770165423866959</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                        <property name='name'></property>
+                    </properties>
+                    <children>
+                      <node>
+                        <noderole>expressie</noderole>
+                        <nodetype>IsWaar</nodetype>
+                        <nodeid>6606770165423866965</nodeid>
+                          <properties>
+                              <property name='alias'></property>
+                          </properties>
+                          <children>
+                            <node>
+                              <noderole>variabele</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>6606770165423866967</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>6606770165423866974</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>schriftelijk ingediend</nodename>
+                                            <nodeid>6606770165423411838</nodeid>
+                                          </node>
+                                        </reference>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                          </children>
+                      </node>
+                    </children>
+                </node>
+                <node>
+                  <noderole>conditie</noderole>
+                  <nodetype>ConditieAlle</nodetype>
+                  <nodeid>6606770165423866954</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>heeftAlsGevolg</noderole>
+            <nodetype>Rechtsgevolg</nodetype>
+            <nodename>Aanvraag ingediend</nodename>
+            <nodeid>6606770165423867457</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>Aanvraag ingediend</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>6606770165423867459</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+                          <nodename>Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</nodename>
+                          <nodeid>6606770165423867335</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>6606770165423867721</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
+                          <nodename>Optionele bevoegdheid om de aanvraag niet te behandelen</nodename>
+                          <nodeid>6606770165423867562</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>6606770165423867464</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
+                          <nodename>Verplichte bevoegdheid om op de aanvraag te beslissen</nodename>
+                          <nodeid>6606770165423867219</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+              </children>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>Rechtshandeling</nodetype>
+      <nodename>Beslissen op de aanvraag</nodename>
+      <nodeid>6606770165423867253</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Beslissen op de aanvraag</property>
+            <property name='kortenaam'>Beslissen op de aanvraag</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>6606770165423867279</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>Bestuursorgaan</nodename>
+                    <nodeid>6606770165423411608</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423867259</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>Rechtshandeling</nodetype>
+      <nodename>Bevestigen van de ontvangst van de elektronisch ingediende aanvraag</nodename>
+      <nodeid>6606770165423867423</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Bevestigen van de ontvangst van de elektronisch ingediende aanvraag</property>
+            <property name='kortenaam'>Bevestigen van de ontvangst</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>6606770165423867452</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>Bestuursorgaan</nodename>
+                    <nodeid>6606770165423411608</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423867429</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>Artikel</nodetype>
+            <nodename>ABW 4.3</nodename>
+            <nodeid>6606770165423867455</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>ABW 4.3</property>
+              </properties>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>Rechtshandeling</nodetype>
+      <nodename>Niet in behandeling nemen van het verzoek</nodename>
+      <nodeid>6606770165423867670</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Niet in behandeling nemen van het verzoek</property>
+            <property name='kortenaam'>Niet in behandeling nemen van het verzoek</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>6606770165423867708</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>Bestuursorgaan</nodename>
+                    <nodeid>6606770165423411608</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423867676</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>6606770165423867706</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>AWB 4.5</nodename>
+                    <nodeid>6606770165423867592</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>Rechtshandeling</nodetype>
+      <nodename>In gelegenheid stellen de aanvraag aan te vullen met een vertaling</nodename>
+      <nodeid>6606770165423867932</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>In gelegenheid stellen de aanvraag aan te vullen met een vertaling</property>
+            <property name='kortenaam'>Gelegenheid geven tot aanvullen met vertaling</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>6606770165423867980</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>Bestuursorgaan</nodename>
+                    <nodeid>6606770165423411608</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423867938</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>6606770165423867983</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>AWB 4.5</nodename>
+                    <nodeid>6606770165423867592</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>Rechtshandeling</nodetype>
+      <nodename>Aanvullen aanvraag met vertaling</nodename>
+      <nodeid>6606770165423867844</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Aanvullen aanvraag met vertaling</property>
+            <property name='kortenaam'>Aanvullen aanvraag met vertaling</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>6606770165423867889</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>Belanghebbende</nodename>
+                    <nodeid>6606770165423411612</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423867850</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>6606770165423868220</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>AWB 4.5</nodename>
+                    <nodeid>6606770165423867592</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>Rechtshandeling</nodetype>
+      <nodename>In gelegenheid stellen de aanvraag aan te vullen met een samenvatting</nodename>
+      <nodeid>6606770165423868169</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>In gelegenheid stellen de aanvraag aan te vullen met een samenvatting</property>
+            <property name='kortenaam'>Gelegenheid geven tot aanvullen met vertaling</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>6606770165423868170</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>Bestuursorgaan</nodename>
+                    <nodeid>6606770165423411608</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423868171</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>6606770165423868172</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>AWB 4.5</nodename>
+                    <nodeid>6606770165423867592</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>Rechtshandeling</nodetype>
+      <nodename>Aanvullen aanvraag met samenvatting</nodename>
+      <nodeid>6606770165423868123</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Aanvullen aanvraag met samenvatting</property>
+            <property name='kortenaam'>Aanvullen aanvraag met vertaling</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>6606770165423868124</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>Belanghebbende</nodename>
+                    <nodeid>6606770165423411612</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423868125</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>6606770165423868222</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>AWB 4.5</nodename>
+                    <nodeid>6606770165423867592</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>Rechtshandeling</nodetype>
+      <nodename>Bekend maken besluit</nodename>
+      <nodeid>6606770165423867759</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Bekend maken besluit</property>
+            <property name='kortenaam'></property>
+        </properties>
+        <children>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>6606770165423867802</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>Bestuursorgaan</nodename>
+                    <nodeid>6606770165423411608</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6606770165423867765</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>4</property>
+                  <property name='jaar'>2017</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>bron</noderole>
+            <nodetype>ReferentieNaarArtikel</nodetype>
+            <nodeid>6606770165423867805</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='artikel'>
+                  <node>
+                    <noderole>bron</noderole>
+                    <nodetype>Artikel</nodetype>
+                    <nodename>AWB 4.5</nodename>
+                    <nodeid>6606770165423867592</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+        </children>
+    </node>
+</rechtsgevolgveroorzakers>
+<regels>
+</regels>
+</context>

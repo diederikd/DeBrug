@@ -13,7 +13,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="IntentionsDescriptor.java">
-      <unit at="16,0,135,0" name="ObjectiefRecht.intentions.IntentionsDescriptor" />
+      <unit at="16,0,137,0" name="ObjectiefRecht.intentions.IntentionsDescriptor" />
     </file>
   </root>
   <root nodeRef="r:52a5cd65-ebfc-4dbe-a32d-128a83072e4a(ObjectiefRecht.intentions)/1365497693573418594">
@@ -240,6 +240,75 @@
       </scope>
       <unit id="2677844167526638275" at="45,0,75,0" name="ObjectiefRecht.intentions.MigreerRechtsgevolgen_Intention$IntentionImplementation" />
       <unit id="2677844167526638275" at="22,0,76,0" name="ObjectiefRecht.intentions.MigreerRechtsgevolgen_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:52a5cd65-ebfc-4dbe-a32d-128a83072e4a(ObjectiefRecht.intentions)/3636938059535685349">
+    <file name="VerwijderenDatumTijdstipUitvoeren_Intention.java">
+      <node id="3636938059535685349" at="22,0,23,0" concept="3" trace="myCachedExecutable" />
+      <node id="3636938059535685349" at="23,56,24,279" concept="10" />
+      <node id="3636938059535685349" at="27,35,28,47" concept="8" />
+      <node id="3636938059535685349" at="31,84,32,16" concept="8" />
+      <node id="3636938059535685349" at="35,35,36,17" concept="8" />
+      <node id="3636938059535685349" at="39,37,40,149" concept="2" />
+      <node id="3636938059535685349" at="41,5,42,30" concept="8" />
+      <node id="3636938059535688956" at="48,87,49,59" concept="8" />
+      <node id="3636938059535700822" at="54,9,55,49" concept="7" />
+      <node id="3636938059535701336" at="56,200,57,222" concept="2" />
+      <node id="3636938059535685349" at="63,48,64,62" concept="8" />
+      <node id="3636938059535685349" at="45,0,47,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="3636938059535685349" at="23,0,26,0" concept="1" trace="VerwijderenDatumTijdstipUitvoeren_Intention#()V" />
+      <node id="3636938059535685349" at="38,99,41,5" concept="5" />
+      <node id="3636938059535700822" at="55,49,58,11" concept="5" />
+      <node id="3636938059535685349" at="26,0,30,0" concept="6" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="3636938059535685349" at="30,0,34,0" concept="6" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3636938059535685349" at="34,0,38,0" concept="6" trace="isSurroundWith#()Z" />
+      <node id="3636938059535685349" at="47,0,51,0" concept="6" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="3636938059535685349" at="62,0,66,0" concept="6" trace="getDescriptor#()Ljetbrains/mps/intentions/IntentionDescriptor;" />
+      <node id="3636938059535685349" at="38,0,44,0" concept="6" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="3636938059535700822" at="53,224,59,9" concept="0" />
+      <node id="3636938059535695999" at="52,78,60,7" concept="4" />
+      <node id="3636938059535685349" at="51,0,62,0" concept="6" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="3636938059535685349" at="45,38,45,38" />
+      <scope id="3636938059535685349" at="23,56,24,279" />
+      <scope id="3636938059535685349" at="27,35,28,47" />
+      <scope id="3636938059535685349" at="31,84,32,16" />
+      <scope id="3636938059535685349" at="35,35,36,17" />
+      <scope id="3636938059535685349" at="39,37,40,149" />
+      <scope id="3636938059535685351" at="48,87,49,59" />
+      <scope id="3636938059535700824" at="56,200,57,222" />
+      <scope id="3636938059535685349" at="63,48,64,62" />
+      <scope id="3636938059535685349" at="45,0,47,0" />
+      <scope id="3636938059535685349" at="23,0,26,0" />
+      <scope id="3636938059535685349" at="26,0,30,0" />
+      <scope id="3636938059535685349" at="30,0,34,0">
+        <var name="editorContext" id="3636938059535685349" />
+        <var name="node" id="3636938059535685349" />
+      </scope>
+      <scope id="3636938059535685349" at="34,0,38,0" />
+      <scope id="3636938059535685349" at="38,99,42,30" />
+      <scope id="3636938059535685349" at="47,0,51,0">
+        <var name="editorContext" id="3636938059535685349" />
+        <var name="node" id="3636938059535685349" />
+      </scope>
+      <scope id="3636938059535700822" at="54,9,58,11">
+        <var name="rechtshandeling" id="3636938059535700822" />
+      </scope>
+      <scope id="3636938059535685349" at="62,0,66,0" />
+      <scope id="3636938059535685349" at="38,0,44,0">
+        <var name="context" id="3636938059535685349" />
+        <var name="node" id="3636938059535685349" />
+      </scope>
+      <scope id="3636938059535696002" at="53,224,59,9" />
+      <scope id="3636938059535685353" at="52,78,60,7" />
+      <scope id="3636938059535695999" at="52,78,60,7">
+        <var name="overgang" id="3636938059535696000" />
+      </scope>
+      <scope id="3636938059535685349" at="51,0,62,0">
+        <var name="editorContext" id="3636938059535685349" />
+        <var name="node" id="3636938059535685349" />
+      </scope>
+      <unit id="3636938059535685349" at="44,0,67,0" name="ObjectiefRecht.intentions.VerwijderenDatumTijdstipUitvoeren_Intention$IntentionImplementation" />
+      <unit id="3636938059535685349" at="21,0,68,0" name="ObjectiefRecht.intentions.VerwijderenDatumTijdstipUitvoeren_Intention" />
     </file>
   </root>
   <root nodeRef="r:52a5cd65-ebfc-4dbe-a32d-128a83072e4a(ObjectiefRecht.intentions)/3955365814684309407">
