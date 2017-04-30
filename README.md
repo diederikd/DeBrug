@@ -21,6 +21,9 @@ Pak dit bestand uit en kopieer de directory plugins naar de directory plugins in
 ## Installatie van org.campagnelab.mps.UI for MPS plugin
 Ga naar https://plugins.jetbrains.com/mps/plugin/7519-org-campagnelab-mps-ui om versie 3.0.0 te downloaden van de plugin. Installeer deze plugin met de functionaliteit om plugins te installeren. 
 
+## Installatie van de BrowserPlugin
+Ga naar https://github.com/diederikd/ProjectBrowserPlugin/releases/tag/v0.1 om versie v0.1 te downloaden van de plugin. Instaleer deze plugin met de functionaliteit om plugins te installeren.
+
 ## Installatie van 'DeBrug'
 Kijk voor een stap voor stap beschrijving in:
 "Installatie van ‘De Brug’.docx" 
