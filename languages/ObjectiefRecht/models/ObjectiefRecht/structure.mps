@@ -10,6 +10,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="jx79" ref="r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)" implicit="true" />
     <import index="8ao0" ref="r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)" implicit="true" />
+    <import index="gwk3" ref="r:febb3af1-bc6f-47d4-96d1-d50d7d238cfb(URL.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -268,6 +269,9 @@
       <property role="TrG5h" value="initieel" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="PrWs8" id="5XyrAiGBNsX" role="PzmwI">
+      <ref role="PrY4T" node="5XyrAiGBNpD" resolve="IURL" />
+    </node>
   </node>
   <node concept="1TIwiD" id="64gsXol8COU">
     <property role="EcuMT" value="6994217584621161786" />
@@ -294,6 +298,9 @@
       <property role="20kJfa" value="Voorwaarden" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="gIBqGO4fNC" resolve="Voorwaarden" />
+    </node>
+    <node concept="PrWs8" id="5XyrAiGBNs5" role="PzmwI">
+      <ref role="PrY4T" node="5XyrAiGBNpD" resolve="IURL" />
     </node>
   </node>
   <node concept="1TIwiD" id="64gsXol8COX">
@@ -785,6 +792,9 @@
       <property role="20kJfa" value="voorwaarden" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="gIBqGO4fNC" resolve="Voorwaarden" />
+    </node>
+    <node concept="PrWs8" id="5XyrAiGEr_h" role="PzmwI">
+      <ref role="PrY4T" node="5XyrAiGBNpD" resolve="IURL" />
     </node>
   </node>
   <node concept="1TIwiD" id="2xp9_$ucE6q">
@@ -2147,6 +2157,18 @@
       <property role="20kJfa" value="overgang" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3GpI$sPbk8E" resolve="Overgang" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5XyrAiGBNpD">
+    <property role="EcuMT" value="6873177359992698473" />
+    <property role="TrG5h" value="IURL" />
+    <property role="3GE5qa" value="Url" />
+    <node concept="1TJgyj" id="5XyrAiGBNql" role="1TKVEi">
+      <property role="IQ2ns" value="6873177359992698517" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="url" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="gwk3:3SROZMUwUkX" resolve="URL" />
     </node>
   </node>
 </model>

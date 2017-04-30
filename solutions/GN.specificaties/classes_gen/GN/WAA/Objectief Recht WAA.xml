@@ -13828,16 +13828,6 @@ overeenkomstig de wensen van de werknemer</nodename>
               </properties>
           </node>
           <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>datum (opnieuw) indienen verzoek</nodename>
-            <nodeid>4271677511962658738</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>datum (opnieuw) indienen verzoek</property>
-              </properties>
-          </node>
-          <node>
             <noderole>uitgevoerdOp</noderole>
             <nodetype>Kenmerk</nodetype>
             <nodename>tijdstip (opnieuw) indienen verzoek</nodename>
@@ -14014,6 +14004,31 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                         </node>
                       </reference>
                     </references>
+                </node>
+              </children>
+          </node>
+          <node>
+            <noderole>uitgevoerdOp</noderole>
+            <nodetype>Kenmerk</nodetype>
+            <nodename>tijdstip accepteren verzoek</nodename>
+            <nodeid>3636938059535685345</nodeid>
+              <properties>
+                  <property name='meervoudig'></property>
+                  <property name='optioneel'></property>
+                  <property name='alias'></property>
+                  <property name='name'>tijdstip accepteren verzoek</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>brongeldigVan</noderole>
+                  <nodetype>Datum</nodetype>
+                  <nodeid>3636938059535685346</nodeid>
+                    <properties>
+                        <property name='dag'>1</property>
+                        <property name='maand'>7</property>
+                        <property name='jaar'>2000</property>
+                        <property name='alias'></property>
+                    </properties>
                 </node>
               </children>
           </node>
@@ -14195,16 +14210,6 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                   <property name='maand'>7</property>
                   <property name='jaar'>2000</property>
                   <property name='alias'></property>
-              </properties>
-          </node>
-          <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>overleg datum</nodename>
-            <nodeid>4271677511962658744</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>overleg datum</property>
               </properties>
           </node>
           <node>
@@ -14635,16 +14640,6 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
               </children>
           </node>
           <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>datum inwilligen verzoek</nodename>
-            <nodeid>5540471952143438786</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>datum inwilligen verzoek</property>
-              </properties>
-          </node>
-          <node>
             <noderole>uitgevoerdOp</noderole>
             <nodetype>Kenmerk</nodetype>
             <nodename>tijdstip inwilligen verzoek</nodename>
@@ -14900,16 +14895,6 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
               </properties>
           </node>
           <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>datum afwijzen verzoek</nodename>
-            <nodeid>4271677511962658746</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>datum afwijzen verzoek</property>
-              </properties>
-          </node>
-          <node>
             <noderole>Voorwaarden</noderole>
             <nodetype>Voorwaarden</nodetype>
             <nodename></nodename>
@@ -15052,16 +15037,6 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                   <property name='maand'>7</property>
                   <property name='jaar'>2000</property>
                   <property name='alias'></property>
-              </properties>
-          </node>
-          <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>tijdstip van inzetten immuniteit</nodename>
-            <nodeid>1916075923871149139</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>tijdstip van inzetten immuniteit</property>
               </properties>
           </node>
           <node>
@@ -15332,16 +15307,6 @@ van de werknemer te neutraliseren.</nodename>
               </properties>
           </node>
           <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>datum vaststellen spreiding</nodename>
-            <nodeid>5540471952143837401</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>datum vaststellen spreiding</property>
-              </properties>
-          </node>
-          <node>
             <noderole>teWijzigingenFeiten</noderole>
             <nodetype>MethodeAanpassenFeiten</nodetype>
             <nodeid>5540471952143837588</nodeid>
@@ -15600,16 +15565,6 @@ van de werknemer te neutraliseren.</nodename>
               </properties>
           </node>
           <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>datum wijzigen van de spreiding van de uren</nodename>
-            <nodeid>5540471952143837836</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>datum wijzigen van de spreiding van de uren</property>
-              </properties>
-          </node>
-          <node>
             <noderole>Voorwaarden</noderole>
             <nodetype>Voorwaarden</nodetype>
             <nodename></nodename>
@@ -15813,16 +15768,6 @@ van de werknemer te neutraliseren.</nodename>
               </properties>
           </node>
           <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>datum mededelen beslissing</nodename>
-            <nodeid>5540471952143838039</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>datum mededelen beslissing</property>
-              </properties>
-          </node>
-          <node>
             <noderole>uitgevoerdOp</noderole>
             <nodetype>Kenmerk</nodetype>
             <nodename>tijdstip mededelen beslissing</nodename>
@@ -16020,16 +15965,6 @@ van de werknemer te neutraliseren.</nodename>
                   <property name='maand'>7</property>
                   <property name='jaar'>2000</property>
                   <property name='alias'></property>
-              </properties>
-          </node>
-          <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>datum mededelen redenen</nodename>
-            <nodeid>5540471952143838041</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>datum mededelen redenen</property>
               </properties>
           </node>
           <node>

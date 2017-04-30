@@ -54,16 +54,16 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_cq90ak_e0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_cq90ak_f0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_g0(editorContext, node));
-    editorCell.addEditorCell(this.createComponent_cq90ak_h0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_cq90ak_i0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cq90ak_h0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_cq90ak_i0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_j0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_cq90ak_k0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_cq90ak_k0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_l0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_m0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_cq90ak_n0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_cq90ak_n0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_o0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_p0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_cq90ak_q0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_cq90ak_q0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_r0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_s0(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_cq90ak_t0(editorContext, node));
@@ -74,20 +74,23 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_cq90ak_y0(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_cq90ak_z0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_ab0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_cq90ak_bb0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_cq90ak_cb0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cq90ak_bb0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_cq90ak_cb0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_db0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_cq90ak_eb0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_cq90ak_eb0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_fb0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_cq90ak_gb0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cq90ak_gb0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_hb0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_ib0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_cq90ak_jb0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cq90ak_kb0(editorContext, node));
-    if (renderingCondition_cq90ak_a73a(node, editorContext)) {
-      editorCell.addEditorCell(this.createCollection_cq90ak_lb0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cq90ak_lb0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_cq90ak_mb0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cq90ak_nb0(editorContext, node));
+    if (renderingCondition_cq90ak_a04a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_cq90ak_ob0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createConstant_cq90ak_mb0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cq90ak_pb0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_cq90ak_a0(EditorContext editorContext, SNode node) {
@@ -194,7 +197,7 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_cq90ak_g0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "type");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "url");
     editorCell.setCellId("Constant_cq90ak_g0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
@@ -202,34 +205,106 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createComponent_cq90ak_h0(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "jetbrains.mps.lang.core.editor.alias");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
+  private EditorCell createConstant_cq90ak_h0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_cq90ak_h0");
+    editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_cq90ak_i0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "te neutraliseren rechtsbetrekking");
-    editorCell.setCellId("Constant_cq90ak_i0");
+  private EditorCell createRefNode_cq90ak_i0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new ImmuniteitGeenbevoegdheid_Editor.urlSingleRoleHandler_cq90ak_i0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5f626e64ac9f3669L, 0x5f626e64ac9f3695L, "url"), editorContext);
+    return provider.createCell();
+  }
+  private class urlSingleRoleHandler_cq90ak_i0 extends SingleRoleCellProvider {
+    public urlSingleRoleHandler_cq90ak_i0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+      super(ownerNode, containmentLink, context);
+    }
+    protected EditorCell createChildCell(SNode child) {
+      myEditorContext.getCellFactory().pushCellContext();
+      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromNode(child));
+      try {
+        EditorCell editorCell = super.createChildCell(child);
+        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5f626e64ac9f3669L, 0x5f626e64ac9f3695L, "url"), child));
+        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5f626e64ac9f3669L, 0x5f626e64ac9f3695L, "url"), child));
+        installCellInfo(child, editorCell);
+        return editorCell;
+      } finally {
+        myEditorContext.getCellFactory().popCellContext();
+      }
+    }
+
+    protected boolean isCompatibilityMode() {
+      return false;
+    }
+
+    private void installCellInfo(SNode child, EditorCell editorCell) {
+      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5f626e64ac9f3669L, 0x5f626e64ac9f3695L, "url"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+      }
+      if (editorCell.getRole() == null) {
+        editorCell.setRole("url");
+      }
+      Style style = new StyleImpl();
+      SNode node = myOwnerNode;
+      EditorContext editorContext = myEditorContext;
+      style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+      editorCell.getStyle().putAll(style);
+    }
+    @Override
+    protected EditorCell createEmptyCell() {
+      myEditorContext.getCellFactory().pushCellContext();
+      myEditorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(myOwnerNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5f626e64ac9f3669L, 0x5f626e64ac9f3695L, "url")));
+      try {
+        EditorCell editorCell = super.createEmptyCell();
+        editorCell.setCellId("empty_url");
+        installCellInfo(null, editorCell);
+        return editorCell;
+      } finally {
+        myEditorContext.getCellFactory().popCellContext();
+      }
+    }
+    protected String getNoTargetText() {
+      return "<no url>";
+    }
+  }
+  private EditorCell createConstant_cq90ak_j0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "type");
+    editorCell.setCellId("Constant_cq90ak_j0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_cq90ak_j0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_cq90ak_j0");
+  private EditorCell createComponent_cq90ak_k0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "jetbrains.mps.lang.core.editor.alias");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+  private EditorCell createConstant_cq90ak_l0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "te neutraliseren rechtsbetrekking");
+    editorCell.setCellId("Constant_cq90ak_l0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_cq90ak_k0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cq90ak_m0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_cq90ak_m0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefCell_cq90ak_n0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("immuniteitvoor");
     provider.setNoTargetText("<no immuniteitvoor>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new ImmuniteitGeenbevoegdheid_Editor._Inline_cq90ak_a01a());
+    provider.setAuxiliaryCellProvider(new ImmuniteitGeenbevoegdheid_Editor._Inline_cq90ak_a31a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
@@ -246,17 +321,17 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  public static class _Inline_cq90ak_a01a extends InlineCellProvider {
-    public _Inline_cq90ak_a01a() {
+  public static class _Inline_cq90ak_a31a extends InlineCellProvider {
+    public _Inline_cq90ak_a31a() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createMultiline_cq90ak_a0k0(editorContext, node);
+      return this.createMultiline_cq90ak_a0n0(editorContext, node);
     }
-    private EditorCell createMultiline_cq90ak_a0k0(EditorContext editorContext, SNode node) {
+    private EditorCell createMultiline_cq90ak_a0n0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new MultilineCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -277,18 +352,18 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
       return editorCell;
     }
   }
-  private EditorCell createConstant_cq90ak_l0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cq90ak_o0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "te neutraliseren voorwaarden");
-    editorCell.setCellId("Constant_cq90ak_l0");
+    editorCell.setCellId("Constant_cq90ak_o0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_cq90ak_m0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cq90ak_p0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_cq90ak_m0");
+    editorCell.setCellId("Constant_cq90ak_p0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
@@ -296,8 +371,8 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNodeList_cq90ak_n0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new ImmuniteitGeenbevoegdheid_Editor.teNeutraliserenVoorwaardenListHandler_cq90ak_n0(node, "teNeutraliserenVoorwaarden", editorContext);
+  private EditorCell createRefNodeList_cq90ak_q0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new ImmuniteitGeenbevoegdheid_Editor.teNeutraliserenVoorwaardenListHandler_cq90ak_q0(node, "teNeutraliserenVoorwaarden", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_teNeutraliserenVoorwaarden");
     Style style = new StyleImpl();
@@ -307,8 +382,8 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class teNeutraliserenVoorwaardenListHandler_cq90ak_n0 extends RefNodeListHandler {
-    public teNeutraliserenVoorwaardenListHandler_cq90ak_n0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class teNeutraliserenVoorwaardenListHandler_cq90ak_q0 extends RefNodeListHandler {
+    public teNeutraliserenVoorwaardenListHandler_cq90ak_q0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -331,7 +406,7 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
     }
     public EditorCell createEmptyCell(EditorContext editorContext) {
       editorContext.getCellFactory().pushCellContext();
-      editorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(teNeutraliserenVoorwaardenListHandler_cq90ak_n0.this.getOwner(), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, 0x25be3715c7c40b05L, "teNeutraliserenVoorwaarden")));
+      editorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(teNeutraliserenVoorwaardenListHandler_cq90ak_q0.this.getOwner(), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L, 0x25be3715c7c40b05L, "teNeutraliserenVoorwaarden")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell(editorContext);
@@ -354,75 +429,10 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
       }
     }
   }
-  private EditorCell createConstant_cq90ak_o0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "uit te voeren");
-    editorCell.setCellId("Constant_cq90ak_o0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_cq90ak_p0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_cq90ak_p0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefCell_cq90ak_q0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("uittevoeren");
-    provider.setNoTargetText("<no uittevoeren>");
-    EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new ImmuniteitGeenbevoegdheid_Editor._Inline_cq90ak_a61a());
-    editorCell = provider.createEditorCell(editorContext);
-    if (editorCell.getRole() == null) {
-      editorCell.setReferenceCell(true);
-      editorCell.setRole("uittevoeren");
-    }
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
-    return editorCell;
-  }
-  public static class _Inline_cq90ak_a61a extends InlineCellProvider {
-    public _Inline_cq90ak_a61a() {
-      super();
-    }
-    public EditorCell createEditorCell(EditorContext editorContext) {
-      return this.createEditorCell(editorContext, this.getSNode());
-    }
-    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_cq90ak_a0q0(editorContext, node);
-    }
-    private EditorCell createProperty_cq90ak_a0q0(EditorContext editorContext, SNode node) {
-      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-      provider.setRole("name");
-      provider.setNoTargetText("<no name>");
-      provider.setReadOnly(true);
-      EditorCell editorCell;
-      editorCell = provider.createEditorCell(editorContext);
-      editorCell.setCellId("property_name_2");
-      Style style = new StyleImpl();
-      GN_StyleSheet.apply_Name(style, editorCell);
-      editorCell.getStyle().putAll(style);
-      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-      SNode attributeConcept = provider.getRoleAttribute();
-      if (attributeConcept != null) {
-        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-        return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-      } else
-      return editorCell;
-    }
-  }
   private EditorCell createConstant_cq90ak_r0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtssubject met recht");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "uit te voeren");
     editorCell.setCellId("Constant_cq90ak_r0");
     Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
@@ -436,14 +446,14 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_cq90ak_t0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("rechtssubjectMetRecht");
-    provider.setNoTargetText("<no rechtssubjectMetRecht>");
+    provider.setRole("uittevoeren");
+    provider.setNoTargetText("<no uittevoeren>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new ImmuniteitGeenbevoegdheid_Editor._Inline_cq90ak_a91a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("rechtssubjectMetRecht");
+      editorCell.setRole("uittevoeren");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -467,11 +477,12 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
+      provider.setReadOnly(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
-      editorCell.setCellId("property_name_3");
+      editorCell.setCellId("property_name_2");
       Style style = new StyleImpl();
-      GN_StyleSheet.apply_Subject(style, editorCell);
+      GN_StyleSheet.apply_Name(style, editorCell);
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
@@ -483,7 +494,7 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_cq90ak_u0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtssubject met plicht");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtssubject met recht");
     editorCell.setCellId("Constant_cq90ak_u0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
@@ -500,18 +511,15 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_cq90ak_w0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("rechtssubjectMetPlicht");
-    provider.setNoTargetText("<no rechtssubjectMetPlicht>");
+    provider.setRole("rechtssubjectMetRecht");
+    provider.setNoTargetText("<no rechtssubjectMetRecht>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new ImmuniteitGeenbevoegdheid_Editor._Inline_cq90ak_a22a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("rechtssubjectMetPlicht");
+      editorCell.setRole("rechtssubjectMetRecht");
     }
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
@@ -536,7 +544,7 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
       provider.setNoTargetText("<no name>");
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
-      editorCell.setCellId("property_name_4");
+      editorCell.setCellId("property_name_3");
       Style style = new StyleImpl();
       GN_StyleSheet.apply_Subject(style, editorCell);
       editorCell.getStyle().putAll(style);
@@ -550,7 +558,7 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_cq90ak_x0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "onderwerp");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rechtssubject met plicht");
     editorCell.setCellId("Constant_cq90ak_x0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
@@ -567,14 +575,14 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_cq90ak_z0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("onderwerp");
-    provider.setNoTargetText("<no onderwerp>");
+    provider.setRole("rechtssubjectMetPlicht");
+    provider.setNoTargetText("<no rechtssubjectMetPlicht>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new ImmuniteitGeenbevoegdheid_Editor._Inline_cq90ak_a52a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("onderwerp");
+      editorCell.setRole("rechtssubjectMetPlicht");
     }
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
@@ -603,6 +611,73 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
       provider.setNoTargetText("<no name>");
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
+      editorCell.setCellId("property_name_4");
+      Style style = new StyleImpl();
+      GN_StyleSheet.apply_Subject(style, editorCell);
+      editorCell.getStyle().putAll(style);
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      SNode attributeConcept = provider.getRoleAttribute();
+      if (attributeConcept != null) {
+        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+        return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+      } else
+      return editorCell;
+    }
+  }
+  private EditorCell createConstant_cq90ak_ab0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "onderwerp");
+    editorCell.setCellId("Constant_cq90ak_ab0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_cq90ak_bb0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_cq90ak_bb0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefCell_cq90ak_cb0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("onderwerp");
+    provider.setNoTargetText("<no onderwerp>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new ImmuniteitGeenbevoegdheid_Editor._Inline_cq90ak_a82a());
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("onderwerp");
+    }
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  public static class _Inline_cq90ak_a82a extends InlineCellProvider {
+    public _Inline_cq90ak_a82a() {
+      super();
+    }
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createProperty_cq90ak_a0cb0(editorContext, node);
+    }
+    private EditorCell createProperty_cq90ak_a0cb0(EditorContext editorContext, SNode node) {
+      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+      provider.setRole("name");
+      provider.setNoTargetText("<no name>");
+      EditorCell editorCell;
+      editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name_5");
       Style style = new StyleImpl();
       GN_StyleSheet.apply_Onderwerp(style, editorCell);
@@ -616,9 +691,9 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
       return editorCell;
     }
   }
-  private EditorCell createConstant_cq90ak_ab0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cq90ak_db0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_cq90ak_ab0");
+    editorCell.setCellId("Constant_cq90ak_db0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
@@ -626,12 +701,12 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_cq90ak_bb0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new ImmuniteitGeenbevoegdheid_Editor.voorwaardenSingleRoleHandler_cq90ak_bb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "voorwaarden"), editorContext);
+  private EditorCell createRefNode_cq90ak_eb0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new ImmuniteitGeenbevoegdheid_Editor.voorwaardenSingleRoleHandler_cq90ak_eb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7b32639L, "voorwaarden"), editorContext);
     return provider.createCell();
   }
-  private class voorwaardenSingleRoleHandler_cq90ak_bb0 extends SingleRoleCellProvider {
-    public voorwaardenSingleRoleHandler_cq90ak_bb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class voorwaardenSingleRoleHandler_cq90ak_eb0 extends SingleRoleCellProvider {
+    public voorwaardenSingleRoleHandler_cq90ak_eb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -683,47 +758,47 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
       return "<no voorwaarden>";
     }
   }
-  private EditorCell createConstant_cq90ak_cb0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_cq90ak_cb0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_cq90ak_db0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_cq90ak_db0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_cq90ak_eb0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "geldig van");
-    editorCell.setCellId("Constant_cq90ak_eb0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
   private EditorCell createConstant_cq90ak_fb0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
     editorCell.setCellId("Constant_cq90ak_fb0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_cq90ak_gb0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new ImmuniteitGeenbevoegdheid_Editor.GeldigVanSingleRoleHandler_cq90ak_gb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c109781917eL, "GeldigVan"), editorContext);
+  private EditorCell createConstant_cq90ak_gb0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    editorCell.setCellId("Constant_cq90ak_gb0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_cq90ak_hb0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "geldig van");
+    editorCell.setCellId("Constant_cq90ak_hb0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_cq90ak_ib0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_cq90ak_ib0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNode_cq90ak_jb0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new ImmuniteitGeenbevoegdheid_Editor.GeldigVanSingleRoleHandler_cq90ak_jb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c109781917eL, "GeldigVan"), editorContext);
     return provider.createCell();
   }
-  private class GeldigVanSingleRoleHandler_cq90ak_gb0 extends SingleRoleCellProvider {
-    public GeldigVanSingleRoleHandler_cq90ak_gb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class GeldigVanSingleRoleHandler_cq90ak_jb0 extends SingleRoleCellProvider {
+    public GeldigVanSingleRoleHandler_cq90ak_jb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -774,27 +849,27 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
       return "<no GeldigVan>";
     }
   }
-  private EditorCell createConstant_cq90ak_hb0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cq90ak_kb0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "geldig tot");
-    editorCell.setCellId("Constant_cq90ak_hb0");
+    editorCell.setCellId("Constant_cq90ak_kb0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_cq90ak_ib0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cq90ak_lb0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_cq90ak_ib0");
+    editorCell.setCellId("Constant_cq90ak_lb0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_cq90ak_jb0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new ImmuniteitGeenbevoegdheid_Editor.GeldigTotSingleRoleHandler_cq90ak_jb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c1097819187L, "GeldigTot"), editorContext);
+  private EditorCell createRefNode_cq90ak_mb0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new ImmuniteitGeenbevoegdheid_Editor.GeldigTotSingleRoleHandler_cq90ak_mb0(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x3b480c1097819187L, "GeldigTot"), editorContext);
     return provider.createCell();
   }
-  private class GeldigTotSingleRoleHandler_cq90ak_jb0 extends SingleRoleCellProvider {
-    public GeldigTotSingleRoleHandler_cq90ak_jb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class GeldigTotSingleRoleHandler_cq90ak_mb0 extends SingleRoleCellProvider {
+    public GeldigTotSingleRoleHandler_cq90ak_mb0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -845,44 +920,44 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
       return "<no GeldigTot>";
     }
   }
-  private EditorCell createConstant_cq90ak_kb0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cq90ak_nb0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_cq90ak_kb0");
+    editorCell.setCellId("Constant_cq90ak_nb0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCollection_cq90ak_lb0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_cq90ak_ob0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_cq90ak_lb0");
-    editorCell.addEditorCell(this.createConstant_cq90ak_a73a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_cq90ak_b73a(editorContext, node));
-    editorCell.addEditorCell(this.createMultiline_cq90ak_c73a(editorContext, node));
+    editorCell.setCellId("Collection_cq90ak_ob0");
+    editorCell.addEditorCell(this.createConstant_cq90ak_a04a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cq90ak_b04a(editorContext, node));
+    editorCell.addEditorCell(this.createMultiline_cq90ak_c04a(editorContext, node));
     return editorCell;
   }
-  private static boolean renderingCondition_cq90ak_a73a(SNode node, EditorContext editorContext) {
+  private static boolean renderingCondition_cq90ak_a04a(SNode node, EditorContext editorContext) {
     SNode context;
     context = (SNode) SNodeOperations.getParent(node);
     return SPropertyOperations.getBoolean(context, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, 0xc9f8f37229dca04L, "toonopmerkingen"));
   }
-  private EditorCell createConstant_cq90ak_a73a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cq90ak_a04a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "opmerkingen");
-    editorCell.setCellId("Constant_cq90ak_a73a");
+    editorCell.setCellId("Constant_cq90ak_a04a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_cq90ak_b73a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cq90ak_b04a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_cq90ak_b73a");
+    editorCell.setCellId("Constant_cq90ak_b04a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createMultiline_cq90ak_c73a(EditorContext editorContext, SNode node) {
+  private EditorCell createMultiline_cq90ak_c04a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new MultilineCellProvider(node, editorContext);
     provider.setRole("opmerkingen");
     provider.setNoTargetText("<no opmerkingen>");
@@ -901,9 +976,9 @@ public class ImmuniteitGeenbevoegdheid_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_cq90ak_mb0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cq90ak_pb0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_cq90ak_mb0");
+    editorCell.setCellId("Constant_cq90ak_pb0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);

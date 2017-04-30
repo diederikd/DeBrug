@@ -1520,16 +1520,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
               </children>
           </node>
-          <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>datum waarop bevestiging wordt verstuurd</nodename>
-            <nodeid>4271677511963090230</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>datum waarop bevestiging wordt verstuurd</property>
-              </properties>
-          </node>
         </children>
     </node>
     <node>
@@ -1785,16 +1775,6 @@ van het bezwaar of beroep</nodename>
               </children>
           </node>
           <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>datum intrekken bezwaar of beroep</nodename>
-            <nodeid>4271677511963090226</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>datum intrekken bezwaar of beroep</property>
-              </properties>
-          </node>
-          <node>
             <noderole>Voorwaarden</noderole>
             <nodetype>Voorwaarden</nodetype>
             <nodename></nodename>
@@ -1987,16 +1967,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
               </children>
           </node>
-          <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>datum waarop wordt gebeld</nodename>
-            <nodeid>4271677511962509357</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>datum waarop wordt gebeld</property>
-              </properties>
-          </node>
         </children>
     </node>
     <node>
@@ -2141,16 +2111,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                 </node>
               </children>
           </node>
-          <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>datum intrekken bezwaar of beroep</nodename>
-            <nodeid>4271677511963090228</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>datum intrekken bezwaar of beroep</property>
-              </properties>
-          </node>
         </children>
     </node>
     <node>
@@ -2259,16 +2219,6 @@ van het intrekken van het bezwaar</nodename>
                     </references>
                 </node>
               </children>
-          </node>
-          <node>
-            <noderole>UitgevoerdOp</noderole>
-            <nodetype>VrijeTekst</nodetype>
-            <nodename>datum waarop wordt gebeld</nodename>
-            <nodeid>4271677511962509390</nodeid>
-              <properties>
-                  <property name='alias'></property>
-                  <property name='name'>datum waarop wordt gebeld</property>
-              </properties>
           </node>
         </children>
     </node>

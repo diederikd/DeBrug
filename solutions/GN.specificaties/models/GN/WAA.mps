@@ -8,6 +8,7 @@
     <use id="15970de3-8fe7-4b13-81c7-38b38d51c39a" name="Simulatie" version="-1" />
     <use id="f856d46f-3338-47a8-8a48-11e26bc535e0" name="Algemeen" version="0" />
     <use id="c4c9a68e-ce24-4c5b-9241-c819e554f07c" name="Interactie" version="0" />
+    <use id="c6a53bd0-9627-4db5-b62a-dbc3d020d641" name="URL" version="0" />
   </languages>
   <imports />
   <registry>
@@ -80,6 +81,11 @@
       </concept>
       <concept id="565938754127712399" name="Gegevens.structure.TijdWaarde" flags="ng" index="1zG$V3">
         <child id="565938754127712400" name="waarde" index="1zG$Vs" />
+      </concept>
+    </language>
+    <language id="c6a53bd0-9627-4db5-b62a-dbc3d020d641" name="URL">
+      <concept id="4483285036485027133" name="URL.structure.URL" flags="ng" index="24H7r1">
+        <property id="533590550522582121" name="url" index="1k0emI" />
       </concept>
     </language>
     <language id="2c493149-da1d-45e9-8ea2-e0b0cfc3047a" name="SubjectiefRecht">
@@ -340,6 +346,9 @@
       </concept>
       <concept id="797539131720492216" name="ObjectiefRecht.structure.ObjectType" flags="ng" index="1FJg$_">
         <reference id="797539131721323013" name="object" index="1FE7Yo" />
+      </concept>
+      <concept id="6873177359992698473" name="ObjectiefRecht.structure.IURL" flags="ng" index="3NZlwd">
+        <child id="6873177359992698517" name="url" index="3NZlzL" />
       </concept>
       <concept id="6994217584621161878" name="ObjectiefRecht.structure.ZwakkeAanspraakZwakkePlicht" flags="ng" index="1OcJT0">
         <reference id="4322810351015250917" name="verplichtingTot" index="1gmfVT" />
@@ -3020,6 +3029,9 @@
       <node concept="2GMpOH" id="3H8312nxy9P" role="2GMpPI">
         <property role="TrG5h" value="de latere datum van ingang wet of datum van indiensttredingdatum" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGGoFJ" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=1" />
+      </node>
     </node>
     <node concept="egMDA" id="2kDBhkxJWa6" role="33wtHG">
       <property role="3O3EMM" value="Accepteren van de handeling" />
@@ -3079,6 +3091,9 @@
       <node concept="2GMpOH" id="3H8312ny5eK" role="2GMpQn">
         <property role="TrG5h" value="datum waarop het overleg wordt gepleegd of uiterlijk een maand voor beoogde datum van ingang of datum van inwilliging of afwijzing" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGGoFL" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=4" />
+      </node>
     </node>
     <node concept="1OcJT2" id="MvzNsyB7Rg" role="33wtHG">
       <property role="TrG5h" value="verplichte bevoegdheid (recht) tot het inwilligen van verzoek&#10;voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang&#10;en de omvang van de aanpassing" />
@@ -3117,6 +3132,9 @@
         </node>
         <node concept="3l_DdQ" id="5kuxuwX4xVk" role="3l_JsU" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGGoFN" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=5" />
+      </node>
     </node>
     <node concept="1OcJT3" id="1fugvh9_kgi" role="33wtHG">
       <property role="TrG5h" value="immuniteit (recht) om de verplichte bevoegdheid&#10;tot het inwilligen van het verzoek te neutraliseren" />
@@ -3138,6 +3156,9 @@
       </node>
       <node concept="2GMpOH" id="3H8312ny5eO" role="2GMpPI">
         <property role="TrG5h" value="datum acceptatie verzoek door werkgever" />
+      </node>
+      <node concept="24H7r1" id="5XyrAiGGoFP" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=5" />
       </node>
     </node>
     <node concept="1OcJT2" id="5u1YjWIkWvP" role="33wtHG">
@@ -3178,6 +3199,9 @@
         </node>
         <node concept="3l_DdQ" id="5kuxuwX4xWH" role="3l_JsU" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGGoFR" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=6" />
+      </node>
     </node>
     <node concept="1OcJT3" id="2xDgDlj72l7" role="33wtHG">
       <property role="da7Q0" value="87" />
@@ -3199,6 +3223,9 @@
       <node concept="2GMpOH" id="3H8312ny5eS" role="2GMpPI">
         <property role="TrG5h" value="datum acceptatie verzoek door werkgever" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGGoFT" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=6" />
+      </node>
     </node>
     <node concept="1OcJTe" id="1VomLPHLHJe" role="33wtHG">
       <property role="TrG5h" value="de bevoegdheid (recht) om de gewenste spreiding van de uren te wijzigen" />
@@ -3218,6 +3245,9 @@
       </node>
       <node concept="2GMpOH" id="3H8312ny5eU" role="2GMpPI">
         <property role="TrG5h" value="datum acceptatie verzoek door werkgever" />
+      </node>
+      <node concept="24H7r1" id="5XyrAiGGoFV" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=6" />
       </node>
     </node>
     <node concept="1OcJT1" id="28ifPi2C7HR" role="33wtHG">
@@ -3240,6 +3270,9 @@
       <node concept="2GMpOH" id="3H8312ny5eW" role="2GMpPI">
         <property role="TrG5h" value="datum inwilligen of afwijzen verzoek" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGGoFX" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=7" />
+      </node>
     </node>
     <node concept="1OcJT1" id="28ifPi2C7Jc" role="33wtHG">
       <property role="TrG5h" value="verplichting tot het mededelen van de redenen" />
@@ -3260,6 +3293,9 @@
       </node>
       <node concept="2GMpOH" id="3H8312ny5gS" role="2GMpPI">
         <property role="TrG5h" value="datum afwijzen of datum wijzigen van de spreiding" />
+      </node>
+      <node concept="24H7r1" id="5XyrAiGGoFZ" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=7" />
       </node>
     </node>
     <node concept="2wG$dv" id="28ifPi2CnIw" role="3D8HBx">
@@ -3306,6 +3342,9 @@
           <property role="2B78LE" value="1000" />
         </node>
       </node>
+      <node concept="24H7r1" id="5XyrAiGGoG3" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=8" />
+      </node>
     </node>
     <node concept="2wG$dv" id="28ifPi2CnV3" role="3D8HBx">
       <property role="TrG5h" value="vermeerdering arbeidsduur" />
@@ -3350,6 +3389,9 @@
           <property role="2B78L_" value="1" />
           <property role="2B78LE" value="1000" />
         </node>
+      </node>
+      <node concept="24H7r1" id="5XyrAiGGoG5" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=8" />
       </node>
     </node>
     <node concept="1OcJVF" id="4pem8DK24rt" role="33xyji">
@@ -3533,6 +3575,9 @@
         </node>
         <node concept="LQl0D" id="146AQXT_NKR" role="LSO5p" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGEry4" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=1" />
+      </node>
     </node>
     <node concept="78D9j" id="2kDBhky6mxe" role="33xyji">
       <property role="3O3EMM" value="Accepteren van het verzoek" />
@@ -3628,6 +3673,9 @@
         </node>
         <node concept="LQl0D" id="146AQXT_NKO" role="LSO5p" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGEry6" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=4" />
+      </node>
     </node>
     <node concept="1OcJVF" id="4pem8DK2crJ" role="33xyji">
       <property role="TrG5h" value="Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing" />
@@ -3720,6 +3768,9 @@
         </node>
         <node concept="LQl0D" id="146AQXT_NKY" role="LSO5p" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGEry8" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=5" />
+      </node>
     </node>
     <node concept="1OcJVF" id="28ifPi2BQ3p" role="33xyji">
       <property role="TrG5h" value="Afwijzen van het verzoek" />
@@ -3785,6 +3836,9 @@
         </node>
         <node concept="LQl0D" id="146AQXT_NL6" role="LSO5p" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGErya" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=5" />
+      </node>
     </node>
     <node concept="1OcJVF" id="1Enheq_1aHm" role="33xyji">
       <property role="da7Q0" value="106" />
@@ -3822,6 +3876,9 @@
           <property role="2B78LE" value="2000" />
         </node>
         <node concept="LQl0D" id="146AQXT_NLd" role="LSO5p" />
+      </node>
+      <node concept="24H7r1" id="5XyrAiGEryc" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=5" />
       </node>
     </node>
     <node concept="1OcJVF" id="28ifPi2BQyF" role="33xyji">
@@ -3885,6 +3942,9 @@
         </node>
         <node concept="LQl0D" id="146AQXT_NLj" role="LSO5p" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGErye" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=6" />
+      </node>
     </node>
     <node concept="1OcJVF" id="1VomLPHLX4J" role="33xyji">
       <property role="TrG5h" value="Wijzigen van de spreiding van de uren" />
@@ -3938,6 +3998,9 @@
       <node concept="2LInXT" id="146AQXTBBP5" role="2LInYK">
         <ref role="2LInZ6" node="5u1YjWIljaR" resolve="arbeidsduurperiode van arbeidsovereenkomst" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGEryg" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=6" />
+      </node>
     </node>
     <node concept="1OcJVF" id="28ifPi2C7Fj" role="33xyji">
       <property role="TrG5h" value="Schriftelijk mededelen van de beslissing aan de werknemer" />
@@ -3969,6 +4032,9 @@
           <property role="2B78LE" value="2000" />
         </node>
         <node concept="LQl0D" id="146AQXTBBOO" role="LSO5p" />
+      </node>
+      <node concept="24H7r1" id="5XyrAiGEryi" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=7" />
       </node>
     </node>
     <node concept="1OcJVF" id="28ifPi2CKm1" role="33xyji">
@@ -4031,6 +4097,9 @@
         </node>
         <node concept="LQl0D" id="146AQXTBBOU" role="LSO5p" />
       </node>
+      <node concept="24H7r1" id="5XyrAiGEryk" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=7" />
+      </node>
     </node>
     <node concept="1OcJUm" id="MvzNsy$K4F" role="33xyji">
       <property role="TrG5h" value="de arbeidsduur wordt aangepast overeenkomstig het verzoek van de werknemer" />
@@ -4085,6 +4154,9 @@
         <property role="2B78LB" value="01" />
         <property role="2B78L_" value="07" />
         <property role="2B78LE" value="2000" />
+      </node>
+      <node concept="24H7r1" id="5XyrAiGGoG1" role="3NZlzL">
+        <property role="1k0emI" value="http://wetten.overheid.nl/jci1.3:c:BWBR0011173&amp;artikel=2&amp;lid=10" />
       </node>
     </node>
     <node concept="2B78Lw" id="4$mS69sSLbi" role="lX2K1">
