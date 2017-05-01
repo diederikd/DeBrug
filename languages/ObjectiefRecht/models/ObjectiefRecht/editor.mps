@@ -14119,5 +14119,21 @@
       <node concept="l2Vlx" id="5oIirjo3Qh" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="vbwdmzdf2S">
+    <property role="3GE5qa" value="Expressies" />
+    <ref role="1XX52x" to="3pw0:vbwdmzdf2H" resolve="IsNietGelijk" />
+    <node concept="3EZMnI" id="vbwdmzdf2U" role="2wV5jI">
+      <node concept="3F1sOY" id="vbwdmzdf2V" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:vbwdmzdf2I" resolve="expressie1" />
+      </node>
+      <node concept="3F0ifn" id="vbwdmzdf2W" role="3EZMnx">
+        <property role="3F0ifm" value="is niet gelijk aan" />
+      </node>
+      <node concept="3F1sOY" id="vbwdmzdf2X" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:vbwdmzdf2J" resolve="expressie2" />
+      </node>
+      <node concept="l2Vlx" id="vbwdmzdf2Y" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

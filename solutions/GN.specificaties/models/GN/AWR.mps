@@ -25,7 +25,7 @@
         <child id="3139957515586752450" name="rechtsbetrekkingen" index="1dND5V" />
       </concept>
       <concept id="3694879098862050844" name="Simulatie.structure.UitvoerbareRechtshandeling" flags="ng" index="3WXGrE">
-        <reference id="3694879098862050845" name="rechtshandeling" index="3WXGrF" />
+        <reference id="3694879098862050845" name="overgang" index="3WXGrF" />
       </concept>
     </language>
     <language id="f856d46f-3338-47a8-8a48-11e26bc535e0" name="Algemeen">
@@ -128,7 +128,7 @@
     </language>
   </registry>
   <node concept="1OcJVk" id="4NzHub3Ff8p">
-    <property role="TrG5h" value="AWR" />
+    <property role="TrG5h" value="Regels AWR" />
     <property role="lXnND" value="true" />
     <node concept="1OcJVF" id="32ed8Ah8VIF" role="33xyji">
       <property role="da7Q0" value="0000" />
@@ -403,7 +403,7 @@
   </node>
   <node concept="2B78xT" id="3oRnirXz4Cq">
     <property role="TrG5h" value="Casus AWR" />
-    <ref role="QjCDG" node="4NzHub3Ff8p" resolve="AWR" />
+    <ref role="QjCDG" node="4NzHub3Ff8p" resolve="Regels AWR" />
     <node concept="2B78KC" id="28MuYO0sXyQ" role="DGLbN">
       <property role="TrG5h" value="Piet" />
       <ref role="yqVAx" node="4NzHub3Ff8E" resolve="Inspecteur" />

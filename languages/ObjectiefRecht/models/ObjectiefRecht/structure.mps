@@ -2171,5 +2171,26 @@
       <ref role="20lvS9" to="gwk3:3SROZMUwUkX" resolve="URL" />
     </node>
   </node>
+  <node concept="1TIwiD" id="vbwdmzdf2H">
+    <property role="EcuMT" value="561684233592303789" />
+    <property role="3GE5qa" value="Expressies" />
+    <property role="TrG5h" value="IsNietGelijk" />
+    <property role="34LRSv" value="is niet gelijk aan" />
+    <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
+    <node concept="1TJgyj" id="vbwdmzdf2I" role="1TKVEi">
+      <property role="IQ2ns" value="561684233592303790" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressie1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
+    </node>
+    <node concept="1TJgyj" id="vbwdmzdf2J" role="1TKVEi">
+      <property role="IQ2ns" value="561684233592303791" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressie2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
+    </node>
+  </node>
 </model>
 

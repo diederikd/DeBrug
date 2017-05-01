@@ -146,7 +146,7 @@
     </language>
   </registry>
   <node concept="1OcJVk" id="5Bacij9tPhG">
-    <property role="TrG5h" value="Objectief AWB" />
+    <property role="TrG5h" value="Regels AWB (bellen bij bezwaar)" />
     <property role="lXnND" value="true" />
     <property role="I0$kN" value="true" />
     <property role="ddjTs" value="true" />
@@ -913,7 +913,7 @@
   </node>
   <node concept="2B78xT" id="5Bacij9tPqm">
     <property role="TrG5h" value="Subjectief AWB" />
-    <ref role="QjCDG" node="5Bacij9tPhG" resolve="Objectief AWB" />
+    <ref role="QjCDG" node="5Bacij9tPhG" resolve="Regels AWB (bellen bij bezwaar)" />
     <node concept="2B78KC" id="28MuYO0sXzN" role="DGLbN">
       <property role="TrG5h" value="Diederik" />
       <ref role="yqVAx" node="3d6QfrhoinX" resolve="Belanghebbende" />

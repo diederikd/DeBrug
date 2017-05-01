@@ -421,7 +421,7 @@
     </language>
   </registry>
   <node concept="1OcJVk" id="4ZpB41RnoMN">
-    <property role="TrG5h" value="Objectief Recht WAA" />
+    <property role="TrG5h" value="Regels WAA" />
     <property role="I0$kN" value="true" />
     <property role="ddjTs" value="true" />
     <node concept="eXoDf" id="6syAJDDQ44i" role="eXoSc">
@@ -4184,7 +4184,7 @@
   </node>
   <node concept="2B78xT" id="6c9haf45x5E">
     <property role="TrG5h" value="Subjectief WAA" />
-    <ref role="QjCDG" node="4ZpB41RnoMN" resolve="Objectief Recht WAA" />
+    <ref role="QjCDG" node="4ZpB41RnoMN" resolve="Regels WAA" />
     <node concept="2B78KC" id="28MuYO0n6cK" role="DGLbN">
       <property role="TrG5h" value="AZML" />
       <ref role="yqVAx" node="4ZpB41Rnx4z" resolve="werkgever" />

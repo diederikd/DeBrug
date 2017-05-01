@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gegevenshuishouding>
+    <rechtssubjecten naam='Belanghebbende' typeid='6606770165423411612'>
+        <instantie naam='Jan' id='6873177359993993479'>
+            <kenmerken>
+              <kenmerk id='6606770165423867141' naam='Naam'>Jan</kenmerk>
+              <kenmerk id='6606770165423867147' naam='Adres'>Zandweg 30, Utrecht</kenmerk>
+            </kenmerken>
+        </instantie>
+    </rechtssubjecten>
+    <rechtssubjecten naam='Bestuursorgaan' typeid='6606770165423411608'>
+        <instantie naam='Belastingdienst' id='6873177359993993541'>
+            <kenmerken>
+            </kenmerken>
+        </instantie>
+    </rechtssubjecten>
+    <onderwerpen naam='Aanvraag' typeid='6606770165423411622' >
+        <instantie naam='Schriftelijke aanvraag' id='6873177359993993610'>
+            <kenmerken>
+              <kenmerk id='6606770165423411628' naam='aanvrager'>6873177359993993752</kenmerk>
+              <kenmerk id='6606770165423867156' naam='dagtekening'></kenmerk>
+              <kenmerk id='6606770165423867168' naam='aanduiding van de beschikking'>beschikking</kenmerk>
+              <kenmerk id='6606770165423411838' naam='schriftelijk ingediend'>Ja</kenmerk>
+              <kenmerk id='6606770165423867355' naam='elektronisch ingediend'>Nee</kenmerk>
+              <kenmerk id='6606770165423867282' naam='benodigde gegevens'>Ja</kenmerk>
+              <kenmerk id='6606770165423867300' naam='bescheiden'>Ja</kenmerk>
+            </kenmerken>
+        </instantie>
+    </onderwerpen>
+    <rechtsbetrekkingen>
+        <instantie id='6873177359993993543'>
+          <geldigVan>2017-01-01T00:00</geldigVan>
+          <geldigTot></geldigTot>
+          <objectieveRechtsbetrekkingtypeid>6606770165423867115</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Optionele bevoegheid voor het indienen van een aanvraag</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>6873177359993993610</onderwerpid>
+          <rechtssubjectMetPlichtid>6873177359993993541</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>6873177359993993479</rechtssubjectMetRechtid>
+        </instantie>
+      </rechtsbetrekkingen>
+    <rechtshandelingen>
+      </rechtshandelingen>
+</gegevenshuishouding>

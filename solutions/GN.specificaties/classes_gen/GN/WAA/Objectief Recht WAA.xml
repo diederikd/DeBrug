@@ -11823,6 +11823,15 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                   <property name='name'>de latere datum van ingang wet of datum van indiensttredingdatum</property>
               </properties>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993899759</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=1</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
         <references>
           <reference role='rechtssubjectMetRecht'>
@@ -12050,6 +12059,15 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                   <property name='name'>datum waarop het overleg wordt gepleegd of uiterlijk een maand voor beoogde datum van ingang of datum van inwilliging of afwijzing</property>
               </properties>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993899761</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=4</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
         <references>
           <reference role='rechtssubjectMetRecht'>
@@ -12230,6 +12248,15 @@ en de omvang van de aanpassing</property>
                 </node>
               </children>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993899763</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=5</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
         <references>
           <reference role='onderwerp'>
@@ -12317,6 +12344,15 @@ tot het inwilligen van het verzoek te neutraliseren</property>
               <properties>
                   <property name='alias'></property>
                   <property name='name'>datum acceptatie verzoek door werkgever</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993899765</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=5</property>
+                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -12507,6 +12543,15 @@ overeenkomstig de wensen van de werknemer</property>
                 </node>
               </children>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993899767</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=6</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
         <references>
           <reference role='onderwerp'>
@@ -12596,6 +12641,15 @@ van de werknemer te neutraliseren.</property>
               <properties>
                   <property name='alias'></property>
                   <property name='name'>datum acceptatie verzoek door werkgever</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993899769</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=6</property>
+                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -12694,6 +12748,15 @@ overeenkomstig de wensen van de werknemer</nodename>
                   <property name='name'>datum acceptatie verzoek door werkgever</property>
               </properties>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993899771</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=6</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
         <references>
           <reference role='rechtssubjectMetRecht'>
@@ -12781,6 +12844,15 @@ overeenkomstig de wensen van de werknemer</nodename>
                   <property name='name'>datum inwilligen of afwijzen verzoek</property>
               </properties>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993899773</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=7</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
         <references>
           <reference role='rechtssubjectMetRecht'>
@@ -12866,6 +12938,15 @@ overeenkomstig de wensen van de werknemer</nodename>
               <properties>
                   <property name='alias'></property>
                   <property name='name'>datum afwijzen of datum wijzigen van de spreiding</property>
+              </properties>
+          </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993899775</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=7</property>
+                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -13860,6 +13941,15 @@ overeenkomstig de wensen van de werknemer</nodename>
                 </node>
               </children>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993387140</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=1</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
     </node>
     <node>
@@ -14244,6 +14334,15 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                     </properties>
                 </node>
               </children>
+          </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993387142</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=4</property>
+                  <property name='alias'></property>
+              </properties>
           </node>
         </children>
     </node>
@@ -14672,6 +14771,15 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                 </node>
               </children>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993387144</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=5</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
     </node>
     <node>
@@ -14997,6 +15105,15 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                 </node>
               </children>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993387146</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=5</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
     </node>
     <node>
@@ -15158,6 +15275,15 @@ van de werknemer te neutraliseren.</nodename>
                     </properties>
                 </node>
               </children>
+          </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993387148</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=5</property>
+                  <property name='alias'></property>
+              </properties>
           </node>
         </children>
     </node>
@@ -15436,6 +15562,15 @@ van de werknemer te neutraliseren.</nodename>
                 </node>
               </children>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993387150</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=6</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
     </node>
     <node>
@@ -15685,6 +15820,15 @@ van de werknemer te neutraliseren.</nodename>
                 </reference>
               </references>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993387152</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=6</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
     </node>
     <node>
@@ -15799,6 +15943,15 @@ van de werknemer te neutraliseren.</nodename>
                     </properties>
                 </node>
               </children>
+          </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993387154</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=7</property>
+                  <property name='alias'></property>
+              </properties>
           </node>
         </children>
     </node>
@@ -16070,6 +16223,15 @@ van de werknemer te neutraliseren.</nodename>
                 </node>
               </children>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993387156</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=7</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
     </node>
     <node>
@@ -16338,6 +16500,15 @@ van de werknemer te neutraliseren.</nodename>
                   <property name='alias'></property>
               </properties>
           </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993899777</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=10</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
         </children>
     </node>
 </rechtsgevolgveroorzakers>
@@ -16539,6 +16710,15 @@ van de werknemer te neutraliseren.</nodename>
                     </properties>
                 </node>
               </children>
+          </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993899779</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=8</property>
+                  <property name='alias'></property>
+              </properties>
           </node>
         </children>
     </node>
@@ -16747,6 +16927,15 @@ van de werknemer te neutraliseren.</nodename>
                     </properties>
                 </node>
               </children>
+          </node>
+          <node>
+            <noderole>url</noderole>
+            <nodetype>URL</nodetype>
+            <nodeid>6873177359993899781</nodeid>
+              <properties>
+                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=8</property>
+                  <property name='alias'></property>
+              </properties>
           </node>
         </children>
     </node>

@@ -83,7 +83,7 @@
     <node concept="2_DeV7" id="5hfcVvM625g" role="2_DdeM">
       <property role="TrG5h" value="WAA" />
       <ref role="2_CYdU" to="zznl:6EEavyms9IX" resolve="Gegevenshuishouding WAA" />
-      <ref role="2_CYdW" to="zznl:4ZpB41RnoMN" resolve="Objectief Recht WAA" />
+      <ref role="2_CYdW" to="zznl:4ZpB41RnoMN" resolve="Regels WAA" />
       <ref role="2_C4XF" to="zznl:4ZpB41RnoMO" resolve="werknemer" />
       <ref role="1wBX23" to="zznl:2IjnF__Ico$" resolve="Pieter" />
       <ref role="3oDP$I" node="7IoVO6zbs3I" resolve="Presentatie WAA" />
@@ -91,7 +91,7 @@
     <node concept="2_DeV7" id="5hfcVvM625i" role="2_DdeM">
       <property role="TrG5h" value="AWR" />
       <ref role="2_CYdU" to="1hf7:CRumIU2vtL" resolve="Gegevenshuishouding AWR" />
-      <ref role="2_CYdW" to="1hf7:4NzHub3Ff8p" resolve="AWR" />
+      <ref role="2_CYdW" to="1hf7:4NzHub3Ff8p" resolve="Regels AWR" />
       <ref role="2_C4XF" to="1hf7:4NzHub3Ff8y" resolve="Belastingplichtige" />
       <ref role="1wBX23" to="zznl:2IjnF__Ico$" resolve="Pieter" />
     </node>

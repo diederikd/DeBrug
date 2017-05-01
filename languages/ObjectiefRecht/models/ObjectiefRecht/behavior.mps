@@ -34,7 +34,6 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -245,43 +244,22 @@
               <node concept="3w_OXm" id="2mYdLn7TDVu" role="2OqNvi" />
             </node>
             <node concept="1eOMI4" id="28EoSe6vjk" role="3uHU7w">
-              <node concept="22lmx$" id="28EoSe6wsc" role="1eOMHV">
-                <node concept="2OqwBi" id="2mYdLn7TGxW" role="3uHU7B">
-                  <node concept="2OqwBi" id="2mYdLn7TFIw" role="2Oq$k0">
-                    <node concept="2OqwBi" id="2mYdLn7TEBM" role="2Oq$k0">
-                      <node concept="13iPFW" id="2mYdLn7TEuY" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="2mYdLn7TEOU" role="2OqNvi">
-                        <ref role="3Tt5mk" to="3pw0:4$mS69sS$iU" resolve="brongeldigVan" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="2mYdLn7TFXh" role="2OqNvi">
-                      <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="geefdatum" />
+              <node concept="2OqwBi" id="2mYdLn7TGxW" role="1eOMHV">
+                <node concept="2OqwBi" id="2mYdLn7TFIw" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2mYdLn7TEBM" role="2Oq$k0">
+                    <node concept="13iPFW" id="2mYdLn7TEuY" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2mYdLn7TEOU" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3pw0:4$mS69sS$iU" resolve="brongeldigVan" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="2mYdLn7THcF" role="2OqNvi">
-                    <ref role="37wK5l" to="28m1:~LocalDate.isBefore(java.time.chrono.ChronoLocalDate):boolean" resolve="isBefore" />
-                    <node concept="37vLTw" id="2mYdLn7THjk" role="37wK5m">
-                      <ref role="3cqZAo" node="2mYdLn7Tmka" resolve="datum" />
-                    </node>
+                  <node concept="2qgKlT" id="2mYdLn7TFXh" role="2OqNvi">
+                    <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="geefdatum" />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="28EoSe6wBE" role="3uHU7w">
-                  <node concept="2OqwBi" id="28EoSe6wBF" role="2Oq$k0">
-                    <node concept="2OqwBi" id="28EoSe6wBG" role="2Oq$k0">
-                      <node concept="13iPFW" id="28EoSe6wBH" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="28EoSe6wBI" role="2OqNvi">
-                        <ref role="3Tt5mk" to="3pw0:4$mS69sS$iU" resolve="brongeldigVan" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="28EoSe6wBJ" role="2OqNvi">
-                      <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="geefdatum" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="28EoSe6wBK" role="2OqNvi">
-                    <ref role="37wK5l" to="28m1:~LocalDate.isEqual(java.time.chrono.ChronoLocalDate):boolean" resolve="isEqual" />
-                    <node concept="37vLTw" id="28EoSe6wBL" role="37wK5m">
-                      <ref role="3cqZAo" node="2mYdLn7Tmka" resolve="datum" />
-                    </node>
+                <node concept="liA8E" id="2mYdLn7THcF" role="2OqNvi">
+                  <ref role="37wK5l" to="28m1:~LocalDate.isBefore(java.time.chrono.ChronoLocalDate):boolean" resolve="isBefore" />
+                  <node concept="37vLTw" id="2mYdLn7THjk" role="37wK5m">
+                    <ref role="3cqZAo" node="2mYdLn7Tmka" resolve="datum" />
                   </node>
                 </node>
               </node>
@@ -303,7 +281,26 @@
               </node>
             </node>
           </node>
-          <node concept="1Wc70l" id="2mYdLn7TSs2" role="3clFbw">
+          <node concept="1Wc70l" id="74PGmraXJvY" role="3clFbw">
+            <node concept="2OqwBi" id="2mYdLn7TQDe" role="3uHU7B">
+              <node concept="2OqwBi" id="2mYdLn7TPAT" role="2Oq$k0">
+                <node concept="2OqwBi" id="2mYdLn7TP1s" role="2Oq$k0">
+                  <node concept="13iPFW" id="2mYdLn7TOPr" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="2mYdLn7TPjs" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3pw0:4$mS69sS$iU" resolve="brongeldigVan" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="2mYdLn7TQ4N" role="2OqNvi">
+                  <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="geefdatum" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2mYdLn7TRV_" role="2OqNvi">
+                <ref role="37wK5l" to="28m1:~LocalDate.isBefore(java.time.chrono.ChronoLocalDate):boolean" resolve="isBefore" />
+                <node concept="37vLTw" id="2mYdLn7TS1Y" role="37wK5m">
+                  <ref role="3cqZAo" node="2mYdLn7Tmka" resolve="datum" />
+                </node>
+              </node>
+            </node>
             <node concept="2OqwBi" id="2mYdLn7TUzJ" role="3uHU7w">
               <node concept="2OqwBi" id="2mYdLn7TTC_" role="2Oq$k0">
                 <node concept="2OqwBi" id="2mYdLn7TSNS" role="2Oq$k0">
@@ -323,47 +320,44 @@
                 </node>
               </node>
             </node>
-            <node concept="1eOMI4" id="28EoSe6xI0" role="3uHU7B">
-              <node concept="22lmx$" id="28EoSe6yhJ" role="1eOMHV">
-                <node concept="2OqwBi" id="2mYdLn7TQDe" role="3uHU7B">
-                  <node concept="2OqwBi" id="2mYdLn7TPAT" role="2Oq$k0">
-                    <node concept="2OqwBi" id="2mYdLn7TP1s" role="2Oq$k0">
-                      <node concept="13iPFW" id="2mYdLn7TOPr" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="2mYdLn7TPjs" role="2OqNvi">
-                        <ref role="3Tt5mk" to="3pw0:4$mS69sS$iU" resolve="brongeldigVan" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="2mYdLn7TQ4N" role="2OqNvi">
-                      <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="geefdatum" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="2mYdLn7TRV_" role="2OqNvi">
-                    <ref role="37wK5l" to="28m1:~LocalDate.isBefore(java.time.chrono.ChronoLocalDate):boolean" resolve="isBefore" />
-                    <node concept="37vLTw" id="2mYdLn7TS1Y" role="37wK5m">
-                      <ref role="3cqZAo" node="2mYdLn7Tmka" resolve="datum" />
-                    </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="74PGmraXK$w" role="3cqZAp">
+          <node concept="3clFbS" id="74PGmraXK$y" role="3clFbx">
+            <node concept="3cpWs6" id="74PGmrblNdW" role="3cqZAp">
+              <node concept="3clFbT" id="74PGmrblNem" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="74PGmraXNEh" role="3clFbw">
+            <node concept="2OqwBi" id="74PGmraXQqN" role="3uHU7w">
+              <node concept="2OqwBi" id="74PGmraXOLs" role="2Oq$k0">
+                <node concept="2OqwBi" id="74PGmraXOew" role="2Oq$k0">
+                  <node concept="13iPFW" id="74PGmraXO5w" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="74PGmraXOrO" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3pw0:4$mS69sS$iU" resolve="brongeldigVan" />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="28EoSe6yt$" role="3uHU7w">
-                  <node concept="2OqwBi" id="28EoSe6yt_" role="2Oq$k0">
-                    <node concept="2OqwBi" id="28EoSe6ytA" role="2Oq$k0">
-                      <node concept="13iPFW" id="28EoSe6ytB" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="28EoSe6ytC" role="2OqNvi">
-                        <ref role="3Tt5mk" to="3pw0:4$mS69sS$iU" resolve="brongeldigVan" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="28EoSe6ytD" role="2OqNvi">
-                      <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="geefdatum" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="28EoSe6ytE" role="2OqNvi">
-                    <ref role="37wK5l" to="28m1:~LocalDate.isEqual(java.time.chrono.ChronoLocalDate):boolean" resolve="isEqual" />
-                    <node concept="37vLTw" id="28EoSe6ytF" role="37wK5m">
-                      <ref role="3cqZAo" node="2mYdLn7Tmka" resolve="datum" />
-                    </node>
-                  </node>
+                <node concept="2qgKlT" id="74PGmraXPaE" role="2OqNvi">
+                  <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="geefdatum" />
                 </node>
               </node>
+              <node concept="liA8E" id="74PGmraXRE4" role="2OqNvi">
+                <ref role="37wK5l" to="28m1:~LocalDate.isEqual(java.time.chrono.ChronoLocalDate):boolean" resolve="isEqual" />
+                <node concept="37vLTw" id="74PGmraXRUs" role="37wK5m">
+                  <ref role="3cqZAo" node="2mYdLn7Tmka" resolve="datum" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="74PGmraXMri" role="3uHU7B">
+              <node concept="2OqwBi" id="74PGmraXLr8" role="2Oq$k0">
+                <node concept="13iPFW" id="74PGmraXL1k" role="2Oq$k0" />
+                <node concept="3TrEf2" id="74PGmraXM7H" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3pw0:4$mS69sS$iW" resolve="brongeldigTot" />
+                </node>
+              </node>
+              <node concept="3w_OXm" id="74PGmraXNaU" role="2OqNvi" />
             </node>
           </node>
         </node>

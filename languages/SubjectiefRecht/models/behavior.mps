@@ -250,6 +250,45 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="74PGmraWNnj" role="3cqZAp">
+          <node concept="3clFbS" id="74PGmraWNnl" role="3clFbx">
+            <node concept="3cpWs6" id="74PGmraWTM_" role="3cqZAp">
+              <node concept="3clFbT" id="74PGmraWTMZ" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="74PGmraWPUS" role="3clFbw">
+            <node concept="2OqwBi" id="74PGmraWRYg" role="3uHU7w">
+              <node concept="2OqwBi" id="74PGmraWQV_" role="2Oq$k0">
+                <node concept="2OqwBi" id="74PGmraWQlp" role="2Oq$k0">
+                  <node concept="13iPFW" id="74PGmraWQb_" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="74PGmraWQ$l" role="2OqNvi">
+                    <ref role="3Tt5mk" to="gcgs:6c9haf45szd" resolve="geldigVan" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="74PGmraWRkU" role="2OqNvi">
+                  <ref role="37wK5l" to="rwnv:5riiL_BUVyA" resolve="geefDatumTijd" />
+                </node>
+              </node>
+              <node concept="liA8E" id="74PGmraWTuf" role="2OqNvi">
+                <ref role="37wK5l" to="28m1:~LocalDateTime.isEqual(java.time.chrono.ChronoLocalDateTime):boolean" resolve="isEqual" />
+                <node concept="37vLTw" id="74PGmraWT_R" role="37wK5m">
+                  <ref role="3cqZAo" node="2mYdLn7Tmka" resolve="datumtijd" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="74PGmraWOQk" role="3uHU7B">
+              <node concept="2OqwBi" id="74PGmraWNW2" role="2Oq$k0">
+                <node concept="13iPFW" id="74PGmraWNCq" role="2Oq$k0" />
+                <node concept="3TrEf2" id="74PGmraWOx7" role="2OqNvi">
+                  <ref role="3Tt5mk" to="gcgs:6c9haf45szk" resolve="geldigTot" />
+                </node>
+              </node>
+              <node concept="3w_OXm" id="74PGmraWPrq" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="2mYdLn7TI_8" role="3cqZAp">
           <node concept="3clFbT" id="2mYdLn7TIIr" role="3cqZAk">
             <property role="3clFbU" value="false" />

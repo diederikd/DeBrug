@@ -251,6 +251,14 @@ public class Interpreter {
       }
     }
     {
+      final SNode enumeratieWaarde = waarde;
+      if (SNodeOperations.isInstanceOf(enumeratieWaarde, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7da9e4c64537e68L, "ObjectiefRecht.structure.EnumeratieWaarde"))) {
+        Interpreter.voegBerichtToe("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(enumeratieWaarde));
+        return Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(enumeratieWaarde);
+      }
+    }
+
+    {
       final SNode meervoudigeObjectWaarde = waarde;
       if (SNodeOperations.isInstanceOf(meervoudigeObjectWaarde, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba22fL, "ObjectiefRecht.structure.MeervoudigeObjectWaarde"))) {
         Interpreter.voegBerichtToe("Waarde van variabele : " + Waarde__BehaviorDescriptor.GeefWaardeString_idFzw$g_H4hz.invoke(meervoudigeObjectWaarde));
