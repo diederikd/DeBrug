@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <regelingen>
-  <regeling naam='WAA' gghh='Gegevenshuishouding WAA.xml' regels='Objectief Recht WAA.xml' presentatie='Presentatie WAA.xml' roltype='werknemer' />
-  <regeling naam='AWR' gghh='Gegevenshuishouding AWR.xml' regels='AWR.xml' presentatie='.xml' roltype='Belastingplichtige' />
+  <regeling naam='WAA' gghh='Gegevenshuishouding WAA.xml' regels='Regels WAA.xml' presentatie='Presentatie WAA.xml' roltype='werknemer' />
+  <regeling naam='AWR' gghh='Gegevenshuishouding AWR.xml' regels='Regels AWR.xml' presentatie='.xml' roltype='Belastingplichtige' />
 </regelingen>

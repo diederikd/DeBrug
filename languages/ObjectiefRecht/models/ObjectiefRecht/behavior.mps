@@ -2309,8 +2309,38 @@
             <node concept="2jxLKc" id="3FnOwJNU89F" role="1tU5fm" />
           </node>
         </node>
-        <node concept="Jncv_" id="3FnOwJNU89G" role="3cqZAp">
+        <node concept="Jncv_" id="7vlBvUdfS$G" role="3cqZAp">
           <ref role="JncvD" to="3pw0:2kDBhky2KX6" resolve="HandelingZonderRechtsgevolg" />
+          <node concept="13iPFW" id="7vlBvUdfS$H" role="JncvB" />
+          <node concept="3clFbS" id="7vlBvUdfS$I" role="Jncv$">
+            <node concept="3clFbF" id="7vlBvUdfS$J" role="3cqZAp">
+              <node concept="37vLTI" id="7vlBvUdfS$K" role="3clFbG">
+                <node concept="2OqwBi" id="7vlBvUdfS$L" role="37vLTx">
+                  <node concept="2OqwBi" id="7vlBvUdfS$M" role="2Oq$k0">
+                    <node concept="Jnkvi" id="7vlBvUdfS$N" role="2Oq$k0">
+                      <ref role="1M0zk5" node="7vlBvUdfS$R" resolve="handelingZonderRechtsgevolg" />
+                    </node>
+                    <node concept="3TrEf2" id="7vlBvUdfS$O" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3pw0:2kDBhky2Lew" resolve="actor" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="7vlBvUdfS$P" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3pw0:20D4HrzFFXC" resolve="rechtssubject" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="7vlBvUdfS$Q" role="37vLTJ">
+                  <ref role="3cqZAo" node="3FnOwJNU89q" resolve="actor" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="7vlBvUdfS$R" role="JncvA">
+            <property role="TrG5h" value="handelingZonderRechtsgevolg" />
+            <node concept="2jxLKc" id="7vlBvUdfS$S" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="Jncv_" id="3FnOwJNU89G" role="3cqZAp">
+          <ref role="JncvD" to="3pw0:3GpI$sPmCZA" resolve="OvergangZonderRechtsgevolg" />
           <node concept="13iPFW" id="3FnOwJNU89H" role="JncvB" />
           <node concept="3clFbS" id="3FnOwJNU89I" role="Jncv$">
             <node concept="3clFbF" id="3FnOwJNU89J" role="3cqZAp">
@@ -2318,13 +2348,13 @@
                 <node concept="2OqwBi" id="3FnOwJNU89M" role="37vLTx">
                   <node concept="2OqwBi" id="3FnOwJNU89N" role="2Oq$k0">
                     <node concept="Jnkvi" id="3FnOwJNU89O" role="2Oq$k0">
-                      <ref role="1M0zk5" node="3FnOwJNU89T" resolve="handelingZonderRechtsgevolg" />
+                      <ref role="1M0zk5" node="3FnOwJNU89T" resolve="overgangZonderRechtsgevolg" />
                     </node>
-                    <node concept="3TrEf2" id="3FnOwJNU89P" role="2OqNvi">
-                      <ref role="3Tt5mk" to="3pw0:2kDBhky2Lew" resolve="actor" />
+                    <node concept="3TrEf2" id="7vlBvUdfTeP" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3pw0:7mDqhOkGMtS" resolve="actor" />
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="3FnOwJNU89Q" role="2OqNvi">
+                  <node concept="3TrEf2" id="7vlBvUdfTv$" role="2OqNvi">
                     <ref role="3Tt5mk" to="3pw0:20D4HrzFFXC" resolve="rechtssubject" />
                   </node>
                 </node>
@@ -2335,7 +2365,7 @@
             </node>
           </node>
           <node concept="JncvC" id="3FnOwJNU89T" role="JncvA">
-            <property role="TrG5h" value="handelingZonderRechtsgevolg" />
+            <property role="TrG5h" value="overgangZonderRechtsgevolg" />
             <node concept="2jxLKc" id="3FnOwJNU89U" role="1tU5fm" />
           </node>
         </node>

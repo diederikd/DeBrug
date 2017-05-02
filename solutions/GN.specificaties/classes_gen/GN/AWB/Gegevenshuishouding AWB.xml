@@ -7,23 +7,46 @@
               <kenmerk id='6606770165423867147' naam='Adres'>Zandweg 30, Utrecht</kenmerk>
             </kenmerken>
         </instantie>
+        <instantie naam='Piet' id='8157621355105742867'>
+            <kenmerken>
+              <kenmerk id='6606770165423867141' naam='Naam'>Piet</kenmerk>
+              <kenmerk id='6606770165423867147' naam='Adres'>Landweg 18, Amersfoort</kenmerk>
+            </kenmerken>
+        </instantie>
     </rechtssubjecten>
     <rechtssubjecten naam='Bestuursorgaan' typeid='6606770165423411608'>
         <instantie naam='Belastingdienst' id='6873177359993993541'>
             <kenmerken>
             </kenmerken>
         </instantie>
+        <instantie naam='UWV' id='8157621355105742914'>
+            <kenmerken>
+            </kenmerken>
+        </instantie>
     </rechtssubjecten>
     <onderwerpen naam='Aanvraag' typeid='6606770165423411622' >
-        <instantie naam='Schriftelijke aanvraag' id='6873177359993993610'>
+        <instantie naam='Schriftelijke aanvraag' id='8157621355109259868'>
             <kenmerken>
-              <kenmerk id='6606770165423411628' naam='aanvrager'>6873177359993993752</kenmerk>
+              <kenmerk id='6606770165423411628' naam='aanvrager'>8157621355109260335</kenmerk>
               <kenmerk id='6606770165423867156' naam='dagtekening'></kenmerk>
               <kenmerk id='6606770165423867168' naam='aanduiding van de beschikking'>beschikking</kenmerk>
+              <kenmerk id='8157621355109259793' naam='taal'>Nederlands</kenmerk>
               <kenmerk id='6606770165423411838' naam='schriftelijk ingediend'>Ja</kenmerk>
               <kenmerk id='6606770165423867355' naam='elektronisch ingediend'>Nee</kenmerk>
               <kenmerk id='6606770165423867282' naam='benodigde gegevens'>Ja</kenmerk>
               <kenmerk id='6606770165423867300' naam='bescheiden'>Ja</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Schriftelijke aanvraag in het engels' id='8157621355109260542'>
+            <kenmerken>
+              <kenmerk id='6606770165423411628' naam='aanvrager'>8157621355109262181</kenmerk>
+              <kenmerk id='6606770165423867156' naam='dagtekening'></kenmerk>
+              <kenmerk id='6606770165423867168' naam='aanduiding van de beschikking'>beschikking</kenmerk>
+              <kenmerk id='8157621355109259793' naam='taal'>Engels</kenmerk>
+              <kenmerk id='6606770165423411838' naam='schriftelijk ingediend'>Ja</kenmerk>
+              <kenmerk id='6606770165423867355' naam='elektronisch ingediend'>Nee</kenmerk>
+              <kenmerk id='6606770165423867282' naam='benodigde gegevens'>ja</kenmerk>
+              <kenmerk id='6606770165423867300' naam='bescheiden'>ja</kenmerk>
             </kenmerken>
         </instantie>
     </onderwerpen>
@@ -33,11 +56,133 @@
           <geldigTot></geldigTot>
           <objectieveRechtsbetrekkingtypeid>6606770165423867115</objectieveRechtsbetrekkingtypeid>
           <objectieveRechtsbetrekkingtypenaam>Optionele bevoegheid voor het indienen van een aanvraag</objectieveRechtsbetrekkingtypenaam>
-          <onderwerpid>6873177359993993610</onderwerpid>
+          <onderwerpid>8157621355109259868</onderwerpid>
           <rechtssubjectMetPlichtid>6873177359993993541</rechtssubjectMetPlichtid>
           <rechtssubjectMetRechtid>6873177359993993479</rechtssubjectMetRechtid>
         </instantie>
+        <instantie id='8157621355101216518'>
+          <geldigVan>2017-01-01T00:05:20</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>8157621355101216508</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Indienen aanvraag</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>6606770165423867335</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>8157621355109259868</onderwerpid>
+          <rechtssubjectMetPlichtid>8157621355105742867</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>8157621355105742914</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='8157621355101216526'>
+          <geldigVan>2017-01-01T00:05:20</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>8157621355101216508</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Indienen aanvraag</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>6606770165423867562</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Optionele bevoegdheid om de aanvraag niet te behandelen</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>8157621355109259868</onderwerpid>
+          <rechtssubjectMetPlichtid>8157621355105742867</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>8157621355105742914</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='561684233595733332'>
+          <geldigVan>2017-04-01T02:17:52</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>561684233595733322</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Indienen aanvraag</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>6606770165423867335</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>8157621355109260542</onderwerpid>
+          <rechtssubjectMetPlichtid>6873177359993993479</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>6873177359993993541</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='561684233595733340'>
+          <geldigVan>2017-04-01T02:17:52</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>561684233595733322</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Indienen aanvraag</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>6606770165423867562</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Optionele bevoegdheid om de aanvraag niet te behandelen</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>8157621355109260542</onderwerpid>
+          <rechtssubjectMetPlichtid>6873177359993993479</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>6873177359993993541</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='561684233595733348'>
+          <geldigVan>2017-04-01T02:17:52</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>561684233595733322</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Indienen aanvraag</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>6606770165423867219</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Verplichte bevoegdheid om op de aanvraag te beslissen</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>8157621355109260542</onderwerpid>
+          <rechtssubjectMetPlichtid>6873177359993993479</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>6873177359993993541</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='561684233595733356'>
+          <geldigVan>2017-04-01T02:17:52</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>561684233595733322</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Indienen aanvraag</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>6873177359993993287</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Verplichte bevoegdheid tot het vergaren van de nodige kennis</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>8157621355109260542</onderwerpid>
+          <rechtssubjectMetPlichtid>6873177359993993479</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>6873177359993993541</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='561684233595733364'>
+          <geldigVan>2017-04-01T02:17:52</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>561684233595733322</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Indienen aanvraag</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>6606770165423868048</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Optionele bevoegdheid om te vragen naar een samenvatting van de aanvraag 
+of een van de daarbij behorende gegevens of bescheiden</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>8157621355109260542</onderwerpid>
+          <rechtssubjectMetPlichtid>6873177359993993479</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>6873177359993993541</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='561684233595733372'>
+          <geldigVan>2017-04-01T02:17:52</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>561684233595733322</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Indienen aanvraag</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>6606770165423868011</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Optionele bevoegdheid om te vragen naar een vertaling van de aanvraag 
+of een van de daarbij behorende gegevens of bescheiden</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>8157621355109260542</onderwerpid>
+          <rechtssubjectMetPlichtid>6873177359993993479</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>6873177359993993541</rechtssubjectMetRechtid>
+        </instantie>
       </rechtsbetrekkingen>
     <rechtshandelingen>
+        <instantie id='8157621355101216508'>
+          <handelingObjectiefRechttypeid>6606770165423411795</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Indienen aanvraag</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2017-01-01T00:02:40</uitgevoerdop>
+          <actorid>8157621355105742867</actorid>
+          <onderwerpid>8157621355109259868</onderwerpid>
+          <rechtsbetrekkingid>6873177359993993543</rechtsbetrekkingid>
+        </instantie>
+        <instantie id='8157621355105741174'>
+          <handelingObjectiefRechttypeid>6606770165423411795</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Indienen aanvraag</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2017-04-01T00:02:43</uitgevoerdop>
+          <actorid>8157621355105742867</actorid>
+          <onderwerpid>8157621355109259868</onderwerpid>
+          <rechtsbetrekkingid>6873177359993993543</rechtsbetrekkingid>
+        </instantie>
+        <instantie id='8157621355109285557'>
+          <handelingObjectiefRechttypeid>6606770165423411795</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Indienen aanvraag</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2017-04-01T00:59:48</uitgevoerdop>
+          <actorid>8157621355105742867</actorid>
+          <onderwerpid>8157621355109259868</onderwerpid>
+          <rechtsbetrekkingid>6873177359993993543</rechtsbetrekkingid>
+        </instantie>
+        <instantie id='561684233595733322'>
+          <handelingObjectiefRechttypeid>6606770165423411795</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Indienen aanvraag</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2017-04-01T02:17:48</uitgevoerdop>
+          <actorid>6873177359993993479</actorid>
+          <onderwerpid>8157621355109260542</onderwerpid>
+          <rechtsbetrekkingid>561684233595733076</rechtsbetrekkingid>
+        </instantie>
       </rechtshandelingen>
 </gegevenshuishouding>

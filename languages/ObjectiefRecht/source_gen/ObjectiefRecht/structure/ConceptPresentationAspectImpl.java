@@ -91,7 +91,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_OptieUitvoerenHandeling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_OptioneleBevoegdheidOptioneleGehoudenheid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Overgang = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OvergangZonderRechtsgevolg = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_OvergangZonderRechtsgevolg = new ConceptPresentationBuilder().deprecated().create();
   private final ConceptPresentation props_PlusExpressie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RechtsSubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RechtsSubjectMetPlicht = new ConceptPresentationBuilder().create();

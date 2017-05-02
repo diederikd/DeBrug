@@ -65,6 +65,12 @@ public final class Overgang__BehaviorDescriptor extends BaseBHDescriptor {
         actor = SLinkOperations.getTarget(SLinkOperations.getTarget(handelingZonderRechtsgevolg, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25299d15220b0f46L, 0x25299d15220b13a0L, "actor")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aebf67L, 0x202912d6e3aebf68L, "rechtssubject"));
       }
     }
+    {
+      final SNode overgangZonderRechtsgevolg = __thisNode__;
+      if (SNodeOperations.isInstanceOf(overgangZonderRechtsgevolg, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a8fe6L, "ObjectiefRecht.structure.OvergangZonderRechtsgevolg"))) {
+        actor = SLinkOperations.getTarget(SLinkOperations.getTarget(overgangZonderRechtsgevolg, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a8fe6L, 0x75a9691d14b32778L, "actor")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aebf67L, 0x202912d6e3aebf68L, "rechtssubject"));
+      }
+    }
     return actor;
   }
 
