@@ -10,6 +10,7 @@ public class Visualiseer_ActionGroup extends GeneratedActionGroup {
     super("Visualiseer", ID);
     this.setIsInternal(false);
     this.setPopup(false);
-    Visualiseer_ActionGroup.this.addAction("VisualiserPlugin.plugin.Visualiseer_Action");
+    Visualiseer_ActionGroup.this.addAction("VisualiserPlugin.plugin.VisualiseerToestandenEnOvergangen_Action");
+    Visualiseer_ActionGroup.this.addAction("VisualiserPlugin.plugin.VisualiseerToestanden_Action");
   }
 }

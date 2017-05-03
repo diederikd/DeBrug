@@ -7,8 +7,8 @@ import java.io.PrintWriter;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import com.intellij.openapi.project.Project;
@@ -21,12 +21,12 @@ import java.io.FileNotFoundException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class GraphVizFile {
+public class VisualisatieToestandenEnOvergangen {
   public void WriteToFile(SNode context) {
     System.out.println("Initialiseer bestand voor context: " + context);
     PrintWriter gvWriter = InitialiseFile();
-    gvWriter.append("## Graphviz file gegenereerd vanuit MPS" + "\n");
-    gvWriter.append("##-------------------------------------" + "\n");
+    gvWriter.append("## Graphviz file voor toestanden en overgangen gegenereerd vanuit MPS" + "\n");
+    gvWriter.append("##-------------------------------------------------------------------" + "\n");
     gvWriter.append("\n");
     gvWriter.append("\n");
     gvWriter.append("##Command to produce the output: neato -Tpng thisfile > thisfile.png" + "\n");
@@ -37,7 +37,18 @@ public class GraphVizFile {
     // Eerst alle overgangen wegschrijven 
     gvWriter.append("node [shape=circle, fixedsize=true, width=2];");
     for (SNode overgang : ListSequence.fromList(SLinkOperations.getChildren(context, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, 0x202912d6e3af3604L, "overgangen")))) {
-      gvWriter.append("\"" + addCRLFtoString(SPropertyOperations.getString(overgang, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + "; ");
+      {
+        final SNode handelingZonderRechtsgevolg = overgang;
+        if (SNodeOperations.isInstanceOf(handelingZonderRechtsgevolg, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25299d15220b0f46L, "ObjectiefRecht.structure.HandelingZonderRechtsgevolg"))) {
+          gvWriter.append("\"" + addCRLFtoString(SPropertyOperations.getString(handelingZonderRechtsgevolg, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + "[color=lightgray, style=filled]" + "; ");
+        }
+      }
+      {
+        final SNode rechtshandeling = overgang;
+        if (SNodeOperations.isInstanceOf(rechtshandeling, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"))) {
+          gvWriter.append("\"" + addCRLFtoString(SPropertyOperations.getString(rechtshandeling, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + "; ");
+        }
+      }
     }
     gvWriter.append("\n");
     // Nu alle toestanden wegschrijven 
@@ -52,6 +63,12 @@ public class GraphVizFile {
           if (SPropertyOperations.getBoolean(rechtsbetrekking, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7da8818L, "initieel")) == true) {
             gvWriter.append("\"" + addCRLFtoString(SPropertyOperations.getString(rechtsbetrekking, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + "[color=lightblue, style=filled]" + "; ");
           }
+        }
+      }
+      {
+        final SNode betrekking = toestand;
+        if (SNodeOperations.isInstanceOf(betrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a8fe7L, "ObjectiefRecht.structure.Betrekking"))) {
+          gvWriter.append("\"" + addCRLFtoString(SPropertyOperations.getString(betrekking, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + "[color=lightgray, style=filled]" + "; ");
         }
       }
     }
@@ -94,20 +111,48 @@ public class GraphVizFile {
           WriteRelatie(gvWriter, addCRLFtoString(SPropertyOperations.getString(zwakkeAanspraakZwakkePlicht, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))), addCRLFtoString(SPropertyOperations.getString(SLinkOperations.getTarget(zwakkeAanspraakZwakkePlicht, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d96L, 0x3bfdb51c6ba54be5L, "verplichtingTot")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))));
         }
       }
+      {
+        final SNode betrekking = toestand;
+        if (SNodeOperations.isInstanceOf(betrekking, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a8fe7L, "ObjectiefRecht.structure.Betrekking"))) {
+          WriteRelatie(gvWriter, addCRLFtoString(SPropertyOperations.getString(betrekking, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))), addCRLFtoString(SPropertyOperations.getString(SLinkOperations.getTarget(betrekking, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a8fe7L, 0x75a9691d14834680L, "overgang")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))));
+        }
+      }
+
       gvWriter.append("\n");
     }
 
-    for (SNode rechtspositieveranderaar : ListSequence.fromList(SLinkOperations.getChildren(context, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, 0x202912d6e3af3604L, "overgangen")))) {
-      for (SNode rechtsbetrekking : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(rechtspositieveranderaar, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x202912d6e3ac6d26L, "heeftAlsGevolg")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d77L, 0x611073d615228d78L, "NieuweRechtsbetrekkingen"))).where(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return (SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aabf26L, 0x202912d6e3aabf27L, "rechtsbetrekking")) != null);
+    for (SNode overgang : ListSequence.fromList(SLinkOperations.getChildren(context, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, 0x202912d6e3af3604L, "overgangen")))) {
+      {
+        final SNode rechtshandeling = overgang;
+        if (SNodeOperations.isInstanceOf(rechtshandeling, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"))) {
+          for (SNode rechtsbetrekking : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(rechtshandeling, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x202912d6e3ac6d26L, "heeftAlsGevolg")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d77L, 0x611073d615228d78L, "NieuweRechtsbetrekkingen"))).where(new IWhereFilter<SNode>() {
+            public boolean accept(SNode it) {
+              return (SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aabf26L, 0x202912d6e3aabf27L, "rechtsbetrekking")) != null);
+            }
+          }).select(new ISelector<SNode, SNode>() {
+            public SNode select(SNode it) {
+              return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aabf26L, 0x202912d6e3aabf27L, "rechtsbetrekking"));
+            }
+          })) {
+            gvWriter.append("\"" + addCRLFtoString(SPropertyOperations.getString(overgang, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + "->" + "\"" + addCRLFtoString(SPropertyOperations.getString(rechtsbetrekking, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + ";" + "\n");
+          }
         }
-      }).select(new ISelector<SNode, SNode>() {
-        public SNode select(SNode it) {
-          return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aabf26L, 0x202912d6e3aabf27L, "rechtsbetrekking"));
+      }
+      {
+        final SNode handelingZonderRechtsgevolg = overgang;
+        if (SNodeOperations.isInstanceOf(handelingZonderRechtsgevolg, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25299d15220b0f46L, "ObjectiefRecht.structure.HandelingZonderRechtsgevolg"))) {
+          for (SNode rechtsbetrekking : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(handelingZonderRechtsgevolg, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x202912d6e3ac6d26L, "heeftAlsGevolg")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d77L, 0x611073d615228d78L, "NieuweRechtsbetrekkingen"))).where(new IWhereFilter<SNode>() {
+            public boolean accept(SNode it) {
+              return (SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aabf26L, 0x202912d6e3aabf27L, "rechtsbetrekking")) != null);
+            }
+          }).select(new ISelector<SNode, SNode>() {
+            public SNode select(SNode it) {
+              return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aabf26L, 0x202912d6e3aabf27L, "rechtsbetrekking"));
+            }
+          })) {
+            gvWriter.append("\"" + addCRLFtoString(SPropertyOperations.getString(overgang, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + "->" + "\"" + addCRLFtoString(SPropertyOperations.getString(rechtsbetrekking, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + ";" + "\n");
+          }
         }
-      })) {
-        gvWriter.append("\"" + addCRLFtoString(SPropertyOperations.getString(rechtspositieveranderaar, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + "->" + "\"" + addCRLFtoString(SPropertyOperations.getString(rechtsbetrekking, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam"))) + "\"" + ";" + "\n");
       }
     }
 

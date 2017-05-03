@@ -13,6 +13,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Gegevenshuishouding = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Informatiepositie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Simulatie = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae782faL, "casus"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0xa37796bba047244L, "gegevenshuishouding"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae8257fL, "rechtssubject1"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x1ed85b1d6dac641fL, "rechtssubject2")).create();
+  private final ConceptPresentation props_UitTeVoerenDialoog = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_UitTeVoerenHandeling = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935fL, "actor"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935aL, "overgang"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL, "onderwerp")).create();
   private final ConceptPresentation props_UitvoerbareRechtshandeling = new ConceptPresentationBuilder().create();
 
@@ -28,8 +29,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 2:
         return props_Simulatie;
       case 3:
-        return props_UitTeVoerenHandeling;
+        return props_UitTeVoerenDialoog;
       case 4:
+        return props_UitTeVoerenHandeling;
+      case 5:
         return props_UitvoerbareRechtshandeling;
     }
     throw new IllegalStateException("Unknown concept " + c);

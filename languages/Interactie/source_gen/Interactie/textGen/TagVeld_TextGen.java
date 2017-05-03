@@ -13,9 +13,9 @@ public class TagVeld_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
-    tgs.append("<tag>");
+    tgs.append("<tag naam='");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x158b926d34d8927L, 0x158b926d34d8928L, "text")));
-    tgs.append("</tag>");
+    tgs.append("'/>");
     tgs.newLine();
   }
 }

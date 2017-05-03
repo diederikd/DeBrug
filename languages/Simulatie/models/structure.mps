@@ -11,6 +11,7 @@
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" />
     <import index="tpdt" ref="r:00000000-0000-4000-0000-011c895902dd(jetbrains.mps.baseLanguage.blTypes.structure)" />
     <import index="8ao0" ref="r:a8d19e5a-1adb-46c8-9dd2-bdcc30f01a5e(Algemeen.structure)" />
+    <import index="1jct" ref="r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -130,6 +131,12 @@
       <property role="20kJfa" value="uittevoerenhandeling" />
       <ref role="20lvS9" node="5RiSaxyNDdp" resolve="UitTeVoerenHandeling" />
     </node>
+    <node concept="1TJgyj" id="7vlBvUdAVQk" role="1TKVEi">
+      <property role="IQ2ns" value="8634981577175842196" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="uittevoerendialoog" />
+      <ref role="20lvS9" node="7vlBvUdAVQg" resolve="UitTeVoerenDialoog" />
+    </node>
     <node concept="1TJgyj" id="CRumITBpEO" role="1TKVEi">
       <property role="IQ2ns" value="736190567680940724" />
       <property role="20lmBu" value="aggregation" />
@@ -226,6 +233,17 @@
     </node>
     <node concept="PrWs8" id="5vursKQy70l" role="PzmwI">
       <ref role="PrY4T" to="gcgs:5vursKQxUxY" resolve="IEvaluatieResultaat" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7vlBvUdAVQg">
+    <property role="EcuMT" value="8634981577175842192" />
+    <property role="TrG5h" value="UitTeVoerenDialoog" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7vlBvUdAVQh" role="1TKVEi">
+      <property role="IQ2ns" value="8634981577175842193" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="dialoog" />
+      <ref role="20lvS9" to="1jct:6oAJqs3vQ6I" resolve="PresentatieDialoog" />
     </node>
   </node>
 </model>

@@ -53,10 +53,15 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 5:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new UitTeVoerenHandeling_Editor());
+            return Collections.<ConceptEditor>singletonList(new UitTeVoerenDialoog_Editor());
           }
           break;
         case 6:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new UitTeVoerenHandeling_Editor());
+          }
+          break;
+        case 7:
           if (true) {
             return Arrays.asList(new ConceptEditor[]{new UitvoerbareRechtshandeling_HandelingenRol1_Editor(), new UitvoerbareRechtshandeling_HandelingenRol2_Editor()});
           }
@@ -108,7 +113,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL, "Simulatie.structure.Gegevenshuishouding"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L, "Simulatie.structure.Informatiepositie"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, "Simulatie.structure.UitTeVoerenHandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.UitvoerbareRechtshandeling"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL, "Simulatie.structure.Gegevenshuishouding"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L, "Simulatie.structure.Informatiepositie"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, "Simulatie.structure.UitTeVoerenDialoog"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, "Simulatie.structure.UitTeVoerenHandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.UitvoerbareRechtshandeling"));
   private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0d = buildConceptIndices(MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"));
   private static String[] stringSwitchCases_xbvbvu_a0a0a0a3a0a3 = new String[]{"Simulatie.editor.imageDeleted", "Simulatie.editor.imageGreen", "Simulatie.editor.imageNew", "Simulatie.editor.imageRed"};
 }

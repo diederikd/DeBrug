@@ -1,5 +1,5 @@
-## Graphviz file gegenereerd vanuit MPS
-##-------------------------------------
+## Graphviz file voor toestanden en overgangen gegenereerd vanuit MPS
+##-------------------------------------------------------------------
 
 
 ##Command to produce the output: neato -Tpng thisfile > thisfile.png
@@ -8,7 +8,10 @@
 digraph diagram{
 rankdir=LR;
 node [shape=circle, fixedsize=true, width=2];"Indienen verzoek aanpassing
- arbeidsduur"; "Overleg 
+ arbeidsduur"; "Accepteren van
+ het verzoek"[color=lightgray, style=filled]; "Niet accepteren 
+van het verzoek"[color=lightgray, style=filled]; "Aanpassen van
+ het verzoek"[color=lightgray, style=filled]; "Overleg 
 plegen"; "Inwilligen
  verzoek"; "Afwijzen van 
 het verzoek"; "Inzetten immuniteit voor het
@@ -16,10 +19,15 @@ het verzoek"; "Inzetten immuniteit voor het
  van de uren"; "Wijzigen van de spreiding
  van de uren"; "Schriftelijk mededelen van de
  beslissing aan de werknemer"; "Mededelen van
- de redenen"; "aanpassen arbeidsduur overeenkomstig
- het verzoek"; 
+ de redenen"; 
 node [shape=box, fixedsize=true, width=3];"recht om verzoek aanpassing
- arbeidsduur in te dienen"[color=lightblue, style=filled]; "verplichting tot
+ arbeidsduur in te dienen"[color=lightblue, style=filled]; "Accepteren van
+ de handeling"; "Accepteren van
+ de handeling"[color=lightgray, style=filled]; "Niet accepteren van
+ de handeling"; "Niet accepteren van
+ de handeling"[color=lightgray, style=filled]; "Bevoegdheid om het verzoek
+ aan te passen"; "Bevoegdheid om het verzoek
+ aan te passen"[color=lightgray, style=filled]; "verplichting tot
  overleg plegen"; "verplichting inwilligen van verzoek
  voor aanpassing arbeidsduur"; "immuniteitsrecht inwilligen
  van het verzoek"; "verplichting tot vaststellen 
@@ -31,6 +39,18 @@ van de spreiding van de uren"; "recht wijzigen van gewenste
 "recht om verzoek aanpassing
  arbeidsduur in te dienen"->"Indienen verzoek aanpassing
  arbeidsduur";
+
+"Accepteren van
+ de handeling"->"Accepteren van
+ het verzoek";
+
+"Niet accepteren van
+ de handeling"->"Niet accepteren 
+van het verzoek";
+
+"Bevoegdheid om het verzoek
+ aan te passen"->"Aanpassen van
+ het verzoek";
 
 "verplichting tot
  overleg plegen"->"Overleg 
@@ -65,14 +85,29 @@ van de spreiding van de uren"->"Inzetten immuniteit voor het
  de redenen";
 
 "Indienen verzoek aanpassing
- arbeidsduur"->"verplichting tot
+ arbeidsduur"->"Accepteren van
+ de handeling";
+"Indienen verzoek aanpassing
+ arbeidsduur"->"Niet accepteren van
+ de handeling";
+"Accepteren van
+ het verzoek"->"verplichting tot
  overleg plegen";
-"Indienen verzoek aanpassing
- arbeidsduur"->"verplichting inwilligen van verzoek
+"Accepteren van
+ het verzoek"->"verplichting inwilligen van verzoek
  voor aanpassing arbeidsduur";
-"Indienen verzoek aanpassing
- arbeidsduur"->"immuniteitsrecht inwilligen
+"Accepteren van
+ het verzoek"->"immuniteitsrecht inwilligen
  van het verzoek";
+"Niet accepteren 
+van het verzoek"->"Bevoegdheid om het verzoek
+ aan te passen";
+"Aanpassen van
+ het verzoek"->"Accepteren van
+ de handeling";
+"Aanpassen van
+ het verzoek"->"Niet accepteren van
+ de handeling";
 "Inwilligen
  verzoek"->"verplichting tot vaststellen 
 van de spreiding van de uren";

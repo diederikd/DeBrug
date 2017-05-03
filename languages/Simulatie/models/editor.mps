@@ -6,6 +6,8 @@
     <use id="c1ba4037-e4db-47d8-8b61-b3c805b648f2" name="org.campagnelab.ui" version="0" />
     <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="0" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
+    <use id="c4c9a68e-ce24-4c5b-9241-c819e554f07c" name="Interactie" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -31,6 +33,11 @@
     <import index="alog" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.project(MPS.Workbench/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="z1s1" ref="r:4d95e375-a45b-4405-8471-233ad9d6fb8b(Datum.editor)" />
+    <import index="1jct" ref="r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)" />
+    <import index="1jct" ref="r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)" />
+    <import index="1jct" ref="r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)" />
+    <import index="j97w" ref="r:a6b36b6c-0d6a-49f7-a8d5-0d8669ca3071(Interactie.editor)" />
+    <import index="1jct" ref="r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="rwnv" ref="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)" implicit="true" />
     <import index="ln8d" ref="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)" implicit="true" />
@@ -775,6 +782,18 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="ljvvj" id="CRumITBpTE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7vlBvUdAVQA" role="3EZMnx">
+        <ref role="1NtTu8" to="xhlk:7vlBvUdAVQk" resolve="uittevoerendialoog" />
+      </node>
+      <node concept="3F0ifn" id="7vlBvUdAVQB" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="pVoyu" id="7vlBvUdAVQC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="7vlBvUdAVQD" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -5447,6 +5466,62 @@
           <node concept="3cpWs6" id="5lRFs1H5vLi" role="3cqZAp">
             <node concept="Xl_RD" id="5lRFs1H5vLj" role="3cqZAk">
               <property role="Xl_RC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7vlBvUdAWcA">
+    <ref role="1XX52x" to="xhlk:7vlBvUdAVQg" resolve="UitTeVoerenDialoog" />
+    <node concept="3EZMnI" id="7vlBvUdAWcL" role="2wV5jI">
+      <node concept="l2Vlx" id="7vlBvUdAWcM" role="2iSdaV" />
+      <node concept="3F0ifn" id="7vlBvUdAWcC" role="3EZMnx">
+        <property role="3F0ifm" value="Uit te voeren dialoog" />
+      </node>
+      <node concept="3F0ifn" id="7vlBvUdAWcZ" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="1iCGBv" id="7vlBvUdAWd7" role="3EZMnx">
+        <ref role="1NtTu8" to="xhlk:7vlBvUdAVQh" resolve="dialoog" />
+        <node concept="1sVBvm" id="7vlBvUdAWd9" role="1sWHZn">
+          <node concept="3F0A7n" id="7vlBvUdEr6e" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+        <node concept="ljvvj" id="7vlBvUdAWe7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7vlBvUdAWds" role="3EZMnx">
+        <property role="3F0ifm" value="mogelijke handelingen" />
+      </node>
+      <node concept="3F0ifn" id="7vlBvUdAWeA" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="ljvvj" id="7vlBvUdAWfb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7vlBvUdZh7o" role="3EZMnx">
+        <node concept="l2Vlx" id="7vlBvUdZh7t" role="2iSdaV" />
+        <node concept="ljvvj" id="7JI66SV3qFb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="7JI66SV3qFc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="7JI66SV3qFd" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="7JI66SV7JRe" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="1iCGBv" id="7JI66SViffb" role="3EZMnx">
+          <ref role="1NtTu8" to="xhlk:7vlBvUdAVQh" resolve="dialoog" />
+          <node concept="1sVBvm" id="7JI66SViffc" role="1sWHZn">
+            <node concept="3F2HdR" id="7JI66SViffl" role="2wV5jI">
+              <ref role="1NtTu8" to="1jct:5oIirjjw33" resolve="keuze" />
             </node>
           </node>
         </node>

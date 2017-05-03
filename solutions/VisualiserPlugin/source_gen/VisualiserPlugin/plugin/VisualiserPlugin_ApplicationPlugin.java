@@ -5,6 +5,7 @@ package VisualiserPlugin.plugin;
 import jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin;
 import com.intellij.openapi.extensions.PluginId;
 import jetbrains.mps.ide.actions.NodeActions_ActionGroup;
+import jetbrains.mps.ide.actions.Edit_ActionGroup;
 
 public class VisualiserPlugin_ApplicationPlugin extends BaseApplicationPlugin {
   private PluginId myId = PluginId.getId("VisualiserPlugin");
@@ -15,11 +16,15 @@ public class VisualiserPlugin_ApplicationPlugin extends BaseApplicationPlugin {
   }
   public void createGroups() {
     // actions w/o parameters 
-    addAction(new Visualiseer_Action());
+    addAction(new Ververs_Action());
+    addAction(new VisualiseerToestandenEnOvergangen_Action());
+    addAction(new VisualiseerToestanden_Action());
     // groups 
+    addGroup(new VerversVisualisatie_ActionGroup());
     addGroup(new Visualiseer_ActionGroup());
   }
   public void adjustRegularGroups() {
     insertGroupIntoAnother(Visualiseer_ActionGroup.ID, NodeActions_ActionGroup.ID, null);
+    insertGroupIntoAnother(VerversVisualisatie_ActionGroup.ID, Edit_ActionGroup.ID, null);
   }
 }

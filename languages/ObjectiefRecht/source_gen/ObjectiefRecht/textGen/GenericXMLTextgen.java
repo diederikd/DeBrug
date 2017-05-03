@@ -52,7 +52,7 @@ public abstract class GenericXMLTextgen {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     for (SProperty property : CollectionSequence.fromCollection(SNodeOperations.getConcept(node).getProperties())) {
-      if (property.getName() != "virtualPackage" && property.getName() != "opmerkingen" && property.getName() != "conceptnummer" && property.getName() != "shortDescription") {
+      if (property.getName() != "virtualPackage" && property.getName() != "opmerkingen" && property.getName() != "conceptnummer" && property.getName() != "shortDescription" && property.getName() != "url") {
         ctx.getBuffer().area().increaseIndent();
         PropertyReference propertyReference = new PropertyReference(node, property.getName());
         tgs.indent();

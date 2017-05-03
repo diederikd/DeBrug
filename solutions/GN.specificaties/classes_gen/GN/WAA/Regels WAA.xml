@@ -11828,7 +11828,6 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993899759</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=1</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -11883,11 +11882,11 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
           <node>
             <noderole>GeldigVan</noderole>
             <nodetype>VrijeTekst</nodetype>
-            <nodename>tijdstip van het accepteren van de handeling</nodename>
+            <nodename>tijdstip van het indienen van het verzoek</nodename>
             <nodeid>2677844167534559881</nodeid>
               <properties>
                   <property name='alias'></property>
-                  <property name='name'>tijdstip van het accepteren van de handeling</property>
+                  <property name='name'>tijdstip van het indienen van het verzoek</property>
               </properties>
           </node>
           <node>
@@ -11952,11 +11951,11 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
           <node>
             <noderole>GeldigVan</noderole>
             <nodetype>VrijeTekst</nodetype>
-            <nodename>tijdstip van het afwijzen van de handeling</nodename>
+            <nodename>tijdstip van het indienen van het verzoek</nodename>
             <nodeid>2677844167534560629</nodeid>
               <properties>
                   <property name='alias'></property>
-                  <property name='name'>tijdstip van het afwijzen van de handeling</property>
+                  <property name='name'>tijdstip van het indienen van het verzoek</property>
               </properties>
           </node>
           <node>
@@ -12002,6 +12001,75 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
               <nodetype>HandelingZonderRechtsgevolg</nodetype>
               <nodename>Niet accepteren van het verzoek</nodename>
               <nodeid>2677844167541441878</nodeid>
+            </node>
+          </reference>
+        </references>
+    </node>
+    <node>
+      <noderole>toestanden</noderole>
+      <nodetype>OptieUitvoerenHandeling</nodetype>
+      <nodename>Bevoegdheid om het verzoek aan te passen</nodename>
+      <nodeid>6339215825582131481</nodeid>
+        <properties>
+            <property name='initieel'>false</property>
+            <property name='alias'></property>
+            <property name='name'>Bevoegdheid om het verzoek aan te passen</property>
+            <property name='kortenaam'>Bevoegdheid om het verzoek aan te passen</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>GeldigVan</noderole>
+            <nodetype>VrijeTekst</nodetype>
+            <nodename>tijdstip van het niet accepteren van het verzoek </nodename>
+            <nodeid>6339215825582131484</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>tijdstip van het niet accepteren van het verzoek </property>
+              </properties>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>6339215825582131487</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>7</property>
+                  <property name='jaar'>2000</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+        </children>
+        <references>
+          <reference role='rechtssubjectMetRecht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>werknemer</nodename>
+              <nodeid>5753801799636978868</nodeid>
+            </node>
+          </reference>
+          <reference role='rechtssubjectMetPlicht'>
+            <node>
+              <noderole>rechtssubjecten</noderole>
+              <nodetype>RechtsSubject</nodetype>
+              <nodename>werkgever</nodename>
+              <nodeid>5753801799637012771</nodeid>
+            </node>
+          </reference>
+          <reference role='onderwerp'>
+            <node>
+              <noderole>onderwerpen</noderole>
+              <nodetype>Onderwerp</nodetype>
+              <nodename>aanpassing van de arbeidsduur</nodename>
+              <nodeid>848775529194317032</nodeid>
+            </node>
+          </reference>
+          <reference role='overgang'>
+            <node>
+              <noderole>overgangen</noderole>
+              <nodetype>HandelingZonderRechtsgevolg</nodetype>
+              <nodename>Aanpassen van het verzoek</nodename>
+              <nodeid>8634981577170474268</nodeid>
             </node>
           </reference>
         </references>
@@ -12064,7 +12132,6 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993899761</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=4</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -12253,7 +12320,6 @@ en de omvang van de aanpassing</property>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993899763</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=5</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -12351,7 +12417,6 @@ tot het inwilligen van het verzoek te neutraliseren</property>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993899765</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=5</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -12548,7 +12613,6 @@ overeenkomstig de wensen van de werknemer</property>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993899767</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=6</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -12648,7 +12712,6 @@ van de werknemer te neutraliseren.</property>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993899769</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=6</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -12753,7 +12816,6 @@ overeenkomstig de wensen van de werknemer</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993899771</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=6</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -12849,7 +12911,6 @@ overeenkomstig de wensen van de werknemer</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993899773</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=7</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -12945,7 +13006,6 @@ overeenkomstig de wensen van de werknemer</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993899775</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=7</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -13946,7 +14006,6 @@ overeenkomstig de wensen van de werknemer</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993387140</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=1</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -14210,6 +14269,132 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                       </reference>
                     </references>
                 </node>
+                <node>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>6339215825582132146</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>OptieUitvoerenHandeling</nodetype>
+                          <nodename>Bevoegdheid om het verzoek aan te passen</nodename>
+                          <nodeid>6339215825582131481</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+              </children>
+          </node>
+        </children>
+    </node>
+    <node>
+      <noderole>overgangen</noderole>
+      <nodetype>HandelingZonderRechtsgevolg</nodetype>
+      <nodename>Aanpassen van het verzoek</nodename>
+      <nodeid>8634981577170474268</nodeid>
+        <properties>
+            <property name='alias'></property>
+            <property name='name'>Aanpassen van het verzoek</property>
+            <property name='kortenaam'>Aanpassen van het verzoek</property>
+        </properties>
+        <children>
+          <node>
+            <noderole>actor</noderole>
+            <nodetype>ReferentieNaarRechtssubject</nodetype>
+            <nodeid>8634981577170474543</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <references>
+                <reference role='rechtssubject'>
+                  <node>
+                    <noderole>rechtssubjecten</noderole>
+                    <nodetype>RechtsSubject</nodetype>
+                    <nodename>werknemer</nodename>
+                    <nodeid>5753801799636978868</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
+          <node>
+            <noderole>brongeldigVan</noderole>
+            <nodetype>Datum</nodetype>
+            <nodeid>8634981577170474274</nodeid>
+              <properties>
+                  <property name='dag'>1</property>
+                  <property name='maand'>7</property>
+                  <property name='jaar'>2000</property>
+                  <property name='alias'></property>
+              </properties>
+          </node>
+          <node>
+            <noderole>heeftAlsGevolg</noderole>
+            <nodetype>Rechtsgevolg</nodetype>
+            <nodename>verzoek aangepast</nodename>
+            <nodeid>8634981577170474546</nodeid>
+              <properties>
+                  <property name='alias'></property>
+                  <property name='name'>verzoek aangepast</property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>8634981577170474732</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>OptieAccepterenHandeling</nodetype>
+                          <nodename>Bevoegdheid om de handeling te accepteren</nodename>
+                          <nodeid>2677844167534559878</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>NieuweRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>8634981577170474737</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>OptieAfwijzenHandeling</nodetype>
+                          <nodename>Bevoegdheid om de handeling niet te accepteren</nodename>
+                          <nodeid>2677844167534560626</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>EindigendeRechtsbetrekkingen</noderole>
+                  <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
+                  <nodeid>8634981577170488715</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='rechtsbetrekking'>
+                        <node>
+                          <noderole>toestanden</noderole>
+                          <nodetype>OptieUitvoerenHandeling</nodetype>
+                          <nodename>Bevoegdheid om het verzoek aan te passen</nodename>
+                          <nodeid>6339215825582131481</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
               </children>
           </node>
         </children>
@@ -14340,7 +14525,6 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993387142</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=4</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -14776,7 +14960,6 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993387144</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=5</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -15110,7 +15293,6 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993387146</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=5</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -15281,7 +15463,6 @@ van de werknemer te neutraliseren.</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993387148</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=5</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -15567,7 +15748,6 @@ van de werknemer te neutraliseren.</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993387150</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=6</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -15825,7 +16005,6 @@ van de werknemer te neutraliseren.</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993387152</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=6</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -15949,7 +16128,6 @@ van de werknemer te neutraliseren.</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993387154</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=7</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -16228,7 +16406,6 @@ van de werknemer te neutraliseren.</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993387156</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=7</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -16505,7 +16682,6 @@ van de werknemer te neutraliseren.</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993899777</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=10</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -16716,7 +16892,6 @@ van de werknemer te neutraliseren.</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993899779</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=8</property>
                   <property name='alias'></property>
               </properties>
           </node>
@@ -16933,7 +17108,6 @@ van de werknemer te neutraliseren.</nodename>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993899781</nodeid>
               <properties>
-                  <property name='url'>http://wetten.overheid.nl/jci1.3:c:BWBR0011173&artikel=2&lid=8</property>
                   <property name='alias'></property>
               </properties>
           </node>

@@ -30,6 +30,9 @@
     <file name="Simulatie_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Simulatie.behavior.Simulatie_BehaviorDescriptor" />
     </file>
+    <file name="UitTeVoerenDialoog_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="Simulatie.behavior.UitTeVoerenDialoog_BehaviorDescriptor" />
+    </file>
     <file name="UitTeVoerenHandeling_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Simulatie.behavior.UitTeVoerenHandeling_BehaviorDescriptor" />
     </file>

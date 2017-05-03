@@ -16,4 +16,7 @@ public class VisualiseerListener implements ActionListener {
   public void ZetTool(Visualiseer_Tool toolvisualiseer) {
     tool = toolvisualiseer;
   }
+  public void Ververs() {
+    tool.Ververs();
+  }
 }

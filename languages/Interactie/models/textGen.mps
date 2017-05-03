@@ -367,6 +367,29 @@
               </node>
             </node>
           </node>
+          <node concept="la8eA" id="7vlBvUdwZgX" role="lcghm">
+            <property role="lacIc" value="' typeid='" />
+          </node>
+          <node concept="l9hG8" id="7vlBvUdwZQ$" role="lcghm">
+            <node concept="2OqwBi" id="7vlBvUdx2q9" role="lb14g">
+              <node concept="2OqwBi" id="7vlBvUdx23Q" role="2Oq$k0">
+                <node concept="2JrnkZ" id="7vlBvUdx1T5" role="2Oq$k0">
+                  <node concept="2OqwBi" id="7vlBvUdxgg0" role="2JrQYb">
+                    <node concept="117lpO" id="7vlBvUdx2hg" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7vlBvUdxgqf" role="2OqNvi">
+                      <ref role="3Tt5mk" to="1jct:7IoVO6zaDo0" resolve="object" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="7vlBvUdx2dA" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7vlBvUdx2$c" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              </node>
+            </node>
+          </node>
           <node concept="la8eA" id="7IoVO6zervn" role="lcghm">
             <property role="lacIc" value="' naam='" />
           </node>
@@ -839,7 +862,7 @@
         <node concept="1bpajm" id="5oIirjpL5K" role="3cqZAp" />
         <node concept="lc7rE" id="5oIirjpL5L" role="3cqZAp">
           <node concept="la8eA" id="5oIirjpL5M" role="lcghm">
-            <property role="lacIc" value="&lt;tag&gt;" />
+            <property role="lacIc" value="&lt;tag naam='" />
           </node>
           <node concept="l9hG8" id="5oIirjpL5N" role="lcghm">
             <node concept="2OqwBi" id="5oIirjpL5O" role="lb14g">
@@ -850,7 +873,7 @@
             </node>
           </node>
           <node concept="la8eA" id="5oIirjpL5R" role="lcghm">
-            <property role="lacIc" value="&lt;/tag&gt;" />
+            <property role="lacIc" value="'/&gt;" />
           </node>
           <node concept="l8MVK" id="5oIirjpL5S" role="lcghm" />
         </node>

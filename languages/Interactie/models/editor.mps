@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -841,6 +842,15 @@
       </node>
       <node concept="3F0ifn" id="6oAJqs3vXMD" role="3EZMnx">
         <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="7vlBvUdAKrO" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="7vlBvUdAKsn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7vlBvUdAKsX" role="3EZMnx">
+        <property role="3F0ifm" value="hoort bij handeling" />
       </node>
       <node concept="1iCGBv" id="6oAJqs3vXME" role="3EZMnx">
         <ref role="1NtTu8" to="1jct:6oAJqs3vQ7d" resolve="handeling" />

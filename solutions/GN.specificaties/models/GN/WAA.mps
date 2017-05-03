@@ -10,7 +10,9 @@
     <use id="c4c9a68e-ce24-4c5b-9241-c819e554f07c" name="Interactie" version="0" />
     <use id="c6a53bd0-9627-4db5-b62a-dbc3d020d641" name="URL" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="rv3w" ref="r:02e2b7b9-5612-4c40-a24c-e445da064b80(GN.Interactie)" />
+  </imports>
   <registry>
     <language id="15970de3-8fe7-4b13-81c7-38b38d51c39a" name="Simulatie">
       <concept id="7867191925628556449" name="Simulatie.structure.Informatiepositie" flags="ng" index="2BLbnY">
@@ -27,6 +29,7 @@
         <child id="736190567680940724" name="lijstmetberichten" index="2NEIfv" />
         <child id="6760713004453462060" name="uittevoerenhandeling" index="Z0I24" />
         <child id="3694879098876164254" name="tijdtipvaninitialisatie" index="3zKq1C" />
+        <child id="8634981577175842196" name="uittevoerendialoog" index="3Ujy1E" />
         <child id="3694879098862050847" name="uitvoerbarehandelingen" index="3WXGrD" />
       </concept>
       <concept id="6760713004453368665" name="Simulatie.structure.UitTeVoerenHandeling" flags="ng" index="Z77fL">
@@ -38,6 +41,9 @@
         <child id="3139957515583339108" name="rechtshandelingen" index="1dIIjt" />
         <child id="3139957515586752450" name="rechtsbetrekkingen" index="1dND5V" />
         <child id="7496157647699367135" name="tabellen" index="1ztmtP" />
+      </concept>
+      <concept id="8634981577175842192" name="Simulatie.structure.UitTeVoerenDialoog" flags="ng" index="3Ujy1I">
+        <reference id="8634981577175842193" name="dialoog" index="3Ujy1J" />
       </concept>
       <concept id="3694879098862050844" name="Simulatie.structure.UitvoerbareRechtshandeling" flags="ng" index="3WXGrE">
         <reference id="5807415387094569851" name="gebaseerdOp" index="3qscrX" />
@@ -4459,6 +4465,9 @@
       <ref role="3WXGrF" node="2kDBhkyaclm" resolve="Niet accepteren van het verzoek" />
     </node>
     <node concept="1dyV97" id="7vlBvUdiC0m" role="2NEIfv" />
+    <node concept="3Ujy1I" id="7vlBvUdORnp" role="3Ujy1E">
+      <ref role="3Ujy1J" to="rv3w:6oAJqs3wQvh" resolve="Beslissen op verzoek" />
+    </node>
   </node>
   <node concept="1ztmtO" id="6EEavyms9IX">
     <property role="TrG5h" value="Gegevenshuishouding WAA" />

@@ -14,7 +14,6 @@ import jetbrains.mps.workbench.MPSDataKeys;
 import com.intellij.ide.DataManager;
 import com.intellij.platform.ProjectBaseDirectory;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import java.awt.BorderLayout;
 import javax.swing.JComponent;
 
@@ -37,14 +36,11 @@ public class Visualiseer_Tool extends GeneratedTool {
     Image image = imageicon.getImage();
     Image newImage = image.getScaledInstance(300, 300, Image.SCALE_SMOOTH);
     imageicon = new ImageIcon(newImage);
-    JButton refreshButton = new JButton("Refresh");
     VisualiseerListener actionListener = new VisualiseerListener();
     actionListener.ZetTool(Visualiseer_Tool.this);
-    refreshButton.addActionListener(new VisualiseerListener());
     Visualiseer_Tool.this.jLabel = new JLabel("", imageicon, JLabel.CENTER);
     Visualiseer_Tool.this.jPanel = new JPanel();
     Visualiseer_Tool.this.jScrollPane = new JScrollPane(Visualiseer_Tool.this.jPanel);
-    Visualiseer_Tool.this.jPanel.add(refreshButton, BorderLayout.NORTH);
     Visualiseer_Tool.this.jPanel.add(Visualiseer_Tool.this.jLabel, BorderLayout.CENTER);
     Visualiseer_Tool.this.makeAvailable();
   }

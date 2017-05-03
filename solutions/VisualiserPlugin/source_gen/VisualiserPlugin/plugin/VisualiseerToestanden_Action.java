@@ -17,11 +17,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import javax.swing.JOptionPane;
 
-public class Visualiseer_Action extends BaseAction {
+public class VisualiseerToestanden_Action extends BaseAction {
   private static final Icon ICON = null;
 
-  public Visualiseer_Action() {
-    super("Visualiseer Context", "Visualiseer toestanden en overgangen", ICON);
+  public VisualiseerToestanden_Action() {
+    super("Visualiseer Toestanden", "Visualiseer toestanden", ICON);
     this.setIsAlwaysVisible(false);
     this.setExecuteOutsideCommand(true);
     this.addPlace(null);
@@ -56,13 +56,15 @@ public class Visualiseer_Action extends BaseAction {
         {
           final SNode context = ListSequence.fromList(SModelOperations.roots(event.getData(MPSCommonDataKeys.CONTEXT_MODEL), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, "ObjectiefRecht.structure.Context"))).first();
           if (SNodeOperations.isInstanceOf(context, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, "ObjectiefRecht.structure.Context"))) {
-            GraphVizFile graphVizFile = new GraphVizFile();
+            VisualisatieToestanden graphVizFile = new VisualisatieToestanden();
             graphVizFile.WriteToFile(context);
           }
         }
         if (!((event.getData(MPSCommonDataKeys.NODE) instanceof SNode))) {
           JOptionPane.showMessageDialog(null, "Message", "Geen context node", JOptionPane.ERROR_MESSAGE);
         }
+        VisualiseerListener listener = new VisualiseerListener();
+        listener.Ververs();
       }
     });
   }

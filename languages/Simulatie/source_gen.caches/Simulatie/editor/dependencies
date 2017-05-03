@@ -8,6 +8,7 @@
     <classNode dependClassName="Simulatie.editor.Rechtsbetrekking_Simulatie_Editor" />
     <classNode dependClassName="Simulatie.editor.Rechtshandeling_UitgevoerdeHandeling_Editor" />
     <classNode dependClassName="Simulatie.editor.Simulatie_Editor" />
+    <classNode dependClassName="Simulatie.editor.UitTeVoerenDialoog_Editor" />
     <classNode dependClassName="Simulatie.editor.UitTeVoerenHandeling_Editor" />
     <classNode dependClassName="Simulatie.editor.UitvoerbareRechtshandeling_HandelingenRol1_Editor" />
     <classNode dependClassName="Simulatie.editor.UitvoerbareRechtshandeling_HandelingenRol2_Editor" />
@@ -326,6 +327,40 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.StyleRegistry" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="Simulatie.editor.UitTeVoerenDialoog_Editor" file="UitTeVoerenDialoog_Editor.java">
+    <classNode dependClassName="com.mbeddr.mpsutil.editor.querylist.runtime.EditorCell_QueryList" />
+    <classNode dependClassName="com.mbeddr.mpsutil.editor.querylist.runtime.QueryListContext" />
+    <classNode dependClassName="com.mbeddr.mpsutil.editor.querylist.runtime.QueryListHandler" />
+    <classNode dependClassName="com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory" />
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.InlineCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.SubstituteInfo" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.util.Computable" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="Simulatie.editor.UitTeVoerenHandeling_Editor" file="UitTeVoerenHandeling_Editor.java">
     <classNode dependClassName="ObjectiefRecht.behavior.Overgang__BehaviorDescriptor" />

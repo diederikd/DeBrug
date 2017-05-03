@@ -46,6 +46,9 @@
       <concept id="97030968393350057" name="Interactie.structure.XpathVeld" flags="ng" index="3i58af">
         <property id="97030968393350059" name="text" index="3i58ad" />
       </concept>
+      <concept id="97030968393435431" name="Interactie.structure.TagVeld" flags="ng" index="3i5j01">
+        <property id="97030968393435432" name="text" index="3i5j0e" />
+      </concept>
       <concept id="8906131328315611534" name="Interactie.structure.PresentatieRechtshandeling" flags="ng" index="3oCzrf">
         <child id="8906131328315611535" name="rijen" index="3oCzre" />
       </concept>
@@ -100,6 +103,7 @@
     <property role="TrG5h" value="Presentatie WAA" />
     <ref role="3oGCMx" to="zznl:6EEavyms9IX" resolve="Gegevenshuishouding WAA" />
     <node concept="1_mtK9" id="6oAJqs3w4r5" role="1_mtLR">
+      <property role="TrG5h" value="Indienen verzoek" />
       <ref role="1_mtLE" to="zznl:4pem8DK24rt" resolve="Indienen verzoek aanpassing arbeidsduur" />
       <node concept="3i5FAN" id="5oIirjo3PZ" role="3i5FB_">
         <ref role="3i5FAK" to="zznl:2kDBhky6mxe" resolve="Accepteren van het verzoek" />
@@ -112,35 +116,22 @@
           <node concept="1_DM_l" id="6oAJqs3wB5W" role="2PAxsN">
             <ref role="1_DM_k" to="zznl:4$mS69sWF6g" resolve="beoogde ingangsdatum van de aanpassing" />
           </node>
-        </node>
-        <node concept="3oGGqp" id="6oAJqs3w4rE" role="3oHiS_">
-          <node concept="1_DM_l" id="6oAJqs3wB5U" role="2PAxsN">
-            <ref role="1_DM_k" to="zznl:1KHGaPR$on" resolve="schriftelijk ingediend" />
-          </node>
-        </node>
-        <node concept="3oGGqp" id="6oAJqs3w4rx" role="3oHiS_">
-          <node concept="1_DM_l" id="6oAJqs3wB5t" role="2PAxsN">
+          <node concept="1_DM_l" id="7vlBvUdAVPX" role="2PAxsN">
             <ref role="1_DM_k" to="zznl:GhrpPwK$fm" resolve="gewenste spreiding" />
           </node>
-        </node>
-        <node concept="3oGGqp" id="6oAJqs3w4rd" role="3oHiS_">
-          <node concept="1_DM_l" id="6oAJqs3wwaH" role="2PAxsN">
+          <node concept="1_DM_l" id="7vlBvUdAVQ6" role="2PAxsN">
             <ref role="1_DM_k" to="zznl:GhrpPwK$en" resolve="omvang van de aanpassing" />
           </node>
         </node>
       </node>
     </node>
     <node concept="1_mtK9" id="6oAJqs3wQv5" role="1_mtLR">
+      <property role="TrG5h" value="Overleg plegen" />
       <ref role="1_mtLE" to="zznl:28ifPi2BQ89" resolve="Overleg plegen" />
       <node concept="3oHiSy" id="6oAJqs3wQvu" role="1_mtK8">
         <node concept="3oGGqp" id="6oAJqs3wQvG" role="3oHiS_">
-          <node concept="2P_WKc" id="6oAJqs3wQvK" role="2PAxsN">
-            <ref role="29j7_g" to="zznl:GhrpPwK$fm" resolve="gewenste spreiding" />
-          </node>
-        </node>
-        <node concept="3oGGqp" id="6oAJqs3wQvw" role="3oHiS_">
-          <node concept="2P_WKc" id="6oAJqs3wQvy" role="2PAxsN">
-            <ref role="29j7_g" to="zznl:GhrpPwK$en" resolve="omvang van de aanpassing" />
+          <node concept="3oDD0s" id="7vlBvUdAKqo" role="2PAxsN">
+            <property role="3oDALa" value="Geen invoer nodig" />
           </node>
         </node>
       </node>
@@ -149,18 +140,39 @@
       </node>
     </node>
     <node concept="1_mtK9" id="6oAJqs3wQvh" role="1_mtLR">
+      <property role="TrG5h" value="Beslissen op verzoek" />
       <ref role="1_mtLE" to="zznl:4pem8DK2crJ" resolve="Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing" />
       <node concept="3oHiSy" id="6oAJqs3wQvM" role="1_mtK8">
-        <node concept="3oGGqp" id="6oAJqs3wQvQ" role="3oHiS_">
-          <node concept="2P_WKc" id="6oAJqs3wQvT" role="2PAxsN">
-            <ref role="29j7_g" to="zznl:4$mS69sWF6g" resolve="beoogde ingangsdatum van de aanpassing" />
-          </node>
-        </node>
         <node concept="3oGGqp" id="6oAJqs3wQvO" role="3oHiS_">
-          <node concept="2P_WKc" id="6oAJqs3wQvV" role="2PAxsN">
-            <ref role="29j7_g" to="zznl:GhrpPwK$en" resolve="omvang van de aanpassing" />
+          <node concept="1_DM_l" id="7vlBvUdAVQd" role="2PAxsN">
+            <ref role="1_DM_k" to="zznl:4rrm763mTgf" resolve="redenen voor afwijzing" />
           </node>
         </node>
+      </node>
+      <node concept="3i5FAN" id="7vlBvUdAVPR" role="3i5FB_">
+        <ref role="3i5FAK" to="zznl:28ifPi2BQ3p" resolve="Afwijzen van het verzoek" />
+      </node>
+      <node concept="3i5FAN" id="7vlBvUdAKqs" role="3i5FB_">
+        <ref role="3i5FAK" to="zznl:4pem8DK2crJ" resolve="Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing" />
+      </node>
+      <node concept="3i5FAN" id="7vlBvUdAKqI" role="3i5FB_">
+        <ref role="3i5FAK" to="zznl:28ifPi2BQyF" resolve="Vaststellen van de spreiding van de uren" />
+      </node>
+      <node concept="3i5FAN" id="7vlBvUdAKqx" role="3i5FB_">
+        <ref role="3i5FAK" to="zznl:1Enheq_1aHm" resolve="Inzetten van de immuniteit voor het vaststellen van de uren" />
+      </node>
+    </node>
+    <node concept="1_mtK9" id="7vlBvUdAKqR" role="1_mtLR">
+      <property role="TrG5h" value="Mededelen van de beschikking" />
+      <ref role="1_mtLE" to="zznl:28ifPi2C7Fj" resolve="Schriftelijk mededelen van de beslissing aan de werknemer" />
+      <node concept="3i5FAN" id="7vlBvUdAThX" role="3i5FB_">
+        <ref role="3i5FAK" to="zznl:28ifPi2CKm1" resolve="Mededelen van de redenen" />
+      </node>
+      <node concept="3i5FAN" id="7vlBvUdATi2" role="3i5FB_">
+        <ref role="3i5FAK" to="zznl:28ifPi2C7Fj" resolve="Schriftelijk mededelen van de beslissing aan de werknemer" />
+      </node>
+      <node concept="3oHiSy" id="7vlBvUdATi6" role="1_mtK8">
+        <node concept="3oGGqp" id="7vlBvUdATic" role="3oHiS_" />
       </node>
     </node>
     <node concept="3oGBEY" id="7IoVO6zbs3J" role="3oGB20">
@@ -282,23 +294,33 @@
       <ref role="3oGB_1" to="zznl:J7tdz7EYjC" resolve="aanpassing van de arbeidsduur" />
       <node concept="3oHiSy" id="1qtR5qp8sKg" role="3oGGqr">
         <node concept="3oGGqp" id="1qtR5qp8sKr" role="3oHiS_">
+          <node concept="3oDD0s" id="7vlBvUdxfoc" role="2PAxsN">
+            <property role="3oDALa" value="Onderwerp:" />
+          </node>
+          <node concept="3i58af" id="7vlBvUdxfom" role="2PAxsN">
+            <property role="3i58ad" value="../@naam" />
+          </node>
+          <node concept="3oDD0s" id="7vlBvUdxfnQ" role="2PAxsN">
+            <property role="3oDALa" value="Naam indiener :" />
+          </node>
           <node concept="2P_WKc" id="1qtR5qp8sKv" role="2PAxsN">
             <ref role="29j7_g" to="dmt2:5Bacij9tPhT" resolve="Naam Indiener" />
           </node>
         </node>
         <node concept="3oGGqp" id="1qtR5qp8sKo" role="3oHiS_">
+          <node concept="3oDD0s" id="7vlBvUdxpQQ" role="2PAxsN">
+            <property role="3oDALa" value="ingangsdatum : " />
+          </node>
           <node concept="2P_WKc" id="1qtR5qp8sKx" role="2PAxsN">
             <ref role="29j7_g" to="zznl:4$mS69sWF6g" resolve="beoogde ingangsdatum van de aanpassing" />
           </node>
         </node>
         <node concept="3oGGqp" id="1qtR5qp8sKN" role="3oHiS_">
+          <node concept="3oDD0s" id="7vlBvUdxfo4" role="2PAxsN">
+            <property role="3oDALa" value="omvang : " />
+          </node>
           <node concept="2P_WKc" id="1qtR5qp8sKV" role="2PAxsN">
             <ref role="29j7_g" to="zznl:GhrpPwK$en" resolve="omvang van de aanpassing" />
-          </node>
-        </node>
-        <node concept="3oGGqp" id="1qtR5qp8sKm" role="3oHiS_">
-          <node concept="2P_WKc" id="1qtR5qp8sKz" role="2PAxsN">
-            <ref role="29j7_g" to="zznl:GhrpPwK$fm" resolve="gewenste spreiding" />
           </node>
         </node>
       </node>
@@ -306,39 +328,35 @@
     <node concept="3oHOV1" id="7IoVO6zc7kb" role="3oHKxM">
       <node concept="3oHiSy" id="7IoVO6zc7kd" role="3oHOV2">
         <node concept="3oGGqp" id="7IoVO6zeC$M" role="3oHiS_">
-          <node concept="3oHXaV" id="7IoVO6zeC$V" role="2PAxsN">
-            <ref role="3oHOSZ" to="gcgs:6c9haf45syA" resolve="objectieveRechtsbetrekking" />
+          <node concept="3i5j01" id="7vlBvUdxpRB" role="2PAxsN">
+            <property role="3i5j0e" value="'objectieveRechtsbetrekking'" />
           </node>
         </node>
-        <node concept="3oGGqp" id="7IoVO6zeC$Q" role="3oHiS_">
-          <node concept="3oHXaV" id="7IoVO6zeC_A" role="2PAxsN">
-            <ref role="3oHOSZ" to="gcgs:5gJzES8$v3G" resolve="onderwerp" />
-          </node>
-        </node>
+        <node concept="3oGGqp" id="7IoVO6zeC$Q" role="3oHiS_" />
         <node concept="3oGGqp" id="7IoVO6zc7kf" role="3oHiS_">
           <node concept="3oDD0s" id="7IoVO6zfJ1U" role="2PAxsN">
             <property role="3oDALa" value="Geldig van:" />
           </node>
-          <node concept="3oHXaV" id="7IoVO6zeC$C" role="2PAxsN">
-            <ref role="3oHOSZ" to="gcgs:6c9haf45szd" resolve="geldigVan" />
+          <node concept="3i5j01" id="7vlBvUdxpTl" role="2PAxsN">
+            <property role="3i5j0e" value="'geldigVan'" />
           </node>
           <node concept="3oDD0s" id="7IoVO6zfJ28" role="2PAxsN">
             <property role="3oDALa" value="Geldig tot:" />
           </node>
-          <node concept="3oHXaV" id="7IoVO6zeC_e" role="2PAxsN">
-            <ref role="3oHOSZ" to="gcgs:6c9haf45szk" resolve="geldigTot" />
+          <node concept="3i5j01" id="7vlBvUdxpTM" role="2PAxsN">
+            <property role="3i5j0e" value="'geldigTot'" />
           </node>
           <node concept="3oDD0s" id="7IoVO6zfJ2o" role="2PAxsN">
             <property role="3oDALa" value="== Recht:" />
           </node>
-          <node concept="3oHXaV" id="7IoVO6zeC_m" role="2PAxsN">
-            <ref role="3oHOSZ" to="gcgs:6c9haf45syv" resolve="rechtssubjectMetRecht" />
+          <node concept="3i5j01" id="7vlBvUdxpUl" role="2PAxsN">
+            <property role="3i5j0e" value="'rechtssubjectMetRecht'" />
           </node>
           <node concept="3oDD0s" id="7IoVO6zfJ2E" role="2PAxsN">
             <property role="3oDALa" value=" == Plicht:" />
           </node>
-          <node concept="3oHXaV" id="7IoVO6zeC_w" role="2PAxsN">
-            <ref role="3oHOSZ" to="gcgs:6c9haf45syx" resolve="rechtssubjectMetPlicht" />
+          <node concept="3i5j01" id="7vlBvUdxpUD" role="2PAxsN">
+            <property role="3i5j0e" value="'rechtssubjectMetPlicht'" />
           </node>
         </node>
       </node>

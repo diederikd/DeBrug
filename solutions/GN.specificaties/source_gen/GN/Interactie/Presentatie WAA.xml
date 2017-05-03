@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <presentatie>
-<object type='rechtssubject' naam='werknemer' >
+<object type='rechtssubject' typeid='5753801799636978868' naam='werknemer' >
       <row>
         <column>
           <xpath>./@naam</xpath>
@@ -39,7 +39,7 @@
         </column>
       </row>
 </object>
-<object type='rechtssubject' naam='werkgever' >
+<object type='rechtssubject' typeid='5753801799637012771' naam='werkgever' >
       <row>
         <column>
           <xpath>./@naam</xpath>
@@ -59,39 +59,40 @@
         </column>
       </row>
 </object>
-<object type='onderwerp' naam='aanpassing van de arbeidsduur' >
+<object type='onderwerp' typeid='848775529194317032' naam='aanpassing van de arbeidsduur' >
       <row>
         <column>
+          <string>Onderwerp:</string>
+          <xpath>../@naam</xpath>
+          <string>Naam indiener :</string>
           <kenmerk naam='Naam Indiener' />
         </column>
         <column>
+          <string>ingangsdatum : </string>
           <kenmerk naam='beoogde ingangsdatum van de aanpassing' />
         </column>
         <column>
+          <string>omvang : </string>
           <kenmerk naam='omvang van de aanpassing' />
-        </column>
-        <column>
-          <kenmerk naam='gewenste spreiding' />
         </column>
       </row>
 </object>
     <object type='rechtsbetrekking' naam='' >
             <row>
         <column>
-          <xpath>kenmerk[@naam='objectieveRechtsbetrekking']/text()</xpath>
+          <tag naam=''objectieveRechtsbetrekking''/>
         </column>
         <column>
-          <xpath>kenmerk[@naam='onderwerp']/text()</xpath>
         </column>
         <column>
           <string>Geldig van:</string>
-          <xpath>kenmerk[@naam='geldigVan']/text()</xpath>
+          <tag naam=''geldigVan''/>
           <string>Geldig tot:</string>
-          <xpath>kenmerk[@naam='geldigTot']/text()</xpath>
+          <tag naam=''geldigTot''/>
           <string>== Recht:</string>
-          <xpath>kenmerk[@naam='rechtssubjectMetRecht']/text()</xpath>
+          <tag naam=''rechtssubjectMetRecht''/>
           <string> == Plicht:</string>
-          <xpath>kenmerk[@naam='rechtssubjectMetPlicht']/text()</xpath>
+          <tag naam=''rechtssubjectMetPlicht''/>
         </column>
       </row>
 </object>    <object type='rechtshandeling' naam='' >
@@ -111,14 +112,7 @@
       <row>
         <column>
           <input type="text" name="beoogde ingangsdatum van de aanpassing" value=""/>
-        </column>
-        <column>
-          <input type="text" name="schriftelijk ingediend" value=""/>
-        </column>
-        <column>
           <input type="text" name="gewenste spreiding" value=""/>
-        </column>
-        <column>
           <input type="text" name="omvang van de aanpassing" value=""/>
         </column>
       </row>
@@ -130,10 +124,7 @@
     <dialoog typeid='2455094379071627785' name='Overleg plegen' >
       <row>
         <column>
-          <kenmerk naam='gewenste spreiding' />
-        </column>
-        <column>
-          <kenmerk naam='omvang van de aanpassing' />
+          <string>Geen invoer nodig</string>
         </column>
       </row>
       <rechtshandelingtypes>
@@ -143,13 +134,24 @@
     <dialoog typeid='5066083982446741231' name='Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing' >
       <row>
         <column>
-          <kenmerk naam='beoogde ingangsdatum van de aanpassing' />
-        </column>
-        <column>
-          <kenmerk naam='omvang van de aanpassing' />
+          <input type="text" name="redenen voor afwijzing" value=""/>
         </column>
       </row>
       <rechtshandelingtypes>
+        <rechtshandelingtype typeid='2455094379071627481' />
+        <rechtshandelingtype typeid='5066083982446741231' />
+        <rechtshandelingtype typeid='2455094379071629483' />
+        <rechtshandelingtype typeid='1916075923871148886' />
+      </rechtshandelingtypes>
+    </dialoog>
+    <dialoog typeid='2455094379071699667' name='Schriftelijk mededelen van de beslissing aan de werknemer' >
+      <row>
+        <column>
+        </column>
+      </row>
+      <rechtshandelingtypes>
+        <rechtshandelingtype typeid='2455094379071866241' />
+        <rechtshandelingtype typeid='2455094379071699667' />
       </rechtshandelingtypes>
     </dialoog>
 </presentatie>
