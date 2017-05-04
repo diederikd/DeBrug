@@ -34,7 +34,7 @@ public class Visualiseer_Tool extends GeneratedTool {
     System.out.println("File: " + Visualiseer_Tool.this.graphvizpng);
     ImageIcon imageicon = new ImageIcon(Visualiseer_Tool.this.graphvizpng);
     Image image = imageicon.getImage();
-    Image newImage = image.getScaledInstance(300, 300, Image.SCALE_SMOOTH);
+    Image newImage = image.getScaledInstance(500, 500, Image.SCALE_SMOOTH);
     imageicon = new ImageIcon(newImage);
     VisualiseerListener actionListener = new VisualiseerListener();
     actionListener.ZetTool(Visualiseer_Tool.this);
@@ -48,7 +48,10 @@ public class Visualiseer_Tool extends GeneratedTool {
     System.out.println("Ververs figuur met " + Visualiseer_Tool.this.graphvizpng);
     ImageIcon imageicon = new ImageIcon(Visualiseer_Tool.this.graphvizpng);
     Image image = imageicon.getImage();
-    Image newImage = image.getScaledInstance(Visualiseer_Tool.this.jPanel.getParent().getWidth(), Visualiseer_Tool.this.jPanel.getParent().getHeight(), Image.SCALE_SMOOTH);
+    Image newImage = image;
+    if ((Visualiseer_Tool.this.jPanel.getParent().getWidth() != 0) && (Visualiseer_Tool.this.jPanel.getParent().getHeight() != 0)) {
+      newImage = image.getScaledInstance(Visualiseer_Tool.this.jPanel.getParent().getWidth(), Visualiseer_Tool.this.jPanel.getParent().getHeight(), Image.SCALE_SMOOTH);
+    }
     imageicon = new ImageIcon(newImage);
     Visualiseer_Tool.this.jLabel.setIcon(imageicon);
     Visualiseer_Tool.this.jPanel.revalidate();

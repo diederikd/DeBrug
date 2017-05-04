@@ -26,7 +26,17 @@ public class ImagePanel extends JPanel {
   @Override
   protected void paintComponent(Graphics g) {
     super.paintComponent(g);
+    RescaleImage(g);
+  }
+
+  @Override
+  public void update(Graphics graphics) {
+    super.update(graphics);
+    RescaleImage(graphics);
+  }
+  private void RescaleImage(Graphics g) {
     rescaledImage = image.getScaledInstance(this.getWidth(), this.getHeight(), Image.SCALE_SMOOTH);
     g.drawImage(rescaledImage, 0, 0, null);
   }
+
 }

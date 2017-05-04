@@ -1,5 +1,5 @@
-## Graphviz file voor toestanden en overgangen gegenereerd vanuit MPS
-##-------------------------------------------------------------------
+## Graphviz file voor toestanden gegenereerd vanuit MPS
+##-----------------------------------------------------
 
 
 ##Command to produce the output: neato -Tpng thisfile > thisfile.png
@@ -7,19 +7,7 @@
 
 digraph diagram{
 rankdir=LR;
-node [shape=circle, fixedsize=true, width=2];"Indienen verzoek aanpassing
- arbeidsduur"; "Accepteren van
- het verzoek"[color=lightgray, style=filled]; "Niet accepteren 
-van het verzoek"[color=lightgray, style=filled]; "Aanpassen van
- het verzoek"[color=lightgray, style=filled]; "Overleg 
-plegen"; "Inwilligen
- verzoek"; "Afwijzen van 
-het verzoek"; "Inzetten immuniteit voor het
- vaststellen van de uren"; "Vaststellen van de spreiding
- van de uren"; "Wijzigen van de spreiding
- van de uren"; "Schriftelijk mededelen van de
- beslissing aan de werknemer"; "Mededelen van
- de redenen"; 
+
 node [shape=box, fixedsize=true, width=3];"recht om verzoek aanpassing
  arbeidsduur in te dienen"[color=lightblue, style=filled]; "Accepteren van
  de handeling"; "Accepteren van
@@ -37,98 +25,65 @@ van de spreiding van de uren"; "recht wijzigen van gewenste
  mededelen van de beslissing"; "verplichting tot het mededelen
  van de redenen"; 
 "recht om verzoek aanpassing
- arbeidsduur in te dienen"->"Indienen verzoek aanpassing
- arbeidsduur";
-
+ arbeidsduur in te dienen"->"Accepteren van
+ de handeling" [ label = "Indienen verzoek aanpassing
+ arbeidsduur", arrowhead=normal, arrowsize=1.2, minlen=2 ];
+"recht om verzoek aanpassing
+ arbeidsduur in te dienen"->"Niet accepteren van
+ de handeling" [ label = "Indienen verzoek aanpassing
+ arbeidsduur", arrowhead=normal, arrowsize=1.2, minlen=2 ];
 "Accepteren van
- de handeling"->"Accepteren van
- het verzoek";
-
+ de handeling"->"verplichting tot
+ overleg plegen" [ label = "Accepteren van
+ het verzoek", arrowhead=vee, arrowsize=1.2, minlen=2  ];
+"Accepteren van
+ de handeling"->"verplichting inwilligen van verzoek
+ voor aanpassing arbeidsduur" [ label = "Accepteren van
+ het verzoek", arrowhead=vee, arrowsize=1.2, minlen=2  ];
+"Accepteren van
+ de handeling"->"immuniteitsrecht inwilligen
+ van het verzoek" [ label = "Accepteren van
+ het verzoek", arrowhead=vee, arrowsize=1.2, minlen=2  ];
 "Niet accepteren van
- de handeling"->"Niet accepteren 
-van het verzoek";
-
+ de handeling"->"Bevoegdheid om het verzoek
+ aan te passen" [ label = "Niet accepteren 
+van het verzoek", arrowhead=vee, arrowsize=1.2, minlen=2  ];
 "Bevoegdheid om het verzoek
- aan te passen"->"Aanpassen van
- het verzoek";
-
-"verplichting tot
- overleg plegen"->"Overleg 
-plegen";
-
+ aan te passen"->"Accepteren van
+ de handeling" [ label = "Aanpassen van
+ het verzoek", arrowhead=vee, arrowsize=1.2, minlen=2  ];
+"Bevoegdheid om het verzoek
+ aan te passen"->"Niet accepteren van
+ de handeling" [ label = "Aanpassen van
+ het verzoek", arrowhead=vee, arrowsize=1.2, minlen=2  ];
 "verplichting inwilligen van verzoek
- voor aanpassing arbeidsduur"->"Inwilligen
- verzoek";
-
+ voor aanpassing arbeidsduur"->"verplichting tot vaststellen 
+van de spreiding van de uren" [ label = "Inwilligen verzoek voor zover het betreft het tijdstip
+ van ingang en omvang van de aanpassing", arrowhead=normal, arrowsize=1.2, minlen=2 ];
+"verplichting inwilligen van verzoek
+ voor aanpassing arbeidsduur"->"immuniteitsrecht vaststellen 
+van de spreiding van de uren" [ label = "Inwilligen verzoek voor zover het betreft het tijdstip
+ van ingang en omvang van de aanpassing", arrowhead=normal, arrowsize=1.2, minlen=2 ];
 "immuniteitsrecht inwilligen
- van het verzoek"->"Afwijzen van 
-het verzoek";
-
-"verplichting tot vaststellen 
-van de spreiding van de uren"->"Vaststellen van de spreiding
- van de uren";
-
+ van het verzoek"->"verplichting tot het schriftelijk
+ mededelen van de beslissing" [ label = "Afwijzen van 
+het verzoek", arrowhead=normal, arrowsize=1.2, minlen=2 ];
+"immuniteitsrecht inwilligen
+ van het verzoek"->"verplichting tot het mededelen
+ van de redenen" [ label = "Afwijzen van 
+het verzoek", arrowhead=normal, arrowsize=1.2, minlen=2 ];
 "immuniteitsrecht vaststellen 
-van de spreiding van de uren"->"Inzetten immuniteit voor het
- vaststellen van de uren";
-
+van de spreiding van de uren"->"recht wijzigen van gewenste
+ spreiding van de uren" [ label = "Inzetten van de immuniteit voor
+ het vaststellen van de uren", arrowhead=normal, arrowsize=1.2, minlen=2 ];
+"verplichting tot vaststellen 
+van de spreiding van de uren"->"verplichting tot het mededelen
+ van de redenen" [ label = "Vaststellen van de spreiding
+ van de uren", arrowhead=normal, arrowsize=1.2, minlen=2 ];
 "recht wijzigen van gewenste
- spreiding van de uren"->"Wijzigen van de spreiding
- van de uren";
-
-"verplichting tot het schriftelijk
- mededelen van de beslissing"->"Schriftelijk mededelen van de
- beslissing aan de werknemer";
-
-"verplichting tot het mededelen
- van de redenen"->"Mededelen van
- de redenen";
-
-"Indienen verzoek aanpassing
- arbeidsduur"->"Accepteren van
- de handeling";
-"Indienen verzoek aanpassing
- arbeidsduur"->"Niet accepteren van
- de handeling";
-"Accepteren van
- het verzoek"->"verplichting tot
- overleg plegen";
-"Accepteren van
- het verzoek"->"verplichting inwilligen van verzoek
- voor aanpassing arbeidsduur";
-"Accepteren van
- het verzoek"->"immuniteitsrecht inwilligen
- van het verzoek";
-"Niet accepteren 
-van het verzoek"->"Bevoegdheid om het verzoek
- aan te passen";
-"Aanpassen van
- het verzoek"->"Accepteren van
- de handeling";
-"Aanpassen van
- het verzoek"->"Niet accepteren van
- de handeling";
-"Inwilligen
- verzoek"->"verplichting tot vaststellen 
-van de spreiding van de uren";
-"Inwilligen
- verzoek"->"immuniteitsrecht vaststellen 
-van de spreiding van de uren";
-"Afwijzen van 
-het verzoek"->"verplichting tot het schriftelijk
- mededelen van de beslissing";
-"Afwijzen van 
-het verzoek"->"verplichting tot het mededelen
- van de redenen";
-"Inzetten immuniteit voor het
- vaststellen van de uren"->"recht wijzigen van gewenste
- spreiding van de uren";
-"Vaststellen van de spreiding
- van de uren"->"verplichting tot het mededelen
- van de redenen";
-"Wijzigen van de spreiding
- van de uren"->"verplichting tot het mededelen
- van de redenen";
+ spreiding van de uren"->"verplichting tot het mededelen
+ van de redenen" [ label = "Wijzigen van de spreiding
+ van de uren", arrowhead=normal, arrowsize=1.2, minlen=2 ];
 overlap=false
 fontsize=14;
 }

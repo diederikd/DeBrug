@@ -64,6 +64,7 @@ public class VisualiseerToestanden_Action extends BaseAction {
           JOptionPane.showMessageDialog(null, "Message", "Geen context node", JOptionPane.ERROR_MESSAGE);
         }
         VisualiseerListener listener = new VisualiseerListener();
+        listener.show();
         listener.Ververs();
       }
     });

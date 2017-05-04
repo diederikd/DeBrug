@@ -18,7 +18,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
-  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Simulatie", "", false, "Simulatie.editor.Simulatie.Simulatie"), new ConceptEditorHintImpl("RechtspositieRol1", "", false, "Simulatie.editor.Simulatie.RechtspositieRol1"), new ConceptEditorHintImpl("RechtspositieRol2", "", false, "Simulatie.editor.Simulatie.RechtspositieRol2"), new ConceptEditorHintImpl("HandelingenRol1", "", false, "Simulatie.editor.Simulatie.HandelingenRol1"), new ConceptEditorHintImpl("HandelingenRol2", "", false, "Simulatie.editor.Simulatie.HandelingenRol2"), new ConceptEditorHintImpl("UitgevoerdeHandeling", "", false, "Simulatie.editor.Simulatie.UitgevoerdeHandeling"));
+  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Simulatie", "", false, "Simulatie.editor.Simulatie.Simulatie"), new ConceptEditorHintImpl("RechtspositieRol1", "", false, "Simulatie.editor.Simulatie.RechtspositieRol1"), new ConceptEditorHintImpl("RechtspositieRol2", "", false, "Simulatie.editor.Simulatie.RechtspositieRol2"), new ConceptEditorHintImpl("HandelingenRol1", "", false, "Simulatie.editor.Simulatie.HandelingenRol1"), new ConceptEditorHintImpl("HandelingenRol2", "", false, "Simulatie.editor.Simulatie.HandelingenRol2"), new ConceptEditorHintImpl("UitgevoerdeHandeling", "", false, "Simulatie.editor.Simulatie.UitgevoerdeHandeling"), new ConceptEditorHintImpl("UittevoerenHandeling", "", true, "Simulatie.editor.Simulatie.UittevoerenHandeling"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {
@@ -48,20 +48,25 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 4:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Simulatie_Editor());
+            return Collections.<ConceptEditor>singletonList(new ReferentieNaarOvergang_UittevoerenHandeling_Editor());
           }
           break;
         case 5:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new UitTeVoerenDialoog_Editor());
+            return Collections.<ConceptEditor>singletonList(new Simulatie_Editor());
           }
           break;
         case 6:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new UitTeVoerenHandeling_Editor());
+            return Collections.<ConceptEditor>singletonList(new UitTeVoerenDialoog_Editor());
           }
           break;
         case 7:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new UitTeVoerenHandeling_Editor());
+          }
+          break;
+        case 8:
           if (true) {
             return Arrays.asList(new ConceptEditor[]{new UitvoerbareRechtshandeling_HandelingenRol1_Editor(), new UitvoerbareRechtshandeling_HandelingenRol2_Editor()});
           }
@@ -113,7 +118,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL, "Simulatie.structure.Gegevenshuishouding"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L, "Simulatie.structure.Informatiepositie"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, "Simulatie.structure.UitTeVoerenDialoog"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, "Simulatie.structure.UitTeVoerenHandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.UitvoerbareRechtshandeling"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL, "Simulatie.structure.Gegevenshuishouding"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L, "Simulatie.structure.Informatiepositie"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x158b926d34e0095L, "ObjectiefRecht.structure.ReferentieNaarOvergang"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, "Simulatie.structure.UitTeVoerenDialoog"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, "Simulatie.structure.UitTeVoerenHandeling"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, "Simulatie.structure.UitvoerbareRechtshandeling"));
   private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0d = buildConceptIndices(MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"));
   private static String[] stringSwitchCases_xbvbvu_a0a0a0a3a0a3 = new String[]{"Simulatie.editor.imageDeleted", "Simulatie.editor.imageGreen", "Simulatie.editor.imageNew", "Simulatie.editor.imageRed"};
 }

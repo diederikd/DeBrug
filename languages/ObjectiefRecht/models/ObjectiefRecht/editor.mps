@@ -9,6 +9,15 @@
   </languages>
   <imports>
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" />
+    <import index="gcgs" ref="r:30cf84d2-736e-47e6-9cd5-b71439a5533c(SubjectiefRecht.structure)" />
+    <import index="wk9h" ref="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor)" />
+    <import index="wk9h" ref="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="ofh9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.platform(MPS.IDEA/)" />
+    <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
+    <import index="3s15" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.workbench(MPS.Workbench/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="jx79" ref="r:582b7038-95ec-43bd-8251-2a28c9c77778(Datum.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -26,6 +35,7 @@
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
+      <concept id="1176899348742" name="jetbrains.mps.lang.editor.structure.QueryFunction_ImagePath" flags="in" index="4EIwk" />
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
@@ -108,6 +118,9 @@
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
+        <child id="1176899909521" name="imagePathProvider" index="4GRq3" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -146,6 +159,12 @@
       <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
+        <property id="1088613081987" name="vertical" index="1QpmdY" />
+        <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
+        <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
+        <child id="1088612973955" name="ifFalseCellModel" index="1QoVPY" />
+      </concept>
       <concept id="7980428675268276156" name="jetbrains.mps.lang.editor.structure.TransformationMenuSection" flags="ng" index="1Qtc8_">
         <child id="7980428675268276157" name="locations" index="1Qtc8$" />
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
@@ -183,6 +202,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
@@ -239,11 +261,15 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
@@ -3474,6 +3500,10 @@
     </node>
     <node concept="2BsEeg" id="vqB$L$cYE6" role="2ABdcP">
       <property role="TrG5h" value="Tabel" />
+    </node>
+    <node concept="2BsEeg" id="7JI66SVFKam" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="Uittevoerenhandeling" />
     </node>
   </node>
   <node concept="24kQdi" id="6syAJDDPL2V">
@@ -14133,6 +14163,179 @@
         <ref role="1NtTu8" to="3pw0:vbwdmzdf2J" resolve="expressie2" />
       </node>
       <node concept="l2Vlx" id="vbwdmzdf2Y" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7JI66SVFK32">
+    <property role="3GE5qa" value="Overgang" />
+    <ref role="1XX52x" to="3pw0:5oIirjjw2l" resolve="ReferentieNaarOvergang" />
+    <node concept="3EZMnI" id="7JI66SVFK33" role="2wV5jI">
+      <node concept="1QoScp" id="7JI66SVAio3" role="3EZMnx">
+        <property role="1QpmdY" value="true" />
+        <node concept="1u4HXA" id="7JI66SVAio4" role="1QoS34">
+          <node concept="4EIwk" id="7JI66SVMH$6" role="4GRq3">
+            <node concept="3clFbS" id="7JI66SVMH$8" role="2VODD2">
+              <node concept="3cpWs8" id="5lRFs1H2eCj" role="3cqZAp">
+                <node concept="3cpWsn" id="5lRFs1H2eCk" role="3cpWs9">
+                  <property role="TrG5h" value="project" />
+                  <node concept="3uibUv" id="5lRFs1H2pwp" role="1tU5fm">
+                    <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+                  </node>
+                  <node concept="2OqwBi" id="5lRFs1H2gyU" role="33vP2m">
+                    <node concept="10M0yZ" id="5lRFs1H2gyV" role="2Oq$k0">
+                      <ref role="1PxDUh" to="3s15:~MPSDataKeys" resolve="MPSDataKeys" />
+                      <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+                    </node>
+                    <node concept="liA8E" id="5lRFs1H2gyW" role="2OqNvi">
+                      <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext):java.lang.Object" resolve="getData" />
+                      <node concept="2OqwBi" id="5lRFs1H2gyX" role="37wK5m">
+                        <node concept="2YIFZM" id="5lRFs1H2gyY" role="2Oq$k0">
+                          <ref role="1Pybhc" to="ddhc:~DataManager" resolve="DataManager" />
+                          <ref role="37wK5l" to="ddhc:~DataManager.getInstance():com.intellij.ide.DataManager" resolve="getInstance" />
+                        </node>
+                        <node concept="liA8E" id="5lRFs1H2gyZ" role="2OqNvi">
+                          <ref role="37wK5l" to="ddhc:~DataManager.getDataContext():com.intellij.openapi.actionSystem.DataContext" resolve="getDataContext" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="5lRFs1H2suU" role="3cqZAp">
+                <node concept="3clFbS" id="5lRFs1H2suW" role="3clFbx">
+                  <node concept="3cpWs6" id="52o5oqc0dbS" role="3cqZAp">
+                    <node concept="3cpWs3" id="5lRFs1GZkgb" role="3cqZAk">
+                      <node concept="Xl_RD" id="5lRFs1GZkH7" role="3uHU7w">
+                        <property role="Xl_RC" value="/images/Green.png" />
+                      </node>
+                      <node concept="2OqwBi" id="52o5oqc0gw$" role="3uHU7B">
+                        <node concept="2OqwBi" id="52o5oqc0ezt" role="2Oq$k0">
+                          <node concept="2YIFZM" id="52o5oqc0dZl" role="2Oq$k0">
+                            <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project):com.intellij.platform.ProjectBaseDirectory" resolve="getInstance" />
+                            <ref role="1Pybhc" to="ofh9:~ProjectBaseDirectory" resolve="ProjectBaseDirectory" />
+                            <node concept="37vLTw" id="5lRFs1H2rdE" role="37wK5m">
+                              <ref role="3cqZAo" node="5lRFs1H2eCk" resolve="project" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="52o5oqc0eYw" role="2OqNvi">
+                            <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getBaseDir():com.intellij.openapi.vfs.VirtualFile" resolve="getBaseDir" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="52o5oqc0hH6" role="2OqNvi">
+                          <ref role="37wK5l" to="jlff:~VirtualFile.getCanonicalPath():java.lang.String" resolve="getCanonicalPath" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3y3z36" id="5lRFs1H2vZx" role="3clFbw">
+                  <node concept="10Nm6u" id="5lRFs1H2wjx" role="3uHU7w" />
+                  <node concept="37vLTw" id="5lRFs1H2sRp" role="3uHU7B">
+                    <ref role="3cqZAo" node="5lRFs1H2eCk" resolve="project" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="5lRFs1H2y8J" role="3cqZAp">
+                <node concept="Xl_RD" id="5lRFs1H2yts" role="3cqZAk">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pkWqt" id="7JI66SVAio5" role="3e4ffs">
+          <node concept="3clFbS" id="7JI66SVAio6" role="2VODD2">
+            <node concept="3cpWs6" id="7JI66SVAio7" role="3cqZAp">
+              <node concept="3clFbT" id="7JI66SVAixG" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1u4HXA" id="7JI66SVAiob" role="1QoVPY">
+          <node concept="4EIwk" id="7JI66SVMI5h" role="4GRq3">
+            <node concept="3clFbS" id="7JI66SVMI5i" role="2VODD2">
+              <node concept="3cpWs8" id="7JI66SVMIdE" role="3cqZAp">
+                <node concept="3cpWsn" id="7JI66SVMIdF" role="3cpWs9">
+                  <property role="TrG5h" value="project" />
+                  <node concept="3uibUv" id="7JI66SVMIdG" role="1tU5fm">
+                    <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+                  </node>
+                  <node concept="2OqwBi" id="7JI66SVMIdH" role="33vP2m">
+                    <node concept="10M0yZ" id="7JI66SVMIdI" role="2Oq$k0">
+                      <ref role="1PxDUh" to="3s15:~MPSDataKeys" resolve="MPSDataKeys" />
+                      <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+                    </node>
+                    <node concept="liA8E" id="7JI66SVMIdJ" role="2OqNvi">
+                      <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext):java.lang.Object" resolve="getData" />
+                      <node concept="2OqwBi" id="7JI66SVMIdK" role="37wK5m">
+                        <node concept="2YIFZM" id="7JI66SVMIdL" role="2Oq$k0">
+                          <ref role="1Pybhc" to="ddhc:~DataManager" resolve="DataManager" />
+                          <ref role="37wK5l" to="ddhc:~DataManager.getInstance():com.intellij.ide.DataManager" resolve="getInstance" />
+                        </node>
+                        <node concept="liA8E" id="7JI66SVMIdM" role="2OqNvi">
+                          <ref role="37wK5l" to="ddhc:~DataManager.getDataContext():com.intellij.openapi.actionSystem.DataContext" resolve="getDataContext" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="7JI66SVMIdN" role="3cqZAp">
+                <node concept="3clFbS" id="7JI66SVMIdO" role="3clFbx">
+                  <node concept="3cpWs6" id="7JI66SVMIdP" role="3cqZAp">
+                    <node concept="3cpWs3" id="7JI66SVMIdQ" role="3cqZAk">
+                      <node concept="Xl_RD" id="7JI66SVMIdR" role="3uHU7w">
+                        <property role="Xl_RC" value="/images/Red.png" />
+                      </node>
+                      <node concept="2OqwBi" id="7JI66SVMIdS" role="3uHU7B">
+                        <node concept="2OqwBi" id="7JI66SVMIdT" role="2Oq$k0">
+                          <node concept="2YIFZM" id="7JI66SVMIdU" role="2Oq$k0">
+                            <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project):com.intellij.platform.ProjectBaseDirectory" resolve="getInstance" />
+                            <ref role="1Pybhc" to="ofh9:~ProjectBaseDirectory" resolve="ProjectBaseDirectory" />
+                            <node concept="37vLTw" id="7JI66SVMIdV" role="37wK5m">
+                              <ref role="3cqZAo" node="7JI66SVMIdF" resolve="project" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="7JI66SVMIdW" role="2OqNvi">
+                            <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getBaseDir():com.intellij.openapi.vfs.VirtualFile" resolve="getBaseDir" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="7JI66SVMIdX" role="2OqNvi">
+                          <ref role="37wK5l" to="jlff:~VirtualFile.getCanonicalPath():java.lang.String" resolve="getCanonicalPath" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3y3z36" id="7JI66SVMIdY" role="3clFbw">
+                  <node concept="10Nm6u" id="7JI66SVMIdZ" role="3uHU7w" />
+                  <node concept="37vLTw" id="7JI66SVMIe0" role="3uHU7B">
+                    <ref role="3cqZAo" node="7JI66SVMIdF" resolve="project" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="7JI66SVMIe1" role="3cqZAp">
+                <node concept="Xl_RD" id="7JI66SVMIe2" role="3cqZAk">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1iCGBv" id="7JI66SVFK34" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:5oIirjjw2m" resolve="overgang" />
+        <node concept="1sVBvm" id="7JI66SVFK35" role="1sWHZn">
+          <node concept="3F0A7n" id="7JI66SVFK36" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7JI66SVFK37" role="2iSdaV" />
+    </node>
+    <node concept="2aJ2om" id="7JI66SVFKat" role="CpUAK">
+      <ref role="2$4xQ3" node="7JI66SVFKam" resolve="Uittevoerenhandeling" />
     </node>
   </node>
 </model>

@@ -42,28 +42,31 @@
       <node id="5389382045085420358" at="47,25,48,82" concept="2" />
       <node id="6016853916313143539" at="48,82,49,75" concept="7" />
       <node id="6016853916313141875" at="49,75,50,39" concept="7" />
-      <node id="6016853916313141881" at="50,39,51,172" concept="7" />
-      <node id="6016853916313141890" at="51,172,52,40" concept="2" />
-      <node id="7888341338573704545" at="52,40,53,52" concept="2" />
-      <node id="5389382045085672381" at="53,52,54,46" concept="2" />
-      <node id="5389382045085684084" at="54,46,55,43" concept="2" />
-      <node id="1365497693575293953" at="57,36,58,45" concept="8" />
+      <node id="8930101972852392504" at="50,39,51,27" concept="7" />
+      <node id="8930101972852393968" at="52,132,53,168" concept="2" />
+      <node id="6016853916313141890" at="54,5,55,40" concept="2" />
+      <node id="7888341338573704545" at="55,40,56,52" concept="2" />
+      <node id="5389382045085672381" at="56,52,57,46" concept="2" />
+      <node id="5389382045085684084" at="57,46,58,43" concept="2" />
+      <node id="1365497693575293953" at="60,36,61,45" concept="8" />
       <node id="1365497693575292845" at="27,0,30,0" concept="1" trace="Visualiseer_Tool#(Lcom/intellij/openapi/project/Project;)V" />
-      <node id="1365497693575292845" at="57,0,60,0" concept="6" trace="getComponent#()Ljavax/swing/JComponent;" />
-      <node id="7888341338573678778" at="47,0,57,0" concept="6" trace="Ververs#()V" />
+      <node id="8930101972852363122" at="51,27,54,5" concept="5" />
+      <node id="1365497693575292845" at="60,0,63,0" concept="6" trace="getComponent#()Ljavax/swing/JComponent;" />
+      <node id="7888341338573678778" at="47,0,60,0" concept="6" trace="Ververs#()V" />
       <node id="1365497693575292845" at="30,0,47,0" concept="6" trace="init#(Lcom/intellij/openapi/project/Project;)V" />
       <scope id="1365497693575292845" at="27,44,28,78" />
-      <scope id="1365497693575292847" at="57,36,58,45" />
+      <scope id="8930101972852363124" at="52,132,53,168" />
+      <scope id="1365497693575292847" at="60,36,61,45" />
       <scope id="1365497693575292845" at="27,0,30,0">
         <var name="project" id="1365497693575292845" />
       </scope>
-      <scope id="1365497693575292845" at="57,0,60,0" />
-      <scope id="7888341338573678780" at="47,25,55,43">
+      <scope id="1365497693575292845" at="60,0,63,0" />
+      <scope id="7888341338573678780" at="47,25,58,43">
         <var name="image" id="6016853916313141876" />
         <var name="imageicon" id="6016853916313143540" />
-        <var name="newImage" id="6016853916313141882" />
+        <var name="newImage" id="8930101972852392505" />
       </scope>
-      <scope id="7888341338573678778" at="47,0,57,0" />
+      <scope id="7888341338573678778" at="47,0,60,0" />
       <scope id="1365497693575292845" at="30,37,45,42">
         <var name="MPSproject" id="1365497693575311464" />
         <var name="actionListener" id="407973368249268805" />
@@ -74,7 +77,7 @@
       <scope id="1365497693575292845" at="30,0,47,0">
         <var name="project" id="1365497693575292845" />
       </scope>
-      <unit id="1365497693575292845" at="20,0,61,0" name="VisualiserPlugin.plugin.Visualiseer_Tool" />
+      <unit id="1365497693575292845" at="20,0,64,0" name="VisualiserPlugin.plugin.Visualiseer_Tool" />
     </file>
   </root>
   <root nodeRef="r:fcad94bc-adb2-4b44-bb1c-cebf5e64113e(VisualiserPlugin.plugin)/407973368249174595">
@@ -82,21 +85,25 @@
       <node id="5389382045085371014" at="10,0,11,0" concept="11" trace="tool" />
       <node id="407973368249284997" at="13,50,14,19" concept="2" />
       <node id="407973368249280549" at="16,57,17,27" concept="2" />
-      <node id="8634981577175012876" at="19,25,20,19" concept="2" />
+      <node id="8930101972852811872" at="19,22,20,24" concept="2" />
+      <node id="8634981577175012876" at="22,25,23,19" concept="2" />
       <node id="407973368249277425" at="16,0,19,0" concept="6" trace="ZetTool#(LVisualiserPlugin/plugin/Visualiseer_Tool;)V" />
-      <node id="8634981577175011689" at="19,0,22,0" concept="6" trace="Ververs#()V" />
+      <node id="8930101972852810671" at="19,0,22,0" concept="6" trace="show#()V" />
+      <node id="8634981577175011689" at="22,0,25,0" concept="6" trace="Ververs#()V" />
       <node id="407973368249187584" at="12,0,16,0" concept="6" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
       <scope id="407973368249187590" at="13,50,14,19" />
       <scope id="407973368249277428" at="16,57,17,27" />
-      <scope id="8634981577175011692" at="19,25,20,19" />
+      <scope id="8930101972852810674" at="19,22,20,24" />
+      <scope id="8634981577175011692" at="22,25,23,19" />
       <scope id="407973368249277425" at="16,0,19,0">
         <var name="toolvisualiseer" id="407973368249278017" />
       </scope>
-      <scope id="8634981577175011689" at="19,0,22,0" />
+      <scope id="8930101972852810671" at="19,0,22,0" />
+      <scope id="8634981577175011689" at="22,0,25,0" />
       <scope id="407973368249187584" at="12,0,16,0">
         <var name="event" id="407973368249187588" />
       </scope>
-      <unit id="407973368249174595" at="8,0,23,0" name="VisualiserPlugin.plugin.VisualiseerListener" />
+      <unit id="407973368249174595" at="8,0,26,0" name="VisualiserPlugin.plugin.VisualiseerListener" />
     </file>
   </root>
   <root nodeRef="r:fcad94bc-adb2-4b44-bb1c-cebf5e64113e(VisualiserPlugin.plugin)/4919564618421821174">
@@ -118,7 +125,8 @@
       <node id="4919564618422267716" at="59,103,60,46" concept="2" />
       <node id="1017963620622688301" at="63,74,64,105" concept="2" />
       <node id="8634981577175311494" at="65,9,66,65" concept="7" />
-      <node id="8634981577175311499" at="66,65,67,27" concept="2" />
+      <node id="8930101972852817464" at="66,65,67,24" concept="2" />
+      <node id="8634981577175311499" at="67,24,68,27" concept="2" />
       <node id="4919564618421821174" at="34,95,37,5" concept="5" />
       <node id="4919564618421821174" at="39,68,42,7" concept="5" />
       <node id="4919564618421821174" at="45,57,48,7" concept="5" />
@@ -129,10 +137,10 @@
       <node id="4919564618421821174" at="37,5,43,5" concept="0" />
       <node id="4919564618421821174" at="43,5,49,5" concept="0" />
       <node id="4919564618422269018" at="55,25,62,9" concept="0" />
-      <node id="4919564618422483216" at="55,0,69,0" concept="6" trace="run#()V" />
-      <node id="4919564618422483214" at="53,96,69,7" concept="2" />
+      <node id="4919564618422483216" at="55,0,70,0" concept="6" trace="run#()V" />
+      <node id="4919564618422483214" at="53,96,70,7" concept="2" />
       <node id="4919564618421821174" at="33,0,52,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
-      <node id="4919564618421821174" at="52,0,71,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="4919564618421821174" at="52,0,72,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
       <scope id="4919564618421821174" at="30,32,31,16" />
       <scope id="4919564618421821174" at="35,53,36,19" />
       <scope id="4919564618421821174" at="40,26,41,21" />
@@ -153,22 +161,22 @@
         <var name="context" id="4919564618422269018" />
       </scope>
       <scope id="4919564618421821174" at="23,0,29,0" />
-      <scope id="4919564618422483218" at="55,25,67,27">
+      <scope id="4919564618422483218" at="55,25,68,27">
         <var name="listener" id="8634981577175311495" />
       </scope>
-      <scope id="4919564618422483216" at="55,0,69,0" />
+      <scope id="4919564618422483216" at="55,0,70,0" />
       <scope id="4919564618421821174" at="34,95,50,16" />
-      <scope id="4919564618421821174" at="53,96,69,7" />
+      <scope id="4919564618421821174" at="53,96,70,7" />
       <scope id="4919564618421821174" at="33,0,52,0">
         <var name="_params" id="4919564618421821174" />
         <var name="event" id="4919564618421821174" />
       </scope>
-      <scope id="4919564618421821174" at="52,0,71,0">
+      <scope id="4919564618421821174" at="52,0,72,0">
         <var name="_params" id="4919564618421821174" />
         <var name="event" id="4919564618421821174" />
       </scope>
-      <unit id="4919564618422483216" at="54,45,69,5" name="VisualiserPlugin.plugin.VisualiseerToestandenEnOvergangen_Action$1" />
-      <unit id="4919564618421821174" at="20,0,72,0" name="VisualiserPlugin.plugin.VisualiseerToestandenEnOvergangen_Action" />
+      <unit id="4919564618422483216" at="54,45,70,5" name="VisualiserPlugin.plugin.VisualiseerToestandenEnOvergangen_Action$1" />
+      <unit id="4919564618421821174" at="20,0,73,0" name="VisualiserPlugin.plugin.VisualiseerToestandenEnOvergangen_Action" />
     </file>
   </root>
   <root nodeRef="r:fcad94bc-adb2-4b44-bb1c-cebf5e64113e(VisualiserPlugin.plugin)/4919564618422014147">
@@ -239,23 +247,36 @@
       <node id="6016853916312187197" at="22,124,23,47" concept="2" />
       <node id="6016853916312698337" at="23,47,24,65" concept="2" />
       <node id="6016853916312383162" at="27,45,28,28" concept="2" />
-      <node id="6016853916312401712" at="28,28,29,99" concept="2" />
-      <node id="6016853916312390418" at="29,99,30,43" concept="2" />
+      <node id="8930101972851940516" at="28,28,29,20" concept="2" />
+      <node id="8930101972851939837" at="33,41,34,27" concept="2" />
+      <node id="8930101972851942571" at="34,27,35,27" concept="2" />
+      <node id="8930101972851940485" at="37,41,38,99" concept="2" />
+      <node id="8930101972851940498" at="38,99,39,43" concept="2" />
       <node id="6016853916312186040" at="17,0,19,0" concept="1" trace="ImagePanel#()V" />
-      <node id="6016853916312360546" at="26,0,32,0" concept="6" trace="paintComponent#(Ljava/awt/Graphics;)V" />
+      <node id="8930101972851940511" at="37,0,41,0" concept="6" trace="RescaleImage#(Ljava/awt/Graphics;)V" />
+      <node id="6016853916312360546" at="26,0,31,0" concept="6" trace="paintComponent#(Ljava/awt/Graphics;)V" />
+      <node id="8930101972851939825" at="32,0,37,0" concept="6" trace="update#(Ljava/awt/Graphics;)V" />
       <node id="6016853916312249109" at="19,0,26,0" concept="6" trace="Drawimage#()V" />
       <scope id="6016853916312186043" at="17,23,17,23" />
       <scope id="6016853916312186040" at="17,0,19,0" />
-      <scope id="6016853916312360549" at="27,45,30,43" />
+      <scope id="6016853916312360549" at="27,45,29,20" />
+      <scope id="8930101972851939833" at="33,41,35,27" />
+      <scope id="8930101972851940484" at="37,41,39,43" />
+      <scope id="8930101972851940511" at="37,0,41,0">
+        <var name="g" id="8930101972851940506" />
+      </scope>
       <scope id="6016853916312249112" at="19,27,24,65">
         <var name="MPSproject" id="6016853916312187175" />
         <var name="graphvizpng" id="6016853916312196181" />
       </scope>
-      <scope id="6016853916312360546" at="26,0,32,0">
+      <scope id="6016853916312360546" at="26,0,31,0">
         <var name="g" id="6016853916312379269" />
       </scope>
+      <scope id="8930101972851939825" at="32,0,37,0">
+        <var name="graphics" id="8930101972851939829" />
+      </scope>
       <scope id="6016853916312249109" at="19,0,26,0" />
-      <unit id="6016853916312184298" at="14,0,33,0" name="VisualiserPlugin.plugin.ImagePanel" />
+      <unit id="6016853916312184298" at="14,0,43,0" name="VisualiserPlugin.plugin.ImagePanel" />
     </file>
   </root>
   <root nodeRef="r:fcad94bc-adb2-4b44-bb1c-cebf5e64113e(VisualiserPlugin.plugin)/6158582057428727319">
@@ -893,7 +914,8 @@
       <node id="8634981577172069242" at="59,79,60,46" concept="2" />
       <node id="8634981577172069251" at="63,74,64,105" concept="2" />
       <node id="8634981577175308936" at="65,9,66,65" concept="7" />
-      <node id="8634981577175308941" at="66,65,67,27" concept="2" />
+      <node id="8930101972852803967" at="66,65,67,24" concept="2" />
+      <node id="8634981577175308941" at="67,24,68,27" concept="2" />
       <node id="8634981577172069222" at="34,95,37,5" concept="5" />
       <node id="8634981577172069222" at="39,68,42,7" concept="5" />
       <node id="8634981577172069222" at="45,57,48,7" concept="5" />
@@ -904,10 +926,10 @@
       <node id="8634981577172069222" at="37,5,43,5" concept="0" />
       <node id="8634981577172069222" at="43,5,49,5" concept="0" />
       <node id="8634981577172069228" at="55,25,62,9" concept="0" />
-      <node id="8634981577172069226" at="55,0,69,0" concept="6" trace="run#()V" />
-      <node id="8634981577172069225" at="53,96,69,7" concept="2" />
+      <node id="8634981577172069226" at="55,0,70,0" concept="6" trace="run#()V" />
+      <node id="8634981577172069225" at="53,96,70,7" concept="2" />
       <node id="8634981577172069222" at="33,0,52,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
-      <node id="8634981577172069222" at="52,0,71,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="8634981577172069222" at="52,0,72,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
       <scope id="8634981577172069222" at="30,32,31,16" />
       <scope id="8634981577172069222" at="35,53,36,19" />
       <scope id="8634981577172069222" at="40,26,41,21" />
@@ -928,22 +950,22 @@
         <var name="context" id="8634981577172069228" />
       </scope>
       <scope id="8634981577172069222" at="23,0,29,0" />
-      <scope id="8634981577172069227" at="55,25,67,27">
+      <scope id="8634981577172069227" at="55,25,68,27">
         <var name="listener" id="8634981577175308937" />
       </scope>
-      <scope id="8634981577172069226" at="55,0,69,0" />
+      <scope id="8634981577172069226" at="55,0,70,0" />
       <scope id="8634981577172069222" at="34,95,50,16" />
-      <scope id="8634981577172069222" at="53,96,69,7" />
+      <scope id="8634981577172069222" at="53,96,70,7" />
       <scope id="8634981577172069222" at="33,0,52,0">
         <var name="_params" id="8634981577172069222" />
         <var name="event" id="8634981577172069222" />
       </scope>
-      <scope id="8634981577172069222" at="52,0,71,0">
+      <scope id="8634981577172069222" at="52,0,72,0">
         <var name="_params" id="8634981577172069222" />
         <var name="event" id="8634981577172069222" />
       </scope>
-      <unit id="8634981577172069226" at="54,45,69,5" name="VisualiserPlugin.plugin.VisualiseerToestanden_Action$1" />
-      <unit id="8634981577172069222" at="20,0,72,0" name="VisualiserPlugin.plugin.VisualiseerToestanden_Action" />
+      <unit id="8634981577172069226" at="54,45,70,5" name="VisualiserPlugin.plugin.VisualiseerToestanden_Action$1" />
+      <unit id="8634981577172069222" at="20,0,73,0" name="VisualiserPlugin.plugin.VisualiseerToestanden_Action" />
     </file>
   </root>
   <root nodeRef="r:fcad94bc-adb2-4b44-bb1c-cebf5e64113e(VisualiserPlugin.plugin)/8634981577175015210">

@@ -48,7 +48,7 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected String[] getExtendedLanguageIDs() {
-    return new String[]{"Gegevens"};
+    return new String[]{"Gegevens", "Simulatie"};
   }
   @Override
   public Collection<TemplateModule> getGenerators() {
