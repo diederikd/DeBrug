@@ -67,8 +67,9 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> schoonBerichten_idCRumITE5PD = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("schoonBerichten").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("CRumITE5PD").registry(REGISTRY).build();
   public static final SMethod<Void> voegBerichtToe_idCRumITGtjc = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("voegBerichtToe").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("CRumITGtjc").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<Void> evalueerRechtsbetrekkingen_id7mDqhOixwsa = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("evalueerRechtsbetrekkingen").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("7mDqhOixwsa").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> evalueerUitvoerbareHandeling_id6$f4rruBcjp = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("evalueerUitvoerbareHandeling").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6$f4rruBcjp").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(Initialiseer_id5FFw3Y4c4n0, SchoonSimulatie_id3d6QfrgEDkp, InitialiseerSubjecten_id72MtYCv3ANG, InitialiseerUitgevoerdeHandelingen_id38UPyP9ybJ1, InitialiseerRechtsbetrekkingen_id146AQXTpFv9, VerversUitvoerbareHandelingenInSimulatie_id2rhLMRp46el, AfleidenUitvoerbareHandelingOpBasisVanSubjectieveRechtsbetrekkingen_id146AQXTljyk, AfleidenUitvoerbareHandelingOpBasisVanInitieel_id146AQXTkiZb, ToevoegenHandelingAanLijst_id146AQXTkRby, ToevoegenUitvoerbareHandelingAanSimulatie_id2N$PylwVyEM, UitvoerenHandeling_id3d6QfrgVOeu, BepaalrechtsgevolgenNieuweRechtsbetrekkingen_id38UPyP8ToLC, BepaalrechtsgevolgenBeeindigenRechtsbetrekkingen_id38UPyP92lvl, HandelingToevoegenAanUitgevoerdeHandeling_id1Enheq$Rd7O, GeefHuidigTijdstipVanDeSimulatie_id1Enheq$Rvw5, GeefHuidigeDatumVanDeSimulatie_id5QFVCQs$JI4, OpzoekenTypeHandeling_id3d6QfrgWko$, OpzoekenUitzonderingen_id3d6Qfrh1abK, schoonBerichten_idCRumITE5PD, voegBerichtToe_idCRumITGtjc, evalueerRechtsbetrekkingen_id7mDqhOixwsa);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(Initialiseer_id5FFw3Y4c4n0, SchoonSimulatie_id3d6QfrgEDkp, InitialiseerSubjecten_id72MtYCv3ANG, InitialiseerUitgevoerdeHandelingen_id38UPyP9ybJ1, InitialiseerRechtsbetrekkingen_id146AQXTpFv9, VerversUitvoerbareHandelingenInSimulatie_id2rhLMRp46el, AfleidenUitvoerbareHandelingOpBasisVanSubjectieveRechtsbetrekkingen_id146AQXTljyk, AfleidenUitvoerbareHandelingOpBasisVanInitieel_id146AQXTkiZb, ToevoegenHandelingAanLijst_id146AQXTkRby, ToevoegenUitvoerbareHandelingAanSimulatie_id2N$PylwVyEM, UitvoerenHandeling_id3d6QfrgVOeu, BepaalrechtsgevolgenNieuweRechtsbetrekkingen_id38UPyP8ToLC, BepaalrechtsgevolgenBeeindigenRechtsbetrekkingen_id38UPyP92lvl, HandelingToevoegenAanUitgevoerdeHandeling_id1Enheq$Rd7O, GeefHuidigTijdstipVanDeSimulatie_id1Enheq$Rvw5, GeefHuidigeDatumVanDeSimulatie_id5QFVCQs$JI4, OpzoekenTypeHandeling_id3d6QfrgWko$, OpzoekenUitzonderingen_id3d6Qfrh1abK, schoonBerichten_idCRumITE5PD, voegBerichtToe_idCRumITGtjc, evalueerRechtsbetrekkingen_id7mDqhOixwsa, evalueerUitvoerbareHandeling_id6$f4rruBcjp);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -696,6 +697,18 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
       SPropertyOperations.set(rechtsbetrekking, MetaAdapterFactory.getProperty(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a786L, "evaluatieresultaat"), "" + (((Boolean) object)));
     }
   }
+  /*package*/ static void evalueerUitvoerbareHandeling_id6$f4rruBcjp(@NotNull SNode __thisNode__, SNode simulatie) {
+    for (SNode handeling : ListSequence.fromList(SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen")))) {
+      Simulatie__BehaviorDescriptor.schoonBerichten_idCRumITE5PD.invoke(simulatie);
+      Object object = null;
+      try {
+        object = Interpreter.evalueer(simulatie, SLinkOperations.getTarget(handeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "overgang")));
+      } catch (InterpreterRuntimeException e) {
+      }
+      SLinkOperations.setTarget(handeling, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a880L, "evaluatielog"), Interpreter.geefLijstMetBerichten());
+      SPropertyOperations.set(handeling, MetaAdapterFactory.getProperty(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a786L, "evaluatieresultaat"), "" + (((Boolean) object)));
+    }
+  }
 
   /*package*/ Simulatie__BehaviorDescriptor() {
     super(REGISTRY);
@@ -766,6 +779,9 @@ public final class Simulatie__BehaviorDescriptor extends BaseBHDescriptor {
         return null;
       case 20:
         evalueerRechtsbetrekkingen_id7mDqhOixwsa(node, (SNode) parameters[0]);
+        return null;
+      case 21:
+        evalueerUitvoerbareHandeling_id6$f4rruBcjp(node, (SNode) parameters[0]);
         return null;
       default:
         throw new BHMethodNotFoundException(this, method);

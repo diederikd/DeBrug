@@ -10,8 +10,18 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import org.jetbrains.mps.openapi.module.SModule;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.jetbrains.mps.openapi.module.SModule;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import com.intellij.openapi.project.Project;
+import jetbrains.mps.workbench.MPSDataKeys;
+import com.intellij.ide.DataManager;
+import com.intellij.platform.ProjectBaseDirectory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Image;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
@@ -49,26 +59,92 @@ public class ReferentieNaarOvergang_UittevoerenHandeling_Editor extends DefaultN
     return editorCell;
   }
   private static boolean renderingCondition_a40kt5_a0a(SNode node, EditorContext editorContext) {
-    return true;
+    SNode simulatie = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"))).first();
+    System.out.println("simulatie " + SPropertyOperations.getString(simulatie, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    boolean result = false;
+    boolean evaluatieresultaat;
+    {
+      final SNode rechtshandeling = SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x158b926d34e0095L, 0x158b926d34e0096L, "overgang"));
+      if (SNodeOperations.isInstanceOf(rechtshandeling, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"))) {
+        boolean isUitvoerbareHandeling = false;
+        System.out.println("Controle of handeling behoort bij uitvoerbare handeling " + SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen")));
+        for (SNode uitvoerbarehandeling : ListSequence.fromList(SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen")))) {
+          System.out.println("=================================================================");
+          System.out.println("Uitvoerbare handeling :" + SPropertyOperations.getString(SLinkOperations.getTarget(uitvoerbarehandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "overgang")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")));
+          System.out.println("rechtshandeling       :" + rechtshandeling);
+          if (SLinkOperations.getTarget(uitvoerbarehandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "overgang")) == rechtshandeling) {
+            System.out.println(SPropertyOperations.getString(SLinkOperations.getTarget(uitvoerbarehandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "overgang")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")) + " en " + SPropertyOperations.getString(rechtshandeling, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")) + "zijn gelijk");
+            isUitvoerbareHandeling = true;
+            result = isUitvoerbareHandeling && SPropertyOperations.getBoolean(uitvoerbarehandeling, MetaAdapterFactory.getProperty(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a786L, "evaluatieresultaat"));
+          }
+          if (isUitvoerbareHandeling == false) {
+            result = false;
+          }
+        }
+        System.out.println("resultaat voor : " + rechtshandeling + " is " + result);
+
+      }
+    }
+    {
+      final SNode handelingZonderRechtsgevolg = SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x158b926d34e0095L, 0x158b926d34e0096L, "overgang"));
+      if (SNodeOperations.isInstanceOf(handelingZonderRechtsgevolg, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25299d15220b0f46L, "ObjectiefRecht.structure.HandelingZonderRechtsgevolg"))) {
+        boolean isUitvoerbareHandeling = false;
+        System.out.println("Controle of handeling behoort bij uitvoerbare handeling " + SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen")));
+        for (SNode uitvoerbarehandeling : ListSequence.fromList(SLinkOperations.getChildren(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x3346d8f6cfb01e1fL, "uitvoerbarehandelingen")))) {
+          System.out.println("=================================================================");
+          System.out.println("Uitvoerbare handeling :" + SPropertyOperations.getString(SLinkOperations.getTarget(uitvoerbarehandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "overgang")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")));
+          System.out.println("rechtshandeling       :" + handelingZonderRechtsgevolg);
+          if (SLinkOperations.getTarget(uitvoerbarehandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "overgang")) == handelingZonderRechtsgevolg) {
+            System.out.println(SPropertyOperations.getString(SLinkOperations.getTarget(uitvoerbarehandeling, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "overgang")), MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")) + " en " + SPropertyOperations.getString(handelingZonderRechtsgevolg, MetaAdapterFactory.getProperty(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x12f338eae6fd9441L, 0x12f338eae6fd9458L, "kortenaam")) + "zijn gelijk");
+            isUitvoerbareHandeling = true;
+            result = isUitvoerbareHandeling && SPropertyOperations.getBoolean(uitvoerbarehandeling, MetaAdapterFactory.getProperty(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a786L, "evaluatieresultaat"));
+          }
+          if (isUitvoerbareHandeling == false) {
+            result = false;
+          }
+        }
+        System.out.println("resultaat voor : " + handelingZonderRechtsgevolg + " is " + result);
+
+      }
+    }
+
+    System.out.println("=================================================================");
+    return result;
   }
   private EditorCell createImage_a40kt5_a0a(final EditorContext editorContext, final SNode node) {
     SModule imageModule;
     String imagePath;
-    imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
-    imagePath = "./images/Green.png";
+    imageModule = SNodeOperations.getModel(node).getModule();
+    imagePath = (new _FunctionTypes._return_P0_E0<String>() {
+      public String invoke() {
+        Project project = MPSDataKeys.PROJECT.getData(DataManager.getInstance().getDataContext());
+        if (project != null) {
+          return ProjectBaseDirectory.getInstance(project).getBaseDir().getCanonicalPath() + "/images/Green.png";
+        }
+        return "";
+      }
+    }).invoke();
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
     editorCell.setCellId("Image_a40kt5_a0a");
-    editorCell.setDescent(0);
+    editorCell.setDescent(4);
     return editorCell;
   }
   private EditorCell createImage_a40kt5_a0a_0(final EditorContext editorContext, final SNode node) {
     SModule imageModule;
     String imagePath;
-    imageModule = SNodeOperations.getConcept(node).getLanguage().getSourceModule();
-    imagePath = "./images/Red.png";
+    imageModule = SNodeOperations.getModel(node).getModule();
+    imagePath = (new _FunctionTypes._return_P0_E0<String>() {
+      public String invoke() {
+        Project project = MPSDataKeys.PROJECT.getData(DataManager.getInstance().getDataContext());
+        if (project != null) {
+          return ProjectBaseDirectory.getInstance(project).getBaseDir().getCanonicalPath() + "/images/Red.png";
+        }
+        return "";
+      }
+    }).invoke();
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
     editorCell.setCellId("Image_a40kt5_a0a_0");
-    editorCell.setDescent(0);
+    editorCell.setDescent(4);
     return editorCell;
   }
   private EditorCell createRefCell_a40kt5_b0(EditorContext editorContext, SNode node) {

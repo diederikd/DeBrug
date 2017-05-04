@@ -46,6 +46,7 @@ public class Interpreter {
   private static SNode simulatie;
   private static SNode teEvaluerenSubjectieveRechtsbetrekking;
   private static SNode teEvaluerenRechtshandeling;
+  private static SNode teEvaluerenhandelingZonderRechtsgevolg;
   private static SNode lijstMetBerichten = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf856d46f333847a8L, 0x8a4811e26bc535e0L, 0x2b935eb96618ecfeL, "Algemeen.structure.LijstMetBerichten"));
 
   public static Object evalueer(SNode simulatieparameter, SNode node) {
@@ -67,6 +68,15 @@ public class Interpreter {
             teEvaluerenRechtshandeling = rechtshandeling;
             result = evalueerVoorwaarden(SLinkOperations.getTarget(rechtshandeling, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x25be3715c7af049fL, "Voorwaarden")));
             Interpreter.voegBerichtToe("Resultaat van evaluatie rechtshandeling " + rechtshandeling + " is " + result);
+          }
+        }
+        {
+          final SNode handelingZonderRechtsgevolg = rechtsgevolgVeroorzaker;
+          if (SNodeOperations.isInstanceOf(handelingZonderRechtsgevolg, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25299d15220b0f46L, "ObjectiefRecht.structure.HandelingZonderRechtsgevolg"))) {
+            Interpreter.voegBerichtToe("Evalueer rechtshandeling " + handelingZonderRechtsgevolg);
+            teEvaluerenhandelingZonderRechtsgevolg = handelingZonderRechtsgevolg;
+            result = evalueerVoorwaarden(SLinkOperations.getTarget(handelingZonderRechtsgevolg, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, 0x25be3715c7af049fL, "Voorwaarden")));
+            Interpreter.voegBerichtToe("Resultaat van evaluatie rechtshandeling " + handelingZonderRechtsgevolg + " is " + result);
           }
         }
       }
@@ -112,6 +122,10 @@ public class Interpreter {
 
   public static SNode teEvaluerenRechtshandeling() {
     return teEvaluerenRechtshandeling;
+  }
+
+  public static SNode teEvaluerenHandelingZonderRechtsgevolg() {
+    return teEvaluerenhandelingZonderRechtsgevolg;
   }
 
   public static SNode InstantieVanOnderwerpVanDeHandeling() {

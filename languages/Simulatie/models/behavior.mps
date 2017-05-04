@@ -6585,6 +6585,128 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="6$f4rruBcjp" role="13h7CS">
+      <property role="TrG5h" value="evalueerUitvoerbareHandeling" />
+      <node concept="37vLTG" id="6$f4rruBcjq" role="3clF46">
+        <property role="TrG5h" value="simulatie" />
+        <node concept="3Tqbb2" id="6$f4rruBcjr" role="1tU5fm">
+          <ref role="ehGHo" to="xhlk:6OHSlZaTjYP" resolve="Simulatie" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6$f4rruBcjs" role="1B3o_S" />
+      <node concept="3cqZAl" id="6$f4rruBcjt" role="3clF45" />
+      <node concept="3clFbS" id="6$f4rruBcju" role="3clF47">
+        <node concept="2Gpval" id="6$f4rruBcjv" role="3cqZAp">
+          <node concept="2GrKxI" id="6$f4rruBcjw" role="2Gsz3X">
+            <property role="TrG5h" value="handeling" />
+          </node>
+          <node concept="2OqwBi" id="6$f4rruBsvS" role="2GsD0m">
+            <node concept="37vLTw" id="6$f4rruBsc$" role="2Oq$k0">
+              <ref role="3cqZAo" node="6$f4rruBcjq" resolve="simulatie" />
+            </node>
+            <node concept="3Tsc0h" id="6$f4rruBsOr" role="2OqNvi">
+              <ref role="3TtcxE" to="xhlk:3d6QfrfG1Sv" resolve="uitvoerbarehandelingen" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6$f4rruBcjC" role="2LFqv$">
+            <node concept="3clFbF" id="6$f4rruBcjD" role="3cqZAp">
+              <node concept="2OqwBi" id="6$f4rruBcjE" role="3clFbG">
+                <node concept="37vLTw" id="6$f4rruBcjF" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6$f4rruBcjq" resolve="simulatie" />
+                </node>
+                <node concept="2qgKlT" id="6$f4rruBcjG" role="2OqNvi">
+                  <ref role="37wK5l" node="CRumITE5PD" resolve="schoonBerichten" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6$f4rruBcjH" role="3cqZAp">
+              <node concept="3cpWsn" id="6$f4rruBcjI" role="3cpWs9">
+                <property role="TrG5h" value="object" />
+                <node concept="3uibUv" id="6$f4rruBcjJ" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+                <node concept="10Nm6u" id="6$f4rruBcjK" role="33vP2m" />
+              </node>
+            </node>
+            <node concept="SfApY" id="6$f4rruBcjL" role="3cqZAp">
+              <node concept="3clFbS" id="6$f4rruBcjM" role="SfCbr">
+                <node concept="3clFbF" id="6$f4rruBcjN" role="3cqZAp">
+                  <node concept="37vLTI" id="6$f4rruBcjO" role="3clFbG">
+                    <node concept="37vLTw" id="6$f4rruBcjP" role="37vLTJ">
+                      <ref role="3cqZAo" node="6$f4rruBcjI" resolve="object" />
+                    </node>
+                    <node concept="2YIFZM" id="6$f4rruBcjQ" role="37vLTx">
+                      <ref role="37wK5l" to="uefu:3xDNhgd54rl" resolve="evalueer" />
+                      <ref role="1Pybhc" to="uefu:2IjnF_A6UGv" resolve="Interpreter" />
+                      <node concept="37vLTw" id="6$f4rruBcjR" role="37wK5m">
+                        <ref role="3cqZAo" node="6$f4rruBcjq" resolve="simulatie" />
+                      </node>
+                      <node concept="2OqwBi" id="6$f4rruGDiG" role="37wK5m">
+                        <node concept="2GrUjf" id="6$f4rruBcjS" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="6$f4rruBcjw" resolve="handeling" />
+                        </node>
+                        <node concept="3TrEf2" id="6$f4rruGDFr" role="2OqNvi">
+                          <ref role="3Tt5mk" to="xhlk:3d6QfrfG1St" resolve="overgang" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="6$f4rruBcjT" role="TEbGg">
+                <node concept="3cpWsn" id="6$f4rruBcjU" role="TDEfY">
+                  <property role="TrG5h" value="e" />
+                  <node concept="3uibUv" id="6$f4rruBcjV" role="1tU5fm">
+                    <ref role="3uigEE" to="2ahs:9nJ_zCA_CM" resolve="InterpreterRuntimeException" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="6$f4rruBcjW" role="TDEfX" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6$f4rruBcjX" role="3cqZAp">
+              <node concept="2OqwBi" id="6$f4rruBcjY" role="3clFbG">
+                <node concept="2OqwBi" id="6$f4rruBcjZ" role="2Oq$k0">
+                  <node concept="2GrUjf" id="6$f4rruBt3n" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="6$f4rruBcjw" resolve="handeling" />
+                  </node>
+                  <node concept="3TrEf2" id="6$f4rruBCdq" role="2OqNvi">
+                    <ref role="3Tt5mk" to="gcgs:5vursKQxUy0" resolve="evaluatielog" />
+                  </node>
+                </node>
+                <node concept="2oxUTD" id="6$f4rruBck2" role="2OqNvi">
+                  <node concept="2YIFZM" id="6$f4rruBck3" role="2oxUTC">
+                    <ref role="1Pybhc" to="uefu:2IjnF_A6UGv" resolve="Interpreter" />
+                    <ref role="37wK5l" to="uefu:5vursKQmEPG" resolve="geefLijstMetBerichten" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6$f4rruBck4" role="3cqZAp">
+              <node concept="37vLTI" id="6$f4rruBck5" role="3clFbG">
+                <node concept="1eOMI4" id="6$f4rruBck6" role="37vLTx">
+                  <node concept="10QFUN" id="6$f4rruBck7" role="1eOMHV">
+                    <node concept="3uibUv" id="6$f4rruBck8" role="10QFUM">
+                      <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+                    </node>
+                    <node concept="37vLTw" id="6$f4rruBck9" role="10QFUP">
+                      <ref role="3cqZAo" node="6$f4rruBcjI" resolve="object" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6$f4rruBcka" role="37vLTJ">
+                  <node concept="2GrUjf" id="6$f4rruBckb" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="6$f4rruBcjw" resolve="handeling" />
+                  </node>
+                  <node concept="3TrcHB" id="6$f4rruBCJ5" role="2OqNvi">
+                    <ref role="3TsBF5" to="gcgs:5vursKQxUu6" resolve="evaluatieresultaat" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="3d6QfrgxoSB" role="13h7CW">
       <node concept="3clFbS" id="3d6QfrgxoSC" role="2VODD2" />
     </node>

@@ -174,6 +174,9 @@
       <property role="20kJfa" value="gebaseerdOp" />
       <ref role="20lvS9" to="gcgs:6c9haf45syu" resolve="Rechtsbetrekking" />
     </node>
+    <node concept="PrWs8" id="6$f4rruBtxS" role="PzmwI">
+      <ref role="PrY4T" to="gcgs:5vursKQxUxY" resolve="IEvaluatieResultaat" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6w7GUCbsHju">
     <property role="EcuMT" value="7496157647699367134" />

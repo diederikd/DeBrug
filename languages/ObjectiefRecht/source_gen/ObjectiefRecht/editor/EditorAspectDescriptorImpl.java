@@ -19,7 +19,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
-  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Kort", "", false, "ObjectiefRecht.editor.ObjectiefRecht.Kort"), new ConceptEditorHintImpl("MetLidwoord", "", false, "ObjectiefRecht.editor.ObjectiefRecht.MetLidwoord"), new ConceptEditorHintImpl("ZonderLidwoord", "", false, "ObjectiefRecht.editor.ObjectiefRecht.ZonderLidwoord"), new ConceptEditorHintImpl("EN", "English", true, "ObjectiefRecht.editor.ObjectiefRecht.EN"), new ConceptEditorHintImpl("Tabel", "", false, "ObjectiefRecht.editor.ObjectiefRecht.Tabel"), new ConceptEditorHintImpl("Uittevoerenhandeling", "", true, "ObjectiefRecht.editor.ObjectiefRecht.Uittevoerenhandeling"));
+  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Kort", "", false, "ObjectiefRecht.editor.ObjectiefRecht.Kort"), new ConceptEditorHintImpl("MetLidwoord", "", false, "ObjectiefRecht.editor.ObjectiefRecht.MetLidwoord"), new ConceptEditorHintImpl("ZonderLidwoord", "", false, "ObjectiefRecht.editor.ObjectiefRecht.ZonderLidwoord"), new ConceptEditorHintImpl("EN", "English", true, "ObjectiefRecht.editor.ObjectiefRecht.EN"), new ConceptEditorHintImpl("Tabel", "", false, "ObjectiefRecht.editor.ObjectiefRecht.Tabel"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {
@@ -394,7 +394,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 73:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new ReferentieNaarOvergang_Editor(), new ReferentieNaarOvergang_Uittevoerenhandeling_Editor()});
+            return Collections.<ConceptEditor>singletonList(new ReferentieNaarOvergang_Editor());
           }
           break;
         case 74:

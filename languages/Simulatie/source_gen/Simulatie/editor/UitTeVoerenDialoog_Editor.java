@@ -225,7 +225,7 @@ public class UitTeVoerenDialoog_Editor extends DefaultNodeEditor {
       protected void createInnerCells(SNode node, EditorContext editorContext) {
         try {
           editorContext.getCellFactory().pushCellContext();
-          editorContext.getCellFactory().addCellContextHints(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.Uittevoerenhandeling"});
+          editorContext.getCellFactory().addCellContextHints(new String[]{"Simulatie.editor.Simulatie.UittevoerenHandeling"});
           editorContext.getCellFactory().removeCellContextHints();
           super.createInnerCells(node, editorContext);
         } finally {

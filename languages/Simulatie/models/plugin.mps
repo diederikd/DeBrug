@@ -777,6 +777,16 @@
         <ref role="ehGHo" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
       </node>
     </node>
+    <node concept="Wx3nA" id="6$f4rrv9tuC" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="teEvaluerenhandelingZonderRechtsgevolg" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="6$f4rrv9tuD" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6$f4rrv9tuE" role="1tU5fm">
+        <ref role="ehGHo" to="3pw0:2kDBhky2KX6" resolve="HandelingZonderRechtsgevolg" />
+      </node>
+    </node>
     <node concept="Wx3nA" id="5vursKQiuPU" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
@@ -987,6 +997,84 @@
               <node concept="JncvC" id="2EWBkIu1XYL" role="JncvA">
                 <property role="TrG5h" value="rechtshandeling" />
                 <node concept="2jxLKc" id="2EWBkIu1XYM" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="Jncv_" id="6$f4rrv9qzu" role="3cqZAp">
+              <ref role="JncvD" to="3pw0:2kDBhky2KX6" resolve="HandelingZonderRechtsgevolg" />
+              <node concept="Jnkvi" id="6$f4rrv9qzv" role="JncvB">
+                <ref role="1M0zk5" node="2EWBkIu1XHn" resolve="rechtsgevolgVeroorzaker" />
+              </node>
+              <node concept="3clFbS" id="6$f4rrv9qzw" role="Jncv$">
+                <node concept="3clFbF" id="6$f4rrv9qzx" role="3cqZAp">
+                  <node concept="2YIFZM" id="6$f4rrv9qzy" role="3clFbG">
+                    <ref role="37wK5l" node="CRumITGPr9" resolve="voegBerichtToe" />
+                    <ref role="1Pybhc" node="2IjnF_A6UGv" resolve="Interpreter" />
+                    <node concept="3cpWs3" id="6$f4rrv9qzz" role="37wK5m">
+                      <node concept="Jnkvi" id="6$f4rrv9qz$" role="3uHU7w">
+                        <ref role="1M0zk5" node="6$f4rrv9qzT" resolve="handelingZonderRechtsgevolg" />
+                      </node>
+                      <node concept="Xl_RD" id="6$f4rrv9qz_" role="3uHU7B">
+                        <property role="Xl_RC" value="Evalueer rechtshandeling " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6$f4rrv9qzA" role="3cqZAp">
+                  <node concept="37vLTI" id="6$f4rrv9qzB" role="3clFbG">
+                    <node concept="Jnkvi" id="6$f4rrv9qzC" role="37vLTx">
+                      <ref role="1M0zk5" node="6$f4rrv9qzT" resolve="handelingZonderRechtsgevolg" />
+                    </node>
+                    <node concept="37vLTw" id="6$f4rrv9vr0" role="37vLTJ">
+                      <ref role="3cqZAo" node="6$f4rrv9tuC" resolve="teEvaluerenhandelingZonderRechtsgevolg" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6$f4rrv9qzD" role="3cqZAp">
+                  <node concept="37vLTI" id="6$f4rrv9qzE" role="3clFbG">
+                    <node concept="37vLTw" id="6$f4rrv9qzF" role="37vLTJ">
+                      <ref role="3cqZAo" node="2EWBkIu24BB" resolve="result" />
+                    </node>
+                    <node concept="1rXfSq" id="6$f4rrv9qzG" role="37vLTx">
+                      <ref role="37wK5l" node="58tBIcS$AtS" resolve="evalueerVoorwaarden" />
+                      <node concept="2OqwBi" id="6$f4rrv9qzH" role="37wK5m">
+                        <node concept="Jnkvi" id="6$f4rrv9qzI" role="2Oq$k0">
+                          <ref role="1M0zk5" node="6$f4rrv9qzT" resolve="handelingZonderRechtsgevolg" />
+                        </node>
+                        <node concept="3TrEf2" id="6$f4rrv9qzJ" role="2OqNvi">
+                          <ref role="3Tt5mk" to="3pw0:2mYdLn7FKiv" resolve="Voorwaarden" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6$f4rrv9qzK" role="3cqZAp">
+                  <node concept="2YIFZM" id="6$f4rrv9qzL" role="3clFbG">
+                    <ref role="37wK5l" node="CRumITGPr9" resolve="voegBerichtToe" />
+                    <ref role="1Pybhc" node="2IjnF_A6UGv" resolve="Interpreter" />
+                    <node concept="3cpWs3" id="6$f4rrv9qzM" role="37wK5m">
+                      <node concept="37vLTw" id="6$f4rrv9qzN" role="3uHU7w">
+                        <ref role="3cqZAo" node="2EWBkIu24BB" resolve="result" />
+                      </node>
+                      <node concept="3cpWs3" id="6$f4rrv9qzO" role="3uHU7B">
+                        <node concept="3cpWs3" id="6$f4rrv9qzP" role="3uHU7B">
+                          <node concept="Xl_RD" id="6$f4rrv9qzQ" role="3uHU7B">
+                            <property role="Xl_RC" value="Resultaat van evaluatie rechtshandeling " />
+                          </node>
+                          <node concept="Jnkvi" id="6$f4rrv9qzR" role="3uHU7w">
+                            <ref role="1M0zk5" node="6$f4rrv9qzT" resolve="handelingZonderRechtsgevolg" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="6$f4rrv9qzS" role="3uHU7w">
+                          <property role="Xl_RC" value=" is " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="JncvC" id="6$f4rrv9qzT" role="JncvA">
+                <property role="TrG5h" value="handelingZonderRechtsgevolg" />
+                <node concept="2jxLKc" id="6$f4rrv9qzU" role="1tU5fm" />
               </node>
             </node>
           </node>
@@ -1369,6 +1457,24 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5vursKRdu5P" role="jymVt" />
+    <node concept="2YIFZL" id="6$f4rrv9wqt" role="jymVt">
+      <property role="TrG5h" value="teEvaluerenHandelingZonderRechtsgevolg" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6$f4rrv9wqu" role="3clF47">
+        <node concept="3cpWs6" id="6$f4rrv9wqv" role="3cqZAp">
+          <node concept="37vLTw" id="6$f4rrv9xs3" role="3cqZAk">
+            <ref role="3cqZAo" node="6$f4rrv9tuC" resolve="teEvaluerenhandelingZonderRechtsgevolg" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6$f4rrv9wqw" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6$f4rrv9wqx" role="3clF45">
+        <ref role="ehGHo" to="3pw0:2kDBhky2KX6" resolve="HandelingZonderRechtsgevolg" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6$f4rrv9vNq" role="jymVt" />
     <node concept="2YIFZL" id="5RiSaxzhvZV" role="jymVt">
       <property role="TrG5h" value="InstantieVanOnderwerpVanDeHandeling" />
       <property role="DiZV1" value="false" />
