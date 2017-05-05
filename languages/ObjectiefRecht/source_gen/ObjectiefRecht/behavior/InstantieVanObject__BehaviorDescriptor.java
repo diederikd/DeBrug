@@ -23,6 +23,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import java.util.ArrayList;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -34,8 +35,9 @@ public final class InstantieVanObject__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<SNode> GeefObject_id4f9cC5bR2h = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("GeefObject").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("4f9cC5bR2h").registry(REGISTRY).build();
   public static final SMethod<Void> ToevoegenVanKenmerkenAanInstantie_id3r$i4253ACb = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ToevoegenVanKenmerkenAanInstantie").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3r$i4253ACb").registry(REGISTRY).build();
   public static final SMethod<SNode> GeefWaardeVanKenmerk_idFR9FxGLp3H = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("GeefWaardeVanKenmerk").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("FR9FxGLp3H").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<List<SNode>> GeefWaardenVanKenmerken_id6$f4rrwbUKX = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("GeefWaardenVanKenmerken").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6$f4rrwbUKX").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefObject_id4f9cC5bR2h, ToevoegenVanKenmerkenAanInstantie_id3r$i4253ACb, GeefWaardeVanKenmerk_idFR9FxGLp3H);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefObject_id4f9cC5bR2h, ToevoegenVanKenmerkenAanInstantie_id3r$i4253ACb, GeefWaardeVanKenmerk_idFR9FxGLp3H, GeefWaardenVanKenmerken_id6$f4rrwbUKX);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -149,6 +151,13 @@ public final class InstantieVanObject__BehaviorDescriptor extends BaseBHDescript
     }
     return null;
   }
+  /*package*/ static List<SNode> GeefWaardenVanKenmerken_id6$f4rrwbUKX(@NotNull SNode __thisNode__, List<SNode> lijstVanKenmerken) {
+    List<SNode> lijstWaardes = new ArrayList<SNode>();
+    for (SNode kenmerk : ListSequence.fromList(lijstVanKenmerken)) {
+      ListSequence.fromList(lijstWaardes).addElement(InstantieVanObject__BehaviorDescriptor.GeefWaardeVanKenmerk_idFR9FxGLp3H.invoke(__thisNode__, kenmerk));
+    }
+    return lijstWaardes;
+  }
 
   /*package*/ InstantieVanObject__BehaviorDescriptor() {
     super(REGISTRY);
@@ -173,6 +182,8 @@ public final class InstantieVanObject__BehaviorDescriptor extends BaseBHDescript
         return null;
       case 2:
         return (T) ((SNode) GeefWaardeVanKenmerk_idFR9FxGLp3H(node, (SNode) parameters[0]));
+      case 3:
+        return (T) ((List<SNode>) GeefWaardenVanKenmerken_id6$f4rrwbUKX(node, (List<SNode>) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

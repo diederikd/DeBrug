@@ -1487,12 +1487,12 @@
               <node concept="37vLTw" id="5RiSaxzhw01" role="2Oq$k0">
                 <ref role="3cqZAo" node="5RiSaxzghzQ" resolve="simulatie" />
               </node>
-              <node concept="3TrEf2" id="5RiSaxzhw02" role="2OqNvi">
-                <ref role="3Tt5mk" to="xhlk:5RiSaxyO00G" resolve="uittevoerenhandeling" />
+              <node concept="3TrEf2" id="1sEfcVGrJw5" role="2OqNvi">
+                <ref role="3Tt5mk" to="xhlk:7vlBvUdAVQk" resolve="uittevoerendialoog" />
               </node>
             </node>
-            <node concept="3TrEf2" id="5RiSaxzhw03" role="2OqNvi">
-              <ref role="3Tt5mk" to="xhlk:5RiSaxyNDds" resolve="onderwerp" />
+            <node concept="3TrEf2" id="1sEfcVGrK56" role="2OqNvi">
+              <ref role="3Tt5mk" to="xhlk:6$f4rrw7oq$" resolve="onderwerp" />
             </node>
           </node>
         </node>
@@ -1543,33 +1543,6 @@
       <node concept="3Tm1VV" id="4yDNEIgT7pf" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="5vursKRdt9M" role="jymVt" />
-    <node concept="2YIFZL" id="4yDNEIgM3bl" role="jymVt">
-      <property role="TrG5h" value="ActorVanDeHandeling" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="4yDNEIgM3bm" role="3clF47">
-        <node concept="3cpWs6" id="4yDNEIgM3bn" role="3cqZAp">
-          <node concept="2OqwBi" id="4yDNEIgM3bo" role="3cqZAk">
-            <node concept="2OqwBi" id="4yDNEIgM3bp" role="2Oq$k0">
-              <node concept="37vLTw" id="4yDNEIgM3b_" role="2Oq$k0">
-                <ref role="3cqZAo" node="5RiSaxzghzQ" resolve="simulatie" />
-              </node>
-              <node concept="3TrEf2" id="4yDNEIgM3bq" role="2OqNvi">
-                <ref role="3Tt5mk" to="xhlk:5RiSaxyO00G" resolve="uittevoerenhandeling" />
-              </node>
-            </node>
-            <node concept="3TrEf2" id="4yDNEIgM3Fc" role="2OqNvi">
-              <ref role="3Tt5mk" to="xhlk:5RiSaxyNDdv" resolve="actor" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="4yDNEIgM3bs" role="3clF45">
-        <ref role="ehGHo" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
-      </node>
-      <node concept="3Tm1VV" id="4yDNEIgM3bt" role="1B3o_S" />
-    </node>
     <node concept="2tJIrI" id="5vursKQXVZ_" role="jymVt" />
     <node concept="2YIFZL" id="5vursKQmEPG" role="jymVt">
       <property role="TrG5h" value="geefLijstMetBerichten" />

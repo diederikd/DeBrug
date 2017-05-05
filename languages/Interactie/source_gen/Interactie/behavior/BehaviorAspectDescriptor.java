@@ -13,6 +13,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myInteractieDefinitie__BehaviorDescriptor = new InteractieDefinitie__BehaviorDescriptor();
+  private final BHDescriptor myPresentatieDialoog__BehaviorDescriptor = new PresentatieDialoog__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
   }
@@ -21,12 +22,17 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     {
       SAbstractConcept cncpt = concept;
-      Integer preIndex = indices_846f5o_a0e.get(cncpt);
+      Integer preIndex = indices_846f5o_a0f.get(cncpt);
       int switchIndex = (preIndex == null ? -1 : preIndex);
       switch (switchIndex) {
         case 0:
           if (true) {
             return myInteractieDefinitie__BehaviorDescriptor;
+          }
+          break;
+        case 1:
+          if (true) {
+            return myPresentatieDialoog__BehaviorDescriptor;
           }
           break;
         default:
@@ -43,5 +49,5 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0e = buildConceptIndices(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L, "Interactie.structure.InteractieDefinitie"));
+  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0f = buildConceptIndices(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L, "Interactie.structure.InteractieDefinitie"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7037f61aeL, "Interactie.structure.PresentatieDialoog"));
 }

@@ -242,6 +242,19 @@
     <property role="EcuMT" value="8634981577175842192" />
     <property role="TrG5h" value="UitTeVoerenDialoog" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6$f4rrw7oq$" role="1TKVEi">
+      <property role="IQ2ns" value="7570288975774844580" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="onderwerp" />
+      <ref role="20lvS9" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+    </node>
+    <node concept="1TJgyj" id="6$f4rrwrE4x" role="1TKVEi">
+      <property role="IQ2ns" value="7570288975780159777" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="overgang" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="3pw0:3GpI$sPbk8E" resolve="Overgang" />
+    </node>
     <node concept="1TJgyj" id="7vlBvUdAVQh" role="1TKVEi">
       <property role="IQ2ns" value="8634981577175842193" />
       <property role="20lmBu" value="reference" />

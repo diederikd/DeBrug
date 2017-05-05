@@ -140,6 +140,9 @@
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -148,6 +151,9 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
+        <child id="1145567471833" name="createdType" index="2T96Bj" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
@@ -1451,6 +1457,66 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="5RiSaxzdToG" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="6$f4rrwbUKX" role="13h7CS">
+      <property role="TrG5h" value="GeefWaardenVanKenmerken" />
+      <node concept="3Tm1VV" id="6$f4rrwbUKY" role="1B3o_S" />
+      <node concept="2I9FWS" id="6$f4rrwbVhH" role="3clF45">
+        <ref role="2I9WkF" to="uwhu:1YFKb5t_BZt" resolve="Waarde" />
+      </node>
+      <node concept="3clFbS" id="6$f4rrwbUL0" role="3clF47">
+        <node concept="3cpWs8" id="6$f4rrwbVl7" role="3cqZAp">
+          <node concept="3cpWsn" id="6$f4rrwbVla" role="3cpWs9">
+            <property role="TrG5h" value="lijstWaardes" />
+            <node concept="2I9FWS" id="6$f4rrwbVl5" role="1tU5fm">
+              <ref role="2I9WkF" to="uwhu:1YFKb5t_BZt" resolve="Waarde" />
+            </node>
+            <node concept="2ShNRf" id="6$f4rrwbVmt" role="33vP2m">
+              <node concept="2T8Vx0" id="6$f4rrwbVmr" role="2ShVmc">
+                <node concept="2I9FWS" id="6$f4rrwbVms" role="2T96Bj">
+                  <ref role="2I9WkF" to="uwhu:1YFKb5t_BZt" resolve="Waarde" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="6$f4rrwbVkx" role="3cqZAp">
+          <node concept="2GrKxI" id="6$f4rrwbVky" role="2Gsz3X">
+            <property role="TrG5h" value="kenmerk" />
+          </node>
+          <node concept="37vLTw" id="6$f4rrwbVnE" role="2GsD0m">
+            <ref role="3cqZAo" node="6$f4rrwbViT" resolve="lijstVanKenmerken" />
+          </node>
+          <node concept="3clFbS" id="6$f4rrwbVk$" role="2LFqv$">
+            <node concept="3clFbF" id="6$f4rrwbVpy" role="3cqZAp">
+              <node concept="2OqwBi" id="6$f4rrwbX8$" role="3clFbG">
+                <node concept="37vLTw" id="6$f4rrwbVpx" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6$f4rrwbVla" resolve="lijstWaardes" />
+                </node>
+                <node concept="TSZUe" id="6$f4rrwc1qa" role="2OqNvi">
+                  <node concept="BsUDl" id="6$f4rrwc1Bh" role="25WWJ7">
+                    <ref role="37wK5l" node="FR9FxGLp3H" resolve="GeefWaardeVanKenmerk" />
+                    <node concept="2GrUjf" id="6$f4rrwc1Ld" role="37wK5m">
+                      <ref role="2Gs0qQ" node="6$f4rrwbVky" resolve="kenmerk" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6$f4rrwbVox" role="3cqZAp">
+          <node concept="37vLTw" id="6$f4rrwbVpe" role="3cqZAk">
+            <ref role="3cqZAo" node="6$f4rrwbVla" resolve="lijstWaardes" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6$f4rrwbViT" role="3clF46">
+        <property role="TrG5h" value="lijstVanKenmerken" />
+        <node concept="2I9FWS" id="6$f4rrwbViS" role="1tU5fm">
+          <ref role="2I9WkF" to="3pw0:4$mS69sVSy3" resolve="Kenmerk" />
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="3r$i4253_uv" role="13h7CW">
       <node concept="3clFbS" id="3r$i4253_uw" role="2VODD2" />

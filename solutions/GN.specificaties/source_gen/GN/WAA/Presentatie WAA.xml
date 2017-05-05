@@ -146,7 +146,22 @@
     <dialoog typeid='5066083982446741231' name='Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing' >
       <row>
         <column>
+          <input type="text" name="werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken" value=""/>
+        </column>
+        <column>
+          <input type="text" name="zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen" value=""/>
+        </column>
+        <column>
           <input type="text" name="redenen voor afwijzing" value=""/>
+        </column>
+      </row>
+      <row>
+        <column>
+        </column>
+        <column>
+          <input type="text" name="datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever" value=""/>
+        </column>
+        <column>
         </column>
       </row>
       <rechtshandelingtypes>

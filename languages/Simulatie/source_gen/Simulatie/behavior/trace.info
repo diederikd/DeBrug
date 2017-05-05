@@ -19,7 +19,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="14,0,54,0" name="Simulatie.behavior.BehaviorAspectDescriptor" />
+      <unit at="14,0,60,0" name="Simulatie.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="Gegevenshuishouding_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Simulatie.behavior.Gegevenshuishouding_BehaviorDescriptor" />
@@ -38,6 +38,71 @@
     </file>
     <file name="UitvoerbareRechtshandeling_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="Simulatie.behavior.UitvoerbareRechtshandeling_BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/1669213471323164755">
+    <file name="UitTeVoerenDialoog__BehaviorDescriptor.java">
+      <node id="1669213471323164755" at="20,0,21,0" concept="10" trace="CONCEPT" />
+      <node id="1669213471323164755" at="21,0,22,0" concept="10" trace="REGISTRY" />
+      <node id="1669213471323164755" at="24,0,25,0" concept="10" trace="BH_METHODS" />
+      <node id="1669213471323164755" at="30,56,31,20" concept="12" />
+      <node id="1669213471323164755" at="35,114,36,21" concept="2" />
+      <node id="1669213471323164755" at="40,114,41,49" concept="6" />
+      <node id="1669213471323164755" at="42,26,43,56" concept="14" />
+      <node id="1669213471323164755" at="46,14,47,58" concept="14" />
+      <node id="1669213471323164755" at="52,128,53,49" concept="6" />
+      <node id="1669213471323164755" at="54,26,55,56" concept="14" />
+      <node id="1669213471323164755" at="58,14,59,58" concept="14" />
+      <node id="1669213471323164755" at="65,48,66,22" concept="7" />
+      <node id="1669213471323164755" at="71,40,72,19" concept="7" />
+      <node id="1669213471323164755" at="26,0,28,0" concept="11" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1669213471323164755" at="30,0,33,0" concept="1" trace="UitTeVoerenDialoog__BehaviorDescriptor#()V" />
+      <node id="1669213471323164755" at="41,49,44,5" concept="4" />
+      <node id="1669213471323164755" at="53,49,56,5" concept="4" />
+      <node id="1669213471323164755" at="34,0,38,0" concept="5" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="1669213471323164755" at="44,5,48,5" concept="13" />
+      <node id="1669213471323164755" at="56,5,60,5" concept="13" />
+      <node id="1669213471323164755" at="63,0,68,0" concept="5" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="1669213471323164755" at="69,0,74,0" concept="5" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1669213471323164755" at="39,0,50,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="1669213471323164755" at="51,0,62,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="1669213471323164755" at="26,63,26,63" />
+      <scope id="1669213471323164755" at="30,56,31,20" />
+      <scope id="1669213471323164755" at="35,114,36,21" />
+      <scope id="1669213471323164755" at="42,26,43,56" />
+      <scope id="1669213471323164755" at="46,14,47,58" />
+      <scope id="1669213471323164755" at="54,26,55,56" />
+      <scope id="1669213471323164755" at="58,14,59,58" />
+      <scope id="1669213471323164755" at="65,48,66,22" />
+      <scope id="1669213471323164755" at="71,40,72,19" />
+      <scope id="1669213471323164755" at="26,0,28,0">
+        <var name="__thisNode__" id="1669213471323164755" />
+      </scope>
+      <scope id="1669213471323164755" at="30,0,33,0" />
+      <scope id="1669213471323164755" at="34,0,38,0">
+        <var name="constructor" id="1669213471323164755" />
+        <var name="node" id="1669213471323164755" />
+        <var name="parameters" id="1669213471323164755" />
+      </scope>
+      <scope id="1669213471323164755" at="63,0,68,0" />
+      <scope id="1669213471323164755" at="69,0,74,0" />
+      <scope id="1669213471323164755" at="40,114,48,5">
+        <var name="methodIndex" id="1669213471323164755" />
+      </scope>
+      <scope id="1669213471323164755" at="52,128,60,5">
+        <var name="methodIndex" id="1669213471323164755" />
+      </scope>
+      <scope id="1669213471323164755" at="39,0,50,0">
+        <var name="method" id="1669213471323164755" />
+        <var name="node" id="1669213471323164755" />
+        <var name="parameters" id="1669213471323164755" />
+      </scope>
+      <scope id="1669213471323164755" at="51,0,62,0">
+        <var name="concept" id="1669213471323164755" />
+        <var name="method" id="1669213471323164755" />
+        <var name="parameters" id="1669213471323164755" />
+      </scope>
+      <unit id="1669213471323164755" at="19,0,75,0" name="Simulatie.behavior.UitTeVoerenDialoog__BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:8fa4e9e1-e1c8-4eab-977d-e5d3c7969a44(Simulatie.behavior)/3694879098876038694">
@@ -327,8 +392,8 @@
       <node id="5807415387100354235" at="538,39,539,190" concept="7" />
       <node id="5807415387100368880" at="541,153,542,0" concept="9" />
       <node id="1916075923868559242" at="542,0,543,192" concept="6" />
-      <node id="1916075923868559250" at="544,665,545,190" concept="2" />
-      <node id="1916075923868559273" at="547,665,548,190" concept="2" />
+      <node id="1916075923868559250" at="544,663,545,190" concept="2" />
+      <node id="1916075923868559273" at="547,663,548,190" concept="2" />
       <node id="1916075923868559294" at="549,5,550,366" concept="2" />
       <node id="1916075923868559303" at="550,366,551,205" concept="2" />
       <node id="1916075923868559310" at="551,205,552,207" concept="2" />
@@ -632,8 +697,8 @@
       <scope id="4240088522976472333" at="509,43,510,200" />
       <scope id="4240088522976472333" at="513,41,514,190" />
       <scope id="5807415387100353699" at="538,39,539,190" />
-      <scope id="1916075923868559249" at="544,665,545,190" />
-      <scope id="1916075923868559272" at="547,665,548,190" />
+      <scope id="1916075923868559249" at="544,663,545,190" />
+      <scope id="1916075923868559272" at="547,663,548,190" />
       <scope id="6749750758529497991" at="572,123,573,131" />
       <scope id="2677844167544723023" at="579,220,580,32" />
       <scope id="5679580590629748673" at="587,815,588,39" />

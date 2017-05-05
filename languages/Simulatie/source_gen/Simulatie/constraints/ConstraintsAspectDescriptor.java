@@ -23,6 +23,11 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
       switch (switchIndex) {
         case 0:
           if (true) {
+            return new UitTeVoerenDialoog_Constraints();
+          }
+          break;
+        case 1:
+          if (true) {
             return new UitTeVoerenHandeling_Constraints();
           }
           break;
@@ -40,5 +45,5 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_2qnle6_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, "Simulatie.structure.UitTeVoerenHandeling"));
+  private static final Map<SAbstractConcept, Integer> indices_2qnle6_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, "Simulatie.structure.UitTeVoerenDialoog"), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, "Simulatie.structure.UitTeVoerenHandeling"));
 }

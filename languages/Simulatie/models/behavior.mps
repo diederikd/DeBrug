@@ -4878,15 +4878,15 @@
                   <node concept="37vLTw" id="1Enheq$RkFV" role="2Oq$k0">
                     <ref role="3cqZAo" node="1Enheq$RjvZ" resolve="simulatie" />
                   </node>
-                  <node concept="3TrEf2" id="1Enheq$Riuu" role="2OqNvi">
-                    <ref role="3Tt5mk" to="xhlk:5RiSaxyO00G" resolve="uittevoerenhandeling" />
+                  <node concept="3TrEf2" id="1sEfcVGxfP$" role="2OqNvi">
+                    <ref role="3Tt5mk" to="xhlk:7vlBvUdAVQk" resolve="uittevoerendialoog" />
                   </node>
                 </node>
-                <node concept="3TrEf2" id="1Enheq$Riuv" role="2OqNvi">
-                  <ref role="3Tt5mk" to="xhlk:5RiSaxyNDdq" resolve="overgang" />
+                <node concept="3TrEf2" id="1sEfcVGy3WJ" role="2OqNvi">
+                  <ref role="3Tt5mk" to="xhlk:6$f4rrwrE4x" resolve="overgang" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="3FnOwJNUd0v" role="2OqNvi">
+              <node concept="2qgKlT" id="1sEfcVGy50c" role="2OqNvi">
                 <ref role="37wK5l" to="ll8w:3FnOwJNU89l" resolve="GeefActor" />
               </node>
             </node>
@@ -4930,15 +4930,15 @@
                   <node concept="37vLTw" id="1Enheq$Rl7V" role="2Oq$k0">
                     <ref role="3cqZAo" node="1Enheq$RjvZ" resolve="simulatie" />
                   </node>
-                  <node concept="3TrEf2" id="1Enheq$RiuP" role="2OqNvi">
-                    <ref role="3Tt5mk" to="xhlk:5RiSaxyO00G" resolve="uittevoerenhandeling" />
+                  <node concept="3TrEf2" id="1sEfcVGxgeW" role="2OqNvi">
+                    <ref role="3Tt5mk" to="xhlk:7vlBvUdAVQk" resolve="uittevoerendialoog" />
                   </node>
                 </node>
-                <node concept="3TrEf2" id="1Enheq$RiuQ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="xhlk:5RiSaxyNDdq" resolve="overgang" />
+                <node concept="3TrEf2" id="1sEfcVGy4k0" role="2OqNvi">
+                  <ref role="3Tt5mk" to="xhlk:6$f4rrwrE4x" resolve="overgang" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="3FnOwJNUdKx" role="2OqNvi">
+              <node concept="2qgKlT" id="1sEfcVGy4F1" role="2OqNvi">
                 <ref role="37wK5l" to="ll8w:3FnOwJNU89l" resolve="GeefActor" />
               </node>
             </node>
@@ -6809,6 +6809,12 @@
     </node>
     <node concept="13hLZK" id="5vursKQG4Yc" role="13h7CW">
       <node concept="3clFbS" id="5vursKQG4Yd" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1sEfcVGwT1j">
+    <ref role="13h7C2" to="xhlk:7vlBvUdAVQg" resolve="UitTeVoerenDialoog" />
+    <node concept="13hLZK" id="1sEfcVGwT1k" role="13h7CW">
+      <node concept="3clFbS" id="1sEfcVGwT1l" role="2VODD2" />
     </node>
   </node>
 </model>
