@@ -25,6 +25,8 @@ import com.intellij.platform.ProjectBaseDirectory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Image;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
@@ -158,6 +160,9 @@ public class ReferentieNaarOvergang_UittevoerenHandeling_Editor extends DefaultN
       editorCell.setReferenceCell(true);
       editorCell.setRole("overgang");
     }
+    Style style = new StyleImpl();
+    Simulatie_StyleSheet.apply_ConditonalGrey(style, editorCell);
+    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {

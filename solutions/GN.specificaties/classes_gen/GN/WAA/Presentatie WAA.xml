@@ -117,8 +117,20 @@
         </column>
       </row>
       <rechtshandelingtypes>
+        <rechtshandelingtype typeid='5066083982446708445' />
+      </rechtshandelingtypes>
+    </dialoog>
+    <dialoog typeid='5066083982446708445' name='Indienen verzoek aanpassing arbeidsduur' >
+      <row>
+        <column>
+          <input type="text" name="beoogde ingangsdatum van de aanpassing" value=""/>
+          <input type="text" name="gewenste spreiding" value=""/>
+          <input type="text" name="omvang van de aanpassing" value=""/>
+        </column>
+      </row>
+      <rechtshandelingtypes>
         <rechtshandelingtype typeid='2677844167540435022' />
-        <rechtshandelingtype typeid='2455094379071627481' />
+        <rechtshandelingtype typeid='2677844167541441878' />
       </rechtshandelingtypes>
     </dialoog>
     <dialoog typeid='2455094379071627785' name='Overleg plegen' >
@@ -138,6 +150,7 @@
         </column>
       </row>
       <rechtshandelingtypes>
+        <rechtshandelingtype typeid='2455094379071627785' />
         <rechtshandelingtype typeid='2455094379071627481' />
         <rechtshandelingtype typeid='5066083982446741231' />
         <rechtshandelingtype typeid='2455094379071629483' />

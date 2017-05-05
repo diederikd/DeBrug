@@ -120,11 +120,18 @@
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
+      <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
         <property id="1139746504291" name="imageFile" index="1ubRXE" />
         <property id="1139858284555" name="descent" index="1$Qi42" />
         <child id="1176899909521" name="imagePathProvider" index="4GRq3" />
+      </concept>
+      <concept id="9122903797336200704" name="jetbrains.mps.lang.editor.structure.ApplyStyleClassCondition" flags="lg" index="1uO$qF">
+        <child id="9122903797336200706" name="query" index="1uO$qD" />
+      </concept>
+      <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
+        <reference id="9122903797312247166" name="style" index="1wgcnl" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -165,6 +172,9 @@
         <child id="1088612973955" name="ifFalseCellModel" index="1QoVPY" />
       </concept>
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
+      <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
+        <child id="1950447826683828796" name="target" index="3XvnJa" />
+      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -3406,6 +3416,189 @@
         <property role="Vb096" value="DARK_GREEN" />
       </node>
     </node>
+    <node concept="14StLt" id="6$f4rrvjQbW" role="V601i">
+      <property role="TrG5h" value="Grey" />
+      <node concept="VechU" id="6$f4rrvjQct" role="3F10Kt">
+        <property role="Vb096" value="lightGray" />
+      </node>
+    </node>
+    <node concept="14StLt" id="6$f4rrvnYAO" role="V601i">
+      <property role="TrG5h" value="ConditonalGrey" />
+      <node concept="3Xmtl4" id="6$f4rrvs9f6" role="3F10Kt">
+        <node concept="1wgc9g" id="6$f4rrvs9Eo" role="3XvnJa">
+          <ref role="1wgcnl" to="z1s1:MvzNsy_Dd_" resolve="Bold" />
+        </node>
+      </node>
+      <node concept="1uO$qF" id="6$f4rrvnYAT" role="3F10Kt">
+        <node concept="3nzxsE" id="6$f4rrvnYAU" role="1uO$qD">
+          <node concept="3clFbS" id="6$f4rrvnYAV" role="2VODD2">
+            <node concept="3cpWs8" id="6$f4rrvnYB7" role="3cqZAp">
+              <node concept="3cpWsn" id="6$f4rrvnYB8" role="3cpWs9">
+                <property role="TrG5h" value="result" />
+                <node concept="10P_77" id="6$f4rrvnYB9" role="1tU5fm" />
+                <node concept="3clFbT" id="6$f4rrvnYBa" role="33vP2m">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="Jncv_" id="6$f4rrvo3Bl" role="3cqZAp">
+              <ref role="JncvD" to="3pw0:5oIirjjw2l" resolve="ReferentieNaarOvergang" />
+              <node concept="pncrf" id="6$f4rrvo40Z" role="JncvB" />
+              <node concept="3clFbS" id="6$f4rrvo3Bp" role="Jncv$">
+                <node concept="3cpWs8" id="6$f4rrvnYAW" role="3cqZAp">
+                  <node concept="3cpWsn" id="6$f4rrvnYAX" role="3cpWs9">
+                    <property role="TrG5h" value="simulatie" />
+                    <node concept="3Tqbb2" id="6$f4rrvnYAY" role="1tU5fm">
+                      <ref role="ehGHo" to="xhlk:6OHSlZaTjYP" resolve="Simulatie" />
+                    </node>
+                    <node concept="2OqwBi" id="6$f4rrvnYAZ" role="33vP2m">
+                      <node concept="2OqwBi" id="6$f4rrvnYB0" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6$f4rrvnYB1" role="2Oq$k0">
+                          <node concept="pncrf" id="6$f4rrvnYB2" role="2Oq$k0" />
+                          <node concept="I4A8Y" id="6$f4rrvnYB3" role="2OqNvi" />
+                        </node>
+                        <node concept="2SmgA7" id="6$f4rrvnYB4" role="2OqNvi">
+                          <node concept="chp4Y" id="6$f4rrvnYB5" role="1dBWTz">
+                            <ref role="cht4Q" to="xhlk:6OHSlZaTjYP" resolve="Simulatie" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="6$f4rrvnYB6" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Jncv_" id="6$f4rrvnYBb" role="3cqZAp">
+                  <ref role="JncvD" to="3pw0:64gsXol8COX" resolve="Rechtshandeling" />
+                  <node concept="2OqwBi" id="6$f4rrvnYBc" role="JncvB">
+                    <node concept="Jnkvi" id="6$f4rrvo6ax" role="2Oq$k0">
+                      <ref role="1M0zk5" node="6$f4rrvo3Br" resolve="referentieNaarOvergang" />
+                    </node>
+                    <node concept="3TrEf2" id="6$f4rrvnYBe" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3pw0:5oIirjjw2m" resolve="overgang" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="6$f4rrvnYBf" role="Jncv$">
+                    <node concept="2Gpval" id="6$f4rrvnYBk" role="3cqZAp">
+                      <node concept="2GrKxI" id="6$f4rrvnYBl" role="2Gsz3X">
+                        <property role="TrG5h" value="uitvoerbarehandeling" />
+                      </node>
+                      <node concept="2OqwBi" id="6$f4rrvnYBm" role="2GsD0m">
+                        <node concept="37vLTw" id="6$f4rrvnYBn" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6$f4rrvnYAX" resolve="simulatie" />
+                        </node>
+                        <node concept="3Tsc0h" id="6$f4rrvnYBo" role="2OqNvi">
+                          <ref role="3TtcxE" to="xhlk:3d6QfrfG1Sv" resolve="uitvoerbarehandelingen" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="6$f4rrvnYBp" role="2LFqv$">
+                        <node concept="3clFbJ" id="6$f4rrvnYBq" role="3cqZAp">
+                          <node concept="3clFbC" id="6$f4rrvEFvn" role="3clFbw">
+                            <node concept="2OqwBi" id="6$f4rrvnYBt" role="3uHU7B">
+                              <node concept="2GrUjf" id="6$f4rrvnYBu" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="6$f4rrvnYBl" resolve="uitvoerbarehandeling" />
+                              </node>
+                              <node concept="3TrEf2" id="6$f4rrvnYBv" role="2OqNvi">
+                                <ref role="3Tt5mk" to="xhlk:3d6QfrfG1St" resolve="overgang" />
+                              </node>
+                            </node>
+                            <node concept="Jnkvi" id="6$f4rrvnYBs" role="3uHU7w">
+                              <ref role="1M0zk5" node="6$f4rrvnYBM" resolve="rechtshandeling" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="6$f4rrvnYBw" role="3clFbx">
+                            <node concept="3clFbF" id="6$f4rrvnYB_" role="3cqZAp">
+                              <node concept="37vLTI" id="6$f4rrvnYBA" role="3clFbG">
+                                <node concept="3clFbT" id="6$f4rrvB1h8" role="37vLTx" />
+                                <node concept="37vLTw" id="6$f4rrvnYBC" role="37vLTJ">
+                                  <ref role="3cqZAo" node="6$f4rrvnYB8" resolve="result" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="JncvC" id="6$f4rrvnYBM" role="JncvA">
+                    <property role="TrG5h" value="rechtshandeling" />
+                    <node concept="2jxLKc" id="6$f4rrvnYBN" role="1tU5fm" />
+                  </node>
+                </node>
+                <node concept="Jncv_" id="6$f4rrvnYBO" role="3cqZAp">
+                  <ref role="JncvD" to="3pw0:2kDBhky2KX6" resolve="HandelingZonderRechtsgevolg" />
+                  <node concept="2OqwBi" id="6$f4rrvnYBP" role="JncvB">
+                    <node concept="Jnkvi" id="6$f4rrvo6pE" role="2Oq$k0">
+                      <ref role="1M0zk5" node="6$f4rrvo3Br" resolve="referentieNaarOvergang" />
+                    </node>
+                    <node concept="3TrEf2" id="6$f4rrvnYBR" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3pw0:5oIirjjw2m" resolve="overgang" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="6$f4rrvnYBS" role="Jncv$">
+                    <node concept="2Gpval" id="6$f4rrvnYBX" role="3cqZAp">
+                      <node concept="2GrKxI" id="6$f4rrvnYBY" role="2Gsz3X">
+                        <property role="TrG5h" value="uitvoerbarehandeling" />
+                      </node>
+                      <node concept="2OqwBi" id="6$f4rrvnYBZ" role="2GsD0m">
+                        <node concept="37vLTw" id="6$f4rrvnYC0" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6$f4rrvnYAX" resolve="simulatie" />
+                        </node>
+                        <node concept="3Tsc0h" id="6$f4rrvnYC1" role="2OqNvi">
+                          <ref role="3TtcxE" to="xhlk:3d6QfrfG1Sv" resolve="uitvoerbarehandelingen" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="6$f4rrvnYC2" role="2LFqv$">
+                        <node concept="3clFbJ" id="6$f4rrvnYC3" role="3cqZAp">
+                          <node concept="3clFbC" id="6$f4rrvEFSO" role="3clFbw">
+                            <node concept="2OqwBi" id="6$f4rrvnYC6" role="3uHU7B">
+                              <node concept="2GrUjf" id="6$f4rrvnYC7" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="6$f4rrvnYBY" resolve="uitvoerbarehandeling" />
+                              </node>
+                              <node concept="3TrEf2" id="6$f4rrvnYC8" role="2OqNvi">
+                                <ref role="3Tt5mk" to="xhlk:3d6QfrfG1St" resolve="overgang" />
+                              </node>
+                            </node>
+                            <node concept="Jnkvi" id="6$f4rrvnYC5" role="3uHU7w">
+                              <ref role="1M0zk5" node="6$f4rrvnYCv" resolve="handelingZonderRechtsgevolg" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="6$f4rrvnYC9" role="3clFbx">
+                            <node concept="3clFbF" id="6$f4rrvnYCe" role="3cqZAp">
+                              <node concept="37vLTI" id="6$f4rrvnYCf" role="3clFbG">
+                                <node concept="3clFbT" id="6$f4rrvB27f" role="37vLTx" />
+                                <node concept="37vLTw" id="6$f4rrvnYCl" role="37vLTJ">
+                                  <ref role="3cqZAo" node="6$f4rrvnYB8" resolve="result" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="JncvC" id="6$f4rrvnYCv" role="JncvA">
+                    <property role="TrG5h" value="handelingZonderRechtsgevolg" />
+                    <node concept="2jxLKc" id="6$f4rrvnYCw" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+              <node concept="JncvC" id="6$f4rrvo3Br" role="JncvA">
+                <property role="TrG5h" value="referentieNaarOvergang" />
+                <node concept="2jxLKc" id="6$f4rrvo3Bs" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="6$f4rrvnYCx" role="3cqZAp">
+              <node concept="37vLTw" id="6$f4rrvnYCy" role="3cqZAk">
+                <ref role="3cqZAo" node="6$f4rrvnYB8" resolve="result" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1wgc9g" id="6$f4rrvs8qa" role="3XvnJa">
+          <ref role="1wgcnl" node="6$f4rrvjQbW" resolve="Grey" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="7$WBeOqHfmL">
     <property role="3GE5qa" value="RechtsgevolgVeroorzakers" />
@@ -5752,6 +5945,12 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="6$f4rrvIpKG" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="ljvvj" id="6$f4rrvIpL4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="7vlBvUdAWds" role="3EZMnx">
         <property role="3F0ifm" value="mogelijke handelingen" />
       </node>
@@ -6567,6 +6766,7 @@
       </node>
       <node concept="1iCGBv" id="5oIirjo3Ql" role="3EZMnx">
         <ref role="1NtTu8" to="3pw0:5oIirjjw2m" resolve="overgang" />
+        <ref role="1k5W1q" node="6$f4rrvnYAO" resolve="ConditonalGrey" />
         <node concept="1sVBvm" id="5oIirjo3Qn" role="1sWHZn">
           <node concept="3F0A7n" id="5oIirjo3Qx" role="2wV5jI">
             <property role="1Intyy" value="true" />

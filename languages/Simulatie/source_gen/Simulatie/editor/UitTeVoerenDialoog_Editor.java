@@ -42,7 +42,8 @@ public class UitTeVoerenDialoog_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createRefCell_pjer6y_c0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_pjer6y_d0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_pjer6y_e0(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_pjer6y_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_pjer6y_f0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_pjer6y_g0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_pjer6y_a0(EditorContext editorContext, SNode node) {
@@ -107,38 +108,47 @@ public class UitTeVoerenDialoog_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_pjer6y_d0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "mogelijke handelingen");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
     editorCell.setCellId("Constant_pjer6y_d0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_pjer6y_e0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_pjer6y_e0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCollection_pjer6y_f0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_pjer6y_e0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "mogelijke handelingen");
+    editorCell.setCellId("Constant_pjer6y_e0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_pjer6y_f0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_pjer6y_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createCollection_pjer6y_g0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_pjer6y_f0");
+    editorCell.setCellId("Collection_pjer6y_g0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(this.createRefCell_pjer6y_a5a(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_pjer6y_a6a(editorContext, node));
     return editorCell;
   }
-  private EditorCell createRefCell_pjer6y_a5a(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_pjer6y_a6a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("dialoog");
     provider.setNoTargetText("<no dialoog>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new UitTeVoerenDialoog_Editor._Inline_pjer6y_a0f0());
+    provider.setAuxiliaryCellProvider(new UitTeVoerenDialoog_Editor._Inline_pjer6y_a0g0());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
@@ -152,31 +162,31 @@ public class UitTeVoerenDialoog_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  public static class _Inline_pjer6y_a0f0 extends InlineCellProvider {
-    public _Inline_pjer6y_a0f0() {
+  public static class _Inline_pjer6y_a0g0 extends InlineCellProvider {
+    public _Inline_pjer6y_a0g0() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createCollection_pjer6y_a0a5a(editorContext, node);
+      return this.createCollection_pjer6y_a0a6a(editorContext, node);
     }
-    private EditorCell createCollection_pjer6y_a0a5a(EditorContext editorContext, SNode node) {
+    private EditorCell createCollection_pjer6y_a0a6a(EditorContext editorContext, SNode node) {
       EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-      editorCell.setCellId("Collection_pjer6y_a0a5a");
-      editorCell.addEditorCell(this.createRefNodeList_pjer6y_a0a0f0(editorContext, node));
+      editorCell.setCellId("Collection_pjer6y_a0a6a");
+      editorCell.addEditorCell(this.createRefNodeList_pjer6y_a0a0g0(editorContext, node));
       return editorCell;
     }
-    private EditorCell createRefNodeList_pjer6y_a0a0f0(EditorContext editorContext, SNode node) {
-      AbstractCellListHandler handler = new UitTeVoerenDialoog_Editor._Inline_pjer6y_a0f0.keuzeListHandler_pjer6y_a0a0f0(node, "keuze", editorContext);
+    private EditorCell createRefNodeList_pjer6y_a0a0g0(EditorContext editorContext, SNode node) {
+      AbstractCellListHandler handler = new UitTeVoerenDialoog_Editor._Inline_pjer6y_a0g0.keuzeListHandler_pjer6y_a0a0g0(node, "keuze", editorContext);
       EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
       editorCell.setCellId("refNodeList_keuze");
       editorCell.setRole(handler.getElementRole());
       return editorCell;
     }
-    private static class keuzeListHandler_pjer6y_a0a0f0 extends RefNodeListHandler {
-      public keuzeListHandler_pjer6y_a0a0f0(SNode ownerNode, String childRole, EditorContext context) {
+    private static class keuzeListHandler_pjer6y_a0a0g0 extends RefNodeListHandler {
+      public keuzeListHandler_pjer6y_a0a0g0(SNode ownerNode, String childRole, EditorContext context) {
         super(ownerNode, childRole, context, false);
       }
       public SNode createNodeToInsert(EditorContext editorContext) {
@@ -199,7 +209,7 @@ public class UitTeVoerenDialoog_Editor extends DefaultNodeEditor {
       }
       public EditorCell createEmptyCell(EditorContext editorContext) {
         editorContext.getCellFactory().pushCellContext();
-        editorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(keuzeListHandler_pjer6y_a0a0f0.this.getOwner(), MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7037f61aeL, 0x158b926d34e00c3L, "keuze")));
+        editorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(keuzeListHandler_pjer6y_a0a0g0.this.getOwner(), MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7037f61aeL, 0x158b926d34e00c3L, "keuze")));
         try {
           EditorCell emptyCell = null;
           emptyCell = super.createEmptyCell(editorContext);
