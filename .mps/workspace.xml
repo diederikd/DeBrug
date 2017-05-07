@@ -17,57 +17,13 @@
     </breakpoint>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58f2805d-4538-46c3-a016-7128ec7e185d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/ReferentieNaarWaardeVanKenmerk_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/ReferentieNaarWaardeVanKenmerk_Editor$_Inline_tbidtd_a1a$_Inline_tbidtd_a0a0b0$_Inline_tbidtd_a0a0a0a1a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/ReferentieNaarWaardeVanKenmerk_Editor$_Inline_tbidtd_a1a$_Inline_tbidtd_a0a0b0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/ReferentieNaarWaardeVanKenmerk_Editor$_Inline_tbidtd_a1a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/ReferentieNaarWaardeVanKenmerk_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/ReferentieNaarWaardeVanKenmerk_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/ReferentieNaarWaardeVanKenmerk_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/structure/StructureAspectDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/structure/StructureAspectDescriptor.class" />
+    <list default="true" id="58f2805d-4538-46c3-a016-7128ec7e185d" name="Default" comment="Verbeteringen aan de dialogen link naar GGHH">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/ReferentieNaarWaardeVanKenmerk_Editor$_Inline_tbidtd_a0a$_Inline_tbidtd_a0a0a0$_Inline_tbidtd_a0a0a0a0a.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/ReferentieNaarWaardeVanKenmerk_Editor$_Inline_tbidtd_a0a$_Inline_tbidtd_a0a0a0.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/ReferentieNaarWaardeVanKenmerk_Editor$_Inline_tbidtd_a0a.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/ReferentieNaarWaardeVanKenmerk_Editor$_Inline_tbidtd_a2a$waardeSingleRoleHandler_tbidtd_a0a2a.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/ReferentieNaarWaardeVanKenmerk_Editor$_Inline_tbidtd_a2a.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/structure/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/behavior.mps" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/behavior.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/editor.mps" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/structure.mps" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/behavior/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/behavior/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/dependencies" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/structure/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/structure/ConceptPresentationAspectImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/structure/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/constraints/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/models/constraints.mps" afterPath="$PROJECT_DIR$/languages/Simulatie/models/constraints.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/models/editor.mps" afterPath="$PROJECT_DIR$/languages/Simulatie/models/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/models/structure.mps" afterPath="$PROJECT_DIR$/languages/Simulatie/models/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/constraints/dependencies" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/constraints/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/constraints/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/constraints/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/dependencies" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/structure/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/constraints/UitTeVoerenDialoog_Constraints.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/constraints/UitTeVoerenDialoog_Constraints.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/constraints/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/UitTeVoerenDialoog_Editor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/UitTeVoerenDialoog_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WAA/Gegevenshuishouding WAA.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WAA/Gegevenshuishouding WAA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/models/GN/WAA.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen.caches/GN/WAA/generated" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen.caches/GN/WAA/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Gegevenshuishouding WAA.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Gegevenshuishouding WAA.xml" />
     </list>
@@ -115,7 +71,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="eb9b4934-02d0-4649-a204-ab15cf80ee08/r:a27b8583-19a6-40fd-9bb8-b79b40f9dd69(TempModuleeb9b4934-02d0-4649-a204-ab15cf80ee08/TempModel_155372280901370)">
+            <model ref="2bd4307f-9a1e-4d01-9100-9f11670cb3e7/r:f3ca220b-69eb-4351-88d5-5975f5ff7d24(TempModule2bd4307f-9a1e-4d01-9100-9f11670cb3e7/TempModel_157460965436100)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -145,9 +101,9 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="6gBiqsY2QuN">
-                <node concept="3balQm" id="6gBiqsY2QuO" role="aymYE" />
-                <node concept="2Clz$F" id="6gBiqsY2QuP" role="aymYO">
+              <node concept="aymSD" id="6gBiqsYkX01">
+                <node concept="3balQm" id="6gBiqsYkX02" role="aymYE" />
+                <node concept="2Clz$F" id="6gBiqsYkX03" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
               </node>
@@ -175,7 +131,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -452,6 +408,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -478,11 +435,10 @@
           </SELECTED>
         </subPane>
       </pane>
-      <pane id="Favorites" />
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
         <subPane />
       </pane>
-      <pane id="FileSystem" />
+      <pane id="Favorites" />
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
         <subPane />
       </pane>
@@ -598,26 +554,24 @@
       <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29246345" sideWeight="0.6764347" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29246345" sideWeight="0.67826617" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44431946" sideWeight="0.36080587" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40044993" sideWeight="0.2759463" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Visualiseer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.513431" sideWeight="0.49676898" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Wetten.nl" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35925257" sideWeight="0.495116" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29246345" sideWeight="0.32356533" order="19" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32004556" sideWeight="0.44120032" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29246345" sideWeight="0.32173383" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733408" sideWeight="0.42237163" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27334082" sideWeight="0.33760685" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2032967" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2032967" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="24" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="26" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.49676898" order="27" side_tool="false" content_ui="tabs" />
@@ -626,7 +580,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32004556" sideWeight="0.44120032" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Visualiser" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="25" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Browser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5056543" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1175,7 +1131,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Interpreter merged in Master" />
     <MESSAGE value="Rechtsbetrekkingen ook in de gegevenshuishouding" />
     <MESSAGE value="Schaduwdraaien simulatie &amp; gegevenshuishouding" />
     <MESSAGE value="Simulatie op gegevenshuishouding" />
@@ -1200,7 +1155,8 @@
     <MESSAGE value="Eerste stappen in de dialoog" />
     <MESSAGE value="Dialogen werken" />
     <MESSAGE value="Verbeteringen aan de dialogen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Verbeteringen aan de dialogen" />
+    <MESSAGE value="Verbeteringen aan de dialogen link naar GGHH" />
+    <option name="LAST_COMMIT_MESSAGE" value="Verbeteringen aan de dialogen link naar GGHH" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://Simulatie/Simulatie.structure/UitTeVoerenDialoog">
