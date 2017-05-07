@@ -14,8 +14,12 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BaseConstraintsAspectDescriptor" />
   </dependency>
   <dependency className="Simulatie.constraints.UitTeVoerenDialoog_Constraints" file="UitTeVoerenDialoog_Constraints.java">
+    <classNode dependClassName="Interactie.behavior.PresentatieDialoog__BehaviorDescriptor" />
+    <classNode dependClassName="ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.List" />
     <classNode dependClassName="java.util.Map" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />

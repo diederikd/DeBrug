@@ -169,48 +169,82 @@
   </root>
   <root nodeRef="r:484b93fc-0f0b-4d8a-917c-688df91c2a48(Simulatie.constraints)/7570288975782848122">
     <file name="UitTeVoerenDialoog_Constraints.java">
-      <node id="7570288975782848122" at="23,43,24,146" concept="9" />
-      <node id="7570288975782848122" at="28,90,29,131" concept="6" />
-      <node id="7570288975782848122" at="32,52,33,20" concept="7" />
-      <node id="7570288975782848122" at="36,116,37,20" concept="7" />
-      <node id="9209368581771223063" at="40,119,41,250" concept="6" />
-      <node id="7570288975780143608" at="41,250,42,1041" concept="2" />
-      <node id="7570288975782848122" at="46,56,47,42" concept="7" />
-      <node id="7570288975782848122" at="49,7,50,22" concept="7" />
-      <node id="7570288975782848122" at="23,0,26,0" concept="1" trace="UitTeVoerenDialoog_Constraints#()V" />
-      <node id="7570288975782848122" at="31,0,35,0" concept="5" trace="hasOwnOnReferenceSetHandler#()Z" />
-      <node id="7570288975782848122" at="35,0,39,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="7570288975782848122" at="39,0,44,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="7570288975782848122" at="44,0,49,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="7570288975782848122" at="29,131,49,7" concept="2" />
-      <node id="7570288975782848122" at="27,0,52,0" concept="5" trace="getSpecifiedReferences#()Ljava/util/Map;" />
-      <scope id="7570288975782848122" at="23,43,24,146" />
-      <scope id="7570288975782848122" at="32,52,33,20" />
-      <scope id="7570288975782848122" at="36,116,37,20" />
-      <scope id="7570288975782848122" at="46,56,47,42" />
-      <scope id="7570288975782848128" at="40,119,42,1041">
+      <node id="7570288975782848122" at="26,43,27,146" concept="9" />
+      <node id="7570288975782848122" at="31,90,32,131" concept="6" />
+      <node id="7570288975782848122" at="35,52,36,20" concept="7" />
+      <node id="7570288975782848122" at="39,116,40,20" concept="7" />
+      <node id="9209368581771223063" at="43,119,44,250" concept="6" />
+      <node id="7570288975780143608" at="44,250,45,1041" concept="2" />
+      <node id="7570288975782848122" at="49,56,50,42" concept="7" />
+      <node id="7570288975782848122" at="55,52,56,20" concept="7" />
+      <node id="7570288975782848122" at="59,116,60,20" concept="7" />
+      <node id="4535249207447137763" at="63,119,64,302" concept="6" />
+      <node id="4535249207447166160" at="64,302,65,355" concept="6" />
+      <node id="7216817910535577131" at="65,355,66,218" concept="2" />
+      <node id="7216817910535623121" at="66,218,67,288" concept="2" />
+      <node id="7216817910536710164" at="67,288,68,224" concept="2" />
+      <node id="7570288975782848122" at="72,56,73,42" concept="7" />
+      <node id="7570288975782848122" at="75,7,76,22" concept="7" />
+      <node id="7570288975782848122" at="26,0,29,0" concept="1" trace="UitTeVoerenDialoog_Constraints#()V" />
+      <node id="7570288975782848122" at="34,0,38,0" concept="5" trace="hasOwnOnReferenceSetHandler#()Z" />
+      <node id="7570288975782848122" at="38,0,42,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="7570288975782848122" at="54,0,58,0" concept="5" trace="hasOwnOnReferenceSetHandler#()Z" />
+      <node id="7570288975782848122" at="58,0,62,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="7570288975782848122" at="42,0,47,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7570288975782848122" at="47,0,52,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7570288975782848122" at="70,0,75,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7570288975782848122" at="62,0,70,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7570288975782848122" at="32,131,52,7" concept="2" />
+      <node id="7570288975782848122" at="52,7,75,7" concept="2" />
+      <node id="7570288975782848122" at="30,0,78,0" concept="5" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7570288975782848122" at="26,43,27,146" />
+      <scope id="7570288975782848122" at="35,52,36,20" />
+      <scope id="7570288975782848122" at="39,116,40,20" />
+      <scope id="7570288975782848122" at="49,56,50,42" />
+      <scope id="7570288975782848122" at="55,52,56,20" />
+      <scope id="7570288975782848122" at="59,116,60,20" />
+      <scope id="7570288975782848122" at="72,56,73,42" />
+      <scope id="7570288975782848128" at="43,119,45,1041">
         <var name="simulatie" id="9209368581771223064" />
       </scope>
-      <scope id="7570288975782848122" at="23,0,26,0" />
-      <scope id="7570288975782848122" at="31,0,35,0" />
-      <scope id="7570288975782848122" at="35,0,39,0">
+      <scope id="7570288975782848122" at="26,0,29,0" />
+      <scope id="7570288975782848122" at="34,0,38,0" />
+      <scope id="7570288975782848122" at="38,0,42,0">
         <var name="newReferentNode" id="7570288975782848122" />
         <var name="oldReferentNode" id="7570288975782848122" />
         <var name="referenceNode" id="7570288975782848122" />
       </scope>
-      <scope id="7570288975782848122" at="39,0,44,0">
+      <scope id="7570288975782848122" at="54,0,58,0" />
+      <scope id="7570288975782848122" at="58,0,62,0">
         <var name="newReferentNode" id="7570288975782848122" />
         <var name="oldReferentNode" id="7570288975782848122" />
         <var name="referenceNode" id="7570288975782848122" />
       </scope>
-      <scope id="7570288975782848122" at="44,0,49,0" />
-      <scope id="7570288975782848122" at="28,90,50,22">
+      <scope id="7570288975782848122" at="42,0,47,0">
+        <var name="newReferentNode" id="7570288975782848122" />
+        <var name="oldReferentNode" id="7570288975782848122" />
+        <var name="referenceNode" id="7570288975782848122" />
+      </scope>
+      <scope id="7570288975782848122" at="47,0,52,0" />
+      <scope id="7216817910535573336" at="63,119,68,224">
+        <var name="lijstNaarreferentieNaarWaardeVanKenmerken" id="4535249207447166163" />
+        <var name="lijstVanKenmerken" id="4535249207447137766" />
+      </scope>
+      <scope id="7570288975782848122" at="70,0,75,0" />
+      <scope id="7570288975782848122" at="62,0,70,0">
+        <var name="newReferentNode" id="7570288975782848122" />
+        <var name="oldReferentNode" id="7570288975782848122" />
+        <var name="referenceNode" id="7570288975782848122" />
+      </scope>
+      <scope id="7570288975782848122" at="31,90,76,22">
         <var name="references" id="7570288975782848122" />
       </scope>
-      <scope id="7570288975782848122" at="27,0,52,0" />
-      <unit id="7570288975782848122" at="47,19,47,41" name="Simulatie.constraints.UitTeVoerenDialoog_Constraints$2" />
-      <unit id="7570288975782848122" at="30,155,49,5" name="Simulatie.constraints.UitTeVoerenDialoog_Constraints$1" />
-      <unit id="7570288975782848122" at="22,0,53,0" name="Simulatie.constraints.UitTeVoerenDialoog_Constraints" />
+      <scope id="7570288975782848122" at="30,0,78,0" />
+      <unit id="7570288975782848122" at="50,19,50,41" name="Simulatie.constraints.UitTeVoerenDialoog_Constraints$2" />
+      <unit id="7570288975782848122" at="73,19,73,41" name="Simulatie.constraints.UitTeVoerenDialoog_Constraints$3" />
+      <unit id="7570288975782848122" at="33,155,52,5" name="Simulatie.constraints.UitTeVoerenDialoog_Constraints$1" />
+      <unit id="7570288975782848122" at="53,157,75,5" name="Simulatie.constraints.UitTeVoerenDialoog_Constraints$2" />
+      <unit id="7570288975782848122" at="25,0,79,0" name="Simulatie.constraints.UitTeVoerenDialoog_Constraints" />
     </file>
   </root>
 </debug-info>

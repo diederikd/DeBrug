@@ -261,6 +261,13 @@
       <property role="20kJfa" value="dialoog" />
       <ref role="20lvS9" to="1jct:6oAJqs3vQ6I" resolve="PresentatieDialoog" />
     </node>
+    <node concept="1TJgyj" id="6gBiqsY9wAa" role="1TKVEi">
+      <property role="IQ2ns" value="7216817910535555466" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="kenmerken" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="3pw0:3VKsi0pJIjP" resolve="ReferentieNaarWaardeVanKenmerk" />
+    </node>
   </node>
 </model>
 

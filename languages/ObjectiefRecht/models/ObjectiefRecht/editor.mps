@@ -14144,5 +14144,42 @@
       <node concept="l2Vlx" id="vbwdmzdf2Y" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3VKsi0q1$RG">
+    <property role="3GE5qa" value="ObjectInstantie" />
+    <ref role="1XX52x" to="3pw0:3VKsi0pJIjP" resolve="ReferentieNaarWaardeVanKenmerk" />
+    <node concept="3EZMnI" id="3VKsi0q1$RI" role="2wV5jI">
+      <node concept="1iCGBv" id="3VKsi0q1$RP" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:3VKsi0pJIjQ" resolve="waardevankenmerk" />
+        <node concept="1sVBvm" id="3VKsi0q1$RR" role="1sWHZn">
+          <node concept="1iCGBv" id="3VKsi0q1$RY" role="2wV5jI">
+            <ref role="1NtTu8" to="3pw0:3r$i424SGBS" resolve="kenmerk" />
+            <node concept="1sVBvm" id="3VKsi0q1$S0" role="1sWHZn">
+              <node concept="1iCGBv" id="3VKsi0q1$S7" role="2wV5jI">
+                <ref role="1NtTu8" to="3pw0:6T3DNjSrxfN" resolve="kenmerk" />
+                <node concept="1sVBvm" id="3VKsi0q1$S9" role="1sWHZn">
+                  <node concept="3F0A7n" id="3VKsi0q1$Sj" role="2wV5jI">
+                    <property role="1Intyy" value="true" />
+                    <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6gBiqsYefvk" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="1iCGBv" id="6gBiqsYefvC" role="3EZMnx">
+        <ref role="1NtTu8" to="3pw0:3VKsi0pJIjQ" resolve="waardevankenmerk" />
+        <node concept="1sVBvm" id="6gBiqsYefvE" role="1sWHZn">
+          <node concept="3F1sOY" id="6gBiqsYefvT" role="2wV5jI">
+            <ref role="1NtTu8" to="3pw0:3r$i424SGCh" resolve="waarde" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3VKsi0q1$RL" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

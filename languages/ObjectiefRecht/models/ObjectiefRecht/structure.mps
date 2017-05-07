@@ -2193,5 +2193,21 @@
       <ref role="20lvS9" to="uwhu:4rrm763g8LU" resolve="AbstracteWaarde" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3VKsi0pJIjP">
+    <property role="EcuMT" value="4535249207446922485" />
+    <property role="3GE5qa" value="ObjectInstantie" />
+    <property role="TrG5h" value="ReferentieNaarWaardeVanKenmerk" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3VKsi0pJIjQ" role="1TKVEi">
+      <property role="IQ2ns" value="4535249207446922486" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="waardevankenmerk" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3r$i424SGBR" resolve="WaardeVanKenmerk" />
+    </node>
+    <node concept="PrWs8" id="3VKsi0qqyRF" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 

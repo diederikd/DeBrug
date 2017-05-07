@@ -18,6 +18,9 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
+import java.util.List;
+import Interactie.behavior.PresentatieDialoog__BehaviorDescriptor;
+import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
 
 public class UitTeVoerenDialoog_Constraints extends BaseConstraintsDescriptor {
   public UitTeVoerenDialoog_Constraints() {
@@ -40,6 +43,29 @@ public class UitTeVoerenDialoog_Constraints extends BaseConstraintsDescriptor {
       public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
         SNode simulatie = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(oldReferentNode), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"))).first();
         SLinkOperations.setTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x77d59dfe8d9bbd94L, "uittevoerendialoog")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x690f11b6e06ea121L, "overgang"), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x77d59dfe8d9bbd94L, "uittevoerendialoog")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x77d59dfe8d9bbd91L, "dialoog")), MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7037f61aeL, 0x158b926d34e00c3L, "keuze"))).first(), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x158b926d34e0095L, 0x158b926d34e0096L, "overgang")));
+      }
+      @Nullable
+      @Override
+      public ReferenceScopeProvider getScopeProvider() {
+        return new BaseScopeProvider() {};
+      }
+    });
+    references.put(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x690f11b6e01d86a4L, "onderwerp"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x690f11b6e01d86a4L), this) {
+      @Override
+      public boolean hasOwnOnReferenceSetHandler() {
+        return true;
+      }
+      @Override
+      public boolean validate(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
+        return true;
+      }
+      @Override
+      public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
+        List<SNode> lijstVanKenmerken = PresentatieDialoog__BehaviorDescriptor.GeefLijstMetInvoerKenmerken_id6$f4rrvMdoa.invoke(SLinkOperations.getTarget(referenceNode, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x77d59dfe8d9bbd91L, "dialoog")));
+        List<SNode> lijstNaarreferentieNaarWaardeVanKenmerken = InstantieVanObject__BehaviorDescriptor.GeefReferentieNaarWaardenVanKenmerk_id3VKsi0pJIjS.invoke(SLinkOperations.getTarget(referenceNode, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x690f11b6e01d86a4L, "onderwerp")), lijstVanKenmerken);
+        ListSequence.fromList(SLinkOperations.getChildren(referenceNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x642749a73e26098aL, "kenmerken"))).clear();
+        ListSequence.fromList(SLinkOperations.getChildren(referenceNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x642749a73e26098aL, "kenmerken"))).addSequence(ListSequence.fromList(lijstNaarreferentieNaarWaardeVanKenmerken));
+        System.out.println("Constraints " + SLinkOperations.getChildren(referenceNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x642749a73e26098aL, "kenmerken")));
       }
       @Nullable
       @Override

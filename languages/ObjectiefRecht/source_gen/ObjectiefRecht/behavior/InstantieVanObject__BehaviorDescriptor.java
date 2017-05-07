@@ -36,8 +36,9 @@ public final class InstantieVanObject__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<Void> ToevoegenVanKenmerkenAanInstantie_id3r$i4253ACb = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ToevoegenVanKenmerkenAanInstantie").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3r$i4253ACb").registry(REGISTRY).build();
   public static final SMethod<SNode> GeefWaardeVanKenmerk_idFR9FxGLp3H = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("GeefWaardeVanKenmerk").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("FR9FxGLp3H").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<List<SNode>> GeefWaardenVanKenmerken_id6$f4rrwbUKX = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("GeefWaardenVanKenmerken").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6$f4rrwbUKX").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<List<SNode>> GeefReferentieNaarWaardenVanKenmerk_id3VKsi0pJIjS = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("GeefReferentieNaarWaardenVanKenmerk").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3VKsi0pJIjS").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefObject_id4f9cC5bR2h, ToevoegenVanKenmerkenAanInstantie_id3r$i4253ACb, GeefWaardeVanKenmerk_idFR9FxGLp3H, GeefWaardenVanKenmerken_id6$f4rrwbUKX);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefObject_id4f9cC5bR2h, ToevoegenVanKenmerkenAanInstantie_id3r$i4253ACb, GeefWaardeVanKenmerk_idFR9FxGLp3H, GeefWaardenVanKenmerken_id6$f4rrwbUKX, GeefReferentieNaarWaardenVanKenmerk_id3VKsi0pJIjS);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -158,6 +159,20 @@ public final class InstantieVanObject__BehaviorDescriptor extends BaseBHDescript
     }
     return lijstWaardes;
   }
+  /*package*/ static List<SNode> GeefReferentieNaarWaardenVanKenmerk_id3VKsi0pJIjS(@NotNull SNode __thisNode__, List<SNode> lijstVanKenmerken) {
+    List<SNode> lijstVanReferentieNaarWaardeVanKenmerk = new ArrayList<SNode>();
+    for (SNode kenmerk : ListSequence.fromList(lijstVanKenmerken)) {
+      for (SNode waardeVanKenmerk : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca15L, "waardeVanKenmerken")))) {
+        if (SLinkOperations.getTarget(SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")) == kenmerk) {
+          SNode referentieNaarWaardeVanKenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3ef0712019bee4f5L, "ObjectiefRecht.structure.ReferentieNaarWaardeVanKenmerk"));
+          SPropertyOperations.set(referentieNaarWaardeVanKenmerk, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(kenmerk, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          SLinkOperations.setTarget(referentieNaarWaardeVanKenmerk, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3ef0712019bee4f5L, 0x3ef0712019bee4f6L, "waardevankenmerk"), waardeVanKenmerk);
+          ListSequence.fromList(lijstVanReferentieNaarWaardeVanKenmerk).addElement(referentieNaarWaardeVanKenmerk);
+        }
+      }
+    }
+    return lijstVanReferentieNaarWaardeVanKenmerk;
+  }
 
   /*package*/ InstantieVanObject__BehaviorDescriptor() {
     super(REGISTRY);
@@ -184,6 +199,8 @@ public final class InstantieVanObject__BehaviorDescriptor extends BaseBHDescript
         return (T) ((SNode) GeefWaardeVanKenmerk_idFR9FxGLp3H(node, (SNode) parameters[0]));
       case 3:
         return (T) ((List<SNode>) GeefWaardenVanKenmerken_id6$f4rrwbUKX(node, (List<SNode>) parameters[0]));
+      case 4:
+        return (T) ((List<SNode>) GeefReferentieNaarWaardenVanKenmerk_id3VKsi0pJIjS(node, (List<SNode>) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

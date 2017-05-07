@@ -115,6 +115,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ReferentieNaarRechtssubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarToestand = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarVoorwaarde = new ConceptPresentationBuilder().deprecated().create();
+  private final ConceptPresentation props_ReferentieNaarWaardeVanKenmerk = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Regel = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RekenExpressie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RijVanKaraktersType = new ConceptPresentationBuilder().create();
@@ -362,64 +363,66 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 104:
         return props_ReferentieNaarVoorwaarde;
       case 105:
-        return props_Regel;
+        return props_ReferentieNaarWaardeVanKenmerk;
       case 106:
-        return props_RekenExpressie;
+        return props_Regel;
       case 107:
-        return props_RijVanKaraktersType;
+        return props_RekenExpressie;
       case 108:
-        return props_SubjectType;
+        return props_RijVanKaraktersType;
       case 109:
-        return props_TabelMetInstanties;
+        return props_SubjectType;
       case 110:
-        return props_TenHoogsteVoor;
+        return props_TabelMetInstanties;
       case 111:
-        return props_TenMinsteNa;
+        return props_TenHoogsteVoor;
       case 112:
-        return props_TenMinsteVoor;
+        return props_TenMinsteNa;
       case 113:
-        return props_TijdstipType;
+        return props_TenMinsteVoor;
       case 114:
-        return props_TijdsverloopMetRechtsgevolg;
+        return props_TijdstipType;
       case 115:
-        return props_Toestand;
+        return props_TijdsverloopMetRechtsgevolg;
       case 116:
-        return props_Variabele;
+        return props_Toestand;
       case 117:
-        return props_VermenigvuldigenExpressie;
+        return props_Variabele;
       case 118:
-        return props_VerplichteBevoegdheidVerplichteGehoudenheid;
+        return props_VermenigvuldigenExpressie;
       case 119:
-        return props_VerschilTussen;
+        return props_VerplichteBevoegdheidVerplichteGehoudenheid;
       case 120:
-        return props_VerwoordingElement;
+        return props_VerschilTussen;
       case 121:
-        return props_VerwoordingKenmerk;
+        return props_VerwoordingElement;
       case 122:
-        return props_VerwoordingObject;
+        return props_VerwoordingKenmerk;
       case 123:
-        return props_VerwoordingTekst;
+        return props_VerwoordingObject;
       case 124:
-        return props_VerwoordingWaarde;
+        return props_VerwoordingTekst;
       case 125:
-        return props_Voor;
+        return props_VerwoordingWaarde;
       case 126:
-        return props_VoorbeeldenMetInstanties;
+        return props_Voor;
       case 127:
-        return props_Voorwaarden;
+        return props_VoorbeeldenMetInstanties;
       case 128:
-        return props_VoorwaardenRechtshandeling;
+        return props_Voorwaarden;
       case 129:
-        return props_VormVoorwaarde;
+        return props_VoorwaardenRechtshandeling;
       case 130:
-        return props_VrijeTekst;
+        return props_VormVoorwaarde;
       case 131:
-        return props_VrijheidGeenaanspraak;
+        return props_VrijeTekst;
       case 132:
-        return props_WaardeVanKenmerk;
+        return props_VrijheidGeenaanspraak;
       case 133:
-        return props_ZwakkeAanspraakZwakkePlicht;
+        return props_WaardeVanKenmerk;
       case 134:
+        return props_ZwakkeAanspraakZwakkePlicht;
+      case 135:
         return props_isNegatief;
     }
     throw new IllegalStateException("Unknown concept " + c);
