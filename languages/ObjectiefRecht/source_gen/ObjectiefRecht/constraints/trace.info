@@ -16,7 +16,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164879751025:jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,125,0" name="ObjectiefRecht.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,130,0" name="ObjectiefRecht.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/301351583719086755">
@@ -519,6 +519,53 @@
       <unit id="7168729926835982244" at="40,19,49,9" name="ObjectiefRecht.constraints.FeitVerwoording_Constraints$2" />
       <unit id="7168729926835982244" at="32,157,51,5" name="ObjectiefRecht.constraints.FeitVerwoording_Constraints$1" />
       <unit id="7168729926835982244" at="24,0,56,0" name="ObjectiefRecht.constraints.FeitVerwoording_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591">
+    <file name="ObjectWaarde_Constraints.java">
+      <node id="7216817910543080591" at="30,37,31,144" concept="12" />
+      <node id="7216817910543080591" at="35,90,36,131" concept="6" />
+      <node id="7216817910543080591" at="39,44,40,20" concept="7" />
+      <node id="7216817910543080591" at="47,63,48,58" concept="7" />
+      <node id="7216817910550475855" at="52,13,53,81" concept="6" />
+      <node id="7216817910550649274" at="53,81,54,291" concept="6" />
+      <node id="7216817910550777945" at="54,291,55,317" concept="2" />
+      <node id="7216817910550478072" at="55,317,56,79" concept="7" />
+      <node id="7216817910543080591" at="61,7,62,22" concept="7" />
+      <node id="7216817910543080591" at="64,0,65,0" concept="10" trace="breakingNode_nf0rop_a0a0a0a0a1a0b0a1a2" />
+      <node id="7216817910543080591" at="30,0,33,0" concept="1" trace="ObjectWaarde_Constraints#()V" />
+      <node id="7216817910543080591" at="38,0,42,0" concept="5" trace="hasOwnScopeProvider#()Z" />
+      <node id="7216817910543080591" at="46,0,50,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="7216817910543080591" at="51,122,57,13" concept="0" />
+      <node id="7216817910543080591" at="50,0,59,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="7216817910543080591" at="44,56,59,10" concept="7" />
+      <node id="7216817910543080591" at="42,0,61,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7216817910543080591" at="36,131,61,7" concept="2" />
+      <node id="7216817910543080591" at="34,0,64,0" concept="5" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7216817910543080591" at="30,37,31,144" />
+      <scope id="7216817910543080591" at="39,44,40,20" />
+      <scope id="7216817910543080591" at="47,63,48,58" />
+      <scope id="7216817910543080591" at="30,0,33,0" />
+      <scope id="7216817910543080591" at="38,0,42,0" />
+      <scope id="7216817910543080591" at="46,0,50,0" />
+      <scope id="7216817910550475669" at="52,13,56,79">
+        <var name="LijstMetinstantiesVanObjecten" id="7216817910550475858" />
+        <var name="object" id="7216817910550649277" />
+      </scope>
+      <scope id="7216817910543080591" at="51,122,57,13" />
+      <scope id="7216817910543080591" at="50,0,59,0">
+        <var name="_context" id="7216817910543080591" />
+        <var name="operationContext" id="7216817910543080591" />
+      </scope>
+      <scope id="7216817910543080591" at="44,56,59,10" />
+      <scope id="7216817910543080591" at="42,0,61,0" />
+      <scope id="7216817910543080591" at="35,90,62,22">
+        <var name="references" id="7216817910543080591" />
+      </scope>
+      <scope id="7216817910543080591" at="34,0,64,0" />
+      <unit id="7216817910543080591" at="45,19,59,9" name="ObjectiefRecht.constraints.ObjectWaarde_Constraints$2" />
+      <unit id="7216817910543080591" at="37,152,61,5" name="ObjectiefRecht.constraints.ObjectWaarde_Constraints$1" />
+      <unit id="7216817910543080591" at="29,0,66,0" name="ObjectiefRecht.constraints.ObjectWaarde_Constraints" />
     </file>
   </root>
   <root nodeRef="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7366216351236656416">

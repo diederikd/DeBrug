@@ -28,6 +28,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final BHDescriptor myRechtsSubject__BehaviorDescriptor = new RechtsSubject__BehaviorDescriptor();
   private final BHDescriptor myRechtsbetrekking__BehaviorDescriptor = new Rechtsbetrekking__BehaviorDescriptor();
   private final BHDescriptor myRechtsgevolgVeroorzakers__BehaviorDescriptor = new RechtsgevolgVeroorzakers__BehaviorDescriptor();
+  private final BHDescriptor myTabelMetInstanties__BehaviorDescriptor = new TabelMetInstanties__BehaviorDescriptor();
   private final BHDescriptor myVariabele__BehaviorDescriptor = new Variabele__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
@@ -37,7 +38,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     {
       SAbstractConcept cncpt = concept;
-      Integer preIndex = indices_846f5o_a0u.get(cncpt);
+      Integer preIndex = indices_846f5o_a0v.get(cncpt);
       int switchIndex = (preIndex == null ? -1 : preIndex);
       switch (switchIndex) {
         case 0:
@@ -117,10 +118,15 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
           break;
         case 15:
           if (true) {
-            return myVariabele__BehaviorDescriptor;
+            return myTabelMetInstanties__BehaviorDescriptor;
           }
           break;
         case 16:
+          if (true) {
+            return myVariabele__BehaviorDescriptor;
+          }
+          break;
+        case 17:
           if (true) {
             return myVoorbeeldenMetInstanties__BehaviorDescriptor;
           }
@@ -139,5 +145,5 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0u = buildConceptIndices(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, "ObjectiefRecht.structure.Concept"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7da9e4c64537e68L, "ObjectiefRecht.structure.EnumeratieWaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab914f739aL, "ObjectiefRecht.structure.FeitVerwoording"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba22fL, "ObjectiefRecht.structure.MeervoudigeObjectWaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L, "ObjectiefRecht.structure.Object"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, "ObjectiefRecht.structure.ObjectWaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a9021L, "ObjectiefRecht.structure.OptieAccepterenHandeling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a9022L, "ObjectiefRecht.structure.OptieAfwijzenHandeling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25299d15213f573aL, "ObjectiefRecht.structure.OptieUitvoerenHandeling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47352d422aL, "ObjectiefRecht.structure.Overgang"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, "ObjectiefRecht.structure.RechtsgevolgVeroorzakers"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, "ObjectiefRecht.structure.Variabele"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca1aL, "ObjectiefRecht.structure.VoorbeeldenMetInstanties"));
+  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0v = buildConceptIndices(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L, "ObjectiefRecht.structure.Concept"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7da9e4c64537e68L, "ObjectiefRecht.structure.EnumeratieWaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab914f739aL, "ObjectiefRecht.structure.FeitVerwoording"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba22fL, "ObjectiefRecht.structure.MeervoudigeObjectWaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L, "ObjectiefRecht.structure.Object"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, "ObjectiefRecht.structure.ObjectWaarde"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a9021L, "ObjectiefRecht.structure.OptieAccepterenHandeling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a9022L, "ObjectiefRecht.structure.OptieAfwijzenHandeling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25299d15213f573aL, "ObjectiefRecht.structure.OptieUitvoerenHandeling"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47352d422aL, "ObjectiefRecht.structure.Overgang"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL, "ObjectiefRecht.structure.RechtsSubject"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, "ObjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL, "ObjectiefRecht.structure.RechtsgevolgVeroorzakers"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, "ObjectiefRecht.structure.TabelMetInstanties"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, "ObjectiefRecht.structure.Variabele"), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca1aL, "ObjectiefRecht.structure.VoorbeeldenMetInstanties"));
 }

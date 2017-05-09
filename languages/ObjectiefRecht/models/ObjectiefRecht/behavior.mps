@@ -15,6 +15,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="uwhu" ref="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)" />
     <import index="4iir" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.command(MPS.IDEA/)" />
+    <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="rwnv" ref="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -2681,6 +2682,13 @@
     <ref role="13h7C2" to="3pw0:64gsXol8COU" resolve="RechtsgevolgVeroorzakers" />
     <node concept="13hLZK" id="7vlBvUdn0u7" role="13h7CW">
       <node concept="3clFbS" id="7vlBvUdn0u8" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6gBiqsYUeeE">
+    <property role="3GE5qa" value="ObjectInstantie" />
+    <ref role="13h7C2" to="3pw0:6w7GUCbs7K9" resolve="TabelMetInstanties" />
+    <node concept="13hLZK" id="6gBiqsYUeeF" role="13h7CW">
+      <node concept="3clFbS" id="6gBiqsYUeeG" role="2VODD2" />
     </node>
   </node>
 </model>

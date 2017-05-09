@@ -209,6 +209,8 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -1423,6 +1425,88 @@
               <node concept="359W_D" id="3JLo1nh8Fow" role="37wK5m">
                 <ref role="359W_E" to="3pw0:3r$i424SGCq" resolve="VoorbeeldenMetInstanties" />
                 <ref role="359W_F" to="3pw0:3r$i424SGCr" resolve="instanties" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6gBiqsYAdMf">
+    <property role="3GE5qa" value="Waarden" />
+    <ref role="1M2myG" to="3pw0:jcJoZ9T6vo" resolve="ObjectWaarde" />
+    <node concept="1N5Pfh" id="6gBiqsYAdMg" role="1Mr941">
+      <ref role="1N5Vy1" to="3pw0:jcJoZ9T6vp" resolve="object" />
+      <node concept="13QW63" id="6gBiqsZ2rej" role="1N6uqs">
+        <node concept="3clFbS" id="6gBiqsZ2rel" role="2VODD2">
+          <node concept="3cpWs8" id="6gBiqsZ2rhf" role="3cqZAp">
+            <node concept="3cpWsn" id="6gBiqsZ2rhi" role="3cpWs9">
+              <property role="TrG5h" value="LijstMetinstantiesVanObjecten" />
+              <node concept="2I9FWS" id="6gBiqsZ2rhe" role="1tU5fm">
+                <ref role="2I9WkF" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+              </node>
+              <node concept="2ShNRf" id="6gBiqsZ2rHT" role="33vP2m">
+                <node concept="2T8Vx0" id="6gBiqsZ2rHR" role="2ShVmc">
+                  <node concept="2I9FWS" id="6gBiqsZ2rHS" role="2T96Bj">
+                    <ref role="2I9WkF" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="6gBiqsZ35AU" role="3cqZAp">
+            <node concept="3cpWsn" id="6gBiqsZ35AX" role="3cpWs9">
+              <property role="TrG5h" value="object" />
+              <node concept="3Tqbb2" id="6gBiqsZ35AS" role="1tU5fm">
+                <ref role="ehGHo" to="3pw0:GhrpPwHHWz" resolve="Object" />
+              </node>
+              <node concept="2OqwBi" id="6gBiqsZ38uo" role="33vP2m">
+                <node concept="3TrEf2" id="6gBiqsZ39jj" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="referentieNaarObject" />
+                </node>
+                <node concept="1eOMI4" id="6gBiqsZ3922" role="2Oq$k0">
+                  <node concept="10QFUN" id="6gBiqsZ3896" role="1eOMHV">
+                    <node concept="3Tqbb2" id="6gBiqsZ3897" role="10QFUM">
+                      <ref role="ehGHo" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+                    </node>
+                    <node concept="2OqwBi" id="6gBiqsZ36_S" role="10QFUP">
+                      <node concept="2OqwBi" id="6gBiqsZ3661" role="2Oq$k0">
+                        <node concept="2rP1CM" id="6gBiqsZ35TF" role="2Oq$k0" />
+                        <node concept="1mfA1w" id="6gBiqsZ36ic" role="2OqNvi" />
+                      </node>
+                      <node concept="1mfA1w" id="6gBiqsZ36TB" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6gBiqsZ3_1p" role="3cqZAp">
+            <node concept="37vLTI" id="6gBiqsZ3_1q" role="3clFbG">
+              <node concept="37vLTw" id="6gBiqsZ3_1r" role="37vLTJ">
+                <ref role="3cqZAo" node="6gBiqsZ2rhi" resolve="LijstMetinstantiesVanObjecten" />
+              </node>
+              <node concept="2OqwBi" id="6gBiqsZ3_1u" role="37vLTx">
+                <node concept="2OqwBi" id="6gBiqsZ3_1v" role="2Oq$k0">
+                  <node concept="2rP1CM" id="6gBiqsZ3_1w" role="2Oq$k0" />
+                  <node concept="2Rxl7S" id="6gBiqsZ3_1x" role="2OqNvi" />
+                </node>
+                <node concept="2Rf3mk" id="6gBiqsZ3_1y" role="2OqNvi">
+                  <node concept="1xMEDy" id="6gBiqsZ3_1z" role="1xVPHs">
+                    <node concept="chp4Y" id="6gBiqsZ3_1$" role="ri$Ld">
+                      <ref role="cht4Q" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="6gBiqsZ2rNS" role="3cqZAp">
+            <node concept="2YIFZM" id="6gBiqsZ2rWq" role="3cqZAk">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="37vLTw" id="6gBiqsZ2s11" role="37wK5m">
+                <ref role="3cqZAo" node="6gBiqsZ2rhi" resolve="LijstMetinstantiesVanObjecten" />
               </node>
             </node>
           </node>

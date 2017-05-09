@@ -114,6 +114,7 @@
           <input type="text" name="beoogde ingangsdatum van de aanpassing" value=""/>
           <input type="text" name="gewenste spreiding" value=""/>
           <input type="text" name="omvang van de aanpassing" value=""/>
+          <input type="text" name="schriftelijk ingediend" value=""/>
         </column>
       </row>
       <rechtshandelingtypes>

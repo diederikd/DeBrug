@@ -15,12 +15,18 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import Simulatie.behavior.Simulatie__BehaviorDescriptor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
+import org.jetbrains.mps.openapi.model.SNodeReference;
+import jetbrains.mps.scope.Scope;
+import jetbrains.mps.smodel.IOperationContext;
+import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import java.util.List;
-import Interactie.behavior.PresentatieDialoog__BehaviorDescriptor;
-import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
+import java.util.ArrayList;
+import jetbrains.mps.scope.ListScope;
+import jetbrains.mps.smodel.SNodePointer;
 
 public class UitTeVoerenDialoog_Constraints extends BaseConstraintsDescriptor {
   public UitTeVoerenDialoog_Constraints() {
@@ -43,6 +49,8 @@ public class UitTeVoerenDialoog_Constraints extends BaseConstraintsDescriptor {
       public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
         SNode simulatie = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(oldReferentNode), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"))).first();
         SLinkOperations.setTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x77d59dfe8d9bbd94L, "uittevoerendialoog")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x690f11b6e06ea121L, "overgang"), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x77d59dfe8d9bbd94L, "uittevoerendialoog")), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x77d59dfe8d9bbd91L, "dialoog")), MetaAdapterFactory.getContainmentLink(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7037f61aeL, 0x158b926d34e00c3L, "keuze"))).first(), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x158b926d34e0095L, 0x158b926d34e0096L, "overgang")));
+        DialoogHelper.VerversLijstVanKenmerken(referenceNode);
+        Simulatie__BehaviorDescriptor.evalueerUitvoerbareHandeling_id6$f4rruBcjp.invoke(simulatie, simulatie);
       }
       @Nullable
       @Override
@@ -61,18 +69,45 @@ public class UitTeVoerenDialoog_Constraints extends BaseConstraintsDescriptor {
       }
       @Override
       public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
-        List<SNode> lijstVanKenmerken = PresentatieDialoog__BehaviorDescriptor.GeefLijstMetInvoerKenmerken_id6$f4rrvMdoa.invoke(SLinkOperations.getTarget(referenceNode, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x77d59dfe8d9bbd91L, "dialoog")));
-        List<SNode> lijstNaarreferentieNaarWaardeVanKenmerken = InstantieVanObject__BehaviorDescriptor.GeefReferentieNaarWaardenVanKenmerk_id3VKsi0pJIjS.invoke(SLinkOperations.getTarget(referenceNode, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x690f11b6e01d86a4L, "onderwerp")), lijstVanKenmerken);
-        ListSequence.fromList(SLinkOperations.getChildren(referenceNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x642749a73e26098aL, "kenmerken"))).clear();
-        ListSequence.fromList(SLinkOperations.getChildren(referenceNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x642749a73e26098aL, "kenmerken"))).addSequence(ListSequence.fromList(lijstNaarreferentieNaarWaardeVanKenmerken));
-        System.out.println("Constraints " + SLinkOperations.getChildren(referenceNode, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L, 0x642749a73e26098aL, "kenmerken")));
+        SNode simulatie = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(oldReferentNode), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"))).first();
+        DialoogHelper.VerversLijstVanKenmerken(referenceNode);
+        Simulatie__BehaviorDescriptor.evalueerUitvoerbareHandeling_id6$f4rruBcjp.invoke(simulatie, simulatie);
+      }
+      @Override
+      public boolean hasOwnScopeProvider() {
+        return true;
       }
       @Nullable
       @Override
       public ReferenceScopeProvider getScopeProvider() {
-        return new BaseScopeProvider() {};
+        return new BaseScopeProvider() {
+          @Override
+          public SNodeReference getSearchScopeValidatorNode() {
+            return breakingNode_vfyn1j_a0a0a0a0a4a0b0a2a2;
+          }
+          @Override
+          public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
+            {
+              List<SNode> instantiesVanObject = new ArrayList<SNode>();
+              SNode simulatie = (SNode) SNodeOperations.getParent(_context.getContextNode());
+              SNode gegevenshuishouding = SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0xa37796bba047244L, "gegevenshuishouding"));
+              for (SNode tabel : ListSequence.fromList(SLinkOperations.getChildren(gegevenshuishouding, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL, 0x6807b3aa0b72d4dfL, "tabellen")))) {
+                {
+                  final SNode onderwerp = SLinkOperations.getTarget(tabel, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object"));
+                  if (SNodeOperations.isInstanceOf(onderwerp, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L, "ObjectiefRecht.structure.Onderwerp"))) {
+                    for (SNode instantie : ListSequence.fromList(SLinkOperations.getChildren(tabel, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b59fL, "instanties")))) {
+                      ListSequence.fromList(instantiesVanObject).addElement(instantie);
+                    }
+                  }
+                }
+              }
+              return ListScope.forNamedElements(instantiesVanObject);
+            }
+          }
+        };
       }
     });
     return references;
   }
+  private static SNodePointer breakingNode_vfyn1j_a0a0a0a0a4a0b0a2a2 = new SNodePointer("r:484b93fc-0f0b-4d8a-917c-688df91c2a48(Simulatie.constraints)", "7216817910543027377");
 }
