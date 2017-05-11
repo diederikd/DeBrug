@@ -1516,12 +1516,15 @@
     <node concept="1TJgyj" id="3r$i424SGCn" role="1TKVEi">
       <property role="IQ2ns" value="3955365814682700311" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="referentieNaarObject" />
+      <property role="20kJfa" value="object" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="GhrpPwHHWz" resolve="Object" />
     </node>
     <node concept="PrWs8" id="jcJoZ9VDj3" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="58hb2vUKPfB" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="3r$i424SGCq">

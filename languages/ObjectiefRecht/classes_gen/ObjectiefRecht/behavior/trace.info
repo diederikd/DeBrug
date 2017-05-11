@@ -587,8 +587,8 @@
       <node id="3955365814683348576" at="60,184,61,190" concept="2" />
       <node id="3955365814683283817" at="63,5,64,18" concept="7" />
       <node id="3955365814685269128" at="66,89,67,205" concept="6" />
-      <node id="3955365814685282590" at="67,205,68,294" concept="2" />
-      <node id="3955365814685249304" at="68,294,69,237" concept="2" />
+      <node id="3955365814685282590" at="67,205,68,280" concept="2" />
+      <node id="3955365814685249304" at="68,280,69,237" concept="2" />
       <node id="3955365814683229350" at="72,62,73,20" concept="11" />
       <node id="3955365814683229350" at="77,114,78,21" concept="2" />
       <node id="3955365814683229350" at="82,114,83,49" concept="6" />
@@ -705,8 +705,8 @@
       <node id="3955365814685554590" at="38,0,39,0" concept="9" trace="GeefWaardenVanKenmerken_id6$f4rrwbUKX" />
       <node id="3955365814685554590" at="39,0,40,0" concept="9" trace="GeefReferentieNaarWaardenVanKenmerk_id3VKsi0pJIjS" />
       <node id="3955365814685554590" at="41,0,42,0" concept="9" trace="BH_METHODS" />
-      <node id="76320168777579858" at="46,81,47,196" concept="7" />
-      <node id="3955365814685559318" at="50,300,51,203" concept="6" />
+      <node id="76320168777579858" at="46,81,47,182" concept="7" />
+      <node id="3955365814685559318" at="50,286,51,203" concept="6" />
       <node id="3955365814686941685" at="51,203,52,213" concept="6" />
       <node id="3955365814686945198" at="52,213,53,196" concept="2" />
       <node id="3955365814686656145" at="53,196,54,207" concept="2" />
@@ -825,7 +825,7 @@
       <node id="3955365814685559312" at="49,104,145,5" concept="3" />
       <node id="3955365814685554590" at="49,0,147,0" concept="10" trace="ToevoegenVanKenmerkenAanInstantie_id3r$i4253ACb#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="3955365814685554590" at="43,63,43,63" />
-      <scope id="76320168777576596" at="46,81,47,196" />
+      <scope id="76320168777576596" at="46,81,47,182" />
       <scope id="6760713004460250661" at="149,360,150,192" />
       <scope id="7570288975776036132" at="157,68,158,157" />
       <scope id="3955365814685554590" at="177,56,178,20" />
@@ -982,7 +982,7 @@
       <scope id="3955365814687524389" at="55,7,85,9">
         <var name="objectType" id="3955365814687524389" />
       </scope>
-      <scope id="3955365814685559317" at="50,300,144,245">
+      <scope id="3955365814685559317" at="50,286,144,245">
         <var name="referentieNaarKenmerk" id="3955365814686941688" />
         <var name="waardeVanKenmerk" id="3955365814685559319" />
       </scope>
@@ -1301,7 +1301,7 @@
       <node id="5235943278071318007" at="26,0,27,0" concept="9" trace="REGISTRY" />
       <node id="5235943278071318007" at="28,0,29,0" concept="9" trace="Object_id4yDNEIhygo2" />
       <node id="5235943278071318007" at="30,0,31,0" concept="9" trace="BH_METHODS" />
-      <node id="5235943278071318069" at="35,78,36,357" concept="7" />
+      <node id="5235943278071318069" at="35,78,36,343" concept="7" />
       <node id="5235943278071318007" at="39,53,40,20" concept="11" />
       <node id="5235943278071318007" at="44,114,45,21" concept="2" />
       <node id="5235943278071318007" at="49,114,50,49" concept="6" />
@@ -1326,7 +1326,7 @@
       <node id="5235943278071318007" at="62,0,73,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
       <node id="5235943278071318007" at="48,0,61,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
       <scope id="5235943278071318007" at="32,63,32,63" />
-      <scope id="5235943278071318021" at="35,78,36,357" />
+      <scope id="5235943278071318021" at="35,78,36,343" />
       <scope id="5235943278071318007" at="39,53,40,20" />
       <scope id="5235943278071318007" at="44,114,45,21" />
       <scope id="5235943278071318007" at="51,26,52,56" />

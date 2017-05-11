@@ -439,7 +439,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 82:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new TabelMetInstanties_Tabel_Editor());
+            return Arrays.asList(new ConceptEditor[]{new TabelMetInstanties_Editor(), new TabelMetInstanties_Tabel_Editor()});
           }
           break;
         case 83:

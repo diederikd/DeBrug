@@ -20,9 +20,12 @@ import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.ArrayList;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.scope.ListScope;
 import jetbrains.mps.smodel.SNodePointer;
 
@@ -51,9 +54,57 @@ public class ObjectWaarde_Constraints extends BaseConstraintsDescriptor {
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             {
               List<SNode> LijstMetinstantiesVanObjecten = new ArrayList<SNode>();
-              SNode object = SLinkOperations.getTarget(((SNode) SNodeOperations.getParent(SNodeOperations.getParent(_context.getContextNode()))), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "referentieNaarObject"));
-              LijstMetinstantiesVanObjecten = SNodeOperations.getNodeDescendants(SNodeOperations.getContainingRoot(_context.getContextNode()), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"), false, new SAbstractConcept[]{});
+              final Wrappers._T<SNode> ReferentieNaarobject = new Wrappers._T<SNode>(null);
+
+              System.out.println("Exists " + _context.isExists());
+              System.out.println("Referencenode " + _context.getReferenceNode());
+              System.out.println("ContextNode " + _context.getContextNode());
+              System.out.println("ContextRole " + _context.getContextRole());
+              System.out.println("ContainingLink " + _context.getLinkTarget());
+              System.out.println("Enclosingnode " + _context.getEnclosingNode());
+              System.out.println("Model " + _context.getModel());
+              System.out.println("Position " + _context.getPosition());
+
+              if (_context.isExists()) {
+                {
+                  final SNode waardeVanKenmerk = _context.getEnclosingNode();
+                  if (SNodeOperations.isInstanceOf(waardeVanKenmerk, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, "ObjectiefRecht.structure.WaardeVanKenmerk"))) {
+                    ReferentieNaarobject.value = SLinkOperations.getTarget(((SNode) SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"))), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60ac64b8L, 0xb116d9d60b91205L, "object"));
+                    System.out.println("Referentie naar object " + ReferentieNaarobject.value);
+                  }
+                }
+                LijstMetinstantiesVanObjecten = ListSequence.fromList(SNodeOperations.getNodeDescendants(SNodeOperations.getContainingRoot(_context.getContextNode()), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
+                  public boolean accept(SNode it) {
+                    return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "object")) == ReferentieNaarobject.value;
+                  }
+                }).toListSequence();
+              }
+
+              if (!(_context.isExists())) {
+                {
+                  final SNode waardeVanKenmerk = _context.getEnclosingNode();
+                  if (SNodeOperations.isInstanceOf(waardeVanKenmerk, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, "ObjectiefRecht.structure.WaardeVanKenmerk"))) {
+                    ReferentieNaarobject.value = SLinkOperations.getTarget(((SNode) SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"))), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60ac64b8L, 0xb116d9d60b91205L, "object"));
+                    System.out.println("Referentie naar object " + ReferentieNaarobject.value);
+                  }
+                }
+                if ((ReferentieNaarobject.value != null)) {
+                  LijstMetinstantiesVanObjecten = ListSequence.fromList(SNodeOperations.getNodeDescendants(SNodeOperations.getContainingRoot(_context.getContextNode()), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
+                    public boolean accept(SNode it) {
+                      return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "object")) == ReferentieNaarobject.value;
+                    }
+                  }).toListSequence();
+                }
+                if ((ReferentieNaarobject.value == null)) {
+                  LijstMetinstantiesVanObjecten = ListSequence.fromList(SNodeOperations.getNodeDescendants(SNodeOperations.getContainingRoot(_context.getContextNode()), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"), false, new SAbstractConcept[]{})).toListSequence();
+                }
+              }
+              System.out.println("");
+              System.out.println("Lijst " + LijstMetinstantiesVanObjecten);
+              System.out.println("");
+
               return ListScope.forNamedElements(LijstMetinstantiesVanObjecten);
+
             }
           }
         };

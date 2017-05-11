@@ -21,8 +21,6 @@
       <languageVersions>
         <language slang="l:30ef095a-d489-45ff-a80f-456a798ac125:Gegevens" version="0" />
         <language slang="l:8dc4b25f-4c49-400e-ac37-0fd230db702c:GN" version="-1" />
-        <language slang="l:15970de3-8fe7-4b13-81c7-38b38d51c39a:Simulatie" version="0" />
-        <language slang="l:2c493149-da1d-45e9-8ea2-e0b0cfc3047a:SubjectiefRecht" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
         <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -78,8 +76,6 @@
   <languageVersions>
     <language slang="l:30ef095a-d489-45ff-a80f-456a798ac125:Gegevens" version="0" />
     <language slang="l:8dc4b25f-4c49-400e-ac37-0fd230db702c:ObjectiefRecht" version="0" />
-    <language slang="l:15970de3-8fe7-4b13-81c7-38b38d51c39a:Simulatie" version="0" />
-    <language slang="l:2c493149-da1d-45e9-8ea2-e0b0cfc3047a:SubjectiefRecht" version="0" />
     <language slang="l:31c91def-a131-41a1-9018-102874f49a12:de.slisson.mps.editor.multiline" version="0" />
     <language slang="l:7e450f4e-1ac3-41ef-a851-4598161bdb94:de.slisson.mps.tables" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
@@ -111,6 +107,7 @@
     <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="0" />
     <language slang="l:3ecd7c84-cde3-45de-886c-135ecc69b742:jetbrains.mps.lang.refactoring" version="0" />
     <language slang="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" version="2" />
+    <language slang="l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes" version="0" />
     <language slang="l:0eddeefa-c2d6-4437-bc2c-de50fd4ce470:jetbrains.mps.lang.script" version="0" />
     <language slang="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="4" />

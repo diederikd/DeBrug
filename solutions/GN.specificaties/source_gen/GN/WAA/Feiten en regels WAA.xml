@@ -741,7 +741,7 @@ publiekrechtelijke aanstelling arbeid laat verrichten.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>rechtssubjecten</noderole>
                           <nodetype>RechtsSubject</nodetype>
@@ -1112,7 +1112,7 @@ publiekrechtelijke aanstelling arbeid laat verrichten.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>rechtssubjecten</noderole>
                           <nodetype>RechtsSubject</nodetype>
@@ -3230,7 +3230,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>rechtssubjecten</noderole>
                           <nodetype>RechtsSubject</nodetype>
@@ -3981,7 +3981,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>rechtssubjecten</noderole>
                           <nodetype>RechtsSubject</nodetype>
@@ -4865,7 +4865,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -5133,7 +5133,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -7072,7 +7072,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -7531,7 +7531,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -7739,7 +7739,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -8083,7 +8083,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -8449,7 +8449,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -8621,7 +8621,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -8793,7 +8793,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -8965,7 +8965,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -9137,7 +9137,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -9309,7 +9309,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -9481,7 +9481,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -9653,7 +9653,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -9825,7 +9825,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -9997,7 +9997,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -10248,7 +10248,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -10348,7 +10348,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -10448,7 +10448,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -10575,7 +10575,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>
@@ -10636,7 +10636,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                       </node>
                     </children>
                     <references>
-                      <reference role='referentieNaarObject'>
+                      <reference role='object'>
                         <node>
                           <noderole>onderwerpen</noderole>
                           <nodetype>Onderwerp</nodetype>

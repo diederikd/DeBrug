@@ -65,7 +65,7 @@ public final class VoorbeeldenMetInstanties__BehaviorDescriptor extends BaseBHDe
   }
   /*package*/ static void ToevoegenInstantie_id3r$i4252qKC(@NotNull SNode __thisNode__) {
     SNode instantieVanObject = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, "ObjectiefRecht.structure.InstantieVanObject"));
-    SLinkOperations.setTarget(instantieVanObject, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "referentieNaarObject"), VoorbeeldenMetInstanties__BehaviorDescriptor.BetreffendeObject_id3r$i424UHML.invoke(__thisNode__));
+    SLinkOperations.setTarget(instantieVanObject, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "object"), VoorbeeldenMetInstanties__BehaviorDescriptor.BetreffendeObject_id3r$i424UHML.invoke(__thisNode__));
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca1aL, 0x36e4484084e2ca1bL, "instanties"))).addElement(instantieVanObject);
   }
 

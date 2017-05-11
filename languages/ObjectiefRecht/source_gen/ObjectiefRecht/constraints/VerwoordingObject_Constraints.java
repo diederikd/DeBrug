@@ -54,14 +54,14 @@ public class VerwoordingObject_Constraints extends BaseConstraintsDescriptor {
               {
                 final SNode feitVerwoording = _context.getContextNode();
                 if (SNodeOperations.isInstanceOf(feitVerwoording, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab914f739aL, "ObjectiefRecht.structure.FeitVerwoording"))) {
-                  ListSequence.fromList(objects).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(feitVerwoording, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab914f739aL, 0x48a9ceab914f73b5L, "instantie")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "referentieNaarObject")));
+                  ListSequence.fromList(objects).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(feitVerwoording, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab914f739aL, 0x48a9ceab914f73b5L, "instantie")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "object")));
                 }
               }
               {
                 final SNode verwoordingObject = _context.getContextNode();
                 if (SNodeOperations.isInstanceOf(verwoordingObject, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x637c71e30b9beeadL, "ObjectiefRecht.structure.VerwoordingObject"))) {
                   SNode feitVerwoording = (SNode) SNodeOperations.getParent(verwoordingObject);
-                  ListSequence.fromList(objects).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(feitVerwoording, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab914f739aL, 0x48a9ceab914f73b5L, "instantie")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "referentieNaarObject")));
+                  ListSequence.fromList(objects).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(feitVerwoording, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab914f739aL, 0x48a9ceab914f73b5L, "instantie")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L, 0x36e4484084e2ca17L, "object")));
                 }
               }
               return ListScope.forNamedElements(objects);
