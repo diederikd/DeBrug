@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <presentatie>
-<object type='rechtssubject' typeid='5753801799636978868' naam='werknemer' >
+<object type='rechtssubject' typeid='9065124544997704896' naam='werknemer' >
       <row>
         <column>
           <xpath>./@naam</xpath>
@@ -39,7 +39,7 @@
         </column>
       </row>
 </object>
-<object type='rechtssubject' typeid='5753801799637012771' naam='werkgever' >
+<object type='rechtssubject' typeid='9065124544997704768' naam='werkgever' >
       <row>
         <column>
           <xpath>./@naam</xpath>
@@ -59,7 +59,7 @@
         </column>
       </row>
 </object>
-<object type='onderwerp' typeid='848775529194317032' naam='aanpassing van de arbeidsduur' >
+<object type='onderwerp' typeid='9065124544997705162' naam='aanpassing van de arbeidsduur' >
       <row>
         <column>
           <string>Onderwerp:</string>
@@ -108,7 +108,7 @@
         </column>
       </row>
 </object>
-    <dialoog typeid='5066083982446708445' name='Indienen verzoek aanpassing arbeidsduur' >
+    <dialoog typeid='9065124544997705734' name='Indienen verzoek aanpassing arbeidsduur' >
       <row>
         <column>
           <input type="text" name="op grond van arbeidsovereenkomst" value=""/>
@@ -119,10 +119,10 @@
         </column>
       </row>
       <rechtshandelingtypes>
-        <rechtshandelingtype typeid='5066083982446708445' />
+        <rechtshandelingtype typeid='9065124544997705734' />
       </rechtshandelingtypes>
     </dialoog>
-    <dialoog typeid='5066083982446708445' name='Indienen verzoek aanpassing arbeidsduur' >
+    <dialoog typeid='9065124544997705734' name='Indienen verzoek aanpassing arbeidsduur' >
       <row>
         <column>
           <input type="text" name="beoogde ingangsdatum van de aanpassing" value=""/>
@@ -131,21 +131,21 @@
         </column>
       </row>
       <rechtshandelingtypes>
-        <rechtshandelingtype typeid='2677844167540435022' />
-        <rechtshandelingtype typeid='2677844167541441878' />
+        <rechtshandelingtype typeid='9065124544997705805' />
+        <rechtshandelingtype typeid='9065124544997705816' />
       </rechtshandelingtypes>
     </dialoog>
-    <dialoog typeid='2455094379071627785' name='Overleg plegen' >
+    <dialoog typeid='9065124544997705830' name='Overleg plegen' >
       <row>
         <column>
           <string>Geen invoer nodig</string>
         </column>
       </row>
       <rechtshandelingtypes>
-        <rechtshandelingtype typeid='2455094379071627785' />
+        <rechtshandelingtype typeid='9065124544997705830' />
       </rechtshandelingtypes>
     </dialoog>
-    <dialoog typeid='5066083982446741231' name='Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing' >
+    <dialoog typeid='9065124544997705840' name='Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing' >
       <row>
         <column>
           <input type="text" name="werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken" value=""/>
@@ -167,21 +167,21 @@
         </column>
       </row>
       <rechtshandelingtypes>
-        <rechtshandelingtype typeid='2455094379071627785' />
-        <rechtshandelingtype typeid='2455094379071627481' />
-        <rechtshandelingtype typeid='5066083982446741231' />
-        <rechtshandelingtype typeid='2455094379071629483' />
-        <rechtshandelingtype typeid='1916075923871148886' />
+        <rechtshandelingtype typeid='9065124544997705830' />
+        <rechtshandelingtype typeid='9065124544997705870' />
+        <rechtshandelingtype typeid='9065124544997705840' />
+        <rechtshandelingtype typeid='9065124544997705905' />
+        <rechtshandelingtype typeid='9065124544997705893' />
       </rechtshandelingtypes>
     </dialoog>
-    <dialoog typeid='2455094379071699667' name='Schriftelijk mededelen van de beslissing aan de werknemer' >
+    <dialoog typeid='9065124544997705944' name='Schriftelijk mededelen van de beslissing aan de werknemer' >
       <row>
         <column>
         </column>
       </row>
       <rechtshandelingtypes>
-        <rechtshandelingtype typeid='2455094379071866241' />
-        <rechtshandelingtype typeid='2455094379071699667' />
+        <rechtshandelingtype typeid='9065124544997705954' />
+        <rechtshandelingtype typeid='9065124544997705944' />
       </rechtshandelingtypes>
     </dialoog>
 </presentatie>

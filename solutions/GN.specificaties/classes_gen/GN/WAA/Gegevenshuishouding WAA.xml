@@ -154,7 +154,7 @@
         </instantie>
         <instantie naam='Niet schriftelijk verzoek' id='7216817910542024175'>
             <kenmerken>
-              <kenmerk id='3955365814688947835' naam='op grond van arbeidsovereenkomst'>7216817910542030413</kenmerk>
+              <kenmerk id='3955365814688947835' naam='op grond van arbeidsovereenkomst'>1804016636225088746</kenmerk>
               <kenmerk id='6249140128508295101' naam='datum indienen verzoek'></kenmerk>
               <kenmerk id='3955365814688413039' naam='datum vorige versie van het verzoek'></kenmerk>
               <kenmerk id='131751487724941978' naam='datum overleg gepleegd'></kenmerk>
@@ -346,7 +346,7 @@
         </instantie>
         <instantie id='5807415387110390739'>
           <geldigVan>2002-07-01T00:00</geldigVan>
-          <geldigTot>2002-10-13T16:01:02</geldigTot>
+          <geldigTot>2002-10-13T17:23:42</geldigTot>
           <subjectieverechtshandelingid>3139957515585265649</subjectieverechtshandelingid>
           <subjectieverechtshandelingnaam>Afwijzen van het verzoek</subjectieverechtshandelingnaam>
           <objectieveRechtsbetrekkingtypeid>909603116718783952</objectieveRechtsbetrekkingtypeid>

@@ -111,6 +111,7 @@
     <dialoog typeid='5066083982446708445' name='Indienen verzoek aanpassing arbeidsduur' >
       <row>
         <column>
+          <input type="text" name="op grond van arbeidsovereenkomst" value=""/>
           <input type="text" name="beoogde ingangsdatum van de aanpassing" value=""/>
           <input type="text" name="gewenste spreiding" value=""/>
           <input type="text" name="omvang van de aanpassing" value=""/>

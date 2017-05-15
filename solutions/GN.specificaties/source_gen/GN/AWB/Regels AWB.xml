@@ -785,12 +785,12 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
     <node>
       <noderole>toestanden</noderole>
       <nodetype>OptioneleBevoegdheidOptioneleGehoudenheid</nodetype>
-      <nodename>Optionele bevoegheid voor het indienen van een aanvraag</nodename>
+      <nodename>Optionele bevoegdheid voor het indienen van een aanvraag</nodename>
       <nodeid>6606770165423867115</nodeid>
         <properties>
             <property name='initieel'>false</property>
             <property name='alias'></property>
-            <property name='name'>Optionele bevoegheid voor het indienen van een aanvraag</property>
+            <property name='name'>Optionele bevoegdheid voor het indienen van een aanvraag</property>
             <property name='kortenaam'>bevoegheid voor het indienen van een aanvraag</property>
         </properties>
         <children>
@@ -880,12 +880,12 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
     <node>
       <noderole>toestanden</noderole>
       <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-      <nodename>Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</nodename>
+      <nodename>Verplichte bevoegdheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</nodename>
       <nodeid>6606770165423867335</nodeid>
         <properties>
             <property name='initieel'>false</property>
             <property name='alias'></property>
-            <property name='name'>Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</property>
+            <property name='name'>Verplichte bevoegdheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</property>
             <property name='kortenaam'>Verplichte bevoegdheid bevestigen ontvangst elektonisch aanvraag</property>
         </properties>
         <children>
@@ -2019,7 +2019,7 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-                          <nodename>Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</nodename>
+                          <nodename>Verplichte bevoegdheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</nodename>
                           <nodeid>6606770165423867335</nodeid>
                         </node>
                       </reference>
@@ -2416,7 +2416,7 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                         <node>
                           <noderole>toestanden</noderole>
                           <nodetype>VerplichteBevoegdheidVerplichteGehoudenheid</nodetype>
-                          <nodename>Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</nodename>
+                          <nodename>Verplichte bevoegdheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</nodename>
                           <nodeid>6606770165423867335</nodeid>
                         </node>
                       </reference>

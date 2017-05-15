@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gegevenshuishouding>
+    <rechtssubjecten naam='werknemer' typeid='9065124544997704896'>
+        <instantie naam='Pieter' id='9065124544997779737'>
+            <kenmerken>
+              <kenmerk id='9065124544997704898' naam='werknemersidentificatie'>1</kenmerk>
+              <kenmerk id='9065124544997704902' naam='burgerservicenummer'>983560631717774000</kenmerk>
+              <kenmerk id='9065124544997704906' naam='voornamen'>Pieter</kenmerk>
+              <kenmerk id='9065124544997704910' naam='roepnaam'>Piet</kenmerk>
+              <kenmerk id='9065124544997704914' naam='achternaam'>Hanssen</kenmerk>
+              <kenmerk id='9065124544997704918' naam='geboortedatum'></kenmerk>
+              <kenmerk id='9065124544997704922' naam='geboorteplaats'>Amsterdam</kenmerk>
+              <kenmerk id='9065124544997704926' naam='adres werknemer'>Thorbeckestraat</kenmerk>
+              <kenmerk id='9065124544997704930' naam='huisnummer werknemer'>15</kenmerk>
+              <kenmerk id='9065124544997704934' naam='postcode van de werknemer'>983560631717774184</kenmerk>
+              <kenmerk id='9065124544997704938' naam='woonplaats'>Amsterdam</kenmerk>
+              <kenmerk id='9065124544997704942' naam='paspoortnummer'>12345</kenmerk>
+              <kenmerk id='9065124544997704946' naam='identiteitskaartnummer'>12345</kenmerk>
+              <kenmerk id='9065124544997704950' naam='burgerlijke staat'>gehuwd</kenmerk>
+              <kenmerk id='9065124544997704954' naam='nationaliteit'>NL</kenmerk>
+              <kenmerk id='9065124544997704958' naam='nationaliteit datum sinds'></kenmerk>
+              <kenmerk id='9065124544997704962' naam='militair ambtenaar'></kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Jan' id='9065124544997780036'>
+            <kenmerken>
+              <kenmerk id='9065124544997704898' naam='werknemersidentificatie'>5</kenmerk>
+              <kenmerk id='9065124544997704902' naam='burgerservicenummer'>983560631717774037</kenmerk>
+              <kenmerk id='9065124544997704906' naam='voornamen'>Jan</kenmerk>
+              <kenmerk id='9065124544997704910' naam='roepnaam'>Jan</kenmerk>
+              <kenmerk id='9065124544997704914' naam='achternaam'>Best</kenmerk>
+              <kenmerk id='9065124544997704918' naam='geboortedatum'></kenmerk>
+              <kenmerk id='9065124544997704922' naam='geboorteplaats'>Apeldoorn</kenmerk>
+              <kenmerk id='9065124544997704926' naam='adres werknemer'>Reigersweg</kenmerk>
+              <kenmerk id='9065124544997704930' naam='huisnummer werknemer'>15</kenmerk>
+              <kenmerk id='9065124544997704934' naam='postcode van de werknemer'>983560631717774221</kenmerk>
+              <kenmerk id='9065124544997704938' naam='woonplaats'>Apeldoorn</kenmerk>
+              <kenmerk id='9065124544997704942' naam='paspoortnummer'>12345</kenmerk>
+              <kenmerk id='9065124544997704946' naam='identiteitskaartnummer'>12345</kenmerk>
+              <kenmerk id='9065124544997704950' naam='burgerlijke staat'>gehuwd</kenmerk>
+              <kenmerk id='9065124544997704954' naam='nationaliteit'>NL</kenmerk>
+              <kenmerk id='9065124544997704958' naam='nationaliteit datum sinds'></kenmerk>
+              <kenmerk id='9065124544997704962' naam='militair ambtenaar'></kenmerk>
+            </kenmerken>
+        </instantie>
+    </rechtssubjecten>
+    <rechtssubjecten naam='werkgever' typeid='9065124544997704768'>
+        <instantie naam='Esssent' id='9065124544997809736'>
+            <kenmerken>
+              <kenmerk id='9065124544997704770' naam='werkgeversidentificatie'>3</kenmerk>
+              <kenmerk id='9065124544997704774' naam='naam'>Essent</kenmerk>
+              <kenmerk id='9065124544997704777' naam='adres'>J.F. Kennedylaan</kenmerk>
+              <kenmerk id='9065124544997704781' naam='huisnummer'>109</kenmerk>
+              <kenmerk id='9065124544997704785' naam='postcode'>983560631717773687</kenmerk>
+              <kenmerk id='9065124544997704789' naam='aantal werknemers'>30</kenmerk>
+              <kenmerk id='9065124544997704793' naam='peildatum aantal werknemers'></kenmerk>
+              <kenmerk id='9065124544997704796' naam='militairen in dienst'></kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Eneco' id='9065124544997809888'>
+            <kenmerken>
+              <kenmerk id='9065124544997704770' naam='werkgeversidentificatie'>4</kenmerk>
+              <kenmerk id='9065124544997704774' naam='naam'>Eneco</kenmerk>
+              <kenmerk id='9065124544997704777' naam='adres'>Wegenerstraat</kenmerk>
+              <kenmerk id='9065124544997704781' naam='huisnummer'>140</kenmerk>
+              <kenmerk id='9065124544997704785' naam='postcode'>983560631717773722</kenmerk>
+              <kenmerk id='9065124544997704789' naam='aantal werknemers'>40</kenmerk>
+              <kenmerk id='9065124544997704793' naam='peildatum aantal werknemers'></kenmerk>
+              <kenmerk id='9065124544997704796' naam='militairen in dienst'></kenmerk>
+            </kenmerken>
+        </instantie>
+    </rechtssubjecten>
+    <onderwerpen naam='aanpassing van de arbeidsduur' typeid='9065124544997705162' >
+        <instantie naam='Verzoek 1' id='9065124544997811491'>
+            <kenmerken>
+              <kenmerk id='9065124544997705164' naam='op grond van arbeidsovereenkomst'>9065124544997832461</kenmerk>
+              <kenmerk id='9065124544997705167' naam='datum indienen verzoek'></kenmerk>
+              <kenmerk id='9065124544997705171' naam='datum vorige versie van het verzoek'></kenmerk>
+              <kenmerk id='9065124544997705174' naam='datum overleg gepleegd'></kenmerk>
+              <kenmerk id='9065124544997705177' naam='datum verzoek ingewilligd'></kenmerk>
+              <kenmerk id='9065124544997705180' naam='datum verzoek afgewezen'></kenmerk>
+              <kenmerk id='9065124544997705183' naam='datum spreiding vastgesteld'></kenmerk>
+              <kenmerk id='9065124544997705186' naam='datum spreiding van de uren laatst gewijzigd'></kenmerk>
+              <kenmerk id='9065124544997705189' naam='datum beslissing medegedeeld'></kenmerk>
+              <kenmerk id='9065124544997705192' naam='datum mededelen redenen'></kenmerk>
+              <kenmerk id='9065124544997705195' naam='werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken'>Nee</kenmerk>
+              <kenmerk id='9065124544997705199' naam='datum belang aangegeven'></kenmerk>
+              <kenmerk id='9065124544997705202' naam='beoogde ingangsdatum van de aanpassing'></kenmerk>
+              <kenmerk id='9065124544997705206' naam='omvang van de aanpassing'>PT40H</kenmerk>
+              <kenmerk id='9065124544997705210' naam='gewenste spreiding'>9065124544997846489</kenmerk>
+              <kenmerk id='9065124544997705214' naam='schriftelijk ingediend'>Ja</kenmerk>
+              <kenmerk id='9065124544997705217' naam='samentelling volgens werknemer'>PT960H</kenmerk>
+              <kenmerk id='9065124544997705221' naam='samentelling volgens werkgever'>PT960H</kenmerk>
+              <kenmerk id='9065124544997705225' naam='redenen voor afwijzing'>Geen</kenmerk>
+              <kenmerk id='9065124544997705229' naam='zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen'>Nee</kenmerk>
+              <kenmerk id='9065124544997705232' naam='datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever'></kenmerk>
+              <kenmerk id='9065124544997705235' naam='feiten bij vermindering'>geen feiten bij vermindering</kenmerk>
+              <kenmerk id='9065124544997705239' naam='feiten bij vermeerdering'>geen feiten bij vermeerdering</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Af te wijzen verzoek' id='9065124544997813160'>
+            <kenmerken>
+              <kenmerk id='9065124544997705164' naam='op grond van arbeidsovereenkomst'>9065124544997832648</kenmerk>
+              <kenmerk id='9065124544997705167' naam='datum indienen verzoek'></kenmerk>
+              <kenmerk id='9065124544997705171' naam='datum vorige versie van het verzoek'></kenmerk>
+              <kenmerk id='9065124544997705174' naam='datum overleg gepleegd'></kenmerk>
+              <kenmerk id='9065124544997705177' naam='datum verzoek ingewilligd'></kenmerk>
+              <kenmerk id='9065124544997705180' naam='datum verzoek afgewezen'></kenmerk>
+              <kenmerk id='9065124544997705183' naam='datum spreiding vastgesteld'></kenmerk>
+              <kenmerk id='9065124544997705186' naam='datum spreiding van de uren laatst gewijzigd'></kenmerk>
+              <kenmerk id='9065124544997705189' naam='datum beslissing medegedeeld'></kenmerk>
+              <kenmerk id='9065124544997705192' naam='datum mededelen redenen'></kenmerk>
+              <kenmerk id='9065124544997705195' naam='werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken'>Nee</kenmerk>
+              <kenmerk id='9065124544997705199' naam='datum belang aangegeven'></kenmerk>
+              <kenmerk id='9065124544997705202' naam='beoogde ingangsdatum van de aanpassing'></kenmerk>
+              <kenmerk id='9065124544997705206' naam='omvang van de aanpassing'>PT40H</kenmerk>
+              <kenmerk id='9065124544997705210' naam='gewenste spreiding'>9065124544997846676</kenmerk>
+              <kenmerk id='9065124544997705214' naam='schriftelijk ingediend'>Ja</kenmerk>
+              <kenmerk id='9065124544997705217' naam='samentelling volgens werknemer'>PT960H</kenmerk>
+              <kenmerk id='9065124544997705221' naam='samentelling volgens werkgever'>PT960H</kenmerk>
+              <kenmerk id='9065124544997705225' naam='redenen voor afwijzing'>Geen</kenmerk>
+              <kenmerk id='9065124544997705229' naam='zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen'>Ja</kenmerk>
+              <kenmerk id='9065124544997705232' naam='datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever'></kenmerk>
+              <kenmerk id='9065124544997705235' naam='feiten bij vermindering'>geen feiten bij vermindering</kenmerk>
+              <kenmerk id='9065124544997705239' naam='feiten bij vermeerdering'>geen feiten bij vermeerdering</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Niet schriftelijk verzoek' id='9065124544997817199'>
+            <kenmerken>
+              <kenmerk id='9065124544997705164' naam='op grond van arbeidsovereenkomst'>9065124544997832835</kenmerk>
+              <kenmerk id='9065124544997705167' naam='datum indienen verzoek'></kenmerk>
+              <kenmerk id='9065124544997705171' naam='datum vorige versie van het verzoek'></kenmerk>
+              <kenmerk id='9065124544997705174' naam='datum overleg gepleegd'></kenmerk>
+              <kenmerk id='9065124544997705177' naam='datum verzoek ingewilligd'></kenmerk>
+              <kenmerk id='9065124544997705180' naam='datum verzoek afgewezen'></kenmerk>
+              <kenmerk id='9065124544997705183' naam='datum spreiding vastgesteld'></kenmerk>
+              <kenmerk id='9065124544997705186' naam='datum spreiding van de uren laatst gewijzigd'></kenmerk>
+              <kenmerk id='9065124544997705189' naam='datum beslissing medegedeeld'></kenmerk>
+              <kenmerk id='9065124544997705192' naam='datum mededelen redenen'></kenmerk>
+              <kenmerk id='9065124544997705195' naam='werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken'>Nee</kenmerk>
+              <kenmerk id='9065124544997705199' naam='datum belang aangegeven'></kenmerk>
+              <kenmerk id='9065124544997705202' naam='beoogde ingangsdatum van de aanpassing'></kenmerk>
+              <kenmerk id='9065124544997705206' naam='omvang van de aanpassing'>PT40H</kenmerk>
+              <kenmerk id='9065124544997705210' naam='gewenste spreiding'>9065124544997846863</kenmerk>
+              <kenmerk id='9065124544997705214' naam='schriftelijk ingediend'>Nee</kenmerk>
+              <kenmerk id='9065124544997705217' naam='samentelling volgens werknemer'>PT960H</kenmerk>
+              <kenmerk id='9065124544997705221' naam='samentelling volgens werkgever'>PT960H</kenmerk>
+              <kenmerk id='9065124544997705225' naam='redenen voor afwijzing'>Geen</kenmerk>
+              <kenmerk id='9065124544997705229' naam='zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen'>Nee</kenmerk>
+              <kenmerk id='9065124544997705232' naam='datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever'></kenmerk>
+              <kenmerk id='9065124544997705235' naam='feiten bij vermindering'>geen feiten bij vermindering</kenmerk>
+              <kenmerk id='9065124544997705239' naam='feiten bij vermeerdering'>geen feiten bij vermeerdering</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Verzoek 2' id='9065124544997829892'>
+            <kenmerken>
+              <kenmerk id='9065124544997705164' naam='op grond van arbeidsovereenkomst'>9065124544997833022</kenmerk>
+              <kenmerk id='9065124544997705167' naam='datum indienen verzoek'></kenmerk>
+              <kenmerk id='9065124544997705171' naam='datum vorige versie van het verzoek'></kenmerk>
+              <kenmerk id='9065124544997705174' naam='datum overleg gepleegd'></kenmerk>
+              <kenmerk id='9065124544997705177' naam='datum verzoek ingewilligd'></kenmerk>
+              <kenmerk id='9065124544997705180' naam='datum verzoek afgewezen'></kenmerk>
+              <kenmerk id='9065124544997705183' naam='datum spreiding vastgesteld'></kenmerk>
+              <kenmerk id='9065124544997705186' naam='datum spreiding van de uren laatst gewijzigd'></kenmerk>
+              <kenmerk id='9065124544997705189' naam='datum beslissing medegedeeld'></kenmerk>
+              <kenmerk id='9065124544997705192' naam='datum mededelen redenen'></kenmerk>
+              <kenmerk id='9065124544997705195' naam='werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken'>Nee</kenmerk>
+              <kenmerk id='9065124544997705199' naam='datum belang aangegeven'></kenmerk>
+              <kenmerk id='9065124544997705202' naam='beoogde ingangsdatum van de aanpassing'></kenmerk>
+              <kenmerk id='9065124544997705206' naam='omvang van de aanpassing'>PT36H</kenmerk>
+              <kenmerk id='9065124544997705210' naam='gewenste spreiding'>9065124544997847050</kenmerk>
+              <kenmerk id='9065124544997705214' naam='schriftelijk ingediend'>Ja</kenmerk>
+              <kenmerk id='9065124544997705217' naam='samentelling volgens werknemer'>PT960H</kenmerk>
+              <kenmerk id='9065124544997705221' naam='samentelling volgens werkgever'>PT960H</kenmerk>
+              <kenmerk id='9065124544997705225' naam='redenen voor afwijzing'>Geen</kenmerk>
+              <kenmerk id='9065124544997705229' naam='zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen'>Nee</kenmerk>
+              <kenmerk id='9065124544997705232' naam='datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever'></kenmerk>
+              <kenmerk id='9065124544997705235' naam='feiten bij vermindering'>geen feiten bij vermindering</kenmerk>
+              <kenmerk id='9065124544997705239' naam='feiten bij vermeerdering'>geen feiten bij vermeerdering</kenmerk>
+            </kenmerken>
+        </instantie>
+    </onderwerpen>
+    <onderwerpen naam='arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling' typeid='9065124544997705099' >
+        <instantie naam='Arbeidsovereenkomst tussen rechtssubject Pieter en rechtsubject Essent' id='9065124544997809461'>
+            <kenmerken>
+              <kenmerk id='9065124544997705100' naam='werknemersidentificatie'>9065124544997809713</kenmerk>
+              <kenmerk id='9065124544997705104' naam='werkgeversidentificatie'>9065124544997810457</kenmerk>
+              <kenmerk id='9065124544997705109' naam='datum indiensttreding'></kenmerk>
+              <kenmerk id='9065124544997705113' naam='arbeidsovereenkomst getekend op'></kenmerk>
+              <kenmerk id='9065124544997705117' naam='arbeidsduurperiode in arbeidsovereenkomst'>983560631717774406</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Arbeidsovereenkomst tussen rechtssubject Pieter en rechtssubject Eneco' id='9065124544997809574'>
+            <kenmerken>
+              <kenmerk id='9065124544997705100' naam='werknemersidentificatie'>9065124544997810503</kenmerk>
+              <kenmerk id='9065124544997705104' naam='werkgeversidentificatie'>9065124544997810480</kenmerk>
+              <kenmerk id='9065124544997705109' naam='datum indiensttreding'></kenmerk>
+              <kenmerk id='9065124544997705113' naam='arbeidsovereenkomst getekend op'></kenmerk>
+              <kenmerk id='9065124544997705117' naam='arbeidsduurperiode in arbeidsovereenkomst'>983560631717774419</kenmerk>
+            </kenmerken>
+        </instantie>
+    </onderwerpen>
+    <onderwerpen naam='arbeidsduurperiode van arbeidsovereenkomst' typeid='9065124544997705321' >
+        <instantie naam='Arbeidsduur van arbeidsovereenkomst 1' id='9065124544997807174'>
+            <kenmerken>
+              <kenmerk id='9065124544997705325' naam='arbeidsduur geldig van datum'></kenmerk>
+              <kenmerk id='9065124544997705329' naam='arbeidsduur geldig tot datum'></kenmerk>
+              <kenmerk id='9065124544997705333' naam='arbeidsduur'>40.0</kenmerk>
+              <kenmerk id='9065124544997705337' naam='spreiding'>9065124544997808073</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Arbeidsduur van arbeidsovereenkomst 2' id='9065124544997808124'>
+            <kenmerken>
+              <kenmerk id='9065124544997705325' naam='arbeidsduur geldig van datum'></kenmerk>
+              <kenmerk id='9065124544997705329' naam='arbeidsduur geldig tot datum'></kenmerk>
+              <kenmerk id='9065124544997705333' naam='arbeidsduur'>40.0</kenmerk>
+              <kenmerk id='9065124544997705337' naam='spreiding'>9065124544997809241</kenmerk>
+            </kenmerken>
+        </instantie>
+    </onderwerpen>
+    <onderwerpen naam='spreidingperioden' typeid='9065124544997705373' >
+        <instantie naam='Maandag t/m vrijdag 5 x 8' id='9065124544997806960'>
+            <kenmerken>
+              <kenmerk id='9065124544997705376' naam='perioden'>Maandag van 08:00 - 12:00, Maandag van 12:00 - 1600, Dinsdag van 08:00 - 12:00, Dinsdag van 12:00 - 16:00, Woensdag van 08:00 - 12:00, Woensdag van 12:00 - 16:00, Donderdag van 08:00 - 12:00, Donderdag van 12:00 - 16:00, Vrijdag van 08:00 - 12:00, Vrijdag van 12:00 - 16:00, </kenmerk>
+            </kenmerken>
+        </instantie>
+    </onderwerpen>
+    <onderwerpen naam='werkperiode' typeid='9065124544997705395' >
+        <instantie naam='Maandag van 08:00 - 12:00' id='9065124544997780767'>
+            <kenmerken>
+              <kenmerk id='9065124544997705397' naam='dag'>Maandag</kenmerk>
+              <kenmerk id='9065124544997705400' naam='aanvangstijd periode'>08:00</kenmerk>
+              <kenmerk id='9065124544997705404' naam='eindtijd periode'>12:00</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Maandag van 12:00 - 1600' id='9065124544997780955'>
+            <kenmerken>
+              <kenmerk id='9065124544997705397' naam='dag'>Maandag</kenmerk>
+              <kenmerk id='9065124544997705400' naam='aanvangstijd periode'>12:00</kenmerk>
+              <kenmerk id='9065124544997705404' naam='eindtijd periode'>16:00</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Dinsdag van 08:00 - 12:00' id='9065124544997781158'>
+            <kenmerken>
+              <kenmerk id='9065124544997705397' naam='dag'>Dinsdag</kenmerk>
+              <kenmerk id='9065124544997705400' naam='aanvangstijd periode'>08:00</kenmerk>
+              <kenmerk id='9065124544997705404' naam='eindtijd periode'>12:00</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Dinsdag van 12:00 - 16:00' id='9065124544997781376'>
+            <kenmerken>
+              <kenmerk id='9065124544997705397' naam='dag'>Dinsdag</kenmerk>
+              <kenmerk id='9065124544997705400' naam='aanvangstijd periode'>12:00</kenmerk>
+              <kenmerk id='9065124544997705404' naam='eindtijd periode'>16:00</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Woensdag van 08:00 - 12:00' id='9065124544997781609'>
+            <kenmerken>
+              <kenmerk id='9065124544997705397' naam='dag'>Woensdag</kenmerk>
+              <kenmerk id='9065124544997705400' naam='aanvangstijd periode'>08:00</kenmerk>
+              <kenmerk id='9065124544997705404' naam='eindtijd periode'>12:00</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Woensdag van 12:00 - 16:00' id='9065124544997781857'>
+            <kenmerken>
+              <kenmerk id='9065124544997705397' naam='dag'>Woensdag</kenmerk>
+              <kenmerk id='9065124544997705400' naam='aanvangstijd periode'>12:00</kenmerk>
+              <kenmerk id='9065124544997705404' naam='eindtijd periode'>16:00</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Donderdag van 08:00 - 12:00' id='9065124544997782120'>
+            <kenmerken>
+              <kenmerk id='9065124544997705397' naam='dag'>Donderdag</kenmerk>
+              <kenmerk id='9065124544997705400' naam='aanvangstijd periode'>08:00</kenmerk>
+              <kenmerk id='9065124544997705404' naam='eindtijd periode'>12:00</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Donderdag van 12:00 - 16:00' id='9065124544997782398'>
+            <kenmerken>
+              <kenmerk id='9065124544997705397' naam='dag'>Donderdag</kenmerk>
+              <kenmerk id='9065124544997705400' naam='aanvangstijd periode'>12:00</kenmerk>
+              <kenmerk id='9065124544997705404' naam='eindtijd periode'>16:00</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Vrijdag van 08:00 - 12:00' id='9065124544997782691'>
+            <kenmerken>
+              <kenmerk id='9065124544997705397' naam='dag'>Vrijdag</kenmerk>
+              <kenmerk id='9065124544997705400' naam='aanvangstijd periode'>08:00</kenmerk>
+              <kenmerk id='9065124544997705404' naam='eindtijd periode'>12:00</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='Vrijdag van 12:00 - 16:00' id='9065124544997782999'>
+            <kenmerken>
+              <kenmerk id='9065124544997705397' naam='dag'>Vrijdag</kenmerk>
+              <kenmerk id='9065124544997705400' naam='aanvangstijd periode'>12:00</kenmerk>
+              <kenmerk id='9065124544997705404' naam='eindtijd periode'>16:00</kenmerk>
+            </kenmerken>
+        </instantie>
+    </onderwerpen>
+    <onderwerpen naam='NL-postcode' typeid='9065124544997705531' >
+        <instantie naam='1095 AA' id='9065124544997780439'>
+            <kenmerken>
+              <kenmerk id='9065124544997705533' naam='PostcodeNummer'>1095</kenmerk>
+              <kenmerk id='9065124544997705537' naam='PostcodeLetters'>AA</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='1073 RR' id='9065124544997780521'>
+            <kenmerken>
+              <kenmerk id='9065124544997705533' naam='PostcodeNummer'>1073</kenmerk>
+              <kenmerk id='9065124544997705537' naam='PostcodeLetters'>RR</kenmerk>
+            </kenmerken>
+        </instantie>
+    </onderwerpen>
+    <onderwerpen naam='burgerservicenummer' typeid='9065124544997705565' >
+        <instantie naam='33333333' id='9065124544997780386'>
+            <kenmerken>
+              <kenmerk id='9065124544997705566' naam='burgerservicenummer'>333333333</kenmerk>
+            </kenmerken>
+        </instantie>
+        <instantie naam='44444444' id='9065124544997780406'>
+            <kenmerken>
+              <kenmerk id='9065124544997705566' naam='burgerservicenummer'>444444444</kenmerk>
+            </kenmerken>
+        </instantie>
+    </onderwerpen>
+    <rechtsbetrekkingen>
+        <instantie id='9065124544997706748'>
+          <geldigVan>2002-07-01T12:00</geldigVan>
+          <geldigTot></geldigTot>
+          <objectieveRechtsbetrekkingtypeid>9065124544997705584</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>optionele bevoegheid om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>9065124544997809461</onderwerpid>
+          <rechtssubjectMetPlichtid>9065124544997704831</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>9065124544997779737</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='9065124544997706752'>
+          <geldigVan>2002-07-01T00:00</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>9065124544997706732</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Afwijzen van het verzoek</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>9065124544997705584</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>optionele bevoegheid om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>9065124544997809574</onderwerpid>
+          <rechtssubjectMetPlichtid>9065124544997809888</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>9065124544997780036</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='9065124544997706756'>
+          <geldigVan>2002-07-01T00:00</geldigVan>
+          <geldigTot>2002-10-13T17:23:42</geldigTot>
+          <subjectieverechtshandelingid>9065124544997706732</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Afwijzen van het verzoek</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>9065124544997705645</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
+en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>9065124544997811491</onderwerpid>
+          <rechtssubjectMetPlichtid>9065124544997809888</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>9065124544997780036</rechtssubjectMetRechtid>
+        </instantie>
+      </rechtsbetrekkingen>
+    <rechtshandelingen>
+        <instantie id='9065124544997706732'>
+          <handelingObjectiefRechttypeid>9065124544997705870</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Afwijzen van het verzoek</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2000-01-01T00:00</uitgevoerdop>
+          <actorid>9065124544997809888</actorid>
+          <onderwerpid>9065124544997811491</onderwerpid>
+          <rechtsbetrekkingid>9065124544997706756</rechtsbetrekkingid>
+        </instantie>
+        <instantie id='9065124544997706737'>
+          <handelingObjectiefRechttypeid>9065124544997705734</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Indienen verzoek aanpassing arbeidsduur</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2000-01-01T00:00</uitgevoerdop>
+          <actorid>9065124544997704969</actorid>
+          <onderwerpid>9065124544997811491</onderwerpid>
+          <rechtsbetrekkingid>9065124544997706752</rechtsbetrekkingid>
+        </instantie>
+        <instantie id='9065124544997706742'>
+          <handelingObjectiefRechttypeid>9065124544997705840</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2000-01-01T00:00</uitgevoerdop>
+          <actorid>9065124544997704969</actorid>
+          <onderwerpid>9065124544997811491</onderwerpid>
+          <rechtsbetrekkingid>9065124544997706756</rechtsbetrekkingid>
+        </instantie>
+      </rechtshandelingen>
+</gegevenshuishouding>

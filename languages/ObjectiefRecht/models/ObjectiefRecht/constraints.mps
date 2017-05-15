@@ -1446,8 +1446,8 @@
     <ref role="1M2myG" to="3pw0:jcJoZ9T6vo" resolve="ObjectWaarde" />
     <node concept="1N5Pfh" id="6gBiqsYAdMg" role="1Mr941">
       <ref role="1N5Vy1" to="3pw0:jcJoZ9T6vp" resolve="object" />
-      <node concept="13QW63" id="6gBiqsZ2rej" role="1N6uqs">
-        <node concept="3clFbS" id="6gBiqsZ2rel" role="2VODD2">
+      <node concept="1MUpDS" id="1$99Taj9MeU" role="1N6uqs">
+        <node concept="3clFbS" id="1$99Taj9MeV" role="2VODD2">
           <node concept="3cpWs8" id="6gBiqsZ2rhf" role="3cqZAp">
             <node concept="3cpWsn" id="6gBiqsZ2rhi" role="3cpWs9">
               <property role="TrG5h" value="LijstMetinstantiesVanObjecten" />
@@ -1476,8 +1476,8 @@
           <node concept="3clFbF" id="1$99Taj19FL" role="3cqZAp">
             <node concept="2OqwBi" id="1$99Taj19FM" role="3clFbG">
               <node concept="10M0yZ" id="1$99Taj19FN" role="2Oq$k0">
-                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                 <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="1$99Taj19FO" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
@@ -1493,8 +1493,8 @@
           <node concept="3clFbF" id="1$99Taj16ZW" role="3cqZAp">
             <node concept="2OqwBi" id="1$99Taj17zJ" role="3clFbG">
               <node concept="10M0yZ" id="1$99Taj175h" role="2Oq$k0">
-                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                 <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="1$99Taj1886" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
@@ -1527,8 +1527,8 @@
           <node concept="3clFbF" id="1$99Taj1pEN" role="3cqZAp">
             <node concept="2OqwBi" id="1$99Taj1pEO" role="3clFbG">
               <node concept="10M0yZ" id="1$99Taj1pEP" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
               </node>
               <node concept="liA8E" id="1$99Taj1pEQ" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
@@ -1561,8 +1561,8 @@
           <node concept="3clFbF" id="1$99Taj1aJ3" role="3cqZAp">
             <node concept="2OqwBi" id="1$99Taj1aJ4" role="3clFbG">
               <node concept="10M0yZ" id="1$99Taj1aJ5" role="2Oq$k0">
-                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                 <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="1$99Taj1aJ6" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
@@ -1656,8 +1656,8 @@
                   <node concept="3clFbF" id="1$99Taj5iF0" role="3cqZAp">
                     <node concept="2OqwBi" id="1$99Taj5iF1" role="3clFbG">
                       <node concept="10M0yZ" id="1$99Taj5iF2" role="2Oq$k0">
-                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                         <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                       </node>
                       <node concept="liA8E" id="1$99Taj5iF3" role="2OqNvi">
                         <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
@@ -1913,8 +1913,8 @@
           <node concept="3clFbF" id="1$99Taj5l$s" role="3cqZAp">
             <node concept="2OqwBi" id="1$99Taj5l$t" role="3clFbG">
               <node concept="10M0yZ" id="1$99Taj5l$u" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
               </node>
               <node concept="liA8E" id="1$99Taj5l$v" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
@@ -1932,8 +1932,8 @@
           <node concept="3clFbF" id="1$99Taj5n57" role="3cqZAp">
             <node concept="2OqwBi" id="1$99Taj5n58" role="3clFbG">
               <node concept="10M0yZ" id="1$99Taj5n59" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
               </node>
               <node concept="liA8E" id="1$99Taj5n5a" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
@@ -1943,12 +1943,8 @@
           </node>
           <node concept="3clFbH" id="1$99Taj19wA" role="3cqZAp" />
           <node concept="3cpWs6" id="1$99TaiNB$n" role="3cqZAp">
-            <node concept="2YIFZM" id="1$99TaiNB$o" role="3cqZAk">
-              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
-              <node concept="37vLTw" id="1$99TaiNB$p" role="37wK5m">
-                <ref role="3cqZAo" node="6gBiqsZ2rhi" resolve="LijstMetinstantiesVanObjecten" />
-              </node>
+            <node concept="37vLTw" id="1$99Taj9OEB" role="3cqZAk">
+              <ref role="3cqZAo" node="6gBiqsZ2rhi" resolve="LijstMetinstantiesVanObjecten" />
             </node>
           </node>
           <node concept="3clFbH" id="1$99TaiN_bD" role="3cqZAp" />

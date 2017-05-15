@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<presentatie>
+<object type='onderwerp' typeid='6606770165423411622' naam='Aanvraag' >
+</object>
+    <object type='rechtsbetrekking' naam='' >
+      </object>    <object type='rechtshandeling' naam='' >
+      </object>
+    <dialoog typeid='6606770165423411795' name='Indienen aanvraag' >
+      <rechtshandelingtypes>
+      </rechtshandelingtypes>
+    </dialoog>
+    <dialoog typeid='6606770165423411795' name='Indienen aanvraag' >
+      <row>
+        <column>
+          <input type="text" name="elektronisch ingediend" value=""/>
+          <input type="text" name="motivering" value=""/>
+          <input type="text" name="taal" value=""/>
+        </column>
+      </row>
+      <rechtshandelingtypes>
+        <rechtshandelingtype typeid='6606770165423411795' />
+        <rechtshandelingtype typeid='6873177359993993390' />
+        <rechtshandelingtype typeid='6606770165423867670' />
+        <rechtshandelingtype typeid='6606770165423867423' />
+        <rechtshandelingtype typeid='6606770165423868169' />
+        <rechtshandelingtype typeid='6606770165423867932' />
+        <rechtshandelingtype typeid='6606770165423867844' />
+        <rechtshandelingtype typeid='6606770165423868123' />
+        <rechtshandelingtype typeid='6606770165423867253' />
+        <rechtshandelingtype typeid='6606770165423867759' />
+      </rechtshandelingtypes>
+    </dialoog>
+</presentatie>

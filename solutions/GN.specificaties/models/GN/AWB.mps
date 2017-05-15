@@ -9,6 +9,7 @@
     <use id="2c493149-da1d-45e9-8ea2-e0b0cfc3047a" name="SubjectiefRecht" version="0" />
     <use id="15970de3-8fe7-4b13-81c7-38b38d51c39a" name="Simulatie" version="0" />
     <use id="c6a53bd0-9627-4db5-b62a-dbc3d020d641" name="URL" version="0" />
+    <use id="c4c9a68e-ce24-4c5b-9241-c819e554f07c" name="Interactie" version="0" />
   </languages>
   <imports />
   <registry>
@@ -27,6 +28,7 @@
         <child id="736190567680940724" name="lijstmetberichten" index="2NEIfv" />
         <child id="6760713004453462060" name="uittevoerenhandeling" index="Z0I24" />
         <child id="3694879098876164254" name="tijdtipvaninitialisatie" index="3zKq1C" />
+        <child id="8634981577175842196" name="uittevoerendialoog" index="3Ujy1E" />
         <child id="3694879098862050847" name="uitvoerbarehandelingen" index="3WXGrD" />
       </concept>
       <concept id="6760713004453368665" name="Simulatie.structure.UitTeVoerenHandeling" flags="ng" index="Z77fL">
@@ -37,6 +39,12 @@
         <child id="3139957515583339108" name="rechtshandelingen" index="1dIIjt" />
         <child id="3139957515586752450" name="rechtsbetrekkingen" index="1dND5V" />
         <child id="7496157647699367135" name="tabellen" index="1ztmtP" />
+      </concept>
+      <concept id="8634981577175842192" name="Simulatie.structure.UitTeVoerenDialoog" flags="ng" index="3Ujy1I">
+        <reference id="7570288975774844580" name="onderwerp" index="294Dsi" />
+        <reference id="7570288975780159777" name="overgang" index="29or2n" />
+        <reference id="8634981577175842193" name="dialoog" index="3Ujy1J" />
+        <child id="7216817910535555466" name="kenmerken" index="1q0k0H" />
       </concept>
       <concept id="3694879098862050844" name="Simulatie.structure.UitvoerbareRechtshandeling" flags="ng" index="3WXGrE">
         <reference id="5807415387094569851" name="gebaseerdOp" index="3qscrX" />
@@ -109,6 +117,7 @@
       </concept>
       <concept id="6331618849985112190" name="SubjectiefRecht.structure.IEvaluatieResultaat" flags="ng" index="1xmsmM">
         <property id="6331618849985111942" name="evaluatieresultaat" index="1xmsDa" />
+        <child id="6331618849985112192" name="evaluatielog" index="1xmslc" />
       </concept>
     </language>
     <language id="61be2dc6-a140-4def-a592-7499aa2bac19" name="Datum">
@@ -154,6 +163,9 @@
         <child id="561684233592303791" name="expressie2" index="2$ZR1U" />
         <child id="561684233592303790" name="expressie1" index="2$ZR1V" />
       </concept>
+      <concept id="4535249207446922485" name="ObjectiefRecht.structure.ReferentieNaarWaardeVanKenmerk" flags="ng" index="BjDnl">
+        <reference id="4535249207446922486" name="waardevankenmerk" index="BjDnm" />
+      </concept>
       <concept id="4271677511961776445" name="ObjectiefRecht.structure.VrijeTekst" flags="ng" index="2GMpOH" />
       <concept id="3294000250416426724" name="ObjectiefRecht.structure.IsOpgegeven" flags="ng" index="2HEcOy">
         <child id="3294000250416426725" name="variabele" index="2HEcOz" />
@@ -172,7 +184,7 @@
         <child id="3955365814682700305" name="waarde" index="2M1C9h" />
       </concept>
       <concept id="3955365814682700308" name="ObjectiefRecht.structure.InstantieVanObject" flags="ng" index="2M1C9k">
-        <reference id="3955365814682700311" name="referentieNaarObject" index="2M1C9n" />
+        <reference id="3955365814682700311" name="object" index="2M1C9n" />
         <child id="3955365814682700309" name="waardeVanKenmerken" index="2M1C9l" />
       </concept>
       <concept id="31726144782562323" name="ObjectiefRecht.structure.IsWaar" flags="ng" index="2PEWbh">
@@ -191,6 +203,9 @@
       </concept>
       <concept id="345859696665847768" name="ObjectiefRecht.structure.ObjectWaarde" flags="ng" index="3dadDn">
         <reference id="345859696665847769" name="object" index="3dadDm" />
+      </concept>
+      <concept id="97030968393466005" name="ObjectiefRecht.structure.ReferentieNaarOvergang" flags="ng" index="3i5FAN">
+        <reference id="97030968393466006" name="overgang" index="3i5FAK" />
       </concept>
       <concept id="2024696888645630049" name="ObjectiefRecht.structure.ConditieAlle" flags="ng" index="3l_DdQ" />
       <concept id="7496157647699213321" name="ObjectiefRecht.structure.TabelMetInstanties" flags="ng" index="1ztWYz">
@@ -259,6 +274,34 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c4c9a68e-ce24-4c5b-9241-c819e554f07c" name="Interactie">
+      <concept id="31726144783349621" name="Interactie.structure.Presentatie" flags="ng" index="2P_W6R">
+        <reference id="8906131328314532832" name="gegevenshuishouding" index="3oGCMx" />
+        <child id="8906131328315611645" name="presentatieRechtshandeling" index="3oCzqW" />
+        <child id="8906131328314548161" name="presentatieobjecten" index="3oGB20" />
+        <child id="8906131328314894131" name="presentatieRechtsbetrekking" index="3oHKxM" />
+        <child id="7360779165999522256" name="presentatieDialogen" index="1_mtLR" />
+      </concept>
+      <concept id="8906131328315611534" name="Interactie.structure.PresentatieRechtshandeling" flags="ng" index="3oCzrf" />
+      <concept id="8906131328314545663" name="Interactie.structure.PresentatieObject" flags="ng" index="3oGBEY">
+        <reference id="8906131328314545664" name="object" index="3oGB_1" />
+      </concept>
+      <concept id="8906131328314517976" name="Interactie.structure.Kolom" flags="ng" index="3oGGqp">
+        <child id="31726144783557105" name="velden" index="2PAxsN" />
+      </concept>
+      <concept id="8906131328314753379" name="Interactie.structure.Rij" flags="ng" index="3oHiSy">
+        <child id="8906131328314753380" name="kolommen" index="3oHiS_" />
+      </concept>
+      <concept id="8906131328314876288" name="Interactie.structure.PresentatieRechtsbetrekking" flags="ng" index="3oHOV1" />
+      <concept id="7360779165999522222" name="Interactie.structure.PresentatieDialoog" flags="ng" index="1_mtK9">
+        <reference id="7360779165999522253" name="handeling" index="1_mtLE" />
+        <child id="97030968393466051" name="keuze" index="3i5FB_" />
+        <child id="7360779165999522223" name="rijen" index="1_mtK8" />
+      </concept>
+      <concept id="7360779165999666418" name="Interactie.structure.InvoerVeld" flags="ng" index="1_DM_l">
+        <reference id="7360779165999666419" name="referentieNaarKenmerk" index="1_DM_k" />
+      </concept>
+    </language>
   </registry>
   <node concept="1OcJVk" id="5IJXBomHx6f">
     <property role="TrG5h" value="Regels AWB" />
@@ -309,7 +352,7 @@
       <property role="3O3EMM" value="bevoegheid voor het indienen van een aanvraag" />
       <property role="da7Q0" value="0000" />
       <property role="3ypbWd" value="false" />
-      <property role="TrG5h" value="Optionele bevoegheid voor het indienen van een aanvraag" />
+      <property role="TrG5h" value="Optionele bevoegdheid voor het indienen van een aanvraag" />
       <ref role="1gmaJa" node="5IJXBomHx9j" resolve="Indienen aanvraag" />
       <ref role="1OcJVV" node="5IJXBomHx6s" resolve="Belanghebbende" />
       <ref role="1OcJVS" node="5IJXBomHx6o" resolve="Bestuursorgaan" />
@@ -333,7 +376,7 @@
       <property role="3O3EMM" value="Verplichte bevoegdheid bevestigen ontvangst elektonisch aanvraag" />
       <property role="da7Q0" value="0000" />
       <property role="3ypbWd" value="false" />
-      <property role="TrG5h" value="Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
+      <property role="TrG5h" value="Verplichte bevoegdheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
       <ref role="1gm8Zl" node="5IJXBomJgov" resolve="Bevestigen van de ontvangst van de elektronisch ingediende aanvraag" />
       <ref role="1OcJVV" node="5IJXBomHx6o" resolve="Bestuursorgaan" />
       <ref role="1OcJVS" node="5IJXBomHx6s" resolve="Belanghebbende" />
@@ -594,7 +637,7 @@
       <node concept="1OcJUx" id="5IJXBomJgp1" role="33xnZK">
         <property role="TrG5h" value="Aanvraag ingediend" />
         <node concept="33wURK" id="5IJXBomJgp3" role="1OcJUI">
-          <ref role="33wURL" node="5IJXBomJgn7" resolve="Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
+          <ref role="33wURL" node="5IJXBomJgn7" resolve="Verplichte bevoegdheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
         </node>
         <node concept="33wURK" id="5IJXBomJgt9" role="1OcJUI">
           <ref role="33wURL" node="5IJXBomJgqE" resolve="Optionele bevoegdheid om de aanvraag niet te behandelen" />
@@ -684,7 +727,7 @@
       <node concept="1OcJUx" id="74PGmrbrDlj" role="33xnZK">
         <property role="TrG5h" value="ontvangst bevestigd" />
         <node concept="33wURK" id="74PGmrbrDll" role="1OcJUG">
-          <ref role="33wURL" node="5IJXBomJgn7" resolve="Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
+          <ref role="33wURL" node="5IJXBomJgn7" resolve="Verplichte bevoegdheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
         </node>
       </node>
     </node>
@@ -1310,23 +1353,23 @@
           </node>
         </node>
       </node>
-      <node concept="2B78xR" id="7JI66SVOTr7" role="1dBqmG">
-        <ref role="3$n4Sv" node="7JI66SVOTc_" />
+      <node concept="2B78xR" id="7RdMFUtgSaK" role="1dBqmG">
+        <ref role="3$n4Sv" node="7RdMFUtgPav" />
         <ref role="2B7LQa" node="5IJXBomHx9j" resolve="Indienen aanvraag" />
         <ref role="ygcnh" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
-        <node concept="2B78xQ" id="7JI66SVOTr8" role="2B78xV">
+        <node concept="2B78xQ" id="7RdMFUtgSaL" role="2B78xV">
           <ref role="2B78xP" node="5XyrAiGGJ$7" resolve="Jan" />
         </node>
-        <node concept="LeFwQ" id="7JI66SVOTra" role="2B7LCw">
-          <node concept="2B78Lw" id="7JI66SVOTrd" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSaN" role="2B7LCw">
+          <node concept="2B78Lw" id="7RdMFUtgSaQ" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTrf" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSaS" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="6" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="38" />
           </node>
         </node>
       </node>
@@ -1334,7 +1377,7 @@
     <node concept="1dBqmn" id="5XyrAiGGJv8" role="1dND5V">
       <node concept="2B78KX" id="5XyrAiGGJ_7" role="1dBqmm">
         <property role="1xmsDa" value="true" />
-        <ref role="2B78K5" node="5IJXBomJgjF" resolve="Optionele bevoegheid voor het indienen van een aanvraag" />
+        <ref role="2B78K5" node="5IJXBomJgjF" resolve="Optionele bevoegdheid voor het indienen van een aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
         <ref role="2B78KW" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
@@ -1354,7 +1397,7 @@
       <node concept="2B78KX" id="74PGmraWHW6" role="1dBqmm">
         <property role="1xmsDa" value="false" />
         <ref role="1_CTau" node="74PGmraWHVW" />
-        <ref role="2B78K5" node="5IJXBomJgn7" resolve="Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
+        <ref role="2B78K5" node="5IJXBomJgn7" resolve="Verplichte bevoegdheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
         <ref role="2B78K2" node="74PGmrbdZ0j" resolve="Piet" />
         <ref role="2B78KW" node="74PGmrbdZ12" resolve="UWV" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
@@ -1391,123 +1434,123 @@
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="7JI66SVOTrh" role="1dBqmm">
+      <node concept="2B78KX" id="7RdMFUtgSaU" role="1dBqmm">
         <property role="1xmsDa" value="false" />
-        <ref role="1_CTau" node="7JI66SVOTr7" />
-        <ref role="2B78K5" node="5IJXBomJgn7" resolve="Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
+        <ref role="1_CTau" node="7RdMFUtgSaK" />
+        <ref role="2B78K5" node="5IJXBomJgn7" resolve="Verplichte bevoegdheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="2B78KW" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7JI66SVOTri" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTrl" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSaV" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgSaY" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTrn" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSb0" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="11" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="58" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="7JI66SVOTrp" role="1dBqmm">
+      <node concept="2B78KX" id="7RdMFUtgSb2" role="1dBqmm">
         <property role="1xmsDa" value="true" />
-        <ref role="1_CTau" node="7JI66SVOTr7" />
+        <ref role="1_CTau" node="7RdMFUtgSaK" />
         <ref role="2B78K5" node="5IJXBomJgqE" resolve="Optionele bevoegdheid om de aanvraag niet te behandelen" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="2B78KW" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7JI66SVOTrq" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTrt" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSb3" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgSb6" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTrv" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSb8" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="11" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="58" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="7JI66SVOTrx" role="1dBqmm">
+      <node concept="2B78KX" id="7RdMFUtgSba" role="1dBqmm">
         <property role="1xmsDa" value="true" />
-        <ref role="1_CTau" node="7JI66SVOTr7" />
+        <ref role="1_CTau" node="7RdMFUtgSaK" />
         <ref role="2B78K5" node="5IJXBomJglj" resolve="Verplichte bevoegdheid om op de aanvraag te beslissen" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="2B78KW" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7JI66SVOTry" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTr_" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSbb" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgSbe" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTrB" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSbg" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="11" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="58" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="7JI66SVOTrD" role="1dBqmm">
+      <node concept="2B78KX" id="7RdMFUtgSbi" role="1dBqmm">
         <property role="1xmsDa" value="true" />
-        <ref role="1_CTau" node="7JI66SVOTr7" />
+        <ref role="1_CTau" node="7RdMFUtgSaK" />
         <ref role="2B78K5" node="5XyrAiGGJx7" resolve="Verplichte bevoegdheid tot het vergaren van de nodige kennis" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="2B78KW" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7JI66SVOTrE" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTrH" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSbj" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgSbm" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTrJ" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSbo" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="11" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="58" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="7JI66SVOTrL" role="1dBqmm">
+      <node concept="2B78KX" id="7RdMFUtgSbq" role="1dBqmm">
         <property role="1xmsDa" value="true" />
-        <ref role="1_CTau" node="7JI66SVOTr7" />
+        <ref role="1_CTau" node="7RdMFUtgSaK" />
         <ref role="2B78K5" node="5IJXBomJgyg" resolve="Optionele bevoegdheid om te vragen naar een samenvatting van de aanvraag &#10;of een van de daarbij behorende gegevens of bescheiden" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="2B78KW" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7JI66SVOTrM" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTrP" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSbr" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgSbu" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTrR" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSbw" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="11" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="58" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="7JI66SVOTrT" role="1dBqmm">
+      <node concept="2B78KX" id="7RdMFUtgSby" role="1dBqmm">
         <property role="1xmsDa" value="false" />
-        <ref role="1_CTau" node="7JI66SVOTr7" />
+        <ref role="1_CTau" node="7RdMFUtgSaK" />
         <ref role="2B78K5" node="5IJXBomJgxF" resolve="Optionele bevoegdheid om te vragen naar een vertaling van de aanvraag &#10;of een van de daarbij behorende gegevens of bescheiden" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="2B78KW" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7JI66SVOTrU" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTrX" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSbz" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgSbA" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTrZ" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSbC" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="11" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="58" />
           </node>
         </node>
       </node>
@@ -1518,7 +1561,7 @@
     <ref role="QjCDG" node="5IJXBomHx6f" resolve="Regels AWB" />
     <node concept="2B78KX" id="74PGmraSAle" role="2B78xY">
       <property role="1xmsDa" value="false" />
-      <ref role="2B78K5" node="5IJXBomJgjF" resolve="Optionele bevoegheid voor het indienen van een aanvraag" />
+      <ref role="2B78K5" node="5IJXBomJgjF" resolve="Optionele bevoegdheid voor het indienen van een aanvraag" />
       <ref role="2B78KW" node="5XyrAiGGJ$7" resolve="Jan" />
       <ref role="2B78K2" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
       <node concept="LeFwQ" id="74PGmraSAlf" role="2B78LI">
@@ -1569,238 +1612,581 @@
       </node>
       <node concept="LeFwc" id="5XyrAiGGJvp" role="LeFwH">
         <property role="LeFwf" value="2" />
-        <property role="LeFwL" value="18" />
-        <property role="LeFwM" value="6" />
+        <property role="LeFwL" value="20" />
+        <property role="LeFwM" value="38" />
       </node>
     </node>
     <node concept="Z77fL" id="74PGmraSAmH" role="Z0I24">
       <property role="1xmsDa" value="false" />
       <ref role="Z77fO" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
-      <ref role="Z77fM" node="5IJXBomJg$9" resolve="In gelegenheid stellen de aanvraag aan te vullen met een samenvatting" />
+      <ref role="Z77fM" node="5IJXBomHx9j" resolve="Indienen aanvraag" />
     </node>
-    <node concept="LeFwQ" id="7JI66SVOTci" role="3zKq1C">
-      <node concept="2B78Lw" id="7JI66SVOTcu" role="LeFwF">
+    <node concept="3Ujy1I" id="7RdMFUtgOcY" role="3Ujy1E">
+      <ref role="294Dsi" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
+      <ref role="3Ujy1J" node="7RdMFUtgP81" resolve="Indienen aanvraag" />
+      <ref role="29or2n" node="5IJXBomHx9j" resolve="Indienen aanvraag" />
+      <node concept="BjDnl" id="7RdMFUth5TU" role="1q0k0H">
+        <property role="TrG5h" value="elektronisch ingediend" />
+        <ref role="BjDnm" node="74PGmrbrpDG" />
+      </node>
+      <node concept="BjDnl" id="7RdMFUth5TV" role="1q0k0H">
+        <property role="TrG5h" value="taal" />
+        <ref role="BjDnm" node="74PGmrbrpDA" />
+      </node>
+    </node>
+    <node concept="LeFwQ" id="7RdMFUtgPac" role="3zKq1C">
+      <node concept="2B78Lw" id="7RdMFUtgPao" role="LeFwF">
         <property role="2B78LE" value="2017" />
         <property role="2B78L_" value="5" />
-        <property role="2B78LB" value="4" />
+        <property role="2B78LB" value="12" />
       </node>
-      <node concept="LeFwc" id="7JI66SVOTcw" role="LeFwH">
-        <property role="LeFwf" value="13" />
-        <property role="LeFwL" value="35" />
-        <property role="LeFwM" value="54" />
+      <node concept="LeFwc" id="7RdMFUtgPaq" role="LeFwH">
+        <property role="LeFwf" value="16" />
+        <property role="LeFwL" value="5" />
+        <property role="LeFwM" value="48" />
       </node>
     </node>
-    <node concept="2BLbnY" id="7JI66SVOTcz" role="2BLYKK">
-      <node concept="2B78KX" id="7JI66SVOTc_" role="1O2iA3">
+    <node concept="2BLbnY" id="7RdMFUtgPat" role="2BLYKK">
+      <node concept="2B78KX" id="7RdMFUtgPav" role="1O2iA3">
         <property role="1xmsDa" value="true" />
-        <ref role="2B78K5" node="5IJXBomJgjF" resolve="Optionele bevoegheid voor het indienen van een aanvraag" />
+        <ref role="2B78K5" node="5IJXBomJgjF" resolve="Optionele bevoegdheid voor het indienen van een aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
         <ref role="2B78KW" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
-        <node concept="LeFwQ" id="7JI66SVOTcA" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTcB" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgPaw" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgPax" role="LeFwF">
             <property role="2B78LB" value="1" />
             <property role="2B78L_" value="1" />
             <property role="2B78LE" value="2017" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTcC" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgPay" role="LeFwH">
             <property role="LeFwf" value="0" />
             <property role="LeFwL" value="0" />
             <property role="LeFwM" value="0" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="7JI66SVOTs1" role="1O2iA3">
+      <node concept="2B78KX" id="7RdMFUtgSbE" role="1O2iA3">
         <property role="1xmsDa" value="false" />
-        <ref role="1_CTau" node="7JI66SVOTr7" />
-        <ref role="2B78K5" node="5IJXBomJgn7" resolve="Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
+        <ref role="1_CTau" node="7RdMFUtgSaK" />
+        <ref role="2B78K5" node="5IJXBomJgn7" resolve="Verplichte bevoegdheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="2B78KW" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7JI66SVOTs2" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTs3" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSbF" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgSbG" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTs4" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSbH" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="11" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="58" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="7JI66SVOTs5" role="1O2iA3">
+      <node concept="2B78KX" id="7RdMFUtgSbI" role="1O2iA3">
         <property role="1xmsDa" value="false" />
-        <ref role="1_CTau" node="7JI66SVOTr7" />
+        <ref role="1_CTau" node="7RdMFUtgSaK" />
         <ref role="2B78K5" node="5IJXBomJgqE" resolve="Optionele bevoegdheid om de aanvraag niet te behandelen" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="2B78KW" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7JI66SVOTs6" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTs7" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSbJ" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgSbK" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTs8" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSbL" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="11" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="58" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="7JI66SVOTs9" role="1O2iA3">
+      <node concept="2B78KX" id="7RdMFUtgSbM" role="1O2iA3">
         <property role="1xmsDa" value="false" />
-        <ref role="1_CTau" node="7JI66SVOTr7" />
+        <ref role="1_CTau" node="7RdMFUtgSaK" />
         <ref role="2B78K5" node="5IJXBomJglj" resolve="Verplichte bevoegdheid om op de aanvraag te beslissen" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="2B78KW" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7JI66SVOTsa" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTsb" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSbN" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgSbO" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTsc" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSbP" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="11" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="58" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="7JI66SVOTsd" role="1O2iA3">
+      <node concept="2B78KX" id="7RdMFUtgSbQ" role="1O2iA3">
         <property role="1xmsDa" value="false" />
-        <ref role="1_CTau" node="7JI66SVOTr7" />
+        <ref role="1_CTau" node="7RdMFUtgSaK" />
         <ref role="2B78K5" node="5XyrAiGGJx7" resolve="Verplichte bevoegdheid tot het vergaren van de nodige kennis" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="2B78KW" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7JI66SVOTse" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTsf" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSbR" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgSbS" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTsg" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSbT" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="11" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="58" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="7JI66SVOTsh" role="1O2iA3">
+      <node concept="2B78KX" id="7RdMFUtgSbU" role="1O2iA3">
         <property role="1xmsDa" value="false" />
-        <ref role="1_CTau" node="7JI66SVOTr7" />
+        <ref role="1_CTau" node="7RdMFUtgSaK" />
         <ref role="2B78K5" node="5IJXBomJgyg" resolve="Optionele bevoegdheid om te vragen naar een samenvatting van de aanvraag &#10;of een van de daarbij behorende gegevens of bescheiden" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="2B78KW" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7JI66SVOTsi" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTsj" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSbV" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgSbW" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTsk" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSbX" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="11" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="58" />
           </node>
         </node>
       </node>
-      <node concept="2B78KX" id="7JI66SVOTsl" role="1O2iA3">
+      <node concept="2B78KX" id="7RdMFUtgSbY" role="1O2iA3">
         <property role="1xmsDa" value="false" />
-        <ref role="1_CTau" node="7JI66SVOTr7" />
+        <ref role="1_CTau" node="7RdMFUtgSaK" />
         <ref role="2B78K5" node="5IJXBomJgxF" resolve="Optionele bevoegdheid om te vragen naar een vertaling van de aanvraag &#10;of een van de daarbij behorende gegevens of bescheiden" />
         <ref role="1sJBT2" node="74PGmrbrpDs" resolve="Schriftelijke aanvraag" />
         <ref role="2B78K2" node="5XyrAiGGJ$7" resolve="Jan" />
         <ref role="2B78KW" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
-        <node concept="LeFwQ" id="7JI66SVOTsm" role="2B78LI">
-          <node concept="2B78Lw" id="7JI66SVOTsn" role="LeFwF">
+        <node concept="LeFwQ" id="7RdMFUtgSbZ" role="2B78LI">
+          <node concept="2B78Lw" id="7RdMFUtgSc0" role="LeFwF">
             <property role="2B78LE" value="2017" />
             <property role="2B78L_" value="4" />
             <property role="2B78LB" value="1" />
           </node>
-          <node concept="LeFwc" id="7JI66SVOTso" role="LeFwH">
+          <node concept="LeFwc" id="7RdMFUtgSc1" role="LeFwH">
             <property role="LeFwf" value="2" />
-            <property role="LeFwL" value="18" />
-            <property role="LeFwM" value="11" />
+            <property role="LeFwL" value="20" />
+            <property role="LeFwM" value="58" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="3WXGrE" id="7JI66SVOTsp" role="3WXGrD">
-      <ref role="3qscrX" node="7JI66SVOTc_" />
+    <node concept="3WXGrE" id="7RdMFUtgSc2" role="3WXGrD">
+      <property role="1xmsDa" value="true" />
+      <ref role="3qscrX" node="7RdMFUtgPav" />
       <ref role="3WXGrF" node="5IJXBomHx9j" resolve="Indienen aanvraag" />
     </node>
-    <node concept="3WXGrE" id="7JI66SVOTsK" role="3WXGrD">
-      <ref role="3qscrX" node="7JI66SVOTs5" />
+    <node concept="3WXGrE" id="7RdMFUtgScp" role="3WXGrD">
+      <property role="1xmsDa" value="true" />
+      <ref role="3qscrX" node="7RdMFUtgSbI" />
       <ref role="3WXGrF" node="5IJXBomJgsm" resolve="Niet in behandeling nemen van het verzoek" />
     </node>
-    <node concept="3WXGrE" id="7JI66SVOTsP" role="3WXGrD">
-      <ref role="3qscrX" node="7JI66SVOTs9" />
+    <node concept="3WXGrE" id="7RdMFUtgScu" role="3WXGrD">
+      <property role="1xmsDa" value="false" />
+      <ref role="3qscrX" node="7RdMFUtgSbM" />
       <ref role="3WXGrF" node="5IJXBomJglP" resolve="Beslissen op de aanvraag" />
     </node>
-    <node concept="3WXGrE" id="7JI66SVOTsU" role="3WXGrD">
-      <ref role="3qscrX" node="7JI66SVOTsd" />
+    <node concept="3WXGrE" id="7RdMFUtgScz" role="3WXGrD">
+      <property role="1xmsDa" value="true" />
+      <ref role="3qscrX" node="7RdMFUtgSbQ" />
       <ref role="3WXGrF" node="5XyrAiGGJyI" resolve="Vergaren van kennis" />
     </node>
-    <node concept="3WXGrE" id="7JI66SVOTsZ" role="3WXGrD">
-      <ref role="3qscrX" node="7JI66SVOTsh" />
+    <node concept="3WXGrE" id="7RdMFUtgScC" role="3WXGrD">
+      <property role="1xmsDa" value="true" />
+      <ref role="3qscrX" node="7RdMFUtgSbU" />
       <ref role="3WXGrF" node="5IJXBomJg$9" resolve="In gelegenheid stellen de aanvraag aan te vullen met een samenvatting" />
+      <node concept="1dyV97" id="7RdMFUtguce" role="1xmslc">
+        <node concept="1dyV9E" id="7RdMFUth5Qm" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer rechtshandeling Beslissen op de aanvraag" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Qn" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Qo" role="1dyV96">
+          <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Qp" role="1dyV96">
+          <property role="1dyV9H" value=" " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Qq" role="1dyV96">
+          <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Qr" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer de expressie 'is opgegeven'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Qt" role="1dyV96">
+          <property role="1dyV9H" value="Opvragen van variabele 'motivering' van object 'Besluit'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Qv" role="1dyV96">
+          <property role="1dyV9H" value="Kenmerkmotivering verwijst naar object : null" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Qw" role="1dyV96">
+          <property role="1dyV9H" value="Variabele heeft geen waarde!" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Qx" role="1dyV96">
+          <property role="1dyV9H" value="variabele is opgegeven is false" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Qy" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van expressie 'false'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Qz" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van de voorwaarde 'false'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Q$" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'false'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Q_" role="1dyV96">
+          <property role="1dyV9H" value=" " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5QA" role="1dyV96">
+          <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is false" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5QB" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van evaluatie rechtshandeling Beslissen op de aanvraag is false" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rd" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer rechtshandeling Indienen aanvraag" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Re" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rf" role="1dyV96">
+          <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rg" role="1dyV96">
+          <property role="1dyV9H" value=" " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rh" role="1dyV96">
+          <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Ri" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer de expressie 'is waar'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rk" role="1dyV96">
+          <property role="1dyV9H" value="Opvragen van variabele 'schriftelijk ingediend' van object 'Aanvraag'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rl" role="1dyV96">
+          <property role="1dyV9H" value="Type van variabele : JaNeeWaarde" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rm" role="1dyV96">
+          <property role="1dyV9H" value="Waarde van variabele : Ja" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rn" role="1dyV96">
+          <property role="1dyV9H" value="Variabele 'schriftelijk ingediend' is waar is 'true'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Ro" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van expressie 'true'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rp" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rq" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rr" role="1dyV96">
+          <property role="1dyV9H" value=" " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rs" role="1dyV96">
+          <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is true" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rt" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van evaluatie rechtshandeling Indienen aanvraag is true" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rv" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer rechtshandeling Niet in behandeling nemen van het verzoek" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rw" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Rx" role="1dyV96">
+          <property role="1dyV9H" value="Geen voorwaarden gevonden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Ry" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van evaluatie rechtshandeling Niet in behandeling nemen van het verzoek is true" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5R$" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer rechtshandeling Beslissen op de aanvraag" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5R_" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RA" role="1dyV96">
+          <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RB" role="1dyV96">
+          <property role="1dyV9H" value=" " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RC" role="1dyV96">
+          <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RD" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer de expressie 'is opgegeven'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RF" role="1dyV96">
+          <property role="1dyV9H" value="Opvragen van variabele 'motivering' van object 'Besluit'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RH" role="1dyV96">
+          <property role="1dyV9H" value="Kenmerkmotivering verwijst naar object : null" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RI" role="1dyV96">
+          <property role="1dyV9H" value="Variabele heeft geen waarde!" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RJ" role="1dyV96">
+          <property role="1dyV9H" value="variabele is opgegeven is false" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RK" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van expressie 'false'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RL" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van de voorwaarde 'false'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RM" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'false'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RN" role="1dyV96">
+          <property role="1dyV9H" value=" " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RO" role="1dyV96">
+          <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is false" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RP" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van evaluatie rechtshandeling Beslissen op de aanvraag is false" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RR" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer rechtshandeling Vergaren van kennis" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RS" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RT" role="1dyV96">
+          <property role="1dyV9H" value="Geen voorwaarden gevonden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RU" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van evaluatie rechtshandeling Vergaren van kennis is true" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RW" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer rechtshandeling In gelegenheid stellen de aanvraag aan te vullen met een samenvatting" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RX" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RY" role="1dyV96">
+          <property role="1dyV9H" value="Geen voorwaarden gevonden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5RZ" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van evaluatie rechtshandeling In gelegenheid stellen de aanvraag aan te vullen met een samenvatting is true" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5TX" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer rechtshandeling Indienen aanvraag" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5TY" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5TZ" role="1dyV96">
+          <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5U0" role="1dyV96">
+          <property role="1dyV9H" value=" " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5U1" role="1dyV96">
+          <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5U2" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer de expressie 'is waar'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5U4" role="1dyV96">
+          <property role="1dyV9H" value="Opvragen van variabele 'schriftelijk ingediend' van object 'Aanvraag'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5U5" role="1dyV96">
+          <property role="1dyV9H" value="Type van variabele : JaNeeWaarde" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5U6" role="1dyV96">
+          <property role="1dyV9H" value="Waarde van variabele : Ja" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5U7" role="1dyV96">
+          <property role="1dyV9H" value="Variabele 'schriftelijk ingediend' is waar is 'true'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5U8" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van expressie 'true'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5U9" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van de voorwaarde 'true'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Ua" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'true'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Ub" role="1dyV96">
+          <property role="1dyV9H" value=" " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Uc" role="1dyV96">
+          <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is true" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Ud" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van evaluatie rechtshandeling Indienen aanvraag is true" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Uf" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer rechtshandeling Niet in behandeling nemen van het verzoek" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Ug" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Uh" role="1dyV96">
+          <property role="1dyV9H" value="Geen voorwaarden gevonden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Ui" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van evaluatie rechtshandeling Niet in behandeling nemen van het verzoek is true" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Uk" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer rechtshandeling Beslissen op de aanvraag" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Ul" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Um" role="1dyV96">
+          <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Un" role="1dyV96">
+          <property role="1dyV9H" value=" " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Uo" role="1dyV96">
+          <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Up" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer de expressie 'is opgegeven'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Ur" role="1dyV96">
+          <property role="1dyV9H" value="Opvragen van variabele 'motivering' van object 'Besluit'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Ut" role="1dyV96">
+          <property role="1dyV9H" value="Kenmerkmotivering verwijst naar object : null" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Uu" role="1dyV96">
+          <property role="1dyV9H" value="Variabele heeft geen waarde!" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Uv" role="1dyV96">
+          <property role="1dyV9H" value="variabele is opgegeven is false" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Uw" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van expressie 'false'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Ux" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van de voorwaarde 'false'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Uy" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'false'" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5Uz" role="1dyV96">
+          <property role="1dyV9H" value=" " />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5U$" role="1dyV96">
+          <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is false" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5U_" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van evaluatie rechtshandeling Beslissen op de aanvraag is false" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5UB" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer rechtshandeling Vergaren van kennis" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5UC" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5UD" role="1dyV96">
+          <property role="1dyV9H" value="Geen voorwaarden gevonden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5UE" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van evaluatie rechtshandeling Vergaren van kennis is true" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5UG" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer rechtshandeling In gelegenheid stellen de aanvraag aan te vullen met een samenvatting" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5UH" role="1dyV96">
+          <property role="1dyV9H" value="Evalueer voorwaarden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5UI" role="1dyV96">
+          <property role="1dyV9H" value="Geen voorwaarden gevonden" />
+        </node>
+        <node concept="1dyV9E" id="7RdMFUth5UJ" role="1dyV96">
+          <property role="1dyV9H" value="Resultaat van evaluatie rechtshandeling In gelegenheid stellen de aanvraag aan te vullen met een samenvatting is true" />
+        </node>
+      </node>
     </node>
-    <node concept="1dyV97" id="7JI66SVOJDd" role="2NEIfv">
-      <node concept="1dyV9E" id="7JI66SVOTSl" role="1dyV96">
-        <property role="1dyV9H" value="Evalueer rechtsbetrekking Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen" />
+    <node concept="1dyV97" id="7RdMFUth5UF" role="2NEIfv" />
+  </node>
+  <node concept="2P_W6R" id="7RdMFUtgP5D">
+    <property role="TrG5h" value="Presentatie AWB" />
+    <ref role="3oGCMx" node="5XyrAiGGJv6" resolve="Gegevenshuishouding AWB" />
+    <node concept="3oGBEY" id="17brkNI27B" role="3oGB20">
+      <ref role="3oGB_1" node="5IJXBomHx6A" resolve="Aanvraag" />
+    </node>
+    <node concept="1_mtK9" id="7RdMFUth5QU" role="1_mtLR">
+      <property role="TrG5h" value="Dummy" />
+      <ref role="1_mtLE" node="5IJXBomHx9j" resolve="Indienen aanvraag" />
+    </node>
+    <node concept="1_mtK9" id="7RdMFUtgP81" role="1_mtLR">
+      <property role="TrG5h" value="Indienen aanvraag" />
+      <ref role="1_mtLE" node="5IJXBomHx9j" resolve="Indienen aanvraag" />
+      <node concept="3i5FAN" id="7RdMFUtgP83" role="3i5FB_">
+        <ref role="3i5FAK" node="5IJXBomHx9j" resolve="Indienen aanvraag" />
       </node>
-      <node concept="1dyV9E" id="7JI66SVOTSm" role="1dyV96">
-        <property role="1dyV9H" value="Evalueer voorwaarden" />
+      <node concept="3i5FAN" id="7RdMFUtgP88" role="3i5FB_">
+        <ref role="3i5FAK" node="5XyrAiGGJyI" resolve="Vergaren van kennis" />
       </node>
-      <node concept="1dyV9E" id="7JI66SVOTSn" role="1dyV96">
-        <property role="1dyV9H" value="Start van de evaluatie van de voorwaarden" />
+      <node concept="3i5FAN" id="7RdMFUtgP8g" role="3i5FB_">
+        <ref role="3i5FAK" node="5IJXBomJgsm" resolve="Niet in behandeling nemen van het verzoek" />
       </node>
-      <node concept="1dyV9E" id="7JI66SVOTSo" role="1dyV96">
-        <property role="1dyV9H" value=" " />
+      <node concept="3i5FAN" id="7RdMFUtgP8q" role="3i5FB_">
+        <ref role="3i5FAK" node="5IJXBomJgov" resolve="Bevestigen van de ontvangst van de elektronisch ingediende aanvraag" />
       </node>
-      <node concept="1dyV9E" id="7JI66SVOTSp" role="1dyV96">
-        <property role="1dyV9H" value="Start van de evaluatie van de voorwaarde " />
+      <node concept="3i5FAN" id="7RdMFUtgP8A" role="3i5FB_">
+        <ref role="3i5FAK" node="5IJXBomJg$9" resolve="In gelegenheid stellen de aanvraag aan te vullen met een samenvatting" />
       </node>
-      <node concept="1dyV9E" id="7JI66SVOTSq" role="1dyV96">
-        <property role="1dyV9H" value="Evalueer de expressie 'is waar'" />
+      <node concept="3i5FAN" id="7RdMFUtgP8O" role="3i5FB_">
+        <ref role="3i5FAK" node="5IJXBomJgws" resolve="In gelegenheid stellen de aanvraag aan te vullen met een vertaling" />
       </node>
-      <node concept="1dyV9E" id="7JI66SVOTSs" role="1dyV96">
-        <property role="1dyV9H" value="Opvragen van variabele 'elektronisch ingediend' van object 'Aanvraag'" />
+      <node concept="3i5FAN" id="7RdMFUtgP94" role="3i5FB_">
+        <ref role="3i5FAK" node="5IJXBomJgv4" resolve="Aanvullen aanvraag met vertaling" />
       </node>
-      <node concept="1dyV9E" id="7JI66SVOTSt" role="1dyV96">
-        <property role="1dyV9H" value="Type van variabele : JaNeeWaarde" />
+      <node concept="3i5FAN" id="7RdMFUtgP9m" role="3i5FB_">
+        <ref role="3i5FAK" node="5IJXBomJgzr" resolve="Aanvullen aanvraag met samenvatting" />
       </node>
-      <node concept="1dyV9E" id="7JI66SVOTSu" role="1dyV96">
-        <property role="1dyV9H" value="Waarde van variabele : Nee" />
+      <node concept="3i5FAN" id="7RdMFUtgP9E" role="3i5FB_">
+        <ref role="3i5FAK" node="5IJXBomJglP" resolve="Beslissen op de aanvraag" />
       </node>
-      <node concept="1dyV9E" id="7JI66SVOTSv" role="1dyV96">
-        <property role="1dyV9H" value="Variabele 'elektronisch ingediend' is waar is 'false'" />
+      <node concept="3i5FAN" id="7RdMFUtgPa0" role="3i5FB_">
+        <ref role="3i5FAK" node="5IJXBomJgtJ" resolve="Bekend maken besluit" />
       </node>
-      <node concept="1dyV9E" id="7JI66SVOTSw" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van expressie 'false'" />
-      </node>
-      <node concept="1dyV9E" id="7JI66SVOTSx" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van de voorwaarde 'false'" />
-      </node>
-      <node concept="1dyV9E" id="7JI66SVOTSy" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van de evaluatie van de voorwaarde is 'false'" />
-      </node>
-      <node concept="1dyV9E" id="7JI66SVOTSz" role="1dyV96">
-        <property role="1dyV9H" value=" " />
-      </node>
-      <node concept="1dyV9E" id="7JI66SVOTS$" role="1dyV96">
-        <property role="1dyV9H" value="Eindresultaat van de evaluatie van de voorwaarden is false" />
-      </node>
-      <node concept="1dyV9E" id="7JI66SVOTS_" role="1dyV96">
-        <property role="1dyV9H" value="Resultaat van evaluatie rechtsbetrekking Verplichte bevoegheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen is false" />
+      <node concept="3oHiSy" id="7RdMFUtgXt7" role="1_mtK8">
+        <node concept="3oGGqp" id="7RdMFUtgXtd" role="3oHiS_">
+          <node concept="1_DM_l" id="7RdMFUtgXtf" role="2PAxsN">
+            <ref role="1_DM_k" node="5IJXBomJgnr" resolve="elektronisch ingediend" />
+          </node>
+          <node concept="1_DM_l" id="7RdMFUtgXts" role="2PAxsN">
+            <ref role="1_DM_k" node="5IJXBomHx6M" resolve="motivering" />
+          </node>
+          <node concept="1_DM_l" id="7RdMFUtgXtG" role="2PAxsN">
+            <ref role="1_DM_k" node="74PGmrbrpCh" resolve="taal" />
+          </node>
+        </node>
       </node>
     </node>
+    <node concept="3oHOV1" id="17brkNI27D" role="3oHKxM" />
+    <node concept="3oCzrf" id="17brkNI27F" role="3oCzqW" />
   </node>
 </model>
 

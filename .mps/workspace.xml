@@ -18,70 +18,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f2805d-4538-46c3-a016-7128ec7e185d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Editor$_Inline_rz5h8r_a2a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Editor$instantiesListHandler_rz5h8r_c4a.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/TabelMetInstanties_Editor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Feiten en regels WAA.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WAA/Regels WAA.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Regels WAA.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WAA/Feiten en regels WAA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/FeitVerwoording__BehaviorDescriptor.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/FeitVerwoording__BehaviorDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/VoorbeeldenMetInstanties__BehaviorDescriptor.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/VoorbeeldenMetInstanties__BehaviorDescriptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/AWB/Presentatie AWB.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WFW/Feiten en regels WFW.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WFW/Gegevenshuishouding WFW.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WFW/Presentatie WFW.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WFW/trace.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/models/GN/WFW.mps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen.caches/GN/WFW/dependencies" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen.caches/GN/WFW/generated" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/AWB/Presentatie AWB.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WFW/Feiten en regels WFW.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WFW/Gegevenshuishouding WFW.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WFW/Presentatie WFW.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WFW/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1$1.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1$2.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/VerwoordingObject_Constraints$1$1.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/VerwoordingObject_Constraints$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/InstantieVanObject_Editor.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/InstantieVanObject_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$8.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Tabel_Editor$10.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Tabel_Editor$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Tabel_Editor$7.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Tabel_Editor$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/intentions/ToevoegenInstantieAanTabel_Intention$IntentionImplementation.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/intentions/ToevoegenInstantieAanTabel_Intention$IntentionImplementation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/intentions/ToevoegenInstantie_Intention$IntentionImplementation.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/intentions/ToevoegenInstantie_Intention$IntentionImplementation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/structure/StructureAspectDescriptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/ObjectiefRecht.mpl" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/ObjectiefRecht.mpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/behavior/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Interactie/classes_gen/Interactie/editor/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/models/editor.mps" afterPath="$PROJECT_DIR$/languages/Interactie/models/editor.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/editor/generated" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/editor/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/generated" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/editor/Presentatie_Editor.java" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/editor/Presentatie_Editor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/editor/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/intentions/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/intentions/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/behavior.mps" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/behavior.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/constraints.mps" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/constraints.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/editor.mps" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/structure.mps" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/behavior/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/behavior/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/constraints/dependencies" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/constraints/dependencies" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/constraints/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/constraints/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/dependencies" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/structure/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/FeitVerwoording__BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/FeitVerwoording__BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/InstantieVanObject__BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/VoorbeeldenMetInstanties__BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/VoorbeeldenMetInstanties__BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/behavior/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/VerwoordingObject_Constraints.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/VerwoordingObject_Constraints.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/InstantieVanObject_Editor.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/InstantieVanObject_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Tabel_Editor.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/VoorbeeldenMetInstanties_Tabel_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/intentions/ToevoegenInstantieAanTabel_Intention.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/intentions/ToevoegenInstantieAanTabel_Intention.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/intentions/ToevoegenInstantie_Intention.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/intentions/ToevoegenInstantie_Intention.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/intentions/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/intentions/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/Interactie/regelingen.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/Interactie/regelingen.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/AWB/Gegevenshuishouding AWB.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/AWB/Gegevenshuishouding AWB.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/AWB/Regels AWB.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/AWB/Regels AWB.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WAA/Gegevenshuishouding WAA.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WAA/Gegevenshuishouding WAA.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WAA/Presentatie WAA.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WAA/Presentatie WAA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/models/GN/AWB.mps" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/models/GN/AWB.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/models/GN/WAA.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen.caches/GN/AWB/generated" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen.caches/GN/AWB/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen.caches/GN/WAA/generated" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen.caches/GN/WAA/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/Interactie/regelingen.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/Interactie/regelingen.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/AWB/Gegevenshuishouding AWB.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/AWB/Gegevenshuishouding AWB.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/AWB/Regels AWB.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/AWB/Regels AWB.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Gegevenshuishouding WAA.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Gegevenshuishouding WAA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Presentatie WAA.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Presentatie WAA.xml" />
     </list>
     <ignored path="DeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -127,7 +107,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="2ab01fac-5e83-4165-9cf7-efddf4ed2210/r:2d01ac8f-d43c-40ee-b98a-70f4a5d98a79(TempModule2ab01fac-5e83-4165-9cf7-efddf4ed2210/TempModel_231510354267610)">
+            <model ref="a1f29cab-6a13-4929-8c57-ca5527d40bab/r:987ad131-fcbc-4eec-8710-b49f9f7c5aa2(TempModulea1f29cab-6a13-4929-8c57-ca5527d40bab/TempModel_292334503131640)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -157,9 +137,9 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="1$99TaiBL$2">
-                <node concept="3balQm" id="1$99TaiBL$3" role="aymYE" />
-                <node concept="2Clz$F" id="1$99TaiBL$4" role="aymYO">
+              <node concept="aymSD" id="17brkNHwI$">
+                <node concept="3balQm" id="17brkNHwI_" role="aymYE" />
+                <node concept="2Clz$F" id="17brkNHwIA" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
               </node>
@@ -187,269 +167,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Feiten en regels WAA" pinned="false" current-in-tab="false">
-        <entry file="mps://node://GN.specificaties/GN.WAA/Feiten en regels WAA">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="2600">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="87" />
-                    <property name="caretXRelative" value="8" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/2911931843183476756" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kenmerk" pinned="false" current-in-tab="false">
-        <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/Kenmerk">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="191" />
-                    <property name="caretXRelative" value="72" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/6249140128507897487" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-              <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5266643527326992515" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Simulatie WAA" pinned="false" current-in-tab="false">
-        <entry file="mps://node://GN.specificaties/GN.WAA/Simulatie WAA">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="2777">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="39" />
-                    <property name="caretXRelative" value="24" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_fapojb_v0" cellNumber="0" isInList="false">
-                      <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5270187600231036901" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectWaarde" pinned="false" current-in-tab="true">
-        <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/ObjectWaarde">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="89">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="47" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="empty_defaultScope" cellNumber="0" isInList="false">
-                      <node node_reference="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910550475667" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-              <node node_ref="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gegevenshuishouding WAA" pinned="false" current-in-tab="false">
-        <entry file="mps://node://GN.specificaties/GN.WAA/Gegevenshuishouding WAA">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="240">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="254" />
-                    <property name="caretXRelative" value="200" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7216817910542024175" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InstantieVanObject" pinned="false" current-in-tab="false">
-        <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/InstantieVanObject">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="391" />
-                    <property name="caretXRelative" value="148" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/345859696665268212" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-              <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/345859696665268212" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Presentatie WAA" pinned="false" current-in-tab="false">
-        <entry file="mps://node://GN.specificaties/GN.WAA/Presentatie WAA">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="860">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="551" />
-                    <property name="caretXRelative" value="256" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/1804016636225643931" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -498,7 +216,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="961" />
+    <option name="height" value="959" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -726,54 +444,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/solutions/GN.specificaties/GN.specificaties.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/solutions/GN.specificaties/GN.specificaties.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/solutions/GN.specificaties/models/GN/WAA.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/solutions/GN.specificaties/GN.specificaties.msd" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -788,28 +463,13 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/solutions/GN.specificaties/GN.specificaties.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/solutions/GN.specificaties/models/GN/WAA.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5753801799636978867" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
         <subPane />
       </pane>
+      <pane id="FileSystem" />
       <pane id="Favorites" />
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
         <subPane />
@@ -910,15 +570,15 @@
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="961" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="959" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Visualization" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Diagram Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31200898" sideWeight="0.30341882" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31158605" sideWeight="0.30341882" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.73748475" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.74603176" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31257632" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -926,18 +586,18 @@
       <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29180697" sideWeight="0.6800977" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.74603176" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44431946" sideWeight="0.35531136" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.25641027" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.25396827" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Visualiseer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51331204" sideWeight="0.49676898" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Visualiseer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6831736" sideWeight="0.49676898" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Wetten.nl" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35836387" sideWeight="0.495116" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29180697" sideWeight="0.31990233" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2913386" sideWeight="0.31990233" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31986532" sideWeight="0.43894994" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733408" sideWeight="0.42237163" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26936027" sideWeight="0.32295483" order="21" side_tool="false" content_ui="tabs" />
@@ -945,7 +605,7 @@
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2026862" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23199023" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="24" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="26" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.49676898" order="27" side_tool="false" content_ui="tabs" />
@@ -964,11 +624,11 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Diagram Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31200898" sideWeight="0.30525032" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31200898" sideWeight="0.30341882" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.73260075" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.74603176" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31257632" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -976,29 +636,29 @@
       <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32996634" sideWeight="0.73504275" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.74603176" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44431946" sideWeight="0.35531136" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32996634" sideWeight="0.26495728" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.25396827" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Visualiseer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51331204" sideWeight="0.49676898" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Visualiseer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6831736" sideWeight="0.49676898" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Wetten.nl" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35836387" sideWeight="0.495116" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29246345" sideWeight="0.32173383" order="19" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32004556" sideWeight="0.44120032" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29180697" sideWeight="0.31990233" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31986532" sideWeight="0.43894994" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733408" sideWeight="0.42237163" order="20" side_tool="false" content_ui="tabs" />
-      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26996624" sideWeight="0.33211234" order="21" side_tool="false" content_ui="tabs" />
+      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26936027" sideWeight="0.32295483" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Visualiser" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="25" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2026862" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23199023" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="24" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="26" side_tool="false" content_ui="tabs" />
@@ -2098,7 +1758,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Schaduwdraaien simulatie &amp; gegevenshuishouding" />
     <MESSAGE value="Simulatie op gegevenshuishouding" />
     <MESSAGE value="Refactor sandbox naar specificaties" />
     <MESSAGE value="Refactor GN.runtime" />
@@ -2123,433 +1782,10 @@
     <MESSAGE value="Verbeteringen aan de dialogen" />
     <MESSAGE value="Verbeteringen aan de dialogen link naar GGHH" />
     <MESSAGE value="Optimalisatie dialoog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimalisatie dialoog" />
+    <MESSAGE value="Referentie naar instanties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Referentie naar instanties" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://GN.specificaties/GN.WAA/Gegevenshuishouding WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="140" viewPositionY="744">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="2294" />
-                <property name="caretXRelative" value="40" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_ev95sk_a4a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7360779166002503297" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5913556335942801523" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Simulatie WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="180">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="919" />
-                <property name="caretXRelative" value="904" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_berichttekst" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5913556335942801523" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5913556335942801523" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Simulatie WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="182">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-15" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="JComponent_pjer6y_y0" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7570288975782843564" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7360779166002503297" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="a09eb1e6-b89a-4ac7-b216-5b7757da492c" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="SubjectiefRecht.editor.SubjectiefRecht.Lijst" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Gegevenshuishouding WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="140" viewPositionY="744">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="2294" />
-                <property name="caretXRelative" value="40" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_ev95sk_a4a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7360779166002503297" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7360779166002503297" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="a09eb1e6-b89a-4ac7-b216-5b7757da492c" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="SubjectiefRecht.editor.SubjectiefRecht.Lijst" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Gegevenshuishouding WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="1320" viewPositionY="795">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="2350" />
-                <property name="caretXRelative" value="96" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_ev95sk_a4a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5913556335942802143" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/2317404197410775793" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Regels WAA" />
-    <entry file="mps://node://GN.specificaties/GN.WAA/Regels WAA" />
-    <entry file="mps://node://GN.specificaties/GN.WAA/Gegevenshuishouding WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="1320" viewPositionY="795">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="2350" />
-                <property name="caretXRelative" value="96" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_ev95sk_a4a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5913556335942802143" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5913556335942802143" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="a09eb1e6-b89a-4ac7-b216-5b7757da492c" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="SubjectiefRecht.editor.SubjectiefRecht.Lijst" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Gegevenshuishouding WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="2350" />
-                <property name="caretXRelative" value="96" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_ev95sk_a4a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5913556335942802143" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5753801799636978868" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Regels WAA" />
-    <entry file="mps://node://GN.specificaties/GN.WAA/Regels WAA" />
-    <entry file="mps://node://GN.specificaties/GN.WAA/Gegevenshuishouding WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="2350" />
-                <property name="caretXRelative" value="96" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_ev95sk_a4a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5913556335942802143" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5913556335942802143" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="a09eb1e6-b89a-4ac7-b216-5b7757da492c" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="SubjectiefRecht.editor.SubjectiefRecht.Lijst" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Gegevenshuishouding WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="2350" />
-                <property name="caretXRelative" value="96" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_ev95sk_a4a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5913556335942802143" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/6305595003050758060" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="ObjectiefRecht.editor.ObjectiefRecht.Tabel" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="3a2042c5-82f4-4bca-8cde-8a89491d03f2" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Regels WAA" />
-    <entry file="mps://node://GN.specificaties/GN.WAA/Regels WAA" />
-    <entry file="mps://node://GN.specificaties/GN.WAA/Simulatie WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="182">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-15" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="JComponent_pjer6y_y0" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7570288975782843564" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7570288975782843564" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Simulatie WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="160">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="415" />
-                <property name="caretXRelative" value="208" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7570288975782843564" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/2677844167537522588" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Regels WAA" />
-    <entry file="mps://node://GN.specificaties/GN.WAA/Regels WAA" />
-    <entry file="mps://node://GN.specificaties/GN.WAA/Simulatie WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="160">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="415" />
-                <property name="caretXRelative" value="208" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7570288975782843564" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7570288975782843564" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://GN.specificaties/GN.WAA/Simulatie WAA">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -3104,40 +2340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://GN.specificaties/GN.AWB/Regels AWB">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="2900">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="79" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:57b12f17-4409-4892-bff1-220ba63df38e(GN.AWB)/6606770165423411599" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:57b12f17-4409-4892-bff1-220ba63df38e(GN.AWB)/6606770165423411599" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/Kenmerk">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -3158,7 +2360,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/4196470522071792522" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -3170,41 +2372,6 @@
             </enabledHints>
           </inspectorMemento>
           <node node_ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)/5266643527326992515" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/InstantieVanObject">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="391" />
-                <property name="caretXRelative" value="148" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/345859696665268212" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/345859696665268212" />
         </state>
       </provider>
     </entry>
@@ -3300,74 +2467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Presentatie WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="860">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="551" />
-                <property name="caretXRelative" value="256" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/1804016636225643931" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Gegevenshuishouding WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="240">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="254" />
-                <property name="caretXRelative" value="200" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7216817910542024175" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/EnumeratieElement">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
@@ -3403,18 +2502,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://GN.specificaties/GN.WAA/Feiten en regels WAA">
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/ObjectWaarde">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="2600">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="87" />
-                <property name="caretXRelative" value="8" />
+                <property name="caretX" value="367" />
+                <property name="caretXRelative" value="232" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/2911931843183476756" />
+                  <node node_reference="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/1804016636226128551" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/1804016636226118586" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/1804016636226118586" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/1804016636226128551" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/InstantieVanObject">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="391" />
+                <property name="caretXRelative" value="148" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/345859696665268212" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -3423,7 +2569,837 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/345859696665268212" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor)/345859696665268212" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.WAA/Presentatie WAA">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="860">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="551" />
+                <property name="caretXRelative" value="256" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/1804016636225643931" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/1804016636225643931" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.WFW/Presentatie WAA" />
+    <entry file="mps://node://GN.specificaties/GN.WFW/Subjectief WAA" />
+    <entry file="mps://node://GN.specificaties/GN.WAA/Gegevenshuishouding WAA">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="749">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="268" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/1804016636225088746" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/1804016636225088746" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="ObjectiefRecht.editor.ObjectiefRecht.Tabel" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="4424fb64-745b-4872-8a8c-45481361baf6" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Interactie/Interactie.structure/Presentatie">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="51" />
+                <property name="caretXRelative" value="4" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_text" cellNumber="0" isInList="false">
+                  <node node_reference="r:a6b36b6c-0d6a-49f7-a8d5-0d8669ca3071(Interactie.editor)/9065124544997708198" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:57b12f17-4409-4892-bff1-220ba63df38e(GN.AWB)/9065124544997742444" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:a6b36b6c-0d6a-49f7-a8d5-0d8669ca3071(Interactie.editor)/31726144783558873" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.AWB/Regels AWB">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1085">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-63" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_wasupv_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:57b12f17-4409-4892-bff1-220ba63df38e(GN.AWB)/6606770165423411634" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:57b12f17-4409-4892-bff1-220ba63df38e(GN.AWB)/6606770165423411634" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_wh7tcl_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:57b12f17-4409-4892-bff1-220ba63df38e(GN.AWB)/6606770165423411634" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.AWB/Simulatie AWB">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="343" />
+                <property name="caretXRelative" value="136" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:57b12f17-4409-4892-bff1-220ba63df38e(GN.AWB)/9065124544997704510" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:57b12f17-4409-4892-bff1-220ba63df38e(GN.AWB)/9065124544997704510" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Simulatie/Simulatie.structure/UitvoerbareRechtshandeling">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="247" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor)/7570288975757355597" />
+                </cellInfo>
+              </stackElement>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-247" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_zedcwq_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor)/7570288975757355599" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor)/7570288975753500754" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor)/7570288975753500754" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor)/7570288975757355599" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor)/7570288975753500752" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.AWB/&lt;no name&gt;[Presentatie]" />
+    <entry file="mps://node://GN.specificaties/GN.WAA/Feiten en regels WAA">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="8800">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="31" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_d0e2am_t02a" cellNumber="0" isInList="false">
+                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5753801799636978867" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5753801799636978867" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.WFW/Feiten en regels WAA" />
+    <entry file="mps://node://GN.specificaties/GN.WFW/Gegevenshuishouding WAA" />
+    <entry file="mps://node://GN.specificaties/GN.WFW/Gegevenshuishouding WFW">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.WFW/Gegevenshuishouding WFW">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.WFW/Gegevenshuishouding WFW">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="454">
+            <selectionStack />
+            <errorMarkers>
+              <errorMarker text="" propertyCell="false" cellId="empty_object" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779743" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779746" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779749" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779752" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779758" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779761" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779764" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_object" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779767" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779770" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779773" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779776" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_element" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779779" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_element" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779782" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_object" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780042" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780045" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780048" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780051" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780057" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780060" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780063" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_object" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780066" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780069" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780072" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780075" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_element" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780078" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_element" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780081" />
+              </errorMarker>
+              <errorMarker text="1095 AA" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706155" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706155" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="1073 RR" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706182" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706182" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="Maandag t/m vrijdag 5 x 8" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706243" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706243" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="Maandag t/m vrijdag 5 x 8" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706321" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706321" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="Maandag t/m vrijdag 5 x 8" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706398" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706398" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="Maandag t/m vrijdag 5 x 8" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706475" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706475" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="Pieter" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706508" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706508" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="Pieter" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706526" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706526" />
+                </parent>
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.WFW/Gegevenshuishouding WFW">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="175" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706028" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="false" cellId="empty_object" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779743" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779746" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779749" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779752" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779758" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779761" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779764" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_object" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779767" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779770" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779773" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779776" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_element" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779779" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_element" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997779782" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_object" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780042" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780045" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780048" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780051" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780057" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780060" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780063" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_object" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780066" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780069" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780072" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_waarde" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780075" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_element" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780078" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="false" cellId="empty_element" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997780081" />
+              </errorMarker>
+              <errorMarker text="1095 AA" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706155" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706155" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="1073 RR" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706182" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706182" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="Maandag t/m vrijdag 5 x 8" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706243" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706243" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="Maandag t/m vrijdag 5 x 8" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706321" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706321" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="Maandag t/m vrijdag 5 x 8" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706398" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706398" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="Maandag t/m vrijdag 5 x 8" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706475" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706475" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="Pieter" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706508" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706508" />
+                </parent>
+              </errorMarker>
+              <errorMarker text="Pieter" propertyCell="false" cellNumber="0" isInList="false">
+                <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706526" />
+                <parent cellId="Collection_dwyzfs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706526" />
+                </parent>
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706028" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.WFW/Subjectief WFW">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="63" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706003" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706003" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.WAA/Subjectief WAA">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="63" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7136310554705400170" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/7136310554705400170" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.WFW/Simulatie WAA" />
+    <entry file="mps://node://GN.specificaties/GN.AWB/Presentatie AWB">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="79" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="empty_rijen" cellNumber="0" isInList="false">
+                  <node node_reference="r:57b12f17-4409-4892-bff1-220ba63df38e(GN.AWB)/20034979626492395" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:57b12f17-4409-4892-bff1-220ba63df38e(GN.AWB)/20034979626492395" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.WFW/Presentatie WFW">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1144">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="1143" />
+                <property name="caretXRelative" value="192" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706780" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706780" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.WFW/Gegevenshuishouding WFW">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="700" viewPositionY="1067">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="1420" />
+                <property name="caretXRelative" value="48" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name_1" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706748" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706748" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="SubjectiefRecht.editor.SubjectiefRecht.Lijst" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+              <enabledHintsElement enabledHintsAttribute="5900d715-ffbf-4819-bb49-dd1dce88987c" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GN.specificaties/GN.WFW/Simulatie WFW">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="JComponent_pjer6y_y0" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706013" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997706013" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -3439,15 +3415,14 @@
     </entry>
     <entry file="mps://node://GN.specificaties/GN.WAA/Simulatie WAA">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="2777">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="39" />
-                <property name="caretXRelative" value="24" />
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-391" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_fapojb_v0" cellNumber="0" isInList="false">
+                <cellInfo cellId="JComponent_fapojb_e0a" cellNumber="0" isInList="false">
                   <node node_reference="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5270187600231036901" />
                 </cellInfo>
               </stackElement>
@@ -3457,7 +3432,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)/5270187600231036901" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -3471,33 +3446,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/ObjectWaarde">
+    <entry file="mps://node://GN.specificaties/GN.WFW/Feiten en regels WFW">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="89">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="2220">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="239" />
+                <property name="caretXRelative" value="88" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_defaultScope" cellNumber="0" isInList="false">
-                  <node node_reference="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" />
+                <cellInfo cellId="ReadOnlyModelAccessor_k54vqh_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997806917" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorMarkers />
             <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910550475667" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
+            <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:9f6176ba-5663-4d9d-9be7-4ddd331483f9(GN.WFW)/9065124544997806917" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -3508,7 +3477,6 @@
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
             </enabledHints>
           </inspectorMemento>
-          <node node_ref="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints)/7216817910543080591" />
         </state>
       </provider>
     </entry>
