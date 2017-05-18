@@ -18,22 +18,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f2805d-4538-46c3-a016-7128ec7e185d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/EnumeratieWaarde_Constraints$1$1$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/EnumeratieWaarde_Constraints$1$1$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/EnumeratieWaarde_Constraints$1$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/EnumeratieWaarde_Constraints$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/EnumeratieWaarde_Constraints.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/WaardeVanKenmerk_Tabel_Editor$waardeSingleRoleHandler_t7jeuw_a0.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/WaardeVanKenmerk_Tabel_Editor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/EnumeratieWaarde_Constraints.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/WaardeVanKenmerk_Tabel_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ConstraintsAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ConstraintsAspectDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1$1.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1$2.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$11.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor$11.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$geldigTotSingleRoleHandler_yhtdgo_f0.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$geldigTotSingleRoleHandler_yhtdgo_f0.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$geldigVanSingleRoleHandler_yhtdgo_c0.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor$geldigVanSingleRoleHandler_yhtdgo_c0.class" />
@@ -46,47 +30,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/plugin/Interpreter.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/plugin/Interpreter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/plugin/InterpreterFuncties$1.class" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/plugin/InterpreterFuncties$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/constraints.mps" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/constraints.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/editor.mps" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/constraints/dependencies" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/constraints/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/constraints/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/constraints/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/dependencies" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/ConstraintsAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/ConstraintsAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/EditorAspectDescriptorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/TabelMetInstanties_Tabel_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/behavior/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/plugin/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/plugin/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/models/editor.mps" afterPath="$PROJECT_DIR$/languages/Simulatie/models/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/models/structure.mps" afterPath="$PROJECT_DIR$/languages/Simulatie/models/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/dependencies" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/structure/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/behavior/Simulatie__BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol1_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol2_Editor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Rechtsbetrekking_RechtspositieRol2_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Simulatie_Editor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Simulatie_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/UitTeVoerenDialoog_Editor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/UitTeVoerenDialoog_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/UitvoerbareRechtshandeling_HandelingenRol1_Editor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/UitvoerbareRechtshandeling_HandelingenRol1_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/UitvoerbareRechtshandeling_HandelingenRol2_Editor.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/UitvoerbareRechtshandeling_HandelingenRol2_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/plugin/Interpreter.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/plugin/Interpreter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/plugin/InterpreterFuncties.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/plugin/InterpreterFuncties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/plugin/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/plugin/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/AWB/Presentatie AWB.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/AWB/Presentatie AWB.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WFW/Gegevenshuishouding WFW.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WFW/Gegevenshuishouding WFW.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/models/GN/WAA.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen.caches/GN/WAA/generated" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen.caches/GN/WAA/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Gegevenshuishouding WAA.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Gegevenshuishouding WAA.xml" />
     </list>
     <ignored path="DeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -662,6 +608,60 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/GN.specificaties/GN.specificaties.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Simulatie/models/editor.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:516f69e8-d332-4ecb-b3a2-f14c7ad25337(Simulatie.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Simulatie/models/structure.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -671,30 +671,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="RechtsgevolgVeroorzakers" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/solutions/GN.specificaties/GN.specificaties.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -722,41 +698,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Simulatie/models/editor.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="$PROJECT_DIR$/solutions/GN.specificaties/GN.specificaties.msd" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:516f69e8-d332-4ecb-b3a2-f14c7ad25337(Simulatie.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Simulatie/models/structure.mps}" />
+              <option name="myItemId" value="GN" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -2081,7 +2027,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactor sandbox naar specificaties" />
     <MESSAGE value="Refactor GN.runtime" />
     <MESSAGE value="Refactor GN.specificaties" />
     <MESSAGE value="Refactor ObjectiefRecht" />
@@ -2106,7 +2051,8 @@
     <MESSAGE value="Optimalisatie dialoog" />
     <MESSAGE value="Referentie naar instanties" />
     <MESSAGE value="WFW toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="WFW toegevoegd" />
+    <MESSAGE value="Aanpassingen Simulatie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aanpassingen Simulatie" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://GN.specificaties/GN.WAA/Simulatie WAA">
