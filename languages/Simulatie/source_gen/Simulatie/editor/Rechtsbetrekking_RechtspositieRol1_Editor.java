@@ -38,12 +38,6 @@ import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
-import javax.swing.JComponent;
-import org.campagnelab.ui.code.Swing.ButtonCallback;
-import Simulatie.behavior.Simulatie__BehaviorDescriptor;
-import Simulatie.plugin.Interpreter;
-import org.campagnelab.ui.code.Swing.Button;
 
 public class Rechtsbetrekking_RechtspositieRol1_Editor extends DefaultNodeEditor {
   private Collection<String> myContextHints = Arrays.asList(new String[]{"Simulatie.editor.Simulatie.RechtspositieRol1"});
@@ -226,9 +220,8 @@ public class Rechtsbetrekking_RechtspositieRol1_Editor extends DefaultNodeEditor
     editorCell.addEditorCell(this.createConstant_yhtdgo_l5a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_yhtdgo_m5a0(editorContext, node));
     editorCell.addEditorCell(this.createReadOnlyModelAccessor_yhtdgo_n5a0(editorContext, node));
-    editorCell.addEditorCell(this.createJComponent_yhtdgo_o5a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_yhtdgo_o5a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_yhtdgo_p5a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_yhtdgo_q5a0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_yhtdgo_a5a0(EditorContext editorContext, SNode node) {
@@ -855,41 +848,18 @@ public class Rechtsbetrekking_RechtspositieRol1_Editor extends DefaultNodeEditor
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
-  private EditorCell createJComponent_yhtdgo_o5a0(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = EditorCell_Component.createComponentCell(editorContext, node, Rechtsbetrekking_RechtspositieRol1_Editor._QueryFunction_JComponent_yhtdgo_a41f0a(node, editorContext), "_yhtdgo_o5a0");
-    editorCell.setCellId("JComponent_yhtdgo_o5a0");
-    return editorCell;
-  }
-  private static JComponent _QueryFunction_JComponent_yhtdgo_a41f0a(final SNode node, final EditorContext editorContext) {
-    ButtonCallback callback = new ButtonCallback(node, editorContext) {
-      public void process(final SNode n, final EditorContext editorContext) {
-        {
-          final SNode node = ((SNode) n);
-          SNode simulatie = (SNode) SNodeOperations.getParent(SNodeOperations.getParent(node));
-          Simulatie__BehaviorDescriptor.schoonBerichten_idCRumITE5PD.invoke(simulatie);
-          Interpreter.schoonBerichten();
-          Object object = Interpreter.evalueer(simulatie, node);
-          SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a880L, "evaluatielog"), Interpreter.geefLijstMetBerichten());
-          SLinkOperations.setTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0xa37796bb99d9ab4L, "lijstmetberichten"), Interpreter.geefLijstMetBerichten());
-          SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a786L, "evaluatieresultaat"), "" + (((Boolean) object)));
-        }
-      }
-    };
-    return Button.createButton("Evalueer", editorContext, node, callback);
-
-  }
-  private EditorCell createConstant_yhtdgo_p5a0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_yhtdgo_o5a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_yhtdgo_p5a0");
+    editorCell.setCellId("Constant_yhtdgo_o5a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_yhtdgo_q5a0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_yhtdgo_p5a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_yhtdgo_q5a0");
+    editorCell.setCellId("Constant_yhtdgo_p5a0");
     editorCell.setDefaultText("");
     return editorCell;
   }

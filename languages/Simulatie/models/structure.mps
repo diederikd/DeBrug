@@ -61,6 +61,7 @@
       <property role="20kJfa" value="casus" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="gcgs:6c9haf45sNq" resolve="Casus" />
+      <node concept="asaX9" id="2p7xNfuIQvS" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="CRumIU1794" role="1TKVEi">
       <property role="IQ2ns" value="736190567687680580" />

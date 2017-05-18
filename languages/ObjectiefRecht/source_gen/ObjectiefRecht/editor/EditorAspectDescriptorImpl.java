@@ -539,7 +539,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 102:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new WaardeVanKenmerk_Editor());
+            return Arrays.asList(new ConceptEditor[]{new WaardeVanKenmerk_Editor(), new WaardeVanKenmerk_Tabel_Editor()});
           }
           break;
         case 103:

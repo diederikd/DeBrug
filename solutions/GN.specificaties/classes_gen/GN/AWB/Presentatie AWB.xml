@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <presentatie>
-    ???    ???    <dialoog typeid='6606770165423411795' name='Indienen aanvraag' >
+<object type='onderwerp' typeid='6606770165423411622' naam='Aanvraag' >
+</object>
+    <object type='rechtsbetrekking' naam='' >
+      </object>    <object type='rechtshandeling' naam='' >
+      </object>
+    <dialoog typeid='6606770165423411795' name='Indienen aanvraag' >
       <rechtshandelingtypes>
       </rechtshandelingtypes>
     </dialoog>

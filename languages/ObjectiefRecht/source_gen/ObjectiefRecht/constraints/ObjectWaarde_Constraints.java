@@ -48,6 +48,7 @@ public class ObjectWaarde_Constraints extends BaseConstraintsDescriptor {
           public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             List<SNode> LijstMetinstantiesVanObjecten = new ArrayList<SNode>();
             final Wrappers._T<SNode> ReferentieNaarobject = new Wrappers._T<SNode>(null);
+            SNode referentienaarEnumeratie = null;
 
             System.out.println("Exists " + _context.isExists());
             System.out.println("Referencenode " + _context.getReferenceNode());

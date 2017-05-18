@@ -45,7 +45,7 @@
         </instantie>
     </rechtssubjecten>
     <rechtssubjecten naam='werkgever' typeid='9065124544997704768'>
-        <instantie naam='Esssent' id='9065124544997809736'>
+        <instantie naam='Essent' id='9065124544997809736'>
             <kenmerken>
               <kenmerk id='9065124544997704770' naam='werkgeversidentificatie'>3</kenmerk>
               <kenmerk id='9065124544997704774' naam='naam'>Essent</kenmerk>
@@ -330,7 +330,7 @@
           <objectieveRechtsbetrekkingtypeid>9065124544997705584</objectieveRechtsbetrekkingtypeid>
           <objectieveRechtsbetrekkingtypenaam>optionele bevoegheid om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</objectieveRechtsbetrekkingtypenaam>
           <onderwerpid>9065124544997809461</onderwerpid>
-          <rechtssubjectMetPlichtid>9065124544997704831</rechtssubjectMetPlichtid>
+          <rechtssubjectMetPlichtid>9065124544997809736</rechtssubjectMetPlichtid>
           <rechtssubjectMetRechtid>9065124544997779737</rechtssubjectMetRechtid>
         </instantie>
         <instantie id='9065124544997706752'>
@@ -357,6 +357,28 @@ en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
           <rechtssubjectMetPlichtid>9065124544997809888</rechtssubjectMetPlichtid>
           <rechtssubjectMetRechtid>9065124544997780036</rechtssubjectMetRechtid>
         </instantie>
+        <instantie id='20034979626500681'>
+          <geldigVan>2002-10-13T17:24:25</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>20034979626500671</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Indienen verzoek aanpassing arbeidsduur</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>9065124544997705630</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Bevoegdheid om de handeling te accepteren</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>9065124544997811491</onderwerpid>
+          <rechtssubjectMetPlichtid>9065124544997779737</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>9065124544997809736</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='20034979626500689'>
+          <geldigVan>2002-10-13T17:24:25</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>20034979626500671</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Indienen verzoek aanpassing arbeidsduur</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>9065124544997705633</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Bevoegdheid om de handeling niet te accepteren</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>9065124544997811491</onderwerpid>
+          <rechtssubjectMetPlichtid>9065124544997779737</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>9065124544997809736</rechtssubjectMetRechtid>
+        </instantie>
       </rechtsbetrekkingen>
     <rechtshandelingen>
         <instantie id='9065124544997706732'>
@@ -382,6 +404,14 @@ en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
           <actorid>9065124544997704969</actorid>
           <onderwerpid>9065124544997811491</onderwerpid>
           <rechtsbetrekkingid>9065124544997706756</rechtsbetrekkingid>
+        </instantie>
+        <instantie id='20034979626500671'>
+          <handelingObjectiefRechttypeid>9065124544997705734</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Indienen verzoek aanpassing arbeidsduur</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2002-10-13T17:24:13</uitgevoerdop>
+          <actorid>9065124544997779737</actorid>
+          <onderwerpid>9065124544997811491</onderwerpid>
+          <rechtsbetrekkingid>20034979626498671</rechtsbetrekkingid>
         </instantie>
       </rechtshandelingen>
 </gegevenshuishouding>

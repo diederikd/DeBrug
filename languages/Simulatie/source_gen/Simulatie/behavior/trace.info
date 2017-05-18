@@ -159,11 +159,11 @@
       <node id="2222626598059980159" at="103,226,104,190" concept="2" />
       <node id="6551471093229569532" at="106,109,107,21" concept="6" />
       <node id="6551471093232099933" at="108,451,109,45" concept="2" />
-      <node id="8120684925530121105" at="111,9,112,229" concept="6" />
+      <node id="8120684925530121105" at="111,9,112,215" concept="6" />
       <node id="6551471093229569551" at="113,196,114,208" concept="2" />
       <node id="6551471093234673244" at="114,208,115,208" concept="2" />
       <node id="6551471093229569571" at="115,208,116,23" concept="2" />
-      <node id="8120684925530126464" at="121,9,122,229" concept="6" />
+      <node id="8120684925530126464" at="121,9,122,215" concept="6" />
       <node id="6551471093229569562" at="124,282,125,210" concept="2" />
       <node id="6551471093234675016" at="125,210,126,210" concept="2" />
       <node id="8120684925530119786" at="126,210,127,25" concept="2" />
@@ -573,7 +573,7 @@
       <node id="3694879098876038694" at="717,0,721,0" concept="5" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
       <node id="3694879098876038694" at="796,5,800,5" concept="13" />
       <node id="3694879098876038694" at="101,0,106,0" concept="11" trace="SchoonSimulatie_id3d6QfrgEDkp#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="8120684925530121105" at="112,229,117,11" concept="4" />
+      <node id="8120684925530121105" at="112,215,117,11" concept="4" />
       <node id="8120684925530129374" at="123,196,128,13" concept="4" />
       <node id="1226838851585488770" at="157,413,162,7" concept="4" />
       <node id="6995162615680523767" at="203,254,208,13" concept="4" />
@@ -600,7 +600,7 @@
       <node id="3619440740532836508" at="494,89,500,13" concept="4" />
       <node id="4240088522976472339" at="517,89,523,13" concept="4" />
       <node id="2677844167544723019" at="576,30,582,5" concept="0" />
-      <node id="8120684925530126464" at="122,229,129,11" concept="4" />
+      <node id="8120684925530126464" at="122,215,129,11" concept="4" />
       <node id="2719671791666106069" at="277,77,284,9" concept="0" />
       <node id="6995162615678658013" at="284,9,291,9" concept="0" />
       <node id="3234945888386661673" at="291,9,298,9" concept="0" />

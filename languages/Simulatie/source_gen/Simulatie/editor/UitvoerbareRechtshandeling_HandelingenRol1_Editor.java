@@ -14,10 +14,10 @@ import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
+import ObjectiefRecht.behavior.Overgang__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import ObjectiefRecht.behavior.Overgang__BehaviorDescriptor;
+import ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.module.SModule;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
@@ -81,16 +81,8 @@ public class UitvoerbareRechtshandeling_HandelingenRol1_Editor extends DefaultNo
   private static boolean renderingCondition_e0ej5n_a0a(SNode node, EditorContext editorContext) {
     SNode simulatie;
     simulatie = (SNode) SNodeOperations.getParent(node);
-    SNode rechtssubject = null;
-    Integer index = 1;
-    for (SNode subject : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae782faL, "casus")), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, 0x464e588a6ffd4a79L, "rechtssubjecten")))) {
-      if (index == 1) {
-        rechtssubject = subject;
-      }
-      index++;
-    }
     boolean show = false;
-    if (Overgang__BehaviorDescriptor.GeefActorString_id7tRkx91j0fu.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "overgang"))) == SPropertyOperations.getString(SLinkOperations.getTarget(rechtssubject, MetaAdapterFactory.getReferenceLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88bL, 0x22327bed0059c24cL, "rol")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"))) {
+    if (Overgang__BehaviorDescriptor.GeefActor_id3FnOwJNU89l.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL, 0x3346d8f6cfb01e1dL, "overgang"))) == InstantieVanObject__BehaviorDescriptor.GeefObject_id4f9cC5bR2h.invoke(SLinkOperations.getTarget(simulatie, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae8257fL, "rechtssubject1")))) {
       show = true;
     }
     return show;
