@@ -57,9 +57,21 @@ public class Voorwaarden_Editor extends DefaultNodeEditor {
           }
         }
         {
+          final SNode tijdsverloopMetRechtsgevolg = SNodeOperations.getParent(node);
+          if (SNodeOperations.isInstanceOf(tijdsverloopMetRechtsgevolg, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d40L, "ObjectiefRecht.structure.TijdsverloopMetRechtsgevolg"))) {
+            return "is geldig indien wordt voldaan aan";
+          }
+        }
+        {
           final SNode rechtshandeling = SNodeOperations.getParent(node);
           if (SNodeOperations.isInstanceOf(rechtshandeling, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"))) {
             return "rechtshandeling kan rechtens worden uitgevoerd wanneer wordt voldaan aan";
+          }
+        }
+        {
+          final SNode afleidingsregel = SNodeOperations.getParent(node);
+          if (SNodeOperations.isInstanceOf(afleidingsregel, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f5482a07c0bL, "ObjectiefRecht.structure.Afleidingsregel"))) {
+            return "als wordt voldaan aan";
           }
         }
         return "";
@@ -138,6 +150,18 @@ public class Voorwaarden_Editor extends DefaultNodeEditor {
         {
           final SNode rechtshandeling = SNodeOperations.getParent(node);
           if (SNodeOperations.isInstanceOf(rechtshandeling, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL, "ObjectiefRecht.structure.Rechtshandeling"))) {
+            return "volgende voorwaarden";
+          }
+        }
+        {
+          final SNode tijdsverloopMetRechtsgevolg = SNodeOperations.getParent(node);
+          if (SNodeOperations.isInstanceOf(tijdsverloopMetRechtsgevolg, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d40L, "ObjectiefRecht.structure.TijdsverloopMetRechtsgevolg"))) {
+            return "volgende voorwaarden";
+          }
+        }
+        {
+          final SNode afleidingsregel = SNodeOperations.getParent(node);
+          if (SNodeOperations.isInstanceOf(afleidingsregel, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x22123f5482a07c0bL, "ObjectiefRecht.structure.Afleidingsregel"))) {
             return "volgende voorwaarden";
           }
         }

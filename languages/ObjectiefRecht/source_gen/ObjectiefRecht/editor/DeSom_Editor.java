@@ -143,7 +143,7 @@ public class DeSom_Editor extends DefaultNodeEditor {
     public EditorCell createCell() {
       try {
         myEditorContext.getCellFactory().pushCellContext();
-        myEditorContext.getCellFactory().addCellContextHints(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.ZonderLidwoord"});
+        myEditorContext.getCellFactory().addCellContextHints(new String[]{"ObjectiefRecht.editor.Hints_ObjectiefRecht.ZonderLidwoord"});
         myEditorContext.getCellFactory().removeCellContextHints();
         return super.createCell();
       } finally {
@@ -211,7 +211,7 @@ public class DeSom_Editor extends DefaultNodeEditor {
     public EditorCell createCell() {
       try {
         myEditorContext.getCellFactory().pushCellContext();
-        myEditorContext.getCellFactory().addCellContextHints(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.ZonderLidwoord"});
+        myEditorContext.getCellFactory().addCellContextHints(new String[]{"ObjectiefRecht.editor.Hints_ObjectiefRecht.ZonderLidwoord"});
         myEditorContext.getCellFactory().removeCellContextHints();
         return super.createCell();
       } finally {

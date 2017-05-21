@@ -20,7 +20,7 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 public class ReferentieNaarKenmerk_ZonderLidwoord_Editor extends DefaultNodeEditor {
-  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.ZonderLidwoord"});
+  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.Hints_ObjectiefRecht.ZonderLidwoord"});
   @Override
   @NotNull
   public Collection<String> getContextHints() {

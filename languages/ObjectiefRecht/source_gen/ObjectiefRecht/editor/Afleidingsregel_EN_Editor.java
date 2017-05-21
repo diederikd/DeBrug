@@ -30,7 +30,7 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
 public class Afleidingsregel_EN_Editor extends DefaultNodeEditor {
-  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.EN"});
+  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.Hints_ObjectiefRecht.EN"});
   @Override
   @NotNull
   public Collection<String> getContextHints() {

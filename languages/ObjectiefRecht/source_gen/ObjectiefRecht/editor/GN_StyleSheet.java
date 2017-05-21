@@ -67,6 +67,11 @@ public class GN_StyleSheet {
     style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);
     style.set(StyleAttributes.UNDERLINED, 0, true);
   }
+  public static void apply_Koptekst(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    style.set(StyleAttributes.FONT_SIZE, 0, 16);
+  }
   public static void apply_VerwoordingKenmerkwaarde(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());

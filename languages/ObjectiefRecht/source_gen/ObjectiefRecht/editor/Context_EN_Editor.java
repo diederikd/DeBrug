@@ -34,7 +34,7 @@ import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 
 public class Context_EN_Editor extends DefaultNodeEditor {
-  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.EN"});
+  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.Hints_ObjectiefRecht.EN"});
   @Override
   @NotNull
   public Collection<String> getContextHints() {

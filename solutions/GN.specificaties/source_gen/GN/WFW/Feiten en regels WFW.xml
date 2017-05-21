@@ -16784,7 +16784,7 @@ van de werknemer te neutraliseren.</nodename>
                   <noderole>voorwaarden</noderole>
                   <nodetype>ExpressieVoorwaarde</nodetype>
                   <nodename></nodename>
-                  <nodeid>9065124544997705706</nodeid>
+                  <nodeid>2758321953642151588</nodeid>
                     <properties>
                         <property name='alias'></property>
                         <property name='name'></property>
@@ -16792,21 +16792,59 @@ van de werknemer te neutraliseren.</nodename>
                     <children>
                       <node>
                         <noderole>expressie</noderole>
-                        <nodetype>ErIsEen</nodetype>
-                        <nodeid>9065124544997705707</nodeid>
+                        <nodetype>IsNietGelijk</nodetype>
+                        <nodeid>2758321953642151726</nodeid>
                           <properties>
                               <property name='alias'></property>
                           </properties>
-                          <references>
-                            <reference role='object'>
-                              <node>
-                                <noderole>enumeraties</noderole>
-                                <nodetype>Enumeratie</nodetype>
-                                <nodename>criteria t.a.v. vermindering</nodename>
-                                <nodeid>9065124544997704754</nodeid>
-                              </node>
-                            </reference>
-                          </references>
+                          <children>
+                            <node>
+                              <noderole>expressie1</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>2758321953642151863</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>2758321953642151997</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>feiten bij vermindering</nodename>
+                                            <nodeid>9065124544997705235</nodeid>
+                                          </node>
+                                        </reference>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                            <node>
+                              <noderole>expressie2</noderole>
+                              <nodetype>EnumeratieWaarde</nodetype>
+                              <nodeid>2758321953642152128</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <references>
+                                  <reference role='element'>
+                                    <node>
+                                      <noderole>elementen</noderole>
+                                      <nodetype>EnumeratieElement</nodetype>
+                                      <nodename>geen feiten bij vermindering</nodename>
+                                      <nodeid>9065124544997704759</nodeid>
+                                    </node>
+                                  </reference>
+                                </references>
+                            </node>
+                          </children>
                       </node>
                     </children>
                 </node>
@@ -16971,7 +17009,7 @@ van de werknemer te neutraliseren.</nodename>
                   <noderole>voorwaarden</noderole>
                   <nodetype>ExpressieVoorwaarde</nodetype>
                   <nodename></nodename>
-                  <nodeid>9065124544997705722</nodeid>
+                  <nodeid>2758321953642152393</nodeid>
                     <properties>
                         <property name='alias'></property>
                         <property name='name'></property>
@@ -16979,21 +17017,59 @@ van de werknemer te neutraliseren.</nodename>
                     <children>
                       <node>
                         <noderole>expressie</noderole>
-                        <nodetype>ErIsEen</nodetype>
-                        <nodeid>9065124544997705723</nodeid>
+                        <nodetype>IsNietGelijk</nodetype>
+                        <nodeid>2758321953642152531</nodeid>
                           <properties>
                               <property name='alias'></property>
                           </properties>
-                          <references>
-                            <reference role='object'>
-                              <node>
-                                <noderole>enumeraties</noderole>
-                                <nodetype>Enumeratie</nodetype>
-                                <nodename>criteria t.a.v. vermeerdering</nodename>
-                                <nodeid>9065124544997704761</nodeid>
-                              </node>
-                            </reference>
-                          </references>
+                          <children>
+                            <node>
+                              <noderole>expressie1</noderole>
+                              <nodetype>Variabele</nodetype>
+                              <nodeid>2758321953642152668</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <children>
+                                  <node>
+                                    <noderole>kenmerk</noderole>
+                                    <nodetype>ReferentieNaarKenmerk</nodetype>
+                                    <nodeid>2758321953642152802</nodeid>
+                                      <properties>
+                                          <property name='alias'></property>
+                                      </properties>
+                                      <references>
+                                        <reference role='kenmerk'>
+                                          <node>
+                                            <noderole>kenmerk</noderole>
+                                            <nodetype>Kenmerk</nodetype>
+                                            <nodename>feiten bij vermeerdering</nodename>
+                                            <nodeid>9065124544997705239</nodeid>
+                                          </node>
+                                        </reference>
+                                      </references>
+                                  </node>
+                                </children>
+                            </node>
+                            <node>
+                              <noderole>expressie2</noderole>
+                              <nodetype>EnumeratieWaarde</nodetype>
+                              <nodeid>2758321953642152933</nodeid>
+                                <properties>
+                                    <property name='alias'></property>
+                                </properties>
+                                <references>
+                                  <reference role='element'>
+                                    <node>
+                                      <noderole>elementen</noderole>
+                                      <nodetype>EnumeratieElement</nodetype>
+                                      <nodename>geen feiten bij vermeerdering</nodename>
+                                      <nodeid>9065124544997704766</nodeid>
+                                    </node>
+                                  </reference>
+                                </references>
+                            </node>
+                          </children>
                       </node>
                     </children>
                 </node>

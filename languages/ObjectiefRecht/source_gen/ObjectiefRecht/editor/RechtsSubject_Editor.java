@@ -380,7 +380,7 @@ public class RechtsSubject_Editor extends DefaultNodeEditor {
     protected void createInnerCells(SNode node, EditorContext editorContext) {
       try {
         editorContext.getCellFactory().pushCellContext();
-        editorContext.getCellFactory().addCellContextHints(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.Kort"});
+        editorContext.getCellFactory().addCellContextHints(new String[]{"ObjectiefRecht.editor.Hints_ObjectiefRecht.Kort"});
         editorContext.getCellFactory().removeCellContextHints();
         super.createInnerCells(node, editorContext);
       } finally {
@@ -458,7 +458,7 @@ public class RechtsSubject_Editor extends DefaultNodeEditor {
     public EditorCell createCell() {
       try {
         myEditorContext.getCellFactory().pushCellContext();
-        myEditorContext.getCellFactory().addCellContextHints(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.Tabel"});
+        myEditorContext.getCellFactory().addCellContextHints(new String[]{"ObjectiefRecht.editor.Hints_ObjectiefRecht.Tabel"});
         myEditorContext.getCellFactory().removeCellContextHints();
         return super.createCell();
       } finally {

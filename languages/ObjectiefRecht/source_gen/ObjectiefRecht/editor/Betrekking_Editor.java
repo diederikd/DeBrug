@@ -78,7 +78,7 @@ public class Betrekking_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_fyoso7_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Status");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "betrekking");
     editorCell.setCellId("Constant_fyoso7_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);

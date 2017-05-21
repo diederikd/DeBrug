@@ -33,7 +33,7 @@ import de.slisson.mps.editor.multiline.cellProviders.MultilineCellProvider;
 import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
 public class TijdsverloopMetRechtsgevolg_EN_Editor extends DefaultNodeEditor {
-  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.ObjectiefRecht.EN"});
+  private Collection<String> myContextHints = Arrays.asList(new String[]{"ObjectiefRecht.editor.Hints_ObjectiefRecht.EN"});
   @Override
   @NotNull
   public Collection<String> getContextHints() {

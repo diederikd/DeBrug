@@ -230,6 +230,10 @@
         <child id="2455094379071699982" name="resultaat" index="2wG$dq" />
         <child id="2455094379071731550" name="bron" index="2wGGwa" />
       </concept>
+      <concept id="561684233592303789" name="ObjectiefRecht.structure.IsNietGelijk" flags="ng" index="2$ZR1S">
+        <child id="561684233592303791" name="expressie2" index="2$ZR1U" />
+        <child id="561684233592303790" name="expressie1" index="2$ZR1V" />
+      </concept>
       <concept id="4535249207446922485" name="ObjectiefRecht.structure.ReferentieNaarWaardeVanKenmerk" flags="ng" index="BjDnl">
         <reference id="4535249207446922486" name="waardevankenmerk" index="BjDnm" />
       </concept>
@@ -3393,9 +3397,16 @@
             </node>
           </node>
         </node>
-        <node concept="12OPpU" id="7RdMFUtgOvE" role="KfA2B">
-          <node concept="mVctU" id="7RdMFUtgOvF" role="12O34u">
-            <ref role="mVcty" node="7RdMFUtgOgM" resolve="criteria t.a.v. vermindering" />
+        <node concept="12OPpU" id="2p7xNfv07U$" role="KfA2B">
+          <node concept="2$ZR1S" id="2p7xNfv07WI" role="12O34u">
+            <node concept="25iA__" id="2p7xNfv07YR" role="2$ZR1V">
+              <node concept="2mbrj6" id="2p7xNfv080X" role="12b92R">
+                <ref role="2mbrj7" node="7RdMFUtgOoj" resolve="feiten bij vermindering" />
+              </node>
+            </node>
+            <node concept="1zyu0$" id="2p7xNfv0830" role="2$ZR1U">
+              <ref role="1zyu0_" node="7RdMFUtgOgR" resolve="geen feiten bij vermindering" />
+            </node>
           </node>
         </node>
         <node concept="3l_DdQ" id="7RdMFUtgOvG" role="3l_JsU" />
@@ -3433,9 +3444,16 @@
             </node>
           </node>
         </node>
-        <node concept="12OPpU" id="7RdMFUtgOvU" role="KfA2B">
-          <node concept="mVctU" id="7RdMFUtgOvV" role="12O34u">
-            <ref role="mVcty" node="7RdMFUtgOgT" resolve="criteria t.a.v. vermeerdering" />
+        <node concept="12OPpU" id="2p7xNfv0879" role="KfA2B">
+          <node concept="2$ZR1S" id="2p7xNfv089j" role="12O34u">
+            <node concept="25iA__" id="2p7xNfv08bs" role="2$ZR1V">
+              <node concept="2mbrj6" id="2p7xNfv08dy" role="12b92R">
+                <ref role="2mbrj7" node="7RdMFUtgOon" resolve="feiten bij vermeerdering" />
+              </node>
+            </node>
+            <node concept="1zyu0$" id="2p7xNfv08f_" role="2$ZR1U">
+              <ref role="1zyu0_" node="7RdMFUtgOgY" resolve="geen feiten bij vermeerdering" />
+            </node>
           </node>
         </node>
         <node concept="3l_DdQ" id="7RdMFUtgOvW" role="3l_JsU" />

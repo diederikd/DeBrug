@@ -19,7 +19,7 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
-  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Kort", "", false, "ObjectiefRecht.editor.ObjectiefRecht.Kort"), new ConceptEditorHintImpl("MetLidwoord", "", false, "ObjectiefRecht.editor.ObjectiefRecht.MetLidwoord"), new ConceptEditorHintImpl("ZonderLidwoord", "", false, "ObjectiefRecht.editor.ObjectiefRecht.ZonderLidwoord"), new ConceptEditorHintImpl("EN", "English", true, "ObjectiefRecht.editor.ObjectiefRecht.EN"), new ConceptEditorHintImpl("Tabel", "", false, "ObjectiefRecht.editor.ObjectiefRecht.Tabel"));
+  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Kort", "", false, "ObjectiefRecht.editor.Hints_ObjectiefRecht.Kort"), new ConceptEditorHintImpl("MetLidwoord", "", false, "ObjectiefRecht.editor.Hints_ObjectiefRecht.MetLidwoord"), new ConceptEditorHintImpl("ZonderLidwoord", "", false, "ObjectiefRecht.editor.Hints_ObjectiefRecht.ZonderLidwoord"), new ConceptEditorHintImpl("EN", "English", true, "ObjectiefRecht.editor.Hints_ObjectiefRecht.EN"), new ConceptEditorHintImpl("Tabel", "", false, "ObjectiefRecht.editor.Hints_ObjectiefRecht.Tabel"), new ConceptEditorHintImpl("Verwoording", "", true, "ObjectiefRecht.editor.Hints_ObjectiefRecht.Verwoording"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {
@@ -29,7 +29,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       switch (switchIndex) {
         case 0:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new AanspraakNaIngebrekeStellingPlicht_EN_Editor(), new AanspraakNaIngebrekeStellingPlicht_Editor()});
+            return Arrays.asList(new ConceptEditor[]{new AanspraakNaIngebrekeStellingPlicht_EN_Editor(), new AanspraakNaIngebrekeStellingPlicht_Editor(), new AanspraakNaIngebrekeStellingPlicht_Verwoording_Editor()});
           }
           break;
         case 1:
@@ -49,7 +49,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 4:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Betrekking_Editor());
+            return Arrays.asList(new ConceptEditor[]{new Betrekking_Editor(), new Betrekking_Verwoording_Editor()});
           }
           break;
         case 5:
@@ -169,7 +169,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 28:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new ImmuniteitGeenbevoegdheid_EN_Editor(), new ImmuniteitGeenbevoegdheid_Editor()});
+            return Arrays.asList(new ConceptEditor[]{new ImmuniteitGeenbevoegdheid_EN_Editor(), new ImmuniteitGeenbevoegdheid_Editor(), new ImmuniteitGeenbevoegdheid_Verwoording_Editor()});
           }
           break;
         case 29:
@@ -239,7 +239,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 42:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new KrachtigeAanspraakFataleVerplichtig_EN_Editor(), new KrachtigeAanspraakFataleVerplichtig_Editor()});
+            return Arrays.asList(new ConceptEditor[]{new KrachtigeAanspraakFataleVerplichtig_EN_Editor(), new KrachtigeAanspraakFataleVerplichtig_Editor(), new KrachtigeAanspraakFataleVerplichtig_Verwoording_Editor()});
           }
           break;
         case 43:
@@ -319,7 +319,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 58:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new OptioneleBevoegdheidOptioneleGehoudenheid_EN_Editor(), new OptioneleBevoegdheidOptioneleGehoudenheid_Editor()});
+            return Arrays.asList(new ConceptEditor[]{new OptioneleBevoegdheidOptioneleGehoudenheid_EN_Editor(), new OptioneleBevoegdheidOptioneleGehoudenheid_Editor(), new OptioneleBevoegdheidOptioneleGehoudenheid_Verwoording_Editor()});
           }
           break;
         case 59:
@@ -479,7 +479,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 90:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor(), new VerplichteBevoegdheidVerplichteGehoudenheid_Editor()});
+            return Arrays.asList(new ConceptEditor[]{new VerplichteBevoegdheidVerplichteGehoudenheid_EN_Editor(), new VerplichteBevoegdheidVerplichteGehoudenheid_Editor(), new VerplichteBevoegdheidVerplichteGehoudenheid_Verwoording_Editor()});
           }
           break;
         case 91:
@@ -544,7 +544,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
           break;
         case 103:
           if (true) {
-            return Arrays.asList(new ConceptEditor[]{new ZwakkeAanspraakZwakkePlicht_EN_Editor(), new ZwakkeAanspraakZwakkePlicht_Editor()});
+            return Arrays.asList(new ConceptEditor[]{new ZwakkeAanspraakZwakkePlicht_EN_Editor(), new ZwakkeAanspraakZwakkePlicht_Editor(), new ZwakkeAanspraakZwakkePlicht_Verwoording_Editor()});
           }
           break;
         case 104:
