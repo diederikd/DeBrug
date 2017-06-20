@@ -111,7 +111,7 @@
   </node>
   <node concept="1TIwiD" id="1KpaLv9ASFO">
     <property role="EcuMT" value="2024696888646404852" />
-    <property role="TrG5h" value="VerschilTussen" />
+    <property role="TrG5h" value="VerschilTussenDatums" />
     <property role="3GE5qa" value="Functies" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1KpaLv9ASG7" role="1TKVEi">

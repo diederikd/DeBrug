@@ -17,11 +17,11 @@ import org.jetbrains.mps.openapi.model.SNodeReference;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
-import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
-import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import java.util.List;
+import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
@@ -52,21 +52,21 @@ public class EnumeratieWaarde_Constraints extends BaseConstraintsDescriptor {
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             {
+              final SNode enclosingNode = (((_context.getReferenceNode() == null) ? _context.getContextNode() : SNodeOperations.getParent(_context.getReferenceNode())));
+              final boolean exists = (SLinkOperations.getTarget(_context.getReferenceNode(), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7da9e4c64537e68L, 0x7da9e4c64537e69L, "element")) != null);
               List<SNode> LijstMetElementen = new ArrayList<SNode>();
               SNode ReferentieNaarEnumeratie = null;
 
-              System.out.println("Exists " + _context.isExists());
+              System.out.println("Exists " + exists);
               System.out.println("Referencenode " + _context.getReferenceNode());
               System.out.println("ContextNode " + _context.getContextNode());
-              System.out.println("ContextRole " + _context.getContextRole());
-              System.out.println("ContainingLink " + _context.getLinkTarget());
-              System.out.println("Enclosingnode " + _context.getEnclosingNode());
-              System.out.println("Model " + _context.getModel());
+              System.out.println("Enclosingnode " + enclosingNode);
+              System.out.println("Model " + SNodeOperations.getModel(_context.getContextNode()));
               System.out.println("Position " + _context.getPosition());
 
-              if (_context.isExists()) {
+              if (exists) {
                 {
-                  final SNode waardeVanKenmerk = _context.getEnclosingNode();
+                  final SNode waardeVanKenmerk = enclosingNode;
                   if (SNodeOperations.isInstanceOf(waardeVanKenmerk, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, "ObjectiefRecht.structure.WaardeVanKenmerk"))) {
                     ReferentieNaarEnumeratie = SLinkOperations.getTarget(((SNode) SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"))), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25be3715c7bbb713L, 0x25be3715c7bbb714L, "enumeratie"));
                     System.out.println("Referentie naar enumeratie " + ReferentieNaarEnumeratie);
@@ -77,9 +77,9 @@ public class EnumeratieWaarde_Constraints extends BaseConstraintsDescriptor {
                 }
               }
 
-              if (!(_context.isExists())) {
+              if (!(exists)) {
                 {
-                  final SNode waardeVanKenmerk = _context.getEnclosingNode();
+                  final SNode waardeVanKenmerk = enclosingNode;
                   if (SNodeOperations.isInstanceOf(waardeVanKenmerk, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, "ObjectiefRecht.structure.WaardeVanKenmerk"))) {
                     ReferentieNaarEnumeratie = SLinkOperations.getTarget(((SNode) SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(waardeVanKenmerk, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2c9f8L, "kenmerk")), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")), MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cef8883L, 0x56b967d6675a268fL, "type"))), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25be3715c7bbb713L, 0x25be3715c7bbb714L, "enumeratie"));
                     System.out.println("Referentie naar enumeratie " + ReferentieNaarEnumeratie);

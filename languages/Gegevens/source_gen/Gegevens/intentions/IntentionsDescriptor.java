@@ -11,7 +11,9 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 import java.util.Arrays;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
+import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class IntentionsDescriptor extends IntentionAspectBase {
   private static final IntentionFactory[] EMPTY_ARRAY = new IntentionFactory[0];
@@ -27,49 +29,44 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
     }
 
     IntentionFactory[] intentions = EMPTY_ARRAY;
-    {
-      SAbstractConcept cncpt = concept;
-      Integer preIndex = indices_hphjzv_d0f.get(cncpt);
-      int switchIndex = (preIndex == null ? -1 : preIndex);
-      switch (switchIndex) {
-        case 0:
-          if (true) {
-            // Concept: GegevensModel 
-            intentions = new IntentionFactory[1];
-            intentions[0] = new Hernummer_Intention();
-          }
-          break;
-        case 1:
-          if (true) {
-            // Concept: ObjectInstantie 
-            intentions = new IntentionFactory[1];
-            intentions[0] = new AttributenToevoegenObjectInstantie_Intention();
-          }
-          break;
-        case 2:
-          if (true) {
-            // Concept: ReferentieNaarOnderwerp 
-            intentions = new IntentionFactory[1];
-            intentions[0] = new AttributenToevoegenOnderwerp_Intention();
-          }
-          break;
-        case 3:
-          if (true) {
-            // Concept: ReferentieNaarSubject 
-            intentions = new IntentionFactory[1];
-            intentions[0] = new AttributenToevoegenSubject_Intention();
-          }
-          break;
-        case 4:
-          if (true) {
-            // Concept: Tabel 
-            intentions = new IntentionFactory[1];
-            intentions[0] = new RijToevoegenInTabel_Intention();
-          }
-          break;
-        default:
-          // default 
-      }
+    SAbstractConcept cncpt = concept;
+    switch (index_hphjzv_d0f.index(cncpt)) {
+      case 0:
+        if (true) {
+          // Concept: GegevensModel 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new Hernummer_Intention();
+        }
+        break;
+      case 1:
+        if (true) {
+          // Concept: ObjectInstantie 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new AttributenToevoegenObjectInstantie_Intention();
+        }
+        break;
+      case 2:
+        if (true) {
+          // Concept: ReferentieNaarOnderwerp 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new AttributenToevoegenOnderwerp_Intention();
+        }
+        break;
+      case 3:
+        if (true) {
+          // Concept: ReferentieNaarSubject 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new AttributenToevoegenSubject_Intention();
+        }
+        break;
+      case 4:
+        if (true) {
+          // Concept: Tabel 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new RijToevoegenInTabel_Intention();
+        }
+        break;
+      default:
     }
     myCached.put(concept, intentions);
     return Arrays.asList(intentions);
@@ -86,13 +83,5 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
     rv[4] = new Hernummer_Intention();
     return Arrays.asList(rv);
   }
-  private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
-    HashMap<SAbstractConcept, Integer> res = new HashMap<SAbstractConcept, Integer>();
-    int counter = 0;
-    for (SAbstractConcept c : concepts) {
-      res.put(c, counter++);
-    }
-    return res;
-  }
-  private static final Map<SAbstractConcept, Integer> indices_hphjzv_d0f = buildConceptIndices(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2afbb2L, "Gegevens.structure.GegevensModel"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L, "Gegevens.structure.ObjectInstantie"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L, "Gegevens.structure.ReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383bc1aL, "Gegevens.structure.ReferentieNaarSubject"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xb116d9d60df9be7L, "Gegevens.structure.Tabel"));
+  private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2afbb2L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383bc1aL), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xb116d9d60df9be7L)).seal();
 }

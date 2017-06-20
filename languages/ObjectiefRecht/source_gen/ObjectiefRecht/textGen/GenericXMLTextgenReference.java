@@ -8,6 +8,7 @@ import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public abstract class GenericXMLTextgenReference {
   public static void conceptTextgenReferent(SNode node, final TextGenContext ctx) {
@@ -18,7 +19,7 @@ public abstract class GenericXMLTextgenReference {
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
     tgs.append("<noderole>");
-    tgs.append(SNodeOperations.getContainingLinkRole(node));
+    tgs.append(check_3z20ck_a1b0c0a(SNodeOperations.getContainingLink(node)));
     tgs.append("</noderole>");
     tgs.newLine();
     tgs.indent();
@@ -45,5 +46,11 @@ public abstract class GenericXMLTextgenReference {
     tgs.indent();
     tgs.append("</node>");
     tgs.newLine();
+  }
+  private static String check_3z20ck_a1b0c0a(SContainmentLink checkedDotOperand) {
+    if (null != checkedDotOperand) {
+      return checkedDotOperand.getName();
+    }
+    return null;
   }
 }

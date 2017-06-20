@@ -9,15 +9,6 @@ import java.util.Collections;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class ConceptNummer implements ConceptEditorComponent {
   @NotNull
@@ -25,36 +16,6 @@ public class ConceptNummer implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_nnvg5a_a(editorContext, node);
-  }
-  private EditorCell createCollection_nnvg5a_a(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_nnvg5a_a");
-    if (renderingCondition_nnvg5a_a0a(node, editorContext)) {
-      editorCell.addEditorCell(this.createProperty_nnvg5a_a0(editorContext, node));
-    }
-    return editorCell;
-  }
-  private EditorCell createProperty_nnvg5a_a0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("conceptnummer");
-    provider.setNoTargetText("<no conceptnummer>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("CN_property_conceptnummer");
-    Style style = new StyleImpl();
-    GN_StyleSheet.apply_Nummer(style, editorCell);
-    editorCell.getStyle().putAll(style);
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
-    return editorCell;
-  }
-  private static boolean renderingCondition_nnvg5a_a0a(SNode node, EditorContext editorContext) {
-    SNode context = (SNode) SNodeOperations.getContainingRoot(node);
-    return SPropertyOperations.getBoolean(context, MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d02L, 0x67229afa6a17a4a6L, "toonnummer"));
+    return new ConceptNummer_ComponentBuilder_a(editorContext, node).createCell();
   }
 }

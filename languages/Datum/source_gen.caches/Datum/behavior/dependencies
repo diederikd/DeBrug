@@ -11,19 +11,14 @@
     <classNode dependClassName="Datum.behavior.Seconden__BehaviorDescriptor" />
     <classNode dependClassName="Datum.behavior.Tijd__BehaviorDescriptor" />
     <classNode dependClassName="Datum.behavior.Uren__BehaviorDescriptor" />
-    <classNode dependClassName="java.lang.Integer" />
-    <classNode dependClassName="java.util.HashMap" />
-    <classNode dependClassName="java.util.Map" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBehaviorAspectDescriptor" />
-  </dependency>
-  <dependency className="Datum.behavior.Dagen_BehaviorDescriptor" file="Dagen_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Datum.behavior.Dagen__BehaviorDescriptor" file="Dagen__BehaviorDescriptor.java">
     <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
@@ -54,10 +49,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Datum.behavior.DatumTijd_BehaviorDescriptor" file="DatumTijd_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="Datum.behavior.DatumTijd__BehaviorDescriptor" file="DatumTijd__BehaviorDescriptor.java">
     <classNode dependClassName="Datum.behavior.Datum__BehaviorDescriptor" />
     <classNode dependClassName="Datum.behavior.Tijd__BehaviorDescriptor" />
@@ -85,10 +76,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Datum.behavior.Datum_BehaviorDescriptor" file="Datum_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="Datum.behavior.Datum__BehaviorDescriptor" file="Datum__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -114,10 +101,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Datum.behavior.Duur_BehaviorDescriptor" file="Duur_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="Datum.behavior.Duur__BehaviorDescriptor" file="Duur__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -140,10 +123,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
-  </dependency>
-  <dependency className="Datum.behavior.Jaren_BehaviorDescriptor" file="Jaren_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Datum.behavior.Jaren__BehaviorDescriptor" file="Jaren__BehaviorDescriptor.java">
     <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
@@ -174,10 +153,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Datum.behavior.Maanden_BehaviorDescriptor" file="Maanden_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="Datum.behavior.Maanden__BehaviorDescriptor" file="Maanden__BehaviorDescriptor.java">
     <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Double" />
@@ -206,10 +181,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
-  </dependency>
-  <dependency className="Datum.behavior.Minuten_BehaviorDescriptor" file="Minuten_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Datum.behavior.Minuten__BehaviorDescriptor" file="Minuten__BehaviorDescriptor.java">
     <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
@@ -240,10 +211,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Datum.behavior.Seconden_BehaviorDescriptor" file="Seconden_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="Datum.behavior.Seconden__BehaviorDescriptor" file="Seconden__BehaviorDescriptor.java">
     <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Double" />
@@ -273,10 +240,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="Datum.behavior.Tijd_BehaviorDescriptor" file="Tijd_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="Datum.behavior.Tijd__BehaviorDescriptor" file="Tijd__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -301,10 +264,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
-  </dependency>
-  <dependency className="Datum.behavior.Uren_BehaviorDescriptor" file="Uren_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="Datum.behavior.Uren__BehaviorDescriptor" file="Uren__BehaviorDescriptor.java">
     <classNode dependClassName="Datum.behavior.Duur__BehaviorDescriptor" />
@@ -334,10 +293,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
-  </dependency>
-  <dependency className="Datum.behavior.VerschilTussen_BehaviorDescriptor" file="VerschilTussen_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
 </dependenciesRoot>
 

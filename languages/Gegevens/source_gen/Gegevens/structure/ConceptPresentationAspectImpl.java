@@ -51,7 +51,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_RijVanKaraktersDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RijVanKaraktersWaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SubjectDatatype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Tabel = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Tabel = new ConceptPresentationBuilder().shortDesc("lijst met objectinstanties").create();
   private final ConceptPresentation props_TemporeleWaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TijdDatatype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TijdWaarde = new ConceptPresentationBuilder().create();
@@ -66,109 +66,109 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case 0:
+      case LanguageConceptSwitch.AbstractAttribuut:
         return props_AbstractAttribuut;
-      case 1:
+      case LanguageConceptSwitch.AbstractDatatype:
         return props_AbstractDatatype;
-      case 2:
+      case LanguageConceptSwitch.AbstractObject:
         return props_AbstractObject;
-      case 3:
+      case LanguageConceptSwitch.AbstractReferentieNaarAttribuut:
         return props_AbstractReferentieNaarAttribuut;
-      case 4:
+      case LanguageConceptSwitch.AbstracteWaarde:
         return props_AbstracteWaarde;
-      case 5:
+      case LanguageConceptSwitch.Attribuut:
         return props_Attribuut;
-      case 6:
+      case LanguageConceptSwitch.AttribuutMetReferentieNaarKenmerk:
         return props_AttribuutMetReferentieNaarKenmerk;
-      case 7:
+      case LanguageConceptSwitch.Concept:
         return props_Concept;
-      case 8:
+      case LanguageConceptSwitch.DatumDatatype:
         return props_DatumDatatype;
-      case 9:
+      case LanguageConceptSwitch.DatumTijdWaarde:
         return props_DatumTijdWaarde;
-      case 10:
+      case LanguageConceptSwitch.DatumWaarde:
         return props_DatumWaarde;
-      case 11:
+      case LanguageConceptSwitch.DuurWaarde:
         return props_DuurWaarde;
-      case 12:
+      case LanguageConceptSwitch.Enumeratie:
         return props_Enumeratie;
-      case 13:
+      case LanguageConceptSwitch.EnumeratieDatatype:
         return props_EnumeratieDatatype;
-      case 14:
+      case LanguageConceptSwitch.EnumeratieElement:
         return props_EnumeratieElement;
-      case 15:
+      case LanguageConceptSwitch.EnumeratieWaarde:
         return props_EnumeratieWaarde;
-      case 16:
+      case LanguageConceptSwitch.GegevensModel:
         return props_GegevensModel;
-      case 17:
+      case LanguageConceptSwitch.GeheelGetal:
         return props_GeheelGetal;
-      case 18:
+      case LanguageConceptSwitch.GeheelGetalDatatype:
         return props_GeheelGetalDatatype;
-      case 19:
+      case LanguageConceptSwitch.GeheelGetalWaarde:
         return props_GeheelGetalWaarde;
-      case 20:
+      case LanguageConceptSwitch.Identificatie:
         return props_Identificatie;
-      case 21:
+      case LanguageConceptSwitch.Instantie:
         return props_Instantie;
-      case 22:
+      case LanguageConceptSwitch.InstantiesVanGegevens:
         return props_InstantiesVanGegevens;
-      case 23:
+      case LanguageConceptSwitch.JaNeeDatatype:
         return props_JaNeeDatatype;
-      case 24:
+      case LanguageConceptSwitch.JaNeeWaarde:
         return props_JaNeeWaarde;
-      case 25:
+      case LanguageConceptSwitch.Object:
         return props_Object;
-      case 26:
+      case LanguageConceptSwitch.ObjectDatatype:
         return props_ObjectDatatype;
-      case 27:
+      case LanguageConceptSwitch.ObjectInstantie:
         return props_ObjectInstantie;
-      case 28:
+      case LanguageConceptSwitch.ObjectWaarde:
         return props_ObjectWaarde;
-      case 29:
+      case LanguageConceptSwitch.OnderwerpDatatype:
         return props_OnderwerpDatatype;
-      case 30:
+      case LanguageConceptSwitch.ReeelGetalDatatype:
         return props_ReeelGetalDatatype;
-      case 31:
+      case LanguageConceptSwitch.ReeelGetalWaarde:
         return props_ReeelGetalWaarde;
-      case 32:
+      case LanguageConceptSwitch.ReferentieNaarAbstractObject:
         return props_ReferentieNaarAbstractObject;
-      case 33:
+      case LanguageConceptSwitch.ReferentieNaarAttribuut:
         return props_ReferentieNaarAttribuut;
-      case 34:
+      case LanguageConceptSwitch.ReferentieNaarAttribuutMetReferentieNaarKenmerk:
         return props_ReferentieNaarAttribuutMetReferentieNaarKenmerk;
-      case 35:
+      case LanguageConceptSwitch.ReferentieNaarOnderwerp:
         return props_ReferentieNaarOnderwerp;
-      case 36:
+      case LanguageConceptSwitch.ReferentieNaarOnderwerpOfSubject:
         return props_ReferentieNaarOnderwerpOfSubject;
-      case 37:
+      case LanguageConceptSwitch.ReferentieNaarSubject:
         return props_ReferentieNaarSubject;
-      case 38:
+      case LanguageConceptSwitch.RekenWaarde:
         return props_RekenWaarde;
-      case 39:
+      case LanguageConceptSwitch.RijVanKaraktersDatatype:
         return props_RijVanKaraktersDatatype;
-      case 40:
+      case LanguageConceptSwitch.RijVanKaraktersWaarde:
         return props_RijVanKaraktersWaarde;
-      case 41:
+      case LanguageConceptSwitch.SubjectDatatype:
         return props_SubjectDatatype;
-      case 42:
+      case LanguageConceptSwitch.Tabel:
         return props_Tabel;
-      case 43:
+      case LanguageConceptSwitch.TemporeleWaarde:
         return props_TemporeleWaarde;
-      case 44:
+      case LanguageConceptSwitch.TijdDatatype:
         return props_TijdDatatype;
-      case 45:
+      case LanguageConceptSwitch.TijdWaarde:
         return props_TijdWaarde;
-      case 46:
+      case LanguageConceptSwitch.Waarde:
         return props_Waarde;
-      case 47:
+      case LanguageConceptSwitch.WaardeVanAttribuut:
         return props_WaardeVanAttribuut;
-      case 48:
+      case LanguageConceptSwitch.waardeJa:
         return props_waardeJa;
-      case 49:
+      case LanguageConceptSwitch.waardeJaNee:
         return props_waardeJaNee;
-      case 50:
+      case LanguageConceptSwitch.waardeNee:
         return props_waardeNee;
     }
-    throw new IllegalStateException("Unknown concept " + c);
+    return null;
   }
 }

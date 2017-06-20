@@ -9,9 +9,7 @@
   </languages>
   <imports>
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="r1tu" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project.modules/module.jetbrains.mps.lang.project@project_stub)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="4n2y" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#1ed103c3-3aa6-49b7-9c21-6765ee11f224(jetbrains.mps.lang.project.modules/module.MPS.Editor@project_stub)" />
     <import index="ttfg" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.checkedName(MPS.Editor/)" />
     <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -89,6 +87,9 @@
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
+    </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
       <concept id="45307784116571022" name="jetbrains.mps.lang.textGen.structure.FilenameFunction" flags="ig" index="29tfMY" />
       <concept id="8931911391946696733" name="jetbrains.mps.lang.textGen.structure.ExtensionDeclaration" flags="in" index="9MYSb" />
@@ -127,7 +128,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1960721196051541146" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRoleOperation" flags="nn" index="13GOg" />
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="8758390115028452779" name="jetbrains.mps.lang.smodel.structure.Node_GetReferencesOperation" flags="nn" index="2z74zc" />
@@ -142,6 +142,7 @@
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -907,11 +908,16 @@
                 <property role="lacIc" value="&lt;noderole&gt;" />
               </node>
               <node concept="l9hG8" id="1Enheq_1PlS" role="lcghm">
-                <node concept="2OqwBi" id="1Enheq_1PlU" role="lb14g">
-                  <node concept="37vLTw" id="1Enheq_1PlV" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3YSG_9OXO4c" resolve="node" />
+                <node concept="2EnYce" id="1Enheq_1PlU" role="lb14g">
+                  <node concept="2OqwBi" id="4jSY5tZ7r$7" role="2Oq$k0">
+                    <node concept="37vLTw" id="4jSY5tZ7r$8" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3YSG_9OXO4c" resolve="node" />
+                    </node>
+                    <node concept="2NL2c5" id="4jSY5tZ7r$9" role="2OqNvi" />
                   </node>
-                  <node concept="13GOg" id="1Enheq_1Q12" role="2OqNvi" />
+                  <node concept="liA8E" id="4jSY5tZ7r$a" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                  </node>
                 </node>
               </node>
               <node concept="la8eA" id="1Enheq_1PlY" role="lcghm">
@@ -1447,11 +1453,16 @@
                 <property role="lacIc" value="&lt;noderole&gt;" />
               </node>
               <node concept="l9hG8" id="1Enheq_8ifA" role="lcghm">
-                <node concept="2OqwBi" id="1Enheq_8ifB" role="lb14g">
-                  <node concept="37vLTw" id="1Enheq_8ifC" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1Enheq_8ifp" resolve="node" />
+                <node concept="2EnYce" id="1Enheq_8ifB" role="lb14g">
+                  <node concept="2OqwBi" id="4jSY5tZ7r$c" role="2Oq$k0">
+                    <node concept="37vLTw" id="4jSY5tZ7r$d" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1Enheq_8ifp" resolve="node" />
+                    </node>
+                    <node concept="2NL2c5" id="4jSY5tZ7r$e" role="2OqNvi" />
                   </node>
-                  <node concept="13GOg" id="1Enheq_8ifD" role="2OqNvi" />
+                  <node concept="liA8E" id="4jSY5tZ7r$f" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                  </node>
                 </node>
               </node>
               <node concept="la8eA" id="1Enheq_8ifE" role="lcghm">

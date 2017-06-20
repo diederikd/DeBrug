@@ -11,7 +11,7 @@
     <import index="ll8w" ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="3pw0" ref="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure)" implicit="true" />
+    <import index="xhlk" ref="r:516f69e8-d332-4ecb-b3a2-f14c7ad25337(Simulatie.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -755,8 +755,8 @@
                                 <node concept="2GrUjf" id="5oIirjpnCM" role="2Oq$k0">
                                   <ref role="2Gs0qQ" node="5oIirjpfOa" resolve="overgang" />
                                 </node>
-                                <node concept="3TrEf2" id="5oIirjpo36" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="3pw0:5oIirjjw2m" resolve="overgang" />
+                                <node concept="3TrEf2" id="6x9gEQEQkYv" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="xhlk:5oIirjjw2m" resolve="overgang" />
                                 </node>
                               </node>
                             </node>

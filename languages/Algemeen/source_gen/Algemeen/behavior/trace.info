@@ -13,25 +13,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
   <root>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="14,0,54,0" name="Algemeen.behavior.BehaviorAspectDescriptor" />
-    </file>
-    <file name="Bericht_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="Algemeen.behavior.Bericht_BehaviorDescriptor" />
-    </file>
-    <file name="IBronGeldigheid_BehaviorDescriptor.java">
-      <unit at="11,0,14,0" name="Algemeen.behavior.IBronGeldigheid_BehaviorDescriptor" />
-    </file>
-    <file name="IConceptnummer_BehaviorDescriptor.java">
-      <unit at="11,0,14,0" name="Algemeen.behavior.IConceptnummer_BehaviorDescriptor" />
-    </file>
-    <file name="IKorteNaam_BehaviorDescriptor.java">
-      <unit at="11,0,14,0" name="Algemeen.behavior.IKorteNaam_BehaviorDescriptor" />
-    </file>
-    <file name="IOpmerking_BehaviorDescriptor.java">
-      <unit at="11,0,14,0" name="Algemeen.behavior.IOpmerking_BehaviorDescriptor" />
-    </file>
-    <file name="LijstMetBerichten_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="Algemeen.behavior.LijstMetBerichten_BehaviorDescriptor" />
+      <unit at="14,0,35,0" name="Algemeen.behavior.BehaviorAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:47f70a36-2d19-4ed4-99ab-02ae4af48125(Algemeen.behavior)/1365497693572321463">

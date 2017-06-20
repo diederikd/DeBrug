@@ -7,9 +7,9 @@ import jetbrains.mps.core.aspects.behaviour.api.BHDescriptor;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import java.util.Map;
-import java.util.HashMap;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
+import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myTijdWaarde__BehaviorDescriptor = new TijdWaarde__BehaviorDescriptor();
@@ -40,134 +40,55 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
 
   @Nullable
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
-    {
-      SAbstractConcept cncpt = concept;
-      Integer preIndex = indices_846f5o_a0z.get(cncpt);
-      int switchIndex = (preIndex == null ? -1 : preIndex);
-      switch (switchIndex) {
-        case 0:
-          if (true) {
-            return myAbstracteWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 1:
-          if (true) {
-            return myConcept__BehaviorDescriptor;
-          }
-          break;
-        case 2:
-          if (true) {
-            return myDatumTijdWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 3:
-          if (true) {
-            return myDatumWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 4:
-          if (true) {
-            return myDuurWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 5:
-          if (true) {
-            return myEnumeratieWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 6:
-          if (true) {
-            return myGeheelGetal__BehaviorDescriptor;
-          }
-          break;
-        case 7:
-          if (true) {
-            return myGeheelGetalWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 8:
-          if (true) {
-            return myJaNeeWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 9:
-          if (true) {
-            return myObjectInstantie__BehaviorDescriptor;
-          }
-          break;
-        case 10:
-          if (true) {
-            return myObjectWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 11:
-          if (true) {
-            return myReeelGetalWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 12:
-          if (true) {
-            return myReferentieNaarOnderwerp__BehaviorDescriptor;
-          }
-          break;
-        case 13:
-          if (true) {
-            return myReferentieNaarSubject__BehaviorDescriptor;
-          }
-          break;
-        case 14:
-          if (true) {
-            return myRekenWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 15:
-          if (true) {
-            return myRijVanKaraktersWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 16:
-          if (true) {
-            return myTemporeleWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 17:
-          if (true) {
-            return myTijdWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 18:
-          if (true) {
-            return myWaarde__BehaviorDescriptor;
-          }
-          break;
-        case 19:
-          if (true) {
-            return mywaardeJa__BehaviorDescriptor;
-          }
-          break;
-        case 20:
-          if (true) {
-            return mywaardeJaNee__BehaviorDescriptor;
-          }
-          break;
-        case 21:
-          if (true) {
-            return mywaardeNee__BehaviorDescriptor;
-          }
-          break;
-        default:
-          // default 
-      }
+    SAbstractConcept cncpt = concept;
+    switch (index_846f5o_a0z.index(cncpt)) {
+      case 0:
+        return myAbstracteWaarde__BehaviorDescriptor;
+      case 1:
+        return myConcept__BehaviorDescriptor;
+      case 2:
+        return myDatumTijdWaarde__BehaviorDescriptor;
+      case 3:
+        return myDatumWaarde__BehaviorDescriptor;
+      case 4:
+        return myDuurWaarde__BehaviorDescriptor;
+      case 5:
+        return myEnumeratieWaarde__BehaviorDescriptor;
+      case 6:
+        return myGeheelGetal__BehaviorDescriptor;
+      case 7:
+        return myGeheelGetalWaarde__BehaviorDescriptor;
+      case 8:
+        return myJaNeeWaarde__BehaviorDescriptor;
+      case 9:
+        return myObjectInstantie__BehaviorDescriptor;
+      case 10:
+        return myObjectWaarde__BehaviorDescriptor;
+      case 11:
+        return myReeelGetalWaarde__BehaviorDescriptor;
+      case 12:
+        return myReferentieNaarOnderwerp__BehaviorDescriptor;
+      case 13:
+        return myReferentieNaarSubject__BehaviorDescriptor;
+      case 14:
+        return myRekenWaarde__BehaviorDescriptor;
+      case 15:
+        return myRijVanKaraktersWaarde__BehaviorDescriptor;
+      case 16:
+        return myTemporeleWaarde__BehaviorDescriptor;
+      case 17:
+        return myTijdWaarde__BehaviorDescriptor;
+      case 18:
+        return myWaarde__BehaviorDescriptor;
+      case 19:
+        return mywaardeJa__BehaviorDescriptor;
+      case 20:
+        return mywaardeJaNee__BehaviorDescriptor;
+      case 21:
+        return mywaardeNee__BehaviorDescriptor;
+      default:
     }
     return null;
   }
-  private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
-    HashMap<SAbstractConcept, Integer> res = new HashMap<SAbstractConcept, Integer>();
-    int counter = 0;
-    for (SAbstractConcept c : concepts) {
-      res.put(c, counter++);
-    }
-    return res;
-  }
-  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0z = buildConceptIndices(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x46db587183408c7aL, "Gegevens.structure.AbstracteWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL, "Gegevens.structure.Concept"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x2b935eb966136db4L, "Gegevens.structure.DatumTijdWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L, "Gegevens.structure.DatumWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L, "Gegevens.structure.DuurWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x6a6c7eae99c80067L, "Gegevens.structure.EnumeratieWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x62a4bcf3d1cc9c27L, "Gegevens.structure.GeheelGetal"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fe6L, "Gegevens.structure.GeheelGetalWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac54cL, "Gegevens.structure.JaNeeWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L, "Gegevens.structure.ObjectInstantie"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6289L, "Gegevens.structure.ObjectWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac581L, "Gegevens.structure.ReeelGetalWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L, "Gegevens.structure.ReferentieNaarOnderwerp"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383bc1aL, "Gegevens.structure.ReferentieNaarSubject"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL, "Gegevens.structure.RekenWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac563L, "Gegevens.structure.RijVanKaraktersWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL, "Gegevens.structure.TijdWaarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fddL, "Gegevens.structure.Waarde"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x4ce3b5e2c38f70c2L, "Gegevens.structure.waardeJa"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x4ce3b5e2c38f70d1L, "Gegevens.structure.waardeJaNee"), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x4ce3b5e2c38f70d0L, "Gegevens.structure.waardeNee"));
+  private static final ConceptSwitchIndex index_846f5o_a0z = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x46db587183408c7aL), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93acL), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x2b935eb966136db4L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6273L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xa37796bb9f356a9L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x6a6c7eae99c80067L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x62a4bcf3d1cc9c27L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fe6L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac54cL), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6289L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac581L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x55931ab45f2a93c0L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383bc1aL), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xf789e062033b12fL), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac563L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x7da9e4c6468d08fL), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fddL), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x4ce3b5e2c38f70c2L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x4ce3b5e2c38f70d1L), MetaIdFactory.conceptId(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x4ce3b5e2c38f70d0L)).seal();
 }

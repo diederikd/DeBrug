@@ -2,7 +2,7 @@
 <model ref="r:03e77b8d-e81a-4ee3-963c-e3349afab08a(ObjectiefRecht.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -580,7 +580,7 @@
                 <ref role="3cqZAo" node="3r$i4252vMb" resolve="instantieVanObject" />
               </node>
               <node concept="3TrEf2" id="3r$i4252zvF" role="2OqNvi">
-                <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="referentieNaarObject" />
+                <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="object" />
               </node>
             </node>
             <node concept="2oxUTD" id="3r$i4252$4f" role="2OqNvi">
@@ -628,7 +628,7 @@
           <node concept="2OqwBi" id="4f9cC5bRyu" role="3cqZAk">
             <node concept="13iPFW" id="4f9cC5bRoZ" role="2Oq$k0" />
             <node concept="3TrEf2" id="4f9cC5bRHj" role="2OqNvi">
-              <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="referentieNaarObject" />
+              <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="object" />
             </node>
           </node>
         </node>
@@ -646,7 +646,7 @@
             <node concept="2OqwBi" id="3r$i4253ACi" role="2Oq$k0">
               <node concept="13iPFW" id="3r$i4253ACj" role="2Oq$k0" />
               <node concept="3TrEf2" id="3r$i4253GV7" role="2OqNvi">
-                <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="referentieNaarObject" />
+                <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="object" />
               </node>
             </node>
             <node concept="2qgKlT" id="3r$i4253Mkx" role="2OqNvi">
@@ -2094,7 +2094,7 @@
               </node>
             </node>
             <node concept="3TrEf2" id="4yDNEIhyhdO" role="2OqNvi">
-              <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="referentieNaarObject" />
+              <ref role="3Tt5mk" to="3pw0:3r$i424SGCn" resolve="object" />
             </node>
           </node>
         </node>

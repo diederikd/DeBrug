@@ -270,5 +270,17 @@
       <ref role="20lvS9" to="3pw0:3VKsi0pJIjP" resolve="ReferentieNaarWaardeVanKenmerk" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6x9gEQEJL_p">
+    <property role="EcuMT" value="7514610766905809241" />
+    <property role="TrG5h" value="ReferentieNaarOvergang" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5oIirjjw2m" role="1TKVEi">
+      <property role="IQ2ns" value="97030968393466006" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="overgang" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="3pw0:3GpI$sPbk8E" resolve="Overgang" />
+    </node>
+  </node>
 </model>
 

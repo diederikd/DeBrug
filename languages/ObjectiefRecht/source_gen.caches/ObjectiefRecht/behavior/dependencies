@@ -1,45 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="ObjectiefRecht.behavior.AanspraakNaIngebrekeStellingPlicht_BehaviorDescriptor" file="AanspraakNaIngebrekeStellingPlicht_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.AbstractArtikel_BehaviorDescriptor" file="AbstractArtikel_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.AbstractKenmerkType_BehaviorDescriptor" file="AbstractKenmerkType_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.AbstractKenmerk_BehaviorDescriptor" file="AbstractKenmerk_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.AbstractReferentieNaarKenmerk_BehaviorDescriptor" file="AbstractReferentieNaarKenmerk_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.AbstracteExpressie_BehaviorDescriptor" file="AbstracteExpressie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.AbstracteVoorwaarde_BehaviorDescriptor" file="AbstracteVoorwaarde_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Actie_BehaviorDescriptor" file="Actie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Afleidingsregel_BehaviorDescriptor" file="Afleidingsregel_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Artikel_BehaviorDescriptor" file="Artikel_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
     <classNode dependClassName="ObjectiefRecht.behavior.Concept__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.EnumeratieWaarde__BehaviorDescriptor" />
@@ -59,23 +19,14 @@
     <classNode dependClassName="ObjectiefRecht.behavior.TabelMetInstanties__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.Variabele__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.VoorbeeldenMetInstanties__BehaviorDescriptor" />
-    <classNode dependClassName="java.lang.Integer" />
-    <classNode dependClassName="java.util.HashMap" />
-    <classNode dependClassName="java.util.Map" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBehaviorAspectDescriptor" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Betrekking_BehaviorDescriptor" file="Betrekking_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Concept_BehaviorDescriptor" file="Concept_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.Concept__BehaviorDescriptor" file="Concept__BehaviorDescriptor.java">
     <classNode dependClassName="Datum.behavior.Datum__BehaviorDescriptor" />
@@ -103,58 +54,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.ConditieAlle_BehaviorDescriptor" file="ConditieAlle_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ConditieEen_BehaviorDescriptor" file="ConditieEen_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ConditieGeen_BehaviorDescriptor" file="ConditieGeen_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Conditie_BehaviorDescriptor" file="Conditie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Context_BehaviorDescriptor" file="Context_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.DatumType_BehaviorDescriptor" file="DatumType_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.DatumUitvoerenHandeling_BehaviorDescriptor" file="DatumUitvoerenHandeling_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.DeSom_BehaviorDescriptor" file="DeSom_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.DelenExpressie_BehaviorDescriptor" file="DelenExpressie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.DuurType_BehaviorDescriptor" file="DuurType_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.EnumeratieElement_BehaviorDescriptor" file="EnumeratieElement_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.EnumeratieType_BehaviorDescriptor" file="EnumeratieType_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.EnumeratieWaarde_BehaviorDescriptor" file="EnumeratieWaarde_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.EnumeratieWaarde__BehaviorDescriptor" file="EnumeratieWaarde__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -179,30 +78,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.Enumeratie_BehaviorDescriptor" file="Enumeratie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ErIsEen_BehaviorDescriptor" file="ErIsEen_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ErIsGeenHandeling_BehaviorDescriptor" file="ErIsGeenHandeling_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ErIsGeen_BehaviorDescriptor" file="ErIsGeen_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ExpressieVoorwaarde_BehaviorDescriptor" file="ExpressieVoorwaarde_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.FeitVerwoording_BehaviorDescriptor" file="FeitVerwoording_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.FeitVerwoording__BehaviorDescriptor" file="FeitVerwoording__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
@@ -225,57 +100,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.FeitelijkeHandelingMetRechtsgevolg_BehaviorDescriptor" file="FeitelijkeHandelingMetRechtsgevolg_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.GebeurtenisMetRechtsgevolg_BehaviorDescriptor" file="GebeurtenisMetRechtsgevolg_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.GeheelGetalType_BehaviorDescriptor" file="GeheelGetalType_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Gelijkstelling_BehaviorDescriptor" file="Gelijkstelling_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Gevolg_BehaviorDescriptor" file="Gevolg_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.HandelingZonderRechtsgevolg_BehaviorDescriptor" file="HandelingZonderRechtsgevolg_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.HuidigeDatum_BehaviorDescriptor" file="HuidigeDatum_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IBinaireExpressie_BehaviorDescriptor" file="IBinaireExpressie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IBinaireTemporeleExpressie_BehaviorDescriptor" file="IBinaireTemporeleExpressie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IRekenWaardeExpressie_BehaviorDescriptor" file="IRekenWaardeExpressie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IURL_BehaviorDescriptor" file="IURL_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IUnaireExpressie_BehaviorDescriptor" file="IUnaireExpressie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ImmuniteitGeenbevoegdheid_BehaviorDescriptor" file="ImmuniteitGeenbevoegdheid_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.InstantieVanObject_BehaviorDescriptor" file="InstantieVanObject_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor" file="InstantieVanObject__BehaviorDescriptor.java">
     <classNode dependClassName="ObjectiefRecht.behavior.Object__BehaviorDescriptor" />
@@ -309,90 +133,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.IsGeen_BehaviorDescriptor" file="IsGeen_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IsGelijk_BehaviorDescriptor" file="IsGelijk_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IsGroterDan_BehaviorDescriptor" file="IsGroterDan_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IsGroterOfGelijk_BehaviorDescriptor" file="IsGroterOfGelijk_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IsKleinerDan_BehaviorDescriptor" file="IsKleinerDan_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IsNietBekend_BehaviorDescriptor" file="IsNietBekend_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IsNietGelijk_BehaviorDescriptor" file="IsNietGelijk_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IsOpgegeven_BehaviorDescriptor" file="IsOpgegeven_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IsPositief_BehaviorDescriptor" file="IsPositief_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.IsWaar_BehaviorDescriptor" file="IsWaar_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.JaNeeType_BehaviorDescriptor" file="JaNeeType_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Kenmerk_BehaviorDescriptor" file="Kenmerk_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.KrachtigeAanspraakFataleVerplichtig_BehaviorDescriptor" file="KrachtigeAanspraakFataleVerplichtig_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.LidwoordDe_BehaviorDescriptor" file="LidwoordDe_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.LidwoordHet_BehaviorDescriptor" file="LidwoordHet_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Lidwoord_BehaviorDescriptor" file="Lidwoord_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.LigtNa_BehaviorDescriptor" file="LigtNa_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.LigtVoor_BehaviorDescriptor" file="LigtVoor_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.LijstMetVerwoordingen_BehaviorDescriptor" file="LijstMetVerwoordingen_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.MaterieleVoorwaarde_BehaviorDescriptor" file="MaterieleVoorwaarde_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.MeervoudigeObjectWaarde_BehaviorDescriptor" file="MeervoudigeObjectWaarde_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.MeervoudigeObjectWaarde__BehaviorDescriptor" file="MeervoudigeObjectWaarde__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -418,34 +158,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.MethodeAanpassenFeiten_BehaviorDescriptor" file="MethodeAanpassenFeiten_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.MethodeBeeidigenOnderwerp_BehaviorDescriptor" file="MethodeBeeidigenOnderwerp_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.MethodeNieuweFeiten_BehaviorDescriptor" file="MethodeNieuweFeiten_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.MinExpressie_BehaviorDescriptor" file="MinExpressie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Na_BehaviorDescriptor" file="Na_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ObjectType_BehaviorDescriptor" file="ObjectType_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ObjectWaarde_BehaviorDescriptor" file="ObjectWaarde_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.ObjectWaarde__BehaviorDescriptor" file="ObjectWaarde__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -469,10 +181,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Object_BehaviorDescriptor" file="Object_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.Object__BehaviorDescriptor" file="Object__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Class" />
@@ -500,14 +208,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.OnderwerpType_BehaviorDescriptor" file="OnderwerpType_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Onderwerp_BehaviorDescriptor" file="Onderwerp_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.Onderwerp__BehaviorDescriptor" file="Onderwerp__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -532,10 +232,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.OptieAccepterenHandeling_BehaviorDescriptor" file="OptieAccepterenHandeling_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.OptieAccepterenHandeling__BehaviorDescriptor" file="OptieAccepterenHandeling__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -553,10 +249,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.OptieAfwijzenHandeling_BehaviorDescriptor" file="OptieAfwijzenHandeling_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.OptieAfwijzenHandeling__BehaviorDescriptor" file="OptieAfwijzenHandeling__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
@@ -576,10 +268,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.OptieUitvoerenHandeling_BehaviorDescriptor" file="OptieUitvoerenHandeling_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.OptieUitvoerenHandeling__BehaviorDescriptor" file="OptieUitvoerenHandeling__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -597,18 +285,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor" file="OptioneleBevoegdheidOptioneleGehoudenheid_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.OvergangZonderRechtsgevolg_BehaviorDescriptor" file="OvergangZonderRechtsgevolg_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Overgang_BehaviorDescriptor" file="Overgang_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.Overgang__BehaviorDescriptor" file="Overgang__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Class" />
@@ -636,22 +312,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.PlusExpressie_BehaviorDescriptor" file="PlusExpressie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.RechtsSubjectMetPlicht_BehaviorDescriptor" file="RechtsSubjectMetPlicht_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.RechtsSubjectMetRecht_BehaviorDescriptor" file="RechtsSubjectMetRecht_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.RechtsSubject_BehaviorDescriptor" file="RechtsSubject_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.RechtsSubject__BehaviorDescriptor" file="RechtsSubject__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -676,10 +336,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.Rechtsbetrekking_BehaviorDescriptor" file="Rechtsbetrekking_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor" file="Rechtsbetrekking__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -703,10 +359,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.RechtsgevolgVeroorzakers_BehaviorDescriptor" file="RechtsgevolgVeroorzakers_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.RechtsgevolgVeroorzakers__BehaviorDescriptor" file="RechtsgevolgVeroorzakers__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -724,98 +376,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="ObjectiefRecht.behavior.Rechtsgevolg_BehaviorDescriptor" file="Rechtsgevolg_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Rechtshandeling_BehaviorDescriptor" file="Rechtshandeling_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReeelGetalType_BehaviorDescriptor" file="ReeelGetalType_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarArtikel_BehaviorDescriptor" file="ReferentieNaarArtikel_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarEnumeratie_BehaviorDescriptor" file="ReferentieNaarEnumeratie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarInstantieVanObject_BehaviorDescriptor" file="ReferentieNaarInstantieVanObject_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarKenmerk_BehaviorDescriptor" file="ReferentieNaarKenmerk_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarObject_BehaviorDescriptor" file="ReferentieNaarObject_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarOnderwerp_BehaviorDescriptor" file="ReferentieNaarOnderwerp_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarOvergang_BehaviorDescriptor" file="ReferentieNaarOvergang_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarRechtsHandeling_BehaviorDescriptor" file="ReferentieNaarRechtsHandeling_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarRechtsbetrekking_BehaviorDescriptor" file="ReferentieNaarRechtsbetrekking_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarRechtsgevolgVeroorzaker_BehaviorDescriptor" file="ReferentieNaarRechtsgevolgVeroorzaker_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarRechtsgevolg_BehaviorDescriptor" file="ReferentieNaarRechtsgevolg_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarRechtssubject_BehaviorDescriptor" file="ReferentieNaarRechtssubject_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarToestand_BehaviorDescriptor" file="ReferentieNaarToestand_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarVoorwaarde_BehaviorDescriptor" file="ReferentieNaarVoorwaarde_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ReferentieNaarWaardeVanKenmerk_BehaviorDescriptor" file="ReferentieNaarWaardeVanKenmerk_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Regel_BehaviorDescriptor" file="Regel_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.RekenExpressie_BehaviorDescriptor" file="RekenExpressie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.RijVanKaraktersType_BehaviorDescriptor" file="RijVanKaraktersType_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.SubjectType_BehaviorDescriptor" file="SubjectType_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.TabelMetInstanties_BehaviorDescriptor" file="TabelMetInstanties_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="ObjectiefRecht.behavior.TabelMetInstanties__BehaviorDescriptor" file="TabelMetInstanties__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -832,34 +392,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.TenHoogsteVoor_BehaviorDescriptor" file="TenHoogsteVoor_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.TenMinsteNa_BehaviorDescriptor" file="TenMinsteNa_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.TenMinsteVoor_BehaviorDescriptor" file="TenMinsteVoor_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.TijdstipType_BehaviorDescriptor" file="TijdstipType_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.TijdsverloopMetRechtsgevolg_BehaviorDescriptor" file="TijdsverloopMetRechtsgevolg_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Toestand_BehaviorDescriptor" file="Toestand_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Variabele_BehaviorDescriptor" file="Variabele_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.Variabele__BehaviorDescriptor" file="Variabele__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Class" />
@@ -886,46 +418,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VermenigvuldigenExpressie_BehaviorDescriptor" file="VermenigvuldigenExpressie_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VerplichteBevoegdheidVerplichteGehoudenheid_BehaviorDescriptor" file="VerplichteBevoegdheidVerplichteGehoudenheid_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VerschilTussen_BehaviorDescriptor" file="VerschilTussen_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VerwoordingElement_BehaviorDescriptor" file="VerwoordingElement_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VerwoordingKenmerk_BehaviorDescriptor" file="VerwoordingKenmerk_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VerwoordingObject_BehaviorDescriptor" file="VerwoordingObject_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VerwoordingTekst_BehaviorDescriptor" file="VerwoordingTekst_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VerwoordingWaarde_BehaviorDescriptor" file="VerwoordingWaarde_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Voor_BehaviorDescriptor" file="Voor_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VoorbeeldenMetInstanties_BehaviorDescriptor" file="VoorbeeldenMetInstanties_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ObjectiefRecht.behavior.VoorbeeldenMetInstanties__BehaviorDescriptor" file="VoorbeeldenMetInstanties__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Class" />
@@ -954,38 +446,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VoorwaardenRechtshandeling_BehaviorDescriptor" file="VoorwaardenRechtshandeling_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.Voorwaarden_BehaviorDescriptor" file="Voorwaarden_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VormVoorwaarde_BehaviorDescriptor" file="VormVoorwaarde_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VrijeTekst_BehaviorDescriptor" file="VrijeTekst_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.VrijheidGeenaanspraak_BehaviorDescriptor" file="VrijheidGeenaanspraak_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.WaardeVanKenmerk_BehaviorDescriptor" file="WaardeVanKenmerk_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.ZwakkeAanspraakZwakkePlicht_BehaviorDescriptor" file="ZwakkeAanspraakZwakkePlicht_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="ObjectiefRecht.behavior.isNegatief_BehaviorDescriptor" file="isNegatief_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
   </dependency>
 </dependenciesRoot>
 

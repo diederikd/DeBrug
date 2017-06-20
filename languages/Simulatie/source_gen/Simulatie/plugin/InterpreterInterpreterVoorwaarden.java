@@ -13,6 +13,7 @@ import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import com.mbeddr.mpsutil.interpreter.rt.StopAndReturnException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
 import com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo;
@@ -39,7 +40,7 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
           Boolean resultaatvoorwaarde = null;
           for (SNode voorwaarde : ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fce8L, 0x42e9dab3410fd0cL, "voorwaarden")))) {
             Interpreter.voegBerichtToe("Start van de evaluatie van de voorwaarde ");
-            resultaatvoorwaarde = ((Boolean) context.getRootInterpreter().evaluate(voorwaarde, context, coverage));
+            resultaatvoorwaarde = ((Boolean) context.getRootInterpreter().evaluate(voorwaarde, context, coverage, false));
             Interpreter.voegBerichtToe("Resultaat van de voorwaarde '" + resultaatvoorwaarde + "'");
             if (resultaatvoorwaarde != null) {
               resultvoorwaarden = resultvoorwaarden && resultaatvoorwaarde;
@@ -53,6 +54,8 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
           }
           Interpreter.voegBerichtToe("Eindresultaat van de evaluatie van de voorwaarden is " + resultvoorwaarden);
           return resultvoorwaarden;
+        } catch (StopAndReturnException stop) {
+          return stop.value();
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
@@ -75,10 +78,13 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           Interpreter.voegBerichtToe("Evalueer de expressie '" + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")) + "'");
+          System.out.println("Evalueer de expressie '" + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")) + "'");
           Boolean result = null;
-          result = ((Boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")), context, coverage));
+          result = ((Boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")), context, coverage, false));
           Interpreter.voegBerichtToe("Resultaat van expressie '" + result + "'");
           return result;
+        } catch (StopAndReturnException stop) {
+          return stop.value();
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {

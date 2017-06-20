@@ -33,9 +33,6 @@ public class EvalueerHandeling {
     }
     public void execute_internal(EditorContext editorContext, SNode node) {
       SNode simulatie = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, "Simulatie.structure.Simulatie"))).first();
-      System.out.println("Simulatie -> " + simulatie);
-      System.out.println("===========================================");
-
       if ((simulatie != null)) {
         Simulatie__BehaviorDescriptor.schoonBerichten_idCRumITE5PD.invoke(simulatie);
         Interpreter.schoonBerichten();
@@ -43,8 +40,6 @@ public class EvalueerHandeling {
         SLinkOperations.setTarget(simulatie, MetaAdapterFactory.getContainmentLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0xa37796bb99d9ab4L, "lijstmetberichten"), Interpreter.geefLijstMetBerichten());
         SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a880L, "evaluatielog"), Interpreter.geefLijstMetBerichten());
         SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a786L, "evaluatieresultaat"), "" + (((Boolean) object)));
-        System.out.println("Resultaat -> " + SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a786L, "evaluatieresultaat")));
-        System.out.println("===========================================");
       }
     }
   }

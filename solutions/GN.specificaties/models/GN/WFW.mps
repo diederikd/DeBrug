@@ -33,6 +33,9 @@
         <child id="8634981577175842196" name="uittevoerendialoog" index="3Ujy1E" />
         <child id="3694879098862050847" name="uitvoerbarehandelingen" index="3WXGrD" />
       </concept>
+      <concept id="7514610766905809241" name="Simulatie.structure.ReferentieNaarOvergang" flags="ng" index="32X_JO">
+        <reference id="97030968393466006" name="overgang" index="3i5FAK" />
+      </concept>
       <concept id="7496157647699367134" name="Simulatie.structure.Gegevenshuishouding" flags="ng" index="1ztmtO">
         <child id="3139957515583339108" name="rechtshandelingen" index="1dIIjt" />
         <child id="3139957515586752450" name="rechtsbetrekkingen" index="1dND5V" />
@@ -306,9 +309,6 @@
       <concept id="345859696663244474" name="ObjectiefRecht.structure.DeSom" flags="ng" index="3ds1cP">
         <child id="790142833165569397" name="meervoudigkenmerk" index="1AkaJd" />
         <child id="790142833161474699" name="kenmerk" index="1ABzgN" />
-      </concept>
-      <concept id="97030968393466005" name="ObjectiefRecht.structure.ReferentieNaarOvergang" flags="ng" index="3i5FAN">
-        <reference id="97030968393466006" name="overgang" index="3i5FAK" />
       </concept>
       <concept id="2024696888646214736" name="ObjectiefRecht.structure.IsGelijk" flags="ng" index="3lwoX7">
         <child id="2024696888646214737" name="expressie1" index="3lwoX6" />
@@ -7198,17 +7198,17 @@
           </node>
         </node>
       </node>
-      <node concept="3i5FAN" id="QAjMVOAcjY" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci2n" role="3i5FB_">
         <ref role="3i5FAK" node="7RdMFUtgOw6" resolve="Indienen verzoek aanpassing arbeidsduur" />
       </node>
     </node>
     <node concept="1_mtK9" id="7RdMFUtgOKl" role="1_mtLR">
       <property role="TrG5h" value="Accepteren van het verzoek" />
       <ref role="1_mtLE" node="7RdMFUtgOw6" resolve="Indienen verzoek aanpassing arbeidsduur" />
-      <node concept="3i5FAN" id="QAjMVOAchA" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci2q" role="3i5FB_">
         <ref role="3i5FAK" node="7RdMFUtgOxd" resolve="Accepteren van het verzoek" />
       </node>
-      <node concept="3i5FAN" id="QAjMVOAchE" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci2u" role="3i5FB_">
         <ref role="3i5FAK" node="7RdMFUtgOxo" resolve="Niet accepteren van het verzoek" />
       </node>
       <node concept="3oHiSy" id="7RdMFUtgOKo" role="1_mtK8">
@@ -7235,7 +7235,7 @@
           </node>
         </node>
       </node>
-      <node concept="3i5FAN" id="QAjMVOAchz" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci2y" role="3i5FB_">
         <ref role="3i5FAK" node="7RdMFUtgOxA" resolve="Overleg plegen" />
       </node>
     </node>
@@ -7268,29 +7268,29 @@
         </node>
         <node concept="3oGGqp" id="7RdMFUtgOKI" role="3oHiS_" />
       </node>
-      <node concept="3i5FAN" id="QAjMVOAchI" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci2_" role="3i5FB_">
         <ref role="3i5FAK" node="7RdMFUtgOxA" resolve="Overleg plegen" />
       </node>
-      <node concept="3i5FAN" id="QAjMVOAchP" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci2G" role="3i5FB_">
         <ref role="3i5FAK" node="7RdMFUtgOye" resolve="Afwijzen van het verzoek" />
       </node>
-      <node concept="3i5FAN" id="QAjMVOAchW" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci2N" role="3i5FB_">
         <ref role="3i5FAK" node="7RdMFUtgOxK" resolve="Inwilligen verzoek voor zover het betreft het tijdstip van ingang en omvang van de aanpassing" />
       </node>
-      <node concept="3i5FAN" id="QAjMVOAci3" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci2U" role="3i5FB_">
         <ref role="3i5FAK" node="7RdMFUtgOyL" resolve="Vaststellen van de spreiding van de uren" />
       </node>
-      <node concept="3i5FAN" id="QAjMVOAcia" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci31" role="3i5FB_">
         <ref role="3i5FAK" node="7RdMFUtgOy_" resolve="Inzetten van de immuniteit voor het vaststellen van de uren" />
       </node>
     </node>
     <node concept="1_mtK9" id="7RdMFUtgOKO" role="1_mtLR">
       <property role="TrG5h" value="Mededelen van de beslissing" />
       <ref role="1_mtLE" node="7RdMFUtgOzo" resolve="Schriftelijk mededelen van de beslissing aan de werknemer" />
-      <node concept="3i5FAN" id="QAjMVOAcih" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci38" role="3i5FB_">
         <ref role="3i5FAK" node="7RdMFUtgOzy" resolve="Mededelen van de redenen" />
       </node>
-      <node concept="3i5FAN" id="QAjMVOAcil" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci3c" role="3i5FB_">
         <ref role="3i5FAK" node="7RdMFUtgOzo" resolve="Schriftelijk mededelen van de beslissing aan de werknemer" />
       </node>
       <node concept="3oHiSy" id="7RdMFUtgOKR" role="1_mtK8">

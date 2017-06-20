@@ -8,108 +8,51 @@ import java.util.Collection;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.Collections;
-import java.util.Map;
-import java.util.HashMap;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
+import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
-    {
-      SAbstractConcept cncpt = ((SAbstractConcept) concept);
-      Integer preIndex = indices_xbvbvu_a0a.get(cncpt);
-      int switchIndex = (preIndex == null ? -1 : preIndex);
-      switch (switchIndex) {
-        case 0:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new InteractieDefinitie_Editor());
-          }
-          break;
-        case 1:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new InvoerVeld_Editor());
-          }
-          break;
-        case 2:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new Kolom_Editor());
-          }
-          break;
-        case 3:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new Presentatie_Editor());
-          }
-          break;
-        case 4:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new PresentatieDialoog_Editor());
-          }
-          break;
-        case 5:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new PresentatieKenmerk_Editor());
-          }
-          break;
-        case 6:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new PresentatieLink_Editor());
-          }
-          break;
-        case 7:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new PresentatieObject_Editor());
-          }
-          break;
-        case 8:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new PresentatieRechtsbetrekking_Editor());
-          }
-          break;
-        case 9:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new PresentatieRechtshandeling_Editor());
-          }
-          break;
-        case 10:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new Regeling_Editor());
-          }
-          break;
-        case 11:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rij_Editor());
-          }
-          break;
-        case 12:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new TagVeld_Editor());
-          }
-          break;
-        case 13:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new TekstVeld_Editor());
-          }
-          break;
-        case 14:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new XpathVeld_Editor());
-          }
-          break;
-        default:
-      }
+    SAbstractConcept cncpt = ((SAbstractConcept) concept);
+    switch (index_xbvbvu_a0a.index(cncpt)) {
+      case 0:
+        return Collections.<ConceptEditor>singletonList(new InteractieDefinitie_Editor());
+      case 1:
+        return Collections.<ConceptEditor>singletonList(new InvoerVeld_Editor());
+      case 2:
+        return Collections.<ConceptEditor>singletonList(new Kolom_Editor());
+      case 3:
+        return Collections.<ConceptEditor>singletonList(new Presentatie_Editor());
+      case 4:
+        return Collections.<ConceptEditor>singletonList(new PresentatieDialoog_Editor());
+      case 5:
+        return Collections.<ConceptEditor>singletonList(new PresentatieKenmerk_Editor());
+      case 6:
+        return Collections.<ConceptEditor>singletonList(new PresentatieLink_Editor());
+      case 7:
+        return Collections.<ConceptEditor>singletonList(new PresentatieObject_Editor());
+      case 8:
+        return Collections.<ConceptEditor>singletonList(new PresentatieRechtsbetrekking_Editor());
+      case 9:
+        return Collections.<ConceptEditor>singletonList(new PresentatieRechtshandeling_Editor());
+      case 10:
+        return Collections.<ConceptEditor>singletonList(new Regeling_Editor());
+      case 11:
+        return Collections.<ConceptEditor>singletonList(new Rij_Editor());
+      case 12:
+        return Collections.<ConceptEditor>singletonList(new TagVeld_Editor());
+      case 13:
+        return Collections.<ConceptEditor>singletonList(new TekstVeld_Editor());
+      case 14:
+        return Collections.<ConceptEditor>singletonList(new XpathVeld_Editor());
+      default:
     }
     return Collections.<ConceptEditor>emptyList();
   }
 
 
 
-  private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
-    HashMap<SAbstractConcept, Integer> res = new HashMap<SAbstractConcept, Integer>();
-    int counter = 0;
-    for (SAbstractConcept c : concepts) {
-      res.put(c, counter++);
-    }
-    return res;
-  }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L, "Interactie.structure.InteractieDefinitie"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7038194f2L, "Interactie.structure.InvoerVeld"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a29d8L, "Interactie.structure.Kolom"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L, "Interactie.structure.Presentatie"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7037f61aeL, "Interactie.structure.PresentatieDialoog"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL, "Interactie.structure.PresentatieKenmerk"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32f3dfaL, "Interactie.structure.PresentatieLink"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a95ffL, "Interactie.structure.PresentatieObject"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa180L, "Interactie.structure.PresentatieRechtsbetrekking"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33ad98eL, "Interactie.structure.PresentatieRechtshandeling"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L, "Interactie.structure.Regeling"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32dc163L, "Interactie.structure.Rij"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x158b926d34d8927L, "Interactie.structure.TagVeld"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33e7f5dL, "Interactie.structure.TekstVeld"), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x158b926d34c3ba9L, "Interactie.structure.XpathVeld"));
+  private static final ConceptSwitchIndex index_xbvbvu_a0a = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7038194f2L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a29d8L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7037f61aeL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32f3dfaL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a95ffL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa180L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33ad98eL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32dc163L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x158b926d34d8927L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33e7f5dL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x158b926d34c3ba9L)).seal();
 }

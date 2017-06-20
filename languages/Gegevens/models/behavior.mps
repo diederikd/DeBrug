@@ -2,7 +2,7 @@
 <model ref="r:b2ebef81-e61c-40e2-978f-31da984640bd(Gegevens.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -1880,7 +1880,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="5kuxuwXEZEl" role="2OqNvi">
-                  <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="getdate" />
+                  <ref role="37wK5l" to="rwnv:5riiL_BUg0c" resolve="geefdatum" />
                 </node>
               </node>
             </node>
@@ -1962,7 +1962,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="5kuxuwXF00$" role="2OqNvi">
-                  <ref role="37wK5l" to="rwnv:5riiL_BUVyA" resolve="getdatetime" />
+                  <ref role="37wK5l" to="rwnv:5riiL_BUVyA" resolve="geefDatumTijd" />
                 </node>
               </node>
             </node>
@@ -2047,7 +2047,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="5kuxuwXF0mR" role="2OqNvi">
-                  <ref role="37wK5l" to="rwnv:5riiL_BUHOa" resolve="gettime" />
+                  <ref role="37wK5l" to="rwnv:5riiL_BUHOa" resolve="geefTijd" />
                 </node>
               </node>
             </node>
@@ -2086,7 +2086,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="FR9FxGLMlV" role="2OqNvi">
-              <ref role="37wK5l" to="rwnv:5riiL_BUHOa" resolve="gettime" />
+              <ref role="37wK5l" to="rwnv:5riiL_BUHOa" resolve="geefTijd" />
             </node>
           </node>
         </node>

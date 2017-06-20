@@ -4,8 +4,11 @@
     <file name="ConceptPresentationAspectImpl.java">
       <unit at="10,0,21,0" name="Integriteit.structure.ConceptPresentationAspectImpl" />
     </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,26,0" name="Integriteit.structure.LanguageConceptSwitch" />
+    </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="17,0,52,0" name="Integriteit.structure.StructureAspectDescriptor" />
+      <unit at="13,0,39,0" name="Integriteit.structure.StructureAspectDescriptor" />
     </file>
   </root>
 </debug-info>

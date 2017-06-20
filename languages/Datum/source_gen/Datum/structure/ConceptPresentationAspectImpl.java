@@ -19,36 +19,36 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Seconden = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Tijd = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Uren = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VerschilTussen = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_VerschilTussenDatums = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case 0:
+      case LanguageConceptSwitch.Dagen:
         return props_Dagen;
-      case 1:
+      case LanguageConceptSwitch.Datum:
         return props_Datum;
-      case 2:
+      case LanguageConceptSwitch.DatumTijd:
         return props_DatumTijd;
-      case 3:
+      case LanguageConceptSwitch.Duur:
         return props_Duur;
-      case 4:
+      case LanguageConceptSwitch.Jaren:
         return props_Jaren;
-      case 5:
+      case LanguageConceptSwitch.Maanden:
         return props_Maanden;
-      case 6:
+      case LanguageConceptSwitch.Minuten:
         return props_Minuten;
-      case 7:
+      case LanguageConceptSwitch.Seconden:
         return props_Seconden;
-      case 8:
+      case LanguageConceptSwitch.Tijd:
         return props_Tijd;
-      case 9:
+      case LanguageConceptSwitch.Uren:
         return props_Uren;
-      case 10:
-        return props_VerschilTussen;
+      case LanguageConceptSwitch.VerschilTussenDatums:
+        return props_VerschilTussenDatums;
     }
-    throw new IllegalStateException("Unknown concept " + c);
+    return null;
   }
 }

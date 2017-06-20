@@ -10,9 +10,9 @@ import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private final ConceptPresentation props_AanspraakNaIngebrekeStellingPlicht = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_AanspraakNaIngebrekeStellingPlicht = new ConceptPresentationBuilder().shortDesc("Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten.").create();
   private final ConceptPresentation props_AbstractArtikel = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AbstractKenmerk = new ConceptPresentationBuilder().deprecated().create();
+  private final ConceptPresentation props_AbstractKenmerk = new ConceptPresentationBuilder().deprecated(true).create();
   private final ConceptPresentation props_AbstractKenmerkType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AbstractReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AbstracteExpressie = new ConceptPresentationBuilder().create();
@@ -30,7 +30,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_DatumType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DatumUitvoerenHandeling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DeSom = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DelenExpressie = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_DelenExpressie = new ConceptPresentationBuilder().shortDesc("Delen").create();
   private final ConceptPresentation props_DuurType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Enumeratie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_EnumeratieElement = new ConceptPresentationBuilder().create();
@@ -53,7 +53,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_IRekenWaardeExpressie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IURL = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IUnaireExpressie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImmuniteitGeenbevoegdheid = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ImmuniteitGeenbevoegdheid = new ConceptPresentationBuilder().shortDesc("Een {immuniteit-geenbevoegdheid} is een [rechtsbetrekking] waarbij de immuniteit houder de macht heeft een of meer [rechtsbetrekkingen] buiten werking te stellen, of een of meer [voorwaarden] van een [rechtshandeling] of [feitelijke handeling] buiten werking te stellen. De geenbevoegdheid houdende [partij] heeft de resultaten van het uitoefenen van de immuniteit maar te accepteren, uiteraard mits voldaan is aan de [voorwaarden] van geldigheid van de [rechtshandeling] van immuniteit.").create();
   private final ConceptPresentation props_InstantieVanObject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IsGeen = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IsGelijk = new ConceptPresentationBuilder().create();
@@ -67,19 +67,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_IsWaar = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_JaNeeType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Kenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_KrachtigeAanspraakFataleVerplichtig = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_KrachtigeAanspraakFataleVerplichtig = new ConceptPresentationBuilder().shortDesc("Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten.").create();
   private final ConceptPresentation props_Lidwoord = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LidwoordDe = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LidwoordHet = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LigtNa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LigtVoor = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LijstMetVerwoordingen = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MaterieleVoorwaarde = new ConceptPresentationBuilder().deprecated().create();
+  private final ConceptPresentation props_MaterieleVoorwaarde = new ConceptPresentationBuilder().deprecated(true).create();
   private final ConceptPresentation props_MeervoudigeObjectWaarde = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_MethodeAanpassenFeiten = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_MethodeBeeidigenOnderwerp = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_MethodeNieuweFeiten = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MinExpressie = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_MinExpressie = new ConceptPresentationBuilder().shortDesc("aftrekken").create();
   private final ConceptPresentation props_Na = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Object = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ObjectType = new ConceptPresentationBuilder().create();
@@ -89,20 +89,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_OptieAccepterenHandeling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_OptieAfwijzenHandeling = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_OptieUitvoerenHandeling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OptioneleBevoegdheidOptioneleGehoudenheid = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_OptioneleBevoegdheidOptioneleGehoudenheid = new ConceptPresentationBuilder().shortDesc("Een {bevoegdheid-gehoudenheid} is een [rechtsbetrekking] waarbij het [rechtssubject] dat de bevoegdheidskant heeft, de keuze heeft, zijn macht uit te oefenen en een of meer nieuwe [rechtsbetrekkingen] van welk soort ook tot stand te brengen tussen de gehoudenheid houdende [partij] en een andere [partij], en/of een of meer bestaande [rechtsbetrekkingen] de gehoudenheid houdende [partij] en een andere [partij] te beëindigen.").create();
   private final ConceptPresentation props_Overgang = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OvergangZonderRechtsgevolg = new ConceptPresentationBuilder().deprecated().create();
-  private final ConceptPresentation props_PlusExpressie = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_OvergangZonderRechtsgevolg = new ConceptPresentationBuilder().deprecated(true).create();
+  private final ConceptPresentation props_PlusExpressie = new ConceptPresentationBuilder().shortDesc("optellen").create();
   private final ConceptPresentation props_RechtsSubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RechtsSubjectMetPlicht = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RechtsSubjectMetRecht = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Rechtsbetrekking = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7da8818L, "initieel"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2dL, "rechtssubjectMetRecht"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2eL, "rechtssubjectMetPlicht"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x218d2fe3c8aff5f6L, "onderwerp")).create();
+  private final ConceptPresentation props_Rechtsbetrekking = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7da8818L, "initieel"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2dL, "rechtssubjectMetRecht"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2eL, "rechtssubjectMetPlicht"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x218d2fe3c8aff5f6L, "onderwerp")).shortDesc("Synoniemen zijn rechtsrelatie en rechtsverhouding").create();
   private final ConceptPresentation props_Rechtsgevolg = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RechtsgevolgVeroorzakers = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rechtshandeling = new ConceptPresentationBuilder().deprecated().create();
   private final ConceptPresentation props_ReeelGetalType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarArtikel = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarEnumeratie = new ConceptPresentationBuilder().deprecated().create();
+  private final ConceptPresentation props_ReferentieNaarEnumeratie = new ConceptPresentationBuilder().deprecated(true).create();
   private final ConceptPresentation props_ReferentieNaarInstantieVanObject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarObject = new ConceptPresentationBuilder().create();
@@ -114,7 +114,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ReferentieNaarRechtsgevolgVeroorzaker = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarRechtssubject = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarToestand = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarVoorwaarde = new ConceptPresentationBuilder().deprecated().create();
+  private final ConceptPresentation props_ReferentieNaarVoorwaarde = new ConceptPresentationBuilder().deprecated(true).create();
   private final ConceptPresentation props_ReferentieNaarWaardeVanKenmerk = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Regel = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RekenExpressie = new ConceptPresentationBuilder().create();
@@ -128,8 +128,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TijdsverloopMetRechtsgevolg = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Toestand = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Variabele = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d5dc56eL, "onderwerp2"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d5dc570L, "kenmerk2")).create();
-  private final ConceptPresentation props_VermenigvuldigenExpressie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VerplichteBevoegdheidVerplichteGehoudenheid = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_VermenigvuldigenExpressie = new ConceptPresentationBuilder().shortDesc("Vermenigvuldigen").create();
+  private final ConceptPresentation props_VerplichteBevoegdheidVerplichteGehoudenheid = new ConceptPresentationBuilder().shortDesc("Een {bevoegdheid-gehoudenheid} is een [rechtsbetrekking] waarbij het [rechtssubject] dat de bevoegdheidskant heeft, de keuze heeft, zijn macht uit te oefenen en een of meer nieuwe [rechtsbetrekkingen] van welk soort ook tot stand te brengen tussen de gehoudenheid houdende [partij] en een andere [partij], en/of een of meer bestaande [rechtsbetrekkingen] de gehoudenheid houdende [partij] en een andere [partij] te beëindigen.").create();
   private final ConceptPresentation props_VerschilTussen = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_VerwoordingElement = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_VerwoordingKenmerk = new ConceptPresentationBuilder().create();
@@ -139,12 +139,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Voor = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_VoorbeeldenMetInstanties = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Voorwaarden = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VoorwaardenRechtshandeling = new ConceptPresentationBuilder().deprecated().create();
-  private final ConceptPresentation props_VormVoorwaarde = new ConceptPresentationBuilder().deprecated().create();
+  private final ConceptPresentation props_VoorwaardenRechtshandeling = new ConceptPresentationBuilder().deprecated(true).create();
+  private final ConceptPresentation props_VormVoorwaarde = new ConceptPresentationBuilder().deprecated(true).create();
   private final ConceptPresentation props_VrijeTekst = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VrijheidGeenaanspraak = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_VrijheidGeenaanspraak = new ConceptPresentationBuilder().shortDesc("Een {vrijheid-geenaanspraak} is een [rechtsbetrekking] waarbij het [soort recht] [vrijheid] houdende [rechtssubject] iets kan doen of iets kan nalaten, zonder dat dat enig [rechtsgevolg] heeft; de [geenaanspraak] houdende [partij] staat in deze [rechtsbetrekking] geheel machteloos iets te doen tegen de [vrijheid] houdende [partij] binnen deze [rechtsbetrekking]. Kortom, geen van beide [rechtssubjecten] in de [rechtsbetrekking] {vrijheid-geenaanspraak} kan binnen de scope van die [rechtsbetrekking] een [rechtsgevolg] tot stand brengen.").create();
   private final ConceptPresentation props_WaardeVanKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ZwakkeAanspraakZwakkePlicht = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ZwakkeAanspraakZwakkePlicht = new ConceptPresentationBuilder().shortDesc("Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten.").create();
   private final ConceptPresentation props_isNegatief = new ConceptPresentationBuilder().create();
 
   @Override
@@ -152,279 +152,279 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case 0:
+      case LanguageConceptSwitch.AanspraakNaIngebrekeStellingPlicht:
         return props_AanspraakNaIngebrekeStellingPlicht;
-      case 1:
+      case LanguageConceptSwitch.AbstractArtikel:
         return props_AbstractArtikel;
-      case 2:
+      case LanguageConceptSwitch.AbstractKenmerk:
         return props_AbstractKenmerk;
-      case 3:
+      case LanguageConceptSwitch.AbstractKenmerkType:
         return props_AbstractKenmerkType;
-      case 4:
+      case LanguageConceptSwitch.AbstractReferentieNaarKenmerk:
         return props_AbstractReferentieNaarKenmerk;
-      case 5:
+      case LanguageConceptSwitch.AbstracteExpressie:
         return props_AbstracteExpressie;
-      case 6:
+      case LanguageConceptSwitch.AbstracteVoorwaarde:
         return props_AbstracteVoorwaarde;
-      case 7:
+      case LanguageConceptSwitch.Actie:
         return props_Actie;
-      case 8:
+      case LanguageConceptSwitch.Afleidingsregel:
         return props_Afleidingsregel;
-      case 9:
+      case LanguageConceptSwitch.Artikel:
         return props_Artikel;
-      case 10:
+      case LanguageConceptSwitch.Betrekking:
         return props_Betrekking;
-      case 11:
+      case LanguageConceptSwitch.Concept:
         return props_Concept;
-      case 12:
+      case LanguageConceptSwitch.Conditie:
         return props_Conditie;
-      case 13:
+      case LanguageConceptSwitch.ConditieAlle:
         return props_ConditieAlle;
-      case 14:
+      case LanguageConceptSwitch.ConditieEen:
         return props_ConditieEen;
-      case 15:
+      case LanguageConceptSwitch.ConditieGeen:
         return props_ConditieGeen;
-      case 16:
+      case LanguageConceptSwitch.Context:
         return props_Context;
-      case 17:
+      case LanguageConceptSwitch.DatumType:
         return props_DatumType;
-      case 18:
+      case LanguageConceptSwitch.DatumUitvoerenHandeling:
         return props_DatumUitvoerenHandeling;
-      case 19:
+      case LanguageConceptSwitch.DeSom:
         return props_DeSom;
-      case 20:
+      case LanguageConceptSwitch.DelenExpressie:
         return props_DelenExpressie;
-      case 21:
+      case LanguageConceptSwitch.DuurType:
         return props_DuurType;
-      case 22:
+      case LanguageConceptSwitch.Enumeratie:
         return props_Enumeratie;
-      case 23:
+      case LanguageConceptSwitch.EnumeratieElement:
         return props_EnumeratieElement;
-      case 24:
+      case LanguageConceptSwitch.EnumeratieType:
         return props_EnumeratieType;
-      case 25:
+      case LanguageConceptSwitch.EnumeratieWaarde:
         return props_EnumeratieWaarde;
-      case 26:
+      case LanguageConceptSwitch.ErIsEen:
         return props_ErIsEen;
-      case 27:
+      case LanguageConceptSwitch.ErIsGeen:
         return props_ErIsGeen;
-      case 28:
+      case LanguageConceptSwitch.ErIsGeenHandeling:
         return props_ErIsGeenHandeling;
-      case 29:
+      case LanguageConceptSwitch.ExpressieVoorwaarde:
         return props_ExpressieVoorwaarde;
-      case 30:
+      case LanguageConceptSwitch.FeitVerwoording:
         return props_FeitVerwoording;
-      case 31:
+      case LanguageConceptSwitch.FeitelijkeHandelingMetRechtsgevolg:
         return props_FeitelijkeHandelingMetRechtsgevolg;
-      case 32:
+      case LanguageConceptSwitch.GebeurtenisMetRechtsgevolg:
         return props_GebeurtenisMetRechtsgevolg;
-      case 33:
+      case LanguageConceptSwitch.GeheelGetalType:
         return props_GeheelGetalType;
-      case 34:
+      case LanguageConceptSwitch.Gelijkstelling:
         return props_Gelijkstelling;
-      case 35:
+      case LanguageConceptSwitch.Gevolg:
         return props_Gevolg;
-      case 36:
+      case LanguageConceptSwitch.HandelingZonderRechtsgevolg:
         return props_HandelingZonderRechtsgevolg;
-      case 37:
+      case LanguageConceptSwitch.HuidigeDatum:
         return props_HuidigeDatum;
-      case 38:
+      case LanguageConceptSwitch.IBinaireExpressie:
         return props_IBinaireExpressie;
-      case 39:
+      case LanguageConceptSwitch.IBinaireTemporeleExpressie:
         return props_IBinaireTemporeleExpressie;
-      case 40:
+      case LanguageConceptSwitch.IRekenWaardeExpressie:
         return props_IRekenWaardeExpressie;
-      case 41:
+      case LanguageConceptSwitch.IURL:
         return props_IURL;
-      case 42:
+      case LanguageConceptSwitch.IUnaireExpressie:
         return props_IUnaireExpressie;
-      case 43:
+      case LanguageConceptSwitch.ImmuniteitGeenbevoegdheid:
         return props_ImmuniteitGeenbevoegdheid;
-      case 44:
+      case LanguageConceptSwitch.InstantieVanObject:
         return props_InstantieVanObject;
-      case 45:
+      case LanguageConceptSwitch.IsGeen:
         return props_IsGeen;
-      case 46:
+      case LanguageConceptSwitch.IsGelijk:
         return props_IsGelijk;
-      case 47:
+      case LanguageConceptSwitch.IsGroterDan:
         return props_IsGroterDan;
-      case 48:
+      case LanguageConceptSwitch.IsGroterOfGelijk:
         return props_IsGroterOfGelijk;
-      case 49:
+      case LanguageConceptSwitch.IsKleinerDan:
         return props_IsKleinerDan;
-      case 50:
+      case LanguageConceptSwitch.IsNietBekend:
         return props_IsNietBekend;
-      case 51:
+      case LanguageConceptSwitch.IsNietGelijk:
         return props_IsNietGelijk;
-      case 52:
+      case LanguageConceptSwitch.IsOpgegeven:
         return props_IsOpgegeven;
-      case 53:
+      case LanguageConceptSwitch.IsPositief:
         return props_IsPositief;
-      case 54:
+      case LanguageConceptSwitch.IsWaar:
         return props_IsWaar;
-      case 55:
+      case LanguageConceptSwitch.JaNeeType:
         return props_JaNeeType;
-      case 56:
+      case LanguageConceptSwitch.Kenmerk:
         return props_Kenmerk;
-      case 57:
+      case LanguageConceptSwitch.KrachtigeAanspraakFataleVerplichtig:
         return props_KrachtigeAanspraakFataleVerplichtig;
-      case 58:
+      case LanguageConceptSwitch.Lidwoord:
         return props_Lidwoord;
-      case 59:
+      case LanguageConceptSwitch.LidwoordDe:
         return props_LidwoordDe;
-      case 60:
+      case LanguageConceptSwitch.LidwoordHet:
         return props_LidwoordHet;
-      case 61:
+      case LanguageConceptSwitch.LigtNa:
         return props_LigtNa;
-      case 62:
+      case LanguageConceptSwitch.LigtVoor:
         return props_LigtVoor;
-      case 63:
+      case LanguageConceptSwitch.LijstMetVerwoordingen:
         return props_LijstMetVerwoordingen;
-      case 64:
+      case LanguageConceptSwitch.MaterieleVoorwaarde:
         return props_MaterieleVoorwaarde;
-      case 65:
+      case LanguageConceptSwitch.MeervoudigeObjectWaarde:
         return props_MeervoudigeObjectWaarde;
-      case 66:
+      case LanguageConceptSwitch.MethodeAanpassenFeiten:
         return props_MethodeAanpassenFeiten;
-      case 67:
+      case LanguageConceptSwitch.MethodeBeeidigenOnderwerp:
         return props_MethodeBeeidigenOnderwerp;
-      case 68:
+      case LanguageConceptSwitch.MethodeNieuweFeiten:
         return props_MethodeNieuweFeiten;
-      case 69:
+      case LanguageConceptSwitch.MinExpressie:
         return props_MinExpressie;
-      case 70:
+      case LanguageConceptSwitch.Na:
         return props_Na;
-      case 71:
+      case LanguageConceptSwitch.Object:
         return props_Object;
-      case 72:
+      case LanguageConceptSwitch.ObjectType:
         return props_ObjectType;
-      case 73:
+      case LanguageConceptSwitch.ObjectWaarde:
         return props_ObjectWaarde;
-      case 74:
+      case LanguageConceptSwitch.Onderwerp:
         return props_Onderwerp;
-      case 75:
+      case LanguageConceptSwitch.OnderwerpType:
         return props_OnderwerpType;
-      case 76:
+      case LanguageConceptSwitch.OptieAccepterenHandeling:
         return props_OptieAccepterenHandeling;
-      case 77:
+      case LanguageConceptSwitch.OptieAfwijzenHandeling:
         return props_OptieAfwijzenHandeling;
-      case 78:
+      case LanguageConceptSwitch.OptieUitvoerenHandeling:
         return props_OptieUitvoerenHandeling;
-      case 79:
+      case LanguageConceptSwitch.OptioneleBevoegdheidOptioneleGehoudenheid:
         return props_OptioneleBevoegdheidOptioneleGehoudenheid;
-      case 80:
+      case LanguageConceptSwitch.Overgang:
         return props_Overgang;
-      case 81:
+      case LanguageConceptSwitch.OvergangZonderRechtsgevolg:
         return props_OvergangZonderRechtsgevolg;
-      case 82:
+      case LanguageConceptSwitch.PlusExpressie:
         return props_PlusExpressie;
-      case 83:
+      case LanguageConceptSwitch.RechtsSubject:
         return props_RechtsSubject;
-      case 84:
+      case LanguageConceptSwitch.RechtsSubjectMetPlicht:
         return props_RechtsSubjectMetPlicht;
-      case 85:
+      case LanguageConceptSwitch.RechtsSubjectMetRecht:
         return props_RechtsSubjectMetRecht;
-      case 86:
+      case LanguageConceptSwitch.Rechtsbetrekking:
         return props_Rechtsbetrekking;
-      case 87:
+      case LanguageConceptSwitch.Rechtsgevolg:
         return props_Rechtsgevolg;
-      case 88:
+      case LanguageConceptSwitch.RechtsgevolgVeroorzakers:
         return props_RechtsgevolgVeroorzakers;
-      case 89:
+      case LanguageConceptSwitch.Rechtshandeling:
         return props_Rechtshandeling;
-      case 90:
+      case LanguageConceptSwitch.ReeelGetalType:
         return props_ReeelGetalType;
-      case 91:
+      case LanguageConceptSwitch.ReferentieNaarArtikel:
         return props_ReferentieNaarArtikel;
-      case 92:
+      case LanguageConceptSwitch.ReferentieNaarEnumeratie:
         return props_ReferentieNaarEnumeratie;
-      case 93:
+      case LanguageConceptSwitch.ReferentieNaarInstantieVanObject:
         return props_ReferentieNaarInstantieVanObject;
-      case 94:
+      case LanguageConceptSwitch.ReferentieNaarKenmerk:
         return props_ReferentieNaarKenmerk;
-      case 95:
+      case LanguageConceptSwitch.ReferentieNaarObject:
         return props_ReferentieNaarObject;
-      case 96:
+      case LanguageConceptSwitch.ReferentieNaarOnderwerp:
         return props_ReferentieNaarOnderwerp;
-      case 97:
+      case LanguageConceptSwitch.ReferentieNaarOvergang:
         return props_ReferentieNaarOvergang;
-      case 98:
+      case LanguageConceptSwitch.ReferentieNaarRechtsHandeling:
         return props_ReferentieNaarRechtsHandeling;
-      case 99:
+      case LanguageConceptSwitch.ReferentieNaarRechtsbetrekking:
         return props_ReferentieNaarRechtsbetrekking;
-      case 100:
+      case LanguageConceptSwitch.ReferentieNaarRechtsgevolg:
         return props_ReferentieNaarRechtsgevolg;
-      case 101:
+      case LanguageConceptSwitch.ReferentieNaarRechtsgevolgVeroorzaker:
         return props_ReferentieNaarRechtsgevolgVeroorzaker;
-      case 102:
+      case LanguageConceptSwitch.ReferentieNaarRechtssubject:
         return props_ReferentieNaarRechtssubject;
-      case 103:
+      case LanguageConceptSwitch.ReferentieNaarToestand:
         return props_ReferentieNaarToestand;
-      case 104:
+      case LanguageConceptSwitch.ReferentieNaarVoorwaarde:
         return props_ReferentieNaarVoorwaarde;
-      case 105:
+      case LanguageConceptSwitch.ReferentieNaarWaardeVanKenmerk:
         return props_ReferentieNaarWaardeVanKenmerk;
-      case 106:
+      case LanguageConceptSwitch.Regel:
         return props_Regel;
-      case 107:
+      case LanguageConceptSwitch.RekenExpressie:
         return props_RekenExpressie;
-      case 108:
+      case LanguageConceptSwitch.RijVanKaraktersType:
         return props_RijVanKaraktersType;
-      case 109:
+      case LanguageConceptSwitch.SubjectType:
         return props_SubjectType;
-      case 110:
+      case LanguageConceptSwitch.TabelMetInstanties:
         return props_TabelMetInstanties;
-      case 111:
+      case LanguageConceptSwitch.TenHoogsteVoor:
         return props_TenHoogsteVoor;
-      case 112:
+      case LanguageConceptSwitch.TenMinsteNa:
         return props_TenMinsteNa;
-      case 113:
+      case LanguageConceptSwitch.TenMinsteVoor:
         return props_TenMinsteVoor;
-      case 114:
+      case LanguageConceptSwitch.TijdstipType:
         return props_TijdstipType;
-      case 115:
+      case LanguageConceptSwitch.TijdsverloopMetRechtsgevolg:
         return props_TijdsverloopMetRechtsgevolg;
-      case 116:
+      case LanguageConceptSwitch.Toestand:
         return props_Toestand;
-      case 117:
+      case LanguageConceptSwitch.Variabele:
         return props_Variabele;
-      case 118:
+      case LanguageConceptSwitch.VermenigvuldigenExpressie:
         return props_VermenigvuldigenExpressie;
-      case 119:
+      case LanguageConceptSwitch.VerplichteBevoegdheidVerplichteGehoudenheid:
         return props_VerplichteBevoegdheidVerplichteGehoudenheid;
-      case 120:
+      case LanguageConceptSwitch.VerschilTussen:
         return props_VerschilTussen;
-      case 121:
+      case LanguageConceptSwitch.VerwoordingElement:
         return props_VerwoordingElement;
-      case 122:
+      case LanguageConceptSwitch.VerwoordingKenmerk:
         return props_VerwoordingKenmerk;
-      case 123:
+      case LanguageConceptSwitch.VerwoordingObject:
         return props_VerwoordingObject;
-      case 124:
+      case LanguageConceptSwitch.VerwoordingTekst:
         return props_VerwoordingTekst;
-      case 125:
+      case LanguageConceptSwitch.VerwoordingWaarde:
         return props_VerwoordingWaarde;
-      case 126:
+      case LanguageConceptSwitch.Voor:
         return props_Voor;
-      case 127:
+      case LanguageConceptSwitch.VoorbeeldenMetInstanties:
         return props_VoorbeeldenMetInstanties;
-      case 128:
+      case LanguageConceptSwitch.Voorwaarden:
         return props_Voorwaarden;
-      case 129:
+      case LanguageConceptSwitch.VoorwaardenRechtshandeling:
         return props_VoorwaardenRechtshandeling;
-      case 130:
+      case LanguageConceptSwitch.VormVoorwaarde:
         return props_VormVoorwaarde;
-      case 131:
+      case LanguageConceptSwitch.VrijeTekst:
         return props_VrijeTekst;
-      case 132:
+      case LanguageConceptSwitch.VrijheidGeenaanspraak:
         return props_VrijheidGeenaanspraak;
-      case 133:
+      case LanguageConceptSwitch.WaardeVanKenmerk:
         return props_WaardeVanKenmerk;
-      case 134:
+      case LanguageConceptSwitch.ZwakkeAanspraakZwakkePlicht:
         return props_ZwakkeAanspraakZwakkePlicht;
-      case 135:
+      case LanguageConceptSwitch.isNegatief:
         return props_isNegatief;
     }
-    throw new IllegalStateException("Unknown concept " + c);
+    return null;
   }
 }

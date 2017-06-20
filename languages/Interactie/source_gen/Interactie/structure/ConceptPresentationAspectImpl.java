@@ -31,39 +31,39 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case 0:
+      case LanguageConceptSwitch.InteractieDefinitie:
         return props_InteractieDefinitie;
-      case 1:
+      case LanguageConceptSwitch.InvoerVeld:
         return props_InvoerVeld;
-      case 2:
+      case LanguageConceptSwitch.Kolom:
         return props_Kolom;
-      case 3:
+      case LanguageConceptSwitch.Presentatie:
         return props_Presentatie;
-      case 4:
+      case LanguageConceptSwitch.PresentatieDialoog:
         return props_PresentatieDialoog;
-      case 5:
+      case LanguageConceptSwitch.PresentatieKenmerk:
         return props_PresentatieKenmerk;
-      case 6:
+      case LanguageConceptSwitch.PresentatieLink:
         return props_PresentatieLink;
-      case 7:
+      case LanguageConceptSwitch.PresentatieObject:
         return props_PresentatieObject;
-      case 8:
+      case LanguageConceptSwitch.PresentatieRechtsbetrekking:
         return props_PresentatieRechtsbetrekking;
-      case 9:
+      case LanguageConceptSwitch.PresentatieRechtshandeling:
         return props_PresentatieRechtshandeling;
-      case 10:
+      case LanguageConceptSwitch.PresentatieVeld:
         return props_PresentatieVeld;
-      case 11:
+      case LanguageConceptSwitch.Regeling:
         return props_Regeling;
-      case 12:
+      case LanguageConceptSwitch.Rij:
         return props_Rij;
-      case 13:
+      case LanguageConceptSwitch.TagVeld:
         return props_TagVeld;
-      case 14:
+      case LanguageConceptSwitch.TekstVeld:
         return props_TekstVeld;
-      case 15:
+      case LanguageConceptSwitch.XpathVeld:
         return props_XpathVeld;
     }
-    throw new IllegalStateException("Unknown concept " + c);
+    return null;
   }
 }

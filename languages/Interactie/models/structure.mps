@@ -277,7 +277,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="keuze" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="3pw0:5oIirjjw2l" resolve="ReferentieNaarOvergang" />
+      <ref role="20lvS9" to="xhlk:6x9gEQEJL_p" resolve="ReferentieNaarOvergang" />
     </node>
     <node concept="1TJgyj" id="6oAJqs3vQ7d" role="1TKVEi">
       <property role="IQ2ns" value="7360779165999522253" />

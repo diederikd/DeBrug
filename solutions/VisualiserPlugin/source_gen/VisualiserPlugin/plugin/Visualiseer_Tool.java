@@ -30,7 +30,10 @@ public class Visualiseer_Tool extends GeneratedTool {
   public void init(Project project) {
     super.init(project);
     Project MPSproject = MPSDataKeys.PROJECT.getData(DataManager.getInstance().getDataContext());
-    Visualiseer_Tool.this.graphvizpng = ProjectBaseDirectory.getInstance(MPSproject).getBaseDir().getCanonicalPath() + "/graphviz/visualiser.png";
+    System.out.println("Project : " + MPSproject.toString());
+    System.out.println("Project : " + ProjectBaseDirectory.getInstance(MPSproject).getBaseDir().getCanonicalPath().toString());
+
+    Visualiseer_Tool.this.graphvizpng = " " + ProjectBaseDirectory.getInstance(MPSproject).getBaseDir().getCanonicalPath() + "/graphviz/visualiser.png";
     System.out.println("File: " + Visualiseer_Tool.this.graphvizpng);
     ImageIcon imageicon = new ImageIcon(Visualiseer_Tool.this.graphvizpng);
     Image image = imageicon.getImage();

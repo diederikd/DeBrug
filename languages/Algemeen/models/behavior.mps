@@ -2,7 +2,7 @@
 <model ref="r:47f70a36-2d19-4ed4-99ab-02ae4af48125(Algemeen.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -213,7 +213,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1bNeeFAZ_2R">
-    <ref role="13h7C2" to="8ao0:1bNeeFAZph1" resolve="KorteNaam" />
+    <ref role="13h7C2" to="8ao0:1bNeeFAZph1" resolve="IKorteNaam" />
     <node concept="13hLZK" id="1bNeeFAZ_2S" role="13h7CW">
       <node concept="3clFbS" id="1bNeeFAZ_2T" role="2VODD2">
         <node concept="3clFbF" id="1bNeeFAZ_LJ" role="3cqZAp">

@@ -9,14 +9,6 @@ import java.util.Collections;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
-import org.jetbrains.mps.openapi.module.SModule;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import com.intellij.openapi.project.Project;
-import jetbrains.mps.workbench.MPSDataKeys;
-import com.intellij.ide.DataManager;
-import com.intellij.platform.ProjectBaseDirectory;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Image;
 
 public class imageGreen implements ConceptEditorComponent {
   @NotNull
@@ -24,25 +16,6 @@ public class imageGreen implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createImage_nefzg4_a(editorContext, node);
-  }
-  private EditorCell createImage_nefzg4_a(final EditorContext editorContext, final SNode node) {
-    SModule imageModule;
-    String imagePath;
-    imageModule = SNodeOperations.getModel(node).getModule();
-    imagePath = (new _FunctionTypes._return_P0_E0<String>() {
-      public String invoke() {
-        Project project = MPSDataKeys.PROJECT.getData(DataManager.getInstance().getDataContext());
-        if (project != null) {
-          return ProjectBaseDirectory.getInstance(project).getBaseDir().getCanonicalPath() + "/images/Green.png";
-        }
-        return "";
-      }
-    }).invoke();
-    EditorCell_Image editorCell = EditorCell_Image.createImageCell(editorContext, node, imageModule, imagePath);
-    editorCell.setCellId("Image_nefzg4_a");
-    EvalueerRechtsbetrekking.setCellActions(editorCell, node, editorContext);
-    editorCell.setDescent(4);
-    return editorCell;
+    return new imageGreen_ComponentBuilder_a(editorContext, node).createCell();
   }
 }

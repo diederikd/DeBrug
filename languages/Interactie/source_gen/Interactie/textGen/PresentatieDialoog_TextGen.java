@@ -35,7 +35,7 @@ public class PresentatieDialoog_TextGen extends TextGenDescriptorBase {
       ctx.getBuffer().area().increaseIndent();
       tgs.indent();
       tgs.append("<rechtshandelingtype typeid='");
-      tgs.append(SLinkOperations.getTarget(overgang, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x158b926d34e0095L, 0x158b926d34e0096L, "overgang")).getNodeId().toString());
+      tgs.append(SLinkOperations.getTarget(overgang, MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x684942adaabf1959L, 0x158b926d34e0096L, "overgang")).getNodeId().toString());
       tgs.append("' />");
       tgs.newLine();
       ctx.getBuffer().area().decreaseIndent();

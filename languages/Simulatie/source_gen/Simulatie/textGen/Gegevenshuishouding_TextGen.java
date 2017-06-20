@@ -8,7 +8,6 @@ import jetbrains.mps.text.impl.TextGenSupport;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class Gegevenshuishouding_TextGen extends TextGenDescriptorBase {
   @Override
@@ -28,11 +27,5 @@ public class Gegevenshuishouding_TextGen extends TextGenDescriptorBase {
     tgs.append("</gegevenshuishouding>");
     tgs.newLine();
 
-  }
-  public String getExtension(SNode node) {
-    return "xml";
-  }
-  public String getFilename(SNode node) {
-    return SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
 }

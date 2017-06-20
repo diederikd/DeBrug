@@ -12,6 +12,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private final ConceptPresentation props_Gegevenshuishouding = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Informatiepositie = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ReferentieNaarOvergang = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Simulatie = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae782faL, "casus"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0xa37796bba047244L, "gegevenshuishouding"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae8257fL, "rechtssubject1"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x1ed85b1d6dac641fL, "rechtssubject2")).create();
   private final ConceptPresentation props_UitTeVoerenDialoog = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_UitTeVoerenHandeling = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935fL, "actor"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935aL, "overgang"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL, "onderwerp")).create();
@@ -22,19 +23,21 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case 0:
+      case LanguageConceptSwitch.Gegevenshuishouding:
         return props_Gegevenshuishouding;
-      case 1:
+      case LanguageConceptSwitch.Informatiepositie:
         return props_Informatiepositie;
-      case 2:
+      case LanguageConceptSwitch.ReferentieNaarOvergang:
+        return props_ReferentieNaarOvergang;
+      case LanguageConceptSwitch.Simulatie:
         return props_Simulatie;
-      case 3:
+      case LanguageConceptSwitch.UitTeVoerenDialoog:
         return props_UitTeVoerenDialoog;
-      case 4:
+      case LanguageConceptSwitch.UitTeVoerenHandeling:
         return props_UitTeVoerenHandeling;
-      case 5:
+      case LanguageConceptSwitch.UitvoerbareRechtshandeling:
         return props_UitvoerbareRechtshandeling;
     }
-    throw new IllegalStateException("Unknown concept " + c);
+    return null;
   }
 }

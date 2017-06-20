@@ -1307,7 +1307,7 @@
     <property role="EcuMT" value="2024696888646404923" />
     <property role="3GE5qa" value="Expressies.Functies.Temporeel" />
     <property role="TrG5h" value="VerschilTussen" />
-    <property role="34LRSv" value="verschil tussen" />
+    <property role="34LRSv" value="verschil tussen (in duur)" />
     <ref role="1TJDcQ" node="1YFKb5tsv5G" resolve="AbstracteExpressie" />
     <node concept="PrWs8" id="56OUB0WobHv" role="PzmwI">
       <ref role="PrY4T" node="4rrm763or4O" resolve="IBinaireExpressie" />

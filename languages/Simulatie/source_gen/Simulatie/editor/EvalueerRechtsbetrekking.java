@@ -38,7 +38,6 @@ public class EvalueerRechtsbetrekking {
         }
       }
       if ((simulatie == null)) {
-        System.out.println("Simulatie -> " + editorContext.getEditorComponent().getEditedNode());
         simulatie = (SNode) editorContext.getEditorComponent().getEditedNode();
       }
       if ((simulatie != null)) {

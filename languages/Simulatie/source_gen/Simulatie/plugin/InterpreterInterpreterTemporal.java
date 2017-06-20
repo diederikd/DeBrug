@@ -15,6 +15,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
+import com.mbeddr.mpsutil.interpreter.rt.StopAndReturnException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
 import com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo;
@@ -28,7 +29,7 @@ public class InterpreterInterpreterTemporal extends InterpreterBase {
   }
 
   protected void populateEvaluators(List<? extends IEvaluator> evaluators) {
-    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c99b8b3bL, "ObjectiefRecht.structure.VerschilTussen"), true, new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde").getDeclarationNode()))), new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde").getDeclarationNode())))) {
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c99b8b3bL, "ObjectiefRecht.structure.VerschilTussen"), true, new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde")))), new TypedChildConstraintImpl(SLinkOperations.findLinkDeclaration(MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x551e85e83da73fa5L, "Gegevens.structure.TemporeleWaarde"))))) {
       public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
         try {
           coverage.visitedEvaluator(this);
@@ -37,10 +38,12 @@ public class InterpreterInterpreterTemporal extends InterpreterBase {
           Object result = false;
           DebugHelper.printContext("Verschil tussen", node, context);
           return result;
+        } catch (StopAndReturnException stop) {
+          return stop.value();
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("verschil tussen(expressie1[TemporeleWaarde], expressie2[TemporeleWaarde])", node, ex);
+          throw new InterpreterRuntimeException("verschil tussen (in duur)(expressie1[TemporeleWaarde], expressie2[TemporeleWaarde])", node, ex);
         }
       }
       public EvaluatorInfo getInfo() {

@@ -14,6 +14,7 @@ import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.time.Duration;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import com.mbeddr.mpsutil.interpreter.rt.StopAndReturnException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
 import com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo;
@@ -59,6 +60,8 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
           }
 
           return null;
+        } catch (StopAndReturnException stop) {
+          return stop.value();
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
@@ -81,6 +84,8 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           return LocalDate.now();
+        } catch (StopAndReturnException stop) {
+          return stop.value();
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
@@ -103,6 +108,8 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           return Interpreter.RechtssubjectMetPlicht();
+        } catch (StopAndReturnException stop) {
+          return stop.value();
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
@@ -125,6 +132,8 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           return Interpreter.RechtssubjectMetRecht();
+        } catch (StopAndReturnException stop) {
+          return stop.value();
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
@@ -147,6 +156,8 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           return SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7da9e4c64537e68L, 0x7da9e4c64537e69L, "element")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+        } catch (StopAndReturnException stop) {
+          return stop.value();
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {

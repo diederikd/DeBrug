@@ -99,7 +99,8 @@ public class Interpreter {
       Interpreter.voegBerichtToe("Geen voorwaarden gevonden");
       return true;
     }
-    Object value = interpreter.evaluate(node, context, coverage);
+
+    Object value = interpreter.evaluate(node, context);
     Tuples._3<Object, IEnvironment, INodeValueCache> result = MultiTuple.<Object,IEnvironment,INodeValueCache>from(value, context.getEnvironment(), context.getNodeValueCache());
     return result._0();
   }

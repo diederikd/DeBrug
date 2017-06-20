@@ -12,56 +12,31 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.Collections;
-import java.util.Map;
-import java.util.HashMap;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
+import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
   private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Lijst", "", false, "SubjectiefRecht.editor.SubjectiefRecht.Lijst"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
-    {
-      SAbstractConcept cncpt = ((SAbstractConcept) concept);
-      Integer preIndex = indices_xbvbvu_a0b.get(cncpt);
-      int switchIndex = (preIndex == null ? -1 : preIndex);
-      switch (switchIndex) {
-        case 0:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new Casus_Editor());
-          }
-          break;
-        case 1:
-          if (true) {
-            return Arrays.asList(new ConceptEditor[]{new LijstMetRechtsbetrekkingen_Editor(), new LijstMetRechtsbetrekkingen_Lijst_Editor()});
-          }
-          break;
-        case 2:
-          if (true) {
-            return Arrays.asList(new ConceptEditor[]{new LijstMetRechtshandelingen_Editor(), new LijstMetRechtshandelingen_Lijst_Editor()});
-          }
-          break;
-        case 3:
-          if (true) {
-            return Arrays.asList(new ConceptEditor[]{new Rechtsbetrekking_Editor(), new Rechtsbetrekking_Lijst_Editor()});
-          }
-          break;
-        case 4:
-          if (true) {
-            return Arrays.asList(new ConceptEditor[]{new Rechtshandeling_Editor(), new Rechtshandeling_Lijst_Editor()});
-          }
-          break;
-        case 5:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rechtssubject_Editor());
-          }
-          break;
-        case 6:
-          if (true) {
-            return Collections.<ConceptEditor>singletonList(new ReferentieNaarRechtsSubject_Editor());
-          }
-          break;
-        default:
-      }
+    SAbstractConcept cncpt = ((SAbstractConcept) concept);
+    switch (index_xbvbvu_a0b.index(cncpt)) {
+      case 0:
+        return Collections.<ConceptEditor>singletonList(new Casus_Editor());
+      case 1:
+        return Arrays.asList(new ConceptEditor[]{new LijstMetRechtsbetrekkingen_Editor(), new LijstMetRechtsbetrekkingen_Lijst_Editor()});
+      case 2:
+        return Arrays.asList(new ConceptEditor[]{new LijstMetRechtshandelingen_Editor(), new LijstMetRechtshandelingen_Lijst_Editor()});
+      case 3:
+        return Arrays.asList(new ConceptEditor[]{new Rechtsbetrekking_Editor(), new Rechtsbetrekking_Lijst_Editor()});
+      case 4:
+        return Arrays.asList(new ConceptEditor[]{new Rechtshandeling_Editor(), new Rechtshandeling_Lijst_Editor()});
+      case 5:
+        return Collections.<ConceptEditor>singletonList(new Rechtssubject_Editor());
+      case 6:
+        return Collections.<ConceptEditor>singletonList(new ReferentieNaarRechtsSubject_Editor());
+      default:
     }
     return Collections.<ConceptEditor>emptyList();
   }
@@ -71,13 +46,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
   }
 
 
-  private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
-    HashMap<SAbstractConcept, Integer> res = new HashMap<SAbstractConcept, Integer>();
-    int counter = 0;
-    for (SAbstractConcept c : concepts) {
-      res.put(c, counter++);
-    }
-    return res;
-  }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0b = buildConceptIndices(MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL, "SubjectiefRecht.structure.Casus"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb2eL, "SubjectiefRecht.structure.LijstMetRechtsbetrekkingen"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L, "SubjectiefRecht.structure.LijstMetRechtshandelingen"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL, "SubjectiefRecht.structure.Rechtsbetrekking"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L, "SubjectiefRecht.structure.Rechtshandeling"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88bL, "SubjectiefRecht.structure.Rechtssubject"), MetaAdapterFactory.getConcept(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd5L, "SubjectiefRecht.structure.ReferentieNaarRechtsSubject"));
+  private static final ConceptSwitchIndex index_xbvbvu_a0b = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccdaL), MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb2eL), MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L), MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL), MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L), MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c88bL), MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd5L)).seal();
 }

@@ -38,10 +38,4 @@ public class InteractieDefinitie_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("</regelingen>");
   }
-  public String getExtension(SNode node) {
-    return "xml";
-  }
-  public String getFilename(SNode node) {
-    return "regelingen";
-  }
 }

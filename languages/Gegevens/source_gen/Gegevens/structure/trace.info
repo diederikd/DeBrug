@@ -10,8 +10,11 @@
     <file name="ConceptPresentationAspectImpl.java">
       <unit at="11,0,175,0" name="Gegevens.structure.ConceptPresentationAspectImpl" />
     </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,128,0" name="Gegevens.structure.LanguageConceptSwitch" />
+    </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="20,0,412,0" name="Gegevens.structure.StructureAspectDescriptor" />
+      <unit at="14,0,589,0" name="Gegevens.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:0109d2ae-ae2c-44b8-9ce3-d1c2796dced6(Gegevens.structure)/2282129504205496890">

@@ -35,6 +35,9 @@
         <reference id="6760713004453368666" name="overgang" index="Z77fM" />
         <reference id="6760713004453368668" name="onderwerp" index="Z77fO" />
       </concept>
+      <concept id="7514610766905809241" name="Simulatie.structure.ReferentieNaarOvergang" flags="ng" index="32X_JO">
+        <reference id="97030968393466006" name="overgang" index="3i5FAK" />
+      </concept>
       <concept id="7496157647699367134" name="Simulatie.structure.Gegevenshuishouding" flags="ng" index="1ztmtO">
         <child id="3139957515583339108" name="rechtshandelingen" index="1dIIjt" />
         <child id="3139957515586752450" name="rechtsbetrekkingen" index="1dND5V" />
@@ -203,9 +206,6 @@
       </concept>
       <concept id="345859696665847768" name="ObjectiefRecht.structure.ObjectWaarde" flags="ng" index="3dadDn">
         <reference id="345859696665847769" name="object" index="3dadDm" />
-      </concept>
-      <concept id="97030968393466005" name="ObjectiefRecht.structure.ReferentieNaarOvergang" flags="ng" index="3i5FAN">
-        <reference id="97030968393466006" name="overgang" index="3i5FAK" />
       </concept>
       <concept id="2024696888645630049" name="ObjectiefRecht.structure.ConditieAlle" flags="ng" index="3l_DdQ" />
       <concept id="7496157647699213321" name="ObjectiefRecht.structure.TabelMetInstanties" flags="ng" index="1ztWYz">
@@ -2141,34 +2141,34 @@
     <node concept="1_mtK9" id="7RdMFUtgP81" role="1_mtLR">
       <property role="TrG5h" value="Indienen aanvraag" />
       <ref role="1_mtLE" node="5IJXBomHx9j" resolve="Indienen aanvraag" />
-      <node concept="3i5FAN" id="7RdMFUtgP83" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci09" role="3i5FB_">
         <ref role="3i5FAK" node="5IJXBomHx9j" resolve="Indienen aanvraag" />
       </node>
-      <node concept="3i5FAN" id="7RdMFUtgP88" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci0l" role="3i5FB_">
         <ref role="3i5FAK" node="5XyrAiGGJyI" resolve="Vergaren van kennis" />
       </node>
-      <node concept="3i5FAN" id="7RdMFUtgP8g" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci0x" role="3i5FB_">
         <ref role="3i5FAK" node="5IJXBomJgsm" resolve="Niet in behandeling nemen van het verzoek" />
       </node>
-      <node concept="3i5FAN" id="7RdMFUtgP8q" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci0H" role="3i5FB_">
         <ref role="3i5FAK" node="5IJXBomJgov" resolve="Bevestigen van de ontvangst van de elektronisch ingediende aanvraag" />
       </node>
-      <node concept="3i5FAN" id="7RdMFUtgP8A" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci0T" role="3i5FB_">
         <ref role="3i5FAK" node="5IJXBomJg$9" resolve="In gelegenheid stellen de aanvraag aan te vullen met een samenvatting" />
       </node>
-      <node concept="3i5FAN" id="7RdMFUtgP8O" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci15" role="3i5FB_">
         <ref role="3i5FAK" node="5IJXBomJgws" resolve="In gelegenheid stellen de aanvraag aan te vullen met een vertaling" />
       </node>
-      <node concept="3i5FAN" id="7RdMFUtgP94" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci1B" role="3i5FB_">
         <ref role="3i5FAK" node="5IJXBomJgv4" resolve="Aanvullen aanvraag met vertaling" />
       </node>
-      <node concept="3i5FAN" id="7RdMFUtgP9m" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci1N" role="3i5FB_">
         <ref role="3i5FAK" node="5IJXBomJgzr" resolve="Aanvullen aanvraag met samenvatting" />
       </node>
-      <node concept="3i5FAN" id="7RdMFUtgP9E" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci1Z" role="3i5FB_">
         <ref role="3i5FAK" node="5IJXBomJglP" resolve="Beslissen op de aanvraag" />
       </node>
-      <node concept="3i5FAN" id="7RdMFUtgPa0" role="3i5FB_">
+      <node concept="32X_JO" id="1Set1Bjci2b" role="3i5FB_">
         <ref role="3i5FAK" node="5IJXBomJgtJ" resolve="Bekend maken besluit" />
       </node>
       <node concept="3oHiSy" id="7RdMFUtgXt7" role="1_mtK8">
