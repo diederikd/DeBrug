@@ -136,10 +136,8 @@
   </dependency>
   <dependency className="VisualiserPlugin.plugin.Visualiseer_Tool" file="Visualiseer_Tool.java">
     <classNode dependClassName="VisualiserPlugin.plugin.VisualiseerListener" />
-    <classNode dependClassName="com.intellij.ide.DataManager" />
     <classNode dependClassName="com.intellij.openapi.project.Project" />
     <classNode dependClassName="com.intellij.openapi.wm.ToolWindowAnchor" />
-    <classNode dependClassName="com.intellij.platform.ProjectBaseDirectory" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Image" />
     <classNode dependClassName="java.lang.String" />
@@ -150,7 +148,6 @@
     <classNode dependClassName="javax.swing.JLabel" />
     <classNode dependClassName="javax.swing.JPanel" />
     <classNode dependClassName="javax.swing.JScrollPane" />
-    <classNode dependClassName="jetbrains.mps.workbench.MPSDataKeys" />
     <classNode extendsClassName="jetbrains.mps.plugins.tool.GeneratedTool" />
   </dependency>
   <dependency className="VisualiserPlugin.plugin.VisualiserPlugin_ApplicationPlugin" file="VisualiserPlugin_ApplicationPlugin.java">

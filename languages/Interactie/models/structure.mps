@@ -146,6 +146,13 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="1KHGaPTRtP" resolve="Presentatie" />
     </node>
+    <node concept="1TJgyj" id="2hDGrbWNOcL" role="1TKVEi">
+      <property role="IQ2ns" value="2623823640223761201" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dialogen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2hDGrbWNLuo" resolve="Dialoog" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5hfcVvLUY04">
     <property role="EcuMT" value="6075131287476887556" />
@@ -323,6 +330,33 @@
       <property role="IQ2nx" value="97030968393435432" />
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2hDGrbWNLuo">
+    <property role="EcuMT" value="2623823640223750040" />
+    <property role="TrG5h" value="Dialoog" />
+    <property role="34LRSv" value="dialoog" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2hDGrbWNLup" role="1TKVEi">
+      <property role="IQ2ns" value="2623823640223750041" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rechtsbetrekkingen" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="3pw0:20D4HrzEFWA" resolve="ReferentieNaarRechtsbetrekking" />
+    </node>
+    <node concept="PrWs8" id="2hDGrbWNO5j" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2hDGrbX3E6h">
+    <property role="EcuMT" value="2623823640227914129" />
+    <property role="TrG5h" value="DialoogReference" />
+    <node concept="1TJgyj" id="2hDGrbX3E6i" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2623823640227914130" />
+      <property role="20kJfa" value="dialoog" />
+      <ref role="20lvS9" node="2hDGrbWNLuo" resolve="Dialoog" />
     </node>
   </node>
 </model>

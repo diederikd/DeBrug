@@ -63,6 +63,7 @@
     <dependency reexport="false">15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)</dependency>
+    <dependency reexport="false">c4c9a68e-ce24-4c5b-9241-c819e554f07c(Interactie)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:30ef095a-d489-45ff-a80f-456a798ac125:Gegevens" version="0" />
@@ -112,6 +113,7 @@
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" version="0" />
     <module reference="30ef095a-d489-45ff-a80f-456a798ac125(Gegevens)" version="0" />
+    <module reference="c4c9a68e-ce24-4c5b-9241-c819e554f07c(Interactie)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />

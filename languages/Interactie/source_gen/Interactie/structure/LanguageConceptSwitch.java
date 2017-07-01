@@ -9,25 +9,29 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int InteractieDefinitie = 0;
-  public static final int InvoerVeld = 1;
-  public static final int Kolom = 2;
-  public static final int Presentatie = 3;
-  public static final int PresentatieDialoog = 4;
-  public static final int PresentatieKenmerk = 5;
-  public static final int PresentatieLink = 6;
-  public static final int PresentatieObject = 7;
-  public static final int PresentatieRechtsbetrekking = 8;
-  public static final int PresentatieRechtshandeling = 9;
-  public static final int PresentatieVeld = 10;
-  public static final int Regeling = 11;
-  public static final int Rij = 12;
-  public static final int TagVeld = 13;
-  public static final int TekstVeld = 14;
-  public static final int XpathVeld = 15;
+  public static final int Dialoog = 0;
+  public static final int DialoogReference = 1;
+  public static final int InteractieDefinitie = 2;
+  public static final int InvoerVeld = 3;
+  public static final int Kolom = 4;
+  public static final int Presentatie = 5;
+  public static final int PresentatieDialoog = 6;
+  public static final int PresentatieKenmerk = 7;
+  public static final int PresentatieLink = 8;
+  public static final int PresentatieObject = 9;
+  public static final int PresentatieRechtsbetrekking = 10;
+  public static final int PresentatieRechtshandeling = 11;
+  public static final int PresentatieVeld = 12;
+  public static final int Regeling = 13;
+  public static final int Rij = 14;
+  public static final int TagVeld = 15;
+  public static final int TekstVeld = 16;
+  public static final int XpathVeld = 17;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL);
+    builder.put(0x2469b1b2fccf1798L, Dialoog);
+    builder.put(0x2469b1b2fd0ea191L, DialoogReference);
     builder.put(0x544f33b7f1ebe004L, InteractieDefinitie);
     builder.put(0x6626bda7038194f2L, InvoerVeld);
     builder.put(0x7b98ef41a32a29d8L, Kolom);

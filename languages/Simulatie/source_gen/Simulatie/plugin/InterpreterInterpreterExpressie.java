@@ -655,7 +655,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
               ListSequence.fromList(instantiesVanObject).removeElement(Interpreter.InstantieVanOnderwerpVanDeHandeling());
             }
             instantiesVanObject = Interpreter.BeperklijstMetInstanties(instantiesVanObject, SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b7d334fL, 0x7dbb3ebc6b7d3350L, "voorwaarden")));
-            if ((result == true) && ListSequence.fromList(instantiesVanObject).count() > 0) {
+            if ((result == true) && (ListSequence.fromList(instantiesVanObject).count() > 0)) {
               result = false;
             }
           }
@@ -689,10 +689,12 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
           for (SNode voorwaarde : ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x75a9691d143b2e5fL, 0x75a9691d143b2e61L, "voorwaarden")))) {
             List<SNode> lijstMetHandelingen = Interpreter.GeefLijstVanRechtshandelingen();
             lijstMetHandelingen = Interpreter.BeperklijstMetHandelingen(lijstMetHandelingen, voorwaarde);
-            if ((result == true) && ListSequence.fromList(lijstMetHandelingen).count() > 0) {
+            Interpreter.voegBerichtToe("Resultaat handelingen zijn " + lijstMetHandelingen);
+            if (ListSequence.fromList(lijstMetHandelingen).isNotEmpty()) {
               result = false;
             }
           }
+          Interpreter.voegBerichtToe("Resultaat is geen handeling waarbij <voorwaarden>' is " + result);
           return result;
         } catch (StopAndReturnException stop) {
           return stop.value();

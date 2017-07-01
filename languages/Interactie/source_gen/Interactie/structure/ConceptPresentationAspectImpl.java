@@ -9,6 +9,8 @@ import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private final ConceptPresentation props_Dialoog = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_DialoogReference = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_InteractieDefinitie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_InvoerVeld = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Kolom = new ConceptPresentationBuilder().create();
@@ -31,6 +33,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Dialoog:
+        return props_Dialoog;
+      case LanguageConceptSwitch.DialoogReference:
+        return props_DialoogReference;
       case LanguageConceptSwitch.InteractieDefinitie:
         return props_InteractieDefinitie;
       case LanguageConceptSwitch.InvoerVeld:

@@ -24,6 +24,7 @@
         <reference id="7867191925628478847" name="rechtssubject1" index="2BLsgw" />
         <reference id="7867191925628437242" name="casus" index="2BMAe_" />
         <reference id="736190567687680580" name="gegevenshuishouding" index="2KcKGJ" />
+        <reference id="2623823640247440756" name="regeling" index="3qkij6" />
         <reference id="2222626598059533343" name="rechtssubject2" index="1Nt3W2" />
         <child id="3172654291078996041" name="huidigtijdtipsimulatie" index="22TAwd" />
         <child id="7431672735427965832" name="datumtijdvanstartvandeSimulatie" index="d0i_M" />
@@ -4320,6 +4321,7 @@
     <ref role="2KcKGJ" node="7RdMFUtgO$G" resolve="Gegevenshuishouding WFW" />
     <ref role="2BLsgw" node="7RdMFUth6$p" resolve="Pieter" />
     <ref role="1Nt3W2" node="7RdMFUthdT8" resolve="Essent" />
+    <ref role="3qkij6" to="rv3w:5hfcVvM625g" resolve="WAA" />
     <node concept="LeFwQ" id="7RdMFUtgO$n" role="d0i_M">
       <node concept="2B78Lw" id="7RdMFUtgO$o" role="LeFwF">
         <property role="2B78LB" value="01" />

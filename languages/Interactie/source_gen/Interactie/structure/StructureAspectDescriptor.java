@@ -12,6 +12,8 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptDialoog = createDescriptorForDialoog();
+  /*package*/ final ConceptDescriptor myConceptDialoogReference = createDescriptorForDialoogReference();
   /*package*/ final ConceptDescriptor myConceptInteractieDefinitie = createDescriptorForInteractieDefinitie();
   /*package*/ final ConceptDescriptor myConceptInvoerVeld = createDescriptorForInvoerVeld();
   /*package*/ final ConceptDescriptor myConceptKolom = createDescriptorForKolom();
@@ -36,13 +38,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptInteractieDefinitie, myConceptInvoerVeld, myConceptKolom, myConceptPresentatie, myConceptPresentatieDialoog, myConceptPresentatieKenmerk, myConceptPresentatieLink, myConceptPresentatieObject, myConceptPresentatieRechtsbetrekking, myConceptPresentatieRechtshandeling, myConceptPresentatieVeld, myConceptRegeling, myConceptRij, myConceptTagVeld, myConceptTekstVeld, myConceptXpathVeld);
+    return Arrays.asList(myConceptDialoog, myConceptDialoogReference, myConceptInteractieDefinitie, myConceptInvoerVeld, myConceptKolom, myConceptPresentatie, myConceptPresentatieDialoog, myConceptPresentatieKenmerk, myConceptPresentatieLink, myConceptPresentatieObject, myConceptPresentatieRechtsbetrekking, myConceptPresentatieRechtshandeling, myConceptPresentatieVeld, myConceptRegeling, myConceptRij, myConceptTagVeld, myConceptTekstVeld, myConceptXpathVeld);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myConceptIndex.index(id)) {
+      case LanguageConceptSwitch.Dialoog:
+        return myConceptDialoog;
+      case LanguageConceptSwitch.DialoogReference:
+        return myConceptDialoogReference;
       case LanguageConceptSwitch.InteractieDefinitie:
         return myConceptInteractieDefinitie;
       case LanguageConceptSwitch.InvoerVeld:
@@ -84,6 +90,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myConceptIndex.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForDialoog() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Interactie", "Dialoog", 0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x2469b1b2fccf1798L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)/2623823640223750040");
+    b.aggregate("rechtsbetrekkingen", 0x2469b1b2fccf1799L).target(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aabf26L).optional(true).ordered(true).multiple(true).origin("2623823640223750041").done();
+    b.alias("dialoog");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDialoogReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Interactie", "DialoogReference", 0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x2469b1b2fd0ea191L);
+    b.class_(false, false, false);
+    b.origin("r:63a13268-2dd4-43ff-9562-6d3b4d758591(Interactie.structure)/2623823640227914129");
+    b.associate("dialoog", 0x2469b1b2fd0ea192L).target(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x2469b1b2fccf1798L).optional(false).origin("2623823640227914130").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForInteractieDefinitie() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Interactie", "InteractieDefinitie", 0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L);
     b.class_(false, false, true);
@@ -185,6 +207,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("subject", 0x544f33b7f1ef7cdcL).target(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL).optional(false).origin("6075131287477124316").done();
     b.associate("instantieVanSubject", 0x57de6dcc3741bd4fL).target(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L).optional(false).origin("6331618849997307215").done();
     b.associate("presentatie", 0x7b98ef41a33fb66fL).target(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L).optional(true).origin("8906131328315930223").done();
+    b.aggregate("dialogen", 0x2469b1b2fccf4331L).target(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x2469b1b2fccf1798L).optional(true).ordered(true).multiple(true).origin("2623823640223761201").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRij() {

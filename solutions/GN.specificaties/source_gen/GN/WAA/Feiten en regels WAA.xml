@@ -15296,6 +15296,62 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                   <property name='alias'></property>
               </properties>
           </node>
+          <node>
+            <noderole>nieuweFeiten</noderole>
+            <nodetype>MethodeNieuweFeiten</nodetype>
+            <nodeid>7537331220056715382</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220056715693</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever</nodename>
+                          <nodeid>5235943278057328272</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220056715434</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen</nodename>
+                          <nodeid>5540471952143836247</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+              </children>
+              <references>
+                <reference role='refObject'>
+                  <node>
+                    <noderole>onderwerpen</noderole>
+                    <nodetype>Onderwerp</nodetype>
+                    <nodename>aanpassing van de arbeidsduur</nodename>
+                    <nodeid>848775529194317032</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
         </children>
     </node>
     <node>
@@ -15983,30 +16039,50 @@ van de werknemer te neutraliseren.</nodename>
               </children>
           </node>
           <node>
-            <noderole>nieuweFeiten</noderole>
-            <nodetype>MethodeNieuweFeiten</nodetype>
-            <nodeid>1226838851589143877</nodeid>
-              <properties>
-                  <property name='alias'></property>
-              </properties>
-              <references>
-                <reference role='refObject'>
-                  <node>
-                    <noderole>onderwerpen</noderole>
-                    <nodetype>Onderwerp</nodetype>
-                    <nodename>arbeidsduurperiode van arbeidsovereenkomst</nodename>
-                    <nodeid>6305595003050996407</nodeid>
-                  </node>
-                </reference>
-              </references>
-          </node>
-          <node>
             <noderole>url</noderole>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993387152</nodeid>
               <properties>
                   <property name='alias'></property>
               </properties>
+          </node>
+          <node>
+            <noderole>nieuweFeiten</noderole>
+            <nodetype>MethodeNieuweFeiten</nodetype>
+            <nodeid>7537331220056715536</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220056715588</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken</nodename>
+                          <nodeid>5540471952143837719</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+              </children>
+              <references>
+                <reference role='refObject'>
+                  <node>
+                    <noderole>onderwerpen</noderole>
+                    <nodetype>Onderwerp</nodetype>
+                    <nodename>aanpassing van de arbeidsduur</nodename>
+                    <nodeid>848775529194317032</nodeid>
+                  </node>
+                </reference>
+              </references>
           </node>
         </children>
     </node>

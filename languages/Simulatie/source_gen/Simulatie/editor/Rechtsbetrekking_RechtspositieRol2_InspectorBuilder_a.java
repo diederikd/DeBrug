@@ -21,6 +21,9 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.nodeEditor.EditorManager;
 
 /*package*/ class Rechtsbetrekking_RechtspositieRol2_InspectorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -55,6 +58,12 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     editorCell.addEditorCell(createConstant_de2l07_d0());
     editorCell.addEditorCell(createConstant_de2l07_e0());
     editorCell.addEditorCell(createRefNode_de2l07_f0());
+    editorCell.addEditorCell(createConstant_de2l07_g0());
+    editorCell.addEditorCell(createConstant_de2l07_h0());
+    editorCell.addEditorCell(createProperty_de2l07_i0());
+    editorCell.addEditorCell(createConstant_de2l07_j0());
+    editorCell.addEditorCell(createConstant_de2l07_k0());
+    editorCell.addEditorCell(createRefNode_de2l07_l0());
     return editorCell;
   }
   private EditorCell createConstant_de2l07_a0() {
@@ -203,6 +212,106 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     }
     protected String getNoTargetText() {
       return "<no geldigTot>";
+    }
+  }
+  private EditorCell createConstant_de2l07_g0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "evaluatieresultaat");
+    editorCell.setCellId("Constant_de2l07_g0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_de2l07_h0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
+    editorCell.setCellId("Constant_de2l07_h0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_de2l07_i0() {
+    CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
+    provider.setRole("evaluatieresultaat");
+    provider.setNoTargetText("<no evaluatieresultaat>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(getEditorContext());
+    editorCell.setCellId("property_evaluatieresultaat");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createConstant_de2l07_j0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "evaluatielog");
+    editorCell.setCellId("Constant_de2l07_j0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_de2l07_k0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
+    editorCell.setCellId("Constant_de2l07_k0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNode_de2l07_l0() {
+    SingleRoleCellProvider provider = new Rechtsbetrekking_RechtspositieRol2_InspectorBuilder_a.evaluatielogSingleRoleHandler_de2l07_l0(myNode, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a880L, "evaluatielog"), getEditorContext());
+    return provider.createCell();
+  }
+  private static class evaluatielogSingleRoleHandler_de2l07_l0 extends SingleRoleCellProvider {
+    @NotNull
+    private SNode myNode;
+
+    public evaluatielogSingleRoleHandler_de2l07_l0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+      super(containmentLink, context);
+      myNode = ownerNode;
+    }
+
+    @Override
+    @NotNull
+    public SNode getNode() {
+      return myNode;
+    }
+
+    protected EditorCell createChildCell(SNode child) {
+      EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a880L, "evaluatielog"), child));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a880L, "evaluatielog"), child));
+      installCellInfo(child, editorCell);
+      return editorCell;
+    }
+
+
+
+    private void installCellInfo(SNode child, EditorCell editorCell) {
+      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+        editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell, myNode, MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a880L, "evaluatielog"), child));
+      }
+      if (editorCell.getRole() == null) {
+        editorCell.setRole("evaluatielog");
+      }
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+      editorCell.getStyle().putAll(style);
+    }
+    @Override
+    protected EditorCell createEmptyCell() {
+      getCellFactory().pushCellContext();
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), MetaAdapterFactory.getContainmentLink(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x57de6dcc3687a87eL, 0x57de6dcc3687a880L, "evaluatielog")));
+      try {
+        EditorCell editorCell = super.createEmptyCell();
+        editorCell.setCellId("empty_evaluatielog");
+        installCellInfo(null, editorCell);
+        setCellContext(editorCell);
+        return editorCell;
+      } finally {
+        getCellFactory().popCellContext();
+      }
+    }
+    protected String getNoTargetText() {
+      return "<no evaluatielog>";
     }
   }
 }

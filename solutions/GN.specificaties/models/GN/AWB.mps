@@ -11,7 +11,9 @@
     <use id="c6a53bd0-9627-4db5-b62a-dbc3d020d641" name="URL" version="0" />
     <use id="c4c9a68e-ce24-4c5b-9241-c819e554f07c" name="Interactie" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="rv3w" ref="r:02e2b7b9-5612-4c40-a24c-e445da064b80(GN.Interactie)" />
+  </imports>
   <registry>
     <language id="15970de3-8fe7-4b13-81c7-38b38d51c39a" name="Simulatie">
       <concept id="7867191925628556449" name="Simulatie.structure.Informatiepositie" flags="ng" index="2BLbnY">
@@ -21,6 +23,7 @@
         <reference id="7867191925628478847" name="rechtssubject1" index="2BLsgw" />
         <reference id="7867191925628437242" name="casus" index="2BMAe_" />
         <reference id="736190567687680580" name="gegevenshuishouding" index="2KcKGJ" />
+        <reference id="2623823640247440756" name="regeling" index="3qkij6" />
         <reference id="2222626598059533343" name="rechtssubject2" index="1Nt3W2" />
         <child id="3172654291078996041" name="huidigtijdtipsimulatie" index="22TAwd" />
         <child id="7431672735427965832" name="datumtijdvanstartvandeSimulatie" index="d0i_M" />
@@ -1592,6 +1595,7 @@
     <ref role="2BMAe_" node="5XyrAiGGJv9" resolve="Casus AWB" />
     <ref role="2BLsgw" node="5XyrAiGGJ$7" resolve="Jan" />
     <ref role="1Nt3W2" node="5XyrAiGGJ_5" resolve="Belastingdienst" />
+    <ref role="3qkij6" to="rv3w:2hDGrbYi3vm" resolve="AWB" />
     <node concept="LeFwQ" id="5XyrAiGGJvh" role="d0i_M">
       <node concept="2B78Lw" id="5XyrAiGGJvi" role="LeFwF">
         <property role="2B78LB" value="1" />

@@ -13,10 +13,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Gegevenshuishouding = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Informatiepositie = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ReferentieNaarOvergang = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Simulatie = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae782faL, "casus"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0xa37796bba047244L, "gegevenshuishouding"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae8257fL, "rechtssubject1"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x1ed85b1d6dac641fL, "rechtssubject2")).create();
+  private final ConceptPresentation props_Simulatie = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae782faL, "casus"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x2469b1b2fe389574L, "regeling"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0xa37796bba047244L, "gegevenshuishouding"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x6d2de15fcae8257fL, "rechtssubject1"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L, 0x1ed85b1d6dac641fL, "rechtssubject2")).create();
   private final ConceptPresentation props_UitTeVoerenDialoog = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_UitTeVoerenHandeling = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935fL, "actor"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935aL, "overgang"), MetaAdapterFactory.getReferenceLink(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L, 0x5dd2e0a862ce935cL, "onderwerp")).create();
   private final ConceptPresentation props_UitvoerbareRechtshandeling = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Venster = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -37,6 +38,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_UitTeVoerenHandeling;
       case LanguageConceptSwitch.UitvoerbareRechtshandeling:
         return props_UitvoerbareRechtshandeling;
+      case LanguageConceptSwitch.Venster:
+        return props_Venster;
     }
     return null;
   }

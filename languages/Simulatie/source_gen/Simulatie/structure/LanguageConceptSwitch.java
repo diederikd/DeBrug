@@ -16,6 +16,7 @@ public final class LanguageConceptSwitch {
   public static final int UitTeVoerenDialoog = 4;
   public static final int UitTeVoerenHandeling = 5;
   public static final int UitvoerbareRechtshandeling = 6;
+  public static final int Venster = 7;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x15970de38fe74b13L, 0x81c738b38d51c39aL);
@@ -26,6 +27,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x77d59dfe8d9bbd90L, UitTeVoerenDialoog);
     builder.put(0x5dd2e0a862ce9359L, UitTeVoerenHandeling);
     builder.put(0x3346d8f6cfb01e1cL, UitvoerbareRechtshandeling);
+    builder.put(0x2469b1b2fd16efbbL, Venster);
     myIndex = builder.seal();
   }
 

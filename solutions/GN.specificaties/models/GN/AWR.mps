@@ -7,13 +7,16 @@
     <use id="61be2dc6-a140-4def-a592-7499aa2bac19" name="Datum" version="0" />
     <use id="15970de3-8fe7-4b13-81c7-38b38d51c39a" name="Simulatie" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="rv3w" ref="r:02e2b7b9-5612-4c40-a24c-e445da064b80(GN.Interactie)" />
+  </imports>
   <registry>
     <language id="15970de3-8fe7-4b13-81c7-38b38d51c39a" name="Simulatie">
       <concept id="7867191925628556449" name="Simulatie.structure.Informatiepositie" flags="ng" index="2BLbnY" />
       <concept id="7867191925628288949" name="Simulatie.structure.Simulatie" flags="ng" index="2BMdVE">
         <reference id="7867191925628437242" name="casus" index="2BMAe_" />
         <reference id="736190567687680580" name="gegevenshuishouding" index="2KcKGJ" />
+        <reference id="2623823640247440756" name="regeling" index="3qkij6" />
         <child id="3172654291078996041" name="huidigtijdtipsimulatie" index="22TAwd" />
         <child id="7431672735427965832" name="datumtijdvanstartvandeSimulatie" index="d0i_M" />
         <child id="7867191925628603759" name="rechtspositie" index="2BLYKK" />
@@ -357,6 +360,7 @@
     <property role="TrG5h" value="Simulatie AWR" />
     <ref role="2BMAe_" node="3oRnirXz4Cq" resolve="Casus AWR" />
     <ref role="2KcKGJ" node="CRumIU2vtL" resolve="Gegevenshuishouding AWR" />
+    <ref role="3qkij6" to="rv3w:5hfcVvM625i" resolve="AWR" />
     <node concept="LeFwQ" id="3oRnirXz4Cr" role="d0i_M">
       <node concept="2B78Lw" id="3oRnirXz4Cs" role="LeFwF">
         <property role="2B78LB" value="1" />

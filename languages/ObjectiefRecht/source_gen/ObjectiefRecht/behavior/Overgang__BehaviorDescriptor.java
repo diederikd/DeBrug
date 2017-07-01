@@ -29,8 +29,9 @@ public final class Overgang__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<String> GeefActorString_id7tRkx91j0fu = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("GeefActorString").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("7tRkx91j0fu").registry(REGISTRY).build();
   public static final SMethod<SNode> GeefActor_id3FnOwJNU89l = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("GeefActor").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3FnOwJNU89l").registry(REGISTRY).build();
+  public static final SMethod<List<SNode>> GeefLijstMetInvoerKenmerken_id6$f4rrvMdoa = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("GeefLijstMetInvoerKenmerken").modifiers(SModifiersImpl.create(12, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6$f4rrvMdoa").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefActorString_id7tRkx91j0fu, GeefActor_id3FnOwJNU89l);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(GeefActorString_id7tRkx91j0fu, GeefActor_id3FnOwJNU89l, GeefLijstMetInvoerKenmerken_id6$f4rrvMdoa);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }

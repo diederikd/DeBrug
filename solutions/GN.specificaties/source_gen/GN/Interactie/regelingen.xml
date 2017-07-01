@@ -2,4 +2,5 @@
 <regelingen>
   <regeling naam='WAA' gghh='Gegevenshuishouding WAA.xml' regels='Feiten en regels WAA.xml' presentatie='Presentatie WAA.xml' roltype='werknemer' />
   <regeling naam='AWR' gghh='Gegevenshuishouding AWR.xml' regels='Regels AWR.xml' presentatie='.xml' roltype='Belastingplichtige' />
+  <regeling naam='AWB' gghh='Gegevenshuishouding AWB.xml' regels='Regels AWB (bellen bij bezwaar).xml' presentatie='.xml' roltype='Belastingplichtige' />
 </regelingen>

@@ -15,11 +15,15 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final BHDescriptor myObjectWaarde__BehaviorDescriptor = new ObjectWaarde__BehaviorDescriptor();
   private final BHDescriptor myEnumeratieWaarde__BehaviorDescriptor = new EnumeratieWaarde__BehaviorDescriptor();
   private final BHDescriptor myObject__BehaviorDescriptor = new Object__BehaviorDescriptor();
+  private final BHDescriptor myToestand__BehaviorDescriptor = new Toestand__BehaviorDescriptor();
   private final BHDescriptor myOnderwerp__BehaviorDescriptor = new Onderwerp__BehaviorDescriptor();
   private final BHDescriptor myOptieUitvoerenHandeling__BehaviorDescriptor = new OptieUitvoerenHandeling__BehaviorDescriptor();
+  private final BHDescriptor myHandelingZonderRechtsgevolg__BehaviorDescriptor = new HandelingZonderRechtsgevolg__BehaviorDescriptor();
   private final BHDescriptor myInstantieVanObject__BehaviorDescriptor = new InstantieVanObject__BehaviorDescriptor();
   private final BHDescriptor myVoorbeeldenMetInstanties__BehaviorDescriptor = new VoorbeeldenMetInstanties__BehaviorDescriptor();
   private final BHDescriptor myOvergang__BehaviorDescriptor = new Overgang__BehaviorDescriptor();
+  private final BHDescriptor myOvergangZonderRechtsgevolg__BehaviorDescriptor = new OvergangZonderRechtsgevolg__BehaviorDescriptor();
+  private final BHDescriptor myBetrekking__BehaviorDescriptor = new Betrekking__BehaviorDescriptor();
   private final BHDescriptor myOptieAccepterenHandeling__BehaviorDescriptor = new OptieAccepterenHandeling__BehaviorDescriptor();
   private final BHDescriptor myOptieAfwijzenHandeling__BehaviorDescriptor = new OptieAfwijzenHandeling__BehaviorDescriptor();
   private final BHDescriptor myFeitVerwoording__BehaviorDescriptor = new FeitVerwoording__BehaviorDescriptor();
@@ -28,6 +32,17 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final BHDescriptor myRechtsSubject__BehaviorDescriptor = new RechtsSubject__BehaviorDescriptor();
   private final BHDescriptor myRechtsbetrekking__BehaviorDescriptor = new Rechtsbetrekking__BehaviorDescriptor();
   private final BHDescriptor myRechtsgevolgVeroorzakers__BehaviorDescriptor = new RechtsgevolgVeroorzakers__BehaviorDescriptor();
+  private final BHDescriptor myRechtshandeling__BehaviorDescriptor = new Rechtshandeling__BehaviorDescriptor();
+  private final BHDescriptor myFeitelijkeHandelingMetRechtsgevolg__BehaviorDescriptor = new FeitelijkeHandelingMetRechtsgevolg__BehaviorDescriptor();
+  private final BHDescriptor myGebeurtenisMetRechtsgevolg__BehaviorDescriptor = new GebeurtenisMetRechtsgevolg__BehaviorDescriptor();
+  private final BHDescriptor myTijdsverloopMetRechtsgevolg__BehaviorDescriptor = new TijdsverloopMetRechtsgevolg__BehaviorDescriptor();
+  private final BHDescriptor myVrijheidGeenaanspraak__BehaviorDescriptor = new VrijheidGeenaanspraak__BehaviorDescriptor();
+  private final BHDescriptor myAanspraakNaIngebrekeStellingPlicht__BehaviorDescriptor = new AanspraakNaIngebrekeStellingPlicht__BehaviorDescriptor();
+  private final BHDescriptor myVerplichteBevoegdheidVerplichteGehoudenheid__BehaviorDescriptor = new VerplichteBevoegdheidVerplichteGehoudenheid__BehaviorDescriptor();
+  private final BHDescriptor myImmuniteitGeenbevoegdheid__BehaviorDescriptor = new ImmuniteitGeenbevoegdheid__BehaviorDescriptor();
+  private final BHDescriptor myZwakkeAanspraakZwakkePlicht__BehaviorDescriptor = new ZwakkeAanspraakZwakkePlicht__BehaviorDescriptor();
+  private final BHDescriptor myKrachtigeAanspraakFataleVerplichtig__BehaviorDescriptor = new KrachtigeAanspraakFataleVerplichtig__BehaviorDescriptor();
+  private final BHDescriptor myOptioneleBevoegdheidOptioneleGehoudenheid__BehaviorDescriptor = new OptioneleBevoegdheidOptioneleGehoudenheid__BehaviorDescriptor();
   private final BHDescriptor myTabelMetInstanties__BehaviorDescriptor = new TabelMetInstanties__BehaviorDescriptor();
   private final BHDescriptor myVariabele__BehaviorDescriptor = new Variabele__BehaviorDescriptor();
 
@@ -37,46 +52,76 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   @Nullable
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     SAbstractConcept cncpt = concept;
-    switch (index_846f5o_a0v.index(cncpt)) {
+    switch (index_846f5o_a0kb.index(cncpt)) {
       case 0:
-        return myConcept__BehaviorDescriptor;
+        return myAanspraakNaIngebrekeStellingPlicht__BehaviorDescriptor;
       case 1:
-        return myEnumeratieWaarde__BehaviorDescriptor;
+        return myBetrekking__BehaviorDescriptor;
       case 2:
-        return myFeitVerwoording__BehaviorDescriptor;
+        return myConcept__BehaviorDescriptor;
       case 3:
-        return myInstantieVanObject__BehaviorDescriptor;
+        return myEnumeratieWaarde__BehaviorDescriptor;
       case 4:
-        return myMeervoudigeObjectWaarde__BehaviorDescriptor;
+        return myFeitVerwoording__BehaviorDescriptor;
       case 5:
-        return myObject__BehaviorDescriptor;
+        return myFeitelijkeHandelingMetRechtsgevolg__BehaviorDescriptor;
       case 6:
-        return myObjectWaarde__BehaviorDescriptor;
+        return myGebeurtenisMetRechtsgevolg__BehaviorDescriptor;
       case 7:
-        return myOnderwerp__BehaviorDescriptor;
+        return myHandelingZonderRechtsgevolg__BehaviorDescriptor;
       case 8:
-        return myOptieAccepterenHandeling__BehaviorDescriptor;
+        return myImmuniteitGeenbevoegdheid__BehaviorDescriptor;
       case 9:
-        return myOptieAfwijzenHandeling__BehaviorDescriptor;
+        return myInstantieVanObject__BehaviorDescriptor;
       case 10:
-        return myOptieUitvoerenHandeling__BehaviorDescriptor;
+        return myKrachtigeAanspraakFataleVerplichtig__BehaviorDescriptor;
       case 11:
-        return myOvergang__BehaviorDescriptor;
+        return myMeervoudigeObjectWaarde__BehaviorDescriptor;
       case 12:
-        return myRechtsSubject__BehaviorDescriptor;
+        return myObject__BehaviorDescriptor;
       case 13:
-        return myRechtsbetrekking__BehaviorDescriptor;
+        return myObjectWaarde__BehaviorDescriptor;
       case 14:
-        return myRechtsgevolgVeroorzakers__BehaviorDescriptor;
+        return myOnderwerp__BehaviorDescriptor;
       case 15:
-        return myTabelMetInstanties__BehaviorDescriptor;
+        return myOptieAccepterenHandeling__BehaviorDescriptor;
       case 16:
-        return myVariabele__BehaviorDescriptor;
+        return myOptieAfwijzenHandeling__BehaviorDescriptor;
       case 17:
+        return myOptieUitvoerenHandeling__BehaviorDescriptor;
+      case 18:
+        return myOptioneleBevoegdheidOptioneleGehoudenheid__BehaviorDescriptor;
+      case 19:
+        return myOvergang__BehaviorDescriptor;
+      case 20:
+        return myOvergangZonderRechtsgevolg__BehaviorDescriptor;
+      case 21:
+        return myRechtsSubject__BehaviorDescriptor;
+      case 22:
+        return myRechtsbetrekking__BehaviorDescriptor;
+      case 23:
+        return myRechtsgevolgVeroorzakers__BehaviorDescriptor;
+      case 24:
+        return myRechtshandeling__BehaviorDescriptor;
+      case 25:
+        return myTabelMetInstanties__BehaviorDescriptor;
+      case 26:
+        return myTijdsverloopMetRechtsgevolg__BehaviorDescriptor;
+      case 27:
+        return myToestand__BehaviorDescriptor;
+      case 28:
+        return myVariabele__BehaviorDescriptor;
+      case 29:
+        return myVerplichteBevoegdheidVerplichteGehoudenheid__BehaviorDescriptor;
+      case 30:
         return myVoorbeeldenMetInstanties__BehaviorDescriptor;
+      case 31:
+        return myVrijheidGeenaanspraak__BehaviorDescriptor;
+      case 32:
+        return myZwakkeAanspraakZwakkePlicht__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex index_846f5o_a0v = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7da9e4c64537e68L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab914f739aL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba22fL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a9021L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a9022L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25299d15213f573aL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47352d422aL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca1aL)).seal();
+  private static final ConceptSwitchIndex index_846f5o_a0kb = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d93L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a8fe7L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625ce15ba0L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7da9e4c64537e68L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab914f739aL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3eL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3fL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25299d15220b0f46L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d95L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca14L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d97L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba22fL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60b6df23L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff5b9L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a9021L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a9022L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25299d15213f573aL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d98L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47352d422aL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x3b19ba47355a8fe6L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0aL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3aL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d40L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3a8c9b9L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d94L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2ca1aL), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d92L), MetaIdFactory.conceptId(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d96L)).seal();
 }

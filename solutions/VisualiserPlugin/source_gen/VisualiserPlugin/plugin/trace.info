@@ -17,70 +17,67 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root nodeRef="r:fcad94bc-adb2-4b44-bb1c-cebf5e64113e(VisualiserPlugin.plugin)/1365497693575292845">
     <file name="Visualiseer_Tool.java">
-      <node id="1365497693575292845" at="21,0,22,0" concept="11" trace="ICON" />
-      <node id="1365497693575293551" at="22,0,23,0" concept="3" trace="jPanel" />
-      <node id="7888341338573477735" at="23,0,24,0" concept="3" trace="jScrollPane" />
-      <node id="7888341338573680553" at="24,0,25,0" concept="3" trace="jLabel" />
-      <node id="7888341338573711526" at="25,0,26,0" concept="3" trace="graphvizpng" />
-      <node id="6016853916312881314" at="26,0,27,0" concept="3" trace="image" />
-      <node id="1365497693575292845" at="27,44,28,78" concept="12" />
-      <node id="1365497693575292845" at="30,37,31,24" concept="2" />
-      <node id="1365497693575311463" at="31,24,32,97" concept="7" />
-      <node id="2165796125077802348" at="32,97,33,61" concept="2" />
-      <node id="2165796125077813316" at="33,61,34,127" concept="2" />
-      <node id="2165796125077810465" at="34,127,35,0" concept="10" />
-      <node id="7888341338573715730" at="35,0,36,152" concept="2" />
-      <node id="1365497693575645874" at="36,152,37,69" concept="2" />
-      <node id="1365497693575302588" at="37,69,38,75" concept="7" />
-      <node id="6016853916312890091" at="38,75,39,39" concept="7" />
-      <node id="6016853916312901568" at="39,39,40,75" concept="7" />
-      <node id="6016853916312910026" at="40,75,41,40" concept="2" />
-      <node id="407973368249268804" at="41,40,42,67" concept="7" />
-      <node id="407973368249288085" at="42,67,43,50" concept="2" />
-      <node id="7888341338573692061" at="43,50,44,76" concept="2" />
-      <node id="1365497693575297064" at="44,76,45,48" concept="2" />
-      <node id="7888341338573488869" at="45,48,46,86" concept="2" />
-      <node id="1365497693575321715" at="46,86,47,88" concept="2" />
-      <node id="1365497693575586645" at="47,88,48,42" concept="2" />
-      <node id="5389382045085420358" at="50,25,51,82" concept="2" />
-      <node id="6016853916313143539" at="51,82,52,75" concept="7" />
-      <node id="6016853916313141875" at="52,75,53,39" concept="7" />
-      <node id="8930101972852392504" at="53,39,54,27" concept="7" />
-      <node id="8930101972852393968" at="55,132,56,168" concept="2" />
-      <node id="6016853916313141890" at="57,5,58,40" concept="2" />
-      <node id="7888341338573704545" at="58,40,59,52" concept="2" />
-      <node id="5389382045085672381" at="59,52,60,46" concept="2" />
-      <node id="5389382045085684084" at="60,46,61,43" concept="2" />
-      <node id="1365497693575293953" at="63,36,64,45" concept="8" />
-      <node id="1365497693575292845" at="27,0,30,0" concept="1" trace="Visualiseer_Tool#(Lcom/intellij/openapi/project/Project;)V" />
-      <node id="8930101972852363122" at="54,27,57,5" concept="5" />
-      <node id="1365497693575292845" at="63,0,66,0" concept="6" trace="getComponent#()Ljavax/swing/JComponent;" />
-      <node id="7888341338573678778" at="50,0,63,0" concept="6" trace="Ververs#()V" />
-      <node id="1365497693575292845" at="30,0,50,0" concept="6" trace="init#(Lcom/intellij/openapi/project/Project;)V" />
-      <scope id="1365497693575292845" at="27,44,28,78" />
-      <scope id="8930101972852363124" at="55,132,56,168" />
-      <scope id="1365497693575292847" at="63,36,64,45" />
-      <scope id="1365497693575292845" at="27,0,30,0">
+      <node id="1365497693575292845" at="18,0,19,0" concept="11" trace="ICON" />
+      <node id="1365497693575293551" at="19,0,20,0" concept="3" trace="jPanel" />
+      <node id="7888341338573477735" at="20,0,21,0" concept="3" trace="jScrollPane" />
+      <node id="7888341338573680553" at="21,0,22,0" concept="3" trace="jLabel" />
+      <node id="7888341338573711526" at="22,0,23,0" concept="3" trace="graphvizpng" />
+      <node id="6016853916312881314" at="23,0,24,0" concept="3" trace="image" />
+      <node id="1365497693575292845" at="24,44,25,78" concept="12" />
+      <node id="1365497693575292845" at="27,37,28,24" concept="2" />
+      <node id="2623823640228255610" at="28,24,29,107" concept="2" />
+      <node id="1365497693575302588" at="29,107,30,75" concept="7" />
+      <node id="6016853916312890091" at="30,75,31,39" concept="7" />
+      <node id="6016853916312901568" at="31,39,32,75" concept="7" />
+      <node id="6016853916312910026" at="32,75,33,40" concept="2" />
+      <node id="407973368249268804" at="33,40,34,67" concept="7" />
+      <node id="407973368249288085" at="34,67,35,50" concept="2" />
+      <node id="7888341338573692061" at="35,50,36,76" concept="2" />
+      <node id="1365497693575297064" at="36,76,37,48" concept="2" />
+      <node id="7888341338573488869" at="37,48,38,86" concept="2" />
+      <node id="1365497693575321715" at="38,86,39,88" concept="2" />
+      <node id="1365497693575586645" at="39,88,40,42" concept="2" />
+      <node id="2165796125077810465" at="43,52,44,0" concept="10" />
+      <node id="5389382045085420358" at="45,5,46,82" concept="2" />
+      <node id="6016853916313143539" at="46,82,47,75" concept="7" />
+      <node id="6016853916313141875" at="47,75,48,39" concept="7" />
+      <node id="8930101972852392504" at="48,39,49,27" concept="7" />
+      <node id="8930101972852393968" at="50,132,51,168" concept="2" />
+      <node id="6016853916313141890" at="52,5,53,40" concept="2" />
+      <node id="7888341338573704545" at="53,40,54,52" concept="2" />
+      <node id="5389382045085672381" at="54,52,55,46" concept="2" />
+      <node id="5389382045085684084" at="55,46,56,43" concept="2" />
+      <node id="1365497693575293953" at="58,36,59,45" concept="8" />
+      <node id="1365497693575292845" at="24,0,27,0" concept="1" trace="Visualiseer_Tool#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="2623823640228081577" at="42,25,45,5" concept="5" />
+      <node id="8930101972852363122" at="49,27,52,5" concept="5" />
+      <node id="1365497693575292845" at="58,0,61,0" concept="6" trace="getComponent#()Ljavax/swing/JComponent;" />
+      <node id="1365497693575292845" at="27,0,42,0" concept="6" trace="init#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="7888341338573678778" at="42,0,58,0" concept="6" trace="Ververs#()V" />
+      <scope id="1365497693575292845" at="24,44,25,78" />
+      <scope id="2623823640228081579" at="43,52,44,0" />
+      <scope id="8930101972852363124" at="50,132,51,168" />
+      <scope id="1365497693575292847" at="58,36,59,45" />
+      <scope id="1365497693575292845" at="24,0,27,0">
         <var name="project" id="1365497693575292845" />
       </scope>
-      <scope id="1365497693575292845" at="63,0,66,0" />
-      <scope id="7888341338573678780" at="50,25,61,43">
-        <var name="image" id="6016853916313141876" />
-        <var name="imageicon" id="6016853916313143540" />
-        <var name="newImage" id="8930101972852392505" />
-      </scope>
-      <scope id="7888341338573678778" at="50,0,63,0" />
-      <scope id="1365497693575292845" at="30,37,48,42">
-        <var name="MPSproject" id="1365497693575311464" />
+      <scope id="1365497693575292845" at="58,0,61,0" />
+      <scope id="1365497693575292845" at="27,37,40,42">
         <var name="actionListener" id="407973368249268805" />
         <var name="image" id="6016853916312890092" />
         <var name="imageicon" id="1365497693575302589" />
         <var name="newImage" id="6016853916312901569" />
       </scope>
-      <scope id="1365497693575292845" at="30,0,50,0">
+      <scope id="7888341338573678780" at="42,25,56,43">
+        <var name="image" id="6016853916313141876" />
+        <var name="imageicon" id="6016853916313143540" />
+        <var name="newImage" id="8930101972852392505" />
+      </scope>
+      <scope id="1365497693575292845" at="27,0,42,0">
         <var name="project" id="1365497693575292845" />
       </scope>
-      <unit id="1365497693575292845" at="20,0,67,0" name="VisualiserPlugin.plugin.Visualiseer_Tool" />
+      <scope id="7888341338573678778" at="42,0,58,0" />
+      <unit id="1365497693575292845" at="17,0,62,0" name="VisualiserPlugin.plugin.Visualiseer_Tool" />
     </file>
   </root>
   <root nodeRef="r:fcad94bc-adb2-4b44-bb1c-cebf5e64113e(VisualiserPlugin.plugin)/407973368249174595">
