@@ -41,6 +41,11 @@ public final class HandelingZonderRechtsgevolg__BehaviorDescriptor extends BaseB
         ListSequence.fromList(lijstMetKenmerken).addElement(SLinkOperations.getTarget(kenmerk, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
       }
     }
+    for (SNode methode : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25299d15220b0f46L, 0x25299d15220b13a5L, "teWijzigingenFeiten")))) {
+      for (SNode kenmerk : ListSequence.fromList(SLinkOperations.getChildren(methode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c376d9c3L, 0x6899facf66733aaeL, "kenmerken")))) {
+        ListSequence.fromList(lijstMetKenmerken).addElement(SLinkOperations.getTarget(kenmerk, MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk")));
+      }
+    }
     return lijstMetKenmerken;
   }
 

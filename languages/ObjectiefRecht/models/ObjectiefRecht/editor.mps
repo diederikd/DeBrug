@@ -9231,6 +9231,37 @@
       </node>
       <node concept="3EZMnI" id="4NzHub3tHCL" role="3EZMnx">
         <node concept="l2Vlx" id="4NzHub3tHCM" role="2iSdaV" />
+        <node concept="3F0ifn" id="6ypYGXAsNEM" role="3EZMnx">
+          <property role="3F0ifm" value="kenmerken" />
+          <node concept="lj46D" id="6ypYGXAsNEN" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="6ypYGXAsNEO" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+          <node concept="lj46D" id="6ypYGXAsNEP" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="6ypYGXAsNEQ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3EZMnI" id="6ypYGXAsNER" role="3EZMnx">
+          <node concept="l2Vlx" id="6ypYGXAsNES" role="2iSdaV" />
+          <node concept="3F2HdR" id="6ypYGXAsNET" role="3EZMnx">
+            <ref role="1NtTu8" to="3pw0:6ypYGXAsNEI" resolve="kenmerken" />
+            <node concept="l2Vlx" id="6ypYGXAsNEU" role="2czzBx" />
+            <node concept="pj6Ft" id="6ypYGXAsNEV" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="lj46D" id="6ypYGXAsNEW" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="lj46D" id="6ypYGXAsNEX" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
         <node concept="3F0ifn" id="4NzHub3tHCN" role="3EZMnx">
           <property role="3F0ifm" value="wijzigingen van feiten" />
           <node concept="lj46D" id="4NzHub3tHCO" role="3F10Kt">

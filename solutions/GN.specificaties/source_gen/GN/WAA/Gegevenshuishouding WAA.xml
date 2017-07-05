@@ -3,7 +3,7 @@
     <rechtssubjecten naam='werknemer' typeid='5753801799636978868'>
         <instantie naam='Pieter' id='3139957515575936548'>
             <kenmerken>
-              <kenmerk id='6305595003050758060' naam='werknemersidentificatie'>5</kenmerk>
+              <kenmerk id='6305595003050758060' naam='werknemersiden tificatie'>5</kenmerk>
               <kenmerk id='797539131722833346' naam='burgerservicenummer'>3139957515576430800</kenmerk>
               <kenmerk id='6305595003050758070' naam='voornamen'>Pieter</kenmerk>
               <kenmerk id='6305595003050902801' naam='roepnaam'>Piet</kenmerk>
@@ -24,7 +24,7 @@
         </instantie>
         <instantie naam='Jan' id='8478423347087305814'>
             <kenmerken>
-              <kenmerk id='6305595003050758060' naam='werknemersidentificatie'>6</kenmerk>
+              <kenmerk id='6305595003050758060' naam='werknemersiden tificatie'>6</kenmerk>
               <kenmerk id='797539131722833346' naam='burgerservicenummer'>8478423347087306283</kenmerk>
               <kenmerk id='6305595003050758070' naam='voornamen'>Jan</kenmerk>
               <kenmerk id='6305595003050902801' naam='roepnaam'>Jan</kenmerk>
@@ -233,6 +233,33 @@
               <kenmerk id='5105771847118264263' naam='feiten bij vermeerdering'>geen feiten bij vermeerdering</kenmerk>
             </kenmerken>
         </instantie>
+        <instantie naam='Verzoek 5' id='7537331220064707002'>
+            <kenmerken>
+              <kenmerk id='3955365814688947835' naam='op grond van arbeidsovereenkomst'>7537331220064723457</kenmerk>
+              <kenmerk id='6249140128508295101' naam='datum indienen verzoek'></kenmerk>
+              <kenmerk id='3955365814688413039' naam='datum vorige versie van het verzoek'></kenmerk>
+              <kenmerk id='131751487724941978' naam='datum overleg gepleegd'></kenmerk>
+              <kenmerk id='5540471952143438865' naam='datum verzoek ingewilligd'></kenmerk>
+              <kenmerk id='5540471952143439007' naam='datum verzoek afgewezen'></kenmerk>
+              <kenmerk id='5540471952143837474' naam='datum spreiding vastgesteld'></kenmerk>
+              <kenmerk id='5540471952143837915' naam='datum spreiding van de uren laatst gewijzigd'></kenmerk>
+              <kenmerk id='5540471952143838126' naam='datum beslissing medegedeeld'></kenmerk>
+              <kenmerk id='5540471952143838298' naam='datum mededelen redenen'></kenmerk>
+              <kenmerk id='5540471952143837719' naam='werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken'></kenmerk>
+              <kenmerk id='5235943278057325910' naam='datum belang aangegeven'></kenmerk>
+              <kenmerk id='5266643527327199632' naam='beoogde ingangsdatum van de aanpassing'></kenmerk>
+              <kenmerk id='797539131721925527' naam='omvang van de aanpassing'>PT40H</kenmerk>
+              <kenmerk id='797539131721925590' naam='gewenste spreiding'>7537331220064720532</kenmerk>
+              <kenmerk id='31726144782747159' naam='schriftelijk ingediend'>Ja</kenmerk>
+              <kenmerk id='5105771847112954480' naam='samentelling volgens werknemer'></kenmerk>
+              <kenmerk id='5105771847112954556' naam='samentelling volgens werkgever'></kenmerk>
+              <kenmerk id='5105771847112954895' naam='redenen voor afwijzing'>geen</kenmerk>
+              <kenmerk id='5540471952143836247' naam='zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen'>Nee</kenmerk>
+              <kenmerk id='5235943278057328272' naam='datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever'></kenmerk>
+              <kenmerk id='5105771847118264163' naam='feiten bij vermindering'>geen feiten bij vermindering</kenmerk>
+              <kenmerk id='5105771847118264263' naam='feiten bij vermeerdering'>geen feiten bij vermeerdering</kenmerk>
+            </kenmerken>
+        </instantie>
     </onderwerpen>
     <onderwerpen naam='arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling' typeid='5266643527327102431' >
         <instantie naam='Arbeidsovereenkomst tussen rechtssubject Pieter en rechtsubject Essent' id='2464168203970134583'>
@@ -241,7 +268,7 @@
               <kenmerk id='797539131722830659' naam='werkgeversidentificatie'>8120684925543537456</kenmerk>
               <kenmerk id='6249140128508495744' naam='datum indiensttreding'></kenmerk>
               <kenmerk id='6305595003050606828' naam='arbeidsovereenkomst getekend op'></kenmerk>
-              <kenmerk id='797539131722830734' naam='arbeidsduurperiode in arbeidsovereenkomst'>2464168203970139214</kenmerk>
+              <kenmerk id='797539131722830734' naam='arbeidsduurperiode in arbeidsovereenkomst'>7537331220067478181</kenmerk>
             </kenmerken>
         </instantie>
         <instantie naam='Arbeidsovereenkomst tussen rechtssubject Pieter en rechtssubject Eneco' id='1423902536565253958'>
@@ -250,25 +277,25 @@
               <kenmerk id='797539131722830659' naam='werkgeversidentificatie'>1423902536565254578</kenmerk>
               <kenmerk id='6249140128508495744' naam='datum indiensttreding'></kenmerk>
               <kenmerk id='6305595003050606828' naam='arbeidsovereenkomst getekend op'></kenmerk>
-              <kenmerk id='797539131722830734' naam='arbeidsduurperiode in arbeidsovereenkomst'>1423902536565255364</kenmerk>
+              <kenmerk id='797539131722830734' naam='arbeidsduurperiode in arbeidsovereenkomst'>7537331220067478194</kenmerk>
             </kenmerken>
         </instantie>
     </onderwerpen>
     <onderwerpen naam='arbeidsduurperiode van arbeidsovereenkomst' typeid='6305595003050996407' >
-        <instantie naam='Arbeidsduur van arbeidsovereenkomst 1' id='2464168203970134965'>
+        <instantie naam='Arbeidsduur van arbeidsovereenkomst 1' id='7537331220067477846'>
             <kenmerken>
               <kenmerk id='6249140128508495772' naam='arbeidsduur geldig van datum'></kenmerk>
               <kenmerk id='6249140128508495807' naam='arbeidsduur geldig tot datum'></kenmerk>
-              <kenmerk id='2455094379071934535' naam='arbeidsduur'>40</kenmerk>
-              <kenmerk id='797539131722830553' naam='spreiding'>6760713004464131948</kenmerk>
+              <kenmerk id='2455094379071934535' naam='arbeidsduur'>PT40H</kenmerk>
+              <kenmerk id='797539131722830553' naam='spreiding'>7537331220067478159</kenmerk>
             </kenmerken>
         </instantie>
-        <instantie naam='Arbeidsduur van arbeidsovereenkomst 2' id='1423902536565254735'>
+        <instantie naam='Arbeidsduur van arbeidsovereenkomst 2' id='7537331220067477892'>
             <kenmerken>
               <kenmerk id='6249140128508495772' naam='arbeidsduur geldig van datum'></kenmerk>
               <kenmerk id='6249140128508495807' naam='arbeidsduur geldig tot datum'></kenmerk>
-              <kenmerk id='2455094379071934535' naam='arbeidsduur'>40.0</kenmerk>
-              <kenmerk id='797539131722830553' naam='spreiding'>1423902536565255353</kenmerk>
+              <kenmerk id='2455094379071934535' naam='arbeidsduur'>PT40H</kenmerk>
+              <kenmerk id='797539131722830553' naam='spreiding'>7537331220067478170</kenmerk>
             </kenmerken>
         </instantie>
     </onderwerpen>
@@ -400,7 +427,7 @@
         </instantie>
         <instantie id='5807415387110390739'>
           <geldigVan>2002-07-01T00:00</geldigVan>
-          <geldigTot>2002-11-20T14:41:55</geldigTot>
+          <geldigTot>2002-11-21T09:56:49</geldigTot>
           <subjectieverechtshandelingid>3139957515585265649</subjectieverechtshandelingid>
           <subjectieverechtshandelingnaam>Afwijzen van het verzoek</subjectieverechtshandelingnaam>
           <objectieveRechtsbetrekkingtypeid>909603116718783952</objectieveRechtsbetrekkingtypeid>
@@ -410,6 +437,64 @@ en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
           <onderwerpid>4196470522071791502</onderwerpid>
           <rechtssubjectMetPlichtid>3139957515574723026</rechtssubjectMetPlichtid>
           <rechtssubjectMetRechtid>8478423347087305814</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='7537331220067599448'>
+          <geldigVan>2002-11-21T09:59:43</geldigVan>
+          <geldigTot>2002-11-21T10:01:31</geldigTot>
+          <subjectieverechtshandelingid>7537331220067599438</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Indienen verzoek aanpassing arbeidsduur</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>2677844167534559878</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Bevoegdheid om de handeling te accepteren</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>7537331220064707002</onderwerpid>
+          <rechtssubjectMetPlichtid>3139957515575936548</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>3139957515574338931</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='7537331220067599456'>
+          <geldigVan>2002-11-21T09:59:43</geldigVan>
+          <geldigTot>2002-11-21T10:01:31</geldigTot>
+          <subjectieverechtshandelingid>7537331220067599438</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Indienen verzoek aanpassing arbeidsduur</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>2677844167534560626</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>Bevoegdheid om de handeling niet te accepteren</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>7537331220064707002</onderwerpid>
+          <rechtssubjectMetPlichtid>3139957515575936548</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>3139957515574338931</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='7537331220067625694'>
+          <geldigVan>2002-11-21T10:01:31</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>7537331220067625684</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Accepteren van het verzoek</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>2317404197410906878</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>verplichting tot overleg plegen</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>7537331220064707002</onderwerpid>
+          <rechtssubjectMetPlichtid>3139957515574338931</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>3139957515575936548</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='7537331220067625702'>
+          <geldigVan>2002-11-21T10:01:31</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>7537331220067625684</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Accepteren van het verzoek</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>909603116718783952</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>verplichte bevoegdheid (recht) tot het inwilligen van verzoek
+voor aanpassing arbeidsduur zover het betreft het tijdstip van ingang
+en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>7537331220064707002</onderwerpid>
+          <rechtssubjectMetPlichtid>3139957515575936548</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>3139957515574338931</rechtssubjectMetRechtid>
+        </instantie>
+        <instantie id='7537331220067625710'>
+          <geldigVan>2002-11-21T10:01:31</geldigVan>
+          <geldigTot></geldigTot>
+          <subjectieverechtshandelingid>7537331220067625684</subjectieverechtshandelingid>
+          <subjectieverechtshandelingnaam>Accepteren van het verzoek</subjectieverechtshandelingnaam>
+          <objectieveRechtsbetrekkingtypeid>1431654249012741138</objectieveRechtsbetrekkingtypeid>
+          <objectieveRechtsbetrekkingtypenaam>immuniteit (recht) om de verplichte bevoegdheid
+tot het inwilligen van het verzoek te neutraliseren</objectieveRechtsbetrekkingtypenaam>
+          <onderwerpid>7537331220064707002</onderwerpid>
+          <rechtssubjectMetPlichtid>3139957515575936548</rechtssubjectMetPlichtid>
+          <rechtssubjectMetRechtid>3139957515574338931</rechtssubjectMetRechtid>
         </instantie>
       </rechtsbetrekkingen>
     <rechtshandelingen>
@@ -436,6 +521,22 @@ en de omvang van de aanpassing</objectieveRechtsbetrekkingtypenaam>
           <actorid>8478423347087305814</actorid>
           <onderwerpid>4196470522071791502</onderwerpid>
           <rechtsbetrekkingid>5807415387110390739</rechtsbetrekkingid>
+        </instantie>
+        <instantie id='7537331220067599438'>
+          <handelingObjectiefRechttypeid>5066083982446708445</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Indienen verzoek aanpassing arbeidsduur</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2002-11-21T09:58:19</uitgevoerdop>
+          <actorid>3139957515574338931</actorid>
+          <onderwerpid>7537331220064707002</onderwerpid>
+          <rechtsbetrekkingid>7537331220067556964</rechtsbetrekkingid>
+        </instantie>
+        <instantie id='7537331220067625684'>
+          <handelingObjectiefRechttypeid>2677844167540435022</handelingObjectiefRechttypeid>
+          <handelingObjectiefRechttypenaam>Accepteren van het verzoek</handelingObjectiefRechttypenaam>
+          <uitgevoerdop>2002-11-21T09:59:55</uitgevoerdop>
+          <actorid>3139957515574338931</actorid>
+          <onderwerpid>7537331220064707002</onderwerpid>
+          <rechtsbetrekkingid>7537331220067599464</rechtsbetrekkingid>
         </instantie>
       </rechtshandelingen>
 </gegevenshuishouding>

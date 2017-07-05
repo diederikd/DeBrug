@@ -1418,6 +1418,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="GhrpPwHHWz" resolve="Object" />
     </node>
+    <node concept="1TJgyj" id="6ypYGXAsNEI" role="1TKVEi">
+      <property role="IQ2ns" value="7537331220065237678" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="kenmerken" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6T3DNjSrxfM" resolve="ReferentieNaarKenmerk" />
+    </node>
     <node concept="1TJgyj" id="4NzHub3tHB6" role="1TKVEi">
       <property role="IQ2ns" value="5540471952142424518" />
       <property role="20lmBu" value="aggregation" />
