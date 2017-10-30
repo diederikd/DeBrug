@@ -68,6 +68,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("tabellen", 0x6807b3aa0b72d4dfL).target(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L).optional(true).ordered(true).multiple(true).origin("7496157647699367135").done();
     b.aggregate("rechtshandelingen", 0x2b935eb96629ba64L).target(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb14L).optional(false).ordered(true).multiple(false).origin("3139957515583339108").done();
     b.aggregate("rechtsbetrekkingen", 0x2b935eb9665dcfc2L).target(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x2b935eb9660efb2eL).optional(false).ordered(true).multiple(false).origin("3139957515586752450").done();
+    b.alias("gegevenshuishouding");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForInformatiepositie() {

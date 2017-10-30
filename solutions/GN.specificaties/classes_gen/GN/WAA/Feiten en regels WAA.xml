@@ -1708,13 +1708,13 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
           <node>
             <noderole>kenmerk</noderole>
             <nodetype>Kenmerk</nodetype>
-            <nodename>werknemersidentificatie</nodename>
+            <nodename>werknemersiden tificatie</nodename>
             <nodeid>6305595003050758060</nodeid>
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
                   <property name='alias'></property>
-                  <property name='name'>werknemersidentificatie</property>
+                  <property name='name'>werknemersiden tificatie</property>
               </properties>
               <children>
                 <node>
@@ -2454,7 +2454,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                   <node>
                     <noderole>kenmerk</noderole>
                     <nodetype>Kenmerk</nodetype>
-                    <nodename>werknemersidentificatie</nodename>
+                    <nodename>werknemersiden tificatie</nodename>
                     <nodeid>6305595003050758060</nodeid>
                   </node>
                 </reference>
@@ -2508,7 +2508,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                     <node>
                                       <noderole>kenmerk</noderole>
                                       <nodetype>Kenmerk</nodetype>
-                                      <nodename>werknemersidentificatie</nodename>
+                                      <nodename>werknemersiden tificatie</nodename>
                                       <nodeid>6305595003050758060</nodeid>
                                     </node>
                                   </reference>
@@ -3272,7 +3272,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                     <node>
                                       <noderole>kenmerk</noderole>
                                       <nodetype>Kenmerk</nodetype>
-                                      <nodename>werknemersidentificatie</nodename>
+                                      <nodename>werknemersiden tificatie</nodename>
                                       <nodeid>6305595003050758060</nodeid>
                                     </node>
                                   </reference>
@@ -4055,7 +4055,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                     <node>
                                       <noderole>kenmerk</noderole>
                                       <nodetype>Kenmerk</nodetype>
-                                      <nodename>werknemersidentificatie</nodename>
+                                      <nodename>werknemersiden tificatie</nodename>
                                       <nodeid>6305595003050758060</nodeid>
                                     </node>
                                   </reference>
@@ -4192,7 +4192,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                     <node>
                                       <noderole>kenmerk</noderole>
                                       <nodetype>Kenmerk</nodetype>
-                                      <nodename>werknemersidentificatie</nodename>
+                                      <nodename>werknemersiden tificatie</nodename>
                                       <nodeid>6305595003050758060</nodeid>
                                     </node>
                                   </reference>
@@ -4846,7 +4846,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>waarde</noderole>
                               <nodetype>ObjectWaarde</nodetype>
-                              <nodeid>7108013867280744186</nodeid>
+                              <nodeid>7537331220067477512</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -4856,7 +4856,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                       <noderole>instanties</noderole>
                                       <nodetype>InstantieVanObject</nodetype>
                                       <nodename>Arbeidsduur van arbeidsovereenkomst 1</nodename>
-                                      <nodeid>7108013867280739208</nodeid>
+                                      <nodeid>7537331220067470806</nodeid>
                                     </node>
                                   </reference>
                                 </references>
@@ -5114,7 +5114,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>waarde</noderole>
                               <nodetype>ObjectWaarde</nodetype>
-                              <nodeid>7108013867280744199</nodeid>
+                              <nodeid>7537331220067477638</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -5124,7 +5124,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                       <noderole>instanties</noderole>
                                       <nodetype>InstantieVanObject</nodetype>
                                       <nodename>Arbeidsduur van arbeidsovereenkomst 2</nodename>
-                                      <nodeid>7108013867280739550</nodeid>
+                                      <nodeid>7537331220067474146</nodeid>
                                     </node>
                                   </reference>
                                 </references>
@@ -7250,8 +7250,8 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                 </node>
                 <node>
                   <noderole>type</noderole>
-                  <nodetype>ReeelGetalType</nodetype>
-                  <nodeid>5235943278057328423</nodeid>
+                  <nodetype>DuurType</nodetype>
+                  <nodeid>7537331220067470476</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
@@ -7337,7 +7337,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                   <noderole>instanties</noderole>
                   <nodetype>InstantieVanObject</nodetype>
                   <nodename>Arbeidsduur van arbeidsovereenkomst 1</nodename>
-                  <nodeid>7108013867280739208</nodeid>
+                  <nodeid>7537331220067470806</nodeid>
                     <properties>
                         <property name='alias'></property>
                         <property name='name'>Arbeidsduur van arbeidsovereenkomst 1</property>
@@ -7347,7 +7347,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                         <noderole>waardeVanKenmerken</noderole>
                         <nodetype>WaardeVanKenmerk</nodetype>
                         <nodename></nodename>
-                        <nodeid>7108013867280739209</nodeid>
+                        <nodeid>7537331220067470807</nodeid>
                           <properties>
                               <property name='alias'></property>
                               <property name='name'></property>
@@ -7356,7 +7356,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>kenmerk</noderole>
                               <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>7108013867280739210</nodeid>
+                              <nodeid>7537331220067470808</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7374,7 +7374,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>waarde</noderole>
                               <nodetype>DatumWaarde</nodetype>
-                              <nodeid>7108013867280739211</nodeid>
+                              <nodeid>7537331220067470809</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7382,7 +7382,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                   <node>
                                     <noderole>waarde</noderole>
                                     <nodetype>Datum</nodetype>
-                                    <nodeid>7108013867280739448</nodeid>
+                                    <nodeid>7537331220067471120</nodeid>
                                       <properties>
                                           <property name='dag'>1</property>
                                           <property name='maand'>1</property>
@@ -7398,7 +7398,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                         <noderole>waardeVanKenmerken</noderole>
                         <nodetype>WaardeVanKenmerk</nodetype>
                         <nodename></nodename>
-                        <nodeid>7108013867280739212</nodeid>
+                        <nodeid>7537331220067470810</nodeid>
                           <properties>
                               <property name='alias'></property>
                               <property name='name'></property>
@@ -7407,7 +7407,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>kenmerk</noderole>
                               <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>7108013867280739213</nodeid>
+                              <nodeid>7537331220067470811</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7425,7 +7425,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>waarde</noderole>
                               <nodetype>DatumWaarde</nodetype>
-                              <nodeid>7108013867280739214</nodeid>
+                              <nodeid>7537331220067470812</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7436,7 +7436,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                         <noderole>waardeVanKenmerken</noderole>
                         <nodetype>WaardeVanKenmerk</nodetype>
                         <nodename></nodename>
-                        <nodeid>7108013867280739215</nodeid>
+                        <nodeid>7537331220067470813</nodeid>
                           <properties>
                               <property name='alias'></property>
                               <property name='name'></property>
@@ -7445,7 +7445,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>kenmerk</noderole>
                               <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>7108013867280739216</nodeid>
+                              <nodeid>7537331220067470814</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7462,18 +7462,18 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             </node>
                             <node>
                               <noderole>waarde</noderole>
-                              <nodetype>GeheelGetalWaarde</nodetype>
-                              <nodeid>7108013867280739217</nodeid>
+                              <nodetype>DuurWaarde</nodetype>
+                              <nodeid>7537331220067470815</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
-                                    <noderole>waarde</noderole>
-                                    <nodetype>GeheelGetal</nodetype>
-                                    <nodeid>7108013867280739418</nodeid>
+                                    <noderole>duur</noderole>
+                                    <nodetype>Uren</nodetype>
+                                    <nodeid>7537331220067470898</nodeid>
                                       <properties>
-                                          <property name='waarde'>40</property>
+                                          <property name='uren'>40</property>
                                           <property name='alias'></property>
                                       </properties>
                                   </node>
@@ -7485,7 +7485,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                         <noderole>waardeVanKenmerken</noderole>
                         <nodetype>WaardeVanKenmerk</nodetype>
                         <nodename></nodename>
-                        <nodeid>7108013867280739218</nodeid>
+                        <nodeid>7537331220067470816</nodeid>
                           <properties>
                               <property name='alias'></property>
                               <property name='name'></property>
@@ -7494,7 +7494,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>kenmerk</noderole>
                               <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>7108013867280739219</nodeid>
+                              <nodeid>7537331220067470817</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7512,7 +7512,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>waarde</noderole>
                               <nodetype>ObjectWaarde</nodetype>
-                              <nodeid>6760713004464121909</nodeid>
+                              <nodeid>7537331220067471062</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7545,7 +7545,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                   <noderole>instanties</noderole>
                   <nodetype>InstantieVanObject</nodetype>
                   <nodename>Arbeidsduur van arbeidsovereenkomst 2</nodename>
-                  <nodeid>7108013867280739550</nodeid>
+                  <nodeid>7537331220067474146</nodeid>
                     <properties>
                         <property name='alias'></property>
                         <property name='name'>Arbeidsduur van arbeidsovereenkomst 2</property>
@@ -7555,7 +7555,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                         <noderole>waardeVanKenmerken</noderole>
                         <nodetype>WaardeVanKenmerk</nodetype>
                         <nodename></nodename>
-                        <nodeid>7108013867280739551</nodeid>
+                        <nodeid>7537331220067474147</nodeid>
                           <properties>
                               <property name='alias'></property>
                               <property name='name'></property>
@@ -7564,7 +7564,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>kenmerk</noderole>
                               <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>7108013867280739552</nodeid>
+                              <nodeid>7537331220067474148</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7582,7 +7582,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>waarde</noderole>
                               <nodetype>DatumWaarde</nodetype>
-                              <nodeid>7108013867280739553</nodeid>
+                              <nodeid>7537331220067474149</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7590,10 +7590,10 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                                   <node>
                                     <noderole>waarde</noderole>
                                     <nodetype>Datum</nodetype>
-                                    <nodeid>7108013867280739731</nodeid>
+                                    <nodeid>7537331220067476867</nodeid>
                                       <properties>
                                           <property name='dag'>1</property>
-                                          <property name='maand'>1</property>
+                                          <property name='maand'>2</property>
                                           <property name='jaar'>2000</property>
                                           <property name='alias'></property>
                                       </properties>
@@ -7606,7 +7606,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                         <noderole>waardeVanKenmerken</noderole>
                         <nodetype>WaardeVanKenmerk</nodetype>
                         <nodename></nodename>
-                        <nodeid>7108013867280739554</nodeid>
+                        <nodeid>7537331220067474150</nodeid>
                           <properties>
                               <property name='alias'></property>
                               <property name='name'></property>
@@ -7615,7 +7615,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>kenmerk</noderole>
                               <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>7108013867280739555</nodeid>
+                              <nodeid>7537331220067474151</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7633,7 +7633,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>waarde</noderole>
                               <nodetype>DatumWaarde</nodetype>
-                              <nodeid>7108013867280739556</nodeid>
+                              <nodeid>7537331220067474152</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7644,7 +7644,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                         <noderole>waardeVanKenmerken</noderole>
                         <nodetype>WaardeVanKenmerk</nodetype>
                         <nodename></nodename>
-                        <nodeid>7108013867280739557</nodeid>
+                        <nodeid>7537331220067474153</nodeid>
                           <properties>
                               <property name='alias'></property>
                               <property name='name'></property>
@@ -7653,7 +7653,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>kenmerk</noderole>
                               <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>7108013867280739558</nodeid>
+                              <nodeid>7537331220067474154</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7670,18 +7670,18 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             </node>
                             <node>
                               <noderole>waarde</noderole>
-                              <nodetype>GeheelGetalWaarde</nodetype>
-                              <nodeid>7108013867280739559</nodeid>
+                              <nodetype>DuurWaarde</nodetype>
+                              <nodeid>7537331220067474155</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
-                                    <noderole>waarde</noderole>
-                                    <nodetype>GeheelGetal</nodetype>
-                                    <nodeid>7108013867280739749</nodeid>
+                                    <noderole>duur</noderole>
+                                    <nodetype>Uren</nodetype>
+                                    <nodeid>7537331220067477275</nodeid>
                                       <properties>
-                                          <property name='waarde'>40</property>
+                                          <property name='uren'>40</property>
                                           <property name='alias'></property>
                                       </properties>
                                   </node>
@@ -7693,7 +7693,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                         <noderole>waardeVanKenmerken</noderole>
                         <nodetype>WaardeVanKenmerk</nodetype>
                         <nodename></nodename>
-                        <nodeid>7108013867280739560</nodeid>
+                        <nodeid>7537331220067474156</nodeid>
                           <properties>
                               <property name='alias'></property>
                               <property name='name'></property>
@@ -7702,7 +7702,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>kenmerk</noderole>
                               <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>7108013867280739561</nodeid>
+                              <nodeid>7537331220067474157</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -7720,7 +7720,7 @@ publiekrechtelijke aanstelling arbeid verricht.</property>
                             <node>
                               <noderole>waarde</noderole>
                               <nodetype>ObjectWaarde</nodetype>
-                              <nodeid>6760713004464121920</nodeid>
+                              <nodeid>7537331220067477451</nodeid>
                                 <properties>
                                     <property name='alias'></property>
                                 </properties>
@@ -14397,6 +14397,170 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                 </node>
               </children>
           </node>
+          <node>
+            <noderole>teWijzigingenFeiten</noderole>
+            <nodetype>MethodeAanpassenFeiten</nodetype>
+            <nodeid>7537331220065237518</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220065927123</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>omvang van de aanpassing</nodename>
+                          <nodeid>797539131721925527</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220065927124</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>gewenste spreiding</nodename>
+                          <nodeid>797539131721925590</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220065927125</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>schriftelijk ingediend</nodename>
+                          <nodeid>31726144782747159</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220065927126</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>datum indienen verzoek</nodename>
+                          <nodeid>6249140128508295101</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220065927127</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>datum vorige versie van het verzoek</nodename>
+                          <nodeid>3955365814688413039</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220065927128</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>samentelling volgens werknemer</nodename>
+                          <nodeid>5105771847112954480</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220065927129</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>beoogde ingangsdatum van de aanpassing</nodename>
+                          <nodeid>5266643527327199632</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220065927130</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>op grond van arbeidsovereenkomst</nodename>
+                          <nodeid>3955365814688947835</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+              </children>
+              <references>
+                <reference role='refObject'>
+                  <node>
+                    <noderole>onderwerpen</noderole>
+                    <nodetype>Onderwerp</nodetype>
+                    <nodename>aanpassing van de arbeidsduur</nodename>
+                    <nodeid>848775529194317032</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
         </children>
     </node>
     <node>
@@ -15296,6 +15460,80 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                   <property name='alias'></property>
               </properties>
           </node>
+          <node>
+            <noderole>nieuweFeiten</noderole>
+            <nodetype>MethodeNieuweFeiten</nodetype>
+            <nodeid>7537331220056715382</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220056715693</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>datum zwaarwegende bedrijfs- of dienstbelangen aangegeven door werkgever</nodename>
+                          <nodeid>5235943278057328272</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220056715434</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen</nodename>
+                          <nodeid>5540471952143836247</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220067469957</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>redenen voor afwijzing</nodename>
+                          <nodeid>5105771847112954895</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+              </children>
+              <references>
+                <reference role='refObject'>
+                  <node>
+                    <noderole>onderwerpen</noderole>
+                    <nodetype>Onderwerp</nodetype>
+                    <nodename>aanpassing van de arbeidsduur</nodename>
+                    <nodeid>848775529194317032</nodeid>
+                  </node>
+                </reference>
+              </references>
+          </node>
         </children>
     </node>
     <node>
@@ -15983,30 +16221,50 @@ van de werknemer te neutraliseren.</nodename>
               </children>
           </node>
           <node>
-            <noderole>nieuweFeiten</noderole>
-            <nodetype>MethodeNieuweFeiten</nodetype>
-            <nodeid>1226838851589143877</nodeid>
-              <properties>
-                  <property name='alias'></property>
-              </properties>
-              <references>
-                <reference role='refObject'>
-                  <node>
-                    <noderole>onderwerpen</noderole>
-                    <nodetype>Onderwerp</nodetype>
-                    <nodename>arbeidsduurperiode van arbeidsovereenkomst</nodename>
-                    <nodeid>6305595003050996407</nodeid>
-                  </node>
-                </reference>
-              </references>
-          </node>
-          <node>
             <noderole>url</noderole>
             <nodetype>URL</nodetype>
             <nodeid>6873177359993387152</nodeid>
               <properties>
                   <property name='alias'></property>
               </properties>
+          </node>
+          <node>
+            <noderole>nieuweFeiten</noderole>
+            <nodetype>MethodeNieuweFeiten</nodetype>
+            <nodeid>7537331220056715536</nodeid>
+              <properties>
+                  <property name='alias'></property>
+              </properties>
+              <children>
+                <node>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220056715588</nodeid>
+                    <properties>
+                        <property name='alias'></property>
+                    </properties>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken</nodename>
+                          <nodeid>5540471952143837719</nodeid>
+                        </node>
+                      </reference>
+                    </references>
+                </node>
+              </children>
+              <references>
+                <reference role='refObject'>
+                  <node>
+                    <noderole>onderwerpen</noderole>
+                    <nodetype>Onderwerp</nodetype>
+                    <nodename>aanpassing van de arbeidsduur</nodename>
+                    <nodeid>848775529194317032</nodeid>
+                  </node>
+                </reference>
+              </references>
           </node>
         </children>
     </node>
@@ -16153,61 +16411,22 @@ van de werknemer te neutraliseren.</nodename>
               </properties>
               <children>
                 <node>
-                  <noderole>wijzigingen</noderole>
-                  <nodetype>Gelijkstelling</nodetype>
-                  <nodeid>5540471952143838392</nodeid>
+                  <noderole>kenmerken</noderole>
+                  <nodetype>ReferentieNaarKenmerk</nodetype>
+                  <nodeid>7537331220067556364</nodeid>
                     <properties>
                         <property name='alias'></property>
                     </properties>
-                    <children>
-                      <node>
-                        <noderole>variabele</noderole>
-                        <nodetype>Variabele</nodetype>
-                        <nodeid>5540471952143838393</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                          <children>
-                            <node>
-                              <noderole>kenmerk</noderole>
-                              <nodetype>ReferentieNaarKenmerk</nodetype>
-                              <nodeid>5540471952143838402</nodeid>
-                                <properties>
-                                    <property name='alias'></property>
-                                </properties>
-                                <references>
-                                  <reference role='kenmerk'>
-                                    <node>
-                                      <noderole>kenmerk</noderole>
-                                      <nodetype>Kenmerk</nodetype>
-                                      <nodename>datum mededelen redenen</nodename>
-                                      <nodeid>5540471952143838298</nodeid>
-                                    </node>
-                                  </reference>
-                                </references>
-                            </node>
-                          </children>
-                      </node>
-                      <node>
-                        <noderole>gelijkTeStellenAan</noderole>
-                        <nodetype>DatumUitvoerenHandeling</nodetype>
-                        <nodeid>5540471952143838405</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                      <node>
-                        <noderole>brongeldigVan</noderole>
-                        <nodetype>Datum</nodetype>
-                        <nodeid>5540471952143838396</nodeid>
-                          <properties>
-                              <property name='dag'>1</property>
-                              <property name='maand'>1</property>
-                              <property name='jaar'>1000</property>
-                              <property name='alias'></property>
-                          </properties>
-                      </node>
-                    </children>
+                    <references>
+                      <reference role='kenmerk'>
+                        <node>
+                          <noderole>kenmerk</noderole>
+                          <nodetype>Kenmerk</nodetype>
+                          <nodename>redenen voor afwijzing</nodename>
+                          <nodeid>5105771847112954895</nodeid>
+                        </node>
+                      </reference>
+                    </references>
                 </node>
               </children>
               <references>
@@ -16308,56 +16527,6 @@ van de werknemer te neutraliseren.</nodename>
                   <property name='name'></property>
               </properties>
               <children>
-                <node>
-                  <noderole>voorwaarden</noderole>
-                  <nodetype>ExpressieVoorwaarde</nodetype>
-                  <nodename></nodename>
-                  <nodeid>345859696663958268</nodeid>
-                    <properties>
-                        <property name='alias'></property>
-                        <property name='name'></property>
-                    </properties>
-                    <children>
-                      <node>
-                        <noderole>expressie</noderole>
-                        <nodetype>IsWaar</nodetype>
-                        <nodeid>345859696663958286</nodeid>
-                          <properties>
-                              <property name='alias'></property>
-                          </properties>
-                          <children>
-                            <node>
-                              <noderole>variabele</noderole>
-                              <nodetype>Variabele</nodetype>
-                              <nodeid>345859696663958288</nodeid>
-                                <properties>
-                                    <property name='alias'></property>
-                                </properties>
-                                <children>
-                                  <node>
-                                    <noderole>kenmerk</noderole>
-                                    <nodetype>ReferentieNaarKenmerk</nodetype>
-                                    <nodeid>345859696663958295</nodeid>
-                                      <properties>
-                                          <property name='alias'></property>
-                                      </properties>
-                                      <references>
-                                        <reference role='kenmerk'>
-                                          <node>
-                                            <noderole>kenmerk</noderole>
-                                            <nodetype>Kenmerk</nodetype>
-                                            <nodename>schriftelijk ingediend</nodename>
-                                            <nodeid>31726144782747159</nodeid>
-                                          </node>
-                                        </reference>
-                                      </references>
-                                  </node>
-                                </children>
-                            </node>
-                          </children>
-                      </node>
-                    </children>
-                </node>
                 <node>
                   <noderole>conditie</noderole>
                   <nodetype>ConditieAlle</nodetype>
