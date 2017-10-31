@@ -3,7 +3,7 @@ Specificaties van de wet aanpassing arbeidsduur in MPS
 
 # Installatie
 ## Installatie van MPS
-Deze broncode werkt met Jetbrains MPS versie 2017.1.2.2 
+Deze broncode werkt met Jetbrains MPS versie 2017.1.2 
 Jetbrains MPS is te downloaden op: https://www.jetbrains.com/mps/download/
 Kijk indien nodig bij de "previous versions"
 
