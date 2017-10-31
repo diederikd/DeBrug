@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
+import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import Gegevens.behavior.DuurWaarde__BehaviorDescriptor;
@@ -40,7 +41,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
 
   protected void populateEvaluators(List<? extends IEvaluator> evaluators) {
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c36bdf22L, "ObjectiefRecht.structure.TenMinsteVoor"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -94,7 +95,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c99b8af3L, "ObjectiefRecht.structure.TenMinsteNa"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -148,7 +149,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x2db6a3c6801e6ee4L, "ObjectiefRecht.structure.IsOpgegeven"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -179,7 +180,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x70b6c2b5db7413L, "ObjectiefRecht.structure.IsWaar"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -206,7 +207,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db5871837c102bL, "ObjectiefRecht.structure.IsGeen"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -234,7 +235,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9bcaebaL, "ObjectiefRecht.structure.DeSom"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -298,7 +299,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c99b8b3bL, "ObjectiefRecht.structure.VerschilTussen"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -355,7 +356,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, "ObjectiefRecht.structure.IsGelijk"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -363,10 +364,10 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
           System.out.println("Interpreter: Is gelijk aan " + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1")) + "  " + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2")));
           boolean result = false;
 
-          Duration duur2 = ((Duration) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2")), context, coverage, false));
+          Duration duur2 = ((Duration) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2")), context, coverage, trace, false));
           System.out.println("Interpreter: duur2 " + duur2);
 
-          Duration duur1 = ((Duration) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1")), context, coverage, false));
+          Duration duur1 = ((Duration) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1")), context, coverage, trace, false));
           result = duur1.equals(duur2);
           Interpreter.voegBerichtToe("'" + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a451L, "expressie1")) + "' is gelijk aan '" + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, 0x1c192b17c998a473L, "expressie2")) + "' is " + result);
           return result;
@@ -388,7 +389,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7cb80d5a334f0adL, "ObjectiefRecht.structure.IsNietGelijk"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -397,8 +398,8 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
           {
             final SNode enumeratieWaarde = SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7cb80d5a334f0adL, 0x7cb80d5a334f0afL, "expressie2"));
             if (SNodeOperations.isInstanceOf(enumeratieWaarde, MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7da9e4c64537e68L, "ObjectiefRecht.structure.EnumeratieWaarde"))) {
-              String waarde1 = ((String) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7cb80d5a334f0adL, 0x7cb80d5a334f0aeL, "expressie1")), context, coverage, false));
-              String waarde2 = ((String) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7cb80d5a334f0adL, 0x7cb80d5a334f0afL, "expressie2")), context, coverage, false));
+              String waarde1 = ((String) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7cb80d5a334f0adL, 0x7cb80d5a334f0aeL, "expressie1")), context, coverage, trace, false));
+              String waarde2 = ((String) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7cb80d5a334f0adL, 0x7cb80d5a334f0afL, "expressie2")), context, coverage, trace, false));
               result = waarde1.equals(waarde2);
               result = !((result));
             }
@@ -423,7 +424,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fe6L, "Gegevens.structure.GeheelGetalWaarde"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -447,7 +448,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac581L, "Gegevens.structure.ReeelGetalWaarde"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -471,7 +472,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7bL, "ObjectiefRecht.structure.PlusExpressie"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -498,7 +499,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7cL, "ObjectiefRecht.structure.MinExpressie"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -525,7 +526,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d9eL, "ObjectiefRecht.structure.VermenigvuldigenExpressie"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -552,7 +553,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d9dL, "ObjectiefRecht.structure.DelenExpressie"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -579,14 +580,14 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db587183a08da6L, "ObjectiefRecht.structure.IsGroterOfGelijk"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           Boolean result = false;
-          Object expressie1 = context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")), context, coverage, false);
-          Object expressie2 = context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")), context, coverage, false);
+          Object expressie1 = context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b135L, "expressie1")), context, coverage, trace, false);
+          Object expressie2 = context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db58718361b134L, 0x46db58718361b137L, "expressie2")), context, coverage, trace, false);
           if ((expressie1 instanceof Double) && (expressie2 instanceof Double)) {
             result = ((Double) expressie1) >= ((Double) expressie2);
           }
@@ -610,7 +611,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9c6L, "ObjectiefRecht.structure.ErIsEen"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -642,7 +643,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b7d334fL, "ObjectiefRecht.structure.ErIsGeen"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -679,7 +680,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x75a9691d143b2e5fL, "ObjectiefRecht.structure.ErIsGeenHandeling"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);

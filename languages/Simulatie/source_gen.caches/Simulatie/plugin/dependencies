@@ -110,6 +110,7 @@
     <classNode dependClassName="Gegevens.behavior.TijdWaarde__BehaviorDescriptor" />
     <classNode dependClassName="ObjectiefRecht.behavior.InstantieVanObject__BehaviorDescriptor" />
     <classNode dependClassName="Simulatie.plugin.Interpreter" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ComputationTrace" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
@@ -145,6 +146,7 @@
   </dependency>
   <dependency className="Simulatie.plugin.InterpreterInterpreterTemporal" file="InterpreterInterpreterTemporal.java">
     <classNode dependClassName="Simulatie.plugin.DebugHelper" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ComputationTrace" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
@@ -172,6 +174,7 @@
   </dependency>
   <dependency className="Simulatie.plugin.InterpreterInterpreterVariabelen" file="InterpreterInterpreterVariabelen.java">
     <classNode dependClassName="Simulatie.plugin.Interpreter" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ComputationTrace" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
@@ -201,6 +204,7 @@
   </dependency>
   <dependency className="Simulatie.plugin.InterpreterInterpreterVoorwaarden" file="InterpreterInterpreterVoorwaarden.java">
     <classNode dependClassName="Simulatie.plugin.Interpreter" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ComputationTrace" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />

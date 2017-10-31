@@ -47,11 +47,9 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">30ef095a-d489-45ff-a80f-456a798ac125(Gegevens)</dependency>
     <dependency reexport="false">8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)</dependency>
     <dependency reexport="false">15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)</dependency>
-    <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
-    <dependency reexport="false">2c493149-da1d-45e9-8ea2-e0b0cfc3047a(SubjectiefRecht)</dependency>
+    <dependency reexport="false">726886d1-ef90-4249-a08f-1e3ec23a7113(com.mbeddr.mpsutil.traceExplorer)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:30ef095a-d489-45ff-a80f-456a798ac125:Gegevens" version="0" />
@@ -97,13 +95,12 @@
     <module reference="c4c9a68e-ce24-4c5b-9241-c819e554f07c(Interactie)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
-    <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" version="1" />
     <module reference="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" version="0" />
     <module reference="2c493149-da1d-45e9-8ea2-e0b0cfc3047a(SubjectiefRecht)" version="0" />
+    <module reference="726886d1-ef90-4249-a08f-1e3ec23a7113(com.mbeddr.mpsutil.traceExplorer)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />

@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
+import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.mpsutil.interpreter.rt.StopAndReturnException;
@@ -29,7 +30,7 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
 
   protected void populateEvaluators(List<? extends IEvaluator> evaluators) {
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fce8L, "ObjectiefRecht.structure.Voorwaarden"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -40,7 +41,7 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
           Boolean resultaatvoorwaarde = null;
           for (SNode voorwaarde : ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab3410fce8L, 0x42e9dab3410fd0cL, "voorwaarden")))) {
             Interpreter.voegBerichtToe("Start van de evaluatie van de voorwaarde ");
-            resultaatvoorwaarde = ((Boolean) context.getRootInterpreter().evaluate(voorwaarde, context, coverage, false));
+            resultaatvoorwaarde = ((Boolean) context.getRootInterpreter().evaluate(voorwaarde, context, coverage, trace, false));
             Interpreter.voegBerichtToe("Resultaat van de voorwaarde '" + resultaatvoorwaarde + "'");
             if (resultaatvoorwaarde != null) {
               resultvoorwaarden = resultvoorwaarden && resultaatvoorwaarde;
@@ -72,7 +73,7 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, "ObjectiefRecht.structure.ExpressieVoorwaarde"), true) {
-      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
@@ -80,7 +81,7 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
           Interpreter.voegBerichtToe("Evalueer de expressie '" + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")) + "'");
           System.out.println("Evalueer de expressie '" + SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")) + "'");
           Boolean result = null;
-          result = ((Boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")), context, coverage, false));
+          result = ((Boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, 0x1fabc0b15d7bf1afL, "expressie")), context, coverage, trace, false));
           Interpreter.voegBerichtToe("Resultaat van expressie '" + result + "'");
           return result;
         } catch (StopAndReturnException stop) {
