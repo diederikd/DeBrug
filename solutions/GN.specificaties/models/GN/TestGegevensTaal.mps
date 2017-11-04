@@ -3,12 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="30ef095a-d489-45ff-a80f-456a798ac125" name="Gegevens" version="0" />
-    <use id="61be2dc6-a140-4def-a592-7499aa2bac19" name="Datum" version="0" />
   </languages>
-  <imports>
-    <import index="zznl" ref="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)" />
-    <import index="zznl" ref="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA)" />
-  </imports>
+  <imports />
   <registry>
     <language id="30ef095a-d489-45ff-a80f-456a798ac125" name="Gegevens">
       <concept id="6166301676793428914" name="Gegevens.structure.GegevensModel" flags="ng" index="aIu46">
