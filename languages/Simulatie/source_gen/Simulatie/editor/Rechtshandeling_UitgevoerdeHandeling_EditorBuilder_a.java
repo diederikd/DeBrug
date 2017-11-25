@@ -185,7 +185,7 @@ import ObjectiefRecht.behavior.Overgang__BehaviorDescriptor;
         }, effectiveNode, "overgang");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -267,7 +267,7 @@ import ObjectiefRecht.behavior.Overgang__BehaviorDescriptor;
         }, effectiveNode, "onderwerp");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -363,6 +363,7 @@ import ObjectiefRecht.behavior.Overgang__BehaviorDescriptor;
     editorCell.setCellId("ReadOnlyModelAccessor_qsh53x_h0a");
     Style style = new StyleImpl();
     new BoldStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
@@ -437,7 +438,7 @@ import ObjectiefRecht.behavior.Overgang__BehaviorDescriptor;
           }, effectiveNode, "objectieveRechtsbetrekking");
           CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
           setSemanticNodeToCells(cell, myNode);
-          installDeleteActions_atLeastOne(cell);
+          installDeleteActions_notnull(cell);
           return cell;
         }
       };
@@ -591,6 +592,9 @@ import ObjectiefRecht.behavior.Overgang__BehaviorDescriptor;
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
     editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
     editorCell.setCellId("ReadOnlyModelAccessor_qsh53x_n0a");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.EDITABLE, false);
+    editorCell.getStyle().putAll(style);
     return editorCell;
   }
   private EditorCell createConstant_qsh53x_o0a() {

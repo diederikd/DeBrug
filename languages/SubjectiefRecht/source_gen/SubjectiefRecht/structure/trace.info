@@ -2,7 +2,7 @@
 <debug-info version="2">
   <root>
     <file name="ConceptPresentationAspectImpl.java">
-      <unit at="11,0,52,0" name="SubjectiefRecht.structure.ConceptPresentationAspectImpl" />
+      <unit at="11,0,100,0" name="SubjectiefRecht.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <unit at="10,0,46,0" name="SubjectiefRecht.structure.LanguageConceptSwitch" />

@@ -20,6 +20,7 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import ObjectiefRecht.editor.GN_StyleSheet.VerwoordingKenmerkwaardeStyleClass;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 /*package*/ class VerwoordingWaarde_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -68,6 +69,7 @@ import ObjectiefRecht.editor.GN_StyleSheet.VerwoordingKenmerkwaardeStyleClass;
     editorCell.setCellId("ReadOnlyModelAccessor_j0qnka_a0");
     Style style = new StyleImpl();
     new VerwoordingKenmerkwaardeStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }

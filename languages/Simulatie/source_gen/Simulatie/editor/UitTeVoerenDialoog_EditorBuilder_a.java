@@ -951,7 +951,7 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
         }, effectiveNode, "overgang");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -1035,6 +1035,9 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
     editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
     editorCell.setCellId("ReadOnlyModelAccessor_pjer6y_c12a0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.EDITABLE, false);
+    editorCell.getStyle().putAll(style);
     return editorCell;
   }
   private EditorCell createConstant_pjer6y_d12a0() {

@@ -120,7 +120,7 @@ import ObjectiefRecht.editor.GN_StyleSheet.OnderwerpStyleClass;
         }, effectiveNode, "overgang");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -203,6 +203,7 @@ import ObjectiefRecht.editor.GN_StyleSheet.OnderwerpStyleClass;
     editorCell.setCellId("ReadOnlyModelAccessor_uhioow_h0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
@@ -233,7 +234,7 @@ import ObjectiefRecht.editor.GN_StyleSheet.OnderwerpStyleClass;
         }, effectiveNode, "onderwerp");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };

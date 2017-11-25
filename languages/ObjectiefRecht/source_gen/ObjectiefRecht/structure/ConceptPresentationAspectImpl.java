@@ -4,148 +4,147 @@ package ObjectiefRecht.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase;
 import jetbrains.mps.smodel.runtime.ConceptPresentation;
-import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private final ConceptPresentation props_AanspraakNaIngebrekeStellingPlicht = new ConceptPresentationBuilder().shortDesc("Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten.").create();
-  private final ConceptPresentation props_AbstractArtikel = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AbstractKenmerk = new ConceptPresentationBuilder().deprecated(true).create();
-  private final ConceptPresentation props_AbstractKenmerkType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AbstractReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AbstracteExpressie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AbstracteVoorwaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Actie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Afleidingsregel = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Artikel = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Betrekking = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Concept = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Conditie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ConditieAlle = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ConditieEen = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ConditieGeen = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Context = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DatumType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DatumUitvoerenHandeling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DeSom = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DelenExpressie = new ConceptPresentationBuilder().shortDesc("Delen").create();
-  private final ConceptPresentation props_DuurType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Enumeratie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_EnumeratieElement = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_EnumeratieType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_EnumeratieWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ErIsEen = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ErIsGeen = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ErIsGeenHandeling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ExpressieVoorwaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FeitVerwoording = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FeitelijkeHandelingMetRechtsgevolg = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_GebeurtenisMetRechtsgevolg = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_GeheelGetalType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Gelijkstelling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Gevolg = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_HandelingZonderRechtsgevolg = new ConceptPresentationBuilder().deprecated().create();
-  private final ConceptPresentation props_HuidigeDatum = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IBinaireExpressie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IBinaireTemporeleExpressie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IRekenWaardeExpressie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IURL = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IUnaireExpressie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImmuniteitGeenbevoegdheid = new ConceptPresentationBuilder().shortDesc("Een {immuniteit-geenbevoegdheid} is een [rechtsbetrekking] waarbij de immuniteit houder de macht heeft een of meer [rechtsbetrekkingen] buiten werking te stellen, of een of meer [voorwaarden] van een [rechtshandeling] of [feitelijke handeling] buiten werking te stellen. De geenbevoegdheid houdende [partij] heeft de resultaten van het uitoefenen van de immuniteit maar te accepteren, uiteraard mits voldaan is aan de [voorwaarden] van geldigheid van de [rechtshandeling] van immuniteit.").create();
-  private final ConceptPresentation props_InstantieVanObject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IsGeen = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IsGelijk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IsGroterDan = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IsGroterOfGelijk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IsKleinerDan = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IsNietBekend = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IsNietGelijk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IsOpgegeven = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IsPositief = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IsWaar = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_JaNeeType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Kenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_KrachtigeAanspraakFataleVerplichtig = new ConceptPresentationBuilder().shortDesc("Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten.").create();
-  private final ConceptPresentation props_Lidwoord = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LidwoordDe = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LidwoordHet = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LigtNa = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LigtVoor = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LijstMetVerwoordingen = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MaterieleVoorwaarde = new ConceptPresentationBuilder().deprecated(true).create();
-  private final ConceptPresentation props_MeervoudigeObjectWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MethodeAanpassenFeiten = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MethodeBeeidigenOnderwerp = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MethodeNieuweFeiten = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MinExpressie = new ConceptPresentationBuilder().shortDesc("aftrekken").create();
-  private final ConceptPresentation props_Na = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Object = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ObjectType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ObjectWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Onderwerp = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OnderwerpType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OptieAccepterenHandeling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OptieAfwijzenHandeling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OptieUitvoerenHandeling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OptioneleBevoegdheidOptioneleGehoudenheid = new ConceptPresentationBuilder().shortDesc("Een {bevoegdheid-gehoudenheid} is een [rechtsbetrekking] waarbij het [rechtssubject] dat de bevoegdheidskant heeft, de keuze heeft, zijn macht uit te oefenen en een of meer nieuwe [rechtsbetrekkingen] van welk soort ook tot stand te brengen tussen de gehoudenheid houdende [partij] en een andere [partij], en/of een of meer bestaande [rechtsbetrekkingen] de gehoudenheid houdende [partij] en een andere [partij] te beëindigen.").create();
-  private final ConceptPresentation props_Overgang = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OvergangZonderRechtsgevolg = new ConceptPresentationBuilder().deprecated(true).create();
-  private final ConceptPresentation props_PlusExpressie = new ConceptPresentationBuilder().shortDesc("optellen").create();
-  private final ConceptPresentation props_RechtsSubject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_RechtsSubjectMetPlicht = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_RechtsSubjectMetRecht = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Rechtsbetrekking = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getProperty(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x25be3715c7da8818L, "initieel"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2dL, "rechtssubjectMetRecht"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x611073d615228d2eL, "rechtssubjectMetPlicht"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL, 0x218d2fe3c8aff5f6L, "onderwerp")).shortDesc("Synoniemen zijn rechtsrelatie en rechtsverhouding").create();
-  private final ConceptPresentation props_Rechtsgevolg = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_RechtsgevolgVeroorzakers = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Rechtshandeling = new ConceptPresentationBuilder().deprecated().create();
-  private final ConceptPresentation props_ReeelGetalType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarArtikel = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarEnumeratie = new ConceptPresentationBuilder().deprecated(true).create();
-  private final ConceptPresentation props_ReferentieNaarInstantieVanObject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarObject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarOvergang = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarRechtsHandeling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarRechtsbetrekking = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarRechtsgevolg = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarRechtsgevolgVeroorzaker = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarRechtssubject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarToestand = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarVoorwaarde = new ConceptPresentationBuilder().deprecated(true).create();
-  private final ConceptPresentation props_ReferentieNaarWaardeVanKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Regel = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_RekenExpressie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_RijVanKaraktersType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_SubjectType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TabelMetInstanties = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TenHoogsteVoor = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TenMinsteNa = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TenMinsteVoor = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TijdstipType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TijdsverloopMetRechtsgevolg = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Toestand = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Variabele = new ConceptPresentationBuilder().deprecated(MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d5dc56eL, "onderwerp2"), MetaAdapterFactory.getReferenceLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d5dc570L, "kenmerk2")).create();
-  private final ConceptPresentation props_VermenigvuldigenExpressie = new ConceptPresentationBuilder().shortDesc("Vermenigvuldigen").create();
-  private final ConceptPresentation props_VerplichteBevoegdheidVerplichteGehoudenheid = new ConceptPresentationBuilder().shortDesc("Een {bevoegdheid-gehoudenheid} is een [rechtsbetrekking] waarbij het [rechtssubject] dat de bevoegdheidskant heeft, de keuze heeft, zijn macht uit te oefenen en een of meer nieuwe [rechtsbetrekkingen] van welk soort ook tot stand te brengen tussen de gehoudenheid houdende [partij] en een andere [partij], en/of een of meer bestaande [rechtsbetrekkingen] de gehoudenheid houdende [partij] en een andere [partij] te beëindigen.").create();
-  private final ConceptPresentation props_VerschilTussen = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VerwoordingElement = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VerwoordingKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VerwoordingObject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VerwoordingTekst = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VerwoordingWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Voor = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VoorbeeldenMetInstanties = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Voorwaarden = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VoorwaardenRechtshandeling = new ConceptPresentationBuilder().deprecated(true).create();
-  private final ConceptPresentation props_VormVoorwaarde = new ConceptPresentationBuilder().deprecated(true).create();
-  private final ConceptPresentation props_VrijeTekst = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VrijheidGeenaanspraak = new ConceptPresentationBuilder().shortDesc("Een {vrijheid-geenaanspraak} is een [rechtsbetrekking] waarbij het [soort recht] [vrijheid] houdende [rechtssubject] iets kan doen of iets kan nalaten, zonder dat dat enig [rechtsgevolg] heeft; de [geenaanspraak] houdende [partij] staat in deze [rechtsbetrekking] geheel machteloos iets te doen tegen de [vrijheid] houdende [partij] binnen deze [rechtsbetrekking]. Kortom, geen van beide [rechtssubjecten] in de [rechtsbetrekking] {vrijheid-geenaanspraak} kan binnen de scope van die [rechtsbetrekking] een [rechtsgevolg] tot stand brengen.").create();
-  private final ConceptPresentation props_WaardeVanKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ZwakkeAanspraakZwakkePlicht = new ConceptPresentationBuilder().shortDesc("Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten.").create();
-  private final ConceptPresentation props_isNegatief = new ConceptPresentationBuilder().create();
+  private ConceptPresentation props_AanspraakNaIngebrekeStellingPlicht;
+  private ConceptPresentation props_AbstractArtikel;
+  private ConceptPresentation props_AbstractKenmerk;
+  private ConceptPresentation props_AbstractKenmerkType;
+  private ConceptPresentation props_AbstractReferentieNaarKenmerk;
+  private ConceptPresentation props_AbstracteExpressie;
+  private ConceptPresentation props_AbstracteVoorwaarde;
+  private ConceptPresentation props_Actie;
+  private ConceptPresentation props_Afleidingsregel;
+  private ConceptPresentation props_Artikel;
+  private ConceptPresentation props_Betrekking;
+  private ConceptPresentation props_Concept;
+  private ConceptPresentation props_Conditie;
+  private ConceptPresentation props_ConditieAlle;
+  private ConceptPresentation props_ConditieEen;
+  private ConceptPresentation props_ConditieGeen;
+  private ConceptPresentation props_Context;
+  private ConceptPresentation props_DatumType;
+  private ConceptPresentation props_DatumUitvoerenHandeling;
+  private ConceptPresentation props_DeSom;
+  private ConceptPresentation props_DelenExpressie;
+  private ConceptPresentation props_DuurType;
+  private ConceptPresentation props_Enumeratie;
+  private ConceptPresentation props_EnumeratieElement;
+  private ConceptPresentation props_EnumeratieType;
+  private ConceptPresentation props_EnumeratieWaarde;
+  private ConceptPresentation props_ErIsEen;
+  private ConceptPresentation props_ErIsGeen;
+  private ConceptPresentation props_ErIsGeenHandeling;
+  private ConceptPresentation props_ExpressieVoorwaarde;
+  private ConceptPresentation props_FeitVerwoording;
+  private ConceptPresentation props_FeitelijkeHandelingMetRechtsgevolg;
+  private ConceptPresentation props_GebeurtenisMetRechtsgevolg;
+  private ConceptPresentation props_GeheelGetalType;
+  private ConceptPresentation props_Gelijkstelling;
+  private ConceptPresentation props_Gevolg;
+  private ConceptPresentation props_HandelingZonderRechtsgevolg;
+  private ConceptPresentation props_HuidigeDatum;
+  private ConceptPresentation props_IBinaireExpressie;
+  private ConceptPresentation props_IBinaireTemporeleExpressie;
+  private ConceptPresentation props_IRekenWaardeExpressie;
+  private ConceptPresentation props_IURL;
+  private ConceptPresentation props_IUnaireExpressie;
+  private ConceptPresentation props_ImmuniteitGeenbevoegdheid;
+  private ConceptPresentation props_InstantieVanObject;
+  private ConceptPresentation props_IsGeen;
+  private ConceptPresentation props_IsGelijk;
+  private ConceptPresentation props_IsGroterDan;
+  private ConceptPresentation props_IsGroterOfGelijk;
+  private ConceptPresentation props_IsKleinerDan;
+  private ConceptPresentation props_IsNietBekend;
+  private ConceptPresentation props_IsNietGelijk;
+  private ConceptPresentation props_IsOpgegeven;
+  private ConceptPresentation props_IsPositief;
+  private ConceptPresentation props_IsWaar;
+  private ConceptPresentation props_JaNeeType;
+  private ConceptPresentation props_Kenmerk;
+  private ConceptPresentation props_KrachtigeAanspraakFataleVerplichtig;
+  private ConceptPresentation props_Lidwoord;
+  private ConceptPresentation props_LidwoordDe;
+  private ConceptPresentation props_LidwoordHet;
+  private ConceptPresentation props_LigtNa;
+  private ConceptPresentation props_LigtVoor;
+  private ConceptPresentation props_LijstMetVerwoordingen;
+  private ConceptPresentation props_MaterieleVoorwaarde;
+  private ConceptPresentation props_MeervoudigeObjectWaarde;
+  private ConceptPresentation props_MethodeAanpassenFeiten;
+  private ConceptPresentation props_MethodeBeeidigenOnderwerp;
+  private ConceptPresentation props_MethodeNieuweFeiten;
+  private ConceptPresentation props_MinExpressie;
+  private ConceptPresentation props_Na;
+  private ConceptPresentation props_Object;
+  private ConceptPresentation props_ObjectType;
+  private ConceptPresentation props_ObjectWaarde;
+  private ConceptPresentation props_Onderwerp;
+  private ConceptPresentation props_OnderwerpType;
+  private ConceptPresentation props_OptieAccepterenHandeling;
+  private ConceptPresentation props_OptieAfwijzenHandeling;
+  private ConceptPresentation props_OptieUitvoerenHandeling;
+  private ConceptPresentation props_OptioneleBevoegdheidOptioneleGehoudenheid;
+  private ConceptPresentation props_Overgang;
+  private ConceptPresentation props_OvergangZonderRechtsgevolg;
+  private ConceptPresentation props_PlusExpressie;
+  private ConceptPresentation props_RechtsSubject;
+  private ConceptPresentation props_RechtsSubjectMetPlicht;
+  private ConceptPresentation props_RechtsSubjectMetRecht;
+  private ConceptPresentation props_Rechtsbetrekking;
+  private ConceptPresentation props_Rechtsgevolg;
+  private ConceptPresentation props_RechtsgevolgVeroorzakers;
+  private ConceptPresentation props_Rechtshandeling;
+  private ConceptPresentation props_ReeelGetalType;
+  private ConceptPresentation props_ReferentieNaarArtikel;
+  private ConceptPresentation props_ReferentieNaarEnumeratie;
+  private ConceptPresentation props_ReferentieNaarInstantieVanObject;
+  private ConceptPresentation props_ReferentieNaarKenmerk;
+  private ConceptPresentation props_ReferentieNaarObject;
+  private ConceptPresentation props_ReferentieNaarOnderwerp;
+  private ConceptPresentation props_ReferentieNaarOvergang;
+  private ConceptPresentation props_ReferentieNaarRechtsHandeling;
+  private ConceptPresentation props_ReferentieNaarRechtsbetrekking;
+  private ConceptPresentation props_ReferentieNaarRechtsgevolg;
+  private ConceptPresentation props_ReferentieNaarRechtsgevolgVeroorzaker;
+  private ConceptPresentation props_ReferentieNaarRechtssubject;
+  private ConceptPresentation props_ReferentieNaarToestand;
+  private ConceptPresentation props_ReferentieNaarVoorwaarde;
+  private ConceptPresentation props_ReferentieNaarWaardeVanKenmerk;
+  private ConceptPresentation props_Regel;
+  private ConceptPresentation props_RekenExpressie;
+  private ConceptPresentation props_RijVanKaraktersType;
+  private ConceptPresentation props_SubjectType;
+  private ConceptPresentation props_TabelMetInstanties;
+  private ConceptPresentation props_TenHoogsteVoor;
+  private ConceptPresentation props_TenMinsteNa;
+  private ConceptPresentation props_TenMinsteVoor;
+  private ConceptPresentation props_TijdstipType;
+  private ConceptPresentation props_TijdsverloopMetRechtsgevolg;
+  private ConceptPresentation props_Toestand;
+  private ConceptPresentation props_Variabele;
+  private ConceptPresentation props_VermenigvuldigenExpressie;
+  private ConceptPresentation props_VerplichteBevoegdheidVerplichteGehoudenheid;
+  private ConceptPresentation props_VerschilTussen;
+  private ConceptPresentation props_VerwoordingElement;
+  private ConceptPresentation props_VerwoordingKenmerk;
+  private ConceptPresentation props_VerwoordingObject;
+  private ConceptPresentation props_VerwoordingTekst;
+  private ConceptPresentation props_VerwoordingWaarde;
+  private ConceptPresentation props_Voor;
+  private ConceptPresentation props_VoorbeeldenMetInstanties;
+  private ConceptPresentation props_Voorwaarden;
+  private ConceptPresentation props_VoorwaardenRechtshandeling;
+  private ConceptPresentation props_VormVoorwaarde;
+  private ConceptPresentation props_VrijeTekst;
+  private ConceptPresentation props_VrijheidGeenaanspraak;
+  private ConceptPresentation props_WaardeVanKenmerk;
+  private ConceptPresentation props_ZwakkeAanspraakZwakkePlicht;
+  private ConceptPresentation props_isNegatief;
 
   @Override
   @Nullable
@@ -153,276 +152,958 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case LanguageConceptSwitch.AanspraakNaIngebrekeStellingPlicht:
+        if (props_AanspraakNaIngebrekeStellingPlicht == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten.");
+          cpb.presentationByName();
+          props_AanspraakNaIngebrekeStellingPlicht = cpb.create();
+        }
         return props_AanspraakNaIngebrekeStellingPlicht;
       case LanguageConceptSwitch.AbstractArtikel:
+        if (props_AbstractArtikel == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractArtikel = cpb.create();
+        }
         return props_AbstractArtikel;
       case LanguageConceptSwitch.AbstractKenmerk:
+        if (props_AbstractKenmerk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.deprecated(true);
+          props_AbstractKenmerk = cpb.create();
+        }
         return props_AbstractKenmerk;
       case LanguageConceptSwitch.AbstractKenmerkType:
+        if (props_AbstractKenmerkType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractKenmerkType = cpb.create();
+        }
         return props_AbstractKenmerkType;
       case LanguageConceptSwitch.AbstractReferentieNaarKenmerk:
+        if (props_AbstractReferentieNaarKenmerk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractReferentieNaarKenmerk = cpb.create();
+        }
         return props_AbstractReferentieNaarKenmerk;
       case LanguageConceptSwitch.AbstracteExpressie:
+        if (props_AbstracteExpressie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstracteExpressie = cpb.create();
+        }
         return props_AbstracteExpressie;
       case LanguageConceptSwitch.AbstracteVoorwaarde:
+        if (props_AbstracteVoorwaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstracteVoorwaarde = cpb.create();
+        }
         return props_AbstracteVoorwaarde;
       case LanguageConceptSwitch.Actie:
+        if (props_Actie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Actie = cpb.create();
+        }
         return props_Actie;
       case LanguageConceptSwitch.Afleidingsregel:
+        if (props_Afleidingsregel == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Afleidingsregel = cpb.create();
+        }
         return props_Afleidingsregel;
       case LanguageConceptSwitch.Artikel:
+        if (props_Artikel == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Artikel = cpb.create();
+        }
         return props_Artikel;
       case LanguageConceptSwitch.Betrekking:
+        if (props_Betrekking == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Betrekking = cpb.create();
+        }
         return props_Betrekking;
       case LanguageConceptSwitch.Concept:
+        if (props_Concept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Concept = cpb.create();
+        }
         return props_Concept;
       case LanguageConceptSwitch.Conditie:
+        if (props_Conditie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Conditie = cpb.create();
+        }
         return props_Conditie;
       case LanguageConceptSwitch.ConditieAlle:
+        if (props_ConditieAlle == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("alle");
+          props_ConditieAlle = cpb.create();
+        }
         return props_ConditieAlle;
       case LanguageConceptSwitch.ConditieEen:
+        if (props_ConditieEen == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("één van de");
+          props_ConditieEen = cpb.create();
+        }
         return props_ConditieEen;
       case LanguageConceptSwitch.ConditieGeen:
+        if (props_ConditieGeen == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("geen van de");
+          props_ConditieGeen = cpb.create();
+        }
         return props_ConditieGeen;
       case LanguageConceptSwitch.Context:
+        if (props_Context == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Context = cpb.create();
+        }
         return props_Context;
       case LanguageConceptSwitch.DatumType:
+        if (props_DatumType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("datum");
+          props_DatumType = cpb.create();
+        }
         return props_DatumType;
       case LanguageConceptSwitch.DatumUitvoerenHandeling:
+        if (props_DatumUitvoerenHandeling == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("datum uitvoeren handeling");
+          props_DatumUitvoerenHandeling = cpb.create();
+        }
         return props_DatumUitvoerenHandeling;
       case LanguageConceptSwitch.DeSom:
+        if (props_DeSom == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("de som van");
+          props_DeSom = cpb.create();
+        }
         return props_DeSom;
       case LanguageConceptSwitch.DelenExpressie:
+        if (props_DelenExpressie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Delen");
+          cpb.rawPresentation("delen");
+          props_DelenExpressie = cpb.create();
+        }
         return props_DelenExpressie;
       case LanguageConceptSwitch.DuurType:
+        if (props_DuurType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("duur");
+          props_DuurType = cpb.create();
+        }
         return props_DuurType;
       case LanguageConceptSwitch.Enumeratie:
+        if (props_Enumeratie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Enumeratie = cpb.create();
+        }
         return props_Enumeratie;
       case LanguageConceptSwitch.EnumeratieElement:
+        if (props_EnumeratieElement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_EnumeratieElement = cpb.create();
+        }
         return props_EnumeratieElement;
       case LanguageConceptSwitch.EnumeratieType:
+        if (props_EnumeratieType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("enumeratie");
+          props_EnumeratieType = cpb.create();
+        }
         return props_EnumeratieType;
       case LanguageConceptSwitch.EnumeratieWaarde:
+        if (props_EnumeratieWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7da9e4c64537e68L, 0x7da9e4c64537e69L, "element", "", "");
+          props_EnumeratieWaarde = cpb.create();
+        }
         return props_EnumeratieWaarde;
       case LanguageConceptSwitch.ErIsEen:
+        if (props_ErIsEen == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("er is een <object> waarbij <voorwaarden>");
+          props_ErIsEen = cpb.create();
+        }
         return props_ErIsEen;
       case LanguageConceptSwitch.ErIsGeen:
+        if (props_ErIsGeen == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("er is geen <object> waarbij <voorwaarden>");
+          props_ErIsGeen = cpb.create();
+        }
         return props_ErIsGeen;
       case LanguageConceptSwitch.ErIsGeenHandeling:
+        if (props_ErIsGeenHandeling == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("er is geen handeling waarbij geldt <voorwaarden>");
+          props_ErIsGeenHandeling = cpb.create();
+        }
         return props_ErIsGeenHandeling;
       case LanguageConceptSwitch.ExpressieVoorwaarde:
+        if (props_ExpressieVoorwaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ExpressieVoorwaarde = cpb.create();
+        }
         return props_ExpressieVoorwaarde;
       case LanguageConceptSwitch.FeitVerwoording:
+        if (props_FeitVerwoording == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab914f739aL, 0x48a9ceab914f73b5L, "instantie", "", "");
+          props_FeitVerwoording = cpb.create();
+        }
         return props_FeitVerwoording;
       case LanguageConceptSwitch.FeitelijkeHandelingMetRechtsgevolg:
+        if (props_FeitelijkeHandelingMetRechtsgevolg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_FeitelijkeHandelingMetRechtsgevolg = cpb.create();
+        }
         return props_FeitelijkeHandelingMetRechtsgevolg;
       case LanguageConceptSwitch.GebeurtenisMetRechtsgevolg:
+        if (props_GebeurtenisMetRechtsgevolg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_GebeurtenisMetRechtsgevolg = cpb.create();
+        }
         return props_GebeurtenisMetRechtsgevolg;
       case LanguageConceptSwitch.GeheelGetalType:
+        if (props_GeheelGetalType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("geheel getal");
+          props_GeheelGetalType = cpb.create();
+        }
         return props_GeheelGetalType;
       case LanguageConceptSwitch.Gelijkstelling:
+        if (props_Gelijkstelling == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Gelijkstelling");
+          props_Gelijkstelling = cpb.create();
+        }
         return props_Gelijkstelling;
       case LanguageConceptSwitch.Gevolg:
+        if (props_Gevolg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Gevolg = cpb.create();
+        }
         return props_Gevolg;
       case LanguageConceptSwitch.HandelingZonderRechtsgevolg:
+        if (props_HandelingZonderRechtsgevolg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25299d15220b0f46L);
+          cpb.deprecateAggregation(0x25299d15220b13a1L, "UitgevoerdOp");
+          cpb.presentationByName();
+          props_HandelingZonderRechtsgevolg = cpb.create();
+        }
         return props_HandelingZonderRechtsgevolg;
       case LanguageConceptSwitch.HuidigeDatum:
+        if (props_HuidigeDatum == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("huidige datum");
+          props_HuidigeDatum = cpb.create();
+        }
         return props_HuidigeDatum;
       case LanguageConceptSwitch.IBinaireExpressie:
+        if (props_IBinaireExpressie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IBinaireExpressie = cpb.create();
+        }
         return props_IBinaireExpressie;
       case LanguageConceptSwitch.IBinaireTemporeleExpressie:
+        if (props_IBinaireTemporeleExpressie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IBinaireTemporeleExpressie = cpb.create();
+        }
         return props_IBinaireTemporeleExpressie;
       case LanguageConceptSwitch.IRekenWaardeExpressie:
+        if (props_IRekenWaardeExpressie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IRekenWaardeExpressie = cpb.create();
+        }
         return props_IRekenWaardeExpressie;
       case LanguageConceptSwitch.IURL:
+        if (props_IURL == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IURL = cpb.create();
+        }
         return props_IURL;
       case LanguageConceptSwitch.IUnaireExpressie:
+        if (props_IUnaireExpressie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IUnaireExpressie = cpb.create();
+        }
         return props_IUnaireExpressie;
       case LanguageConceptSwitch.ImmuniteitGeenbevoegdheid:
+        if (props_ImmuniteitGeenbevoegdheid == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Een {immuniteit-geenbevoegdheid} is een [rechtsbetrekking] waarbij de immuniteit houder de macht heeft een of meer [rechtsbetrekkingen] buiten werking te stellen, of een of meer [voorwaarden] van een [rechtshandeling] of [feitelijke handeling] buiten werking te stellen. De geenbevoegdheid houdende [partij] heeft de resultaten van het uitoefenen van de immuniteit maar te accepteren, uiteraard mits voldaan is aan de [voorwaarden] van geldigheid van de [rechtshandeling] van immuniteit.");
+          cpb.presentationByName();
+          props_ImmuniteitGeenbevoegdheid = cpb.create();
+        }
         return props_ImmuniteitGeenbevoegdheid;
       case LanguageConceptSwitch.InstantieVanObject:
+        if (props_InstantieVanObject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_InstantieVanObject = cpb.create();
+        }
         return props_InstantieVanObject;
       case LanguageConceptSwitch.IsGeen:
+        if (props_IsGeen == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is niet waar");
+          props_IsGeen = cpb.create();
+        }
         return props_IsGeen;
       case LanguageConceptSwitch.IsGelijk:
+        if (props_IsGelijk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is gelijk aan");
+          props_IsGelijk = cpb.create();
+        }
         return props_IsGelijk;
       case LanguageConceptSwitch.IsGroterDan:
+        if (props_IsGroterDan == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is groter dan");
+          props_IsGroterDan = cpb.create();
+        }
         return props_IsGroterDan;
       case LanguageConceptSwitch.IsGroterOfGelijk:
+        if (props_IsGroterOfGelijk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is groter of gelijk aan");
+          props_IsGroterOfGelijk = cpb.create();
+        }
         return props_IsGroterOfGelijk;
       case LanguageConceptSwitch.IsKleinerDan:
+        if (props_IsKleinerDan == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is kleiner dan");
+          props_IsKleinerDan = cpb.create();
+        }
         return props_IsKleinerDan;
       case LanguageConceptSwitch.IsNietBekend:
+        if (props_IsNietBekend == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is niet bekend");
+          props_IsNietBekend = cpb.create();
+        }
         return props_IsNietBekend;
       case LanguageConceptSwitch.IsNietGelijk:
+        if (props_IsNietGelijk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is niet gelijk aan");
+          props_IsNietGelijk = cpb.create();
+        }
         return props_IsNietGelijk;
       case LanguageConceptSwitch.IsOpgegeven:
+        if (props_IsOpgegeven == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is opgegeven");
+          props_IsOpgegeven = cpb.create();
+        }
         return props_IsOpgegeven;
       case LanguageConceptSwitch.IsPositief:
+        if (props_IsPositief == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is positief");
+          props_IsPositief = cpb.create();
+        }
         return props_IsPositief;
       case LanguageConceptSwitch.IsWaar:
+        if (props_IsWaar == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is waar");
+          props_IsWaar = cpb.create();
+        }
         return props_IsWaar;
       case LanguageConceptSwitch.JaNeeType:
+        if (props_JaNeeType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ja/nee");
+          props_JaNeeType = cpb.create();
+        }
         return props_JaNeeType;
       case LanguageConceptSwitch.Kenmerk:
+        if (props_Kenmerk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Kenmerk = cpb.create();
+        }
         return props_Kenmerk;
       case LanguageConceptSwitch.KrachtigeAanspraakFataleVerplichtig:
+        if (props_KrachtigeAanspraakFataleVerplichtig == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten.");
+          cpb.presentationByName();
+          props_KrachtigeAanspraakFataleVerplichtig = cpb.create();
+        }
         return props_KrachtigeAanspraakFataleVerplichtig;
       case LanguageConceptSwitch.Lidwoord:
+        if (props_Lidwoord == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Lidwoord = cpb.create();
+        }
         return props_Lidwoord;
       case LanguageConceptSwitch.LidwoordDe:
+        if (props_LidwoordDe == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("de");
+          props_LidwoordDe = cpb.create();
+        }
         return props_LidwoordDe;
       case LanguageConceptSwitch.LidwoordHet:
+        if (props_LidwoordHet == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("het");
+          props_LidwoordHet = cpb.create();
+        }
         return props_LidwoordHet;
       case LanguageConceptSwitch.LigtNa:
+        if (props_LigtNa == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ligt na");
+          props_LigtNa = cpb.create();
+        }
         return props_LigtNa;
       case LanguageConceptSwitch.LigtVoor:
+        if (props_LigtVoor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ligt voor");
+          props_LigtVoor = cpb.create();
+        }
         return props_LigtVoor;
       case LanguageConceptSwitch.LijstMetVerwoordingen:
+        if (props_LijstMetVerwoordingen == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("LijstMetVerwoordingen");
+          props_LijstMetVerwoordingen = cpb.create();
+        }
         return props_LijstMetVerwoordingen;
       case LanguageConceptSwitch.MaterieleVoorwaarde:
+        if (props_MaterieleVoorwaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.deprecated(true);
+          cpb.presentationByName();
+          props_MaterieleVoorwaarde = cpb.create();
+        }
         return props_MaterieleVoorwaarde;
       case LanguageConceptSwitch.MeervoudigeObjectWaarde:
+        if (props_MeervoudigeObjectWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("MeervoudigeObjectWaarde");
+          props_MeervoudigeObjectWaarde = cpb.create();
+        }
         return props_MeervoudigeObjectWaarde;
       case LanguageConceptSwitch.MethodeAanpassenFeiten:
+        if (props_MethodeAanpassenFeiten == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c376d9c3L, 0x4ce3b5e2c376d9c4L, "refObject", "", "");
+          props_MethodeAanpassenFeiten = cpb.create();
+        }
         return props_MethodeAanpassenFeiten;
       case LanguageConceptSwitch.MethodeBeeidigenOnderwerp:
+        if (props_MethodeBeeidigenOnderwerp == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c376d9c7L, 0x4ce3b5e2c376d9c8L, "refObject", "", "");
+          props_MethodeBeeidigenOnderwerp = cpb.create();
+        }
         return props_MethodeBeeidigenOnderwerp;
       case LanguageConceptSwitch.MethodeNieuweFeiten:
+        if (props_MethodeNieuweFeiten == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1d41347b06d6c3eL, 0x1d41347b06d6c81L, "refObject", "", "");
+          props_MethodeNieuweFeiten = cpb.create();
+        }
         return props_MethodeNieuweFeiten;
       case LanguageConceptSwitch.MinExpressie:
+        if (props_MinExpressie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("aftrekken");
+          cpb.rawPresentation("min");
+          props_MinExpressie = cpb.create();
+        }
         return props_MinExpressie;
       case LanguageConceptSwitch.Na:
+        if (props_Na == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("<duur> na");
+          props_Na = cpb.create();
+        }
         return props_Na;
       case LanguageConceptSwitch.Object:
+        if (props_Object == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Object = cpb.create();
+        }
         return props_Object;
       case LanguageConceptSwitch.ObjectType:
+        if (props_ObjectType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0xb116d9d60ac64b8L, 0xb116d9d60b91205L, "object", "", "");
+          props_ObjectType = cpb.create();
+        }
         return props_ObjectType;
       case LanguageConceptSwitch.ObjectWaarde:
+        if (props_ObjectWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9e467d8L, 0x4ccbd8fc9e467d9L, "object", "", "");
+          props_ObjectWaarde = cpb.create();
+        }
         return props_ObjectWaarde;
       case LanguageConceptSwitch.Onderwerp:
+        if (props_Onderwerp == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Onderwerp = cpb.create();
+        }
         return props_Onderwerp;
       case LanguageConceptSwitch.OnderwerpType:
+        if (props_OnderwerpType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("onderwerp");
+          props_OnderwerpType = cpb.create();
+        }
         return props_OnderwerpType;
       case LanguageConceptSwitch.OptieAccepterenHandeling:
+        if (props_OptieAccepterenHandeling == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_OptieAccepterenHandeling = cpb.create();
+        }
         return props_OptieAccepterenHandeling;
       case LanguageConceptSwitch.OptieAfwijzenHandeling:
+        if (props_OptieAfwijzenHandeling == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_OptieAfwijzenHandeling = cpb.create();
+        }
         return props_OptieAfwijzenHandeling;
       case LanguageConceptSwitch.OptieUitvoerenHandeling:
+        if (props_OptieUitvoerenHandeling == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_OptieUitvoerenHandeling = cpb.create();
+        }
         return props_OptieUitvoerenHandeling;
       case LanguageConceptSwitch.OptioneleBevoegdheidOptioneleGehoudenheid:
+        if (props_OptioneleBevoegdheidOptioneleGehoudenheid == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Een {bevoegdheid-gehoudenheid} is een [rechtsbetrekking] waarbij het [rechtssubject] dat de bevoegdheidskant heeft, de keuze heeft, zijn macht uit te oefenen en een of meer nieuwe [rechtsbetrekkingen] van welk soort ook tot stand te brengen tussen de gehoudenheid houdende [partij] en een andere [partij], en/of een of meer bestaande [rechtsbetrekkingen] de gehoudenheid houdende [partij] en een andere [partij] te beëindigen.");
+          cpb.presentationByName();
+          props_OptioneleBevoegdheidOptioneleGehoudenheid = cpb.create();
+        }
         return props_OptioneleBevoegdheidOptioneleGehoudenheid;
       case LanguageConceptSwitch.Overgang:
+        if (props_Overgang == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Overgang = cpb.create();
+        }
         return props_Overgang;
       case LanguageConceptSwitch.OvergangZonderRechtsgevolg:
+        if (props_OvergangZonderRechtsgevolg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.deprecated(true);
+          cpb.presentationByName();
+          props_OvergangZonderRechtsgevolg = cpb.create();
+        }
         return props_OvergangZonderRechtsgevolg;
       case LanguageConceptSwitch.PlusExpressie:
+        if (props_PlusExpressie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("optellen");
+          cpb.rawPresentation("plus");
+          props_PlusExpressie = cpb.create();
+        }
         return props_PlusExpressie;
       case LanguageConceptSwitch.RechtsSubject:
+        if (props_RechtsSubject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_RechtsSubject = cpb.create();
+        }
         return props_RechtsSubject;
       case LanguageConceptSwitch.RechtsSubjectMetPlicht:
+        if (props_RechtsSubjectMetPlicht == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("rechtssubject met plicht");
+          props_RechtsSubjectMetPlicht = cpb.create();
+        }
         return props_RechtsSubjectMetPlicht;
       case LanguageConceptSwitch.RechtsSubjectMetRecht:
+        if (props_RechtsSubjectMetRecht == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("rechtssubject met recht");
+          props_RechtsSubjectMetRecht = cpb.create();
+        }
         return props_RechtsSubjectMetRecht;
       case LanguageConceptSwitch.Rechtsbetrekking:
+        if (props_Rechtsbetrekking == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d0dL);
+          cpb.deprecateAggregation(0x805ce2b16e426b6L, "geldigVan");
+          cpb.deprecateAggregation(0x805ce2b16e426bbL, "geldigTot");
+          cpb.shortDesc("Synoniemen zijn rechtsrelatie en rechtsverhouding");
+          props_Rechtsbetrekking = cpb.create();
+        }
         return props_Rechtsbetrekking;
       case LanguageConceptSwitch.Rechtsgevolg:
+        if (props_Rechtsgevolg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Rechtsgevolg = cpb.create();
+        }
         return props_Rechtsgevolg;
       case LanguageConceptSwitch.RechtsgevolgVeroorzakers:
+        if (props_RechtsgevolgVeroorzakers == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_RechtsgevolgVeroorzakers = cpb.create();
+        }
         return props_RechtsgevolgVeroorzakers;
       case LanguageConceptSwitch.Rechtshandeling:
+        if (props_Rechtshandeling == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d3dL);
+          cpb.deprecateAggregation(0x3b480c1097819b1bL, "UitgevoerdOp");
+          cpb.presentationByName();
+          props_Rechtshandeling = cpb.create();
+        }
         return props_Rechtshandeling;
       case LanguageConceptSwitch.ReeelGetalType:
+        if (props_ReeelGetalType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("reëel getal");
+          props_ReeelGetalType = cpb.create();
+        }
         return props_ReeelGetalType;
       case LanguageConceptSwitch.ReferentieNaarArtikel:
+        if (props_ReferentieNaarArtikel == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4916e0625cee8529L, 0x4916e0625cee852aL, "artikel", "", "");
+          props_ReferentieNaarArtikel = cpb.create();
+        }
         return props_ReferentieNaarArtikel;
       case LanguageConceptSwitch.ReferentieNaarEnumeratie:
+        if (props_ReferentieNaarEnumeratie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.deprecated(true);
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x67229afa69d71106L, 0x67229afa69d714cbL, "enumeratie", "", "");
+          props_ReferentieNaarEnumeratie = cpb.create();
+        }
         return props_ReferentieNaarEnumeratie;
       case LanguageConceptSwitch.ReferentieNaarInstantieVanObject:
+        if (props_ReferentieNaarInstantieVanObject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x5dd2e0a8636ba231L, 0x5dd2e0a8636ba232L, "instantieVanObject", "", "");
+          props_ReferentieNaarInstantieVanObject = cpb.create();
+        }
         return props_ReferentieNaarInstantieVanObject;
       case LanguageConceptSwitch.ReferentieNaarKenmerk:
+        if (props_ReferentieNaarKenmerk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6e43a734f86e13f2L, 0x6e43a734f86e13f3L, "kenmerk", "", "");
+          props_ReferentieNaarKenmerk = cpb.create();
+        }
         return props_ReferentieNaarKenmerk;
       case LanguageConceptSwitch.ReferentieNaarObject:
+        if (props_ReferentieNaarObject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db587183679a0cL, 0x46db587183679a0dL, "object", "", "");
+          props_ReferentieNaarObject = cpb.create();
+        }
         return props_ReferentieNaarObject;
       case LanguageConceptSwitch.ReferentieNaarOnderwerp:
+        if (props_ReferentieNaarOnderwerp == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d8a970cL, 0x1fabc0b15d8a970dL, "onderwerp", "", "");
+          props_ReferentieNaarOnderwerp = cpb.create();
+        }
         return props_ReferentieNaarOnderwerp;
       case LanguageConceptSwitch.ReferentieNaarOvergang:
+        if (props_ReferentieNaarOvergang == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x158b926d34e0095L, 0x158b926d34e0096L, "overgang", "", "");
+          props_ReferentieNaarOvergang = cpb.create();
+        }
         return props_ReferentieNaarOvergang;
       case LanguageConceptSwitch.ReferentieNaarRechtsHandeling:
+        if (props_ReferentieNaarRechtsHandeling == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x25be3715c7a014e1L, 0x25be3715c7a014e2L, "rechtshandeling", "", "");
+          props_ReferentieNaarRechtsHandeling = cpb.create();
+        }
         return props_ReferentieNaarRechtsHandeling;
       case LanguageConceptSwitch.ReferentieNaarRechtsbetrekking:
+        if (props_ReferentieNaarRechtsbetrekking == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aabf26L, 0x202912d6e3aabf27L, "rechtsbetrekking", "", "");
+          props_ReferentieNaarRechtsbetrekking = cpb.create();
+        }
         return props_ReferentieNaarRechtsbetrekking;
       case LanguageConceptSwitch.ReferentieNaarRechtsgevolg:
+        if (props_ReferentieNaarRechtsgevolg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x218d2fe3c8aff605L, 0x218d2fe3c8aff606L, "rechtsgevolg", "", "");
+          props_ReferentieNaarRechtsgevolg = cpb.create();
+        }
         return props_ReferentieNaarRechtsgevolg;
       case LanguageConceptSwitch.ReferentieNaarRechtsgevolgVeroorzaker:
+        if (props_ReferentieNaarRechtsgevolgVeroorzaker == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x630944a3c413e39fL, 0x630944a3c413e3a0L, "rechtsgevolgveroorzaker", "", "");
+          props_ReferentieNaarRechtsgevolgVeroorzaker = cpb.create();
+        }
         return props_ReferentieNaarRechtsgevolgVeroorzaker;
       case LanguageConceptSwitch.ReferentieNaarRechtssubject:
+        if (props_ReferentieNaarRechtssubject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x202912d6e3aebf67L, 0x202912d6e3aebf68L, "rechtssubject", "", "");
+          props_ReferentieNaarRechtssubject = cpb.create();
+        }
         return props_ReferentieNaarRechtssubject;
       case LanguageConceptSwitch.ReferentieNaarToestand:
+        if (props_ReferentieNaarToestand == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x75a9691d14d1603aL, 0x75a9691d14d1603bL, "toestand", "", "");
+          props_ReferentieNaarToestand = cpb.create();
+        }
         return props_ReferentieNaarToestand;
       case LanguageConceptSwitch.ReferentieNaarVoorwaarde:
+        if (props_ReferentieNaarVoorwaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.deprecated(true);
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x611073d615228d8dL, 0x611073d615228d8eL, "voorwaarde", "", "");
+          props_ReferentieNaarVoorwaarde = cpb.create();
+        }
         return props_ReferentieNaarVoorwaarde;
       case LanguageConceptSwitch.ReferentieNaarWaardeVanKenmerk:
+        if (props_ReferentieNaarWaardeVanKenmerk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ReferentieNaarWaardeVanKenmerk = cpb.create();
+        }
         return props_ReferentieNaarWaardeVanKenmerk;
       case LanguageConceptSwitch.Regel:
+        if (props_Regel == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Regel = cpb.create();
+        }
         return props_Regel;
       case LanguageConceptSwitch.RekenExpressie:
+        if (props_RekenExpressie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_RekenExpressie = cpb.create();
+        }
         return props_RekenExpressie;
       case LanguageConceptSwitch.RijVanKaraktersType:
+        if (props_RijVanKaraktersType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("rij van karakters");
+          props_RijVanKaraktersType = cpb.create();
+        }
         return props_RijVanKaraktersType;
       case LanguageConceptSwitch.SubjectType:
+        if (props_SubjectType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("subject");
+          props_SubjectType = cpb.create();
+        }
         return props_SubjectType;
       case LanguageConceptSwitch.TabelMetInstanties:
+        if (props_TabelMetInstanties == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x6807b3aa0b707c09L, 0x6807b3aa0b70b5b8L, "object", "", "");
+          props_TabelMetInstanties = cpb.create();
+        }
         return props_TabelMetInstanties;
       case LanguageConceptSwitch.TenHoogsteVoor:
+        if (props_TenHoogsteVoor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ligt ten hoogste <duur> voor");
+          props_TenHoogsteVoor = cpb.create();
+        }
         return props_TenHoogsteVoor;
       case LanguageConceptSwitch.TenMinsteNa:
+        if (props_TenMinsteNa == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ligt ten minste <duur> na");
+          props_TenMinsteNa = cpb.create();
+        }
         return props_TenMinsteNa;
       case LanguageConceptSwitch.TenMinsteVoor:
+        if (props_TenMinsteVoor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ligt ten minste <duur> voor");
+          props_TenMinsteVoor = cpb.create();
+        }
         return props_TenMinsteVoor;
       case LanguageConceptSwitch.TijdstipType:
+        if (props_TijdstipType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("tijdstip");
+          props_TijdstipType = cpb.create();
+        }
         return props_TijdstipType;
       case LanguageConceptSwitch.TijdsverloopMetRechtsgevolg:
+        if (props_TijdsverloopMetRechtsgevolg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_TijdsverloopMetRechtsgevolg = cpb.create();
+        }
         return props_TijdsverloopMetRechtsgevolg;
       case LanguageConceptSwitch.Toestand:
+        if (props_Toestand == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Toestand = cpb.create();
+        }
         return props_Toestand;
       case LanguageConceptSwitch.Variabele:
+        if (props_Variabele == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL);
+          cpb.deprecateAssociation(0x1fabc0b15d5dc56eL, "onderwerp2");
+          cpb.deprecateAssociation(0x1fabc0b15d5dc570L, "kenmerk2");
+          cpb.deprecateAggregation(0x1fabc0b15d875002L, "object");
+          cpb.rawPresentation("variabele");
+          props_Variabele = cpb.create();
+        }
         return props_Variabele;
       case LanguageConceptSwitch.VermenigvuldigenExpressie:
+        if (props_VermenigvuldigenExpressie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Vermenigvuldigen");
+          cpb.rawPresentation("maal");
+          props_VermenigvuldigenExpressie = cpb.create();
+        }
         return props_VermenigvuldigenExpressie;
       case LanguageConceptSwitch.VerplichteBevoegdheidVerplichteGehoudenheid:
+        if (props_VerplichteBevoegdheidVerplichteGehoudenheid == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Een {bevoegdheid-gehoudenheid} is een [rechtsbetrekking] waarbij het [rechtssubject] dat de bevoegdheidskant heeft, de keuze heeft, zijn macht uit te oefenen en een of meer nieuwe [rechtsbetrekkingen] van welk soort ook tot stand te brengen tussen de gehoudenheid houdende [partij] en een andere [partij], en/of een of meer bestaande [rechtsbetrekkingen] de gehoudenheid houdende [partij] en een andere [partij] te beëindigen.");
+          cpb.presentationByName();
+          props_VerplichteBevoegdheidVerplichteGehoudenheid = cpb.create();
+        }
         return props_VerplichteBevoegdheidVerplichteGehoudenheid;
       case LanguageConceptSwitch.VerschilTussen:
+        if (props_VerschilTussen == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("verschil tussen (in duur)");
+          props_VerschilTussen = cpb.create();
+        }
         return props_VerschilTussen;
       case LanguageConceptSwitch.VerwoordingElement:
+        if (props_VerwoordingElement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_VerwoordingElement = cpb.create();
+        }
         return props_VerwoordingElement;
       case LanguageConceptSwitch.VerwoordingKenmerk:
+        if (props_VerwoordingKenmerk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab914f73d1L, 0x48a9ceab914f73d2L, "Kenmerk", "", "");
+          props_VerwoordingKenmerk = cpb.create();
+        }
         return props_VerwoordingKenmerk;
       case LanguageConceptSwitch.VerwoordingObject:
+        if (props_VerwoordingObject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x637c71e30b9beeadL, 0x637c71e30b9beeaeL, "object", "", "");
+          props_VerwoordingObject = cpb.create();
+        }
         return props_VerwoordingObject;
       case LanguageConceptSwitch.VerwoordingTekst:
+        if (props_VerwoordingTekst == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("VerwoordingTekst");
+          props_VerwoordingTekst = cpb.create();
+        }
         return props_VerwoordingTekst;
       case LanguageConceptSwitch.VerwoordingWaarde:
+        if (props_VerwoordingWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x48a9ceab91b3bb31L, 0x48a9ceab91b3bb32L, "waardevankenmerk", "", "");
+          props_VerwoordingWaarde = cpb.create();
+        }
         return props_VerwoordingWaarde;
       case LanguageConceptSwitch.Voor:
+        if (props_Voor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("<duur> voor");
+          props_Voor = cpb.create();
+        }
         return props_Voor;
       case LanguageConceptSwitch.VoorbeeldenMetInstanties:
+        if (props_VoorbeeldenMetInstanties == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("VoorbeeldenMetInstanties");
+          props_VoorbeeldenMetInstanties = cpb.create();
+        }
         return props_VoorbeeldenMetInstanties;
       case LanguageConceptSwitch.Voorwaarden:
+        if (props_Voorwaarden == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Voorwaarden = cpb.create();
+        }
         return props_Voorwaarden;
       case LanguageConceptSwitch.VoorwaardenRechtshandeling:
+        if (props_VoorwaardenRechtshandeling == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.deprecated(true);
+          cpb.presentationByName();
+          props_VoorwaardenRechtshandeling = cpb.create();
+        }
         return props_VoorwaardenRechtshandeling;
       case LanguageConceptSwitch.VormVoorwaarde:
+        if (props_VormVoorwaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.deprecated(true);
+          cpb.presentationByName();
+          props_VormVoorwaarde = cpb.create();
+        }
         return props_VormVoorwaarde;
       case LanguageConceptSwitch.VrijeTekst:
+        if (props_VrijeTekst == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_VrijeTekst = cpb.create();
+        }
         return props_VrijeTekst;
       case LanguageConceptSwitch.VrijheidGeenaanspraak:
+        if (props_VrijheidGeenaanspraak == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Een {vrijheid-geenaanspraak} is een [rechtsbetrekking] waarbij het [soort recht] [vrijheid] houdende [rechtssubject] iets kan doen of iets kan nalaten, zonder dat dat enig [rechtsgevolg] heeft; de [geenaanspraak] houdende [partij] staat in deze [rechtsbetrekking] geheel machteloos iets te doen tegen de [vrijheid] houdende [partij] binnen deze [rechtsbetrekking]. Kortom, geen van beide [rechtssubjecten] in de [rechtsbetrekking] {vrijheid-geenaanspraak} kan binnen de scope van die [rechtsbetrekking] een [rechtsgevolg] tot stand brengen.");
+          cpb.presentationByName();
+          props_VrijheidGeenaanspraak = cpb.create();
+        }
         return props_VrijheidGeenaanspraak;
       case LanguageConceptSwitch.WaardeVanKenmerk:
+        if (props_WaardeVanKenmerk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_WaardeVanKenmerk = cpb.create();
+        }
         return props_WaardeVanKenmerk;
       case LanguageConceptSwitch.ZwakkeAanspraakZwakkePlicht:
+        if (props_ZwakkeAanspraakZwakkePlicht == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Een {aanspraak-plicht} [rechtsbetrekking] is een juridische betrekking tussen twee [rechtssubjecten], waarbij het [rechtssubject] aan de recht houdende kant in deze [rechtsbetrekking] een [aanspraak] heeft op het [Een plicht] houdende [rechtssubject] iets te doen of iets na te laten, en het [Een plicht] houdende [rechtssubject] in deze [rechtsbetrekking] heeft [Een plicht] iets te doen of iets na te laten.");
+          cpb.presentationByName();
+          props_ZwakkeAanspraakZwakkePlicht = cpb.create();
+        }
         return props_ZwakkeAanspraakZwakkePlicht;
       case LanguageConceptSwitch.isNegatief:
+        if (props_isNegatief == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is negatief");
+          props_isNegatief = cpb.create();
+        }
         return props_isNegatief;
     }
     return null;

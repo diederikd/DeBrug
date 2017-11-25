@@ -60,7 +60,7 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("Voorwaarden()", node, ex);
+          throw new InterpreterRuntimeException("Voorwaarden()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -70,6 +70,11 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
       @Override
       public String toString() {
         return "Voorwaarden";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1fabc0b15d7896cbL, "ObjectiefRecht.structure.ExpressieVoorwaarde"), true) {
@@ -89,7 +94,7 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("ExpressieVoorwaarde()", node, ex);
+          throw new InterpreterRuntimeException("ExpressieVoorwaarde()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -99,6 +104,11 @@ public class InterpreterInterpreterVoorwaarden extends InterpreterBase {
       @Override
       public String toString() {
         return "ExpressieVoorwaarde";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
   }

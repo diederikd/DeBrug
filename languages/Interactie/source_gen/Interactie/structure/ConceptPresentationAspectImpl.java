@@ -4,29 +4,29 @@ package Interactie.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase;
 import jetbrains.mps.smodel.runtime.ConceptPresentation;
-import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private final ConceptPresentation props_Dialoog = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DialoogReference = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_InteractieDefinitie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_InvoerVeld = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Kolom = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Presentatie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PresentatieDialoog = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PresentatieKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PresentatieLink = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PresentatieObject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PresentatieRechtsbetrekking = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PresentatieRechtshandeling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PresentatieVeld = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Regeling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Rij = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TagVeld = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TekstVeld = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_XpathVeld = new ConceptPresentationBuilder().create();
+  private ConceptPresentation props_Dialoog;
+  private ConceptPresentation props_DialoogReference;
+  private ConceptPresentation props_InteractieDefinitie;
+  private ConceptPresentation props_InvoerVeld;
+  private ConceptPresentation props_Kolom;
+  private ConceptPresentation props_Presentatie;
+  private ConceptPresentation props_PresentatieDialoog;
+  private ConceptPresentation props_PresentatieKenmerk;
+  private ConceptPresentation props_PresentatieLink;
+  private ConceptPresentation props_PresentatieObject;
+  private ConceptPresentation props_PresentatieRechtsbetrekking;
+  private ConceptPresentation props_PresentatieRechtshandeling;
+  private ConceptPresentation props_PresentatieVeld;
+  private ConceptPresentation props_Regeling;
+  private ConceptPresentation props_Rij;
+  private ConceptPresentation props_TagVeld;
+  private ConceptPresentation props_TekstVeld;
+  private ConceptPresentation props_XpathVeld;
 
   @Override
   @Nullable
@@ -34,40 +34,129 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case LanguageConceptSwitch.Dialoog:
+        if (props_Dialoog == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Dialoog = cpb.create();
+        }
         return props_Dialoog;
       case LanguageConceptSwitch.DialoogReference:
+        if (props_DialoogReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x2469b1b2fd0ea191L, 0x2469b1b2fd0ea192L, "dialoog", "", "");
+          props_DialoogReference = cpb.create();
+        }
         return props_DialoogReference;
       case LanguageConceptSwitch.InteractieDefinitie:
+        if (props_InteractieDefinitie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_InteractieDefinitie = cpb.create();
+        }
         return props_InteractieDefinitie;
       case LanguageConceptSwitch.InvoerVeld:
+        if (props_InvoerVeld == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("invoerveld");
+          props_InvoerVeld = cpb.create();
+        }
         return props_InvoerVeld;
       case LanguageConceptSwitch.Kolom:
+        if (props_Kolom == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Kolom");
+          props_Kolom = cpb.create();
+        }
         return props_Kolom;
       case LanguageConceptSwitch.Presentatie:
+        if (props_Presentatie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Presentatie = cpb.create();
+        }
         return props_Presentatie;
       case LanguageConceptSwitch.PresentatieDialoog:
+        if (props_PresentatieDialoog == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_PresentatieDialoog = cpb.create();
+        }
         return props_PresentatieDialoog;
       case LanguageConceptSwitch.PresentatieKenmerk:
+        if (props_PresentatieKenmerk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL, 0xfdfefdf8693968fL, "referentieNaarKenmerk", "", "");
+          props_PresentatieKenmerk = cpb.create();
+        }
         return props_PresentatieKenmerk;
       case LanguageConceptSwitch.PresentatieLink:
+        if (props_PresentatieLink == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32f3dfaL, 0x7b98ef41a32fa17eL, "link", "", "");
+          props_PresentatieLink = cpb.create();
+        }
         return props_PresentatieLink;
       case LanguageConceptSwitch.PresentatieObject:
+        if (props_PresentatieObject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a95ffL, 0x7b98ef41a32a9600L, "object", "", "");
+          props_PresentatieObject = cpb.create();
+        }
         return props_PresentatieObject;
       case LanguageConceptSwitch.PresentatieRechtsbetrekking:
+        if (props_PresentatieRechtsbetrekking == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PresentatieRechtsbetrekking");
+          props_PresentatieRechtsbetrekking = cpb.create();
+        }
         return props_PresentatieRechtsbetrekking;
       case LanguageConceptSwitch.PresentatieRechtshandeling:
+        if (props_PresentatieRechtshandeling == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PresentatieRechtshandeling");
+          props_PresentatieRechtshandeling = cpb.create();
+        }
         return props_PresentatieRechtshandeling;
       case LanguageConceptSwitch.PresentatieVeld:
+        if (props_PresentatieVeld == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_PresentatieVeld = cpb.create();
+        }
         return props_PresentatieVeld;
       case LanguageConceptSwitch.Regeling:
+        if (props_Regeling == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Regeling = cpb.create();
+        }
         return props_Regeling;
       case LanguageConceptSwitch.Rij:
+        if (props_Rij == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Rij");
+          props_Rij = cpb.create();
+        }
         return props_Rij;
       case LanguageConceptSwitch.TagVeld:
+        if (props_TagVeld == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("tag");
+          props_TagVeld = cpb.create();
+        }
         return props_TagVeld;
       case LanguageConceptSwitch.TekstVeld:
+        if (props_TekstVeld == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("tekstveld");
+          props_TekstVeld = cpb.create();
+        }
         return props_TekstVeld;
       case LanguageConceptSwitch.XpathVeld:
+        if (props_XpathVeld == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("xpath");
+          props_XpathVeld = cpb.create();
+        }
         return props_XpathVeld;
     }
     return null;

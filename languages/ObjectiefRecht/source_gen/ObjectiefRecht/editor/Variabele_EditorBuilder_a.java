@@ -28,6 +28,7 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import ObjectiefRecht.editor.GN_StyleSheet.OnderwerpStyleClass;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 /*package*/ class Variabele_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -136,6 +137,7 @@ import ObjectiefRecht.editor.GN_StyleSheet.OnderwerpStyleClass;
     editorCell.setCellId("ReadOnlyModelAccessor_643dx4_c0");
     Style style = new StyleImpl();
     new OnderwerpStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }

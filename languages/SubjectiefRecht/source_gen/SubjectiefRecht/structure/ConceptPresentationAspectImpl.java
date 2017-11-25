@@ -4,21 +4,21 @@ package SubjectiefRecht.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase;
 import jetbrains.mps.smodel.runtime.ConceptPresentation;
-import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private final ConceptPresentation props_Casus = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IEvaluatieResultaat = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LijstMetRechtsbetrekkingen = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LijstMetRechtshandelingen = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Rechtsbetrekking = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_RechtsgevolgVeroorzaker = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Rechtshandeling = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Rechtssubject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarRechtsSubject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarRechtsbetrekking = new ConceptPresentationBuilder().create();
+  private ConceptPresentation props_Casus;
+  private ConceptPresentation props_IEvaluatieResultaat;
+  private ConceptPresentation props_LijstMetRechtsbetrekkingen;
+  private ConceptPresentation props_LijstMetRechtshandelingen;
+  private ConceptPresentation props_Rechtsbetrekking;
+  private ConceptPresentation props_RechtsgevolgVeroorzaker;
+  private ConceptPresentation props_Rechtshandeling;
+  private ConceptPresentation props_Rechtssubject;
+  private ConceptPresentation props_ReferentieNaarRechtsSubject;
+  private ConceptPresentation props_ReferentieNaarRechtsbetrekking;
 
   @Override
   @Nullable
@@ -26,24 +26,72 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case LanguageConceptSwitch.Casus:
+        if (props_Casus == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Casus = cpb.create();
+        }
         return props_Casus;
       case LanguageConceptSwitch.IEvaluatieResultaat:
+        if (props_IEvaluatieResultaat == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IEvaluatieResultaat = cpb.create();
+        }
         return props_IEvaluatieResultaat;
       case LanguageConceptSwitch.LijstMetRechtsbetrekkingen:
+        if (props_LijstMetRechtsbetrekkingen == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("LijstMetRechtsbetrekkingen");
+          props_LijstMetRechtsbetrekkingen = cpb.create();
+        }
         return props_LijstMetRechtsbetrekkingen;
       case LanguageConceptSwitch.LijstMetRechtshandelingen:
+        if (props_LijstMetRechtshandelingen == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("LijstMetRechtshandelingen");
+          props_LijstMetRechtshandelingen = cpb.create();
+        }
         return props_LijstMetRechtshandelingen;
       case LanguageConceptSwitch.Rechtsbetrekking:
+        if (props_Rechtsbetrekking == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Rechtsbetrekking");
+          props_Rechtsbetrekking = cpb.create();
+        }
         return props_Rechtsbetrekking;
       case LanguageConceptSwitch.RechtsgevolgVeroorzaker:
+        if (props_RechtsgevolgVeroorzaker == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_RechtsgevolgVeroorzaker = cpb.create();
+        }
         return props_RechtsgevolgVeroorzaker;
       case LanguageConceptSwitch.Rechtshandeling:
+        if (props_Rechtshandeling == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("rechtshandeling subjectief recht");
+          props_Rechtshandeling = cpb.create();
+        }
         return props_Rechtshandeling;
       case LanguageConceptSwitch.Rechtssubject:
+        if (props_Rechtssubject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Rechtssubject = cpb.create();
+        }
         return props_Rechtssubject;
       case LanguageConceptSwitch.ReferentieNaarRechtsSubject:
+        if (props_ReferentieNaarRechtsSubject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd5L, 0x630944a3c415ccd6L, "rechtssubject", "", "");
+          props_ReferentieNaarRechtsSubject = cpb.create();
+        }
         return props_ReferentieNaarRechtsSubject;
       case LanguageConceptSwitch.ReferentieNaarRechtsbetrekking:
+        if (props_ReferentieNaarRechtsbetrekking == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x6d2de15fcaead0cdL, 0x6d2de15fcaead0ceL, "rechtsbetrekking", "", "");
+          props_ReferentieNaarRechtsbetrekking = cpb.create();
+        }
         return props_ReferentieNaarRechtsbetrekking;
     }
     return null;

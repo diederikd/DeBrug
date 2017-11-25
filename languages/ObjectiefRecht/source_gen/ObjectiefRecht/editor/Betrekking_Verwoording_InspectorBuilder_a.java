@@ -135,7 +135,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
         }, effectiveNode, "overgang");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -224,7 +224,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
         }, effectiveNode, "rechtssubjectMetRecht");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -312,7 +312,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
         }, effectiveNode, "rechtssubjectMetPlicht");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -403,7 +403,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
         }, effectiveNode, "onderwerp");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };

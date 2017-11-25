@@ -2,8 +2,7 @@
 <model ref="r:95c613f5-7163-41db-a8d2-c7f5da746212(SubjectiefRecht.textGen)">
   <persistence version="9" />
   <languages>
-    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
-    <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
+    <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
@@ -533,7 +532,7 @@
                           <node concept="2OqwBi" id="146AQXTC0O8" role="2JrQYb">
                             <node concept="117lpO" id="146AQXTC0Dy" role="2Oq$k0" />
                             <node concept="3TrEf2" id="146AQXTC6O0" role="2OqNvi">
-                              <ref role="3Tt5mk" to="gcgs:6c9haf45_$D" resolve="rechtshandeling" />
+                              <ref role="3Tt5mk" to="gcgs:6c9haf45_$D" resolve="overgang" />
                             </node>
                           </node>
                         </node>
@@ -561,7 +560,7 @@
                       <node concept="2OqwBi" id="146AQXTC1SV" role="2Oq$k0">
                         <node concept="117lpO" id="146AQXTC1SW" role="2Oq$k0" />
                         <node concept="3TrEf2" id="146AQXTC725" role="2OqNvi">
-                          <ref role="3Tt5mk" to="gcgs:6c9haf45_$D" resolve="rechtshandeling" />
+                          <ref role="3Tt5mk" to="gcgs:6c9haf45_$D" resolve="overgang" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="146AQXTChcz" role="2OqNvi">

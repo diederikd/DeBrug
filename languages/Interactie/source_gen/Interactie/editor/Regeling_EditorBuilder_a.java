@@ -144,7 +144,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
         }, effectiveNode, "gegevenshuishouding");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -232,7 +232,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
         }, effectiveNode, "regels");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -317,7 +317,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
         }, effectiveNode, "subject");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -402,7 +402,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
         }, effectiveNode, "instantieVanSubject");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };

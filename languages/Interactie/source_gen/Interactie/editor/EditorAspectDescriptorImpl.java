@@ -8,6 +8,7 @@ import java.util.Collection;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.Collections;
+import jetbrains.mps.openapi.editor.descriptor.SubstituteMenu;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
@@ -15,8 +16,8 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
-    SAbstractConcept cncpt = ((SAbstractConcept) concept);
-    switch (index_xbvbvu_a0a.index(cncpt)) {
+    SAbstractConcept cncpt_a0a = ((SAbstractConcept) concept);
+    switch (index_xbvbvu_a0a.index(cncpt_a0a)) {
       case 0:
         return Collections.<ConceptEditor>singletonList(new Dialoog_Editor());
       case 1:
@@ -57,6 +58,26 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   }
 
 
+  @NotNull
+  @Override
+  public Collection<SubstituteMenu> getDeclaredDefaultSubstituteMenus(SAbstractConcept concept) {
+    SAbstractConcept cncpt_a0d = concept;
+    switch (index_xbvbvu_a0d.index(cncpt_a0d)) {
+      case 0:
+        return Collections.<SubstituteMenu>singletonList(new DialoogReference_SubstituteMenu());
+      case 1:
+        return Collections.<SubstituteMenu>singletonList(new Presentatie_SubstituteMenu());
+      case 2:
+        return Collections.<SubstituteMenu>singletonList(new PresentatieKenmerk_SubstituteMenu());
+      case 3:
+        return Collections.<SubstituteMenu>singletonList(new PresentatieLink_SubstituteMenu());
+      case 4:
+        return Collections.<SubstituteMenu>singletonList(new PresentatieObject_SubstituteMenu());
+      default:
+    }
+    return Collections.<SubstituteMenu>emptyList();
+  }
 
   private static final ConceptSwitchIndex index_xbvbvu_a0a = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x2469b1b2fccf1798L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x2469b1b2fd0ea191L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebe004L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7038194f2L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a29d8L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x6626bda7037f61aeL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32f3dfaL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a95ffL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32fa180L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33ad98eL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x544f33b7f1ebdd70L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32dc163L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x158b926d34d8927L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a33e7f5dL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x158b926d34c3ba9L)).seal();
+  private static final ConceptSwitchIndex index_xbvbvu_a0d = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x2469b1b2fd0ea191L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77775L), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x70b6c2b5e77aceL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32f3dfaL), MetaIdFactory.conceptId(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x7b98ef41a32a95ffL)).seal();
 }

@@ -69,7 +69,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
         }, effectiveNode, "waardevankenmerk");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull_smartReference(cell);
         return cell;
       }
     };
@@ -122,7 +122,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
         @Override
         protected EditorCell createRefCell(EditorContext context, SNode effectiveNode, SNode node) {
           EditorCell cell = new ReferentieNaarWaardeVanKenmerk_EditorBuilder_a.Inline_Builder_tbidtd_a0a.Inline_Builder_tbidtd_a0a0a0(getEditorContext(), myNode, effectiveNode).createCell();
-          installDeleteActions_atLeastOne(cell);
+          installDeleteActions_notnull(cell);
           return cell;
         }
       };
@@ -181,7 +181,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
             }, effectiveNode, "kenmerk");
             CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
             setSemanticNodeToCells(cell, myNode);
-            installDeleteActions_atLeastOne(cell);
+            installDeleteActions_notnull(cell);
             return cell;
           }
         };
@@ -262,7 +262,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
         }, effectiveNode, "waardevankenmerk");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull_smartReference(cell);
         return cell;
       }
     };

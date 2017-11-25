@@ -4,22 +4,22 @@ package Datum.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase;
 import jetbrains.mps.smodel.runtime.ConceptPresentation;
-import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private final ConceptPresentation props_Dagen = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Datum = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DatumTijd = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Duur = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Jaren = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Maanden = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Minuten = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Seconden = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Tijd = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Uren = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_VerschilTussenDatums = new ConceptPresentationBuilder().create();
+  private ConceptPresentation props_Dagen;
+  private ConceptPresentation props_Datum;
+  private ConceptPresentation props_DatumTijd;
+  private ConceptPresentation props_Duur;
+  private ConceptPresentation props_Jaren;
+  private ConceptPresentation props_Maanden;
+  private ConceptPresentation props_Minuten;
+  private ConceptPresentation props_Seconden;
+  private ConceptPresentation props_Tijd;
+  private ConceptPresentation props_Uren;
+  private ConceptPresentation props_VerschilTussenDatums;
 
   @Override
   @Nullable
@@ -27,26 +27,80 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case LanguageConceptSwitch.Dagen:
+        if (props_Dagen == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("duur in dagen");
+          props_Dagen = cpb.create();
+        }
         return props_Dagen;
       case LanguageConceptSwitch.Datum:
+        if (props_Datum == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Datum");
+          props_Datum = cpb.create();
+        }
         return props_Datum;
       case LanguageConceptSwitch.DatumTijd:
+        if (props_DatumTijd == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("DatumTijd");
+          props_DatumTijd = cpb.create();
+        }
         return props_DatumTijd;
       case LanguageConceptSwitch.Duur:
+        if (props_Duur == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Duur = cpb.create();
+        }
         return props_Duur;
       case LanguageConceptSwitch.Jaren:
+        if (props_Jaren == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("duur in jaren");
+          props_Jaren = cpb.create();
+        }
         return props_Jaren;
       case LanguageConceptSwitch.Maanden:
+        if (props_Maanden == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("duur in maanden");
+          props_Maanden = cpb.create();
+        }
         return props_Maanden;
       case LanguageConceptSwitch.Minuten:
+        if (props_Minuten == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("duur in minuten");
+          props_Minuten = cpb.create();
+        }
         return props_Minuten;
       case LanguageConceptSwitch.Seconden:
+        if (props_Seconden == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("duur in seconden");
+          props_Seconden = cpb.create();
+        }
         return props_Seconden;
       case LanguageConceptSwitch.Tijd:
+        if (props_Tijd == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Tijd");
+          props_Tijd = cpb.create();
+        }
         return props_Tijd;
       case LanguageConceptSwitch.Uren:
+        if (props_Uren == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("duur in uren");
+          props_Uren = cpb.create();
+        }
         return props_Uren;
       case LanguageConceptSwitch.VerschilTussenDatums:
+        if (props_VerschilTussenDatums == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("VerschilTussenDatums");
+          props_VerschilTussenDatums = cpb.create();
+        }
         return props_VerschilTussenDatums;
     }
     return null;

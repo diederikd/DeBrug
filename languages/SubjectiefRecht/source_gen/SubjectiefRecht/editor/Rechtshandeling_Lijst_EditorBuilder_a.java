@@ -225,7 +225,7 @@ import Datum.editor.GN_StyleSheet.OnderwerpStyleClass;
           }, effectiveNode, "rechtssubject");
           CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
           setSemanticNodeToCells(cell, myNode);
-          installDeleteActions_atLeastOne(cell);
+          installDeleteActions_notnull(cell);
           return cell;
         }
       };
@@ -337,7 +337,7 @@ import Datum.editor.GN_StyleSheet.OnderwerpStyleClass;
         }, effectiveNode, "overgang");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -542,7 +542,7 @@ import Datum.editor.GN_StyleSheet.OnderwerpStyleClass;
         }, effectiveNode, "onderwerp");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -713,7 +713,7 @@ import Datum.editor.GN_StyleSheet.OnderwerpStyleClass;
           }, effectiveNode, "objectieveRechtsbetrekking");
           CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
           setSemanticNodeToCells(cell, myNode);
-          installDeleteActions_atLeastOne(cell);
+          installDeleteActions_notnull(cell);
           return cell;
         }
       };

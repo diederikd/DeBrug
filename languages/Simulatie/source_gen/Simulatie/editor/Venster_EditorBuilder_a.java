@@ -327,6 +327,9 @@ import jetbrains.mps.nodeEditor.MPSColors;
       editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
       editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
       editorCell.setCellId("ReadOnlyModelAccessor_pwfrmn_b0a0d0a");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.EDITABLE, false);
+      editorCell.getStyle().putAll(style);
       return editorCell;
     }
   }

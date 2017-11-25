@@ -4,62 +4,62 @@ package Gegevens.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase;
 import jetbrains.mps.smodel.runtime.ConceptPresentation;
-import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private final ConceptPresentation props_AbstractAttribuut = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AbstractDatatype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AbstractObject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AbstractReferentieNaarAttribuut = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AbstracteWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Attribuut = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AttribuutMetReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Concept = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DatumDatatype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DatumTijdWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DatumWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DuurWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Enumeratie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_EnumeratieDatatype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_EnumeratieElement = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_EnumeratieWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_GegevensModel = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_GeheelGetal = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_GeheelGetalDatatype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_GeheelGetalWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Identificatie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Instantie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_InstantiesVanGegevens = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_JaNeeDatatype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_JaNeeWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Object = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ObjectDatatype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ObjectInstantie = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ObjectWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OnderwerpDatatype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReeelGetalDatatype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReeelGetalWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarAbstractObject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarAttribuut = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarAttribuutMetReferentieNaarKenmerk = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarOnderwerp = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarOnderwerpOfSubject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ReferentieNaarSubject = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_RekenWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_RijVanKaraktersDatatype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_RijVanKaraktersWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_SubjectDatatype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Tabel = new ConceptPresentationBuilder().shortDesc("lijst met objectinstanties").create();
-  private final ConceptPresentation props_TemporeleWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TijdDatatype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TijdWaarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Waarde = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_WaardeVanAttribuut = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_waardeJa = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_waardeJaNee = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_waardeNee = new ConceptPresentationBuilder().create();
+  private ConceptPresentation props_AbstractAttribuut;
+  private ConceptPresentation props_AbstractDatatype;
+  private ConceptPresentation props_AbstractObject;
+  private ConceptPresentation props_AbstractReferentieNaarAttribuut;
+  private ConceptPresentation props_AbstracteWaarde;
+  private ConceptPresentation props_Attribuut;
+  private ConceptPresentation props_AttribuutMetReferentieNaarKenmerk;
+  private ConceptPresentation props_Concept;
+  private ConceptPresentation props_DatumDatatype;
+  private ConceptPresentation props_DatumTijdWaarde;
+  private ConceptPresentation props_DatumWaarde;
+  private ConceptPresentation props_DuurWaarde;
+  private ConceptPresentation props_Enumeratie;
+  private ConceptPresentation props_EnumeratieDatatype;
+  private ConceptPresentation props_EnumeratieElement;
+  private ConceptPresentation props_EnumeratieWaarde;
+  private ConceptPresentation props_GegevensModel;
+  private ConceptPresentation props_GeheelGetal;
+  private ConceptPresentation props_GeheelGetalDatatype;
+  private ConceptPresentation props_GeheelGetalWaarde;
+  private ConceptPresentation props_Identificatie;
+  private ConceptPresentation props_Instantie;
+  private ConceptPresentation props_InstantiesVanGegevens;
+  private ConceptPresentation props_JaNeeDatatype;
+  private ConceptPresentation props_JaNeeWaarde;
+  private ConceptPresentation props_Object;
+  private ConceptPresentation props_ObjectDatatype;
+  private ConceptPresentation props_ObjectInstantie;
+  private ConceptPresentation props_ObjectWaarde;
+  private ConceptPresentation props_OnderwerpDatatype;
+  private ConceptPresentation props_ReeelGetalDatatype;
+  private ConceptPresentation props_ReeelGetalWaarde;
+  private ConceptPresentation props_ReferentieNaarAbstractObject;
+  private ConceptPresentation props_ReferentieNaarAttribuut;
+  private ConceptPresentation props_ReferentieNaarAttribuutMetReferentieNaarKenmerk;
+  private ConceptPresentation props_ReferentieNaarOnderwerp;
+  private ConceptPresentation props_ReferentieNaarOnderwerpOfSubject;
+  private ConceptPresentation props_ReferentieNaarSubject;
+  private ConceptPresentation props_RekenWaarde;
+  private ConceptPresentation props_RijVanKaraktersDatatype;
+  private ConceptPresentation props_RijVanKaraktersWaarde;
+  private ConceptPresentation props_SubjectDatatype;
+  private ConceptPresentation props_Tabel;
+  private ConceptPresentation props_TemporeleWaarde;
+  private ConceptPresentation props_TijdDatatype;
+  private ConceptPresentation props_TijdWaarde;
+  private ConceptPresentation props_Waarde;
+  private ConceptPresentation props_WaardeVanAttribuut;
+  private ConceptPresentation props_waardeJa;
+  private ConceptPresentation props_waardeJaNee;
+  private ConceptPresentation props_waardeNee;
 
   @Override
   @Nullable
@@ -67,106 +67,350 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case LanguageConceptSwitch.AbstractAttribuut:
+        if (props_AbstractAttribuut == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractAttribuut = cpb.create();
+        }
         return props_AbstractAttribuut;
       case LanguageConceptSwitch.AbstractDatatype:
+        if (props_AbstractDatatype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractDatatype = cpb.create();
+        }
         return props_AbstractDatatype;
       case LanguageConceptSwitch.AbstractObject:
+        if (props_AbstractObject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractObject = cpb.create();
+        }
         return props_AbstractObject;
       case LanguageConceptSwitch.AbstractReferentieNaarAttribuut:
+        if (props_AbstractReferentieNaarAttribuut == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractReferentieNaarAttribuut = cpb.create();
+        }
         return props_AbstractReferentieNaarAttribuut;
       case LanguageConceptSwitch.AbstracteWaarde:
+        if (props_AbstracteWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstracteWaarde = cpb.create();
+        }
         return props_AbstracteWaarde;
       case LanguageConceptSwitch.Attribuut:
+        if (props_Attribuut == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Attribuut = cpb.create();
+        }
         return props_Attribuut;
       case LanguageConceptSwitch.AttribuutMetReferentieNaarKenmerk:
+        if (props_AttribuutMetReferentieNaarKenmerk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db6L, 0x76ccb41bf37dbf07L, "kenmerk", "", "");
+          props_AttribuutMetReferentieNaarKenmerk = cpb.create();
+        }
         return props_AttribuutMetReferentieNaarKenmerk;
       case LanguageConceptSwitch.Concept:
+        if (props_Concept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Concept = cpb.create();
+        }
         return props_Concept;
       case LanguageConceptSwitch.DatumDatatype:
+        if (props_DatumDatatype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("datum");
+          props_DatumDatatype = cpb.create();
+        }
         return props_DatumDatatype;
       case LanguageConceptSwitch.DatumTijdWaarde:
+        if (props_DatumTijdWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("DatumTijdWaarde");
+          props_DatumTijdWaarde = cpb.create();
+        }
         return props_DatumTijdWaarde;
       case LanguageConceptSwitch.DatumWaarde:
+        if (props_DatumWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("DatumWaarde");
+          props_DatumWaarde = cpb.create();
+        }
         return props_DatumWaarde;
       case LanguageConceptSwitch.DuurWaarde:
+        if (props_DuurWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("DuurWaarde");
+          props_DuurWaarde = cpb.create();
+        }
         return props_DuurWaarde;
       case LanguageConceptSwitch.Enumeratie:
+        if (props_Enumeratie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Enumeratie = cpb.create();
+        }
         return props_Enumeratie;
       case LanguageConceptSwitch.EnumeratieDatatype:
+        if (props_EnumeratieDatatype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x67229afa69d71106L, 0x67229afa69d714cbL, "enumeratie", "", "");
+          props_EnumeratieDatatype = cpb.create();
+        }
         return props_EnumeratieDatatype;
       case LanguageConceptSwitch.EnumeratieElement:
+        if (props_EnumeratieElement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_EnumeratieElement = cpb.create();
+        }
         return props_EnumeratieElement;
       case LanguageConceptSwitch.EnumeratieWaarde:
+        if (props_EnumeratieWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x6a6c7eae99c80067L, 0x6a6c7eae99cd5a7fL, "waarde", "", "");
+          props_EnumeratieWaarde = cpb.create();
+        }
         return props_EnumeratieWaarde;
       case LanguageConceptSwitch.GegevensModel:
+        if (props_GegevensModel == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_GegevensModel = cpb.create();
+        }
         return props_GegevensModel;
       case LanguageConceptSwitch.GeheelGetal:
+        if (props_GeheelGetal == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("GeheelGetal");
+          props_GeheelGetal = cpb.create();
+        }
         return props_GeheelGetal;
       case LanguageConceptSwitch.GeheelGetalDatatype:
+        if (props_GeheelGetalDatatype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("geheel getal");
+          props_GeheelGetalDatatype = cpb.create();
+        }
         return props_GeheelGetalDatatype;
       case LanguageConceptSwitch.GeheelGetalWaarde:
+        if (props_GeheelGetalWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("GeheelGetalWaarde");
+          props_GeheelGetalWaarde = cpb.create();
+        }
         return props_GeheelGetalWaarde;
       case LanguageConceptSwitch.Identificatie:
+        if (props_Identificatie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Identificatie = cpb.create();
+        }
         return props_Identificatie;
       case LanguageConceptSwitch.Instantie:
+        if (props_Instantie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Instantie = cpb.create();
+        }
         return props_Instantie;
       case LanguageConceptSwitch.InstantiesVanGegevens:
+        if (props_InstantiesVanGegevens == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("InstantiesVanGegevens");
+          props_InstantiesVanGegevens = cpb.create();
+        }
         return props_InstantiesVanGegevens;
       case LanguageConceptSwitch.JaNeeDatatype:
+        if (props_JaNeeDatatype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ja/nee");
+          props_JaNeeDatatype = cpb.create();
+        }
         return props_JaNeeDatatype;
       case LanguageConceptSwitch.JaNeeWaarde:
+        if (props_JaNeeWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("JaNeeWaarde");
+          props_JaNeeWaarde = cpb.create();
+        }
         return props_JaNeeWaarde;
       case LanguageConceptSwitch.Object:
+        if (props_Object == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Object = cpb.create();
+        }
         return props_Object;
       case LanguageConceptSwitch.ObjectDatatype:
+        if (props_ObjectDatatype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf382feeaL, 0x76ccb41bf382feebL, "object", "", "");
+          props_ObjectDatatype = cpb.create();
+        }
         return props_ObjectDatatype;
       case LanguageConceptSwitch.ObjectInstantie:
+        if (props_ObjectInstantie == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ObjectInstantie = cpb.create();
+        }
         return props_ObjectInstantie;
       case LanguageConceptSwitch.ObjectWaarde:
+        if (props_ObjectWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9b6289L, 0x1fabc0b15d9b628eL, "object", "", "");
+          props_ObjectWaarde = cpb.create();
+        }
         return props_ObjectWaarde;
       case LanguageConceptSwitch.OnderwerpDatatype:
+        if (props_OnderwerpDatatype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf383394aL, 0x76ccb41bf383394bL, "onderwerp", "", "");
+          props_OnderwerpDatatype = cpb.create();
+        }
         return props_OnderwerpDatatype;
       case LanguageConceptSwitch.ReeelGetalDatatype:
+        if (props_ReeelGetalDatatype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("reëel getal");
+          props_ReeelGetalDatatype = cpb.create();
+        }
         return props_ReeelGetalDatatype;
       case LanguageConceptSwitch.ReeelGetalWaarde:
+        if (props_ReeelGetalWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ReeelGetalWaarde");
+          props_ReeelGetalWaarde = cpb.create();
+        }
         return props_ReeelGetalWaarde;
       case LanguageConceptSwitch.ReferentieNaarAbstractObject:
+        if (props_ReferentieNaarAbstractObject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a56f7e4L, 0x361e7f407a56f7eaL, "object", "", "");
+          props_ReferentieNaarAbstractObject = cpb.create();
+        }
         return props_ReferentieNaarAbstractObject;
       case LanguageConceptSwitch.ReferentieNaarAttribuut:
+        if (props_ReferentieNaarAttribuut == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a6e758bL, 0x361e7f407a6e758cL, "attribuut", "", "");
+          props_ReferentieNaarAttribuut = cpb.create();
+        }
         return props_ReferentieNaarAttribuut;
       case LanguageConceptSwitch.ReferentieNaarAttribuutMetReferentieNaarKenmerk:
+        if (props_ReferentieNaarAttribuutMetReferentieNaarKenmerk == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a6e75abL, 0x361e7f407a6e75acL, "attribuut", "", "");
+          props_ReferentieNaarAttribuutMetReferentieNaarKenmerk = cpb.create();
+        }
         return props_ReferentieNaarAttribuutMetReferentieNaarKenmerk;
       case LanguageConceptSwitch.ReferentieNaarOnderwerp:
+        if (props_ReferentieNaarOnderwerp == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ReferentieNaarOnderwerp = cpb.create();
+        }
         return props_ReferentieNaarOnderwerp;
       case LanguageConceptSwitch.ReferentieNaarOnderwerpOfSubject:
+        if (props_ReferentieNaarOnderwerpOfSubject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ReferentieNaarOnderwerpOfSubject = cpb.create();
+        }
         return props_ReferentieNaarOnderwerpOfSubject;
       case LanguageConceptSwitch.ReferentieNaarSubject:
+        if (props_ReferentieNaarSubject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ReferentieNaarSubject = cpb.create();
+        }
         return props_ReferentieNaarSubject;
       case LanguageConceptSwitch.RekenWaarde:
+        if (props_RekenWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_RekenWaarde = cpb.create();
+        }
         return props_RekenWaarde;
       case LanguageConceptSwitch.RijVanKaraktersDatatype:
+        if (props_RijVanKaraktersDatatype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("rij van karakters");
+          props_RijVanKaraktersDatatype = cpb.create();
+        }
         return props_RijVanKaraktersDatatype;
       case LanguageConceptSwitch.RijVanKaraktersWaarde:
+        if (props_RijVanKaraktersWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("RijVanKaraktersWaarde");
+          props_RijVanKaraktersWaarde = cpb.create();
+        }
         return props_RijVanKaraktersWaarde;
       case LanguageConceptSwitch.SubjectDatatype:
+        if (props_SubjectDatatype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d70a669L, 0x1fabc0b15d70a66aL, "subject", "", "");
+          props_SubjectDatatype = cpb.create();
+        }
         return props_SubjectDatatype;
       case LanguageConceptSwitch.Tabel:
+        if (props_Tabel == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("lijst met objectinstanties");
+          cpb.presentationByReference(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0xb116d9d60df9be7L, 0xb116d9d60df9c03L, "object", "", "");
+          props_Tabel = cpb.create();
+        }
         return props_Tabel;
       case LanguageConceptSwitch.TemporeleWaarde:
+        if (props_TemporeleWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_TemporeleWaarde = cpb.create();
+        }
         return props_TemporeleWaarde;
       case LanguageConceptSwitch.TijdDatatype:
+        if (props_TijdDatatype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("tijd");
+          props_TijdDatatype = cpb.create();
+        }
         return props_TijdDatatype;
       case LanguageConceptSwitch.TijdWaarde:
+        if (props_TijdWaarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TijdWaarde");
+          props_TijdWaarde = cpb.create();
+        }
         return props_TijdWaarde;
       case LanguageConceptSwitch.Waarde:
+        if (props_Waarde == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Waarde = cpb.create();
+        }
         return props_Waarde;
       case LanguageConceptSwitch.WaardeVanAttribuut:
+        if (props_WaardeVanAttribuut == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("WaardeVanAttribuut");
+          props_WaardeVanAttribuut = cpb.create();
+        }
         return props_WaardeVanAttribuut;
       case LanguageConceptSwitch.waardeJa:
+        if (props_waardeJa == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ja");
+          props_waardeJa = cpb.create();
+        }
         return props_waardeJa;
       case LanguageConceptSwitch.waardeJaNee:
+        if (props_waardeJaNee == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_waardeJaNee = cpb.create();
+        }
         return props_waardeJaNee;
       case LanguageConceptSwitch.waardeNee:
+        if (props_waardeNee == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("nee");
+          props_waardeNee = cpb.create();
+        }
         return props_waardeNee;
     }
     return null;

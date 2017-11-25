@@ -82,7 +82,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("ligt ten minste <duur> voor()", node, ex);
+          throw new InterpreterRuntimeException("ligt ten minste <duur> voor()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -92,6 +92,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "TenMinsteVoor";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c99b8af3L, "ObjectiefRecht.structure.TenMinsteNa"), true) {
@@ -136,7 +141,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("ligt ten minste <duur> na()", node, ex);
+          throw new InterpreterRuntimeException("ligt ten minste <duur> na()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -146,6 +151,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "TenMinsteNa";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x2db6a3c6801e6ee4L, "ObjectiefRecht.structure.IsOpgegeven"), true) {
@@ -167,7 +177,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("is opgegeven()", node, ex);
+          throw new InterpreterRuntimeException("is opgegeven()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -177,6 +187,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "IsOpgegeven";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x70b6c2b5db7413L, "ObjectiefRecht.structure.IsWaar"), true) {
@@ -194,7 +209,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("is waar()", node, ex);
+          throw new InterpreterRuntimeException("is waar()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -204,6 +219,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "IsWaar";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db5871837c102bL, "ObjectiefRecht.structure.IsGeen"), true) {
@@ -222,7 +242,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("is niet waar()", node, ex);
+          throw new InterpreterRuntimeException("is niet waar()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -232,6 +252,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "IsGeen";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9bcaebaL, "ObjectiefRecht.structure.DeSom"), true) {
@@ -286,7 +311,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("de som van()", node, ex);
+          throw new InterpreterRuntimeException("de som van()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -296,6 +321,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "DeSom";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c99b8b3bL, "ObjectiefRecht.structure.VerschilTussen"), true) {
@@ -343,7 +373,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("verschil tussen (in duur)()", node, ex);
+          throw new InterpreterRuntimeException("verschil tussen (in duur)()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -353,6 +383,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "VerschilTussen";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x1c192b17c998a450L, "ObjectiefRecht.structure.IsGelijk"), true) {
@@ -376,7 +411,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("is gelijk aan()", node, ex);
+          throw new InterpreterRuntimeException("is gelijk aan()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -386,6 +421,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "IsGelijk";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7cb80d5a334f0adL, "ObjectiefRecht.structure.IsNietGelijk"), true) {
@@ -411,7 +451,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("is niet gelijk aan()", node, ex);
+          throw new InterpreterRuntimeException("is niet gelijk aan()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -421,6 +461,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "IsNietGelijk";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fe6L, "Gegevens.structure.GeheelGetalWaarde"), true) {
@@ -435,7 +480,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("GeheelGetalWaarde()", node, ex);
+          throw new InterpreterRuntimeException("GeheelGetalWaarde()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -445,6 +490,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "GeheelGetalWaarde";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d9ac581L, "Gegevens.structure.ReeelGetalWaarde"), true) {
@@ -459,7 +509,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("ReeelGetalWaarde()", node, ex);
+          throw new InterpreterRuntimeException("ReeelGetalWaarde()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -469,6 +519,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "ReeelGetalWaarde";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7bL, "ObjectiefRecht.structure.PlusExpressie"), true) {
@@ -486,7 +541,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("plus()", node, ex);
+          throw new InterpreterRuntimeException("plus()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -496,6 +551,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "PlusExpressie";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d7cL, "ObjectiefRecht.structure.MinExpressie"), true) {
@@ -513,7 +573,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("min()", node, ex);
+          throw new InterpreterRuntimeException("min()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -523,6 +583,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "MinExpressie";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d9eL, "ObjectiefRecht.structure.VermenigvuldigenExpressie"), true) {
@@ -540,7 +605,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("maal()", node, ex);
+          throw new InterpreterRuntimeException("maal()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -550,6 +615,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "VermenigvuldigenExpressie";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x42e9dab34105d9dL, "ObjectiefRecht.structure.DelenExpressie"), true) {
@@ -567,7 +637,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("delen()", node, ex);
+          throw new InterpreterRuntimeException("delen()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -577,6 +647,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "DelenExpressie";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x46db587183a08da6L, "ObjectiefRecht.structure.IsGroterOfGelijk"), true) {
@@ -598,7 +673,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("is groter of gelijk aan()", node, ex);
+          throw new InterpreterRuntimeException("is groter of gelijk aan()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -608,6 +683,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "IsGroterOfGelijk";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9c6L, "ObjectiefRecht.structure.ErIsEen"), true) {
@@ -630,7 +710,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("er is een <object> waarbij <voorwaarden>()", node, ex);
+          throw new InterpreterRuntimeException("er is een <object> waarbij <voorwaarden>()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -640,6 +720,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "ErIsEen";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b7d334fL, "ObjectiefRecht.structure.ErIsGeen"), true) {
@@ -667,7 +752,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("er is geen <object> waarbij <voorwaarden>()", node, ex);
+          throw new InterpreterRuntimeException("er is geen <object> waarbij <voorwaarden>()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -677,6 +762,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "ErIsGeen";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x75a9691d143b2e5fL, "ObjectiefRecht.structure.ErIsGeenHandeling"), true) {
@@ -702,7 +792,7 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("er is geen handeling waarbij geldt <voorwaarden>()", node, ex);
+          throw new InterpreterRuntimeException("er is geen handeling waarbij geldt <voorwaarden>()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -712,6 +802,11 @@ public class InterpreterInterpreterExpressie extends InterpreterBase {
       @Override
       public String toString() {
         return "ErIsGeenHandeling";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
   }

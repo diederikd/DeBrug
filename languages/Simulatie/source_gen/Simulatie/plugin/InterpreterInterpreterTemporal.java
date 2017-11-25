@@ -44,7 +44,7 @@ public class InterpreterInterpreterTemporal extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("verschil tussen (in duur)(expressie1[TemporeleWaarde], expressie2[TemporeleWaarde])", node, ex);
+          throw new InterpreterRuntimeException("verschil tussen (in duur)(expressie1[TemporeleWaarde], expressie2[TemporeleWaarde])", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -54,6 +54,11 @@ public class InterpreterInterpreterTemporal extends InterpreterBase {
       @Override
       public String toString() {
         return "VerschilTussen";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return false;
       }
     });
   }

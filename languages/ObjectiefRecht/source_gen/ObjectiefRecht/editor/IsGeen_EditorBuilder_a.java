@@ -56,7 +56,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
       @Override
       protected EditorCell createRefCell(EditorContext context, SNode effectiveNode, SNode node) {
         EditorCell cell = new IsGeen_EditorBuilder_a.Inline_Builder_drg1ot_a0a(getEditorContext(), myNode, effectiveNode).createCell();
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -168,7 +168,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
             }, effectiveNode, "object");
             CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
             setSemanticNodeToCells(cell, myNode);
-            installDeleteActions_atLeastOne(cell);
+            installDeleteActions_notnull(cell);
             return cell;
           }
         };
@@ -244,7 +244,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
       @Override
       protected EditorCell createRefCell(EditorContext context, SNode effectiveNode, SNode node) {
         EditorCell cell = new IsGeen_EditorBuilder_a.Inline_Builder_drg1ot_a2a(getEditorContext(), myNode, effectiveNode).createCell();
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -297,7 +297,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
         @Override
         protected EditorCell createRefCell(EditorContext context, SNode effectiveNode, SNode node) {
           EditorCell cell = new IsGeen_EditorBuilder_a.Inline_Builder_drg1ot_a2a.Inline_Builder_drg1ot_a0a0c0(getEditorContext(), myNode, effectiveNode).createCell();
-          installDeleteActions_atLeastOne(cell);
+          installDeleteActions_notnull(cell);
           return cell;
         }
       };
@@ -356,7 +356,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
             }, effectiveNode, "kenmerk");
             CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
             setSemanticNodeToCells(cell, myNode);
-            installDeleteActions_atLeastOne(cell);
+            installDeleteActions_notnull(cell);
             return cell;
           }
         };

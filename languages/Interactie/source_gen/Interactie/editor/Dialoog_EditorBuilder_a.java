@@ -392,6 +392,9 @@ import jetbrains.mps.util.Computable;
       editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
       editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
       editorCell.setCellId("ReadOnlyModelAccessor_ns8cfe_a0g4a");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.EDITABLE, false);
+      editorCell.getStyle().putAll(style);
       return editorCell;
     }
   }

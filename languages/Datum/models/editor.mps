@@ -2,7 +2,7 @@
 <model ref="r:4d95e375-a45b-4405-8471-233ad9d6fb8b(Datum.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -1246,7 +1246,7 @@
   </node>
   <node concept="24kQdi" id="1KpaLv9ASGk">
     <property role="3GE5qa" value="Functies" />
-    <ref role="1XX52x" to="jx79:1KpaLv9ASFO" resolve="VerschilTussen" />
+    <ref role="1XX52x" to="jx79:1KpaLv9ASFO" resolve="VerschilTussenDatums" />
     <node concept="3EZMnI" id="1KpaLv9ASGm" role="2wV5jI">
       <node concept="3F0ifn" id="1KpaLv9ASGt" role="3EZMnx">
         <property role="3F0ifm" value="het verschil tussen" />

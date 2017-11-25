@@ -184,7 +184,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
         }, effectiveNode, "regeling");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -353,7 +353,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
         }, effectiveNode, "gegevenshuishouding");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -807,7 +807,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
         }, effectiveNode, "gegevenshuishouding");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -1038,7 +1038,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
         }, effectiveNode, "gegevenshuishouding");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -1243,7 +1243,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
         }, effectiveNode, "gegevenshuishouding");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -1519,7 +1519,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
           }, effectiveNode, "object");
           CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
           setSemanticNodeToCells(cell, myNode);
-          installDeleteActions_atLeastOne(cell);
+          installDeleteActions_notnull(cell);
           return cell;
         }
       };
@@ -1757,7 +1757,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
           }, effectiveNode, "object");
           CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
           setSemanticNodeToCells(cell, myNode);
-          installDeleteActions_atLeastOne(cell);
+          installDeleteActions_notnull(cell);
           return cell;
         }
       };

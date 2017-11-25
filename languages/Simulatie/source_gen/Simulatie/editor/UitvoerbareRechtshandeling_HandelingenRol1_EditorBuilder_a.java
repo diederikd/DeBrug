@@ -145,6 +145,9 @@ import Simulatie.editor.Simulatie_StyleSheet.uitzonderingStyleClass;
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
     editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
     editorCell.setCellId("ReadOnlyModelAccessor_e0ej5n_b0a");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.EDITABLE, false);
+    editorCell.getStyle().putAll(style);
     ToonLog.setCellActions(editorCell, myNode, getEditorContext());
     return editorCell;
   }
@@ -160,7 +163,7 @@ import Simulatie.editor.Simulatie_StyleSheet.uitzonderingStyleClass;
         }, effectiveNode, "overgang");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -252,6 +255,7 @@ import Simulatie.editor.Simulatie_StyleSheet.uitzonderingStyleClass;
     editorCell.setCellId("ReadOnlyModelAccessor_e0ej5n_f0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
@@ -341,7 +345,7 @@ import Simulatie.editor.Simulatie_StyleSheet.uitzonderingStyleClass;
           }, effectiveNode, "objectieveRechtsbetrekking");
           CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
           setSemanticNodeToCells(cell, myNode);
-          installDeleteActions_atLeastOne(cell);
+          installDeleteActions_notnull(cell);
           return cell;
         }
       };
@@ -422,6 +426,7 @@ import Simulatie.editor.Simulatie_StyleSheet.uitzonderingStyleClass;
     new uitzonderingStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }

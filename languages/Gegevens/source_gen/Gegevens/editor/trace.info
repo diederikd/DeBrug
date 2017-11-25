@@ -15,8 +15,64 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164879751025:jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1153952380246:jetbrains.mps.baseLanguage.structure.TryStatement" />
   <root>
+    <file name="AttribuutMetReferentieNaarKenmerk_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.AttribuutMetReferentieNaarKenmerk_SubstituteMenu$SMP_ReferenceScope_v64lfc_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.AttribuutMetReferentieNaarKenmerk_SubstituteMenu" />
+    </file>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="19,0,105,0" name="Gegevens.editor.EditorAspectDescriptorImpl" />
+      <unit at="20,0,144,0" name="Gegevens.editor.EditorAspectDescriptorImpl" />
+    </file>
+    <file name="EnumeratieDatatype_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.EnumeratieDatatype_SubstituteMenu$SMP_ReferenceScope_ietaiz_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.EnumeratieDatatype_SubstituteMenu" />
+    </file>
+    <file name="EnumeratieWaarde_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.EnumeratieWaarde_SubstituteMenu$SMP_ReferenceScope_j1i727_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.EnumeratieWaarde_SubstituteMenu" />
+    </file>
+    <file name="ObjectDatatype_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.ObjectDatatype_SubstituteMenu$SMP_ReferenceScope_7i1kqy_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.ObjectDatatype_SubstituteMenu" />
+    </file>
+    <file name="ObjectInstantie_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.ObjectInstantie_SubstituteMenu$SMP_ReferenceScope_39jagt_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.ObjectInstantie_SubstituteMenu" />
+    </file>
+    <file name="ObjectWaarde_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.ObjectWaarde_SubstituteMenu$SMP_ReferenceScope_6bf9oe_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.ObjectWaarde_SubstituteMenu" />
+    </file>
+    <file name="OnderwerpDatatype_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.OnderwerpDatatype_SubstituteMenu$SMP_ReferenceScope_sm9d2j_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.OnderwerpDatatype_SubstituteMenu" />
+    </file>
+    <file name="ReferentieNaarAbstractObject_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.ReferentieNaarAbstractObject_SubstituteMenu$SMP_ReferenceScope_55mb6u_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.ReferentieNaarAbstractObject_SubstituteMenu" />
+    </file>
+    <file name="ReferentieNaarAttribuutMetReferentieNaarKenmerk_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.ReferentieNaarAttribuutMetReferentieNaarKenmerk_SubstituteMenu$SMP_ReferenceScope_3enyz1_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.ReferentieNaarAttribuutMetReferentieNaarKenmerk_SubstituteMenu" />
+    </file>
+    <file name="ReferentieNaarAttribuut_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.ReferentieNaarAttribuut_SubstituteMenu$SMP_ReferenceScope_ov7c0c_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.ReferentieNaarAttribuut_SubstituteMenu" />
+    </file>
+    <file name="ReferentieNaarOnderwerp_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.ReferentieNaarOnderwerp_SubstituteMenu$SMP_ReferenceScope_xw7sle_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.ReferentieNaarOnderwerp_SubstituteMenu" />
+    </file>
+    <file name="ReferentieNaarSubject_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.ReferentieNaarSubject_SubstituteMenu$SMP_ReferenceScope_ecty1n_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.ReferentieNaarSubject_SubstituteMenu" />
+    </file>
+    <file name="SubjectDatatype_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.SubjectDatatype_SubstituteMenu$SMP_ReferenceScope_jyqwis_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.SubjectDatatype_SubstituteMenu" />
+    </file>
+    <file name="Tabel_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="Gegevens.editor.Tabel_SubstituteMenu$SMP_ReferenceScope_4m5j7i_a" />
+      <unit at="18,0,59,0" name="Gegevens.editor.Tabel_SubstituteMenu" />
     </file>
   </root>
   <root nodeRef="r:ba2828b4-d3fd-4606-9798-c050774eb961(Gegevens.editor)/2282129504202724226">
@@ -44,8 +100,8 @@
       <node id="2282129504202724226" at="56,39,57,137" concept="8" />
       <node id="2282129504202724226" at="59,37,60,63" concept="2" />
       <node id="2282129504202724226" at="60,63,61,45" concept="2" />
-      <node id="2282129504202724226" at="61,45,62,46" concept="2" />
-      <node id="2282129504202724226" at="62,46,63,20" concept="8" />
+      <node id="2282129504202724226" at="61,45,62,58" concept="2" />
+      <node id="2282129504202724226" at="62,58,63,20" concept="8" />
       <node id="2282129504202724226" at="65,6,66,32" concept="2" />
       <node id="2282129504202724226" at="66,32,67,45" concept="2" />
       <node id="2282129504202724226" at="67,45,68,26" concept="7" />
@@ -70,8 +126,8 @@
       <node id="2282129504202724237" at="115,41,116,168" concept="8" />
       <node id="2282129504202724237" at="118,39,119,65" concept="2" />
       <node id="2282129504202724237" at="119,65,120,47" concept="2" />
-      <node id="2282129504202724237" at="120,47,121,48" concept="2" />
-      <node id="2282129504202724237" at="121,48,122,22" concept="8" />
+      <node id="2282129504202724237" at="120,47,121,45" concept="2" />
+      <node id="2282129504202724237" at="121,45,122,22" concept="8" />
       <node id="2282129504202724237" at="124,8,125,34" concept="2" />
       <node id="2282129504202724237" at="125,34,126,47" concept="2" />
       <node id="2282129504202724237" at="126,47,127,28" concept="7" />
@@ -374,8 +430,8 @@
       <node id="2282129504205176837" at="76,39,77,137" concept="8" />
       <node id="2282129504205176837" at="79,36,80,63" concept="2" />
       <node id="2282129504205176837" at="80,63,81,45" concept="2" />
-      <node id="2282129504205176837" at="81,45,82,46" concept="2" />
-      <node id="2282129504205176837" at="82,46,83,20" concept="8" />
+      <node id="2282129504205176837" at="81,45,82,58" concept="2" />
+      <node id="2282129504205176837" at="82,58,83,20" concept="8" />
       <node id="2282129504205176837" at="85,6,86,31" concept="2" />
       <node id="2282129504205176837" at="86,31,87,44" concept="2" />
       <node id="2282129504205176837" at="87,44,88,26" concept="7" />
@@ -1251,8 +1307,8 @@
       <node id="2282129504205320656" at="56,39,57,155" concept="8" />
       <node id="2282129504205320656" at="59,39,60,63" concept="2" />
       <node id="2282129504205320656" at="60,63,61,45" concept="2" />
-      <node id="2282129504205320656" at="61,45,62,46" concept="2" />
-      <node id="2282129504205320656" at="62,46,63,20" concept="8" />
+      <node id="2282129504205320656" at="61,45,62,58" concept="2" />
+      <node id="2282129504205320656" at="62,58,63,20" concept="8" />
       <node id="2282129504205320656" at="65,6,66,34" concept="2" />
       <node id="2282129504205320656" at="66,34,67,47" concept="2" />
       <node id="2282129504205320656" at="67,47,68,26" concept="7" />
@@ -1393,8 +1449,8 @@
       <node id="2282129504205320720" at="56,39,57,154" concept="8" />
       <node id="2282129504205320720" at="59,37,60,63" concept="2" />
       <node id="2282129504205320720" at="60,63,61,45" concept="2" />
-      <node id="2282129504205320720" at="61,45,62,46" concept="2" />
-      <node id="2282129504205320720" at="62,46,63,20" concept="8" />
+      <node id="2282129504205320720" at="61,45,62,58" concept="2" />
+      <node id="2282129504205320720" at="62,58,63,20" concept="8" />
       <node id="2282129504205320720" at="65,6,66,32" concept="2" />
       <node id="2282129504205320720" at="66,32,67,45" concept="2" />
       <node id="2282129504205320720" at="67,45,68,26" concept="7" />
@@ -1535,8 +1591,8 @@
       <node id="2282129504205424044" at="55,39,56,166" concept="8" />
       <node id="2282129504205424044" at="58,37,59,63" concept="2" />
       <node id="2282129504205424044" at="59,63,60,45" concept="2" />
-      <node id="2282129504205424044" at="60,45,61,46" concept="2" />
-      <node id="2282129504205424044" at="61,46,62,20" concept="8" />
+      <node id="2282129504205424044" at="60,45,61,58" concept="2" />
+      <node id="2282129504205424044" at="61,58,62,20" concept="8" />
       <node id="2282129504205424044" at="64,6,65,32" concept="2" />
       <node id="2282129504205424044" at="65,32,66,45" concept="2" />
       <node id="2282129504205424044" at="66,45,67,26" concept="7" />
@@ -2019,8 +2075,8 @@
       <node id="2282129504205537345" at="55,39,56,134" concept="8" />
       <node id="2282129504205537345" at="58,36,59,63" concept="2" />
       <node id="2282129504205537345" at="59,63,60,45" concept="2" />
-      <node id="2282129504205537345" at="60,45,61,46" concept="2" />
-      <node id="2282129504205537345" at="61,46,62,20" concept="8" />
+      <node id="2282129504205537345" at="60,45,61,58" concept="2" />
+      <node id="2282129504205537345" at="61,58,62,20" concept="8" />
       <node id="2282129504205537345" at="64,6,65,31" concept="2" />
       <node id="2282129504205537345" at="65,31,66,44" concept="2" />
       <node id="2282129504205537345" at="66,44,67,26" concept="7" />
@@ -2160,8 +2216,8 @@
       <node id="2282129504205576498" at="55,39,56,147" concept="8" />
       <node id="2282129504205576498" at="58,36,59,63" concept="2" />
       <node id="2282129504205576498" at="59,63,60,45" concept="2" />
-      <node id="2282129504205576498" at="60,45,61,46" concept="2" />
-      <node id="2282129504205576498" at="61,46,62,20" concept="8" />
+      <node id="2282129504205576498" at="60,45,61,58" concept="2" />
+      <node id="2282129504205576498" at="61,58,62,20" concept="8" />
       <node id="2282129504205576498" at="64,6,65,31" concept="2" />
       <node id="2282129504205576498" at="65,31,66,44" concept="2" />
       <node id="2282129504205576498" at="66,44,67,26" concept="7" />
@@ -2405,8 +2461,8 @@
       <node id="3899694242256627816" at="55,39,56,150" concept="8" />
       <node id="3899694242256627816" at="58,36,59,63" concept="2" />
       <node id="3899694242256627816" at="59,63,60,45" concept="2" />
-      <node id="3899694242256627816" at="60,45,61,46" concept="2" />
-      <node id="3899694242256627816" at="61,46,62,20" concept="8" />
+      <node id="3899694242256627816" at="60,45,61,58" concept="2" />
+      <node id="3899694242256627816" at="61,58,62,20" concept="8" />
       <node id="3899694242256627816" at="64,6,65,31" concept="2" />
       <node id="3899694242256627816" at="65,31,66,44" concept="2" />
       <node id="3899694242256627816" at="66,44,67,26" concept="7" />
@@ -2541,8 +2597,8 @@
       <node id="3899694242258122134" at="55,39,56,145" concept="8" />
       <node id="3899694242258122134" at="58,39,59,63" concept="2" />
       <node id="3899694242258122134" at="59,63,60,45" concept="2" />
-      <node id="3899694242258122134" at="60,45,61,46" concept="2" />
-      <node id="3899694242258122134" at="61,46,62,20" concept="8" />
+      <node id="3899694242258122134" at="60,45,61,58" concept="2" />
+      <node id="3899694242258122134" at="61,58,62,20" concept="8" />
       <node id="3899694242258122134" at="64,6,65,34" concept="2" />
       <node id="3899694242258122134" at="65,34,66,47" concept="2" />
       <node id="3899694242258122134" at="66,47,67,26" concept="7" />
@@ -2677,8 +2733,8 @@
       <node id="3899694242258152734" at="55,39,56,169" concept="8" />
       <node id="3899694242258152734" at="58,39,59,63" concept="2" />
       <node id="3899694242258152734" at="59,63,60,45" concept="2" />
-      <node id="3899694242258152734" at="60,45,61,46" concept="2" />
-      <node id="3899694242258152734" at="61,46,62,20" concept="8" />
+      <node id="3899694242258152734" at="60,45,61,58" concept="2" />
+      <node id="3899694242258152734" at="61,58,62,20" concept="8" />
       <node id="3899694242258152734" at="64,6,65,34" concept="2" />
       <node id="3899694242258152734" at="65,34,66,47" concept="2" />
       <node id="3899694242258152734" at="66,47,67,26" concept="7" />
@@ -2703,8 +2759,8 @@
       <node id="3899694242258152745" at="114,41,115,200" concept="8" />
       <node id="3899694242258152745" at="117,39,118,65" concept="2" />
       <node id="3899694242258152745" at="118,65,119,47" concept="2" />
-      <node id="3899694242258152745" at="119,47,120,48" concept="2" />
-      <node id="3899694242258152745" at="120,48,121,22" concept="8" />
+      <node id="3899694242258152745" at="119,47,120,45" concept="2" />
+      <node id="3899694242258152745" at="120,45,121,22" concept="8" />
       <node id="3899694242258152745" at="123,8,124,34" concept="2" />
       <node id="3899694242258152745" at="124,34,125,47" concept="2" />
       <node id="3899694242258152745" at="125,47,126,28" concept="7" />
@@ -3468,8 +3524,8 @@
       <node id="6166301676793455799" at="107,39,108,145" concept="8" />
       <node id="6166301676793455799" at="110,39,111,63" concept="2" />
       <node id="6166301676793455799" at="111,63,112,45" concept="2" />
-      <node id="6166301676793455799" at="112,45,113,46" concept="2" />
-      <node id="6166301676793455799" at="113,46,114,20" concept="8" />
+      <node id="6166301676793455799" at="112,45,113,58" concept="2" />
+      <node id="6166301676793455799" at="113,58,114,20" concept="8" />
       <node id="6166301676793455799" at="116,6,117,34" concept="2" />
       <node id="6166301676793455799" at="117,34,118,47" concept="2" />
       <node id="6166301676793455799" at="118,47,119,26" concept="7" />
@@ -4581,8 +4637,8 @@
       <node id="7431672735422943495" at="56,39,57,140" concept="8" />
       <node id="7431672735422943495" at="59,40,60,63" concept="2" />
       <node id="7431672735422943495" at="60,63,61,45" concept="2" />
-      <node id="7431672735422943495" at="61,45,62,46" concept="2" />
-      <node id="7431672735422943495" at="62,46,63,20" concept="8" />
+      <node id="7431672735422943495" at="61,45,62,58" concept="2" />
+      <node id="7431672735422943495" at="62,58,63,20" concept="8" />
       <node id="7431672735422943495" at="65,6,66,35" concept="2" />
       <node id="7431672735422943495" at="66,35,67,48" concept="2" />
       <node id="7431672735422943495" at="67,48,68,26" concept="7" />
@@ -4910,8 +4966,8 @@
       <node id="7668643553875029271" at="55,39,56,138" concept="8" />
       <node id="7668643553875029271" at="58,36,59,63" concept="2" />
       <node id="7668643553875029271" at="59,63,60,45" concept="2" />
-      <node id="7668643553875029271" at="60,45,61,46" concept="2" />
-      <node id="7668643553875029271" at="61,46,62,20" concept="8" />
+      <node id="7668643553875029271" at="60,45,61,58" concept="2" />
+      <node id="7668643553875029271" at="61,58,62,20" concept="8" />
       <node id="7668643553875029271" at="64,6,65,31" concept="2" />
       <node id="7668643553875029271" at="65,31,66,44" concept="2" />
       <node id="7668643553875029271" at="66,44,67,26" concept="7" />
@@ -5064,8 +5120,8 @@
       <node id="797539131724304302" at="89,39,90,127" concept="8" />
       <node id="797539131724304302" at="92,36,93,63" concept="2" />
       <node id="797539131724304302" at="93,63,94,45" concept="2" />
-      <node id="797539131724304302" at="94,45,95,46" concept="2" />
-      <node id="797539131724304302" at="95,46,96,20" concept="8" />
+      <node id="797539131724304302" at="94,45,95,58" concept="2" />
+      <node id="797539131724304302" at="95,58,96,20" concept="8" />
       <node id="797539131724304302" at="98,6,99,31" concept="2" />
       <node id="797539131724304302" at="99,31,100,44" concept="2" />
       <node id="797539131724304302" at="100,44,101,26" concept="7" />
@@ -5346,8 +5402,8 @@
       <node id="797539131724304447" at="101,39,102,133" concept="8" />
       <node id="797539131724304447" at="104,36,105,63" concept="2" />
       <node id="797539131724304447" at="105,63,106,45" concept="2" />
-      <node id="797539131724304447" at="106,45,107,46" concept="2" />
-      <node id="797539131724304447" at="107,46,108,20" concept="8" />
+      <node id="797539131724304447" at="106,45,107,58" concept="2" />
+      <node id="797539131724304447" at="107,58,108,20" concept="8" />
       <node id="797539131724304447" at="110,6,111,31" concept="2" />
       <node id="797539131724304447" at="111,31,112,44" concept="2" />
       <node id="797539131724304447" at="112,44,113,26" concept="7" />
@@ -6075,8 +6131,8 @@
       <node id="8560415023866691345" at="67,39,68,155" concept="8" />
       <node id="8560415023866691345" at="70,37,71,63" concept="2" />
       <node id="8560415023866691345" at="71,63,72,45" concept="2" />
-      <node id="8560415023866691345" at="72,45,73,46" concept="2" />
-      <node id="8560415023866691345" at="73,46,74,20" concept="8" />
+      <node id="8560415023866691345" at="72,45,73,58" concept="2" />
+      <node id="8560415023866691345" at="73,58,74,20" concept="8" />
       <node id="8560415023866691345" at="76,6,77,32" concept="2" />
       <node id="8560415023866691345" at="77,32,78,45" concept="2" />
       <node id="8560415023866691345" at="78,45,79,26" concept="7" />
@@ -6291,8 +6347,8 @@
       <node id="8560415023867035381" at="56,39,57,135" concept="8" />
       <node id="8560415023867035381" at="59,36,60,63" concept="2" />
       <node id="8560415023867035381" at="60,63,61,45" concept="2" />
-      <node id="8560415023867035381" at="61,45,62,46" concept="2" />
-      <node id="8560415023867035381" at="62,46,63,20" concept="8" />
+      <node id="8560415023867035381" at="61,45,62,58" concept="2" />
+      <node id="8560415023867035381" at="62,58,63,20" concept="8" />
       <node id="8560415023867035381" at="65,6,66,31" concept="2" />
       <node id="8560415023867035381" at="66,31,67,44" concept="2" />
       <node id="8560415023867035381" at="67,44,68,26" concept="7" />
@@ -6428,8 +6484,8 @@
       <node id="8560415023867050325" at="56,39,57,139" concept="8" />
       <node id="8560415023867050325" at="59,39,60,63" concept="2" />
       <node id="8560415023867050325" at="60,63,61,45" concept="2" />
-      <node id="8560415023867050325" at="61,45,62,46" concept="2" />
-      <node id="8560415023867050325" at="62,46,63,20" concept="8" />
+      <node id="8560415023867050325" at="61,45,62,58" concept="2" />
+      <node id="8560415023867050325" at="62,58,63,20" concept="8" />
       <node id="8560415023867050325" at="65,6,66,34" concept="2" />
       <node id="8560415023867050325" at="66,34,67,47" concept="2" />
       <node id="8560415023867050325" at="67,47,68,26" concept="7" />
@@ -6454,8 +6510,8 @@
       <node id="8560415023867050336" at="115,41,116,170" concept="8" />
       <node id="8560415023867050336" at="118,41,119,65" concept="2" />
       <node id="8560415023867050336" at="119,65,120,47" concept="2" />
-      <node id="8560415023867050336" at="120,47,121,48" concept="2" />
-      <node id="8560415023867050336" at="121,48,122,22" concept="8" />
+      <node id="8560415023867050336" at="120,47,121,45" concept="2" />
+      <node id="8560415023867050336" at="121,45,122,22" concept="8" />
       <node id="8560415023867050336" at="124,8,125,36" concept="2" />
       <node id="8560415023867050336" at="125,36,126,49" concept="2" />
       <node id="8560415023867050336" at="126,49,127,28" concept="7" />
@@ -6670,8 +6726,8 @@
       <node id="8560415023867083813" at="106,39,107,143" concept="8" />
       <node id="8560415023867083813" at="109,37,110,63" concept="2" />
       <node id="8560415023867083813" at="110,63,111,45" concept="2" />
-      <node id="8560415023867083813" at="111,45,112,46" concept="2" />
-      <node id="8560415023867083813" at="112,46,113,20" concept="8" />
+      <node id="8560415023867083813" at="111,45,112,58" concept="2" />
+      <node id="8560415023867083813" at="112,58,113,20" concept="8" />
       <node id="8560415023867083813" at="115,6,116,32" concept="2" />
       <node id="8560415023867083813" at="116,32,117,45" concept="2" />
       <node id="8560415023867083813" at="117,45,118,26" concept="7" />
@@ -7318,8 +7374,8 @@
       <node id="8560415023867242108" at="55,39,56,169" concept="8" />
       <node id="8560415023867242108" at="58,37,59,63" concept="2" />
       <node id="8560415023867242108" at="59,63,60,45" concept="2" />
-      <node id="8560415023867242108" at="60,45,61,46" concept="2" />
-      <node id="8560415023867242108" at="61,46,62,20" concept="8" />
+      <node id="8560415023867242108" at="60,45,61,58" concept="2" />
+      <node id="8560415023867242108" at="61,58,62,20" concept="8" />
       <node id="8560415023867242108" at="64,6,65,32" concept="2" />
       <node id="8560415023867242108" at="65,32,66,45" concept="2" />
       <node id="8560415023867242108" at="66,45,67,26" concept="7" />

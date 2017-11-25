@@ -128,6 +128,7 @@ import jetbrains.mps.smodel.action.SNodeFactoryOperations;
     editorCell.setCellId("ReadOnlyModelAccessor_d9mrgs_c0");
     Style style = new StyleImpl();
     new BoldStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
@@ -149,7 +150,7 @@ import jetbrains.mps.smodel.action.SNodeFactoryOperations;
         }, effectiveNode, "object");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull_smartReference(cell);
         return cell;
       }
     };

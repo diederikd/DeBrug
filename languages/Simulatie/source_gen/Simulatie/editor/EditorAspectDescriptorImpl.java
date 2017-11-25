@@ -7,12 +7,13 @@ import jetbrains.mps.openapi.editor.descriptor.EditorHintsProvider;
 import java.util.Collection;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditorHint;
 import java.util.Arrays;
-import jetbrains.mps.editor.runtime.desctiptor.ConceptEditorHintImpl;
+import jetbrains.mps.editor.runtime.descriptor.ConceptEditorHintImpl;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.Collections;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent;
+import jetbrains.mps.openapi.editor.descriptor.SubstituteMenu;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
@@ -21,8 +22,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
   private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("Simulatie", "", false, "Simulatie.editor.Simulatie.Simulatie"), new ConceptEditorHintImpl("RechtspositieRol1", "", false, "Simulatie.editor.Simulatie.RechtspositieRol1"), new ConceptEditorHintImpl("RechtspositieRol2", "", false, "Simulatie.editor.Simulatie.RechtspositieRol2"), new ConceptEditorHintImpl("HandelingenRol1", "", false, "Simulatie.editor.Simulatie.HandelingenRol1"), new ConceptEditorHintImpl("HandelingenRol2", "", false, "Simulatie.editor.Simulatie.HandelingenRol2"), new ConceptEditorHintImpl("UitgevoerdeHandeling", "", false, "Simulatie.editor.Simulatie.UitgevoerdeHandeling"), new ConceptEditorHintImpl("UittevoerenHandeling", "", true, "Simulatie.editor.Simulatie.UittevoerenHandeling"));
   @NotNull
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
-    SAbstractConcept cncpt = ((SAbstractConcept) concept);
-    switch (index_xbvbvu_a0b.index(cncpt)) {
+    SAbstractConcept cncpt_a0b = ((SAbstractConcept) concept);
+    switch (index_xbvbvu_a0b.index(cncpt_a0b)) {
       case 0:
         return Collections.<ConceptEditor>singletonList(new Gegevenshuishouding_Editor());
       case 1:
@@ -50,8 +51,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
 
   @NotNull
   public Collection<ConceptEditorComponent> getDeclaredEditorComponents(SAbstractConcept concept, String editorComponentId) {
-    SAbstractConcept cncpt = ((SAbstractConcept) concept);
-    switch (index_xbvbvu_a0d.index(cncpt)) {
+    SAbstractConcept cncpt_a0d = ((SAbstractConcept) concept);
+    switch (index_xbvbvu_a0d.index(cncpt_a0d)) {
       case 0:
         if (true) {
           switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0a0a1a3, editorComponentId)) {
@@ -76,8 +77,20 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     return myHints;
   }
 
+  @NotNull
+  @Override
+  public Collection<SubstituteMenu> getDeclaredDefaultSubstituteMenus(SAbstractConcept concept) {
+    SAbstractConcept cncpt_a0g = concept;
+    switch (index_xbvbvu_a0g.index(cncpt_a0g)) {
+      case 0:
+        return Collections.<SubstituteMenu>singletonList(new ReferentieNaarOvergang_SubstituteMenu());
+      default:
+    }
+    return Collections.<SubstituteMenu>emptyList();
+  }
 
   private static final ConceptSwitchIndex index_xbvbvu_a0b = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6807b3aa0b72d4deL), MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae954a1L), MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL), MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415ccd4L), MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x684942adaabf1959L), MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x6d2de15fcae53fb5L), MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x77d59dfe8d9bbd90L), MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x5dd2e0a862ce9359L), MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x3346d8f6cfb01e1cL), MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x2469b1b2fd16efbbL)).seal();
   private static final ConceptSwitchIndex index_xbvbvu_a0d = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x2c493149da1d45e9L, 0x8ea2e0b0cfc3047aL, 0x630944a3c415c89eL)).seal();
+  private static final ConceptSwitchIndex index_xbvbvu_a0g = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x15970de38fe74b13L, 0x81c738b38d51c39aL, 0x684942adaabf1959L)).seal();
   private static String[] stringSwitchCases_xbvbvu_a0a0a0a1a3 = new String[]{"Simulatie.editor.imageDeleted", "Simulatie.editor.imageGreen", "Simulatie.editor.imageNew", "Simulatie.editor.imageRed"};
 }

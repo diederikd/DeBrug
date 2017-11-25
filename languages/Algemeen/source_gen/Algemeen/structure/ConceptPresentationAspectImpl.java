@@ -4,17 +4,17 @@ package Algemeen.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase;
 import jetbrains.mps.smodel.runtime.ConceptPresentation;
-import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private final ConceptPresentation props_Bericht = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IBronGeldigheid = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IConceptnummer = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IKorteNaam = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IOpmerking = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LijstMetBerichten = new ConceptPresentationBuilder().create();
+  private ConceptPresentation props_Bericht;
+  private ConceptPresentation props_IBronGeldigheid;
+  private ConceptPresentation props_IConceptnummer;
+  private ConceptPresentation props_IKorteNaam;
+  private ConceptPresentation props_IOpmerking;
+  private ConceptPresentation props_LijstMetBerichten;
 
   @Override
   @Nullable
@@ -22,16 +22,42 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case LanguageConceptSwitch.Bericht:
+        if (props_Bericht == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Bericht");
+          props_Bericht = cpb.create();
+        }
         return props_Bericht;
       case LanguageConceptSwitch.IBronGeldigheid:
+        if (props_IBronGeldigheid == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IBronGeldigheid = cpb.create();
+        }
         return props_IBronGeldigheid;
       case LanguageConceptSwitch.IConceptnummer:
+        if (props_IConceptnummer == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IConceptnummer = cpb.create();
+        }
         return props_IConceptnummer;
       case LanguageConceptSwitch.IKorteNaam:
+        if (props_IKorteNaam == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IKorteNaam = cpb.create();
+        }
         return props_IKorteNaam;
       case LanguageConceptSwitch.IOpmerking:
+        if (props_IOpmerking == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IOpmerking = cpb.create();
+        }
         return props_IOpmerking;
       case LanguageConceptSwitch.LijstMetBerichten:
+        if (props_LijstMetBerichten == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("LijstMetBerichten");
+          props_LijstMetBerichten = cpb.create();
+        }
         return props_LijstMetBerichten;
     }
     return null;

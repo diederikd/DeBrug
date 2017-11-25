@@ -155,6 +155,7 @@ import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
     editorCell.setCellId("ReadOnlyModelAccessor_de2l07_d0a");
     Style style = new StyleImpl();
     new BoldStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
@@ -176,7 +177,7 @@ import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
         }, effectiveNode, "objectieveRechtsbetrekking");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -478,7 +479,7 @@ import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
         }, effectiveNode, "rechtssubjectMetRecht");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -559,7 +560,7 @@ import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
         }, effectiveNode, "objectieveRechtsbetrekking");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -618,7 +619,7 @@ import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
           }, effectiveNode, "rechtssubjectMetRecht");
           CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
           setSemanticNodeToCells(cell, myNode);
-          installDeleteActions_atLeastOne(cell);
+          installDeleteActions_notnull(cell);
           return cell;
         }
       };
@@ -726,7 +727,7 @@ import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
         }, effectiveNode, "rechtssubjectMetPlicht");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -807,7 +808,7 @@ import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
         }, effectiveNode, "objectieveRechtsbetrekking");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -866,7 +867,7 @@ import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
           }, effectiveNode, "rechtssubjectMetPlicht");
           CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
           setSemanticNodeToCells(cell, myNode);
-          installDeleteActions_atLeastOne(cell);
+          installDeleteActions_notnull(cell);
           return cell;
         }
       };
@@ -1056,6 +1057,7 @@ import SubjectiefRecht.behavior.Rechtsbetrekking__BehaviorDescriptor;
     editorCell.setCellId("ReadOnlyModelAccessor_de2l07_n6a0");
     Style style = new StyleImpl();
     new Datum.editor.GN_StyleSheet.NameStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }

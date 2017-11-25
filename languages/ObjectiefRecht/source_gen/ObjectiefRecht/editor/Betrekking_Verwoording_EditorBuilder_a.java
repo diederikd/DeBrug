@@ -121,7 +121,7 @@ import de.slisson.mps.editor.multiline.cellProviders.MultilineCellProvider;
         }, effectiveNode, "rechtssubjectMetRecht");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -215,6 +215,7 @@ import de.slisson.mps.editor.multiline.cellProviders.MultilineCellProvider;
     editorCell.setCellId("ReadOnlyModelAccessor_vedntk_g0");
     Style style = new StyleImpl();
     new NameStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
@@ -236,7 +237,7 @@ import de.slisson.mps.editor.multiline.cellProviders.MultilineCellProvider;
         }, effectiveNode, "onderwerp");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };

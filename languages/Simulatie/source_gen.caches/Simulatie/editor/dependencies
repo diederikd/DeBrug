@@ -8,6 +8,7 @@
     <classNode dependClassName="Simulatie.editor.Rechtsbetrekking_Simulatie_Editor" />
     <classNode dependClassName="Simulatie.editor.Rechtshandeling_UitgevoerdeHandeling_Editor" />
     <classNode dependClassName="Simulatie.editor.ReferentieNaarOvergang_Editor" />
+    <classNode dependClassName="Simulatie.editor.ReferentieNaarOvergang_SubstituteMenu" />
     <classNode dependClassName="Simulatie.editor.ReferentieNaarOvergang_UittevoerenHandeling_Editor" />
     <classNode dependClassName="Simulatie.editor.Simulatie_Editor" />
     <classNode dependClassName="Simulatie.editor.UitTeVoerenDialoog_Editor" />
@@ -19,16 +20,18 @@
     <classNode dependClassName="Simulatie.editor.imageGreen" />
     <classNode dependClassName="Simulatie.editor.imageNew" />
     <classNode dependClassName="Simulatie.editor.imageRed" />
+    <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="java.util.Collections" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.desctiptor.ConceptEditorHintImpl" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.descriptor.ConceptEditorHintImpl" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditorHint" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.SubstituteMenu" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -444,6 +447,21 @@
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
+  <dependency className="Simulatie.editor.ReferentieNaarOvergang_SubstituteMenu" file="ReferentieNaarOvergang_SubstituteMenu.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.ConstraintsFilteringSubstituteMenuPartDecorator" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuPart" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="Simulatie.editor.ReferentieNaarOvergang_UittevoerenHandeling_Editor" file="ReferentieNaarOvergang_UittevoerenHandeling_Editor.java">
     <classNode dependClassName="Simulatie.editor.ReferentieNaarOvergang_UittevoerenHandeling_EditorBuilder_a" />

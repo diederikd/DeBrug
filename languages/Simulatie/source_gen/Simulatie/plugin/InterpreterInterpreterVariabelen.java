@@ -66,7 +66,7 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("variabele()", node, ex);
+          throw new InterpreterRuntimeException("variabele()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -76,6 +76,11 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
       @Override
       public String toString() {
         return "Variabele";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b57f9e0L, "ObjectiefRecht.structure.HuidigeDatum"), true) {
@@ -90,7 +95,7 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("huidige datum()", node, ex);
+          throw new InterpreterRuntimeException("huidige datum()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -100,6 +105,11 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
       @Override
       public String toString() {
         return "HuidigeDatum";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b6b7288L, "ObjectiefRecht.structure.RechtsSubjectMetPlicht"), true) {
@@ -114,7 +124,7 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("rechtssubject met plicht()", node, ex);
+          throw new InterpreterRuntimeException("rechtssubject met plicht()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -124,6 +134,11 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
       @Override
       public String toString() {
         return "RechtsSubjectMetPlicht";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7dbb3ebc6b6b727aL, "ObjectiefRecht.structure.RechtsSubjectMetRecht"), true) {
@@ -138,7 +153,7 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("rechtssubject met recht()", node, ex);
+          throw new InterpreterRuntimeException("rechtssubject met recht()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -148,6 +163,11 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
       @Override
       public String toString() {
         return "RechtsSubjectMetRecht";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x7da9e4c64537e68L, "ObjectiefRecht.structure.EnumeratieWaarde"), true) {
@@ -162,7 +182,7 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("EnumeratieWaarde()", node, ex);
+          throw new InterpreterRuntimeException("EnumeratieWaarde()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
@@ -172,6 +192,11 @@ public class InterpreterInterpreterVariabelen extends InterpreterBase {
       @Override
       public String toString() {
         return "EnumeratieWaarde";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
       }
     });
   }

@@ -66,7 +66,7 @@ import ObjectiefRecht.editor.GN_StyleSheet.KenmerkStyleClass;
         }, effectiveNode, "referentieNaarKenmerk");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };

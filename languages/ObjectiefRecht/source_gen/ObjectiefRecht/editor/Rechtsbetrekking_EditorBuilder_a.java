@@ -236,7 +236,7 @@ import ObjectiefRecht.editor.GN_StyleSheet.OnderwerpStyleClass;
         }, effectiveNode, "rechtssubjectMetRecht");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -318,7 +318,7 @@ import ObjectiefRecht.editor.GN_StyleSheet.OnderwerpStyleClass;
         }, effectiveNode, "rechtssubjectMetPlicht");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
@@ -403,7 +403,7 @@ import ObjectiefRecht.editor.GN_StyleSheet.OnderwerpStyleClass;
         }, effectiveNode, "onderwerp");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_atLeastOne(cell);
+        installDeleteActions_notnull(cell);
         return cell;
       }
     };
