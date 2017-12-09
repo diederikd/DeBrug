@@ -16,7 +16,6 @@ b. de kamers en de verenigde vergadering der Staten-Generaal;
 (…)
 h. de commissie van toezicht betreffende de inlichtingen- en veiligheidsdiensten, bedoeld in 
 artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property>
-            <property name='alias'></property>
             <property name='name'>Bestuursorgaan</property>
         </properties>
         <children>
@@ -28,7 +27,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -40,7 +38,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodeid>6606770165423411612</nodeid>
         <properties>
             <property name='definitie'>degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
-            <property name='alias'></property>
             <property name='name'>Belanghebbende</property>
         </properties>
         <children>
@@ -52,7 +49,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>Naam</property>
               </properties>
               <children>
@@ -64,7 +60,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <property name='dag'>1</property>
                         <property name='maand'>4</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -72,7 +67,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>RijVanKaraktersType</nodetype>
                   <nodeid>6606770165423867145</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -85,7 +79,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>Adres</property>
               </properties>
               <children>
@@ -97,7 +90,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <property name='dag'>1</property>
                         <property name='maand'>4</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -105,7 +97,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>RijVanKaraktersType</nodetype>
                   <nodeid>6606770165423867154</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -118,7 +109,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -131,7 +121,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodename>Aanvraag</nodename>
       <nodeid>6606770165423411622</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Aanvraag</property>
         </properties>
         <children>
@@ -143,7 +132,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>aanvrager</property>
               </properties>
               <children>
@@ -155,7 +143,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -163,7 +150,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>ObjectType</nodetype>
                   <nodeid>6606770165423411632</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='object'>
@@ -186,7 +172,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>dagtekening</property>
               </properties>
               <children>
@@ -198,7 +183,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <property name='dag'>1</property>
                         <property name='maand'>4</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -206,7 +190,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>DatumType</nodetype>
                   <nodeid>6606770165423867166</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -219,7 +202,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>aanduiding van de beschikking</property>
               </properties>
               <children>
@@ -231,7 +213,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <property name='dag'>1</property>
                         <property name='maand'>4</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -239,7 +220,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>RijVanKaraktersType</nodetype>
                   <nodeid>6606770165423867181</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -252,7 +232,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>taal</property>
               </properties>
               <children>
@@ -264,7 +243,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -272,7 +250,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>ObjectType</nodetype>
                   <nodeid>8157621355109259858</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='object'>
@@ -295,7 +272,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>schriftelijk ingediend</property>
               </properties>
               <children>
@@ -307,7 +283,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -315,7 +290,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>JaNeeType</nodetype>
                   <nodeid>6606770165423411845</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -328,7 +302,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>elektronisch ingediend</property>
               </properties>
               <children>
@@ -340,7 +313,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <property name='dag'>1</property>
                         <property name='maand'>4</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -348,7 +320,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>JaNeeType</nodetype>
                   <nodeid>6606770165423867377</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -361,7 +332,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>benodigde gegevens</property>
               </properties>
               <children>
@@ -373,7 +343,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <property name='dag'>1</property>
                         <property name='maand'>4</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -381,7 +350,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>RijVanKaraktersType</nodetype>
                   <nodeid>6606770165423867298</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -394,7 +362,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>bescheiden</property>
               </properties>
               <children>
@@ -406,7 +373,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <property name='dag'>1</property>
                         <property name='maand'>4</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -414,7 +380,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>RijVanKaraktersType</nodetype>
                   <nodeid>6606770165423867319</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -427,7 +392,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -438,7 +402,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodename>Beschikking</nodename>
       <nodeid>6606770165423867183</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Beschikking</property>
         </properties>
         <children>
@@ -450,7 +413,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -461,7 +423,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodename>Besluit</nodename>
       <nodeid>6606770165423411618</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Besluit</property>
         </properties>
         <children>
@@ -473,7 +434,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -484,7 +444,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>motivering</property>
               </properties>
               <children>
@@ -496,7 +455,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -504,7 +462,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>RijVanKaraktersType</nodetype>
                   <nodeid>6606770165423411638</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -517,7 +474,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>grond</property>
               </properties>
               <children>
@@ -529,7 +485,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -537,7 +492,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>ObjectType</nodetype>
                   <nodeid>6606770165423411661</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='object'>
@@ -560,7 +514,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodename>Wettelijk voorschrift</nodename>
       <nodeid>6606770165423411640</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Wettelijk voorschrift</property>
         </properties>
         <children>
@@ -572,7 +525,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -583,7 +535,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodename>Kennis omtrent de relevanten feiten en af te wegen belangen</nodename>
       <nodeid>6873177359993993206</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Kennis omtrent de relevanten feiten en af te wegen belangen</property>
         </properties>
         <children>
@@ -595,7 +546,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -608,7 +558,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodename>Taal</nodename>
       <nodeid>8157621355109259776</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Taal</property>
         </properties>
         <children>
@@ -620,7 +569,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -629,7 +577,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>Nederlands</nodename>
             <nodeid>8157621355109259780</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Nederlands</property>
               </properties>
           </node>
@@ -639,7 +586,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>Duits</nodename>
             <nodeid>8157621355109259785</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Duits</property>
               </properties>
           </node>
@@ -649,7 +595,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>Engels</nodename>
             <nodeid>8157621355109259789</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Engels</property>
               </properties>
           </node>
@@ -661,7 +606,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
         <nodename>Nederlands</nodename>
         <nodeid>8157621355109259780</nodeid>
           <properties>
-              <property name='alias'></property>
               <property name='name'>Nederlands</property>
           </properties>
       </node>
@@ -671,7 +615,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
         <nodename>Duits</nodename>
         <nodeid>8157621355109259785</nodeid>
           <properties>
-              <property name='alias'></property>
               <property name='name'>Duits</property>
           </properties>
       </node>
@@ -681,7 +624,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
         <nodename>Engels</nodename>
         <nodeid>8157621355109259789</nodeid>
           <properties>
-              <property name='alias'></property>
               <property name='name'>Engels</property>
           </properties>
       </node>
@@ -694,7 +636,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodeid>6873177359993993287</nodeid>
         <properties>
             <property name='initieel'>false</property>
-            <property name='alias'></property>
             <property name='name'>Verplichte bevoegdheid tot het vergaren van de nodige kennis</property>
             <property name='kortenaam'>Verplichte bevoegdheid tot het vergaren van kennis</property>
         </properties>
@@ -705,7 +646,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>datum van het indienen van de aanvraag</nodename>
             <nodeid>6873177359993993290</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum van het indienen van de aanvraag</property>
               </properties>
           </node>
@@ -717,7 +657,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -725,7 +664,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6873177359993993456</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -743,7 +681,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodetype>URL</nodetype>
             <nodeid>8157621355109258812</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -789,7 +726,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodeid>6606770165423867115</nodeid>
         <properties>
             <property name='initieel'>false</property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegdheid voor het indienen van een aanvraag</property>
             <property name='kortenaam'>bevoegheid voor het indienen van een aanvraag</property>
         </properties>
@@ -800,7 +736,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>datum inwerkingstreding</nodename>
             <nodeid>6606770165423867118</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum inwerkingstreding</property>
               </properties>
           </node>
@@ -812,7 +747,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -820,7 +754,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6606770165423867127</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -838,7 +771,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodetype>URL</nodetype>
             <nodeid>8157621355109258814</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -884,7 +816,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodeid>6606770165423867335</nodeid>
         <properties>
             <property name='initieel'>false</property>
-            <property name='alias'></property>
             <property name='name'>Verplichte bevoegdheid om de ontvangst van een electronisch ingediende aanvraag te bevestigen</property>
             <property name='kortenaam'>Verplichte bevoegdheid bevestigen ontvangst elektonisch aanvraag</property>
         </properties>
@@ -895,7 +826,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>datum indienen aanvraag</nodename>
             <nodeid>6606770165423867338</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum indienen aanvraag</property>
               </properties>
           </node>
@@ -907,7 +837,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -916,7 +845,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename></nodename>
             <nodeid>6606770165423867379</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'></property>
               </properties>
               <children>
@@ -925,7 +853,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodetype>ConditieAlle</nodetype>
                   <nodeid>6606770165423867383</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -934,7 +861,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <nodename></nodename>
                   <nodeid>6606770165423867386</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -943,7 +869,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                         <nodetype>IsWaar</nodetype>
                         <nodeid>6606770165423867390</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -951,7 +876,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                               <nodetype>Variabele</nodetype>
                               <nodeid>6606770165423867392</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -959,7 +883,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>6606770165423867399</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -986,7 +909,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>artikel 4.3a Awb</nodename>
             <nodeid>6606770165423867506</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>artikel 4.3a Awb</property>
               </properties>
           </node>
@@ -995,7 +917,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodetype>URL</nodetype>
             <nodeid>8157621355109258816</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -1041,7 +962,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodeid>6606770165423867219</nodeid>
         <properties>
             <property name='initieel'>false</property>
-            <property name='alias'></property>
             <property name='name'>Verplichte bevoegdheid om op de aanvraag te beslissen</property>
             <property name='kortenaam'>Verplichte bevoegdheid om op de aanvraag te beslissen</property>
         </properties>
@@ -1052,7 +972,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>datum indienen aanvraag</nodename>
             <nodeid>6606770165423867222</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum indienen aanvraag</property>
               </properties>
           </node>
@@ -1064,7 +983,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1073,7 +991,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>artikel 4:4 Awb</nodename>
             <nodeid>6606770165423867321</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>artikel 4:4 Awb</property>
               </properties>
           </node>
@@ -1120,7 +1037,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodeid>8157621355109259700</nodeid>
         <properties>
             <property name='initieel'>false</property>
-            <property name='alias'></property>
             <property name='name'>Verplichte bevoegdheid om het besluit bekend te maken</property>
             <property name='kortenaam'>Verplichte bevoegdheid bekend maken besluit</property>
         </properties>
@@ -1131,7 +1047,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>datum waarop de beslissing is genomen</nodename>
             <nodeid>8157621355109259761</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum waarop de beslissing is genomen</property>
               </properties>
           </node>
@@ -1143,7 +1058,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1151,7 +1065,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodetype>URL</nodetype>
             <nodeid>8157621355109259757</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1160,7 +1073,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>artikel 3:41 Awb</nodename>
             <nodeid>8157621355109259759</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>artikel 3:41 Awb</property>
               </properties>
           </node>
@@ -1207,7 +1119,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
       <nodeid>6606770165423867562</nodeid>
         <properties>
             <property name='initieel'>false</property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegdheid om de aanvraag niet te behandelen</property>
             <property name='kortenaam'>Optionele bevoegdheid niet behandelen aanvraag</property>
         </properties>
@@ -1218,7 +1129,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>datum indienen aanvraag</nodename>
             <nodeid>6606770165423867565</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum indienen aanvraag</property>
               </properties>
           </node>
@@ -1230,7 +1140,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1239,7 +1148,6 @@ artikel 64 van de Wet op de inlichtingen- en veiligheidsdiensten 2002.</property
             <nodename>artikel 4:5 Awb</nodename>
             <nodeid>6606770165423867592</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>artikel 4:5 Awb</property>
               </properties>
           </node>
@@ -1287,7 +1195,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
       <nodeid>6606770165423868011</nodeid>
         <properties>
             <property name='initieel'>false</property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegdheid om te vragen naar een vertaling van de aanvraag 
 of een van de daarbij behorende gegevens of bescheiden</property>
             <property name='kortenaam'>Optionele bevoegdheid om te vragen naar een vertaling</property>
@@ -1299,7 +1206,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodename>datum indienen aanvraag</nodename>
             <nodeid>6606770165423868045</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum indienen aanvraag</property>
               </properties>
           </node>
@@ -1311,7 +1217,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1319,7 +1224,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6606770165423868352</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -1338,7 +1242,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodename></nodename>
             <nodeid>561684233583480757</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'></property>
               </properties>
               <children>
@@ -1347,7 +1250,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodetype>ConditieAlle</nodetype>
                   <nodeid>561684233583480761</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -1356,7 +1258,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodename></nodename>
                   <nodeid>561684233583480764</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -1365,7 +1266,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                         <nodetype>IsNietGelijk</nodetype>
                         <nodeid>561684233592903284</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -1373,7 +1273,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                               <nodetype>Variabele</nodetype>
                               <nodeid>561684233592903293</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -1381,7 +1280,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>561684233592903299</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -1401,7 +1299,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                               <nodetype>EnumeratieWaarde</nodetype>
                               <nodeid>561684233592903302</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <references>
                                   <reference role='element'>
@@ -1463,7 +1360,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
       <nodeid>6606770165423868318</nodeid>
         <properties>
             <property name='initieel'>false</property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegdheid de aanvraag aan te vullen met een vertaling</property>
             <property name='kortenaam'>Optionele bevoegdheid om te vragen naar een vertaling</property>
         </properties>
@@ -1474,7 +1370,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodename>datum indienen aanvraag</nodename>
             <nodeid>6606770165423868319</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum indienen aanvraag</property>
               </properties>
           </node>
@@ -1486,7 +1381,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1494,7 +1388,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6606770165423868354</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -1551,7 +1444,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
       <nodeid>6606770165423868048</nodeid>
         <properties>
             <property name='initieel'>false</property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegdheid om te vragen naar een samenvatting van de aanvraag 
 of een van de daarbij behorende gegevens of bescheiden</property>
             <property name='kortenaam'>Optionele bevoegdheid om te vragen naar een vertaling</property>
@@ -1563,7 +1455,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodename>datum indienen aanvraag</nodename>
             <nodeid>6606770165423868049</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum indienen aanvraag</property>
               </properties>
           </node>
@@ -1575,7 +1466,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1583,7 +1473,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6606770165423868397</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -1639,7 +1528,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
       <nodeid>6606770165423868356</nodeid>
         <properties>
             <property name='initieel'>false</property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegdheid de aanvraag aan te vullen met een samenvatting</property>
             <property name='kortenaam'>Optionele bevoegdheid om te vragen naar een vertaling</property>
         </properties>
@@ -1650,7 +1538,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodename>datum indienen aanvraag</nodename>
             <nodeid>6606770165423868357</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum indienen aanvraag</property>
               </properties>
           </node>
@@ -1662,7 +1549,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1670,7 +1556,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6606770165423868359</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -1727,7 +1612,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
       <nodename>Vergaren van kennis</nodename>
       <nodeid>6873177359993993390</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Vergaren van kennis</property>
             <property name='kortenaam'>Vergaren van kennis</property>
         </properties>
@@ -1737,7 +1621,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6873177359993993453</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -1758,7 +1641,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1767,7 +1649,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodename>artikel 3:2 Awb</nodename>
             <nodeid>6873177359993993451</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>artikel 3:2 Awb</property>
               </properties>
           </node>
@@ -1777,7 +1658,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodename>kennis vergaard</nodename>
             <nodeid>6873177359993993458</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>kennis vergaard</property>
               </properties>
               <children>
@@ -1786,7 +1666,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>6873177359993993460</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1809,7 +1688,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
       <nodename>Indienen aanvraag</nodename>
       <nodeid>6606770165423411795</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Indienen aanvraag</property>
             <property name='kortenaam'>Indienen aanvraag</property>
         </properties>
@@ -1819,7 +1697,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6606770165423411809</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -1840,7 +1717,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1849,7 +1725,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodename>artikel 4:1 Awb</nodename>
             <nodeid>6606770165423411807</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>artikel 4:1 Awb</property>
               </properties>
           </node>
@@ -1858,7 +1733,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodetype>MethodeNieuweFeiten</nodetype>
             <nodeid>6606770165423411812</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <children>
                 <node>
@@ -1866,7 +1740,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodetype>ReferentieNaarKenmerk</nodetype>
                   <nodeid>6606770165423411814</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='kenmerk'>
@@ -1884,7 +1757,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodetype>ReferentieNaarKenmerk</nodetype>
                   <nodeid>6606770165423411833</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='kenmerk'>
@@ -1902,7 +1774,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodetype>ReferentieNaarKenmerk</nodetype>
                   <nodeid>6606770165423411819</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='kenmerk'>
@@ -1933,7 +1804,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodename></nodename>
             <nodeid>6606770165423866950</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'></property>
               </properties>
               <children>
@@ -1943,7 +1813,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodename></nodename>
                   <nodeid>6606770165423866959</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -1952,7 +1821,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                         <nodetype>IsWaar</nodetype>
                         <nodeid>6606770165423866965</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -1960,7 +1828,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                               <nodetype>Variabele</nodetype>
                               <nodeid>6606770165423866967</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -1968,7 +1835,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>6606770165423866974</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -1992,7 +1858,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodetype>ConditieAlle</nodetype>
                   <nodeid>6606770165423866954</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -2003,7 +1868,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
             <nodename>Aanvraag ingediend</nodename>
             <nodeid>6606770165423867457</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Aanvraag ingediend</property>
               </properties>
               <children>
@@ -2012,7 +1876,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>6606770165423867459</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2030,7 +1893,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>6606770165423867721</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2048,7 +1910,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>6606770165423867464</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2066,7 +1927,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>6873177359993993467</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2084,7 +1944,6 @@ of een van de daarbij behorende gegevens of bescheiden</property>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109286834</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2103,7 +1962,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109286848</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2127,7 +1985,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
       <nodename>Beslissen op de aanvraag</nodename>
       <nodeid>6606770165423867253</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Beslissen op de aanvraag</property>
             <property name='kortenaam'>Beslissen op de aanvraag</property>
         </properties>
@@ -2137,7 +1994,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6606770165423867279</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2158,7 +2014,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2166,7 +2021,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>MethodeNieuweFeiten</nodetype>
             <nodeid>8157621355109258808</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <children>
                 <node>
@@ -2174,7 +2028,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarKenmerk</nodetype>
                   <nodeid>8157621355109258810</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='kenmerk'>
@@ -2205,7 +2058,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodename></nodename>
             <nodeid>8157621355109258818</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'></property>
               </properties>
               <children>
@@ -2214,7 +2066,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ConditieAlle</nodetype>
                   <nodeid>8157621355109258822</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -2223,7 +2074,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodename></nodename>
                   <nodeid>8157621355109258825</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -2232,7 +2082,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                         <nodetype>IsOpgegeven</nodetype>
                         <nodeid>8157621355109258829</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -2240,7 +2089,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                               <nodetype>Variabele</nodetype>
                               <nodeid>8157621355109258831</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -2248,7 +2096,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>8157621355109258838</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -2275,7 +2122,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodename>artikel 3:46 Awb</nodename>
             <nodeid>8157621355109258841</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>artikel 3:46 Awb</property>
               </properties>
           </node>
@@ -2284,7 +2130,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>URL</nodetype>
             <nodeid>8157621355109258843</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2295,7 +2140,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>tijdstip waarop is besloten</property>
               </properties>
               <children>
@@ -2307,7 +2151,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>2017</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -2318,7 +2161,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodename>besloten op aanvraag</nodename>
             <nodeid>8157621355109259643</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>besloten op aanvraag</property>
               </properties>
               <children>
@@ -2327,7 +2169,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109259645</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2350,7 +2191,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
       <nodename>Bevestigen van de ontvangst van de elektronisch ingediende aanvraag</nodename>
       <nodeid>6606770165423867423</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Bevestigen van de ontvangst van de elektronisch ingediende aanvraag</property>
             <property name='kortenaam'>Bevestigen van de ontvangst</property>
         </properties>
@@ -2360,7 +2200,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6606770165423867452</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2381,7 +2220,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2390,7 +2228,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodename>ABW 4.3</nodename>
             <nodeid>6606770165423867455</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>ABW 4.3</property>
               </properties>
           </node>
@@ -2400,7 +2237,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodename>ontvangst bevestigd</nodename>
             <nodeid>8157621355109324115</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>ontvangst bevestigd</property>
               </properties>
               <children>
@@ -2409,7 +2245,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109324117</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2432,7 +2267,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
       <nodename>Niet in behandeling nemen van het verzoek</nodename>
       <nodeid>6606770165423867670</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Niet in behandeling nemen van het verzoek</property>
             <property name='kortenaam'>Niet in behandeling nemen van het verzoek</property>
         </properties>
@@ -2442,7 +2276,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6606770165423867708</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2463,7 +2296,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2471,7 +2303,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6606770165423867706</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2490,7 +2321,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodename>verzoek niet in behandeling genomen</nodename>
             <nodeid>8157621355109324109</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>verzoek niet in behandeling genomen</property>
               </properties>
               <children>
@@ -2499,7 +2329,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109324111</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2517,7 +2346,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109324113</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2540,7 +2368,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
       <nodename>In gelegenheid stellen de aanvraag aan te vullen met een vertaling</nodename>
       <nodeid>6606770165423867932</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>In gelegenheid stellen de aanvraag aan te vullen met een vertaling</property>
             <property name='kortenaam'>Gelegenheid geven tot aanvullen met vertaling</property>
         </properties>
@@ -2550,7 +2377,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6606770165423867980</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2571,7 +2397,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2579,7 +2404,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6606770165423867983</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2598,7 +2422,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodename>gevraagd om aanvraag aan te vullen met een vertaling</nodename>
             <nodeid>8157621355109324086</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>gevraagd om aanvraag aan te vullen met een vertaling</property>
               </properties>
               <children>
@@ -2607,7 +2430,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109324092</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2626,7 +2448,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109324090</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2649,7 +2470,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
       <nodename>Aanvullen aanvraag met vertaling</nodename>
       <nodeid>6606770165423867844</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Aanvullen aanvraag met vertaling</property>
             <property name='kortenaam'>Aanvullen aanvraag met vertaling</property>
         </properties>
@@ -2659,7 +2479,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6606770165423867889</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2680,7 +2499,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2688,7 +2506,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6606770165423868220</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2707,7 +2524,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodename>aanvraag aangevuld met vertaling</nodename>
             <nodeid>8157621355109324095</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>aanvraag aangevuld met vertaling</property>
               </properties>
               <children>
@@ -2716,7 +2532,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109324097</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2739,7 +2554,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
       <nodename>In gelegenheid stellen de aanvraag aan te vullen met een samenvatting</nodename>
       <nodeid>6606770165423868169</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>In gelegenheid stellen de aanvraag aan te vullen met een samenvatting</property>
             <property name='kortenaam'>Gelegenheid geven tot aanvullen met vertaling</property>
         </properties>
@@ -2749,7 +2563,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6606770165423868170</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2770,7 +2583,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2778,7 +2590,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6606770165423868172</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2797,7 +2608,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodename>gevraagd om aanvraag aan te vullen met een samenvatting</nodename>
             <nodeid>8157621355109324099</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>gevraagd om aanvraag aan te vullen met een samenvatting</property>
               </properties>
               <children>
@@ -2806,7 +2616,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109324101</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2824,7 +2633,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109324103</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2848,7 +2656,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
       <nodename>Aanvullen aanvraag met samenvatting</nodename>
       <nodeid>6606770165423868123</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Aanvullen aanvraag met samenvatting</property>
             <property name='kortenaam'>Aanvullen aanvraag met vertaling</property>
         </properties>
@@ -2858,7 +2665,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6606770165423868124</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2879,7 +2685,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2887,7 +2692,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6606770165423868222</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2906,7 +2710,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodename>aanvraag aangevuld met samenvatting</nodename>
             <nodeid>8157621355109324105</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>aanvraag aangevuld met samenvatting</property>
               </properties>
               <children>
@@ -2915,7 +2718,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109324107</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2938,7 +2740,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
       <nodename>Bekend maken besluit</nodename>
       <nodeid>6606770165423867759</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Bekend maken besluit</property>
             <property name='kortenaam'></property>
         </properties>
@@ -2948,7 +2749,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6606770165423867802</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2969,7 +2769,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2017</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2977,7 +2776,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>8157621355109259769</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2995,7 +2793,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodetype>URL</nodetype>
             <nodeid>8157621355109259767</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -3004,7 +2801,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
             <nodename>besluit bekend gemaakt</nodename>
             <nodeid>8157621355109259772</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>besluit bekend gemaakt</property>
               </properties>
               <children>
@@ -3013,7 +2809,6 @@ of een van de daarbij behorende gegevens of bescheiden</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>8157621355109259774</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>

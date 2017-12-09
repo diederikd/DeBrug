@@ -14,7 +14,6 @@
       <nodeid>2317404197410775793</nodeid>
         <properties>
             <property name='initieel'>true</property>
-            <property name='alias'></property>
             <property name='name'>recht om verzoek aanpassing arbeidsduur bij eigen werkgever in te dienen</property>
             <property name='kortenaam'></property>
         </properties>
@@ -25,7 +24,6 @@
             <nodename></nodename>
             <nodeid>6133486975028282110</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'></property>
               </properties>
               <children>
@@ -35,7 +33,6 @@
                   <nodename></nodename>
                   <nodeid>6133486975028698525</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -44,7 +41,6 @@
                         <nodetype>ErIsEen</nodetype>
                         <nodeid>6133486975028698526</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -52,7 +48,6 @@
                               <nodetype>IsGelijk</nodetype>
                               <nodeid>6133486975028698527</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -60,7 +55,6 @@
                                     <nodetype>Variabele</nodetype>
                                     <nodeid>6133486975028698528</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <children>
                                         <node>
@@ -68,7 +62,6 @@
                                           <nodetype>ReferentieNaarKenmerk</nodetype>
                                           <nodeid>6133486975028698529</nodeid>
                                             <properties>
-                                                <property name='alias'></property>
                                             </properties>
                                             <references>
                                               <reference role='kenmerk'>
@@ -88,7 +81,6 @@
                                     <nodetype>RechtsSubjectMetPlicht</nodetype>
                                     <nodeid>6133486975028698530</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                   </node>
                                 </children>
@@ -98,7 +90,6 @@
                               <nodetype>IsGelijk</nodetype>
                               <nodeid>6133486975028698531</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -106,7 +97,6 @@
                                     <nodetype>Variabele</nodetype>
                                     <nodeid>6133486975028698532</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <children>
                                         <node>
@@ -114,7 +104,6 @@
                                           <nodetype>ReferentieNaarKenmerk</nodetype>
                                           <nodeid>6133486975028698533</nodeid>
                                             <properties>
-                                                <property name='alias'></property>
                                             </properties>
                                             <references>
                                               <reference role='kenmerk'>
@@ -134,7 +123,6 @@
                                     <nodetype>RechtsSubjectMetRecht</nodetype>
                                     <nodeid>6133486975028698534</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                   </node>
                                 </children>
@@ -144,7 +132,6 @@
                               <nodetype>LigtVoor</nodetype>
                               <nodeid>6133486975028698535</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -152,7 +139,6 @@
                                     <nodetype>Variabele</nodetype>
                                     <nodeid>6133486975028698536</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <children>
                                         <node>
@@ -160,7 +146,6 @@
                                           <nodetype>ReferentieNaarKenmerk</nodetype>
                                           <nodeid>6133486975028698537</nodeid>
                                             <properties>
-                                                <property name='alias'></property>
                                             </properties>
                                             <references>
                                               <reference role='kenmerk'>
@@ -180,7 +165,6 @@
                                     <nodetype>HuidigeDatum</nodetype>
                                     <nodeid>6133486975028698538</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                   </node>
                                 </children>
@@ -205,7 +189,6 @@
                   <nodename></nodename>
                   <nodeid>6133486975028698579</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -214,7 +197,6 @@
                         <nodetype>IsGroterOfGelijk</nodetype>
                         <nodeid>6133486975028698580</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -222,7 +204,6 @@
                               <nodetype>Variabele</nodetype>
                               <nodeid>6133486975028698581</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -230,7 +211,6 @@
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>6133486975028698582</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -250,7 +230,6 @@
                               <nodetype>GeheelGetalWaarde</nodetype>
                               <nodeid>6133486975028698583</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -259,7 +238,6 @@
                                     <nodeid>6133486975028698584</nodeid>
                                       <properties>
                                           <property name='waarde'>10</property>
-                                          <property name='alias'></property>
                                       </properties>
                                   </node>
                                 </children>
@@ -274,7 +252,6 @@
                   <nodename></nodename>
                   <nodeid>6133486975028282498</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -283,7 +260,6 @@
                         <nodetype>IsGeen</nodetype>
                         <nodeid>6133486975028282499</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -291,7 +267,6 @@
                               <nodetype>Variabele</nodetype>
                               <nodeid>6133486975028282500</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -299,7 +274,6 @@
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>6133486975028282501</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -317,7 +291,6 @@
                                     <nodetype>ReferentieNaarObject</nodetype>
                                     <nodeid>6133486975028282502</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='object'>
@@ -342,7 +315,6 @@
                   <nodename></nodename>
                   <nodeid>6133486975028698637</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -351,7 +323,6 @@
                         <nodetype>ErIsGeen</nodetype>
                         <nodeid>6133486975028698638</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -359,7 +330,6 @@
                               <nodetype>TenHoogsteVoor</nodetype>
                               <nodeid>6331618849990035133</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -367,7 +337,6 @@
                                     <nodetype>DuurWaarde</nodetype>
                                     <nodeid>6331618849990035170</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <children>
                                         <node>
@@ -376,7 +345,6 @@
                                           <nodeid>6331618849990035173</nodeid>
                                             <properties>
                                                 <property name='jaren'>2</property>
-                                                <property name='alias'></property>
                                             </properties>
                                         </node>
                                       </children>
@@ -386,7 +354,6 @@
                                     <nodetype>Variabele</nodetype>
                                     <nodeid>6331618849990035157</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <children>
                                         <node>
@@ -394,7 +361,6 @@
                                           <nodetype>ReferentieNaarKenmerk</nodetype>
                                           <nodeid>6331618849990035163</nodeid>
                                             <properties>
-                                                <property name='alias'></property>
                                             </properties>
                                             <references>
                                               <reference role='kenmerk'>
@@ -414,7 +380,6 @@
                                     <nodetype>HuidigeDatum</nodetype>
                                     <nodeid>6331618849990035175</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                   </node>
                                 </children>
@@ -424,7 +389,6 @@
                               <nodetype>TenHoogsteVoor</nodetype>
                               <nodeid>6331618849990035198</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -432,7 +396,6 @@
                                     <nodetype>DuurWaarde</nodetype>
                                     <nodeid>6331618849990035237</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <children>
                                         <node>
@@ -441,7 +404,6 @@
                                           <nodeid>6331618849990035240</nodeid>
                                             <properties>
                                                 <property name='jaren'>2</property>
-                                                <property name='alias'></property>
                                             </properties>
                                         </node>
                                       </children>
@@ -451,7 +413,6 @@
                                     <nodetype>Variabele</nodetype>
                                     <nodeid>6331618849990035228</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <children>
                                         <node>
@@ -459,7 +420,6 @@
                                           <nodetype>ReferentieNaarKenmerk</nodetype>
                                           <nodeid>6331618849990035234</nodeid>
                                             <properties>
-                                                <property name='alias'></property>
                                             </properties>
                                             <references>
                                               <reference role='kenmerk'>
@@ -479,7 +439,6 @@
                                     <nodetype>HuidigeDatum</nodetype>
                                     <nodeid>6331618849990035242</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                   </node>
                                 </children>
@@ -503,7 +462,6 @@
                   <nodetype>ConditieAlle</nodetype>
                   <nodeid>6133486975028282192</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -513,7 +471,6 @@
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>5266643527326992491</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -534,7 +491,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>7</property>
                   <property name='jaar'>2000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -543,7 +499,6 @@
             <nodename>de latere datum van ingang wet of datum van indiensttredingdatum</nodename>
             <nodeid>4271677511962075765</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>de latere datum van ingang wet of datum van indiensttredingdatum</property>
               </properties>
           </node>
@@ -591,7 +546,6 @@
       <nodename>Indienen verzoek aanpassing arbeidsduur</nodename>
       <nodeid>5066083982446708445</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Indienen verzoek aanpassing arbeidsduur</property>
             <property name='kortenaam'></property>
         </properties>
@@ -601,7 +555,6 @@
             <nodetype>MethodeNieuweFeiten</nodetype>
             <nodeid>5540471952143220831</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <children>
                 <node>
@@ -609,7 +562,6 @@
                   <nodetype>ReferentieNaarKenmerk</nodetype>
                   <nodeid>5540471952143220839</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='kenmerk'>
@@ -627,7 +579,6 @@
                   <nodetype>ReferentieNaarKenmerk</nodetype>
                   <nodeid>3955365814688413158</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='kenmerk'>
@@ -645,7 +596,6 @@
                   <nodetype>ReferentieNaarKenmerk</nodetype>
                   <nodeid>5540471952143220847</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='kenmerk'>
@@ -663,7 +613,6 @@
                   <nodetype>ReferentieNaarKenmerk</nodetype>
                   <nodeid>5540471952143220857</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='kenmerk'>
@@ -681,7 +630,6 @@
                   <nodetype>ReferentieNaarKenmerk</nodetype>
                   <nodeid>3955365814688413140</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='kenmerk'>
@@ -699,7 +647,6 @@
                   <nodetype>ReferentieNaarKenmerk</nodetype>
                   <nodeid>5540471952143220894</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='kenmerk'>
@@ -717,7 +664,6 @@
                   <nodetype>ReferentieNaarKenmerk</nodetype>
                   <nodeid>5540471952143220908</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='kenmerk'>
@@ -735,7 +681,6 @@
                   <nodetype>ReferentieNaarKenmerk</nodetype>
                   <nodeid>76320168777623139</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='kenmerk'>
@@ -766,7 +711,6 @@
             <nodename></nodename>
             <nodeid>6133486975028699074</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'></property>
               </properties>
               <children>
@@ -776,7 +720,6 @@
                   <nodename></nodename>
                   <nodeid>6133486975028699174</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -785,7 +728,6 @@
                         <nodetype>TenMinsteVoor</nodetype>
                         <nodeid>6133486975028699175</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -793,7 +735,6 @@
                               <nodetype>Variabele</nodetype>
                               <nodeid>6133486975028699176</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -801,7 +742,6 @@
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>6133486975028699177</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -821,7 +761,6 @@
                               <nodetype>Variabele</nodetype>
                               <nodeid>6133486975028699178</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -829,7 +768,6 @@
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>6133486975028699179</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -849,7 +787,6 @@
                               <nodetype>Variabele</nodetype>
                               <nodeid>6133486975028699180</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -857,7 +794,6 @@
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>6133486975028699181</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -882,7 +818,6 @@
                   <nodename></nodename>
                   <nodeid>736190567688042220</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -891,7 +826,6 @@
                         <nodetype>TenMinsteVoor</nodetype>
                         <nodeid>736190567688042270</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -899,7 +833,6 @@
                               <nodetype>DuurWaarde</nodetype>
                               <nodeid>736190567688042291</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -908,7 +841,6 @@
                                     <nodeid>736190567688042294</nodeid>
                                       <properties>
                                           <property name='maanden'>4</property>
-                                          <property name='alias'></property>
                                       </properties>
                                   </node>
                                 </children>
@@ -918,7 +850,6 @@
                               <nodetype>Variabele</nodetype>
                               <nodeid>736190567688042282</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -926,7 +857,6 @@
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>736190567688042288</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -946,7 +876,6 @@
                               <nodetype>Variabele</nodetype>
                               <nodeid>736190567688042296</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -954,7 +883,6 @@
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>736190567688042302</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -979,7 +907,6 @@
                   <nodename></nodename>
                   <nodeid>6133486975028699189</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -988,7 +915,6 @@
                         <nodetype>IsOpgegeven</nodetype>
                         <nodeid>6133486975028699190</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -996,7 +922,6 @@
                               <nodetype>Variabele</nodetype>
                               <nodeid>6133486975028699191</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -1004,7 +929,6 @@
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>6133486975028699192</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -1022,7 +946,6 @@
                                     <nodetype>ReferentieNaarObject</nodetype>
                                     <nodeid>6133486975028699193</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='object'>
@@ -1047,7 +970,6 @@
                   <nodename></nodename>
                   <nodeid>6133486975028699194</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -1056,7 +978,6 @@
                         <nodetype>IsOpgegeven</nodetype>
                         <nodeid>6133486975028699195</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -1064,7 +985,6 @@
                               <nodetype>Variabele</nodetype>
                               <nodeid>6133486975028699196</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -1072,7 +992,6 @@
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>6133486975028699197</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -1097,7 +1016,6 @@
                   <nodename></nodename>
                   <nodeid>6133486975028699198</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -1106,7 +1024,6 @@
                         <nodetype>IsWaar</nodetype>
                         <nodeid>6133486975028699199</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -1114,7 +1031,6 @@
                               <nodetype>Variabele</nodetype>
                               <nodeid>6133486975028699200</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -1122,7 +1038,6 @@
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>6133486975028699201</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -1140,7 +1055,6 @@
                                     <nodetype>ReferentieNaarObject</nodetype>
                                     <nodeid>6133486975028699202</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='object'>
@@ -1165,7 +1079,6 @@
                   <nodename></nodename>
                   <nodeid>6133486975028699203</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -1174,7 +1087,6 @@
                         <nodetype>IsOpgegeven</nodetype>
                         <nodeid>6133486975028699204</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -1182,7 +1094,6 @@
                               <nodetype>Variabele</nodetype>
                               <nodeid>6133486975028699205</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -1190,7 +1101,6 @@
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>6133486975028699206</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -1208,7 +1118,6 @@
                                     <nodetype>ReferentieNaarObject</nodetype>
                                     <nodeid>6133486975028699207</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='object'>
@@ -1233,7 +1142,6 @@
                   <nodename></nodename>
                   <nodeid>6133486975028699208</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'></property>
                     </properties>
                     <children>
@@ -1242,7 +1150,6 @@
                         <nodetype>IsGelijk</nodetype>
                         <nodeid>6133486975028699209</nodeid>
                           <properties>
-                              <property name='alias'></property>
                           </properties>
                           <children>
                             <node>
@@ -1250,7 +1157,6 @@
                               <nodetype>DeSom</nodetype>
                               <nodeid>6133486975028699210</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -1258,7 +1164,6 @@
                                     <nodetype>VerschilTussen</nodetype>
                                     <nodeid>6133486975028699211</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <children>
                                         <node>
@@ -1266,7 +1171,6 @@
                                           <nodetype>Variabele</nodetype>
                                           <nodeid>6133486975028699212</nodeid>
                                             <properties>
-                                                <property name='alias'></property>
                                             </properties>
                                             <children>
                                               <node>
@@ -1274,7 +1178,6 @@
                                                 <nodetype>ReferentieNaarKenmerk</nodetype>
                                                 <nodeid>6133486975028699213</nodeid>
                                                   <properties>
-                                                      <property name='alias'></property>
                                                   </properties>
                                                   <references>
                                                     <reference role='kenmerk'>
@@ -1294,7 +1197,6 @@
                                           <nodetype>Variabele</nodetype>
                                           <nodeid>6133486975028699214</nodeid>
                                             <properties>
-                                                <property name='alias'></property>
                                             </properties>
                                             <children>
                                               <node>
@@ -1302,7 +1204,6 @@
                                                 <nodetype>ReferentieNaarKenmerk</nodetype>
                                                 <nodeid>6133486975028699215</nodeid>
                                                   <properties>
-                                                      <property name='alias'></property>
                                                   </properties>
                                                   <references>
                                                     <reference role='kenmerk'>
@@ -1324,7 +1225,6 @@
                                     <nodetype>Variabele</nodetype>
                                     <nodeid>790142833162011166</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <children>
                                         <node>
@@ -1332,7 +1232,6 @@
                                           <nodetype>ReferentieNaarKenmerk</nodetype>
                                           <nodeid>790142833162011170</nodeid>
                                             <properties>
-                                                <property name='alias'></property>
                                             </properties>
                                             <references>
                                               <reference role='kenmerk'>
@@ -1352,7 +1251,6 @@
                                     <nodetype>Variabele</nodetype>
                                     <nodeid>790142833165997244</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <children>
                                         <node>
@@ -1360,7 +1258,6 @@
                                           <nodetype>ReferentieNaarKenmerk</nodetype>
                                           <nodeid>790142833165997248</nodeid>
                                             <properties>
-                                                <property name='alias'></property>
                                             </properties>
                                             <references>
                                               <reference role='kenmerk'>
@@ -1382,7 +1279,6 @@
                               <nodetype>Variabele</nodetype>
                               <nodeid>6133486975028699216</nodeid>
                                 <properties>
-                                    <property name='alias'></property>
                                 </properties>
                                 <children>
                                   <node>
@@ -1390,7 +1286,6 @@
                                     <nodetype>ReferentieNaarKenmerk</nodetype>
                                     <nodeid>6133486975028699217</nodeid>
                                       <properties>
-                                          <property name='alias'></property>
                                       </properties>
                                       <references>
                                         <reference role='kenmerk'>
@@ -1414,7 +1309,6 @@
                   <nodetype>ConditieAlle</nodetype>
                   <nodeid>6133486975028699170</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -1424,7 +1318,6 @@
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>5066083982446708446</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -1443,7 +1336,6 @@
             <nodename>verzoek is ingediend bij eigen werkgever</nodename>
             <nodeid>5066083982446708447</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>verzoek is ingediend bij eigen werkgever</property>
               </properties>
               <children>
@@ -1452,7 +1344,6 @@
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>3955365814689050366</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1470,7 +1361,6 @@
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>3955365814689050367</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1490,7 +1380,6 @@ en de omvang van de aanpassing</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>3955365814689050369</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1512,7 +1401,6 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
             <nodename>2.1</nodename>
             <nodeid>5066083982446708452</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>2.1</property>
               </properties>
           </node>
@@ -1524,7 +1412,6 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>7</property>
                   <property name='jaar'>2000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1533,7 +1420,6 @@ tot het inwilligen van het verzoek te neutraliseren</nodename>
             <nodename>datum (opnieuw) indienen verzoek</nodename>
             <nodeid>4271677511962658738</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum (opnieuw) indienen verzoek</property>
               </properties>
           </node>

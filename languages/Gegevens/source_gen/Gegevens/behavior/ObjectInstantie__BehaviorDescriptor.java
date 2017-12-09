@@ -60,7 +60,7 @@ public final class ObjectInstantie__BehaviorDescriptor extends BaseBHDescriptor 
             System.out.print("============================= " + ListSequence.fromList(SLinkOperations.getChildren(objectinstantie, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fd6L, 0x1fabc0b15d967fe1L, "waardenVanAttributen"))).count());
             SNode waardeAttribuut = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fdaL, "Gegevens.structure.WaardeVanAttribuut"));
             SNode referentieNaarAttribuutMetReferentieNaarKenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a6e75abL, "Gegevens.structure.ReferentieNaarAttribuutMetReferentieNaarKenmerk"));
-            SLinkOperations.setTarget(referentieNaarAttribuutMetReferentieNaarKenmerk, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a6e75abL, 0x361e7f407a6e75acL, "attribuut"), attribuut);
+            SLinkOperations.setTarget(referentieNaarAttribuutMetReferentieNaarKenmerk, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a6e75abL, 0x361e7f407a6e75acL, "attribuut"), (SNode) attribuut);
             SLinkOperations.setTarget(waardeAttribuut, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fdaL, 0x1fabc0b15d99c735L, "attribuut"), referentieNaarAttribuutMetReferentieNaarKenmerk);
 
             {
@@ -111,7 +111,7 @@ public final class ObjectInstantie__BehaviorDescriptor extends BaseBHDescriptor 
             System.out.println("attribuut in subject" + attribuut);
             SNode waardeAttribuut = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fdaL, "Gegevens.structure.WaardeVanAttribuut"));
             SNode referentieNaarAttribuutMetReferentieNaarKenmerk = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a6e75abL, "Gegevens.structure.ReferentieNaarAttribuutMetReferentieNaarKenmerk"));
-            SLinkOperations.setTarget(referentieNaarAttribuutMetReferentieNaarKenmerk, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a6e75abL, 0x361e7f407a6e75acL, "attribuut"), attribuut);
+            SLinkOperations.setTarget(referentieNaarAttribuutMetReferentieNaarKenmerk, MetaAdapterFactory.getReferenceLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x361e7f407a6e75abL, 0x361e7f407a6e75acL, "attribuut"), (SNode) attribuut);
             SLinkOperations.setTarget(waardeAttribuut, MetaAdapterFactory.getContainmentLink(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x1fabc0b15d967fdaL, 0x1fabc0b15d99c735L, "attribuut"), referentieNaarAttribuutMetReferentieNaarKenmerk);
 
             {

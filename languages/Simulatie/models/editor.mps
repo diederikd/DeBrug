@@ -919,6 +919,15 @@
       </node>
       <node concept="3F1sOY" id="7vlBvUdAVQA" role="3EZMnx">
         <ref role="1NtTu8" to="xhlk:7vlBvUdAVQk" resolve="uittevoerendialoog" />
+        <node concept="pkWqt" id="5ncFbRc4qpB" role="pqm2j">
+          <node concept="3clFbS" id="5ncFbRc4qpC" role="2VODD2">
+            <node concept="3clFbF" id="5ncFbRc4qwL" role="3cqZAp">
+              <node concept="3clFbT" id="5ncFbRc4qwK" role="3clFbG">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="7vlBvUdAVQB" role="3EZMnx">
         <property role="3F0ifm" value="" />
@@ -9584,10 +9593,15 @@
                     </node>
                   </node>
                   <node concept="2oxUTD" id="2hDGrbY9D__" role="2OqNvi">
-                    <node concept="2OqwBi" id="2hDGrbY9DMV" role="2oxUTC">
-                      <node concept="1Q80Hx" id="2hDGrbY9DDV" role="2Oq$k0" />
-                      <node concept="liA8E" id="2hDGrbY9DYR" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSelectedNode" />
+                    <node concept="10QFUN" id="2092lglDTOa" role="2oxUTC">
+                      <node concept="3Tqbb2" id="2092lglDTTa" role="10QFUM">
+                        <ref role="ehGHo" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+                      </node>
+                      <node concept="2OqwBi" id="2hDGrbY9DMV" role="10QFUP">
+                        <node concept="1Q80Hx" id="2hDGrbY9DDV" role="2Oq$k0" />
+                        <node concept="liA8E" id="2hDGrbY9DYR" role="2OqNvi">
+                          <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSelectedNode" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -9609,10 +9623,15 @@
                     </node>
                   </node>
                   <node concept="2oxUTD" id="6ypYGXzbKyJ" role="2OqNvi">
-                    <node concept="2OqwBi" id="6ypYGXzbKCf" role="2oxUTC">
-                      <node concept="1Q80Hx" id="6ypYGXzbKCg" role="2Oq$k0" />
-                      <node concept="liA8E" id="6ypYGXzbKCh" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSelectedNode" />
+                    <node concept="10QFUN" id="2092lglDTCm" role="2oxUTC">
+                      <node concept="3Tqbb2" id="2092lglDTFw" role="10QFUM">
+                        <ref role="ehGHo" to="3pw0:3r$i424SGCk" resolve="InstantieVanObject" />
+                      </node>
+                      <node concept="2OqwBi" id="6ypYGXzbKCf" role="10QFUP">
+                        <node concept="1Q80Hx" id="6ypYGXzbKCg" role="2Oq$k0" />
+                        <node concept="liA8E" id="6ypYGXzbKCh" role="2OqNvi">
+                          <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSelectedNode" />
+                        </node>
                       </node>
                     </node>
                   </node>

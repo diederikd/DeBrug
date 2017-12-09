@@ -79,7 +79,9 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
     editorCell.addEditorCell(createConstant_fapojb_u0());
     editorCell.addEditorCell(createConstant_fapojb_v0());
     editorCell.addEditorCell(createConstant_fapojb_w0());
-    editorCell.addEditorCell(createRefNode_fapojb_x0());
+    if (nodeCondition_fapojb_a32a()) {
+      editorCell.addEditorCell(createRefNode_fapojb_x0());
+    }
     editorCell.addEditorCell(createConstant_fapojb_y0());
     editorCell.addEditorCell(createRefNode_fapojb_z0());
     if (nodeCondition_fapojb_a62a()) {
@@ -93,6 +95,9 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
     editorCell.addEditorCell(createConstant_fapojb_gb0());
     editorCell.addEditorCell(createRefNode_fapojb_hb0());
     return editorCell;
+  }
+  private boolean nodeCondition_fapojb_a32a() {
+    return false;
   }
   private boolean nodeCondition_fapojb_a62a() {
     return false;

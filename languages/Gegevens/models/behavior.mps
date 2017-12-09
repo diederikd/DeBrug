@@ -70,6 +70,10 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -794,8 +798,13 @@
                           </node>
                         </node>
                         <node concept="2oxUTD" id="3ouvO1UsI_Q" role="2OqNvi">
-                          <node concept="2GrUjf" id="3ouvO1UsIEj" role="2oxUTC">
-                            <ref role="2Gs0qQ" node="3ouvO1UoCG4" resolve="attribuut" />
+                          <node concept="10QFUN" id="2092lglDWmM" role="2oxUTC">
+                            <node concept="3Tqbb2" id="2092lglDWmN" role="10QFUM">
+                              <ref role="ehGHo" to="uwhu:7rcH1JNvmQQ" resolve="AttribuutMetReferentieNaarKenmerk" />
+                            </node>
+                            <node concept="2GrUjf" id="2092lglDWmO" role="10QFUP">
+                              <ref role="2Gs0qQ" node="3ouvO1UoCG4" resolve="attribuut" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -1209,8 +1218,13 @@
                           </node>
                         </node>
                         <node concept="2oxUTD" id="GhrpPwXxoN" role="2OqNvi">
-                          <node concept="2GrUjf" id="GhrpPwXxoO" role="2oxUTC">
-                            <ref role="2Gs0qQ" node="GhrpPwXxom" resolve="attribuut" />
+                          <node concept="10QFUN" id="2092lglDVtf" role="2oxUTC">
+                            <node concept="3Tqbb2" id="2092lglDVJS" role="10QFUM">
+                              <ref role="ehGHo" to="uwhu:7rcH1JNvmQQ" resolve="AttribuutMetReferentieNaarKenmerk" />
+                            </node>
+                            <node concept="2GrUjf" id="GhrpPwXxoO" role="10QFUP">
+                              <ref role="2Gs0qQ" node="GhrpPwXxom" resolve="attribuut" />
+                            </node>
                           </node>
                         </node>
                       </node>

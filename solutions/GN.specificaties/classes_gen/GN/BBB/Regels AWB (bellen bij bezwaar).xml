@@ -10,7 +10,6 @@
             <property name='definitie'>Onder bestuursorgaan wordt verstaan:
 a. een orgaan van een rechtspersoon die krachtens publiekrecht is ingesteld, of
 b. een ander persoon of college, met enig openbaar gezag bekleed.</property>
-            <property name='alias'></property>
             <property name='name'>Bestuursorgaaan</property>
         </properties>
         <children>
@@ -22,7 +21,6 @@ b. een ander persoon of college, met enig openbaar gezag bekleed.</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -35,7 +33,6 @@ b. een ander persoon of college, met enig openbaar gezag bekleed.</property>
         <properties>
             <property name='definitie'>Onder belanghebbende wordt verstaan: 
 degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
-            <property name='alias'></property>
             <property name='name'>Belanghebbende</property>
         </properties>
         <children>
@@ -47,7 +44,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -60,7 +56,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
       <nodename>Bezwaar of beroep</nodename>
       <nodeid>3694879098890429945</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Bezwaar of beroep</property>
         </properties>
         <children>
@@ -72,7 +67,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -83,7 +77,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>Naam Indiener</property>
               </properties>
               <children>
@@ -95,7 +88,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>1000</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -103,7 +95,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                   <nodetype>RijVanKaraktersType</nodetype>
                   <nodeid>6470037848739763325</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -116,7 +107,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>Adres Indiender</property>
               </properties>
               <children>
@@ -128,7 +118,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>1000</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -136,7 +125,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                   <nodetype>RijVanKaraktersType</nodetype>
                   <nodeid>6470037848739763345</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -149,7 +137,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>Omschrijving van het besluit waartegen het bezwaar of beroep is gericht</property>
               </properties>
               <children>
@@ -161,7 +148,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>1000</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -169,7 +155,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                   <nodetype>RijVanKaraktersType</nodetype>
                   <nodeid>6470037848739763371</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -182,7 +167,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>Gronden van het bezwaar of beroep</property>
               </properties>
               <children>
@@ -194,7 +178,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>1000</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
                 <node>
@@ -202,7 +185,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                   <nodetype>RijVanKaraktersType</nodetype>
                   <nodeid>6470037848739763403</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -215,7 +197,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
       <nodename>Beschikking</nodename>
       <nodeid>5963877418551443735</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Beschikking</property>
         </properties>
         <children>
@@ -227,7 +208,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -243,7 +223,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
       <nodeid>5963877418551606430</nodeid>
         <properties>
             <property name='initieel'>true</property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegheid tot het indienen van een bezwaar</property>
             <property name='kortenaam'>Optionele bevoegheid tot het indienen van een bezwaar</property>
         </properties>
@@ -256,7 +235,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -265,7 +243,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
             <nodename>Abw 6:4 - 1</nodename>
             <nodeid>5963877418551606504</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Abw 6:4 - 1</property>
               </properties>
           </node>
@@ -275,7 +252,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
             <nodename>datum waarop de beschikking is afgegeven</nodename>
             <nodeid>4271677511962363083</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum waarop de beschikking is afgegeven</property>
               </properties>
           </node>
@@ -322,7 +298,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
       <nodeid>6470037848739763418</nodeid>
         <properties>
             <property name='initieel'></property>
-            <property name='alias'></property>
             <property name='name'>Bezwaar of beroep is ingediend</property>
             <property name='kortenaam'>Bezwaar of beroep is ingediend</property>
         </properties>
@@ -335,7 +310,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -344,7 +318,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
             <nodename>Abw 6:9 - 1</nodename>
             <nodeid>6470037848739763441</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Abw 6:9 - 1</property>
               </properties>
           </node>
@@ -354,7 +327,6 @@ degene wiens belang rechtstreeks bij een besluit is betrokken.</property>
             <nodename>datum van het indienen van het bezwaar of beroep</nodename>
             <nodeid>4271677511962363085</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum van het indienen van het bezwaar of beroep</property>
               </properties>
           </node>
@@ -402,7 +374,6 @@ de ontvangst van het bezwaar of beroep</nodename>
       <nodeid>6470037848739763463</nodeid>
         <properties>
             <property name='initieel'></property>
-            <property name='alias'></property>
             <property name='name'>Verplichte bevoegdheid tot het schriftelijk bevestigen van 
 de ontvangst van het bezwaar of beroep</property>
             <property name='kortenaam'>Verplichte bevoegdheid tot het schriftelijk bevestigen van 
@@ -417,7 +388,6 @@ de ontvangst van het bezwaar of beroep</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -426,7 +396,6 @@ de ontvangst van het bezwaar of beroep</property>
             <nodename>Abw 6:16 - 1</nodename>
             <nodeid>6470037848739763493</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Abw 6:16 - 1</property>
               </properties>
           </node>
@@ -436,7 +405,6 @@ de ontvangst van het bezwaar of beroep</property>
             <nodename>datum van het indienen van het bezwaar of beroep</nodename>
             <nodeid>4271677511962363087</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum van het indienen van het bezwaar of beroep</property>
               </properties>
           </node>
@@ -446,7 +414,6 @@ de ontvangst van het bezwaar of beroep</property>
             <nodename>datum waarop de ontvangst schriftelijk is bevestigd</nodename>
             <nodeid>4271677511962363089</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum waarop de ontvangst schriftelijk is bevestigd</property>
               </properties>
           </node>
@@ -494,7 +461,6 @@ van het bezwaar of beroep</nodename>
       <nodeid>6470037848739763510</nodeid>
         <properties>
             <property name='initieel'></property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegheid tot het schiftelijk intrekken 
 van het bezwaar of beroep</property>
             <property name='kortenaam'>Optionele bevoegheid tot het schiftelijk intrekken 
@@ -509,7 +475,6 @@ van het bezwaar of beroep</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -518,7 +483,6 @@ van het bezwaar of beroep</property>
             <nodename>Abw 6:21 - 1</nodename>
             <nodeid>6470037848739763603</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Abw 6:21 - 1</property>
               </properties>
           </node>
@@ -528,7 +492,6 @@ van het bezwaar of beroep</property>
             <nodename>datum van het indienen van het bezwaar of beroep</nodename>
             <nodeid>4271677511962363091</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum van het indienen van het bezwaar of beroep</property>
               </properties>
           </node>
@@ -575,7 +538,6 @@ van het bezwaar of beroep</property>
       <nodeid>6470037848739763564</nodeid>
         <properties>
             <property name='initieel'></property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegheid tot het mondeling intrekken van het bezwaar of beroep</property>
             <property name='kortenaam'>Optionele bevoegheid tot het mondeling intrekken van het bezwaar of beroep</property>
         </properties>
@@ -588,7 +550,6 @@ van het bezwaar of beroep</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -597,7 +558,6 @@ van het bezwaar of beroep</property>
             <nodename>Abw 6:21 - 2</nodename>
             <nodeid>6470037848739763605</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Abw 6:21 - 2</property>
               </properties>
           </node>
@@ -607,7 +567,6 @@ van het bezwaar of beroep</property>
             <nodename>datum van het indienen van het bezwaar of beroep</nodename>
             <nodeid>4271677511962363093</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum van het indienen van het bezwaar of beroep</property>
               </properties>
           </node>
@@ -654,7 +613,6 @@ van het bezwaar of beroep</property>
       <nodeid>5963877418551442920</nodeid>
         <properties>
             <property name='initieel'></property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegheid om te bellen bij bezwaar, door selecteur</property>
             <property name='kortenaam'>Optionele bevoegheid om te bellen bij bezwaar, door selecteur</property>
         </properties>
@@ -667,7 +625,6 @@ van het bezwaar of beroep</property>
                   <property name='dag'>11</property>
                   <property name='maand'>11</property>
                   <property name='jaar'>2009</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -676,7 +633,6 @@ van het bezwaar of beroep</property>
             <nodename>Werkinstructie bellen bij bezwaar</nodename>
             <nodeid>5963877418551442960</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Werkinstructie bellen bij bezwaar</property>
               </properties>
           </node>
@@ -686,7 +642,6 @@ van het bezwaar of beroep</property>
             <nodename>datum van het indienen van het bezwaar of beroep</nodename>
             <nodeid>4271677511962363347</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum van het indienen van het bezwaar of beroep</property>
               </properties>
           </node>
@@ -733,7 +688,6 @@ van het bezwaar of beroep</property>
       <nodeid>5963877418551443003</nodeid>
         <properties>
             <property name='initieel'></property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegheid bij bellen om het bezwaar in te trekken</property>
             <property name='kortenaam'>Optionele bevoegheid bij bellen om het bezwaar in te trekken</property>
         </properties>
@@ -746,7 +700,6 @@ van het bezwaar of beroep</property>
                   <property name='dag'>11</property>
                   <property name='maand'>11</property>
                   <property name='jaar'>2009</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -754,7 +707,6 @@ van het bezwaar of beroep</property>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>5963877418551443203</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -773,7 +725,6 @@ van het bezwaar of beroep</property>
             <nodename>datum waarop wordt gebeld</nodename>
             <nodeid>4271677511962363349</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum waarop wordt gebeld</property>
               </properties>
           </node>
@@ -820,7 +771,6 @@ van het bezwaar of beroep</property>
       <nodeid>8316879955948253757</nodeid>
         <properties>
             <property name='initieel'></property>
-            <property name='alias'></property>
             <property name='name'>Verplichting tot het schriftelijk bevestigen van het intrekken van het bezwaar</property>
             <property name='kortenaam'>Verplichting tot het schriftelijk bevestigen van het intrekken van het bezwaar</property>
         </properties>
@@ -833,7 +783,6 @@ van het bezwaar of beroep</property>
                   <property name='dag'>11</property>
                   <property name='maand'>11</property>
                   <property name='jaar'>2009</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -841,7 +790,6 @@ van het bezwaar of beroep</property>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>8316879955948253837</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -862,7 +810,6 @@ van het bezwaar of beroep</property>
                   <property name='dag'>26</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2011</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -871,7 +818,6 @@ van het bezwaar of beroep</property>
             <nodename>datum waarop wordt gebeld</nodename>
             <nodeid>4271677511962363351</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum waarop wordt gebeld</property>
               </properties>
           </node>
@@ -919,7 +865,6 @@ van het intrekken van het bezwaar</nodename>
       <nodeid>8316879955948479260</nodeid>
         <properties>
             <property name='initieel'></property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegdheid om te reageren op de schriftelijk bevestiging 
 van het intrekken van het bezwaar</property>
             <property name='kortenaam'>Optionele bevoegdheid om te reageren op de schriftelijk bevestiging 
@@ -934,7 +879,6 @@ van het intrekken van het bezwaar</property>
                   <property name='dag'>11</property>
                   <property name='maand'>11</property>
                   <property name='jaar'>2009</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -945,7 +889,6 @@ van het intrekken van het bezwaar</property>
                   <property name='dag'>26</property>
                   <property name='maand'>4</property>
                   <property name='jaar'>2011</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -954,7 +897,6 @@ van het intrekken van het bezwaar</property>
             <nodename>datum waarop wordt gebeld</nodename>
             <nodeid>4271677511962363353</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum waarop wordt gebeld</property>
               </properties>
           </node>
@@ -964,7 +906,6 @@ van het intrekken van het bezwaar</property>
             <nodename>datum waarop de reactietermijn is verstreken</nodename>
             <nodeid>4271677511962363355</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum waarop de reactietermijn is verstreken</property>
               </properties>
           </node>
@@ -1011,7 +952,6 @@ van het intrekken van het bezwaar</property>
       <nodeid>5963877418551443058</nodeid>
         <properties>
             <property name='initieel'></property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken</property>
             <property name='kortenaam'>Optionele bevoegheid bij bellen om het bezwaar gedeeltelijk in te trekken</property>
         </properties>
@@ -1024,7 +964,6 @@ van het intrekken van het bezwaar</property>
                   <property name='dag'>11</property>
                   <property name='maand'>11</property>
                   <property name='jaar'>2009</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1032,7 +971,6 @@ van het intrekken van het bezwaar</property>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>5963877418551443205</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -1051,7 +989,6 @@ van het intrekken van het bezwaar</property>
             <nodename>datum waarop wordt gebeld</nodename>
             <nodeid>4271677511962363468</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum waarop wordt gebeld</property>
               </properties>
           </node>
@@ -1098,7 +1035,6 @@ van het intrekken van het bezwaar</property>
       <nodeid>5963877418551443102</nodeid>
         <properties>
             <property name='initieel'></property>
-            <property name='alias'></property>
             <property name='name'>Optionele bevoegheid om het bezwaar door te zetten</property>
             <property name='kortenaam'>Optionele bevoegheid om het bezwaar door te zetten</property>
         </properties>
@@ -1111,7 +1047,6 @@ van het intrekken van het bezwaar</property>
                   <property name='dag'>11</property>
                   <property name='maand'>11</property>
                   <property name='jaar'>2009</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1119,7 +1054,6 @@ van het intrekken van het bezwaar</property>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>5963877418551443207</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -1138,7 +1072,6 @@ van het intrekken van het bezwaar</property>
             <nodename>datum waarop wordt gebeld</nodename>
             <nodeid>4271677511962363470</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum waarop wordt gebeld</property>
               </properties>
           </node>
@@ -1185,7 +1118,6 @@ van het intrekken van het bezwaar</property>
       <nodeid>5963877418551443209</nodeid>
         <properties>
             <property name='initieel'></property>
-            <property name='alias'></property>
             <property name='name'>Verplichte bevoegdheid tot het behandelen van het bezwaar</property>
             <property name='kortenaam'>Verplichte bevoegdheid tot het behandelen van het bezwaar</property>
         </properties>
@@ -1198,7 +1130,6 @@ van het intrekken van het bezwaar</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1206,7 +1137,6 @@ van het intrekken van het bezwaar</property>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>8316879955948249063</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -1225,7 +1155,6 @@ van het intrekken van het bezwaar</property>
             <nodename>datum waarop bezwaar wordt doorgezet</nodename>
             <nodeid>4271677511962363472</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum waarop bezwaar wordt doorgezet</property>
               </properties>
           </node>
@@ -1273,7 +1202,6 @@ van het intrekken van het bezwaar</property>
       <nodename>Indienen bezwaar of beroep</nodename>
       <nodeid>6760352791746103974</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Indienen bezwaar of beroep</property>
             <property name='kortenaam'>Indienen bezwaar of beroep</property>
         </properties>
@@ -1283,7 +1211,6 @@ van het intrekken van het bezwaar</property>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6760352791746104005</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -1304,7 +1231,6 @@ van het intrekken van het bezwaar</property>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1312,7 +1238,6 @@ van het intrekken van het bezwaar</property>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6760352791746104008</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -1331,7 +1256,6 @@ van het intrekken van het bezwaar</property>
             <nodename>bezwaar of beroep ingediend</nodename>
             <nodeid>5963877418551443960</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>bezwaar of beroep ingediend</property>
               </properties>
               <children>
@@ -1340,7 +1264,6 @@ van het intrekken van het bezwaar</property>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518266</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1358,7 +1281,6 @@ van het intrekken van het bezwaar</property>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518291</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1377,7 +1299,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518309</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1395,7 +1316,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518340</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1414,7 +1334,6 @@ van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518362</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1437,7 +1356,6 @@ van het bezwaar of beroep</nodename>
       <nodename>Schriftelijk bevestigen van de ontvangst van het bezwaar of beroep</nodename>
       <nodeid>5963877418551443897</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Schriftelijk bevestigen van de ontvangst van het bezwaar of beroep</property>
             <property name='kortenaam'>Schriftelijk bevestigen van de ontvangst van het bezwaar of beroep</property>
         </properties>
@@ -1447,7 +1365,6 @@ van het bezwaar of beroep</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>5963877418551443955</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -1468,7 +1385,6 @@ van het bezwaar of beroep</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1476,7 +1392,6 @@ van het bezwaar of beroep</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>5963877418551443949</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -1495,7 +1410,6 @@ van het bezwaar of beroep</nodename>
             <nodename>ontvangst bevestigd</nodename>
             <nodeid>5963877418551443958</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>ontvangst bevestigd</property>
               </properties>
               <children>
@@ -1504,7 +1418,6 @@ van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518382</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1528,7 +1441,6 @@ de ontvangst van het bezwaar of beroep</nodename>
       <nodename>Schriftelijk intrekken van het bezwaar of beroep</nodename>
       <nodeid>6470037848739763665</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Schriftelijk intrekken van het bezwaar of beroep</property>
             <property name='kortenaam'>Schriftelijk intrekken van het bezwaar of beroep</property>
         </properties>
@@ -1538,7 +1450,6 @@ de ontvangst van het bezwaar of beroep</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6470037848739763690</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -1559,7 +1470,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1567,7 +1477,6 @@ de ontvangst van het bezwaar of beroep</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6470037848739763725</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -1586,7 +1495,6 @@ de ontvangst van het bezwaar of beroep</nodename>
             <nodename>verzoek is ingetrokken</nodename>
             <nodeid>6470037848739763693</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>verzoek is ingetrokken</property>
               </properties>
               <children>
@@ -1595,7 +1503,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518392</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1613,7 +1520,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518404</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1631,7 +1537,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518418</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1655,7 +1560,6 @@ van het bezwaar of beroep</nodename>
       <nodename>Mondeling intrekken van het bezwaar of beroep </nodename>
       <nodeid>6470037848739763613</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Mondeling intrekken van het bezwaar of beroep </property>
             <property name='kortenaam'>Mondeling intrekken van het bezwaar of beroep </property>
         </properties>
@@ -1665,7 +1569,6 @@ van het bezwaar of beroep</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>6470037848739763621</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -1686,7 +1589,6 @@ van het bezwaar of beroep</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1694,7 +1596,6 @@ van het bezwaar of beroep</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>6470037848739763728</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -1713,7 +1614,6 @@ van het bezwaar of beroep</nodename>
             <nodename>bezwaar of beroep is ingetrokken</nodename>
             <nodeid>6470037848739763630</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>bezwaar of beroep is ingetrokken</property>
               </properties>
               <children>
@@ -1722,7 +1622,6 @@ van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518434</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1740,7 +1639,6 @@ van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518446</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1758,7 +1656,6 @@ van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518468</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1780,7 +1677,6 @@ van het bezwaar of beroep</nodename>
             <nodename></nodename>
             <nodeid>6133486975031622907</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'></property>
               </properties>
               <children>
@@ -1790,7 +1686,6 @@ van het bezwaar of beroep</nodename>
                   <nodename>er is sprake van horen.</nodename>
                   <nodeid>4322810351014932037</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'>er is sprake van horen.</property>
                     </properties>
                 </node>
@@ -1799,7 +1694,6 @@ van het bezwaar of beroep</nodename>
                   <nodetype>ConditieAlle</nodetype>
                   <nodeid>6133486975031622912</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -1812,7 +1706,6 @@ van het bezwaar of beroep</nodename>
       <nodename>Bellen bij bezwaar</nodename>
       <nodeid>5963877418551607461</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Bellen bij bezwaar</property>
             <property name='kortenaam'>Bellen bij bezwaar</property>
         </properties>
@@ -1822,7 +1715,6 @@ van het bezwaar of beroep</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>5963877418551608527</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -1843,7 +1735,6 @@ van het bezwaar of beroep</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -1851,7 +1742,6 @@ van het bezwaar of beroep</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>5963877418551607526</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -1870,7 +1760,6 @@ van het bezwaar of beroep</nodename>
             <nodename>gebeld bij bezwaar</nodename>
             <nodeid>5963877418551607579</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>gebeld bij bezwaar</property>
               </properties>
               <children>
@@ -1879,7 +1768,6 @@ van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518525</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1897,7 +1785,6 @@ van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518535</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1916,7 +1803,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518484</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1934,7 +1820,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518496</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1952,7 +1837,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518510</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -1975,7 +1859,6 @@ de ontvangst van het bezwaar of beroep</nodename>
       <nodename>Intrekken bezwaar bij bellen</nodename>
       <nodeid>5963877418551443309</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Intrekken bezwaar bij bellen</property>
             <property name='kortenaam'>Intrekken bezwaar bij bellen</property>
         </properties>
@@ -1985,7 +1868,6 @@ de ontvangst van het bezwaar of beroep</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>5963877418551443346</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2006,7 +1888,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <property name='dag'>11</property>
                   <property name='maand'>11</property>
                   <property name='jaar'>2009</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2014,7 +1895,6 @@ de ontvangst van het bezwaar of beroep</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>5963877418551443344</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2033,7 +1913,6 @@ de ontvangst van het bezwaar of beroep</nodename>
             <nodename>bezwaar modeling ingetrokken</nodename>
             <nodeid>5963877418551443353</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>bezwaar modeling ingetrokken</property>
               </properties>
               <children>
@@ -2042,7 +1921,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518556</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2060,7 +1938,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518568</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2078,7 +1955,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518582</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2096,7 +1972,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518546</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2119,7 +1994,6 @@ de ontvangst van het bezwaar of beroep</nodename>
       <nodename>Schriftelijk bevestigen van het intrekken van het bezwaar</nodename>
       <nodeid>8316879955948253941</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Schriftelijk bevestigen van het intrekken van het bezwaar</property>
             <property name='kortenaam'>Schriftelijk bevestigen van het intrekken van het bezwaar</property>
         </properties>
@@ -2129,7 +2003,6 @@ de ontvangst van het bezwaar of beroep</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>8316879955948254045</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2150,7 +2023,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2158,7 +2030,6 @@ de ontvangst van het bezwaar of beroep</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>8316879955948254043</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2177,7 +2048,6 @@ de ontvangst van het bezwaar of beroep</nodename>
             <nodename>Schriftelijk bevestigd bezwaar ingetrokken</nodename>
             <nodeid>8316879955948254052</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Schriftelijk bevestigd bezwaar ingetrokken</property>
               </properties>
               <children>
@@ -2186,7 +2056,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518608</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2204,7 +2073,6 @@ de ontvangst van het bezwaar of beroep</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518596</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2228,7 +2096,6 @@ van het intrekken van het bezwaar</nodename>
       <nodename>Reageren op de schriftelijk bevestiging van het intrekken van het bezwaar</nodename>
       <nodeid>8316879955948480767</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Reageren op de schriftelijk bevestiging van het intrekken van het bezwaar</property>
             <property name='kortenaam'>Reageren op de schriftelijk bevestiging van het intrekken van het bezwaar</property>
         </properties>
@@ -2238,7 +2105,6 @@ van het intrekken van het bezwaar</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>8316879955948480887</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2259,7 +2125,6 @@ van het intrekken van het bezwaar</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2267,7 +2132,6 @@ van het intrekken van het bezwaar</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>8316879955948480885</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2286,7 +2150,6 @@ van het intrekken van het bezwaar</nodename>
             <nodename>Schriftelijk gereageerd op bevestiging </nodename>
             <nodeid>8316879955948480890</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Schriftelijk gereageerd op bevestiging </property>
               </properties>
               <children>
@@ -2295,7 +2158,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518616</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2319,7 +2181,6 @@ van het intrekken van het bezwaar</nodename>
       <nodename>Geen reactie op de bevestiging van het intrekken binnen de reactietermijn</nodename>
       <nodeid>8316879955948478096</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Geen reactie op de bevestiging van het intrekken binnen de reactietermijn</property>
             <property name='kortenaam'>Geen reactie op de bevestiging van het intrekken binnen de reactietermijn</property>
         </properties>
@@ -2332,7 +2193,6 @@ van het intrekken van het bezwaar</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2340,7 +2200,6 @@ van het intrekken van het bezwaar</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>8316879955948478207</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2359,7 +2218,6 @@ van het intrekken van het bezwaar</nodename>
             <nodename>Geen reactie op bevestiging</nodename>
             <nodeid>8316879955948478209</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Geen reactie op bevestiging</property>
               </properties>
               <children>
@@ -2368,7 +2226,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518625</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2387,7 +2244,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518635</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2408,7 +2264,6 @@ van het intrekken van het bezwaar</nodename>
             <nodename></nodename>
             <nodeid>6133486975031622915</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'></property>
               </properties>
               <children>
@@ -2418,7 +2273,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodename>Reactietermijn is verstreken.</nodename>
                   <nodeid>2719671791663580756</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'>Reactietermijn is verstreken.</property>
                     </properties>
                 </node>
@@ -2427,7 +2281,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ConditieAlle</nodetype>
                   <nodeid>6133486975031622920</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -2440,7 +2293,6 @@ van het intrekken van het bezwaar</nodename>
       <nodename>Gedeeltelijk intrekken bezwaar bij bellen</nodename>
       <nodeid>5963877418551443389</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Gedeeltelijk intrekken bezwaar bij bellen</property>
             <property name='kortenaam'>Gedeeltelijk intrekken bezwaar bij bellen</property>
         </properties>
@@ -2450,7 +2302,6 @@ van het intrekken van het bezwaar</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>5963877418551443445</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2471,7 +2322,6 @@ van het intrekken van het bezwaar</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2479,7 +2329,6 @@ van het intrekken van het bezwaar</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>5963877418551443431</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2500,7 +2349,6 @@ van het intrekken van het bezwaar</nodename>
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>datum gedeeltelijk intrekken bezwaar</property>
               </properties>
               <children>
@@ -2512,7 +2360,6 @@ van het intrekken van het bezwaar</nodename>
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>1000</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -2523,7 +2370,6 @@ van het intrekken van het bezwaar</nodename>
             <nodename>bezwaar gedeeltelijk ingetrokken</nodename>
             <nodeid>5963877418551443448</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>bezwaar gedeeltelijk ingetrokken</property>
               </properties>
               <children>
@@ -2532,7 +2378,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518646</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2550,7 +2395,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518655</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2568,7 +2412,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518665</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2591,7 +2434,6 @@ van het intrekken van het bezwaar</nodename>
       <nodename>Doorzetten bezwaar</nodename>
       <nodeid>5963877418551607692</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Doorzetten bezwaar</property>
             <property name='kortenaam'>Doorzetten bezwaar</property>
         </properties>
@@ -2601,7 +2443,6 @@ van het intrekken van het bezwaar</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>5963877418551608530</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2622,7 +2463,6 @@ van het intrekken van het bezwaar</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2630,7 +2470,6 @@ van het intrekken van het bezwaar</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>5963877418551607771</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2651,7 +2490,6 @@ van het intrekken van het bezwaar</nodename>
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>datum doorzetten bezwaar</property>
               </properties>
               <children>
@@ -2663,7 +2501,6 @@ van het intrekken van het bezwaar</nodename>
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>1000</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -2674,7 +2511,6 @@ van het intrekken van het bezwaar</nodename>
             <nodename>bezwaar doorgezet</nodename>
             <nodeid>5963877418551607780</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>bezwaar doorgezet</property>
               </properties>
               <children>
@@ -2683,7 +2519,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518676</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2701,7 +2536,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518687</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2719,7 +2553,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518701</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2737,7 +2570,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518717</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2755,7 +2587,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518735</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2778,7 +2609,6 @@ van het intrekken van het bezwaar</nodename>
       <nodename>Bezwaar behandelen</nodename>
       <nodeid>5963877418551608154</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Bezwaar behandelen</property>
             <property name='kortenaam'>Bezwaar behandelen</property>
         </properties>
@@ -2788,7 +2618,6 @@ van het intrekken van het bezwaar</nodename>
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>5963877418551608533</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -2809,7 +2638,6 @@ van het intrekken van het bezwaar</nodename>
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -2817,7 +2645,6 @@ van het intrekken van het bezwaar</nodename>
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>5963877418551608242</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -2838,7 +2665,6 @@ van het intrekken van het bezwaar</nodename>
               <properties>
                   <property name='meervoudig'></property>
                   <property name='optioneel'></property>
-                  <property name='alias'></property>
                   <property name='name'>datum behandelen</property>
               </properties>
               <children>
@@ -2850,7 +2676,6 @@ van het intrekken van het bezwaar</nodename>
                         <property name='dag'>1</property>
                         <property name='maand'>1</property>
                         <property name='jaar'>1000</property>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -2861,7 +2686,6 @@ van het intrekken van het bezwaar</nodename>
             <nodename>bezwaar behandeld</nodename>
             <nodeid>5963877418551608251</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>bezwaar behandeld</property>
               </properties>
               <children>
@@ -2870,7 +2694,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518753</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -2888,7 +2711,6 @@ van het intrekken van het bezwaar</nodename>
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518763</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>

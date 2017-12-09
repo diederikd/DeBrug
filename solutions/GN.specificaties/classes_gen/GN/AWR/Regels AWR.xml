@@ -8,7 +8,6 @@
       <nodeid>5540471952145969698</nodeid>
         <properties>
             <property name='definitie'></property>
-            <property name='alias'></property>
             <property name='name'>Belastingplichtige</property>
         </properties>
         <children>
@@ -20,7 +19,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -32,7 +30,6 @@
       <nodeid>5540471952145969706</nodeid>
         <properties>
             <property name='definitie'></property>
-            <property name='alias'></property>
             <property name='name'>Inspecteur</property>
         </properties>
         <children>
@@ -44,7 +41,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -56,7 +52,6 @@
       <nodeid>3498791725963656049</nodeid>
         <properties>
             <property name='definitie'></property>
-            <property name='alias'></property>
             <property name='name'>Persoon</property>
         </properties>
         <children>
@@ -68,7 +63,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -81,7 +75,6 @@
       <nodename>Uitnodiging tot het doen van aangifte</nodename>
       <nodeid>3498791725963656075</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Uitnodiging tot het doen van aangifte</property>
         </properties>
         <children>
@@ -93,7 +86,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -104,7 +96,6 @@
       <nodename>Verzoek om te worden uitgenodigd</nodename>
       <nodeid>3906693623811143160</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Verzoek om te worden uitgenodigd</property>
         </properties>
         <children>
@@ -116,7 +107,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -127,7 +117,6 @@
       <nodename>Aangifte</nodename>
       <nodeid>3498791725963656089</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Aangifte</property>
         </properties>
         <children>
@@ -139,7 +128,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -150,7 +138,6 @@
       <nodename>Aanslag</nodename>
       <nodeid>3498791725963656095</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Aanslag</property>
         </properties>
         <children>
@@ -162,7 +149,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
         </children>
@@ -178,7 +164,6 @@
       <nodeid>3498791725963656061</nodeid>
         <properties>
             <property name='initieel'>true</property>
-            <property name='alias'></property>
             <property name='name'>Bevoegdheid tot het uitnodigen tot het doen van aangifte</property>
             <property name='kortenaam'>Bevoegdheid tot het uitnodigen tot het doen van aangifte</property>
         </properties>
@@ -189,7 +174,6 @@
             <nodename>Ingangsdatum van de wet</nodename>
             <nodeid>3498791725963656122</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>Ingangsdatum van de wet</property>
               </properties>
           </node>
@@ -201,7 +185,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -210,7 +193,6 @@
             <nodename>AWR - artikel 6-1</nodename>
             <nodeid>3498791725963656073</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>AWR - artikel 6-1</property>
               </properties>
           </node>
@@ -257,7 +239,6 @@
       <nodeid>3906693623811143187</nodeid>
         <properties>
             <property name='initieel'>true</property>
-            <property name='alias'></property>
             <property name='name'>De bevoegdheid om te verzoeken om te worden uitgenodigd</property>
             <property name='kortenaam'>De bevoegdheid om te verzoeken om te worden uitgenodigd</property>
         </properties>
@@ -268,7 +249,6 @@
             <nodename>ingangsdatum van de wet</nodename>
             <nodeid>3906693623811143210</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>ingangsdatum van de wet</property>
               </properties>
           </node>
@@ -280,7 +260,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -289,7 +268,6 @@
             <nodename>AWR - artikel 6-2</nodename>
             <nodeid>3906693623811143208</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>AWR - artikel 6-2</property>
               </properties>
           </node>
@@ -336,7 +314,6 @@
       <nodeid>3906693623811143233</nodeid>
         <properties>
             <property name='initieel'>false</property>
-            <property name='alias'></property>
             <property name='name'>Verplichting tot het uitnodigen tot het doen van aangifte</property>
             <property name='kortenaam'>Verplichting tot het uitnodigen tot het doen van aangifte</property>
         </properties>
@@ -347,7 +324,6 @@
             <nodename>datum indienen verzoek</nodename>
             <nodeid>3906693623811143260</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>datum indienen verzoek</property>
               </properties>
           </node>
@@ -359,7 +335,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>2000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -367,7 +342,6 @@
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>3906693623811143258</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>
@@ -423,7 +397,6 @@
       <nodeid>3906693623811143152</nodeid>
         <properties>
             <property name='initieel'>true</property>
-            <property name='alias'></property>
             <property name='name'>De verplichting om te verzoeken om te worden uitgenodigd</property>
             <property name='kortenaam'>De verplichting om te verzoeken om te worden uitgenodigd</property>
         </properties>
@@ -434,7 +407,6 @@
             <nodename>AWR - artikel 6-3</nodename>
             <nodeid>3906693623811143150</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>AWR - artikel 6-3</property>
               </properties>
           </node>
@@ -446,7 +418,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -455,7 +426,6 @@
             <nodename>ingangsdatum van de wet</nodename>
             <nodeid>3906693623811143170</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>ingangsdatum van de wet</property>
               </properties>
           </node>
@@ -465,7 +435,6 @@
             <nodename></nodename>
             <nodeid>6133486975031622923</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'></property>
               </properties>
               <children>
@@ -475,7 +444,6 @@
                   <nodename>De bij Ministeriele regeling vastgestelde voorwaarden</nodename>
                   <nodeid>3906693623811143172</nodeid>
                     <properties>
-                        <property name='alias'></property>
                         <property name='name'>De bij Ministeriele regeling vastgestelde voorwaarden</property>
                     </properties>
                 </node>
@@ -484,7 +452,6 @@
                   <nodetype>ConditieAlle</nodetype>
                   <nodeid>6133486975031622928</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                 </node>
               </children>
@@ -533,7 +500,6 @@
       <nodename>Uitnodigen tot het doen van aangifte</nodename>
       <nodeid>3498791725963656107</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Uitnodigen tot het doen van aangifte</property>
             <property name='kortenaam'>Uitnodigen tot het doen van aangifte</property>
         </properties>
@@ -543,7 +509,6 @@
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>3498791725963656119</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -564,7 +529,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -573,7 +537,6 @@
             <nodename>uitgenodigd tot het doen van aangifte</nodename>
             <nodeid>3394739490395477760</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>uitgenodigd tot het doen van aangifte</property>
               </properties>
               <children>
@@ -582,7 +545,6 @@
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518214</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -600,7 +562,6 @@
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518226</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -618,7 +579,6 @@
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518240</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -641,7 +601,6 @@
       <nodename>Indienen van een verzoek om te worden uitgenodigd</nodename>
       <nodeid>3906693623811143135</nodeid>
         <properties>
-            <property name='alias'></property>
             <property name='name'>Indienen van een verzoek om te worden uitgenodigd</property>
             <property name='kortenaam'>Indienen van een verzoek om te worden uitgenodigd</property>
         </properties>
@@ -651,7 +610,6 @@
             <nodetype>ReferentieNaarRechtssubject</nodetype>
             <nodeid>3906693623811143213</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='rechtssubject'>
@@ -672,7 +630,6 @@
                   <property name='dag'>1</property>
                   <property name='maand'>1</property>
                   <property name='jaar'>1000</property>
-                  <property name='alias'></property>
               </properties>
           </node>
           <node>
@@ -681,7 +638,6 @@
             <nodename>verzoek ingediend</nodename>
             <nodeid>3906693623811143263</nodeid>
               <properties>
-                  <property name='alias'></property>
                   <property name='name'>verzoek ingediend</property>
               </properties>
               <children>
@@ -690,7 +646,6 @@
                   <nodetype>ReferentieNaarRechtsbetrekking</nodetype>
                   <nodeid>2677844167537518254</nodeid>
                     <properties>
-                        <property name='alias'></property>
                     </properties>
                     <references>
                       <reference role='rechtsbetrekking'>
@@ -710,7 +665,6 @@
             <nodetype>ReferentieNaarArtikel</nodetype>
             <nodeid>3906693623811143267</nodeid>
               <properties>
-                  <property name='alias'></property>
               </properties>
               <references>
                 <reference role='artikel'>

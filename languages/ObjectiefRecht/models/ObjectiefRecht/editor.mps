@@ -8661,11 +8661,10 @@
     <property role="3GE5qa" value="ReferentieNaarKenmerk" />
     <ref role="1XX52x" to="3pw0:6T3DNjSpxTt" resolve="AbstractReferentieNaarKenmerk" />
     <node concept="3EZMnI" id="gIBqGO7oe0" role="2wV5jI">
-      <node concept="3F0A7n" id="gIBqGO7oea" role="3EZMnx">
-        <property role="1$x2rV" value="&lt;no kenmerk&gt;" />
-        <ref role="1NtTu8" to="tpck:gOOYy9I" resolve="alias" />
-      </node>
       <node concept="l2Vlx" id="gIBqGO7oe3" role="2iSdaV" />
+      <node concept="PMmxH" id="2092lgl_Amt" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1KpaLv9zXIX">
