@@ -29,142 +29,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f2805d-4538-46c3-a016-7128ec7e185d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Algemeen/source_gen/Algemeen/constraints/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Algemeen/source_gen/Algemeen/constraints/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Algemeen/source_gen/Algemeen/structure/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Algemeen/source_gen/Algemeen/structure/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Algemeen/source_gen/Algemeen/typesystem/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Algemeen/source_gen/Algemeen/typesystem/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/constraints/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/constraints/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/structure/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/structure/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/textGen/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/textGen/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/typesystem/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Datum/source_gen/Datum/typesystem/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/constraints/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/constraints/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/structure/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/textGen/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/textGen/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/typesystem/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/typesystem/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/constraints/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/constraints/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/structure/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/structure/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/typesystem/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen/Integriteit/typesystem/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/constraints/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/constraints/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/textGen/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/textGen/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/typesystem/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen/Interactie/typesystem/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/structure/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/structure/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/typesystem/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/typesystem/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/constraints/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/structure/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/structure/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/typesystem/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/typesystem/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/constraints/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/constraints/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/structure/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/structure/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/textGen/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/textGen/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/typesystem/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/typesystem/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/constraints/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/constraints/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/structure/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/structure/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/textGen/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/textGen/checkpoints" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/typesystem/aspectcps-descriptorclasses.mps" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen/SubjectiefRecht/typesystem/checkpoints" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/languages/Algemeen/Algemeen.mpl" afterPath="$PROJECT_DIR$/languages/Algemeen/Algemeen.mpl" />
       <change beforePath="$PROJECT_DIR$/languages/Algemeen/source_gen.caches/Algemeen/generated" afterPath="$PROJECT_DIR$/languages/Algemeen/source_gen.caches/Algemeen/generated" />
       <change beforePath="$PROJECT_DIR$/languages/Datum/Datum.mpl" afterPath="$PROJECT_DIR$/languages/Datum/Datum.mpl" />
       <change beforePath="$PROJECT_DIR$/languages/Datum/source_gen.caches/Datum/generated" afterPath="$PROJECT_DIR$/languages/Datum/source_gen.caches/Datum/generated" />
       <change beforePath="$PROJECT_DIR$/languages/Gegevens/Gegevens.mpl" afterPath="$PROJECT_DIR$/languages/Gegevens/Gegevens.mpl" />
-      <change beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/behavior/trace.info" />
-      <change beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/constraints/ObjectInstantie_Constraints$1$1.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/constraints/ObjectInstantie_Constraints$1$1.class" />
-      <change beforePath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/constraints/ObjectInstantie_Constraints$1.class" afterPath="$PROJECT_DIR$/languages/Gegevens/classes_gen/Gegevens/constraints/ObjectInstantie_Constraints$1.class" />
-      <change beforePath="$PROJECT_DIR$/languages/Gegevens/models/behavior.mps" afterPath="$PROJECT_DIR$/languages/Gegevens/models/behavior.mps" />
-      <change beforePath="$PROJECT_DIR$/languages/Gegevens/models/intentions.mps" afterPath="$PROJECT_DIR$/languages/Gegevens/models/intentions.mps" />
-      <change beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/behavior/generated" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/behavior/generated" />
       <change beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/generated" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/generated" />
-      <change beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/intentions/generated" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen.caches/Gegevens/intentions/generated" />
-      <change beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/ObjectInstantie__BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/ObjectInstantie__BehaviorDescriptor.java" />
-      <change beforePath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Gegevens/source_gen/Gegevens/behavior/trace.info" />
       <change beforePath="$PROJECT_DIR$/languages/Integriteit/Integriteit.mpl" afterPath="$PROJECT_DIR$/languages/Integriteit/Integriteit.mpl" />
       <change beforePath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/generated" afterPath="$PROJECT_DIR$/languages/Integriteit/source_gen.caches/Integriteit/generated" />
       <change beforePath="$PROJECT_DIR$/languages/Interactie/Interactie.mpl" afterPath="$PROJECT_DIR$/languages/Interactie/Interactie.mpl" />
+      <change beforePath="$PROJECT_DIR$/languages/Interactie/models/structure.mps" afterPath="$PROJECT_DIR$/languages/Interactie/models/structure.mps" />
       <change beforePath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/generated" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/generated" />
+      <change beforePath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/structure/generated" afterPath="$PROJECT_DIR$/languages/Interactie/source_gen.caches/Interactie/structure/generated" />
       <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/ObjectiefRecht.mpl" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/ObjectiefRecht.mpl" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/EnumeratieWaarde_Constraints$1$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/EnumeratieWaarde_Constraints$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/constraints/ObjectWaarde_Constraints$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/AbstractReferentieNaarKenmerk_EditorBuilder_a.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/AbstractReferentieNaarKenmerk_EditorBuilder_a.class" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/MethodeAanpassenFeiten_EditorBuilder_a$wijzigingenListHandler_ffjt3u_a2c0.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/VerwoordingWaarde_TransformationMenu$TMP_Action_ga4xcn_a0$Item.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/VerwoordingWaarde_TransformationMenu$TMP_Action_ga4xcn_a0$Item.class" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/VerwoordingWaarde_TransformationMenu$TMP_Action_ga4xcn_a0.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/VerwoordingWaarde_TransformationMenu$TMP_Action_ga4xcn_a0.class" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/VerwoordingWaarde_TransformationMenu.class" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/VerwoordingWaarde_TransformationMenu.class" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/classes_gen/ObjectiefRecht/editor/trace.info" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/editor.mps" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/editor.mps" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/structure.mps" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/models/ObjectiefRecht/structure.mps" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/models/intentions.mps" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/models/intentions.mps" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/dependencies" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/dependencies" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/editor/generated" />
       <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/generated" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/intentions/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/intentions/generated" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/structure/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/structure/generated" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/textGen/generated" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen.caches/ObjectiefRecht/textGen/generated" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/AbstractReferentieNaarKenmerk_EditorBuilder_a.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/AbstractReferentieNaarKenmerk_EditorBuilder_a.java" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/VerwoordingWaarde_TransformationMenu.java" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/VerwoordingWaarde_TransformationMenu.java" />
-      <change beforePath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/trace.info" afterPath="$PROJECT_DIR$/languages/ObjectiefRecht/source_gen/ObjectiefRecht/editor/trace.info" />
       <change beforePath="$PROJECT_DIR$/languages/Simulatie/Simulatie.mpl" afterPath="$PROJECT_DIR$/languages/Simulatie/Simulatie.mpl" />
-      <change beforePath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/classes_gen/Simulatie/editor/trace.info" />
-      <change beforePath="$PROJECT_DIR$/languages/Simulatie/models/behavior.mps" afterPath="$PROJECT_DIR$/languages/Simulatie/models/behavior.mps" />
-      <change beforePath="$PROJECT_DIR$/languages/Simulatie/models/editor.mps" afterPath="$PROJECT_DIR$/languages/Simulatie/models/editor.mps" />
-      <change beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/behavior/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/behavior/generated" />
-      <change beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/editor/generated" />
       <change beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen.caches/Simulatie/generated" />
-      <change beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/SelecterenZaak.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/SelecterenZaak.java" />
-      <change beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Simulatie_EditorBuilder_a.java" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/Simulatie_EditorBuilder_a.java" />
-      <change beforePath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/trace.info" afterPath="$PROJECT_DIR$/languages/Simulatie/source_gen/Simulatie/editor/trace.info" />
       <change beforePath="$PROJECT_DIR$/languages/SubjectiefRecht/SubjectiefRecht.mpl" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/SubjectiefRecht.mpl" />
       <change beforePath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen.caches/SubjectiefRecht/generated" afterPath="$PROJECT_DIR$/languages/SubjectiefRecht/source_gen.caches/SubjectiefRecht/generated" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.runtime/GN.runtime.msd" afterPath="$PROJECT_DIR$/solutions/GN.runtime/GN.runtime.msd" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/AWB/Regels AWB.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/AWB/Regels AWB.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/AWR/Regels AWR.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/AWR/Regels AWR.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/BBB/Regels AWB (bellen bij bezwaar).xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/BBB/Regels AWB (bellen bij bezwaar).xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WAA/Feiten en regels WAA.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WAA/Feiten en regels WAA.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WAA/Gegevenshuishouding WAA.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WAA/Gegevenshuishouding WAA.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WFW/Feiten en regels WFW.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/classes_gen/GN/WFW/Feiten en regels WFW.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/models/GN/WAA.mps" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/models/GN/WAA.mps" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen.caches/GN/WAA/generated" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen.caches/GN/WAA/generated" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/AWB/Regels AWB.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/AWB/Regels AWB.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/AWR/Regels AWR.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/AWR/Regels AWR.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/BBB/Regels AWB (bellen bij bezwaar).xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/BBB/Regels AWB (bellen bij bezwaar).xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Feiten en regels WAA.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Feiten en regels WAA.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Gegevenshuishouding WAA.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WAA/Gegevenshuishouding WAA.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WFW/Feiten en regels WFW.xml" afterPath="$PROJECT_DIR$/solutions/GN.specificaties/source_gen/GN/WFW/Feiten en regels WFW.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.test/classes_gen/GN/test/testTextGen/TestModel.xml" afterPath="$PROJECT_DIR$/solutions/GN.test/classes_gen/GN/test/testTextGen/TestModel.xml" />
-      <change beforePath="$PROJECT_DIR$/solutions/GN.test/source_gen/GN/test/testTextGen/TestModel.xml" afterPath="$PROJECT_DIR$/solutions/GN.test/source_gen/GN/test/testTextGen/TestModel.xml" />
     </list>
     <ignored path="DeBrug.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -211,7 +94,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="bbd74c37-1d57-4871-b553-4675618b37ab/r:8f369293-9fa3-4ebf-9e1a-d75d622d4697(TempModulebbd74c37-1d57-4871-b553-4675618b37ab/TempModel_291631957574216)">
+            <model ref="2c46251c-c7ff-4b47-9a0b-67eb48b3e140/r:fe806d26-9ac3-4b7e-9966-5e7618e3bd61(TempModule2c46251c-c7ff-4b47-9a0b-67eb48b3e140/TempModel_292015699761569)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -245,13 +128,13 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="2092lgl_1z$">
-                <node concept="3balQm" id="2092lgl_1z_" role="aymYE" />
-                <node concept="2Clz$F" id="2092lgl_1zA" role="aymYO">
+              <node concept="aymSD" id="2092lglNEU$">
+                <node concept="3balQm" id="2092lglNEU_" role="aymYE" />
+                <node concept="2Clz$F" id="2092lglNEUA" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
-                <node concept="2_V_lH" id="2092lgl_1zB" role="1PhJh3">
-                  <ref role="2_V_lI" node="2092lgl_1zA" resolve="CommandHolder" />
+                <node concept="2_V_lH" id="2092lglNEUB" role="1PhJh3">
+                  <ref role="2_V_lI" node="2092lglNEUA" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -517,7 +400,7 @@
         <entry file="mps://node://Gegevens/Gegevens.structure/ObjectInstantie">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="4" viewPositionY="486">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="486">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
@@ -1123,276 +1006,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:0cadb18a-ecdb-45ce-84c1-05da165fc885(Datum.behavior) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Datum/models/behavior.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/ObjectiefRecht/models/ObjectiefRecht/constraints.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/ObjectiefRecht/models/ObjectiefRecht/constraints.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ReferentieNaarKenmerk" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fa88bb76-c276-483e-842a-c99ad2cbb026" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:ef6e4eaa-21cf-4e26-a042-22bac6faf277(GN.WAA) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/solutions/GN.specificaties/models/GN/WAA.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/ObjectiefRecht/models/ObjectiefRecht/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FeitVerwoording" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fa88bb76-c276-483e-842a-c99ad2cbb026" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/ObjectiefRecht/models/ObjectiefRecht/editor.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2c493149-da1d-45e9-8ea2-e0b0cfc3047a(SubjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/ObjectiefRecht/models/ObjectiefRecht/constraints.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FeitVerwoording" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61be2dc6-a140-4def-a592-7499aa2bac19(Datum)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:4fac9736-8cf5-4d2b-b2e6-44837c3cb5b5(ObjectiefRecht.constraints) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/ObjectiefRecht/models/ObjectiefRecht/constraints.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Waarden" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:484b93fc-0f0b-4d8a-917c-688df91c2a48(Simulatie.constraints) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Simulatie/models/constraints.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:f6191fb1-908b-4b67-841c-1e4d22298d9f(ObjectiefRecht.editor) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/ObjectiefRecht/models/ObjectiefRecht/editor.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FeitVerwoording" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d7255509-cdcf-4e15-808f-6e1247bf6d9b(Simulatie.editor) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/Simulatie/models/editor.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c031b870-a41c-4293-b637-5b2b15a59218(ObjectiefRecht.structure) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/ObjectiefRecht/models/ObjectiefRecht/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8dc4b25f-4c49-400e-ac37-0fd230db702c(ObjectiefRecht)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:26336f9b-98f3-4d19-addf-daaa89e37cd0(ObjectiefRecht.actions) in IdeaFile{file:///Users/diederikdulfer/MPSProjects/DeBrug/languages/ObjectiefRecht/models/actions.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fa88bb76-c276-483e-842a-c99ad2cbb026" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GN" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
           <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
@@ -1524,7 +1137,7 @@
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20465116" sideWeight="0.76739925" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31196582" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31196582" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863274" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1537,12 +1150,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20465116" sideWeight="0.23260073" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2039627" sideWeight="0.23260073" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3041958" sideWeight="0.3925519" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Visualiseer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46092796" sideWeight="0.49676898" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45781776" sideWeight="0.59411407" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29186046" sideWeight="0.28510118" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2902098" sideWeight="0.28510118" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Wetten.nl" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55982906" sideWeight="0.495116" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32659933" sideWeight="0.42002442" order="20" side_tool="false" content_ui="tabs" />
@@ -1552,7 +1165,7 @@
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Graphing" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21733822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21978022" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Trace Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Visualisation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -3411,7 +3024,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Interpreter aanpassingen" />
     <MESSAGE value="Aanpassing rode en groene bollen" />
     <MESSAGE value="Aanpassing specificaties" />
     <MESSAGE value="Datum tijdstip uitvoeren verwijderd" />
@@ -3436,7 +3048,8 @@
     <MESSAGE value="readme aangepast" />
     <MESSAGE value="Fixes" />
     <MESSAGE value="Migration to 2017.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migration to 2017.2" />
+    <MESSAGE value="Problems solved for migration 2017.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Problems solved for migration 2017.3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://ObjectiefRecht/ObjectiefRecht.structure/Actie">
@@ -5447,7 +5060,7 @@
     <entry file="mps://node://Gegevens/Gegevens.structure/ObjectInstantie">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="4" viewPositionY="486">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="486">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
