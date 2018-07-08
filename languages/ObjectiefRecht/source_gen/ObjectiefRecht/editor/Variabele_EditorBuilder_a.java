@@ -90,7 +90,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell, myNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x76ccb41bf386dd7eL, 0x1fabc0b15d875006L, "kenmerk"), child));
+        editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell));
       }
       if (editorCell.getRole() == null) {
         editorCell.setRole("kenmerk");

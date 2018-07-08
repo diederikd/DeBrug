@@ -76,7 +76,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell, myNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x36e4484084e2c9f7L, 0x36e4484084e2ca11L, "waarde"), child));
+        editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell));
       }
       if (editorCell.getRole() == null) {
         editorCell.setRole("waarde");

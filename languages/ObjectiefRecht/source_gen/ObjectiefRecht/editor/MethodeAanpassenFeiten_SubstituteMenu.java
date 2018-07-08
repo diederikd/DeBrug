@@ -14,6 +14,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuPart;
+import jetbrains.mps.lang.editor.menus.ConceptMenusPart;
+import java.util.Collection;
+import jetbrains.mps.smodel.ConceptDescendantsCache;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup;
+import jetbrains.mps.smodel.language.LanguageRegistry;
 
 public class MethodeAanpassenFeiten_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
@@ -21,6 +27,7 @@ public class MethodeAanpassenFeiten_SubstituteMenu extends SubstituteMenuBase {
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
     result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new MethodeAanpassenFeiten_SubstituteMenu.SMP_ReferenceScope_wy5x4g_a(), MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c376d9c3L, "ObjectiefRecht.structure.MethodeAanpassenFeiten")));
+    result.add(new MethodeAanpassenFeiten_SubstituteMenu.SMP_Subconcepts_wy5x4g_b());
     return result;
   }
 
@@ -54,5 +61,26 @@ public class MethodeAanpassenFeiten_SubstituteMenu extends SubstituteMenuBase {
       }
     }
 
+  }
+  public class SMP_Subconcepts_wy5x4g_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+    protected Collection getConcepts(final SubstituteMenuContext _context) {
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(MetaAdapterFactory.getConcept(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c376d9c3L, "ObjectiefRecht.structure.MethodeAanpassenFeiten"));
+    }
+    @NotNull
+    @Override
+    public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
+      context.getEditorMenuTrace().pushTraceInfo();
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "MethodeAanpassenFeiten", null));
+      try {
+        return super.createItems(context);
+      } finally {
+        context.getEditorMenuTrace().popTraceInfo();
+      }
+    }
+
+    @Override
+    protected Collection<SubstituteMenuItem> createItemsForConcept(SubstituteMenuContext context, SAbstractConcept concept) {
+      return context.createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(context.getEditorContext().getRepository()), concept));
+    }
   }
 }

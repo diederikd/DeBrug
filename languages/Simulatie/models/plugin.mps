@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -255,7 +255,7 @@
         <child id="5934114435582613364" name="body" index="3vcmbn" />
       </concept>
       <concept id="5934114435583058812" name="com.mbeddr.mpsutil.interpreter.structure.AbstractEvaluator" flags="ng" index="3va1rv">
-        <property id="8845772667389641968" name="cache" index="2TnfIJ" />
+        <property id="8845772667389641968" name="cacheValues" index="2TnfIJ" />
         <child id="5934114435583235459" name="constraints" index="3vbI0w" />
         <child id="5934114435584084790" name="evaluator" index="3vQZUl" />
       </concept>

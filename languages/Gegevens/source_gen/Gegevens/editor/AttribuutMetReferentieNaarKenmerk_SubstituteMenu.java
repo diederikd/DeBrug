@@ -14,6 +14,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuPart;
+import jetbrains.mps.lang.editor.menus.ConceptMenusPart;
+import java.util.Collection;
+import jetbrains.mps.smodel.ConceptDescendantsCache;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup;
+import jetbrains.mps.smodel.language.LanguageRegistry;
 
 public class AttribuutMetReferentieNaarKenmerk_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
@@ -21,6 +27,7 @@ public class AttribuutMetReferentieNaarKenmerk_SubstituteMenu extends Substitute
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
     result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new AttribuutMetReferentieNaarKenmerk_SubstituteMenu.SMP_ReferenceScope_v64lfc_a(), MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db6L, "Gegevens.structure.AttribuutMetReferentieNaarKenmerk")));
+    result.add(new AttribuutMetReferentieNaarKenmerk_SubstituteMenu.SMP_Subconcepts_v64lfc_b());
     return result;
   }
 
@@ -54,5 +61,26 @@ public class AttribuutMetReferentieNaarKenmerk_SubstituteMenu extends Substitute
       }
     }
 
+  }
+  public class SMP_Subconcepts_v64lfc_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+    protected Collection getConcepts(final SubstituteMenuContext _context) {
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(MetaAdapterFactory.getConcept(0x30ef095ad48945ffL, 0xa80f456a798ac125L, 0x76ccb41bf37d6db6L, "Gegevens.structure.AttribuutMetReferentieNaarKenmerk"));
+    }
+    @NotNull
+    @Override
+    public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
+      context.getEditorMenuTrace().pushTraceInfo();
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "AttribuutMetReferentieNaarKenmerk", null));
+      try {
+        return super.createItems(context);
+      } finally {
+        context.getEditorMenuTrace().popTraceInfo();
+      }
+    }
+
+    @Override
+    protected Collection<SubstituteMenuItem> createItemsForConcept(SubstituteMenuContext context, SAbstractConcept concept) {
+      return context.createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(context.getEditorContext().getRepository()), concept));
+    }
   }
 }

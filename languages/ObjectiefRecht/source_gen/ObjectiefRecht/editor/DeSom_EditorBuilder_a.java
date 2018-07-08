@@ -89,7 +89,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell, myNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ce3b5e2c39586d9L, 0x4ce3b5e2c39586daL, "expressie"), child));
+        editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell));
       }
       if (editorCell.getRole() == null) {
         editorCell.setRole("expressie");
@@ -156,7 +156,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell, myNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9bcaebaL, 0xaf726b86ca78d75L, "meervoudigkenmerk"), child));
+        editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell));
       }
       if (editorCell.getRole() == null) {
         editorCell.setRole("meervoudigkenmerk");
@@ -227,7 +227,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 
     private void installCellInfo(SNode child, EditorCell editorCell) {
       if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell, myNode, MetaAdapterFactory.getContainmentLink(0x8dc4b25f4c49400eL, 0xac370fd230db702cL, 0x4ccbd8fc9bcaebaL, 0xaf726b86c69128bL, "kenmerk"), child));
+        editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell));
       }
       if (editorCell.getRole() == null) {
         editorCell.setRole("kenmerk");

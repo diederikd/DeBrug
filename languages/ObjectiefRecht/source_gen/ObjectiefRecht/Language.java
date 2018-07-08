@@ -7,8 +7,6 @@ import jetbrains.mps.smodel.adapter.ids.SLanguageId;
 import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.generator.runtime.TemplateModule;
-import jetbrains.mps.generator.runtime.TemplateUtil;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor;
 import ObjectiefRecht.actions.ActionAspectDescriptorImpl;
@@ -53,10 +51,6 @@ public class Language extends LanguageRuntime {
     extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("30ef095a-d489-45ff-a80f-456a798ac125"), "Gegevens"));
   }
 
-  @Override
-  public Collection<TemplateModule> getGenerators() {
-    return TemplateUtil.<TemplateModule>asCollection(TemplateUtil.createInterpretedGenerator(this, "f04bc6eb-0b2f-4cf2-9577-2c6c7f9a93d6(ObjectiefRecht#4440848166023791004)"));
-  }
   @Override
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
     if (aspectClass == ActionAspectDescriptor.class) {

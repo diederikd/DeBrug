@@ -35,8 +35,6 @@
     <module reference="15970de3-8fe7-4b13-81c7-38b38d51c39a(Simulatie)" version="0" />
     <module reference="2c493149-da1d-45e9-8ea2-e0b0cfc3047a(SubjectiefRecht)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-    <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
-    <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
   </dependencyVersions>
 </solution>
 

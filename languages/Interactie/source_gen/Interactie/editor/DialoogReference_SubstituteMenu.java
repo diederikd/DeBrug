@@ -14,6 +14,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuPart;
+import jetbrains.mps.lang.editor.menus.ConceptMenusPart;
+import java.util.Collection;
+import jetbrains.mps.smodel.ConceptDescendantsCache;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup;
+import jetbrains.mps.smodel.language.LanguageRegistry;
 
 public class DialoogReference_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
@@ -21,6 +27,7 @@ public class DialoogReference_SubstituteMenu extends SubstituteMenuBase {
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
     result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new DialoogReference_SubstituteMenu.SMP_ReferenceScope_dln7tu_a(), MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x2469b1b2fd0ea191L, "Interactie.structure.DialoogReference")));
+    result.add(new DialoogReference_SubstituteMenu.SMP_Subconcepts_dln7tu_b());
     return result;
   }
 
@@ -54,5 +61,26 @@ public class DialoogReference_SubstituteMenu extends SubstituteMenuBase {
       }
     }
 
+  }
+  public class SMP_Subconcepts_dln7tu_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+    protected Collection getConcepts(final SubstituteMenuContext _context) {
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(MetaAdapterFactory.getConcept(0xc4c9a68ece244c5bL, 0x9241c819e554f07cL, 0x2469b1b2fd0ea191L, "Interactie.structure.DialoogReference"));
+    }
+    @NotNull
+    @Override
+    public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
+      context.getEditorMenuTrace().pushTraceInfo();
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "DialoogReference", null));
+      try {
+        return super.createItems(context);
+      } finally {
+        context.getEditorMenuTrace().popTraceInfo();
+      }
+    }
+
+    @Override
+    protected Collection<SubstituteMenuItem> createItemsForConcept(SubstituteMenuContext context, SAbstractConcept concept) {
+      return context.createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(context.getEditorContext().getRepository()), concept));
+    }
   }
 }
